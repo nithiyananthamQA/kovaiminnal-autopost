@@ -51,7 +51,7 @@ body{{width:2172px;height:724px}}
 </style></head><body>
 <div id="bar"></div><img id="logo" src="{logo_uri}">
 <div id="name" class="en">KOVAI <b>MINNAL</b>{BOLT.format(id="F", style="")}</div>
-<div id="tag" class="ta">நம்ம கோவை செய்திகள்</div>
+<div id="tag" class="ta">கோவை மின்னல்</div>
 <div id="fol" class="en">FOLLOW FOR<b>KOVAI UPDATES</b></div>
 </body></html>"""
 
@@ -230,7 +230,7 @@ body{{width:2160px;height:400px;overflow:hidden;background:transparent}}
 </style></head><body>
 <div id="bar"></div><img id="logo" src="{logo_uri}">
 <div id="name" class="en">KOVAI <b>MINNAL</b>{BOLT.format(id="W", style="")}</div>
-<div id="tag" class="ta">நம்ம கோவை செய்திகள்</div>
+<div id="tag" class="ta">கோவை மின்னல்</div>
 <div id="fol" class="en">FOLLOW<b>@kovaiminnal</b></div>
 </body></html>"""
 
