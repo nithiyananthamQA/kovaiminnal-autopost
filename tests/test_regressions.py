@@ -1731,7 +1731,7 @@ class FreePicturesFirst30Oct(unittest.TestCase):
             os.environ.pop(k, None)
         os.environ.update(CLOUDFLARE_API_TOKEN="t", CLOUDFLARE_ACCOUNT_ID="a")
         try:
-            self.assertFalse([c for c in llm.chain() if c[0] == "cloudflare"])
+            self.assertTrue([c for c in llm.chain() if c[0] == "cloudflare"])      # Kovai Minnal owner 11 Nov: free only (no Claude) - Cloudflare also writes
         finally:
             for k, v in old.items():
                 os.environ.pop(k, None) if v is None else os.environ.__setitem__(k, v)
@@ -1769,14 +1769,14 @@ class FreeWriters30Oct(unittest.TestCase):
                       "OPENROUTER_API_KEY", "NVIDIA_API_KEY", "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID")
         ch = self.build(everything)
         providers = list(dict.fromkeys(p for p, _ in ch))
-        self.assertEqual(["gemini", "groq"], providers)      # Sarvam off until writer-compare proves it (30 Oct: empty answers)      # Gemma ready but not live until proven (30 Oct test: 503/500)
+        self.assertEqual(["gemini", "gemma", "groq", "cloudflare"], providers)      # Kovai Minnal owner 11 Nov: free only - Gemma and Cloudflare added; Sarvam still off
         self.assertEqual(("gemini", "gemini-3.6-flash"), ch[0])
         import llm
         self.assertFalse(hasattr(llm, "_cerebras"))      # 30 Oct: Cerebras needs a card - paid, not used
 
     def test_without_new_keys_same_as_before(self):
         providers = list(dict.fromkeys(p for p, _ in self.build(("GEMINI_API_KEY", "GROQ_API_KEY"))))
-        self.assertEqual(["gemini", "groq"], providers)      # Sarvam skipped until its key exists
+        self.assertEqual(["gemini", "gemma", "groq"], providers)      # Sarvam skipped until its key exists (Kovai Minnal: Gemma on the Gemini key)
         os.environ["WRITERS_ORDER"] = "gemma"
         try:
             self.assertEqual(["gemma"], list(dict.fromkeys(p for p, _ in self.build(("GEMINI_API_KEY",)))))      # writer-compare can test one
