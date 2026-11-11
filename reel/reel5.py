@@ -11,6 +11,7 @@ v5 = reel4.py (his v4 design, untouched in its own file) + two changes asked by 
 """
 import json
 import math
+import os
 import random
 import sys
 from pathlib import Path
@@ -160,11 +161,73 @@ window.renderAt=function(t){
 </script>"""
 
 
+# ---- owner 11 Nov: "our own super cool template" - style K (Kovai Minnal lightning look), so our reels never look like Coimbatore 360's v4.
+# Same layout, timing, voice and text as v4; only the look changes. REEL_STYLE=A gives his original look back.
+_BOLT_URI = ("data:image/svg+xml;utf8," "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 160'><path d='M62 0 L8 92 L44 92 L30 160 L94 58 L56 58 L78 0 Z' "
+             "fill='%23FFD21F' stroke='%23060E2B' stroke-width='6' stroke-linejoin='round'/></svg>")
+STYLE_K = """
+:root{--acc:#FFD21F;--navy:#0B1B4D;--yellow:#FFD21F;--red:#E3151B}
+#shade{background:linear-gradient(180deg,rgba(6,14,43,.88) 0%,rgba(6,14,43,.30) 19%,rgba(6,14,43,0) 34%,rgba(6,14,43,0) 50%,rgba(6,14,43,.45) 64%,rgba(6,14,43,.93) 100%)}
+#hdr .nm{color:#FFD21F;font-size:46px;display:flex;align-items:center;text-shadow:0 3px 12px rgba(0,0,0,.8)}
+#hdr .nm::before{content:"";flex:none;width:30px;height:48px;margin-right:12px;background:url("__BOLT__") no-repeat center/contain;filter:drop-shadow(0 0 10px rgba(255,210,31,.8))}
+#hdr .tag{background:#E3151B}
+#plogo{border:5px solid #FFD21F;box-shadow:0 0 0 7px rgba(255,210,31,.28),0 0 34px rgba(255,210,31,.55),0 8px 24px rgba(0,0,0,.5)}
+#pin{background:#FFD21F;color:#0B1B4D;box-shadow:0 10px 30px rgba(0,0,0,.45),0 0 0 4px rgba(11,27,77,.6)}
+#pin .ic{color:#E3151B}
+#hook .h1{-webkit-text-stroke:0;color:#fff;text-shadow:0 7px 0 #0B1B4D,0 14px 34px rgba(0,0,0,.7);font-size:100px}
+#hook .h2{background:#FFD21F;color:#0B1B4D;transform:skewX(-7deg);border-radius:8px;box-shadow:12px 12px 0 #E3151B}
+#mini{left:0;border-left:0;padding:12px 26px 6px 48px;background:linear-gradient(90deg,rgba(11,27,77,.95),rgba(11,27,77,.55) 85%,rgba(11,27,77,0));
+  border-top:5px solid #FFD21F;text-shadow:none;color:#fff}
+.card{background:rgba(11,27,77,.93);border:3px solid rgba(255,210,31,.9);border-radius:24px;box-shadow:0 18px 50px rgba(0,0,0,.55),0 0 30px rgba(255,210,31,.18)}
+.card .ico{background:#FFD21F;color:#0B1B4D}
+.card .lb{color:#FFD21F}
+.card .vl{color:#fff}
+.ph{-webkit-text-stroke:11px #0B1B4D}
+.ph span.on{color:#0B1B4D;background:#FFD21F;border-radius:12px;padding:0 10px;-webkit-text-stroke:0;box-shadow:0 7px 0 #E3151B}
+#sum{background:rgba(11,27,77,.96);border:3px solid #FFD21F;box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 40px rgba(255,210,31,.2)}
+#sum .st{background:#FFD21F;color:#0B1B4D}
+#sum .row{border-top:2px solid rgba(255,255,255,.12)}
+#sum .row .ic{color:#FFD21F}
+#sum .row .l{color:#AFC0E8}
+#sum .row .v{color:#fff}
+#end{background:radial-gradient(circle at 50% 38%,rgba(19,48,110,.88),rgba(5,12,36,.96))}
+#end img{border-color:#FFD21F;box-shadow:0 0 0 10px rgba(255,210,31,.25),0 0 60px rgba(255,210,31,.5)}
+#end .e2{background:#FFD21F;color:#0B1B4D}
+#zap{position:absolute;inset:0;z-index:45;pointer-events:none;opacity:0;background:radial-gradient(circle at 50% 40%,rgba(255,255,240,.95),rgba(255,236,150,.55) 35%,rgba(255,210,31,0) 70%)}
+#zapbolt{position:absolute;z-index:46;top:-120px;width:420px;height:1500px;opacity:0;pointer-events:none;
+  background:url("__BOLT__") no-repeat center/contain;filter:drop-shadow(0 0 30px #FFD21F) drop-shadow(0 0 60px #fff)}
+""".replace("__BOLT__", _BOLT_URI)
+V4.STYLES["K"] = STYLE_K
+
+ZAP_JS = """
+<script>
+(function(){
+const _r=window.renderAt;
+window.renderAt=function(t){
+  _r(t);
+  const z=document.getElementById('zap'), b=document.getElementById('zapbolt'); if(!z)return;
+  // lightning at the start and at every camera cut (not during the end card)
+  const hits=[0].concat(D.shots.slice(1).map(s=>s.a)).filter(x=>x<D.end_t);
+  let k=99; hits.forEach(h=>{const d=t-h; if(d>=0&&d<k)k=d;});
+  const L=k<0.22?(1-k/0.22):0, first=(k===t&&t<0.5);
+  z.style.opacity=(first?0.95:0.55)*L*(0.7+0.3*Math.sin(k*90));
+  b.style.opacity=L>0?Math.min(1,L*1.6):0;
+  b.style.left=(first?330:(120+((hits.indexOf(t-k)*277)%600)))+'px';
+  b.style.transform='translateY('+(-200*(1-L))+'px) rotate(10deg)';
+};
+})();
+</script>"""
+
 _orig_build = V4.build_html
 
 
 def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
+    if not os.environ.get("REEL_STYLE") and not spec.get("style"):
+        spec = dict(spec, style="K")      # our look by default
     html = _orig_build(spec, shots, sents, caps, hook_end, end_t, total, page)
+    if (os.environ.get("REEL_STYLE") or spec.get("style")) == "K":
+        html = html.replace('<div id="flash"></div>', '<div id="flash"></div><div id="zap"></div><div id="zapbolt"></div>', 1)
+        html = html.replace("</body></html>", ZAP_JS + "</body></html>", 1)
     # owner 11 Nov: the header at the top says "கோவை மின்னல் செய்திகள்" (Kovai Minnal News), not only the page name
     name = page["name"]
     html = html.replace(f'<div class="nm">{name}</div>', f'<div class="nm">{name} {HEADER_SUFFIX}</div>', 1)
