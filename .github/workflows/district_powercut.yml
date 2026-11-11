@@ -1,0 +1,177 @@
+name: district-powercut
+# owner 11 Nov: the 37 district power-cut pages ("<District> Minnal", districts/). SEPARATE from Kovai Minnal: own Sheet + bridge
+# (DISTRICT_BRIDGE_URL / DISTRICT_BRIDGE_KEY), own state (districts/state/), own Facebook secrets FB_PAGE_ID_<KEY> / FB_TOKEN_<KEY>.
+# Switch: poster/config.json "district_powercut": {"enabled": true/false, "disabled": [keys]} - false = this job stops in its
+# first step and Kovai Minnal runs exactly as before. Same rules as powercut.yml: every 30 minutes 5:35 AM - 9:35 PM IST, a cut is
+# posted at once, never twice, never after it is over; each cut only on ITS district's page.
+on:
+  schedule:
+    - cron: "5 0-16 * * *"       # 05:35 ... 21:35 IST (Kovai's powercut.yml runs at :20 / :50)
+    - cron: "35 0-16 * * *"
+  workflow_dispatch:
+    inputs:
+      dry:
+        description: "1 = only show what would be posted (nothing written or posted)"
+        default: "0"
+      districts:
+        description: "district keys separated by spaces (empty = every switched-on district)"
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: district-powercut
+  cancel-in-progress: false
+env:
+  DISTRICT_BRIDGE_URL: ${{ secrets.DISTRICT_BRIDGE_URL }}
+  DISTRICT_BRIDGE_KEY: ${{ secrets.DISTRICT_BRIDGE_KEY }}
+  KOVAI_BRIDGE_URL: ${{ secrets.BRIDGE_URL }}      # only to refuse it: a district row never goes to Kovai's Sheet
+  POWERCUT_DRY: ${{ github.event_name == 'workflow_dispatch' && inputs.dry || '0' }}
+  CITY_ONLY: "0"
+jobs:
+  find:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    outputs:
+      n: ${{ steps.find.outputs.n || '0' }}
+      matrix: ${{ steps.find.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main}
+      - name: Switch
+        id: sw
+        run: |
+          on=$(python3 -c "import json; c=json.load(open('poster/config.json')).get('district_powercut') or {}; print(1 if c.get('enabled') is True else 0)")
+          [ "$POWERCUT_DRY" = "1" ] && on=1
+          echo "on=$on" >> "$GITHUB_OUTPUT"
+          [ "$on" = "1" ] || echo "district power-cut pages are switched off (poster/config.json district_powercut.enabled) - nothing done"
+      - uses: actions/setup-python@v5
+        if: steps.sw.outputs.on == '1'
+        with: {python-version: "3.11"}
+      - name: Install
+        if: steps.sw.outputs.on == '1'
+        run: pip install -q requests==2.32.5 googlenewsdecoder==0.2.2 pillow==11.3.0
+      - name: Find new power-cut notices (each district in its own process)
+        id: find
+        if: steps.sw.outputs.on == '1'
+        run: |
+          set -o pipefail
+          python -u districts/main.py find ${{ github.event_name == 'workflow_dispatch' && inputs.districts || '' }} 2>&1 | tee out-find.log
+      - name: Save state (a notice is never written twice)
+        if: always() && steps.sw.outputs.on == '1' && env.POWERCUT_DRY != '1'
+        run: |
+          git config user.name "kovaiminnal-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f districts/state 2>/dev/null || true
+          git commit -qm "district powercut: notices found" || true
+          for i in 1 2 3 4 5; do git pull -q --rebase -X theirs --autostash origin main && git push -q && break; git rebase --abort 2>/dev/null || true; sleep $((i*4)); done || true
+
+  post:
+    needs: find
+    if: needs.find.outputs.n != '0' && needs.find.outputs.n != '' && github.event.inputs.dry != '1'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJson(needs.find.outputs.matrix) }}
+    env:
+      KEY: ${{ matrix.key }}
+      FB_PAGE_ID: ${{ secrets[format('FB_PAGE_ID_{0}', matrix.secret)] }}
+      FB_TOKEN: ${{ secrets[format('FB_TOKEN_{0}', matrix.secret)] }}
+      TA_MODEL: ${{ github.workspace }}/reel/models/ta
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+      FAL_KEY: ${{ secrets.FAL_KEY }}
+      POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}      # paid Claude ONLY when every free model failed
+      ANTHROPIC_MODEL: claude-haiku-5-5
+      CLAUDE_MAX_CALLS: "30"      # cost guard per district run (a notice needs at most a few calls)
+      CLOUDINARY_CLOUD: ${{ secrets.CLOUDINARY_CLOUD }}
+      CLOUDINARY_PRESET: ${{ secrets.CLOUDINARY_PRESET }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: reel/requirements.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Tamil voice model (cached)
+        id: model
+        uses: actions/cache@v4
+        with:
+          path: reel/models/ta
+          key: indic-tts-ta-v1
+      - name: Download voice model
+        if: steps.model.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p reel/models
+          curl -sL -o /tmp/ta.zip https://github.com/AI4Bharat/Indic-TTS/releases/download/v1-checkpoints-release/ta.zip
+          unzip -q /tmp/ta.zip -d reel/models && rm /tmp/ta.zip
+      - name: Browser (cached)
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: pw-chromium-${{ hashFiles('reel/requirements.txt') }}
+      - name: Install (same as post.yml)
+        timeout-minutes: 25
+        run: |
+          ffmpeg_github() {
+            U=https://github.com/BtbN/FFmpeg-Builds/releases/download/latest
+            line=$(curl -sfL --max-time 30 $U/checksums.sha256 | grep -E '  ffmpeg-n[0-9.]+-latest-linux64-gpl-[0-9.]+\.tar\.xz$' | sort -k2 -V | tail -1) &&
+            [ -n "$line" ] && f=${line##* } && cd /tmp &&
+            curl -sfL --max-time 180 --retry 2 -o "$f" "$U/$f" && echo "$line" | sha256sum -c --quiet - &&
+            tar xf "$f" && sudo cp /tmp/ffmpeg-*/bin/ffmpeg /tmp/ffmpeg-*/bin/ffprobe /usr/local/bin/ && cd - >/dev/null &&
+            ffmpeg -hide_banner -version | head -1
+          }
+          ffmpeg_ubuntu() {
+            sudo dpkg --configure -a 2>/dev/null || true
+            sudo apt-get $APT update -qq && sudo apt-get $APT install -y -qq ffmpeg
+          }
+          browser_ok() { python -c "from playwright.sync_api import sync_playwright as s; p=s().start(); p.chromium.launch().close(); p.stop()"; }
+          inst() {
+            APT="-o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20 -o Acquire::Retries=3"
+            { command -v ffmpeg >/dev/null || ffmpeg_github || { echo "GitHub ffmpeg failed - using Ubuntu"; ffmpeg_ubuntu; }; } &&
+            pip install --timeout 60 torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cpu &&
+            pip install --timeout 60 -r reel/requirements.txt &&
+            pip install -q googlenewsdecoder==0.2.2 opencv-contrib-python-headless==4.10.0.84 pillow-avif-plugin==1.4.6 &&
+            python -m playwright install chromium &&
+            { browser_ok || { echo "browser needs system parts - using Ubuntu"; sudo "$(command -v python)" -m playwright install-deps chromium; }; } &&
+            (cd kit && npm install --no-audit --no-fund)
+          }
+          for i in 1 2; do
+            timeout 600 bash -c "$(declare -f inst ffmpeg_github ffmpeg_ubuntu browser_ok); inst" && exit 0
+            echo "install attempt $i stuck or failed - trying again"
+          done
+          exit 1
+      - name: Write (free writers first; Claude only when all fail)
+        env:
+          DISTRICT_URLS: ${{ matrix.urls }}
+        run: |
+          for TRY in 1 2; do
+            python -u districts/main.py write "$KEY" && break
+            echo "writer exit $? (try $TRY)"; sleep 30
+          done
+      - name: Make the reel and post on the district's page
+        run: python -u districts/main.py post "$KEY"
+      - name: Check every power cut is on Instagram (else post again; after 30 minutes fail loudly)
+        run: |
+          for i in $(seq 1 6); do
+            python -u districts/main.py verify "$KEY" && exit 0
+            sleep 300
+            python -u districts/main.py post "$KEY" || true
+          done
+          echo "::error::a $KEY power-cut notice is still not posted after 30 minutes - see 'NOT POSTED' lines above"; exit 1
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "kovaiminnal-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f "districts/state/$KEY" 2>/dev/null || true
+          git commit -qm "district powercut: $KEY posted" || true
+          for i in 1 2 3 4 5; do git pull -q --rebase -X theirs --autostash origin main && git push -q && break; git rebase --abort 2>/dev/null || true; sleep $((i*4)); done || true

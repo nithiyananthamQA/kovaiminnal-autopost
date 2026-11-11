@@ -44,6 +44,10 @@ PAGE_EN = "Kovai Minnal"      # post_to value in the Sheet
 FOLLOW_LINE = "மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்."
 SAVE_LINE = "கோயம்புத்தூர் செய்திகளைத் தவறவிடாமல் இருக்க Save செய்து Follow செய்யுங்கள் 📌"
 DISTRICTS = ("coimbatore", "kovai")      # allnews.url_district values that are our district
+PAGE_TAGS = {"coimbatore": "#KovaiMinnal"}      # page key -> its own hashtag (districts/pipeline.py adds a district page)
+PAGE_LOGOS = {}      # page key -> logo file when it is not kit/logo_<page>.png (district pages: districts/<key>/logo.png)
+DEFAULT_LOC = "கோவை"      # the reel's place line when the story gives none
+HOME_PLACES = "கோயம்புத்தூர்|கோவை|நாமக்கல்|ராசிபுரம்"      # the district / city name itself is never an "invented place"
 IMPORTANCE = {"High": 0, "Medium": 1, "Low": 2}
 MAX_AGE_H = 48
 AI_LINE = "📌 படங்கள் செய்தியை விளக்க AI மூலம் உருவாக்கப்பட்ட பிரதிநிதித்துவப் படங்கள்."
@@ -778,7 +782,7 @@ def reel_spec(row, spec, images):
         sents.append({"say": sent, "caption": sent, "fact": best if i >= 1 else ""})
     hook = [(spec.get("hl1") or "").strip(), (spec.get("hl2") or "").strip()]
     return {"v": 3, "story": row["story_id"], "date": spec["date"], "cat": (spec.get("cat") or "").strip(),
-            "location": (spec.get("loc") or "கோவை")[:60], "voice": "male", "hook": hook,
+            "location": (spec.get("loc") or DEFAULT_LOC)[:60], "voice": "male", "hook": hook,
             "mini": (row.get("headline_ta") or "").strip(), "source": source_credit(row)[0], "source_full": source_credit(row)[1],
             "images": [str(p) for p in images], "sentences": sents, "outro": {"say": last},
             "scenes": [{"caption": x["caption"]} for x in sents] + [{"caption": last}]}
@@ -1337,8 +1341,8 @@ def run_ready_reel(row, page):
     """a reel video + caption made by the owner: post it as it is (after the Instagram duplicate check in run_story). No rebuild, no voice."""
     global PAGE, LOGO, TAG
     PAGE = page
-    LOGO = KIT / f"logo_{PAGE}.png"
-    TAG = "#KovaiMinnal"
+    LOGO = PAGE_LOGOS.get(PAGE) or KIT / f"logo_{PAGE}.png"
+    TAG = PAGE_TAGS.get(PAGE, TAG)
     sid = row["story_id"]
     if PREBUILD:
         return []
@@ -1468,8 +1472,8 @@ def run_story_page(row, page):
         except Exception as e:
             log("checked text not saved:", e)
     PAGE = page
-    LOGO = KIT / f"logo_{PAGE}.png"
-    TAG = "#KovaiMinnal"
+    LOGO = PAGE_LOGOS.get(PAGE) or KIT / f"logo_{PAGE}.png"
+    TAG = PAGE_TAGS.get(PAGE, TAG)
     os.environ["PAGE_KEY"] = PAGE
     global COLLAB
     COLLAB = collab_page(row, PAGE)
@@ -2037,7 +2041,7 @@ def news_hold(row):
         facts_ = [f for f in (_real_numbers(p) for p in facts_) if f]
         facts_ = [f for f in (_numbers_still_missing(row, p) for p in facts_) if f]
         # owner 3 Nov (RN-151): the district / city name itself (கோயம்புத்தூர் vs the article's கோவை) is not an invented place
-        facts_ = [p for p in facts_ if not re.match(r"not grounded: place word '(கோயம்புத்தூர்|கோவை|நாமக்கல்|ராசிபுரம்)[^']*'", p)]
+        facts_ = [p for p in facts_ if not re.match(r"not grounded: place word '(" + HOME_PLACES + r")[^']*'", p)]
         facts_ = [f for f in facts_ if _location_still_wrong(row, f)]
         if facts_:
             return "held: fact-check problems - " + "; ".join(facts_)[:200]

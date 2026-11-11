@@ -21,6 +21,7 @@ QUERIES = ["கோவை மின்தடை", "கோயம்புத்த
            "சூலூர் மின்தடை", "அன்னூர் மின்தடை", "கோவை மின் நிறுத்தம்"]
 SITES = ("dinamani.com", "dinamalar.com", "covaimail.com")      # order = preference when two papers print the same cut
 DISTRICT_URL = ("district-news-coimbatore", "edition-coimbatore", "covaimail.com")      # a link of the district's own page
+PAGE_KEY = "coimbatore"      # the Instagram page these cuts post on
 # ----
 
 STATE = HERE / "archive" / "powercut_state.json"
@@ -294,7 +295,7 @@ def _never_posted(row):
         import post
         why = post.skip_reason(row) or ""
         if not why:
-            d = post._ig_dup_for_check(row, "coimbatore")
+            d = post._ig_dup_for_check(row, PAGE_KEY)
             why = f"already on Instagram ({d})" if d else ""
         return why
     except Exception as e:

@@ -24,6 +24,28 @@ ASSETS = Path(__file__).resolve().parent / "assets"
 FOOTER_WIDE = ASSETS / "footer_wide_coimbatore.png"
 HEADER_SUFFIX = ""      # owner 11 Nov (later): no "செய்திகள்" in the header - only the page name
 
+# owner 11 Nov: the district power-cut pages (districts/districts.json) - same look, each page its own name, logo and footer
+DISTRICTS_FILE = Path(__file__).resolve().parent.parent / "districts" / "districts.json"
+
+
+def district_pages():
+    try:
+        ds = json.loads(DISTRICTS_FILE.read_text(encoding="utf-8"))["districts"]
+    except Exception:
+        return {}
+    base = DISTRICTS_FILE.parent
+    out = {}
+    for k, d in ds.items():
+        foot = str((base / k / "footer.png").resolve())
+        out[k] = {"logo": str((base / k / "logo.png").resolve()), "name": d["name_ta"], "handle": d["handle"], "tagline": d["name_ta"],
+                  "follow": d["end_card"], "ticker": d["name_ta"], "footer": foot, "footer_wide": foot,
+                  "hashtag": "#" + d["name_en"].replace(" ", ""), "end_card": d["end_card"], "name_en": d["name_en"], "district": True}
+    return out
+
+
+for _k, _p in district_pages().items():
+    R.PAGES.setdefault(_k, _p)
+
 FOOT_CSS = """
 #foot{left:0!important;right:0;bottom:0!important;width:1080px!important;height:200px!important;opacity:1!important;object-fit:fill}
 """
@@ -273,10 +295,14 @@ def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
         html = html.replace(f'<div class="nm">{name}</div>', f'<div class="nm">{name} {HEADER_SUFFIX}</div>', 1)
     # owner 11 Nov: the end card shows the news SOURCE - "Source:", not "ஆதாரம்:" (that word reads as "evidence")
     html = html.replace('<div class="e5">ஆதாரம்: ', '<div class="e5">📰 Source: ', 1)
-    if FOOTER_WIDE.exists():
+    wide = Path(page["footer_wide"]) if page.get("footer_wide") else FOOTER_WIDE      # a district page has its own footer
+    if wide.exists():
         old_foot = f"file://{(ASSETS / page.get('footer', 'footer_coimbatore.png')).as_posix()}"
-        html = html.replace(f'<img id="foot" src="{old_foot}">', f'<img id="foot" src="file://{FOOTER_WIDE.as_posix()}">', 1)
+        html = html.replace(f'<img id="foot" src="{old_foot}">', f'<img id="foot" src="file://{wide.as_posix()}">', 1)
         html = html.replace("</style>", FOOT_CSS + "</style>", 1)
+    if page.get("district"):      # owner 11 Nov: a power-cut page asks people to follow for power-cut alerts
+        import re as _re
+        html = _re.sub(r'<div class="e4">[^<]*</div>', f'<div class="e4">⚡ {page["end_card"]} Follow செய்யுங்கள் 📌</div>', html, count=1)
     if is_plain(spec):
         scene, extra = scene_html(spec)
         html = html.replace("</style>", SCENE_CSS + "</style>", 1)
@@ -303,4 +329,7 @@ V4.build_html = build_html
 V4.pick_voice = pick_voice
 
 if __name__ == "__main__":
-    V4.main(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "coimbatore")
+    _key = sys.argv[3] if len(sys.argv) > 3 else "coimbatore"
+    if R.PAGES.get(_key, {}).get("district"):      # the spoken English follow line names the district page
+        V4.V3.OUTRO_EN = f"Follow {R.PAGES[_key]['name_en']} for power cut alerts."
+    V4.main(sys.argv[1], sys.argv[2], _key)

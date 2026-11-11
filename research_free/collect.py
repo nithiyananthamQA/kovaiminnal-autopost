@@ -16,6 +16,7 @@ def _slot_count():
 
 SET_NEWS = int(os.environ.get("SET_NEWS_COUNT", "0") or 0) or _slot_count()
 PAGE_NAME = "Kovai Minnal"      # post_to value in the Sheet (the only page; no second page, no collab)
+IG_PAGES = ("coimbatore",)      # Instagram pages read for "already posted" (districts/pipeline.py sets its own page)
 AREA = allnews.AREA          # "N" = the Kovai Minnal page (the only area code)
 MAX_STORIES = int(os.environ.get("MAX_STORIES", "0") or 0) or SET_NEWS       # Kovai Minnal: district news per round
 ARCHIVE = HERE / "archive"
@@ -961,7 +962,7 @@ def instagram_recent(log=None):
     try:
         sys.path.insert(0, str(HERE.parent / "poster"))
         import post
-        for page in ("coimbatore",):      # page key of Kovai Minnal (the only page)
+        for page in IG_PAGES:      # page key of Kovai Minnal (the only page)
             try:
                 tok = post.bridge_get("token", page=page)["token"]
                 uid, _ = post.ig_account(tok)

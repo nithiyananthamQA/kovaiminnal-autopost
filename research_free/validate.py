@@ -9,6 +9,7 @@ OUTLETS = ["தினமலர்", "தினத்தந்தி", "தின
            "the hindu", "hindu tamil", "times of india", "dt next", "indian express", "news18", "polimer", "sun news", "news7", "vikatan",
            "oneindia", "way2news", "puthiya thalaimurai", "kalaignar", "toptamilnews", "ஆதாரம்", "source:", "http", "www."]
 PAGE = "Kovai Minnal"      # post_to value (the only page)
+DISTRICT_WORDS = ("மாவட்டம்", "கோவை", "கோயம்புத்தூர்")      # a location word that is the district itself is never "not grounded"
 LAST = "மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்."
 FOLLOW = "உள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏"
 KEYS = ["tamil_headline", "english_headline", "category", "location", "importance", "post_to", "slides_spec", "reel_script", "caption", "scenes"]
@@ -125,7 +126,7 @@ def grounding_problems(d, article):
     for i, w in enumerate(loc_words):
         if len(w) < 4 or (i + 1 < len(loc_words) and (_initial(w), _stem(loc_words[i + 1])) in inits):
             continue      # 'பரமத்தி வேலூர்' when the article writes 'ப.வேலுார்'
-        if _stem(w) not in stems and w not in ("மாவட்டம்", "கோவை", "கோயம்புத்தூர்"):
+        if _stem(w) not in stems and w not in DISTRICT_WORDS:
             out.append(f"not grounded: location '{w}' is not in the article")
     # 2) most words of the reel script and slides must come from the article
     body = LAST
