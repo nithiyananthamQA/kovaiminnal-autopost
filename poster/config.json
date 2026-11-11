@@ -156,7 +156,7 @@
   "story_reserve": 5,
   "post_stories": true,
   "district_powercut": {
-    "note": "owner 11 Nov: separate feature - true = every enabled district page (research_free/districts.json) posts its own power cuts; false = nothing runs for the districts and Kovai Minnal works exactly as before. disabled = district keys switched off one by one.",
+    "note": "owner 11 Nov: separate feature - true = every enabled district page (districts/districts.json) posts its own power cuts; false = nothing runs for the districts and Kovai Minnal works exactly as before. disabled = district keys switched off one by one.",
     "enabled": false,
     "disabled": []
   }

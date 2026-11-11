@@ -36,6 +36,14 @@ body{font-family:'NST','CT',sans-serif}
 """
 
 
+
+# long district names (திருவண்ணாமலை, TIRUVANNAMALAI ...) shrink until they fit; short names are unchanged
+FIT_JS = """<script>function textW(el){const r=document.createRange();r.selectNodeContents(el);return r.getBoundingClientRect().width;}
+function fitW(el,maxW){if(!el)return;let fs=parseFloat(getComputedStyle(el).fontSize),n=0;
+while(textW(el)>maxW&&n++<80){fs-=2;el.style.fontSize=fs+'px';}}
+document.fonts.ready.then(()=>{fitW(document.getElementById('t1'),document.body.clientWidth*0.80);
+fitW(document.getElementById('t'),document.body.clientWidth*0.86);const nm=document.getElementById('name');if(nm)fitW(nm,1060);fitW(document.getElementById('tag'),980);fitW(document.getElementById('fol'),520);});</script>"""
+
 def footer_html(logo_uri):
     return f"""<html><head><style>{BASE}
 body{{width:2172px;height:724px}}
@@ -119,7 +127,7 @@ def _adiyogi(x, base, sc=1.0):
 </g>"""
 
 
-def scene_svg(shape="circle", band=True, nested=False):
+def scene_svg(shape="circle", band=True, nested=False, landmarks=True):
     """Kovai Minnal illustrated logo (1000x1000 units): Coimbatore at monsoon dusk - Western Ghats, a textile mill with its
     chimney on the skyline, the Ukkadam lakefront, coconut palms and ONE lightning bolt (மின்னல்) reflected in the lake.
     The lower part is a flat navy band for the name (Fable brand advice 11 Nov: one scene, big wordmark, nothing from Coimbatore 360's badge)."""
@@ -127,6 +135,9 @@ def scene_svg(shape="circle", band=True, nested=False):
         shape, '<rect x="-3000" y="-3000" width="7000" height="7000"/>')
     bld = "".join(f'<rect x="{x}" y="{470-h}" width="{w}" height="{h}" fill="#241D55"/><rect x="{x}" y="{470-h}" width="{w}" height="{h}" fill="url(#win)"/>'
                   for x, w, h in ((404, 52, 96), (880, 56, 120), (944, 50, 80), (830, 44, 64)))
+    if not landmarks:      # district pages (owner 11 Nov: same logo, slightly changed): a city skyline instead of Adiyogi + the mill
+        bld += "".join(f'<rect x="{x}" y="{470-h}" width="{w}" height="{h}" fill="#241D55"/><rect x="{x}" y="{470-h}" width="{w}" height="{h}" fill="url(#win)"/>'
+                       for x, w, h in ((140, 60, 130), (206, 48, 90), (258, 70, 168), (334, 52, 112), (470, 64, 146), (540, 50, 104), (596, 72, 186), (674, 58, 124), (738, 48, 92)))
     posts = "".join(f'<rect x="{x}" y="468" width="4" height="16" fill="#D8CCE6"/>' for x in range(20, 1000, 36))
     shimmer = "".join(f'<rect x="{x}" y="{y}" width="{w}" height="3" rx="1.5" fill="#FFE3A6" opacity=".45"/>'
                       for x, y, w in ((180, 512, 120), (690, 506, 150), (300, 536, 90), (740, 540, 110), (120, 548, 70)))
@@ -162,8 +173,8 @@ def scene_svg(shape="circle", band=True, nested=False):
  <g filter="url(#glow)"><path d="M574 96 L458 290 L526 290 L446 468 L622 248 L552 248 L626 96 Z" fill="url(#boltg)" stroke="#FFF7C2" stroke-width="5" stroke-linejoin="round"/></g>
  <!-- skyline: city blocks, Adiyogi (Isha) and the textile mill with its chimney -->
  {bld}
- {_adiyogi(150, 474, 1.0)}
- {_mill(480, 470, 330)}
+ {_adiyogi(150, 474, 1.0) if landmarks else ""}
+ {_mill(480, 470, 330) if landmarks else ""}
  <!-- Ukkadam lakefront -->
  {'' if nested else '<rect x="0" y="482" width="1000" height="120" fill="url(#lake)"/>'}
  <g filter="url(#soft)" opacity=".85"><path d="M500 488 L470 520 L520 524 L486 590 L540 540 L500 536 L530 488 Z" fill="#FFD21F"/></g>
@@ -176,7 +187,7 @@ def scene_svg(shape="circle", band=True, nested=False):
 </svg>"""
 
 
-def cover_scene_html():
+def cover_scene_html(ta="கோவை", sub="COIMBATORE NEWS · FAST · EVERY DAY", landmarks=True):
     """Facebook cover 1640x624 in the illustrated style: the logo scene widened (mirrored hills, longer lake, extra palms and
     buildings at the sides), the name in a navy band. Adiyogi, bolt and mill sit in the middle 60% (mobile crops the sides)."""
     side_bld = "".join(f'<rect x="{x}" y="{470-h}" width="{w}" height="{h}" fill="#241D55"/><rect x="{x}" y="{470-h}" width="{w}" height="{h}" fill="url(#wwin)"/>'
@@ -198,7 +209,7 @@ def cover_scene_html():
  <g transform="translate(2000 0) scale(-1 1)"><path d="{ridge1}" fill="#3A2D7A"/><path d="{ridge2}" fill="#2B2266"/></g>
  {side_bld}
  <rect x="-500" y="482" width="2000" height="120" fill="url(#wlake)"/>
- {scene_svg("none", band=False, nested=True)}
+ {scene_svg("none", band=False, nested=True, landmarks=landmarks)}
  <rect x="-500" y="478" width="2000" height="7" fill="#D8CCE6"/>{posts}
  {_palm(-60, 640, 50, 0.95)}{_palm(1060, 640, 50, 0.95, flip=True)}{_palm(-330, 660, 24, 0.8)}{_palm(1330, 660, 24, 0.8, flip=True)}
  <path d="M-500 566 Q500 520 1500 566 L1500 800 L-500 800 Z" fill="#0B1B4D"/>
@@ -210,56 +221,131 @@ body{{width:1640px;height:624px;overflow:hidden;background:#0B1B4D;position:rela
 #t b{{color:{YELLOW}}}
 #s{{position:absolute;left:0;right:0;top:578px;text-align:center;white-space:nowrap;font-size:28px;color:#E8ECF5;letter-spacing:.08em}}
 </style></head><body><div style="position:absolute;inset:0">{svg}</div>
-<div id="t" class="ta">கோவை <b>மின்னல்</b></div>
-<div id="s" class="en">COIMBATORE NEWS · FAST · EVERY DAY</div>
+<div id="t" class="ta">{ta} <b>மின்னல்</b></div>
+<div id="s" class="en">{sub}</div>
+{FIT_JS}
 </body></html>"""
 
 
-def footer_wide_html(logo_uri):
+def footer_wide_html(logo_uri, en="KOVAI", ta_name="கோவை மின்னல்", handle="kovaiminnal", ta_font=""):
     """reel footer v5 (owner 11 Nov): edge to edge at the bottom of the reel, double height - shown 1080x200, drawn at 2x"""
     return f"""<html><head><style>{BASE}
 body{{width:2160px;height:400px;overflow:hidden;background:transparent}}
 #bar{{position:absolute;inset:0;background:linear-gradient(90deg,#06122E 0%,#0E2A66 100%);border-top:12px solid {YELLOW}}}
 #logo{{position:absolute;left:34px;top:26px;width:348px;height:348px;border-radius:50%;box-shadow:0 0 0 9px {RED},0 10px 30px rgba(0,0,0,.5)}}
-#name{{position:absolute;left:430px;top:52px;display:flex;align-items:center;gap:26px;font-size:124px;line-height:1;color:#fff}}
+#name{{position:absolute;left:430px;top:52px;width:1060px;display:flex;align-items:center;gap:26px;font-size:124px;line-height:1;color:#fff;white-space:nowrap}}
 #name b{{color:{YELLOW};font-weight:900}}
-#name svg{{width:70px;height:112px}}
-#tag{{position:absolute;left:430px;top:226px;background:{YELLOW};color:#06122E;border-radius:18px;padding:16px 40px 4px;font-size:70px;line-height:1.15}}
-#fol{{position:absolute;right:40px;top:96px;background:{RED};color:#fff;border-radius:36px;padding:26px 44px 16px;text-align:center;font-size:58px;line-height:1.25}}
+#name svg{{width:70px;height:112px;flex:none}}
+#tag{{position:absolute;left:430px;top:226px;white-space:nowrap;background:{YELLOW};color:#06122E;border-radius:18px;padding:16px 40px 4px;font-size:70px;line-height:1.15}}
+#fol{{position:absolute;right:40px;top:96px;white-space:nowrap;background:{RED};color:#fff;border-radius:36px;padding:26px 44px 16px;text-align:center;font-size:58px;line-height:1.25}}
 #fol b{{color:{YELLOW};display:block}}
+{(".ta{font-family:" + ta_font + ";font-weight:800}") if ta_font else ""}
 </style></head><body>
 <div id="bar"></div><img id="logo" src="{logo_uri}">
-<div id="name" class="en">KOVAI <b>MINNAL</b>{BOLT.format(id="W", style="")}</div>
-<div id="tag" class="ta">கோவை மின்னல்</div>
-<div id="fol" class="en">FOLLOW<b>@kovaiminnal</b></div>
+<div id="name" class="en"><span>{en.upper()} <b>MINNAL</b></span>{BOLT.format(id="W", style="")}</div>
+<div id="tag" class="ta">{ta_name}</div>
+<div id="fol" class="en">FOLLOW<b>@{handle}</b></div>
+{FIT_JS}
 </body></html>"""
 
 
-def scene_logo_html(size=1092, shape="circle", ribbon=False):
+def scene_logo_html(size=1092, shape="circle", ribbon=False, line1="கோவை", rib_text="COIMBATORE NEWS", landmarks=True):
     s = size / 1000
     rings = (f'<svg viewBox="0 0 1000 1000" style="position:absolute;inset:0;width:100%;height:100%">'
              f'<circle cx="500" cy="500" r="485" fill="none" stroke="{YELLOW}" stroke-width="26"/>'
              f'<circle cx="500" cy="500" r="471" fill="none" stroke="#0B1B4D" stroke-width="5"/></svg>') if shape == "circle" else ""
-    rib = (f'<div id="rib" class="en">COIMBATORE NEWS</div>') if ribbon else ""
+    rib = (f'<div id="rib" class="en">{rib_text}</div>') if ribbon else ""
     return f"""<html><head><style>{BASE}
 body{{width:{size}px;height:{size}px;position:relative;overflow:hidden;background:transparent}}
-#t1,#t2{{position:absolute;left:0;right:0;text-align:center;line-height:1;-webkit-text-stroke:{14*s:.0f}px #060E2B;paint-order:stroke fill}}
+#t1,#t2{{position:absolute;left:0;right:0;white-space:nowrap;text-align:center;line-height:1;-webkit-text-stroke:{14*s:.0f}px #060E2B;paint-order:stroke fill}}
 #t1{{top:{578*s:.0f}px;font-size:{128*s:.0f}px;color:#fff}}
 #t2{{top:{708*s:.0f}px;font-size:{152*s:.0f}px;color:{YELLOW}}}
 #rib{{position:absolute;left:50%;top:{884*s:.0f}px;transform:translateX(-50%);color:{YELLOW};white-space:nowrap;font-size:{34*s:.0f}px;letter-spacing:.12em}}
 </style></head><body>
-<div style="position:absolute;inset:0">{scene_svg(shape)}</div>{rings}
-<div id="t1" class="ta">கோவை</div><div id="t2" class="ta">மின்னல்</div>{rib}
+<div style="position:absolute;inset:0">{scene_svg(shape, landmarks=landmarks)}</div>{rings}
+<div id="t1" class="ta">{line1}</div><div id="t2" class="ta">மின்னல்</div>{rib}
+{FIT_JS}
 </body></html>"""
 
 
-def main():
+DIST_TA = "'Noto Sans Tamil','NST',sans-serif"      # district images: the system Noto Sans Tamil (every Tamil letter); Kovai keeps its fonts
+
+
+def simple_logo_html(size=1092, line1="கோவை", rib_text="", ribbon=False):
+    """district pages (owner 11 Nov): the Kovai Minnal logo WITHOUT the Coimbatore scene - same navy, yellow ring and lightning,
+    the district name + மின்னல், so every page is recognisably ours and fits any district."""
+    s = size / 1000
+    rib = f'<div id="rib" class="en">{rib_text}</div>' if ribbon and rib_text else ""
+    return f"""<html><head><style>{BASE}
+body{{width:{size}px;height:{size}px;position:relative;overflow:hidden;background:transparent}}
+.ta{{font-family:{DIST_TA};font-weight:800}}
+#c{{position:absolute;inset:0;border-radius:50%;overflow:hidden;background:radial-gradient(circle at 50% 30%,#1C3F8F 0%,#0B1B4D 52%,#060E2B 100%)}}
+#glow{{position:absolute;left:50%;top:{250*s:.0f}px;width:{620*s:.0f}px;height:{620*s:.0f}px;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(255,210,31,.42) 0%,rgba(255,159,28,.14) 42%,rgba(0,0,0,0) 70%)}}
+#bolt{{position:absolute;left:50%;top:{70*s:.0f}px;width:{260*s:.0f}px;transform:translateX(-50%) rotate(8deg);filter:drop-shadow(0 0 {26*s:.0f}px rgba(255,210,31,.75))}}
+#t1,#t2{{position:absolute;left:0;right:0;white-space:nowrap;text-align:center;line-height:1;-webkit-text-stroke:{14*s:.0f}px #060E2B;paint-order:stroke fill}}
+#t1{{top:{486*s:.0f}px;font-size:{150*s:.0f}px;color:#fff}}
+#t2{{top:{648*s:.0f}px;font-size:{168*s:.0f}px;color:{YELLOW}}}
+#rib{{position:absolute;left:50%;top:{866*s:.0f}px;transform:translateX(-50%);color:{YELLOW};white-space:nowrap;font-size:{34*s:.0f}px;letter-spacing:.12em}}
+</style></head><body><div id="c"><div id="glow"></div>{BOLT.format(id="S", style="").replace('<svg viewBox="0 0 100 160"', '<svg id="bolt" viewBox="0 0 100 160"', 1)}</div>
+<svg viewBox="0 0 1000 1000" style="position:absolute;inset:0;width:100%;height:100%"><circle cx="500" cy="500" r="485" fill="none" stroke="{YELLOW}" stroke-width="26"/>
+<circle cx="500" cy="500" r="471" fill="none" stroke="#0B1B4D" stroke-width="5"/></svg>
+<div id="t1" class="ta">{line1}</div><div id="t2" class="ta">மின்னல்</div>{rib}
+{FIT_JS}
+</body></html>"""
+
+
+def simple_cover_html(ta="கோவை", sub=""):
+    """district Facebook cover without the Coimbatore scene: navy, lightning, the page name"""
+    return f"""<html><head><style>{BASE}
+body{{width:1640px;height:624px;overflow:hidden;position:relative;background:radial-gradient(ellipse at 50% 35%,#1C3F8F 0%,#0B1B4D 50%,#060E2B 100%)}}
+.ta{{font-family:{DIST_TA};font-weight:800}}
+#bolt{{position:absolute;left:70px;top:110px;width:190px;transform:rotate(8deg);filter:drop-shadow(0 0 40px rgba(255,210,31,.7))}}
+#bolt2{{position:absolute;right:70px;top:110px;width:190px;transform:rotate(-8deg) scaleX(-1);filter:drop-shadow(0 0 40px rgba(255,210,31,.7))}}
+#t{{position:absolute;left:0;right:0;top:170px;text-align:center;white-space:nowrap;font-size:124px;line-height:1.1;color:#fff;-webkit-text-stroke:10px #060E2B;paint-order:stroke fill}}
+#t b{{color:{YELLOW}}}
+#s{{position:absolute;left:0;right:0;top:360px;text-align:center;white-space:nowrap;font-size:34px;color:#E8ECF5;letter-spacing:.08em}}
+#bar{{position:absolute;left:0;right:0;bottom:0;height:14px;background:{YELLOW}}}
+</style></head><body>
+{BOLT.format(id="C1", style="").replace('<svg viewBox="0 0 100 160"', '<svg id="bolt" viewBox="0 0 100 160"', 1)}
+{BOLT.format(id="C2", style="").replace('<svg viewBox="0 0 100 160"', '<svg id="bolt2" viewBox="0 0 100 160"', 1)}
+<div id="t" class="ta">{ta} <b>மின்னல்</b></div><div id="s" class="en">{sub}</div><div id="bar"></div>
+{FIT_JS}
+</body></html>"""
+
+
+def district_images(pg, key, d):
+    """owner 11 Nov: every district page uses the Kovai Minnal logo WITHOUT the Coimbatore scene (simple_logo_html - same colours,
+    ring and lightning, so people know it is ours), made automatically with only the name changed. Folder per district: districts/<key>/logo.png + footer.png (used by the reels, committed) and
+    districts/<key>/upload/profile_1080.png + fb_cover_1640x624.png (uploaded by hand, kept on this laptop only)."""
+    home = ROOT / "districts" / key
+    logo = home / "logo.png"
+    shot(pg, simple_logo_html(512, line1=d["ta"], rib_text=f"{d['en'].upper()} NEWS", ribbon=True), 512, 512, logo)      # shown at 128-250 px in the reels
+    shot(pg, footer_wide_html("data:image/png;base64," + base64.b64encode(logo.read_bytes()).decode(), en=d["en"], ta_name=d["name_ta"],
+                              handle=d["handle"], ta_font=DIST_TA), 2160, 400, home / "footer.png")
+    out = home / "upload"      # only for uploading by hand to Instagram / Facebook (git-ignored)
+    shot(pg, simple_logo_html(1080, line1=d["ta"]), 1080, 1080, out / "profile_1080.png")
+    shot(pg, simple_cover_html(ta=d["ta"], sub=f"{d['en'].upper()} POWER CUT ALERTS · FAST · EVERY DAY"), 1640, 624, out / "fb_cover_1640x624.png",
+         transparent=False)
+
+
+def main(argv=None):
     """Owner 11 Nov (approved): illustrated Coimbatore style everywhere - profile picture, reel corner logo, Facebook cover, and the
-    reel footer strip with that same round logo inside. The first flat design was removed at the owner's request."""
-    logo = ROOT / "kit" / "logo_coimbatore.png"
+    reel footer strip with that same round logo inside. The first flat design was removed at the owner's request.
+        python3 tools/make_brand.py                     Kovai Minnal
+        python3 tools/make_brand.py --districts [keys]  district power-cut pages (districts/districts.json), all when no key"""
+    import json
+    argv = sys.argv[1:] if argv is None else argv
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page()
+        if argv[:1] == ["--districts"]:
+            ds = json.loads((ROOT / "districts" / "districts.json").read_text(encoding="utf-8"))["districts"]
+            for key in (argv[1:] or list(ds)):
+                district_images(pg, key, ds[key])
+            b.close()
+            return
+        logo = ROOT / "kit" / "logo_coimbatore.png"
         shot(pg, scene_logo_html(1092, ribbon=True), 1092, 1092, logo)
         shot(pg, scene_logo_html(1080), 1080, 1080, ROOT / "brand" / "profile_1080.png")
         shot(pg, footer_html("data:image/png;base64," + base64.b64encode(logo.read_bytes()).decode()), 2172, 724, ROOT / "reel" / "assets" / "footer_coimbatore.png")
