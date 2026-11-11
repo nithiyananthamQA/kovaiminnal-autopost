@@ -199,6 +199,45 @@ STYLE_K = """
 """.replace("__BOLT__", _BOLT_URI)
 V4.STYLES["K"] = STYLE_K
 
+# ---- owner 11 Nov: "a 100% better template" - two NEW LAYOUTS (not only colours): D = News Desk, B = Broadcast.
+STYLE_D = STYLE_K + """
+body{background:radial-gradient(ellipse at 50% 30%,#13306E 0%,#071433 55%,#030919 100%)}
+#shade{display:none}
+#stage{left:34px;right:34px;top:206px;bottom:auto;width:auto;height:1010px;border-radius:42px;overflow:hidden;border:7px solid #FFD21F;
+  box-shadow:0 0 0 7px rgba(255,210,31,.16),0 0 60px rgba(255,210,31,.25),0 30px 80px rgba(0,0,0,.6)}
+#stage .pic{width:100%;height:100%}
+#stage::after{content:"";position:absolute;inset:0;z-index:3;background:linear-gradient(180deg,rgba(6,14,43,.35) 0%,rgba(6,14,43,0) 22%,rgba(6,14,43,0) 48%,rgba(6,14,43,.88) 100%)}
+#hdr{top:62px}
+#plogo{top:46px;width:124px;height:124px}
+#pin{top:236px;left:66px}
+#hook{top:auto;bottom:752px;left:66px;right:66px}
+#hook .h1{font-size:88px}
+#mini{top:1232px;left:34px;right:34px;background:#FFD21F;color:#0B1B4D;border:0;padding:16px 28px 8px;border-radius:20px;font-size:44px;text-shadow:none;
+  box-shadow:0 12px 30px rgba(0,0,0,.45)}
+.card{top:auto;bottom:760px;left:66px;width:880px}
+#cap{top:1290px;height:300px;left:52px;right:140px}
+.ph{-webkit-text-stroke:0;text-shadow:0 4px 18px rgba(0,0,0,.6)}
+#sum{top:206px;left:34px;right:34px}
+"""
+STYLE_B = STYLE_K + """
+#hdr{left:0;right:0;top:118px;padding:16px 180px 12px 40px;background:linear-gradient(90deg,#0B1B4D 0%,#13306E 70%,rgba(19,48,110,.0) 100%);
+  border-bottom:6px solid #FFD21F;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+#plogo{top:96px;right:28px;width:140px;height:140px}
+#pin{top:300px;left:40px;background:#E3151B;color:#fff}
+#pin .ic{color:#FFD21F}
+#hook{top:560px;left:40px;right:40px}
+#hook .h1{font-size:96px;text-shadow:0 6px 0 #E3151B,0 14px 34px rgba(0,0,0,.7)}
+#mini{left:-60px;right:-60px;top:1040px;transform:skewY(-5deg);background:#FFD21F;color:#0B1B4D;border:0;padding:30px 100px 22px;font-size:50px;
+  text-shadow:none;box-shadow:0 22px 50px rgba(0,0,0,.55)}
+.card{left:auto;right:40px;top:640px;width:780px}
+#cap{top:1236px;height:330px;left:40px;right:140px}
+.ph{text-align:center;-webkit-text-stroke:0;color:#0B1B4D;background:rgba(255,255,255,.97);border-radius:22px;padding:16px 28px 8px;
+  text-shadow:none;box-shadow:0 14px 34px rgba(0,0,0,.5);font-size:62px}
+.ph span.on{color:#0B1B4D;background:#FFD21F;box-shadow:0 6px 0 #E3151B}
+"""
+V4.STYLES["D"] = STYLE_D
+V4.STYLES["B2"] = STYLE_B
+
 ZAP_JS = """
 <script>
 (function(){
@@ -225,7 +264,7 @@ def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
     if not os.environ.get("REEL_STYLE") and not spec.get("style"):
         spec = dict(spec, style="K")      # our look by default
     html = _orig_build(spec, shots, sents, caps, hook_end, end_t, total, page)
-    if (os.environ.get("REEL_STYLE") or spec.get("style")) == "K":
+    if (os.environ.get("REEL_STYLE") or spec.get("style")) in ("K", "D", "B2"):
         html = html.replace('<div id="flash"></div>', '<div id="flash"></div><div id="zap"></div><div id="zapbolt"></div>', 1)
         html = html.replace("</body></html>", ZAP_JS + "</body></html>", 1)
     # owner 11 Nov: the header at the top says "கோவை மின்னல் செய்திகள்" (Kovai Minnal News), not only the page name
