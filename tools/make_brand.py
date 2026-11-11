@@ -215,6 +215,26 @@ body{{width:1640px;height:624px;overflow:hidden;background:#0B1B4D;position:rela
 </body></html>"""
 
 
+def footer_wide_html(logo_uri):
+    """reel footer v5 (owner 11 Nov): edge to edge at the bottom of the reel, double height - shown 1080x200, drawn at 2x"""
+    return f"""<html><head><style>{BASE}
+body{{width:2160px;height:400px;overflow:hidden;background:transparent}}
+#bar{{position:absolute;inset:0;background:linear-gradient(90deg,#06122E 0%,#0E2A66 100%);border-top:12px solid {YELLOW}}}
+#logo{{position:absolute;left:34px;top:26px;width:348px;height:348px;border-radius:50%;box-shadow:0 0 0 9px {RED},0 10px 30px rgba(0,0,0,.5)}}
+#name{{position:absolute;left:430px;top:52px;display:flex;align-items:center;gap:26px;font-size:124px;line-height:1;color:#fff}}
+#name b{{color:{YELLOW};font-weight:900}}
+#name svg{{width:70px;height:112px}}
+#tag{{position:absolute;left:430px;top:226px;background:{YELLOW};color:#06122E;border-radius:18px;padding:16px 40px 4px;font-size:70px;line-height:1.15}}
+#fol{{position:absolute;right:40px;top:96px;background:{RED};color:#fff;border-radius:36px;padding:26px 44px 16px;text-align:center;font-size:58px;line-height:1.25}}
+#fol b{{color:{YELLOW};display:block}}
+</style></head><body>
+<div id="bar"></div><img id="logo" src="{logo_uri}">
+<div id="name" class="en">KOVAI <b>MINNAL</b>{BOLT.format(id="W", style="")}</div>
+<div id="tag" class="ta">நம்ம கோவை செய்திகள்</div>
+<div id="fol" class="en">FOLLOW<b>@kovaiminnal</b></div>
+</body></html>"""
+
+
 def scene_logo_html(size=1092, shape="circle", ribbon=False):
     s = size / 1000
     rings = (f'<svg viewBox="0 0 1000 1000" style="position:absolute;inset:0;width:100%;height:100%">'
@@ -244,6 +264,8 @@ def main():
         shot(pg, scene_logo_html(1080), 1080, 1080, ROOT / "brand" / "profile_1080.png")
         shot(pg, footer_html("data:image/png;base64," + base64.b64encode(logo.read_bytes()).decode()), 2172, 724, ROOT / "reel" / "assets" / "footer_coimbatore.png")
         shot(pg, cover_scene_html(), 1640, 624, ROOT / "brand" / "fb_cover_1640x624.png", transparent=False)
+        shot(pg, footer_wide_html("data:image/png;base64," + base64.b64encode(logo.read_bytes()).decode()), 2160, 400,
+             ROOT / "reel" / "assets" / "footer_wide_coimbatore.png")
         b.close()
 
 

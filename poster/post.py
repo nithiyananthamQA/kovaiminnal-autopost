@@ -771,7 +771,7 @@ def reel_spec(row, spec, images):
         st = _stems(sent)
         for j, ln in enumerate(pool):
             sc = len(st & _stems(ln))
-            if j not in used and sc > bs and len(ln) <= (60 if CONFIG.get("reel_design") == "v4" else 48) and not re.search(r"(க்|ச்|த்|ப்)$", ln.strip(" .,;:")):
+            if j not in used and sc > bs and len(ln) <= (60 if CONFIG.get("reel_design") in ("v4", "v5") else 48) and not re.search(r"(க்|ச்|த்|ப்)$", ln.strip(" .,;:")):
                 best, bs, bj = ln, sc, j
         if best and i >= 1:
             used.add(bj)
@@ -791,7 +791,7 @@ def render_reel(row, spec, images, work, voice_file=None):
     if voice_file:
         env["VOICE_FILE"] = str(voice_file)
     mp4 = work / f"{row['story_id']}_reel.mp4"
-    design = "reel4.py" if CONFIG.get("reel_design") == "v4" else "reel3.py"      # v4: full-detail design (safe zone, 5W cards, summary, send CTA)
+    design = {"v4": "reel4.py", "v5": "reel5.py"}.get(CONFIG.get("reel_design"), "reel3.py")      # v4: full-detail design (safe zone, 5W cards, summary, send CTA); v5 (Kovai Minnal): v4 + full-width footer + our animated scene when there is no picture
     subprocess.run([sys.executable, str(REEL / design), str(work / "reel.json"), str(mp4), PAGE], check=True, env=env)
     return mp4
 
@@ -1510,8 +1510,8 @@ def run_story_page(row, page):
                 checks.append(f"{len(jpgs)} slides rendered, no clipped text")
             if need_reel:
                 try:
-                    if CONFIG.get("reel_design") == "v4":
-                        raise RuntimeError("the v4 reel design always uses the voice model")
+                    if CONFIG.get("reel_design") in ("v4", "v5"):
+                        raise RuntimeError("the v4 / v5 reel design always uses the voice model")
                     v = bridge_get("voice", story=sid)
                     if v.get("found"):
                         voice_file = work / f"voice{v.get('ext', '.m4a')}"
