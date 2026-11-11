@@ -166,7 +166,8 @@ _orig_build = V4.build_html
 def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
     html = _orig_build(spec, shots, sents, caps, hook_end, end_t, total, page)
     # owner 11 Nov: the header at the top says "கோவை மின்னல் செய்திகள்" (Kovai Minnal News), not only the page name
-    html = html.replace(f'<div class="nm">{page['name']}</div>', f'<div class="nm">{page['name']} {HEADER_SUFFIX}</div>', 1)
+    name = page["name"]
+    html = html.replace(f'<div class="nm">{name}</div>', f'<div class="nm">{name} {HEADER_SUFFIX}</div>', 1)
     if FOOTER_WIDE.exists():
         old_foot = f"file://{(ASSETS / page.get('footer', 'footer_coimbatore.png')).as_posix()}"
         html = html.replace(f'<img id="foot" src="{old_foot}">', f'<img id="foot" src="file://{FOOTER_WIDE.as_posix()}">', 1)
