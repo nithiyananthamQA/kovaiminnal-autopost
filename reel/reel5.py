@@ -22,7 +22,7 @@ import reel4 as V4        # noqa: E402
 
 ASSETS = Path(__file__).resolve().parent / "assets"
 FOOTER_WIDE = ASSETS / "footer_wide_coimbatore.png"
-HEADER_SUFFIX = "செய்திகள்"
+HEADER_SUFFIX = ""      # owner 11 Nov (later): no "செய்திகள்" in the header - only the page name
 
 FOOT_CSS = """
 #foot{left:0!important;right:0;bottom:0!important;width:1080px!important;height:200px!important;opacity:1!important;object-fit:fill}
@@ -230,7 +230,10 @@ def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
         html = html.replace("</body></html>", ZAP_JS + "</body></html>", 1)
     # owner 11 Nov: the header at the top says "கோவை மின்னல் செய்திகள்" (Kovai Minnal News), not only the page name
     name = page["name"]
-    html = html.replace(f'<div class="nm">{name}</div>', f'<div class="nm">{name} {HEADER_SUFFIX}</div>', 1)
+    if HEADER_SUFFIX:
+        html = html.replace(f'<div class="nm">{name}</div>', f'<div class="nm">{name} {HEADER_SUFFIX}</div>', 1)
+    # owner 11 Nov: the end card shows the news SOURCE - "Source:", not "ஆதாரம்:" (that word reads as "evidence")
+    html = html.replace('<div class="e5">ஆதாரம்: ', '<div class="e5">📰 Source: ', 1)
     if FOOTER_WIDE.exists():
         old_foot = f"file://{(ASSETS / page.get('footer', 'footer_coimbatore.png')).as_posix()}"
         html = html.replace(f'<img id="foot" src="{old_foot}">', f'<img id="foot" src="file://{FOOTER_WIDE.as_posix()}">', 1)
