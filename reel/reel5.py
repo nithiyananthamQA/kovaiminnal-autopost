@@ -262,7 +262,7 @@ _orig_build = V4.build_html
 
 def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
     if not os.environ.get("REEL_STYLE") and not spec.get("style"):
-        spec = dict(spec, style="K")      # our look by default
+        spec = dict(spec, style="B2")      # owner 11 Nov: B2 (Broadcast) is our look
     html = _orig_build(spec, shots, sents, caps, hook_end, end_t, total, page)
     if (os.environ.get("REEL_STYLE") or spec.get("style")) in ("K", "D", "B2"):
         html = html.replace('<div id="flash"></div>', '<div id="flash"></div><div id="zap"></div><div id="zapbolt"></div>', 1)
