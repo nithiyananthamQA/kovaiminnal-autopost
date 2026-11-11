@@ -35,6 +35,14 @@ PICK_ONLY=1 COLLECT_MODE=both WRITE_STORIES=1 AUTO_IMAGES=1 WRITE_WORKERS=1 BUDG
 $PY -u research_free/pick.py mark || true
 
 echo "== 3. build the reel (test mode: nothing is posted)"
-DRY_RUN=1 $PY -u poster/post.py check
-DRY_RUN=1 $PY -u poster/post.py run
-echo "== done: the reel file is under out/ (and its Cloudinary link is in the log above)"
+# the story just written = the newest row of the Sheet (post.py alone would take the OLDEST waiting one, and test runs never mark posted)
+SID=$($PY - <<'PY'
+import os, requests
+r = requests.get(os.environ["BRIDGE_URL"], params={"action": "recent", "key": os.environ["BRIDGE_KEY"]}, timeout=120).json()
+rows = [x for x in r.get("rows", []) if x.get("story_id")]
+print(rows[-1]["story_id"] if rows else "")
+PY
+)
+echo "story: $SID"
+DRY_RUN=1 $PY -u poster/post.py run $SID
+echo "== done: out/$SID/${SID}_reel.mp4 (its Cloudinary link is in the log above)"
