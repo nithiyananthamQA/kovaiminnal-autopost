@@ -180,7 +180,22 @@ def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
     return html
 
 
+
+_orig_pick_voice = V4.pick_voice
+
+
+def pick_voice(spec):
+    """owner 11 Nov: Kovai Minnal's news voice is chosen in poster/config.json reel_voice.voice - a FREE edge-tts Tamil voice
+    (ta-..-...Neural, e.g. ta-SG-AnbuNeural). Never Google / Chirp; anything else keeps v4's Valluvar."""
+    vs, alt = _orig_pick_voice(spec)
+    v = (V4.voice_setting() or {}).get("voice", "")
+    if isinstance(v, str) and v.startswith("ta-") and v.endswith("Neural") and "Chirp" not in v:
+        vs["voice"] = v
+    return vs, alt
+
+
 V4.build_html = build_html
+V4.pick_voice = pick_voice
 
 if __name__ == "__main__":
     V4.main(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "coimbatore")
