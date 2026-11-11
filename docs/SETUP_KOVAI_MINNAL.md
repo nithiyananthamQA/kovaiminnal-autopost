@@ -1,4 +1,4 @@
-# Kovai Minnal (கோவை மின்னல்) – setup from zero to live
+can i# Kovai Minnal (கோவை மின்னல்) – setup from zero to live
 
 This is the same system that runs **Coimbatore 360** (github.com/news360-tn/coimbatore360-autopost), copied as it runs today
 (11 Nov 2026) with our name, our images and our own accounts. Nothing in the flow changed: same workflows, same timings, same checks.
@@ -117,18 +117,23 @@ Kovai Minnal is an independent local news page for Coimbatore: power cuts, accid
 1. cloudinary.com → sign up free with the new Gmail. Dashboard → copy the **Cloud name**.
 2. Settings (gear) → **Upload → Upload presets → Add upload preset** → Name `kovaiminnal`, **Signing mode: Unsigned**, Folder `kovaiminnal` → Save.
 
-## 6. Free AI keys (you, logged in as the NEW Gmail – never the Namenector ones)
+## 6. Keys – paste them into ONE file: `/home/nathi/coimbatore insta/.env` (never pushed; only you see it)
 
-| Secret | Where |
-|---|---|
-| `GEMINI_API_KEY` | aistudio.google.com/apikey → Create API key (new project). **Do not add billing** to that Google project (stays free) |
-| `GROQ_API_KEY` | console.groq.com/keys → Create API key |
-| `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` | dash.cloudflare.com (new free account) → Workers AI → **Use REST API** → Create a Workers AI API token; the Account ID is on the same page |
-| `NVIDIA_API_KEY` | build.nvidia.com → log in → any model → Get API key |
-| optional `SARVAM_API_KEY`, `POLLINATIONS_API_KEY`, `TOGETHER_API_KEY` | only if you want more free fallbacks (his live order uses Gemini then Groq for writing; pictures Cloudflare → Pollinations → NVIDIA) |
-| optional `FAL_KEY` | **paid** picture fallback, only when every free one fails. Leave empty to stay at ₹0 |
+Already filled: `GEMINI_API_KEY` (from Namenector, free – its Google project must have **no billing**), `NVIDIA_API_KEY`,
+`CLOUDFLARE_ACCOUNT_ID` (FashionFreelancing Cloudflare account), `CLOUDINARY_PRESET=kovaiminnal`.
 
-Keep them in a note on your laptop until step 9.
+You paste (open the file in any editor, put the value after `=`):
+
+| Line in .env | Where you get it | Cost |
+|---|---|---|
+| `GROQ_API_KEY=` | your existing Groq key | free |
+| `CLOUDFLARE_API_TOKEN=` | dash.cloudflare.com (FashionFreelancing login) → My Profile → API Tokens → Create Token → template **"Workers AI"** → Create → copy | free (~230 pictures/day) |
+| `CLOUDINARY_CLOUD=` | step 5 | free |
+| `BRIDGE_URL=` and `BRIDGE_KEY=` | step 8 | free |
+| `ANTHROPIC_API_KEY=` (optional) | console.anthropic.com → API keys (prepaid credits) – backup writer, ~₹20/day | paid, optional |
+| `FAL_KEY=` (optional) | fal.ai → API keys (prepaid) – pictures after Cloudflare's free daily allowance | paid, optional |
+
+Then step 10.3 copies everything from `.env` to GitHub in one command.
 
 ## 7. Send me (Claude) these 5 values – not secret, but keep them out of public places
 
@@ -171,8 +176,7 @@ After every later change to `Code.gs`: paste the new `Code.local.gs`, run `setup
    ```
    Why: his `PAUSED` variable is read by no code, and the `LIVE` file only stops the 5-minute scheduled posting – pick, powercut and
    rasipalan post on their own schedule. A disabled workflow never runs.
-3. **Secrets:** `bash tools/set_secrets.sh` → type each value (hidden): `BRIDGE_URL`, `BRIDGE_KEY`, `GEMINI_API_KEY`, `GROQ_API_KEY`,
-   `NVIDIA_API_KEY`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `CLOUDINARY_CLOUD`, `CLOUDINARY_PRESET` (+ optional ones, Enter skips).
+3. **Secrets:** `bash tools/set_secrets.sh` – copies every key from `.env` to the repository's secrets (asks only for an empty required one).
 4. **Facebook secrets:** `bash tools/meta_fb_token.sh` (step 9, Facebook part).
 5. Repository → Settings → Actions → General → Workflow permissions: **Read and write** (the bot commits its state).
 
