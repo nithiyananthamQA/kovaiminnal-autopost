@@ -211,7 +211,7 @@ def apply(key):
     _set(V, "FOLLOW", d["follow_caption"])
     _set(V, "DISTRICT_WORDS", tuple(V.DISTRICT_WORDS) + (d["ta"],))
     _set(T, "LAST", d["follow_spoken"])
-    _set(T, "KEEP", tuple(T.KEEP) + (d["ta"], d["name_ta"]))
+    _set(T, "KEEP", tuple(T.KEEP) + (d["ta"], d["name_ta"], "பவர்கட்", "சேனல்", "ஃபாலோ"))
 
     # collector: own Sheet, own state, no Kovai workflow started
     _set(C, "BRIDGE_URL", os.environ["BRIDGE_URL"])

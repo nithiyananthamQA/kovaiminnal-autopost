@@ -330,6 +330,6 @@ V4.pick_voice = pick_voice
 
 if __name__ == "__main__":
     _key = sys.argv[3] if len(sys.argv) > 3 else "coimbatore"
-    if R.PAGES.get(_key, {}).get("district"):      # the spoken English follow line names the district page
-        V4.V3.OUTRO_EN = f"Follow {R.PAGES[_key]['name_en']} for power cut alerts."
+    if R.PAGES.get(_key, {}).get("district"):      # owner 12 Nov: the closing follow line in the SAME news voice (Tamil), no English voice
+        V4.english_outro = lambda work, idx, voice: print("closing follow line in the news voice (district page)")
     V4.main(sys.argv[1], sys.argv[2], _key)
