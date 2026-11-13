@@ -97,19 +97,17 @@ def district_spec(spec, page):
 
 
 def news_spec(spec, page):
-    """owner 13 Nov: a district page's NON-power-cut news ends with the NEWS follow line (never the power-cut one) and a share
-    line by type: news of one area -> send to the people of that area; city-wide news -> send to friends and family"""
+    """owner 13 Nov: a district page's NON-power-cut news ends with ONE common closing line - send to friends and family +
+    the NEWS follow line (never the power-cut one). Power-cut reels keep their own closing (district_spec)."""
     spec = json.loads(json.dumps(spec, ensure_ascii=False))
     follow = SHARE.get("follow_news_spoken", "").format(city=page.get("city", ""), page=page.get("page_ta", page.get("name", "")))
     sents = list(spec.get("sentences") or [])
     while sents and ("ஃபாலோ" in sents[-1].get("say", "") or "Follow" in sents[-1].get("say", "")):
         sents.pop()
     spec["sentences"] = sents
-    place = str(spec.get("location") or "").strip()
-    area = bool(place) and _norm(place) not in (_norm(page.get("city")), _norm(page.get("city", "") + " மாவட்டம்"))
-    share = (SHARE.get("share_news_area", "").format(place=place) if area else SHARE.get("share_news_general", ""))
+    share = SHARE.get("share_news_general", "")      # owner 13 Nov: every non-power-cut news has the SAME closing line
     spec["outro"] = dict(spec.get("outro") or {}, say=(share + " " + follow).strip())
-    spec["share_card"] = (SHARE.get("share_news_area_card", "").format(place=place) if area else SHARE.get("share_news_general_card", ""))
+    spec["share_card"] = SHARE.get("share_news_general_card", "")
     spec["district_done"] = True
     return spec
 
