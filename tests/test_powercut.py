@@ -98,6 +98,8 @@ class PassedCutNeverPosted(unittest.TestCase):
         self.assertIn("already over", F.power_cut_over(ta, "", "2026-11-11", now=now))
         self.assertEqual(F.power_cut_over(ta, "", "2026-11-11", now=now.replace(day=13)), "")
         self.assertEqual(F.power_cut_over("சேலத்தில் நாளை (நவ. 15) மின் தடை: காலை 9 - மாலை 5 மணி வரை", "", "2026-11-14", now=now), "")
+        # no date in the notice: the day is taken from the publish date - never blocked as "over" for that reason
+        self.assertNotIn("already over", F.power_cut_over("சேலத்தில் நாளை மின் தடை: காலை 9 - மாலை 5 மணி வரை", "", "2026-11-13", now=now))
 
 
 if __name__ == "__main__":

@@ -118,7 +118,7 @@ def power_cut_over(headline_ta, headline_en, published, now=None):
     today, pub = now.date(), pub_date(published)
     ds = [d for d in dates_in(text, today.year) if abs((d - today).days) < 300]
     day = max(ds) if ds else (pub + datetime.timedelta(days=1) if pub and TOMORROW.search(text) else pub)
-    if day and day < today:      # owner 13 Nov: a cut whose day has passed is never posted (a manual / owner row skips the age check)
+    if ds and day < today:      # owner 13 Nov: a cut whose day (written in the notice) has passed is never posted (a manual row skips the age check)
         return f"power cut was on {day:%d %b} - already over"
     if day != today:
         return ""
