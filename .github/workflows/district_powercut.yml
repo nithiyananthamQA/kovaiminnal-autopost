@@ -157,6 +157,15 @@ jobs:
             python -u districts/main.py write "$KEY" && break
             echo "writer exit $? (try $TRY)"; sleep 30
           done
+      - name: Write local news (owner 13 Nov - pages in district_powercut.news_live)
+        if: matrix.news != ''
+        env:
+          DISTRICT_NEWS_URLS: ${{ matrix.news }}
+        run: |
+          for TRY in 1 2; do
+            python -u districts/main.py writenews "$KEY" && break
+            echo "writer exit $? (try $TRY)"; sleep 30
+          done
       - name: Make the reel and post on the district's page
         run: python -u districts/main.py post "$KEY"
       - name: Check every power cut is on Instagram (else post again; after 30 minutes fail loudly)

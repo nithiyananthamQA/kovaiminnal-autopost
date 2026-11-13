@@ -76,11 +76,14 @@ def cmd_find(keys):
                 continue
             f = PL.OUT_ROOT / k / "powercut_urls.txt"
             urls = [u for u in (f.read_text(encoding="utf-8").split() if f.exists() else []) if u.startswith("http")]
-            if urls:
-                found.append({"key": k, "secret": k.upper(), "urls": " ".join(urls)})
+            g = PL.OUT_ROOT / k / "news_urls.txt"
+            news = [u for u in (g.read_text(encoding="utf-8").split() if g.exists() else []) if u.startswith("http")]
+            if urls or news:
+                found.append({"key": k, "secret": k.upper(), "urls": " ".join(urls), "news": " ".join(news)})
     PL.OUT_ROOT.mkdir(parents=True, exist_ok=True)
     (PL.OUT_ROOT / "found.json").write_text(json.dumps(found, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"new power cuts: {sum(len(x['urls'].split()) for x in found)} in {len(found)} district(s)" + (f" | finder failed: {', '.join(bad)}" if bad else ""))
+    print(f"new power cuts: {sum(len(x['urls'].split()) for x in found)} | new news: {sum(len(x['news'].split()) for x in found)} | "
+          f"{len(found)} district(s)" + (f" | finder failed: {', '.join(bad)}" if bad else ""))
     out = os.environ.get("GITHUB_OUTPUT")
     if out:
         with open(out, "a") as fh:
@@ -102,7 +105,13 @@ def _find_one(key):
     n = PL.seed_first_run(d)
     if n:
         PL.log(f"first run for {key}: {n} old links remembered unopened")
-    return PC.cmd_find()
+    rc = PC.cmd_find()
+    if PL.news_on(key) or (DRY and os.environ.get("NEWS_DRY") == "1"):      # owner 13 Nov: the page's other local news too
+        try:
+            PL.find_news(d, dry=DRY, log=PL.log)
+        except Exception as e:
+            PL.log("news finder failed (power cuts unaffected):", str(e)[:200])
+    return rc
 
 
 def _urls(d):
@@ -126,6 +135,29 @@ def cmd_write(key):
     os.environ["MANUAL_URL"], os.environ["MAX_STORIES"] = " ".join(urls), str(len(urls))
     PL.use_bridge()
     PL.apply(key)
+    PL.make_dirs(d)
+    import collect as C
+    sys.argv = ["collect.py"]
+    return C.main() or 0
+
+
+def cmd_writenews(key):
+    """owner 13 Nov (Chennai): write the page's new local news found by find_news (news preface, news follow lines)"""
+    d = PL.page(key)
+    u = os.environ.get("DISTRICT_NEWS_URLS", "").split()
+    if not u:
+        f = d["out"] / "news_urls.txt"
+        u = f.read_text(encoding="utf-8").split() if f.exists() else []
+    urls = [x for x in u if x.startswith("http")]
+    if not urls:
+        print(f"{key}: no new news to write")
+        return 0
+    for k, v in {"PICK_ONLY": "1", "COLLECT_MODE": "both", "WRITE_STORIES": "1", "AUTO_IMAGES": "1", "WRITE_WORKERS": "1", "BUDGET_MIN": "40",
+                 "FRESH_DAYS": "1", "DAILY_CAP": "1000", "CITY_ONLY": "0"}.items():
+        os.environ.setdefault(k, v)
+    os.environ["MANUAL_URL"], os.environ["MAX_STORIES"] = " ".join(urls), str(len(urls))
+    PL.use_bridge()
+    PL.apply(key, mode="news")
     PL.make_dirs(d)
     import collect as C
     sys.argv = ["collect.py"]
@@ -165,8 +197,11 @@ if __name__ == "__main__":
         sys.exit(cmd_list())
     if cmd == "find":
         sys.exit(cmd_find(a[1:]) if switched_on() else 0)
-    if cmd in ("_find", "write", "post", "verify") and len(a) == 2:
+    if cmd in ("_find", "write", "writenews", "post", "verify") and len(a) == 2:
         if not switched_on(a[1]):
             sys.exit(0)
-        sys.exit({"_find": _find_one, "write": cmd_write, "post": cmd_post, "verify": cmd_verify}[cmd](a[1]))
+        if cmd == "writenews" and not PL.news_on(a[1]):
+            print(f"{a[1]}: local news is off (district_powercut.news_live) - nothing done")
+            sys.exit(0)
+        sys.exit({"_find": _find_one, "write": cmd_write, "writenews": cmd_writenews, "post": cmd_post, "verify": cmd_verify}[cmd](a[1]))
     sys.exit(__doc__)

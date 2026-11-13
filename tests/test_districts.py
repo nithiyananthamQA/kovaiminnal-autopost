@@ -240,5 +240,50 @@ print("posting blocked:", P.missing_setup())""")
         self.assertEqual(out.strip(), "https://graph.instagram.com '' ('1', 'kovaiminnal') ['me']")
 
 
+class LocalNews(unittest.TestCase):
+    """owner 13 Nov: Chennai posts its other local news too - highest points first, capped, no flood on the first run, never the
+    power-cut follow line; off unless the page is in news_live"""
+    FAKE = """
+import datetime, tempfile, pathlib
+d = PL.page("chennai"); d["state"] = pathlib.Path(tempfile.mkdtemp()); d["out"] = pathlib.Path(tempfile.mkdtemp())
+now = datetime.datetime.now(PL.IST)
+iso = lambda h: (now - datetime.timedelta(hours=h)).strftime("%Y-%m-%dT%H:%M:%S+05:30")
+L = [("https://x/chennai/student-hit/1", "சென்னையில் கார் மோதி மாணவி பலத்த காயம்", 1),
+     ("https://x/chennai/metro/2", "திருமங்கலத்தில் மெட்ரோ ரயில் பணிகள்", 2),
+     ("https://x/chennai/egg/3", "நாமக்கல் முட்டை விலை நிலவரம்", 1),
+     ("https://x/chennai/old/4", "சென்னையில் பழைய செய்தி விபத்து", 9),
+     ("https://x/chennai/cut/5", "சென்னையில் நாளை மின் தடை", 1)]
+PL.dinamalar_list = lambda d_: [{"url": u, "title": t} for u, t, h in L]
+PL.dinamalar_meta = lambda d_: {u.rsplit("/", 1)[-1]: {"published": iso(h), "snippet": ""} for u, t, h in L}
+PL.settings = lambda: {"enabled": True, "news_live": ["chennai"], "news_per_run": 1, "news_per_day": 2, "news_max_age_hours": 6}
+"""
+
+    def test_first_run_no_flood_then_best_first_and_capped(self):
+        out = run(HEAD + "PL.use_bridge(); PL.apply('chennai')\n" + self.FAKE + """
+print("first:", PL.find_news(d, log=lambda *a: None))
+L.append(("https://x/chennai/new-a/6", "சென்னையில் பேருந்து விபத்து 5 பேர் காயம்", 1))
+L.append(("https://x/chennai/new-b/7", "சென்னையில் புதிய பூங்கா திறப்பு", 1))
+L.append(("https://x/chennai/new-c/8", "சென்னையில் லாரி மோதி இருவர் பலி", 1))
+r1 = PL.find_news(d, log=lambda *a: None); r2 = PL.find_news(d, log=lambda *a: None); r3 = PL.find_news(d, log=lambda *a: None)
+print("runs:", len(r1), len(r2), len(r3), "| same twice:", bool(set(r1) & set(r2)))""")
+        self.assertIn("first: []", out)                   # the first run only remembers what is on the page
+        self.assertIn("runs: 1 1 0 | same twice: False", out)      # one per check, at most news_per_day (2) a day, never twice
+
+    def test_news_mode_uses_news_follow_line(self):
+        out = run(HEAD + """
+PL.use_bridge(); d = PL.apply("chennai", mode="news")
+import validate as V, run as RN
+print("power" if "பவர்கட்" in V.LAST else "news", "|", "செய்திகளை" in V.LAST, "|", "LOCAL NEWS PAGE" in RN.SYSTEM, "|",
+      any((e.get("output") or {}).get("category") != "மின் தடை" for e in RN.EX))""")
+        self.assertEqual(out.strip(), "news | True | True | True")      # not only the power-cut writer example
+
+    def test_writenews_off_unless_news_live(self):
+        cfg = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["district_powercut"]
+        r = subprocess.run([PY, "districts/main.py", "writenews", "chennai"], cwd=ROOT, env=DENV, capture_output=True, text=True, timeout=60)
+        self.assertEqual(r.returncode, 0, r.stderr)
+        if "chennai" not in (cfg.get("news_live") or []):
+            self.assertIn("local news is off", r.stdout)
+
+
 if __name__ == "__main__":
     unittest.main()

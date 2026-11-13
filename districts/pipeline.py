@@ -114,6 +114,111 @@ def preface(d):
             f"\"{d['name_en']}\". The LAST sentence of reel_script is exactly: {d['follow_spoken']}\n\n")
 
 
+def news_texts(d):
+    """the NEWS follow lines of a district page (owner 13 Nov: never the power-cut line on other news)"""
+    try:
+        top = json.loads((HERE / "districts.json").read_text(encoding="utf-8"))
+    except Exception:
+        top = {}
+    sp = top.get("follow_news_spoken") or "{city} செய்திகளை உடனுக்குடன் தெரிந்துகொள்ள {page} பக்கத்தை ஃபாலோ செய்யுங்கள்."
+    cp = top.get("follow_news_caption") or "{city} செய்திகளுக்கு {page} பக்கத்தை Follow செய்யுங்கள் 📌"
+    return {"spoken": sp.format(city=d["ta"], page=d["name_ta"]), "caption": cp.format(city=d["ta"], page=d["name_ta"])}
+
+
+def news_preface(d):
+    return (f'LOCAL NEWS PAGE (read this first): "{d["name_ta"]}" ({d["name_en"]}) is the local news page for {d["en"]} ({d["ta"]}). '
+            f"Write this {d['en']} news exactly as the article says - nothing invented, no opinion, names and numbers only as published. "
+            f"post_to exactly \"{d['name_en']}\". The reel_script is short (30-45 seconds). "
+            f"The LAST sentence of reel_script is exactly: {d['follow_spoken']}\n\n")
+
+
+def news_on(key):
+    s = settings()
+    return s.get("enabled") is True and key in (s.get("news_live") or [])
+
+
+def dinamalar_meta(d):
+    """newsid -> publish time + short description, from the district page's own data"""
+    import sources as S
+    h = S._get(f"https://www.dinamalar.com/news/tamil-nadu-district-news-{d['dinamalar']}")
+    out = {}
+    for m in re.finditer(r'"newsid":(\d+),"newstitle":"(?:[^"\\]|\\.)*","newsdescription":"((?:[^"\\]|\\.)*)".{0,200}?"newsdate":"([0-9: -]{16,19})"', h):
+        try:
+            desc = json.loads('"' + m.group(2) + '"')
+        except Exception:
+            desc = ""
+        out[m.group(1)] = {"published": m.group(3).replace(" ", "T") + "+05:30", "snippet": desc}
+    return out
+
+
+def find_news(d, dry=False, log=print):
+    """owner 13 Nov (Chennai): every new local news of the page, highest points first (the reference's score: reader interest,
+    outlets, our insights, freshness), at most news_per_run per check and news_per_day a day. The first run only remembers what
+    is already on the page (no flood). Power cuts, obituaries, ceremonies and other districts' news are left out."""
+    import collect, pick
+    import freshness as F
+    import allnews
+    s = settings()
+    per_run, per_day = int(s.get("news_per_run", 1)), int(s.get("news_per_day", 10))
+    max_age = float(s.get("news_max_age_hours", 6))
+    path = d["state"] / "news_state.json"
+    first = not path.exists()
+    try:
+        st = json.loads(path.read_text(encoding="utf-8")) if not first else {}
+    except Exception:
+        st = {}
+    seen, days = st.setdefault("seen", {}), st.setdefault("days", {})
+    now = datetime.datetime.now(IST)
+    today = now.date().isoformat()
+    meta = dinamalar_meta(d)
+    cands, skipped = [], {}
+    for x in dinamalar_list(d):
+        u, t = x["url"], x.get("title") or ""
+        if u in seen:
+            continue
+        if first:
+            seen[u] = today
+            continue
+        m = meta.get(u.rsplit("/", 1)[-1], {})
+        why = ("power cut (own finder)" if F.is_power_cut(t) else "") or pick.auto_ok({"title": t, "url": u}) \
+            or ("another district" if allnews.other_district(t) else "") or ("no headline" if not t else "")
+        try:
+            age = (now - datetime.datetime.fromisoformat(m["published"])).total_seconds() / 3600 if m.get("published") else None
+        except Exception:
+            age = None
+        if not why and (age is None or age > max_age):
+            why = "older than %g h" % max_age if age is not None else "no publish time"
+        if why:
+            seen[u] = today
+            skipped[why[:30]] = skipped.get(why[:30], 0) + 1
+            continue
+        n = {"title": t, "snippet": m.get("snippet", ""), "mentions": 1, "published": m.get("published", "")}
+        cands.append((collect.score(n), t, u))
+    cands.sort(key=lambda c: -c[0])
+    room = max(0, min(per_run, per_day - int(days.get(today, 0))))
+    take = cands[:room]
+    for _, _, u in take:
+        seen[u] = today
+    days[today] = int(days.get(today, 0)) + len(take)
+    cut = (now - datetime.timedelta(days=7)).date().isoformat()
+    st["seen"] = {k: v for k, v in seen.items() if v >= cut}
+    st["days"] = {k: v for k, v in days.items() if k >= cut}
+    if first:
+        log(f"news, first run for {d['key']}: {len(st['seen'])} links already on the page remembered - only newer news is written")
+    for sc, t, u in take:
+        log(f"NEWS {sc:.1f} points: {t[:90]} <{u}>")
+    if skipped:
+        log("news skipped: " + ", ".join(f"{k}={v}" for k, v in skipped.items()))
+    if cands[room:]:
+        log(f"news waiting for a later check: {len(cands) - len(take)} (today {days[today]}/{per_day})")
+    if not dry:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")
+    (d["out"]).mkdir(parents=True, exist_ok=True)
+    (d["out"] / "news_urls.txt").write_text("\n".join(u for _, _, u in take), encoding="utf-8")
+    return [u for _, _, u in take]
+
+
 def make_dirs(d):
     d["state"].mkdir(parents=True, exist_ok=True)
     d["out"].mkdir(parents=True, exist_ok=True)
@@ -157,14 +262,17 @@ def _own_rows(d, r):
 _APPLIED = []
 
 
-def apply(key):
-    """switch every pipeline module to the district page `key` (once per process); returns the page dict"""
+def apply(key, mode="powercut"):
+    """switch every pipeline module to the district page `key` (once per process); returns the page dict.
+    mode "news" (owner 13 Nov, Chennai): the page's other local news - news preface, all writer examples, news follow lines"""
     if _APPLIED:
         if _APPLIED[0] != key:
             raise RuntimeError(f"this process already runs {_APPLIED[0]} - one district per process")
         return page(key)
     _APPLIED.append(key)
     d = page(key)
+    if mode == "news":
+        d = dict(d, follow_spoken=news_texts(d)["spoken"], follow_caption=news_texts(d)["caption"])
     import allnews as A
     import sources as S
     import validate as V
@@ -201,9 +309,9 @@ def apply(key):
     _set(F, "_GENERIC", F._GENERIC + (stem, d["en"].lower()[:5]))
 
     # writer: the reference rules, with this page's name, follow line and place, + the power-cut page note
-    _set(RN, "SYSTEM", preface(d) + swap(RN.SYSTEM, d, "writer rules"))
+    _set(RN, "SYSTEM", (news_preface(d) if mode == "news" else preface(d)) + swap(RN.SYSTEM, d, "writer rules"))
     pc_ex = [e for e in RN.EX if (e.get("output") or {}).get("category") == "மின் தடை"][:1]
-    _set(RN, "EX", json.loads(swap(json.dumps(pc_ex, ensure_ascii=False), d, "writer example")))
+    _set(RN, "EX", json.loads(swap(json.dumps(RN.EX[:3] if mode == "news" else pc_ex, ensure_ascii=False), d, "writer example")))
     _set(RN, "CHECK", swap(RN.CHECK, d, "fact-check prompt"))
     _set(RN, "PROOF", swap(RN.PROOF, d, "proofread prompt"))
     _set(C, "BRIEF_SYSTEM", swap(C.BRIEF_SYSTEM, d, "picture prompt"))
