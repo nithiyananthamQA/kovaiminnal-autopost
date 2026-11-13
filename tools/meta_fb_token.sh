@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Kovai Minnal - one-time Facebook Page token setup (adapted from the Namenector social bot's meta-token.sh).
+# Minnal pages - one-time Facebook Page token setup (adapted from the Namenector social bot's meta-token.sh).
 # Turns the short-lived user token from Graph API Explorer into a Page token that never expires and saves
 #   FB_PAGE_ID_COIMBATORE and FB_TOKEN_COIMBATORE
 # as GitHub secrets of THIS repository only (never Namenector's META_* secrets). Nothing secret is printed.
@@ -23,16 +23,18 @@ fi
 V=${META_GRAPH_VERSION:-v24.0}
 G="https://graph.facebook.com/$V"
 
-# Same Meta app as Namenector ("Namenector Social"); its App ID and secret are already saved on this laptop.
-SAVED="$HOME/.config/namenector-social/meta-app"
+# Our own Meta app "Minnal Pages" (made 13 Nov 2026 by the Kovai Minnal Facebook account; no longer Namenector Social).
+# Its secret is asked once (hidden) and kept only on this laptop in ~/.config/minnal-pages/meta-app (never in git).
+SAVED="$HOME/.config/minnal-pages/meta-app"
 if [ -f "$SAVED" ]; then
   # shellcheck source=/dev/null
   . "$SAVED"
-  echo "Using the saved Namenector Social App ID and secret."
+  echo "Using the saved Minnal Pages App ID and secret."
 else
-  read -rp  "App ID [1023752790742303]: " APP_ID
-  APP_ID=${APP_ID:-1023752790742303}
-  read -rsp "App secret (hidden): " APP_SECRET; echo
+  read -rp  "App ID [1448178013559937]: " APP_ID
+  APP_ID=${APP_ID:-1448178013559937}
+  read -rsp "App secret (hidden; App settings -> Basic -> App secret -> Show): " APP_SECRET; echo
+  mkdir -p "$(dirname "$SAVED")" && umask 077 && printf 'APP_ID=%q\nAPP_SECRET=%q\n' "$APP_ID" "$(printf '%s' "$APP_SECRET" | tr -d '[:space:][:cntrl:]')" > "$SAVED"
 fi
 read -rsp "User token from Graph API Explorer (hidden): " SHORT; echo
 clean() { printf '%s' "$1" | sed 's/\x1b\[20[01]~//g' | tr -d '[:space:][:cntrl:]'; }
@@ -50,7 +52,7 @@ api() {
 }
 
 LONG=$(api "oauth/access_token?grant_type=fb_exchange_token&client_id=$APP_ID&client_secret=$APP_SECRET&fb_exchange_token=$SHORT" \
-  "Copy a fresh token with Copy Token in Graph API Explorer (app: Namenector Social)." | jq -r '.access_token // empty')
+  "Copy a fresh token with Copy Token in Graph API Explorer (app: Minnal Pages)." | jq -r '.access_token // empty')
 [ -n "$LONG" ] || { echo "Could not exchange the token."; exit 1; }
 
 echo "Token belongs to: $(api "me?fields=name&access_token=$LONG" "Could not read the token's owner." | jq -r '.name')"
