@@ -76,5 +76,7 @@ From @coimbatore360_official (followed in spirit, not copied):
 |---|---|---|---|
 | Kovai Minnal | done (id 61596710992967) | not created yet | - |
 | Chennai Minnal | not yet (Facebook blocked a 2nd page on day 1) | chennaiminnal | done |
-| Madurai Minnal | not yet | maduraiminnal | done; **automation warning**, owner to clear on phone |
-| Salem Minnal | not yet | salemminnal | photo, bio, Business done; contact info and name pending |
+| Madurai Minnal | dropped for now | maduraiminnal **suspended** by Instagram (180 days to appeal); left to expire | - |
+| Salem Minnal | dropped for now | salemminnal: owner deleting it | - |
+
+From 13 Nov: the owner does all Instagram work by hand on the phone. Claude does Facebook pages only, one per day.
