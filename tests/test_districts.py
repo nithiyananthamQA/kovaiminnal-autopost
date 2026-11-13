@@ -266,6 +266,7 @@ def _check(x, recent):
     return {"id": x["url"], "url": x["url"], "title": t, "published": pub, "source": "தினமலர்", "power_cut": bool(_F.is_power_cut(t)),
             "score": collect.score({"title": t, "snippet": "", "mentions": 1, "published": pub})}, ""
 pick.check_article = _check
+collect.bridge = lambda *a, **k: {"ok": True, "rows": []}      # no Sheet in tests
 PL.settings = lambda: {"enabled": True, "news_live": ["chennai"], "news_per_run": 1, "news_per_day": 2, "news_max_age_hours": 6}
 """
 
