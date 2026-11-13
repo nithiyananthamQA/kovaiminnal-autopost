@@ -25,10 +25,11 @@ HEAD = "import sys, json; sys.path.insert(0, 'districts'); import pipeline as PL
 
 
 class Switch(unittest.TestCase):
-    def test_off_by_default_and_nothing_runs(self):
-        cfg = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))
-        self.assertIs(cfg["district_powercut"]["enabled"], False)
-        for cmd in (["find"], ["write", "salem"], ["post", "salem"], ["verify", "salem"]):
+    def test_only_live_pages_run(self):
+        cfg = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["district_powercut"]
+        self.assertEqual(run(HEAD + "print(PL.enabled_keys())").strip(), str(cfg["live"] if cfg["enabled"] is True else []))
+        self.assertNotIn("salem", cfg.get("live") or [])      # salem is not live: every command for it does nothing
+        for cmd in (["write", "salem"], ["post", "salem"], ["verify", "salem"]):
             r = subprocess.run([PY, "districts/main.py", *cmd], cwd=ROOT, env=dict(DENV, POWERCUT_DRY=""), capture_output=True, text=True, timeout=60)
             self.assertEqual(r.returncode, 0, r.stderr)
             self.assertIn("switched off", r.stdout)
@@ -40,8 +41,12 @@ class Switch(unittest.TestCase):
 PL.settings = lambda: {"enabled": True, "disabled": ["salem"]}
 k = PL.enabled_keys(); print(len(k), "salem" in k, "erode" in k)
 PL.settings = lambda: {"enabled": "yes"}
+print(PL.enabled_keys())
+PL.settings = lambda: {"enabled": True, "disabled": [], "live": ["chennai", "salem"]}
+print(PL.enabled_keys())
+PL.settings = lambda: {"enabled": False, "live": ["chennai"]}
 print(PL.enabled_keys())""")
-        self.assertEqual(out.split("\n")[:2], ["36 False True", "[]"])      # only a real true switches it on
+        self.assertEqual(out.split("\n")[:4], ["36 False True", "[]", "['chennai', 'salem']", "[]"])      # only a real true switches it on
 
 
 class OwnSheet(unittest.TestCase):
