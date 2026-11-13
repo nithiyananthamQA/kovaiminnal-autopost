@@ -39,6 +39,13 @@ Meta Account  (login: kovaiminnalnews@gmail.com or the owner's phone)
 
 ## Instagram account
 
+Ready texts per page (username, name, bio within 150, steps): `districts/<key>/upload/instagram_details.txt`
+(Kovai: `brand/instagram_details.txt`). Open them in a normal text editor; the terminal shows Tamil as boxes.
+
+Linking Instagram to the Facebook page is **not needed for posting**. Instagram posts go through Instagram login
+(graph.instagram.com, token `IG_TOKEN_<KEY>`), and Facebook posts go through the page token. Linking is still
+recommended: one dashboard in Meta Business Suite, Instagram shown on the page, and Meta sees a real business.
+
 **Owner, on the phone (no e-mail):** Instagram → Profile → tap s_nithiyanantham_s → Add Instagram account →
 Create new account → use the same login → username `<key>minnal` (`handle` in districts.json).
 
