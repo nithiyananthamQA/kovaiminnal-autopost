@@ -51,9 +51,9 @@ api() {
   printf '%s' "$out"
 }
 
-LONG=$(api "oauth/access_token?grant_type=fb_exchange_token&client_id=$APP_ID&client_secret=$APP_SECRET&fb_exchange_token=$SHORT" \
-  "Copy a fresh token with Copy Token in Graph API Explorer (app: Minnal Pages)." | jq -r '.access_token // empty')
-[ -n "$LONG" ] || { echo "Could not exchange the token."; exit 1; }
+# a system-user token (Business settings -> System users -> Generate token, "Never") is already long-lived: used as it is
+LONG=$(curl -sS -g "$G/oauth/access_token?grant_type=fb_exchange_token&client_id=$APP_ID&client_secret=$APP_SECRET&fb_exchange_token=$SHORT" 2>/dev/null | jq -r '.access_token // empty' 2>/dev/null || true)
+if [ -z "$LONG" ]; then LONG=$SHORT; echo "Token used as it is (system-user token)."; fi
 
 echo "Token belongs to: $(api "me?fields=name&access_token=$LONG" "Could not read the token's owner." | jq -r '.name')"
 FIELDS='id,name,access_token,instagram_business_account%7Bid,username%7D'
