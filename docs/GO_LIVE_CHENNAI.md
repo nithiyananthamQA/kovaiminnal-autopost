@@ -74,7 +74,7 @@ Use a **separate Chrome profile** for it. Do not use "Switch account" in Browser
 
 ## Step 4: accept the invites
 
-1. Browser where **chennaiminnal** is logged in on instagram.com. Open:
+1. In the **same separate Chrome profile** as step 3 (so chennaiminnal logs in only once, here and in step 5), log in to instagram.com as chennaiminnal. Open:
    ```
    https://www.instagram.com/accounts/manage_access/
    ```
@@ -156,11 +156,12 @@ Tell Claude "tests started". Claude reads the results.
 
 ## Step 9: switch on
 
-Claude switches Chennai on in `poster/config.json` and commits. You push:
-```
-cd "/home/nathi/coimbatore insta" && git push origin main
-```
-First Chennai post: Claude shows it to you. Also open it on Facebook while logged out, to check strangers can see it.
+1. Claude makes one Chennai sample reel and shows it to you. Nothing goes on until you say yes.
+2. Claude switches Chennai on in `poster/config.json` and commits. You push:
+   ```
+   cd "/home/nathi/coimbatore insta" && git push origin main
+   ```
+3. First Facebook post: open it while logged out, to check strangers can see it.
 
 ---
 
