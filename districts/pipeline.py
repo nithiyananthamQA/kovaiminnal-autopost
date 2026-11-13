@@ -255,6 +255,13 @@ def apply(key):
     _set(P, "OUT", d["out"])
     _set(P, "CACHE", d["out"] / "prebuilt")
     _set(P, "pages_of", lambda row: [key])
+    ig = d.get("instagram") or {}
+    if ig.get("api") == "unified":      # 13 Nov: Meta Unified login (app Minnal Pages): system-user token, graph.facebook.com, account id
+        if not str(ig.get("user_id") or "").strip():
+            raise SystemExit(f"{key}: Instagram account id missing (districts.json instagram.user_id) - nothing posted")
+        _set(P, "IG_HOST", "https://graph.facebook.com")
+        _set(P, "IG_VER", P.IG_VER or "v24.0")
+        _set(P, "IG_USER_ID", str(ig["user_id"]).strip())
     try:
         picked = set(json.loads(PC.STATE.read_text(encoding="utf-8")).get("done", {}))
     except Exception:

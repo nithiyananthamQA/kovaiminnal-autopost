@@ -201,5 +201,37 @@ print(json.dumps([(x["url"].rsplit("/", 1)[1], x["title"], x["via"]) for x in r]
         self.assertEqual(json.loads(out.strip()), [["4373471", "சேலம் மின்தடை", "dinamalar-list"]])
 
 
+class UnifiedLogin(unittest.TestCase):
+    """13 Nov: a page on Meta's Unified login (app Minnal Pages) posts on graph.facebook.com with its Instagram account id;
+    Kovai Minnal keeps graph.instagram.com and "me"."""
+    PATCH = """
+real = PL.districts()
+x = dict(real); x["salem"] = dict(real["salem"], instagram=INSTA)
+PL.districts = lambda: x
+"""
+
+    def test_unified_page_switches_host_and_account(self):
+        out = run(HEAD + "INSTA = {'api': 'unified', 'user_id': '17841400000000001'}" + self.PATCH + """
+PL.use_bridge(); d = PL.apply("salem")
+import post as P
+calls = []
+P.ig = lambda m, path, token, **kw: calls.append((m, path, kw.get("fields"))) or {"id": path, "username": "salemminnal"}
+print(P.IG_HOST, P.IG_VER, P.ig_account("t"), calls)""")
+        self.assertEqual(out.strip(), "https://graph.facebook.com v24.0 ('17841400000000001', 'salemminnal') [('GET', '17841400000000001', 'id,username')]")
+
+    def test_unified_page_without_account_id_stops(self):
+        r = subprocess.run([PY, "-c", HEAD + "INSTA = {'api': 'unified', 'user_id': ''}" + self.PATCH + "PL.use_bridge(); PL.apply('salem')"],
+                           cwd=ROOT, env=DENV, capture_output=True, text=True, timeout=120)
+        self.assertNotEqual(r.returncode, 0)
+        self.assertIn("Instagram account id missing", r.stdout + r.stderr)
+
+    def test_kovai_unchanged(self):
+        out = run("import sys; sys.path.insert(0, 'poster'); import post as P\n"
+                  "calls = []\n"
+                  "P.ig = lambda m, path, token, **kw: calls.append(path) or {'user_id': '1', 'username': 'kovaiminnal'}\n"
+                  "print(P.IG_HOST, repr(P.IG_USER_ID), P.ig_account('t'), calls)", env=ENV)
+        self.assertEqual(out.strip(), "https://graph.instagram.com '' ('1', 'kovaiminnal') ['me']")
+
+
 if __name__ == "__main__":
     unittest.main()

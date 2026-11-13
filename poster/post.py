@@ -33,6 +33,9 @@ PREBUILD = os.environ.get("PREBUILD", "") in ("1", "true", "yes")   # build + up
 CACHE = ROOT / "poster" / "prebuilt"
 IG_HOST = "https://graph.instagram.com"
 IG_VER = os.environ.get("IG_API_VERSION", "")
+# 13 Nov: pages on Meta's Unified login (new apps such as "Minnal Pages") post with a system-user token on graph.facebook.com;
+# there "me" is the system user, so the Instagram account id is given here (districts/pipeline.py sets all three). Empty = Kovai as before.
+IG_USER_ID = os.environ.get("IG_USER_ID", "")
 
 # ---- the page (Kovai Minnal; placeholders until the owner decides - change them HERE only)
 PAGE = "coimbatore"
@@ -870,6 +873,9 @@ def wait_ready(cid, token, minutes=10):
 
 
 def ig_account(token):
+    if IG_USER_ID:
+        me = ig("GET", IG_USER_ID, token, fields="id,username")
+        return IG_USER_ID, me.get("username")
     me = ig("GET", "me", token, fields="user_id,username")
     return me.get("user_id") or me.get("id"), me.get("username")
 
@@ -1074,7 +1080,7 @@ def story_catchup(max_new=6):
         try:
             token = bridge_get("token", page=pg)["token"]
             uid, _ = ig_account(token)
-            me = ig("GET", "me", token, fields="id,user_id")
+            me = {"id": uid} if IG_USER_ID else ig("GET", "me", token, fields="id,user_id")
             mine = {str(x) for x in (uid, me.get("id"), me.get("user_id")) if x}      # 1 Nov: a post's owner id is the app id, not user_id
             q = (ig("GET", f"{uid}/content_publishing_limit", token, fields="quota_usage,config").get("data") or [{}])[0]
             used, total = int(q.get("quota_usage", 0)), min(int((q.get("config") or {}).get("quota_total", 50) or 50), IG_LIMIT)
