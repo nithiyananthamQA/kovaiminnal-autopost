@@ -278,11 +278,12 @@ print("power" if "பவர்கட்" in V.LAST else "news", "|", "செய�
         self.assertEqual(out.strip(), "news | True | True | True")      # not only the power-cut writer example
 
     def test_writenews_off_unless_news_live(self):
-        cfg = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["district_powercut"]
-        r = subprocess.run([PY, "districts/main.py", "writenews", "chennai"], cwd=ROOT, env=DENV, capture_output=True, text=True, timeout=60)
-        self.assertEqual(r.returncode, 0, r.stderr)
-        if "chennai" not in (cfg.get("news_live") or []):
-            self.assertIn("local news is off", r.stdout)
+        code = (HEAD + "import runpy\nPL.settings = lambda: {'enabled': True, 'live': ['chennai'], 'news_live': []}\n"
+                "sys.argv = ['districts/main.py', 'writenews', 'chennai']\n"
+                "try:\n    runpy.run_path('districts/main.py', run_name='__main__')\nexcept SystemExit as e:\n    print('exit', e.code)")
+        out = run(code)
+        self.assertIn("local news is off", out)
+        self.assertIn("exit 0", out)
 
 
 if __name__ == "__main__":
