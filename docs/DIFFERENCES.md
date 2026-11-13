@@ -29,6 +29,14 @@ Last full check: 14 Nov 2026.
    "சென்னை செய்திகளை உடனுக்குடன் தெரிந்துகொள்ள சென்னை மின்னல் பக்கத்தை ஃபாலோ செய்யுங்கள்." (13-14 Nov).
 4. A power cut whose day (written in the notice) has passed is never posted (13 Nov; stricter than the reference).
 
+## Different - kept by the owner (14 Nov: "our way is better, leave it")
+
+5a. A news round opens at most 60 articles in 6 minutes (so the power-cut check in the same job is never held up);
+   the reference's news job has no such limit. Whatever is left waits for the next round.
+5b. Posting: Chennai writes and posts in the same job, right after the round. Reference: a separate job every 5 minutes.
+    Reels take about 4 minutes each, so the posts are spaced in a similar way.
+5c. The reference's LIVE file stops only its scheduled posting; Chennai uses the switch in poster/config.json instead.
+
 ## Different - forced
 
 5. Instagram connection: Meta's new login (app Minnal Pages, bot user minnal-bot, graph.facebook.com). Meta gives new apps
@@ -39,8 +47,3 @@ Last full check: 14 Nov 2026.
 
 7. Comments (reply options by e-mail), insights and rasipalan: the reference runs them for its page; Chennai has none yet.
 8. Ranking uses Kovai Minnal's learned topic weights (learned.json), because Chennai has no insights yet.
-9. A news round opens at most 60 articles in 6 minutes (so the power-cut check in the same job is never held up);
-   the reference's news job has no such limit. Whatever is left waits for the next round.
-10. Posting: Chennai writes and posts in the same job, right after the round. Reference: a separate job every 5 minutes.
-    Reels take about 4 minutes each, so the posts are spaced in a similar way.
-11. The reference's LIVE file stops only its scheduled posting; Chennai uses the switch in poster/config.json instead.
