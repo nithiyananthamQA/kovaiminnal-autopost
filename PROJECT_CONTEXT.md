@@ -82,6 +82,12 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-14 | `931d1d1` | Test: writenews off-switch checked offline (never runs the real writer) |
+| 2026-11-14 | `552d315` | Chennai news ON (owner approved the sample 14 Nov): news closing = follow line only (no send-to-friends); the 'முழு விவரம்' card no longer overlaps the yellow strip (district reels) |
+| 2026-11-13 | `3042ece` | Chennai local news (owner 13 Nov): district pages can post their other local news too - reference points system picks the best new news, 1 per check, 10 a day, max 6 h old; first run only remembers (no flood); power cuts / obituaries / other districts left out; news preface + news follow lines; writenews step in the workflow. OFF (news_live empty) until the owner approves a sample. 355 tests pass |
+| 2026-11-13 | `0dc15c6` | District reels: one common closing line for all non-power-cut news (power-cut closing unchanged) |
+| 2026-11-13 | `9fd4bf1` | District reels: non-power-cut news ends with the news follow line + share line by type (one area -> that area's people; city-wide -> friends and family); power-cut reels unchanged |
+| 2026-11-13 | `aa835a6` | Old-cut rule only when the cut day is written in the notice (a dateless notice is never blocked by the publish date) |
 | 2026-11-13 | `a089434` | Never post a power cut whose day has passed (blocks the 13 Nov Chennai test row); district check every 15 min |
 | 2026-11-13 | `10d7e55` | Chennai Minnal live: district power-cut pages switched on (live: chennai only) |
 | 2026-11-13 | `15115fe` | District reel fixes: applied once only (a re-render never repeats the share line); follow line from districts.json |
@@ -106,10 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-12 | `1005fbe` | Kovai footer re-rendered by the shared footer code (same look) |
 | 2026-11-12 | `c3cd6ad` | District pages: districts/<key>/ (logo + footer per district, simple Kovai Minnal logo without the Coimbatore scene, Noto Sans Tamil), Tamil follow texts + bios per district; districts.json moved to districts/ |
 | 2026-11-11 | `56b2dbb` | District power-cut pages: list of 37 districts (Dinamalar slugs checked) + off-by-default switch district_powercut.enabled |
-| 2026-11-11 | `fae33f8` | Reel default style B2 (Broadcast), chosen by the owner; footer stays at the bottom |
-| 2026-11-11 | `092a789` | reel5: two new layouts to choose from - D (News Desk) and B2 (Broadcast); K stays default until the owner picks |
-| 2026-11-11 | `4e82b08` | Remove sample-run leftovers (RN-1 prebuilt reel, archive rows, results); state files back to their empty shapes; kit/package-lock.json ignored |
-| 2026-11-11 | `7c6608d` | Only கோவை மின்னல் in the video: footer pill and end-card line (no செய்திகள்) |
-| 2026-11-11 | `1cc0174` | reel5: header = page name only; end card 'Source:' instead of ஆதாரம் |
-| 2026-11-11 | `7c6bb8b` | Reel v5 style K (Kovai Minnal lightning look, default); tools/ab_reel.py for writer comparison |
 <!-- recent-changes:end -->
