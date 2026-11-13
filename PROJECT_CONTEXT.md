@@ -82,6 +82,8 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-14 | `947b373` | Chennai news like the reference: 8 + 6 + 6 = 20 a day (06 / 10 / 19 h) |
+| 2026-11-14 | `47e3728` | Like the reference (owner 14 Nov): district check every 30 min; Chennai news only in 3 rounds a day (06 / 10 / 19 h: 4 + 3 + 3 = 10), news up to 12 h old |
 | 2026-11-14 | `931d1d1` | Test: writenews off-switch checked offline (never runs the real writer) |
 | 2026-11-14 | `552d315` | Chennai news ON (owner approved the sample 14 Nov): news closing = follow line only (no send-to-friends); the 'முழு விவரம்' card no longer overlaps the yellow strip (district reels) |
 | 2026-11-13 | `3042ece` | Chennai local news (owner 13 Nov): district pages can post their other local news too - reference points system picks the best new news, 1 per check, 10 a day, max 6 h old; first run only remembers (no flood); power cuts / obituaries / other districts left out; news preface + news follow lines; writenews step in the workflow. OFF (news_live empty) until the owner approves a sample. 355 tests pass |
@@ -110,6 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-12 | `c8e4232` | District reels: closing follow line in the same news voice (Tamil, 'பவர்கட்' as one word, '<district> மின்னல் சேனல்'), no English outro; caption + end card the same |
 | 2026-11-12 | `1c28d38` | District power-cut pages: separate runner behind the district_powercut switch |
 | 2026-11-12 | `1005fbe` | Kovai footer re-rendered by the shared footer code (same look) |
-| 2026-11-12 | `c3cd6ad` | District pages: districts/<key>/ (logo + footer per district, simple Kovai Minnal logo without the Coimbatore scene, Noto Sans Tamil), Tamil follow texts + bios per district; districts.json moved to districts/ |
-| 2026-11-11 | `56b2dbb` | District power-cut pages: list of 37 districts (Dinamalar slugs checked) + off-by-default switch district_powercut.enabled |
 <!-- recent-changes:end -->
