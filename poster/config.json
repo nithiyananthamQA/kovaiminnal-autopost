@@ -156,7 +156,7 @@
   "story_reserve": 5,
   "post_stories": true,
   "district_powercut": {
-    "note": "owner 11 Nov: separate feature - true = every enabled district page (districts/districts.json) posts its own power cuts; false = nothing runs for the districts and Kovai Minnal works exactly as before. disabled = district keys switched off one by one. live = the pages that run (13 Nov: chennai first); add a district key to put its page live. news_live = pages that also post their other local news (owner 13 Nov: chennai, after the owner approves a sample); news_per_run / news_per_day / news_max_age_hours limit it.",
+    "note": "owner 11 Nov: separate feature - true = every enabled district page (districts/districts.json) posts its own power cuts; false = nothing runs for the districts and Kovai Minnal works exactly as before. disabled = district keys switched off one by one. live = the pages that run (13 Nov: chennai first); add a district key to put its page live. news_live = pages that also post their other local news (owner 13 Nov: chennai, after the owner approves a sample); news_per_run / news_per_day / news_max_age_hours limit it. news_rounds (owner 14 Nov, like the reference): news only at 06 / 10 / 19 h, that many news per round (power cuts every 30 min).",
     "enabled": true,
     "disabled": [],
     "live": [
@@ -167,6 +167,11 @@
     ],
     "news_per_run": 1,
     "news_per_day": 10,
-    "news_max_age_hours": 6
+    "news_max_age_hours": 12,
+    "news_rounds": {
+      "06": 4,
+      "10": 3,
+      "19": 3
+    }
   }
 }

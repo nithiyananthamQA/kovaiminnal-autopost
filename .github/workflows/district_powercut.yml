@@ -6,7 +6,7 @@ name: district-powercut
 # posted at once, never twice, never after it is over; each cut only on ITS district's page.
 on:
   schedule:
-    - cron: "5,20,35,50 0-16 * * *"       # owner 13 Nov: every 15 min, 05:35 ... 22:20 IST
+    - cron: "5,35 0-16 * * *"       # owner 14 Nov: like the reference - every 30 min, 05:35 ... 22:05 IST (news only at 06:05 / 10:05 / 19:05)
   workflow_dispatch:
     inputs:
       dry:

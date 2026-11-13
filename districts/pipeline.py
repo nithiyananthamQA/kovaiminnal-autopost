@@ -161,6 +161,13 @@ def find_news(d, dry=False, log=print):
     s = settings()
     per_run, per_day = int(s.get("news_per_run", 1)), int(s.get("news_per_day", 10))
     max_age = float(s.get("news_max_age_hours", 6))
+    rounds = s.get("news_rounds")      # owner 14 Nov: like the reference - news only in rounds (06 / 10 / 19 h), N news per round
+    if rounds:
+        t_ = datetime.datetime.now(IST)
+        per_run = int(rounds.get(f"{t_.hour:02d}", 0)) if t_.minute < 30 else 0
+        if not per_run and not dry:
+            log(f"news: not a news round now ({t_:%H:%M}; rounds {', '.join(sorted(rounds))} h) - power cuts only")
+            return []
     path = d["state"] / "news_state.json"
     first = not path.exists()
     try:

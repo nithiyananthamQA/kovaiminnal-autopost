@@ -285,6 +285,24 @@ print("power" if "பவர்கட்" in V.LAST else "news", "|", "செய�
         self.assertIn("local news is off", out)
         self.assertIn("exit 0", out)
 
+    def test_news_only_in_rounds(self):
+        out = run(HEAD + "PL.use_bridge(); PL.apply('chennai')\n" + self.FAKE + """
+import datetime as _dt
+class _D(_dt.datetime):
+    T = None
+    @classmethod
+    def now(cls, tz=None):
+        return cls.T
+PL.datetime.datetime = _D
+PL.settings = lambda: {"enabled": True, "news_live": ["chennai"], "news_per_day": 10, "news_max_age_hours": 12, "news_rounds": {"06": 4, "10": 3, "19": 3}}
+PL.dinamalar_meta = lambda d_: {u.rsplit("/", 1)[-1]: {"published": (_D.T - _dt.timedelta(hours=h)).strftime("%Y-%m-%dT%H:%M:%S+05:30"), "snippet": ""} for u, t, h in L}
+_D.T = _D(2026, 11, 14, 6, 5, tzinfo=PL.IST); print("first:", PL.find_news(d, log=lambda *a: None))
+L[:] = [(u.replace("/x/", "/y/"), t, h) for u, t, h in L]
+_D.T = _D(2026, 11, 14, 8, 5, tzinfo=PL.IST); print("08:05:", len(PL.find_news(d, log=lambda *a: None)))
+_D.T = _D(2026, 11, 14, 10, 5, tzinfo=PL.IST); print("10:05:", len(PL.find_news(d, log=lambda *a: None)))""")
+        self.assertIn("08:05: 0", out)      # not a news round: power cuts only
+        self.assertIn("10:05: 3", out)      # a news round: 3 (student 1 h, metro 2 h, old 9 h; egg = other district, cut = power cut)
+
 
 if __name__ == "__main__":
     unittest.main()
