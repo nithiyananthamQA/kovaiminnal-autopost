@@ -40,7 +40,7 @@ def district_pages():
         out[k] = {"logo": str((base / k / "logo.png").resolve()), "name": d["name_ta"], "handle": d["handle"], "tagline": d["name_ta"],
                   "follow": d["end_card"], "ticker": d["name_ta"], "footer": foot, "footer_wide": foot,
                   "hashtag": "#" + d["name_en"].replace(" ", ""), "end_card": d["end_card"], "name_en": d["name_en"], "district": True,
-                  "share_spoken": SHARE.get("share_spoken", ""), "share_card": SHARE.get("share_card", "")}
+                  "share_spoken": SHARE.get("share_spoken", ""), "share_card": SHARE.get("share_card", ""), "follow_spoken": d.get("follow_spoken", "")}
     return out
 
 
@@ -62,9 +62,11 @@ def district_spec(spec, page):
     a share line for the people of that area, the full cut time on the yellow band, the real date instead of 'நாளை மறுதினம்',
     'மின்தடை' as one word, and at most MAX_SPOKEN spoken sentences"""
     import re
+    if spec.get("district_done"):      # already applied (a re-render of the same reel.json)
+        return spec
     spec = json.loads(json.dumps(spec, ensure_ascii=False))
     sents = list(spec.get("sentences") or [])
-    follow = (spec.get("outro") or {}).get("say") or page.get("follow_spoken", "")
+    follow = page.get("follow_spoken") or (spec.get("outro") or {}).get("say") or ""
     while sents and (_norm(sents[-1].get("say")) == _norm(follow) or "ஃபாலோ" in sents[-1].get("say", "") or "Follow" in sents[-1].get("say", "")):
         sents.pop()
     if len(sents) > MAX_SPOKEN:
@@ -87,6 +89,7 @@ def district_spec(spec, page):
     if spec.get("mini"):
         spec["mini"] = fix(re.sub(r"(நாளை\s*மறுதினம்|நாளை|இன்று)\s*\(([^)]*)\)", r"\2", spec["mini"]))
     spec["share_card"] = page.get("share_card", "").format(place=place) if place and page.get("share_card") else ""
+    spec["district_done"] = True
     return spec
 
 
