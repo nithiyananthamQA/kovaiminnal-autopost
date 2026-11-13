@@ -39,8 +39,55 @@ def district_pages():
         foot = str((base / k / "footer.png").resolve())
         out[k] = {"logo": str((base / k / "logo.png").resolve()), "name": d["name_ta"], "handle": d["handle"], "tagline": d["name_ta"],
                   "follow": d["end_card"], "ticker": d["name_ta"], "footer": foot, "footer_wide": foot,
-                  "hashtag": "#" + d["name_en"].replace(" ", ""), "end_card": d["end_card"], "name_en": d["name_en"], "district": True}
+                  "hashtag": "#" + d["name_en"].replace(" ", ""), "end_card": d["end_card"], "name_en": d["name_en"], "district": True,
+                  "share_spoken": SHARE.get("share_spoken", ""), "share_card": SHARE.get("share_card", "")}
     return out
+
+
+try:
+    SHARE = {k: v for k, v in json.loads(DISTRICTS_FILE.read_text(encoding="utf-8")).items() if k.startswith("share_")}
+except Exception:
+    SHARE = {}
+MAX_SPOKEN = 6      # owner 13 Nov: a power-cut reel is 30-40 s; the caption carries the full area list
+_TIME = __import__("re").compile(r"(காலை|மதியம்|பிற்பகல்|மாலை|இரவு)\s*(\d{1,2}(?:[.:]\d{2})?)\s*மணி\s*(?:முதல்|தொடங்கி)\s*"
+                                 r"(காலை|மதியம்|பிற்பகல்|மாலை|இரவு)?\s*(\d{1,2}(?:[.:]\d{2})?)\s*மணி\s*வரை")
+
+
+def _norm(t):
+    return "".join(ch for ch in str(t or "") if ch.isalnum())
+
+
+def district_spec(spec, page):
+    """owner 13 Nov (Chennai test reel): follow said ONCE (the writer's last sentence was spoken again as the closing line),
+    a share line for the people of that area, the full cut time on the yellow band, the real date instead of 'நாளை மறுதினம்',
+    'மின்தடை' as one word, and at most MAX_SPOKEN spoken sentences"""
+    import re
+    spec = json.loads(json.dumps(spec, ensure_ascii=False))
+    sents = list(spec.get("sentences") or [])
+    follow = (spec.get("outro") or {}).get("say") or page.get("follow_spoken", "")
+    while sents and (_norm(sents[-1].get("say")) == _norm(follow) or "ஃபாலோ" in sents[-1].get("say", "") or "Follow" in sents[-1].get("say", "")):
+        sents.pop()
+    if len(sents) > MAX_SPOKEN:
+        print(f"district reel: {len(sents)} sentences -> {MAX_SPOKEN} spoken (the caption has the full list)")
+        sents = sents[:MAX_SPOKEN]
+    spec["sentences"] = sents
+    place = str(spec.get("location") or "").strip()
+    share = page.get("share_spoken", "").format(place=place) if place and page.get("share_spoken") else ""
+    spec["outro"] = dict(spec.get("outro") or {}, say=(share + " " + follow).strip())
+    fix = lambda t: re.sub(r"மின்\s+தடை", "மின்தடை", str(t or ""))
+    hook = [fix(h) for h in (spec.get("hook") or ["", ""])]
+    whole = " ".join(str(x.get(k) or "") for x in sents for k in ("say", "fact"))
+    m = _TIME.search(whole)
+    if m and len(hook) > 1:
+        a, h1, b, h2 = m.group(1), m.group(2), m.group(3) or m.group(1), m.group(4)
+        day = hook[1].split(":")[0].strip() if ":" in hook[1] else ""
+        day = re.sub(r"நவம்பர்", "நவ.", day)
+        hook[1] = (f"{day} • " if day else "") + f"{a} {h1} – {b} {h2}"
+    spec["hook"] = hook
+    if spec.get("mini"):
+        spec["mini"] = fix(re.sub(r"(நாளை\s*மறுதினம்|நாளை|இன்று)\s*\(([^)]*)\)", r"\2", spec["mini"]))
+    spec["share_card"] = page.get("share_card", "").format(place=place) if place and page.get("share_card") else ""
+    return spec
 
 
 for _k, _p in district_pages().items():
@@ -300,9 +347,10 @@ def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
         old_foot = f"file://{(ASSETS / page.get('footer', 'footer_coimbatore.png')).as_posix()}"
         html = html.replace(f'<img id="foot" src="{old_foot}">', f'<img id="foot" src="file://{wide.as_posix()}">', 1)
         html = html.replace("</style>", FOOT_CSS + "</style>", 1)
-    if page.get("district"):      # owner 11 Nov: a power-cut page asks people to follow for power-cut alerts
+    if page.get("district"):      # owner 13 Nov: the end card asks to SEND the video to that area's people (the FOLLOW button stays)
         import re as _re
-        html = _re.sub(r'<div class="e4">[^<]*</div>', f'<div class="e4">⚡ {page["end_card"]} Follow செய்யுங்கள் 📌</div>', html, count=1)
+        card = spec.get("share_card") or f'⚡ {page["end_card"]} Follow செய்யுங்கள் 📌'
+        html = _re.sub(r'<div class="e4">[^<]*</div>', f'<div class="e4">{card}</div>', html, count=1)
     if is_plain(spec):
         scene, extra = scene_html(spec)
         html = html.replace("</style>", SCENE_CSS + "</style>", 1)
@@ -331,5 +379,7 @@ V4.pick_voice = pick_voice
 if __name__ == "__main__":
     _key = sys.argv[3] if len(sys.argv) > 3 else "coimbatore"
     if R.PAGES.get(_key, {}).get("district"):      # owner 12 Nov: the closing follow line in the SAME news voice (Tamil), no English voice
-        V4.english_outro = lambda work, idx, voice: print("closing follow line in the news voice (district page)")
+        V4.english_outro = lambda work, idx, voice: print("closing share + follow line in the news voice (district page)")
+        _sp = Path(sys.argv[1])
+        _sp.write_text(json.dumps(district_spec(json.loads(_sp.read_text()), R.PAGES[_key]), ensure_ascii=False))
     V4.main(sys.argv[1], sys.argv[2], _key)

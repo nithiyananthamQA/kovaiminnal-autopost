@@ -108,7 +108,9 @@ def preface(d):
     return (f'POWER-CUT PAGE (read this first): "{d["name_ta"]}" ({d["name_en"]}) is the page for {d["en"]} district ({d["ta"]} மாவட்டம்) '
             f"and posts ONLY power-cut / maintenance shutdown notices (மின்தடை அறிவிப்பு) of {d['en']} district, so people know early. "
             "Every article you get is such a notice: read the cut day, the time, the substation and EVERY affected area exactly as "
-            "published (none dropped, never guessed). category is always \"மின் தடை\", importance \"High\", post_to exactly "
+            "published (none dropped, never guessed). The CAPTION lists every affected area. The reel_script is SHORT (owner 13 Nov: "
+            "30-40 seconds): at most 6 sentences - the one-line story, the day + time, the main areas in at most 2 sentences (up to 8 "
+            "names, then 'உள்ளிட்ட பகுதிகள்'), then the follow line. category is always \"மின் தடை\", importance \"High\", post_to exactly "
             f"\"{d['name_en']}\". The LAST sentence of reel_script is exactly: {d['follow_spoken']}\n\n")
 
 
