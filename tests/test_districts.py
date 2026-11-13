@@ -219,11 +219,13 @@ P.ig = lambda m, path, token, **kw: calls.append((m, path, kw.get("fields"))) or
 print(P.IG_HOST, P.IG_VER, P.ig_account("t"), calls)""")
         self.assertEqual(out.strip(), "https://graph.facebook.com v24.0 ('17841400000000001', 'salemminnal') [('GET', '17841400000000001', 'id,username')]")
 
-    def test_unified_page_without_account_id_stops(self):
-        r = subprocess.run([PY, "-c", HEAD + "INSTA = {'api': 'unified', 'user_id': ''}" + self.PATCH + "PL.use_bridge(); PL.apply('salem')"],
-                           cwd=ROOT, env=DENV, capture_output=True, text=True, timeout=120)
-        self.assertNotEqual(r.returncode, 0)
-        self.assertIn("Instagram account id missing", r.stdout + r.stderr)
+    def test_unified_page_without_account_id_only_stops_posting(self):
+        out = run(HEAD + "INSTA = {'api': 'unified', 'user_id': ''}" + self.PATCH + """
+PL.use_bridge(); d = PL.apply("salem")
+import post as P
+print("posting blocked:", P.missing_setup())""")
+        self.assertIn("salem: Instagram account id missing", out)
+        self.assertIn("posting blocked: True", out)
 
     def test_kovai_unchanged(self):
         out = run("import sys; sys.path.insert(0, 'poster'); import post as P\n"

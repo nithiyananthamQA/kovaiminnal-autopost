@@ -257,11 +257,12 @@ def apply(key):
     _set(P, "pages_of", lambda row: [key])
     ig = d.get("instagram") or {}
     if ig.get("api") == "unified":      # 13 Nov: Meta Unified login (app Minnal Pages): system-user token, graph.facebook.com, account id
-        if not str(ig.get("user_id") or "").strip():
-            raise SystemExit(f"{key}: Instagram account id missing (districts.json instagram.user_id) - nothing posted")
+        uid = str(ig.get("user_id") or "").strip()
         _set(P, "IG_HOST", "https://graph.facebook.com")
         _set(P, "IG_VER", P.IG_VER or "v24.0")
-        _set(P, "IG_USER_ID", str(ig["user_id"]).strip())
+        _set(P, "IG_USER_ID", uid)
+        if not uid:      # finding and writing go on; only posting waits ('me' there is the system user, never the page)
+            _set(P, "missing_setup", lambda: print(f"{key}: Instagram account id missing (districts.json instagram.user_id) - nothing posted", flush=True) or True)
     try:
         picked = set(json.loads(PC.STATE.read_text(encoding="utf-8")).get("done", {}))
     except Exception:
