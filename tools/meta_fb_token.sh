@@ -8,8 +8,18 @@
 #   REPO=owner/name bash tools/meta_fb_token.sh       # another repository
 #
 # Instagram is NOT set here: the Instagram token lives in the Apps Script (Script property IG_TOKEN_COIMBATORE), see docs/SETUP_KOVAI_MINNAL.md.
+#   bash tools/meta_fb_token.sh chennai               # a district page: FB_PAGE_ID_CHENNAI / FB_TOKEN_CHENNAI
 set -euo pipefail
+cd "$(dirname "$0")/.."
 REPO=${REPO:-nithiyananthamQA/kovaiminnal-autopost}
+DKEY=${1:-}
+if [ -z "$DKEY" ] || [ "$DKEY" = "coimbatore" ]; then
+  SKEY=COIMBATORE; LABEL="Kovai Minnal"; MATCH='(?i)kovai|கோவை'
+else
+  EN=$(jq -r --arg k "$DKEY" '.districts[$k].en // empty' districts/districts.json)
+  [ -n "$EN" ] || { echo "Unknown district '$DKEY' (see districts/districts.json)."; exit 1; }
+  SKEY=$(printf '%s' "$DKEY" | tr '[:lower:]' '[:upper:]'); LABEL="$EN Minnal"; MATCH="(?i)^$EN Minnal"
+fi
 V=${META_GRAPH_VERSION:-v24.0}
 G="https://graph.facebook.com/$V"
 
@@ -54,12 +64,12 @@ echo
 echo "Your Pages:"
 echo "$PAGES" | jq -r '.data[] | "  \(.id)  \(.name)  (Instagram: \(.instagram_business_account.username // "not linked"))"'
 COUNT=$(echo "$PAGES" | jq '.data | length')
-[ "$COUNT" -gt 0 ] || { echo "No Pages found. Tick the Kovai Minnal Page when Facebook asks, then run this again."; exit 1; }
-# pick the Kovai Minnal page automatically when its name says so; otherwise ask
-PAGE_ID=$(echo "$PAGES" | jq -r '[.data[] | select(.name | test("(?i)kovai|கோவை"))][0].id // empty')
-if [ -z "$PAGE_ID" ]; then read -rp "Page ID of Kovai Minnal: " PAGE_ID; else echo "Using page $PAGE_ID (name matches Kovai)."; fi
+[ "$COUNT" -gt 0 ] || { echo "No Pages found. Tick the $LABEL Page when Facebook asks, then run this again."; exit 1; }
+# pick the page automatically when its name says so; otherwise ask
+PAGE_ID=$(echo "$PAGES" | jq -r --arg m "$MATCH" '[.data[] | select(.name | test($m))][0].id // empty')
+if [ -z "$PAGE_ID" ]; then read -rp "Page ID of $LABEL: " PAGE_ID; else echo "Using page $PAGE_ID (name matches $LABEL)."; fi
 case "$(echo "$PAGES" | jq -r --arg id "$PAGE_ID" '.data[] | select(.id == $id) | .name')" in
-  *amenector*|*ame*ector*) echo "That is the Namenector page - stopping (this script is for Kovai Minnal only)."; exit 1;;
+  *amenector*|*ame*ector*) echo "That is the Namenector page - stopping (this script is for the Minnal pages only)."; exit 1;;
 esac
 
 PAGE_TOKEN=$(echo "$PAGES" | jq -r --arg id "$PAGE_ID" '.data[] | select(.id == $id) | .access_token')
@@ -74,7 +84,7 @@ for need in pages_show_list pages_read_engagement pages_manage_posts; do
   case ", $SCOPES," in *", $need,"*) ;; *) echo "Missing permission: $need. Add it in Graph API Explorer and run this again."; exit 1;; esac
 done
 
-printf '%s' "$PAGE_ID"    | gh secret set FB_PAGE_ID_COIMBATORE -R "$REPO"
-printf '%s' "$PAGE_TOKEN" | gh secret set FB_TOKEN_COIMBATORE -R "$REPO"
+printf '%s' "$PAGE_ID"    | gh secret set "FB_PAGE_ID_$SKEY" -R "$REPO"
+printf '%s' "$PAGE_TOKEN" | gh secret set "FB_TOKEN_$SKEY" -R "$REPO"
 echo
-echo "Saved FB_PAGE_ID_COIMBATORE and FB_TOKEN_COIMBATORE to $REPO."
+echo "Saved FB_PAGE_ID_$SKEY and FB_TOKEN_$SKEY to $REPO."
