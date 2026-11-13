@@ -82,4 +82,34 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-13 | `a089434` | Never post a power cut whose day has passed (blocks the 13 Nov Chennai test row); district check every 15 min |
+| 2026-11-13 | `10d7e55` | Chennai Minnal live: district power-cut pages switched on (live: chennai only) |
+| 2026-11-13 | `15115fe` | District reel fixes: applied once only (a re-render never repeats the share line); follow line from districts.json |
+| 2026-11-13 | `c912669` | District reels (owner 13 Nov, Chennai test): follow said once, share line for that area's people (voice + end card), full cut time on the band, real date instead of 'naalai marudhinam', one-word மின்தடை, short voice (max 6 sentences; caption has every area) |
+| 2026-11-13 | `1a1d56e` | District switch: live list (pages go live one by one; chennai first) - still off until the owner approves a Chennai test reel |
+| 2026-11-13 | `bb4b37f` | meta_fb_token.sh: accept a never-expiring system-user token as it is (no exchange) |
+| 2026-11-13 | `54c4721` | Chennai Minnal Instagram account id (Business settings, portfolio Minnal Media) |
+| 2026-11-13 | `63f8358` | District Unified login: a missing Instagram account id blocks only posting (finding and writing go on); 351 tests pass |
+| 2026-11-13 | `465a919` | Instagram via Meta Unified login for district pages (app Minnal Pages): graph.facebook.com + the page's Instagram account id; Chennai marked unified (account id filled once its token exists); Kovai unchanged |
+| 2026-11-13 | `4cfa995` | Chennai go-live steps: Instagram token from the old app Namenector Social (new Meta apps only get Unified login, which needs a business portfolio and graph.facebook.com); Facebook token from the new app Minnal Pages; steps 1-2 done |
+| 2026-11-13 | `a2bfc88` | meta_fb_token.sh: use our own Meta app Minnal Pages (1448178013559937); secret asked once, kept only in ~/.config/minnal-pages |
+| 2026-11-13 | `e2d6109` | Chennai go-live steps: one chennaiminnal login (same Chrome profile), sample reel approved before switch-on |
+| 2026-11-13 | `35477f3` | Chennai go-live steps (browser, by hand): Sheet, district bridge, Instagram tester + token, GitHub, Facebook token, dry test, switch on |
+| 2026-11-13 | `5e1b59f` | Setup scripts for district pages: meta_fb_token.sh takes a page key (chennai -> FB_PAGE_ID_CHENNAI / FB_TOKEN_CHENNAI); set_secrets.sh also copies DISTRICT_BRIDGE_URL / DISTRICT_BRIDGE_KEY |
+| 2026-11-13 | `40e9c44` | Instagram steps for the owner (by hand): create kovaiminnal, tester invites, IG tokens for Kovai + Chennai |
+| 2026-11-13 | `504e498` | Instagram setup texts: brand/instagram_details.txt (Kovai) + per-district files (git-ignored upload/), checklist notes that IG<->FB link is optional for posting |
+| 2026-11-13 | `caa2ac6` | Page setup checklist: Chennai Minnal Facebook page created |
+| 2026-11-13 | `4976341` | Page setup checklist: Madurai suspended by Instagram, Madurai + Salem dropped for now; Instagram by hand from now on |
+| 2026-11-13 | `73dd6d3` | District pages: setup checklist for every Facebook page + Instagram account (structure, pace rules, texts, status) |
+| 2026-11-12 | `c8e4232` | District reels: closing follow line in the same news voice (Tamil, 'பவர்கட்' as one word, '<district> மின்னல் சேனல்'), no English outro; caption + end card the same |
+| 2026-11-12 | `1c28d38` | District power-cut pages: separate runner behind the district_powercut switch |
+| 2026-11-12 | `1005fbe` | Kovai footer re-rendered by the shared footer code (same look) |
+| 2026-11-12 | `c3cd6ad` | District pages: districts/<key>/ (logo + footer per district, simple Kovai Minnal logo without the Coimbatore scene, Noto Sans Tamil), Tamil follow texts + bios per district; districts.json moved to districts/ |
+| 2026-11-11 | `56b2dbb` | District power-cut pages: list of 37 districts (Dinamalar slugs checked) + off-by-default switch district_powercut.enabled |
+| 2026-11-11 | `fae33f8` | Reel default style B2 (Broadcast), chosen by the owner; footer stays at the bottom |
+| 2026-11-11 | `092a789` | reel5: two new layouts to choose from - D (News Desk) and B2 (Broadcast); K stays default until the owner picks |
+| 2026-11-11 | `4e82b08` | Remove sample-run leftovers (RN-1 prebuilt reel, archive rows, results); state files back to their empty shapes; kit/package-lock.json ignored |
+| 2026-11-11 | `7c6608d` | Only கோவை மின்னல் in the video: footer pill and end-card line (no செய்திகள்) |
+| 2026-11-11 | `1cc0174` | reel5: header = page name only; end card 'Source:' instead of ஆதாரம் |
+| 2026-11-11 | `7c6bb8b` | Reel v5 style K (Kovai Minnal lightning look, default); tools/ab_reel.py for writer comparison |
 <!-- recent-changes:end -->
