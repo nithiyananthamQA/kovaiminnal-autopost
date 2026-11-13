@@ -239,6 +239,13 @@ def find_news(d, dry=False, log=print):
     except Exception:
         recent = []
     checked, skipped = [], {}
+    # owner 14 Nov: a news round must never hold up the power-cut check in the same job - newest first, at most news_max_open
+    # articles opened and news_budget_min minutes (what is left waits for the next round)
+    import time as _time
+    t_end = _time.time() + 60 * float(s.get("news_budget_min", 8))
+    max_open, opened = int(s.get("news_max_open", 60)), 0
+    items = sorted(items, key=lambda x: str(x.get("published") or ""), reverse=True)      # newest first ...
+    items = sorted(items, key=lambda x: (x.get("via") != "dinamalar-list", not x.get("published")))      # ... the district list first
     for x in items:
         u = x["url"]
         if u in seen:
@@ -246,8 +253,13 @@ def find_news(d, dry=False, log=print):
         if first:
             seen[u] = today
             continue
+        if opened >= max_open or _time.time() > t_end:
+            skipped["round budget used - next round"] = skipped.get("round budget used - next round", 0) + 1
+            continue
         t0 = x.get("title") or ""
         quick = ("power cut (own finder)" if t0 and F.is_power_cut(t0) else "") or (pick.auto_ok({"title": t0, "url": u}) if t0 else "")
+        if not quick:
+            opened += 1
         it, why = (None, quick) if quick else pick.check_article(x, recent)
         if it:
             t = it["title"]
