@@ -49,6 +49,11 @@ try:
     SHARE = {k: v for k, v in json.loads(DISTRICTS_FILE.read_text(encoding="utf-8")).items() if k.startswith(("share_", "follow_news"))}
 except Exception:
     SHARE = {}
+# owner 14 Nov: the "முழு விவரம்" card (இடம் / யார் / எப்போது) must not sit on top of the yellow headline strip - while the card
+# is on screen the strip is hidden (district pages)
+NO_CLASH_JS = """<script>(function(){const _r=window.renderAt;window.renderAt=function(t){_r(t);
+const sm=document.getElementById('sum'),m=document.getElementById('mini');
+if(sm&&m&&parseFloat(sm.style.opacity||'0')>0)m.style.opacity=0;};})();</script>"""
 MAX_SPOKEN = 6      # owner 13 Nov: a power-cut reel is 30-40 s; the caption carries the full area list
 _TIME = __import__("re").compile(r"(காலை|மதியம்|பிற்பகல்|மாலை|இரவு)\s*(\d{1,2}(?:[.:]\d{2})?)\s*மணி\s*(?:முதல்|தொடங்கி)\s*"
                                  r"(காலை|மதியம்|பிற்பகல்|மாலை|இரவு)?\s*(\d{1,2}(?:[.:]\d{2})?)\s*மணி\s*வரை")
@@ -97,17 +102,17 @@ def district_spec(spec, page):
 
 
 def news_spec(spec, page):
-    """owner 13 Nov: a district page's NON-power-cut news ends with ONE common closing line - send to friends and family +
-    the NEWS follow line (never the power-cut one). Power-cut reels keep their own closing (district_spec)."""
+    """owner 13-14 Nov: a district page's NON-power-cut news ends with ONE common closing line - the NEWS follow line only
+    (never the power-cut one). Power-cut reels keep their own closing (district_spec)."""
     spec = json.loads(json.dumps(spec, ensure_ascii=False))
     follow = SHARE.get("follow_news_spoken", "").format(city=page.get("city", ""), page=page.get("page_ta", page.get("name", "")))
     sents = list(spec.get("sentences") or [])
     while sents and ("ஃபாலோ" in sents[-1].get("say", "") or "Follow" in sents[-1].get("say", "")):
         sents.pop()
     spec["sentences"] = sents
-    share = SHARE.get("share_news_general", "")      # owner 13 Nov: every non-power-cut news has the SAME closing line
-    spec["outro"] = dict(spec.get("outro") or {}, say=(share + " " + follow).strip())
-    spec["share_card"] = SHARE.get("share_news_general_card", "")
+    # owner 14 Nov: every non-power-cut news has the SAME closing - only "follow to get the news at once" (no send-to-friends line)
+    spec["outro"] = dict(spec.get("outro") or {}, say=follow)
+    spec["share_card"] = SHARE.get("follow_news_card", "").format(city=page.get("city", ""))
     spec["district_done"] = True
     return spec
 
@@ -373,6 +378,7 @@ def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
         import re as _re
         card = spec.get("share_card") or f'⚡ {page["end_card"]} Follow செய்யுங்கள் 📌'
         html = _re.sub(r'<div class="e4">[^<]*</div>', f'<div class="e4">{card}</div>', html, count=1)
+        html = html.replace("</body></html>", NO_CLASH_JS + "</body></html>", 1)
     if is_plain(spec):
         scene, extra = scene_html(spec)
         html = html.replace("</style>", SCENE_CSS + "</style>", 1)
