@@ -255,6 +255,17 @@ L = [("https://x/chennai/student-hit/1", "சென்னையில் கா�
      ("https://x/chennai/cut/5", "சென்னையில் நாளை மின் தடை", 1)]
 PL.dinamalar_list = lambda d_: [{"url": u, "title": t} for u, t, h in L]
 PL.dinamalar_meta = lambda d_: {u.rsplit("/", 1)[-1]: {"published": iso(h), "snippet": ""} for u, t, h in L}
+PL.news_candidates = lambda d_, lines: [{"url": u, "title": t, "via": "dinamalar-list"} for u, t, h in L]      # no network in tests
+import pick, collect, allnews
+import freshness as _F
+def _check(x, recent):
+    t = x["title"]
+    if allnews.other_district(t):
+        return None, "other district"
+    pub = PL.dinamalar_meta(d)[x["url"].rsplit("/", 1)[-1]]["published"]
+    return {"id": x["url"], "url": x["url"], "title": t, "published": pub, "source": "தினமலர்", "power_cut": bool(_F.is_power_cut(t)),
+            "score": collect.score({"title": t, "snippet": "", "mentions": 1, "published": pub})}, ""
+pick.check_article = _check
 PL.settings = lambda: {"enabled": True, "news_live": ["chennai"], "news_per_run": 1, "news_per_day": 2, "news_max_age_hours": 6}
 """
 

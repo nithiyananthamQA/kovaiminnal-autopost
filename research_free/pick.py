@@ -30,6 +30,7 @@ DRY = os.environ.get("PICK_DRY", "") in ("1", "true", "yes")
 # owner 2 Nov: "do not ask me to confirm" - no e-mail; every round's top news (PICK_AUTO_TOP, 8 + 6 + 6 = 20 a day) is written at once.
 EMAIL = os.environ.get("PICK_EMAIL", "0") == "1"
 # owner 2 Nov: more than two papers - every Tamil outlet the collector already trusts for Coimbatore
+HOME_DINAMALAR = "district-news-coimbatore"      # the page's own Dinamalar district section (a district page sets its own)
 OUTLETS = {"dinamalar.com": "தினமலர்", "dinamani.com": "தினமணி", "dinakaran.com": "தினகரன்", "dailythanthi.com": "தினத்தந்தி",
            "maalaimalar.com": "மாலைமலர்", "hindutamil.in": "இந்து தமிழ்", "polimernews.com": "பாலிமர்"}
 
@@ -183,7 +184,7 @@ def check_article(it, recent):
         return None, "other district"
     # 1 Nov: a Dinamalar page of another district / state section (puducherry, tamil-nadu-news, premium-news ...) is taken only when
     # its headline or first lines name a Coimbatore-district place ("போதையில் தகராறு 18 பேர்" was Puducherry news)
-    if "dinamalar.com" in it["url"] and "district-news-coimbatore" not in it["url"] \
+    if "dinamalar.com" in it["url"] and HOME_DINAMALAR not in it["url"] \
             and not (allnews.has_place(title) or allnews.has_place(art["text"][:300])):
         return None, "not Coimbatore district"
     if AD.search(title):

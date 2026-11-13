@@ -151,6 +151,55 @@ def dinamalar_meta(d):
     return out
 
 
+def news_candidates(d, lines):
+    """owner 14 Nov: the reference's news collection (research_free/pick.py candidates) for a district page - the Dinamalar district
+    list, every outlet's district page (research_free/sources.json with the district's name) and Google / Bing news searches with
+    the district's Tamil name on Dinamalar + Dinamani (one Google search on each other outlet)"""
+    import allnews, pick
+    items = []
+    try:
+        items += [dict(x, via="dinamalar-list") for x in dinamalar_list(d)]
+    except Exception as e:
+        lines.append(f"Dinamalar list failed: {str(e)[:120]}")
+    names = [d["dinamalar"]] + ALIASES.get(d["key"], [])
+    try:
+        cfgs = json.loads((ROOT / "research_free" / "sources.json").read_text(encoding="utf-8"))
+    except Exception:
+        cfgs = []
+    for cfg in cfgs:
+        for nm in names[:1]:
+            c = json.loads(json.dumps(cfg, ensure_ascii=False).replace("coimbatore", nm).replace("கோவை", d["ta"]))
+            try:
+                items += allnews.from_listing(dict(c, limit=80))
+            except Exception as e:
+                lines.append(f"{c.get('name', c['url'])} list failed: {str(e)[:80]}")
+    words = [d["ta"]] + list(d.get("news_words") or [])
+    both = (allnews.from_google, allnews.from_bing)
+    searches = [(q, dom, both) for q in words for dom in ("dinamalar.com", "dinamani.com")]
+    searches += [(d["ta"], dom, (allnews.from_google,)) for dom in pick.OUTLETS if dom not in ("dinamalar.com", "dinamani.com")]
+    for q, dom, fns in searches:
+        for fn in fns:
+            try:
+                got = [x for x in fn(f"{q} site:{dom}") if dom in (x.get("site", "") + x.get("url", ""))]
+                got.sort(key=lambda x: str(x.get("published") or ""), reverse=True)
+                items += got[:25]
+            except Exception as e:
+                lines.append(f"{fn.__name__} {dom} '{q}' failed: {str(e)[:80]}")
+    seen, out = set(), []
+    for it in items:
+        u = it["url"]
+        if "news.google.com" in u:
+            try:
+                u = allnews.resolve(u)
+            except Exception:
+                continue
+        u = u.split("?")[0].rstrip("/").replace("dinamani.com/amp/story/", "dinamani.com/").replace("://l-www.dinamalar.com", "://www.dinamalar.com")
+        if u not in seen and ("dinamalar.com/news" in u or any(dm in u for dm in pick.OUTLETS if dm != "dinamalar.com")):
+            seen.add(u)
+            out.append(dict(it, url=u))
+    return out
+
+
 def find_news(d, dry=False, log=print):
     """owner 13 Nov (Chennai): every new local news of the page, highest points first (the reference's score: reader interest,
     outlets, our insights, freshness), at most news_per_run per check and news_per_day a day. The first run only remembers what
@@ -177,30 +226,48 @@ def find_news(d, dry=False, log=print):
     seen, days = st.setdefault("seen", {}), st.setdefault("days", {})
     now = datetime.datetime.now(IST)
     today = now.date().isoformat()
-    meta = dinamalar_meta(d)
-    cands, skipped = [], {}
-    for x in dinamalar_list(d):
-        u, t = x["url"], x.get("title") or ""
+    try:
+        meta = dinamalar_meta(d)
+    except Exception:
+        meta = {}
+    lines = []
+    items = news_candidates(d, lines)
+    for l in lines:
+        log(l)
+    try:
+        recent = collect.bridge("recent").get("rows") or []
+    except Exception:
+        recent = []
+    checked, skipped = [], {}
+    for x in items:
+        u = x["url"]
         if u in seen:
             continue
         if first:
             seen[u] = today
             continue
-        m = meta.get(u.rsplit("/", 1)[-1], {})
-        why = ("power cut (own finder)" if F.is_power_cut(t) else "") or pick.auto_ok({"title": t, "url": u}) \
-            or ("another district" if allnews.other_district(t) else "") or ("no headline" if not t else "")
-        try:
-            age = (now - datetime.datetime.fromisoformat(m["published"])).total_seconds() / 3600 if m.get("published") else None
-        except Exception:
-            age = None
-        if not why and (age is None or age > max_age):
-            why = "older than %g h" % max_age if age is not None else "no publish time"
+        t0 = x.get("title") or ""
+        quick = ("power cut (own finder)" if t0 and F.is_power_cut(t0) else "") or (pick.auto_ok({"title": t0, "url": u}) if t0 else "")
+        it, why = (None, quick) if quick else pick.check_article(x, recent)
+        if it:
+            t = it["title"]
+            pub = it.get("published") or (meta.get(u.rsplit("/", 1)[-1], {}).get("published") if "dinamalar.com" in u else "") or ""
+            try:
+                age = (now - datetime.datetime.fromisoformat(pub.replace("Z", "+00:00"))).total_seconds() / 3600 if pub else None
+            except Exception:
+                age = None
+            why = ("power cut (own finder)" if it.get("power_cut") else "") or pick.auto_ok({"title": t, "url": u}) \
+                or ("older than %g h" % max_age if age is not None and age > max_age else "")
         if why:
             seen[u] = today
             skipped[why[:30]] = skipped.get(why[:30], 0) + 1
             continue
-        n = {"title": t, "snippet": m.get("snippet", ""), "mentions": 1, "published": m.get("published", "")}
-        cands.append((collect.score(n), t, u))
+        checked.append(it)
+    merged = pick.merge_same(checked)
+    cands = [(it["score"], it["title"], it["url"]) for it in pick.rank(merged)]
+    for it in merged:      # the same news from another paper is never written a second time
+        for alt in it.get("alts") or []:
+            seen[alt] = today
     cands.sort(key=lambda c: -c[0])
     room = max(0, min(per_run, per_day - int(days.get(today, 0))))
     take = cands[:room]
@@ -307,6 +374,8 @@ def apply(key, mode="powercut"):
     _set(A, "OTHER_EN", sorted({w for x in others.values() for w in (x["en"].lower(), x["dinamalar"]) if w.isalpha()} | {"coimbatore", "kovai"}))
     _set(A, "QUERIES", list(d["queries"]))
     _set(A, "SITE_QUERIES", [d["ta"]])
+    import pick as PK
+    _set(PK, "HOME_DINAMALAR", f"district-news-{slug}")
     _set(S, "DISTRICT", f"tamil-nadu-district-news-{slug}")
     _set(S, "LIST_URL", "https://www.dinamalar.com/news/" + S.DISTRICT)
     _set(A, "from_dinamalar_list", lambda: dinamalar_list(d))
