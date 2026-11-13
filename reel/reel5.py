@@ -40,12 +40,13 @@ def district_pages():
         out[k] = {"logo": str((base / k / "logo.png").resolve()), "name": d["name_ta"], "handle": d["handle"], "tagline": d["name_ta"],
                   "follow": d["end_card"], "ticker": d["name_ta"], "footer": foot, "footer_wide": foot,
                   "hashtag": "#" + d["name_en"].replace(" ", ""), "end_card": d["end_card"], "name_en": d["name_en"], "district": True,
-                  "share_spoken": SHARE.get("share_spoken", ""), "share_card": SHARE.get("share_card", ""), "follow_spoken": d.get("follow_spoken", "")}
+                  "share_spoken": SHARE.get("share_spoken", ""), "share_card": SHARE.get("share_card", ""), "follow_spoken": d.get("follow_spoken", ""),
+                  "city": d["ta"], "page_ta": d["name_ta"]}
     return out
 
 
 try:
-    SHARE = {k: v for k, v in json.loads(DISTRICTS_FILE.read_text(encoding="utf-8")).items() if k.startswith("share_")}
+    SHARE = {k: v for k, v in json.loads(DISTRICTS_FILE.read_text(encoding="utf-8")).items() if k.startswith(("share_", "follow_news"))}
 except Exception:
     SHARE = {}
 MAX_SPOKEN = 6      # owner 13 Nov: a power-cut reel is 30-40 s; the caption carries the full area list
@@ -64,6 +65,8 @@ def district_spec(spec, page):
     import re
     if spec.get("district_done"):      # already applied (a re-render of the same reel.json)
         return spec
+    if "மின்" not in str(spec.get("cat") or "") or "தடை" not in str(spec.get("cat") or ""):
+        return news_spec(spec, page)
     spec = json.loads(json.dumps(spec, ensure_ascii=False))
     sents = list(spec.get("sentences") or [])
     follow = page.get("follow_spoken") or (spec.get("outro") or {}).get("say") or ""
@@ -89,6 +92,24 @@ def district_spec(spec, page):
     if spec.get("mini"):
         spec["mini"] = fix(re.sub(r"(நாளை\s*மறுதினம்|நாளை|இன்று)\s*\(([^)]*)\)", r"\2", spec["mini"]))
     spec["share_card"] = page.get("share_card", "").format(place=place) if place and page.get("share_card") else ""
+    spec["district_done"] = True
+    return spec
+
+
+def news_spec(spec, page):
+    """owner 13 Nov: a district page's NON-power-cut news ends with the NEWS follow line (never the power-cut one) and a share
+    line by type: news of one area -> send to the people of that area; city-wide news -> send to friends and family"""
+    spec = json.loads(json.dumps(spec, ensure_ascii=False))
+    follow = SHARE.get("follow_news_spoken", "").format(city=page.get("city", ""), page=page.get("page_ta", page.get("name", "")))
+    sents = list(spec.get("sentences") or [])
+    while sents and ("ஃபாலோ" in sents[-1].get("say", "") or "Follow" in sents[-1].get("say", "")):
+        sents.pop()
+    spec["sentences"] = sents
+    place = str(spec.get("location") or "").strip()
+    area = bool(place) and _norm(place) not in (_norm(page.get("city")), _norm(page.get("city", "") + " மாவட்டம்"))
+    share = (SHARE.get("share_news_area", "").format(place=place) if area else SHARE.get("share_news_general", ""))
+    spec["outro"] = dict(spec.get("outro") or {}, say=(share + " " + follow).strip())
+    spec["share_card"] = (SHARE.get("share_news_area_card", "").format(place=place) if area else SHARE.get("share_news_general_card", ""))
     spec["district_done"] = True
     return spec
 
