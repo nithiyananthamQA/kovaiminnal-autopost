@@ -6,8 +6,7 @@ name: district-powercut
 # posted at once, never twice, never after it is over; each cut only on ITS district's page.
 on:
   schedule:
-    - cron: "5 0-16 * * *"       # 05:35 ... 21:35 IST (Kovai's powercut.yml runs at :20 / :50)
-    - cron: "35 0-16 * * *"
+    - cron: "5,20,35,50 0-16 * * *"       # owner 13 Nov: every 15 min, 05:35 ... 22:20 IST
   workflow_dispatch:
     inputs:
       dry:

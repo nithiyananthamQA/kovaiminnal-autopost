@@ -86,5 +86,19 @@ class PowerCutLane(unittest.TestCase):
                 self.assertIn("inputs[dry_run]=false", line)
 
 
+class PassedCutNeverPosted(unittest.TestCase):
+    """owner 13 Nov: the Chennai test row (cut on 13 Nov) must never go out on 14 Nov - a cut whose day has passed is over,
+    even for a manual row that skips the age check; today's and later cuts still post"""
+    def test_passed_cut(self):
+        import datetime, sys
+        sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "poster"))
+        import freshness as F
+        now = datetime.datetime(2026, 11, 14, 9, 0, tzinfo=F.IST)
+        ta = "நுங்கம்பாக்கம், பல்லாவரம் பகுதிகளில் நாளை மறுதினம் (நவ. 13) மின் தடை: காலை 10 - மதியம் 3 மணி வரை"
+        self.assertIn("already over", F.power_cut_over(ta, "", "2026-11-11", now=now))
+        self.assertEqual(F.power_cut_over(ta, "", "2026-11-11", now=now.replace(day=13)), "")
+        self.assertEqual(F.power_cut_over("சேலத்தில் நாளை (நவ. 15) மின் தடை: காலை 9 - மாலை 5 மணி வரை", "", "2026-11-14", now=now), "")
+
+
 if __name__ == "__main__":
     unittest.main()
