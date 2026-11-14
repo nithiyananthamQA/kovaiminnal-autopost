@@ -82,6 +82,14 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-14 | `b09de88` | stories shared |
+| 2026-11-14 | `e824780` | test_today_only: independent of research_free/START_AT (failed for 2 h after every collect-switch start) |
+| 2026-11-14 | `d545796` | Kovai Minnal live (LIVE file: scheduled posting on); tests job installs pyyaml (test_district_reach needs it) |
+| 2026-11-14 | `179471b` | pick: picked news saved |
+| 2026-11-14 | `79589ef` | pick: list sent |
+| 2026-11-14 | `4799c03` | SETUP step 11: keeper starts a switched-on workflow live at its cron times - switch it off right after a dry test |
+| 2026-11-14 | `4d3475a` | keeper: GitHub-only scheduler - starts every switched-on workflow at its own cron times (GitHub's own timer almost never fires) |
+| 2026-11-14 | `cca0f20` | collect switch: start |
 | 2026-11-14 | `634e481` | Kovai job timer in the bridge: startKovaiJobs every 5 min starts post / powercut / comments / pick / rasipalan / insights on their schedule times (GitHub's own timer almost never fires) |
 | 2026-11-14 | `8bfc761` | District place tag: 'not' words (Thiruporur is not Porur), check ids on facebook.com/<id>; reach tests independent of the comments_live switch |
 | 2026-11-14 | `60679bc` | district powercut: notices found |
@@ -104,12 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-14 | `13b6440` | district-powercut: re-save so GitHub registers the schedule (0 scheduled runs since the push) |
 | 2026-11-14 | `466bae4` | district powercut: chennai posted |
 | 2026-11-14 | `5b8fcbe` | district powercut: notices found |
-| 2026-11-14 | `ca9a8d4` | Chennai news: the first round posts too (the per-round cap stops a flood; same as the reference) |
-| 2026-11-14 | `b06290e` | DIFFERENCES: round limit, same-job posting and config switch kept by the owner (14 Nov) |
-| 2026-11-14 | `0a4c56d` | Tests: news tests never touch the Sheet (fast, offline) |
-| 2026-11-14 | `25941ba` | News round limit (60 articles / 6 min, newest first) so the power-cut check in the same job is never held up; docs/DIFFERENCES.md lists every difference from the reference |
-| 2026-11-14 | `f48d0f5` | Chennai news from every source like the reference (owner 14 Nov): Dinamalar district list + each outlet's district page (sources.json) + Google/Bing searches on all 7 outlets; each article checked with the reference check_article; same news from several papers merged (+points) |
-| 2026-11-14 | `947b373` | Chennai news like the reference: 8 + 6 + 6 = 20 a day (06 / 10 / 19 h) |
-| 2026-11-14 | `47e3728` | Like the reference (owner 14 Nov): district check every 30 min; Chennai news only in 3 rounds a day (06 / 10 / 19 h: 4 + 3 + 3 = 10), news up to 12 h old |
-| 2026-11-14 | `931d1d1` | Test: writenews off-switch checked offline (never runs the real writer) |
 <!-- recent-changes:end -->
