@@ -3,6 +3,7 @@ Coimbatore 360 setup unchanged). Usage: python3 reel5.py spec.json out.mp4 [page
 
 v5 = reel4.py (his v4 design, untouched in its own file) + two changes asked by the owner on 11 Nov:
   1. the brand footer runs edge to edge across the bottom of the reel, double height (reel/assets/footer_wide_coimbatore.png)
+     - 14 Nov: switched off (FOOTER_AT_BOTTOM): Instagram covers that zone; B2 now keeps everything in the Reels safe area (SAFE)
   2. a story with no picture (the source had no photo and every picture service failed -> post.plain_background) no longer
      shows the faded logo with camera moves: our own code draws an animated news scene for the story's kind - police lights
      (crime), siren + moving road (accident), a city whose windows go dark (power cut), rain (weather), flames (fire),
@@ -120,9 +121,14 @@ def news_spec(spec, page):
 for _k, _p in district_pages().items():
     R.PAGES.setdefault(_k, _p)
 
-FOOT_CSS = """
+# 14 Nov: the footer strip is OFF. Instagram covers the bottom 35 % of a reel with the account name, its own Follow button and the
+# caption, so the strip was hidden there and repeated what Instagram itself shows; the header bar already carries the page's logo
+# + name and the end card FOLLOW @handle, and a third brand bar inside the safe area would take room from the captions.
+# FOOTER_AT_BOTTOM = True brings the 11 Nov edge-to-edge strip back (each page keeps its footer.png).
+FOOTER_AT_BOTTOM = False
+FOOT_CSS = ("""
 #foot{left:0!important;right:0;bottom:0!important;width:1080px!important;height:200px!important;opacity:1!important;object-fit:fill}
-"""
+""" if FOOTER_AT_BOTTOM else "\n#foot{display:none!important}\n")
 
 SCENE_CSS = """
 #scene{position:absolute;inset:0;z-index:4;overflow:hidden;background:radial-gradient(ellipse at 50% 55%,#13306E 0%,#0B1B4D 45%,#050C24 100%)}
@@ -315,22 +321,75 @@ body{background:radial-gradient(ellipse at 50% 30%,#13306E 0%,#071433 55%,#03091
 .ph{-webkit-text-stroke:0;text-shadow:0 4px 18px rgba(0,0,0,.6)}
 #sum{top:206px;left:34px;right:34px}
 """
+# 14 Nov (owner saw the reels on Instagram: text over the edges, bottom covered): every B2 element sits in Instagram's Reels safe
+# area (Meta 9:16 guidance) - nothing in the top 14 % (270 px: "Reels" title, camera) or the bottom 35 % (from y 1250: account name,
+# caption, Follow button, tab bar), 70 px (>= 6 %) from each side (tall phones crop the sides), and nothing in the right 140 px below
+# y 1000 (like / comment / share / audio buttons). Colours and look stay B2; only places and sizes changed:
+#   y 276-392 header bar + logo | 410-478 location pill | 520-1000 headline (hook) / fact card + yellow strip / 410-990 summary
+#   1000-1228 captions (x 70-940; their 22 px slide-in ends by 1250) | full-width bars may bleed to the edges, their text never
+#   does | a story without a photo: the drawn scene's icon disc sits under the captions (y 1420), not behind them
+#   Check any spec in ~20 s without rendering: tools/frame_preview.py
+SAFE = {"top": 270, "bottom": 1250, "side": 70, "buttons_x": 940, "buttons_y": 1000}
 STYLE_B = STYLE_K + """
-#hdr{left:0;right:0;top:118px;padding:16px 180px 12px 40px;background:linear-gradient(90deg,#0B1B4D 0%,#13306E 70%,rgba(19,48,110,.0) 100%);
+#hdr{left:0;right:0;top:276px;padding:12px 220px 10px 70px;background:linear-gradient(90deg,#0B1B4D 0%,#13306E 70%,rgba(19,48,110,.0) 100%);
   border-bottom:6px solid #FFD21F;box-shadow:0 10px 30px rgba(0,0,0,.45)}
-#plogo{top:96px;right:28px;width:140px;height:140px}
-#pin{top:300px;left:40px;background:#E3151B;color:#fff}
+#plogo{top:272px;right:70px;width:120px;height:120px}
+#hdr .sub{max-width:790px;overflow:hidden}
+#hdr .src{min-width:0;flex-shrink:1}
+#pin{top:410px;left:70px;max-width:870px;background:#E3151B;color:#fff}
+#pin span{max-width:790px}
 #pin .ic{color:#FFD21F}
-#hook{top:560px;left:40px;right:40px}
+#hook{top:520px;left:70px;right:70px;transform-origin:0 0}
+#hook::before{content:"";position:absolute;z-index:-1;left:-70px;right:-70px;top:-40px;bottom:-40px;pointer-events:none;
+  background:linear-gradient(180deg,rgba(6,14,43,0) 0%,rgba(6,14,43,.62) 20%,rgba(6,14,43,.62) 80%,rgba(6,14,43,0) 100%)}
 #hook .h1{font-size:96px;text-shadow:0 6px 0 #E3151B,0 14px 34px rgba(0,0,0,.7)}
-#mini{left:-60px;right:-60px;top:1040px;transform:skewY(-5deg);background:#FFD21F;color:#0B1B4D;border:0;padding:30px 100px 22px;font-size:50px;
+#hook .h2{margin-left:16px;max-width:828px}
+#mini{left:-60px;right:-60px;top:784px;background:#FFD21F;color:#0B1B4D;border:0;padding:16px 136px 12px;font-size:46px;
   text-shadow:none;box-shadow:0 22px 50px rgba(0,0,0,.55)}
-.card{left:auto;right:40px;top:640px;width:780px}
-#cap{top:1236px;height:330px;left:40px;right:140px}
+.card{left:auto;right:140px;top:510px;width:800px}
+#cap{top:1000px;height:228px;left:70px;right:140px}
 .ph{text-align:center;-webkit-text-stroke:0;color:#0B1B4D;background:rgba(255,255,255,.97);border-radius:22px;padding:16px 28px 8px;
   text-shadow:none;box-shadow:0 14px 34px rgba(0,0,0,.5);font-size:62px}
 .ph span.on{color:#0B1B4D;background:#FFD21F;box-shadow:0 6px 0 #E3151B}
+#sum{top:410px;left:70px;right:70px;transform-origin:50% 0}
+#end{padding:270px 140px 670px;gap:22px}
+#end>*{flex-shrink:0;max-width:100%}
+#end img{width:190px;height:190px}
+#end .e1{font-size:66px}
+#end .e2{white-space:nowrap;overflow:hidden}
+#end .e4{font-size:40px}
+#end .e5{font-size:32px}
+#scene #halo,#scene #disc,#scene .ring{top:1420px}
 """
+# the B2 safe-area sizes + the serious opening (after reel4's own renderAt / fitAll):
+# - frame 1 = the settled headline: no slide-in, no lightning flash over it (ZAP_JS opens without the t=0 hit), the pin already
+#   in place - a hard TV cut, so the place + the key fact are readable in the very first frame and in Instagram's preview
+# - text sizes are capped to their zone (headline <= 300 + 180 px, strip 170, captions 196 - fitted with room for the highlighted
+#   word, card text 170); the headline block is scaled down when taller than 520-1000, the summary card when taller than
+#   410-990, and the end card's text shrinks until it fits 270-1250
+# - while the summary shows, the yellow strip and the pin step aside (its first row is the place) - Kovai and district pages alike
+SAFE_JS = """<script>(function(){
+const _fit=window.fitAll;
+window.fitAll=function(){_fit();
+  const re=(el,h,min)=>{if(!el)return;el.style.fontSize='';fitEl(el,h,min);};
+  re(document.querySelector('#hook .h1'),300,56); re(document.querySelector('#hook .h2'),180,44); re(document.getElementById('mini'),170,30);
+  document.querySelectorAll('.ph').forEach(e=>{e.style.paddingLeft=e.style.paddingRight='42px';re(e,196,46);e.style.paddingLeft=e.style.paddingRight='';});
+  document.querySelectorAll('.card .vl').forEach(e=>re(e,170,30));
+  document.querySelectorAll('#end .e2').forEach(e=>re(e,120,34));
+  const end=document.getElementById('end'), kids=end?[...end.children]:[], tall=()=>kids.reduce((a,k)=>a+k.offsetHeight+22,-22);
+  for(let n=0;kids.length&&tall()>960&&n<30;n++)kids.forEach(k=>{if(k.tagName==='IMG'){k.style.width=k.style.height=Math.round(k.offsetWidth*0.95)+'px';}
+    else k.style.fontSize=(parseFloat(getComputedStyle(k).fontSize)*0.95)+'px';});
+  const sm=document.getElementById('sum'); window.__sumK=sm?Math.min(1,580/sm.offsetHeight):1;
+  window.__hookK=Math.min(1,480/document.getElementById('hook').offsetHeight);};
+const _r=window.renderAt;
+window.renderAt=function(t){_r(t);
+  document.getElementById('hook').style.transform=window.__hookK<1?'scale('+window.__hookK+')':'none';
+  const pin=document.getElementById('pin'); pin.style.transform='none';
+  const sm=document.getElementById('sum'); if(!sm)return;
+  if(window.__sumK<1)sm.style.transform+=' scale('+window.__sumK+')';
+  const so=parseFloat(sm.style.opacity||'0');
+  if(so>0){document.getElementById('mini').style.opacity=0; pin.style.opacity=Math.min(parseFloat(pin.style.opacity||'1'),1-so);}
+};})();</script>"""
 V4.STYLES["D"] = STYLE_D
 V4.STYLES["B2"] = STYLE_B
 
@@ -341,8 +400,9 @@ const _r=window.renderAt;
 window.renderAt=function(t){
   _r(t);
   const z=document.getElementById('zap'), b=document.getElementById('zapbolt'); if(!z)return;
-  // lightning at the start and at every camera cut (not during the end card)
-  const hits=[0].concat(D.shots.slice(1).map(s=>s.a)).filter(x=>x<D.end_t);
+  // lightning at every camera cut (not during the end card); at the start too unless __OPEN__ is false (B2: the first frame shows
+  // the headline clean - a flash over it hid the key fact in the first second)
+  const hits=(__OPEN__?[0]:[]).concat(D.shots.slice(1).map(s=>s.a)).filter(x=>x<D.end_t);
   let k=99; hits.forEach(h=>{const d=t-h; if(d>=0&&d<k)k=d;});
   const L=k<0.22?(1-k/0.22):0, first=(k===t&&t<0.5);
   z.style.opacity=(first?0.95:0.55)*L*(0.7+0.3*Math.sin(k*90));
@@ -360,9 +420,12 @@ def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
     if not os.environ.get("REEL_STYLE") and not spec.get("style"):
         spec = dict(spec, style="B2")      # owner 11 Nov: B2 (Broadcast) is our look
     html = _orig_build(spec, shots, sents, caps, hook_end, end_t, total, page)
-    if (os.environ.get("REEL_STYLE") or spec.get("style")) in ("K", "D", "B2"):
+    style = os.environ.get("REEL_STYLE") or spec.get("style")
+    if style in ("K", "D", "B2"):
         html = html.replace('<div id="flash"></div>', '<div id="flash"></div><div id="zap"></div><div id="zapbolt"></div>', 1)
-        html = html.replace("</body></html>", ZAP_JS + "</body></html>", 1)
+        html = html.replace("</body></html>", ZAP_JS.replace("__OPEN__", "false" if style == "B2" else "true") + "</body></html>", 1)
+    if style == "B2":
+        html = html.replace("</body></html>", SAFE_JS + "</body></html>", 1)
     # owner 11 Nov: the header at the top says "கோவை மின்னல் செய்திகள்" (Kovai Minnal News), not only the page name
     name = page["name"]
     if HEADER_SUFFIX:
@@ -373,6 +436,7 @@ def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
     if wide.exists():
         old_foot = f"file://{(ASSETS / page.get('footer', 'footer_coimbatore.png')).as_posix()}"
         html = html.replace(f'<img id="foot" src="{old_foot}">', f'<img id="foot" src="file://{wide.as_posix()}">', 1)
+    if wide.exists() or not FOOTER_AT_BOTTOM:
         html = html.replace("</style>", FOOT_CSS + "</style>", 1)
     if page.get("district"):      # owner 13 Nov: the end card asks to SEND the video to that area's people (the FOLLOW button stays)
         import re as _re

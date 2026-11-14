@@ -154,7 +154,7 @@ Large video (over 25 MB): put the zip in Google Drive, share it, and paste the l
 
 ## 7. Reel template and voice
 
-- Size 1080 x 1920, 9:16. The one image is shown with different slow camera moves and crops per scene; the headline and key facts appear as Tamil cards and subtitles; the கோவை மின்னல் logo at the corner and the footer at the bottom.
+- Size 1080 x 1920, 9:16. The one image is shown with different slow camera moves and crops per scene; the headline and key facts appear as Tamil cards and subtitles; the கோவை மின்னல் logo + name in the top bar. Everything stays inside Instagram's Reels safe area (y 270-1250, 70 px from the sides, the right 140 px free below y 1000), so no footer strip (Instagram covers the bottom); check a spec with `tools/frame_preview.py`.
 - Voice: **Valluvar** (free edge-tts) for every reel. Numbers and dates are read clearly with the month.
 - At most 90 seconds, ending with the fixed follow line: மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.
 - Every built reel is checked: size, duration, voice present, not silent, not clipped.
