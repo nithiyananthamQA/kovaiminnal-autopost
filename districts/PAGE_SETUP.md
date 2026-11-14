@@ -58,7 +58,8 @@ Meta account (kovaiminnalnews@gmail.com / owner's phone)
 2. District page → paste it in "Minnal bridge" as `IG_TOKEN_<KEY>`. Kovai → in "Kovai Minnal bridge" as `IG_TOKEN_COIMBATORE`.
 3. **Owner, terminal:** `bash tools/meta_fb_token.sh <key>` (Kovai: no key) → paste the same token → saves `FB_PAGE_ID_<KEY>` / `FB_TOKEN_<KEY>` to GitHub and prints the Instagram id.
 4. **Claude:** district → `districts/districts.json` `<key>.instagram = {"api": "unified", "user_id": "<id>"}`; Kovai → `poster/config.json` `instagram.user_id`. Commit.
-5. **Claude:** switch on: district → `poster/config.json` `district_powercut.live` (+ `news_live` for all news). Commit; **owner pushes**.
+5. **Claude:** switch on: district → `poster/config.json` `district_powercut.live` (+ `news_live` for all news, + `comments_live` for comment replies e-mailed to the owner - the token needs `instagram_manage_comments` + `pages_read_engagement`, shown by `meta_fb_token.sh`). Commit; **owner pushes**.
+6. **Owner:** place tags - fill the Facebook place-page ids in `districts/locations.json` (city + areas; check each on instagram.com/explore/locations/<id>/). Empty id = no tag.
 
 ## 5. Check before going live
 

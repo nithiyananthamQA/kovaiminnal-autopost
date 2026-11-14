@@ -1,0 +1,32 @@
+{
+  "note": "owner 14 Nov (Instagram's own best practice: add a LOCATION to reach people in that place). The Instagram place tag of a district page's posts (districts/pipeline.py, location_id on the media container). Read in the repo only - no place search at runtime. id = the Facebook Page id of the PLACE page (graph.facebook.com location_id; old Instagram explore ids are refused - Namakkal 30-31 Oct). Only an id made of digits is used; an empty id = no tag (as before). TODO OWNER: fill each id after checking it is the right place: open https://www.instagram.com/explore/locations/<id>/ (or https://www.facebook.com/<id>) and see the place name. Power-cut posts always get the city tag (a cut covers many areas); other news gets the area named FIRST in the Tamil headline (then the English headline, the reel's place line, the location column), else the city. match = words found inside the headline (Tamil stems, so தாம்பரத்தில் matches தாம்பர). An id Instagram refuses is written to districts/state/<key>/locations_refused.json and never tried again - fix the id here and delete that file.",
+  "chennai": {
+    "city": {"place": "Chennai, Tamil Nadu", "id": "", "todo": "TODO OWNER: Facebook Page id of the place 'Chennai, Tamil Nadu' / 'Chennai, India'"},
+    "areas": [
+      {"place": "T. Nagar, Chennai", "match": ["தி.நகர", "தி. நகர", "தியாகராய நகர", "t. nagar", "t.nagar", "thyagaraya nagar"], "id": ""},
+      {"place": "Adyar, Chennai", "match": ["அடையாற", "அடையார", "adyar"], "id": ""},
+      {"place": "Anna Nagar, Chennai", "match": ["அண்ணா நகர", "அண்ணாநகர", "anna nagar"], "id": ""},
+      {"place": "Velachery, Chennai", "match": ["வேளச்சேரி", "velachery"], "id": ""},
+      {"place": "Tambaram", "match": ["தாம்பர", "tambaram"], "id": ""},
+      {"place": "Guindy, Chennai", "match": ["கிண்டி", "guindy"], "id": ""},
+      {"place": "Egmore, Chennai", "match": ["எழும்பூர", "egmore"], "id": ""},
+      {"place": "Mylapore, Chennai", "match": ["மயிலாப்பூர", "mylapore"], "id": ""},
+      {"place": "Triplicane, Chennai", "match": ["திருவல்லிக்கேணி", "triplicane"], "id": ""},
+      {"place": "Marina Beach, Chennai", "match": ["மெரினா", "marina beach"], "id": ""},
+      {"place": "Koyambedu, Chennai", "match": ["கோயம்பேட", "koyambedu"], "id": ""},
+      {"place": "Vadapalani, Chennai", "match": ["வடபழனி", "vadapalani"], "id": ""},
+      {"place": "Kodambakkam, Chennai", "match": ["கோடம்பாக்க", "kodambakkam"], "id": ""},
+      {"place": "Saidapet, Chennai", "match": ["சைதாப்பேட்ட", "saidapet"], "id": ""},
+      {"place": "Nungambakkam, Chennai", "match": ["நுங்கம்பாக்க", "nungambakkam"], "id": ""},
+      {"place": "Porur, Chennai", "match": ["போரூர", "porur"], "id": ""},
+      {"place": "Sholinganallur, Chennai", "match": ["சோழிங்கநல்லூர", "sholinganallur"], "id": ""},
+      {"place": "Perambur, Chennai", "match": ["பெரம்பூர", "perambur"], "id": ""},
+      {"place": "Royapuram, Chennai", "match": ["ராயபுர", "royapuram"], "id": ""},
+      {"place": "Washermanpet, Chennai", "match": ["வண்ணாரப்பேட்ட", "washermanpet"], "id": ""},
+      {"place": "Tiruvottiyur, Chennai", "match": ["திருவொற்றியூர", "tiruvottiyur", "thiruvottiyur"], "id": ""},
+      {"place": "Ambattur, Chennai", "match": ["அம்பத்தூர", "ambattur"], "id": ""},
+      {"place": "Chromepet", "match": ["குரோம்பேட்ட", "chromepet"], "id": ""},
+      {"place": "Pallavaram", "match": ["பல்லாவர", "pallavaram"], "id": ""}
+    ]
+  }
+}
