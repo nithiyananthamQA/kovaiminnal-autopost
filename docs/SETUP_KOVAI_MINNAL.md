@@ -42,7 +42,7 @@ Adiyogi (Isha), a textile-mill chimney, the Ukkadam lakefront, coconut palms and
 | `brand/profile_1080.png` | 1080 x 1080 PNG, round | **You upload:** Instagram profile picture **and** Facebook Page profile picture (same file) |
 | `brand/fb_cover_1640x624.png` | 1640 x 624 PNG | **You upload:** Facebook Page cover photo (desktop shows 820 x 312; mobile crops the sides – the name stays in the middle) |
 | `kit/logo_coimbatore.png` | 1092 x 1092 PNG, transparent | **Used by the system** (same file name as his): round logo top-right in every reel, carousels, daily rasipalan |
-| `reel/assets/footer_coimbatore.png` | 2172 x 724 PNG, transparent | **Used by the system:** name strip at the bottom of every reel, with the same round logo (approved 11 Nov) |
+| `reel/assets/footer_coimbatore.png` | 2172 x 724 PNG, transparent | name strip with the same round logo (approved 11 Nov); **not shown on reels since 14 Nov** - Instagram covers the bottom of a reel (`reel/reel5.py` FOOTER_AT_BOTTOM) |
 
 ### Texts (copy exactly)
 

@@ -337,10 +337,10 @@ STYLE_B = STYLE_K + """
 #hdr .sub{max-width:790px;overflow:hidden}
 #hdr .src{min-width:0;flex-shrink:1}
 #pin{top:410px;left:70px;max-width:870px;background:#E3151B;color:#fff}
-#pin span{max-width:790px}
+#pin span{max-width:790px;text-overflow:ellipsis}
 #pin .ic{color:#FFD21F}
 #hook{top:520px;left:70px;right:70px;transform-origin:0 0}
-#hook::before{content:"";position:absolute;z-index:-1;left:-70px;right:-70px;top:-40px;bottom:-40px;pointer-events:none;
+#hook::before{content:"";position:absolute;z-index:-1;left:-1100px;right:-1100px;top:-40px;bottom:-40px;pointer-events:none;
   background:linear-gradient(180deg,rgba(6,14,43,0) 0%,rgba(6,14,43,.62) 20%,rgba(6,14,43,.62) 80%,rgba(6,14,43,0) 100%)}
 #hook .h1{font-size:96px;text-shadow:0 6px 0 #E3151B,0 14px 34px rgba(0,0,0,.7)}
 #hook .h2{margin-left:16px;max-width:828px}
@@ -362,8 +362,8 @@ STYLE_B = STYLE_K + """
 #scene #halo,#scene #disc,#scene .ring{top:1420px}
 """
 # the B2 safe-area sizes + the serious opening (after reel4's own renderAt / fitAll):
-# - frame 1 = the settled headline: no slide-in, no lightning flash over it (ZAP_JS opens without the t=0 hit), the pin already
-#   in place - a hard TV cut, so the place + the key fact are readable in the very first frame and in Instagram's preview
+# - frame 1 = the settled headline: no slide-in, no lightning flash over it (ZAP_JS: no flash until the headline leaves), the pin
+#   already in place - a hard TV cut, so the place + the key fact are readable in the very first frame and in Instagram's preview
 # - text sizes are capped to their zone (headline <= 300 + 180 px, strip 170, captions 196 - fitted with room for the highlighted
 #   word, card text 170); the headline block is scaled down when taller than 520-1000, the summary card when taller than
 #   410-990, and the end card's text shrinks until it fits 270-1250
@@ -400,9 +400,9 @@ const _r=window.renderAt;
 window.renderAt=function(t){
   _r(t);
   const z=document.getElementById('zap'), b=document.getElementById('zapbolt'); if(!z)return;
-  // lightning at every camera cut (not during the end card); at the start too unless __OPEN__ is false (B2: the first frame shows
-  // the headline clean - a flash over it hid the key fact in the first second)
-  const hits=(__OPEN__?[0]:[]).concat(D.shots.slice(1).map(s=>s.a)).filter(x=>x<D.end_t);
+  // lightning at the start and at every camera cut (not during the end card). __OPEN__ false (B2): none while the headline is
+  // on screen - a flash and the bolt over it hid the key fact in the first seconds; the cuts after the headline keep theirs
+  const hits=(__OPEN__?[0]:[]).concat(D.shots.slice(1).map(s=>s.a)).filter(x=>x<D.end_t&&(__OPEN__||x>=D.hook_end));
   let k=99; hits.forEach(h=>{const d=t-h; if(d>=0&&d<k)k=d;});
   const L=k<0.22?(1-k/0.22):0, first=(k===t&&t<0.5);
   z.style.opacity=(first?0.95:0.55)*L*(0.7+0.3*Math.sin(k*90));

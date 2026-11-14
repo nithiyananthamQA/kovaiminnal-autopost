@@ -19,7 +19,7 @@ own district**, as soon as the paper publishes them. Kovai Minnal (all Coimbator
 | Path | What |
 |---|---|
 | `districts/districts.json` | the 37 pages: names, handle, Dinamalar page, Tamil follow lines, bios |
-| `districts/<key>/logo.png`, `footer.png` | each page's own logo + reel footer (`upload/` = profile picture + Facebook cover, not in git) |
+| `districts/<key>/logo.png`, `footer.png` | each page's own logo + reel footer, off since 14 Nov: `reel/reel5.py` FOOTER_AT_BOTTOM (`upload/` = profile picture + Facebook cover, not in git) |
 | `districts/pipeline.py` | switches the Kovai Minnal pipeline to one district (own Sheet, own state, own texts) |
 | `districts/main.py` | `list`, `find`, `write <key>`, `post <key>`, `verify <key>` |
 | `districts/make_bridge.py` | makes `apps_script/Code.districts.gs` (the districts' own bridge) from Kovai's `Code.gs` |
