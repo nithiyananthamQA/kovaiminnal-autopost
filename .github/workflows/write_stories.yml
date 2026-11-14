@@ -61,6 +61,8 @@ jobs:
           ANTHROPIC_MODEL: claude-haiku-5-5      # owner 29 Oct: newest Haiku (older one only as automatic fallback)
           BRIDGE_URL: ${{ secrets.BRIDGE_URL }}
           BRIDGE_KEY: ${{ secrets.BRIDGE_KEY }}
+          DISTRICT_BRIDGE_URL: ${{ secrets.DISTRICT_BRIDGE_URL }}   # owner 14 Nov: the one minnal-bot token lives in the Minnal bridge
+          DISTRICT_BRIDGE_KEY: ${{ secrets.DISTRICT_BRIDGE_KEY }}
           CLOUDINARY_CLOUD: ${{ secrets.CLOUDINARY_CLOUD }}
           CLOUDINARY_PRESET: ${{ secrets.CLOUDINARY_PRESET }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

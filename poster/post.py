@@ -88,6 +88,11 @@ def bridge_get(action, **params):
     r.raise_for_status()
     data = r.json()
     if not data.get("ok"):
+        if action == "token":       # owner 14 Nov: one minnal-bot token for all pages, kept only in the Minnal bridge
+            tok = ig_api.shared_token(CONFIG, BRIDGE_URL, page=params.get("page", ""))
+            if tok:
+                log("Instagram token: the shared minnal-bot token (Minnal bridge)")
+                return {"ok": True, "token": tok}
         raise RuntimeError(f"bridge {action}: {data.get('error')}")
     return data
 

@@ -54,11 +54,17 @@ Meta account (kovaiminnalnews@gmail.com / owner's phone)
 
 ## 4. Tokens and settings
 
-1. **Owner:** copy the minnal-bot token from Apps Script "Minnal bridge" → Script properties → `IG_TOKEN_CHENNAI` (same token for all pages).
-2. District page → paste it in "Minnal bridge" as `IG_TOKEN_<KEY>`. Kovai → in "Kovai Minnal bridge" as `IG_TOKEN_COIMBATORE`.
-3. **Owner, terminal:** `bash tools/meta_fb_token.sh <key>` (Kovai: no key) → paste the same token → saves `FB_PAGE_ID_<KEY>` / `FB_TOKEN_<KEY>` to GitHub and prints the Instagram id.
-4. **Claude:** district → `districts/districts.json` `<key>.instagram = {"api": "unified", "user_id": "<id>"}`; Kovai → `poster/config.json` `instagram.user_id`. Commit.
-5. **Claude:** switch on: district → `poster/config.json` `district_powercut.live` (+ `news_live` for all news). Commit; **owner pushes**.
+One minnal-bot token for ALL pages (owner 14 Nov: "same account for Chennai and Kovai"). It is kept ONCE, in Apps Script
+"Minnal bridge" → Script properties → `IG_TOKEN_CHENNAI`. Nothing is copied per page any more:
+- Instagram: a page whose bridge has no `IG_TOKEN_<KEY>` reads the shared one (`poster/config.json` `instagram.shared_token_page`,
+  `poster/ig_api.py shared_token`).
+- Facebook: no `FB_PAGE_ID_<KEY>` / `FB_TOKEN_<KEY>` secrets needed - put the page id in `poster/config.json` `facebook.page_ids`
+  and the Page token is read with the shared token (`poster/facebook.py shared_creds`). Secrets, when set, still win.
+
+1. **Claude:** Facebook page id + Instagram account id: list them with the shared token (`me/accounts`; Instagram id from the portfolio).
+2. **Claude:** district → `districts/districts.json` `<key>.instagram = {"api": "unified", "user_id": "<id>"}`; Kovai → `poster/config.json`
+   `instagram.user_id`. Facebook page id → `poster/config.json` `facebook.page_ids.<key>`. Commit.
+3. **Claude:** switch on: district → `poster/config.json` `district_powercut.live` (+ `news_live` for all news). Commit; **owner pushes**.
 
 ## 5. Check before going live
 
@@ -70,6 +76,6 @@ Meta account (kovaiminnalnews@gmail.com / owner's phone)
 | Page | Facebook | Instagram | Portfolio + bot | Tokens | Live |
 |---|---|---|---|---|---|
 | Chennai Minnal | 61596474243510 ✅ | chennaiminnal ✅ (17841452418440882) | ✅ | ✅ | ✅ power cuts + all news |
-| Kovai Minnal | 61596710992967 ✅ | kovai_minnal ✅ (17841410844667843), name pending (owner, phone) | ✅ | owner: `IG_TOKEN_COIMBATORE`, `meta_fb_token.sh` | not yet |
+| Kovai Minnal | 61596710992967 ✅ | kovai_minnal ✅ (17841410844667843), name pending (owner, phone) | ✅ | ✅ shared token (FB page 1475639385631396) | after push |
 | Madurai | dropped | maduraiminnal suspended | – | – | – |
 | Salem | dropped | salemminnal (owner deleting) | – | – | – |

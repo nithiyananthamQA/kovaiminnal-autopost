@@ -32,6 +32,8 @@ jobs:
       PICK_DRY: ${{ github.event_name == 'workflow_dispatch' && inputs.dry || '0' }}
       BRIDGE_URL: ${{ secrets.BRIDGE_URL }}
       BRIDGE_KEY: ${{ secrets.BRIDGE_KEY }}
+      DISTRICT_BRIDGE_URL: ${{ secrets.DISTRICT_BRIDGE_URL }}   # owner 14 Nov: the one minnal-bot token lives in the Minnal bridge
+      DISTRICT_BRIDGE_KEY: ${{ secrets.DISTRICT_BRIDGE_KEY }}
       CITY_ONLY: "0"
       PICK_AUTO_TOP: ${{ github.event.schedule == '30 0 * * *' && '8' || '6' }}      # owner 2 Nov: 8 + 6 + 6 = 20 news a day
       PICK_EMAIL: "0"      # owner 2 Nov: "do not ask me to confirm" - no list e-mail, the top news are written at once

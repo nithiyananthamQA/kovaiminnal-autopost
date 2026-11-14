@@ -4,6 +4,7 @@
   "instagram": {
     "api": "unified",
     "user_id": "17841410844667843",
+    "shared_token_page": "chennai",
     "note": "14 Nov: Kovai's Instagram connection (poster/ig_api.py). user_id empty = Instagram login as before (graph.instagram.com, 'me', token IGAA... refreshed weekly by the bridge). user_id = the @kovaiminnal Instagram account id (17841...) -> Meta Unified login: graph.facebook.com/v24.0 with that id; the system-user token (EAA..., never expires) goes into the bridge Script property IG_TOKEN_COIMBATORE. No token here."
   },
   "post_windows_ist": [
@@ -14,6 +15,10 @@
   "bgm": false,
   "locations": {},
   "carousel": false,
+  "facebook": {
+    "page_ids": {"coimbatore": "1475639385631396"},
+    "note": "14 Nov (owner: same account for every page): no FB_PAGE_ID_/FB_TOKEN_ secrets needed - the page token is read with the one minnal-bot token (instagram.shared_token_page in the Minnal bridge). Secrets, when set, still win."
+  },
   "first_comment": false,
   "location_tags": true,
   "reel_design": "v5",
