@@ -6,6 +6,8 @@ permissions:
 env:
   BRIDGE_URL: ${{ secrets.BRIDGE_URL }}
   BRIDGE_KEY: ${{ secrets.BRIDGE_KEY }}
+  DISTRICT_BRIDGE_URL: ${{ secrets.DISTRICT_BRIDGE_URL }}   # owner 14 Nov: the one minnal-bot token lives in the Minnal bridge
+  DISTRICT_BRIDGE_KEY: ${{ secrets.DISTRICT_BRIDGE_KEY }}
 jobs:
   probe:
     runs-on: ubuntu-24.04

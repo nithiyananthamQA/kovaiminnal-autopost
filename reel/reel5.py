@@ -55,7 +55,7 @@ except Exception:
 NO_CLASH_JS = """<script>(function(){const _r=window.renderAt;window.renderAt=function(t){_r(t);
 const sm=document.getElementById('sum'),m=document.getElementById('mini');
 if(sm&&m&&parseFloat(sm.style.opacity||'0')>0)m.style.opacity=0;};})();</script>"""
-MAX_SPOKEN = 6      # owner 13 Nov: a power-cut reel is 30-40 s; the caption carries the full area list
+MAX_SPOKEN = 0      # owner 14 Nov: video length like the reference (every area read, up to ~90 s); 0 = no limit (was 6 on 13 Nov)
 _TIME = __import__("re").compile(r"(காலை|மதியம்|பிற்பகல்|மாலை|இரவு)\s*(\d{1,2}(?:[.:]\d{2})?)\s*மணி\s*(?:முதல்|தொடங்கி)\s*"
                                  r"(காலை|மதியம்|பிற்பகல்|மாலை|இரவு)?\s*(\d{1,2}(?:[.:]\d{2})?)\s*மணி\s*வரை")
 
@@ -78,7 +78,7 @@ def district_spec(spec, page):
     follow = page.get("follow_spoken") or (spec.get("outro") or {}).get("say") or ""
     while sents and (_norm(sents[-1].get("say")) == _norm(follow) or "ஃபாலோ" in sents[-1].get("say", "") or "Follow" in sents[-1].get("say", "")):
         sents.pop()
-    if len(sents) > MAX_SPOKEN:
+    if MAX_SPOKEN and len(sents) > MAX_SPOKEN:
         print(f"district reel: {len(sents)} sentences -> {MAX_SPOKEN} spoken (the caption has the full list)")
         sents = sents[:MAX_SPOKEN]
     spec["sentences"] = sents

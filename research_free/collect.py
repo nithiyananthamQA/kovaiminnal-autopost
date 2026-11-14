@@ -658,6 +658,8 @@ def make_images(group, log=None):
         # owner 31 Oct: the news's OWN photo from the source article first (only a photo that shows this news, enhanced to a presentable
         # picture when small); no relevant / presentable photo -> the AI pictures exactly as before
         try:
+            if not _real_photo_on():      # owner 14 Nov: Instagram's rules (no copies / watermarks) - our own pictures only
+                raise ImportError("real photos switched off")
             import realphoto
             pub = None
             try:
@@ -753,6 +755,14 @@ def pending_ids(max_hours=2):
 REOFFER = []
 TODAY = [0]
 DAILY_CAP = int(os.environ.get("DAILY_CAP", "1000"))      # owner: after 40 posts in a day only the main / important news is written and posted
+
+
+def _real_photo_on():
+    """poster/config.json real_photo_enabled (owner 14 Nov: false - Instagram rewards original content, no news-site photos)"""
+    try:
+        return json.loads((HERE.parent / "poster" / "config.json").read_text(encoding="utf-8")).get("real_photo_enabled", True) is not False
+    except Exception:
+        return True
 
 
 def send_batch(group, log=None, images=True):

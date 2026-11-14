@@ -108,9 +108,7 @@ def preface(d):
     return (f'POWER-CUT PAGE (read this first): "{d["name_ta"]}" ({d["name_en"]}) is the page for {d["en"]} district ({d["ta"]} மாவட்டம்) '
             f"and posts ONLY power-cut / maintenance shutdown notices (மின்தடை அறிவிப்பு) of {d['en']} district, so people know early. "
             "Every article you get is such a notice: read the cut day, the time, the substation and EVERY affected area exactly as "
-            "published (none dropped, never guessed). The CAPTION lists every affected area. The reel_script is SHORT (owner 13 Nov: "
-            "30-40 seconds): at most 6 sentences - the one-line story, the day + time, the main areas in at most 2 sentences (up to 8 "
-            "names, then 'உள்ளிட்ட பகுதிகள்'), then the follow line. category is always \"மின் தடை\", importance \"High\", post_to exactly "
+            "published (none dropped, never guessed). category is always \"மின் தடை\", importance \"High\", post_to exactly "
             f"\"{d['name_en']}\". The LAST sentence of reel_script is exactly: {d['follow_spoken']}\n\n")
 
 
@@ -135,6 +133,100 @@ def news_preface(d):
 def news_on(key):
     s = settings()
     return s.get("enabled") is True and key in (s.get("news_live") or [])
+
+
+def comments_on(key):
+    """owner 14 Nov (Instagram's best practice: reply to comments): a live page in district_powercut.comments_live gets Kovai's
+    comment-reply flow (new comments -> reply options e-mailed by the district bridge -> posted only after the owner chooses)"""
+    return key in enabled_keys() and key in (settings().get("comments_live") or [])
+
+
+# ---------------------------------------------------------------- Instagram place tag (owner 14 Nov: Instagram's best practice)
+LOCATIONS = HERE / "locations.json"
+_POWER_ROW = re.compile(r"மின்\s*தடை")
+
+
+def place_ids(key, refused=()):
+    """districts/locations.json -> ({match word: place id, "default": city id}, {place id: place name}); only filled ids (digits),
+    never one Instagram refused before. A district without an entry -> ({}, {}): no tag, as before."""
+    try:
+        m = json.loads(LOCATIONS.read_text(encoding="utf-8")).get(key) or {}
+    except Exception:
+        m = {}
+    refused = {str(x) for x in refused}
+    words, names = {}, {}
+    for i, a in enumerate([m.get("city") or {}] + list(m.get("areas") or [])):
+        pid = str(a.get("id") or "").strip()
+        if not pid.isdigit() or pid in refused:
+            continue
+        names[pid] = a.get("place") or pid
+        for w in (["default"] if i == 0 else [x.strip() for x in a.get("match") or [] if x.strip()]):
+            words[w] = pid
+    return words, names
+
+
+def place_not_words(key):
+    """words that contain an area's match word but are another place (திருப்போரூர் holds போரூர்): blanked before matching"""
+    try:
+        m = json.loads(LOCATIONS.read_text(encoding="utf-8")).get(key) or {}
+    except Exception:
+        m = {}
+    return sorted({w.strip() for a in m.get("areas") or [] for w in a.get("not") or [] if w.strip()}, key=len, reverse=True)
+
+
+def refused_places(d):
+    try:
+        return json.loads((d["state"] / "locations_refused.json").read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def place_picker(P, d, names):
+    """the reference's pick_location (the area named FIRST in the headline wins, else the city "default") on this page's ids;
+    a power cut covers many areas, so it always gets the city tag"""
+    orig = P.pick_location
+    nots = place_not_words(d["key"])
+
+    def blank(s):
+        for w in nots:
+            s = re.sub(re.escape(w), " ", s or "", flags=re.I)
+        return s or ""
+
+    def pick(row, spec):
+        if _POWER_ROW.search(f"{row.get('category') or ''} {row.get('headline_ta') or ''}"):
+            city = str((P.CONFIG.get("locations") or {}).get("default") or "")
+            pid = city if city in P.verified_locations() else ""
+        else:
+            pid = orig(dict(row, **{k: blank(row.get(k)) for k in ("headline_ta", "headline_en", "location")}),
+                       dict(spec, loc=blank(spec.get("loc"))))
+        if pid:
+            log(f"location tag: {names.get(pid, pid)} ({pid})")
+        return pid
+    return pick
+
+
+def location_guard(P, d, names):
+    """Instagram refused a place id (wrong id in districts/locations.json): remembered in districts/state/<key>/locations_refused.json
+    and never tried again; the post itself goes on without the tag (post.create_with_collab). Only a refusal that names the
+    location counts - any other container error leaves the id alone."""
+    orig = P.ig
+
+    def ig(method, path, token, **params):
+        pid = str(params.get("location_id") or "")
+        try:
+            return orig(method, path, token, **params)
+        except RuntimeError as e:
+            if pid and method == "POST" and path.endswith("/media") and "location" in str(e).lower():
+                bad = refused_places(d)
+                bad[pid] = {"place": names.get(pid, ""), "at": datetime.datetime.now(IST).isoformat(timespec="minutes"), "error": str(e)[:200]}
+                try:
+                    d["state"].mkdir(parents=True, exist_ok=True)
+                    (d["state"] / "locations_refused.json").write_text(json.dumps(bad, ensure_ascii=False, indent=1), encoding="utf-8")
+                except Exception:
+                    pass
+                log(f"LOCATION ID REFUSED by Instagram: {names.get(pid, '?')} ({pid}) - fix districts/locations.json; never tried again")
+            raise
+    return ig
 
 
 def dinamalar_meta(d):
@@ -466,6 +558,10 @@ def apply(key, mode="powercut"):
         _set(P, "IG_USER_ID", uid)
         if not uid:      # finding and writing go on; only posting waits ('me' there is the system user, never the page)
             _set(P, "missing_setup", lambda: print(f"{key}: Instagram account id missing (districts.json instagram.user_id) - nothing posted", flush=True) or True)
+    else:      # 14 Nov: Instagram login - never Kovai's Unified settings (config.json instagram) with this page's token
+        _set(P, "IG_HOST", P.ig_api.LOGIN_HOST)
+        _set(P, "IG_VER", os.environ.get("IG_API_VERSION", ""))
+        _set(P, "IG_USER_ID", "")
     try:
         picked = set(json.loads(PC.STATE.read_text(encoding="utf-8")).get("done", {}))
     except Exception:
@@ -480,8 +576,13 @@ def apply(key, mode="powercut"):
                   "place_tags": {}, "district_tag": "#" + et, "broad_tag": f"#{et}PowerCut", "extra_tag": f"#{et}News",
                   "search_suffix": f"{d['en']} power cut"})
     P.CONFIG["reach"] = reach
-    P.CONFIG["locations"] = {}
-    P.CONFIG["location_tags"] = False
+    # owner 14 Nov: the page's own place ids (districts/locations.json) - never Kovai's config.json "locations" / ig-probe file
+    words, names = place_ids(key, refused_places(d))
+    P.CONFIG["locations"] = words
+    P.CONFIG["location_tags"] = bool(words)      # no filled id -> no tag, as before
+    _set(P, "verified_locations", lambda: set(place_ids(key, refused_places(d))[0].values()))
+    _set(P, "pick_location", place_picker(P, d, names))
+    _set(P, "ig", location_guard(P, d, names))
     _set(FB, "STATE", d["state"] / "fb_posted")
     return d
 

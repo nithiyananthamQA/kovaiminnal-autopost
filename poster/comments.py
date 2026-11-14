@@ -5,8 +5,10 @@ sent to the Apps Script bridge (action commentNew), which keeps them in the priv
 The owner picks / edits a reply on the confirmation page; only Apps Script posts it (apps_script/Code.gs, comment replies part).
 
 The GitHub repository and its logs are PUBLIC: comment text and usernames are never printed or saved here - only counts.
-Needs the Instagram permission instagram_business_manage_comments on the page tokens (without it Instagram returns no comment text).
+Needs the Instagram permission instagram_business_manage_comments on the page tokens (without it Instagram returns no comment text);
+on the Unified login (system-user token, graph.facebook.com) the token needs instagram_manage_comments + pages_read_engagement.
 Usage: python poster/comments.py <page> [<page> ...]      (DRY_RUN=1: options are made but nothing is sent / e-mailed)
+District pages (14 Nov): python districts/main.py comments - the district switch first, then run() for that page only.
 """
 import os, sys
 from datetime import datetime, timedelta, timezone
@@ -50,8 +52,9 @@ def options_for(post_text, comment):
     return str(d.get("kind") or "other"), opts
 
 
-def recent_media(page, tok):
-    uid, _ = post.ig_account(tok)
+def recent_media(page, tok, uid=None):
+    if uid is None:
+        uid, _ = post.ig_account(tok)
     m = post.ig("GET", f"{uid}/media", tok, fields="id,caption,timestamp,permalink,comments_count", limit=100)
     cut = datetime.now(timezone.utc) - timedelta(days=DAYS)
     out = []
@@ -68,8 +71,11 @@ def recent_media(page, tok):
 def run(page):
     tok = post.bridge_get("token", page=page)["token"]
     seen = set(post.bridge_get("commentsSeen").get("ids", [])) if not DRY else set()
-    items, read, own = [], 0, HANDLES.get(page, "")
-    for it in recent_media(page, tok):
+    uid, name = post.ig_account(tok)
+    # 14 Nov: the page's own username as Instagram gives it, too (Kovai is now @kovai_minnal; a district page has no HANDLES entry)
+    own = {h for h in (HANDLES.get(page, ""), name or "") if h}
+    items, read = [], 0
+    for it in recent_media(page, tok, uid):
         try:
             c = post.ig("GET", f"{it['id']}/comments", tok, fields="id,text,username,timestamp,replies{username}", limit=50)
         except Exception as e:
@@ -77,9 +83,9 @@ def run(page):
             continue
         for cm in c.get("data", []):
             read += 1
-            if str(cm.get("id")) in seen or not (cm.get("text") or "").strip() or (cm.get("username") or "") == own:
+            if str(cm.get("id")) in seen or not (cm.get("text") or "").strip() or (cm.get("username") or "") in own:
                 continue
-            if any((x.get("username") or "") == own for x in ((cm.get("replies") or {}).get("data") or [])):
+            if any((x.get("username") or "") in own for x in ((cm.get("replies") or {}).get("data") or [])):
                 continue      # the page already answered it (by hand in the app) - never offered again
             if len(items) >= MAX_PER_RUN:
                 break

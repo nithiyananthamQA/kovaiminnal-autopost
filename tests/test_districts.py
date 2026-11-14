@@ -233,7 +233,10 @@ print("posting blocked:", P.missing_setup())""")
         self.assertIn("posting blocked: True", out)
 
     def test_kovai_unchanged(self):
+        """Kovai on the Instagram login (config.json instagram.user_id empty - pinned here, so filling the real id keeps this green;
+        the filled case: tests/test_kovai_unified.py)"""
         out = run("import sys; sys.path.insert(0, 'poster'); import post as P\n"
+                  "P.IG_HOST, P.IG_VER, P.IG_USER_ID = P.ig_api.settings({'instagram': {'api': 'unified', 'user_id': ''}}, env={})\n"
                   "calls = []\n"
                   "P.ig = lambda m, path, token, **kw: calls.append(path) or {'user_id': '1', 'username': 'kovaiminnal'}\n"
                   "print(P.IG_HOST, repr(P.IG_USER_ID), P.ig_account('t'), calls)", env=ENV)

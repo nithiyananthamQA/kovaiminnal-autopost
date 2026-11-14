@@ -1,89 +1,84 @@
-# Page setup checklist (Facebook page + Instagram account per district)
+# New Minnal page – checklist (Instagram + Facebook + posting)
 
-One place for how every Minnal page is set up, so each new district is done the same way.
+Follow it top to bottom for every new page (Chennai and Kovai were done this way on 13–14 Nov 2026).
+**Owner** = only the owner can do it (account creation, passwords, codes, legal "Accept"). **Claude** = done in Chrome / code.
+Update this file whenever a step changes.
 
-## Account structure (decided 13 Nov 2026)
+## Rules (learned the hard way)
+
+- At most **1 new Instagram account and 1 new Facebook page per day**. Edit one Instagram account at a time, slowly.
+- Never switch quickly between Instagram accounts in the browser (Madurai was suspended on 13 Nov for that).
+- The Instagram **website keeps at most 5 logged-in accounts**. Log out / remove old ones first (☰ More → Log out → Remove).
+- Any Meta warning ("automation", "confirm it's you", checkpoint): stop, owner clears it on the phone, rest 24–48 h.
+- No new e-mail for any page: Facebook pages need none; Instagram accounts share the main login.
+- Username pattern (owner 14 Nov): **`city_minnal`**, e.g. `kovai_minnal`.
+
+## Who owns what
 
 ```
-Meta Account  (login: kovaiminnalnews@gmail.com or the owner's phone)
- ├─ Facebook profile  Nithiyanantham S         <- owns every Facebook page
- │   └─ Facebook pages: Kovai Minnal, <District> Minnal ...
- └─ Instagram s_nithiyanantham_s (Business)    <- main Instagram; every page account is created under it
-     └─ Instagram page accounts: chennaiminnal, maduraiminnal, salemminnal ...
+Meta account (kovaiminnalnews@gmail.com / owner's phone)
+ ├─ Facebook profile "Nithiyanantham S"  -> owns every Facebook page
+ ├─ Instagram s_nithiyanantham_s (main)  -> every page's Instagram is created under it
+ └─ Business portfolio "Minnal Media" (971402752320572)
+      ├─ app "Minnal Pages" (1448178013559937)
+      ├─ Facebook pages + Instagram accounts of every Minnal page
+      └─ system user "minnal-bot" -> ONE never-expiring token for all pages (never press "Revoke tokens")
 ```
 
-- No new e-mail for any page. Facebook pages need none. Instagram page accounts are made in the phone app from
-  s_nithiyanantham_s and share its login.
-- The old account (Nathi Anand) is not used. The Kovai Gmail was removed from it.
+## 1. Facebook page (Claude, Chrome, Browser 1)
 
-## Pace (Meta flags fast work on new accounts)
+1. facebook.com/pages/create → name `fb_name` (districts/districts.json), categories **Media/news company** + **News & media website**.
+2. Profile picture + cover: `districts/<key>/upload/profile_1080.png` and `fb_cover_1640x624.png` (Kovai: `brand/`).
+3. Intro `fb_intro`, e-mail kovaiminnalnews@gmail.com, city. WhatsApp: skip. Marketing e-mails: off.
+4. Switch back to the profile before anything else.
 
-- At most **1 new Facebook page and 1 new Instagram account per day**.
-- Edit **one Instagram account per day** at most. Never switch quickly between accounts in the browser.
-- Do it slowly, like a person would. Prefer the phone app for Instagram.
-- If Meta shows any warning (automation, checkpoint, "confirm it's you"), **stop everything**. The owner clears it
-  on the phone, then the accounts rest 24-48 hours.
-- 13 Nov: Instagram flagged maduraiminnal after three new accounts were edited in one hour from the browser.
+## 2. Instagram account
 
-## Facebook page (Claude, in Browser 1, logged in as Nithiyanantham S)
+1. **Owner, phone app:** Profile → tap the name → Add Instagram account → **Create new account** → same login → username `city_minnal`.
+2. **Owner, Chrome:** log in to that account once on instagram.com (Claude types nothing secret).
+3. **Claude, Chrome, slowly (pauses between steps):**
+   - Edit profile → profile picture (same file as Facebook) → bio (`ig_bio`, max 150).
+   - Switch to professional → **Business** → category **News & media website**, "show category" on.
+   - Contact: e-mail kovaiminnalnews@gmail.com, city, "show contact info" on. No phone.
+   - Public account. Post nothing by hand.
+4. **Owner, phone:** Edit profile → **Name** `ig_name` (Accounts Center; Chrome cannot open it). Max 2 name changes per 14 days.
 
-1. facebook.com/pages/create
-2. Name: `fb_name` from `districts/districts.json` (e.g. `Chennai Minnal - சென்னை மின்னல்`)
-3. Categories: **Media/news company** + **News & media website**
-4. Profile picture: `districts/<key>/upload/profile_1080.png`. Cover: `districts/<key>/upload/fb_cover_1640x624.png`
-5. WhatsApp step: skip. Invite friends: skip. Marketing e-mails: off. Page notifications: on.
-6. Bio (Intro): `fb_intro`. About/description: `fb_about`
-7. Contact: e-mail kovaiminnalnews@gmail.com. No phone.
-8. Switch back to the profile Nithiyanantham S before creating the next page.
-9. Link the Instagram account: page Settings → Linked accounts → Instagram.
+## 3. Business portfolio + bot user (Claude, Chrome: business.facebook.com/latest/settings/…?business_id=971402752320572)
 
-## Instagram account
+1. Pages → the new page is in "Minnal Media" (if not: Add → claim page).
+2. Instagram profiles → **Add** → **Add Instagram profile** → owner logs in / allows in the pop-up window.
+3. Note the Instagram **account id** (ID: 17841…) shown there.
+4. System users → minnal-bot → ⋯ → **Assign assets**:
+   - Facebook page: Content, Community activity, Insights.
+   - Instagram account: Content, Community activity, Insights.
 
-Ready texts per page (username, name, bio within 150, steps): `districts/<key>/upload/instagram_details.txt`
-(Kovai: `brand/instagram_details.txt`). Open them in a normal text editor; the terminal shows Tamil as boxes.
+## 4. Tokens and settings
 
-Linking Instagram to the Facebook page is **not needed for posting**. Instagram posts go through Instagram login
-(graph.instagram.com, token `IG_TOKEN_<KEY>`), and Facebook posts go through the page token. Linking is still
-recommended: one dashboard in Meta Business Suite, Instagram shown on the page, and Meta sees a real business.
+One minnal-bot token for ALL pages (owner 14 Nov: "same account for Chennai and Kovai"). It is kept ONCE, in Apps Script
+"Minnal bridge" → Script properties → `IG_TOKEN_CHENNAI`. Nothing is copied per page any more:
+- Instagram: a page whose bridge has no `IG_TOKEN_<KEY>` reads the shared one (`poster/config.json` `instagram.shared_token_page`,
+  `poster/ig_api.py shared_token`).
+- Facebook: no `FB_PAGE_ID_<KEY>` / `FB_TOKEN_<KEY>` secrets needed - put the page id in `poster/config.json` `facebook.page_ids`
+  and the Page token is read with the shared token (`poster/facebook.py shared_creds`). Secrets, when set, still win.
 
-**Owner, on the phone (no e-mail):** Instagram → Profile → tap s_nithiyanantham_s → Add Instagram account →
-Create new account → use the same login → username `<key>minnal` (`handle` in districts.json).
+1. **Claude:** Facebook page id + Instagram account id: list them with the shared token (`me/accounts`; Instagram id from the portfolio).
+2. **Claude:** district → `districts/districts.json` `<key>.instagram = {"api": "unified", "user_id": "<id>"}`; Kovai → `poster/config.json`
+   `instagram.user_id`. Facebook page id → `poster/config.json` `facebook.page_ids.<key>`. Commit.
+3. **Claude:** switch on: district → `poster/config.json` `district_powercut.live` (+ `news_live` for all news, + `comments_live` for comment
+   replies e-mailed to the owner - the token needs `instagram_manage_comments` + `pages_read_engagement`). Commit; **owner pushes**.
+4. **Owner:** place tags - fill the Facebook place-page ids in `districts/locations.json` (city + areas; check each on facebook.com/<id>).
+   Empty id = no tag. After the first post: `location tag: …` in the log, or the id in `districts/state/<key>/locations_refused.json`.
 
-**Then (one account per day):**
-1. Profile picture: `districts/<key>/upload/profile_1080.png`
-2. Name (searchable, max 30): `<District> Minnal | Power Cut`. Changed in Meta Account → profile → Name
-   (only 2 changes per 14 days, so get it right the first time).
-3. Bio (max 150; Instagram counts emoji as 2):
-   ```
-   ⚡ <Tamil district> மின்தடை அறிவிப்புகள் உடனுக்குடன்
-   📍 எந்த பகுதி, எந்த நேரம் - முன்கூட்டியே
-   🔔 Follow பண்ணுங்க | <District> power cut
-   📩 DM for promotions
-   ```
-   For long names (Tiruvannamalai, Kanniyakumari) shorten line 3, or it goes over 150.
-4. Account type: **Business**, category **News & media website**, "Show category on profile" ticked.
-5. Contact: e-mail kovaiminnalnews@gmail.com, town/city = the district, "Show contact info" ticked. No phone.
-   The Message button (DM) is on by default.
-6. Public account. Post nothing by hand; the first post comes from the system.
-7. Link to the district's Facebook page.
-8. Later: Apps Script property `IG_TOKEN_<KEY>` and GitHub secrets `FB_PAGE_ID_<KEY>` / `FB_TOKEN_<KEY>`
-   (see README.md).
+## 5. Check before going live
 
-## What the reference page has that we should add later
+1. One sample reel (Claude, local, test mode) → owner approves.
+2. First real post: open the Facebook post while logged out (the app must be in **Live** mode or strangers can't see it).
 
-From @coimbatore360_official (followed in spirit, not copied):
-- **Story highlights** (his: Raasi palan, Diwali). Add ours once there are stories, e.g. "இன்றைய மின்தடை" and "How to follow".
-- **Tamil city name** as his profile name. Ours uses `<District> Minnal | Power Cut` for search. A Tamil line is already in the bio.
-- **Regular posting** (258 posts). Our system posts automatically once the pages are switched on.
-- His Facebook page has not been checked yet. Compare it when Facebook work resumes.
+## Status (14 Nov 2026)
 
-## Status (13 Nov 2026)
-
-| Page | Facebook page | Instagram | Instagram setup |
-|---|---|---|---|
-| Kovai Minnal | done (id 61596710992967) | not created yet | - |
-| Chennai Minnal | done (id 61596474243510): name, 2 categories, e-mail, city, bio, logo, cover | chennaiminnal | done; link to the Facebook page pending (owner, phone) |
-| Madurai Minnal | dropped for now | maduraiminnal **suspended** by Instagram (180 days to appeal); left to expire | - |
-| Salem Minnal | dropped for now | salemminnal: owner deleting it | - |
-
-From 13 Nov: the owner does all Instagram work by hand on the phone. Claude does Facebook pages only, one per day.
+| Page | Facebook | Instagram | Portfolio + bot | Tokens | Live |
+|---|---|---|---|---|---|
+| Chennai Minnal | 61596474243510 ✅ | chennaiminnal ✅ (17841452418440882) | ✅ | ✅ | ✅ power cuts + all news |
+| Kovai Minnal | 61596710992967 ✅ | kovai_minnal ✅ (17841410844667843), name pending (owner, phone) | ✅ | ✅ shared token (FB page 1475639385631396) | after push |
+| Madurai | dropped | maduraiminnal suspended | – | – | – |
+| Salem | dropped | salemminnal (owner deleting) | – | – | – |

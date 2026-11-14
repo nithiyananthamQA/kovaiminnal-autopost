@@ -31,11 +31,12 @@ START = time.time()
 DRY = os.environ.get("DRY_RUN", "") in ("1", "true", "yes")
 PREBUILD = os.environ.get("PREBUILD", "") in ("1", "true", "yes")   # build + upload only; the posting run then publishes at once
 CACHE = ROOT / "poster" / "prebuilt"
-IG_HOST = "https://graph.instagram.com"
-IG_VER = os.environ.get("IG_API_VERSION", "")
 # 13 Nov: pages on Meta's Unified login (new apps such as "Minnal Pages") post with a system-user token on graph.facebook.com;
-# there "me" is the system user, so the Instagram account id is given here (districts/pipeline.py sets all three). Empty = Kovai as before.
-IG_USER_ID = os.environ.get("IG_USER_ID", "")
+# there "me" is the system user, so the Instagram account id is given here (districts/pipeline.py sets all three for a district).
+# 14 Nov: Kovai switches the same way with config.json "instagram": {"api": "unified", "user_id": "<id>"} - empty id = as before (poster/ig_api.py)
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import ig_api      # noqa: E402
+IG_HOST, IG_VER, IG_USER_ID = ig_api.settings(CONFIG)
 
 # ---- the page (Kovai Minnal; placeholders until the owner decides - change them HERE only)
 PAGE = "coimbatore"
@@ -87,6 +88,11 @@ def bridge_get(action, **params):
     r.raise_for_status()
     data = r.json()
     if not data.get("ok"):
+        if action == "token":       # owner 14 Nov: one minnal-bot token for all pages, kept only in the Minnal bridge
+            tok = ig_api.shared_token(CONFIG, BRIDGE_URL, page=params.get("page", ""))
+            if tok:
+                log("Instagram token: the shared minnal-bot token (Minnal bridge)")
+                return {"ok": True, "token": tok}
         raise RuntimeError(f"bridge {action}: {data.get('error')}")
     return data
 
@@ -847,6 +853,9 @@ def ig_url(path):
 
 
 def ig(method, path, token, **params):
+    if path == "me" and not ig_api.me_allowed(IG_HOST):
+        raise RuntimeError(f"Instagram: no account id for {IG_HOST} ('me' there is the system user, never the page) - "
+                           "fill config.json instagram.user_id (Kovai) or districts.json instagram.user_id (district page)")
     params["access_token"] = token
     r = requests.request(method, ig_url(path), params=params if method == "GET" else None,
                          data=params if method == "POST" else None, timeout=120)
@@ -856,7 +865,10 @@ def ig(method, path, token, **params):
         r.raise_for_status()
         raise
     if r.status_code >= 400 or "error" in data:
-        raise RuntimeError(f"Instagram {path}: {data.get('error', data)}")
+        hint = ""
+        if str(token).startswith("EAA") and ig_api.me_allowed(IG_HOST):
+            hint = " (an EAA... system-user token needs the Unified login: config.json instagram {\"api\": \"unified\", \"user_id\": \"<id>\"})"
+        raise RuntimeError(f"Instagram {path}: {data.get('error', data)}{hint}")
     return data
 
 
@@ -876,6 +888,8 @@ def ig_account(token):
     if IG_USER_ID:
         me = ig("GET", IG_USER_ID, token, fields="id,username")
         return IG_USER_ID, me.get("username")
+    if not ig_api.me_allowed(IG_HOST):      # Unified login without the account id: never "me" (that is the system user)
+        raise RuntimeError(f"Instagram account id missing for {IG_HOST} - nothing read or posted")
     me = ig("GET", "me", token, fields="user_id,username")
     return me.get("user_id") or me.get("id"), me.get("username")
 
@@ -1716,7 +1730,8 @@ def share_facebook(sid, kind, media, caption, dry=False, row=None):
 def live_allowed():
     if DRY:
         return True
-    if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and not (ROOT / "LIVE").exists():
+    scheduled = os.environ.get("GITHUB_EVENT_NAME") == "schedule" or os.environ.get("POST_TIMER") == "1"      # owner 14 Nov: the Google timer = scheduled
+    if scheduled and not (ROOT / "LIVE").exists():
         log("Not live yet (no LIVE file in the repository) - scheduled posting is switched off.")
         return False
     return True
@@ -1763,6 +1778,8 @@ def auto_images():
         work = OUT / r["story_id"]
         work.mkdir(parents=True, exist_ok=True)
         try:      # owner 31 Oct: the source article's own relevant photo first (enhanced when small); else the AI pictures below
+            if CONFIG.get("real_photo_enabled", True) is False:      # owner 14 Nov: Instagram's rules - our own pictures only
+                raise ImportError("real photos switched off")
             import realphoto
             pics, credit = realphoto.for_story(r.get("source") or "", r.get("headline_en") or "", n=len(prompts), log=log)
             if pics:

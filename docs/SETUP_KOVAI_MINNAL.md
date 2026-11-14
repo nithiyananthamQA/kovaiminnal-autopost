@@ -1,4 +1,4 @@
-can i# Kovai Minnal (கோவை மின்னல்) – setup from zero to live
+# Kovai Minnal (கோவை மின்னல்) – setup from zero to live
 
 This is the same system that runs **Coimbatore 360** (github.com/news360-tn/coimbatore360-autopost), copied as it runs today
 (11 Nov 2026) with our name, our images and our own accounts. Nothing in the flow changed: same workflows, same timings, same checks.
@@ -27,7 +27,7 @@ Never paste passwords or API keys into the chat: secret values are typed only in
 | 3 | Facebook Page "Kovai Minnal" (from your own Facebook profile) | Same reels on Facebook; Instagram is linked to it |
 | 4 | Cloudinary (free) | Hosts the reel videos/pictures so Instagram can fetch them |
 | 5 | Google AI Studio (Gemini), Groq, Cloudflare, NVIDIA | Free AI for writing and pictures (new keys, never Namenector's) |
-| – | Meta app | **No new app**: we reuse your "Namenector Social" app (App ID 1023752790742303) |
+| – | Meta app | Our own app **Minnal Pages** in the business portfolio **Minnal Media** (system user minnal-bot), the same as Chennai Minnal - see step 9 |
 | – | GitHub | Your current account **nithiyananthamQA**, public repository `kovaiminnal-autopost` (public = unlimited free Actions minutes) |
 
 ---
@@ -150,18 +150,38 @@ Then step 10.3 copies everything from `.env` to GitHub in one command.
 
 After every later change to `Code.gs`: paste the new `Code.local.gs`, run `setup` again, Deploy → Manage deployments → pencil → Version: **New version** → Deploy (the URL stays the same).
 
-## 9. Meta tokens (you, with the "Namenector Social" app)
+## 9. Meta tokens (you, in the browser) - Meta Unified login, exactly like Chennai Minnal
 
-**Instagram token (goes into the Apps Script, like his):**
-1. developers.facebook.com → My Apps → **Namenector Social** → Use cases → **Add use case → "Manage messaging & content on Instagram"** (Instagram API with Instagram login) – skip if it is already there.
-2. That use case → **API setup with Instagram login → 2. Generate access tokens → Add account** → log in as `@kovaiminnal` → allow.
-   If Instagram asks to accept a tester invite: Instagram app → Settings → Website permissions → Apps and websites → Tester invites → Accept, then Add account again.
-3. Permissions needed: `instagram_business_basic`, `instagram_business_content_publish`, `instagram_business_manage_comments`, `instagram_business_manage_insights`.
-4. **Generate token** → copy → Apps Script → Project Settings → Script properties → **Add** `IG_TOKEN_COIMBATORE` = the token → Save. (The script refreshes it every Sunday.)
+Our Meta app **Minnal Pages** is new, and Meta gives new apps only the "Unified login" (system-user token, `graph.facebook.com`).
+The code supports it since 14 Nov: `poster/config.json` `"instagram": {"api": "unified", "user_id": ""}`. While `user_id` is empty,
+Kovai stays on the old Instagram login; once Claude fills the id, every Kovai job uses the Unified login. Never paste a token into the chat.
 
-**Facebook Page token (goes into GitHub secrets):**
-1. developers.facebook.com/tools/explorer → Meta App: **Namenector Social** → User or Page: **Get User Access Token** → permissions `pages_show_list`, `pages_read_engagement`, `pages_manage_posts` (+ `business_management` if the Page sits in a business portfolio) → Generate → tick **only the Kovai Minnal Page** → **Copy token**.
-2. **After the repo exists (step 10.1)**, in this folder: `bash tools/meta_fb_token.sh` → paste the token (hidden). It saves `FB_PAGE_ID_COIMBATORE` and `FB_TOKEN_COIMBATORE` to the repository (it refuses the Namenector page and never touches Namenector's secrets).
+The screens are the same ones used for chennaiminnal on 13 Nov (Business settings of the portfolio **Minnal Media**). If a menu
+name is different on your screen, stop and paste the page text to Claude. If Meta shows any warning: **stop**.
+
+**Instagram (token goes into the Kovai Minnal bridge):**
+1. `@kovaiminnal` is a professional (Business) account and is linked to the Facebook Page Kovai Minnal
+   (Page → Settings → Linked accounts → Instagram). You do the Instagram side yourself.
+2. Business settings → portfolio **Minnal Media** → Accounts → **Instagram accounts** → **Add** → `@kovaiminnal` (you log in).
+   Check that Accounts → **Pages** lists Kovai Minnal.
+3. Users → **System users** → **minnal-bot** → **Assign assets**: the Instagram account `@kovaiminnal` (all tasks: content, comments,
+   insights) and the Page Kovai Minnal (full control) → Save.
+4. The token: minnal-bot's token (the one Chennai already uses) reaches every account assigned to minnal-bot, so use it again:
+   script.google.com → **Minnal bridge** → Project Settings → Script properties → `IG_TOKEN_CHENNAI` → copy the value (starts with `EAA`).
+   Never press **Revoke tokens** - that stops Chennai too.
+5. script.google.com → **Kovai Minnal bridge** (not "Minnal bridge") → Project Settings → Script properties → `IG_TOKEN_COIMBATORE`
+   = that token → Save. (Paste the 14 Nov Code.gs first - step 8 "after every later change" - so the bridge never tries to refresh it.)
+
+**Facebook Page token + the Instagram account id:** in this folder `bash tools/meta_fb_token.sh` → paste the same token (hidden; it is
+used as it is). It saves `FB_PAGE_ID_COIMBATORE` and `FB_TOKEN_COIMBATORE`, and its page list shows
+`Kovai Minnal (Instagram: kovaiminnal, account id 17841...)`. Send that account id to Claude (it is not secret).
+Claude writes it into `poster/config.json` → `instagram.user_id` and commits; you push. Only from then on Kovai uses the Unified login.
+
+**Check (posts nothing) - only after that push:** Actions → **ig-probe** → Run (reads the account, recent posts, reel insights and the
+posting quota) and **Facebook check** → Run. Claude reads the results. If ig-probe says a permission is missing (comments or insights):
+minnal-bot → **Generate token** → app **Minnal Pages** → expiry **Never** → add `instagram_basic`, `instagram_content_publish`,
+`instagram_manage_comments`, `instagram_manage_insights`, `pages_show_list`, `pages_read_engagement`, `pages_manage_posts`,
+`business_management` → copy → put it into `IG_TOKEN_COIMBATORE` (a new token does not stop the old one - only Revoke does).
 
 ## 10. GitHub (you – Claude never pushes)
 
@@ -190,6 +210,8 @@ After every later change to `Code.gs`: paste the new `Code.local.gs`, run `setup
 6. **Post stories** → `dry_run` – builds a reel without posting; download it from the run's artifacts and check it.
    A disabled workflow cannot be run by hand either: `gh workflow enable <file> -R nithiyananthamQA/kovaiminnal-autopost`, run the
    test, then `gh workflow disable <file> -R ...` again (tests, ig-probe and Facebook check have no schedule – they never need it).
+   **keeper** (step 12.4) starts every switched-on workflow LIVE at its cron times: while one is switched on for a test, a cron
+   time in the last hour (pick 06/10/19, powercut every 30 min, ...) starts a real run within 5 minutes - switch it off right after.
 
 ## 12. Go live (you)
 
@@ -202,9 +224,17 @@ After every later change to `Code.gs`: paste the new `Code.local.gs`, run `setup
    ```
    for w in post.yml pick.yml powercut.yml rasipalan.yml comments.yml insights.yml; do gh workflow enable "$w" -R nithiyananthamQA/kovaiminnal-autopost; done
    ```
-4. First posts come at the next 06:00 / 10:00 / 19:00 pick or the next power-cut notice.
+4. **keeper** (owner 14 Nov: GitHub's own timer almost never starts the jobs - 1 scheduled run in a whole day; no Apps Script step).
+   `keeper.yml` (tools/keeper.py) runs all the time on GitHub and starts every switched-on workflow at its own cron times, each time once,
+   with the inputs of a scheduled run (post.yml `timer` = needs `LIVE`; pick.yml `top` 8 at 06:00, else 6). Once step 3 is done the jobs
+   start within 5 minutes. Check that keeper runs: Actions → **keeper** (one run in progress); if none, **Run workflow** once.
+   (The bridge's Google timer, `startKovaiTimer`, is not needed.)
+5. First posts come at the next 06:00 / 10:00 / 19:00 pick or the next power-cut notice (a pick time less than an hour ago,
+   e.g. 10:00 when step 3 is done at 10:40, starts at once - keeper starts a missed time up to 60 minutes late).
 
-**Stop everything at once:** run the step-10.2 `disable` line again. Deleting `LIVE` stops only the 5-minute scheduled posting.
+**Stop everything at once:** run the step-10.2 `disable` line again (keeper never starts a disabled workflow;
+`gh workflow disable keeper.yml` stops keeper itself - the district job too). Deleting `LIVE` stops only the 5-minute posting (GitHub's and keeper's); posts started by
+pick / powercut and manual runs do not look at `LIVE`.
 
 ## Cost
 

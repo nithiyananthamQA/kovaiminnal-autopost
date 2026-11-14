@@ -127,7 +127,56 @@ def _adiyogi(x, base, sc=1.0):
 </g>"""
 
 
-def scene_svg(shape="circle", band=True, nested=False, landmarks=True):
+def _central(x, base, sc=1.0):
+    """Chennai Central station (owner 14 Nov: like Kovai's scene, for Chennai): red Indo-Saracenic block, clock tower, corner turrets.
+    Local box 300 x 230, base line at the bottom."""
+    arches = "".join(f'<path d="M{18+k*30} 222 L{18+k*30} 196 Q{30+k*30} 182 {42+k*30} 196 L{42+k*30} 222 Z" fill="#FFD86B" opacity=".75"/>' for k in range(9) if k != 4)
+    upper = "".join(f'<rect x="{20+k*30}" y="160" width="14" height="18" fill="#FFD86B" opacity=".6"/>' for k in range(9) if k != 4)
+    return f"""<g transform="translate({x} {base-230*sc}) scale({sc})">
+ <rect x="0" y="140" width="300" height="90" fill="#6E2A22"/><rect x="0" y="134" width="300" height="10" fill="#4E1C17"/>
+ {arches}{upper}
+ <rect x="4" y="96" width="34" height="134" fill="#7A3027"/><path d="M0 96 Q21 62 42 96 Z" fill="#4E1C17"/>
+ <rect x="262" y="96" width="34" height="134" fill="#7A3027"/><path d="M258 96 Q279 62 300 96 Z" fill="#4E1C17"/>
+ <rect x="124" y="20" width="52" height="210" fill="#7E3229"/><path d="M118 22 L150 -16 L182 22 Z" fill="#4E1C17"/>
+ <rect x="120" y="18" width="60" height="8" fill="#4E1C17"/>
+ <circle cx="150" cy="64" r="17" fill="#F3E9CF"/><path d="M150 52 L150 64 L159 68" stroke="#3A1712" stroke-width="3" fill="none" stroke-linecap="round"/>
+ <rect x="138" y="100" width="24" height="34" fill="#FFD86B" opacity=".7"/>
+ <path d="M296 120 C300 150 300 190 296 230" stroke="#FF9F1C" stroke-width="4" fill="none" opacity=".5"/>
+</g>"""
+
+
+def _gopuram(x, base, sc=1.0):
+    """Kapaleeshwarar temple gopuram, Mylapore: stepped tower of tiers, barrel-vault top with kalasams. Local box 170 x 250."""
+    tiers = ""
+    for k in range(7):
+        w = 170 - k * 16
+        y = 250 - (k + 1) * 30
+        tiers += (f'<rect x="{(170-w)/2}" y="{y}" width="{w}" height="30" fill="{["#4A2E66", "#55346F"][k % 2]}"/>'
+                  f'<rect x="{(170-w)/2}" y="{y}" width="{w}" height="4" fill="#C2547A" opacity=".8"/>'
+                  + "".join(f'<rect x="{(170-w)/2 + 8 + j*16}" y="{y+10}" width="6" height="12" fill="#FFB347" opacity=".7"/>' for j in range(int((w-12)/16))))
+    return f"""<g transform="translate({x} {base-250*sc}) scale({sc})">
+ {tiers}
+ <path d="M38 40 Q85 -4 132 40 Z" fill="#5E3A78"/><rect x="38" y="36" width="94" height="6" fill="#C2547A"/>
+ {"".join(f'<path d="M{54+j*20} 12 l4 -16 l4 16 Z" fill="#FFD21F"/>' for j in range(4))}
+ <rect x="70" y="214" width="30" height="36" fill="#2A1A40"/>
+ <path d="M166 70 C170 120 170 190 166 250" stroke="#FF9F1C" stroke-width="4" fill="none" opacity=".45"/>
+</g>"""
+
+
+def _lighthouse(x, base, sc=1.0):
+    """Marina lighthouse: slim cream tower, red lantern room, a soft beam over the sea. Local box 60 x 300."""
+    return f"""<g transform="translate({x} {base-300*sc}) scale({sc})">
+ <path d="M30 40 L-160 0 L-160 26 Z" fill="#FFF3B0" opacity=".25"/>
+ <path d="M10 300 L18 60 L42 60 L50 300 Z" fill="#D9C7A8"/>
+ <rect x="16" y="120" width="28" height="10" fill="#8C2B22"/><rect x="14" y="200" width="32" height="10" fill="#8C2B22"/>
+ <rect x="14" y="52" width="32" height="10" fill="#5A1C17"/>
+ <rect x="19" y="30" width="22" height="22" fill="#FFE08A"/><rect x="19" y="30" width="22" height="22" fill="none" stroke="#5A1C17" stroke-width="3"/>
+ <path d="M16 30 L30 12 L44 30 Z" fill="#8C2B22"/>
+ {"".join(f'<rect x="{24}" y="{80+k*36}" width="12" height="14" fill="#FFD86B" opacity=".55"/>' for k in range(5))}
+</g>"""
+
+
+def scene_svg(shape="circle", band=True, nested=False, landmarks=True, city="kovai"):
     """Kovai Minnal illustrated logo (1000x1000 units): Coimbatore at monsoon dusk - Western Ghats, a textile mill with its
     chimney on the skyline, the Ukkadam lakefront, coconut palms and ONE lightning bolt (மின்னல்) reflected in the lake.
     The lower part is a flat navy band for the name (Fable brand advice 11 Nov: one scene, big wordmark, nothing from Coimbatore 360's badge)."""
@@ -135,7 +184,7 @@ def scene_svg(shape="circle", band=True, nested=False, landmarks=True):
         shape, '<rect x="-3000" y="-3000" width="7000" height="7000"/>')
     bld = "".join(f'<rect x="{x}" y="{470-h}" width="{w}" height="{h}" fill="#241D55"/><rect x="{x}" y="{470-h}" width="{w}" height="{h}" fill="url(#win)"/>'
                   for x, w, h in ((404, 52, 96), (880, 56, 120), (944, 50, 80), (830, 44, 64)))
-    if not landmarks:      # district pages (owner 11 Nov: same logo, slightly changed): a city skyline instead of Adiyogi + the mill
+    if not landmarks and city != "chennai":      # district pages (owner 11 Nov: same logo, slightly changed): a city skyline instead of Adiyogi + the mill
         bld += "".join(f'<rect x="{x}" y="{470-h}" width="{w}" height="{h}" fill="#241D55"/><rect x="{x}" y="{470-h}" width="{w}" height="{h}" fill="url(#win)"/>'
                        for x, w, h in ((140, 60, 130), (206, 48, 90), (258, 70, 168), (334, 52, 112), (470, 64, 146), (540, 50, 104), (596, 72, 186), (674, 58, 124), (738, 48, 92)))
     posts = "".join(f'<rect x="{x}" y="468" width="4" height="16" fill="#D8CCE6"/>' for x in range(20, 1000, 36))
@@ -175,11 +224,13 @@ def scene_svg(shape="circle", band=True, nested=False, landmarks=True):
  {bld}
  {_adiyogi(150, 474, 1.0) if landmarks else ""}
  {_mill(480, 470, 330) if landmarks else ""}
+ {(_central(96, 474, 1.0) + _gopuram(650, 474, 0.95) + _lighthouse(850, 474, 0.95)) if city == "chennai" else ""}
  <!-- Ukkadam lakefront -->
  {'' if nested else '<rect x="0" y="482" width="1000" height="120" fill="url(#lake)"/>'}
  <g filter="url(#soft)" opacity=".85"><path d="M500 488 L470 520 L520 524 L486 590 L540 540 L500 536 L530 488 Z" fill="#FFD21F"/></g>
  {shimmer}
- {'' if nested else '<rect x="0" y="478" width="1000" height="7" fill="#D8CCE6"/>' + posts}
+ {'' if nested or city == "chennai" else '<rect x="0" y="478" width="1000" height="7" fill="#D8CCE6"/>' + posts}
+ {'<rect x="0" y="476" width="1000" height="10" fill="#E9C98A" opacity=".9"/>' if city == "chennai" and not nested else ""}
  <!-- coconut palms framing the edges -->
  {'' if nested else _palm(70, 640, 46, 0.86, flip=True) + _palm(915, 640, 56, 0.92, flip=True) + _palm(20, 690, 20, 0.66) + _palm(985, 700, 22, 0.66, flip=True)}
  {band_svg}
@@ -187,7 +238,7 @@ def scene_svg(shape="circle", band=True, nested=False, landmarks=True):
 </svg>"""
 
 
-def cover_scene_html(ta="கோவை", sub="COIMBATORE NEWS · FAST · EVERY DAY", landmarks=True):
+def cover_scene_html(ta="கோவை", sub="COIMBATORE NEWS · FAST · EVERY DAY", landmarks=True, city="kovai", ta_font=""):
     """Facebook cover 1640x624 in the illustrated style: the logo scene widened (mirrored hills, longer lake, extra palms and
     buildings at the sides), the name in a navy band. Adiyogi, bolt and mill sit in the middle 60% (mobile crops the sides)."""
     side_bld = "".join(f'<rect x="{x}" y="{470-h}" width="{w}" height="{h}" fill="#241D55"/><rect x="{x}" y="{470-h}" width="{w}" height="{h}" fill="url(#wwin)"/>'
@@ -209,8 +260,8 @@ def cover_scene_html(ta="கோவை", sub="COIMBATORE NEWS · FAST · EVERY DA
  <g transform="translate(2000 0) scale(-1 1)"><path d="{ridge1}" fill="#3A2D7A"/><path d="{ridge2}" fill="#2B2266"/></g>
  {side_bld}
  <rect x="-500" y="482" width="2000" height="120" fill="url(#wlake)"/>
- {scene_svg("none", band=False, nested=True, landmarks=landmarks)}
- <rect x="-500" y="478" width="2000" height="7" fill="#D8CCE6"/>{posts}
+ {scene_svg("none", band=False, nested=True, landmarks=landmarks, city=city)}
+ {'<rect x="-500" y="476" width="2000" height="10" fill="#E9C98A" opacity=".9"/>' if city == "chennai" else '<rect x="-500" y="478" width="2000" height="7" fill="#D8CCE6"/>' + posts}
  {_palm(-60, 640, 50, 0.95)}{_palm(1060, 640, 50, 0.95, flip=True)}{_palm(-330, 660, 24, 0.8)}{_palm(1330, 660, 24, 0.8, flip=True)}
  <path d="M-500 566 Q500 520 1500 566 L1500 800 L-500 800 Z" fill="#0B1B4D"/>
  <path d="M-500 566 Q500 520 1500 566" fill="none" stroke="{YELLOW}" stroke-width="6"/>
@@ -220,6 +271,7 @@ body{{width:1640px;height:624px;overflow:hidden;background:#0B1B4D;position:rela
 #t{{position:absolute;left:0;right:0;top:474px;text-align:center;white-space:nowrap;font-size:88px;line-height:1;color:#fff;-webkit-text-stroke:10px #060E2B;paint-order:stroke fill}}
 #t b{{color:{YELLOW}}}
 #s{{position:absolute;left:0;right:0;top:578px;text-align:center;white-space:nowrap;font-size:28px;color:#E8ECF5;letter-spacing:.08em}}
+{(".ta{font-family:" + ta_font + ";font-weight:900}") if ta_font else ""}
 </style></head><body><div style="position:absolute;inset:0">{svg}</div>
 <div id="t" class="ta">{ta} <b>மின்னல்</b></div>
 <div id="s" class="en">{sub}</div>
@@ -249,7 +301,7 @@ body{{width:2160px;height:400px;overflow:hidden;background:transparent}}
 </body></html>"""
 
 
-def scene_logo_html(size=1092, shape="circle", ribbon=False, line1="கோவை", rib_text="COIMBATORE NEWS", landmarks=True):
+def scene_logo_html(size=1092, shape="circle", ribbon=False, line1="கோவை", rib_text="COIMBATORE NEWS", landmarks=True, city="kovai", ta_font=""):
     s = size / 1000
     rings = (f'<svg viewBox="0 0 1000 1000" style="position:absolute;inset:0;width:100%;height:100%">'
              f'<circle cx="500" cy="500" r="485" fill="none" stroke="{YELLOW}" stroke-width="26"/>'
@@ -261,8 +313,9 @@ body{{width:{size}px;height:{size}px;position:relative;overflow:hidden;backgroun
 #t1{{top:{578*s:.0f}px;font-size:{128*s:.0f}px;color:#fff}}
 #t2{{top:{708*s:.0f}px;font-size:{152*s:.0f}px;color:{YELLOW}}}
 #rib{{position:absolute;left:50%;top:{884*s:.0f}px;transform:translateX(-50%);color:{YELLOW};white-space:nowrap;font-size:{34*s:.0f}px;letter-spacing:.12em}}
+{(".ta{font-family:" + ta_font + ";font-weight:900}") if ta_font else ""}
 </style></head><body>
-<div style="position:absolute;inset:0">{scene_svg(shape, landmarks=landmarks)}</div>{rings}
+<div style="position:absolute;inset:0">{scene_svg(shape, landmarks=landmarks, city=city)}</div>{rings}
 <div id="t1" class="ta">{line1}</div><div id="t2" class="ta">மின்னல்</div>{rib}
 {FIT_JS}
 </body></html>"""
@@ -320,6 +373,15 @@ def district_images(pg, key, d):
     districts/<key>/upload/profile_1080.png + fb_cover_1640x624.png (uploaded by hand, kept on this laptop only)."""
     home = ROOT / "districts" / key
     logo = home / "logo.png"
+    scene = d.get("brand_scene")      # owner 14 Nov: Chennai gets the Kovai-style scene with its own landmarks (general news page)
+    if scene:
+        shot(pg, scene_logo_html(512, ribbon=True, line1=d["ta"], rib_text=f"{d['en'].upper()} NEWS", landmarks=False, city=scene, ta_font=DIST_TA), 512, 512, logo)
+        shot(pg, footer_wide_html("data:image/png;base64," + base64.b64encode(logo.read_bytes()).decode(), en=d["en"], ta_name=d["name_ta"],
+                                  handle=d["handle"], ta_font=DIST_TA), 2160, 400, home / "footer.png")
+        shot(pg, scene_logo_html(1080, line1=d["ta"], landmarks=False, city=scene, ta_font=DIST_TA), 1080, 1080, home / "upload" / "profile_1080.png")
+        shot(pg, cover_scene_html(ta=d["ta"], sub=f"{d['en'].upper()} NEWS · FAST · EVERY DAY", landmarks=False, city=scene, ta_font=DIST_TA), 1640, 624,
+             home / "upload" / "fb_cover_1640x624.png", transparent=False)
+        return
     shot(pg, simple_logo_html(512, line1=d["ta"], rib_text=f"{d['en'].upper()} NEWS", ribbon=True), 512, 512, logo)      # shown at 128-250 px in the reels
     shot(pg, footer_wide_html("data:image/png;base64," + base64.b64encode(logo.read_bytes()).decode(), en=d["en"], ta_name=d["name_ta"],
                               handle=d["handle"], ta_font=DIST_TA), 2160, 400, home / "footer.png")

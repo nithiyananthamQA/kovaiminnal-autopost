@@ -11,6 +11,9 @@ enabled false -> every command here stops at once (nothing imported, nothing fet
     python districts/main.py write <key>          write the district's new notices into the district Sheet (reference collect.py)
     python districts/main.py post <key>           make the reels and post them on that district's page (reference post.py)
     python districts/main.py verify <key>         exit 3 while a notice written in the last 12 h is not on Instagram
+    python districts/main.py comments [key ...]   new Instagram comments of every page in district_powercut.comments_live (one
+                                                  process each) -> 3 reply options e-mailed by the DISTRICT bridge; nothing posted
+                                                  (poster/comments.py; the owner chooses, Code.districts.gs posts). DRY_RUN=1: nothing sent
 
 POWERCUT_DRY=1 (find): only shows what would be written; nothing is saved (works with the switch off, for a free test).
 """
@@ -205,8 +208,49 @@ def cmd_post(key):
                 print(f"{key}: waiting {wait / 60:.0f} min before the next post ({spacing:.0f} minutes apart, like the reference)", flush=True)
                 time.sleep(wait)
         sys.argv = ["post.py", "run"]
+        P.LOC_ID = ""      # never the place tag of the story before (a ready reel does not pick its own)
         P.main()
         last = time.time()
+    return 0
+
+
+def cmd_comments(keys):
+    """owner 14 Nov (Instagram's best practice: reply to comments within a couple of days): Kovai's comment-reply flow for every
+    page in district_powercut.comments_live, each in its own process (one page's token and Sheet per process). Counts only in the
+    log - the repository and its logs are public."""
+    keys = [k for k in (keys or PL.enabled_keys()) if k in PL.districts()]
+    on = [k for k in keys if PL.comments_on(k)]
+    for k in keys:
+        if k not in on:
+            print(f"{k}: comment replies are off (district_powercut.comments_live) - nothing done")
+    bad = []
+    for k in on:
+        try:
+            r = subprocess.run([sys.executable, str(Path(__file__).resolve()), "_comments", k], timeout=900, capture_output=True, text=True)
+            rc, out = r.returncode, r.stdout + r.stderr[-3000:]
+        except subprocess.TimeoutExpired:
+            rc, out = 9, "timed out after 15 minutes"
+        print(f"== {k}\n{out.rstrip()}", flush=True)
+        if rc != 0:
+            bad.append(k)
+    if bad:
+        print(f"comment check failed: {', '.join(bad)}")
+    return 1 if bad else 0
+
+
+def _comments_one(key):
+    """one page: the district Sheet (never Kovai's), this page's Instagram account and token only"""
+    PL.use_bridge()
+    d = PL.apply(key)
+    ig = d.get("instagram") or {}
+    if ig.get("api") == "unified" and not str(ig.get("user_id") or "").strip():
+        print(f"{key}: Instagram account id missing (districts.json instagram.user_id) - comments not read")
+        return 0
+    import comments as CM
+    try:
+        CM.run(key)
+    except Exception as e:      # like poster/comments.py: a missing token / permission is reported, never a failed job
+        print(f"{key}: comment check skipped - {str(e)[:200]}")
     return 0
 
 
@@ -224,11 +268,17 @@ if __name__ == "__main__":
         sys.exit(cmd_list())
     if cmd == "find":
         sys.exit(cmd_find(a[1:]) if switched_on() else 0)
-    if cmd in ("_find", "write", "writenews", "post", "verify") and len(a) == 2:
+    if cmd == "comments":
+        sys.exit(cmd_comments(a[1:]) if switched_on() else 0)
+    if cmd in ("_find", "write", "writenews", "post", "verify", "_comments") and len(a) == 2:
         if not switched_on(a[1]):
             sys.exit(0)
         if cmd == "writenews" and not PL.news_on(a[1]):
             print(f"{a[1]}: local news is off (district_powercut.news_live) - nothing done")
             sys.exit(0)
-        sys.exit({"_find": _find_one, "write": cmd_write, "writenews": cmd_writenews, "post": cmd_post, "verify": cmd_verify}[cmd](a[1]))
+        if cmd == "_comments" and not PL.comments_on(a[1]):
+            print(f"{a[1]}: comment replies are off (district_powercut.comments_live) - nothing done")
+            sys.exit(0)
+        sys.exit({"_find": _find_one, "write": cmd_write, "writenews": cmd_writenews, "post": cmd_post, "verify": cmd_verify,
+                  "_comments": _comments_one}[cmd](a[1]))
     sys.exit(__doc__)

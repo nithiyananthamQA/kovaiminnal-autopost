@@ -8,7 +8,8 @@
  *   - after posting: update the Sheet + the story's Google Doc and email the owner
  *
  * Setup (once): see README.md in the GitHub repository, section "Apps Script".
- * Script properties used: BRIDGE_KEY, IG_TOKEN_COIMBATORE, (auto) VOICE_FOLDER_ID, optional ALLOWED_SENDERS
+ * Script properties used: BRIDGE_KEY, IG_TOKEN_COIMBATORE, (auto) VOICE_FOLDER_ID, optional ALLOWED_SENDERS,
+ *   GH_DISPATCH_TOKEN (GitHub token for the job timer at the end of this file)
  * E-mail subjects use the tag KOVAIMINNAL (not NEWS360) so the Namakkal bridge never reads Coimbatore mails and the other way round.
  */
 // ---- OWNER SETS THESE (new Google account for Kovai Minnal; never the Namakkal Sheet / folder / Gmail) ----
@@ -160,11 +161,16 @@ function token_(page) {
   if (!t) throw new Error('No Instagram token saved for ' + page);
   return t;
 }
-/** Runs weekly (trigger made by setup): keeps the 60-day Instagram token alive. */
+/** A Meta Unified-login token (system user, starts with "EAA", made with expiry "Never") never expires and cannot be refreshed. */
+function systemUserToken_(t) {
+  return /^EAA/.test(String(t || ''));
+}
+/** Runs weekly (trigger made by setup): keeps the 60-day Instagram token alive. 14 Nov: a system-user token (EAA...) is skipped. */
 function refreshTokens() {
   ['COIMBATORE'].forEach(function (p) {
     var key = 'IG_TOKEN_' + p, t = props_().getProperty(key);
     if (!t) return;
+    if (systemUserToken_(t)) return;      // never expires - refreshing it would only fail and e-mail every Sunday
     var res = UrlFetchApp.fetch('https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=' +
       encodeURIComponent(t), { muteHttpExceptions: true });
     var d = JSON.parse(res.getContentText());
@@ -1188,6 +1194,11 @@ var COMMENT_COLS = ['received_ist', 'page', 'comment_id', 'media_id', 'permalink
                     'opt1', 'opt2', 'opt3', 'secret', 'status', 'reply', 'reply_id', 'done_ist', 'received_ms'];
 var COMMENT_HOURS = 48;
 var IG_REPLY_HOST = 'https://graph.instagram.com/v23.0/';
+// 14 Nov: a system-user token (Meta Unified login, EAA...) works only on graph.facebook.com - same comment endpoints (replies, hide)
+var IG_REPLY_HOST_UNIFIED = 'https://graph.facebook.com/v24.0/';
+function replyHost_(tok) {
+  return systemUserToken_(tok) ? IG_REPLY_HOST_UNIFIED : IG_REPLY_HOST;
+}
 
 function commentsSheet_() {
   var ss = SpreadsheetApp.openById(SHEET_ID);
@@ -1325,7 +1336,7 @@ function commentSubmit_(e) {
     }
     var tok = token_(r.page);
     if (what === 'hide') {
-      var h = UrlFetchApp.fetch(IG_REPLY_HOST + r.comment_id, { method: 'post', muteHttpExceptions: true,
+      var h = UrlFetchApp.fetch(replyHost_(tok) + r.comment_id, { method: 'post', muteHttpExceptions: true,
         payload: { hide: 'true', access_token: tok } });
       if (h.getResponseCode() !== 200) return htmlPage_('<p>Instagram did not hide it: ' + esc_(h.getContentText().slice(0, 300)) + '</p>');
       sh.getRange(r.row, col('status')).setValue('hidden');
@@ -1334,7 +1345,7 @@ function commentSubmit_(e) {
     }
     var msg = String(e.parameter.reply || '').trim();
     if (!msg) return htmlPage_('<p>The reply is empty - nothing posted.</p>');
-    var res = UrlFetchApp.fetch(IG_REPLY_HOST + r.comment_id + '/replies', { method: 'post', muteHttpExceptions: true,
+    var res = UrlFetchApp.fetch(replyHost_(tok) + r.comment_id + '/replies', { method: 'post', muteHttpExceptions: true,
       payload: { message: msg.slice(0, 2200), access_token: tok } });
     if (res.getResponseCode() !== 200) return htmlPage_('<p>Instagram did not accept the reply: ' + esc_(res.getContentText().slice(0, 300)) +
       '</p><p>Nothing was posted. You can go back and try again.</p>');
@@ -1348,3 +1359,129 @@ function commentSubmit_(e) {
     lock.releaseLock();
   }
 }
+
+// ===== KOVAI JOBS TIMER (start) - districts/make_bridge.py leaves this block out of the district bridge =====
+// owner 14 Nov: GitHub's own timer (cron) almost never starts Kovai Minnal's jobs (1 scheduled run in a whole day). This Google timer
+// runs every 5 minutes and starts each job at the times of its workflow's schedule (IST), at most once per time slot (the last slot
+// is kept in Script property KOVAI_SLOT_<file>). A slot GitHub's own timer already started is not started again.
+// Run startKovaiTimer ONCE, as the LAST go-live step (after the workflows are switched on); stopKovaiTimer switches it off.
+// A switched-off (disabled) workflow is skipped quietly: `gh workflow disable` still stops everything.
+// Needs Script property GH_DISPATCH_TOKEN: a GitHub fine-grained token, only this repository, Actions: Read and write.
+var KOVAI_REPO = 'nithiyananthamQA/kovaiminnal-autopost';
+// times in IST. every = minutes between slots, from .. to (last slot); at = fixed times. The inputs are a normal LIVE run
+// (the manual defaults of post.yml and rasipalan.yml are test runs). timer = post.yml treats the run like a scheduled one (LIVE file).
+var KOVAI_JOBS = [
+  { file: 'post.yml', every: 5, from: '05:30', to: '23:30', inputs: { dry_run: 'false', prebuild: 'false', timer: 'true' } },
+  { file: 'powercut.yml', every: 30, from: '05:50', to: '22:20', inputs: { dry: '0' } },          // cron 20,50 0-16 UTC
+  { file: 'comments.yml', every: 30, from: '05:45', to: '23:15', inputs: { dry_run: '0' } },      // cron 15,45 0-17 UTC
+  { file: 'pick.yml', at: ['06:00', '10:00', '19:00'], inputs: { dry: '0', resume: '0', top: '6' }, slotInputs: { '06:00': { top: '8' } } },
+  { file: 'rasipalan.yml', at: ['07:00', '07:45', '09:45', '11:45'], inputs: { dry: '0', date: '', repost: '0' } },      // waits until 07:31 itself
+  { file: 'insights.yml', at: ['02:10'], inputs: {} }
+];
+var KOVAI_LATE_MIN = 60;      // a fixed-time job (at) may still start this long after its time; an 'every' job only in its own slot
+
+function kovaiMin_(hhmm) { var p = String(hhmm).split(':'); return Number(p[0]) * 60 + Number(p[1]); }
+function kovaiHhmm_(min) { return ('0' + Math.floor(min / 60)).slice(-2) + ':' + ('0' + (min % 60)).slice(-2); }
+
+/** the job's time slot (IST minutes after midnight) that is due at minute m, or -1 */
+function kovaiSlot_(job, m) {
+  var s = -1, late = job.every || KOVAI_LATE_MIN;
+  if (job.every) {
+    var from = kovaiMin_(job.from), to = kovaiMin_(job.to);
+    if (m >= from) s = Math.min(from + Math.floor((m - from) / job.every) * job.every, to);
+  } else {
+    job.at.forEach(function (t) { var x = kovaiMin_(t); if (x <= m && x > s) s = x; });
+  }
+  return s >= 0 && m - s < late ? s : -1;
+}
+
+function kovaiGh_(tok, method, path, body) {
+  try {
+    var o = { method: method, muteHttpExceptions: true,
+      headers: { Authorization: 'Bearer ' + tok, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' } };
+    if (body) { o.contentType = 'application/json'; o.payload = JSON.stringify(body); }
+    var r = UrlFetchApp.fetch('https://api.github.com/repos/' + KOVAI_REPO + path, o);
+    var code = r.getResponseCode(), text = String(r.getContentText() || ''), json = {};
+    try { json = JSON.parse(text) || {}; } catch (e) { json = {}; }
+    return { ok: code >= 200 && code < 300, code: code, text: text, json: json };
+  } catch (err) {
+    return { ok: false, code: 0, text: String(err), json: {} };
+  }
+}
+
+function kovaiProblem_(now, what) {
+  Logger.log('Kovai jobs: ' + what);
+  var p = props_(), day = new Date(now.getTime() + 5.5 * 3600000).toISOString().slice(0, 10);
+  if (p.getProperty('KOVAI_TIMER_FAIL_MAIL') === day) return;      // at most one e-mail a day
+  p.setProperty('KOVAI_TIMER_FAIL_MAIL', day);
+  GmailApp.sendEmail(OWNER_EMAIL, '[KOVAIMINNAL PROBLEM] GitHub job could not be started',
+    'The Kovai Minnal bridge timer could not start a GitHub job:\n\n' + what +
+    '\n\n401 / 403 = the GitHub token (Script property GH_DISPATCH_TOKEN) is missing, expired or lacks Actions: Read and write.' +
+    '\n422 "Unexpected inputs" = the workflow files on GitHub are older than this bridge: push main first.' +
+    '\nThe timer tries again every 5 minutes; this e-mail comes at most once a day.');
+}
+
+/** one tick of the timer (every 5 minutes): start every job whose time slot is due and not yet started */
+function startKovaiJobs() {
+  var lock = LockService.getUserLock();      // not the script lock: processReplies and doPost hold that one
+  if (!lock.tryLock(1000)) return;      // the previous tick is still running
+  try {
+    kovaiTick_(new Date());
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function kovaiTick_(now) {
+  var ist = new Date(now.getTime() + 5.5 * 3600000);      // India has no summer time
+  var m = ist.getUTCHours() * 60 + ist.getUTCMinutes(), day = ist.toISOString().slice(0, 10);
+  var dayStartUtc = Date.UTC(ist.getUTCFullYear(), ist.getUTCMonth(), ist.getUTCDate()) - 5.5 * 3600000;
+  var p = props_(), due = [];
+  KOVAI_JOBS.forEach(function (job) {
+    var s = kovaiSlot_(job, m);
+    if (s < 0) return;
+    var key = day + ' ' + kovaiHhmm_(s);
+    if (p.getProperty('KOVAI_SLOT_' + job.file) !== key) due.push({ job: job, slot: s, key: key });
+  });
+  if (!due.length) return;
+  var tok = p.getProperty('GH_DISPATCH_TOKEN');
+  if (!tok) return kovaiProblem_(now, 'Script property GH_DISPATCH_TOKEN is missing - nothing was started.');
+  var list = kovaiGh_(tok, 'get', '/actions/workflows?per_page=100');
+  if (!list.ok) return kovaiProblem_(now, 'reading the workflows failed: ' + list.code + ' ' + list.text.slice(0, 500));
+  var state = {};
+  (list.json.workflows || []).forEach(function (w) { state[String(w.path || '').split('/').pop()] = w.state; });
+  var failed = [];
+  due.forEach(function (d) {
+    var f = d.job.file, mark = function () { p.setProperty('KOVAI_SLOT_' + f, d.key); };
+    if (state[f] === 'disabled_manually') { Logger.log(f + ' is switched off on GitHub - not started'); mark(); return; }
+    if (state[f] !== 'active') { failed.push(f + ': workflow state on GitHub is ' + (state[f] || 'not found')); return; }
+    if (f !== 'post.yml') {      // GitHub's own timer already started this slot -> not a second time (a second pick round would post more news)
+      var since = new Date(dayStartUtc + d.slot * 60000).toISOString().replace(/\.\d{3}Z$/, 'Z');
+      var runs = kovaiGh_(tok, 'get', '/actions/workflows/' + f + '/runs?event=schedule&per_page=1&created=' + encodeURIComponent('>=' + since));
+      if (runs.ok && Number(runs.json.total_count) > 0) { Logger.log(f + ' ' + d.key + ' already started by GitHub'); mark(); return; }
+    }
+    var inputs = {}, extra = (d.job.slotInputs || {})[kovaiHhmm_(d.slot)] || {};
+    Object.keys(d.job.inputs).forEach(function (k) { inputs[k] = d.job.inputs[k]; });
+    Object.keys(extra).forEach(function (k) { inputs[k] = extra[k]; });
+    var res = kovaiGh_(tok, 'post', '/actions/workflows/' + f + '/dispatches', { ref: 'main', inputs: inputs });
+    if (res.ok) { Logger.log('started ' + f + ' (' + d.key + ' IST)'); mark(); return; }
+    failed.push(f + ' (' + d.key + ' IST): ' + res.code + ' ' + res.text.slice(0, 300));      // slot not marked: the next tick tries again
+  });
+  if (failed.length) kovaiProblem_(now, failed.join('\n'));
+}
+
+function stopKovaiTimer() {
+  ScriptApp.getProjectTriggers().forEach(function (t) { if (t.getHandlerFunction() === 'startKovaiJobs') ScriptApp.deleteTrigger(t); });
+  Logger.log('Kovai Minnal job timer is off');
+}
+
+/** Run ONCE from the editor (the timer stays on when a new version is pasted): every 5 minutes it starts Kovai Minnal's GitHub jobs on time. */
+function startKovaiTimer() {
+  stopKovaiTimer();
+  ScriptApp.newTrigger('startKovaiJobs').timeBased().everyMinutes(5).create();
+  if (!props_().getProperty('GH_DISPATCH_TOKEN')) Logger.log('Add Script property GH_DISPATCH_TOKEN (GitHub token: only this repository, Actions: Read and write)');
+  startKovaiJobs();
+  Logger.log('Kovai Minnal job timer is on (IST): post every 5 min 05:30-23:30, powercut every 30 min 05:50-22:20, comments every 30 min ' +
+    '05:45-23:15, pick 06:00 / 10:00 / 19:00, rasipalan 07:00 (+ backups 07:45 / 09:45 / 11:45), insights 02:10');
+}
+// ===== KOVAI JOBS TIMER (end) =====

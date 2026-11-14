@@ -82,6 +82,22 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-14 | `634e481` | Kovai job timer in the bridge: startKovaiJobs every 5 min starts post / powercut / comments / pick / rasipalan / insights on their schedule times (GitHub's own timer almost never fires) |
+| 2026-11-14 | `8bfc761` | District place tag: 'not' words (Thiruporur is not Porur), check ids on facebook.com/<id>; reach tests independent of the comments_live switch |
+| 2026-11-14 | `60679bc` | district powercut: notices found |
+| 2026-11-14 | `f660389` | District pages (Chennai first): Instagram place tag from districts/locations.json + comment-reply flow in district_powercut.yml |
+| 2026-11-14 | `99fb684` | One shared minnal-bot token for every page (owner 14 Nov: same account for Chennai and Kovai) |
+| 2026-11-14 | `3343ced` | Video length like the reference (owner 14 Nov): no 6-sentence limit and no 'short reel' writer rule for power cuts - every area read, up to ~90 s |
+| 2026-11-14 | `dc79b5e` | PAGE_SETUP.md: the complete per-page checklist (Facebook page, Instagram account, portfolio + minnal-bot, tokens, switch-on, checks) as done for Chennai and Kovai; city_minnal username pattern; 5-account web limit; status table |
+| 2026-11-14 | `c17c42c` | Kovai Minnal Instagram (@kovai_minnal, id 17841410844667843) on the Unified login - Kovai workflows stay off until the owner sets IG_TOKEN_COIMBATORE and switches Kovai on |
+| 2026-11-14 | `0c754e8` | Ignore .claude/ (agent worktrees) |
+| 2026-11-14 | `3917eee` | Kovai Unified switch: tests pass with the account id empty AND filled (Kovai-unchanged test pins its own config; the shipped-config test checks the import wiring, not the value), so the commit that fills the id keeps tests.yml green. meta_fb_token.sh shows the Instagram account id next to each page. SETUP step 9: reuse minnal-bot's token (never Revoke), the account id from meta_fb_token.sh, ig-probe only after the id is pushed. Audit: POCSO row made exact |
+| 2026-11-14 | `7656c84` | docs/KOVAI_AUDIT.md: Kovai vs the reference (copied at 6c6ade2, checked at 4ed994f): differences on purpose, 15 gaps the reference has and Kovai lacks, which of its 21 code commits since the copy to port (and why), out-of-date docs, porting cautions, Instagram connection (Unified login) and the endpoint differences. SETUP step 9 + Meta app row: Unified login with Minnal Pages like Chennai; stray text on line 1 removed |
+| 2026-11-14 | `e298717` | Kovai Instagram via Meta Unified login, switched by config only: poster/config.json instagram {api: unified, user_id: ""} (poster/ig_api.py) - empty id = Instagram login as before (graph.instagram.com + "me"); filled = graph.facebook.com/v24.0 + that account id, "me" never asked there. post.py (and everything using post.ig: comments, insights, ig_comments, ig_probe, story catch-up, collect) and rasipalan follow the same rule; a district on the Instagram login never inherits Kovai's setting. Bridge: system-user tokens (EAA...) are never refreshed (no weekly failure e-mail); comment reply / hide use graph.facebook.com for them. make_bridge.py: timer code as a raw string (Code.districts.gs had real line breaks inside JS strings - Apps Script would not save it). 368 tests pass |
+| 2026-11-14 | `09efef1` | Chennai Minnal as a general Chennai news page (owner 14 Nov): Kovai-style scene logo/footer with Chennai landmarks, new name/bio/Facebook texts (power-cut closing unchanged); docs/PRIVACY.md for the Meta app's Live mode |
+| 2026-11-14 | `684a116` | Brand images: Chennai scene (Chennai Central clock tower, Kapaleeshwarar gopuram, Marina lighthouse, sea) in the Kovai style - city='chennai' |
+| 2026-11-14 | `9b16d9c` | Our own pictures only (owner 14 Nov, Instagram's rules: no copies, no third-party watermarks): config real_photo_enabled=false stops using the news site's photo |
+| 2026-11-14 | `0813caa` | district powercut: chennai posted |
 | 2026-11-14 | `b991ee5` | district-powercut: 'post only' run (workflow input post_only=1) posts the stories already waiting in the Sheet now - no search, nothing new written |
 | 2026-11-14 | `844f833` | Chennai posts 12 minutes apart like the reference (posting.spacing_min); power cuts / urgent news never wait; a job stops starting posts after 70 min (the rest waits for the next run) |
 | 2026-11-14 | `7f98185` | District job timer in the bridge (GitHub's own timer never started it): startDistrictJob every 30 min 05:30-22:10 IST via GitHub API (token GH_DISPATCH_TOKEN); each news round runs once in its hour whoever starts the job |
@@ -96,20 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-14 | `947b373` | Chennai news like the reference: 8 + 6 + 6 = 20 a day (06 / 10 / 19 h) |
 | 2026-11-14 | `47e3728` | Like the reference (owner 14 Nov): district check every 30 min; Chennai news only in 3 rounds a day (06 / 10 / 19 h: 4 + 3 + 3 = 10), news up to 12 h old |
 | 2026-11-14 | `931d1d1` | Test: writenews off-switch checked offline (never runs the real writer) |
-| 2026-11-14 | `552d315` | Chennai news ON (owner approved the sample 14 Nov): news closing = follow line only (no send-to-friends); the 'முழு விவரம்' card no longer overlaps the yellow strip (district reels) |
-| 2026-11-13 | `3042ece` | Chennai local news (owner 13 Nov): district pages can post their other local news too - reference points system picks the best new news, 1 per check, 10 a day, max 6 h old; first run only remembers (no flood); power cuts / obituaries / other districts left out; news preface + news follow lines; writenews step in the workflow. OFF (news_live empty) until the owner approves a sample. 355 tests pass |
-| 2026-11-13 | `0dc15c6` | District reels: one common closing line for all non-power-cut news (power-cut closing unchanged) |
-| 2026-11-13 | `9fd4bf1` | District reels: non-power-cut news ends with the news follow line + share line by type (one area -> that area's people; city-wide -> friends and family); power-cut reels unchanged |
-| 2026-11-13 | `aa835a6` | Old-cut rule only when the cut day is written in the notice (a dateless notice is never blocked by the publish date) |
-| 2026-11-13 | `a089434` | Never post a power cut whose day has passed (blocks the 13 Nov Chennai test row); district check every 15 min |
-| 2026-11-13 | `10d7e55` | Chennai Minnal live: district power-cut pages switched on (live: chennai only) |
-| 2026-11-13 | `15115fe` | District reel fixes: applied once only (a re-render never repeats the share line); follow line from districts.json |
-| 2026-11-13 | `c912669` | District reels (owner 13 Nov, Chennai test): follow said once, share line for that area's people (voice + end card), full cut time on the band, real date instead of 'naalai marudhinam', one-word மின்தடை, short voice (max 6 sentences; caption has every area) |
-| 2026-11-13 | `1a1d56e` | District switch: live list (pages go live one by one; chennai first) - still off until the owner approves a Chennai test reel |
-| 2026-11-13 | `bb4b37f` | meta_fb_token.sh: accept a never-expiring system-user token as it is (no exchange) |
-| 2026-11-13 | `54c4721` | Chennai Minnal Instagram account id (Business settings, portfolio Minnal Media) |
-| 2026-11-13 | `63f8358` | District Unified login: a missing Instagram account id blocks only posting (finding and writing go on); 351 tests pass |
-| 2026-11-13 | `465a919` | Instagram via Meta Unified login for district pages (app Minnal Pages): graph.facebook.com + the page's Instagram account id; Chennai marked unified (account id filled once its token exists); Kovai unchanged |
-| 2026-11-13 | `4cfa995` | Chennai go-live steps: Instagram token from the old app Namenector Social (new Meta apps only get Unified login, which needs a business portfolio and graph.facebook.com); Facebook token from the new app Minnal Pages; steps 1-2 done |
-| 2026-11-13 | `a2bfc88` | meta_fb_token.sh: use our own Meta app Minnal Pages (1448178013559937); secret asked once, kept only in ~/.config/minnal-pages |
 <!-- recent-changes:end -->

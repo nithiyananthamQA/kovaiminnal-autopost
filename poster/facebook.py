@@ -45,7 +45,38 @@ def log(*a):
 def creds(page):
     k = re.sub(r"[^A-Z0-9]", "_", page.upper())
     pid, tok = os.environ.get("FB_PAGE_ID_" + k, "").strip(), os.environ.get("FB_TOKEN_" + k, "").strip()
-    return (pid, tok) if pid and tok else None
+    return (pid, tok) if pid and tok else shared_creds(page)
+
+
+_SHARED = {}
+
+
+def shared_creds(page, get=None):
+    """owner 14 Nov ("same account for Chennai and Kovai"): a page without FB secrets but with its page id in config.json
+    facebook.page_ids gets its Page token from the one minnal-bot token (Minnal bridge). Asked once per run; nothing secret logged."""
+    if page in _SHARED:
+        return _SHARED[page]
+    _SHARED[page] = None
+    try:
+        sys.path.insert(0, str(HERE))
+        import ig_api
+        cfg = json.loads((HERE / "config.json").read_text(encoding="utf-8"))
+        pid = str(((cfg.get("facebook") or {}).get("page_ids") or {}).get(page, "")).strip()
+        if not pid:
+            return None
+        tok = ig_api.shared_token(cfg, os.environ.get("BRIDGE_URL", ""), get=get)
+        if not tok:
+            log(f"{page}: no FB secrets and no shared minnal-bot token - Facebook skipped")
+            return None
+        r = (get or requests.get)(f"{GRAPH}/{VER}/{pid}", params={"fields": "access_token", "access_token": tok}, timeout=60).json()
+        if r.get("access_token"):
+            _SHARED[page] = (pid, r["access_token"])
+            log(f"{page}: Page token from the shared minnal-bot token")
+        else:
+            log(f"{page}: shared token gave no Page token: {(r.get('error') or {}).get('message', '')[:120]}")
+    except Exception as e:
+        log(f"{page}: shared Facebook token failed: {str(e)[:120]}")
+    return _SHARED[page]
 
 
 def _now():
