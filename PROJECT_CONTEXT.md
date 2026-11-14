@@ -82,6 +82,7 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-14 | `ca9a8d4` | Chennai news: the first round posts too (the per-round cap stops a flood; same as the reference) |
 | 2026-11-14 | `b06290e` | DIFFERENCES: round limit, same-job posting and config switch kept by the owner (14 Nov) |
 | 2026-11-14 | `0a4c56d` | Tests: news tests never touch the Sheet (fast, offline) |
 | 2026-11-14 | `25941ba` | News round limit (60 articles / 6 min, newest first) so the power-cut check in the same job is never held up; docs/DIFFERENCES.md lists every difference from the reference |
@@ -111,5 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-13 | `40e9c44` | Instagram steps for the owner (by hand): create kovaiminnal, tester invites, IG tokens for Kovai + Chennai |
 | 2026-11-13 | `504e498` | Instagram setup texts: brand/instagram_details.txt (Kovai) + per-district files (git-ignored upload/), checklist notes that IG<->FB link is optional for posting |
 | 2026-11-13 | `caa2ac6` | Page setup checklist: Chennai Minnal Facebook page created |
-| 2026-11-13 | `4976341` | Page setup checklist: Madurai suspended by Instagram, Madurai + Salem dropped for now; Instagram by hand from now on |
 <!-- recent-changes:end -->
