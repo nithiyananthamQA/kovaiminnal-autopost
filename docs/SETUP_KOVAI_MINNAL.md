@@ -210,6 +210,8 @@ minnal-bot → **Generate token** → app **Minnal Pages** → expiry **Never** 
 6. **Post stories** → `dry_run` – builds a reel without posting; download it from the run's artifacts and check it.
    A disabled workflow cannot be run by hand either: `gh workflow enable <file> -R nithiyananthamQA/kovaiminnal-autopost`, run the
    test, then `gh workflow disable <file> -R ...` again (tests, ig-probe and Facebook check have no schedule – they never need it).
+   **keeper** (step 12.4) starts every switched-on workflow LIVE at its cron times: while one is switched on for a test, a cron
+   time in the last hour (pick 06/10/19, powercut every 30 min, ...) starts a real run within 5 minutes - switch it off right after.
 
 ## 12. Go live (you)
 
