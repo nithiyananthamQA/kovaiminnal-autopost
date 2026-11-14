@@ -15,6 +15,9 @@ on:
       districts:
         description: "district keys separated by spaces (empty = every switched-on district)"
         default: ""
+      post_only:
+        description: "1 = post the stories already waiting in the Sheet now (no search, nothing new written)"
+        default: "0"
 permissions:
   contents: write
 concurrency:
@@ -25,6 +28,7 @@ env:
   DISTRICT_BRIDGE_KEY: ${{ secrets.DISTRICT_BRIDGE_KEY }}
   KOVAI_BRIDGE_URL: ${{ secrets.BRIDGE_URL }}      # only to refuse it: a district row never goes to Kovai's Sheet
   POWERCUT_DRY: ${{ github.event_name == 'workflow_dispatch' && inputs.dry || '0' }}
+  POST_ONLY: ${{ github.event_name == 'workflow_dispatch' && inputs.post_only || '0' }}
   CITY_ONLY: "0"
 jobs:
   find:

@@ -55,6 +55,15 @@ def cmd_find(keys):
     """one news search for all districts, then one process per district (6 at a time): a district's values never leak into the next"""
     import concurrent.futures as cf
     keys = keys or PL.enabled_keys() or (list(PL.districts()) if DRY else [])
+    if os.environ.get("POST_ONLY") == "1":      # owner 14 Nov: post the waiting stories now - no search, nothing new written
+        found = [{"key": k, "secret": k.upper(), "urls": "", "news": ""} for k in keys]
+        print(f"post only: {', '.join(keys) or '-'} (the stories already waiting in the Sheet)")
+        out = os.environ.get("GITHUB_OUTPUT")
+        if out:
+            with open(out, "a") as fh:
+                fh.write(f"n={len(found)}\n")
+                fh.write("matrix=" + json.dumps({"include": found}, ensure_ascii=False) + "\n")
+        return 0
     try:
         PL.shared_search(PL.log)
     except Exception as e:
