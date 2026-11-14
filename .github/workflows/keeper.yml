@@ -1,0 +1,33 @@
+name: keeper
+# owner 14 Nov: GitHub's own timer (cron) almost never starts our scheduled workflows (1 scheduled run in a whole day). One keeper
+# run lives about 5 h 40 min: every minute tools/keeper.py starts each switched-on workflow at its OWN cron times (the schedule: lines
+# in its .yml, no other times) when it has no run since that time; then keeper starts itself again (the chain).
+# The cron lines below are only a backup that restarts the chain if it broke (a backup run waits behind a running keeper).
+# Start the chain once by hand: Actions -> keeper -> Run workflow. Stop it: gh workflow disable keeper.yml
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "13 */2 * * *"      # backup only
+    - cron: "43 1-23/2 * * *"   # backup only
+permissions:
+  actions: write      # gh workflow run (a GITHUB_TOKEN may start workflow_dispatch runs)
+  contents: read
+concurrency:
+  group: keeper
+  cancel-in-progress: false
+jobs:
+  keep:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+      KEEPER_MINUTES: "340"
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main}
+      - name: Start each workflow at its own schedule times (about 5 h 40 min)
+        run: python3 -u tools/keeper.py
+      - name: Start the next keeper run (a cancelled run does not)
+        if: ${{ !cancelled() }}
+        run: gh workflow run keeper.yml --ref main
