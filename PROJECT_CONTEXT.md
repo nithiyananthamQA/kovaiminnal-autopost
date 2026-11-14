@@ -82,6 +82,12 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-14 | `b991ee5` | district-powercut: 'post only' run (workflow input post_only=1) posts the stories already waiting in the Sheet now - no search, nothing new written |
+| 2026-11-14 | `844f833` | Chennai posts 12 minutes apart like the reference (posting.spacing_min); power cuts / urgent news never wait; a job stops starting posts after 70 min (the rest waits for the next run) |
+| 2026-11-14 | `7f98185` | District job timer in the bridge (GitHub's own timer never started it): startDistrictJob every 30 min 05:30-22:10 IST via GitHub API (token GH_DISPATCH_TOKEN); each news round runs once in its hour whoever starts the job |
+| 2026-11-14 | `13b6440` | district-powercut: re-save so GitHub registers the schedule (0 scheduled runs since the push) |
+| 2026-11-14 | `466bae4` | district powercut: chennai posted |
+| 2026-11-14 | `5b8fcbe` | district powercut: notices found |
 | 2026-11-14 | `ca9a8d4` | Chennai news: the first round posts too (the per-round cap stops a flood; same as the reference) |
 | 2026-11-14 | `b06290e` | DIFFERENCES: round limit, same-job posting and config switch kept by the owner (14 Nov) |
 | 2026-11-14 | `0a4c56d` | Tests: news tests never touch the Sheet (fast, offline) |
@@ -106,10 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-13 | `465a919` | Instagram via Meta Unified login for district pages (app Minnal Pages): graph.facebook.com + the page's Instagram account id; Chennai marked unified (account id filled once its token exists); Kovai unchanged |
 | 2026-11-13 | `4cfa995` | Chennai go-live steps: Instagram token from the old app Namenector Social (new Meta apps only get Unified login, which needs a business portfolio and graph.facebook.com); Facebook token from the new app Minnal Pages; steps 1-2 done |
 | 2026-11-13 | `a2bfc88` | meta_fb_token.sh: use our own Meta app Minnal Pages (1448178013559937); secret asked once, kept only in ~/.config/minnal-pages |
-| 2026-11-13 | `e2d6109` | Chennai go-live steps: one chennaiminnal login (same Chrome profile), sample reel approved before switch-on |
-| 2026-11-13 | `35477f3` | Chennai go-live steps (browser, by hand): Sheet, district bridge, Instagram tester + token, GitHub, Facebook token, dry test, switch on |
-| 2026-11-13 | `5e1b59f` | Setup scripts for district pages: meta_fb_token.sh takes a page key (chennai -> FB_PAGE_ID_CHENNAI / FB_TOKEN_CHENNAI); set_secrets.sh also copies DISTRICT_BRIDGE_URL / DISTRICT_BRIDGE_KEY |
-| 2026-11-13 | `40e9c44` | Instagram steps for the owner (by hand): create kovaiminnal, tester invites, IG tokens for Kovai + Chennai |
-| 2026-11-13 | `504e498` | Instagram setup texts: brand/instagram_details.txt (Kovai) + per-district files (git-ignored upload/), checklist notes that IG<->FB link is optional for posting |
-| 2026-11-13 | `caa2ac6` | Page setup checklist: Chennai Minnal Facebook page created |
 <!-- recent-changes:end -->
