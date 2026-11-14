@@ -82,34 +82,34 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-14 | `78cd1c1` | Reel layout A for every reel (owner 14 Nov night): picture left clear, one lower text block, slim top strip, smaller footer with a small gap above it; outro in the news voice on every page and without the news location |
+| 2026-11-14 | `93200cd` | Heartbeat |
+| 2026-11-14 | `bdc30dd` | Heartbeat |
+| 2026-11-14 | `98640a7` | Heartbeat |
+| 2026-11-14 | `73c6db3` | Heartbeat |
+| 2026-11-14 | `9bd572e` | powercut: notices written |
+| 2026-11-14 | `1860f7b` | powercut: notices written |
+| 2026-11-14 | `92b32ec` | district powercut: notices found |
+| 2026-11-14 | `3081c1a` | powercut: notices written |
+| 2026-11-14 | `684f04b` | powercut: notices written |
+| 2026-11-14 | `0a22201` | Our own news music under the reels (owner 14 Nov, no copyright): serious / alert / calm composed by tools/make_music.py, mood from the news (post.music_mood), 14 dB under the voice while it speaks and back up in every pause and on the end card (voice track decides); config music.enabled |
+| 2026-11-14 | `cd8409e` | Reel B2: top-right logo above the header bar, header shade fades out before it (owner 14 Nov: logo was hidden by the shade) |
+| 2026-11-14 | `cd5d3f6` | district powercut: notices found |
+| 2026-11-14 | `534c7e5` | facebook RN-6 |
+| 2026-11-14 | `19ed47c` | pick: written and posted |
+| 2026-11-14 | `d2b574f` | powercut: notices written |
+| 2026-11-14 | `8abb9dd` | Reel B2: footer back inside the safe area (y 1085-1246, x 70-940 - owner 14 Nov: in the opened reel the bottom footer hid behind Instagram's name/caption/Follow); captions 880-1070, headline 520-860, summary 410-870 |
+| 2026-11-14 | `e9f700e` | facebook RN-4 |
+| 2026-11-14 | `b721b2c` | powercut: notices written |
+| 2026-11-14 | `cde2f40` | facebook RN-11 |
+| 2026-11-14 | `9a84127` | WIP: Fable design notes 1-7 as rendered in preview-10s-new.mp4 (footer still off, plain background) - owner 14 Nov: some parts fine, picture + footer missing |
+| 2026-11-14 | `76f46a2` | facebook RN-7 |
+| 2026-11-14 | `e8aed86` | powercut: notices written |
+| 2026-11-14 | `1893b1e` | facebook RN-3 |
+| 2026-11-14 | `683a4af` | pick: picked news saved |
 | 2026-11-14 | `b09de88` | stories shared |
 | 2026-11-14 | `e824780` | test_today_only: independent of research_free/START_AT (failed for 2 h after every collect-switch start) |
 | 2026-11-14 | `d545796` | Kovai Minnal live (LIVE file: scheduled posting on); tests job installs pyyaml (test_district_reach needs it) |
 | 2026-11-14 | `179471b` | pick: picked news saved |
 | 2026-11-14 | `79589ef` | pick: list sent |
-| 2026-11-14 | `4799c03` | SETUP step 11: keeper starts a switched-on workflow live at its cron times - switch it off right after a dry test |
-| 2026-11-14 | `4d3475a` | keeper: GitHub-only scheduler - starts every switched-on workflow at its own cron times (GitHub's own timer almost never fires) |
-| 2026-11-14 | `cca0f20` | collect switch: start |
-| 2026-11-14 | `634e481` | Kovai job timer in the bridge: startKovaiJobs every 5 min starts post / powercut / comments / pick / rasipalan / insights on their schedule times (GitHub's own timer almost never fires) |
-| 2026-11-14 | `8bfc761` | District place tag: 'not' words (Thiruporur is not Porur), check ids on facebook.com/<id>; reach tests independent of the comments_live switch |
-| 2026-11-14 | `60679bc` | district powercut: notices found |
-| 2026-11-14 | `f660389` | District pages (Chennai first): Instagram place tag from districts/locations.json + comment-reply flow in district_powercut.yml |
-| 2026-11-14 | `99fb684` | One shared minnal-bot token for every page (owner 14 Nov: same account for Chennai and Kovai) |
-| 2026-11-14 | `3343ced` | Video length like the reference (owner 14 Nov): no 6-sentence limit and no 'short reel' writer rule for power cuts - every area read, up to ~90 s |
-| 2026-11-14 | `dc79b5e` | PAGE_SETUP.md: the complete per-page checklist (Facebook page, Instagram account, portfolio + minnal-bot, tokens, switch-on, checks) as done for Chennai and Kovai; city_minnal username pattern; 5-account web limit; status table |
-| 2026-11-14 | `c17c42c` | Kovai Minnal Instagram (@kovai_minnal, id 17841410844667843) on the Unified login - Kovai workflows stay off until the owner sets IG_TOKEN_COIMBATORE and switches Kovai on |
-| 2026-11-14 | `0c754e8` | Ignore .claude/ (agent worktrees) |
-| 2026-11-14 | `3917eee` | Kovai Unified switch: tests pass with the account id empty AND filled (Kovai-unchanged test pins its own config; the shipped-config test checks the import wiring, not the value), so the commit that fills the id keeps tests.yml green. meta_fb_token.sh shows the Instagram account id next to each page. SETUP step 9: reuse minnal-bot's token (never Revoke), the account id from meta_fb_token.sh, ig-probe only after the id is pushed. Audit: POCSO row made exact |
-| 2026-11-14 | `7656c84` | docs/KOVAI_AUDIT.md: Kovai vs the reference (copied at 6c6ade2, checked at 4ed994f): differences on purpose, 15 gaps the reference has and Kovai lacks, which of its 21 code commits since the copy to port (and why), out-of-date docs, porting cautions, Instagram connection (Unified login) and the endpoint differences. SETUP step 9 + Meta app row: Unified login with Minnal Pages like Chennai; stray text on line 1 removed |
-| 2026-11-14 | `e298717` | Kovai Instagram via Meta Unified login, switched by config only: poster/config.json instagram {api: unified, user_id: ""} (poster/ig_api.py) - empty id = Instagram login as before (graph.instagram.com + "me"); filled = graph.facebook.com/v24.0 + that account id, "me" never asked there. post.py (and everything using post.ig: comments, insights, ig_comments, ig_probe, story catch-up, collect) and rasipalan follow the same rule; a district on the Instagram login never inherits Kovai's setting. Bridge: system-user tokens (EAA...) are never refreshed (no weekly failure e-mail); comment reply / hide use graph.facebook.com for them. make_bridge.py: timer code as a raw string (Code.districts.gs had real line breaks inside JS strings - Apps Script would not save it). 368 tests pass |
-| 2026-11-14 | `09efef1` | Chennai Minnal as a general Chennai news page (owner 14 Nov): Kovai-style scene logo/footer with Chennai landmarks, new name/bio/Facebook texts (power-cut closing unchanged); docs/PRIVACY.md for the Meta app's Live mode |
-| 2026-11-14 | `684a116` | Brand images: Chennai scene (Chennai Central clock tower, Kapaleeshwarar gopuram, Marina lighthouse, sea) in the Kovai style - city='chennai' |
-| 2026-11-14 | `9b16d9c` | Our own pictures only (owner 14 Nov, Instagram's rules: no copies, no third-party watermarks): config real_photo_enabled=false stops using the news site's photo |
-| 2026-11-14 | `0813caa` | district powercut: chennai posted |
-| 2026-11-14 | `b991ee5` | district-powercut: 'post only' run (workflow input post_only=1) posts the stories already waiting in the Sheet now - no search, nothing new written |
-| 2026-11-14 | `844f833` | Chennai posts 12 minutes apart like the reference (posting.spacing_min); power cuts / urgent news never wait; a job stops starting posts after 70 min (the rest waits for the next run) |
-| 2026-11-14 | `7f98185` | District job timer in the bridge (GitHub's own timer never started it): startDistrictJob every 30 min 05:30-22:10 IST via GitHub API (token GH_DISPATCH_TOKEN); each news round runs once in its hour whoever starts the job |
-| 2026-11-14 | `13b6440` | district-powercut: re-save so GitHub registers the schedule (0 scheduled runs since the push) |
-| 2026-11-14 | `466bae4` | district powercut: chennai posted |
-| 2026-11-14 | `5b8fcbe` | district powercut: notices found |
 <!-- recent-changes:end -->
