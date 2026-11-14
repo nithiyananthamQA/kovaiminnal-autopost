@@ -160,11 +160,16 @@ function token_(page) {
   if (!t) throw new Error('No Instagram token saved for ' + page);
   return t;
 }
-/** Runs weekly (trigger made by setup): keeps the 60-day Instagram token alive. */
+/** A Meta Unified-login token (system user, starts with "EAA", made with expiry "Never") never expires and cannot be refreshed. */
+function systemUserToken_(t) {
+  return /^EAA/.test(String(t || ''));
+}
+/** Runs weekly (trigger made by setup): keeps the 60-day Instagram token alive. 14 Nov: a system-user token (EAA...) is skipped. */
 function refreshTokens() {
   ['COIMBATORE'].forEach(function (p) {
     var key = 'IG_TOKEN_' + p, t = props_().getProperty(key);
     if (!t) return;
+    if (systemUserToken_(t)) return;      // never expires - refreshing it would only fail and e-mail every Sunday
     var res = UrlFetchApp.fetch('https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=' +
       encodeURIComponent(t), { muteHttpExceptions: true });
     var d = JSON.parse(res.getContentText());
@@ -1188,6 +1193,11 @@ var COMMENT_COLS = ['received_ist', 'page', 'comment_id', 'media_id', 'permalink
                     'opt1', 'opt2', 'opt3', 'secret', 'status', 'reply', 'reply_id', 'done_ist', 'received_ms'];
 var COMMENT_HOURS = 48;
 var IG_REPLY_HOST = 'https://graph.instagram.com/v23.0/';
+// 14 Nov: a system-user token (Meta Unified login, EAA...) works only on graph.facebook.com - same comment endpoints (replies, hide)
+var IG_REPLY_HOST_UNIFIED = 'https://graph.facebook.com/v24.0/';
+function replyHost_(tok) {
+  return systemUserToken_(tok) ? IG_REPLY_HOST_UNIFIED : IG_REPLY_HOST;
+}
 
 function commentsSheet_() {
   var ss = SpreadsheetApp.openById(SHEET_ID);
@@ -1325,7 +1335,7 @@ function commentSubmit_(e) {
     }
     var tok = token_(r.page);
     if (what === 'hide') {
-      var h = UrlFetchApp.fetch(IG_REPLY_HOST + r.comment_id, { method: 'post', muteHttpExceptions: true,
+      var h = UrlFetchApp.fetch(replyHost_(tok) + r.comment_id, { method: 'post', muteHttpExceptions: true,
         payload: { hide: 'true', access_token: tok } });
       if (h.getResponseCode() !== 200) return htmlPage_('<p>Instagram did not hide it: ' + esc_(h.getContentText().slice(0, 300)) + '</p>');
       sh.getRange(r.row, col('status')).setValue('hidden');
@@ -1334,7 +1344,7 @@ function commentSubmit_(e) {
     }
     var msg = String(e.parameter.reply || '').trim();
     if (!msg) return htmlPage_('<p>The reply is empty - nothing posted.</p>');
-    var res = UrlFetchApp.fetch(IG_REPLY_HOST + r.comment_id + '/replies', { method: 'post', muteHttpExceptions: true,
+    var res = UrlFetchApp.fetch(replyHost_(tok) + r.comment_id + '/replies', { method: 'post', muteHttpExceptions: true,
       payload: { message: msg.slice(0, 2200), access_token: tok } });
     if (res.getResponseCode() !== 200) return htmlPage_('<p>Instagram did not accept the reply: ' + esc_(res.getContentText().slice(0, 300)) +
       '</p><p>Nothing was posted. You can go back and try again.</p>');

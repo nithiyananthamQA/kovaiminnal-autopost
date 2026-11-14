@@ -466,6 +466,10 @@ def apply(key, mode="powercut"):
         _set(P, "IG_USER_ID", uid)
         if not uid:      # finding and writing go on; only posting waits ('me' there is the system user, never the page)
             _set(P, "missing_setup", lambda: print(f"{key}: Instagram account id missing (districts.json instagram.user_id) - nothing posted", flush=True) or True)
+    else:      # 14 Nov: Instagram login - never Kovai's Unified settings (config.json instagram) with this page's token
+        _set(P, "IG_HOST", P.ig_api.LOGIN_HOST)
+        _set(P, "IG_VER", os.environ.get("IG_API_VERSION", ""))
+        _set(P, "IG_USER_ID", "")
     try:
         picked = set(json.loads(PC.STATE.read_text(encoding="utf-8")).get("done", {}))
     except Exception:

@@ -37,7 +37,12 @@ FEST_TAG = {"diwali": "#Deepavali", "pongal": "#Pongal", "christmas": "#Christma
             "navaratri": "#AyudhaPooja", "perumal": "#Perumal", "shiva": "#Shivaratri", "krishna": "#KrishnaJayanthi", "national": "#India"}
 STATE = HERE / "state" / f"{PAGE}.json"
 OUT = ROOT / "out" / "rasipalan" / PAGE
-IG = "https://graph.instagram.com"
+# 14 Nov: Kovai's Instagram connection follows poster/config.json "instagram" like every other job (poster/ig_api.py):
+# empty user_id = graph.instagram.com + "me" as before; filled = Meta Unified login (graph.facebook.com/v24.0 + that account id)
+sys.path.insert(0, str(ROOT / "poster"))
+import ig_api      # noqa: E402
+IG, IG_VER, IG_USER_ID = (ig_api.settings(json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8")))
+                          if PAGE == "coimbatore" else (ig_api.LOGIN_HOST, "", ""))
 
 
 def log(*a):
@@ -54,12 +59,20 @@ def bridge_get(action, **params):
 
 
 def ig(method, path, token, **params):
+    if path == "me" and not ig_api.me_allowed(IG):
+        raise RuntimeError(f"Instagram: no account id for {IG} ('me' there is the system user) - fill poster/config.json instagram.user_id")
     params["access_token"] = token
-    r = requests.request(method, f"{IG}/{path}", params=params if method == "GET" else None, data=params if method == "POST" else None, timeout=120)
+    r = requests.request(method, f"{IG}/{IG_VER + '/' if IG_VER else ''}{path}", params=params if method == "GET" else None,
+                         data=params if method == "POST" else None, timeout=120)
     d = r.json()
     if r.status_code >= 400 or "error" in d:
         raise RuntimeError(f"Instagram {path}: {d.get('error', d)}")
     return d
+
+
+def account_id(token):
+    """the page's Instagram account id: config.json's id on the Unified login, else "me" (Instagram login)"""
+    return IG_USER_ID or ig("GET", "me", token, fields="user_id")["user_id"]
 
 
 def wait_ready(cid, token, minutes=6):
@@ -102,7 +115,7 @@ def already_posted(day, p, token=None):
         pass
     if token:
         try:
-            uid = ig("GET", "me", token, fields="user_id")["user_id"]
+            uid = account_id(token)
             for m in ig("GET", f"{uid}/media", token, fields="caption,timestamp,permalink", limit=15).get("data", []):
                 if f"இன்றைய ராசி பலன் | {p['date_ta']}," in (m.get("caption") or ""):      # (day-name spelling changed 1 Nov)
                     return f"Instagram already has today's post {m.get('permalink')}"
@@ -139,7 +152,7 @@ def caption(cfg, p, fest, notes, rs):
 
 
 def publish(token, urls, cap, collab):
-    uid = ig("GET", "me", token, fields="user_id")["user_id"]
+    uid = account_id(token)
     kids = []
     for i, u in enumerate(urls, 1):
         kids.append(ig("POST", f"{uid}/media", token, image_url=u, is_carousel_item="true")["id"])
