@@ -1,5 +1,7 @@
 name: Post stories (carousel + reel)
 # Kovai Minnal (கோவை மின்னல்): one page, reel only, Valluvar voice only, website off. Scheduled posting runs only while the LIVE file exists.
+# owner 14 Nov: GitHub's own timer rarely fires - the Kovai Minnal bridge's Google timer (Code.gs startKovaiJobs) starts this every
+# 5 minutes 05:30-23:30 IST with timer=true; such a run counts as a scheduled one (also needs the LIVE file).
 
 on:
   schedule:
@@ -12,6 +14,10 @@ on:
         default: true
       prebuild:
         description: "Prebuild only: make every waiting carousel + reel now and keep them ready; nothing is posted (set dry_run to false). The next posting run publishes them at once."
+        type: boolean
+        default: false
+      timer:
+        description: "Set by the Google timer (Kovai Minnal bridge, every 5 min): the run counts as a scheduled one (needs the LIVE file). Leave off by hand."
         type: boolean
         default: false
 
@@ -43,6 +49,7 @@ env:
   POST_MAX_AGE_DAYS: "0"      # owner 29 Oct 18:29: only news PUBLISHED TODAY is posted
   DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '1' || '' }}
   PREBUILD: ${{ github.event_name == 'workflow_dispatch' && inputs.prebuild && '1' || '' }}
+  POST_TIMER: ${{ github.event_name == 'workflow_dispatch' && inputs.timer && '1' || '' }}      # owner 14 Nov: started by the Google timer = a scheduled run
   PAUSED: ${{ vars.PAUSED }}
 
 jobs:
@@ -70,7 +77,8 @@ jobs:
             set +e; python poster/post.py check 2>&1 | tee .last_check; CHECK_RC=${PIPESTATUS[0]}; set -e      # owner 2 Nov: a crash must not look green
           fi
           git config user.name "kovaiminnal-bot"; git config user.email "kovaiminnal-bot@users.noreply.github.com"
-          if grep -q "ready to post: [1-9]" .last_check || [ "$(date -u +%M)" -lt 5 ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then git add -f .last_check && git commit -qm "check log" && { for i in 1 2 3 4; do git pull -q --rebase -X theirs --autostash && git push -q && break; git rebase --abort 2>/dev/null || true; sleep $((i*3)); done; } || true; fi
+          # owner 14 Nov: Google timer runs (POST_TIMER) save the check log like scheduled ones - not a commit every 5 minutes
+          if grep -q "ready to post: [1-9]" .last_check || [ "$(date -u +%M)" -lt 5 ] || { [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -z "$POST_TIMER" ]; }; then git add -f .last_check && git commit -qm "check log" && { for i in 1 2 3 4; do git pull -q --rebase -X theirs --autostash && git push -q && break; git rebase --abort 2>/dev/null || true; sleep $((i*3)); done; } || true; fi
           # owner 1 Nov: the list of posts already shared to the story (never twice) is saved after every check
           if [ -f poster/story_shared.json ]; then git add -f poster/story_shared.json && git commit -qm "stories shared" && { for i in 1 2 3 4 5; do git pull -q --rebase -X theirs --autostash && git push -q && break; git rebase --abort 2>/dev/null || true; sleep $((i*3)); done; } || true; fi
           if [ "${CHECK_RC:-0}" != "0" ]; then echo "::error::post.py check crashed (exit $CHECK_RC) - nothing was posted in this run"; exit 1; fi
@@ -85,7 +93,7 @@ jobs:
           git config user.name "kovaiminnal-bot"; git config user.email "kovaiminnal-bot@users.noreply.github.com"
           git add -f poster/fb_posted && git commit -qm "facebook retry" && { for i in 1 2 3 4 5; do git pull -q --rebase -X theirs --autostash && git push -q && break; git rebase --abort 2>/dev/null || true; sleep $((i*3)); done; } || true
       - name: Watchdog - restart an overdue collection or writer (GitHub sometimes skips scheduled runs)
-        if: always() && github.event_name == 'schedule' && env.BRIDGE_URL != ''
+        if: always() && (github.event_name == 'schedule' || env.POST_TIMER == '1') && env.BRIDGE_URL != ''
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -112,7 +120,7 @@ jobs:
           case "$todo" in *collect*) gh workflow run research_free.yml -f dry=false && echo "news round was overdue: started now";; esac
           true
       - name: Keep the schedule alive (daily heartbeat)
-        if: always() && github.event_name == 'schedule' && env.BRIDGE_URL != ''
+        if: always() && (github.event_name == 'schedule' || env.POST_TIMER == '1') && env.BRIDGE_URL != ''
         run: |
           if [ "$(date -u +%H)" = "18" ] && [ "$(date -u +%M)" -lt 20 ]; then
             date -u +"%Y-%m-%d %H:%M UTC" > .heartbeat
