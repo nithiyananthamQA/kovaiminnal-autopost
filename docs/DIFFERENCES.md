@@ -24,7 +24,7 @@ Last full check: 14 Nov 2026.
 ## Different - decided by the owner
 
 1. Reel look and voice: B2 template, Anbu voice (11 Nov). Reference: v4 design, Valluvar voice.
-2. Power-cut reels: max about 6 spoken sentences, the caption has every area (13 Nov: 80 s was too long).
+2. (removed 14 Nov: power-cut reels are as long as the reference's again - every area read, up to ~90 s.)
 3. Closing lines: power cut = send to that area's people + பவர்கட் follow line; other news = only
    "சென்னை செய்திகளை உடனுக்குடன் தெரிந்துகொள்ள சென்னை மின்னல் பக்கத்தை ஃபாலோ செய்யுங்கள்." (13-14 Nov).
 4. A power cut whose day (written in the notice) has passed is never posted (13 Nov; stricter than the reference).
