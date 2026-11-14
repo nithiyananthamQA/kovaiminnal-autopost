@@ -167,6 +167,15 @@ def place_ids(key, refused=()):
     return words, names
 
 
+def place_not_words(key):
+    """words that contain an area's match word but are another place (திருப்போரூர் holds போரூர்): blanked before matching"""
+    try:
+        m = json.loads(LOCATIONS.read_text(encoding="utf-8")).get(key) or {}
+    except Exception:
+        m = {}
+    return sorted({w.strip() for a in m.get("areas") or [] for w in a.get("not") or [] if w.strip()}, key=len, reverse=True)
+
+
 def refused_places(d):
     try:
         return json.loads((d["state"] / "locations_refused.json").read_text(encoding="utf-8"))
@@ -178,13 +187,20 @@ def place_picker(P, d, names):
     """the reference's pick_location (the area named FIRST in the headline wins, else the city "default") on this page's ids;
     a power cut covers many areas, so it always gets the city tag"""
     orig = P.pick_location
+    nots = place_not_words(d["key"])
+
+    def blank(s):
+        for w in nots:
+            s = re.sub(re.escape(w), " ", s or "", flags=re.I)
+        return s or ""
 
     def pick(row, spec):
         if _POWER_ROW.search(f"{row.get('category') or ''} {row.get('headline_ta') or ''}"):
             city = str((P.CONFIG.get("locations") or {}).get("default") or "")
             pid = city if city in P.verified_locations() else ""
         else:
-            pid = orig(row, spec)
+            pid = orig(dict(row, **{k: blank(row.get(k)) for k in ("headline_ta", "headline_en", "location")}),
+                       dict(spec, loc=blank(spec.get("loc"))))
         if pid:
             log(f"location tag: {names.get(pid, pid)} ({pid})")
         return pid

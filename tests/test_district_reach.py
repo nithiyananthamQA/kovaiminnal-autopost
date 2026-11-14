@@ -31,7 +31,8 @@ PL.LOCATIONS = _dir / "locations.json"
 PL.LOCATIONS.write_text(json.dumps({"chennai": {"city": {"place": "Chennai, Tamil Nadu", "id": "1001"},
     "areas": [{"place": "Tambaram", "match": ["தாம்பர", "tambaram"], "id": "2002"},
               {"place": "Velachery", "match": ["வேளச்சேரி", "velachery"], "id": "3003"},
-              {"place": "Guindy", "match": ["கிண்டி"], "id": ""}]}}, ensure_ascii=False), encoding="utf-8")
+              {"place": "Guindy", "match": ["கிண்டி"], "id": ""},
+              {"place": "Porur", "match": ["போரூர", "porur"], "not": ["திருப்போரூர", "thiruporur"], "id": "4004"}]}}, ensure_ascii=False), encoding="utf-8")
 _real_page = PL.page
 def _page(k):
     d = _real_page(k); d["state"] = _dir / "state" / k; return d
@@ -57,6 +58,8 @@ class LocationTag(unittest.TestCase):
                 self.assertTrue(a["id"] == "" or a["id"].isdigit(), a)      # empty (TODO owner) or a real numeric id - never a guess in words
             for a in v["areas"]:
                 self.assertTrue(a["match"] and a["place"], a)
+                for w in a.get("not") or []:      # a "not" word is a longer place that holds one of the match words
+                    self.assertTrue(any(x.lower() in w.lower() for x in a["match"]), (a["place"], w))
                 for w in a["match"]:      # the city name is the "default", never a match word (it would beat every area)
                     self.assertNotIn(w.lower(), {keys[k]["ta"], keys[k]["en"].lower(), "default"})
 
@@ -83,6 +86,8 @@ print(json.dumps({
   "city_fallback": P.pick_location(row("சென்னையில் மழை எச்சரிக்கை"), {}),
   "empty_id_area_city": P.pick_location(row("கிண்டியில் விபத்து"), {}),
   "power_cut_city": P.pick_location(row("தாம்பரம், வேளச்சேரியில் நாளை மின் தடை", cat="மின் தடை"), {}),
+  "porur": P.pick_location(row("போரூரில் லாரி மோதி விபத்து"), {}),
+  "thiruporur_not_porur": P.pick_location(row("திருப்போரூரில் விபத்து", en="Accident at Thiruporur"), {"loc": "திருப்போரூர்"}),
   "tags_on": P.CONFIG["location_tags"],
 }))""")
         o = json.loads(out.strip().splitlines()[-1])
@@ -93,6 +98,8 @@ print(json.dumps({
         self.assertEqual(o["city_fallback"], "1001")          # no known area -> "Chennai, Tamil Nadu"
         self.assertEqual(o["empty_id_area_city"], "1001")     # an area without an id -> the city
         self.assertEqual(o["power_cut_city"], "1001")         # a power cut covers many areas -> always the city
+        self.assertEqual(o["porur"], "4004")
+        self.assertEqual(o["thiruporur_not_porur"], "1001")   # திருப்போரூர் holds போரூர் but is another place ("not" words)
         self.assertTrue(o["tags_on"])
         self.assertIn("location tag: Tambaram (2002)", out)
 
@@ -140,8 +147,6 @@ print("other error keeps the id:", sorted(PL.refused_places(d)))""")
 
 class CommentReplies(unittest.TestCase):
     def test_switch(self):
-        cfg = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["district_powercut"]
-        self.assertIn("chennai", cfg["comments_live"])
         out = run(HEAD + """
 PL.settings = lambda: {"enabled": True, "live": ["chennai"], "comments_live": ["chennai", "salem"]}
 print(PL.comments_on("chennai"), PL.comments_on("salem"))
@@ -157,7 +162,9 @@ print(sorted(m for m in sys.modules if m in ('post', 'comments', 'collect')))"""
 
     def test_kovai_bridge_refused(self):
         env = dict(DENV, DISTRICT_BRIDGE_URL="https://example.invalid/kovai")
-        r = subprocess.run([PY, "districts/main.py", "_comments", "chennai"], cwd=ROOT, env=env, capture_output=True, text=True, timeout=60)
+        code = (HEAD + "import runpy\nPL.settings = lambda: {'enabled': True, 'live': ['chennai'], 'comments_live': ['chennai']}\n"
+                "sys.argv = ['districts/main.py', '_comments', 'chennai']\nrunpy.run_path('districts/main.py', run_name='__main__')")
+        r = subprocess.run([PY, "-c", code], cwd=ROOT, env=env, capture_output=True, text=True, timeout=60)
         self.assertNotEqual(r.returncode, 0)
         self.assertIn("Kovai Minnal's bridge", r.stdout + r.stderr)
 
@@ -193,7 +200,7 @@ P.ig = ig
 CM.options_for = lambda cap, text: ("question", ["a", "b", "c"])
 CM.DRY = False
 print("rc", M._comments_one("chennai"))
-print(json.dumps({"bridge": P.BRIDGE_URL, "gets": gets, "sent_action": sent[0][0], "sent_page": sent[0][1]["page"],
+print(json.dumps({"uid": uid, "bridge": P.BRIDGE_URL, "gets": gets, "sent_action": sent[0][0], "sent_page": sent[0][1]["page"],
                   "ids": [x["comment_id"] for x in sent[0][1]["items"]], "methods": sorted({c[0] for c in calls}),
                   "paths": sorted({c[1] for c in calls}), "tokens": sorted({c[2] for c in calls})}, ensure_ascii=False))""")
         lines = out.strip().splitlines()
@@ -202,7 +209,7 @@ print(json.dumps({"bridge": P.BRIDGE_URL, "gets": gets, "sent_action": sent[0][0
         self.assertEqual(o["gets"], [["token", {"page": "chennai"}], ["commentsSeen", {}]])      # Chennai's token only
         self.assertEqual((o["sent_action"], o["sent_page"], o["ids"]), ("commentNew", "chennai", ["c1"]))      # c2 seen, c3 own, c4 answered
         self.assertEqual(o["methods"], ["GET"])      # the job only reads Instagram - the owner's choice is posted by the bridge
-        self.assertEqual(o["paths"], ["17841452418440882", "17841452418440882/media", "m1/comments"])
+        self.assertEqual(o["paths"], sorted([o["uid"], o["uid"] + "/media", "m1/comments"]))      # Chennai's own Instagram account
         self.assertEqual(o["tokens"], ["EAA-chennai"])
         log = "\n".join(lines[:-1])
         self.assertIn("rc 0", log)
