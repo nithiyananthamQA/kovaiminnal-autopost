@@ -211,12 +211,6 @@ def find_news(d, dry=False, log=print):
     per_run, per_day = int(s.get("news_per_run", 1)), int(s.get("news_per_day", 10))
     max_age = float(s.get("news_max_age_hours", 6))
     rounds = s.get("news_rounds")      # owner 14 Nov: like the reference - news only in rounds (06 / 10 / 19 h), N news per round
-    if rounds:
-        t_ = datetime.datetime.now(IST)
-        per_run = int(rounds.get(f"{t_.hour:02d}", 0)) if t_.minute < 30 else 0
-        if not per_run and not dry:
-            log(f"news: not a news round now ({t_:%H:%M}; rounds {', '.join(sorted(rounds))} h) - power cuts only")
-            return []
     path = d["state"] / "news_state.json"
     first = False      # owner 14 Nov: the first round posts too (the per-round cap 8 / 6 / 6 already stops a flood; the reference does not skip it)
     try:
@@ -226,6 +220,15 @@ def find_news(d, dry=False, log=print):
     seen, days = st.setdefault("seen", {}), st.setdefault("days", {})
     now = datetime.datetime.now(IST)
     today = now.date().isoformat()
+    if rounds:      # each round runs ONCE in its hour, whoever starts the job (GitHub's timer or the bridge's timer)
+        slot, done = f"{today}_{now.hour:02d}", st.setdefault("rounds_done", {})
+        per_run = int(rounds.get(f"{now.hour:02d}", 0))
+        if per_run and done.get(slot):
+            per_run = 0
+        if not per_run and not dry:
+            log(f"news: not a news round now ({now:%H:%M}; rounds {', '.join(sorted(rounds))} h, once each) - power cuts only")
+            return []
+        done[slot] = True
     try:
         meta = dinamalar_meta(d)
     except Exception:
@@ -289,6 +292,7 @@ def find_news(d, dry=False, log=print):
     cut = (now - datetime.timedelta(days=7)).date().isoformat()
     st["seen"] = {k: v for k, v in seen.items() if v >= cut}
     st["days"] = {k: v for k, v in days.items() if k >= cut}
+    st["rounds_done"] = {k: v for k, v in (st.get("rounds_done") or {}).items() if k[:10] >= cut}
     if first:
         log(f"news, first run for {d['key']}: {len(st['seen'])} links already on the page remembered - only newer news is written")
     for sc, t, u in take:

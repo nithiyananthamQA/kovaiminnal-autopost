@@ -1351,3 +1351,38 @@ function commentSubmit_(e) {
     lock.releaseLock();
   }
 }
+
+// ------------------------------------------------------------------ the district job's timer (owner 14 Nov)
+// GitHub's own timer did not start the job. Run startTimer ONCE: every 30 minutes (05:30 - 22:10 IST) this starts the GitHub job
+// district-powercut. Needs Script property GH_DISPATCH_TOKEN (a GitHub token: only this repository, Actions read + write).
+var GH_REPO = 'nithiyananthamQA/kovaiminnal-autopost';
+function startDistrictJob() {
+  var now = new Date(), mins = Number(Utilities.formatDate(now, 'Asia/Kolkata', 'H')) * 60 + Number(Utilities.formatDate(now, 'Asia/Kolkata', 'm'));
+  if (mins < 5 * 60 + 30 || mins > 22 * 60 + 10) return;
+  var tok = props_().getProperty('GH_DISPATCH_TOKEN');
+  if (!tok) { Logger.log('GH_DISPATCH_TOKEN missing in Script properties'); return; }
+  var res = UrlFetchApp.fetch('https://api.github.com/repos/' + GH_REPO + '/actions/workflows/district_powercut.yml/dispatches', {
+    method: 'post', contentType: 'application/json', muteHttpExceptions: true,
+    headers: { Authorization: 'Bearer ' + tok, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' },
+    payload: JSON.stringify({ ref: 'main', inputs: { dry: '0', districts: '' } })
+  });
+  var code = res.getResponseCode();
+  if (code === 204) return;
+  Logger.log('GitHub job not started: ' + code + ' ' + res.getContentText().slice(0, 300));
+  var day = Utilities.formatDate(now, 'Asia/Kolkata', 'yyyy-MM-dd');
+  if (props_().getProperty('GH_DISPATCH_FAIL_MAIL') !== day) {      // at most one e-mail a day
+    props_().setProperty('GH_DISPATCH_FAIL_MAIL', day);
+    GmailApp.sendEmail(OWNER_EMAIL, '[DISTRICTMINNAL PROBLEM] GitHub job could not be started (' + code + ')',
+      'The bridge timer could not start district-powercut on GitHub:
+' + res.getContentText().slice(0, 1000) +
+      '
+
+401 / 403 = the GitHub token (Script property GH_DISPATCH_TOKEN) expired or lacks Actions: Read and write.');
+  }
+}
+function startTimer() {
+  ScriptApp.getProjectTriggers().forEach(function (t) { if (t.getHandlerFunction() === 'startDistrictJob') ScriptApp.deleteTrigger(t); });
+  ScriptApp.newTrigger('startDistrictJob').timeBased().everyMinutes(30).create();
+  startDistrictJob();
+  Logger.log('District job timer is on: every 30 minutes, 05:30 - 22:10 IST');
+}

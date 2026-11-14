@@ -307,7 +307,10 @@ PL.dinamalar_meta = lambda d_: {u.rsplit("/", 1)[-1]: {"published": (_D.T - _dt.
 _D.T = _D(2026, 11, 14, 6, 5, tzinfo=PL.IST); print("first:", PL.find_news(d, log=lambda *a: None))
 L[:] = [(u.replace("/x/", "/y/"), t, h) for u, t, h in L]
 _D.T = _D(2026, 11, 14, 8, 5, tzinfo=PL.IST); print("08:05:", len(PL.find_news(d, log=lambda *a: None)))
-_D.T = _D(2026, 11, 14, 10, 5, tzinfo=PL.IST); print("10:05:", len(PL.find_news(d, log=lambda *a: None)))""")
+_D.T = _D(2026, 11, 14, 10, 5, tzinfo=PL.IST); print("10:05:", len(PL.find_news(d, log=lambda *a: None)))
+L.append(("https://y/chennai/late/9", "சென்னையில் பேருந்து விபத்து", 0))
+_D.T = _D(2026, 11, 14, 10, 40, tzinfo=PL.IST); print("10:40 again:", len(PL.find_news(d, log=lambda *a: None)))""")
+        self.assertIn("10:40 again: 0", out)      # a round runs once in its hour (two starters: GitHub + the bridge timer)
         self.assertIn("08:05: 0", out)      # not a news round: power cuts only
         self.assertIn("10:05: 3", out)      # a news round: 3 (student 1 h, metro 2 h, old 9 h; egg = other district, cut = power cut)
 
