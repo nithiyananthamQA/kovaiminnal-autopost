@@ -33,8 +33,9 @@ Last full check: 14 Nov 2026.
 
 5a. A news round opens at most 60 articles in 6 minutes (so the power-cut check in the same job is never held up);
    the reference's news job has no such limit. Whatever is left waits for the next round.
-5b. Posting: Chennai writes and posts in the same job, right after the round. Reference: a separate job every 5 minutes.
-    Reels take about 4 minutes each, so the posts are spaced in a similar way.
+5b. Posting: Chennai writes and posts in the same job, right after the round (reference: a separate job every 5 minutes).
+    The gap is the same as the reference: at least 12 minutes between posts, power cuts never wait (14 Nov; until then
+    Chennai posted about 5 minutes apart).
 5c. The reference's LIVE file stops only its scheduled posting; Chennai uses the switch in poster/config.json instead.
 
 ## Different - forced

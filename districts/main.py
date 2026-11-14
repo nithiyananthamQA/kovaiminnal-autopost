@@ -177,9 +177,27 @@ def cmd_post(key):
     rows = P.bridge_get("queue")["rows"]
     n = len(P.pick_all(rows)) if rows else 0
     print(f"{key}: {n} reel(s) to make", flush=True)
-    for _ in range(min(n, 8)):      # post.py run = the oldest waiting story; the next pass takes the next one
+    # owner 14 Nov: like the reference - one story at a time, at least posting.spacing_min (12) minutes after the page's last post;
+    # urgent news (power cuts, High) never waits. A job may run 90 minutes: what does not fit waits for the next run.
+    import time
+    spacing = float((P.CONFIG.get("posting") or {}).get("spacing_min", 12))
+    t0, last = time.time(), None
+    for i in range(min(n, 8)):      # post.py run = the top waiting story; the next pass takes the next one
+        if last is not None:
+            rows = P.bridge_get("queue")["rows"]
+            nxt = P.pick_all(rows) if rows else []
+            if not nxt:
+                break
+            wait = 0 if P.is_urgent(nxt[0]) else spacing * 60 - (time.time() - last)
+            if time.time() - t0 + max(0, wait) > 70 * 60:
+                print(f"{key}: the next stories wait for the next run (job time)", flush=True)
+                break
+            if wait > 0:
+                print(f"{key}: waiting {wait / 60:.0f} min before the next post ({spacing:.0f} minutes apart, like the reference)", flush=True)
+                time.sleep(wait)
         sys.argv = ["post.py", "run"]
         P.main()
+        last = time.time()
     return 0
 
 
