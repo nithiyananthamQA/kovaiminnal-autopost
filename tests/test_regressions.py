@@ -100,6 +100,11 @@ class CoimbatorePriority(unittest.TestCase):
         self.assertTrue(cut > rain >= crime, (cut, rain, crime))
 
     def test_today_only(self):
+        from unittest import mock      # 14 Nov: research_free/START_AT (set by collect-switch) must not change this test
+        with mock.patch.object(collect, "_start_at", lambda: None):
+            self._today_only()
+
+    def _today_only(self):
         self.assertEqual(1, collect.FRESH_DAYS)
         self.assertTrue(collect.fresh(datetime.datetime.now(IST).isoformat()))
         self.assertFalse(collect.fresh((datetime.datetime.now(IST) - datetime.timedelta(days=1)).isoformat()))
