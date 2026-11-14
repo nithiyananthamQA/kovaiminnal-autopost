@@ -373,6 +373,15 @@ def district_images(pg, key, d):
     districts/<key>/upload/profile_1080.png + fb_cover_1640x624.png (uploaded by hand, kept on this laptop only)."""
     home = ROOT / "districts" / key
     logo = home / "logo.png"
+    scene = d.get("brand_scene")      # owner 14 Nov: Chennai gets the Kovai-style scene with its own landmarks (general news page)
+    if scene:
+        shot(pg, scene_logo_html(512, ribbon=True, line1=d["ta"], rib_text=f"{d['en'].upper()} NEWS", landmarks=False, city=scene, ta_font=DIST_TA), 512, 512, logo)
+        shot(pg, footer_wide_html("data:image/png;base64," + base64.b64encode(logo.read_bytes()).decode(), en=d["en"], ta_name=d["name_ta"],
+                                  handle=d["handle"], ta_font=DIST_TA), 2160, 400, home / "footer.png")
+        shot(pg, scene_logo_html(1080, line1=d["ta"], landmarks=False, city=scene, ta_font=DIST_TA), 1080, 1080, home / "upload" / "profile_1080.png")
+        shot(pg, cover_scene_html(ta=d["ta"], sub=f"{d['en'].upper()} NEWS · FAST · EVERY DAY", landmarks=False, city=scene, ta_font=DIST_TA), 1640, 624,
+             home / "upload" / "fb_cover_1640x624.png", transparent=False)
+        return
     shot(pg, simple_logo_html(512, line1=d["ta"], rib_text=f"{d['en'].upper()} NEWS", ribbon=True), 512, 512, logo)      # shown at 128-250 px in the reels
     shot(pg, footer_wide_html("data:image/png;base64," + base64.b64encode(logo.read_bytes()).decode(), en=d["en"], ta_name=d["name_ta"],
                               handle=d["handle"], ta_font=DIST_TA), 2160, 400, home / "footer.png")
