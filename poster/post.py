@@ -1763,6 +1763,8 @@ def auto_images():
         work = OUT / r["story_id"]
         work.mkdir(parents=True, exist_ok=True)
         try:      # owner 31 Oct: the source article's own relevant photo first (enhanced when small); else the AI pictures below
+            if CONFIG.get("real_photo_enabled", True) is False:      # owner 14 Nov: Instagram's rules - our own pictures only
+                raise ImportError("real photos switched off")
             import realphoto
             pics, credit = realphoto.for_story(r.get("source") or "", r.get("headline_en") or "", n=len(prompts), log=log)
             if pics:
