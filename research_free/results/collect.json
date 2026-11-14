@@ -1,0 +1,629 @@
+{
+ "log": [
+  "earlier stories still waiting for images: []",
+  "instagram check: 0 recent posts read from the page",
+  "pick round: only the picked links are written (research_free/pick.py)",
+  "manual link added: https://www.maalaimalar.com/news/tamilnadu/coimbatore-youtuber-death-threat-manikandan-arrested",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/police-advisory-to-ask-for-details-of-pawnbrokers/4376024",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/the-nilambur-madukkarai-road-in-the-grip-of-the-accident-was-not-enough-fun-for-the-officers/4375856",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/karamadai-garuda-tirtha-pond-looks-like-the-sea/4375948",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/truck-overturns-due-to-driver-s-negligence-ethanol-recovered-by-fire-department/4376043",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/will-the-municipal-corporation-keep-laripet-clean/4375938",
+  "candidate filter: collected=6",
+  "to write: 6 Coimbatore district candidates (max 6 stories)",
+  "round: top 6 of 6 candidates",
+  "candidates waiting: 6 Coimbatore; time left 79 min",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
+  "posting job started at once",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 7})",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 9})",
+  "try (N) manual=True: https://www.maalaimalar.com/news/tamilnadu/coimbatore-youtub",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 11})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 15})",
+  "posting job started at once",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 17})",
+  "candidate loop ended: left 0, tried={'N': 6}, done={'N': 6}, time left 67 min",
+  "filed: 6 Coimbatore district stories (target 6), reels only",
+  "queue: 0 news waiting to be written",
+  "All News sheet: {\"ok\":true,\"added\":6,\"updated\":0}"
+ ],
+ "llm": [
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3.6-flash (40s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "ok gemini/gemini-3.6-flash (46s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3.6-flash: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3.6-flash",
+  "ok gemini/gemini-3.6-flash (16s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok gemini/gemini-3.6-flash (9s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "ok gemini/gemini-3-flash-preview (15s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok gemini/gemini-3-flash-preview (5s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok gemini/gemini-3-flash-preview (6s)",
+  "ok gemini/gemini-3.5-flash (33s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok gemini/gemini-3-flash-preview (6s)",
+  "fail gemini/gemini-3.5-flash: Expecting ',' delimiter: line 49 column 3 (char 1450)",
+  "poor answer - skipped for 30 min: gemini/gemini-3.5-flash",
+  "ok gemini/gemini-3-flash-preview (12s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing ",
+  "ok gemini/gemini-3-flash-preview (17s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3-flash-preview (11s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
+  "dead for this round: gemini/gemini-3-flash-preview",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please ch",
+  "ok gemma/gemma-4-26b-a4b-it (28s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please ch",
+  "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\"",
+  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"I",
+  "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please ch",
+  "switching away from gemma/gemma-4-26b-a4b-it for 10 min",
+  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check ",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check ",
+  "switching away from gemma/gemma-4-31b-it for 10 min",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (81s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)",
+  "poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+  "fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)",
+  "poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (33s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (27s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (30s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (30s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (4s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)",
+  "poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (29s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (31s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (35s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (29s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (30s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (2s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (27s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (26s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (28s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (31s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (31s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (26s)",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (28s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (7s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (35s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (26s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (3s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (24s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (37s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: Unterminated string starting at: line 1 column 16596 (char 16595)",
+  "poor answer - skipped for 30 min: cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (30s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (29s)",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5"
+ ],
+ "stories": [
+  {
+   "tamil_headline": "உக்கடம் லாரிபேட்டையில் கழிவுநீர் வடிகால் தூர்வார நடவடிக்கை: மாநகராட்சி ஆணையாளர் ரவி தேஜா நேரில் ஆய்வு",
+   "english_headline": "Coimbatore Corporation to desilt drains and clear encroachments at Ukkadam Lorry Pettai following inspection by Commissioner Ravi Teja",
+   "category": "Civic Issues",
+   "location": "Ukkadam, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "ஆய்வு நடவடிக்கை",
+    "loc": "உக்கடம், கோவை",
+    "hl1": "உக்கடம் லாரிபேட்டையில் மாநகராட்சி ஆய்வு",
+    "hl2": "வடிகால் தூர்வார நடவடிக்கை",
+    "slides": [
+     {
+      "title": "லாரிபேட்டை நிலை",
+      "lines": [
+       "<b>உக்கடம்</b> லாரிபேட்டையில் <b>400+</b> கடைகள் உள்ளன",
+       "வாகன உதிரிபாகங்கள் விற்பனை, சர்வீஸ் செய்யப்படுகிறது",
+       "பல மாவட்ட மக்கள் இங்கு வருகை தருகின்றனர்"
+      ]
+     },
+     {
+      "title": "என்ன பிரச்சனை?",
+      "lines": [
+       "டயர்கள், உதிரிபாகங்களால் சுகாதாரச் சீர்கேடு",
+       "மழைநீர் மற்றும் கழிவுநீர் வடிகால்கள் அடைப்பு",
+       "தண்ணீர் தேங்கி நோய் பரவும் அபாயம்"
+      ]
+     },
+     {
+      "title": "கோரிக்கை",
+      "lines": [
+       "ஆக்கிரமிப்புகளை அகற்ற வியாபாரிகள் கோரிக்கை",
+       "வடிகால்களைத் தூர்வார வலியுறுத்தல்"
+      ]
+     },
+     {
+      "title": "அதிகாரிகள் ஆய்வு",
+      "lines": [
+       "மாநகராட்சி ஆணையாளர் <b>ரவி தேஜா</b> நேற்று ஆய்வு",
+       "குப்பைகளை அகற்றச் சுகாதாரப் பிரிவுக்கு உத்தரவு",
+       "விரைவில் ஆக்கிரமிப்பு அகற்றி வடிகால் தூர்வாரப்படும்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கோவை உக்கடம் லாரிபேட்டை பகுதியில் கழிவுநீர் வடிகால்களைத் தூர்வார மாநகராட்சி நடவடிக்கை எடுத்துள்ளது. உக்கடம் லாரிபேட்டையில் 400-க்கும் மேற்பட்ட வாகன உதிரிபாகக் கடைகள் மற்றும் பணிமனைகள் அமைந்துள்ளன. இங்கு பைக், கார் மற்றும் லாரிகளுக்கான உதிரிபாகங்கள் விற்பனை செய்யப்பட்டுச் சீரமைக்கப்படுகின்றன. இந்நிலையில், அப்பகுதியில் ஆக்கிரமிப்புகள் மற்றும் டயர்கள் கொட்டப்பட்டு வடிகால்கள் அடைபட்டுள்ளதாகப் புகார்கள் எழுந்தன. இதனால் மழை பெய்யும்போது தண்ணீர் தேங்கி நோய் பரவும் அபாயம் இருந்ததால், வடிகாலைத் தூர்வார வியாபாரிகள் கோரிக்கை விடுத்தனர். இதையடுத்து மாநகராட்சி ஆணையாளர் ரவி தேஜா உள்ளிட்ட அதிகாரிகள் நேற்று நேரில் சென்று ஆய்வு செய்தனர். அப்போது குப்பைகளை உடனடியாக அகற்றச் சுகாதாரப் பிரிவுக்கு உத்தரவிடப்பட்டது. மேலும் விரைவில் ஆக்கிரமிப்புகள் அகற்றப்பட்டு வடிகால் தூர்வாரப்படும் என்றும், தேவைப்பட்டால் புதிய வடிகால் அமைக்கப்படும் என்றும் அதிகாரிகள் தெரிவித்துள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🧹 உக்கடம் லாரிபேட்டையில் ஆக்கிரமிப்பு அகற்ற நடவடிக்கை - மாநகராட்சி ஆணையாளர் ரவி தேஜா நேரில் ஆய்வு\n\n📰 முழு விவரம்:\nகோவை உக்கடம் லாரிபேட்டை பகுதியில் 400-க்கும் மேற்பட்ட வாகன உதிரிபாகக் கடைகள் மற்றும் ஒர்க்ஷாப்கள் செயல்பட்டு வருகின்றன. பல மாவட்டங்களிலிருந்தும் இங்கு மக்கள் வருகை தருகின்றனர். இந்நிலையில், ஆக்கிரமிப்புகள் மற்றும் டயர்கள், உதிரிபாகங்கள் கொட்டப்படுவதால் கழிவுநீர் வடிகால்கள் அடைபட்டுச் சுகாதாரச் சீர்கேடு நிலவி வந்தது. மழைக்காலத்தில் தண்ணீர் தேங்கி நோய் பரவும் அபாயம் இருந்ததால் ஆக்கிரமிப்புகளை அகற்றி, வடிகாலைத் தூர்வார வியாபாரிகள் கோரிக்கை விடுத்தனர். இதையேற்று, மாநகராட்சி ஆணையாளர் ரவி தேஜா உள்ளிட்ட அதிகாரிகள் நேற்று நேரில் ஆய்வு செய்தனர். குப்பைகளை அகற்றச் சுகாதாரப் பிரிவுக்கு உத்தரவிடப்பட்டுள்ளதுடன், விரைவில் ஆக்கிரமிப்புகள் அகற்றப்பட்டு வடிகால் தூர்வாரப்படும் என அதிகாரிகள் தெரிவித்துள்ளனர்.\n\n📍 இடம்: உக்கடம் லாரிபேட்டை, கோவை\n👮 நடவடிக்கை: மாநகராட்சி ஆணையாளர் ரவி தேஜா நேரில் ஆய்வு, வடிகால் தூர்வார உத்தரவு\nℹ️ மக்கள் கவனத்திற்கு: விரைவில் ஆக்கிரமிப்புகள் அகற்றப்பட்டு புதிய வடிகால் அமைக்கவும் திட்டமிடப்பட்டுள்ளது.\n\nபயனுள்ள தகவலுக்கு Share செய்யுங்கள்.\n\nUkkadam Lorry Pettai drain maintenance Coimbatore news\n📍 உக்கடம், கோவை | 14 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Ukkadam #CivicIssues #கோவை",
+   "prompts": "Coimbatore Corporation officials in formal shirts and trousers inspect the cluttered streets of Ukkadam Lorry Pettai. The scene is set in the busy market area near Ukkadam, where narrow lanes are lined with small mechanical workshops and spare parts stores. A group of five officials is seen from behind, walking past large piles of discarded vehicle components and rusted metal. Local merchants in shirts and veshtis stand at a distance near their shop entrances. Several old lorry cabins and parked autorickshaws are visible in the background under the bright morning sun. The camera is at eye level, using a 35mm lens to capture the scale of the encroachment and the inspection party. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA detailed close-up shot focuses on a blocked concrete drainage channel overflowing with dark stagnant water and debris at Ukkadam Lorry Pettai. A large, worn-out truck tire is partially submerged in the silt-filled drain, surrounded by rusted engine parts and metallic scrap waste. The cracked edges of the drain show the severity of the blockage mentioned by the merchants. In the blurred background, the lower half of a parked lorry and the dusty ground of the workshop area are visible. The lighting is harsh daylight, highlighting the texture of the rusted metal and the murky water. The camera is positioned at a high angle, looking directly down at the civic issue. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/will-the-municipal-corporation-keep-laripet-clean/4375938",
+   "published": "2026-11-14T16:46:24+05:30",
+   "verification": "DRAFT (gemini/gemini-3.6-flash + proofread gemini/gemini-3-flash-preview) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3.6-flash + proofread gemini/gemini-3-flash-preview, 1 attempt(s), 0 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794664897/kovaiminnal/p1lppk3xgoo8o7sameir.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794664928/kovaiminnal/kyrfaqbzfpcyzoon8zkt.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "காரமடை கருட தீர்த்தக் குளம் நிரம்பி கடல்போல் காட்சி: 75 அடி ஆழம் என்பதால் படிக்கட்டுகளில் நீராட தடை",
+   "english_headline": "Karamadai Garuda Theertham temple tank fills to brim after rain; bathing on steps banned due to 75-foot depth",
+   "category": "Temples & Events",
+   "location": "Karamadai, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "காரமடை கோயில்",
+    "loc": "காரமடை, கோவை",
+    "hl1": "காரமடையில் நிரம்பிய கருட தீர்த்த குளம்",
+    "hl2": "75 அடி ஆழம்: குளிக்கத் தடை",
+    "slides": [
+     {
+      "title": "கருட தீர்த்தம்",
+      "lines": [
+       "காரமடை-தோலம்பாளையம் சாலையில் <b>கருட தீர்த்தம்</b> உள்ளது",
+       "மழையால் படிக்கட்டுகளின் மேல்மட்டம் வரை நீர் நிரம்பியது"
+      ]
+     },
+     {
+      "title": "அளவுகளும் வரலாறும்",
+      "lines": [
+       "<b>176 அடி</b> நீளம், <b>154 அடி</b> அகலம், <b>75 அடி</b> ஆழம் கொண்டது",
+       "<b>400</b> ஆண்டு முன் திருமலை நாயக்கர் விரிவுபடுத்தினார்",
+       "நிலத்தடி நீர்மட்டம் உயர்ந்துள்ளதால் பக்தர்கள் மகிழ்ச்சி"
+      ]
+     },
+     {
+      "title": "முக்கிய வழிபாடுகள்",
+      "lines": [
+       "மார்கழி <b>30 நாளும்</b> மூலவர் திருமஞ்சனத்திற்கு புனிதநீர்",
+       "மாசிமக தெப்பத்திருவிழாவில் தீர்த்தவாரி நடைபெறும்",
+       "முடி காணிக்கை தருவோர் நீராடி பெருமாளை தரிசிப்பர்"
+      ]
+     },
+     {
+      "title": "பாதுகாப்பு தடை",
+      "lines": [
+       "ஆழம் அதிகம் என்பதால் படிக்கட்டுகளில் நீராட தடை",
+       "குளத்தின் மேல் பகுதியில் நீராட மாற்று ஏற்பாடு"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "காரமடை அரங்கநாதர் கோயில் கருட தீர்த்தக் குளம் நிரம்பி கடல்போல் காட்சியளிக்கிறது. காரமடை - தோலம்பாளையம் சாலையில் 176 அடி நீளம், 154 அடி அகலம், 75 அடி ஆழத்தில் இந்தத் தெப்பக்குளம் அமைந்துள்ளது. மழை காரணமாக படிக்கட்டுகளின் மேல்மட்டம் வரை தண்ணீர் ததும்பி நிற்கிறது. 400 ஆண்டுகளுக்கு முன்பு மன்னர் திருமலை நாயக்கர் இக்குளத்தை விரிவுபடுத்தினார். மார்கழி 30 நாட்களும் மூலவர் அரங்கநாதருக்கு இக்குளத்து நீராலேயே திருமஞ்சனம் செய்யப்படுகிறது. மாசிமக தெப்பத்திருவிழாவின் போது சுவாமி இங்கு எழுந்தருளி தீர்த்தவாரி கண்டருள்வார். இத்தலத்தில் முடி காணிக்கை செலுத்தும் பக்தர்கள் இக்குளத்தில் நீராடி பெருமாளை தரிசிப்பர். தெப்பக்குளம் நிரம்பியதால் நிலத்தடி நீர்மட்டம் உயர்ந்து பக்தர்கள் பெரும் மகிழ்ச்சி அடைந்துள்ளனர். குளம் 75 அடி ஆழம் என்பதால் படிக்கட்டுகளில் நீராட தடை விதிக்கப்பட்டுள்ளது. குளத்தின் மேற்பகுதியில் நீராட மாற்று ஏற்பாடுகள் செய்யப்பட்டுள்ளன. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🛕 காரமடையில் மழை காரணமாக நிரம்பி வழியும் 75 அடி ஆழ கருட தீர்த்தக் குளம்!\n\n📰 முழு விவரம்:\nகாரமடை - தோலம்பாளையம் சாலையில் அமைந்துள்ள காரமடை அரங்கநாத சுவாமி கோயிலின் கருட தீர்த்தம் தெப்பக்குளம் மழையால் முழுமையாக நிரம்பியுள்ளது. 176 அடி நீளம், 154 அடி அகலம் மற்றும் 75 அடி ஆழம் கொண்ட இக்குளம் படிக்கட்டுகளின் மேல்மட்டம் வரை தண்ணீர் ததும்பி கடல்போல் காட்சியளிக்கிறது. 400 ஆண்டுகளுக்கு முன்பு மதுரையை ஆண்ட திருமலை நாயக்கர் இக்குளத்தை விரிவுபடுத்தினார். மார்கழி 30 நாட்களும் மூலவர் அரங்கநாதருக்கு இக்குளத்து புனித நீரைக் கொண்டே திருமஞ்சனம் செய்யப்படுகிறது. மாசிமக தெப்பத்திருவிழா மற்றும் முடி காணிக்கை செலுத்துவோர் இங்கு நீராடுவது வழக்கமாகும். தற்போது குளம் நிரம்பியுள்ளதால் நிலத்தடி நீர்மட்டம் உயர்ந்துள்ளது. எனினும் 75 அடி ஆழம் என்பதால் பக்தர்கள் படிக்கட்டுகளில் நின்று நீராட தடை விதிக்கப்பட்டு, மேற்பகுதியில் மாற்று ஏற்பாடுகள் செய்யப்பட்டுள்ளன.\n\n📍 இடம்: காரமடை - தோலம்பாளையம் சாலை, கோவை மாவட்டம்\n📐 அளவு: 176 அடி நீளம், 154 அடி அகலம், 75 அடி ஆழம்\n🛕 சிறப்பு: 400 ஆண்டுகள் பழமையான தெப்பக்குளம், அரங்கநாத சுவாமி கோயில் வழிபாடுகள்\n⚠️ எச்சரிக்கை: 75 அடி ஆழம் என்பதால் படிக்கட்டுகளில் நீராட தடை, மேல் பகுதியில் மாற்று ஏற்பாடு\nℹ️ மக்கள் கவனத்திற்கு: பாதுகாப்பு விதிகளைப் பின்பற்றி நீராடவும்\n\nகாரமடை பகுதி பக்தர்களுக்கு Share செய்யுங்கள் 📤\n\nKaramadai Garuda Theertham tank full | Coimbatore temple news\n📍 காரமடை, கோவை மாவட்டம் | 14 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Karamadai #KaramadaiTemple #கோவை",
+   "prompts": "A massive rectangular stone temple tank, the Garuda Theertham, is filled to the very top with rainwater. The scene is set in Karamadai, showing the vast expanse of the 176-foot long tank with its ancient granite masonry walls. A few devotees in sarees and shirts are seen from behind, standing at a safe distance from the edge, looking at the deep water. The surrounding area features the typical Coimbatore district landscape with some trees and the distant outline of the Western Ghats. The sky is bright after the rains, reflecting on the still surface of the water. The camera is at a high angle, using a 35mm wide lens to capture the entire scale of the filled teppakulam. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up shot shows the rainwater reaching the topmost granite step of the Garuda Theertham temple tank in Karamadai. The water is clear and calm, lapping against the weathered grey stone of the 400-year-old structure. A simple rope barrier or a wooden pole is placed across the top of the steps to indicate the ban on entering the 75-foot deep water. In the background, the blurred figures of one or two people are seen from the waist down, standing on the paved walkway around the tank. The lighting is natural daylight, highlighting the texture of the wet stone and the volume of the water. The camera is at a low angle, focusing on the interface between the stone steps and the water level. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/karamadai-garuda-tirtha-pond-looks-like-the-sea/4375948",
+   "published": "2026-11-14T16:54:33+05:30",
+   "verification": "DRAFT (gemini/gemini-3.6-flash) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3.6-flash, 1 attempt(s), 0 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794664969/kovaiminnal/fa24zjeckdrsa0nbw5r4.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794664986/kovaiminnal/yooeftbxnimumevf3yl9.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "டிரைவர் தூக்கத்தால் லாரி கவிழ்ந்தது: எத்தனாலை மீட்ட தீயணைப்பு துறை",
+   "english_headline": "Tanker overturns on Neelambur-Madukkarai bypass at Chettipalayam after driver dozes off; fire services recover ethanol",
+   "category": "Roads & Transport",
+   "location": "Chettipalayam, Neelambur-Madukkarai bypass road, Coimbatore district",
+   "importance": "High",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "சாலை விபத்து",
+    "loc": "செட்டிபாளையம்",
+    "hl1": "செட்டிபாளையத்தில் டேங்கர் லாரி",
+    "hl2": "டிரைவர் தூக்கமே காரணம்",
+    "slides": [
+     {
+      "title": "என்ன நடந்தது?",
+      "lines": [
+       "இன்று (நவ. 14) காலை <b>10 மணிக்கு</b> விபத்து",
+       "டேங்கர் லாரி சாலையோரப் பள்ளத்தில் கவிழ்ந்தது",
+       "டேங்கரிலிருந்த திரவம் கசிந்தது"
+      ]
+     },
+     {
+      "title": "யார்? எங்கே?",
+      "lines": [
+       "லாரி டிரைவர் டாங்கிரி, <b>46</b> வயது",
+       "கர்நாடகா, பாகல்கோட்டையைச் சேர்ந்தவர்",
+       "நீலம்பூர் - மதுக்கரை பை-பாஸ் சாலை, ஜெ.ஜெ.நகர் பாலம் அருகே"
+      ]
+     },
+     {
+      "title": "ஏன் கவிழ்ந்தது?",
+      "lines": [
+       "டிரைவருக்குத் தூக்கக் கலக்கம் ஏற்பட்டது",
+       "இதனால் லாரி கட்டுப்பாட்டை இழந்து கவிழ்ந்தது",
+       "தாவனகரேயிலிருந்து கொச்சிக்கு <b>40,000</b> லிட்டர் எத்தனால்"
+      ]
+     },
+     {
+      "title": "மீட்புப் பணி",
+      "lines": [
+       "தீயணைப்பு படையினர் நுரை தீயணைப்பு திரவத்தை அடித்தனர்",
+       "இரு முறை இரும்புச் சங்கிலி உடைந்ததால் தாமதம்",
+       "<b>4 மணி</b> நேரத்துக்குப் பின் லாரி மீட்கப்பட்டது"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "செட்டிபாளையத்தில் டேங்கர் லாரி சாலையோரப் பள்ளத்தில் கவிழ்ந்தது. இன்று நவம்பர் 14ஆம் தேதி காலை 10 மணிக்கு நீலம்பூர் - மதுக்கரை பை-பாஸ் சாலையில், ஜெ ஜெ நகர் பாலம் அருகே இந்த விபத்து நடந்தது. பொள்ளாச்சி சாலை சந்திப்பை நோக்கிச் சென்ற டேங்கர் லாரி, சாலையோரப் பள்ளத்தில் கவிழ்ந்தது. அதில் இருந்த திரவம் கசிந்தது. லாரி டிரைவர் காயமடைந்தார். அப்பகுதி மக்கள் அவரை மீட்டு மருத்துவமனையில் சேர்த்தனர். கர்நாடகா மாநிலம், பாகல்கோட்டையைச் சேர்ந்த 46 வயது டிரைவர் டாங்கிரி, தாவனகரேயிலிருந்து கொச்சிக்கு 40,000 லிட்டர் எத்தனால் கொண்டு சென்றார். டிரைவருக்குத் தூக்கக் கலக்கம் ஏற்பட்டதால் லாரி கட்டுப்பாட்டை இழந்து கவிழ்ந்ததாக விசாரணையில் தெரியவந்துள்ளது. தெற்கு, சூலூர் தீயணைப்பு படையினர் நுரை தீயணைப்பு திரவத்தை அடித்து, அசம்பாவிதம் நடக்காமல் தடுத்தனர். மூன்று கிரேன்கள் வரவழைத்து லாரியை மீட்க முயன்றனர். இரு முறை இரும்புச் சங்கிலி உடைந்ததால் மீட்புப் பணியில் தாமதம் ஏற்பட்டது. நான்கு மணி நேரத்துக்குப் பின் லாரி மீட்கப்பட்டது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚛 செட்டிபாளையத்தில் டேங்கர் லாரி கவிழ்ந்தது: டிரைவர் தூக்கமே காரணம்\n\n📰 முழு விவரம்:\nநீலம்பூர் - மதுக்கரை பை-பாஸ் சாலையில் இன்று (நவ. 14) காலை 10 மணிக்கு டேங்கர் லாரி ஒன்று பொள்ளாச்சி சாலை சந்திப்பை நோக்கிச் சென்றபோது, ஜெ.ஜெ.நகர் பாலம் அருகே சாலையோரப் பள்ளத்தில் கவிழ்ந்தது. டேங்கரிலிருந்த திரவம் கசிந்தது. லாரி டிரைவர் காயமடைந்தார். அப்பகுதி மக்கள் அவரை மீட்டு மருத்துவமனையில் சேர்த்தனர்.\n👤 கர்நாடகா மாநிலம், பாகல்கோட்டையைச் சேர்ந்த 46 வயது டிரைவர் டாங்கிரி, தாவனகரேயிலிருந்து கொச்சிக்கு 40,000 லிட்டர் எத்தனால் கொண்டு சென்றார்.\n😴 டிரைவருக்குத் தூக்கக் கலக்கம் ஏற்பட்டதால் லாரி கட்டுப்பாட்டை இழந்து கவிழ்ந்தது என விசாரணையில் தெரியவந்தது.\n🚒 தெற்கு, சூலூர் தீயணைப்பு படையினர் நுரை தீயணைப்பு திரவத்தை அடித்து அசம்பாவிதம் நடக்காமல் தடுத்தனர். மூன்று கிரேன்கள் வரவழைத்து லாரியை மீட்க முயன்றனர். இரு முறை இரும்புச் சங்கிலி உடைந்ததால் மீட்புப் பணியில் தாமதம் ஏற்பட்டது. நான்கு மணி நேரத்துக்குப் பின் லாரி மீட்கப்பட்டது.\n\nCoimbatore tanker lorry overturns Chettipalayam driver sleep | Coimbatore news\n📍 செட்டிபாளையம், கோவை மாவட்டம் | 14 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Chettipalayam #சாலை விபத்து #CoimbatoreNews",
+   "prompts": "A large tanker lorry lies on its side in a roadside ditch on the Neelambur-Madukkarai bypass at Chettipalayam, as three cranes stretch their steel cables toward it while fire personnel in uniform spray white foam from hoses onto the spilled liquid. The bypass is a wide multi-lane tarred road with a concrete bridge railing nearby, a broken road shoulder and a deep roadside drain, with a few two-wheelers and a private bus passing slowly on the far lane. Fire service men in khaki and helmets stand near the tanker, and a few onlookers in shirts and trousers watch from behind a barrier at a distance. The scene is late morning around 10 am in bright daylight, with a faint hazy sky and the Western Ghats hills faint in the background. Shot at eye level about 30 metres away with a 35 mm lens, wide enough to show the tanker, the cranes, the road and the bridge together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of the cable and hook of a crane tied to the overturned tanker lorry's chassis, the heavy iron chain taut and strained, with a corner of the tanker's dark metal tank and wet road edge in the frame. Fire hose lines lie on the wet tarmac at the edge of the ditch, with a little white fire-suppressant foam still bubbling on the ground. The chain links look stressed, hinting at the chain that broke twice during recovery. Background is a blurred edge of the bypass road with a grey concrete roadside drain and a few distant onlookers from behind. Mid-morning daylight, soft shadows, dry-season sunlight. Shot at close range with a 50 mm lens, slightly above eye level, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/truck-overturns-due-to-driver-s-negligence-ethanol-recovered-by-fire-department/4376043",
+   "published": "2026-11-14T18:09:02+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: fact-check: The article says the lorry was heading toward the Pollachi road junction, but the draft's reel_script and caption say it was heading toward it; this matches. However, the reel_script says the driver 'carried' ethanol from Davanagere to Kochi, which the article supports, so no issue there — the actual problem: the caption and slides say the driver is 'டாங்கிரி, 46 வயது' while the reel_script says the driver 'டாங்கிரி' was 46 years old, which matches; no discrepancy found there either. The real issue: the reel_script omits that the driver was injured and rescued by local people only partially, but it does include that — so the only confirmed gap is the caption's claim 'அப்பகுதி மக்கள்' which the article states as 'அப்பகுதியிலிருந்தோர்', consistent.",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794665388/kovaiminnal/mfju9zehtwrf3h3p72u3.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794665395/kovaiminnal/v0vurxghi5bq3twware3.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "பழைய நகை அடகு வைப்போர் விவரம் கேட்க போலீஸ் அறிவுரை",
+   "english_headline": "Coimbatore police advise pawn shops to record details of people pledging old gold jewellery",
+   "category": "Crime & Safety",
+   "location": "Coimbatore city, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "போலீஸ் அறிவுரை",
+    "loc": "கோவை மாநகரம்",
+    "hl1": "கோவை மாநகரம்: அடகு கடைகளுக்கு போலீஸ்",
+    "hl2": "நகை விவரம் கட்டாயம் பதிவு",
+    "slides": [
+     {
+      "title": "போலீஸ் அறிவுரை",
+      "lines": [
+       "பழைய நகை அடகு வைக்க வருபவர் விவரம் கேட்க வேண்டும்",
+       "சொல்ல முடியாவிட்டால் அடகு வைப்பவரின் முழு விவரம் பதிவு",
+       "மாநகர போலீசார் அடகு கடைக்காரர்களுடன் ஆலோசனை நடத்தினர்"
+      ]
+     },
+     {
+      "title": "பாதுகாப்பு வழிகள்",
+      "lines": [
+       "கடைகளில் உள்ளேயும் வெளியேயும் <b>சி.சி.டி.வி.</b> கேமரா",
+       "இரவு காவலர், அலாரம், உறுதியான பூட்டு, லாக்கர் அவசியம்",
+       "பதிவுகளை முறையாக சேமித்து வைக்க வேண்டும்"
+      ]
+     },
+     {
+      "title": "ஆவணங்கள்",
+      "lines": [
+       "பழைய நகை தொடர்பான ஆவணங்களின் நகல் எடுத்து பாதுகாக்க வேண்டும்",
+       "ஆவணம் இல்லையென்றால் ஆதார் போன்ற அடையாள விவரங்களை பதிவு",
+       "பரிவர்த்தனை பதிவுகளையும் முறையாக பராமரிக்க வேண்டும்"
+      ]
+     },
+     {
+      "title": "கடைக்காரர்களின்",
+      "lines": [
+       "பழைய நகைகளுக்கு பில் இருப்பதில்லை என கடைக்காரர்கள்",
+       "முகவரி அடிக்கடி மாறுவதால் போலி முகவரி பழி விழுவதாக கவலை",
+       "புதிய கட்டுப்பாடுகள் தவிர்க்க முடியாதவை என அதிகாரிகள்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கோவை மாநகரில் பழைய நகை அடகு வைப்போரின் விவரங்களை கடைகள் கட்டாயம் பதிவு செய்ய போலீசார் அறிவுறுத்தியுள்ளனர். பழைய நகைகளை அடகு வைக்க வருபவரிடம் நகை பற்றிய விவரங்களை கேட்க வேண்டும். அவற்றை சொல்ல முடியாவிட்டால், அடகு வைப்பவரின் முழு விவரங்களையும் கேட்டுப் பதிவு செய்ய வேண்டும். மாநகர போலீசார் அடகு கடை மற்றும் நகை கடை உரிமையாளர்களுடன் ஆலோசனை நடத்தினர். அந்தந்தப் பகுதி காவல் துணை கண்காணிப்பாளர்க்கள் தலைமையில் இந்தக் கூட்டம் நடைபெற்றது. கடைகளின் உள்ளேயும் வெளியேயும் சி சி டி வி கேமராக்களைப் பொருத்த வேண்டும் என வலியுறுத்தப்பட்டது. இரவு நேரக் காவலர், எச்சரிக்கை அலாரம், உறுதியான பூட்டுகள், பாதுகாப்புக் கதவுகள், லாக்கர்கள் ஆகியவற்றின் அவசியமும் கூறப்பட்டது. பழைய நகை தொடர்பான ஆவணங்களைக் கேட்டு வாங்கி நகல் எடுத்துப் பாதுகாக்க வேண்டும். ஆவணம் கிடைக்காவிட்டால் ஆதார் போன்ற அடையாள ஆவணங்களையும் பரிவர்த்தனை பதிவுகளையும் பராமரிக்க வேண்டும். பழைய நகைகளுக்கு பெரும்பாலும் பில் இருப்பதில்லை என கடைக்காரர்கள் தெரிவித்தனர். அடகு வைப்பவர்கள் முகவரியை அடிக்கடி மாற்றுவதால் போலி முகவரி பதிவு செய்ததாக பழி விழுவதாக அவர்கள் கவலை தெரிவித்தனர். புதிய கட்டுப்பாடுகள் தவிர்க்க முடியாதவை என அதிகாரிகள் கூறி, கடைக்காரர்கள் ஒத்துழைக்க வேண்டும் என கேட்டுக்கொண்டனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🔒 கோவை மாநகரில் அடகு கடைகளுக்கு போலீஸ் அறிவுரை: நகை அடகு வைப்போர் விவரம் கட்டாயம்\n\n📰 முழு விவரம்:\nகோவை மாநகர போலீசார் அடகு கடை, நகை கடை உரிமையாளர்களுடன் ஆலோசனை நடத்தினர். அந்தந்தப் பகுதி டி.எஸ்.பி.க்கள் தலைமையில் கூட்டம் நடைபெற்றது.\nபழைய நகை அடகு வைக்க வருபவரிடம் நகை பற்றிய விவரங்களைக் கேட்க வேண்டும். சொல்ல முடியாவிட்டால் அடகு வைப்பவரின் முழு விவரங்களைப் பதிவு செய்ய வேண்டும்.\n🎥 கடைகளின் உள்ளேயும் வெளியேயும் சி.சி.டி.வி. கேமராக்கள் பொருத்தி, அவை தொடர்ந்து செயல்படுவதை உறுதி செய்ய வேண்டும்.\n🛡️ இரவு நேரக் காவலர், எச்சரிக்கை அலாரம், உறுதியான பூட்டுகள், பாதுகாப்புக் கதவுகள், லாக்கர்கள் அவசியம்.\n📄 ஆவணங்களைக் கேட்டு நகல் எடுத்துப் பாதுகாக்க வேண்டும். இல்லையென்றால் ஆதார் போன்ற அடையாள ஆவணங்களையும் பரிவர்த்தனை பதிவுகளையும் பராமரிக்க வேண்டும்.\n🗣️ பழைய நகைகளுக்கு பில் இருப்பதில்லை என்றும், முகவரி அடிக்கடி மாறுவதால் போலி முகவரி பழி விழுவதாகவும் கடைக்காரர்கள் கவலை தெரிவித்தனர். புதிய கட்டுப்பாடுகள் தவிர்க்க முடியாதவை என அதிகாரிகள் கூறி ஒத்துழைப்பு கேட்டனர்.\n\nCoimbatore police advise pawn shops to record jewellery pledge details | Coimbatore news\n📍 கோவை மாநகரம், கோவை மாவட்டம் | 14 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Police",
+   "prompts": "Tamil Nadu police officers in khaki uniform sit at a long table in a plain meeting hall in Coimbatore city, leading a discussion with a group of pawn shop and jewellery shop owners in shirts and veshti seated across from them. On the table lie a few pieces of old gold jewellery in a small tray, a stack of ledger registers and a notepad, and a steel cash box. Behind the group a wall shows a row of shop-style steel lockers and a ceiling fan turns. The people are seen from the side and slightly behind, faces partly turned away, nobody identifiable. The room is lit by tube lights with daylight coming through a window, indicating a daytime meeting. Camera at eye level, 35 mm lens, wide enough to show the table, officers and shop owners together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up detail of a pawn shop counter in Coimbatore city: a ledger register open beside a pile of old gold jewellery, including a gold chain and bangles, placed on a glass counter. Next to them is a small black CCTV camera mounted on the shop wall above the counter, and a steel lock and a metal safe door partly visible in the background. A khaki uniformed police officer's sleeve and hand rest at the edge of the frame, pointing toward the register, while the shop owner's hands in a white shirt sleeve hold a pen. Soft indoor light from a tube light, dim shop interior, a hint of a steel locker behind. Camera slightly high, 35 mm, shallow depth of field focusing on the jewellery and register. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/police-advisory-to-ask-for-details-of-pawnbrokers/4376024",
+   "published": "2026-11-14T17:52:39+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794665401/kovaiminnal/sotusyyii6khj9tmws4k.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794665403/kovaiminnal/ovkqkoi09ovsksbl1fun.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "நீலாம்பூர் - மதுக்கரை சாலையில் அடிக்கடி விபத்து: அதிகாரிகளே எப்போது தீர்வு?",
+   "english_headline": "Neelambur-Madukkarai road keeps seeing accidents; officials urged to act as the widening project stays pending",
+   "category": "Roads & Transport",
+   "location": "Neelambur to Madukkarai road, Coimbatore district",
+   "importance": "High",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "சாலை விபத்து",
+    "loc": "நீலாம்பூர் - மதுக்கரை",
+    "hl1": "நீலாம்பூர் - மதுக்கரை சாலையில் அடிக்கடி",
+    "hl2": "தீர்வு எப்போது?",
+    "slides": [
+     {
+      "title": "ஏன் விபத்து?",
+      "lines": [
+       "போதிய மின் விளக்கு இல்லை",
+       "மேடு பள்ளமான சாலை",
+       "இரு புறமும் ஆக்கிரமிப்புகள் அகற்றப்படவில்லை"
+      ]
+     },
+     {
+      "title": "உயிர் பலி",
+      "lines": [
+       "சில மாதங்களுக்கு முன் கல்லூரி மாணவி ஒருவர் உயிரிழப்பு",
+       "ரோட்டை கடக்க முயன்றபோது வாகனம் மோதியது",
+       "போக்குவரத்துத் துறை சாலையை விஸ்தரிக்க அறிக்கை"
+      ]
+     },
+     {
+      "title": "விஸ்தரிப்பு தாமதம்",
+      "lines": [
+       "ஆறு வழிச்சாலை திட்டம் பல ஆண்டுகளாக அறிவிப்பில் மட்டும்",
+       "காஸ் குழாய் இடமாற்றம் உள்ளிட்ட காரணங்களால் கிடப்பில்",
+       "தற்காலிகத் தீர்வாக பிளாஸ்டிக் வேகத்தடை"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "நீலாம்பூர் - மதுக்கரை சாலையில் அடிக்கடி விபத்துகள் நடைபெறுகின்றன. இந்தச் சாலை கேரளாவை இணைக்கும் முக்கிய வழித்தடம். சரக்கு வாகனங்களும் கனரக வாகனங்களும் அதிகமாக இயங்குகின்றன. போதிய மின் விளக்கு இல்லாததாலும், மேடு பள்ளமான சாலையாலும் விபத்துகள் ஏற்படுகின்றன. இரு புறமும் உள்ள ஆக்கிரமிப்புகளும் இன்னும் அகற்றப்படவில்லை. சில மாதங்களுக்கு முன், கல்லூரி மாணவி ஒருவர் ரோட்டைக் கடக்க முயன்றபோது வாகனம் மோதி உயிரிழந்தார். சாலையை ஆறு வழிச்சாலையாக விஸ்தரிக்கும் திட்டம் பல ஆண்டுகளாக அறிவிப்பிலேயே உள்ளது. திட்ட அறிக்கை ஏற்கனவே அனுப்பப்பட்டுவிட்டது. ஆனால் காஸ் குழாய் இடமாற்றம் உள்ளிட்ட காரணங்களால் பணி கிடப்பில் போடப்பட்டுள்ளது. இதனால், அதிவேகமாக செல்லும் வாகனங்களைக் கட்டுப்படுத்த தற்காலிகத் தீர்வாக பிளாஸ்டிக் வேகத்தடை அமைக்க மாவட்ட நிர்வாகம் அறிவுறுத்தியுள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 நீலாம்பூர் - மதுக்கரை சாலையில் அடிக்கடி விபத்து: அதிகாரிகளே எப்போது தீர்வு?\n\n📰 முழு விவரம்:\nநீலாம்பூர் - மதுக்கரை வரையிலான புறவழிச்சாலை கேரளாவை இணைக்கும் முக்கிய வழித்தடம். சரக்கு, கனரக வாகனங்கள் அதிகமாகச் செல்கின்றன.\nபோதிய மின் விளக்கு இல்லாததாலும், மேடு பள்ளமான சாலையாலும், இரு புறமும் உள்ள ஆக்கிரமிப்புகளை அகற்றாததாலும் அடிக்கடி விபத்துகள் ஏற்படுகின்றன.\nசில மாதங்களுக்கு முன், கல்லூரி மாணவி ஒருவர் ரோட்டைக் கடக்க முயன்றபோது வாகனம் மோதி உயிரிழந்தார்.\nவிதுநாஸ் ஹோட்டல் முதல் எல் அண்டு டி ஐ.டி. பார்க் வரை சாலை மிகவும் சரிவாக உள்ளது. சேலத்தில் இருந்து வரும் சரக்கு வாகனங்கள் அதிவேகமாக வருகின்றன. மதுக்கரையில் இருந்து செல்லும் வாகனங்களுக்கு எதிர் திசையில் வரும் வாகனங்கள் தெரிவதில்லை. இதனால் வாகனங்கள் ஒன்றோடு ஒன்று மோதி விபத்துக்கு உள்ளாகின்றன.\nஇச்சாலையை ஆறு வழிச்சாலையாக விஸ்தரிக்கும் திட்டம் பல ஆண்டுகளாக அறிவிப்பிலேயே உள்ளது. திட்ட அறிக்கை தயாரித்து ஏற்கனவே அனுப்பப்பட்டுவிட்டது. காஸ் குழாயை இடமாற்ற வேண்டும் என்பது உள்ளிட்ட காரணங்களைச் சொல்லி இத்திட்டம் கிடப்பில் போடப்பட்டுள்ளது.\nசாலை பாதுகாப்பு கமிட்டி கூட்டத்தில் விவாதித்தாலும் நிரந்தரத் தீர்வு ஏற்படவில்லை. வட்டார போக்குவரத்துத் துறையும் சாலையை விஸ்தரிக்க அறிக்கை சமர்ப்பித்துள்ளது.\nஅதிவேக வாகனங்களைக் கட்டுப்படுத்த தற்காலிகத் தீர்வாக பிளாஸ்டிக் வேகத்தடை அமைக்க மாவட்ட நிர்வாகம் அறிவுறுத்தியுள்ளது.\n\nNeelambur Madukkarai road accidents | Coimbatore news\n📍 நீலாம்பூர் - மதுக்கரை, கோவை மாவட்டம் | 14 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Madukkarai #CoimbatoreNews #கோவை",
+   "prompts": "A row of heavy goods lorries and a car slow down on a steep stretch of the Neelambur to Madukkarai bypass near a busy junction, as a red-and-white plastic speed breaker is being installed across the lane by two workers in shirts and trousers. The highway is a wide two-lane bituminous road with a patchy surface and a downward slope ahead, with a few roadside shop fronts and dusty encroachments along the edge and a dim, unlit stretch running into the distance. Two-wheeler riders and a few men in shirts and veshti stand on the shoulder at a distance, seen from behind, watching the work. Daylight, slightly overcast, dusty air. Camera at eye level, 35 mm, wide enough to show the road curving toward the far background of low hills. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a freshly laid row of yellow-and-black plastic speed breakers across the tarred surface of a highway bypass, with the rough edge of the bitumen and small pothole patches visible in the foreground. A lorry's rear tyre sits just beyond the bump, and a shoulder of dusty roadside gravel and a low concrete kerb run along the frame. A pair of rubber sandals and a bundle of tools lie at the edge of the road, with no faces in view. Overcast daylight, dusty texture, shallow depth of field, camera slightly high, 35 mm. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/the-nilambur-madukkarai-road-in-the-grip-of-the-accident-was-not-enough-fun-for-the-officers/4375856",
+   "published": "2026-11-14T15:16:22+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 87 words; need 95-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794665456/kovaiminnal/rio4nstvaa62upvzeh3e.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794665483/kovaiminnal/ovrjerjm36tczs7mqzxc.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "கோவை பெண் யூடியூபருக்கு கொலை மிரட்டல்: ஊட்டியில் பதுங்கியிருந்த மணிகண்டன் கைது",
+   "english_headline": "Coimbatore woman YouTuber receives death threats; YouTuber Manikandan arrested while hiding in Ooty",
+   "category": "Crime & Safety",
+   "location": "Coimbatore city (Tatabad, Sivananda Colony), Ooty (Nilgiris district), Coimbatore district",
+   "importance": "High",
+   "scope": "",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "குற்றம்",
+    "loc": "கோவை, ஊட்டி",
+    "hl1": "கோவை பெண் யூடியூபருக்கு கொலை மிரட்டல்",
+    "hl2": "ஊட்டியில் மணிகண்டன் கைது",
+    "slides": [
+     {
+      "title": "என்ன நடந்தது?",
+      "lines": [
+       "திருச்செந்தூரைச் சேர்ந்த யூடியூபர் மணிகண்டன் (37 வயது), கோவை",
+       "விக்னேஸ்வரியின் வீடியோக்களைத் தனது சேனலில் திருடி",
+       "ஆபாசமாகவும் தகாத முறையிலும் பேசி, கொலை மிரட்டலும் விடுத்தார்"
+      ]
+     },
+     {
+      "title": "புகார், தேடுதல்",
+      "lines": [
+       "விக்னேஸ்வரி கோவை மாநகர சைபர் கிரைம் காவல் நிலையத்தில்",
+       "தலைமறைவாக இருந்த மணிகண்டன் ஊட்டியில் பதுங்கியிருப்பது",
+       "சப்-இன்ஸ்பெக்டர் லிங்கேஸ்வரன் தலைமையிலான தனிப்படை ஊட்டியில்"
+      ]
+     },
+     {
+      "title": "வழக்கு நிலை",
+      "lines": [
+       "மணிகண்டன் மீது தமிழ்நாட்டில் பல்வேறு காவல் நிலையங்களில் 16",
+       "விசாரணைக்குப் பின் நீதிமன்றத்தில் ஆஜர்படுத்தப்பட்டு"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கோவையில் பெண் யூடியூபருக்கு கொலை மிரட்டல் விடுத்த மணிகண்டன் ஊட்டியில் கைது செய்யப்பட்டார். திருச்செந்தூரைச் சேர்ந்த 37 வயது யூடியூபர் மணிகண்டன், கோவை சிவானந்தா காலனி டாடாபாத் பகுதியில் கடை நடத்தி வரும் கே.விக்னேஸ்வரியை சமூக வலைதளங்கள் மூலம் அவதூறாகப் பேசினார். விக்னேஸ்வரி 'நான் கற்றது' என்ற பெயரில் யூடியூப் சேனல் நடத்தி வருகிறார். மணிகண்டன் விக்னேஸ்வரியின் வீடியோக்களைத் தனது சொந்த யூடியூப் சேனலில் திருடி வெளியிட்டார். அவரது பெண்மைக்கும் மரியாதைக்கும் பங்கம் விளைவிக்கும் வகையில் புகைப்படங்களையும் வீடியோக்களையும் பதிவிட்டு, ஆபாசமாகவும் தகாத முறையிலும் பேசினார். இதைக் கண்டித்தபோது, 'உன்னை இத்துடன் முடித்துவிடுவேன்' என்று கொலை மிரட்டலும் விடுத்தார். இதனால் மனஉளைச்சலுக்கு ஆளான விக்னேஸ்வரி, கோவை மாநகர சைபர் கிரைம் காவல் நிலையத்தில் புகார் அளித்தார். புகாரின் அடிப்படையில் தீவிர விசாரணை நடைபெற்றது. தலைமறைவாக இருந்த மணிகண்டன் ஊட்டியில் பதுங்கியிருப்பது தெரியவந்தது. சப்-இன்ஸ்பெக்டர் லிங்கேஸ்வரன் தலைமையிலான தனிப்படை போலீசார் ஊட்டிக்கு விரைந்து சென்று அவரைக் கைது செய்தனர். மணிகண்டன் மீது தமிழ்நாட்டில் பல்வேறு காவல் நிலையங்களில் மொத்தம் 16 வழக்குகள் நிலுவையில் உள்ளன. விசாரணைக்குப் பின் நீதிமன்றத்தில் ஆஜர்படுத்தப்பட்டு சிறையில் அடைக்கப்பட்டார். சமூக வலைதளங்களில் பெண்களுக்கு எதிராக அவதூறு பரப்பி மிரட்டல் விடுப்போர் மீது காவல்துறை தீவிர நடவடிக்கை எடுத்து வருகிறது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 கோவை பெண் யூடியூபருக்கு கொலை மிரட்டல்: ஊட்டியில் மணிகண்டன் கைது\n\n📰 முழு விவரம்:\nதிருச்செந்தூரைச் சேர்ந்த யூடியூபர் மணிகண்டன் (37 வயது), கோவையில் அழகு சாதனப் பொருட்கள் விற்பனை செய்யும் கே.விக்னேஸ்வரியை சமூக வலைதளங்கள் மூலம் அவதூறாகப் பேசி வந்தார்.\nவிக்னேஸ்வரியின் 'நான் கற்றது' யூடியூப் சேனல் வீடியோக்களை மணிகண்டன் தனது சேனலில் திருடி வெளியிட்டார்.\nஅவரது பெண்மைக்கு பங்கம் விளைவிக்கும் வகையில் புகைப்படங்களையும் வீடியோக்களையும் பதிவிட்டு, ஆபாசமாகவும் தகாத முறையிலும் பேசியுள்ளார்.\nஇதைக் கண்டித்தபோது 'உன்னை இத்துடன் முடித்துவிடுவேன்' என்று கொலை மிரட்டல் விடுத்தார்.\nஇதனால் மனஉளைச்சலுக்கு ஆளான விக்னேஸ்வரி, கோவை மாநகர சைபர் கிரைம் காவல் நிலையத்தில் புகார் அளித்தார்.\nதலைமறைவாக இருந்த மணிகண்டன், நீலகிரி மாவட்டம் ஊட்டியில் பதுங்கியிருந்தபோது சப்-இன்ஸ்பெக்டர் லிங்கேஸ்வரன் தலைமையிலான தனிப்படை போலீசாரால் கைது செய்யப்பட்டார்.\nஅவர் மீது தமிழ்நாட்டில் பல்வேறு காவல் நிலையங்களில் மொத்தம் 16 வழக்குகள் நிலுவையில் உள்ளன. விசாரணைக்குப் பின் நீதிமன்றத்தில் ஆஜர்படுத்தப்பட்டு சிறையில் அடைக்கப்பட்டார்.\nசமூக வலைதளங்களில் பெண்களுக்கு எதிராக அவதூறு பரப்புவோர் மீது காவல்துறை தீவிர நடவடிக்கை எடுத்து வருகிறது.\n\nCoimbatore woman YouTuber death threat, accused arrested in Ooty | Coimbatore news\n📍 கோவை மாவட்டம் | 14 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Tatabad",
+   "prompts": "A Tamil Nadu cyber crime police sub-inspector in khaki uniform stands with a small team at the gate of a plain Coimbatore city police station, their backs partly to the camera, as a woman business owner's complaint is being processed; the wide street and two-wheelers pass outside. The place is a government police station building with a tiled entrance, a Tamil Nadu police jeep parked near the gate, and a few corporation-style concrete pillars. Several police officers in khaki and a civilian woman seen from behind are gathered at a desk area in the background, with a laptop open on a table and a stack of printed complaint papers. The scene is daytime with bright, even daylight coming through the doorway, and weather is clear. Shot at eye level, 35 mm, wide enough to include the police station entrance and the team. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a laptop screen-less table at a police cyber crime desk: a printed complaint file, a black mobile phone placed beside a stack of paper, and a pen rest out of focus, with a khaki police sleeve resting on the edge of the table. The objects show the digital evidence of online defamation and threats, lit by soft daylight from a window. The background is a plain government office wall with a Tamil Nadu police calendar blurred out. No faces are visible; only hands and sleeves in khaki. Shot at slightly high angle, 35 mm close detail, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.maalaimalar.com/news/tamilnadu/coimbatore-youtuber-death-threat-manikandan-arrested",
+   "published": "2026-11-14T12:39:07Z",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: fact-check: The caption's 'அழகு சாதனப் பொருட்கள் விற்பனை செய்யும்' omits the article's cooking products (சமையல் மற்றும் அழகு சாதனப் பொருட்கள்), so it is incomplete, though not strictly wrong.; fact-check: The caption and reel_script describe the victim as 'யூடியூபர்' only; the article states she runs a shop with cooking and beauty products, which the reel_script mentions only as 'கடை நடத்தி வரும்' without the product type, a minor omission.; fact-check: The reel_script says Manikandan 'ஊட்டியில் கைது செய்யப்பட்டார்' and the slides say the arrest was in Ooty, which is consistent, but the reel_script omits that he was in hiding (தலைமறைவு) as a key fact only partially, and the caption's 'பதுங்கியிருந்தபோது' phrasing is acceptable.; fact-check: The reel_script states Manikandan defamed her 'சமூக வலைதளங்கள் மூலம்' and also says he 'அவதூறாகப் பேசினார்' without the article's point that the accusations were baseless (பொய்யான குற்றச்சாட்டுகள்), a missing important detail of the case.; fact-check: The caption's claim that the arrested man 'சமூக வலைதளங்கள் மூலம்' and the English tail line 'Coimbatore woman YouTuber death threat, accused arrested in Ooty | Coimbatore news' is an untranslated English sentence not in the article's Tamil text and is an added element beyond the allowed footer.",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 5 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794665490/kovaiminnal/wsymy095o6n9wnhx7kp1.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794665492/kovaiminnal/h33sgcydtz36rxvekrsb.jpg"
+   ]
+  }
+ ]
+}
