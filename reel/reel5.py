@@ -125,10 +125,16 @@ for _k, _p in district_pages().items():
 # caption, so the strip was hidden there and repeated what Instagram itself shows; the header bar already carries the page's logo
 # + name and the end card FOLLOW @handle, and a third brand bar inside the safe area would take room from the captions.
 # FOOTER_AT_BOTTOM = True brings the 11 Nov edge-to-edge strip back (each page keeps its footer.png).
+# owner 14 Nov evening: the footer STAYS ("footer missed") but where it is seen when the reel is opened - inside the safe area,
+# just above Instagram's name / caption / Follow (y 1085-1246) and left of the like / comment / share buttons (x 70-940).
 FOOTER_AT_BOTTOM = False
+FOOTER_SAFE = True
 FOOT_CSS = ("""
 #foot{left:0!important;right:0;bottom:0!important;width:1080px!important;height:200px!important;opacity:1!important;object-fit:fill}
-""" if FOOTER_AT_BOTTOM else "\n#foot{display:none!important}\n")
+""" if FOOTER_AT_BOTTOM else """
+#foot{display:block!important;left:70px!important;right:auto!important;top:1085px!important;bottom:auto!important;width:870px!important;
+  height:161px!important;opacity:1!important;object-fit:fill;border-radius:18px;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+""" if FOOTER_SAFE else "\n#foot{display:none!important}\n")
 
 SCENE_CSS = """
 #scene{position:absolute;inset:0;z-index:4;overflow:hidden;background:radial-gradient(ellipse at 50% 55%,#13306E 0%,#0B1B4D 45%,#050C24 100%)}
@@ -339,8 +345,8 @@ body{background:radial-gradient(ellipse at 50% 30%,#13306E 0%,#071433 55%,#03091
 # area (Meta 9:16 guidance) - nothing in the top 14 % (270 px: "Reels" title, camera) or the bottom 35 % (from y 1250: account name,
 # caption, Follow button, tab bar), 70 px (>= 6 %) from each side (tall phones crop the sides), and nothing in the right 140 px below
 # y 1000 (like / comment / share / audio buttons). Colours and look stay B2; only places and sizes changed:
-#   y 276-392 header bar + logo | 410-478 location pill | 520-1000 headline (hook) / fact card + yellow strip / 410-990 summary
-#   1000-1228 captions (x 70-940; their 22 px slide-in ends by 1250) | full-width bars may bleed to the edges, their text never
+#   y 276-392 header bar + logo | 410-478 location pill | 520-860 headline (hook) / fact card + yellow strip / 410-870 summary
+#   880-1070 captions (x 70-940) | 1085-1246 footer (x 70-940, owner 14 Nov) | full-width bars may bleed to the edges, their text never
 #   does | a story without a photo: the drawn scene sits where it is seen (SCENE_B2_CSS)
 #   Check any spec in ~20 s without rendering: tools/frame_preview.py
 SAFE = {"top": 270, "bottom": 1250, "side": 70, "buttons_x": 940, "buttons_y": 1000}
@@ -361,7 +367,7 @@ STYLE_B = STYLE_K + """
 #mini{left:-60px;right:-60px;top:784px;background:#FFD21F;color:#0B1B4D;border:0;padding:16px 136px 12px;font-size:44px;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:none;box-shadow:0 22px 50px rgba(0,0,0,.55)}
 .card{left:auto;right:140px;top:560px;width:800px}
-#cap{top:1000px;height:228px;left:70px;right:140px}
+#cap{top:880px;height:190px;left:70px;right:140px}
 .ph{text-align:center;-webkit-text-stroke:0;color:#fff;background:rgba(11,27,77,.92);border-radius:22px;padding:16px 28px 8px;
   text-shadow:none;box-shadow:0 14px 34px rgba(0,0,0,.5);font-size:58px}
 .ph span.on{color:#0B1B4D;background:#FFD21F;box-shadow:0 6px 0 #E3151B}
@@ -380,8 +386,8 @@ STYLE_B = STYLE_K + """
 # - frame 1 = the settled headline: no slide-in, no lightning flash over it (ZAP_JS: no flash until the headline leaves), the pin
 #   already in place - a hard TV cut, so the place + the key fact are readable in the very first frame and in Instagram's preview
 # - text sizes are capped to their zone (headline <= 300 + 180 px, strip 170, captions 196 - fitted with room for the highlighted
-#   word, card text 170); the headline block is scaled down when taller than 520-1000, the summary card when taller than
-#   410-990, and the end card's text shrinks until it fits 270-1250
+#   word, card text 170); the headline block is scaled down when taller than 520-860, the summary card when taller than
+#   410-870, and the end card's text shrinks until it fits 270-1250
 # - while the summary shows, the yellow strip and the pin step aside (its first row is the place) - Kovai and district pages alike
 SAFE_JS = """<script>(function(){
 const _fit=window.fitAll;
@@ -394,14 +400,14 @@ window.fitAll=function(){_fit();
     if(lines()>2)Object.assign(h1.style,{display:'-webkit-box',webkitLineClamp:'2',webkitBoxOrient:'vertical',overflow:'hidden'});}
   re(document.querySelector('#hook .h2'),120,48);      // the yellow fact: one line, 76 px down to 48 px (ellipsis only past that)
   const mi=document.getElementById('mini'); if(mi)mi.style.fontSize='';      // one line at 44 px, ellipsis (no shrinking)
-  document.querySelectorAll('.ph').forEach(e=>{e.style.paddingLeft=e.style.paddingRight='42px';re(e,196,46);e.style.paddingLeft=e.style.paddingRight='';});
+  document.querySelectorAll('.ph').forEach(e=>{e.style.paddingLeft=e.style.paddingRight='42px';re(e,180,44);e.style.paddingLeft=e.style.paddingRight='';});
   document.querySelectorAll('.card .vl').forEach(e=>re(e,170,30));
   document.querySelectorAll('#end .e2').forEach(e=>re(e,120,34));
   const end=document.getElementById('end'), kids=end?[...end.children]:[], tall=()=>kids.reduce((a,k)=>a+k.offsetHeight+22,-22);
   for(let n=0;kids.length&&tall()>960&&n<30;n++)kids.forEach(k=>{if(k.tagName==='IMG'){k.style.width=k.style.height=Math.round(k.offsetWidth*0.95)+'px';}
     else k.style.fontSize=(parseFloat(getComputedStyle(k).fontSize)*0.95)+'px';});
-  const sm=document.getElementById('sum'); window.__sumK=sm?Math.min(1,580/sm.offsetHeight):1;
-  window.__hookK=Math.min(1,480/document.getElementById('hook').offsetHeight);};
+  const sm=document.getElementById('sum'); window.__sumK=sm?Math.min(1,460/sm.offsetHeight):1;
+  window.__hookK=Math.min(1,340/document.getElementById('hook').offsetHeight);};
 const _r=window.renderAt;
 window.renderAt=function(t){_r(t);
   const c01=x=>Math.max(0,Math.min(1,x));
