@@ -351,9 +351,9 @@ body{background:radial-gradient(ellipse at 50% 30%,#13306E 0%,#071433 55%,#03091
 #   Check any spec in ~20 s without rendering: tools/frame_preview.py
 SAFE = {"top": 270, "bottom": 1250, "side": 70, "buttons_x": 940, "buttons_y": 1000}
 STYLE_B = STYLE_K + """
-#hdr{left:0;right:0;top:276px;padding:12px 220px 10px 70px;background:linear-gradient(90deg,#0B1B4D 0%,#13306E 70%,rgba(19,48,110,.0) 100%);
+#hdr{left:0;right:0;top:276px;padding:12px 220px 10px 70px;background:linear-gradient(90deg,#0B1B4D 0%,#13306E 55%,rgba(19,48,110,.0) 78%);
   border-bottom:6px solid #FFD21F;box-shadow:0 10px 30px rgba(0,0,0,.45)}
-#plogo{top:272px;right:70px;width:120px;height:120px}
+#plogo{top:272px;right:70px;width:120px;height:120px;z-index:31}      /* owner 14 Nov: the logo on top, the header shade fades out before it */
 #hdr .sub{max-width:790px;overflow:hidden}
 #hdr .src{min-width:0;flex-shrink:1}
 #pin{top:410px;left:70px;max-width:870px;background:#E3151B;color:#fff}
