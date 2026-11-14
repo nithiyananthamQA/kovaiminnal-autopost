@@ -6,6 +6,7 @@ No intro, no ticker, no AI label. One story per reel. The photos are never stret
 """
 import json, sys, os, re, subprocess, html, wave, math
 from pathlib import Path
+from array import array
 from playwright.sync_api import sync_playwright
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -400,29 +401,93 @@ def build_audio(work, starts, shots, sents, total):
     add_music(work, total)
 
 
+MUSIC_DIR = Path(__file__).resolve().parent / "assets" / "music"      # our own beds (tools/make_music.py): serious / alert / calm
+# owner 14 Nov: the music comes back up in EVERY pause, not only on the end card - reel sentences are ~0.16 s apart, so the
+# ducking is quick (down 0.06 s before a word, up over 0.1 s, gaps from 0.1 s count as a pause)
+DUCK_DB, GAP_S, DOWN_S, UP_S, HOLD_S, FADE_S = -14.0, 0.09, 0.06, 0.1, 0.03, 1.5
+
+
+def music_on():
+    """owner 14 Nov: our own news music under every reel (poster/config.json music.enabled); REEL_MUSIC=1/0 overrides"""
+    env = os.environ.get("REEL_MUSIC", "")
+    if env in ("0", "1"):
+        return env == "1"
+    try:
+        cfg = json.loads((Path(__file__).resolve().parent.parent / "poster" / "config.json").read_text(encoding="utf-8"))
+        return bool((cfg.get("music") or {}).get("enabled"))
+    except Exception:
+        return False
+
+
+def duck_envelope(levels_db, total, hop=0.01, thr_db=-45.0):
+    """gain in dB per hop for the music: 0 in pauses (and before / after the voice), DUCK_DB while the voice speaks (pauses shorter
+    than GAP_S stay ducked), down DOWN_S before a word, up over UP_S, fades in 0.12 s and out over the last FADE_S"""
+    n = max(1, int(round(total / hop)))
+    act = [(levels_db[i] > thr_db) if i < len(levels_db) else False for i in range(n)]
+    idx = [i for i, a in enumerate(act) if a]
+    for a, b in zip(idx, idx[1:]):
+        if 1 < b - a and (b - a - 1) * hop <= GAP_S:
+            for j in range(a + 1, b):
+                act[j] = True
+    lead, hold = round(DOWN_S / hop), round(HOLD_S / hop)
+    near = [any(act[max(0, i - hold):min(n, i + lead + 1)]) for i in range(n)]
+    out, cur = [], 0.0
+    for i in range(n):
+        tg = DUCK_DB if near[i] else 0.0
+        cur = max(tg, cur + DUCK_DB * hop / DOWN_S) if tg < cur else min(tg, cur - DUCK_DB * hop / UP_S)
+        t = i * hop
+        f = min(1.0, t / 0.12, max(0.0, (total - t) / FADE_S))
+        out.append(cur + (20 * math.log10(f) if f > 1e-4 else -80.0))
+    return out
+
+
+def _levels_db(path, hop=0.01):
+    """RMS level per hop (dB) of an audio file, read by ffmpeg (no numpy needed)"""
+    n = int(44100 * hop)
+    r = subprocess.run(["ffmpeg", "-v", "error", "-i", str(path), "-ac", "1", "-ar", "44100", "-af",
+                        f"asetnsamples={n}:p=1,astats=metadata=1:reset=1,ametadata=print:key=lavfi.astats.Overall.RMS_level:file=-",
+                        "-f", "null", "-"], capture_output=True, text=True, check=True)
+    out = []
+    for ln in r.stdout.splitlines():
+        if ln.startswith("lavfi.astats.Overall.RMS_level="):
+            v = ln.split("=", 1)[1]
+            out.append(-120.0 if v in ("-inf", "inf", "nan") else float(v))
+    return out
+
+
+def _lufs(path):
+    e = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(path), "-af", "loudnorm=print_format=json", "-f", "null", "-"],
+                       capture_output=True, text=True).stderr
+    return float(json.loads(e[e.rindex("{"):])["input_i"])
+
+
 def add_music(work, total):
-    """quiet background bed under the voice (ducks while the voice speaks). Own tracks in reel/music/ are used if present, otherwise an
-    original generated bed. Any failure keeps the reel without music."""
-    if os.environ.get("REEL_MUSIC") != "1":      # owner (23 Oct): no background music at all (set REEL_MUSIC=1 to bring it back)
+    """owner 14 Nov: our own music bed (no copyright: composed by tools/make_music.py) under the reel. The mood follows the news
+    (REEL_MUSIC_MOOD from post.py: serious = crime / accident, alert = power cut, calm = the rest). The music plays at the reel's
+    loudness in pauses and DUCK_DB under it while the voice speaks (the voice track decides, not the sound effects).
+    Any failure keeps the reel without music."""
+    if not music_on():
         print("background music off")
         return
     try:
-        mix = work / "mix.wav"
-        here = Path(__file__).resolve().parent
-        tracks = sorted([p for p in (here / "music").glob("*") if p.suffix.lower() in (".mp3", ".wav", ".m4a")])
-        bed = work / "bed_music.wav"
-        if tracks:
-            src = tracks[sum(map(ord, work.name)) % len(tracks)]
-            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", str(src), "-t", f"{total:.2f}", "-ac", "1", "-ar", "44100", str(bed)], check=True)
-        else:
-            subprocess.run([sys.executable, str(here / "music.py"), str(bed), f"{total:.2f}", str(sum(map(ord, work.name)) % 4)], check=True)
+        mood = os.environ.get("REEL_MUSIC_MOOD", "calm")
+        src = MUSIC_DIR / f"{mood}.wav"
+        if not src.exists():
+            src = MUSIC_DIR / "calm.wav"
+        mix, voice = work / "mix.wav", work / "voice.wav"
+        env = duck_envelope(_levels_db(voice if voice.exists() else mix), total)
+        (work / "music_env.f32").write_bytes(array("f", [10 ** (g / 20) for g in env]).tobytes())
+        gain = _lufs(mix) - _lufs(src)
         out = work / "mix_music.wav"
-        fx = ("[1:a]volume=0.4,afade=t=out:st=%.2f:d=1.2[mu];[0:a]asplit=2[vo][sc];"
-              "[mu][sc]sidechaincompress=threshold=0.02:ratio=10:attack=15:release=350[duck];"
-              "[vo][duck]amix=inputs=2:normalize=0,alimiter=limit=0.9:level=0[m]") % max(0.5, total - 1.3)
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mix), "-i", str(bed), "-filter_complex", fx, "-map", "[m]", "-ar", "44100", str(out)], check=True)
+        fx = (f"[0:a]atrim=0:{total:.3f},asetpts=N/SR/TB,aformat=sample_rates=44100:channel_layouts=mono,volume={gain:.2f}dB[mu];"
+              "[1:a]aresample=44100,aformat=sample_rates=44100:channel_layouts=mono[en];[mu][en]amultiply[duck];"
+              "[2:a]aformat=sample_rates=44100:channel_layouts=mono[vo];[vo][duck]amix=inputs=2:normalize=0:duration=first,"
+              "alimiter=limit=0.9:level=0[m]")
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", str(src), "-f", "f32le", "-ar", "100", "-ac", "1",
+                        "-i", str(work / "music_env.f32"), "-i", str(mix), "-filter_complex", fx, "-map", "[m]", "-ar", "44100", str(out)],
+                       check=True)
         out.replace(mix)
-        print("background music added")
+        print(f"background music added ({src.stem}, {DUCK_DB:.0f} dB under the voice)")
     except Exception as e:
         print("music skipped:", e)
 

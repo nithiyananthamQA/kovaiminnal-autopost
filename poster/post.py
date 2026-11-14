@@ -797,10 +797,23 @@ def reel_spec(row, spec, images):
             "scenes": [{"caption": x["caption"]} for x in sents] + [{"caption": last}]}
 
 
+MOOD_SERIOUS = re.compile(r"crime|accident|murder|theft|arrest|drug|fire|death|கைது|கொலை|விபத்து|திருட்டு|கொள்ளை|போதை|தீ |தீ விபத்து|பலி|"
+                          r"உயிரிழ|மோசடி|கஞ்சா|வெட்டி|தாக்கு|பாலியல்|போக்சோ|சடலம்", re.I)
+
+
+def music_mood(row, spec):
+    """owner 14 Nov: the music follows the news - power cut = alert, crime / accident = serious, everything else = calm"""
+    text = " ".join(str(x or "") for x in (row.get("category"), spec.get("cat"), row.get("headline_ta"), spec.get("hl1"), spec.get("hl2")))
+    if re.search(r"power ?cut|மின் ?தடை|மின்வெட்டு|பவர் ?கட்", text, re.I):
+        return "alert"
+    return "serious" if MOOD_SERIOUS.search(text) else "calm"
+
+
 def render_reel(row, spec, images, work, voice_file=None):
     rs = reel_spec(row, spec, images)
     (work / "reel.json").write_text(json.dumps(rs, ensure_ascii=False))
     env = dict(os.environ)
+    env.setdefault("REEL_MUSIC_MOOD", music_mood(row, spec))
     if voice_file:
         env["VOICE_FILE"] = str(voice_file)
     mp4 = work / f"{row['story_id']}_reel.mp4"

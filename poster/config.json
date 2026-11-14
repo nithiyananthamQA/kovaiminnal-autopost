@@ -19,6 +19,10 @@
     "page_ids": {"coimbatore": "1475639385631396"},
     "note": "14 Nov (owner: same account for every page): no FB_PAGE_ID_/FB_TOKEN_ secrets needed - the page token is read with the one minnal-bot token (instagram.shared_token_page in the Minnal bridge). Secrets, when set, still win."
   },
+  "music": {
+    "enabled": true,
+    "note": "owner 14 Nov: our own news music under every reel (reel/assets/music, composed by tools/make_music.py - no copyright). post.py music_mood: power cut = alert, crime / accident = serious, the rest = calm. 14 dB under the voice while it speaks, back up in every pause and on the end card (reel3.add_music). false = no music."
+  },
   "first_comment": false,
   "location_tags": true,
   "reel_design": "v5",
