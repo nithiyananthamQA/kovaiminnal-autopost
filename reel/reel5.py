@@ -151,6 +151,20 @@ SCENE_CSS = """
 #scene .flame{position:absolute;bottom:330px;border-radius:50% 50% 40% 40%;background:radial-gradient(circle at 50% 75%,#FFE08A,#FF8A00 45%,rgba(227,21,27,.0) 75%);filter:blur(6px)}
 """
 
+# B2 (14 Nov design review): the scene where people can see it - injected AFTER SCENE_CSS (same selectors, so the later rule
+# wins; the old STYLE_B line top:1420px never applied). Skyline (buildings, their windows, flames) raised 360 px: its base at
+# bottom 690 (y 1230, just above Instagram's bottom zone) instead of 330 (y 1590, under it); the road at y 1180-1330; the icon disc
+# small (130 px) in the gap between the header bar and the headline, right side under the logo - behind every text layer
+SCENE_B2_CSS = """
+#scene .bld,#scene .win,#scene .flame{margin-bottom:360px}
+#scene #road{top:1180px}
+#scene #halo,#scene #disc,#scene .ring{left:945px;top:456px}
+#scene #halo{width:300px;height:300px;margin:-150px 0 0 -150px}
+#scene #disc{width:130px;height:130px;margin:-65px 0 0 -65px;border-width:5px;box-shadow:0 0 30px var(--sc),inset 0 0 20px rgba(0,0,0,.5)}
+#scene #disc .ic{width:66px;height:66px}
+"""
+SCENE_B2_RING = [130, 150]      # ring start size, growth (px); other looks keep [300, 520]
+
 KINDS = [  # (match in the category / headline, kind, icon, accent colour)
     (("விபத்து", "மோதி", "மோதல்", "கவிழ்ந்", "accident"), "accident", "car-burst", "#E3151B"),
     (("மின் தடை", "மின்தடை", "மின்வெட்டு", "power"), "power", "plug-circle-xmark", "#F5B400"),
@@ -197,7 +211,7 @@ def scene_html(spec):
     rng = random.Random(str(spec.get("story", "")) + kind)
     parts = [f'<div id="scene" style="--sc:{col}"><div class="tint"></div>', map_svg(rng)]
     parts += [f'<div class="beam" id="beam{i}" style="top:{200 + i * 700}px"></div>' for i in range(2)]
-    extra = {"kind": kind, "drops": [], "wins": [], "dashes": 0, "flames": 0}
+    extra = {"kind": kind, "drops": [], "wins": [], "dashes": 0, "flames": 0, "ring": [300, 520]}
     if kind in ("crime", "accident"):
         parts.append('<div class="glow" id="gR" style="left:-260px;top:-160px;width:900px;height:900px;background:#FF1E2D"></div>')
         parts.append(f'<div class="glow" id="gB" style="right:-260px;top:-160px;width:900px;height:900px;background:{"#1E6BFF" if kind == "crime" else "#FFFFFF"}"></div>')
@@ -244,7 +258,7 @@ window.renderAt=function(t){
   const pulse=1+0.035*sin(t*3.1);
   document.getElementById('disc').style.transform='scale('+pulse+')';
   document.getElementById('halo').style.transform='scale('+(1+0.08*sin(t*2.2))+')';
-  for(let i=0;i<3;i++){const r=document.getElementById('ring'+i), f=((t+i*0.6)%1.8)/1.8, s=300+f*520;
+  for(let i=0;i<3;i++){const r=document.getElementById('ring'+i), f=((t+i*0.6)%1.8)/1.8, s=X.ring[0]+f*X.ring[1];
     r.style.width=s+'px'; r.style.height=s+'px'; r.style.margin=(-s/2)+'px 0 0 '+(-s/2)+'px'; r.style.opacity=(1-f)*0.55;}
   if(X.kind==='crime'||X.kind==='accident'){const a=sin(t*9.5), b=sin(t*9.5+Math.PI);
     document.getElementById('gR').style.opacity=Math.max(0,a)*0.55; document.getElementById('gB').style.opacity=Math.max(0,b)*0.45;}
@@ -327,7 +341,7 @@ body{background:radial-gradient(ellipse at 50% 30%,#13306E 0%,#071433 55%,#03091
 # y 1000 (like / comment / share / audio buttons). Colours and look stay B2; only places and sizes changed:
 #   y 276-392 header bar + logo | 410-478 location pill | 520-1000 headline (hook) / fact card + yellow strip / 410-990 summary
 #   1000-1228 captions (x 70-940; their 22 px slide-in ends by 1250) | full-width bars may bleed to the edges, their text never
-#   does | a story without a photo: the drawn scene's icon disc sits under the captions (y 1420), not behind them
+#   does | a story without a photo: the drawn scene sits where it is seen (SCENE_B2_CSS)
 #   Check any spec in ~20 s without rendering: tools/frame_preview.py
 SAFE = {"top": 270, "bottom": 1250, "side": 70, "buttons_x": 940, "buttons_y": 1000}
 STYLE_B = STYLE_K + """
@@ -343,13 +357,13 @@ STYLE_B = STYLE_K + """
 #hook::before{content:"";position:absolute;z-index:-1;left:-1100px;right:-1100px;top:-40px;bottom:-40px;pointer-events:none;
   background:linear-gradient(180deg,rgba(6,14,43,0) 0%,rgba(6,14,43,.62) 20%,rgba(6,14,43,.62) 80%,rgba(6,14,43,0) 100%)}
 #hook .h1{font-size:96px;text-shadow:0 6px 0 #E3151B,0 14px 34px rgba(0,0,0,.7)}
-#hook .h2{margin-left:16px;max-width:828px}
-#mini{left:-60px;right:-60px;top:784px;background:#FFD21F;color:#0B1B4D;border:0;padding:16px 136px 12px;font-size:46px;
-  text-shadow:none;box-shadow:0 22px 50px rgba(0,0,0,.55)}
-.card{left:auto;right:140px;top:510px;width:800px}
+#hook .h2{margin-left:16px;max-width:828px;white-space:nowrap;font-size:76px;overflow:hidden;text-overflow:ellipsis;padding-bottom:4px}
+#mini{left:-60px;right:-60px;top:784px;background:#FFD21F;color:#0B1B4D;border:0;padding:16px 136px 12px;font-size:44px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:none;box-shadow:0 22px 50px rgba(0,0,0,.55)}
+.card{left:auto;right:140px;top:560px;width:800px}
 #cap{top:1000px;height:228px;left:70px;right:140px}
-.ph{text-align:center;-webkit-text-stroke:0;color:#0B1B4D;background:rgba(255,255,255,.97);border-radius:22px;padding:16px 28px 8px;
-  text-shadow:none;box-shadow:0 14px 34px rgba(0,0,0,.5);font-size:62px}
+.ph{text-align:center;-webkit-text-stroke:0;color:#fff;background:rgba(11,27,77,.92);border-radius:22px;padding:16px 28px 8px;
+  text-shadow:none;box-shadow:0 14px 34px rgba(0,0,0,.5);font-size:58px}
 .ph span.on{color:#0B1B4D;background:#FFD21F;box-shadow:0 6px 0 #E3151B}
 #sum{top:410px;left:70px;right:70px;transform-origin:50% 0}
 #end{padding:270px 140px 670px;gap:22px}
@@ -359,7 +373,8 @@ STYLE_B = STYLE_K + """
 #end .e2{white-space:nowrap;overflow:hidden}
 #end .e4{font-size:40px}
 #end .e5{font-size:32px}
-#scene #halo,#scene #disc,#scene .ring{top:1420px}
+#hdr::after{content:"";position:absolute;left:0;bottom:-6px;width:260px;height:6px;pointer-events:none;opacity:var(--ho,0);
+  transform:translateX(var(--hx,-260px));background:linear-gradient(90deg,rgba(255,255,255,0),#fff,rgba(255,255,255,0))}
 """
 # the B2 safe-area sizes + the serious opening (after reel4's own renderAt / fitAll):
 # - frame 1 = the settled headline: no slide-in, no lightning flash over it (ZAP_JS: no flash until the headline leaves), the pin
@@ -372,7 +387,13 @@ SAFE_JS = """<script>(function(){
 const _fit=window.fitAll;
 window.fitAll=function(){_fit();
   const re=(el,h,min)=>{if(!el)return;el.style.fontSize='';fitEl(el,h,min);};
-  re(document.querySelector('#hook .h1'),300,56); re(document.querySelector('#hook .h2'),180,44); re(document.getElementById('mini'),170,30);
+  const h1=document.querySelector('#hook .h1');      // the headline: at most 2 lines (fitted on the line count, not the height)
+  if(h1){h1.style.fontSize='';let fs=parseFloat(getComputedStyle(h1).fontSize),n=0;
+    const lines=()=>Math.round(h1.offsetHeight/parseFloat(getComputedStyle(h1).lineHeight));
+    while((lines()>2||h1.scrollWidth>h1.clientWidth+1)&&fs>56&&n++<60){fs-=2;h1.style.fontSize=fs+'px';}
+    if(lines()>2)Object.assign(h1.style,{display:'-webkit-box',webkitLineClamp:'2',webkitBoxOrient:'vertical',overflow:'hidden'});}
+  re(document.querySelector('#hook .h2'),120,48);      // the yellow fact: one line, 76 px down to 48 px (ellipsis only past that)
+  const mi=document.getElementById('mini'); if(mi)mi.style.fontSize='';      // one line at 44 px, ellipsis (no shrinking)
   document.querySelectorAll('.ph').forEach(e=>{e.style.paddingLeft=e.style.paddingRight='42px';re(e,196,46);e.style.paddingLeft=e.style.paddingRight='';});
   document.querySelectorAll('.card .vl').forEach(e=>re(e,170,30));
   document.querySelectorAll('#end .e2').forEach(e=>re(e,120,34));
@@ -383,8 +404,22 @@ window.fitAll=function(){_fit();
   window.__hookK=Math.min(1,480/document.getElementById('hook').offsetHeight);};
 const _r=window.renderAt;
 window.renderAt=function(t){_r(t);
+  const c01=x=>Math.max(0,Math.min(1,x));
   document.getElementById('hook').style.transform=window.__hookK<1?'scale('+window.__hookK+')':'none';
   const pin=document.getElementById('pin'); pin.style.transform='none';
+  // no captions while the headline is up (they repeated it), a short fade in after
+  document.getElementById('cap').style.opacity=c01((t-D.hook_end)/0.15);
+  // motion 0.3-0.9 s (frame 0 static and complete): the yellow fact wipes in again 0.30-0.55 s, then a white light runs
+  // along the header's yellow border 0.5-0.9 s - neither covers any text
+  const h2=document.querySelector('#hook .h2');
+  if(h2){const e=1-Math.pow(1-c01((t-0.3)/0.25),3);
+    h2.style.clipPath=(t>=0.3&&e<1)?'inset(-30px calc('+((1-e)*100).toFixed(2)+'% - '+(30*e).toFixed(1)+'px) -30px -30px)':'none';}
+  const hd=document.getElementById('hdr'), u=c01((t-0.5)/0.4);
+  hd.style.setProperty('--ho',(t>=0.5&&t<0.9)?Math.sin(Math.PI*u).toFixed(3):'0'); hd.style.setProperty('--hx',Math.round(-260+1340*u)+'px');
+  // at most two text blocks: the yellow strip steps aside while a fact card is on screen (and 0.15 s around it: no flicker)
+  let near=99; D.sents.forEach(s=>{if(!s.card)return; const a=Math.max(s.a+0.15,D.hook_end+0.1), b=s.b+0.25;
+    near=Math.min(near,t<a?a-t:(t>b?t-b:0));});
+  const mn=document.getElementById('mini'); mn.style.opacity=parseFloat(mn.style.opacity||'0')*c01((near-0.15)/0.3);
   const sm=document.getElementById('sum'); if(!sm)return;
   if(window.__sumK<1)sm.style.transform+=' scale('+window.__sumK+')';
   const so=parseFloat(sm.style.opacity||'0');
@@ -445,7 +480,9 @@ def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
         html = html.replace("</body></html>", NO_CLASH_JS + "</body></html>", 1)
     if is_plain(spec):
         scene, extra = scene_html(spec)
-        html = html.replace("</style>", SCENE_CSS + "</style>", 1)
+        if style == "B2":
+            extra["ring"] = SCENE_B2_RING
+        html = html.replace("</style>", SCENE_CSS + (SCENE_B2_CSS if style == "B2" else "") + "</style>", 1)
         html = html.replace('<div id="stage">', '<div id="stage">' + scene, 1)
         html = html.replace("</body></html>", SCENE_JS.replace("__EXTRA__", json.dumps(extra)) + "</body></html>", 1)
     return html

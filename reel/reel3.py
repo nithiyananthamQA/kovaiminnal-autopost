@@ -366,6 +366,10 @@ def main(spec_path, out_mp4, page_key="coimbatore"):
 def build_audio(work, starts, shots, sents, total):
     """voice + a soft whoosh on each camera cut + a pop on each fact sticker (no music; add Tamil music in the Instagram app)."""
     parts, labels = [], []
+    # 14 Nov design review: a 0.25 s low hit at t=0 (90 Hz sine + brown noise) - the reel opens with weight, not silence
+    parts.append("aevalsrc=exprs=sin(2*PI*90*t)*exp(-9*t):d=0.25:s=44100[hs];anoisesrc=d=0.25:c=brown:a=0.5,lowpass=f=250[hn];"
+                 "[hs][hn]amix=inputs=2:normalize=0,afade=t=out:st=0.1:d=0.15,volume=0.5[h0]")
+    labels.append("[h0]")
     k = 0
     for s in shots[1:]:
         if s["a"] < total - 1:

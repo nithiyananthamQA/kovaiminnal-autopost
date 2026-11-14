@@ -41,7 +41,10 @@ CHECK_JS = """([S,minOp])=>{
   sel.forEach(s=>document.querySelectorAll(s).forEach(e=>{
     if(vis(e)<minOp)return;
     let r=e.getBoundingClientRect();
-    if(textOnly.includes(s)){const g=document.createRange();g.selectNodeContents(e);r=g.getBoundingClientRect();}
+    if(textOnly.includes(s)){const g=document.createRange();g.selectNodeContents(e);const b=e.getBoundingClientRect(),q=g.getBoundingClientRect();
+      const c=getComputedStyle(e),pl=parseFloat(c.paddingLeft),pr=parseFloat(c.paddingRight);
+      r=c.overflow==='hidden'?{left:Math.max(q.left,b.left+pl),top:Math.max(q.top,b.top),right:Math.min(q.right,b.right-pr),
+        bottom:Math.min(q.bottom,b.bottom)}:q; r.width=r.right-r.left; r.height=r.bottom-r.top;}      // clipped text (ellipsis) ends at its content box
     if(r.width<2||r.height<2)return;
     const f=[];
     if(r.top<S.top)f.push('TOP '+Math.round(S.top-r.top)+'px');
