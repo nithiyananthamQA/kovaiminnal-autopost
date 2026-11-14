@@ -135,6 +135,100 @@ def news_on(key):
     return s.get("enabled") is True and key in (s.get("news_live") or [])
 
 
+def comments_on(key):
+    """owner 14 Nov (Instagram's best practice: reply to comments): a live page in district_powercut.comments_live gets Kovai's
+    comment-reply flow (new comments -> reply options e-mailed by the district bridge -> posted only after the owner chooses)"""
+    return key in enabled_keys() and key in (settings().get("comments_live") or [])
+
+
+# ---------------------------------------------------------------- Instagram place tag (owner 14 Nov: Instagram's best practice)
+LOCATIONS = HERE / "locations.json"
+_POWER_ROW = re.compile(r"மின்\s*தடை")
+
+
+def place_ids(key, refused=()):
+    """districts/locations.json -> ({match word: place id, "default": city id}, {place id: place name}); only filled ids (digits),
+    never one Instagram refused before. A district without an entry -> ({}, {}): no tag, as before."""
+    try:
+        m = json.loads(LOCATIONS.read_text(encoding="utf-8")).get(key) or {}
+    except Exception:
+        m = {}
+    refused = {str(x) for x in refused}
+    words, names = {}, {}
+    for i, a in enumerate([m.get("city") or {}] + list(m.get("areas") or [])):
+        pid = str(a.get("id") or "").strip()
+        if not pid.isdigit() or pid in refused:
+            continue
+        names[pid] = a.get("place") or pid
+        for w in (["default"] if i == 0 else [x.strip() for x in a.get("match") or [] if x.strip()]):
+            words[w] = pid
+    return words, names
+
+
+def place_not_words(key):
+    """words that contain an area's match word but are another place (திருப்போரூர் holds போரூர்): blanked before matching"""
+    try:
+        m = json.loads(LOCATIONS.read_text(encoding="utf-8")).get(key) or {}
+    except Exception:
+        m = {}
+    return sorted({w.strip() for a in m.get("areas") or [] for w in a.get("not") or [] if w.strip()}, key=len, reverse=True)
+
+
+def refused_places(d):
+    try:
+        return json.loads((d["state"] / "locations_refused.json").read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def place_picker(P, d, names):
+    """the reference's pick_location (the area named FIRST in the headline wins, else the city "default") on this page's ids;
+    a power cut covers many areas, so it always gets the city tag"""
+    orig = P.pick_location
+    nots = place_not_words(d["key"])
+
+    def blank(s):
+        for w in nots:
+            s = re.sub(re.escape(w), " ", s or "", flags=re.I)
+        return s or ""
+
+    def pick(row, spec):
+        if _POWER_ROW.search(f"{row.get('category') or ''} {row.get('headline_ta') or ''}"):
+            city = str((P.CONFIG.get("locations") or {}).get("default") or "")
+            pid = city if city in P.verified_locations() else ""
+        else:
+            pid = orig(dict(row, **{k: blank(row.get(k)) for k in ("headline_ta", "headline_en", "location")}),
+                       dict(spec, loc=blank(spec.get("loc"))))
+        if pid:
+            log(f"location tag: {names.get(pid, pid)} ({pid})")
+        return pid
+    return pick
+
+
+def location_guard(P, d, names):
+    """Instagram refused a place id (wrong id in districts/locations.json): remembered in districts/state/<key>/locations_refused.json
+    and never tried again; the post itself goes on without the tag (post.create_with_collab). Only a refusal that names the
+    location counts - any other container error leaves the id alone."""
+    orig = P.ig
+
+    def ig(method, path, token, **params):
+        pid = str(params.get("location_id") or "")
+        try:
+            return orig(method, path, token, **params)
+        except RuntimeError as e:
+            if pid and method == "POST" and path.endswith("/media") and "location" in str(e).lower():
+                bad = refused_places(d)
+                bad[pid] = {"place": names.get(pid, ""), "at": datetime.datetime.now(IST).isoformat(timespec="minutes"), "error": str(e)[:200]}
+                try:
+                    d["state"].mkdir(parents=True, exist_ok=True)
+                    (d["state"] / "locations_refused.json").write_text(json.dumps(bad, ensure_ascii=False, indent=1), encoding="utf-8")
+                except Exception:
+                    pass
+                log(f"LOCATION ID REFUSED by Instagram: {names.get(pid, '?')} ({pid}) - fix districts/locations.json; never tried again")
+            raise
+    return ig
+
+
 def dinamalar_meta(d):
     """newsid -> publish time + short description, from the district page's own data"""
     import sources as S
@@ -482,8 +576,13 @@ def apply(key, mode="powercut"):
                   "place_tags": {}, "district_tag": "#" + et, "broad_tag": f"#{et}PowerCut", "extra_tag": f"#{et}News",
                   "search_suffix": f"{d['en']} power cut"})
     P.CONFIG["reach"] = reach
-    P.CONFIG["locations"] = {}
-    P.CONFIG["location_tags"] = False
+    # owner 14 Nov: the page's own place ids (districts/locations.json) - never Kovai's config.json "locations" / ig-probe file
+    words, names = place_ids(key, refused_places(d))
+    P.CONFIG["locations"] = words
+    P.CONFIG["location_tags"] = bool(words)      # no filled id -> no tag, as before
+    _set(P, "verified_locations", lambda: set(place_ids(key, refused_places(d))[0].values()))
+    _set(P, "pick_location", place_picker(P, d, names))
+    _set(P, "ig", location_guard(P, d, names))
     _set(FB, "STATE", d["state"] / "fb_posted")
     return d
 

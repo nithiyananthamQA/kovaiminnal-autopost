@@ -64,7 +64,10 @@ One minnal-bot token for ALL pages (owner 14 Nov: "same account for Chennai and 
 1. **Claude:** Facebook page id + Instagram account id: list them with the shared token (`me/accounts`; Instagram id from the portfolio).
 2. **Claude:** district → `districts/districts.json` `<key>.instagram = {"api": "unified", "user_id": "<id>"}`; Kovai → `poster/config.json`
    `instagram.user_id`. Facebook page id → `poster/config.json` `facebook.page_ids.<key>`. Commit.
-3. **Claude:** switch on: district → `poster/config.json` `district_powercut.live` (+ `news_live` for all news). Commit; **owner pushes**.
+3. **Claude:** switch on: district → `poster/config.json` `district_powercut.live` (+ `news_live` for all news, + `comments_live` for comment
+   replies e-mailed to the owner - the token needs `instagram_manage_comments` + `pages_read_engagement`). Commit; **owner pushes**.
+4. **Owner:** place tags - fill the Facebook place-page ids in `districts/locations.json` (city + areas; check each on facebook.com/<id>).
+   Empty id = no tag. After the first post: `location tag: …` in the log, or the id in `districts/state/<key>/locations_refused.json`.
 
 ## 5. Check before going live
 

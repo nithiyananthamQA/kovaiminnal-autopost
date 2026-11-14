@@ -67,6 +67,42 @@ jobs:
           git commit -qm "district powercut: notices found" || true
           for i in 1 2 3 4 5; do git pull -q --rebase -X theirs --autostash origin main && git push -q && break; git rebase --abort 2>/dev/null || true; sleep $((i*4)); done || true
 
+  comments:
+    # owner 14 Nov (Instagram's best practice: reply to comments within a couple of days) - Kovai's comments.yml flow for the pages in
+    # district_powercut.comments_live, on every run of this job (the bridge timer starts it every 30 min): new comments -> 3 reply
+    # options each -> kept in the DISTRICT Sheet's Comments tab and e-mailed to the owner (Code.districts.gs commentNew_). NOTHING is
+    # posted by this job - the owner chooses on the confirmation page and only the bridge posts it. Counts only in this public log.
+    # Own job (not a step of "post", which runs only when something new was found). No Facebook or Kovai secret here.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry || '0' }}      # 1 = options made, nothing sent / e-mailed
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}      # paid Claude ONLY when every free model failed
+      ANTHROPIC_MODEL: claude-haiku-5-5
+      CLAUDE_MAX_CALLS: "10"      # cost guard per run (the first run may offer up to 25 older comments)
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main}
+      - name: Switch
+        id: sw
+        run: |
+          on=$(python3 -c "import json; c=json.load(open('poster/config.json')).get('district_powercut') or {}; print(1 if c.get('enabled') is True and c.get('comments_live') else 0)")
+          echo "on=$on" >> "$GITHUB_OUTPUT"
+          [ "$on" = "1" ] || echo "district comment replies are off (poster/config.json district_powercut.comments_live) - nothing done"
+      - uses: actions/setup-python@v5
+        if: steps.sw.outputs.on == '1'
+        with: {python-version: "3.11"}
+      - name: Install
+        if: steps.sw.outputs.on == '1'
+        run: pip install -q requests==2.32.5 googlenewsdecoder==0.2.2 pillow==11.3.0
+      - name: New comments -> reply options e-mailed to the owner (nothing posted)
+        if: steps.sw.outputs.on == '1'
+        run: python -u districts/main.py comments ${{ github.event_name == 'workflow_dispatch' && inputs.districts || '' }}
+
   post:
     needs: find
     if: needs.find.outputs.n != '0' && needs.find.outputs.n != '' && github.event.inputs.dry != '1'
