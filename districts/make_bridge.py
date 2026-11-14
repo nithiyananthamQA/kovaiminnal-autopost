@@ -57,7 +57,8 @@ def build():
 
 
 # owner 14 Nov: GitHub's own timer did not start district-powercut (0 scheduled runs) - this Google timer starts it every 30 minutes
-DISPATCH = """
+# raw string: the JavaScript keeps its \n escapes (14 Nov: a plain string put real line breaks inside JS strings - Apps Script would not save)
+DISPATCH = r"""
 // ------------------------------------------------------------------ the district job's timer (owner 14 Nov)
 // GitHub's own timer did not start the job. Run startTimer ONCE: every 30 minutes (05:30 - 22:10 IST) this starts the GitHub job
 // district-powercut. Needs Script property GH_DISPATCH_TOKEN (a GitHub token: only this repository, Actions read + write).
