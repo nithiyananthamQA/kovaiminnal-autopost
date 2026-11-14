@@ -64,12 +64,15 @@ class Settings(unittest.TestCase):
         self.assertTrue(ig_api.me_allowed(login))
         self.assertFalse(ig_api.me_allowed(fb))
 
-    def test_shipped_config_keeps_the_instagram_login(self):
-        """until the owner fills the account id, nothing changes for Kovai"""
-        ig = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["instagram"]
-        self.assertEqual((ig["api"], ig["user_id"]), ("unified", ""))
-        out = run(POST + "print(P.IG_HOST, repr(P.IG_VER), repr(P.IG_USER_ID), P.ig_account('t'), calls, P.ig_url('1/media'))")
-        self.assertEqual(out, "https://graph.instagram.com '' '' ('1', 'kovaiminnal') ['me'] https://graph.instagram.com/1/media")
+    def test_shipped_config_is_read_at_import(self):
+        """post.py takes host / version / id from config.json's instagram block (empty or filled - this test passes either way,
+        so filling the id never turns the tests red)"""
+        cfg = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))
+        ig = cfg["instagram"]
+        self.assertEqual(ig["api"], "unified")
+        self.assertRegex(str(ig["user_id"]), r"^(\d{10,20})?$")      # empty, or the Instagram account id (digits only - never a token)
+        out = run(POST + "print(P.IG_HOST, P.IG_VER, P.IG_USER_ID, sep='|')")
+        self.assertEqual(out, "|".join(ig_api.settings(cfg, env={})))
 
 
 class KovaiPost(unittest.TestCase):

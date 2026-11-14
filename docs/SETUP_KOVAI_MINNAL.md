@@ -156,26 +156,32 @@ Our Meta app **Minnal Pages** is new, and Meta gives new apps only the "Unified 
 The code supports it since 14 Nov: `poster/config.json` `"instagram": {"api": "unified", "user_id": ""}`. While `user_id` is empty,
 Kovai stays on the old Instagram login; once Claude fills the id, every Kovai job uses the Unified login. Never paste a token into the chat.
 
+The screens are the same ones used for chennaiminnal on 13 Nov (Business settings of the portfolio **Minnal Media**). If a menu
+name is different on your screen, stop and paste the page text to Claude. If Meta shows any warning: **stop**.
+
 **Instagram (token goes into the Kovai Minnal bridge):**
 1. `@kovaiminnal` is a professional (Business) account and is linked to the Facebook Page Kovai Minnal
    (Page → Settings → Linked accounts → Instagram). You do the Instagram side yourself.
-2. business.facebook.com/settings → portfolio **Minnal Media** → Accounts → **Instagram accounts** → **Add** → `@kovaiminnal`
-   (you log in). Check that Accounts → **Pages** lists Kovai Minnal.
-3. Users → **System users** → **minnal-bot** → **Assign assets**: the Instagram account `@kovaiminnal` (all tasks: content, comments, insights)
-   and the Page Kovai Minnal (full control) → Save.
-4. Same screen → **Generate token** → app **Minnal Pages** → expiry **Never** → permissions `instagram_basic`, `instagram_content_publish`,
-   `instagram_manage_comments`, `instagram_manage_insights`, `pages_show_list`, `pages_read_engagement`, `pages_manage_posts`,
-   `business_management` → Generate → **Copy** (the token starts with `EAA`).
+2. Business settings → portfolio **Minnal Media** → Accounts → **Instagram accounts** → **Add** → `@kovaiminnal` (you log in).
+   Check that Accounts → **Pages** lists Kovai Minnal.
+3. Users → **System users** → **minnal-bot** → **Assign assets**: the Instagram account `@kovaiminnal` (all tasks: content, comments,
+   insights) and the Page Kovai Minnal (full control) → Save.
+4. The token: minnal-bot's token (the one Chennai already uses) reaches every account assigned to minnal-bot, so use it again:
+   script.google.com → **Minnal bridge** → Project Settings → Script properties → `IG_TOKEN_CHENNAI` → copy the value (starts with `EAA`).
+   Never press **Revoke tokens** - that stops Chennai too.
 5. script.google.com → **Kovai Minnal bridge** (not "Minnal bridge") → Project Settings → Script properties → `IG_TOKEN_COIMBATORE`
-   = the token → Save. (The bridge never tries to refresh an `EAA` token - after the step-8 repaste with the 14 Nov Code.gs.)
-6. The `@kovaiminnal` account id: Business settings → Accounts → Instagram accounts → kovaiminnal → the number shown (starts with
-   `17841`). Send it to Claude (it is not secret). Claude writes it into `poster/config.json` → `instagram.user_id` and commits; you push.
+   = that token → Save. (Paste the 14 Nov Code.gs first - step 8 "after every later change" - so the bridge never tries to refresh it.)
 
-**Facebook Page token (goes into GitHub secrets):** in this folder `bash tools/meta_fb_token.sh` → paste the same minnal-bot token
-(hidden; it is used as it is). It saves `FB_PAGE_ID_COIMBATORE` and `FB_TOKEN_COIMBATORE`.
+**Facebook Page token + the Instagram account id:** in this folder `bash tools/meta_fb_token.sh` → paste the same token (hidden; it is
+used as it is). It saves `FB_PAGE_ID_COIMBATORE` and `FB_TOKEN_COIMBATORE`, and its page list shows
+`Kovai Minnal (Instagram: kovaiminnal, account id 17841...)`. Send that account id to Claude (it is not secret).
+Claude writes it into `poster/config.json` → `instagram.user_id` and commits; you push. Only from then on Kovai uses the Unified login.
 
-**Check (posts nothing):** Actions → **ig-probe** → Run (reads the account, recent posts, reel insights and the posting quota with the
-new token) and **Facebook check** → Run. Claude reads the results before anything is switched on.
+**Check (posts nothing) - only after that push:** Actions → **ig-probe** → Run (reads the account, recent posts, reel insights and the
+posting quota) and **Facebook check** → Run. Claude reads the results. If ig-probe says a permission is missing (comments or insights):
+minnal-bot → **Generate token** → app **Minnal Pages** → expiry **Never** → add `instagram_basic`, `instagram_content_publish`,
+`instagram_manage_comments`, `instagram_manage_insights`, `pages_show_list`, `pages_read_engagement`, `pages_manage_posts`,
+`business_management` → copy → put it into `IG_TOKEN_COIMBATORE` (a new token does not stop the old one - only Revoke does).
 
 ## 10. GitHub (you – Claude never pushes)
 

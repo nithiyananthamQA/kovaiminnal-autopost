@@ -64,7 +64,8 @@ if [ "$(echo "$PAGES" | jq '.data | length')" -eq 0 ]; then
 fi
 echo
 echo "Your Pages:"
-echo "$PAGES" | jq -r '.data[] | "  \(.id)  \(.name)  (Instagram: \(.instagram_business_account.username // "not linked"))"'
+# 14 Nov: the Instagram account id is shown too (not secret) - it goes into config.json / districts.json instagram.user_id (Unified login)
+echo "$PAGES" | jq -r '.data[] | "  \(.id)  \(.name)  (Instagram: \(.instagram_business_account.username // "not linked")\(if .instagram_business_account.id then ", account id " + .instagram_business_account.id else "" end))"'
 COUNT=$(echo "$PAGES" | jq '.data | length')
 [ "$COUNT" -gt 0 ] || { echo "No Pages found. Tick the $LABEL Page when Facebook asks, then run this again."; exit 1; }
 # pick the page automatically when its name says so; otherwise ask
