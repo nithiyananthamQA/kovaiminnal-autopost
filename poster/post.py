@@ -1730,7 +1730,8 @@ def share_facebook(sid, kind, media, caption, dry=False, row=None):
 def live_allowed():
     if DRY:
         return True
-    if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and not (ROOT / "LIVE").exists():
+    scheduled = os.environ.get("GITHUB_EVENT_NAME") == "schedule" or os.environ.get("POST_TIMER") == "1"      # owner 14 Nov: the Google timer = scheduled
+    if scheduled and not (ROOT / "LIVE").exists():
         log("Not live yet (no LIVE file in the repository) - scheduled posting is switched off.")
         return False
     return True

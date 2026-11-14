@@ -9,7 +9,8 @@
  *   - after posting: update the Sheet + the story's Google Doc and email the owner
  *
  * Setup (once): see README.md in the GitHub repository, section "Apps Script".
- * Script properties used: BRIDGE_KEY, IG_TOKEN_COIMBATORE, (auto) VOICE_FOLDER_ID, optional ALLOWED_SENDERS
+ * Script properties used: BRIDGE_KEY, IG_TOKEN_COIMBATORE, (auto) VOICE_FOLDER_ID, optional ALLOWED_SENDERS,
+ *   GH_DISPATCH_TOKEN (GitHub token for the job timer at the end of this file)
  * E-mail subjects use the tag DISTRICTMINNAL (not NEWS360) so the Namakkal bridge never reads Coimbatore mails and the other way round.
  */
 // ---- OWNER SETS THESE (new Google account for Kovai Minnal; never the Namakkal Sheet / folder / Gmail) ----

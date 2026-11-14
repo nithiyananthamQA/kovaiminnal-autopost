@@ -994,7 +994,7 @@ class IndependentReviewFixes(unittest.TestCase):
         self.assertIn('caption = cached.get("caption") or caption', src)
         self.assertIn('srcs = {x.get("story_id"): x.get("source") for x in bridge_get("queue")', src)
         y = (ROOT / ".github" / "workflows" / "post.yml").read_text(encoding="utf-8")
-        self.assertEqual(y.count("if: always() && github.event_name == 'schedule' && env.BRIDGE_URL != ''"), 2)
+        self.assertEqual(y.count("if: always() && (github.event_name == 'schedule' || env.POST_TIMER == '1') && env.BRIDGE_URL != ''"), 2)      # 14 Nov: Google timer runs = scheduled
         pc = (ROOT / "research_free" / "powercut.py").read_text(encoding="utf-8")
         self.assertIn("tries < 2", pc)
         rp = (ROOT / "research_free" / "realphoto.py").read_text(encoding="utf-8")
@@ -2102,7 +2102,7 @@ class RoundsTopThree(unittest.TestCase):
         wf = (self.WF / "pick.yml").read_text(encoding="utf-8")
         times = sorted(((int(h) * 60 + int(m) + 330) % 1440) / 60 for m, h in re.findall(r'cron: "(\d+) (\d+) \* \* \*"', wf))
         self.assertEqual([6, 10, 19], times)
-        self.assertIn("PICK_AUTO_TOP: ${{ github.event.schedule == '30 0 * * *' && '8' || '6' }}", wf)      # 8 + 6 + 6 = 20
+        self.assertIn("PICK_AUTO_TOP: ${{ github.event_name == 'workflow_dispatch' && inputs.top || (github.event.schedule == '30 0 * * *' && '8' || '6') }}", wf)      # 8 + 6 + 6 = 20 (Google timer: top)
         self.assertIn('PICK_EMAIL: "0"', wf)      # "do not ask me to confirm"
 
     def test_each_round_writes_top_3_of_the_whole_district(self):

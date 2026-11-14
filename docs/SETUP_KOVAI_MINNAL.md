@@ -222,9 +222,22 @@ minnal-bot → **Generate token** → app **Minnal Pages** → expiry **Never** 
    ```
    for w in post.yml pick.yml powercut.yml rasipalan.yml comments.yml insights.yml; do gh workflow enable "$w" -R nithiyananthamQA/kovaiminnal-autopost; done
    ```
-4. First posts come at the next 06:00 / 10:00 / 19:00 pick or the next power-cut notice.
+4. **Google timer** (owner 14 Nov: GitHub's own timer almost never starts the jobs - 1 scheduled run in a whole day). LAST, after 3:
+   1. GitHub → Settings → Developer settings → Fine-grained tokens → Generate: only the repository `kovaiminnal-autopost`,
+      permission **Actions: Read and write** (the district bridge's `GH_DISPATCH_TOKEN` is the same kind; the same token may be used).
+   2. script.google.com → **Kovai Minnal bridge** → paste the new `apps_script/Code.gs` over the code but keep your own filled values at
+      the top (SHEET_ID, ROOT_FOLDER_ID, OWNER_EMAIL, CLOUD_NAME, UPLOAD_PRESET) → Save.
+   3. Project Settings → Script properties → add `GH_DISPATCH_TOKEN` = the token (if missing).
+   4. Run **`startKovaiTimer`** once (allow if Google asks). Every 5 minutes it starts post (05:30-23:30 IST), powercut, comments,
+      pick (06:00 8 news / 10:00 / 19:00), rasipalan (07:00 + backups) and insights (02:10) - the same times as the workflows' schedules,
+      each time slot once. A problem → one `[KOVAIMINNAL PROBLEM] GitHub job could not be started` e-mail a day.
+   5. Deploy → Manage deployments → edit → Version: **New version** → Deploy (the web app keeps its URL).
+   The main branch on GitHub must already have this `post.yml` (input `timer`) and `pick.yml` (input `top`) - push first.
+5. First posts come at the next 06:00 / 10:00 / 19:00 pick or the next power-cut notice.
 
-**Stop everything at once:** run the step-10.2 `disable` line again. Deleting `LIVE` stops only the 5-minute scheduled posting.
+**Stop everything at once:** run the step-10.2 `disable` line again (the Google timer skips a disabled workflow; `stopKovaiTimer`
+switches the timer itself off). Deleting `LIVE` stops only the 5-minute posting (GitHub's and the Google timer's); posts started by
+pick / powercut and manual runs do not look at `LIVE`.
 
 ## Cost
 

@@ -7,6 +7,7 @@ Differences from Kovai's bridge (every one checked - a change in Code.gs that br
   - 37 pages: PAGE_LABEL / PAGE_COL, post_to "<District> Minnal" -> page key, weekly token refresh of IG_TOKEN_<KEY> for each page
   - 'recent' rows carry post_to (each district job reads only its own rows)
   - e-mail subjects use DISTRICTMINNAL instead of KOVAIMINNAL: both bridges run in the same Gmail and must never read each other's mails
+  - Kovai's job timer (KOVAI JOBS TIMER block, starts Kovai's workflows) is left out; the district job's own timer (DISPATCH) is added
 """
 import json
 import re
@@ -16,6 +17,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "apps_script" / "Code.gs"
 DST = ROOT / "apps_script" / "Code.districts.gs"
+KOVAI_TIMER = re.compile(r"\n// ===== KOVAI JOBS TIMER \(start\).*?\n// ===== KOVAI JOBS TIMER \(end\) =====\n", re.S)
 
 
 def build():
@@ -48,6 +50,10 @@ def build():
     rep("""  if (!/^Kovai Minnal\\s*$/.test(st.post_to)) p.push("post_to must be 'Kovai Minnal' (the only page; Coimbatore-district news only)");""",
         "  if (!/^(" + names_re + ")\\s*$/.test(st.post_to)) p.push(\"post_to must be one district page name, e.g. 'Salem Minnal'\");")
     rep("var MANUAL_LAST = 'மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.';", "var MANUAL_LAST = '';      // each district has its own closing line (written by the writer)")
+    # owner 14 Nov: Kovai's job timer (starts Kovai's workflows) never goes into the district bridge - the districts have their own (DISPATCH)
+    t, k = KOVAI_TIMER.subn("", t)
+    if k != 1:
+        raise SystemExit(f"make_bridge: expected 1 KOVAI JOBS TIMER block in Code.gs, found {k} - update districts/make_bridge.py")
     n = t.count("KOVAIMINNAL")
     if n < 10:
         raise SystemExit(f"make_bridge: only {n} KOVAIMINNAL e-mail tags found in Code.gs - check the e-mail subjects")

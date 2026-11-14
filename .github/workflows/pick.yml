@@ -18,6 +18,9 @@ on:
       resume:
         description: "1 = no new list: decide the LATEST round again (the owner's ticks, else the top 8), write and post it"
         default: "0"
+      top:
+        description: "how many top news are written (empty = 6; the Google timer sends 8 at 06:00 and 6 at 10:00 / 19:00, like the schedule)"
+        default: ""
 permissions:
   contents: write
   actions: write      # starts the posting job as soon as a story is saved
@@ -35,7 +38,7 @@ jobs:
       DISTRICT_BRIDGE_URL: ${{ secrets.DISTRICT_BRIDGE_URL }}   # owner 14 Nov: the one minnal-bot token lives in the Minnal bridge
       DISTRICT_BRIDGE_KEY: ${{ secrets.DISTRICT_BRIDGE_KEY }}
       CITY_ONLY: "0"
-      PICK_AUTO_TOP: ${{ github.event.schedule == '30 0 * * *' && '8' || '6' }}      # owner 2 Nov: 8 + 6 + 6 = 20 news a day
+      PICK_AUTO_TOP: ${{ github.event_name == 'workflow_dispatch' && inputs.top || (github.event.schedule == '30 0 * * *' && '8' || '6') }}      # owner 2 Nov: 8 + 6 + 6 = 20 news a day (14 Nov: the Google timer sends top)
       PICK_EMAIL: "0"      # owner 2 Nov: "do not ask me to confirm" - no list e-mail, the top news are written at once
       PICK_WAIT_MIN: "60"
       PICK_REQUIRE_EMAIL: "0"
