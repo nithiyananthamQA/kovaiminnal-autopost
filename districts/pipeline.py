@@ -218,9 +218,9 @@ def find_news(d, dry=False, log=print):
             log(f"news: not a news round now ({t_:%H:%M}; rounds {', '.join(sorted(rounds))} h) - power cuts only")
             return []
     path = d["state"] / "news_state.json"
-    first = not path.exists()
+    first = False      # owner 14 Nov: the first round posts too (the per-round cap 8 / 6 / 6 already stops a flood; the reference does not skip it)
     try:
-        st = json.loads(path.read_text(encoding="utf-8")) if not first else {}
+        st = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
     except Exception:
         st = {}
     seen, days = st.setdefault("seen", {}), st.setdefault("days", {})

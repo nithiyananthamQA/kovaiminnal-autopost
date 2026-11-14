@@ -270,16 +270,12 @@ collect.bridge = lambda *a, **k: {"ok": True, "rows": []}      # no Sheet in tes
 PL.settings = lambda: {"enabled": True, "news_live": ["chennai"], "news_per_run": 1, "news_per_day": 2, "news_max_age_hours": 6}
 """
 
-    def test_first_run_no_flood_then_best_first_and_capped(self):
+    def test_best_first_capped_never_twice(self):
         out = run(HEAD + "PL.use_bridge(); PL.apply('chennai')\n" + self.FAKE + """
-print("first:", PL.find_news(d, log=lambda *a: None))
-L.append(("https://x/chennai/new-a/6", "சென்னையில் பேருந்து விபத்து 5 பேர் காயம்", 1))
-L.append(("https://x/chennai/new-b/7", "சென்னையில் புதிய பூங்கா திறப்பு", 1))
-L.append(("https://x/chennai/new-c/8", "சென்னையில் லாரி மோதி இருவர் பலி", 1))
 r1 = PL.find_news(d, log=lambda *a: None); r2 = PL.find_news(d, log=lambda *a: None); r3 = PL.find_news(d, log=lambda *a: None)
-print("runs:", len(r1), len(r2), len(r3), "| same twice:", bool(set(r1) & set(r2)))""")
-        self.assertIn("first: []", out)                   # the first run only remembers what is on the page
-        self.assertIn("runs: 1 1 0 | same twice: False", out)      # one per check, at most news_per_day (2) a day, never twice
+print("runs:", len(r1), len(r2), len(r3), "| same twice:", bool(set(r1) & set(r2)), "| egg/old/cut never:", not any(("egg" in u or "/old/" in u or "/cut/" in u) for u in r1 + r2))""")
+        # owner 14 Nov: the first round posts too; one per check, at most news_per_day (2) a day, never twice, never the skipped ones
+        self.assertIn("runs: 1 1 0 | same twice: False | egg/old/cut never: True", out)
 
     def test_news_mode_uses_news_follow_line(self):
         out = run(HEAD + """
