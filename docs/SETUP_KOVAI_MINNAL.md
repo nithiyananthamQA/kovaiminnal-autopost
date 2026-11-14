@@ -1,4 +1,4 @@
-can i# Kovai Minnal (கோவை மின்னல்) – setup from zero to live
+# Kovai Minnal (கோவை மின்னல்) – setup from zero to live
 
 This is the same system that runs **Coimbatore 360** (github.com/news360-tn/coimbatore360-autopost), copied as it runs today
 (11 Nov 2026) with our name, our images and our own accounts. Nothing in the flow changed: same workflows, same timings, same checks.
@@ -27,7 +27,7 @@ Never paste passwords or API keys into the chat: secret values are typed only in
 | 3 | Facebook Page "Kovai Minnal" (from your own Facebook profile) | Same reels on Facebook; Instagram is linked to it |
 | 4 | Cloudinary (free) | Hosts the reel videos/pictures so Instagram can fetch them |
 | 5 | Google AI Studio (Gemini), Groq, Cloudflare, NVIDIA | Free AI for writing and pictures (new keys, never Namenector's) |
-| – | Meta app | **No new app**: we reuse your "Namenector Social" app (App ID 1023752790742303) |
+| – | Meta app | Our own app **Minnal Pages** in the business portfolio **Minnal Media** (system user minnal-bot), the same as Chennai Minnal - see step 9 |
 | – | GitHub | Your current account **nithiyananthamQA**, public repository `kovaiminnal-autopost` (public = unlimited free Actions minutes) |
 
 ---
@@ -150,18 +150,32 @@ Then step 10.3 copies everything from `.env` to GitHub in one command.
 
 After every later change to `Code.gs`: paste the new `Code.local.gs`, run `setup` again, Deploy → Manage deployments → pencil → Version: **New version** → Deploy (the URL stays the same).
 
-## 9. Meta tokens (you, with the "Namenector Social" app)
+## 9. Meta tokens (you, in the browser) - Meta Unified login, exactly like Chennai Minnal
 
-**Instagram token (goes into the Apps Script, like his):**
-1. developers.facebook.com → My Apps → **Namenector Social** → Use cases → **Add use case → "Manage messaging & content on Instagram"** (Instagram API with Instagram login) – skip if it is already there.
-2. That use case → **API setup with Instagram login → 2. Generate access tokens → Add account** → log in as `@kovaiminnal` → allow.
-   If Instagram asks to accept a tester invite: Instagram app → Settings → Website permissions → Apps and websites → Tester invites → Accept, then Add account again.
-3. Permissions needed: `instagram_business_basic`, `instagram_business_content_publish`, `instagram_business_manage_comments`, `instagram_business_manage_insights`.
-4. **Generate token** → copy → Apps Script → Project Settings → Script properties → **Add** `IG_TOKEN_COIMBATORE` = the token → Save. (The script refreshes it every Sunday.)
+Our Meta app **Minnal Pages** is new, and Meta gives new apps only the "Unified login" (system-user token, `graph.facebook.com`).
+The code supports it since 14 Nov: `poster/config.json` `"instagram": {"api": "unified", "user_id": ""}`. While `user_id` is empty,
+Kovai stays on the old Instagram login; once Claude fills the id, every Kovai job uses the Unified login. Never paste a token into the chat.
 
-**Facebook Page token (goes into GitHub secrets):**
-1. developers.facebook.com/tools/explorer → Meta App: **Namenector Social** → User or Page: **Get User Access Token** → permissions `pages_show_list`, `pages_read_engagement`, `pages_manage_posts` (+ `business_management` if the Page sits in a business portfolio) → Generate → tick **only the Kovai Minnal Page** → **Copy token**.
-2. **After the repo exists (step 10.1)**, in this folder: `bash tools/meta_fb_token.sh` → paste the token (hidden). It saves `FB_PAGE_ID_COIMBATORE` and `FB_TOKEN_COIMBATORE` to the repository (it refuses the Namenector page and never touches Namenector's secrets).
+**Instagram (token goes into the Kovai Minnal bridge):**
+1. `@kovaiminnal` is a professional (Business) account and is linked to the Facebook Page Kovai Minnal
+   (Page → Settings → Linked accounts → Instagram). You do the Instagram side yourself.
+2. business.facebook.com/settings → portfolio **Minnal Media** → Accounts → **Instagram accounts** → **Add** → `@kovaiminnal`
+   (you log in). Check that Accounts → **Pages** lists Kovai Minnal.
+3. Users → **System users** → **minnal-bot** → **Assign assets**: the Instagram account `@kovaiminnal` (all tasks: content, comments, insights)
+   and the Page Kovai Minnal (full control) → Save.
+4. Same screen → **Generate token** → app **Minnal Pages** → expiry **Never** → permissions `instagram_basic`, `instagram_content_publish`,
+   `instagram_manage_comments`, `instagram_manage_insights`, `pages_show_list`, `pages_read_engagement`, `pages_manage_posts`,
+   `business_management` → Generate → **Copy** (the token starts with `EAA`).
+5. script.google.com → **Kovai Minnal bridge** (not "Minnal bridge") → Project Settings → Script properties → `IG_TOKEN_COIMBATORE`
+   = the token → Save. (The bridge never tries to refresh an `EAA` token - after the step-8 repaste with the 14 Nov Code.gs.)
+6. The `@kovaiminnal` account id: Business settings → Accounts → Instagram accounts → kovaiminnal → the number shown (starts with
+   `17841`). Send it to Claude (it is not secret). Claude writes it into `poster/config.json` → `instagram.user_id` and commits; you push.
+
+**Facebook Page token (goes into GitHub secrets):** in this folder `bash tools/meta_fb_token.sh` → paste the same minnal-bot token
+(hidden; it is used as it is). It saves `FB_PAGE_ID_COIMBATORE` and `FB_TOKEN_COIMBATORE`.
+
+**Check (posts nothing):** Actions → **ig-probe** → Run (reads the account, recent posts, reel insights and the posting quota with the
+new token) and **Facebook check** → Run. Claude reads the results before anything is switched on.
 
 ## 10. GitHub (you – Claude never pushes)
 
