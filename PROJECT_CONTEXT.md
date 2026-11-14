@@ -82,6 +82,12 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-14 | `634e481` | Kovai job timer in the bridge: startKovaiJobs every 5 min starts post / powercut / comments / pick / rasipalan / insights on their schedule times (GitHub's own timer almost never fires) |
+| 2026-11-14 | `8bfc761` | District place tag: 'not' words (Thiruporur is not Porur), check ids on facebook.com/<id>; reach tests independent of the comments_live switch |
+| 2026-11-14 | `60679bc` | district powercut: notices found |
+| 2026-11-14 | `f660389` | District pages (Chennai first): Instagram place tag from districts/locations.json + comment-reply flow in district_powercut.yml |
+| 2026-11-14 | `99fb684` | One shared minnal-bot token for every page (owner 14 Nov: same account for Chennai and Kovai) |
+| 2026-11-14 | `3343ced` | Video length like the reference (owner 14 Nov): no 6-sentence limit and no 'short reel' writer rule for power cuts - every area read, up to ~90 s |
 | 2026-11-14 | `dc79b5e` | PAGE_SETUP.md: the complete per-page checklist (Facebook page, Instagram account, portfolio + minnal-bot, tokens, switch-on, checks) as done for Chennai and Kovai; city_minnal username pattern; 5-account web limit; status table |
 | 2026-11-14 | `c17c42c` | Kovai Minnal Instagram (@kovai_minnal, id 17841410844667843) on the Unified login - Kovai workflows stay off until the owner sets IG_TOKEN_COIMBATORE and switches Kovai on |
 | 2026-11-14 | `0c754e8` | Ignore .claude/ (agent worktrees) |
@@ -106,10 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-14 | `947b373` | Chennai news like the reference: 8 + 6 + 6 = 20 a day (06 / 10 / 19 h) |
 | 2026-11-14 | `47e3728` | Like the reference (owner 14 Nov): district check every 30 min; Chennai news only in 3 rounds a day (06 / 10 / 19 h: 4 + 3 + 3 = 10), news up to 12 h old |
 | 2026-11-14 | `931d1d1` | Test: writenews off-switch checked offline (never runs the real writer) |
-| 2026-11-14 | `552d315` | Chennai news ON (owner approved the sample 14 Nov): news closing = follow line only (no send-to-friends); the 'முழு விவரம்' card no longer overlaps the yellow strip (district reels) |
-| 2026-11-13 | `3042ece` | Chennai local news (owner 13 Nov): district pages can post their other local news too - reference points system picks the best new news, 1 per check, 10 a day, max 6 h old; first run only remembers (no flood); power cuts / obituaries / other districts left out; news preface + news follow lines; writenews step in the workflow. OFF (news_live empty) until the owner approves a sample. 355 tests pass |
-| 2026-11-13 | `0dc15c6` | District reels: one common closing line for all non-power-cut news (power-cut closing unchanged) |
-| 2026-11-13 | `9fd4bf1` | District reels: non-power-cut news ends with the news follow line + share line by type (one area -> that area's people; city-wide -> friends and family); power-cut reels unchanged |
-| 2026-11-13 | `aa835a6` | Old-cut rule only when the cut day is written in the notice (a dateless notice is never blocked by the publish date) |
-| 2026-11-13 | `a089434` | Never post a power cut whose day has passed (blocks the 13 Nov Chennai test row); district check every 15 min |
 <!-- recent-changes:end -->
