@@ -82,9 +82,9 @@ def district_spec(spec, page):
         print(f"district reel: {len(sents)} sentences -> {MAX_SPOKEN} spoken (the caption has the full list)")
         sents = sents[:MAX_SPOKEN]
     spec["sentences"] = sents
-    place = str(spec.get("location") or "").strip()
-    share = page.get("share_spoken", "").format(place=place) if place and page.get("share_spoken") else ""
-    spec["outro"] = dict(spec.get("outro") or {}, say=(share + " " + follow).strip())
+    # owner 14 Nov night: the closing line never carries the news location - no "<place> பகுதியில் ... அனுப்புங்கள்" share line,
+    # only the follow line (spoken and on the end card), the same on every page
+    spec["outro"] = dict(spec.get("outro") or {}, say=follow)
     fix = lambda t: re.sub(r"மின்\s+தடை", "மின்தடை", str(t or ""))
     hook = [fix(h) for h in (spec.get("hook") or ["", ""])]
     whole = " ".join(str(x.get(k) or "") for x in sents for k in ("say", "fact"))
@@ -97,7 +97,7 @@ def district_spec(spec, page):
     spec["hook"] = hook
     if spec.get("mini"):
         spec["mini"] = fix(re.sub(r"(நாளை\s*மறுதினம்|நாளை|இன்று)\s*\(([^)]*)\)", r"\2", spec["mini"]))
-    spec["share_card"] = page.get("share_card", "").format(place=place) if place and page.get("share_card") else ""
+    spec["share_card"] = ""      # the end card shows the follow line (owner 14 Nov night: no place in the outro)
     spec["district_done"] = True
     return spec
 
@@ -126,13 +126,14 @@ for _k, _p in district_pages().items():
 # + name and the end card FOLLOW @handle, and a third brand bar inside the safe area would take room from the captions.
 # FOOTER_AT_BOTTOM = True brings the 11 Nov edge-to-edge strip back (each page keeps its footer.png).
 # owner 14 Nov evening: the footer STAYS ("footer missed") but where it is seen when the reel is opened - inside the safe area,
-# just above Instagram's name / caption / Follow (y 1085-1246) and left of the like / comment / share buttons (x 70-940).
+# right above Instagram's channel-name row of the OPENED reel (that row starts at about y 1500 of 1920; footer y 1300-1461) and
+# left of the like / comment / share buttons (x 70-940). Owner: not in the middle of the picture, not under the name.
 FOOTER_AT_BOTTOM = False
 FOOTER_SAFE = True
 FOOT_CSS = ("""
 #foot{left:0!important;right:0;bottom:0!important;width:1080px!important;height:200px!important;opacity:1!important;object-fit:fill}
 """ if FOOTER_AT_BOTTOM else """
-#foot{display:block!important;left:70px!important;right:auto!important;top:1085px!important;bottom:auto!important;width:870px!important;
+#foot{display:block!important;left:70px!important;right:auto!important;top:1300px!important;bottom:auto!important;width:870px!important;
   height:161px!important;opacity:1!important;object-fit:fill;border-radius:18px;box-shadow:0 12px 30px rgba(0,0,0,.5)}
 """ if FOOTER_SAFE else "\n#foot{display:none!important}\n")
 
@@ -345,11 +346,11 @@ body{background:radial-gradient(ellipse at 50% 30%,#13306E 0%,#071433 55%,#03091
 # area (Meta 9:16 guidance) - nothing in the top 14 % (270 px: "Reels" title, camera) or the bottom 35 % (from y 1250: account name,
 # caption, Follow button, tab bar), 70 px (>= 6 %) from each side (tall phones crop the sides), and nothing in the right 140 px below
 # y 1000 (like / comment / share / audio buttons). Colours and look stay B2; only places and sizes changed:
-#   y 276-392 header bar + logo | 410-478 location pill | 520-860 headline (hook) / fact card + yellow strip / 410-870 summary
-#   880-1070 captions (x 70-940) | 1085-1246 footer (x 70-940, owner 14 Nov) | full-width bars may bleed to the edges, their text never
+#   y 276-392 header bar + logo | 410-478 location pill | 520-1000 headline (hook) / fact card + yellow strip / 410-990 summary
+#   1092-1282 captions (x 70-940) | 1300-1461 footer (x 70-940, owner 14 Nov: right above the channel name) | full-width bars may bleed to the edges, their text never
 #   does | a story without a photo: the drawn scene sits where it is seen (SCENE_B2_CSS)
 #   Check any spec in ~20 s without rendering: tools/frame_preview.py
-SAFE = {"top": 270, "bottom": 1250, "side": 70, "buttons_x": 940, "buttons_y": 1000}
+SAFE = {"top": 220, "bottom": 1470, "side": 50, "buttons_x": 945, "buttons_y": 1160}      # owner 14 Nov night: Instagram's Reels safe-zone card (top 220, bottom 450, sides 35, buttons column 100 px)
 STYLE_B = STYLE_K + """
 #hdr{left:0;right:0;top:276px;padding:12px 220px 10px 70px;background:linear-gradient(90deg,#0B1B4D 0%,#13306E 55%,rgba(19,48,110,.0) 78%);
   border-bottom:6px solid #FFD21F;box-shadow:0 10px 30px rgba(0,0,0,.45)}
@@ -367,7 +368,7 @@ STYLE_B = STYLE_K + """
 #mini{left:-60px;right:-60px;top:784px;background:#FFD21F;color:#0B1B4D;border:0;padding:16px 136px 12px;font-size:44px;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:none;box-shadow:0 22px 50px rgba(0,0,0,.55)}
 .card{left:auto;right:140px;top:560px;width:800px}
-#cap{top:880px;height:190px;left:70px;right:140px}
+#cap{top:1092px;height:190px;left:70px;right:140px}
 .ph{text-align:center;-webkit-text-stroke:0;color:#fff;background:rgba(11,27,77,.92);border-radius:22px;padding:16px 28px 8px;
   text-shadow:none;box-shadow:0 14px 34px rgba(0,0,0,.5);font-size:58px}
 .ph span.on{color:#0B1B4D;background:#FFD21F;box-shadow:0 6px 0 #E3151B}
@@ -382,12 +383,39 @@ STYLE_B = STYLE_K + """
 #hdr::after{content:"";position:absolute;left:0;bottom:-6px;width:260px;height:6px;pointer-events:none;opacity:var(--ho,0);
   transform:translateX(var(--hx,-260px));background:linear-gradient(90deg,rgba(255,255,255,0),#fff,rgba(255,255,255,0))}
 """
+# owner 14 Nov night, layout A (picked from still frames): "we copy the reference" (big headline + tilted yellow band + red place
+# chip) and "the text covers the picture - balance is important". A keeps every element but leaves the picture clear:
+#   y 226-330 slim top strip (page name, category, date on a faint shade; logo 86 px) + a small place line at 350
+#   y ~400-980 the picture, nothing on it (measured: text covers 34-38 % of the safe zone instead of 49 %, 600 px clear)
+#   y 980-1330 ONE lower block, shown one after the other: headline in a navy panel with a red side line (no yellow band), or the
+#   fact card (82 %) / yellow strip, then the captions (44 px) ending at 1330
+#   y 1356-1467 the footer, smaller (600 x 111) - a small gap above it so two caption lines never touch it (owner)
+#   the end card has no place line (owner: the outro must not carry the news location)
+LAYOUT_A_CSS = """
+#shade{background:linear-gradient(180deg,rgba(6,14,43,.70) 0%,rgba(6,14,43,0) 17%,rgba(6,14,43,0) 48%,rgba(6,14,43,.55) 60%,rgba(6,14,43,.92) 100%)!important}
+#hdr{top:226px!important;padding:8px 160px 8px 50px!important;border-bottom:0!important;box-shadow:none!important;
+  background:linear-gradient(90deg,rgba(6,14,43,.62) 0%,rgba(6,14,43,.35) 55%,rgba(6,14,43,0) 80%)!important}
+#hdr .nm{font-size:38px!important}
+#plogo{top:222px!important;right:50px!important;width:86px!important;height:86px!important}
+#pin{top:350px!important;left:50px!important;transform:scale(.72)!important;transform-origin:0 0;background:rgba(0,0,0,.55)!important;color:#fff!important;box-shadow:none!important}
+#hook{top:985px!important;left:50px!important;right:50px!important;background:rgba(8,18,52,.92);border-left:10px solid #E3151B;border-radius:18px;padding:16px 24px 18px}
+#hook::before{display:none!important}
+#hook .h1{font-size:58px!important;text-shadow:none!important}
+#hook .h2{background:none!important;color:#FFD21F!important;transform:none!important;box-shadow:none!important;font-size:46px!important;margin:6px 0 0!important;padding:0!important}
+#mini{left:50px!important;right:50px!important;top:995px!important;border-radius:14px;font-size:38px!important;padding:12px 26px 8px!important}
+.card{top:980px!important;left:50px!important;right:auto!important;width:900px!important;transform:scale(.82)!important;transform-origin:0 0}
+#cap{top:1180px!important;height:150px!important;left:50px!important;right:140px!important}
+.ph{font-size:44px!important;padding:10px 22px 4px!important;background:rgba(0,0,0,.62)!important}
+#foot{top:1356px!important;left:50px!important;width:600px!important;height:111px!important}
+#sum{top:585px!important}
+#end .e3{display:none!important}
+"""
 # the B2 safe-area sizes + the serious opening (after reel4's own renderAt / fitAll):
 # - frame 1 = the settled headline: no slide-in, no lightning flash over it (ZAP_JS: no flash until the headline leaves), the pin
 #   already in place - a hard TV cut, so the place + the key fact are readable in the very first frame and in Instagram's preview
 # - text sizes are capped to their zone (headline <= 300 + 180 px, strip 170, captions 196 - fitted with room for the highlighted
-#   word, card text 170); the headline block is scaled down when taller than 520-860, the summary card when taller than
-#   410-870, and the end card's text shrinks until it fits 270-1250
+#   word, card text 170); the headline block is scaled down when taller than 520-1000, the summary card when taller than
+#   410-990, and the end card's text shrinks until it fits 270-1250
 # - while the summary shows, the yellow strip and the pin step aside (its first row is the place) - Kovai and district pages alike
 SAFE_JS = """<script>(function(){
 const _fit=window.fitAll;
@@ -406,8 +434,8 @@ window.fitAll=function(){_fit();
   const end=document.getElementById('end'), kids=end?[...end.children]:[], tall=()=>kids.reduce((a,k)=>a+k.offsetHeight+22,-22);
   for(let n=0;kids.length&&tall()>960&&n<30;n++)kids.forEach(k=>{if(k.tagName==='IMG'){k.style.width=k.style.height=Math.round(k.offsetWidth*0.95)+'px';}
     else k.style.fontSize=(parseFloat(getComputedStyle(k).fontSize)*0.95)+'px';});
-  const sm=document.getElementById('sum'); window.__sumK=sm?Math.min(1,460/sm.offsetHeight):1;
-  window.__hookK=Math.min(1,340/document.getElementById('hook').offsetHeight);};
+  const sm=document.getElementById('sum'); window.__sumK=sm?Math.min(1,580/sm.offsetHeight):1;
+  window.__hookK=Math.min(1,480/document.getElementById('hook').offsetHeight);};
 const _r=window.renderAt;
 window.renderAt=function(t){_r(t);
   const c01=x=>Math.max(0,Math.min(1,x));
@@ -479,6 +507,8 @@ def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
         html = html.replace(f'<img id="foot" src="{old_foot}">', f'<img id="foot" src="file://{wide.as_posix()}">', 1)
     if wide.exists() or not FOOTER_AT_BOTTOM:
         html = html.replace("</style>", FOOT_CSS + "</style>", 1)
+    if style == "B2":      # layout A (owner 14 Nov night) - after FOOT_CSS so its footer size wins
+        html = html.replace("</style>", LAYOUT_A_CSS + "</style>", 1)
     if page.get("district"):      # owner 13 Nov: the end card asks to SEND the video to that area's people (the FOLLOW button stays)
         import re as _re
         card = spec.get("share_card") or f'⚡ {page["end_card"]} Follow செய்யுங்கள் 📌'
@@ -513,8 +543,10 @@ V4.pick_voice = pick_voice
 
 if __name__ == "__main__":
     _key = sys.argv[3] if len(sys.argv) > 3 else "coimbatore"
-    if R.PAGES.get(_key, {}).get("district"):      # owner 12 Nov: the closing follow line in the SAME news voice (Tamil), no English voice
-        V4.english_outro = lambda work, idx, voice: print("closing share + follow line in the news voice (district page)")
+    # owner 12 Nov (districts) + 14 Nov night (every page, Kovai too): the closing follow line in the SAME news voice (Tamil Anbu),
+    # never a second English voice
+    V4.english_outro = lambda work, idx, voice: print("closing follow line in the news voice")
+    if R.PAGES.get(_key, {}).get("district"):
         _sp = Path(sys.argv[1])
         _sp.write_text(json.dumps(district_spec(json.loads(_sp.read_text()), R.PAGES[_key]), ensure_ascii=False))
     V4.main(sys.argv[1], sys.argv[2], _key)
