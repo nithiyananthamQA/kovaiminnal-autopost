@@ -1,154 +1,126 @@
 {
  "log": [
   "earlier stories still waiting for images: []",
-  "instagram check: 27 recent posts read from the page",
+  "instagram check: 30 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/iron-wire-thief-arrested/4377051",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/narasampathy-channel-breach-and-selvachintamani-flood-8-years-of-negligence/4377108",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/power-line-in-the-middle-of-the-road-in-shivanagar/4377017",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/special-medical-camp-for-tribal-people/4376898",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/transport-workers-protest-against-authorities-for-taking-leave/4376902",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/vidya-vikasini-students-selected-for-national-level-competition/4376749",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/108-ambulance-driver-arrested-for-snatching-jewellery-from-woman/4377270",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/we-need-to-build-a-roundabout/4377174",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/school-students-take-part-in-yoga-competition/4376752",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/children-s-day-celebration-at-swastik-school/4377084",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/don-t-miss-out/4377173",
+  "manual link added: https://pukaarpetti.dailythanthi.com/road/news-68554",
   "candidate filter: collected=6",
   "to write: 6 Coimbatore district candidates (max 6 stories)",
   "round: top 6 of 6 candidates",
   "candidates waiting: 6 Coimbatore; time left 79 min",
+  "try (N) manual=True: https://pukaarpetti.dailythanthi.com/road/news-68554",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 3})",
   "posting job started at once",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 5})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 7})",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 9})",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 10})",
-  "candidate loop ended: left 0, tried={'N': 6}, done={'N': 6}, time left 73 min",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 12})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 15})",
+  "candidate loop ended: left 0, tried={'N': 6}, done={'N': 6}, time left 72 min",
   "filed: 6 Coimbatore district stories (target 6), reels only",
   "queue: 0 news waiting to be written",
   "All News sheet: {\"ok\":true,\"added\":6,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.6-flash",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.6-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
-  "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please ch",
   "ok gemini/gemini-3-flash-preview (10s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3.6-flash (13s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
+  "dead for this round: gemini/gemini-3-flash-preview",
+  "ok gemini/gemini-3.6-flash (16s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\"",
+  "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high ",
+  "ok gemini/gemini-3-flash-preview (10s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please ch",
   "switching away from gemma/gemma-4-26b-a4b-it for 10 min",
   "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high dema",
-  "ok gemma/gemma-4-26b-a4b-it (25s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check ",
+  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high dema",
   "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check ",
   "switching away from gemma/gemma-4-31b-it for 10 min",
-  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high dema",
-  "ok groq/openai/gpt-oss-120b (4s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok groq/openai/gpt-oss-120b (5s)",
+  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check ",
+  "switching away from gemma/gemma-4-31b-it for 10 min",
+  "ok groq/openai/gpt-oss-120b (6s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high dema",
-  "switching away from gemma/gemma-4-31b-it for 10 min",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
+  "ok groq/qwen/qwen3.8-27b (0s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high dema",
-  "switching away from gemma/gemma-4-31b-it for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok groq/openai/gpt-oss-120b (4s)",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok gemma/gemma-4-26b-a4b-it (71s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (11s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (85s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)",
-  "poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (29s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (81s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (5s)",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (24s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)",
-  "poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-  "ok groq/qwen/qwen3.8-27b (4s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (27s)",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "ok groq/qwen/qwen3.8-27b (3s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (64s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)",
+  "poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+  "ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (87s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (24s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (24s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: Expecting ',' delimiter: line 8 column 731 (char 1099)",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (12s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: Expecting ',' delimiter: line 1 column 948 (char 947)",
   "poor answer - skipped for 30 min: cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct",
+  "ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (86s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (31s)",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (30s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "fail cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: Expecting ',' delimiter: line 1 column 425 (char 424)",
-  "poor answer - skipped for 30 min: cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
@@ -156,356 +128,409 @@
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "கோவையில் அரசு போக்குவரத்து கழக பணியாளர்கள் அவதி: விடுப்பு வழங்க அதிகாரிகள் மறுப்பதாக புகார்",
-   "english_headline": "TNSTC Coimbatore technical staff complain of high workload and leave denial by officials despite no such government order",
-   "category": "Government & Services",
-   "location": "Coimbatore city, Coimbatore district",
-   "importance": "Medium",
-   "scope": "district",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "போக்குவரத்து",
-    "loc": "கோவை",
-    "hl1": "கோவை: போக்குவரத்து ஊழியர்கள் அவதி",
-    "hl2": "விடுப்பு தர அதிகாரிகள்",
-    "slides": [
-     {
-      "title": "என்ன பிரச்சனை?",
-      "lines": [
-       "கோவை மண்டல <b>17 டிப்போக்களில்</b> பணிச்சுமை அதிகரிப்பு",
-       "தொழில்நுட்ப பணியாளர்களுக்கு விடுப்பு மறுப்பு",
-       "காலிப்பணியிடங்களால் ஊழியர்கள் அவதி"
-      ]
-     },
-     {
-      "title": "ஊழியர்கள் புகார்",
-      "lines": [
-       "ஆண்டுக்கு <b>60 நாட்கள்</b> விடுப்பு உரிமை உள்ளது",
-       "அவசர காலத்திலும் விடுப்பு தர அதிகாரிகள் மறுப்பு",
-       "ஒருவர் <b>2 பேரின்</b> வேலையைச் செய்யும் நிலை"
-      ]
-     },
-     {
-      "title": "RTI தகவல்",
-      "lines": [
-       "மாதம் 4 நாட்களுக்கு மேல் விடுப்பு எடுக்கத் தடை இல்லை",
-       "அரசு தரப்பில் அப்படி எந்த உத்தரவும் இல்லை",
-       "பணிச்சுமையை குறைக்க ஊழியர்கள் கோரிக்கை"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோவையில் அரசு போக்குவரத்து கழக தொழில்நுட்ப பணியாளர்கள் விடுப்பு கிடைக்காமல் அவதிப்படுகின்றனர். கோவை மண்டலத்தில் உள்ள 17 டிப்போக்களில் ஆயிரத்திற்கும் மேற்பட்ட தொழில்நுட்ப பணியாளர்கள் பணிபுரிகின்றனர். ஓய்வு காரணமாக காலிப்பணியிடங்கள் அதிகரித்துள்ளதால் ஊழியர்களுக்கு பணிச்சுமை கூடியுள்ளது. இதனால் அவசர காலங்களில் கூட விடுப்பு வழங்க அதிகாரிகள் மறுப்பதாக பணியாளர்கள் புகார் தெரிவிக்கின்றனர். ஆண்டுக்கு 60 நாட்கள் விடுப்பு எடுக்க உரிமை இருந்தும் ஆள் பற்றாக்குறையை காரணம் காட்டி அதிகாரிகள் அனுமதிப்பதில்லை என்று கூறப்படுகிறது. ஒரு பணியாளர் இரண்டு பேரின் வேலையைச் செய்வதால் அடிக்கடி உடல்நலம் பாதிக்கப்படுவதாகவும் அவர்கள் வேதனை தெரிவிக்கின்றனர். 4 நாட்களுக்கு மேல் விடுப்பு எடுக்க வேண்டும் என்றால் தலைமை அலுவலகம் செல்லுமாறு அதிகாரிகள் மிரட்டுவதாகத் தெரிகிறது. ஆனால் மாதம் 4 நாட்களுக்கு மேல் விடுப்பு எடுக்கக்கூடாது என்று எந்த உத்தரவும் பிறப்பிக்கப்படவில்லை என தகவல் அறியும் உரிமைச் சட்டத்தின் கீழ் தெரியவந்துள்ளது. வேலைவாய்ப்பு அலுவலகம் மூலம் புதிய ஆட்களை நியமிக்க ஊழியர்கள் கோரிக்கை விடுத்துள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚌 கோவையில் அரசு போக்குவரத்து கழக பணியாளர்கள் அவதி: விடுப்பு வழங்க அதிகாரிகள் மறுப்பதாக புகார்\n\n📰 முழு விவரம்:\nதமிழ்நாடு அரசு போக்குவரத்து கழக கோவை மண்டலத்தில் உள்ள 17 டிப்போக்களில் ஆயிரத்திற்கும் மேற்பட்ட தொழில்நுட்ப பணியாளர்கள் பணிபுரிகின்றனர். காலிப்பணியிடங்கள் அதிகரித்துள்ளதால் ஊழியர்களுக்கு பணிச்சுமை அதிகரித்துள்ளது. இதனால் மருத்துவ சிகிச்சை போன்ற அவசர காலங்களில் கூட விடுப்பு வழங்க அதிகாரிகள் மறுப்பதாக ஊழியர்கள் புகார் கூறுகின்றனர். ஆண்டுக்கு 60 நாட்கள் விடுப்பு எடுக்க உரிமை இருந்தும், ஆள் பற்றாக்குறையை காரணம் காட்டி அதிகாரிகள் அனுமதிப்பதில்லை என கூறப்படுகிறது. மாதம் 4 நாட்களுக்கு மேல் விடுப்பு எடுக்கக்கூடாது என எந்த அரசு உத்தரவும் இல்லை என்பது தகவல் அறியும் உரிமைச் சட்டத்தின் கீழ் உறுதியாகியுள்ளது.\n\n📍 இடம்: கோவை மண்டல 17 டிப்போக்கள்\n👷 கோரிக்கை: காலிப்பணியிடங்களை நிரப்ப வேண்டும்\nℹ️ ஊழியர்கள் கவலை: பணிச்சுமையால் உடல்நலம் பாதிப்பு\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்\n\nTNSTC Coimbatore staff leave issue | Coimbatore transport news\n📍 Coimbatore | 15 November 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #TNSTC #கோவை #CoimbatoreNews",
-   "prompts": "A TNSTC technical staff member works on a bus engine in a crowded depot in Coimbatore city, with many buses parked in the background and other staff members working around him. The depot is filled with the sound of machinery and the smell of diesel fuel. The staff member is wearing a uniform and has a look of concentration on his face. The scene is set during the daytime, with natural light pouring in through the depot windows. The camera is at eye level, showing the staff member and the buses from a wide angle, with a 35 mm lens to capture the details of the scene. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up shot of a calendar or a leave application form on a table in the TNSTC depot office, with a pen or a pencil lying next to it. The calendar or form is marked with crosses or notes, indicating the denied leave requests. The background is blurred, with a hint of the depot office furniture and equipment. The camera is at a slightly high angle, looking down on the calendar or form, with a narrow depth of field to focus attention on the document. The lighting is soft and natural, with a slight shadow on the table to add depth to the scene. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/transport-workers-protest-against-authorities-for-taking-leave/4376902",
-   "published": "2026-11-15T17:54:32+05:30",
-   "verification": "DRAFT (gemini/gemini-3-flash-preview) - fact-check: no problems found",
-   "note": "free-model draft gemini/gemini-3-flash-preview, 1 attempt(s), 0 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794753895/kovaiminnal/kgdrzk2e0cjvmheruq2z.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794753898/kovaiminnal/p5ic9iodydatvoluldww.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "வால்பாறை பரமன்கடவு செட்டில்மெண்டில் பழங்குடியின மக்களுக்கான சிறப்பு மருத்துவ முகாம்",
-   "english_headline": "Special medical camp held for tribal people at Paramankadavu settlement, Valparai",
-   "category": "Health",
-   "location": "Paramankadavu settlement, Valparai, Coimbatore district",
-   "importance": "Medium",
-   "scope": "",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "மருத்துவ முகாம்",
-    "loc": "வால்பாறை",
-    "hl1": "வால்பாறையில் சிறப்பு மருத்துவ முகாம்",
-    "hl2": "50-க்கும் மேற்பட்டோர்",
-    "slides": [
-     {
-      "title": "எங்கு நடந்தது?",
-      "lines": [
-       "வால்பாறை அருகே <b>பரமன்கடவு</b> செட்டில்மெண்ட்",
-       "முடீஸ் அரசு ஆரம்ப சுகாதார நிலையத்தின் சார்பில்",
-       "பழங்குடியின மக்களுக்காக நடைபெற்றது"
-      ]
-     },
-     {
-      "title": "என்ன சிகிச்சைகள்?",
-      "lines": [
-       "உயர் ரத்த அழுத்தம் மற்றும் சர்க்கரை நோய்",
-       "புற்றுநோய் பரிசோதனைகள் மற்றும் ரத்தசோகை",
-       "இலவச மருந்துகள் மற்றும் மாத்திரைகள் வழங்கப்பட்டன"
-      ]
-     },
-     {
-      "title": "சவாலான பயணம்",
-      "lines": [
-       "மருத்துவக் குழுவினர் <b>3 மூங்கில் காடுகளை</b> கடந்து சென்றனர்",
-       "50-க்கும் மேற்பட்ட பழங்குடியின மக்கள் பங்கேற்றனர்",
-       "வட்டார மருத்துவ அலுவலர் தலைமையில் நடைபெற்றது"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "வால்பாறை பரமன்கடவு செட்டில்மெண்டில் பழங்குடியின மக்களுக்காக சிறப்பு மருத்துவ முகாம் நடைபெற்றது. முடீஸ் அரசு ஆரம்ப சுகாதார நிலையத்தின் சார்பில் இந்த முகாம் நடத்தப்பட்டது. மருத்துவக் குழுவினர் மூன்று மூங்கில் காடுகளைக் கடந்து நடந்து சென்று பழங்குடியின மக்களுக்குச் சிகிச்சை அளித்தனர். இந்த முகாமில் உயர் ரத்த அழுத்தம், சர்க்கரை நோய் மற்றும் ரத்தசோகை உள்ளிட்ட பல்வேறு நோய்களுக்குச் சிகிச்சை அளிக்கப்பட்டது. மேலும் மார்பக புற்றுநோய் மற்றும் வாய்ப்புற்றுநோய் பரிசோதனைகளும் செய்யப்பட்டன. முகாமில் பங்கேற்ற மக்களுக்குத் தேவையான மருந்துகளும் மாத்திரைகளும் இலவசமாக வழங்கப்பட்டன. இந்த முகாமில் 50-க்கும் மேற்பட்ட பழங்குடியின மக்கள் கலந்து கொண்டனர். வட்டார மருத்துவ அலுவலர் பாபுலட்சுமணன் தலைமையில் டாக்டர் கார்த்திக்ராஜா முகாமைத் தொடங்கி வைத்தார். சுகதார ஆய்வாளர்கள் திருமலை, துரைப்பாண்டி மற்றும் செவிலியர்கள் முனியம்மாள், துர்க்கா, மூகாம்பிகை ஆகியோர் இதில் பங்கேற்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🩺 வால்பாறை பரமன்கடவு செட்டில்மெண்டில் பழங்குடியின மக்களுக்கான சிறப்பு மருத்துவ முகாம் நடைபெற்றது\n\n📰 முழு விவரம்:\nவால்பாறை அருகே உள்ள முடீஸ் அரசு ஆரம்ப சுகாதார நிலையத்தின் சார்பில், பரமன்கடவு செட்டில்மெண்ட் பகுதியில் வசிக்கும் பழங்குடியின மக்களுக்காக சிறப்பு மருத்துவ முகாம் நடத்தப்பட்டது. மருத்துவக் குழுவினர் மூன்று மூங்கில் காடுகளைக் கடந்து நடந்து சென்று இந்த மக்களுக்குச் சிகிச்சை அளித்தனர். இந்த முகாமில் உயர் ரத்த அழுத்தம், சர்க்கரை நோய், ரத்தசோகை மற்றும் புற்றுநோய் பரிசோதனைகள் செய்யப்பட்டன. பங்கேற்ற மக்களுக்குத் தேவையான மருந்துகளும் மாத்திரைகளும் வழங்கப்பட்டன. இந்த முகாமில் 50-க்கும் மேற்பட்ட பழங்குடியின மக்கள் கலந்து கொண்டனர். வட்டார மருத்துவ அலுவலர் பாபுலட்சுமணன் தலைமையில் டாக்டர் கார்த்திக்ராஜா முகாமைத் தொடங்கி வைத்தார்.\n\n📍 இடம்: பரமன்கடவு செட்டில்மெண்ட், வால்பாறை\n🏥 நடத்தினவர்: முடீஸ் அரசு ஆரம்ப சுகாதார நிலையம்\n👥 பங்கேற்பாளர்கள்: 50-க்கும் மேற்பட்ட பழங்குடியின மக்கள்\n👨‍⚕️ குழுவினர்: சுகதார ஆய்வாளர்கள் திருமலை, துரைப்பாண்டி மற்றும் செவிலியர்கள் முனியம்மாள், துர்க்கா, மூகாம்பிகை\n\nSpecial medical camp for tribal people in Valparai | Coimbatore news\n📍 பரமன்கடவு, வால்பாறை, கோவை மாவட்டம் | 15 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Valparai #மருத்துவம் #CoimbatoreNews",
-   "prompts": "A doctor examines a tribal person's blood pressure in a medical camp. The camp is set up in a clearing in the dense forest of Paramankadavu settlement, Valparai, with the Western Ghats visible in the far background. The doctor and the health workers, dressed in medical uniforms, are seen from behind, attending to the tribal people who are seated on wooden benches. Medical tools and medicines are laid out on a table. It is daylight with bright sunlight filtering through the trees. The camera is at eye level, 35 mm, wide enough to show the camp and the surrounding forest. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the medical tools and medicines laid out on a table at the medical camp. The table is covered with a white cloth, and the medical tools include a blood pressure monitor, stethoscope, and various medicines in packets and bottles. The background shows the dense forest of Paramankadavu settlement, Valparai, with the Western Ghats visible in the far background. The camera is slightly high, 35 mm, focusing on the medical tools and medicines. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/special-medical-camp-for-tribal-people/4376898",
-   "published": "2026-11-15T17:54:22+05:30",
-   "verification": "DRAFT (gemma/gemma-4-26b-a4b-it) - fact-check: no problems found",
-   "note": "free-model draft gemma/gemma-4-26b-a4b-it, 1 attempt(s), 0 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794753990/kovaiminnal/ejmbmq9ervpah0qrz3o5.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794753994/kovaiminnal/qfjnfwuytxi95phoqx3u.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "சிவாநகர் செல்லும் சாலையில் நடுவே மின்கம்பம்: வாகன ஓட்டிகள் அவதி",
-   "english_headline": "Electric pole in middle of road on Sivanagar route in Kalappatti; motorists struggle",
-   "category": "Civic Issues",
-   "location": "Kalappatti, Coimbatore district",
+   "tamil_headline": "கோவை அவினாசி சாலை பழைய மேம்பாலம் கீழ் ரவுண்டானாவில் பள்ளம்: சீரமைப்பு கோரிக்கை",
+   "english_headline": "Dangerous pothole at the roundabout below the old flyover on Coimbatore Avinashi Road; riders falling and getting hurt, officials urged to repair it",
+   "category": "Roads & Transport",
+   "location": "Avinashi Road roundabout below the old flyover, Coimbatore city, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
     "cat": "சாலை பிரச்சனை",
-    "loc": "காளப்பட்டி",
-    "hl1": "காளப்பட்டி: ரோட்டின் நடுவே மின்கம்பம்",
-    "hl2": "வாகன ஓட்டிகள் அவதி",
+    "loc": "கோவை அவினாசி சாலை",
+    "hl1": "கோவை அவினாசி சாலையில் ஆபத்தான பள்ளம்",
+    "hl2": "இருசக்கர வாகனங்கள் விழுந்து",
     "slides": [
      {
       "title": "எங்கே?",
       "lines": [
-       "காளப்பட்டி, சரவணம்பட்டி சாலையில் உள்ளது",
-       "அரசு உயர்நிலைப்பள்ளி மதிற்சுவரை ஒட்டியபடி",
-       "சிவாநகர் செல்லும் ரோட்டின் நடுவே மின்கம்பம்"
+       "கோவை அவினாசி ரோடு பழைய மேம்பாலத்தின் கீழ் ரவுண்டானா",
+       "சாலை மிகவும் மோசமான நிலையில் உள்ளது",
+       "அங்கு ஆபத்தான முறையில் பள்ளம் உருவாகி வருகிறது"
       ]
      },
      {
       "title": "என்ன பிரச்சனை?",
       "lines": [
-       "ரோட்டின் நடுவே மின்கம்பம் அமைந்துள்ளது",
-       "இதனால் வாகன ஓட்டிகள் அவதிப்படுகின்றனர்",
-       "பொதுமக்கள் புகார் தெரிவித்துள்ளனர்"
+       "இருசக்கர வாகன ஓட்டிகள் தவறி விழுந்து காயம் அடைகின்றனர்",
+       "பள்ளத்தால் வாகனங்கள் வழுக்கி விழும் ஆபத்து",
+       "வாகன ஓட்டிகள் கவனமாகச் செல்ல வேண்டும்"
+      ]
+     },
+     {
+      "title": "கோரிக்கை",
+      "lines": [
+       "அந்தச் சாலையை உடனடியாகச் சீரமைக்க வேண்டும்",
+       "அதிகாரிகள் உடனடியாக நடவடிக்கை எடுக்க வேண்டும்",
+       "பொதுமக்களின் பாதுகாப்பு முக்கியம்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "காளப்பட்டியில் சிவாநகர் செல்லும் ரோட்டின் நடுவே மின்கம்பம் அமைந்துள்ளதால் வாகன ஓட்டிகள் அவதிப்படுகின்றனர். காளப்பட்டி, சரவணம்பட்டி சாலையில், அரசு உயர்நிலைப்பள்ளி மதிற்சுவரை ஒட்டியபடி இந்த மின்கம்பம் உள்ளது. சாலையின் நடுவே மின்கம்பம் இருப்பதால் வாகனங்கள் செல்வதில் சிக்கல் ஏற்படுகிறது. இது குறித்து பொதுமக்கள் புகார் தெரிவித்துள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚧 காளப்பட்டியில் ரோட்டின் நடுவே மின்கம்பம்: வாகன ஓட்டிகள் அவதி\n\n📰 முழு விவரம்:\nகாளப்பட்டி, சரவணம்பட்டி சாலையில், அரசு உயர்நிலைப்பள்ளி மதிற்சுவரை ஒட்டியபடி சிவாநகர் செல்லும் ரோட்டின் நடுவே மின்கம்பம் அமைந்துள்ளது. இதனால் வாகன ஓட்டிகள் அவதிப்படுகின்றனர். இது குறித்து பொதுமக்கள் புகார் தெரிவித்துள்ளனர்.\n\n📍 இடம்: காளப்பட்டி, சரவணம்பட்டி சாலை\n🗓️ நாள்: 15 நவம்பர் 2026\n\nKalappatti electric pole in middle of road | Coimbatore news\n📍 காளப்பட்டி, கோவை மாவட்டம் | 15 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Kalappatti #CoimbatoreNews #கோவை",
-   "prompts": "A row of two-wheelers and a car slow down and weave around a concrete electric pole standing in the middle of a narrow road in Kalappatti, Coimbatore. The road runs past the long compound wall of a government high school, its plastered wall painted in faded cream and green. Riders in shirts and trousers, one in a veshti, lean their bikes to squeeze through the gap beside the pole. Traffic is light to moderate, daylight, a mild overcast sky, with the low Western Ghats hills faintly visible in the far background. The camera is at eye level, about 35 mm, wide enough to show the pole in the centre of the road, the school wall on one side and the stretch of road ahead, with the riders seen from behind and small in frame. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of the concrete electric pole planted in the middle of the road, its base set in cracked tarmac with a small patch of broken edges and loose gravel around it. A two-wheeler's front wheel and handlebar are just visible at the edge of frame, passing narrowly beside the pole. Behind it, the grey compound wall of a government school runs along the roadside. Daylight, soft light, a few dry leaves on the road surface. The camera is low and close, around 35 mm, focused on the pole and the cramped gap, with the rider's legs and bike seen from behind and slightly blurred. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/power-line-in-the-middle-of-the-road-in-shivanagar/4377017",
-   "published": "2026-11-15T18:43:07+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: slides must have 3 or 4 items; reel_script has 39 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794754092/kovaiminnal/roioauom19uqxhfqbp9c.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794754096/kovaiminnal/gpvdobp4redxw7prjbn6.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "நெகமத்தில் இரும்பு கம்பி திருடிய நபர் கைது",
-   "english_headline": "Man arrested for stealing iron rods from Negamam Madhuraiveeran temple construction site",
-   "category": "Crime & Safety",
-   "location": "Negamam, Coimbatore district",
-   "importance": "Low",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "குற்றம்",
-    "loc": "நெகமம்",
-    "hl1": "நெகமத்தில் இரும்பு கம்பி திருடியவர் கைது",
-    "hl2": "ரூ.7,000 மதிப்பு கம்பிகள்",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "நெகமம் மதுரைவீரன் கோவில் கட்டுமானப் பணியில் திருட்டு",
-       "கோவிலில் இருந்த இரும்பு கம்பிகள் திருடப்பட்டன",
-       "நெகமம் போலீசாருக்கு தகவல் கிடைத்தது"
-      ]
-     },
-     {
-      "title": "யார் கைது?",
-      "lines": [
-       "அதே பகுதியைச் சேர்ந்த கார்பெண்டர் சண்முகம், 40 வயது",
-       "விசாரணையில் கம்பிகள் திருடியது உறுதியானது",
-       "சண்முகம் போலீசாரால் கைது செய்யப்பட்டார்"
-      ]
-     },
-     {
-      "title": "மதிப்பு எவ்வளவு?",
-      "lines": [
-       "திருடப்பட்ட கம்பிகளின் மதிப்பு <b>ரூ.7,000</b>",
-       "இதன் அடிப்படையில் வழக்குப் பதிவு செய்யப்பட்டது",
-       "கோவில் பணிப் பொருட்களைப் பாதுகாக்க வேண்டும்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "நெகமத்தில் கோவில் கட்டுமானப் பணியிலிருந்த இரும்புக் கம்பிகள் திருடப்பட்டன. நெகமம் மதுரைவீரன் கோவிலில் கட்டுமானப் பணி நடைபெற்று வருகிறது. அதே பகுதியைச் சேர்ந்த கார்பெண்டர் சண்முகம், 40 வயது, கோவிலில் இருந்த இரும்புக் கம்பிகளைத் திருடினார். இது குறித்து நெகமம் போலீசாருக்கு தகவல் கிடைத்தது. விசாரணையில், ரூ.7,000 மதிப்புள்ள இரும்புக் கம்பிகளைத் திருடியது உறுதியானது. இதன் அடிப்படையில் சண்முகத்தை போலீசார் கைது செய்தனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 நெகமத்தில் கோவில் கட்டுமானப் பணியிலிருந்து இரும்பு கம்பி திருடிய நபர் கைது\n\n📰 முழு விவரம்:\nநெகமம் மதுரைவீரன் கோவில் கட்டுமானப் பணி நடைபெற்று வரும் நிலையில், அதே பகுதியைச் சேர்ந்த கார்பெண்டர் சண்முகம், 40 வயது, கோவிலில் இருந்த இரும்புக் கம்பிகளைத் திருடினார். இது குறித்து நெகமம் போலீசாருக்கு தகவல் கிடைத்தது. விசாரணையில் கம்பிகள் திருடியது உறுதியானதைத் தொடர்ந்து சண்முகம் கைது செய்யப்பட்டார்.\n📍 இடம்: நெகமம் மதுரைவீரன் கோவில் கட்டுமானப் பணி நடைபெறும் பகுதி\n👮 நடவடிக்கை: நெகமம் போலீசார் சண்முகத்தைக் கைது செய்தனர்\n🔎 திருடப்பட்ட கம்பிகளின் மதிப்பு ரூ.7,000\n\nMan arrested for stealing iron rods from Negamam temple site | Coimbatore news\n📍 நெகமம், கோவை மாவட்டம் | 15 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Negamam #குற்றம் #CoimbatoreNews",
-   "prompts": "A group of Tamil Nadu police in khaki uniform stand beside a 40-year-old carpenter, seen from behind and at a distance, as he is taken into custody at the construction site of a village temple in Negamam, Coimbatore district. Behind them is a half-built temple structure with bare brick walls, concrete pillars and bamboo scaffolding, with a few stacks of iron rods piled on the ground. The area looks like a rural village outskirts, with dry earth, a few palm trees and a small Tamil village backdrop. The arrested man wears a plain shirt and veshti, his hands visible but not restrained for dramatic effect. Daylight, clear sky. Camera at eye level, 35 mm, wide enough to show the temple site and the police presence without showing any face clearly. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a neat pile of seized iron rods (construction steel bars) laid out on the ground or a wooden table at a village temple construction site in Negamam, Coimbatore district. Some rods are bundled together, rusted and dusty, with a plank of wood and loose cement sacks nearby. Behind the rods, slightly out of focus, a khaki-uniformed police officer's boots and the edge of a plastic chair are visible. Bare brick wall and sunlit earth in the background, daylight, late morning light. Camera slightly high, 50 mm, shallow depth of field to highlight the steel bars as the evidence of the theft. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/iron-wire-thief-arrested/4377051",
-   "published": "2026-11-15T19:06:20+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 51 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block); numbers not found in the article: 7, 7000",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794754132/kovaiminnal/rbnb1tj80hwkg9j9peko.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794754136/kovaiminnal/obprfpsn8hmyzsfvbchb.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவை செல்வசிந்தாமணி குளத்தில் 8 ஆண்டாக தொடரும் வெள்ளப் பிரச்சினை",
-   "english_headline": "Coimbatore Selvasinthamani lake floods every year for 8 years as Narasampathi canal breach remains unrepaired",
-   "category": "Civic Issues",
-   "location": "Selvapuram and Selvasinthamani lake area, Coimbatore city, Coimbatore district",
-   "importance": "High",
-   "scope": "",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "வெள்ளப் பிரச்சினை",
-    "loc": "செல்வபுரம், கோவை",
-    "hl1": "செல்வசிந்தாமணியில் 8 ஆண்டு வெள்ளம்",
-    "hl2": "நரசாம்பதி வாய்க்கால் உடைப்பு",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "கடந்த மாதம் கனமழையில் செல்வசிந்தாமணி குளம் நிரம்பியது",
-       "வீடுகளுக்குள் மழைநீர் புகுந்தது",
-       "செல்வபுரம் பகுதியே வெள்ளக்காடாக மாறியது"
-      ]
-     },
-     {
-      "title": "ஏன் வெள்ளம்?",
-      "lines": [
-       "குளத்தில் இருந்து உபரிநீர் செல்லும் வாய்க்கால் குறுகலாக",
-       "நரசாம்பதி அருகே வாய்க்கால் ஒரு பகுதி <b>7 ஆண்டாக</b> உடைந்துள்ளது",
-       "உடைப்பை சரி செய்யாததால் நீர் சித்திரை சாவடி வழியாக"
-      ]
-     },
-     {
-      "title": "அதிகாரிகள் நிலை",
-      "lines": [
-       "பலமுறை புகாரளித்தும் நீர்வளத்துறை சரி செய்யவில்லை",
-       "மாநகராட்சி 'சிறப்பு திட்டம்' என மீண்டும் கூறுகிறது",
-       "திட்டம் இதுவரை நிறைவேறவில்லை"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "செல்வசிந்தாமணி குளம் நிரம்பி, செல்வபுரம் பகுதியில் வீடுகளுக்குள் மழைநீர் புகுந்தது. கடந்த மாதம் பெய்த கனமழையில் இந்த நிலை ஏற்பட்டது. ஒவ்வொரு ஆண்டும் மழை பெய்யும்போது இதே வெள்ளம் ஏற்படுவது வழக்கமாகிவிட்டது. குளத்தில் இருந்து உபரிநீர் செல்லும் வாய்க்கால் குறுகலாக உள்ளது. மருதமலையில் இருந்து வரும் நீரை நேரடியாக நொய்யலுக்கு அனுப்ப நரசாம்பதி அருகே ஒரு வாய்க்கால் கட்டப்பட்டது. அதன் ஒரு பகுதி 7 ஆண்டுகளாக உடைந்துள்ளது. இந்த உடைப்பை சரி செய்தால் செல்வசிந்தாமணிக்கு வரும் உபரிநீர் குறையும். பலமுறை புகார் அளித்தும் நீர்வளத்துறை இதை சரி செய்யவில்லை. மாநகராட்சி 'உபரிநீர் செல்ல சிறப்பு திட்டம்' நிறைவேற்றுவோம் என மீண்டும் மீண்டும் கூறுகிறது. ஆனால் அந்த திட்டம் இதுவரை நிறைவேறவில்லை. வெள்ளமும் நிற்கவில்லை. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🌊 செல்வசிந்தாமணியில் 8 ஆண்டாக தொடரும் வெள்ளம்: நரசாம்பதி வாய்க்கால் உடைப்பை சரி செய்யாததே காரணம்\n\n📰 முழு விவரம்:\nகடந்த மாதம் பெய்த கனமழையில் செல்வசிந்தாமணி குளம் நிரம்பியது. வீடுகளுக்குள் மழைநீர் புகுந்து, செல்வபுரம் பகுதியே வெள்ளக்காடாக மாறியது. ஒவ்வொரு ஆண்டு மழையின்போதும் இதே நிலை ஏற்படுவது வாடிக்கையாகிவிட்டது.\nகுளத்தில் இருந்து உபரிநீர் செல்லும் வாய்க்கால் குறுகலாக உள்ளது. மருதமலையில் இருந்து வரும் நீரை நகருக்குள் விடாமல் நரசாம்பதி வழியாக நேரடியாக நொய்யலுக்கு அனுப்ப வாய்க்கால் கட்டப்பட்டது. அதில் ஒரு பகுதி 7 ஆண்டுகளாக உடைந்துள்ளது. உடைப்பை சரி செய்யாததால் நீர் சித்திரை சாவடி அணைக்கட்டுக்குச் சென்று செல்வசிந்தாமணி குளத்தில் கலக்கிறது.\nபலமுறை புகார் அளித்தும் நீர்வளத்துறை சரி செய்யவில்லை. தற்போது அந்த வாய்க்கால் பராமரிப்பின்றி சாக்கடையாக காட்சியளிக்கிறது. நரசாம்பதி குளம் தற்போது 70 சதவீதம் நிறைந்துள்ளது. உடைப்பை சரி செய்தால் நரசாம்பதியும் நிரம்புவதுடன், செல்வசிந்தாமணியில் வெள்ளம் ஏற்படுவதும் தடுக்கப்படும்.\nகோவை குளங்கள் பாதுகாப்பு அமைப்பின் ஒருங்கிணைப்பாளர் மணிகண்டன் கூறுகையில், குளம் குறிப்பிட்ட அளவு நீரை மட்டுமே தாங்கும்; காட்டாற்று வெள்ளத்தைத் தாக்குப்பிடிப்பது கடினம் என்றார்.\n📍 இடம்: செல்வபுரம், செல்வசிந்தாமணி, கோவை\n👮 நடவடிக்கை: நீர்வளத்துறை இன்னும் உடைப்பை சரி செய்யவில்லை\n\nCoimbatore Selvasinthamani lake flooding, Narasampathi canal breach | Coimbatore news\n📍 செல்வபுரம், கோவை மாநகரம் | 15 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Selvapuram #CoimbatoreRain #CoimbatoreNews",
-   "prompts": "Flood water spreads across a residential lane in Selvapuram, Coimbatore city, as residents wade through knee-deep rainwater outside their houses after the Selvasinthamani lake overflowed. Two-wheelers stand stranded in the water on the narrow street, and an autorickshaw crawls through slowly. Men in shirts and trousers and women in sarees hold up their hems and carry plastic buckets and pots, seen from behind and from a distance. Low-rise tiled houses line both sides of the lane, with water reaching their doorsteps and compound walls. A few corporation workers in plain shirts stand near a parked water tanker. Overcast late-morning daylight after heavy rain, grey sky and wet tar road reflecting light. Shot at eye level, 35 mm, wide enough to show the full stretch of the flooded street with the lake's embankment visible at the far end. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/narasampathy-channel-breach-and-selvachintamani-flood-8-years-of-negligence/4377108",
-   "published": "2026-11-15T19:42:25+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 86 words; need 89-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794754143/kovaiminnal/vwc39fyirekmq69uvrf4.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "தேசிய அளவிலான போட்டிக்கு வித்யா விகாசினி மாணவர்கள் தேர்வு",
-   "english_headline": "Vidya Vikasini students selected for national-level competitions",
-   "category": "Education",
-   "location": "Coimbatore city, Coimbatore district",
-   "importance": "Medium",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "கல்வி சாதனை",
-    "loc": "கோவை",
-    "hl1": "கோவை: வித்யா விகாசினி மாணவர்கள் தேசிய",
-    "hl2": "ஜூடோ, தடகளத்தில் சாதனை",
-    "slides": [
-     {
-      "title": "ஆதிஷா ஜூடோ",
-      "lines": [
-       "11ம் வகுப்பு மாணவி ஆதிஷா முதல்வர் கோப்பை மண்டல ஜூடோவில்",
-       "மாநில அளவில் <b>வெண்கலம்</b>, <b>ரூ.50,000</b> ரொக்கப்பரிசு பெற்றார்",
-       "வரும் <b>டிசம்பரில்</b> சத்தீஸ்கரில் தேசிய ஜூடோ போட்டி"
-      ]
-     },
-     {
-      "title": "விமலாதித்யன்",
-      "lines": [
-       "12ம் வகுப்பு மாணவன் விமலாதித்யன் மாவட்ட அளவில் <b>3",
-       "110 மீ., 400 மீ. தடை ஓட்டம், 200 மீ. விரைவு ஓட்டத்தில்",
-       "சேலம் மாநிலப் போட்டியில் 110 மீ. தடை ஓட்டத்தில் தங்கம்"
-      ]
-     },
-     {
-      "title": "தேசியப் போட்டி",
-      "lines": [
-       "விமலாதித்யன் வரும் <b>ஜனவரியில்</b> அரியானாவில்",
-       "மாணவர்களின் சாதனைக்கு பள்ளித் தாளாளர், ஆசிரியர்கள் வாழ்த்து"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "வித்யா விகாசினி மெட்ரிக் மேல்நிலைப் பள்ளி மாணவர்கள் இரண்டு பேர் தேசிய அளவிலான போட்டிகளுக்குத் தேர்வாகியுள்ளனர். 11ம் வகுப்பு மாணவி ஆதிஷா முதல்வர் கோப்பை மண்டல அளவிலான ஜூடோ போட்டியில் முதலிடம் பெற்று தங்கப்பதக்கம் வென்றார். மாநில அளவிலான போட்டியில் வெண்கலப்பதக்கம் மற்றும் 50,000 ரூபாய் ரொக்கப்பரிசு பெற்றார். பள்ளிக் கல்வித்துறை சார்பில் நடந்த மாவட்ட அளவிலான ஜூடோ போட்டியில் தங்கமும், மாநில அளவில் வெள்ளிப்பதக்கமும் வென்றார். வரும் டிசம்பரில் சத்தீஸ்கரில் நடைபெறும் தேசிய அளவிலான ஜூடோ போட்டிக்கு அவர் தேர்வாகியுள்ளார். 12ம் வகுப்பு மாணவன் விமலாதித்யன் மாவட்ட அளவில் 110 மீட்டர் தடை ஓட்டம், 400 மீட்டர் தடை ஓட்டம், 200 மீட்டர் விரைவு ஓட்டம் ஆகிய மூன்றிலும் முதலிடம் பெற்று 3 தங்கப்பதக்கங்களை வென்றார். மூன்று போட்டிகளிலும் முதலிடம் பெற்றதற்காக தனிநபர் முதன்மைப் பட்டம் வழங்கப்பட்டது. சேலத்தில் நடந்த மாநில அளவிலான தடகளப் போட்டியில் 110 மீட்டர் தடை ஓட்டத்தில் அவர் தங்கப்பதக்கம் வென்றார். வரும் ஜனவரியில் அரியானாவில் நடக்கும் தேசிய போட்டிக்கும் அவர் தேர்வாகியுள்ளார். மாணவர்களின் சாதனைகளுக்கு பள்ளித் தாளாளர் மற்றும் ஆசிரியர்கள் வாழ்த்து தெரிவித்தனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🏆 கோவையில் வித்யா விகாசினி மாணவர்கள் தேசிய அளவிலான போட்டிக்கு தேர்வு\n\n📰 முழு விவரம்:\nகோவை வித்யா விகாசினி மெட்ரிக் மேல்நிலைப் பள்ளி மாணவர்கள் தேசிய அளவிலான தடகளப் போட்டிகளுக்குத் தேர்வாகியுள்ளனர்.\n11ம் வகுப்பு மாணவி ஆதிஷா முதல்வர் கோப்பை மண்டல அளவிலான ஜூடோ போட்டியில் முதலிடம் பெற்று தங்கப்பதக்கம் வென்றார். மாநில அளவிலான போட்டியில் வெண்கலப்பதக்கமும் ரூ.50,000 ரொக்கப்பரிசும் பெற்றார்.\nபள்ளிக் கல்வித்துறை சார்பில் நடந்த மாவட்ட அளவிலான ஜூடோ போட்டியில் தங்கமும், மாநில அளவில் வெள்ளிப்பதக்கமும் வென்றார். வரும் டிசம்பரில் சத்தீஸ்கரில் நடைபெறும் தேசிய ஜூடோ போட்டிக்கு தேர்வாகியுள்ளார்.\n12ம் வகுப்பு மாணவன் விமலாதித்யன் மாவட்ட அளவில் 110 மீட்டர், 400 மீட்டர் தடை ஓட்டம், 200 மீட்டர் விரைவு ஓட்டத்தில் முதலிடம் பெற்று 3 தங்கப்பதக்கங்களை வென்றார். மூன்று போட்டிகளிலும் முதலிடம் பெற்றதற்காக தனிநபர் முதன்மைப் பட்டம் வழங்கப்பட்டது.\nசேலத்தில் நடந்த மாநில அளவிலான தடகளப் போட்டியில் 110 மீட்டர் தடை ஓட்டத்தில் தங்கப்பதக்கம் வென்றார். வரும் ஜனவரியில் அரியானாவில் நடக்கும் தேசிய போட்டிக்கும் தேர்வாகியுள்ளார்.\nமாணவர்களின் சாதனைகளுக்கு பள்ளித் தாளாளர், ஆசிரியர்கள் வாழ்த்து தெரிவித்தனர்.\n\nVidya Vikasini students selected for national competitions | Coimbatore news\n📍 கோவை | 15 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Coimbatore #CoimbatoreNews #கோவை",
-   "prompts": "Two school students in Tamil Nadu school uniform, seen from behind, stand on a sports ground in Coimbatore city receiving medals and a trophy from a school teacher in a white shirt, while a few other teachers applaud beside them. The setting is the open school athletics track with a red-brown running lane, a row of white hurdles lying along the edge, and a single judo mat laid on the grass near a school building with plain walls and windows. In the background, a line of students in uniform stands with their backs to the camera and a few parked two-wheelers sit by the compound wall. The students' heads are slightly turned away, faces not visible, and the medals hang on ribbons around their necks. It is mid-morning in bright daylight with soft shadows, a light breeze, and dry clear weather. Shot at eye level, 35 mm lens, wide enough to show the track, the mat, and the group of teachers and students together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/vidya-vikasini-students-selected-for-national-level-competition/4376749",
-   "published": "2026-11-15T16:20:23+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences",
+   "reel_script": "கோவை அவினாசி சாலையில் ஆபத்தான பள்ளம் உருவாகி வருகிறது. கோவை அவினாசி ரோடு பழைய மேம்பாலத்தின் கீழ் பகுதியில் உள்ள ரவுண்டானாவில் சாலை மிகவும் மோசமான நிலையில் உள்ளது. அங்கு ஆபத்தான முறையில் பள்ளம் உருவாகி வருகிறது. இதனால் இருசக்கர வாகன ஓட்டிகள் தவறி விழுந்து காயம் அடைந்து செல்கின்றனர். எனவே அந்தச் சாலையை சீரமைக்க அதிகாரிகள் உடனடியாக நடவடிக்கை எடுக்க வேண்டும் என்று பொதுமக்கள் வலியுறுத்துகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚧 கோவை அவினாசி சாலையில் ஆபத்தான பள்ளம்: சீரமைக்க கோரிக்கை\n\n📰 முழு விவரம்:\nகோவை அவினாசி ரோடு பழைய மேம்பாலத்தின் கீழ் பகுதியில் உள்ள ரவுண்டானாவில் சாலை மிகவும் மோசமான நிலையில் உள்ளது.\nஅங்கு ஆபத்தான முறையில் பள்ளம் உருவாகி வருகிறது.\nஇதனால் இருசக்கர வாகன ஓட்டிகள் தவறி விழுந்து காயம் அடைந்து செல்கின்றனர்.\nஎனவே அந்தச் சாலையை சீரமைக்க அதிகாரிகள் உடனடியாக நடவடிக்கை எடுக்க வேண்டும்.\n📍 இடம்: அவினாசி ரோடு பழைய மேம்பாலத்தின் கீழ் ரவுண்டானா, கோவை\nℹ️ மக்கள் கவனத்திற்கு: இருசக்கர வாகன ஓட்டிகள் அந்தப் பகுதியில் கவனமாகச் செல்லுங்கள்.\n\nCoimbatore Avinashi Road pothole at roundabout | Coimbatore news\n📍 கோவை அவினாசி ரோடு, கோவை மாவட்டம் | 15 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Avinashi #சாலை #CoimbatoreNews",
+   "prompts": "A two-wheeler rider swerves around a deep pothole on the roundabout below the old concrete flyover on Avinashi Road in Coimbatore city, his front wheel tilted sharply toward the broken edge of the tarmac. Around the circular roundabout, cars, town buses and a few autorickshaws queue in heavy traffic, and grey concrete flyover pillars and the underside of the old bridge deck rise overhead. Behind the rider, other two-wheelers slow down, their riders in shirts and trousers, seen from behind and far away, leaning cautiously. The road surface is cracked and cratered around a large dark pit, with loose gravel and patches of rain-darkened tar scattered across it. The scene is set in daylight with flat, even light and a slightly hazy sky. The camera sits at eye level, about 35 mm, wide enough to show the flyover pillars, the roundabout and the traffic together, with the riders kept small and unidentifiable. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a deep, jagged pothole at the edge of the roundabout on Avinashi Road, its broken tarmac edges crumbling and exposing grey gravel and sub-base beneath. Shallow rainwater pools at the bottom of the pit, and a few loose stones lie scattered on the cracked road surface. A two-wheeler tyre sits just at the rim of the hole, showing how close it is to the drop. Blurred concrete flyover pillars and passing traffic are visible in the background, out of focus, under flat daylight. The camera is low and close, about 35 mm, shot at road level to make the depth and danger of the pothole clear, with no people's faces visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://pukaarpetti.dailythanthi.com/road/news-68554",
+   "published": "2026-11-15T15:37:33+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 54 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
    "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794754163/kovaiminnal/l5takmepopnboemar0tp.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794771388/kovaiminnal/upzgdpiv9kaau5un1qfp.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794771406/kovaiminnal/pkkgd53g26iuv4uam2uy.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "தவறவிடாதீங்க! நுழைவுத்தேர்வு எழுதுவதை மாணவர்களுக்கு வழிகாட்டனும்",
+   "english_headline": "Students urged to be guided for entrance exams alongside Plus 2 public exams",
+   "category": "Education",
+   "location": "Coimbatore, Coimbatore district",
+   "importance": "Medium",
+   "scope": "district",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "கல்வி வழிகாட்டி",
+    "loc": "கோவை மாவட்டம்",
+    "hl1": "பிளஸ் 2 மாணவர்களுக்கு நுழைவுத்தேர்வு",
+    "hl2": "டிசம்பர் முதல் மே வரை",
+    "slides": [
+     {
+      "title": "கவனம் குறைவு",
+      "lines": [
+       "பிளஸ் 2 பொதுத்தேர்வுக்கு உள்ள கவனம், நுழைவுத்தேர்வுக்கு",
+       "முன்னணி அரசு கல்வி நிறுவனங்களின் நுழைவுத்தேர்வுகள் முக்கியம்",
+       "விழிப்புணர்வு இல்லாததால் வாய்ப்புகளை தவறவிடுகின்றனர்"
+      ]
+     },
+     {
+      "title": "எந்த தேர்வுகள்?",
+      "lines": [
+       "ஐ.ஐ.டி. பாம்பேயின் யு.சி.இ.இ.டி. மூலம் பி.டிசைன் படிப்பு",
+       "சட்டப் பல்கலைகளில் கிளாட், ஏ.ஐ.எல்.இ.டி. தேர்வுகள்",
+       "பாதுகாப்புத்துறை அகாடமிகளுக்கு என்.டி.ஏ., என்.ஏ. தேர்வுகள்"
+      ]
+     },
+     {
+      "title": "பல வாய்ப்புகள்",
+      "lines": [
+       "வேளாண், மேலாண்மை, கட்டடக்கலை படிப்புகளுக்கும் தேர்வுகள்",
+       "பல தேர்வுகளுக்கு பிளஸ் 2 தேர்ச்சி மட்டுமே போதும்",
+       "பிற மாநில மாணவர்கள் அதிகம் சேர்கின்றனர்"
+      ]
+     },
+     {
+      "title": "என்ன செய்ய",
+      "lines": [
+       "டிசம்பர் முதல் மே வரை பல அறிவிப்புகள் வெளியாகும்",
+       "ஒவ்வொரு பள்ளியும் மாணவர்களுக்கு வழிகாட்ட வேண்டும்",
+       "இணையதளம் மூலம் முன்கூட்டியே விண்ணப்பிக்கவும்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "பிளஸ் 2 மாணவர்கள் நுழைவுத்தேர்வுகளில் கவனம் செலுத்தாததால் பல வாய்ப்புகளை இழக்கின்றனர். கல்வியாளர் அஸ்வின் இதுகுறித்து விளக்கம் அளித்துள்ளார். ஐ ஐ டி பாம்பேயின் யு சி இ இ டி தேர்வு மூலம் பி.டிசைன் படிப்பில் சேரலாம். தேசிய சட்டப் பல்கலைகளில் கிளாட், டில்லி தேசிய சட்ட பல்கலையில் ஏ ஐ எல் இ டி தேர்வு மூலம் சேரலாம். யு பி எஸ் சி நடத்தும் என் டி ஏ, என் ஏ தேர்வுகள் மூலம் பாதுகாப்புத்துறை அகாடமிகளில் சேர்ந்து அதிகாரியாக பயிற்சி பெறலாம். வேளாண், மேலாண்மை, கட்டடக்கலை, கடல்சார் படிப்புகளுக்கும் நுழைவுத்தேர்வுகள் உள்ளன. பல தேர்வுகளுக்கு பிளஸ் 2 தேர்ச்சி மட்டுமே போதுமானது. டிசம்பர் முதல் மே வரை பல நுழைவுத்தேர்வு அறிவிப்புகள் வெளியாகும். ஒவ்வொரு பள்ளியும் மாணவர்களுக்கு வழிகாட்ட வேண்டும். பொதுத்தேர்வு முடியும் வரை காத்திருக்காமல், இணையதளங்கள் மூலம் விண்ணப்ப முறைகளை முன்கூட்டியே அறிந்து உரிய காலத்தில் விண்ணப்பிக்க வேண்டும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🎓 பிளஸ் 2 மாணவர்களே, நுழைவுத்தேர்வுகளையும் தவறவிடாதீர்கள்\n\n📰 முழு விவரம்:\nபிளஸ் 2 பொதுத்தேர்வுக்குக் காட்டும் கவனம், முன்னணி அரசு கல்வி நிறுவனங்களின் நுழைவுத்தேர்வுகளுக்குக் காட்டப்படுவதில்லை.\nஐ.ஐ.டி. பாம்பேயின் யு.சி.இ.இ.டி. மூலம் பி.டிசைன் படிப்பிலும், தேசிய சட்டப் பல்கலைகளில் கிளாட், டில்லி தேசிய சட்டப் பல்கலையில் ஏ.ஐ.எல்.இ.டி. தேர்வு மூலமும் சேரலாம்.\nயு.பி.எஸ்.சி. நடத்தும் என்.டி.ஏ., என்.ஏ. தேர்வுகள் மூலம் பாதுகாப்புத்துறை அகாடமிகளில் சேர்ந்து அதிகாரிகளாகப் பயிற்சி பெறலாம்.\nவேளாண், மேலாண்மை, கட்டடக்கலை, கடல்சார் படிப்புகளுக்கும் நுழைவுத்தேர்வுகள் உள்ளன. பல தேர்வுகளுக்கு பிளஸ் 2 தேர்ச்சி மட்டுமே போதும்.\nவிழிப்புணர்வு இல்லாததால் பிற மாநில மாணவர்கள் அதிகம் சேர்கின்றனர்; தமிழக மாணவர்கள் உயர்கல்வி வாய்ப்புகளைத் தவறவிடுகின்றனர் என கல்வியாளர் அஸ்வின் கூறியுள்ளார்.\n📅 டிசம்பர் முதல் மே வரை பல நுழைவுத்தேர்வு அறிவிப்புகள் வெளியாகும்.\nஇணையதளங்கள் மூலம் தேர்வுகள், விண்ணப்ப முறைகளை முன்கூட்டியே அறிந்து உரிய காலத்தில் விண்ணப்பிக்குமாறு அறிவுறுத்தப்படுகிறது.\n\nCoimbatore Plus 2 students entrance exam guidance | Coimbatore news\n📍 கோவை மாவட்டம் | 16 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கல்வி #கோவை",
+   "prompts": "A group of Plus 2 students in Tamil Nadu school uniform sits at wooden desks in a bright Coimbatore classroom, bent over open study books and notebooks while a teacher stands at a chalk-marked blackboard in the background pointing toward a guidance chart. Students are shown from behind or slightly to the side, far enough to stay unidentifiable, with some holding pencils and entrance-exam practice papers on their desks. Ceiling fans turn overhead and tall windows let in soft daylight. The room looks like a typical government-aided school in the city, with plain painted walls and a simple wooden cupboard. The camera is at eye level with a 35 mm lens, wide enough to show the classroom and the students together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a student's hands resting on a desk beside an open laptop whose screen shows a blurred, unreadable online application form page, with a pencil, a stack of entrance-exam guide books and a printed exam practice paper placed beside it. The background is softly out of focus, showing the edge of a classroom desk and a student in school uniform seen from behind. Soft daylight falls across the desk from a window. No readable text or logos appear on the screen or books. The camera is slightly high at about 35 mm with shallow depth of field, focusing on the hands, laptop and study materials to convey early preparation and online application. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/don-t-miss-out/4377173",
+   "published": "2026-11-15T20:20:22+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794771414/kovaiminnal/hchjuuiakkfnqabxz9qw.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794771426/kovaiminnal/pzoruhhs9pwpx2ynwrek.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "பொள்ளாச்சி அருகே பள்ளியில் குழந்தைகள் தின கலை இலக்கிய திருவிழா",
+   "english_headline": "Children's Day arts and literature festival held at Swastik school near Pollachi",
+   "category": "Education",
+   "location": "Chinneripalayam, Negamam, Pollachi, Coimbatore district",
+   "importance": "Low",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "பள்ளி நிகழ்ச்சி",
+    "loc": "சின்னேரிபாளையம், பொள்ளாச்சி",
+    "hl1": "பொள்ளாச்சி அருகே குழந்தைகள் தின விழா",
+    "hl2": "சுவஸ்திகா – 2026 திருவிழா",
+    "slides": [
+     {
+      "title": "என்ன நடந்தது?",
+      "lines": [
+       "நெகமம் சின்னேரிபாளையம் சுவஸ்திக் மெட்ரிக்குலேஷன் பள்ளியில்",
+       "குழந்தைகள் தினத்தையொட்டி ‘சுவஸ்திகா – 2026’ கலை இலக்கிய",
+       "பள்ளித் தாளாளர் தீபாகாந்தி தலைமை வகித்தார்"
+      ]
+     },
+     {
+      "title": "போட்டிகள்",
+      "lines": [
+       "விளையாட்டு, ஓவியம், பேச்சு போட்டிகள் நடத்தப்பட்டன",
+       "வெற்றி பெற்ற மாணவர்களுக்கு பாராட்டு சான்றிதழ், பரிசுகள்",
+       "கடந்தாண்டு 10ம் வகுப்பு பொதுத்தேர்வில் வெற்றி பெற்ற"
+      ]
+     },
+     {
+      "title": "கலை நிகழ்ச்சிகள்",
+      "lines": [
+       "நாடகம், சிலம்பம், நடனம், யோகா நிகழ்ச்சிகள்",
+       "விழிப்புணர்வு நிகழ்ச்சிகளும் நடைபெற்றன",
+       "ஆசிரியர் சுபா ஏற்பாடுகளை ஒருங்கிணைத்தார்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "பொள்ளாச்சி அருகே நெகமம் சின்னேரிபாளையத்தில் குழந்தைகள் தின கலை இலக்கிய திருவிழா நடைபெற்றது. சுவஸ்திக் மெட்ரிக்குலேஷன் பள்ளியில் ‘சுவஸ்திகா – 2026’ என்ற பெயரில் இந்த விழா நடந்தது. பள்ளியின் தாளாளர் தீபாகாந்தி தலைமை வகித்தார். துணை முதல்வர் மோகன்ராஜ் வரவேற்புரை வழங்கினார். விளையாட்டு, ஓவியம், பேச்சுப் போட்டிகள் நடத்தப்பட்டன. வெற்றி பெற்ற மாணவர்களுக்கு பாராட்டுச் சான்றிதழ்களும் பரிசுகளும் வழங்கப்பட்டன. பரிசுகளை பெற்றோர் ஆசிரியர் கழகத் தலைவரும் உறுப்பினர்களும் வழங்கினர். கடந்தாண்டு 10ம் வகுப்பு பொதுத்தேர்வில் வெற்றி பெற்ற மாணவர்களுக்கும் பரிசு வழங்கப்பட்டது. பின்னர் மாணவர்களின் நாடகம், சிலம்பம், நடனம், யோகா நிகழ்ச்சிகள் நடைபெற்றன. விழிப்புணர்வு நிகழ்ச்சிகளும் நடத்தப்பட்டன. ஆசிரியர் சுபா நிகழ்ச்சி ஏற்பாடுகளை ஒருங்கிணைத்தார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🎉 பொள்ளாச்சி அருகே பள்ளியில் குழந்தைகள் தின கலை இலக்கிய திருவிழா\n\n📰 முழு விவரம்:\nநெகமம் சின்னேரிபாளையம் சுவஸ்திக் மெட்ரிக்குலேஷன் பள்ளியில் குழந்தைகள் தினத்தையொட்டி ‘சுவஸ்திகா – 2026’ கலை இலக்கிய திருவிழா நடைபெற்றது. பள்ளித் தாளாளர் தீபாகாந்தி தலைமை வகித்தார். துணை முதல்வர் மோகன்ராஜ் வரவேற்றார்.\nவிளையாட்டு, ஓவியம், பேச்சுப் போட்டிகளில் வெற்றி பெற்ற மாணவர்களுக்கு பாராட்டுச் சான்றிதழ் மற்றும் பரிசுகள் வழங்கப்பட்டன. பெற்றோர் ஆசிரியர் கழகத் தலைவரும் உறுப்பினர்களும் பரிசுகளை வழங்கினர். கடந்தாண்டு 10ம் வகுப்பு பொதுத்தேர்வில் வெற்றி பெற்ற மாணவர்களுக்கும் பரிசு வழங்கப்பட்டது.\nபின்னர் மாணவர்களின் நாடகம், சிலம்பம், நடனம், யோகா உள்ளிட்ட கலை நிகழ்ச்சிகளும் விழிப்புணர்வு நிகழ்ச்சிகளும் நடைபெற்றன. ஆசிரியர் சுபா நிகழ்ச்சி ஏற்பாடுகளை ஒருங்கிணைத்தார்.\n\n📍 இடம்: சின்னேரிபாளையம், நெகமம், பொள்ளாச்சி\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #CoimbatoreNews #கோவை",
+   "prompts": "Students in Tamil Nadu school uniform sit in rows on the floor of a school assembly hall at Swastik Matriculation School near Pollachi, seen from behind as a row of small heads faces a stage. On the stage a line of performers in colourful costumes is mid-act, one holding a wooden silambam stick raised in a fighting pose while another child dances beside him. Several teachers in cotton sarees and shirts stand at the side of the hall, and a few parents in traditional dress sit near the back. The setting is a plain school building with a tiled floor, a tall stage backdrop, and a banner hung across the top, though no lettering is readable. It is daylight through open windows, with a soft, warm light falling across the hall. Shot at eye level from the back of the hall with a 35 mm lens, wide enough to show the full stage and the audience rows. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a neat stack of certificates and prize packets placed on a wooden table draped with a plain cloth at the front of a school stage in Chinneripalayam, Negamam. A pair of hands, seen from behind and slightly blurred, holds a rolled certificate tied with a ribbon as a teacher in a cotton saree stands ready to hand it over. Beside the table lies a small brass lamp and a bunch of flowers, while a coloured paper decoration hangs softly in the background. Daylight from the hall windows gives a gentle, even light. Camera at slightly high eye level with a 35 mm lens, focused on the prizes and hands, with the blurred school hall behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/children-s-day-celebration-at-swastik-school/4377084",
+   "published": "2026-11-15T19:30:21+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 0 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794771434/kovaiminnal/thssw9gzqu6qrclace6g.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794771438/kovaiminnal/zkahrbgaw5cwvjpqajpz.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "கோவையில் கிராமப்புற பள்ளி மாணவர்களுக்கான யோகா போட்டி: 232 பேர் பங்கேற்பு",
+   "english_headline": "232 rural school students from 21 schools take part in yoga competition at Chinnavedampatti, Coimbatore",
+   "category": "Education",
+   "location": "Chinnavedampatti Kaumara Mutt, Coimbatore district",
+   "importance": "Low",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "கல்வி",
+    "loc": "சின்னவேடம்பட்டி",
+    "hl1": "சின்னவேடம்பட்டியில் யோகா போட்டி",
+    "hl2": "232 மாணவர்கள் பங்கேற்பு",
+    "slides": [
+     {
+      "title": "போட்டி எங்கே?",
+      "lines": [
+       "சின்னவேடம்பட்டி கவுமார மடாலயத்தில் போட்டி நடந்தது",
+       "கோவை மாவட்ட ஸ்போர்ட்ஸ் அண்ட் கேம்ஸ் சங்கம் நடத்தியது",
+       "கிராமப்புற பள்ளி மாணவர்களுக்கான போட்டி"
+      ]
+     },
+     {
+      "title": "யார் பங்கேற்றனர்?",
+      "lines": [
+       "<b>21</b> பள்ளிகளைச் சேர்ந்த <b>232</b> பேர் பங்கேற்றனர்",
+       "ஒன்று முதல் மூன்றாம் வகுப்பு வரை தனிப் பிரிவுகள்",
+       "4–5, 6–8 வகுப்புகளுக்கும் தனிப் பிரிவுகள்"
+      ]
+     },
+     {
+      "title": "வெற்றியாளர்கள்",
+      "lines": [
+       "ஒவ்வொரு பிரிவிலும் முதல் மூன்று இடங்கள் அறிவிக்கப்பட்டன",
+       "எட்டாம் வகுப்பு வரை மாணவ, மாணவியருக்கு தலா மூன்று பரிசுகள்",
+       "சிரவை ஆதினம் குமரகுருபர சுவாமிகள் பரிசுகளை வழங்கினார்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கோவையில் கிராமப்புற பள்ளி மாணவர்களுக்கான யோகா போட்டி நடைபெற்றது. சின்னவேடம்பட்டி கவுமார மடாலயத்தில் நடந்த இந்தப் போட்டியில் 21 பள்ளிகளைச் சேர்ந்த 232 பேர் பங்கேற்றனர். கோவை மாவட்ட ஸ்போர்ட்ஸ் அண்ட் கேம்ஸ் சங்கம் இந்தப் போட்டியை நடத்தியது. ஒன்று முதல் மூன்றாம் வகுப்பு மாணவர்களுக்கான போட்டியில் மிதுன், விகன், ஜாஸ்கரன் ஆகியோர் முதல் மூன்று இடங்களைப் பிடித்தனர். மாணவியர் போட்டியில் சம்ரிதா, யாஷினி, ஸ்மிரித்தியா ஆகியோர் வென்றனர். நான்கு மற்றும் ஐந்தாம் வகுப்பு மாணவர் போட்டியில் ப்ரிதிவி, பவமித்ரன், மித்ரன் ஆகியோர் முதல் இடங்களைப் பிடித்தனர். ஆறாம் வகுப்பு மாணவர் போட்டியில் லிசான்தன், விதுலன், தேவபிரசாத் ஆகியோர் முன்னிலை பெற்றனர். எட்டாம் வகுப்பு வரை ஒவ்வொரு பிரிவிலும் மாணவ, மாணவியருக்கு தலா மூன்று பரிசுகள் வழங்கப்பட்டன. சிரவை ஆதினம் குமரகுருபர சுவாமிகள், சங்கச் செயலாளர் சண்முகசுந்தரம், ரோட்டரி கிளப் நிர்வாகிகள் பரிசுகளை வழங்கினர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🧘 சின்னவேடம்பட்டியில் கிராமப்புற மாணவர்களுக்கான யோகா போட்டி: 232 பேர் பங்கேற்பு\n\n📰 முழு விவரம்:\nகோவை மாவட்ட ஸ்போர்ட்ஸ் அண்ட் கேம்ஸ் சங்கம் சார்பில் கிராமப்புற பள்ளி மாணவர்களுக்கான யோகா போட்டி சின்னவேடம்பட்டி கவுமார மடாலயத்தில் நடைபெற்றது. 21 பள்ளிகளைச் சேர்ந்த 232 பேர் பங்கேற்றனர்.\n🥇 ஒன்று முதல் மூன்றாம் வகுப்பு மாணவர்களுக்கான போட்டியில் மிதுன், விகன், ஜாஸ்கரன் ஆகியோரும், மாணவியர் போட்டியில் சம்ரிதா, யாஷினி, ஸ்மிரித்தியா ஆகியோரும் முதல் மூன்று இடங்களைப் பிடித்தனர்.\n🥇 நான்கு, ஐந்தாம் வகுப்பு மாணவர் போட்டியில் ப்ரிதிவி, பவமித்ரன், மித்ரன் ஆகியோரும், மாணவியர் பிரிவில் மணிமொழி, ஆராதனா, சாய்ரித்திகா ஆகியோரும் வென்றனர்.\n🥇 ஆறாம் வகுப்பு மாணவர் போட்டியில் லிசான்தன், விதுலன், தேவபிரசாத் ஆகியோரும், மாணவியருக்கான போட்டியில் சாந்தா, அன்பு பாலஹர்ஷினி, பிரநானியா ஆகியோரும் முதல் மூன்று இடங்களைப் பிடித்தனர்.\n🎁 எட்டாம் வகுப்பு வரை ஒவ்வொரு பிரிவிலும் மாணவ, மாணவியருக்கு தலா மூன்று பரிசுகள் வழங்கப்பட்டன. சிரவை ஆதினம் குமரகுருபர சுவாமிகள், ஸ்போர்ட்ஸ் அண்ட் கேம்ஸ் சங்கச் செயலாளர் சண்முகசுந்தரம், ரோட்டரி கிளப் ஆப் கோயம்புத்தூர் நியூ டவுன் நிர்வாகிகள் பரிசுகளை வழங்கினர்.\n\nChinnavedampatti yoga competition for rural school students | Coimbatore news\n📍 சின்னவேடம்பட்டி, கோவை மாவட்டம் | 15 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Chinnavedampatti #CoimbatoreNews #கோவை",
+   "prompts": "Rows of school children in white and blue Tamil Nadu school uniform sit and stand on green yoga mats across the open courtyard of a monastery hall in Chinnavedampatti, Coimbatore. A yoga instructor in front of the group demonstrates a pose while the children follow in neat lines. The mutt's temple-style pillared hall with a tiled roof frames the scene, and a few saffron-robed swamis sit on a raised dais at the far end. Boys and girls are separated into different groups, several seen from behind, with the hall full of young participants. Bright daylight falls across the courtyard, and a green tree line and distant hills show the rural edge of the city. Shot at eye level from slightly high, 35 mm, wide enough to show the whole hall and the crowd of children. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a neat stack of yoga mats rolled and placed beside a row of small school bags and a pair of white canvas shoes on the stone floor of a monastery hall in Chinnavedampatti, Coimbatore. A small brass lamp and a folded cloth sit near the edge of the frame, and a few children's bare feet on a green mat are visible at the edge. The stone pillars and tiled roof of the mutt hall are softly blurred behind. Soft daylight from an open doorway lights the textures of the mats and stone. Camera at low eye level, 35 mm, focused on the mats and shoes to tell the story of the young participants competing. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/school-students-take-part-in-yoga-competition/4376752",
+   "published": "2026-11-15T16:24:24+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: numbers not found in the article: 6, 8; caption misses facts of the article (put every one in 📰 முழு விவரம்): 4 ('ஒன்று முதல் மூன்றாம் வகுப்பு மாணவர்களுக்கான போட்டியில் மிதுன'); 5 ('ஒன்று முதல் மூன்றாம் வகுப்பு மாணவர்களுக்கான போட்டியில் மிதுன')",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 2 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794771453/kovaiminnal/arfaenropfip1qscbx5y.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794771478/kovaiminnal/aqx6xxrdskqo1nktlsje.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "மடத்துக்குளம் நால்ரோட்டில் ரவுண்டானா அமைக்க வாகன ஓட்டுனர்கள் கோரிக்கை",
+   "english_headline": "Drivers demand roundabout at Madathukulam four-road junction to ease jams and prevent accidents",
+   "category": "Roads & Transport",
+   "location": "Madathukulam four-road junction, Udumalpet, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "சாலை பாதுகாப்பு",
+    "loc": "மடத்துக்குளம், உடுமலை",
+    "hl1": "மடத்துக்குளம் நால்ரோட்டில் ரவுண்டானா",
+    "hl2": "நெரிசல், விபத்து அபாயம்",
+    "slides": [
+     {
+      "title": "எங்கே?",
+      "lines": [
+       "மடத்துக்குளம் நால்ரோடு, உடுமலை அருகே",
+       "கோவை – திண்டுக்கல் தேசிய நெடுஞ்சாலையில் உள்ளது",
+       "தினமும் ஆயிரக்கணக்கான வாகனங்கள் செல்கின்றன"
+      ]
+     },
+     {
+      "title": "ஏன் பிரச்சனை?",
+      "lines": [
+       "நான்கு சாலைகள் இங்கு சந்திக்கின்றன",
+       "ரவுண்டானா இல்லாததால் அடிக்கடி நெரிசல்",
+       "இதனால் விபத்து ஏற்பட வாய்ப்புள்ளது"
+      ]
+     },
+     {
+      "title": "கோரிக்கை",
+      "lines": [
+       "நெடுஞ்சாலைத்துறை ஆய்வு செய்ய வேண்டும்",
+       "ரவுண்டானா அமைக்க உடனடி நடவடிக்கை கோரிக்கை",
+       "மக்கள், வாகன ஓட்டுனர்கள் வலியுறுத்தல்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "மடத்துக்குளம் நால்ரோட்டில் ரவுண்டானா அமைக்க வேண்டும் என வாகன ஓட்டுனர்கள் கோரிக்கை விடுத்துள்ளனர். கோவை – திண்டுக்கல் தேசிய நெடுஞ்சாலையில் அமைந்துள்ள மடத்துக்குளம் வழியாக தினமும் ஆயிரக்கணக்கான வாகனங்கள் செல்கின்றன. அங்குள்ள நால்ரோட்டில் உடுமலை ரோடு, பழநி ரோடு, கணியூர் ரோடு, குமரலிங்கம் ரோடு ஆகிய நான்கு சாலைகள் சந்திக்கின்றன. அங்கு ரவுண்டானா இல்லாததால் அடிக்கடி போக்குவரத்து நெரிசல் ஏற்படுகிறது. இதனால் விபத்துகள் ஏற்பட வாய்ப்புள்ளது. எனவே நெடுஞ்சாலைத்துறையினர் இந்தப் பகுதியை ஆய்வு செய்து, ரவுண்டானா அமைக்க உடனடி நடவடிக்கை எடுக்க வேண்டும் என மக்களும் வாகன ஓட்டுனர்களும் வலியுறுத்தியுள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚦 மடத்துக்குளம் நால்ரோட்டில் ரவுண்டானா அமைக்க கோரிக்கை\n\n📰 முழு விவரம்:\nகோவை – திண்டுக்கல் தேசிய நெடுஞ்சாலையில் அமைந்துள்ள மடத்துக்குளம் நால்ரோட்டில் ரவுண்டானா இல்லை.\nஉடுமலை ரோடு, பழநி ரோடு, கணியூர் ரோடு, குமரலிங்கம் ரோடு ஆகிய நான்கு சாலைகள் இங்கு சந்திக்கின்றன.\nஇதனால் அடிக்கடி போக்குவரத்து நெரிசல் ஏற்படுகிறது; விபத்துகள் ஏற்படவும் வாய்ப்புள்ளது.\nஇதையடுத்து, ரவுண்டானா அமைக்க நெடுஞ்சாலைத்துறை ஆய்வு செய்து உடனடி நடவடிக்கை எடுக்க வேண்டும் என மக்களும் வாகன ஓட்டுனர்களும் வலியுறுத்தியுள்ளனர்.\n📍 இடம்: மடத்துக்குளம் நால்ரோடு, உடுமலை\n\nMadathukulam four-road roundabout demand | Coimbatore news\n📍 மடத்துக்குளம், கோவை மாவட்டம்\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Udumalpet #CoimbatoreNews #கோவை",
+   "prompts": "A congested four-road junction at Madathukulam on the Coimbatore-Dindigul national highway, where vehicles jam together with no roundabout to guide them. Several lorries, private buses, cars and two-wheelers stop bumper to bumper across the crossing, while a few autorickshaws weave between them. Drivers sit in their vehicles or stand beside them, seen from behind and at a distance, clearly waiting in the stalled traffic. The junction is an open semi-rural road crossing lined with small shops, roadside trees and a few low concrete buildings, with roads branching off in four directions. The scene is shown in daylight. The camera is at eye level, 35 mm, wide enough to show the whole crossing and the branching roads. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up detail of the cramped road at the Madathukulam junction where vehicles nose into each other. The front bumper of a lorry and a private bus almost touch, with a two-wheeler squeezed in between them at the edge of the crossing. Tarmac is marked with faded white lane lines and worn tyre tracks, and there are no traffic islands or roundabout barriers in view. Drivers are seen only from behind or as blurred figures at the wheel. Daylight, slightly high camera angle, 35 mm, focused on the vehicles and the bare road surface to show the lack of a roundabout. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/we-need-to-build-a-roundabout/4377174",
+   "published": "2026-11-15T20:20:24+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 0 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794771485/kovaiminnal/imtnj4lazvexnozzvkuk.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794771489/kovaiminnal/jgicx7yptziw39jsomdx.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "காரமடையில் பெண்ணிடம் நகை பறிப்பு: 108 ஆம்புலன்ஸ் ஓட்டுநர் கைது",
+   "english_headline": "Gold chain snatched from woman in Karamadai; 108 ambulance driver arrested",
+   "category": "Crime & Safety",
+   "location": "Karamadai, Mettupalayam taluk, Coimbatore district",
+   "importance": "High",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "குற்றச் செய்தி",
+    "loc": "காரமடை, மேட்டுப்பாளையம்",
+    "hl1": "காரமடையில் பெண்ணிடம் நகை பறிப்பு",
+    "hl2": "108 ஆம்புலன்ஸ் ஓட்டுநர் கைது",
+    "slides": [
+     {
+      "title": "என்ன நடந்தது?",
+      "lines": [
+       "நவம்பர் <b>4</b> மாலை, கல்லூரி முடிந்து வீடு திரும்பிய பெண்",
+       "கழுத்தில் இருந்த <b>3½ பவுன்</b> சங்கிலி பறிப்பு",
+       "மர்ம நபர் பைக்கில் தப்பினார்"
+      ]
+     },
+     {
+      "title": "யார் இவர்?",
+      "lines": [
+       "குன்னூரைச் சேர்ந்த அருள்நாதன், <b>31 வயது</b>",
+       "2020 முதல் 108 ஆம்புலன்ஸில் தற்காலிக ஓட்டுநர்",
+       "கடன் தொல்லையால் இந்தச் செயலில் ஈடுபட்டதாகப் போலீசார்"
+      ]
+     },
+     {
+      "title": "எப்படிப்",
+      "lines": [
+       "சி.சி.டி.வி. காட்சிகளை ஆய்வு செய்து அடையாளம் கண்டனர்",
+       "குன்னூர்–கோத்தகிரி சாலையில் வாகனத் தணிக்கை",
+       "போலீசாரைக் கண்டு தப்ப முயன்றவர் இரு பைக்குகளில்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "காரமடையில் பெண்ணிடம் நகை பறித்த 108 ஆம்புலன்ஸ் ஓட்டுநர் கைது. நவம்பர் 4ஆம் தேதி மாலை, மேட்டுப்பாளையம் அருகே காரமடை டீச்சர்ஸ் காலனியில் கல்லூரி முடிந்து பேருந்தில் வந்த பெண் வீட்டை நோக்கி நடந்தார். அப்போது பைக்கில் பின்தொடர்ந்த மர்ம நபர், அவரது கழுத்தில் இருந்த 3½ பவுன் சங்கிலியைப் பறித்துக்கொண்டு தப்பினார். போலீசார் சம்பவ இடத்தின் சி சி டி வி காட்சிகளை ஆய்வு செய்தனர். அதில் நீலகிரி மாவட்டம் குன்னூரைச் சேர்ந்த அருள்நாதன், 31 வயது, என்பவர் தெரியவந்தது. அவர் 2020 முதல் 108 ஆம்புலன்ஸில் தற்காலிக ஓட்டுநராகப் பணிபுரிந்தவர். குன்னூரில் இருந்து கோத்தகிரி சாலை வழியாக வந்தபோது, வாகனத் தணிக்கையில் போலீசாரைக் கண்டு அவர் வேகமாகத் தப்ப முயன்றார். போலீசார் இரு பைக்குகளில் துரத்திச் சென்று அவரைப் பிடித்தனர். அவருக்கு அதிக கடன் தொல்லை இருந்ததாகப் போலீசார் கூறுகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 காரமடையில் பெண்ணிடம் நகை பறிப்பு: 108 ஆம்புலன்ஸ் ஓட்டுநர் கைது\n\n📰 முழு விவரம்:\nநவம்பர் 4ஆம் தேதி மாலை, காரமடை டீச்சர்ஸ் காலனியில் கல்லூரி முடிந்து பேருந்தில் வந்த பெண்ணின் கழுத்தில் இருந்த 3½ பவுன் சங்கிலியை மர்ம நபர் பைக்கில் வந்து பறித்துச் சென்றார்.\nசி.சி.டி.வி. காட்சிகள் மூலம் குன்னூரைச் சேர்ந்த அருள்நாதன், 31 வயது, என்பவர் அடையாளம் காணப்பட்டார். அவர் 2020 முதல் 108 ஆம்புலன்ஸில் தற்காலிக ஓட்டுநராகப் பணிபுரிந்தவர்.\nகுன்னூரில் இருந்து கோத்தகிரி சாலை வழியாக வந்தபோது வாகனத் தணிக்கையில் போலீசாரைக் கண்டு தப்ப முயன்றார். இரு பைக்குகளில் துரத்திப் பிடிக்கப்பட்டார்.\nஅருள்நாதனுக்கு அதிக கடன் தொல்லை இருந்ததாகப் போலீசார் தெரிவித்துள்ளனர்.\n👮 நடவடிக்கை: அருள்நாதன் கைது செய்யப்பட்டுள்ளார்.\n\nKaramadai chain snatching, 108 ambulance driver arrested | Coimbatore news\n📍 காரமடை, மேட்டுப்பாளையம் | 15 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Karamadai #CoimbatoreNews #கோவை",
+   "prompts": "A quiet residential street in Karamadai, Mettupalayam taluk, at dusk, with a few small single-storey houses and a tea shop with a bench at the roadside. A woman in a cotton saree with a shoulder bag walks away from the camera, alone, on the empty road, her back to the viewer. Further down the road, a man in a shirt sits on a two-wheeler with its engine stopped, partly turned away, far from the camera and slightly blurred. The street has no other people. A row of concrete electric poles lines the road, and the Nilgiri foothills rise faintly in the far background. The evening light is warm and fading, with a few street lights just coming on. The camera is at eye level, 35 mm, wide enough to show the road and the houses, the mood tense and quiet. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of two two-wheelers parked side by side on a tarred road in a small town, one of them with a helmet hanging from its handle, showing the motorbike's front and seat in sharp detail. Behind them, slightly out of focus, two Tamil Nadu police in khaki uniform stand at the roadside, seen from behind and far away. A low concrete wall and a dusty roadside shoulder run along the edge, with a few dry leaves on the road. The light is late evening with a soft orange tone from the sky. The camera is slightly high, 35 mm, focusing on the bikes so the chase and the arrest are implied without showing any person's face or injuries. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/108-ambulance-driver-arrested-for-snatching-jewellery-from-woman/4377270",
+   "published": "2026-11-15T21:54:23+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 35 ('மேட்டுப்பாளையம்: காரமடை டீச்சர்ஸ் காலனி, பூம்புகார் நகரை சேர')",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794771498/kovaiminnal/ntqx2ic9m82ygganzy4f.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794771515/kovaiminnal/hus7nrwmtwf16hjzghny.jpg"
    ]
   }
  ]
