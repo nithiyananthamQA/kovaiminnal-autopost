@@ -82,34 +82,34 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
-| 2026-11-14 | `78cd1c1` | Reel layout A for every reel (owner 14 Nov night): picture left clear, one lower text block, slim top strip, smaller footer with a small gap above it; outro in the news voice on every page and without the news location |
-| 2026-11-14 | `93200cd` | Heartbeat |
-| 2026-11-14 | `bdc30dd` | Heartbeat |
-| 2026-11-14 | `98640a7` | Heartbeat |
-| 2026-11-14 | `73c6db3` | Heartbeat |
-| 2026-11-14 | `9bd572e` | powercut: notices written |
-| 2026-11-14 | `1860f7b` | powercut: notices written |
-| 2026-11-14 | `92b32ec` | district powercut: notices found |
-| 2026-11-14 | `3081c1a` | powercut: notices written |
-| 2026-11-14 | `684f04b` | powercut: notices written |
-| 2026-11-14 | `0a22201` | Our own news music under the reels (owner 14 Nov, no copyright): serious / alert / calm composed by tools/make_music.py, mood from the news (post.music_mood), 14 dB under the voice while it speaks and back up in every pause and on the end card (voice track decides); config music.enabled |
-| 2026-11-14 | `cd8409e` | Reel B2: top-right logo above the header bar, header shade fades out before it (owner 14 Nov: logo was hidden by the shade) |
-| 2026-11-14 | `cd5d3f6` | district powercut: notices found |
-| 2026-11-14 | `534c7e5` | facebook RN-6 |
-| 2026-11-14 | `19ed47c` | pick: written and posted |
-| 2026-11-14 | `d2b574f` | powercut: notices written |
-| 2026-11-14 | `8abb9dd` | Reel B2: footer back inside the safe area (y 1085-1246, x 70-940 - owner 14 Nov: in the opened reel the bottom footer hid behind Instagram's name/caption/Follow); captions 880-1070, headline 520-860, summary 410-870 |
-| 2026-11-14 | `e9f700e` | facebook RN-4 |
-| 2026-11-14 | `b721b2c` | powercut: notices written |
-| 2026-11-14 | `cde2f40` | facebook RN-11 |
-| 2026-11-14 | `9a84127` | WIP: Fable design notes 1-7 as rendered in preview-10s-new.mp4 (footer still off, plain background) - owner 14 Nov: some parts fine, picture + footer missing |
-| 2026-11-14 | `76f46a2` | facebook RN-7 |
-| 2026-11-14 | `e8aed86` | powercut: notices written |
-| 2026-11-14 | `1893b1e` | facebook RN-3 |
-| 2026-11-14 | `683a4af` | pick: picked news saved |
-| 2026-11-14 | `b09de88` | stories shared |
-| 2026-11-14 | `e824780` | test_today_only: independent of research_free/START_AT (failed for 2 h after every collect-switch start) |
-| 2026-11-14 | `d545796` | Kovai Minnal live (LIVE file: scheduled posting on); tests job installs pyyaml (test_district_reach needs it) |
-| 2026-11-14 | `179471b` | pick: picked news saved |
-| 2026-11-14 | `79589ef` | pick: list sent |
+| 2026-11-16 | `1594519` | Reel layout from the owner's phone screenshots (16 Nov): no footer, logo + page name + English name at the top, text block low (card 1140-1390, captions to 1595) right above Instagram's name row |
+| 2026-11-16 | `a414011` | ElevenLabs voice for every reel (owner 16 Nov): Nila (Tamil, eleven_v3) with a news tone per sentence; Anbu stays the fallback |
+| 2026-11-15 | `4b89d52` | facebook RN-51 |
+| 2026-11-15 | `60c8cb1` | pick: picked news saved |
+| 2026-11-15 | `2ada3f8` | pick: picked news saved |
+| 2026-11-15 | `559e42a` | pick: list sent |
+| 2026-11-15 | `dff9b4a` | Heartbeat |
+| 2026-11-15 | `cf61bf4` | Heartbeat |
+| 2026-11-15 | `f97f7e5` | Heartbeat |
+| 2026-11-15 | `41e6819` | Heartbeat |
+| 2026-11-15 | `6108736` | pick: written and posted |
+| 2026-11-15 | `2366fbb` | powercut: notices written |
+| 2026-11-15 | `9dd5567` | powercut: notices written |
+| 2026-11-15 | `59e32d0` | powercut: notices written |
+| 2026-11-15 | `da32572` | stories shared |
+| 2026-11-15 | `aa74aee` | facebook RN-40 |
+| 2026-11-15 | `a0fdea3` | powercut: notices written |
+| 2026-11-15 | `05134e9` | facebook RN-44 |
+| 2026-11-15 | `80d53a2` | powercut: notices written |
+| 2026-11-15 | `00b3c49` | powercut: notices written |
+| 2026-11-15 | `838e0a0` | powercut: notices written |
+| 2026-11-15 | `d7463b8` | district powercut: notices found |
+| 2026-11-15 | `5997dcc` | district powercut: chennai posted |
+| 2026-11-15 | `a6e74db` | pick: picked news saved |
+| 2026-11-15 | `773e779` | facebook RN-39 |
+| 2026-11-15 | `acaa31b` | pick: picked news saved |
+| 2026-11-15 | `c3b1132` | pick: list sent |
+| 2026-11-15 | `3fd0dd0` | pick: written and posted |
+| 2026-11-15 | `e656068` | facebook RN-38 |
+| 2026-11-15 | `7f2f523` | powercut: notices written |
 <!-- recent-changes:end -->
