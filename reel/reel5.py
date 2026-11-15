@@ -350,7 +350,7 @@ body{background:radial-gradient(ellipse at 50% 30%,#13306E 0%,#071433 55%,#03091
 #   1092-1282 captions (x 70-940) | 1300-1461 footer (x 70-940, owner 14 Nov: right above the channel name) | full-width bars may bleed to the edges, their text never
 #   does | a story without a photo: the drawn scene sits where it is seen (SCENE_B2_CSS)
 #   Check any spec in ~20 s without rendering: tools/frame_preview.py
-SAFE = {"top": 220, "bottom": 1470, "side": 50, "buttons_x": 945, "buttons_y": 1160}      # owner 14 Nov night: Instagram's Reels safe-zone card (top 220, bottom 450, sides 35, buttons column 100 px)
+SAFE = {"top": 220, "bottom": 1600, "side": 36, "buttons_x": 940, "buttons_y": 1120}      # owner 16 Nov: from his phone screenshots - Instagram's name row starts ~y 1680, buttons column x 966+ from ~y 1130
 STYLE_B = STYLE_K + """
 #hdr{left:0;right:0;top:276px;padding:12px 220px 10px 70px;background:linear-gradient(90deg,#0B1B4D 0%,#13306E 55%,rgba(19,48,110,.0) 78%);
   border-bottom:6px solid #FFD21F;box-shadow:0 10px 30px rgba(0,0,0,.45)}
@@ -392,22 +392,24 @@ STYLE_B = STYLE_K + """
 #   y 1356-1467 the footer, smaller (600 x 111) - a small gap above it so two caption lines never touch it (owner)
 #   the end card has no place line (owner: the outro must not carry the news location)
 LAYOUT_A_CSS = """
-#shade{background:linear-gradient(180deg,rgba(6,14,43,.70) 0%,rgba(6,14,43,0) 17%,rgba(6,14,43,0) 48%,rgba(6,14,43,.55) 60%,rgba(6,14,43,.92) 100%)!important}
-#hdr{top:226px!important;padding:8px 160px 8px 50px!important;border-bottom:0!important;box-shadow:none!important;
-  background:linear-gradient(90deg,rgba(6,14,43,.62) 0%,rgba(6,14,43,.35) 55%,rgba(6,14,43,0) 80%)!important}
-#hdr .nm{font-size:38px!important}
-#plogo{top:222px!important;right:50px!important;width:86px!important;height:86px!important}
-#pin{top:350px!important;left:50px!important;transform:scale(.72)!important;transform-origin:0 0;background:rgba(0,0,0,.55)!important;color:#fff!important;box-shadow:none!important}
-#hook{top:985px!important;left:50px!important;right:50px!important;background:rgba(8,18,52,.92);border-left:10px solid #E3151B;border-radius:18px;padding:16px 24px 18px}
+#shade{background:linear-gradient(180deg,rgba(6,14,43,.72) 0%,rgba(6,14,43,.25) 13%,rgba(6,14,43,0) 26%,rgba(6,14,43,0) 55%,rgba(6,14,43,.55) 66%,rgba(6,14,43,.9) 100%)!important}
+#plogo{top:238px!important;left:36px!important;right:auto!important;width:112px!important;height:112px!important}
+#hdr{top:236px!important;left:164px!important;right:auto!important;padding:0!important;background:none!important;border-bottom:0!important;box-shadow:none!important}
+#hdr::after{display:none!important}
+#hdr .nm{display:inline-flex!important;font-size:42px!important;background:rgba(6,14,43,.66);border-radius:14px;padding:6px 18px 2px 12px;white-space:nowrap}
+#hdr .nm::after{content:"__EN__";margin-left:14px;color:#fff;font:800 24px 'CT',sans-serif;letter-spacing:.08em;opacity:.92;align-self:center}
+#hdr .sub{display:flex!important;width:max-content;max-width:820px!important;margin-top:8px!important;background:rgba(6,14,43,.66);border-radius:12px;padding:4px 14px 2px 6px}
+#hdr .src{display:none!important}
+#pin{top:368px!important;left:36px!important;transform:none!important;font-size:30px!important;padding:6px 18px 2px 12px!important;background:rgba(6,14,43,.66)!important;color:#fff!important;box-shadow:none!important;border-radius:14px!important}
+#hook{top:1120px!important;left:36px!important;right:150px!important;background:rgba(8,18,52,.94);border-left:12px solid #E3151B;border-radius:20px;padding:18px 26px 20px}
 #hook::before{display:none!important}
-#hook .h1{font-size:58px!important;text-shadow:none!important}
-#hook .h2{background:none!important;color:#FFD21F!important;transform:none!important;box-shadow:none!important;font-size:46px!important;margin:6px 0 0!important;padding:0!important}
-#mini{left:50px!important;right:50px!important;top:995px!important;border-radius:14px;font-size:38px!important;padding:12px 26px 8px!important}
-.card{top:980px!important;left:50px!important;right:auto!important;width:900px!important;transform:scale(.82)!important;transform-origin:0 0}
-#cap{top:1180px!important;height:150px!important;left:50px!important;right:140px!important}
-.ph{font-size:44px!important;padding:10px 22px 4px!important;background:rgba(0,0,0,.62)!important}
-#foot{top:1356px!important;left:50px!important;width:600px!important;height:111px!important}
-#sum{top:585px!important}
+#hook .h1{font-size:60px;text-shadow:none!important}
+#hook .h2{background:none!important;color:#FFD21F!important;transform:none!important;box-shadow:none!important;font-size:50px!important;margin:6px 0 0!important;padding:0!important}
+#mini{left:36px!important;right:150px!important;top:1150px!important;border-radius:16px;font-size:42px!important;padding:14px 28px 10px!important}
+.card{top:1140px!important;left:36px!important;right:auto!important;width:894px!important}
+#cap{top:1400px!important;height:190px!important;left:36px!important;right:150px!important}
+#foot{display:none!important}
+#sum{top:500px!important}
 #end .e3{display:none!important}
 """
 # the B2 safe-area sizes + the serious opening (after reel4's own renderAt / fitAll):
@@ -508,7 +510,8 @@ def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
     if wide.exists() or not FOOTER_AT_BOTTOM:
         html = html.replace("</style>", FOOT_CSS + "</style>", 1)
     if style == "B2":      # layout A (owner 14 Nov night) - after FOOT_CSS so its footer size wins
-        html = html.replace("</style>", LAYOUT_A_CSS + "</style>", 1)
+        en = (page.get("handle") or "").replace("_", "").replace("minnal", "").upper()
+        html = html.replace("</style>", LAYOUT_A_CSS.replace("__EN__", f"{en} MINNAL" if en else "") + "</style>", 1)
     if page.get("district"):      # owner 13 Nov: the end card asks to SEND the video to that area's people (the FOLLOW button stays)
         import re as _re
         card = spec.get("share_card") or f'⚡ {page["end_card"]} Follow செய்யுங்கள் 📌'
