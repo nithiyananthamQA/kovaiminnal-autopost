@@ -238,8 +238,11 @@ class Reel(unittest.TestCase):
             vs, alt = ns["pick_voice"]({"story": "RN-1", "sentences": [{"say": "அ" * 1300}]})
         finally:
             os.environ.pop("GOOGLE_TTS_API_KEY", None)
-        self.assertEqual("edge", vs.get("engine"))
-        self.assertEqual("ta-IN-ValluvarNeural", vs.get("voice"))
+        # owner 16 Nov: ElevenLabs (config reel_voice.engine) reads the reels; the free edge voice stays the fallback; never Google
+        self.assertIn(vs.get("engine"), ("edge", "elevenlabs"))
+        self.assertEqual("ta-IN-ValluvarNeural", vs.get("voice"))      # reel4's own fallback voice (reel5 swaps in Anbu from config)
+        if vs.get("engine") == "elevenlabs":
+            self.assertTrue(vs.get("eleven_voice"))
         code = (ROOT / "reel" / "reel4.py").read_text(encoding="utf-8")
         self.assertNotIn("texttospeech.googleapis", code)
         self.assertNotIn("Chirp3-HD", code)

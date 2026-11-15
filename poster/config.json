@@ -27,7 +27,14 @@
   "location_tags": true,
   "reel_design": "v5",
   "reel_voice": {
-    "engine": "edge",
+    "engine": "elevenlabs",
+    "elevenlabs": {
+      "voice_id": "C2RGMrNBTZaNfddRPeRH",
+      "name": "Nila - Warm, Clear and Conversational (Tamil, ElevenLabs voice library)",
+      "model": "eleven_v3",
+      "tag": "[serious]",
+      "note": "owner 16 Nov: human-like voice with emotion for every reel (key: ELEVENLABS_API_KEY). Any ElevenLabs failure = that reel falls back to Anbu below"
+    },
     "voice": "ta-SG-AnbuNeural",
     "rate": "+5%",
     "pitch": "+0Hz",

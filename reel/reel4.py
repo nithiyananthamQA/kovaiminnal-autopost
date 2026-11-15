@@ -227,12 +227,76 @@ def edge_lines(work, texts, voice="ta-IN-ValluvarNeural", rate="+8%", pitch="+0H
                         "-ar", "22050", "-ac", "1", str(wav)], check=True)
 
 
+# owner 16 Nov: a NEWS channel voice with emotion, like a human reader - every sentence gets an ElevenLabs v3 tone tag picked from
+# its own words (the writer's script stays plain Tamil: the checks reject English letters in reel_script). Tags are never spoken
+# (checked with ElevenLabs speech-to-text) and never shown - only the voice gets them.
+TONE_RULES = [
+    ("[sad]", r"உயிரிழ|பலி|மரணம்|இறந்|சடலம்|கொலை|தற்கொலை|உயிர் இழ"),
+    ("[urgent]", r"மின்\s*தடை|எச்சரிக்கை|கனமழை|வெள்ள|மூடப்படு|ரத்து|போக்குவரத்து மாற்ற|அவசர|தீ விபத்து"),
+    ("[serious]", r"விபத்து|கைது|காயம்|திருட்டு|கொள்ளை|போதை|தாக்குத|மோசடி|வழக்கு|போலீசார்|விசாரணை|பறிமுதல்|புகார்"),
+    ("[calm]", r"திறப்பு|திறக்கப்ப|தொடக்க|விருது|வெற்றி|நலத்திட்ட|வழங்கப்ப|சாதனை|விழா"),
+]
+MOOD_TONE = {"serious": "[serious]", "alert": "[urgent]", "calm": "[calm]"}
+
+
+def tone_of(text, mood="", last=False, default="[serious]"):
+    if last:
+        return "[warm]"      # the closing follow line
+    for tag, rx in TONE_RULES:
+        if re.search(rx, str(text or "")):
+            return tag
+    return MOOD_TONE.get(mood, default)
+
+
+ELEVEN_URL = "https://api.elevenlabs.io/v1/text-to-speech/{vid}?output_format=mp3_44100_128"
+
+
+def eleven_lines(work, texts, voice_id, model="eleven_v3", language="ta", tag="[serious]", tags=None):
+    """owner 16 Nov: ElevenLabs reads every reel - a human-like voice with emotion (Nila, Tamil). One request per line, the text
+    prepared exactly like the other voices (numbers, names), the same silence trim + loudness as edge_lines. Raises on any failure
+    (no key, no credits, network) so main() falls back to the free Anbu voice and the reel is still made."""
+    import requests
+    import tts
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "research_free"))
+    import names
+    key = os.environ.get("ELEVENLABS_API_KEY", "").strip()
+    if not key or not voice_id:
+        raise RuntimeError("ElevenLabs: no ELEVENLABS_API_KEY / voice_id")
+    for i, t in enumerate(texts):
+        mp3, wav = work / f"line{i}.mp3", work / f"line{i}.wav"
+        # owner 16 Nov: "we make news - serious". v3 audio tag in front of each line: sets the tone, is not spoken (checked with
+        # ElevenLabs speech-to-text); tags only work on v3 models
+        spoken = tts.clean(names.spoken(t))
+        tg = (tags[i] if tags and i < len(tags) and tags[i] else tag)
+        body = {"text": (f"{tg} {spoken}" if tg and model.startswith("eleven_v3") else spoken), "model_id": model, "language_code": language}
+        for k in range(3):
+            r = requests.post(ELEVEN_URL.format(vid=voice_id), json=body, timeout=120,
+                              headers={"xi-api-key": key, "Content-Type": "application/json"})
+            if r.status_code == 200 and len(r.content) > 1000:
+                mp3.write_bytes(r.content)
+                break
+            if r.status_code in (401, 402, 403, 422):      # bad key / no credits / voice not allowed: retrying won't help
+                raise RuntimeError(f"ElevenLabs {r.status_code}: {r.text[:160]}")
+            import time; time.sleep(4 * (k + 1))
+        else:
+            raise RuntimeError(f"ElevenLabs failed for line {i}: {r.status_code} {r.text[:160]}")
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mp3), "-af",
+                        "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,loudnorm=I=-16:TP=-1.5",
+                        "-ar", "22050", "-ac", "1", str(wav)], check=True)
+
+
 def pick_voice(spec):
     """Kovai Minnal: FREE voice only - Valluvar (edge-tts ta-IN-ValluvarNeural) reads EVERY reel. Google's paid-tier voice (Charon) is
     never used, also when GOOGLE_TTS_API_KEY is set or poster/config.json still has "reel_voice_alt". Returns (voice, None);
-    when Valluvar fails, main() falls back to the AI4Bharat voice (tts.py)."""
+    when Valluvar fails, main() falls back to the AI4Bharat voice (tts.py).
+    owner 16 Nov: poster/config.json reel_voice.engine "elevenlabs" + reel_voice.elevenlabs {voice_id, model} = ElevenLabs reads
+    every reel (the edge voice stays as the fallback)."""
     cfg = voice_setting()
     vs = {"engine": "edge", "voice": "ta-IN-ValluvarNeural", "rate": "+12%", "pitch": "+4Hz", "outro_voice": "en-IN-PrabhatNeural"}
+    el = cfg.get("elevenlabs") or {}
+    if cfg.get("engine") == "elevenlabs" and el.get("voice_id"):
+        vs.update(engine="elevenlabs", eleven_voice=el["voice_id"], eleven_model=el.get("model") or "eleven_v3",
+                  eleven_tag=el.get("tag", "[serious]"))
     for k in ("rate", "pitch", "outro_voice"):      # only the speed / pitch / English voice may come from config - never another engine
         v = cfg.get(k)
         if isinstance(v, str) and v and "Chirp" not in v and (k != "outro_voice" or v.endswith("Neural")):
@@ -595,9 +659,19 @@ def main(spec_path, out_mp4, page_key="coimbatore"):
     if os.environ.get("REUSE_VOICE") == "1" and all((work / f"line{i}.wav").exists() for i in range(len(texts))):
         print("voice of an earlier render reused (design comparison: same story, same voice)")
     else:
-        vs, _ = pick_voice(spec)      # always Valluvar (free)
+        vs, _ = pick_voice(spec)      # the config's voice: ElevenLabs (owner 16 Nov) or the free edge voice
         used = ""
-        if os.environ.get("PREVIEW_TTS") == "edge" or vs.get("engine") == "edge":
+        if vs.get("engine") == "elevenlabs" and os.environ.get("PREVIEW_TTS") != "edge":
+            try:
+                mood = os.environ.get("REEL_MUSIC_MOOD", "")
+                tones = [tone_of(t, mood, last=(i == len(texts) - 1), default=vs.get("eleven_tag", "[serious]")) for i, t in enumerate(texts)]
+                eleven_lines(work, texts, vs["eleven_voice"], vs.get("eleven_model", "eleven_v3"), tag=vs.get("eleven_tag", "[serious]"), tags=tones)
+                print("voice tones:", " ".join(tones))
+                used = "eleven"
+                print("news voice: ElevenLabs", vs["eleven_voice"], vs.get("eleven_model", ""))
+            except Exception as e:
+                print("ElevenLabs voice not available, using the free edge voice instead:", str(e)[:160])
+        if not used and (os.environ.get("PREVIEW_TTS") == "edge" or vs.get("engine") in ("edge", "elevenlabs")):
             try:
                 edge_lines(work, texts, vs.get("voice", "ta-IN-ValluvarNeural"), vs.get("rate", "+8%"), vs.get("pitch", "+0Hz"))
                 used = "edge"

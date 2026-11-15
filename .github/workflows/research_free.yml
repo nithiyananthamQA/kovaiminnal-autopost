@@ -63,6 +63,7 @@ jobs:
           DISTRICT_BRIDGE_KEY: ${{ secrets.DISTRICT_BRIDGE_KEY }}
           CLOUDINARY_CLOUD: ${{ secrets.CLOUDINARY_CLOUD }}
           CLOUDINARY_PRESET: ${{ secrets.CLOUDINARY_PRESET }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}      # owner 16 Nov: ElevenLabs reel voice
           BUDGET_MIN: "55"
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
