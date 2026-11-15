@@ -1,117 +1,51 @@
-19:28:52 Instagram token: the shared minnal-bot token (Minnal bridge)
-writing [N]: டிரைவர் தூக்கத்தால் லாரி கவிழ்ந்தது: எத்தனாலை மீட்ட தீயணைப்ப
-writing [N]: லாரிபேட்டை சுத்தமாகுமா, மாநகராட்சி மனது வைக்குமா
-writing [N]: கடல் போல் காட்சி தருகிறது காரமடைகருட தீர்த்த குளம்
+06:06:51 Instagram token: the shared minnal-bot token (Minnal bridge)
+writing [N]: புதிய சாலையில் பள்ளம் அவதிக்குள்ளான மக்கள்
+writing [N]: நொய்யல் நீரை கேரளத்துக்கு திருப்பியதால் சர்ச்சை! வேலுமணி உத்
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok gemini/gemini-3.6-flash (40s)
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
   "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high d
-ok gemini/gemini-3.6-flash (46s)
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-fail gemini/gemini-3.6-flash: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
-poor answer - skipped for 30 min: gemini/gemini-3.6-flash
-ok gemini/gemini-3.6-flash (16s)
-factcheck by gemini/gemini-3.6-flash: 0 problems
-attempt 1 gemini/gemini-3.6-flash: 0 problems
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok gemini/gemini-3.6-flash (9s)
-factcheck by gemini/gemini-3.6-flash: 0 problems
-attempt 1 gemini/gemini-3.6-flash: 0 problems
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
 fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please che
 dead for this round: gemini/gemini-3.5-flash
-ok gemini/gemini-3-flash-preview (15s)
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok gemini/gemini-3-flash-preview (5s)
-factcheck by gemini/gemini-3-flash-preview: 0 problems
-proofread by gemini/gemini-3-flash-preview: 0 problems
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok gemini/gemini-3-flash-preview (6s)
-real photo step skipped for 'Coimbatore Corporation to desilt drains ': real photos switched off
-ok gemini/gemini-3.5-flash (33s)
-proofread rejected (1 problems)
-  sentence 1 (one-line story) has 30 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-ok gemini/gemini-3-flash-preview (6s)
-fail gemini/gemini-3.5-flash: Expecting ',' delimiter: line 49 column 3 (char 1450)
-poor answer - skipped for 30 min: gemini/gemini-3.5-flash
-image match: False The image is an AI-generated digital illustration showing people walking down a narrow street, not an authentic news pho
-ok gemini/gemini-3-flash-preview (12s)
-attempt 1 gemini/gemini-3-flash-preview: 1 problems
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): பொள்ளாச்சி ('செட்டிபாளையம்: நீலம்பூர் - மதுக்கரை பை- பாஸ் ரோட்டில் இன்று ')
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing 
-image match: False The image is AI-generated (evident from visual artifacts such as distorted feet, unnatural limbs, and gibberish signs) r
-ok gemini/gemini-3-flash-preview (17s)
-attempt 2 gemini/gemini-3-flash-preview: 1 problems
-  caption needs 5 hashtags (Instagram max), has 6
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok gemini/gemini-3-flash-preview (11s)
-attempt 3 gemini/gemini-3-flash-preview: 1 problems
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): பொள்ளாச்சி ('செட்டிபாளையம்: நீலம்பூர் - மதுக்கரை பை- பாஸ் ரோட்டில் இன்று ')
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, plea
 dead for this round: gemini/gemini-3-flash-preview
-image match: False The photo does not show Commissioner M. Sivaguru Prabakaran / Ravi Teja, any officials conducting an inspection, or work
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 2 for 'Coimbatore Corporation to desilt drains '
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261114-1932","first":"RN-3"}
-posting job started at once
-real photo step skipped for 'Karamadai Garuda Theertham temple tank f': real photos switched off
-writing [N]: விபத்தின் பிடியில் நீலாம்பூர் - மதுக்கரை சாலை: வேடிக்கை பார்
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
+writing [N]: பயத்த காட்டிட்டாங்க பங்கு...
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please ch
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please ch
-ok gemma/gemma-4-26b-a4b-it (28s)
-attempt 4 gemma/gemma-4-26b-a4b-it: 1 problems
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): செட்டிபாளையம் ('செட்டிபாளையம்: நீலம்பூர் - மதுக்கரை பை- பாஸ் ரோட்டில் இன்று '); செட்டிபாளையம் ('செட்டிபாளையம், ஜெ.ஜெ.நகர் பாலம் அருகே சென்றபோது.')
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please ch
-fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 500: {
-  "error": {
-    "code": 500,
-    "message": "Internal error encountered.",
-    "status"
-fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 500: {
-  "error": {
-    "code": 500,
-    "message": "Internal error encountered.",
-    "status": "I
+switching away from gemma/gemma-4-26b-a4b-it for 10 min
 fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {
   "error": {
     "code": 429,
@@ -121,478 +55,950 @@ fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check 
-fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {"error":{"message":"Failed to validate JSON. Please adjust your prompt. See 'failed_gener
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok gemma/gemma-4-26b-a4b-it (23s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check 
 switching away from gemma/gemma-4-31b-it for 10 min
+ok groq/openai/gpt-oss-120b (7s)
+attempt 1 groq/openai/gpt-oss-120b: 3 problems
+  missing key: reel_script
+  missing key: caption
+  missing key: scenes
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
-image match check unavailable: gemini-3.5-flash: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
-switching away from groq/qwen/qwen3.8-27b for 10 min
-image match: False The image depicts a close-up of a modern pool deck or water feature with a rope barrier and tourists in shorts in the ba
 fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
 switching away from groq/openai/gpt-oss-120b for 10 min
+ok groq/qwen/qwen3.8-27b (4s)
+attempt 2 groq/qwen/qwen3.8-27b: 1 problems
+  sentence 1 (one-line story) has 14 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+ok gemma/gemma-4-31b-it (53s)
+factcheck by gemma/gemma-4-31b-it: 0 problems
+attempt 1 gemma/gemma-4-26b-a4b-it: 0 problems
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high dema
+ok groq/qwen/qwen3.8-27b (4s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (1s)
+factcheck by cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: 0 problems
+proofread by groq/qwen/qwen3.8-27b: 0 problems
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (9s)
+real photo step skipped for 'Large pothole on newly laid tar road in ': real photos switched off
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 2 for 'Karamadai Garuda Theertham temple tank f'
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261114-1933","first":"RN-4"}
-writing [N]: பழைய நகைகள் அடகு வைப்போர் விவரம் கேட்க போலீஸ் அட்வைஸ்
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Large pothole on newly laid tar road in '
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261115-0608","first":"RN-16"}
+posting job started at once
+writing [N]: செய்தி சாரல்: கோயம்புத்தூர்
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high dema
+switching away from gemma/gemma-4-31b-it for 10 min
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (83s)
+attempt 3 cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: 2 problems
+  reel_script has 47 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): கோவை ('கோவை: இருட்டில் படபடக்கும் அந்த ஐந்து நிமிட பயணம்...சிட்டிக்'); 5 ('இதை விட்டால் 5 கிலோ மீட்டர் வரை போத்தனூர் சுற்றி வரவேண்டும்.'); போத்தனூர் ('இதை விட்டால் 5 கிலோ மீட்டர் வரை போத்தனூர் சுற்றி வரவேண்டும்.')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (53s)
+attempt 1 cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: 2 problems
+  slides must have 3 or 4 items
+  reel_script has 27 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (81s)
-attempt 1 cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: 3 problems
-  reel_script has 68 words; need 95-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
-  caption needs 5 hashtags (Instagram max), has 6
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): கோவை ('கோவை: நீலாம்பூர் - மதுக்கரை வரையிலான புறவழிச்சாலை கேரளாவை இண')
+attempt 1 cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: 2 problems
+  reel_script has 58 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): தொண்டாமுத்தூர் ('விசாரித்தபோது, தொண்டாமுத்தூர் எம்.எல்.ஏ வேலுமணி உத்தரவின் பே')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (73s)
+attempt 2 cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: 1 problems
+  reel_script has 38 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)
 poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast
-fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)
-poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
 ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (33s)
-attempt 5 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): பொள்ளாச்சி ('செட்டிபாளையம்: நீலம்பூர் - மதுக்கரை பை- பாஸ் ரோட்டில் இன்று ')
+attempt 4 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  missing key: english_headline
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (27s)
-attempt 1 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
-  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (46s)
+attempt 3 cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: 3 problems
+  slides must have 3 or 4 items
+  reel_script has 34 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  known issue meta_article: script talks about the article instead of the news ('விவரங்கள் தெரியவில்லை') - rewrite so it does not happen again
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (30s)
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (30s)
-attempt 2 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
-  not grounded: location 'நகரம்' is not in the article
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (4s)
-factcheck by cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 8 problems
-  The caption and slides_spec say the crash happened on a Saturday, but the article does not say what day of the week it was.
-  The caption and slides_spec say the crash happened on November 14, but the article says it happened on நவ.,14, which is November 14 in Tamil but not in English.
-  The caption and slides_spec say the crash happened on the Pollachi bypass road, but the article says the crash happened on the நீலம்பூர் - மதுக்கரை பை- பாஸ் ரோடு.
-  The caption and slides_spec say the crash happened on the Pollachi bypass road, but the article says the crash happened on the நீலம்பூர் - மதுக்கரை பை- பாஸ் ரோடு.
-  The reel_script and caption say the driver was injured, but do not say that the driver was taken to a hospital.
-  The reel_script and caption say the driver was injured, but do not say that the driver was taken to a hospital.
-  The reel_script and caption say the driver was injured, but do not say that the driver was taken to a hospital.
-  The reel_script and caption say the driver was injured, but do not say that the driver was taken to a hospital.
-attempt 6 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 8 problems
-  fact-check: The caption and slides_spec say the crash happened on a Saturday, but the article does not say what day of the week it was.
-  fact-check: The caption and slides_spec say the crash happened on November 14, but the article says it happened on நவ.,14, which is November 14 in Tamil but not in English.
-  fact-check: The caption and slides_spec say the crash happened on the Pollachi bypass road, but the article says the crash happened on the நீலம்பூர் - மதுக்கரை பை- பாஸ் ரோடு.
-  fact-check: The caption and slides_spec say the crash happened on the Pollachi bypass road, but the article says the crash happened on the நீலம்பூர் - மதுக்கரை பை- பாஸ் ரோடு.
-  fact-check: The reel_script and caption say the driver was injured, but do not say that the driver was taken to a hospital.
-  fact-check: The reel_script and caption say the driver was injured, but do not say that the driver was taken to a hospital.
-  fact-check: The reel_script and caption say the driver was injured, but do not say that the driver was taken to a hospital.
-  fact-check: The reel_script and caption say the driver was injured, but do not say that the driver was taken to a hospital.
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
 fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)
 poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (29s)
-attempt 3 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
-  not grounded: location 'நகரம்' is not in the article
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (31s)
-attempt 7 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 2 problems
-  reel_script writes ages as newspaper shorthand (கொச்சிக்கு, 40,); say it as a news reader: '12 வயது மகன் ராஜா', 'கவுசிக் (14 வயது)' -> '14 வயதான கவுசிக்'
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): 40,000 ('கர்நாடகா மாநிலம், பாகல்கோட்டை சேர்ந்த டிரைவர் டாங்கிரி, 46, ')
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (35s)
-attempt 2 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
-  reel_script has 171 words; need 95-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (29s)
-attempt 4 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+ok groq/qwen/qwen3.8-27b (5s)
+attempt 2 groq/qwen/qwen3.8-27b: 2 problems
+  reel_script has 96 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
   slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (30s)
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (23s)
+attempt 4 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  reel_script has 34 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (2s)
-factcheck by cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 4 problems
-  The article does not mention the day of the week.
-  The reel_script and caption say that the driver was carrying ethanol from Thavanur to Kochi, but the article says that he was carrying it from Thavanur to Kochi.
-  The reel_script and caption say that the driver lost control due to drowsiness, but the article says that he lost control due to drowsiness and intoxication.
-  The reel_script and caption say that the driver was 46 years old, but the article does not mention his age.
-attempt 8 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 4 problems
-  fact-check: The article does not mention the day of the week.
-  fact-check: The reel_script and caption say that the driver was carrying ethanol from Thavanur to Kochi, but the article says that he was carrying it from Thavanur to Kochi.
-  fact-check: The reel_script and caption say that the driver lost control due to drowsiness, but the article says that he lost control due to drowsiness and intoxication.
-  fact-check: The reel_script and caption say that the driver was 46 years old, but the article does not mention his age.
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (42s)
+attempt 5 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 2 problems
+  reel_script has 174 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (27s)
 attempt 3 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): கோவை ('கோவை: நீலாம்பூர் - மதுக்கரை வரையிலான புறவழிச்சாலை கேரளாவை இண')
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (26s)
-attempt 5 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
-  not grounded: location 'நகரம்' is not in the article
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (28s)
-attempt 9 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): பொள்ளாச்சி ('செட்டிபாளையம்: நீலம்பூர் - மதுக்கரை பை- பாஸ் ரோட்டில் இன்று '); 46, ('கர்நாடகா மாநிலம், பாகல்கோட்டை சேர்ந்த டிரைவர் டாங்கிரி, 46, ')
+  reel_script has 79 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (31s)
-attempt 4 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
-  reel_script has 190 words; need 95-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (21s)
+attempt 5 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 3 problems
+  reel_script has 44 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  numbers not found in the article: 10
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 100 ('பில்லூர் அணையின், 100 அடி உயரத்தில், நேற்றைய நிலவரப்படி, 91.')
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (31s)
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (25s)
 attempt 6 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
-  not grounded: location 'நகரம்' is not in the article
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (26s)
-attempt 10 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): பொள்ளாச்சி ('செட்டிபாளையம்: நீலம்பூர் - மதுக்கரை பை- பாஸ் ரோட்டில் இன்று ')
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (28s)
+  reel_script has 84 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok anthropic/claude-haiku-5-5
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (7s)
-factcheck by cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 20 problems
-  The article says the road is a புறவழிச்சாலை, not a சாலை.
-  The article does not say the road is a 6-lane highway, but that it will be expanded to 6 lanes.
-  The article does not say the road is a புறவழிச்சாலை. The article does not say the road is a புறவழிச்சாலை.
-  The article does not mention a பிளாஸ்டிக் வேகத்தடை.
-  The article says the road is a புறவழிச்சாலை, not a சாலை.
-  The article does not say the road is a புறவழிச்சாலை.
-  The article does not say the road is a புறவழிச்சாலை.
-  The article does not say the road is a புறவழிச்சாலை.
-  The article does not say the road is a புறவழிச்சாலை.
-  The article does not say the road is a புறவழிச்சாலை.
-  The article does not say the road is a புறவழிச்சாலை.
-  The article does not say the road is a புறவழிச்சாலை.
-  The article does not say the road is a புறவழிச்சாலை.
-  The article does not say the road is a புறவழிச்சாலை.
-  The article does not say the road is a புறவழிச்சாலை.
-  The article does not say the road is a புறவழிச்சாலை.
-  The article does not say the road is a புறவழிச்சாலை.
-  The article does not say the road is a புறவழிச்சாலை.
-  The article does not say the road is a புறவழிச்சாலை.
-  The article does not say the road is a புறவழிச்சாலை.
-attempt 5 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 20 problems
-  fact-check: The article says the road is a புறவழிச்சாலை, not a சாலை.
-  fact-check: The article does not say the road is a 6-lane highway, but that it will be expanded to 6 lanes.
-  fact-check: The article does not say the road is a புறவழிச்சாலை. The article does not say the road is a புறவழிச்சாலை.
-  fact-check: The article does not mention a பிளாஸ்டிக் வேகத்தடை.
-  fact-check: The article says the road is a புறவழிச்சாலை, not a சாலை.
-  fact-check: The article does not say the road is a புறவழிச்சாலை.
-  fact-check: The article does not say the road is a புறவழிச்சாலை.
-  fact-check: The article does not say the road is a புறவழிச்சாலை.
-  fact-check: The article does not say the road is a புறவழிச்சாலை.
-  fact-check: The article does not say the road is a புறவழிச்சாலை.
-  fact-check: The article does not say the road is a புறவழிச்சாலை.
-  fact-check: The article does not say the road is a புறவழிச்சாலை.
-  fact-check: The article does not say the road is a புறவழிச்சாலை.
-  fact-check: The article does not say the road is a புறவழிச்சாலை.
-  fact-check: The article does not say the road is a புறவழிச்சாலை.
-  fact-check: The article does not say the road is a புறவழிச்சாலை.
-  fact-check: The article does not say the road is a புறவழிச்சாலை.
-  fact-check: The article does not say the road is a புறவழிச்சாலை.
-  fact-check: The article does not say the road is a புறவழிச்சாலை.
-  fact-check: The article does not say the road is a புறவழிச்சாலை.
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (35s)
-attempt 7 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 2 problems
-  reel_script has 207 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
-  not grounded: location 'நகரம்' is not in the article
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (26s)
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (3s)
-factcheck by cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 9 problems
-  The article says the road is to be expanded to six lanes, not two
-  The article does not mention a temporary speed breaker, but a temporary speed limit
-  The article does not mention that the road is narrow
-  The article does not mention that the road is narrow enough that oncoming vehicles cannot be seen
-  The article does not mention that the road is narrow enough that vehicles collide
-  The article does not mention that the road is narrow enough that vehicles collide with each other
-  The article does not mention that the road is narrow enough that vehicles collide with each other and cause accidents
-  The article does not mention that the road is narrow enough that vehicles collide with each other and cause accidents, so the reel_script is missing this important fact
-  The article does not mention that the road is narrow enough that vehicles collide with each other and cause accidents, so the slides_spec is missing this important fact
-attempt 6 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 9 problems
-  fact-check: The article says the road is to be expanded to six lanes, not two
-  fact-check: The article does not mention a temporary speed breaker, but a temporary speed limit
-  fact-check: The article does not mention that the road is narrow
-  fact-check: The article does not mention that the road is narrow enough that oncoming vehicles cannot be seen
-  fact-check: The article does not mention that the road is narrow enough that vehicles collide
-  fact-check: The article does not mention that the road is narrow enough that vehicles collide with each other
-  fact-check: The article does not mention that the road is narrow enough that vehicles collide with each other and cause accidents
-  fact-check: The article does not mention that the road is narrow enough that vehicles collide with each other and cause accidents, so the reel_script is missing this important fact
-  fact-check: The article does not mention that the road is narrow enough that vehicles collide with each other and cause accidents, so the slides_spec is missing this important fact
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (15s)
+attempt 6 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 2 problems
+  slides must have 3 or 4 items
+  reel_script has 28 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (24s)
-attempt 8 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 2 problems
-  reel_script has 88 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
-  not grounded: location 'நகரம்' is not in the article
+attempt 4 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  reel_script has 90 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (37s)
-attempt 7 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 2 problems
-  reel_script has 173 words; need 95-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): கோவை ('கோவை: நீலாம்பூர் - மதுக்கரை வரையிலான புறவழிச்சாலை கேரளாவை இண')
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (17s)
+attempt 7 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  reel_script has 44 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (26s)
+attempt 7 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): போத்தனூர் ('இதை விட்டால் 5 கிலோ மீட்டர் வரை போத்தனூர் சுற்றி வரவேண்டும்.')
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-fail cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: Unterminated string starting at: line 1 column 16596 (char 16595)
-poor answer - skipped for 30 min: cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct
-free fact-check unavailable, using Claude: no free model answered: Unterminated string starting at: line 1 column 16596 (char 16595)
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (30s)
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (18s)
+attempt 8 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 2 problems
+  reel_script has 37 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 100 ('பில்லூர் அணையின், 100 அடி உயரத்தில், நேற்றைய நிலவரப்படி, 91.')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (34s)
+attempt 5 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  reel_script has 177 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (31s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (17s)
 attempt 9 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
-  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  reel_script has 35 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-free models unavailable: no free model answered: None
-ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 5 problems
-  Reel script says the fire services 'prevented an accident' by spraying foam, which matches the article, but the reel_script says 'நுரை திரவம்' without the article's 'தீயணைப்பு' context — minor; more importantly, slide 3 says 'தீயணைப்பு படையினர் நுரை திரவம் அடித்து அசம்பாவிதம்' which is an incomplete sentence with no clear meaning
-  Slide 3 line 'டேங்கரிலிருந்த திரவம் கசிந்தது' is a separate fact placed under 'மீட்புப் பணி' heading, mixing the leak with the rescue operation
-  Slide 2 says the driver 'தாவனகரேயிலிருந்து கொச்சிக்கு எத்தனால் கொண்டு சென்றார்' under the 'ஏன் கவிழ்ந்தது?' heading, mixing the cargo journey into the cause section
-  Reel script states the driver's injury and that he was taken to hospital without the article's order, and omits that the fire team sprayed foam in a way that is unclear; the reel_script omits that the rescue team used 'மூன்று கிரேன்' results were only partially described
-  Caption says 'டிரைவர் காயமடைந்தார்' and headline says 'எத்தனாலை மீட்ட தீயணைப்பு துறை' but caption and reel describe the lorry as 'டேங்கர் லாரி' carrying 40,000 litres of ethanol while the headline/ slide 'மீட்புப் பணி' attributes the 40,000 litres as 'ஏற்றப்பட்டிருந்தது' which is not stated as such in the article
-claude rewrite 1 anthropic/claude-haiku-5-5: 5 problems
-  fact-check: Reel script says the fire services 'prevented an accident' by spraying foam, which matches the article, but the reel_script says 'நுரை திரவம்' without the article's 'தீயணைப்பு' context — minor; more importantly, slide 3 says 'தீயணைப்பு படையினர் நுரை திரவம் அடித்து அசம்பாவிதம்' which is an incomplete sentence with no clear meaning
-  fact-check: Slide 3 line 'டேங்கரிலிருந்த திரவம் கசிந்தது' is a separate fact placed under 'மீட்புப் பணி' heading, mixing the leak with the rescue operation
-  fact-check: Slide 2 says the driver 'தாவனகரேயிலிருந்து கொச்சிக்கு எத்தனால் கொண்டு சென்றார்' under the 'ஏன் கவிழ்ந்தது?' heading, mixing the cargo journey into the cause section
-  fact-check: Reel script states the driver's injury and that he was taken to hospital without the article's order, and omits that the fire team sprayed foam in a way that is unclear; the reel_script omits that the rescue team used 'மூன்று கிரேன்' results were only partially described
-  fact-check: Caption says 'டிரைவர் காயமடைந்தார்' and headline says 'எத்தனாலை மீட்ட தீயணைப்பு துறை' but caption and reel describe the lorry as 'டேங்கர் லாரி' carrying 40,000 litres of ethanol while the headline/ slide 'மீட்புப் பணி' attributes the 40,000 litres as 'ஏற்றப்பட்டிருந்தது' which is not stated as such in the article
-ok anthropic/claude-haiku-5-5
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (26s)
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-free fact-check unavailable, using Claude: no free model answered: None
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (6s)
+factcheck by cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 7 problems
+  The time of the water diversion is incorrect. The article says it happened on the previous day, not 'நேற்று முன்தினம் இரவு' (the day before yesterday night).
+  The article does not mention 'சுகுணாபுரம் அருகே உள்ள' (near Sukunapuram).
+  The reel_script misses the important fact that the water was diverted due to an order from the MLA Velumani.
+  The reel_script mixes two different facts into one sentence: 'நொய்யல் வழித்தட குளங்களில் நீர் தேக்கம் பாதிக்கும்' is repeated twice.
+  The caption mixes two different facts into one sentence: 'நொய்யல் வழித்தட குளங்களில் நீர் தேக்கம் பாதிக்கும்' is repeated twice.
+  The caption mixes two different facts into one sentence: 'நொய்யல் ஆற்று நீரை செங்குளத்துக்கு உட்பட்ட பகுதியில் உள்ள மஞ்சிப்பள்ளம் ஓடைக்கு திருப்பினர்' and 'நொய்யல் ஆற்றில் குறைந்த நீரைத்தான் குளங்களுக்கு கொண்டு செல்ல வேண்டும்' are combined.
+  The caption mixes two different facts into one sentence: 'நொய்யல் வழித்தட குளங்களில் நீர் தேக்கம் பாதிக்கும்' and 'நொய்யல் நீரை மஞ்சிப்பள்ளம் ஓடைக்கு திருப்பி விட்டால், அது கேரள மாநிலத்தின் பாரதப்புழாவுக்கு செல்லும்' are combined.
+attempt 6 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 7 problems
+  fact-check: The time of the water diversion is incorrect. The article says it happened on the previous day, not 'நேற்று முன்தினம் இரவு' (the day before yesterday night).
+  fact-check: The article does not mention 'சுகுணாபுரம் அருகே உள்ள' (near Sukunapuram).
+  fact-check: The reel_script misses the important fact that the water was diverted due to an order from the MLA Velumani.
+  fact-check: The reel_script mixes two different facts into one sentence: 'நொய்யல் வழித்தட குளங்களில் நீர் தேக்கம் பாதிக்கும்' is repeated twice.
+  fact-check: The caption mixes two different facts into one sentence: 'நொய்யல் வழித்தட குளங்களில் நீர் தேக்கம் பாதிக்கும்' is repeated twice.
+  fact-check: The caption mixes two different facts into one sentence: 'நொய்யல் ஆற்று நீரை செங்குளத்துக்கு உட்பட்ட பகுதியில் உள்ள மஞ்சிப்பள்ளம் ஓடைக்கு திருப்பினர்' and 'நொய்யல் ஆற்றில் குறைந்த நீரைத்தான் குளங்களுக்கு கொண்டு செல்ல வேண்டும்' are combined.
+  fact-check: The caption mixes two different facts into one sentence: 'நொய்யல் வழித்தட குளங்களில் நீர் தேக்கம் பாதிக்கும்' and 'நொய்யல் நீரை மஞ்சிப்பள்ளம் ஓடைக்கு திருப்பி விட்டால், அது கேரள மாநிலத்தின் பாரதப்புழாவுக்கு செல்லும்' are combined.
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (18s)
+attempt 10 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  reel_script has 35 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
 ok anthropic/claude-haiku-5-5
 claude rewrite 1 anthropic/claude-haiku-5-5: 2 problems
-  reel_script has 175 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
-  sentence 1 (one-line story) has 16 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
-ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 1 problems
-  The article says the lorry was heading toward the Pollachi road junction, but the draft's reel_script and caption say it was heading toward it; this matches. However, the reel_script says the driver 'carried' ethanol from Davanagere to Kochi, which the article supports, so no issue there — the actual problem: the caption and slides say the driver is 'டாங்கிரி, 46 வயது' while the reel_script says the driver 'டாங்கிரி' was 46 years old, which matches; no discrepancy found there either. The real issue: the reel_script omits that the driver was injured and rescued by local people only partially, but it does include that — so the only confirmed gap is the caption's claim 'அப்பகுதி மக்கள்' which the article states as 'அப்பகுதியிலிருந்தோர்', consistent.
-claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
-  fact-check: The article says the lorry was heading toward the Pollachi road junction, but the draft's reel_script and caption say it was heading toward it; this matches. However, the reel_script says the driver 'carried' ethanol from Davanagere to Kochi, which the article supports, so no issue there — the actual problem: the caption and slides say the driver is 'டாங்கிரி, 46 வயது' while the reel_script says the driver 'டாங்கிரி' was 46 years old, which matches; no discrepancy found there either. The real issue: the reel_script omits that the driver was injured and rescued by local people only partially, but it does include that — so the only confirmed gap is the caption's claim 'அப்பகுதி மக்கள்' which the article states as 'அப்பகுதியிலிருந்தோர்', consistent.
+  reel_script has 40 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  not grounded: only 38% of the words come from the article (e.g. அடியாக, உயர்ந்துள்ளது, உயரம், இந்த, பதிவாகியுள்ளது); use the article's own words and facts
 ok anthropic/claude-haiku-5-5
 claude rewrite 2 anthropic/claude-haiku-5-5: 2 problems
-  sentence 1 (one-line story) has 16 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
-  hl1 (the first headline on screen) must name the place 'கோவை மாநகரம்', e.g. 'கோவை மாநகரம்: ...' or 'கோவை மாநகரம்-இல் ...' - viewers share news of their own area
+  slides must have 3 or 4 items
+  reel_script has 38 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 2 problems
+  slides must have 3 or 4 items
+  reel_script has 30 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (26s)
+attempt 7 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): தொண்டாமுத்தூர் ('விசாரித்தபோது, தொண்டாமுத்தூர் எம்.எல்.ஏ வேலுமணி உத்தரவின் பே')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (52s)
+factcheck by cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 123 problems
+  The draft says the path is 5 km long, but the article says that bypassing the path requires traveling 5 km.
+  The draft says the path is 5 km long, but the article says the path is a 5-to-10-minute journey.
+  The draft says the path is 5 km long, but the article does not give the path's length.
+  The draft says the path is 5 km long, but the article does not mention 5 km in connection with the path.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  The draft says the path is 5 km long, but the article does not mention the path's length.
+  The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  The draft says the path is 5 km long, but the article does not mention the path's length at all.
+attempt 8 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 123 problems
+  fact-check: The draft says the path is 5 km long, but the article says that bypassing the path requires traveling 5 km.
+  fact-check: The draft says the path is 5 km long, but the article says the path is a 5-to-10-minute journey.
+  fact-check: The draft says the path is 5 km long, but the article does not give the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention 5 km in connection with the path.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in kilometers.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length in any units.
+  fact-check: The draft says the path is 5 km long, but the article does not mention the path's length at all.
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (18s)
+proofread rejected (2 problems)
+  reel_script has 40 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  post_to must be 'Kovai Minnal'
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (6s)
+real photo step skipped for 'Pillur dam water level at 91.75 feet: in': real photos switched off
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (26s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+images made: 2 for 'Pillur dam water level at 91.75 feet: in'
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261115-0614","first":"RN-17"}
+writing [N]: மோசடிக்கு வங்கிக்கணக்கு துவக்கம் பெண் உட்பட இருவருக்கு சிறை
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (28s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (9s)
+factcheck by cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 17 problems
+  The headline and reel_script repeat the path's location twice.
+  The headline and reel_script say the path is 'பயங்கரமான' (terrifying), but the article does not use this word.
+  The reel_script says the path is used by 'பெண்கள், குழந்தைகள், வயதானோர்' (women, children, elderly), but the article also mentions 'வேலைக்கு செல்வோர்' (workers) and 'வியாபாரிகள்' (businesspeople).
+  The reel_script says the shopkeeper has a backache because of using the path, but the article says the shopkeeper has a backache and uses the path to avoid traffic.
+  The reel_script says the shopkeeper would have to travel '5 கிலோ மீட்டர்' to get supplies if not using the path, but the article says 'அஞ்சு கிலோ மீட்டர்' (about 3 km).
+  The reel_script does not mention that the shopkeeper says the path is not improved despite many governments coming and going.
+  The reel_script does not mention that the shopkeeper says garbage is dumped on the path.
+  The reel_script does not mention that the shopkeeper says no evidence would be found in case of an accident.
+  The reel_script does not mention that the shopkeeper says CCTV cameras are only at the Nanjundapuram road junction.
+  The reel_script does not mention that the reporters asked the shopkeeper about elections and promises.
+  Slide 1 repeats that the path is between Nanjundapuram and Vellalur Mahalingapuram.
+  Slide 1 says the path is a '5 முதல் 10 நிமிட பயணம்' (5 to 10 minute journey), but the article says this is the time to reach Nanjundapuram using the path.
+  Slide 2 says women, children, and elderly travel on the path, but the article also mentions workers and businesspeople.
+  Slide 3 says the shopkeeper has a backache because of using the path, but the article says the shopkeeper has a backache and uses the path to avoid traffic.
+  The caption repeats that the path is between Nanjundapuram and Vellalur Mahalingapuram.
+  The caption says the path is 'பயங்கரமான' (terrifying), but the article does not use this word.
+  The caption says women, children, and elderly travel on the path, but the article also mentions workers and businesspeople.
+attempt 9 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 17 problems
+  fact-check: The headline and reel_script repeat the path's location twice.
+  fact-check: The headline and reel_script say the path is 'பயங்கரமான' (terrifying), but the article does not use this word.
+  fact-check: The reel_script says the path is used by 'பெண்கள், குழந்தைகள், வயதானோர்' (women, children, elderly), but the article also mentions 'வேலைக்கு செல்வோர்' (workers) and 'வியாபாரிகள்' (businesspeople).
+  fact-check: The reel_script says the shopkeeper has a backache because of using the path, but the article says the shopkeeper has a backache and uses the path to avoid traffic.
+  fact-check: The reel_script says the shopkeeper would have to travel '5 கிலோ மீட்டர்' to get supplies if not using the path, but the article says 'அஞ்சு கிலோ மீட்டர்' (about 3 km).
+  fact-check: The reel_script does not mention that the shopkeeper says the path is not improved despite many governments coming and going.
+  fact-check: The reel_script does not mention that the shopkeeper says garbage is dumped on the path.
+  fact-check: The reel_script does not mention that the shopkeeper says no evidence would be found in case of an accident.
+  fact-check: The reel_script does not mention that the shopkeeper says CCTV cameras are only at the Nanjundapuram road junction.
+  fact-check: The reel_script does not mention that the reporters asked the shopkeeper about elections and promises.
+  fact-check: Slide 1 repeats that the path is between Nanjundapuram and Vellalur Mahalingapuram.
+  fact-check: Slide 1 says the path is a '5 முதல் 10 நிமிட பயணம்' (5 to 10 minute journey), but the article says this is the time to reach Nanjundapuram using the path.
+  fact-check: Slide 2 says women, children, and elderly travel on the path, but the article also mentions workers and businesspeople.
+  fact-check: Slide 3 says the shopkeeper has a backache because of using the path, but the article says the shopkeeper has a backache and uses the path to avoid traffic.
+  fact-check: The caption repeats that the path is between Nanjundapuram and Vellalur Mahalingapuram.
+  fact-check: The caption says the path is 'பயங்கரமான' (terrifying), but the article does not use this word.
+  fact-check: The caption says women, children, and elderly travel on the path, but the article also mentions workers and businesspeople.
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (31s)
+attempt 1 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 3 problems
+  reel_script has 169 words; need 97-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 8,000 ('ஆனந்த், மலர் செல்வி ரூ.8,000 முதல், ரூ.10 ஆயிரம் வரை கமிஷன் '); 10 ('ஆனந்த், மலர் செல்வி ரூ.8,000 முதல், ரூ.10 ஆயிரம் வரை கமிஷன் '); 70 ('சிறையில் அடைக்கப்பட்ட இருவரிடம் இருந்தும், 70 வங்கிக்கணக்குக'); 25 ('சிறையில் அடைக்கப்பட்ட இருவரிடம் இருந்தும், 70 வங்கிக்கணக்குக'); 8 ('சிறையில் அடைக்கப்பட்ட இருவரிடம் இருந்தும், 70 வங்கிக்கணக்குக')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (32s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (5s)
+factcheck by cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 8 problems
+  The headline and caption say 'பாலம்' (bridge) but the article says 'மண் பாதை' (earth path).
+  The reel_script and caption say '3 கிலோ மீட்டர்' but the article says '5 கிலோ மீட்டர்'.
+  The reel_script and caption say '5 முதல் 10 நிமிட பயணம்' but the article says '5 முதல் 10 நிமிடத்தில் எட்டி விடலாம்' (5 to 10 minutes to reach, not for the journey).
+  The reel_script and caption say 'பாதை' but the article says 'பாதை' and 'மண் பாதை'.
+  The slides_spec says 'சாலை விபத்து' but the article does not mention an accident.
+  The slides_spec says 'பெண்கள் பயணம் பாதிப்பு' but the article does not mention any harm to women, only their feelings.
+  The reel_script and caption do not mention that the path is between Nanjundapuram and Vellalur Mahalingapuram, only that it is a path used by many people.
+  The reel_script and caption do not mention the quote from the shopkeeper about the government, waste, or CCTV cameras.
+attempt 10 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 8 problems
+  fact-check: The headline and caption say 'பாலம்' (bridge) but the article says 'மண் பாதை' (earth path).
+  fact-check: The reel_script and caption say '3 கிலோ மீட்டர்' but the article says '5 கிலோ மீட்டர்'.
+  fact-check: The reel_script and caption say '5 முதல் 10 நிமிட பயணம்' but the article says '5 முதல் 10 நிமிடத்தில் எட்டி விடலாம்' (5 to 10 minutes to reach, not for the journey).
+  fact-check: The reel_script and caption say 'பாதை' but the article says 'பாதை' and 'மண் பாதை'.
+  fact-check: The slides_spec says 'சாலை விபத்து' but the article does not mention an accident.
+  fact-check: The slides_spec says 'பெண்கள் பயணம் பாதிப்பு' but the article does not mention any harm to women, only their feelings.
+  fact-check: The reel_script and caption do not mention that the path is between Nanjundapuram and Vellalur Mahalingapuram, only that it is a path used by many people.
+  fact-check: The reel_script and caption do not mention the quote from the shopkeeper about the government, waste, or CCTV cameras.
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (29s)
+attempt 2 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  not grounded: location 'நகரம்' is not in the article
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: Unterminated string starting at: line 104 column 5 (char 15931)
+poor answer - skipped for 30 min: cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free fact-check unavailable, using Claude: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model 
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
+  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 9 problems
+  Reel script and caption say the water was diverted to Kerala (கேரள மாநிலத்திற்கு), but the article says the water went to Manjipallam odai, which flows to Kerala's Bharathapuzha only as a consequence; the headline/hook frames it as diverted to Kerala, which is a stretch from the article.
+  Reel script says the diversion happened 'நேற்று முன்தினம் இரவு' (the night before yesterday), but the article only says 'நேற்று முன்தினம்' (the day before yesterday) with no mention of night.
+  Reel script says 'நொய்யல் ஆற்றில் குறைந்த நீரை குளங்களுக்கு கொண்டு செல்ல வேண்டும்' as a statement of fact, mixing the article's 'should be carried' point with the sentence that follows, making the sentence unclear and merged with another fact.
+  Reel script says the farmers' concern is 'நொய்யல் வழித்தட குளங்களில் நீர் தேக்கம் பாதிக்கும்' but the sentence is attached to 'விவசாயிகள் நொய்யல் வழித்தட குளங்களில் நீர் தேக்கம் பாதிக்கும் என்று கூறினர்' in an ungrammatical flow where the quote is not clearly attributed, mixing two facts.
+  Reel script says the water was diverted 'Manjipallam odai... flow', and says 'அதனால் அவர்களுக்கு தேவையான நீருக்கு மேலேயே கிடைத்திருக்கிறது' which is an ungrammatical and unclear Tamil sentence meaning 'they already get more than needed water' in a garbled way.
+  Reel script omits the important fact that the officials stopped the diversion route after farmers' protest only as 'நீர்வளத்துறை அதிகாரிகள் நீரை திருப்பிய வழியை அடைத்தனர்' — this is present, but the timing 'நேற்று மாலையில்' is stated, which is fine; however the slides and reel say 'நீர்வளத்துறை அதிகாரிகள் நீரை திருப்பிய வழியை அடைத்தனர்' without the cause shown clearly in the same sentence (acceptable).
+  Slide 'எதற்காக?' states the reason as the Manjipallam flood and dam full, which the article presents as the farmers' argument, not an official reason; the slide presents it as the cause of the diversion.
+  Caption and reel say 'தொண்டாமுத்தூர் எம்.எல்.ஏ வேலுமணி உத்தரவின் பேரில்' as established fact, while the article only reports this as what farmers were told ('விசாரித்தபோது... என தெரிய வந்ததாக விவசாயிகள் கூறினர்'), so it is an unverified claim presented as fact.
+  Reel script says 'தொண்டாமுத்தூர் சட்டமன்ற உறுப்பினர்வேலுமணி' with a missing space, a minor typographical error affecting clarity.
+attempt 8 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 9 problems
+  fact-check: Reel script and caption say the water was diverted to Kerala (கேரள மாநிலத்திற்கு), but the article says the water went to Manjipallam odai, which flows to Kerala's Bharathapuzha only as a consequence; the headline/hook frames it as diverted to Kerala, which is a stretch from the article.
+  fact-check: Reel script says the diversion happened 'நேற்று முன்தினம் இரவு' (the night before yesterday), but the article only says 'நேற்று முன்தினம்' (the day before yesterday) with no mention of night.
+  fact-check: Reel script says 'நொய்யல் ஆற்றில் குறைந்த நீரை குளங்களுக்கு கொண்டு செல்ல வேண்டும்' as a statement of fact, mixing the article's 'should be carried' point with the sentence that follows, making the sentence unclear and merged with another fact.
+  fact-check: Reel script says the farmers' concern is 'நொய்யல் வழித்தட குளங்களில் நீர் தேக்கம் பாதிக்கும்' but the sentence is attached to 'விவசாயிகள் நொய்யல் வழித்தட குளங்களில் நீர் தேக்கம் பாதிக்கும் என்று கூறினர்' in an ungrammatical flow where the quote is not clearly attributed, mixing two facts.
+  fact-check: Reel script says the water was diverted 'Manjipallam odai... flow', and says 'அதனால் அவர்களுக்கு தேவையான நீருக்கு மேலேயே கிடைத்திருக்கிறது' which is an ungrammatical and unclear Tamil sentence meaning 'they already get more than needed water' in a garbled way.
+  fact-check: Reel script omits the important fact that the officials stopped the diversion route after farmers' protest only as 'நீர்வளத்துறை அதிகாரிகள் நீரை திருப்பிய வழியை அடைத்தனர்' — this is present, but the timing 'நேற்று மாலையில்' is stated, which is fine; however the slides and reel say 'நீர்வளத்துறை அதிகாரிகள் நீரை திருப்பிய வழியை அடைத்தனர்' without the cause shown clearly in the same sentence (acceptable).
+  fact-check: Slide 'எதற்காக?' states the reason as the Manjipallam flood and dam full, which the article presents as the farmers' argument, not an official reason; the slide presents it as the cause of the diversion.
+  fact-check: Caption and reel say 'தொண்டாமுத்தூர் எம்.எல்.ஏ வேலுமணி உத்தரவின் பேரில்' as established fact, while the article only reports this as what farmers were told ('விசாரித்தபோது... என தெரிய வந்ததாக விவசாயிகள் கூறினர்'), so it is an unverified claim presented as fact.
+  fact-check: Reel script says 'தொண்டாமுத்தூர் சட்டமன்ற உறுப்பினர்வேலுமணி' with a missing space, a minor typographical error affecting clarity.
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 413: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
 ok anthropic/claude-haiku-5-5
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (29s)
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free fact-check unavailable, using Claude: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model 
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 2 problems
+  reel_script has 93 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  hl1 (the first headline on screen) must name the place 'சுகுணாபுரம்', e.g. 'சுகுணாபுரம்: ...' or 'சுகுணாபுரம்-இல் ...' - viewers share news of their own area
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 7 problems
+  The reel_script says the shopkeeper uses the path because the Pothanur route is congested with back pain, but the article says he uses it to avoid the 5 km detour and he has back pain; the reason is merged in a way that is roughly fine, but the reel says 'போக்குவரத்து நெரிசலால் முதுகுவலியுடன் அதிக நேரம் ஆகும்' which conflates two facts (back pain and traffic) into one causal claim not stated in the article.
+  The reel_script says 'சில குடியிருப்போர் இங்கு குப்பை கொட்டுவதாகவும்' - the article says educated, responsible residents of the area dump garbage there; 'சில' and 'குடியிருப்போர்' are a slight alteration, though acceptable wording.
+  The reel_script says 'இரவில் சைக்கிளில் வரும் தொழிலாளர்கள் கீழே விழாமல் செல்வது பெரிய விஷயமாக உள்ளது' - the article says the 'அடித்தட்டு மக்கள்' (working-class people) cycling at night; calling them 'தொழிலாளர்கள்' is an invented specific occupation label.
+  The slides_spec 'மக்களின் குறை' slide claims 'இரவில் சைக்கிளில் வருவோர் கீழே விழும் அபாயம்' - the article says they must avoid falling and the praise line is sarcastic; presenting it as a stated danger is an overstatement but supported in spirit.
+  The slides_spec hl2 'போத்தனூர் வழியில் 5 கி.மீ.' and the caption's 'போத்தனூர் கடைவீதியில் காலையில் போக்குவரத்து நெரிசல் அதிகம்' are fine, but the caption states the shopkeeper uses the path 'என்பதால்' in a way that mirrors the reel's conflation.
+  The reel_script omits the shopkeeper's statement that he is in pain from his back is included, but it omits the fact that the article says the shopkeeper has back pain as his own situation; instead the reel just says 'முதுகுவலியுடன்' without clearly attributing it to him, which is an ambiguous sentence in Tamil.
+  The reel_script says the path is 'நொய்யல் ஆற்றோரம் நஞ்சுண்டாபுரத்தையும் வெள்ளலூர் மகாலிங்கபுரத்தையும் இணைக்கிறது' - consistent with the article, but the reel omits the article's point that the 5-minute route is the key benefit; this is minor.
+claude rewrite 2 anthropic/claude-haiku-5-5: 7 problems
+  fact-check: The reel_script says the shopkeeper uses the path because the Pothanur route is congested with back pain, but the article says he uses it to avoid the 5 km detour and he has back pain; the reason is merged in a way that is roughly fine, but the reel says 'போக்குவரத்து நெரிசலால் முதுகுவலியுடன் அதிக நேரம் ஆகும்' which conflates two facts (back pain and traffic) into one causal claim not stated in the article.
+  fact-check: The reel_script says 'சில குடியிருப்போர் இங்கு குப்பை கொட்டுவதாகவும்' - the article says educated, responsible residents of the area dump garbage there; 'சில' and 'குடியிருப்போர்' are a slight alteration, though acceptable wording.
+  fact-check: The reel_script says 'இரவில் சைக்கிளில் வரும் தொழிலாளர்கள் கீழே விழாமல் செல்வது பெரிய விஷயமாக உள்ளது' - the article says the 'அடித்தட்டு மக்கள்' (working-class people) cycling at night; calling them 'தொழிலாளர்கள்' is an invented specific occupation label.
+  fact-check: The slides_spec 'மக்களின் குறை' slide claims 'இரவில் சைக்கிளில் வருவோர் கீழே விழும் அபாயம்' - the article says they must avoid falling and the praise line is sarcastic; presenting it as a stated danger is an overstatement but supported in spirit.
+  fact-check: The slides_spec hl2 'போத்தனூர் வழியில் 5 கி.மீ.' and the caption's 'போத்தனூர் கடைவீதியில் காலையில் போக்குவரத்து நெரிசல் அதிகம்' are fine, but the caption states the shopkeeper uses the path 'என்பதால்' in a way that mirrors the reel's conflation.
+  fact-check: The reel_script omits the shopkeeper's statement that he is in pain from his back is included, but it omits the fact that the article says the shopkeeper has back pain as his own situation; instead the reel just says 'முதுகுவலியுடன்' without clearly attributing it to him, which is an ambiguous sentence in Tamil.
+  fact-check: The reel_script says the path is 'நொய்யல் ஆற்றோரம் நஞ்சுண்டாபுரத்தையும் வெள்ளலூர் மகாலிங்கபுரத்தையும் இணைக்கிறது' - consistent with the article, but the reel omits the article's point that the 5-minute route is the key benefit; this is minor.
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (31s)
+attempt 3 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 3 problems
+  reel_script has 178 words; need 97-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 8,000 ('ஆனந்த், மலர் செல்வி ரூ.8,000 முதல், ரூ.10 ஆயிரம் வரை கமிஷன் '); 10 ('ஆனந்த், மலர் செல்வி ரூ.8,000 முதல், ரூ.10 ஆயிரம் வரை கமிஷன் ')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
+  reel_script has 95 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
+  sentence 1 (one-line story) has 14 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+proofread skipped: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6k595xsevr8qckv4ngn66p1` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Requested 1025. The request's expected output tokens exceed the enforced limit; reduce max_tokens (or the request's expected output) and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok groq/qwen/qwen3.8-27b (1s)
+real photo step skipped for 'Noyyal riverside mud path in Coimbatore:': real photos switched off
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 2 problems
+  hl1 (the first headline on screen) must name the place 'கோவை', e.g. 'கோவை: ...' or 'கோவை-இல் ...' - viewers share news of their own area
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 10 ('ஆனந்த், மலர் செல்வி ரூ.8,000 முதல், ரூ.10 ஆயிரம் வரை கமிஷன் ')
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
+  hl1 (the first headline on screen) must name the place 'தொண்டாமுத்தூர்', e.g. 'தொண்டாமுத்தூர்: ...' or 'தொண்டாமுத்தூர்-இல் ...' - viewers share news of their own area
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-free fact-check unavailable, using Claude: no free model answered: None
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+images made: 2 for 'Noyyal riverside mud path in Coimbatore:'
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261115-0616","first":"RN-18"}
+writing [N]: பிரபல பெண் பற்றி அவதூறு; பிரபல யூடியூபர் மணிகண்டன் கைது
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 2 problems
+  slide 1 line 1 longer than 60 characters
+  reel_script has 91 words; need 97-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
+  hl1 (the first headline on screen) must name the place 'கோவை', e.g. 'கோவை: ...' or 'கோவை-இல் ...' - viewers share news of their own area
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 3 problems
+  reel_script has 96 words; need 97-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  hl1 (the first headline on screen) must name the place 'கோவை மாநகரம்', e.g. 'கோவை மாநகரம்: ...' or 'கோவை மாநகரம்-இல் ...' - viewers share news of their own area
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 10 ('ஆனந்த், மலர் செல்வி ரூ.8,000 முதல், ரூ.10 ஆயிரம் வரை கமிஷன் ')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+proofread skipped: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6k595xsevr8qckv4ngn66p1` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Requested 1915. The request's expected output tokens exceed the enforced limit; reduce max_tokens (or the request's expected output) and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok groq/qwen/qwen3.8-27b (4s)
+proofread rejected (3 problems)
+  hl2 longer than 28 characters
+  slide 2 title longer than 18 characters
+  hl1 (the first headline on screen) must name the place 'தொண்டாமுத்தூர்', e.g. 'தொண்டாமுத்தூர்: ...' or 'தொண்டாமுத்தூர்-இல் ...' - viewers share news of their own area
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+ok anthropic/claude-haiku-5-5
+real photo step skipped for 'Noyyal water diverted towards Kerala spa': real photos switched off
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Noyyal water diverted towards Kerala spa'
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 500: {
+  "error": {
+    "code": 500,
+    "message": "Internal error encountered.",
+    "status"
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261115-0617","first":"RN-19"}
+posting job started at once
+writing [N]: பெண் யூடியூபா் குறித்து சமூக வலைதளங்களில்
+அவதூறு பரப்பிய நபா
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok anthropic/claude-haiku-5-5
+real photo step skipped for 'Coimbatore: Two agents arrested for open': real photos switched off
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+ok gemma/gemma-4-26b-a4b-it (20s)
+factcheck by gemma/gemma-4-26b-a4b-it: 0 problems
+claude rewrite 2 anthropic/claude-haiku-5-5: 0 problems
+images made: 2 for 'Coimbatore: Two agents arrested for open'
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261115-0617","first":"RN-20"}
+writing [N]: தோட்டங்களில் தொடா் திருட்டு:
+விவசாயிகள் புகார்
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please ch
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please ch
+switching away from gemma/gemma-4-26b-a4b-it for 10 min
+ok gemma/gemma-4-26b-a4b-it (24s)
+attempt 1 gemma/gemma-4-26b-a4b-it: 1 problems
+  reel_script writes ages as newspaper shorthand (மின்விசிறிகள், 1,); say it as a news reader: '12 வயது மகன் ராஜா', 'கவுசிக் (14 வயது)' -> '14 வயதான கவுசிக்'
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+ok groq/openai/gpt-oss-120b (6s)
+attempt 1 groq/openai/gpt-oss-120b: 3 problems
+  missing key: reel_script
+  missing key: caption
+  missing key: scenes
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+switching away from groq/openai/gpt-oss-120b for 10 min
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+switching away from groq/openai/gpt-oss-120b for 10 min
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok groq/qwen/qwen3.8-27b (3s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free fact-check unavailable, using Claude: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model 
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 3 problems
+  Caption's '📰 முழு விவரம்' paragraph says the 5 motor pumpsets and copper wires and fans were stolen, but the article lists these items as stolen in a way that is close; more importantly, the caption says 'மோட்டாரோடு இணைக்கப்பட்டிருந்த தாமிர மின் ஒயர்கள், மின்விசிறிகள்' is fine, however the reel_script states 'விவசாயிகள் காவல் நிலையத்தில் புகார் அளித்துள்ளனர்' and the slide 'புகார் விவரம்' says 'காவல் நிலையத்தில் புகார் அளிக்கப்பட்டுள்ளது' — consistent with the article
+  Caption's '👮 நடவடிக்கை: காவல் நிலையத்தில் புகார் அளிக்கப்பட்டுள்ளது' presents filing a complaint as the police action taken, which misrepresents the article (the complaint was filed by farmers, not an action by police)
+  The reel_script and caption say the farmers 'கோரிக்கை வைத்துள்ளனர்' for arrests and patrols, which is accurate, but the caption's 'ℹ️ மக்கள் கவனத்திற்கு' line is an unsupported framing rather than a fact from the article
+attempt 2 groq/qwen/qwen3.8-27b: 3 problems
+  fact-check: Caption's '📰 முழு விவரம்' paragraph says the 5 motor pumpsets and copper wires and fans were stolen, but the article lists these items as stolen in a way that is close; more importantly, the caption says 'மோட்டாரோடு இணைக்கப்பட்டிருந்த தாமிர மின் ஒயர்கள், மின்விசிறிகள்' is fine, however the reel_script states 'விவசாயிகள் காவல் நிலையத்தில் புகார் அளித்துள்ளனர்' and the slide 'புகார் விவரம்' says 'காவல் நிலையத்தில் புகார் அளிக்கப்பட்டுள்ளது' — consistent with the article
+  fact-check: Caption's '👮 நடவடிக்கை: காவல் நிலையத்தில் புகார் அளிக்கப்பட்டுள்ளது' presents filing a complaint as the police action taken, which misrepresents the article (the complaint was filed by farmers, not an action by police)
+  fact-check: The reel_script and caption say the farmers 'கோரிக்கை வைத்துள்ளனர்' for arrests and patrols, which is accurate, but the caption's 'ℹ️ மக்கள் கவனத்திற்கு' line is an unsupported framing rather than a fact from the article
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+switching away from groq/qwen/qwen3.8-27b for 10 min
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
+ok anthropic/claude-haiku-5-5
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 free fact-check unavailable, using Claude: no free model answered: None
 ok anthropic/claude-haiku-5-5
 factcheck by anthropic/claude-haiku-5-5: 3 problems
-  The reel_script and caption say the road is a route connecting Kerala and that accidents happen on it, but the article's point that the Nilambur-Madukkarai road is the main route to Kerala is fine; however, the reel_script and slides claim the road expansion 'plan has been prepared' (விபத்து தடுப்பு திட்டம் திட்டமிடப்பட்டுள்ளது) which the article does not state; the article only says the National Highway Authority has prepared a project report and the project is stalled.
-  The reel_script omits the important fact that a college student died after being hit by a vehicle while trying to cross the road a few months earlier.
-  The reel_script states that the district administration has advised a plastic speed breaker as a temporary solution, which matches the article, but the slides_spec line 'பிளாஸ்டிக் வேகத்தடை அமைக்க திட்டம்' is presented under 'தீர்வு' without the 'advised' nuance; this is a minor framing shift and not a factual error.
-attempt 8 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 3 problems
-  fact-check: The reel_script and caption say the road is a route connecting Kerala and that accidents happen on it, but the article's point that the Nilambur-Madukkarai road is the main route to Kerala is fine; however, the reel_script and slides claim the road expansion 'plan has been prepared' (விபத்து தடுப்பு திட்டம் திட்டமிடப்பட்டுள்ளது) which the article does not state; the article only says the National Highway Authority has prepared a project report and the project is stalled.
-  fact-check: The reel_script omits the important fact that a college student died after being hit by a vehicle while trying to cross the road a few months earlier.
-  fact-check: The reel_script states that the district administration has advised a plastic speed breaker as a temporary solution, which matches the article, but the slides_spec line 'பிளாஸ்டிக் வேகத்தடை அமைக்க திட்டம்' is presented under 'தீர்வு' without the 'advised' nuance; this is a minor framing shift and not a factual error.
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-free models unavailable: no free model answered: None
-ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 5 problems
-  Reel script says the accident happened 'in Chettipalayam' (செட்டிபாளையத்தில்) at the opening, while the article places it on the Neelambur - Madhukkarai bypass road near Chettipalayam; minor location framing but the lorry overturning place is the bypass road.
-  Reel script and slides say the driver was 'asleep' / 'dozed off' as a confirmed cause; the article says the driver's drowsiness (தூக்க கலக்கம்) caused loss of control, which is close but the slides say the driver was 'in sleep' (தூக்கத்தில்), which misstates the cause.
-  Slide 2 states the driver 'was in drowsiness' (தூக்கக் கலக்கத்தில் இருந்தது) as a finding, and the slide 3 line says 'தூக்கத்தில் கட்டுப்பாட்டை இழந்ததால்' — the phrasing 'in sleep' misrepresents 'drowsiness' as sleep.
-  Slide 4 text is truncated: '4 மணி' is cut off mid-sentence, leaving the 'நேரத்திற்குப் பின்' claim incomplete and the HTML tag unclosed.
-  Caption says the lorry was going towards the Pollachi road junction, which the article supports, but the caption's headline line calls it 'டேங்கர் லாரி' carrying ethanol only later; not an error. However the reel script omits the fact that the lorry was carrying ethanol before the accident fact list, which is present, so no omission.
-claude rewrite 3 anthropic/claude-haiku-5-5: 5 problems
-  fact-check: Reel script says the accident happened 'in Chettipalayam' (செட்டிபாளையத்தில்) at the opening, while the article places it on the Neelambur - Madhukkarai bypass road near Chettipalayam; minor location framing but the lorry overturning place is the bypass road.
-  fact-check: Reel script and slides say the driver was 'asleep' / 'dozed off' as a confirmed cause; the article says the driver's drowsiness (தூக்க கலக்கம்) caused loss of control, which is close but the slides say the driver was 'in sleep' (தூக்கத்தில்), which misstates the cause.
-  fact-check: Slide 2 states the driver 'was in drowsiness' (தூக்கக் கலக்கத்தில் இருந்தது) as a finding, and the slide 3 line says 'தூக்கத்தில் கட்டுப்பாட்டை இழந்ததால்' — the phrasing 'in sleep' misrepresents 'drowsiness' as sleep.
-  fact-check: Slide 4 text is truncated: '4 மணி' is cut off mid-sentence, leaving the 'நேரத்திற்குப் பின்' claim incomplete and the HTML tag unclosed.
-  fact-check: Caption says the lorry was going towards the Pollachi road junction, which the article supports, but the caption's headline line calls it 'டேங்கர் லாரி' carrying ethanol only later; not an error. However the reel script omits the fact that the lorry was carrying ethanol before the accident fact list, which is present, so no omission.
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-proofread skipped: no free model answered: None
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok anthropic/claude-haiku-5-5
-real photo step skipped for 'Tanker overturns on Neelambur-Madukkarai': real photos switched off
-ok anthropic/claude-haiku-5-5
-claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
-  sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-proofread skipped: no free model answered: None
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+  The reel_script and slides say 'மின்விசிறிகள்' (fans) were stolen, but the article lists 'மின்விசிறிகள்' as stolen items — this matches; however the slide line 'பலமுறை புகார் அளித்தும் திருட்டு நிற்கவில்லை' is fine. Actual problem: the slides and reel_script state the thefts happened at farms of 14 farmers while the article only says 14 farmers' farms had thefts over recent months — consistent. No factual mismatch found in the thefts list.
+  The slide line 'சிங்காநல்லூர் குளம் தெற்கு மதகு பாசன விவசாயிகளின்' is cut off mid-sentence and is ungrammatical/incomplete in Tamil, lacking a clear meaning.
+  The caption and reel_script say the farmers 'demanded' arrests of thieves, and the reel_script says 'திருடர்களைக் கைது செய்ய வேண்டும்' — the article says arrests of persons involved should be made; this is consistent, but the reel_script states the farmers 'கோரிக்கை விடுத்துள்ளனர்' which is accurate.
+claude rewrite 1 anthropic/claude-haiku-5-5: 3 problems
+  fact-check: The reel_script and slides say 'மின்விசிறிகள்' (fans) were stolen, but the article lists 'மின்விசிறிகள்' as stolen items — this matches; however the slide line 'பலமுறை புகார் அளித்தும் திருட்டு நிற்கவில்லை' is fine. Actual problem: the slides and reel_script state the thefts happened at farms of 14 farmers while the article only says 14 farmers' farms had thefts over recent months — consistent. No factual mismatch found in the thefts list.
+  fact-check: The slide line 'சிங்காநல்லூர் குளம் தெற்கு மதகு பாசன விவசாயிகளின்' is cut off mid-sentence and is ungrammatical/incomplete in Tamil, lacking a clear meaning.
+  fact-check: The caption and reel_script say the farmers 'demanded' arrests of thieves, and the reel_script says 'திருடர்களைக் கைது செய்ய வேண்டும்' — the article says arrests of persons involved should be made; this is consistent, but the reel_script states the farmers 'கோரிக்கை விடுத்துள்ளனர்' which is accurate.
 ok anthropic/claude-haiku-5-5
 claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
-  reel_script has 79 words; need 95-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
-ok anthropic/claude-haiku-5-5
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 2 for 'Tanker overturns on Neelambur-Madukkarai'
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261114-1939","first":"RN-5"}
-real photo step skipped for 'Coimbatore police advise pawn shops to r': real photos switched off
-writing [N]: கோவை பெண் யூடியூபருக்கு கொலை மிரட்டல்: ஊட்டியில் பதுங்கியிரு
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-free models unavailable: no free model answered: None
+  hl1 (the first headline on screen) must name the place 'கோவை மாநகரம்', e.g. 'கோவை மாநகரம்: ...' or 'கோவை மாநகரம்-இல் ...' - viewers share news of their own area
 ok anthropic/claude-haiku-5-5
 claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
-  reel_script has 87 words; need 95-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 2 for 'Coimbatore police advise pawn shops to r'
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261114-1940","first":"RN-6"}
-ok anthropic/claude-haiku-5-5
+  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+ok gemma/gemma-4-26b-a4b-it (79s)
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 free fact-check unavailable, using Claude: no free model answered: None
-ok anthropic/claude-haiku-5-5
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-free fact-check unavailable, using Claude: no free model answered: None
-ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 4 problems
-  Reel_script says the Salem road is where heavy vehicles come, but the article says cargo vehicles come from Salem, which is fine; however the reel and slides claim the Vidhunas Hotel to L&T IT Park stretch is 'சாலை சரிவாக உள்ளது' — acceptable — but the reel omits that the Vidhunas-L&T stretch is where vehicles from Salem come at high speed, a key cause mixed in slides_spec without source (slides say 'சேலத்தில் இருந்து சரக்கு வாகனங்கள் அதிவேகமாக வருகின்றன' under 'சாலை எப்படி?' which is not stated as a cause of the Vidhunas stretch)
-  Reel_script omits the important fact that the road-widening plan and the Gas pipeline relocation reason for the delay were mentioned in the article, and the reel says 'பணி இன்னும் தொடங்கவில்லை' without the article's reason (delays citing pipeline relocation), a missing key detail
-  Reel_script omits that the transport department submitted a report recommending widening, and that the road safety committee discussed the issue without a permanent solution
-  Reel_script says '13 accidents' is not present, but the slides_spec line 'சாலையில் மேடு பள்ளம் உள்ளது' and reel 'மேடு பள்ளமாக சாலை இருப்பதாலும்' are accurate; no invented figures found, but slides_spec 'திட்டம் எங்கே?' claims the plan is for six-lane widening, which matches the article
-claude rewrite 3 anthropic/claude-haiku-5-5: 4 problems
-  fact-check: Reel_script says the Salem road is where heavy vehicles come, but the article says cargo vehicles come from Salem, which is fine; however the reel and slides claim the Vidhunas Hotel to L&T IT Park stretch is 'சாலை சரிவாக உள்ளது' — acceptable — but the reel omits that the Vidhunas-L&T stretch is where vehicles from Salem come at high speed, a key cause mixed in slides_spec without source (slides say 'சேலத்தில் இருந்து சரக்கு வாகனங்கள் அதிவேகமாக வருகின்றன' under 'சாலை எப்படி?' which is not stated as a cause of the Vidhunas stretch)
-  fact-check: Reel_script omits the important fact that the road-widening plan and the Gas pipeline relocation reason for the delay were mentioned in the article, and the reel says 'பணி இன்னும் தொடங்கவில்லை' without the article's reason (delays citing pipeline relocation), a missing key detail
-  fact-check: Reel_script omits that the transport department submitted a report recommending widening, and that the road safety committee discussed the issue without a permanent solution
-  fact-check: Reel_script says '13 accidents' is not present, but the slides_spec line 'சாலையில் மேடு பள்ளம் உள்ளது' and reel 'மேடு பள்ளமாக சாலை இருப்பதாலும்' are accurate; no invented figures found, but slides_spec 'திட்டம் எங்கே?' claims the plan is for six-lane widening, which matches the article
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-proofread skipped: no free model answered: None
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 9 problems
-  reel_script says the accused 'threatened to kill' (கொலை மிரட்டல் விடுத்த) as a settled fact in the opening line, while the article only reports the complainant's allegation; mixing the accusation into the headline-style statement misstates the claim
-  reel_script states 'மணிகண்டன் ... ஊட்டியில் கைது செய்யப்பட்டார்' but also says he hid in Ooty; the article names him as 'பிரபல யூடியூபர', which is omitted, though minor
-  slides_spec slide 'என்ன நடந்தது?' says the victim is a 'பெண் தொழில்முனைவோர்' from 'கோவை சிவானந்தா காலனி', but the article gives the shop location as Tadabad Six Corner area, not a distinct residence
-  slides_spec slide 'என்ன நடந்தது?' says he 'அவதூறு பரப்பியதாகப் புகார்' while the reel_script says he 'அவதூறு பரப்பியதாகவும்' — the slide's line 'வீடியோக்களைத் திருடி வெளியிட்டதாகவும் குற்றச்சாட்டு' is fine, but the slide omits the 16 pending cases which are an important fact absent from slides
-  caption states 'அவதூறு பரப்பி ஆபாசமாகப் பேசியதாகவும்' as a cited complaint, which is accurate; however the caption's 'நடவடிக்கை: ... கைது' line attributes the arrest to 'சப்-இன்ஸ்பெக்டர் லிங்கேஸ்வரன் தலைமையில்' which is supported by the article
-  reel_script omits the cybercrime police complaint date/detail is fine, but reel_script omits that the 16 cases are across Tamil Nadu police stations' 'குற்றச் செயல்கள் மற்றும் அவதூறு' — it says 'அவதூறு' only in the cases, which is a minor simplification
-  caption headline says 'கொலை மிரட்டல்: ஊட்டியில் மணிகண்டன் கைது' and tamil_headline says 'யூடியூபர் மணிகண்டன்' while the article's headline emphasizes 'பிரபல யூடியூபர'; not an error
-  caption English line 'Coimbatore woman YouTuber threatened, accused arrested in Ooty' is an English addition not in the article's Tamil text, though it is a summary rather than a new fact
-  slides_spec slide 'மிரட்டல்' says 'கோவை மாநகர சைபர் கிரைம் போலீசில் <b>புகார்</b> அளிக்கப்பட்டது' contains raw HTML <b> tags inside a line, which are not Tamil text and may render incorrectly
-claude rewrite 1 anthropic/claude-haiku-5-5: 9 problems
-  fact-check: reel_script says the accused 'threatened to kill' (கொலை மிரட்டல் விடுத்த) as a settled fact in the opening line, while the article only reports the complainant's allegation; mixing the accusation into the headline-style statement misstates the claim
-  fact-check: reel_script states 'மணிகண்டன் ... ஊட்டியில் கைது செய்யப்பட்டார்' but also says he hid in Ooty; the article names him as 'பிரபல யூடியூபர', which is omitted, though minor
-  fact-check: slides_spec slide 'என்ன நடந்தது?' says the victim is a 'பெண் தொழில்முனைவோர்' from 'கோவை சிவானந்தா காலனி', but the article gives the shop location as Tadabad Six Corner area, not a distinct residence
-  fact-check: slides_spec slide 'என்ன நடந்தது?' says he 'அவதூறு பரப்பியதாகப் புகார்' while the reel_script says he 'அவதூறு பரப்பியதாகவும்' — the slide's line 'வீடியோக்களைத் திருடி வெளியிட்டதாகவும் குற்றச்சாட்டு' is fine, but the slide omits the 16 pending cases which are an important fact absent from slides
-  fact-check: caption states 'அவதூறு பரப்பி ஆபாசமாகப் பேசியதாகவும்' as a cited complaint, which is accurate; however the caption's 'நடவடிக்கை: ... கைது' line attributes the arrest to 'சப்-இன்ஸ்பெக்டர் லிங்கேஸ்வரன் தலைமையில்' which is supported by the article
-  fact-check: reel_script omits the cybercrime police complaint date/detail is fine, but reel_script omits that the 16 cases are across Tamil Nadu police stations' 'குற்றச் செயல்கள் மற்றும் அவதூறு' — it says 'அவதூறு' only in the cases, which is a minor simplification
-  fact-check: caption headline says 'கொலை மிரட்டல்: ஊட்டியில் மணிகண்டன் கைது' and tamil_headline says 'யூடியூபர் மணிகண்டன்' while the article's headline emphasizes 'பிரபல யூடியூபர'; not an error
-  fact-check: caption English line 'Coimbatore woman YouTuber threatened, accused arrested in Ooty' is an English addition not in the article's Tamil text, though it is a summary rather than a new fact
-  fact-check: slides_spec slide 'மிரட்டல்' says 'கோவை மாநகர சைபர் கிரைம் போலீசில் <b>புகார்</b> அளிக்கப்பட்டது' contains raw HTML <b> tags inside a line, which are not Tamil text and may render incorrectly
-ok anthropic/claude-haiku-5-5
-real photo step skipped for 'Neelambur-Madukkarai road keeps seeing a': real photos switched off
 ok anthropic/claude-haiku-5-5
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 free fact-check unavailable, using Claude: no free model answered: None
 ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 6 problems
-  The article says Manikandan stole the woman's videos and posted defamatory, obscene content about her, but the reel_script and caption omit these details and the reel says only that a complaint about defamation was made, leaving out the main facts of who did what.
-  The reel_script states the victim filed a complaint about defamation and then says the accused 'threatened' her, but the article says the threats were 'கொலை மிரட்டல்' (death threats), which the reel renders only as a generic threat ('இத்துடன் முடித்துவிடுவேன்') without identifying it as a death threat, while the headline and reel first sentence call it 'கொலை மிரட்டல்' inconsistently.
-  The slides_spec 'என்ன நடந்தது?' slide says the victim is accused of stealing her videos, but the article says the accused stole her videos, so the subject of the theft is reversed/misattributed ('அவரது வீடியோக்களை திருடி வெளியிட்டதாகவும் குற்றச்சாட்டு' is ambiguous and attributes the act to the wrong person).
-  The reel_script says the complaint was filed at Coimbatore cyber crime police station and that Manikandan was 'arrested in Ooty', but the reel_script's first sentence says a 'கொலை மிரட்டல்' complaint was made without the article's clear statement that the accused was a YouTuber who was 'தலைமறைவாக' (absconding), which is a missing fact.
-  The reel_script sentence 'கோவை மாநகர சைபர் கிரைம் காவல் நிலையத்தில் புகார் அளிக்கப்பட்டது' is followed by 'விசாரணையில் மணிகண்டன் ஊட்டியில் பதுங்கியிருப்பது தெரியவந்தது', which omits the article's detail that the investigation was triggered by the complaint and that the accused was tracked; two separate facts are compressed without clear causation.
-  The caption states that the complaint was filed 'சமூக வலைதளங்கள் மூலம் அவதூறு பரப்பப்பட்டதாக', which is a grammatically unclear and semantically garbled sentence about who spread defamation and how, not matching the article's account.
-claude rewrite 2 anthropic/claude-haiku-5-5: 6 problems
-  fact-check: The article says Manikandan stole the woman's videos and posted defamatory, obscene content about her, but the reel_script and caption omit these details and the reel says only that a complaint about defamation was made, leaving out the main facts of who did what.
-  fact-check: The reel_script states the victim filed a complaint about defamation and then says the accused 'threatened' her, but the article says the threats were 'கொலை மிரட்டல்' (death threats), which the reel renders only as a generic threat ('இத்துடன் முடித்துவிடுவேன்') without identifying it as a death threat, while the headline and reel first sentence call it 'கொலை மிரட்டல்' inconsistently.
-  fact-check: The slides_spec 'என்ன நடந்தது?' slide says the victim is accused of stealing her videos, but the article says the accused stole her videos, so the subject of the theft is reversed/misattributed ('அவரது வீடியோக்களை திருடி வெளியிட்டதாகவும் குற்றச்சாட்டு' is ambiguous and attributes the act to the wrong person).
-  fact-check: The reel_script says the complaint was filed at Coimbatore cyber crime police station and that Manikandan was 'arrested in Ooty', but the reel_script's first sentence says a 'கொலை மிரட்டல்' complaint was made without the article's clear statement that the accused was a YouTuber who was 'தலைமறைவாக' (absconding), which is a missing fact.
-  fact-check: The reel_script sentence 'கோவை மாநகர சைபர் கிரைம் காவல் நிலையத்தில் புகார் அளிக்கப்பட்டது' is followed by 'விசாரணையில் மணிகண்டன் ஊட்டியில் பதுங்கியிருப்பது தெரியவந்தது', which omits the article's detail that the investigation was triggered by the complaint and that the accused was tracked; two separate facts are compressed without clear causation.
-  fact-check: The caption states that the complaint was filed 'சமூக வலைதளங்கள் மூலம் அவதூறு பரப்பப்பட்டதாக', which is a grammatically unclear and semantically garbled sentence about who spread defamation and how, not matching the article's account.
-ok anthropic/claude-haiku-5-5
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 free fact-check unavailable, using Claude: no free model answered: None
 ok anthropic/claude-haiku-5-5
 factcheck by anthropic/claude-haiku-5-5: 5 problems
-  The caption's 'அழகு சாதனப் பொருட்கள் விற்பனை செய்யும்' omits the article's cooking products (சமையல் மற்றும் அழகு சாதனப் பொருட்கள்), so it is incomplete, though not strictly wrong.
-  The caption and reel_script describe the victim as 'யூடியூபர்' only; the article states she runs a shop with cooking and beauty products, which the reel_script mentions only as 'கடை நடத்தி வரும்' without the product type, a minor omission.
-  The reel_script says Manikandan 'ஊட்டியில் கைது செய்யப்பட்டார்' and the slides say the arrest was in Ooty, which is consistent, but the reel_script omits that he was in hiding (தலைமறைவு) as a key fact only partially, and the caption's 'பதுங்கியிருந்தபோது' phrasing is acceptable.
-  The reel_script states Manikandan defamed her 'சமூக வலைதளங்கள் மூலம்' and also says he 'அவதூறாகப் பேசினார்' without the article's point that the accusations were baseless (பொய்யான குற்றச்சாட்டுகள்), a missing important detail of the case.
-  The caption's claim that the arrested man 'சமூக வலைதளங்கள் மூலம்' and the English tail line 'Coimbatore woman YouTuber death threat, accused arrested in Ooty | Coimbatore news' is an untranslated English sentence not in the article's Tamil text and is an added element beyond the allowed footer.
+  The reel_script and caption state that Manikandan was 'உண்டியில்'... no: the caption says 'அவதூறு' and the headline calls Vigneshwari a 'பெண் தொழில்முனைவோர்', but the article never describes her with that term; it only says she sells products and runs a channel (minor wording, but an added characterization)
+  The reel_script says Manikandan 'விக்னேஷ்வரியை மிரட்டிய' in the caption, but the article says he threatened her by saying he would 'finish her off' in business; the caption's phrase 'அவரைச் சிக்க வைத்தனர்' and similar wording is not a factual issue, however the caption background states he threatened her as a separate fact before the police search, which is accurate but the caption also says 'பின்னணி' linking the threat to the Ooty hiding, which is not stated in the article
+  The slides_spec says 'சப்-இன்ஸ்பெக்டர் லிங்கேஸ்வரன் தலைமையிலான டீம்' and 'மிரட்டியதாகப் புகார்; மணிகண்டன் வயது 37' are placed under 'இப்போது என்ன?' mixing the threat complaint with the current status, combining two different facts in one line
+  The article does not state that Manikandan is 'யூடியூபர்' by name-level description beyond running a YouTube channel titled 'திருச்செந்தூர் மணிகண்டன்'; the headline's 'பிரபல யூடியூபர்' framing is acceptable, but the caption's claim that he 'ஆதாரமின்றி அவதூறு பரப்பியதாக' was filed is presented as established rather than as the complainant's allegation, which is an unsupported framing of an accusation as fact
+  The reel_script states 'விக்னேஷ்வரியின் புகாரின் அடிப்படையில் கோவை சைபர் கிரைம் போலீசார் வழக்குப்பதிவு செய்து தேடினர்' which is consistent, but the caption's 'Coimbatore YouTuber arrested for defamation' English line is an added English text not supported in the Tamil article's framing as an arrest for defamation specifically (the article only says the complaint was registered)
+proofread rejected (5 problems)
+  fact-check: The reel_script and caption state that Manikandan was 'உண்டியில்'... no: the caption says 'அவதூறு' and the headline calls Vigneshwari a 'பெண் தொழில்முனைவோர்', but the article never describes her with that term; it only says she sells products and runs a channel (minor wording, but an added characterization)
+  fact-check: The reel_script says Manikandan 'விக்னேஷ்வரியை மிரட்டிய' in the caption, but the article says he threatened her by saying he would 'finish her off' in business; the caption's phrase 'அவரைச் சிக்க வைத்தனர்' and similar wording is not a factual issue, however the caption background states he threatened her as a separate fact before the police search, which is accurate but the caption also says 'பின்னணி' linking the threat to the Ooty hiding, which is not stated in the article
+  fact-check: The slides_spec says 'சப்-இன்ஸ்பெக்டர் லிங்கேஸ்வரன் தலைமையிலான டீம்' and 'மிரட்டியதாகப் புகார்; மணிகண்டன் வயது 37' are placed under 'இப்போது என்ன?' mixing the threat complaint with the current status, combining two different facts in one line
+  fact-check: The article does not state that Manikandan is 'யூடியூபர்' by name-level description beyond running a YouTube channel titled 'திருச்செந்தூர் மணிகண்டன்'; the headline's 'பிரபல யூடியூபர்' framing is acceptable, but the caption's claim that he 'ஆதாரமின்றி அவதூறு பரப்பியதாக' was filed is presented as established rather than as the complainant's allegation, which is an unsupported framing of an accusation as fact
+  fact-check: The reel_script states 'விக்னேஷ்வரியின் புகாரின் அடிப்படையில் கோவை சைபர் கிரைம் போலீசார் வழக்குப்பதிவு செய்து தேடினர்' which is consistent, but the caption's 'Coimbatore YouTuber arrested for defamation' English line is an added English text not supported in the Tamil article's framing as an arrest for defamation specifically (the article only says the complaint was registered)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 5 problems
+  The draft headline and slides say the thefts are in 'Singanallur' (a village/area), while the article says the complaint concerns farms under the Singanallur lake south sluice irrigation; the location wording is loosely consistent, but the slides/caption claim 'சிங்காநல்லூரில் தோட்டங்களில்' is acceptable—however the slide text 'சிங்காநல்லூரில் தோட்டங்களில் தொடர்' is a truncated/ungrammatical headline fragment.
+  Slide line 'சிங்காநல்லூர் குளம் தெற்கு மதகு பாசன விவசாயிகளின்' is an incomplete sentence with no clear meaning, and the slide 'என்ன' and 'விவசாயிகளின்' titles are not clear Tamil sentences.
+  Slide line 'திருட்டால் கடுமையான பொருளாதார இழப்பு ஏற்பட்டுள்ளது' and 'பலமுறை புகார் அளித்தும் திருட்டு நின்றபாடில்லை' are grammatically awkward but intelligible; the slide 'கடந்த சில மாதங்களில் 14 விவசாயிகளின் தோட்டங்களில் திருட்டு' is fine.
+  The reel_script says 'விவசாயிகள் இது குறித்து காவல் நிலையத்தில் புகார் அளித்துள்ளனர்' while the caption says 'காவல் நிலையத்தில் புகார் அளிக்கப்பட்டுள்ளது' – consistent; no factual error found there.
+  The reel_script states the thefts 'நடைபெறுகின்றன' (ongoing), consistent with the article's 'தொடர்ந்து' – no issue.
 claude rewrite 3 anthropic/claude-haiku-5-5: 5 problems
-  fact-check: The caption's 'அழகு சாதனப் பொருட்கள் விற்பனை செய்யும்' omits the article's cooking products (சமையல் மற்றும் அழகு சாதனப் பொருட்கள்), so it is incomplete, though not strictly wrong.
-  fact-check: The caption and reel_script describe the victim as 'யூடியூபர்' only; the article states she runs a shop with cooking and beauty products, which the reel_script mentions only as 'கடை நடத்தி வரும்' without the product type, a minor omission.
-  fact-check: The reel_script says Manikandan 'ஊட்டியில் கைது செய்யப்பட்டார்' and the slides say the arrest was in Ooty, which is consistent, but the reel_script omits that he was in hiding (தலைமறைவு) as a key fact only partially, and the caption's 'பதுங்கியிருந்தபோது' phrasing is acceptable.
-  fact-check: The reel_script states Manikandan defamed her 'சமூக வலைதளங்கள் மூலம்' and also says he 'அவதூறாகப் பேசினார்' without the article's point that the accusations were baseless (பொய்யான குற்றச்சாட்டுகள்), a missing important detail of the case.
-  fact-check: The caption's claim that the arrested man 'சமூக வலைதளங்கள் மூலம்' and the English tail line 'Coimbatore woman YouTuber death threat, accused arrested in Ooty | Coimbatore news' is an untranslated English sentence not in the article's Tamil text and is an added element beyond the allowed footer.
+  fact-check: The draft headline and slides say the thefts are in 'Singanallur' (a village/area), while the article says the complaint concerns farms under the Singanallur lake south sluice irrigation; the location wording is loosely consistent, but the slides/caption claim 'சிங்காநல்லூரில் தோட்டங்களில்' is acceptable—however the slide text 'சிங்காநல்லூரில் தோட்டங்களில் தொடர்' is a truncated/ungrammatical headline fragment.
+  fact-check: Slide line 'சிங்காநல்லூர் குளம் தெற்கு மதகு பாசன விவசாயிகளின்' is an incomplete sentence with no clear meaning, and the slide 'என்ன' and 'விவசாயிகளின்' titles are not clear Tamil sentences.
+  fact-check: Slide line 'திருட்டால் கடுமையான பொருளாதார இழப்பு ஏற்பட்டுள்ளது' and 'பலமுறை புகார் அளித்தும் திருட்டு நின்றபாடில்லை' are grammatically awkward but intelligible; the slide 'கடந்த சில மாதங்களில் 14 விவசாயிகளின் தோட்டங்களில் திருட்டு' is fine.
+  fact-check: The reel_script says 'விவசாயிகள் இது குறித்து காவல் நிலையத்தில் புகார் அளித்துள்ளனர்' while the caption says 'காவல் நிலையத்தில் புகார் அளிக்கப்பட்டுள்ளது' – consistent; no factual error found there.
+  fact-check: The reel_script states the thefts 'நடைபெறுகின்றன' (ongoing), consistent with the article's 'தொடர்ந்து' – no issue.
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 proofread skipped: no free model answered: None
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-image match: False The image shows a man standing at a road barrier on a highway rather than an accident scene or the Neelambur-Madukkarai 
 ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 8 problems
+  reel_script says Manikandan was arrested in Coimbatore area / the arrest is presented as ambiguous; the article says the arrest was made in Udhagai (Nilgiris), while reel_script states 'கோவையில்... கைது செய்யப்பட்டுள்ளார்' implying the arrest location is Coimbatore
+  slides_spec and caption say 'Coimbatore' location 'கோவை மாநகரம்' as the place of the wrongdoing, which is acceptable, but slide 1 states 'சைபர் கிரைம் போலீசார் உதகையில் கைது செய்தனர்' which is correct; however the reel_script's 'கோவை மாநகர சைபர் கிரைம் போலீசார் இந்தக் கைது நடவடிக்கையை மேற்கொண்டனர்' is consistent with the article
+  reel_script says Vigneshwari filed complaint on 'நவம்பர் 13ஆம் தேதி' — matches article, but reel_script omits that the complaint was filed at Coimbatore city cyber crime station (only caption/reel mention it partially)
+  caption describes Manikandan as having spread defamation and the arrest 'சனிக்கிழமை' — matches; but caption says 'தனிப்படையினர் அவரைக் கைது செய்தனர்' while article says arrest at Udhagai, fine
+  Caption states 'கே. விக்னேஷ்வரி' as YouTuber while article says she runs a food products shop and a YouTube channel — acceptable
+  reel_script omits the detail that the accused had 16 cases pending across Tamil Nadu? (it is included) — no omission; however reel_script omits that Manikandan was hiding and the pending cases were in multiple cases of threatening small-business women, which is present
+  slide 'பாதிக்கப்பட்டோர்' says 'விசாரணை தொடர்கிறது' which is not stated in the article (invented detail)
+  slide 'விசாரணை' says 'கோவை மத்திய சிறையில் அடைக்கப்பட்டார்' under 'நவம்பர் 13 அன்று' section — mixes complaint date with custody fact (two facts in one line)
+claude rewrite 2 anthropic/claude-haiku-5-5: 8 problems
+  fact-check: reel_script says Manikandan was arrested in Coimbatore area / the arrest is presented as ambiguous; the article says the arrest was made in Udhagai (Nilgiris), while reel_script states 'கோவையில்... கைது செய்யப்பட்டுள்ளார்' implying the arrest location is Coimbatore
+  fact-check: slides_spec and caption say 'Coimbatore' location 'கோவை மாநகரம்' as the place of the wrongdoing, which is acceptable, but slide 1 states 'சைபர் கிரைம் போலீசார் உதகையில் கைது செய்தனர்' which is correct; however the reel_script's 'கோவை மாநகர சைபர் கிரைம் போலீசார் இந்தக் கைது நடவடிக்கையை மேற்கொண்டனர்' is consistent with the article
+  fact-check: reel_script says Vigneshwari filed complaint on 'நவம்பர் 13ஆம் தேதி' — matches article, but reel_script omits that the complaint was filed at Coimbatore city cyber crime station (only caption/reel mention it partially)
+  fact-check: caption describes Manikandan as having spread defamation and the arrest 'சனிக்கிழமை' — matches; but caption says 'தனிப்படையினர் அவரைக் கைது செய்தனர்' while article says arrest at Udhagai, fine
+  fact-check: Caption states 'கே. விக்னேஷ்வரி' as YouTuber while article says she runs a food products shop and a YouTube channel — acceptable
+  fact-check: reel_script omits the detail that the accused had 16 cases pending across Tamil Nadu? (it is included) — no omission; however reel_script omits that Manikandan was hiding and the pending cases were in multiple cases of threatening small-business women, which is present
+  fact-check: slide 'பாதிக்கப்பட்டோர்' says 'விசாரணை தொடர்கிறது' which is not stated in the article (invented detail)
+  fact-check: slide 'விசாரணை' says 'கோவை மத்திய சிறையில் அடைக்கப்பட்டார்' under 'நவம்பர் 13 அன்று' section — mixes complaint date with custody fact (two facts in one line)
+ok anthropic/claude-haiku-5-5
+real photo step skipped for 'Coimbatore: YouTuber Manikandan arrested': real photos switched off
+ok anthropic/claude-haiku-5-5
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Coimbatore: YouTuber Manikandan arrested'
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
+  hl1 (the first headline on screen) must name the place 'கோவை மாநகரம்', e.g. 'கோவை மாநகரம்: ...' or 'கோவை மாநகரம்-இல் ...' - viewers share news of their own area
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261115-0619","first":"RN-21"}
+real photo step skipped for 'Repeated thefts from 14 farmers' farms i': real photos switched off
+image match: False The image shows a man with a clipboard speaking to two farmers in an agricultural field, depicting an educational or ins
 image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Repeated thefts from 14 farmers' farms i'
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261115-0619","first":"RN-22"}
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high dema
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 500: {
+  "error": {
+    "code": 500,
+    "message": "Internal error encountered.",
+    "status": "I
+proofread skipped: no free model answered: gemma gemma-4-31b-it 500: {
+  "error": {
+    "code": 500,
+    "message": "Internal error encountered.",
+    "status": "INTERNAL"
+  }
+}
+
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 500: {
+  "error": {
+    "code": 500,
+    "message": "Internal error encountered.",
+    "status": "I
 ok anthropic/claude-haiku-5-5
-image match: False The image appears to be an AI-generated synthetic picture showing generic road barriers and discarded sandals, rather th
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 2 for 'Neelambur-Madukkarai road keeps seeing a'
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261114-1941","first":"RN-7"}
-posting job started at once
-real photo step skipped for 'Coimbatore woman YouTuber receives death': real photos switched off
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 2 for 'Coimbatore woman YouTuber receives death'
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261114-1941","first":"RN-8"}
 earlier stories still waiting for images: []
-instagram check: 0 recent posts read from the page
+instagram check: 7 recent posts read from the page
 pick round: only the picked links are written (research_free/pick.py)
-manual link added: https://www.maalaimalar.com/news/tamilnadu/coimbatore-youtuber-death-threat-manikandan-arrested
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/police-advisory-to-ask-for-details-of-pawnbrokers/4376024
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/the-nilambur-madukkarai-road-in-the-grip-of-the-accident-was-not-enough-fun-for-the-officers/4375856
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/karamadai-garuda-tirtha-pond-looks-like-the-sea/4375948
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/truck-overturns-due-to-driver-s-negligence-ethanol-recovered-by-fire-department/4376043
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/will-the-municipal-corporation-keep-laripet-clean/4375938
-candidate filter: collected=6
-to write: 6 Coimbatore district candidates (max 6 stories)
-round: top 6 of 6 candidates
-candidates waiting: 6 Coimbatore; time left 79 min
+manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/14/%E0%AE%A4%E0%AF%8B%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AE%BF%E0%AE%B2%E0%AF%8D-%E0%AE%A4%E0%AF%8A%E0%AE%9F%E0%AE%BE%E0%AF%8D-%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AF%81-%E0%AE%B5%E0%AE%BF%E0%AE%B5%E0%AE%9A%E0%AE%BE%E0%AE%AF%E0%AE%BF%E0%AE%95%E0%AE%B3%E0%AF%8D-%E0%AE%AA%E0%AF%81%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AF%8D
+manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/14/பெண்-யூடியூபா்-குறித்து-சமூக-வலைதளங்களில்அவதூறு-பரப்பிய-நபா்-கைது
+manual link added: https://www.dailythanthi.com/news/india/popular-youtuber-manikandan-arrested-for-defaming-a-famous-woman
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/two-including-woman-jailed-for-bank-account-opening-fraud/4376360
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/source-coimbatore/4376314
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/noyyal-water-returned-to-kerala-officials-bow-to-velumani-s-order/4376153
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/people-suffering-from-potholes-on-the-new-road/4376227
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/share-the-fear/4375854
+candidate filter: collected=8
+to write: 8 Coimbatore district candidates (max 8 stories)
+round: top 8 of 8 candidates
+candidates waiting: 8 Coimbatore; time left 79 min
 try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
 try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
+try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})
+posting job started at once
 try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
 auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})
+try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})
+try (N) manual=True: https://www.dailythanthi.com/news/india/popular-youtuber-man
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})
 posting job started at once
-try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
-auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 7})
-try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
-auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 9})
-try (N) manual=True: https://www.maalaimalar.com/news/tamilnadu/coimbatore-youtub
-auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 11})
+try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/coi
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 10})
+try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/coi
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 12})
 auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 15})
-posting job started at once
-auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 17})
-candidate loop ended: left 0, tried={'N': 6}, done={'N': 6}, time left 67 min
-filed: 6 Coimbatore district stories (target 6), reels only
+NOT filed (N) பெண் யூடியூபா் குறித்து சமூக வலைதளங்களில்
+அவதூறு ப: duplicate after write
+candidate loop ended: left 0, tried={'N': 8}, done={'N': 7}, time left 66 min
+filed: 7 Coimbatore district stories (target 8), reels only
 queue: 0 news waiting to be written
-All News sheet: {"ok":true,"added":6,"updated":0} 
-stories: 6
+All News sheet: {"ok":true,"added":8,"updated":0} 
+stories: 7
