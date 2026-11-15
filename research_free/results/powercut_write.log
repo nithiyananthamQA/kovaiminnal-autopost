@@ -828,3 +828,184 @@ filed: 2 Coimbatore district stories (target 2), reels only
 queue: 0 news waiting to be written
 All News sheet: {"ok":true,"added":2,"updated":0} 
 stories: 2
+19:52:33 Instagram token: the shared minnal-bot token (Minnal bridge)
+writing [N]: நாளைய மின்தடை (16ம் தேதி)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemini/gemini-3.6-flash: Expecting ',' delimiter: line 1 column 1159 (char 1158)
+poor answer - skipped for 30 min: gemini/gemini-3.6-flash
+fail gemini/gemini-3.5-flash: Expecting ',' delimiter: line 48 column 3 (char 1360)
+poor answer - skipped for 30 min: gemini/gemini-3.5-flash
+ok gemini/gemini-3-flash-preview (14s)
+attempt 1 gemini/gemini-3-flash-preview: 1 problems
+  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok gemini/gemini-3-flash-preview (19s)
+attempt 2 gemini/gemini-3-flash-preview: 2 problems
+  caption needs 5 hashtags (Instagram max), has 6
+  numbers not found in the article: 22
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, plea
+dead for this round: gemini/gemini-3-flash-preview
+ok gemma/gemma-4-26b-a4b-it (40s)
+attempt 3 gemma/gemma-4-26b-a4b-it: 2 problems
+  sentence 1 (one-line story) has 14 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  caption needs 5 hashtags (Instagram max), has 6
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please ch
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please ch
+switching away from gemma/gemma-4-26b-a4b-it for 10 min
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 500: {
+  "error": {
+    "code": 500,
+    "message": "Internal error encountered.",
+    "status": "I
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 413: {"error":{"message":"Request too large for model `openai/gpt-oss-120b` in organization `or
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)
+poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (36s)
+attempt 4 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): நெகமம் ('தகவல்: அய்யப்பராஜன், செயற்பொறியாளர், நெகமம்.'); 17 ('நாளைய மின் தடை (17ம் தேதி)'); பொள்ளாச்சி ('தகவல் : ராஜா, செயற்பொறியாளர், பொள்ளாச்சி.')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (49s)
+attempt 5 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 4 problems
+  reel_script has 202 words; need 75-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  not grounded: location 'சூலூர்' is not in the article
+  hl1 (the first headline on screen) must name the place 'சூலூர்', e.g. 'சூலூர்: ...' or 'சூலூர்-இல் ...' - viewers share news of their own area
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (59s)
+attempt 6 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 2 problems
+  reel_script has 203 words; need 75-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (54s)
+attempt 7 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 3 problems
+  reel_script has 179 words; need 75-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): செட்டிபாளையம் ('கோமங்கலம், கோமங்கலம்புதூர், சங்கம்பாளையம், பண்ணைக்கிணறு, கோழ')
+  known issue repeated_words: the same sentence is read twice - rewrite so it does not happen again
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (55s)
+attempt 8 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 4 problems
+  reel_script has 195 words; need 75-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  numbers not found in the article: 1912
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  known issue repeated_words: the same sentence is read twice - rewrite so it does not happen again
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (26s)
+attempt 9 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 2 problems
+  reel_script has 62 words; need 75-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 10 ('காலை 10:00 முதல் மாலை 3:00 மணி வரை'); 3 ('காலை 10:00 முதல் மாலை 3:00 மணி வரை'); 17 ('நாளைய மின் தடை (17ம் தேதி)')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (50s)
+attempt 10 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 3 problems
+  sentence 1 (one-line story) has 18 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  numbers not found in the article: 19, 20, 23
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): செட்டிபாளையம் ('கோமங்கலம், கோமங்கலம்புதூர், சங்கம்பாளையம், பண்ணைக்கிணறு, கோழ')
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (10s)
+factcheck by cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 19 problems
+  Headline: says 'வால்பாறை' but the article does not mention this place for November 16.
+  Headline: says 'உடுமலை' but the article does not mention this place for November 16.
+  Script: says 'காவல் கண்காணிப்பாளர்வடுகபாளையம்' but the article says 'எஸ்.பி.வடுகபாளையம்'.
+  Script: says 'நவம்பர் 16ஆம் தேதி' but the article does not mention the month or year.
+  Script: says 'அதே நாளில்' for November 16 and Ayyanarpaty but the article says these are different days.
+  Script: says 'நவம்பர் 17ஆம் தேதி' but the article does not mention the month or year.
+  Script: says 'அதே நாளில்' for November 17 and Komangalamputhur but the article says these are different times of day.
+  Script: says 'பராமரிப்புப் பணிகளுக்காக மின் தடை செய்யப்படுகிறது' but the article does not give a cause.
+  Slides: says 'நாளை <b>16 நவம்பர்</b>' but the article does not mention the month or year.
+  Slides: says 'காலை <b>9 மணி</b>' but the article says 'காலை 9:00 மணி'.
+  Slides: says 'மாலை <b>4 மணி</b>' but the article says 'மாலை 4:00 மணி'.
+  Slides: says 'காலை <b>10 மணி</b>' but the article says 'காலை 10:00 மணி'.
+  Slides: says 'வால்பாறை பகுதி' but the article does not mention this place for November 16.
+  Slides: says '17 நவம்பர் மின்' but the article does not mention the month or year.
+  Slides: says 'காலை <b>10 மணி</b>' but the article says 'காலை 10:00 மணி'.
+  Slides: says 'கோமங்கலம்புதூர்' but the article does not mention this place for November 16.
+  Slides: says 'காலை <b>10 மணி</b>' but the article says 'காலை 10:00 மணி'.
+  Script: does not mention the November 16 power cut in Komangalamputhur.
+  Script: does not mention the November 17 power cut in Ayyanarpaty.
+claude rewrite 2 anthropic/claude-haiku-5-5: 19 problems
+  fact-check: Headline: says 'வால்பாறை' but the article does not mention this place for November 16.
+  fact-check: Headline: says 'உடுமலை' but the article does not mention this place for November 16.
+  fact-check: Script: says 'காவல் கண்காணிப்பாளர்வடுகபாளையம்' but the article says 'எஸ்.பி.வடுகபாளையம்'.
+  fact-check: Script: says 'நவம்பர் 16ஆம் தேதி' but the article does not mention the month or year.
+  fact-check: Script: says 'அதே நாளில்' for November 16 and Ayyanarpaty but the article says these are different days.
+  fact-check: Script: says 'நவம்பர் 17ஆம் தேதி' but the article does not mention the month or year.
+  fact-check: Script: says 'அதே நாளில்' for November 17 and Komangalamputhur but the article says these are different times of day.
+  fact-check: Script: says 'பராமரிப்புப் பணிகளுக்காக மின் தடை செய்யப்படுகிறது' but the article does not give a cause.
+  fact-check: Slides: says 'நாளை <b>16 நவம்பர்</b>' but the article does not mention the month or year.
+  fact-check: Slides: says 'காலை <b>9 மணி</b>' but the article says 'காலை 9:00 மணி'.
+  fact-check: Slides: says 'மாலை <b>4 மணி</b>' but the article says 'மாலை 4:00 மணி'.
+  fact-check: Slides: says 'காலை <b>10 மணி</b>' but the article says 'காலை 10:00 மணி'.
+  fact-check: Slides: says 'வால்பாறை பகுதி' but the article does not mention this place for November 16.
+  fact-check: Slides: says '17 நவம்பர் மின்' but the article does not mention the month or year.
+  fact-check: Slides: says 'காலை <b>10 மணி</b>' but the article says 'காலை 10:00 மணி'.
+  fact-check: Slides: says 'கோமங்கலம்புதூர்' but the article does not mention this place for November 16.
+  fact-check: Slides: says 'காலை <b>10 மணி</b>' but the article says 'காலை 10:00 மணி'.
+  fact-check: Script: does not mention the November 16 power cut in Komangalamputhur.
+  fact-check: Script: does not mention the November 17 power cut in Ayyanarpaty.
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): வால்பாறை ('அய்யர்பாடி, ரொட்டிக்கடை, அட்டகட்டி, வாட்டர்பால், குரங்குமுடி')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (34s)
+proofread rejected (8 problems)
+  slide 2 line 1 longer than 60 characters
+  slide 2 line 2 longer than 60 characters
+  slide 3 title longer than 18 characters
+  slide 3 line 1 longer than 60 characters
+  slide 3 line 2 longer than 60 characters
+  slide 3 line 3 longer than 60 characters
+  post_to must be 'Kovai Minnal'
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): வால்பாறை ('அய்யர்பாடி, ரொட்டிக்கடை, அட்டகட்டி, வாட்டர்பால், குரங்குமுடி'); செட்டிபாளையம் ('கோமங்கலம், கோமங்கலம்புதூர், சங்கம்பாளையம், பண்ணைக்கிணறு, கோழ')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (8s)
+real photo step skipped for 'Tomorrow's power cut: Nov 16 at Salaipud': real photos switched off
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Tomorrow's power cut: Nov 16 at Salaipud'
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261115-2003","first":"RN-39"}
+posting job started at once
+earlier stories still waiting for images: []
+instagram check: 26 recent posts read from the page
+pick round: only the picked links are written (research_free/pick.py)
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/today-s-power-outage-16th/4377034
+candidate filter: collected=1
+to write: 1 Coimbatore district candidates (max 1 stories)
+round: top 1 of 1 candidates
+candidates waiting: 1 Coimbatore; time left 39 min
+try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})
+posting job started at once
+candidate loop ended: left 0, tried={'N': 1}, done={'N': 1}, time left 28 min
+filed: 1 Coimbatore district stories (target 1), reels only
+queue: 0 news waiting to be written
+All News sheet: {"ok":true,"added":1,"updated":0} 
+stories: 1
