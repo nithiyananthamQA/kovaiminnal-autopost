@@ -36,7 +36,8 @@
    "score": 5.0,
    "power_cut": false,
    "listed_at": "2026-11-14T19:22:36.392112+05:30",
-   "picked_at": "2026-11-15T12:31:53.613322+05:30"
+   "picked_at": "2026-11-15T12:31:53.613322+05:30",
+   "posted": true
   },
   "Ccc83c8e": {
    "id": "Ccc83c8e",
@@ -49,7 +50,8 @@
    "score": 5.0,
    "power_cut": false,
    "listed_at": "2026-11-14T19:22:36.392112+05:30",
-   "picked_at": "2026-11-15T12:31:53.613329+05:30"
+   "picked_at": "2026-11-15T12:31:53.613329+05:30",
+   "posted": true
   },
   "Cc4b695c": {
    "id": "Cc4b695c",
@@ -234,7 +236,8 @@
    "score": 5.0,
    "power_cut": false,
    "listed_at": "2026-11-15T06:00:43.980779+05:30",
-   "picked_at": "2026-11-15T12:31:53.613332+05:30"
+   "picked_at": "2026-11-15T12:31:53.613332+05:30",
+   "posted": true
   },
   "C4ce8223": {
    "id": "C4ce8223",
@@ -247,7 +250,8 @@
    "score": 5.0,
    "power_cut": false,
    "listed_at": "2026-11-15T06:00:43.980779+05:30",
-   "picked_at": "2026-11-15T12:31:53.613334+05:30"
+   "picked_at": "2026-11-15T12:31:53.613334+05:30",
+   "refused": "not filed: not Coimbatore district news (the story's first lines name another place and no Coimbatore place)"
   },
   "Cb0bd859": {
    "id": "Cb0bd859",
@@ -260,7 +264,8 @@
    "score": 4.0,
    "power_cut": false,
    "listed_at": "2026-11-15T06:00:43.980779+05:30",
-   "picked_at": "2026-11-15T12:31:53.613337+05:30"
+   "picked_at": "2026-11-15T12:31:53.613337+05:30",
+   "refused": "not filed: not Coimbatore district news (the story's first lines name another place and no Coimbatore place)"
   },
   "C99ed8cd": {
    "id": "C99ed8cd",
@@ -273,7 +278,8 @@
    "score": 4.0,
    "power_cut": false,
    "listed_at": "2026-11-15T06:00:43.980779+05:30",
-   "picked_at": "2026-11-15T12:31:53.613339+05:30"
+   "picked_at": "2026-11-15T12:31:53.613339+05:30",
+   "posted": true
   },
   "Cf818649": {
    "id": "Cf818649",
@@ -334,7 +340,8 @@
    "score": 10.0,
    "power_cut": false,
    "listed_at": "2026-11-15T12:30:26.719253+05:30",
-   "picked_at": "2026-11-15T12:31:53.613315+05:30"
+   "picked_at": "2026-11-15T12:31:53.613315+05:30",
+   "posted": true
   },
   "C4747a2d": {
    "id": "C4747a2d",
@@ -347,7 +354,8 @@
    "score": 9.88,
    "power_cut": false,
    "listed_at": "2026-11-15T12:30:26.719253+05:30",
-   "picked_at": "2026-11-15T12:31:53.613319+05:30"
+   "picked_at": "2026-11-15T12:31:53.613319+05:30",
+   "posted": true
   }
  },
  "rounds": {
@@ -595,7 +603,11 @@
     "C99ed8cd",
     "Cb0bd859",
     "Ccc83c8e"
-   ]
+   ],
+   "refused": {
+    "Cb0bd859": "not filed: not Coimbatore district news (the story's first lines name another place and no Coimbatore place)",
+    "C4ce8223": "not filed: not Coimbatore district news (the story's first lines name another place and no Coimbatore place)"
+   }
   }
  },
  "retry": {}
