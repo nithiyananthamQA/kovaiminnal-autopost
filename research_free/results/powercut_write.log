@@ -590,3 +590,241 @@ filed: 2 Coimbatore district stories (target 2), reels only
 queue: 0 news waiting to be written
 All News sheet: {"ok":true,"added":2,"updated":0} 
 stories: 2
+05:52:40 Instagram token: the shared minnal-bot token (Minnal bridge)
+writing [N]: நாளைய மின்தடை: காடையூா், பழையகோட்டை
+writing [N]: நாளைய மின்தடை: அய்யா்பாடி
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok gemini/gemini-3.6-flash (15s)
+attempt 1 gemini/gemini-3.6-flash: 1 problems
+  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3.6-flash (19s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
+ok gemini/gemini-3.5-flash (3s)
+factcheck by gemini/gemini-3.5-flash: 1 problems
+  The caption invents the year '2026' which is not mentioned in the article.
+attempt 1 gemini/gemini-3.6-flash: 1 problems
+  fact-check: The caption invents the year '2026' which is not mentioned in the article.
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemini/gemini-3.6-flash: Expecting ',' delimiter: line 1 column 1217 (char 1216)
+poor answer - skipped for 30 min: gemini/gemini-3.6-flash
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
+fail gemini/gemini-3.5-flash: Expecting ',' delimiter: line 1 column 1232 (char 1231)
+poor answer - skipped for 30 min: gemini/gemini-3.5-flash
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, plea
+dead for this round: gemini/gemini-3-flash-preview
+fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
+poor answer - skipped for 30 min: gemini/gemini-3-flash-preview
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please ch
+fail gemma/gemma-4-26b-a4b-it: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=90)
+poor answer - skipped for 30 min: gemma/gemma-4-26b-a4b-it
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 500: {
+  "error": {
+    "code": 500,
+    "message": "Internal error encountered.",
+    "status": "I
+ok gemma/gemma-4-26b-a4b-it (24s)
+attempt 2 gemma/gemma-4-26b-a4b-it: 9 problems
+  caption needs 5 hashtags (Instagram max), has 6
+  stray Tamil sign 'ா' after 'ூ' in «ம்புதூா், »
+  stray Tamil sign '்' after 'ா' in «்புதூா், ப»
+  stray Tamil sign 'ா' after 'ூ' in «காடையூா், »
+  stray Tamil sign '்' after 'ா' in «ாடையூா், ம»
+  stray Tamil sign 'ா' after 'ூ' in «ம்புதூா், »
+  stray Tamil sign '்' after 'ா' in «்புதூா், ப»
+  stray Tamil sign 'ா' after 'ூ' in «காடையூா், »
+  stray Tamil sign '்' after 'ா' in «ாடையூா், ம»
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check 
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {"error":{"message":"Failed to validate JSON. Please adjust your prompt. See 'failed_gener
+ok groq/qwen/qwen3.8-27b (4s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check 
+switching away from gemma/gemma-4-31b-it for 10 min
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+switching away from groq/qwen/qwen3.8-27b for 10 min
+ok groq/openai/gpt-oss-120b (3s)
+factcheck by groq/openai/gpt-oss-120b: 0 problems
+attempt 2 groq/qwen/qwen3.8-27b: 0 problems
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+switching away from groq/openai/gpt-oss-120b for 10 min
+ok groq/openai/gpt-oss-120b (6s)
+proofread rejected (3 problems)
+  missing key: reel_script
+  missing key: caption
+  missing key: scenes
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (8s)
+real photo step skipped for 'Power cut in Ayyappadi, Valparai tomorro': real photos switched off
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+image match: True The photo shows a utility worker on a ladder next to power poles along a road, illustrating power line maintenance assoc
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Power cut in Ayyappadi, Valparai tomorro'
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261115-0555","first":"RN-14"}
+posting job started at once
+fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)
+poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (30s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (5s)
+factcheck by cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 8 problems
+  slides_spec: slide 2 has no clear meaning in Tamil: it lists only some of the areas affected by the power cut in Kadayur
+  slides_spec: slide 3 title is incomplete: it should say பழையகோட்டை துணை மின் நிலையம்
+  slides_spec: slide 3 has no clear meaning in Tamil: it lists only some of the areas affected by the power cut in Pazhaya Kottai
+  caption: the caption lists only some of the areas affected by the power cut in Kadayur and Pazhaya Kottai
+  reel_script: missing important fact: the reason for the power cut (maintenance work) is mentioned only in the slides, not in the reel_script
+  reel_script: invented detail: the reel_script tells viewers to prepare for mobile charging and water needs, but the article does not mention water needs
+  reel_script: the reel_script says that the power cut will affect Kadayur and Pazhaya Kottai areas, but the article says that it will affect areas served by the Kadayur and Pazhaya Kottai substations, which are not the same thing
+  reel_script: the reel_script says that the power cut will affect Kadayur and Pazhaya Kottai substations, but the article says that it will affect areas served by these substations, not the substations themselves
+attempt 3 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 8 problems
+  fact-check: slides_spec: slide 2 has no clear meaning in Tamil: it lists only some of the areas affected by the power cut in Kadayur
+  fact-check: slides_spec: slide 3 title is incomplete: it should say பழையகோட்டை துணை மின் நிலையம்
+  fact-check: slides_spec: slide 3 has no clear meaning in Tamil: it lists only some of the areas affected by the power cut in Pazhaya Kottai
+  fact-check: caption: the caption lists only some of the areas affected by the power cut in Kadayur and Pazhaya Kottai
+  fact-check: reel_script: missing important fact: the reason for the power cut (maintenance work) is mentioned only in the slides, not in the reel_script
+  fact-check: reel_script: invented detail: the reel_script tells viewers to prepare for mobile charging and water needs, but the article does not mention water needs
+  fact-check: reel_script: the reel_script says that the power cut will affect Kadayur and Pazhaya Kottai areas, but the article says that it will affect areas served by the Kadayur and Pazhaya Kottai substations, which are not the same thing
+  fact-check: reel_script: the reel_script says that the power cut will affect Kadayur and Pazhaya Kottai substations, but the article says that it will affect areas served by these substations, not the substations themselves
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (27s)
+attempt 4 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  caption needs 5 hashtags (Instagram max), has 6
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (26s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: Unterminated string starting at: line 1 column 19785 (char 19784)
+poor answer - skipped for 30 min: cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct
+free fact-check unavailable, using Claude: no free model answered: Unterminated string starting at: line 1 column 19785 (char 19784)
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 4 problems
+  The article does not say the outage is caused by maintenance work, but the draft's reel_script and caption do not add a cause either, so no issue there; however the draft's slides_spec and reel_script both state the outage is in 'Kadaiyur' and 'Pazhaya Kottai' substations, which matches the article — no problem found in that respect.
+  The article says the outage is due to maintenance work (பராமரிப்பு பணிகள் காரணமாக), but the reel_script and caption omit this cause, which is an important fact of the article.
+  The article names the official who announced the outage (Tamil Nadu Electricity Board Kangayam executive engineer T. Jegatheeswari); the reel_script omits this, which is not necessarily required but the announcing authority is only partially conveyed.
+  The caption's English line 'Power cut in Kadaiyur and Pazhaya Kottai tomorrow' uses the English spelling 'Kadaiyur' and 'Pazhaya Kottai' which is not a problem by itself, but the reel_script says 'காடையூர் துணை மின் நிலையம்' for the Kadaiyur substation and the slides list 'பழையகோட்டை' — consistent with article.
+attempt 5 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 4 problems
+  fact-check: The article does not say the outage is caused by maintenance work, but the draft's reel_script and caption do not add a cause either, so no issue there; however the draft's slides_spec and reel_script both state the outage is in 'Kadaiyur' and 'Pazhaya Kottai' substations, which matches the article — no problem found in that respect.
+  fact-check: The article says the outage is due to maintenance work (பராமரிப்பு பணிகள் காரணமாக), but the reel_script and caption omit this cause, which is an important fact of the article.
+  fact-check: The article names the official who announced the outage (Tamil Nadu Electricity Board Kangayam executive engineer T. Jegatheeswari); the reel_script omits this, which is not necessarily required but the announcing authority is only partially conveyed.
+  fact-check: The caption's English line 'Power cut in Kadaiyur and Pazhaya Kottai tomorrow' uses the English spelling 'Kadaiyur' and 'Pazhaya Kottai' which is not a problem by itself, but the reel_script says 'காடையூர் துணை மின் நிலையம்' for the Kadaiyur substation and the slides list 'பழையகோட்டை' — consistent with article.
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+free models unavailable: no free model answered: None
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+free fact-check unavailable, using Claude: no free model answered: None
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 4 problems
+  reel_script says '5 மணி நேரம்' (5 hours), but the outage runs 9 AM to 2 PM, which is 5 hours; this is consistent, so no issue here on re-check
+  reel_script and slides_spec say the power cut is in 'காடையூர், பழையகோட்டை பகுதிகளில்' and the article lists these as the substation areas, which matches; however reel_script adds 'மின் தடைக்கு முன்பே தண்ணீர், மொபைல் சார்ஜ் போன்றவற்றை தயார் செய்துகொள்ளுங்கள்' which is an invented advisory not in the article
+  caption repeats the same invented advisory 'தண்ணீர், மொபைல் சார்ஜ் போன்றவற்றை தயார் செய்துகொள்ளுங்கள்' which is not in the article
+  slides_spec line 'மின் பராமரிப்பு பணிகள் காரணமாக மின் விநியோகம் இருக்காது' and the reel's 'மின் விநியோகம் இருக்காது' are consistent with the article, but the caption's English tag 'Kangayam power cut tomorrow 9 AM to 2 PM | Tiruppur news' is outside Tamil text and is not a listed exempt item, though it is a footer-like line
+claude rewrite 1 anthropic/claude-haiku-5-5: 4 problems
+  fact-check: reel_script says '5 மணி நேரம்' (5 hours), but the outage runs 9 AM to 2 PM, which is 5 hours; this is consistent, so no issue here on re-check
+  fact-check: reel_script and slides_spec say the power cut is in 'காடையூர், பழையகோட்டை பகுதிகளில்' and the article lists these as the substation areas, which matches; however reel_script adds 'மின் தடைக்கு முன்பே தண்ணீர், மொபைல் சார்ஜ் போன்றவற்றை தயார் செய்துகொள்ளுங்கள்' which is an invented advisory not in the article
+  fact-check: caption repeats the same invented advisory 'தண்ணீர், மொபைல் சார்ஜ் போன்றவற்றை தயார் செய்துகொள்ளுங்கள்' which is not in the article
+  fact-check: slides_spec line 'மின் பராமரிப்பு பணிகள் காரணமாக மின் விநியோகம் இருக்காது' and the reel's 'மின் விநியோகம் இருக்காது' are consistent with the article, but the caption's English tag 'Kangayam power cut tomorrow 9 AM to 2 PM | Tiruppur news' is outside Tamil text and is not a listed exempt item, though it is a footer-like line
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 25 problems
+  hl1 (the first headline on screen) must name the place 'காடையூா்', e.g. 'காடையூா்: ...' or 'காடையூா்-இல் ...' - viewers share news of their own area
+  stray Tamil sign 'ா' after 'ூ' in «காடையூா், »
+  stray Tamil sign '்' after 'ா' in «ாடையூா், ப»
+  stray Tamil sign 'ா' after 'ூ' in «காடையூா் ம»
+  stray Tamil sign '்' after 'ா' in «ாடையூா் மற»
+  stray Tamil sign 'ா' after 'ூ' in «காடையூா், »
+  stray Tamil sign '்' after 'ா' in «ாடையூா், இ»
+  stray Tamil sign 'ா' after 'ூ' in «ம்புதூா், »
+  stray Tamil sign '்' after 'ா' in «்புதூா், ப»
+  stray Tamil sign 'ா' after 'ூ' in «காடையூா், »
+  stray Tamil sign '்' after 'ா' in «ாடையூா், ம»
+  stray Tamil sign '்' after 'ா' in «றியாளா் டி»
+  stray Tamil sign 'ா' after 'ூ' in «காடையூா், »
+  stray Tamil sign '்' after 'ா' in «ாடையூா், ப»
+  stray Tamil sign 'ா' after 'ூ' in «காடையூா், »
+  stray Tamil sign '்' after 'ா' in «ாடையூா், ப»
+  stray Tamil sign '்' after 'ா' in «றியாளா் டி»
+  stray Tamil sign 'ா' after 'ூ' in «காடையூா்: »
+  stray Tamil sign '்' after 'ா' in «ாடையூா்: க»
+  stray Tamil sign 'ா' after 'ூ' in «காடையூா், »
+  stray Tamil sign '்' after 'ா' in «ாடையூா், இ»
+  stray Tamil sign 'ா' after 'ூ' in «ம்புதூா், »
+  stray Tamil sign '்' after 'ா' in «்புதூா், ப»
+  stray Tamil sign 'ா' after 'ூ' in «காடையூா், »
+  stray Tamil sign '்' after 'ா' in «ாடையூா், ம»
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+free fact-check unavailable, using Claude: no free model answered: None
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 1 problems
+  slides_spec: the Pazhayakottai slide area list omits கண்ணம்மாபுரம், which is in the article's Pazhayakottai list
+claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
+  fact-check: slides_spec: the Pazhayakottai slide area list omits கண்ணம்மாபுரம், which is in the article's Pazhayakottai list
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok anthropic/claude-haiku-5-5
+real photo step skipped for 'Kangayam: power cut on Monday 16 Nov, 9 ': real photos switched off
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Kangayam: power cut on Monday 16 Nov, 9 '
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261115-0600","first":"RN-15"}
+earlier stories still waiting for images: []
+instagram check: 7 recent posts read from the page
+pick round: only the picked links are written (research_free/pick.py)
+manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/14/power-outage-tomorrow-ayyarpadi-2
+manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/tiruppur/2026/Nov/14/power-outage-tomorrow-kadaiyur-pazhayakottai-2
+candidate filter: collected=2
+to write: 2 Coimbatore district candidates (max 2 stories)
+round: top 2 of 2 candidates
+candidates waiting: 2 Coimbatore; time left 39 min
+try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/tir
+try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/coi
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})
+posting job started at once
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})
+candidate loop ended: left 0, tried={'N': 2}, done={'N': 2}, time left 32 min
+filed: 2 Coimbatore district stories (target 2), reels only
+queue: 0 news waiting to be written
+All News sheet: {"ok":true,"added":2,"updated":0} 
+stories: 2
