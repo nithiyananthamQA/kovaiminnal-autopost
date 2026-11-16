@@ -82,6 +82,12 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-16 | `182b7e7` | ElevenLabs Nila: steady takes + place names checked by ear (owner 16 Nov: Kovai reels said valamparai for வால்பாறை, நக for நகர்) |
+| 2026-11-16 | `2c39c97` | Reel top strip: the news source (📰 paper) shows again next to the date (owner 16 Nov: source went missing in the new layout) |
+| 2026-11-16 | `304caea` | district powercut: notices found |
+| 2026-11-16 | `98229d7` | district powercut: chennai posted |
+| 2026-11-16 | `29f3f53` | facebook RN-45 |
+| 2026-11-16 | `1f40e98` | powercut: notices written |
 | 2026-11-16 | `fe85e28` | Power cuts: a Tiruppur notice never posts on Kovai (owner 16 Nov, RN-52 Uthiyur cut posted at 00:43) |
 | 2026-11-16 | `5e9aca9` | Pick like the reference (owner 16 Nov, port of news360 ab06a9d + its 6 rounds from aba8a65): news chosen by this page's insights, 6 rounds a day, stories only for urgent news |
 | 2026-11-16 | `5482348` | facebook RN-42 |
@@ -106,10 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-15 | `60c8cb1` | pick: picked news saved |
 | 2026-11-15 | `2ada3f8` | pick: picked news saved |
 | 2026-11-15 | `559e42a` | pick: list sent |
-| 2026-11-15 | `dff9b4a` | Heartbeat |
-| 2026-11-15 | `cf61bf4` | Heartbeat |
-| 2026-11-15 | `f97f7e5` | Heartbeat |
-| 2026-11-15 | `41e6819` | Heartbeat |
-| 2026-11-15 | `6108736` | pick: written and posted |
-| 2026-11-15 | `2366fbb` | powercut: notices written |
 <!-- recent-changes:end -->
