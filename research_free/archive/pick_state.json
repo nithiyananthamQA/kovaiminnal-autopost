@@ -170,7 +170,8 @@
    "alts": [
     "https://www.dinamalar.com/news/tamil-nadu-news/fake-book-procurement-fir-gets-new-information-dmk-govt-paid-money-to-ambalam/4377761"
    ],
-   "listed_at": "2026-11-16T21:01:07.153300+05:30"
+   "listed_at": "2026-11-16T21:01:07.153300+05:30",
+   "picked_at": "2026-11-16T21:05:16.545237+05:30"
   },
   "C23189b9": {
    "id": "C23189b9",
@@ -182,7 +183,8 @@
    "category": "விபத்து",
    "score": 11.19,
    "power_cut": false,
-   "listed_at": "2026-11-16T21:01:07.153300+05:30"
+   "listed_at": "2026-11-16T21:01:07.153300+05:30",
+   "picked_at": "2026-11-16T21:05:16.545232+05:30"
   },
   "Cee97558": {
    "id": "Cee97558",
@@ -1072,8 +1074,19 @@
    ],
    "sent": false,
    "deadline": "2026-11-16T22:01:07.153300+05:30",
-   "decided": null,
-   "written": []
+   "decided": {
+    "how": "automatic: top 2 of 25 by insights",
+    "ids": [
+     "C23189b9",
+     "Cff91d7e"
+    ],
+    "at": "2026-11-16T21:05:16.545213+05:30"
+   },
+   "written": [
+    "C23189b9",
+    "Cff91d7e"
+   ],
+   "extra": 0
   }
  },
  "retry": {
