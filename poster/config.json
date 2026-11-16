@@ -33,6 +33,10 @@
       "name": "Nila - Warm, Clear and Conversational (Tamil, ElevenLabs voice library)",
       "model": "eleven_v3",
       "tag": "[serious]",
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "check_names": true,
+      "fix_note": "owner 16 Nov (Kovai reels: வால்பாறை heard as valamparai, நகர் as நக; Chennai reels fine - same voice, random takes): Nila's own saved stability 0.35 is v3's random 'creative' end -> 0.5 'natural' (emotion tags still work). check_names: every line with a place name is checked by ElevenLabs speech-to-text and read again (max 2 more takes) when the name was not heard",
       "note": "owner 16 Nov: human-like voice with emotion for every reel (key: ELEVENLABS_API_KEY). Any ElevenLabs failure = that reel falls back to Anbu below"
     },
     "voice": "ta-SG-AnbuNeural",
