@@ -1,370 +1,96 @@
 {
  "log": [
   "earlier stories still waiting for images: []",
-  "instagram check: 47 recent posts read from the page",
+  "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dailythanthi.com/news/tamilnadu/periyar-arivulaga-book-scam-anti-corruption-bureau-raids-the-residence-of-the-owner-of-agal-vilakku-publications",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-news/coimbatore-10-year-old-girl-rape-case-verdict-postponed/4377505",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/a-festival-to-raise-awareness-of-children-in-the-pool/4376837",
-  "candidate filter: collected=3",
-  "to write: 3 Coimbatore district candidates (max 3 stories)",
-  "round: top 3 of 3 candidates",
-  "candidates waiting: 3 Coimbatore; time left 79 min",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/bakery-motor-seized-that-took-drinking-water-illegally-principal-secretary/4377593",
+  "candidate filter: collected=1",
+  "to write: 1 Coimbatore district candidates (max 1 stories)",
+  "round: top 1 of 1 candidates",
+  "candidates waiting: 1 Coimbatore; time left 79 min",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-news/coimbatore-10",
-  "try (N) manual=True: https://www.dailythanthi.com/news/tamilnadu/periyar-arivulag",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
-  "posting job started at once",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
-  "candidate loop ended: left 0, tried={'N': 3}, done={'N': 3}, time left 71 min",
-  "filed: 3 Coimbatore district stories (target 3), reels only",
+  "posting job started at once",
+  "candidate loop ended: left 0, tried={'N': 1}, done={'N': 1}, time left 76 min",
+  "filed: 1 Coimbatore district stories (target 1), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":3,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":1,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok gemini/gemini-3.6-flash (33s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3.6-flash (8s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok gemini/gemini-3.6-flash (29s)",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "ok gemini/gemini-3.6-flash (23s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok gemini/gemini-3.6-flash (17s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.6-flash",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
-  "ok gemini/gemini-3.6-flash (31s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
-  "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\"",
-  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"I",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
-  "ok gemini/gemini-3-flash-preview (5s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok groq/qwen/qwen3.8-27b (4s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please ch",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please ch",
-  "switching away from gemma/gemma-4-26b-a4b-it for 10 min",
-  "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\"",
-  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check ",
-  "fail gemini/gemini-3.6-flash: Expecting ',' delimiter: line 1 column 1155 (char 1154)",
-  "poor answer - skipped for 30 min: gemini/gemini-3.6-flash",
-  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check ",
-  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check ",
-  "switching away from gemma/gemma-4-31b-it for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check ",
-  "switching away from gemma/gemma-4-31b-it for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok groq/qwen/qwen3.8-27b (4s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "ok gemma/gemma-4-31b-it (56s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (74s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)",
-  "poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-  "fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)",
-  "poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (23s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (23s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (23s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (31s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)",
-  "poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (3s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (23s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (22s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (29s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (5s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (22s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (26s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (23s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (2s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (27s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (27s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (29s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (5s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: Expecting ',' delimiter: line 1 column 1034 (char 1033)",
-  "poor answer - skipped for 30 min: cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct",
-  "ok anthropic/claude-haiku-5-5",
-  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (25s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: Unterminated string starting at: line 1 column 11189 (char 11188)",
-  "poor answer - skipped for 30 min: cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5"
+  "ok gemini/gemini-3.6-flash (13s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash"
  ],
  "stories": [
   {
-   "tamil_headline": "பெரியார் அறிவுலக நூலகத்தில் ஊழல்: மோசடி விசாரணை நடைபெறுகிறது",
-   "english_headline": "Periyar Encyclopaedia Library corruption: raid at publisher's house",
+   "tamil_headline": "அன்னூரில் கள்ளத்தனமாக குடிநீர் எடுத்த பேக்கரியின் மோட்டார் பறிமுதல்: முதன்மைச் செயலாளர் அதிரடி",
+   "english_headline": "Illegally drawn water motor seized from bakery during inspecton by Principal Secretary in Annur",
    "category": "Civic Issues",
-   "location": "Madiapakkam village, Coimbatore district",
-   "importance": "Medium",
-   "scope": "district",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "ஊழல் விசாரணை",
-    "loc": "மடிப்பாக்கம், கோவை",
-    "hl1": "கோவை மாவட்டத்தில் ஊழல் விசாரணை",
-    "hl2": "அகல் விளக்கு பதிப்பகம்",
-    "slides": [
-     {
-      "title": "எப்போது?",
-      "lines": [
-       "இன்று <b>16 நவம்பர்</b> (செவ்வாய்)",
-       "காலை <b>9 மணி</b> முதல்",
-       "மடிப்பாக்கம் வீட்டில் விசாரணை"
-      ]
-     },
-     {
-      "title": "எதற்காக?",
-      "lines": [
-       "பெரியார் அறிவுலகம் நூலகத்திற்கு புத்தகங்கள் வாங்கியதில் ஊழல்",
-       "பல்வேறு அரசியல் தலைவர்கள் கண்டனம்",
-       "நூலகத்தில் சர்ச்சைக்குரிய நூல்கள் அகற்றப்பட்டன"
-      ]
-     },
-     {
-      "title": "நடவடிக்கைகள்",
-      "lines": [
-       "லஞ்ச ஒழிப்புத்துறை விசாரணை நடத்துகிறது",
-       "முறைகேடு தொடர்பாக வழக்குப் பதிவு",
-       "அகல் விளக்கு பதிப்பகத்தின் உரிமையாளர் வீட்டில் விசாரணை"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோயம்புத்தூர் மாவட்டத்தில் பெரியார் அறிவுலக நூலகத்திற்கு புத்தகங்கள் வாங்கியதில் ஊழல் நடைபெற்றிருப்பதாக குற்றம் சாட்டப்பட்டது. கடந்த அக்டோபர் 16ஆம் தேதி அமைச்சர் விஜய்யால் திறந்துவைக்கப்பட்ட இந்த நூலகத்திற்கு 7 தளங்களைக் கொண்டுள்ளது. இந்த ஊழல் குற்றம் சாட்டப்பட்டதால் பல்வேறு அரசியல் தலைவர்கள், எழுத்தாளர்கள், பதிப்பாளர்கள் மற்றும் வாசகர்கள் தங்களுடைய கண்டனங்களைப் பதிவு செய்து வருகின்றனர். இதையடுத்து நூலகத்தில் இருந்த சர்ச்சைக்குரிய நூல்கள் அகற்றப்பட்டது. லஞ்ச ஒழிப்புத்துறை விசாரணை நடத்தி ஆவணங்களைச் சரிபார்த்தனர். இதன் அடிப்படையில் முறைகேடு தொடர்பாக வழக்குப்பதிவு செய்யப்பட்டுள்ளது. இன்று நவம்பர் 16ஆம் தேதி காலை 9 மணி முதல் மடிப்பாக்கம் வீட்டில் லஞ்ச ஒழிப்புத்துறை விசாரணை நடைபெற்று வருகிறது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "📚 கோவை மாவட்டத்தில் பெரியார் அறிவுலக நூலகத்திற்கு புத்தகங்கள் வாங்கியதில் ஊழல் நடைபெற்றிருப்பதாக குற்றம் சாட்டப்பட்டது.\n\n📰 முழு விவரம்:\nகோயம்புத்தூர் மாவட்டத்தில் பெரியார் அறிவுலகம் கட்டும் பணிகள் திமுக ஆட்சியில் தொடங்கப்பட்ட நிலையில், கடந்த அக்டோபர் 16ஆம் தேதி அமைச்சர் விஜய்யால் திறந்துவைக்கப்பட்டது. இந்த நூலகத்திற்கு 7 தளங்களைக் கொண்டுள்ளது. புத்தகங்களை வாங்கியதில் பெரும் ஊழல் நடைபெற்றிருப்பதாக எழுத்தாளர் பெருமாள் முருகன் குற்றம் சாட்டினர். இதையடுத்து நூலகத்தில் இருந்த சர்ச்சைக்குரிய நூல்கள் அகற்றப்பட்டது.\n📜 லஞ்ச ஒழிப்புத்துறை விசாரணை நடத்தி ஆவணங்களைச் சரிபார்த்தனர். இதன் அடிப்படையில் முறைகேடு தொடர்பாக வழக்குப்பதிவு செய்யப்பட்டுள்ளது.\n📍 இடம்: மடிப்பாக்கம், கோவை மாவட்டம்\n🕘 நேரம்: இன்று காலை 9 மணி முதல்\n👮 நடவடிக்கை: லஞ்ச ஒழிப்புத்துறை விசாரணை நடத்துகிறது\n\nPeriyar Encyclopaedia Library corruption | Coimbatore news\n📍 மடிப்பாக்கம், கோவை மாவட்டம் | 16 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Madiapakkam #CoimbatoreNews #கோவை",
-   "prompts": "A group of anti-corruption police officers in khaki uniform stand at the gate of a modest two-storey residential house in Madiapakkam village on the outskirts of Coimbatore, carrying files and bundles of papers as they leave and enter during an early morning search. The house has a plain painted compound wall, an iron gate, a small verandah and a concrete porch, with a narrow village road and a few palm and coconut trees behind it, typical of a quiet semi-urban Tamil Nadu neighbourhood. Two officers in khaki shirts and trousers stand near a white government police jeep parked by the roadside, while a few neighbours in casual shirts and sarees watch quietly from a distance, seen from behind. The officers are carrying stacks of papers in plastic folders and cardboard files. It is daylight, a bright morning with soft sun on the walls, and the camera is at eye level, 35 mm, wide enough to show the house, the road and the officers together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a wooden study table inside a house, covered with stacks of loose papers, ledgers, bound registers and cardboard files spread out during an anti-corruption search. A khaki-uniformed police officer's hand, seen only from the wrist down, sorts through the documents, with a plastic folder and a pen lying nearby. Behind the table, a bookshelf is partly visible with a few rows of books, suggesting a publisher's office at home. Soft daylight enters through a window at the side, lighting the paper edges and creating a calm, serious mood. The camera is slightly high, 35 mm close-up, focusing on the documents and the hand, with no visible text or readable labels on the papers. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dailythanthi.com/news/tamilnadu/periyar-arivulaga-book-scam-anti-corruption-bureau-raids-the-residence-of-the-owner-of-agal-vilakku-publications",
-   "published": "2026-11-16T06:12:12Z",
-   "verification": "DRAFT (cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct) - NOT CLEAN, held from posting - problems: numbers not found in the article: 9",
-   "note": "free-model draft cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct, 6 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794814864/kovaiminnal/nxsk9brwi6pzm782adtz.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794814868/kovaiminnal/xemo522d3i9ikysisacr.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவை சிறுமி பாலியல் வன்கொடுமை வழக்கு: தீர்ப்பு நவ. 27க்கு ஒத்திவைப்பு",
-   "english_headline": "Coimbatore 10-year-old girl sexual assault case: verdict postponed to 27 November",
-   "category": "Crime & Safety",
-   "location": "Sulur, Coimbatore district",
+   "location": "Kariyampalayam, Annur taluk, Coimbatore district",
    "importance": "High",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "வழக்கு விசாரணை",
-    "loc": "சூலூர், கோவை மாவட்டம்",
-    "hl1": "சூலூர் சிறுமி வழக்கு: தீர்ப்பு",
-    "hl2": "தீர்ப்பு நவ. 27ல்",
+    "cat": "அதிரடி ஆய்வு",
+    "loc": "கரியாம்பாளையம், அன்னூர்",
+    "hl1": "அன்னூரில் பேக்கரி மோட்டார் பறிமுதல்",
+    "hl2": "முறைகேடாக குடிநீர் திருட்டு",
     "slides": [
      {
-      "title": "வழக்கின் பின்னணி",
+      "title": "அதிரடி ஆய்வு",
       "lines": [
-       "சூலூர் அருகே 10 வயது சிறுமி <b>மே 21</b> அன்று மாயமானார்",
-       "புதர் பகுதியில் சிறுமி சடலமாகக் கண்டெடுக்கப்பட்டார்",
-       "பிரேத பரிசோதனையில் பாலியல் வன்கொடுமை உறுதியானது"
+       "ஊரக வளர்ச்சித் துறைச் செயலர் தர்மேந்திர பிரதாப் ஆய்வு",
+       "அன்னூர் கரியாம்பாளையத்தில் சோதனை",
+       "பேக்கரியில் குடிநீர் முறைகேடு கண்டுபிடிப்பு"
       ]
      },
      {
-      "title": "கைதும்",
+      "title": "மோட்டார் பறிமுதல்",
       "lines": [
-       "கார்த்திக், மோகன் ராஜ் ஆகிய இருவர் கைது",
-       "<b>21 நாளில்</b> 800 பக்க குற்றப்பத்திரிகை தாக்கல்",
-       "போக்சோ சிறப்பு நீதிமன்றத்தில் வழக்கு"
+       "வீட்டு <b>2</b> இணைப்புகளில் இருந்து தண்ணீர் திருட்டு",
+       "மோட்டார் மூலம் பேக்கரி தொட்டிக்கு நீர் ஏற்றம்",
+       "மோட்டாரைப் பறிமுதல் செய்ய அதிரடி உத்தரவு"
       ]
      },
      {
-      "title": "சாட்சியும் ஆவணமும்",
+      "title": "அன்னூரில் ஆய்வு",
       "lines": [
-       "அரசு தரப்பில் <b>68 பேர்</b> சாட்சியம் அளித்தனர்",
-       "குற்றத்தை நிரூபிக்க <b>221 ஆவணங்கள்</b> சமர்ப்பிப்பு",
-       "<b>6 மாதமாக</b> நடந்து வந்த வழக்கு"
-      ]
-     },
-     {
-      "title": "தீர்ப்பு",
-      "lines": [
-       "இன்று தீர்ப்பு என அறிவிக்கப்பட்டிருந்தது",
-       "நீதிபதி ஹரிஹரன் தீர்ப்பு தேதியை <b>நவ. 27</b>க்கு மாற்றினார்",
-       "திடீர் மாற்றத்திற்கான காரணம் அறிவிக்கப்படவில்லை"
+       "மகளிர் சுயஉதவிக் குழுப் பொருட்கள் பார்வை",
+       "கணேசபுரத்தில் பிளாஸ்டிக் கொட்டகை ஆய்வு",
+       "பாட்டில்களைச் சுத்தம் செய்து விற்க அறிவுரை"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "சூலூர் அருகே 10 வயது சிறுமி பாலியல் வன்கொடுமை செய்து கொல்லப்பட்ட வழக்கின் தீர்ப்பு நவம்பர் 27ஆம் தேதிக்கு ஒத்திவைக்கப்பட்டுள்ளது. வீட்டின் வெளியே விளையாடிக் கொண்டிருந்த சிறுமி மே 21ஆம் தேதி மாயமானார். பெற்றோர் அளித்த புகாரின் பேரில் போலீசார் தேடினர். புதர் பகுதியில் சிறுமி சடலமாகக் கண்டெடுக்கப்பட்டார். பிரேத பரிசோதனையில் பாலியல் வன்கொடுமை செய்து கொல்லப்பட்டது தெரியவந்தது. அதே பகுதியைச் சேர்ந்த கார்த்திக், மோகன் ராஜ் ஆகிய இருவர் கைது செய்யப்பட்டனர். போலீசார் 21 நாளில் 800 பக்க குற்றப்பத்திரிகையைப் போக்சோ சிறப்பு நீதிமன்றத்தில் தாக்கல் செய்தனர். அரசு தரப்பில் 68 பேர் சாட்சியம் அளித்தனர். குற்றத்தை நிரூபிக்க 221 முக்கிய ஆவணங்கள் சமர்ப்பிக்கப்பட்டன. 6 மாதமாக நடந்து வந்த இந்த வழக்கில் இன்று தீர்ப்பு வழங்கப்படும் என அறிவிக்கப்பட்டிருந்தது. ஆனால் நீதிபதி ஹரிஹரன் திடீரெனத் தீர்ப்பின் தேதியை நவம்பர் 27ஆம் தேதிக்கு மாற்றி உத்தரவிட்டார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "⚖️ சூலூர் சிறுமி வழக்கு: தீர்ப்பு நவ. 27க்கு ஒத்திவைப்பு\n\n📰 முழு விவரம்:\nகோவை சூலூர் அருகே வீட்டின் வெளியே விளையாடிக் கொண்டிருந்த 10 வயது சிறுமி மே 21ஆம் தேதி மாயமானார். பெற்றோர் அளித்த புகாரின் பேரில் போலீசார் தேடுதல் நடத்தினர். புதர் பகுதியில் சிறுமி சடலமாகக் கண்டெடுக்கப்பட்டார். பிரேத பரிசோதனையில் பாலியல் வன்கொடுமை செய்து கொல்லப்பட்டது தெரியவந்தது.\n👮 நடவடிக்கை: அதே பகுதியைச் சேர்ந்த கார்த்திக், மோகன் ராஜ் ஆகிய இருவர் கைது செய்யப்பட்டனர்.\n📑 போலீசார் 21 நாளில் 800 பக்க குற்றப்பத்திரிகையைப் போக்சோ சிறப்பு நீதிமன்றத்தில் தாக்கல் செய்தனர்.\n🧑‍⚖️ அரசு தரப்பில் 68 பேர் சாட்சியம் அளித்தனர். குற்றத்தை நிரூபிக்க 221 முக்கிய ஆவணங்கள் சமர்ப்பிக்கப்பட்டன.\n🗓️ 6 மாதமாக நடந்து வந்த இந்த வழக்கில் இன்று தீர்ப்பு வழங்கப்படும் என அறிவிக்கப்பட்டிருந்தது.\n⚖️ நீதிபதி ஹரிஹரன் திடீரெனத் தீர்ப்பின் தேதியை நவ. 27ஆம் தேதிக்கு மாற்றி உத்தரவிட்டார்.\n\nCoimbatore Sulur girl case verdict postponed to 27 November | Coimbatore news\n📍 சூலூர், கோவை மாவட்டம் | 16 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Sulur #CoimbatoreNews #கோவை",
-   "prompts": "A POCSO special court in Coimbatore, where the verdict in the case of the 10-year-old girl from Sulur has been postponed to 27 November. Inside a courtroom with a wooden judge's bench and a tall ceiling fan, a judge's chair sits empty behind a table stacked with thick case files and a bundle of about 800 pages of chargesheet papers. Lawyers in black coats stand at a distance, and two accused men in plain shirts sit on a bench under police escort, seen from behind and far away. Several police in khaki uniforms stand near the doorway, while the family members of the child sit quietly on a wooden bench, shown only from behind. The room is lit by daylight through tall windows and the ceiling fan turns overhead. The camera is at eye level, 35 mm, wide enough to show the whole courtroom and its atmosphere of waiting. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up detail of a thick stack of court case files tied with string on a wooden table in a Coimbatore courtroom, the top sheet showing only blank paper and no readable text. Beside it lies a wooden gavel resting on a folded cloth, with a small brass desk lamp and a cup of water. Behind the table, out of focus, the blurred silhouette of a police constable in khaki stands near a window with daylight coming through. The surface of the table shows the wear of many hearings. Soft natural light, shallow depth of field, camera slightly above the table at 35 mm, focused on the files and gavel to convey the postponed verdict. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-news/coimbatore-10-year-old-girl-rape-case-verdict-postponed/4377505",
-   "published": "2026-11-16T12:24:00+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: sentence 1 (one-line story) has 15 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "reel_script": "அன்னூர் அருகே கரியாம்பாளையத்தில் கள்ளத்தனமாக குடிநீர் எடுத்த பேக்கரியின் மோட்டார் அதிரடியாகப் பறிமுதல் செய்யப்பட்டது. ஊரக வளர்ச்சித் துறை முதன்மைச் செயலாளர் தர்மேந்திர பிரதாப் யாதவ் தலைமையில் அதிகாரிகள் குழுவினர் கிராம ஊராட்சிகளில் ஆய்வு நடத்தினர். அப்போது, கரியாம்பாளையம் ஊராட்சியில் உள்ள ஒரு தனியார் பேக்கரியின் பின்புறம் அதிகாரிகள் ஆய்வு செய்தனர். அங்குள்ள வீடுகளுக்குப் பெறப்பட்ட 2 குடிநீர் இணைப்புகள் மூலம் தொட்டியில் நீர் நிரப்பி, மோட்டார் வாயிலாக பேக்கரிக்கு நீர் பயன்படுத்தியது கண்டுபிடிக்கப்பட்டது. இதையடுத்து, வீட்டு இணைப்பை முறைகேடாக வணிகத்திற்குப் பயன்படுத்தியதால், அந்த மோட்டாரைப் பறிமுதல் செய்ய முதன்மைச் செயலாளர் உத்தரவிட்டார். மேலும், கிராம ஊராட்சிகளிலும் 24 மணி நேரமும் தண்ணீர் விநியோகிக்கும் திட்டத்தைச் செயல்படுத்த வேண்டும் என்றும் அவர் கூறினார். தொடர்ந்து அன்னூர் ஒன்றிய அலுவலகத்தில் மகளிர் சுயஉதவிக் குழுப் பொருட்களைப் பார்வையிட்டார். இந்நிலையில் கணேசபுரத்தில் பிளாஸ்டிக் கழிவு அரைக்கும் கொட்டகையை ஆய்வு செய்து, பாட்டில்களை அரைப்பதற்குப் பதில் சுத்தப்படுத்தி மொத்தமாக விற்கலாம் என்று தெரிவித்தார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚰 அன்னூரில் கள்ளத்தனமாக குடிநீர் எடுத்த பேக்கரியின் மோட்டார் பறிமுதல்!\n\n📰 முழு விவரம்:\nஊரக வளர்ச்சி மற்றும் ஊராட்சிகள் துறை முதன்மைச் செயலாளர் தர்மேந்திர பிரதாப் யாதவ் தலைமையில் அதிகாரிகள் குழுவினர் அன்னூர் பகுதியில் உள்ள கிராம ஊராட்சிகளில் ஆய்வு மேற்கொண்டனர்.\nகரியாம்பாளையம் ஊராட்சியில் உள்ள ஒரு தனியார் பேக்கரியின் பின்புறம் ஆய்வு செய்தபோது, வீடுகளுக்குப் பெறப்பட்ட 2 குடிநீர் இணைப்புகளைப் பயன்படுத்தி மேல்நிலைத் தொட்டியில் நீர் நிரப்பி, மோட்டார் மூலம் பேக்கரி தொட்டிக்குக் கொண்டு சென்றது தெரியவந்தது.\nவீட்டு இணைப்பை முறைகேடாக வணிகப் பயன்பாட்டிற்குப் பயன்படுத்தியதால், உடனடியாக மோட்டாரைப் பறிமுதல் செய்ய முதன்மைச் செயலாளர் உத்தரவிட்டார்.\nகிராம ஊராட்சிகளிலும் 24 மணி நேரக் குடிநீர் விநியோகத் திட்டத்தைச் செயல்படுத்த வேண்டும் என்றும் கூறினார். பின்னர் அன்னூர் ஒன்றிய அலுவலகத்தில் மகளிர் சுயஉதவிக் குழுப் பொருட்களையும், கணேசபுரத்தில் பிளாஸ்டிக் கழிவு அரைக்கும் கொட்டகையையும் பார்வையிட்டுப் பல்வேறு ஆலோசனைகளை வழங்கினார்.\n\n📍 இடம்: கரியாம்பாளையம், அன்னூர் ஒன்றியம்\n🗓️ நாள்: 16 நவம்பர் 2026\n👮 நடவடிக்கை: மோட்டார் பறிமுதல் உத்தரவு\nℹ️ மக்கள் கவனத்திற்கு: வீட்டு குடிநீர் இணைப்புகளை வணிகப் பயன்பாட்டிற்குப் பயன்படுத்துவது சட்டப்படி குற்றமாகும்.\n\nஅன்னூர் பகுதியினருக்கு Share செய்யுங்கள்!\n\nAnnur illegal water connection bakery motor seized | Coimbatore news\n📍 அன்னூர், கோவை மாவட்டம் | 16 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Annur #CoimbatoreNews #கோவை",
+   "prompts": "A group of four rural development officials in formal shirts, trousers, and sarees stands in the back courtyard of a village bakery in Kariyampalayam near Annur, inspecting an illegal water setup. One official points toward an electric water motor pump resting on a low concrete pedestal, connected to long blue plastic pipes running up along a brick wall toward a large elevated water tank. The background features typical rural Coimbatore landscape with coconut palms and single-storey concrete buildings under bright daylight. The officials are positioned with their backs partially turned toward the camera, ensuring no recognisable faces are seen. The camera angle is eye-level, 35 mm, capturing the full backyard inspection context. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up detail shot of the seized electric water motor pump positioned on a dusty concrete slab beside a brick wall behind a commercial bakery in Kariyampalayam, Annur. Thick blue plastic water supply hoses and black vinyl pipes are visibly fitted to the suction and delivery ends of the motor, with slight moisture on the ground around the pipe joints. In the blurred background, the base of a concrete overhead water tank and a metal ladder are visible under bright daytime light. The scene focuses strictly on the confiscated water pumping equipment and illegal pipe connections without any people or readable signboards present. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/bakery-motor-seized-that-took-drinking-water-illegally-principal-secretary/4377593",
+   "published": "2026-11-16T16:34:14+05:30",
+   "verification": "DRAFT (gemini/gemini-3.6-flash + proofread gemini/gemini-3.6-flash) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3.6-flash + proofread gemini/gemini-3.6-flash, 1 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794814883/kovaiminnal/xnpfvvmgbq3qaabveovp.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794814887/kovaiminnal/mdr5vk3hsgsmutyeqx8u.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவில்பாளையத்தில் குழந்தைகள் தின விழாவுடன் 327வது வார களப்பணி",
-   "english_headline": "Kovilpalayam: 327th weekly fieldwork at Agraharam Samakkulam lake combined with Children's Day event on 15 Nov",
-   "category": "Environment & Community",
-   "location": "Agraharam Samakkulam lake, Kovilpalayam, Coimbatore district",
-   "importance": "Medium",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "சுற்றுச்சூழல்",
-    "loc": "கோவில்பாளையம்",
-    "hl1": "கோவில்பாளையத்தில் குழந்தைகள் தின களப்பணி",
-    "hl2": "327வது வாரமாக நடந்தது",
-    "slides": [
-     {
-      "title": "எங்கு, எப்போது?",
-      "lines": [
-       "கோவில்பாளையம் அக்ரஹார சாமக்குளம் ஏரியில்",
-       "நவ. 15 காலை <b>327வது</b> வார களப்பணி",
-       "குழந்தைகள் தின விழாவும் நடந்தது"
-      ]
-     },
-     {
-      "title": "என்ன செய்தனர்?",
-      "lines": [
-       "புதர்கள் அகற்றப்பட்டன",
-       "அடர்வனத்தில் நட்ட <b>400</b> மரக்கன்றுகளுக்கு பராமரிப்பு",
-       "தண்ணீர் விடுதல், களை அகற்றுதல் செய்யப்பட்டன"
-      ]
-     },
-     {
-      "title": "விழிப்புணர்வு",
-      "lines": [
-       "நீர்நிலைகள், சுற்றுச்சூழல் குறித்து குழந்தைகளுக்கு விளக்கம்",
-       "சிறுவர், சிறுமியர் ஆர்வமாக பங்கேற்றனர்",
-       "அனைவருக்கும் அறுசுவை உணவு வழங்கப்பட்டது"
-      ]
-     },
-     {
-      "title": "பங்கேற்பு",
-      "lines": [
-       "ஒவ்வொரு ஞாயிறும் காலை <b>7:00</b> மணிக்கு களப்பணி",
-       "ஆர்வமுள்ளோர் பங்கேற்கலாம்",
-       "தன்னார்வலர்கள் தெரிவித்தனர்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோவில்பாளையத்தில் அக்ரஹார சாமக்குளம் ஏரியில் 327வது வார களப்பணி நவம்பர் 15ஆம் தேதி காலை நடைபெற்றது. அதே நாளில் குழந்தைகள் தின விழாவும் நடைபெற்றது. ஏரி பாதுகாப்பு அமைப்பு மற்றும் கவுசிகா நீர்க்கரங்கள் சார்பில் ஒவ்வொரு வாரமும் ஞாயிறன்று இந்தக் களப்பணி நடைபெறுகிறது. குழந்தைகளுக்கு சுற்றுச்சூழல் குறித்து விழிப்புணர்வு ஏற்படுத்த இந்த விழாவுக்கு அழைப்பு விடுக்கப்பட்டது. நீர்நிலைகளை தூய்மையாக பராமரித்தால் கிடைக்கும் நன்மைகள், அடர்வனம் ஏற்படுத்தினால் கிடைக்கும் பயன்கள் குறித்து தன்னார்வலர்கள் விளக்கினர். புதர்கள் அகற்றப்பட்டன. ஏற்கனவே நடப்பட்ட 400 மரக்கன்றுகளுக்கு தண்ணீர் விடுதல், களை அகற்றுதல் உள்ளிட்ட பராமரிப்பு பணிகள் செய்யப்பட்டன. சிறுவர், சிறுமியர் ஆர்வமாக களப்பணியில் ஈடுபட்டனர். அனைவருக்கும் அறுசுவை உணவு வழங்கப்பட்டது. ஒவ்வொரு ஞாயிறும் காலை 7 மணிக்கு களப்பணி தொடங்கும். ஆர்வமுள்ளோர் பங்கேற்கலாம் என தன்னார்வலர்கள் தெரிவித்தனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🌳 கோவில்பாளையத்தில் குழந்தைகள் தின விழாவுடன் 327வது வார களப்பணி\n\n📰 முழு விவரம்:\nகோவில்பாளையம் அக்ரஹார சாமக்குளம் ஏரி பாதுகாப்பு அமைப்பு மற்றும் கவுசிகா நீர்க்கரங்கள் சார்பில் ஒவ்வொரு வாரமும் ஞாயிறன்று இங்கு களப்பணி நடைபெறுகிறது. 327வது வாரமாக நவம்பர் 15ஆம் தேதி காலை களப்பணியும் குழந்தைகள் தின விழாவும் நடைபெற்றது.\nகுழந்தைகளுக்கு சுற்றுச்சூழல் குறித்து விழிப்புணர்வு ஏற்படுத்த அழைப்பு விடுக்கப்பட்டது. நீர்நிலைகள் தூய்மையாக இருந்தால் கிடைக்கும் நன்மைகள், அடர்வனத்தின் பயன்கள், இயற்கை குறித்து தன்னார்வலர்கள் விளக்கினர்.\nபுதர்கள் அகற்றப்பட்டன. ஏற்கனவே நடப்பட்ட 400 மரக்கன்றுகளுக்கு தண்ணீர் விடுதல், களை அகற்றுதல் பராமரிப்பு பணிகள் செய்யப்பட்டன. சிறுவர், சிறுமியர் ஆர்வமாக பங்கேற்றனர்; அனைவருக்கும் அறுசுவை உணவு வழங்கப்பட்டது.\n\n📍 இடம்: அக்ரஹார சாமக்குளம் ஏரி, கோவில்பாளையம்\n🗓️ நாள்: நவம்பர் 15, 2026 (ஞாயிறு)\n🕘 நேரம்: ஒவ்வொரு ஞாயிறும் காலை 7:00 மணிக்கு களப்பணி தொடங்கும்\nℹ️ மக்கள் கவனத்திற்கு: ஆர்வமுள்ளோர் பங்கேற்கலாம் என தன்னார்வலர்கள் தெரிவித்துள்ளனர்.\n\nKovilpalayam lake weekly fieldwork Children's Day | Coimbatore news\n📍 கோவில்பாளையம், கோவை மாவட்டம் | 15 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Kovilpalayam #CoimbatoreNews #கோவை",
-   "prompts": "A group of volunteers and schoolchildren in colourful clothes gather at the edge of Agraharam Samakkulam lake in Kovilpalayam on a bright November morning for the weekly field work. Some children, seen from behind, carry small watering cans and buckets toward a young row of saplings planted along the lake bank, while a few volunteers in plain shirts and trousers hold cutting tools and gather cut bushes into a heap. Behind them the open lake water reflects the early sun, with low scrub, palm trees and a few rooftops of the village on the far bank. Women in sarees and men in shirts with veshti stand together near a tarpaulin where a simple meal is being laid out. The scene feels calm and community-driven. Shot at eye level, 35 mm, wide enough to show the lake, the saplings and the gathered group. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a row of young green saplings growing in the dense plantation beside Agraharam Samakkulam lake, their small stakes and fresh soil visible. A child's hand, seen from behind and slightly blurred, pours water from a plastic bucket at the base of one sapling, while a pile of freshly cut dry bushes and weeds lies on the ground nearby. Behind, the grey-green water of the lake and a few coconut palms are soft in the morning light. Shot at low angle, 35 mm, shallow depth of field, daylight, dry-season ground with scattered leaves. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/a-festival-to-raise-awareness-of-children-in-the-pool/4376837",
-   "published": "2026-11-15T17:26:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794814937/kovaiminnal/xjgdjwiqk3hgn4qly9nq.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794814943/kovaiminnal/k72n0zharu2jw95zuhrq.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794829038/kovaiminnal/hrj2fvibxzdxn9unwzi8.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794829059/kovaiminnal/dgzhz4yma3cesym2abhk.jpg"
    ]
   }
  ]
