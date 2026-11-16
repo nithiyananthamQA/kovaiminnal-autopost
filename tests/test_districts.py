@@ -317,6 +317,24 @@ _D.T = _D(2026, 11, 14, 10, 40, tzinfo=PL.IST); print("10:40 again:", len(PL.fin
         self.assertIn("08:05: 0", out)      # not a news round: power cuts only
         self.assertIn("10:05: 3", out)      # a news round: 3 (student 1 h, metro 2 h, old 9 h; egg = other district, cut = power cut)
 
+    def test_late_start_keeps_its_round(self):      # owner 16 Nov: same as Kovai - the 05:00 round started at 06:05 is still the 05:00 round
+        out = run(HEAD + "PL.use_bridge(); PL.apply('chennai')\n" + self.FAKE + """
+import datetime as _dt
+class _D(_dt.datetime):
+    T = None
+    @classmethod
+    def now(cls, tz=None):
+        return cls.T
+PL.datetime.datetime = _D
+PL.settings = lambda: {"enabled": True, "news_live": ["chennai"], "news_per_day": 14, "news_max_age_hours": 12, "news_rounds": {"05": 2, "09": 3}}
+PL.dinamalar_meta = lambda d_: {u.rsplit("/", 1)[-1]: {"published": (_D.T - _dt.timedelta(hours=h)).strftime("%Y-%m-%dT%H:%M:%S+05:30"), "snippet": ""} for u, t, h in L}
+_D.T = _D(2026, 11, 16, 6, 5, tzinfo=PL.IST); print("06:05 late 05 round:", len(PL.find_news(d, log=lambda *a: None)))
+_D.T = _D(2026, 11, 16, 6, 35, tzinfo=PL.IST); print("06:35 again:", len(PL.find_news(d, log=lambda *a: None)))
+_D.T = _D(2026, 11, 16, 7, 5, tzinfo=PL.IST); print("07:05:", len(PL.find_news(d, log=lambda *a: None)))""")
+        self.assertIn("06:05 late 05 round: 2", out)
+        self.assertIn("06:35 again: 0", out)      # once only
+        self.assertIn("07:05: 0", out)      # 2 hours after: not a news round
+
     def test_quality_floor_writes_fewer(self):      # owner 16 Nov: quality over count - news under news_min_score is not written
         out = run(HEAD + "PL.use_bridge(); PL.apply('chennai')\n" + self.FAKE + """
 PL.settings = lambda: {"enabled": True, "news_live": ["chennai"], "news_per_run": 5, "news_per_day": 14, "news_max_age_hours": 24, "news_min_score": 99}

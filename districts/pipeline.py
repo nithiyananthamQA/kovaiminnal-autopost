@@ -312,9 +312,14 @@ def find_news(d, dry=False, log=print):
     seen, days = st.setdefault("seen", {}), st.setdefault("days", {})
     now = datetime.datetime.now(IST)
     today = now.date().isoformat()
-    if rounds:      # each round runs ONCE in its hour, whoever starts the job (GitHub's timer or the bridge's timer)
-        slot, done = f"{today}_{now.hour:02d}", st.setdefault("rounds_done", {})
-        per_run = int(rounds.get(f"{now.hour:02d}", 0))
+    if rounds:      # each round runs ONCE, whoever starts the job (GitHub's timer or the bridge's timer)
+        # owner 16 Nov ("Chennai and Kovai same setup"): like Kovai's pick, a late start keeps its round - the round hour or the
+        # hour after it (Chennai's job starts 05:35 once in the 05:00 hour; a late 05:35 run lands at 06:xx)
+        done = st.setdefault("rounds_done", {})
+        due = [h for h in sorted(int(x) for x in rounds) if h <= now.hour < h + 2]
+        h = due[-1] if due else now.hour
+        slot = f"{today}_{h:02d}"
+        per_run = int(rounds.get(f"{h:02d}", 0)) if due else 0
         if per_run and done.get(slot):
             per_run = 0
         if not per_run and not dry:
@@ -371,7 +376,9 @@ def find_news(d, dry=False, log=print):
             continue
         checked.append(it)
     merged = pick.merge_same(checked)
-    cands = [(it["score"], it["title"], it["url"]) for it in pick.rank(merged)]
+    # owner 16 Nov: the same score as Kovai's rounds - the news' own points + 3x its type's reach (ours + the reference's) - age
+    ranked, rsc = pick.reach_rank(merged, now)
+    cands = [(round(rsc[it["id"]][0], 2), it["title"], it["url"]) for it in ranked]
     for it in merged:      # the same news from another paper is never written a second time
         for alt in it.get("alts") or []:
             seen[alt] = today

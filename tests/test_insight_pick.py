@@ -35,7 +35,7 @@ class RoundCounts(unittest.TestCase):
         cfg = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["district_powercut"]
         self.assertEqual(sum(cfg["news_rounds"].values()), 14)
         self.assertEqual(cfg["news_per_day"], 14)
-        self.assertEqual(list(cfg["news_rounds"].values()), [int(n) for h, n in sorted(top.items(), key=lambda kv: int(kv[0])) if int(n)])      # same counts (Chennai's first round 06: its job starts 05:35 once)
+        self.assertEqual({int(h): n for h, n in cfg["news_rounds"].items()}, {int(h): int(n) for h, n in top.items() if int(n)})      # owner: same setup, only the news differs
         self.assertEqual(cfg["news_min_score"], 7)
         self.assertEqual((cfg["news_extra_score"], cfg["news_extra_day"]), (11, 3))
         self.assertEqual(cfg["news_low_reach"], "auto")

@@ -52,7 +52,7 @@ Last full check: 14 Nov 2026.
 ## Different - owner 16 Nov (Kovai Minnal AND Chennai Minnal, the same on both pages)
 
 9. News a day: 14, more at peak hours - Kovai 05:00 4, 09:00 3, 13:00 2, 17:00 3, 21:00 2; 01:00 power cuts only
-   (Chennai: the same counts, its first round 06:00 because its job starts 05:35 once). Reference: 24 a day
+   (Chennai: the same hours and counts - a late start keeps its round). Reference: 24 a day
    (01:00 2, 05:00 5, 09:00 5, 13:00 3, 17:00 5, 21:00 4) + up to 3 more a round.
 10. The round count is a MAXIMUM: only news scoring 7+ is written; a weak round posts fewer (14-15 Nov: 10-18 news a
     day scored 7+). Reference: the count is a minimum, filled from whatever news there is.
@@ -69,3 +69,5 @@ Last full check: 14 Nov 2026.
     token is saved as the GitHub secret IG_SYSTEM_TOKEN, the nightly change comes from the reference's numbers only.
 15. Reel top strip: category / date / 📰 source on one line (the source shortens, never the category), place pin
     below at 386 px. Reference: v4 header.
+16. Chennai ranks news by the same score as Kovai (points + 3x the type's reach - age) since 16 Nov ("same setup, only
+    the news differs"); it used the plain points before.
