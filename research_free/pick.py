@@ -37,6 +37,27 @@ EXTRA_MAX = int(os.environ.get("PICK_EXTRA_MAX", "3"))
 # while 9-10 news got 600-7000): the round's count is a MAXIMUM - only news whose reach score reaches this floor is written; a weak
 # round writes fewer (or none). Power cuts are always written. 0 = off (every round fills its count as before)
 MIN_SCORE = float(os.environ.get("PICK_MIN_SCORE", "0") or 0)
+# owner 16 Nov ("up to 3 more when real news based on the high point - the reachable contents must go out"): beyond the day's 14,
+# at most EXTRA_DAY more a day of news scoring EXTRA_SCORE+ (the strong ones: crime / civic / accident news carried by many papers)
+EXTRA_SCORE = float(os.environ.get("PICK_EXTRA_SCORE", "0") or 0)      # 0 = the earlier rule (topic insight weight >= EXTRA_WEIGHT)
+EXTRA_DAY = int(os.environ.get("PICK_EXTRA_DAY", "0") or 0)      # 0 = no daily limit (EXTRA_MAX a round)
+# owner 16 Nov ("based on the reach we omit the contents"): news types Kovai's own reels proved people skip (198 reels to 14 Nov,
+# median views: education 340, sports / culture 332, temple 312 - power cut 2985, civic 1647, crime 804, rain 757) are not written
+# automatically; a school holiday / exam result is (people do watch those). Power cuts always. Empty = off
+LOW_REACH = [t for t in os.environ.get("PICK_LOW_REACH", "").split(",") if t.strip()]
+LOW_REACH_EXCEPT = re.compile(r"விடுமுறை|தேர்வு முடிவு|தேர்வு முடிவுகள்|ரிசல்ட்|ஹால் டிக்கெட்|தேர்வு ஒத்திவை|தேர்வு ரத்து")
+
+
+def low_reach(title):
+    """'' = a news type people watch; else why it is left out (the page's proven low-reach types)"""
+    if not LOW_REACH or LOW_REACH_EXCEPT.search(title or ""):
+        return ""
+    try:
+        import learned
+        _, topic, _ = learned.reach_weight(title or "")
+    except Exception:
+        return ""
+    return f"low-reach type ({topic})" if topic in LOW_REACH else ""
 AD = re.compile(r"தள்ளுபடி|ஆஃபர்|ஆபர்|அள்ளுங்க|அள்ளுவோம்|விற்பனை தொடக்கம்|ஷோரூம்|புதிய கிளை திறப்பு|சிறப்பு விற்பனை")      # advertorials, not news
 DRY = os.environ.get("PICK_DRY", "") in ("1", "true", "yes")
 # owner 2 Nov: "do not ask me to confirm" - no e-mail; every round's top news (PICK_AUTO_TOP, 8 + 6 + 6 = 20 a day) is written at once.
@@ -481,11 +502,23 @@ def cmd_decide():
             log(f"   not picked automatically ({why_}): {t_[:70]}")
         power = [x for x in items if x.get("power_cut")]      # a power cut is always written, on top of the round's count
         rest = [x for x in items if not x.get("power_cut")]
+        for x in [x for x in rest if low_reach(x.get("title"))]:
+            log(f"   not written ({low_reach(x.get('title'))}): {x['title'][:70]}")
+            rest.remove(x)
         weak = [x for x in rest if MIN_SCORE and sc[x["id"]][0] < MIN_SCORE]
         if weak:
             log(f"   {len(weak)} news under the quality floor {MIN_SCORE:g} - not written (a weak round posts fewer reels)")
             rest = [x for x in rest if x not in weak]
-        extra = [x for x in rest[top:] if sc[x["id"]][2] >= EXTRA_WEIGHT][:EXTRA_MAX]      # more news people watch, beyond the count
+        if EXTRA_SCORE:      # owner 16 Nov: strong news beyond the count, at most EXTRA_DAY a day
+            day = (at.strftime("%Y-%m-%d") if hasattr(at, "strftime") else str(at)[:10])
+            used = sum(int(r.get("extra", 0)) for k, r in st.get("rounds", {}).items() if k.startswith(day) and k != rid)
+            room_x = min(EXTRA_MAX, max(0, EXTRA_DAY - used)) if EXTRA_DAY else EXTRA_MAX
+            extra = [x for x in rest[top:] if sc[x["id"]][0] >= EXTRA_SCORE][:room_x]
+            rnd["extra"] = len(extra)
+            if extra:
+                log(f"   {len(extra)} strong news (score {EXTRA_SCORE:g}+) beyond the count - {used + len(extra)} of {EXTRA_DAY or '-'} extra today")
+        else:
+            extra = [x for x in rest[top:] if sc[x["id"]][2] >= EXTRA_WEIGHT][:EXTRA_MAX]      # more news people watch, beyond the count
         pick_ = power + rest[:top] + extra
         log(f"round {rid} ({'up to' if MIN_SCORE else 'at least'} {top}{f', score {MIN_SCORE:g}+' if MIN_SCORE else ''}, up to {EXTRA_MAX} more of well-watched topics): {len(items)} news to choose from ({sum(1 for x in items if x.get('leftover'))} from earlier rounds), "
             f"ranked by this page's insights")

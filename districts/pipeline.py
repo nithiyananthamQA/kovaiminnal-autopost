@@ -376,6 +376,14 @@ def find_news(d, dry=False, log=print):
         for alt in it.get("alts") or []:
             seen[alt] = today
     cands.sort(key=lambda c: -c[0])
+    low_types = list(s.get("news_low_reach") or [])      # owner 16 Nov: the news types people skip (same list as Kovai's PICK_LOW_REACH)
+    if low_types:
+        import learned
+        low = [c for c in cands if not pick.LOW_REACH_EXCEPT.search(c[1]) and learned.reach_weight(c[1])[1] in low_types]
+        for c in low:
+            log(f"news: not written (low-reach type {learned.reach_weight(c[1])[1]}): {c[1][:60]}")
+            seen[c[2]] = today
+        cands = [c for c in cands if c not in low]
     floor = float(s.get("news_min_score", 0) or 0)      # owner 16 Nov: quality over count - news under the floor is not written
     weak = [c for c in cands if floor and c[0] < floor]
     if weak:
@@ -385,12 +393,23 @@ def find_news(d, dry=False, log=print):
         cands = [c for c in cands if c not in weak]
     room = max(0, min(per_run, per_day - int(days.get(today, 0))))
     take = cands[:room]
+    # owner 16 Nov: beyond the day's count, strong news (news_extra_score+) still goes out - at most news_extra_day a day
+    xs, xday = float(s.get("news_extra_score", 0) or 0), int(s.get("news_extra_day", 0) or 0)
+    xdone = st.setdefault("extra_days", {})
+    extra = []
+    if xs and xday and per_run:
+        extra = [c for c in cands[room:] if c[0] >= xs][:max(0, xday - int(xdone.get(today, 0)))]
+        if extra:
+            log(f"news: {len(extra)} strong (score {xs:g}+) beyond the count - extra {int(xdone.get(today, 0)) + len(extra)}/{xday} today")
+            xdone[today] = int(xdone.get(today, 0)) + len(extra)
+    take = take + extra
     for _, _, u in take:
         seen[u] = today
-    days[today] = int(days.get(today, 0)) + len(take)
+    days[today] = int(days.get(today, 0)) + len(take) - len(extra)
     cut = (now - datetime.timedelta(days=7)).date().isoformat()
     st["seen"] = {k: v for k, v in seen.items() if v >= cut}
     st["days"] = {k: v for k, v in days.items() if k >= cut}
+    st["extra_days"] = {k: v for k, v in (st.get("extra_days") or {}).items() if k >= cut}
     st["rounds_done"] = {k: v for k, v in (st.get("rounds_done") or {}).items() if k[:10] >= cut}
     if first:
         log(f"news, first run for {d['key']}: {len(st['seen'])} links already on the page remembered - only newer news is written")

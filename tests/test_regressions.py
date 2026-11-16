@@ -2113,7 +2113,8 @@ class RoundsTopThree(unittest.TestCase):
                        for h in hs.split(","))
         self.assertEqual([1, 5, 9, 13, 17, 21], times)      # owner 13 Nov: every 4 hours (posting waits for 08:00 / 12:00 / 18:00)
         self.assertIn('PICK_ROUND_TOP: "1=0,5=4,9=3,13=2,17=3,21=2"', wf)      # owner 16 Nov: 14 a day (0+4+3+2+3+2)
-        self.assertIn('PICK_EXTRA_MAX: "0"', wf)      # 14 is the maximum
+        self.assertIn('PICK_EXTRA_DAY: "3"', wf)      # 14 + up to 3 strong news a day
+        self.assertIn('PICK_EXTRA_SCORE: "9"', wf)
         self.assertIn('PICK_EMAIL: "0"', wf)      # "do not ask me to confirm"
 
     def test_each_round_writes_top_3_of_the_whole_district(self):

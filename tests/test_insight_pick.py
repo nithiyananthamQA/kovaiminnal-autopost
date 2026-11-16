@@ -30,12 +30,15 @@ class RoundCounts(unittest.TestCase):
         wf = (ROOT / ".github" / "workflows" / "pick.yml").read_text(encoding="utf-8")
         top = dict(x.split("=") for x in re.search(r'PICK_ROUND_TOP: "([^"]+)"', wf).group(1).split(","))
         self.assertEqual(sum(int(v) for v in top.values()), 14)
-        self.assertIn('PICK_EXTRA_MAX: "0"', wf)
+        self.assertIn('PICK_EXTRA_DAY: "3"', wf)
+        self.assertIn('PICK_LOW_REACH: "education,sports_culture,temple"', wf)
         cfg = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["district_powercut"]
         self.assertEqual(sum(cfg["news_rounds"].values()), 14)
         self.assertEqual(cfg["news_per_day"], 14)
         self.assertEqual({int(h): n for h, n in cfg["news_rounds"].items()}, {int(h): int(n) for h, n in top.items() if int(n)})
         self.assertEqual(cfg["news_min_score"], 7)
+        self.assertEqual((cfg["news_extra_score"], cfg["news_extra_day"]), (9, 3))
+        self.assertEqual(cfg["news_low_reach"], ["education", "sports_culture", "temple"])
 
     def test_a_late_run_keeps_its_round(self):
         self.assertEqual(pick.round_top(T.replace(hour=10, minute=40)), 5)      # the 9 AM round started late
@@ -121,6 +124,33 @@ class QualityFloor(_PickBase):
 
     def test_workflow_sets_the_floor(self):
         self.assertIn('PICK_MIN_SCORE: "7"', (ROOT / ".github" / "workflows" / "pick.yml").read_text(encoding="utf-8"))
+
+
+class ReachMap(_PickBase):
+    """owner 16 Nov: low-reach types left out; beyond the round count up to 3 strong news (9+) a day"""
+    def setUp(self):
+        super().setUp()
+        self.keep = (pick.MIN_SCORE, pick.EXTRA_SCORE, pick.EXTRA_DAY, pick.EXTRA_MAX, pick.LOW_REACH)
+        pick.MIN_SCORE, pick.EXTRA_SCORE, pick.EXTRA_DAY, pick.EXTRA_MAX, pick.LOW_REACH = 7.0, 9.0, 3, 3, ["education", "temple"]
+
+    def tearDown(self):
+        pick.MIN_SCORE, pick.EXTRA_SCORE, pick.EXTRA_DAY, pick.EXTRA_MAX, pick.LOW_REACH = self.keep
+        super().tearDown()
+
+    def test_low_reach_types_left_out_but_holiday_kept(self):
+        self.assertTrue(pick.low_reach("பள்ளி மாணவர்கள் யோகா போட்டியில் சாதனை"))
+        self.assertEqual(pick.low_reach("கனமழை: பள்ளிகளுக்கு நாளை விடுமுறை"), "")
+        self.assertEqual(pick.low_reach("சாலையில் குடிநீர் குழாய் உடைப்பு"), "")
+
+    def test_strong_news_beyond_the_count_at_most_3_a_day(self):
+        at = T.replace(hour=1)      # this test's 01:00 round: count 2 (the code's default rounds)
+        news = [art(i, f"கொள்ளை: இருவர் கைது {i}", score=12) for i in range(8)]
+        self.assertEqual(len(self.decide(news, at)), 2 + 3)
+
+    def test_only_strong_news_is_extra(self):
+        at = T.replace(hour=1)
+        news = [art(i, f"கோவை மாநகராட்சி கூட்டம் {i}", score=8) for i in range(6)]      # good (7+) but not strong (9+)
+        self.assertEqual(len(self.decide(news, at)), 2)
 
 
 class StoryPlanA(unittest.TestCase):
