@@ -164,6 +164,10 @@ def check(it, today, now):
         return None, "not this district"
     if allnews.other_district(title):
         return None, "other district"
+    # owner 16 Nov (RN-52): the paper's Coimbatore EDITION also carries Tiruppur / Erode notices - a title with no Coimbatore place
+    # ("ஊதியூரில் செவ்வாய்க்கிழமை மின்தடை") is checked on the notice text too ("காங்கயம் மின்வாரிய கோட்டத்துக்கு உள்பட்ட ...")
+    if not allnews.has_place(title) and allnews.other_district(text[:800]):
+        return None, "other district (named in the notice)"
     pub = art.get("published") or it.get("published") or ""
     day, _ = F.cut_day(title + " " + text[:300], pub)
     if not day:

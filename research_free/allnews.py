@@ -78,7 +78,10 @@ OUTSIDE_WORDS = ["தமிழகத்தில்", "தமிழ்நாட�
 
 
 # other districts and their towns (Coimbatore's neighbours first): a headline that names one of these and no Coimbatore place is not ours
-OTHER_PLACES = ["திருப்பூர்", "அவிநாசி", "பல்லடம்", "உடுமலை", "தாராபுரம்", "காங்கேயம்", "வெள்ளகோவில்", "மடத்துக்குளம்", "குண்டடம்", "ஊத்துக்குளி",
+OTHER_PLACES = ["திருப்பூர்", "அவிநாசி", "பல்லடம்", "உடுமலை", "தாராபுரம்", "காங்கேயம்", "வெள்ளகோவில்",
+                # owner 16 Nov (RN-52, Uthiyur power cut posted on Kovai): other spellings + Tiruppur district towns papers use
+                "காங்கயம்", "வெள்ளக்கோவில்", "ஊதியூர்", "மூலனூர்", "குன்னத்தூர்", "பொங்கலூர்", "சேவூர்", "கணியூர்", "முத்தூர்",
+                "திருமுருகன்பூண்டி", "குடிமங்கலம்", "கொழுமம்", "மடத்துக்குளம்", "குண்டடம்", "ஊத்துக்குளி",
                 "நீலகிரி", "ஊட்டி", "உதகை", "குன்னூர்", "கோத்தகிரி", "கூடலூர்", "ஈரோடு", "சத்தியமங்கலம்", "கோபி", "பவானி", "பெருந்துறை", "அந்தியூர்",
                 "பாலக்காடு", "கொச்சி", "திருச்சூர்", "மைசூரு", "சாம்ராஜ்நகர்",
                 "நாமக்கல்", "ராசிபுரம்", "திருச்செங்கோடு", "பரமத்தி", "குமாரபாளையம்", "பள்ளிபாளையம்", "சேந்தமங்கலம்", "கொல்லிமலை", "மோகனூர்",
@@ -109,7 +112,7 @@ def _forms(w):
     return out
 
 
-OTHER_EN = ["tiruppur", "tirupur", "avinashi", "palladam", "udumalpet", "udumalaipettai", "udumalai", "dharapuram", "kangeyam", "nilgiris", "ooty",
+OTHER_EN = ["tiruppur", "tirupur", "avinashi", "palladam", "udumalpet", "udumalaipettai", "udumalai", "dharapuram", "kangeyam", "kangayam", "vellakovil", "uthiyur", "mulanur", "nilgiris", "ooty",
             "udhagamandalam", "coonoor", "kotagiri", "gudalur", "erode", "sathyamangalam", "gobichettipalayam", "palakkad", "kochi", "mysuru",
             "namakkal", "rasipuram", "tiruchengode", "salem", "yercaud", "chennai", "madurai", "trichy", "tiruchirappalli", "tiruvarur",
             "karur", "dharmapuri", "krishnagiri", "hosur", "vellore", "thanjavur", "kanniyakumari", "kanyakumari", "dindigul",
