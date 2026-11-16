@@ -1758,3 +1758,200 @@ filed: 0 Coimbatore district stories (target 1), reels only
 queue: 0 news waiting to be written
 All News sheet: {"ok":true,"added":0,"updated":1} 
 stories: 0
+12:06:23 Instagram token: the shared minnal-bot token (Minnal bridge)
+writing [N]: நாளை 17.11.26 கோவையில் இங்கெல்லாம் மின்தடை ஏற்படும்  - The C
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok gemini/gemini-3.6-flash (19s)
+attempt 1 gemini/gemini-3.6-flash: 2 problems
+  sentence 1 (one-line story) has 15 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 26 ('மாதாந்திர பராமரிப்பு பணிகளுக்காக நாளை (17.11.26/செவ்வாய்) கோ'); 26 ('நாளை 17.11.26 கோவையில் இங்கெல்லாம் மின்தடை ஏற்படும்  - The C')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok gemini/gemini-3.6-flash (22s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
+fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
+poor answer - skipped for 30 min: gemini/gemini-3-flash-preview
+fail gemma/gemma-4-26b-a4b-it: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=90)
+poor answer - skipped for 30 min: gemma/gemma-4-26b-a4b-it
+ok gemma/gemma-4-31b-it (65s)
+factcheck by gemma/gemma-4-31b-it: 3 problems
+  The title of the second slide 'பாப்பநாயக்கன்பாளைய' is incomplete/ungrammatical (missing the final letter 'ம்').
+  The fourth slide contains invented details regarding planning electricity needs and preparing drinking water and mobile charging.
+  The caption contains an invented detail advising people to plan electricity and drinking water needs.
+attempt 2 gemini/gemini-3.6-flash: 3 problems
+  fact-check: The title of the second slide 'பாப்பநாயக்கன்பாளைய' is incomplete/ungrammatical (missing the final letter 'ம்').
+  fact-check: The fourth slide contains invented details regarding planning electricity needs and preparing drinking water and mobile charging.
+  fact-check: The caption contains an invented detail advising people to plan electricity and drinking water needs.
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemma/gemma-4-31b-it: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=90)
+poor answer - skipped for 30 min: gemma/gemma-4-31b-it
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {"error":{"message":"Failed to validate JSON. Please adjust your prompt. See 'failed_gener
+ok groq/qwen/qwen3.8-27b (4s)
+attempt 3 groq/qwen/qwen3.8-27b: 3 problems
+  missing key: reel_script
+  missing key: caption
+  missing key: scenes
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+dead for this round: groq/openai/gpt-oss-120b
+fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)
+poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (35s)
+attempt 4 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 3 problems
+  caption needs 5 hashtags (Instagram max), has 6
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('மாதாந்திர பராமரிப்பு பணிகளுக்காக நாளை (17.11.26/செவ்வாய்) கோ'); 26 ('மாதாந்திர பராமரிப்பு பணிகளுக்காக நாளை (17.11.26/செவ்வாய்) கோ')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (36s)
+attempt 5 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 2 problems
+  numbers not found in the article: 7
+  hl1 (the first headline on screen) must name the place 'பாப்பநாய்க்கன்பாளையம்', e.g. 'பாப்பநாய்க்கன்பாளையம்: ...' or 'பாப்பநாய்க்கன்பாளையம்-இல் ...' - viewers share news of their own area
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (34s)
+attempt 6 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 3 problems
+  numbers not found in the article: 7
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('மாதாந்திர பராமரிப்பு பணிகளுக்காக நாளை (17.11.26/செவ்வாய்) கோ'); 26 ('மாதாந்திர பராமரிப்பு பணிகளுக்காக நாளை (17.11.26/செவ்வாய்) கோ')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (34s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (5s)
+factcheck by cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 15 problems
+  date is 2026 instead of 2023
+  the caption repeats the time
+  the caption says 'tomorrow' but the article says 'நாளை' (the day after tomorrow)
+  the caption says 'Coimbatore' instead of 'கோவை'
+  the caption says 'power cut' instead of 'மின் தடை'
+  the caption says 'Coimbatore news' instead of 'கோவை செய்திகள்'
+  the reel_script does not mention the cause of the power cut: மாதாந்திர பராமரிப்பு பணிகளுக்காக
+  the reel_script does not mention the second power cut at குப்பேபாளையம் துணை மின் நிலையம்
+  the reel_script does not mention the time of the second power cut at குப்பேபாளையம் துணை மின் நிலையம்
+  the slides_spec does not mention the second power cut at குப்பேபாளையம் துணை மின் நிலையம்
+  the slides_spec does not mention the time of the second power cut at குப்பேபாளையம் துணை மின் நிலையம்
+  the slides_spec mixes the two power cuts together in the first slide
+  the slides_spec repeats the time in the caption
+  the slides_spec says 'கோவை மாவட்ட மக்கள்' instead of 'கோவை மாநகர மக்கள்'
+  the slides_spec says 'மின்தடை நேரத்தில்' instead of 'மின்தடை நேரத்தில் மின்விநியோகம் நிறுத்தப்படும்'
+attempt 7 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 15 problems
+  fact-check: date is 2026 instead of 2023
+  fact-check: the caption repeats the time
+  fact-check: the caption says 'tomorrow' but the article says 'நாளை' (the day after tomorrow)
+  fact-check: the caption says 'Coimbatore' instead of 'கோவை'
+  fact-check: the caption says 'power cut' instead of 'மின் தடை'
+  fact-check: the caption says 'Coimbatore news' instead of 'கோவை செய்திகள்'
+  fact-check: the reel_script does not mention the cause of the power cut: மாதாந்திர பராமரிப்பு பணிகளுக்காக
+  fact-check: the reel_script does not mention the second power cut at குப்பேபாளையம் துணை மின் நிலையம்
+  fact-check: the reel_script does not mention the time of the second power cut at குப்பேபாளையம் துணை மின் நிலையம்
+  fact-check: the slides_spec does not mention the second power cut at குப்பேபாளையம் துணை மின் நிலையம்
+  fact-check: the slides_spec does not mention the time of the second power cut at குப்பேபாளையம் துணை மின் நிலையம்
+  fact-check: the slides_spec mixes the two power cuts together in the first slide
+  fact-check: the slides_spec repeats the time in the caption
+  fact-check: the slides_spec says 'கோவை மாவட்ட மக்கள்' instead of 'கோவை மாநகர மக்கள்'
+  fact-check: the slides_spec says 'மின்தடை நேரத்தில்' instead of 'மின்தடை நேரத்தில் மின்விநியோகம் நிறுத்தப்படும்'
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (34s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: Unterminated string starting at: line 207 column 5 (char 14663)
+poor answer - skipped for 30 min: cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct
+ok groq/qwen/qwen3.8-27b (0s)
+factcheck by groq/qwen/qwen3.8-27b: 2 problems
+  Caption claims the power cut is only from 9 AM to 4 PM ('காலை 9 முதல் மாலை 4 வரை மட்டும்'), but the article states Kuppapalayam substation has a power cut from 9 AM to 2 PM.
+  Slides spec is missing the area 'காந்தி மாநகர் (ஒரு பகுதி)' for the Pappanaickenpalayam substation.
+attempt 8 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 2 problems
+  fact-check: Caption claims the power cut is only from 9 AM to 4 PM ('காலை 9 முதல் மாலை 4 வரை மட்டும்'), but the article states Kuppapalayam substation has a power cut from 9 AM to 2 PM.
+  fact-check: Slides spec is missing the area 'காந்தி மாநகர் (ஒரு பகுதி)' for the Pappanaickenpalayam substation.
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok groq/qwen/qwen3.8-27b (4s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+switching away from groq/qwen/qwen3.8-27b for 10 min
+free fact-check unavailable, using Claude: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 1 problems
+  The reel_script and caption say the Pappanaickenpalayam area list has 14 areas, but the article's list actually contains 15 areas (Avarampalayam, Ganesh Nagar, Kamadhenu Nagar, Nava India Road, Ganapathy bus stand, Chittapudur, Pazhayur, Pappanaickenpalayam, G.K.N.M. Hospital, Alamu Nagar, Balaji Nagar, Ramakrishna Hospital, Pappanaickenpalayam electric crematorium, Pudhiyavar Nagar and part of Gandhi Nagar).
+attempt 9 groq/qwen/qwen3.8-27b: 1 problems
+  fact-check: The reel_script and caption say the Pappanaickenpalayam area list has 14 areas, but the article's list actually contains 15 areas (Avarampalayam, Ganesh Nagar, Kamadhenu Nagar, Nava India Road, Ganapathy bus stand, Chittapudur, Pazhayur, Pappanaickenpalayam, G.K.N.M. Hospital, Alamu Nagar, Balaji Nagar, Ramakrishna Hospital, Pappanaickenpalayam electric crematorium, Pudhiyavar Nagar and part of Gandhi Nagar).
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+free models unavailable: no free model answered: None
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+free fact-check unavailable, using Claude: no free model answered: None
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 6 problems
+  reel_script says 'நாளை அக்டோபர் 17ஆம் தேதி இல்லை, நவம்பர் 17ஆம் தேதி' — an unsupported self-correction/date-month claim that mixes in a month the article does not state (article only gives 17.11.26), creating confusion about the date
+  reel_script states the Coimbatore 'நாளை' power cut affects 'பல பகுதிகளில்' and lists areas, but the Kuppepalayam outage's 9 AM – 2 PM timing is correctly stated while the caption header claims 'காலை 9 முதல் மாலை 4 மணி வரை' for the whole city, merging the two different outage windows into one sentence
+  caption header 'காலை 9 முதல் மாலை 4 மணி வரை' conflates the Papanaickenpalayam window (9–4) with the Kuppepalayam window (9–2), mixing two facts into one headline sentence
+  slides_spec hl2 'காலை 9 – மாலை 4 வரை' applies only to Papanaickenpalayam, yet is presented as the general outage window, mixing two different facts
+  slides_spec slide 'பாப்பநாய்கன்பாளையம' is missing the final letter/ 'ம்' spelling and the slide omits several listed areas (e.g., ராமகிருஷ்ணா மருத்துவமனை, பாப்பநாயக்கன்பாளையம் மின் மயானம், புதியவர் நகர், காந்தி மாநகர), and the Kuppepalayam slide omits கள்ளிபாளையம, வடுகபாளையம, மொண்டிகாளிபுதூர, ரங்கப்பகவுண்டன்புதூர, மூணுகட்டியூர் — incomplete but not contradictory
+  caption states 'ஆகிய 15 பகுதிகள்' for Papanaickenpalayam, a count that is not stated in the article and must be verified against the list (the list contains 15 items including the partial area, so the count is supportable but was not given in the article)
+claude rewrite 1 anthropic/claude-haiku-5-5: 6 problems
+  fact-check: reel_script says 'நாளை அக்டோபர் 17ஆம் தேதி இல்லை, நவம்பர் 17ஆம் தேதி' — an unsupported self-correction/date-month claim that mixes in a month the article does not state (article only gives 17.11.26), creating confusion about the date
+  fact-check: reel_script states the Coimbatore 'நாளை' power cut affects 'பல பகுதிகளில்' and lists areas, but the Kuppepalayam outage's 9 AM – 2 PM timing is correctly stated while the caption header claims 'காலை 9 முதல் மாலை 4 மணி வரை' for the whole city, merging the two different outage windows into one sentence
+  fact-check: caption header 'காலை 9 முதல் மாலை 4 மணி வரை' conflates the Papanaickenpalayam window (9–4) with the Kuppepalayam window (9–2), mixing two facts into one headline sentence
+  fact-check: slides_spec hl2 'காலை 9 – மாலை 4 வரை' applies only to Papanaickenpalayam, yet is presented as the general outage window, mixing two different facts
+  fact-check: slides_spec slide 'பாப்பநாய்கன்பாளையம' is missing the final letter/ 'ம்' spelling and the slide omits several listed areas (e.g., ராமகிருஷ்ணா மருத்துவமனை, பாப்பநாயக்கன்பாளையம் மின் மயானம், புதியவர் நகர், காந்தி மாநகர), and the Kuppepalayam slide omits கள்ளிபாளையம, வடுகபாளையம, மொண்டிகாளிபுதூர, ரங்கப்பகவுண்டன்புதூர, மூணுகட்டியூர் — incomplete but not contradictory
+  fact-check: caption states 'ஆகிய 15 பகுதிகள்' for Papanaickenpalayam, a count that is not stated in the article and must be verified against the list (the list contains 15 items including the partial area, so the count is supportable but was not given in the article)
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 2 problems
+  reel_script talks about the article instead of the news (கட்டுரை) - if the article has no real news, return an empty reel_script
+  known issue meta_article: script talks about the article instead of the news ('கட்டுரை') - rewrite so it does not happen again
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
+  reel_script must end with exactly: மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok anthropic/claude-haiku-5-5
+real photo step skipped for 'Power cut tomorrow (17.11.26) in Coimbat': real photos switched off
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Power cut tomorrow (17.11.26) in Coimbat'
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261116-1219","first":"RN-66"}
+posting job started at once
+earlier stories still waiting for images: []
+instagram check: 45 recent posts read from the page
+pick round: only the picked links are written (research_free/pick.py)
+manual link added: https://covaimail.com/power-shutdown-scheduled-to-take-place-in-coimbatore-on-17th-of-november-2026
+candidate filter: collected=1
+to write: 1 Coimbatore district candidates (max 1 stories)
+round: top 1 of 1 candidates
+candidates waiting: 1 Coimbatore; time left 39 min
+try (N) manual=True: https://covaimail.com/power-shutdown-scheduled-to-take-place
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})
+posting job started at once
+candidate loop ended: left 0, tried={'N': 1}, done={'N': 1}, time left 26 min
+filed: 1 Coimbatore district stories (target 1), reels only
+queue: 0 news waiting to be written
+All News sheet: {"ok":true,"added":1,"updated":0} 
+stories: 1
