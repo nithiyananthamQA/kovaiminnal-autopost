@@ -82,34 +82,34 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
-| 2026-11-16 | `182b7e7` | ElevenLabs Nila: steady takes + place names checked by ear (owner 16 Nov: Kovai reels said valamparai for வால்பாறை, நக for நகர்) |
-| 2026-11-16 | `2c39c97` | Reel top strip: the news source (📰 paper) shows again next to the date (owner 16 Nov: source went missing in the new layout) |
-| 2026-11-16 | `304caea` | district powercut: notices found |
-| 2026-11-16 | `98229d7` | district powercut: chennai posted |
-| 2026-11-16 | `29f3f53` | facebook RN-45 |
-| 2026-11-16 | `1f40e98` | powercut: notices written |
-| 2026-11-16 | `fe85e28` | Power cuts: a Tiruppur notice never posts on Kovai (owner 16 Nov, RN-52 Uthiyur cut posted at 00:43) |
-| 2026-11-16 | `5e9aca9` | Pick like the reference (owner 16 Nov, port of news360 ab06a9d + its 6 rounds from aba8a65): news chosen by this page's insights, 6 rounds a day, stories only for urgent news |
-| 2026-11-16 | `5482348` | facebook RN-42 |
-| 2026-11-16 | `965b2d2` | powercut: notices written |
-| 2026-11-16 | `92217ab` | facebook RN-41 |
-| 2026-11-16 | `916ee2a` | facebook RN-60 |
-| 2026-11-16 | `3a51615` | powercut: notices written |
-| 2026-11-16 | `f0f32ac` | facebook RN-52 |
-| 2026-11-16 | `323dbb8` | district powercut: notices found |
-| 2026-11-16 | `15b211b` | pick: picked news saved |
-| 2026-11-16 | `d4a3f33` | pick: picked news saved |
-| 2026-11-16 | `3d0f569` | pick: list sent |
-| 2026-11-16 | `b65193a` | powercut: notices written |
-| 2026-11-16 | `9a69198` | district powercut: notices found |
-| 2026-11-15 | `17c5e75` | pick: written and posted |
-| 2026-11-15 | `1794b7f` | powercut: notices written |
-| 2026-11-15 | `5754b38` | powercut: notices written |
-| 2026-11-15 | `9489416` | district powercut: notices found |
-| 2026-11-16 | `1594519` | Reel layout from the owner's phone screenshots (16 Nov): no footer, logo + page name + English name at the top, text block low (card 1140-1390, captions to 1595) right above Instagram's name row |
-| 2026-11-16 | `a414011` | ElevenLabs voice for every reel (owner 16 Nov): Nila (Tamil, eleven_v3) with a news tone per sentence; Anbu stays the fallback |
-| 2026-11-15 | `4b89d52` | facebook RN-51 |
-| 2026-11-15 | `60c8cb1` | pick: picked news saved |
-| 2026-11-15 | `2ada3f8` | pick: picked news saved |
-| 2026-11-15 | `559e42a` | pick: list sent |
+| 2026-11-16 | `ac81bb0` | Leave out one school / club's own event on both pages (owner 16 Nov: 'how can other people connect with this') |
+| 2026-11-16 | `8314b2f` | powercut: notices written |
+| 2026-11-16 | `9e143f7` | district powercut: notices found |
+| 2026-11-16 | `7fad5d0` | powercut: notices written |
+| 2026-11-16 | `94b507a` | facebook RN-64 |
+| 2026-11-16 | `986806c` | powercut: notices written |
+| 2026-11-16 | `4c28292` | powercut: notices written |
+| 2026-11-16 | `c0605ad` | facebook RN-48 |
+| 2026-11-16 | `ccb0544` | pick: written and posted |
+| 2026-11-16 | `3ba9719` | facebook RN-69 |
+| 2026-11-16 | `2c6acce` | powercut: notices written |
+| 2026-11-16 | `d97b03a` | facebook RN-68 |
+| 2026-11-16 | `3ac6a47` | powercut: notices written |
+| 2026-11-16 | `57090df` | pick: picked news saved |
+| 2026-11-16 | `68fad4a` | pick: picked news saved |
+| 2026-11-16 | `af95237` | pick: list sent |
+| 2026-11-16 | `f411076` | facebook RN-65 |
+| 2026-11-16 | `710cd7f` | pick: written and posted |
+| 2026-11-16 | `5692f0a` | Chennai = Kovai setup (owner 16 Nov: 'same setup, only the news varies'): same round hours, same score |
+| 2026-11-16 | `baeae56` | facebook RN-66 |
+| 2026-11-16 | `1a7dcfb` | Pick review fixes (owner 16 Nov): 01:00 no extras, extras 11+ one a round, steady nightly skip list, Chennai first round 06:00 |
+| 2026-11-16 | `f73f235` | powercut: notices written |
+| 2026-11-16 | `cd3f791` | Learn every night from both pages: our reels + the reference page's published insights (owner 16 Nov) |
+| 2026-11-16 | `bc39b6f` | district powercut: notices found |
+| 2026-11-16 | `a92633c` | powercut: notices written |
+| 2026-11-16 | `9b5e150` | Token with the insights permission as GitHub secret IG_SYSTEM_TOKEN (owner 16 Nov: views must be read again, no Apps Script step) |
+| 2026-11-16 | `f143853` | Reach map: temple news stays (reference page temple reels 913-1,782 views); education / sports still left out |
+| 2026-11-16 | `c3a7bf3` | facebook RN-61 |
+| 2026-11-16 | `6c50e8d` | Reach map on both pages (owner 16 Nov): low-reach types left out, up to 3 strong news a day beyond the 14 |
+| 2026-11-16 | `437ba61` | Reel top strip: category / date / source on one line, place pin a little lower (owner 16 Nov: the source made the row wrap onto the pin) |
 <!-- recent-changes:end -->
