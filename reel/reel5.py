@@ -399,7 +399,7 @@ LAYOUT_A_CSS = """
 #hdr .nm{display:inline-flex!important;font-size:42px!important;background:rgba(6,14,43,.66);border-radius:14px;padding:6px 18px 2px 12px;white-space:nowrap}
 #hdr .nm::after{content:"__EN__";margin-left:14px;color:#fff;font:800 24px 'CT',sans-serif;letter-spacing:.08em;opacity:.92;align-self:center}
 #hdr .sub{display:flex!important;width:max-content;max-width:820px!important;margin-top:8px!important;background:rgba(6,14,43,.66);border-radius:12px;padding:4px 14px 2px 6px}
-#hdr .src{display:none!important}
+#hdr .src{font-size:24px!important;background:rgba(255,255,255,.16)!important}      /* owner 16 Nov: the source stays in the top strip (it went missing) */
 #pin{top:368px!important;left:36px!important;transform:none!important;font-size:30px!important;padding:6px 18px 2px 12px!important;background:rgba(6,14,43,.66)!important;color:#fff!important;box-shadow:none!important;border-radius:14px!important}
 #hook{top:1120px!important;left:36px!important;right:150px!important;background:rgba(8,18,52,.94);border-left:12px solid #E3151B;border-radius:20px;padding:18px 26px 20px}
 #hook::before{display:none!important}
