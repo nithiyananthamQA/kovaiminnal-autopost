@@ -68,13 +68,13 @@ class Keeper(unittest.TestCase):
         for wf, ins in K.LIVE_INPUTS.items():
             y = (ROOT / ".github" / "workflows" / wf).read_text(encoding="utf-8")
             d = y[y.index("workflow_dispatch:"):]
-            for k in list(ins) + (["top"] if wf == "pick.yml" else []):
+            for k in list(ins):
                 self.assertRegex(d, rf"\n      {k}:\n", f"{wf} has no input {k}")
             for k, v in ins.items():
                 if k in ("dry", "dry_run", "prebuild", "repost", "post_only"):
                     self.assertIn(v, ("0", "false"), (wf, k))
         self.assertEqual(K.LIVE_INPUTS["post.yml"]["timer"], "true")      # post.yml: counts as scheduled (LIVE file, no commit every 5 min)
-        self.assertIn("github.event.schedule == '" + K.PICK_8 + "' && '8'", (ROOT / ".github/workflows/pick.yml").read_text(encoding="utf-8"))
+        self.assertIn('PICK_ROUND_TOP: "1=2,5=5,9=5,13=3,17=5,21=4"', (ROOT / ".github/workflows/pick.yml").read_text(encoding="utf-8"))      # owner 16 Nov: the reference's rounds
 
     def test_a_whole_day_starts_each_time_once(self):
         gh = run_day(FakeGh())
@@ -82,9 +82,10 @@ class Keeper(unittest.TestCase):
         for wf, _, _ in gh.started:
             n[wf] = n.get(wf, 0) + 1
         self.assertEqual(n, {"post.yml": 288, "powercut.yml": 34, "comments.yml": 36, "district_powercut.yml": 34,
-                             "pick.yml": 3, "rasipalan.yml": 4, "insights.yml": 1})
-        picks = [(t.astimezone(K.IST).strftime("%H:%M"), i["top"]) for wf, t, i in gh.started if wf == "pick.yml"]
-        self.assertEqual(picks, [("06:00", "8"), ("10:00", "6"), ("19:00", "6")])      # 8 + 6 + 6, as scheduled
+                             "pick.yml": 7, "rasipalan.yml": 4, "insights.yml": 1})
+        picks = [t.astimezone(K.IST).strftime("%H:%M") for wf, t, i in gh.started if wf == "pick.yml"]
+        # owner 16 Nov: the reference's 6 rounds every 4 hours; the test day starts 05:30, so the missed 05:00 round is caught up then
+        self.assertEqual(picks, ["05:30", "09:00", "13:00", "17:00", "21:00", "01:00", "05:00"])
         first = {wf: t.astimezone(K.IST).strftime("%H:%M") for wf, t, _ in reversed(gh.started)}
         self.assertEqual(first["powercut.yml"], "05:50")
         self.assertEqual(first["district_powercut.yml"], "05:35")
@@ -103,15 +104,15 @@ class Keeper(unittest.TestCase):
     def test_switched_on_late_starts_the_missed_time_within_an_hour(self):
         gh = FakeGh(off={"pick.yml"})
         done, cache = {}, {}
-        gh.now = ist("06:10")
+        gh.now = ist("09:10")
         K.check(gh.now, done, cache, run=gh)
         gh.off.clear()
-        for hhmm in ("06:20", "06:21", "06:22"):
+        for hhmm in ("09:20", "09:21", "09:22"):
             gh.now = ist(hhmm)
             K.check(gh.now, done, cache, run=gh)
         self.assertEqual([wf for wf, _, _ in gh.started if wf == "pick.yml"], ["pick.yml"])
         gh2 = FakeGh()
-        gh2.now = ist("07:05")      # 65 minutes after 06:00: too late, left (GitHub's own timer is not that late either)
+        gh2.now = ist("10:05")      # 65 minutes after 09:00: too late, left (GitHub's own timer is not that late either)
         K.check(gh2.now, {}, {}, run=gh2)
         self.assertNotIn("pick.yml", [wf for wf, _, _ in gh2.started])
 
@@ -125,10 +126,10 @@ class Keeper(unittest.TestCase):
                 raise RuntimeError("HTTP 500")
             return real(*a)
         done, cache = {}, {}
-        for hhmm in ("06:00", "06:01"):
+        for hhmm in ("09:00", "09:01"):
             gh.now = ist(hhmm)
             K.check(gh.now, done, cache, run=flaky)
-        self.assertEqual([t.astimezone(K.IST).strftime("%H:%M") for wf, t, _ in gh.started if wf == "pick.yml"], ["06:01"])
+        self.assertEqual([t.astimezone(K.IST).strftime("%H:%M") for wf, t, _ in gh.started if wf == "pick.yml"], ["09:01"])
 
     def test_cron_fields(self):
         self.assertTrue(K.matches("43 1-23/2 * * *", dt.datetime(2026, 11, 15, 3, 43, tzinfo=UTC)))

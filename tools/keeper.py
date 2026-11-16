@@ -29,14 +29,13 @@ IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 # Same values as the bridge timer (apps_script/Code.gs KOVAI_JOBS) and the district bridge timer (make_bridge.py DISPATCH).
 LIVE_INPUTS = {
     "post.yml": {"dry_run": "false", "prebuild": "false", "timer": "true"},      # timer: counts as scheduled (LIVE file, no check-log commit)
-    "pick.yml": {"dry": "0", "resume": "0"},      # + top (pick_top)
+    "pick.yml": {"dry": "0", "resume": "0"},      # owner 16 Nov: news per round = pick.yml PICK_ROUND_TOP (the reference's 6 rounds)
     "powercut.yml": {"dry": "0"},
     "comments.yml": {"dry_run": "0"},
     "rasipalan.yml": {"dry": "0", "date": "", "repost": "0"},
     "insights.yml": {},
     "district_powercut.yml": {"dry": "0", "districts": "", "post_only": "0"},
 }
-PICK_8 = "30 0 * * *"      # pick.yml: the 06:00 IST round writes 8 news, the others 6 (github.event.schedule == '30 0 * * *')
 
 
 def log(*a):
@@ -103,10 +102,7 @@ def last_time(lines, now):
 
 
 def inputs_for(wf, cron):
-    i = dict(LIVE_INPUTS[wf])
-    if wf == "pick.yml":
-        i["top"] = "8" if cron == PICK_8 else "6"
-    return i
+    return dict(LIVE_INPUTS[wf])
 
 
 def gh(*args):

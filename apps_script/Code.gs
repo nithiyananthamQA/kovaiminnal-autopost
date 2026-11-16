@@ -1374,7 +1374,7 @@ var KOVAI_JOBS = [
   { file: 'post.yml', every: 5, from: '05:30', to: '23:30', inputs: { dry_run: 'false', prebuild: 'false', timer: 'true' } },
   { file: 'powercut.yml', every: 30, from: '05:50', to: '22:20', inputs: { dry: '0' } },          // cron 20,50 0-16 UTC
   { file: 'comments.yml', every: 30, from: '05:45', to: '23:15', inputs: { dry_run: '0' } },      // cron 15,45 0-17 UTC
-  { file: 'pick.yml', at: ['06:00', '10:00', '19:00'], inputs: { dry: '0', resume: '0', top: '6' }, slotInputs: { '06:00': { top: '8' } } },
+  { file: 'pick.yml', at: ['01:00', '05:00', '09:00', '13:00', '17:00', '21:00'], inputs: { dry: '0', resume: '0' } },      // owner 16 Nov: the reference's 6 rounds (news per round = pick.yml PICK_ROUND_TOP)
   { file: 'rasipalan.yml', at: ['07:00', '07:45', '09:45', '11:45'], inputs: { dry: '0', date: '', repost: '0' } },      // waits until 07:31 itself
   { file: 'insights.yml', at: ['02:10'], inputs: {} }
 ];
@@ -1482,6 +1482,6 @@ function startKovaiTimer() {
   if (!props_().getProperty('GH_DISPATCH_TOKEN')) Logger.log('Add Script property GH_DISPATCH_TOKEN (GitHub token: only this repository, Actions: Read and write)');
   startKovaiJobs();
   Logger.log('Kovai Minnal job timer is on (IST): post every 5 min 05:30-23:30, powercut every 30 min 05:50-22:20, comments every 30 min ' +
-    '05:45-23:15, pick 06:00 / 10:00 / 19:00, rasipalan 07:00 (+ backups 07:45 / 09:45 / 11:45), insights 02:10');
+    '05:45-23:15, pick 01:00 / 05:00 / 09:00 / 13:00 / 17:00 / 21:00, rasipalan 07:00 (+ backups 07:45 / 09:45 / 11:45), insights 02:10');
 }
 // ===== KOVAI JOBS TIMER (end) =====

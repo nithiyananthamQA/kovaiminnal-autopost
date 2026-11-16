@@ -3,6 +3,7 @@
     python3 -m unittest discover -s tests -v
 
 Each test names the real story that broke, so a failure says which old problem has come back."""
+from unittest import mock
 import ast, datetime, json, os, re, sys, tempfile, unittest
 from pathlib import Path
 
@@ -2106,11 +2107,12 @@ class RoundsTopThree(unittest.TestCase):
     them at once. A new day starts fresh. A slow or failed story never holds the next round."""
     WF = ROOT / ".github" / "workflows"
 
-    def test_rounds_at_the_owners_times(self):      # owner 2 Nov: 20 news a day, picked automatically - rounds 06:00 / 10:00 / 19:00 IST
+    def test_rounds_at_the_owners_times(self):      # owner 2 Nov: 20 news a day, picked automatically - rounds every 4 hours from 01:00 IST
         wf = (self.WF / "pick.yml").read_text(encoding="utf-8")
-        times = sorted(((int(h) * 60 + int(m) + 330) % 1440) / 60 for m, h in re.findall(r'cron: "(\d+) (\d+) \* \* \*"', wf))
-        self.assertEqual([6, 10, 19], times)
-        self.assertIn("PICK_AUTO_TOP: ${{ github.event_name == 'workflow_dispatch' && inputs.top || (github.event.schedule == '30 0 * * *' && '8' || '6') }}", wf)      # 8 + 6 + 6 = 20 (Google timer: top)
+        times = sorted(((int(h) * 60 + int(m) + 330) % 1440) / 60 for m, hs in re.findall(r'cron: "(\d+) ([\d,]+) \* \* \*"', wf)
+                       for h in hs.split(","))
+        self.assertEqual([1, 5, 9, 13, 17, 21], times)      # owner 13 Nov: every 4 hours (posting waits for 08:00 / 12:00 / 18:00)
+        self.assertIn('PICK_ROUND_TOP: "1=2,5=5,9=5,13=3,17=5,21=4"', wf)      # 4+4+3+3+3+3 = 20      # 8 + 6 + 6 = 20
         self.assertIn('PICK_EMAIL: "0"', wf)      # "do not ask me to confirm"
 
     def test_each_round_writes_top_3_of_the_whole_district(self):

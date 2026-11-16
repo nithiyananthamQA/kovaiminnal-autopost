@@ -7,9 +7,8 @@ name: pick
 # Each reel is posted as soon as it is ready. Posted news never comes back; listed but not posted news returns in the next list (< 24 h).
 on:
   schedule:
-    - cron: "30 0 * * *"      # 06:00 IST - 8 news (owner 2 Nov: 20 a day, picked automatically from the insights order)
-    - cron: "30 4 * * *"      # 10:00 IST - 6 news (06-12 IST is the page's best time)
-    - cron: "30 13 * * *"     # 19:00 IST - 6 news (posted 20-22 IST, the page's next-best time)
+    - cron: "30 23,3 * * *"           # 05:00 / 09:00 IST (owner 16 Nov: the reference's 6 rounds, every 4 hours; our posting times unchanged)
+    - cron: "30 7,11,15,19 * * *"     # 13:00 / 17:00 / 21:00 / 01:00 IST
   workflow_dispatch:
     inputs:
       dry:
@@ -38,7 +37,7 @@ jobs:
       DISTRICT_BRIDGE_URL: ${{ secrets.DISTRICT_BRIDGE_URL }}   # owner 14 Nov: the one minnal-bot token lives in the Minnal bridge
       DISTRICT_BRIDGE_KEY: ${{ secrets.DISTRICT_BRIDGE_KEY }}
       CITY_ONLY: "0"
-      PICK_AUTO_TOP: ${{ github.event_name == 'workflow_dispatch' && inputs.top || (github.event.schedule == '30 0 * * *' && '8' || '6') }}      # owner 2 Nov: 8 + 6 + 6 = 20 news a day (14 Nov: the Google timer sends top)
+      PICK_ROUND_TOP: "1=2,5=5,9=5,13=3,17=5,21=4"      # owner 14 Nov: news per round at LEAST (01:00 2, 05:00 5, 09:00 5, 13:00 3, 17:00 5, 21:00 4 = 24 a day) + up to 3 more of well-watched topics, chosen by the page's insights
       PICK_EMAIL: "0"      # owner 2 Nov: "do not ask me to confirm" - no list e-mail, the top news are written at once
       PICK_WAIT_MIN: "60"
       PICK_REQUIRE_EMAIL: "0"

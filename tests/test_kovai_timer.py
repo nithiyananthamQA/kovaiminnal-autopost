@@ -44,9 +44,9 @@ reset(); out.t0731 = tick('07:31');
 reset(); out.t0215 = tick('02:15');
 reset(); out.t0310 = tick('03:10');
 reset(); states['post.yml'] = 'disabled_manually'; out.disabled = tick('06:02'); out.disabledMails = mails.length; out.disabledMark = store['KOVAI_SLOT_post.yml'];
-reset(); states['pick.yml'] = 'disabled_inactivity'; out.inactive = tick('06:02'); out.inactiveMails = mails.length;
-reset(); dispatchCode = 401; out.fail1 = tick('06:02'); out.failMark = store['KOVAI_SLOT_pick.yml'] || null; out.fail2 = tick('06:04'); out.failMails = mails.slice();
-reset(); scheduled['pick.yml'] = 1; out.byGithub = tick('06:02'); out.byGithubMark = store['KOVAI_SLOT_pick.yml'];
+reset(); states['pick.yml'] = 'disabled_inactivity'; out.inactive = tick('09:02'); out.inactiveMails = mails.length;
+reset(); dispatchCode = 401; out.fail1 = tick('09:02'); out.failMark = store['KOVAI_SLOT_pick.yml'] || null; out.fail2 = tick('09:04'); out.failMails = mails.slice();
+reset(); scheduled['pick.yml'] = 1; out.byGithub = tick('09:02'); out.byGithubMark = store['KOVAI_SLOT_pick.yml'];
 out.runsQuery = calls.filter(function (c) { return /pick\.yml\/runs/.test(c.path); }).map(function (c) { return c.path; });
 reset(); delete store.GH_DISPATCH_TOKEN; out.noToken = tick('06:02'); out.noTokenMails = mails.length;
 out.slots = {}; out.inputs = {};
@@ -112,16 +112,14 @@ class KovaiTimer(unittest.TestCase):
 
     def test_first_tick_after_six(self):
         o = self.out
-        self.assertEqual(sorted(o["t0602"]), ["comments.yml", "pick.yml", "post.yml", "powercut.yml"])
-        self.assertEqual(o["t0602"]["pick.yml"], {"dry": "0", "resume": "0", "top": "8"})      # 06:00 round: 8 news (8 + 6 + 6)
+        self.assertEqual(sorted(o["t0602"]), ["comments.yml", "post.yml", "powercut.yml"])      # owner 16 Nov: pick rounds 01/05/09/13/17/21
         self.assertEqual(o["t0602"]["post.yml"], {"dry_run": "false", "prebuild": "false", "timer": "true"})
         self.assertEqual(o["t0604"], {})      # the same slots are never started twice
-        self.assertEqual(o["t1002"]["pick.yml"]["top"], "6")
 
     def test_quiet_hours_and_fixed_times(self):
         o = self.out
         self.assertNotIn("post.yml", o["t2335"])      # posting timer 05:30 - 23:30 IST
-        self.assertEqual(o["t0100"], {})
+        self.assertEqual(o["t0100"], {"pick.yml": {"dry": "0", "resume": "0"}})      # owner 16 Nov: the 01:00 pick round (reference)
         self.assertEqual(o["t0731"]["rasipalan.yml"], {"dry": "0", "date": "", "repost": "0"})      # waits until 07:31 itself
         self.assertIn("insights.yml", o["t0215"])
         self.assertNotIn("insights.yml", o["t0310"])
@@ -140,8 +138,8 @@ class KovaiTimer(unittest.TestCase):
     def test_slot_github_already_started_is_not_started_again(self):
         o = self.out
         self.assertNotIn("pick.yml", o["byGithub"])      # a second pick round would post more news
-        self.assertEqual(o["byGithubMark"], "2026-11-14 06:00")
-        self.assertEqual(o["runsQuery"], ["/actions/workflows/pick.yml/runs?event=schedule&per_page=1&created=%3E%3D2026-11-14T00%3A30%3A00Z"])
+        self.assertEqual(o["byGithubMark"], "2026-11-14 09:00")
+        self.assertEqual(o["runsQuery"], ["/actions/workflows/pick.yml/runs?event=schedule&per_page=1&created=%3E%3D2026-11-14T03%3A30%3A00Z"])
 
     def test_times_follow_the_workflow_schedules(self):
         for f, slots in self.out["slots"].items():
