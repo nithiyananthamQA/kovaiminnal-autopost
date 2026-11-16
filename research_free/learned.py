@@ -98,8 +98,11 @@ def reach_weight(text, data=None, ref=None):
 # owner 16 Nov ("based on the reach we omit the contents"): a news type is left out when BOTH pages' reels together show people skip
 # it - its median views under SKIP_RATIO of the page's usual (median) views, measured on at least SKIP_MIN_N reels. The core news
 # people need is never left out, whatever the numbers say. Recomputed every run from the latest insights (ours + the reference's).
-SKIP_RATIO, SKIP_MIN_N = 0.55, 10
-NEVER_SKIP = {"power_cut", "civic", "crime", "accident", "weather", "other"}
+# Steady from night to night: a type joins the list under SKIP_IN and leaves it only over SKIP_OUT (decided once a night by
+# reference_sync.py and kept in reference_reach.json "skip_topics").
+SKIP_IN, SKIP_OUT, SKIP_MIN_N = 0.50, 0.60, 10
+SKIP_RATIO = SKIP_IN
+NEVER_SKIP = {"power_cut", "civic", "crime", "accident", "weather", "jobs", "other"}      # jobs: the page bio promises வேலை
 
 
 def own_ratios(page="coimbatore", history=None):
@@ -126,9 +129,23 @@ def reach_map(page="coimbatore", own=None, ref=None):
     return out
 
 
+def decide_skip(m, before=()):
+    """tonight's list from the blended map and last night's list (in under SKIP_IN, out over SKIP_OUT)"""
+    out = []
+    for t, x in m.items():
+        if t in NEVER_SKIP or x["n"] < SKIP_MIN_N:
+            continue
+        if x["ratio"] < SKIP_IN or (t in before and x["ratio"] <= SKIP_OUT):
+            out.append(t)
+    return sorted(out)
+
+
 def skip_topics(page="coimbatore", own=None, ref=None):
-    m = reach_map(page, own, ref)
-    return sorted(t for t, x in m.items() if t not in NEVER_SKIP and x["n"] >= SKIP_MIN_N and x["ratio"] < SKIP_RATIO)
+    """the news types left out today: the list decided last night (reference_reach.json), else worked out now"""
+    r = reference() if ref is None else ref
+    if own is None and isinstance(r.get("skip_topics"), list):
+        return [t for t in r["skip_topics"] if t not in NEVER_SKIP]
+    return decide_skip(reach_map(page, own, r))
 
 
 def hints():

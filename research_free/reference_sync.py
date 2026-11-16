@@ -48,6 +48,16 @@ def main(get=None):
     if data["reels"] < 20:
         print("reference insights too few reels - yesterday's kept:", data["reels"])
         return 0
+    try:      # tonight's skip list: ours + the reference's, steady from last night's
+        import learned
+        before = (json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}).get("skip_topics") or []
+        m = learned.reach_map(ref=data)
+        data["skip_topics"] = learned.decide_skip(m, before)
+        data["reach_map"] = m
+        print("news types left out from tonight:", ", ".join(data["skip_topics"]) or "none", "| last night:", ", ".join(before) or "none")
+    except Exception as e:
+        print("skip list not worked out (none tonight):", str(e)[:120])
+        data["skip_topics"] = []
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"reference insights: {data['reels']} reels, median {data['median_views']:.0f} views")
     for t, x in sorted(data["topics"].items(), key=lambda kv: -kv[1]["ratio"]):

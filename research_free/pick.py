@@ -300,7 +300,9 @@ def round_top(t):
         slots = []
     if not slots:
         return AUTO_TOP
-    hit = [n for h, n in slots if h <= t.hour]
+    # owner 16 Nov: a run started a little early (00:55 for the 01:00 round) is that round, not the one before
+    early = t + datetime.timedelta(minutes=15) if hasattr(t, "hour") else t
+    hit = [n for h, n in slots if h <= early.hour and early.date() == t.date()] or [n for h, n in slots if h <= t.hour]
     return hit[-1] if hit else slots[-1][1]
 
 
@@ -531,6 +533,8 @@ def cmd_decide():
             day = (at.strftime("%Y-%m-%d") if hasattr(at, "strftime") else str(at)[:10])
             used = sum(int(r.get("extra", 0)) for k, r in st.get("rounds", {}).items() if k.startswith(day) and k != rid)
             room_x = min(EXTRA_MAX, max(0, EXTRA_DAY - used)) if EXTRA_DAY else EXTRA_MAX
+            if not top:
+                room_x = 0      # a round with no news count (01:00) writes power cuts only - never extras
             extra = [x for x in rest[top:] if sc[x["id"]][0] >= EXTRA_SCORE][:room_x]
             rnd["extra"] = len(extra)
             if extra:

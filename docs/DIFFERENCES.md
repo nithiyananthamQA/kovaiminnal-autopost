@@ -48,3 +48,24 @@ Last full check: 14 Nov 2026.
 
 7. Comments (reply options by e-mail), insights and rasipalan: the reference runs them for its page; Chennai has none yet.
 8. Ranking uses Kovai Minnal's learned topic weights (learned.json), because Chennai has no insights yet.
+
+## Different - owner 16 Nov (Kovai Minnal AND Chennai Minnal, the same on both pages)
+
+9. News a day: 14, more at peak hours - Kovai 05:00 4, 09:00 3, 13:00 2, 17:00 3, 21:00 2; 01:00 power cuts only
+   (Chennai: the same counts, its first round 06:00 because its job starts 05:35 once). Reference: 24 a day
+   (01:00 2, 05:00 5, 09:00 5, 13:00 3, 17:00 5, 21:00 4) + up to 3 more a round.
+10. The round count is a MAXIMUM: only news scoring 7+ is written; a weak round posts fewer (14-15 Nov: 10-18 news a
+    day scored 7+). Reference: the count is a minimum, filled from whatever news there is.
+11. Extras: beyond the count, news scoring 11+ (2-4 a day), at most 1 a round and 3 a day. Reference: up to 3 more
+    a round of well-watched topics (insight weight 0.5+).
+12. Power cuts always, every round, outside the 14 and the score rules (same as the reference).
+13. Learning every night (02:10 IST, insights.yml -> research_free/reference_sync.py): the reference page's own
+    published insights (its public repo: poster/insights/history.json + research_free/learned.json) are blended
+    with ours, per news type, by reels measured (learned.reach_map / reach_weight). A type under 0.50x the usual
+    views on 10+ reels is left out until it is back over 0.60x (16 Nov night list: sports). Never left out: power
+    cut, civic, crime, accident, rain, jobs, unsorted news, and any news with a holiday / ban / closure / route
+    change / fee / water / road / power / warning in it. Reference: its own insights only.
+14. Instagram views: since 14 Nov our token cannot read them (no instagram_manage_insights) - until the owner's new
+    token is saved as the GitHub secret IG_SYSTEM_TOKEN, the nightly change comes from the reference's numbers only.
+15. Reel top strip: category / date / 📰 source on one line (the source shortens, never the category), place pin
+    below at 386 px. Reference: v4 header.

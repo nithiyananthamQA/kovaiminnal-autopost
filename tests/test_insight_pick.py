@@ -35,9 +35,9 @@ class RoundCounts(unittest.TestCase):
         cfg = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["district_powercut"]
         self.assertEqual(sum(cfg["news_rounds"].values()), 14)
         self.assertEqual(cfg["news_per_day"], 14)
-        self.assertEqual({int(h): n for h, n in cfg["news_rounds"].items()}, {int(h): int(n) for h, n in top.items() if int(n)})
+        self.assertEqual(list(cfg["news_rounds"].values()), [int(n) for h, n in sorted(top.items(), key=lambda kv: int(kv[0])) if int(n)])      # same counts (Chennai's first round 06: its job starts 05:35 once)
         self.assertEqual(cfg["news_min_score"], 7)
-        self.assertEqual((cfg["news_extra_score"], cfg["news_extra_day"]), (9, 3))
+        self.assertEqual((cfg["news_extra_score"], cfg["news_extra_day"]), (11, 3))
         self.assertEqual(cfg["news_low_reach"], "auto")
 
     def test_a_late_run_keeps_its_round(self):
@@ -147,6 +147,28 @@ class ReachMap(_PickBase):
         news = [art(i, f"கொள்ளை: இருவர் கைது {i}", score=12) for i in range(8)]
         self.assertEqual(len(self.decide(news, at)), 2 + 3)
 
+    def test_no_news_round_writes_no_extras(self):      # owner 16 Nov: 01:00 = power cuts only
+        with mock.patch.object(pick, "ROUND_TOP", "1=0,5=4"):
+            news = [art(1, "கோவையில் நாளை மின்தடை", pc=True, score=2)] + [art(10 + i, f"கொள்ளை: இருவர் கைது {i}", score=14) for i in range(4)]
+            self.assertEqual(self.decide(news, T.replace(hour=1)), [news[0]["url"]])
+
+    def test_extras_at_most_3_a_day_over_rounds(self):
+        with mock.patch.object(pick, "EXTRA_MAX", 1):
+            got = []
+            for h in (5, 9, 13, 17, 21):
+                news = [art(100 * h + i, f"கொள்ளை: இருவர் கைது {h} {i}", score=14) for i in range(8)]
+                st_rounds = pick.load_state().get("rounds", {}) if pick.STATE.exists() else {}
+                at = T.replace(hour=h)
+                st = {"last_end": "", "pool": {x["id"]: x for x in news}, "rounds": dict(st_rounds, **{
+                    at.strftime("%Y-%m-%d_%H"): {"window": [(at - datetime.timedelta(hours=4)).isoformat(), at.isoformat()],
+                                                 "ids": [x["id"] for x in news], "sent": False, "deadline": at.isoformat(), "decided": None, "written": []}})}
+                pick.save_state(st)
+                with mock.patch.object(learned, "load", return_value={"topic_weight": {}, "topic_n": {}}), \
+                        mock.patch.object(pick, "bridge_post", return_value={"ok": True}), mock.patch.object(pick, "now", return_value=at):
+                    pick.cmd_decide()
+                got.append(pick.load_state()["rounds"][at.strftime("%Y-%m-%d_%H")].get("extra", 0))
+            self.assertEqual(got, [1, 1, 1, 0, 0])
+
     def test_only_strong_news_is_extra(self):
         at = T.replace(hour=1)
         news = [art(i, f"கோவை மாநகராட்சி கூட்டம் {i}", score=8) for i in range(6)]      # good (7+) but not strong (9+)
@@ -166,8 +188,17 @@ class DailyReachLearning(unittest.TestCase):
         self.assertEqual(m["education"]["ours"], [0, 0])
 
     def test_skip_only_weak_on_both_never_core(self):
-        skip = learned.skip_topics(own=self.OWN, ref=self.REF)
-        self.assertEqual(skip, ["politics", "temple"])      # other (0.35) never; jobs: 6 reels only; civic / education fine
+        m = {"politics": {"ratio": 0.45, "n": 31}, "temple": {"ratio": 0.51, "n": 31}, "other": {"ratio": 0.3, "n": 44},
+             "jobs": {"ratio": 0.3, "n": 13}, "sports_culture": {"ratio": 0.4, "n": 6}, "civic": {"ratio": 0.2, "n": 50}}
+        self.assertEqual(learned.decide_skip(m), ["politics"])      # temple 0.51 not yet; other / jobs / civic never; sports: 6 reels only
+
+    def test_skip_list_is_steady_night_to_night(self):
+        m = {"temple": {"ratio": 0.55, "n": 31}, "politics": {"ratio": 0.62, "n": 31}}
+        self.assertEqual(learned.decide_skip(m, before=["temple", "politics"]), ["temple"])      # 0.55 stays in, 0.62 goes out
+        self.assertEqual(learned.decide_skip(m, before=[]), [])      # 0.55 does not join
+
+    def test_todays_list_is_last_nights(self):
+        self.assertEqual(learned.skip_topics(ref={"skip_topics": ["sports_culture", "jobs"]}), ["sports_culture"])      # jobs never
 
     def test_weight_blends_page_and_reference(self):
         d = {"topic_weight": {"politics": 0.1}, "topic_n": {"politics": 5}}
