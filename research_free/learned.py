@@ -63,15 +63,72 @@ PATTERN = {"power_cut": 1.5, "accident": 0.9, "weather": 0.8, "crime": 0.7, "job
            "temple": -0.1, "sports_culture": -0.2, "poultry_agri": -0.3, "politics": -0.5, "other": 0.0}
 
 
-def reach_weight(text, data=None):
-    """(weight, topic, 'page' | 'pattern') - how well news of this headline's topic reaches people on this page"""
+def reference(data=None):
+    """the reference page's insights summed per news type (reference_sync.py, refreshed every night); {} when not there"""
+    if data is not None:
+        return data
+    try:
+        return json.loads((HERE / "reference_reach.json").read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def reach_weight(text, data=None, ref=None):
+    """(weight, topic, 'page' | 'page+reference' | 'reference' | 'pattern') - how well news of this headline's topic reaches people.
+    owner 16 Nov ("give importance to his better concepts"): this page's measured weight and the reference page's are blended by how
+    many reels each measured; a topic only one of them measured uses that one; neither = the proven pattern."""
     t = topic(text)
     d = load() if data is None else data
+    r = reference() if ref is None else ref
     n = (d.get("topic_n") or {}).get(t, 0)
     w = (d.get("topic_weight") or {}).get(t)
-    if w is not None and n >= TRUST_N:
+    rn = (r.get("topic_n") or {}).get(t, 0)
+    rw = (r.get("topic_weight") or {}).get(t)
+    own = w is not None and n >= TRUST_N
+    theirs = rw is not None and rn >= TRUST_N
+    if own and theirs:
+        return round((n * float(w) + rn * float(rw)) / (n + rn), 3), t, "page+reference"
+    if own:
         return float(w), t, "page"
+    if theirs:
+        return float(rw), t, "reference"
     return PATTERN.get(t, 0.0), t, "pattern"
+
+
+# owner 16 Nov ("based on the reach we omit the contents"): a news type is left out when BOTH pages' reels together show people skip
+# it - its median views under SKIP_RATIO of the page's usual (median) views, measured on at least SKIP_MIN_N reels. The core news
+# people need is never left out, whatever the numbers say. Recomputed every run from the latest insights (ours + the reference's).
+SKIP_RATIO, SKIP_MIN_N = 0.55, 10
+NEVER_SKIP = {"power_cut", "civic", "crime", "accident", "weather", "other"}
+
+
+def own_ratios(page="coimbatore", history=None):
+    import reference_sync
+    if history is None:
+        try:
+            history = json.loads((HERE.parent / "poster" / "insights" / "history.json").read_text(encoding="utf-8"))
+        except Exception:
+            history = {}
+    return reference_sync.topic_ratios(history, page)[0]
+
+
+def reach_map(page="coimbatore", own=None, ref=None):
+    """{topic: {"ratio": blended, "n": reels, "ours": [n, ratio], "reference": [n, ratio]}} - ratio = topic median / page median"""
+    own = own_ratios(page) if own is None else own
+    rt = (reference() if ref is None else ref).get("topics") or {}
+    out = {}
+    for t in set(own) | set(rt):
+        a, b = own.get(t) or {"n": 0, "ratio": 0}, rt.get(t) or {"n": 0, "ratio": 0}
+        n = a["n"] + b["n"]
+        if n:
+            out[t] = {"ratio": round((a["n"] * a["ratio"] + b["n"] * b["ratio"]) / n, 3), "n": n,
+                      "ours": [a["n"], a["ratio"]], "reference": [b["n"], b["ratio"]]}
+    return out
+
+
+def skip_topics(page="coimbatore", own=None, ref=None):
+    m = reach_map(page, own, ref)
+    return sorted(t for t, x in m.items() if t not in NEVER_SKIP and x["n"] >= SKIP_MIN_N and x["ratio"] < SKIP_RATIO)
 
 
 def hints():

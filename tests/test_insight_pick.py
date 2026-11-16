@@ -31,14 +31,14 @@ class RoundCounts(unittest.TestCase):
         top = dict(x.split("=") for x in re.search(r'PICK_ROUND_TOP: "([^"]+)"', wf).group(1).split(","))
         self.assertEqual(sum(int(v) for v in top.values()), 14)
         self.assertIn('PICK_EXTRA_DAY: "3"', wf)
-        self.assertIn('PICK_LOW_REACH: "education,sports_culture"', wf)
+        self.assertIn('PICK_LOW_REACH: "auto"', wf)
         cfg = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["district_powercut"]
         self.assertEqual(sum(cfg["news_rounds"].values()), 14)
         self.assertEqual(cfg["news_per_day"], 14)
         self.assertEqual({int(h): n for h, n in cfg["news_rounds"].items()}, {int(h): int(n) for h, n in top.items() if int(n)})
         self.assertEqual(cfg["news_min_score"], 7)
         self.assertEqual((cfg["news_extra_score"], cfg["news_extra_day"]), (9, 3))
-        self.assertEqual(cfg["news_low_reach"], ["education", "sports_culture"])
+        self.assertEqual(cfg["news_low_reach"], "auto")
 
     def test_a_late_run_keeps_its_round(self):
         self.assertEqual(pick.round_top(T.replace(hour=10, minute=40)), 5)      # the 9 AM round started late
@@ -48,13 +48,13 @@ class RoundCounts(unittest.TestCase):
 class InsightWeights(unittest.TestCase):
     def test_pattern_until_the_page_has_enough_reels(self):
         d = {"topic_weight": {"politics": 1.5}, "topic_n": {"politics": 2}}      # 2 reels: not trusted yet
-        w, t, how = learned.reach_weight("அமைச்சர் ஆய்வு", d)
+        w, t, how = learned.reach_weight("அமைச்சர் ஆய்வு", d, {})
         self.assertEqual((t, how), ("politics", "pattern"))
         self.assertLess(w, 0)
 
     def test_page_insights_once_measured(self):
         d = {"topic_weight": {"temple": 1.2}, "topic_n": {"temple": 7}}
-        self.assertEqual(learned.reach_weight("கோயில் திருவிழா", d), (1.2, "temple", "page"))
+        self.assertEqual(learned.reach_weight("கோயில் திருவிழா", d, {}), (1.2, "temple", "page"))
 
 
 class _PickBase(unittest.TestCase):
@@ -151,6 +151,53 @@ class ReachMap(_PickBase):
         at = T.replace(hour=1)
         news = [art(i, f"கோவை மாநகராட்சி கூட்டம் {i}", score=8) for i in range(6)]      # good (7+) but not strong (9+)
         self.assertEqual(len(self.decide(news, at)), 2)
+
+
+class DailyReachLearning(unittest.TestCase):
+    """owner 16 Nov: learn every night from OUR reels + the reference page's published insights"""
+    OWN = {"politics": {"n": 13, "ratio": 0.7}, "civic": {"n": 28, "ratio": 2.6}, "temple": {"n": 12, "ratio": 0.5}, "jobs": {"n": 4, "ratio": 0.56}}
+    REF = {"topics": {"politics": {"n": 18, "ratio": 0.37}, "civic": {"n": 49, "ratio": 1.75}, "temple": {"n": 19, "ratio": 0.51},
+                      "education": {"n": 35, "ratio": 0.91}, "other": {"n": 24, "ratio": 0.35}, "jobs": {"n": 2, "ratio": 0.5}},
+           "topic_weight": {"politics": -0.5, "jobs": 1.0}, "topic_n": {"politics": 15, "jobs": 9}}
+
+    def test_blend_by_reels_measured(self):
+        m = learned.reach_map(own=self.OWN, ref=self.REF)
+        self.assertAlmostEqual(m["politics"]["ratio"], (13 * 0.7 + 18 * 0.37) / 31, places=2)
+        self.assertEqual(m["education"]["ours"], [0, 0])
+
+    def test_skip_only_weak_on_both_never_core(self):
+        skip = learned.skip_topics(own=self.OWN, ref=self.REF)
+        self.assertEqual(skip, ["politics", "temple"])      # other (0.35) never; jobs: 6 reels only; civic / education fine
+
+    def test_weight_blends_page_and_reference(self):
+        d = {"topic_weight": {"politics": 0.1}, "topic_n": {"politics": 5}}
+        w, t, how = learned.reach_weight("அமைச்சர் பேட்டி", d, self.REF)
+        self.assertEqual((t, how), ("politics", "page+reference"))
+        self.assertAlmostEqual(w, (5 * 0.1 + 15 * -0.5) / 20, places=3)
+        self.assertEqual(learned.reach_weight("வேலைவாய்ப்பு முகாம்", {}, self.REF)[2], "reference")      # only the reference measured it
+
+    def test_people_affecting_news_never_skipped(self):
+        for t in ("கனமழை: பள்ளிகளுக்கு நாளை விடுமுறை", "ஆட்சியர் தலைமையில் குடிநீர் ஆய்வு", "மலைப்பாதையில் வாகனத் தடை"):
+            self.assertEqual(pick.low_reach(t, ["politics", "temple", "education"]), "", t)
+        self.assertTrue(pick.low_reach("அமைச்சர் செங்கோட்டையன் பேட்டி", ["politics"]))
+
+    def test_sync_builds_ratios_and_keeps_yesterday_on_failure(self):
+        import reference_sync
+        h = {str(i): {"topic": "crime" if i < 10 else "temple", "views": 2000 if i < 10 else 300} for i in range(25)}
+        out = reference_sync.build(h, {"topic_weight": {"crime": 0.2}, "secret": 1})
+        self.assertEqual(out["reels"], 25)
+        self.assertGreater(out["topics"]["crime"]["ratio"], 1)
+        self.assertNotIn("secret", out)
+        def bad(path):
+            raise OSError("offline")
+        with mock.patch.object(reference_sync, "OUT", Path(tempfile.mkdtemp()) / "r.json") as o:
+            self.assertEqual(reference_sync.main(get=bad), 0)
+            self.assertFalse(o.exists())
+
+    def test_nightly_workflow_runs_the_sync(self):
+        wf = (ROOT / ".github" / "workflows" / "insights.yml").read_text(encoding="utf-8")
+        self.assertIn("python research_free/reference_sync.py", wf)
+        self.assertIn("research_free/reference_reach.json", wf)
 
 
 class SystemToken(unittest.TestCase):

@@ -198,8 +198,8 @@
     "news_min_score": 7,
     "news_extra_score": 9,
     "news_extra_day": 3,
-    "news_low_reach": ["education", "sports_culture"],
-    "news_note_16nov": "owner 16 Nov: same as Kovai - 14 news a day, more at peak hours (05 4, 09 3, 13 2, 17 3, 21 2), only news scoring 7+ (quality over count; a weak round posts fewer); up to 3 more a day of strong news (9+); education / sports news not written (Kovai reels ~335 median views, reference page school events 338-698); power cuts always",
+    "news_low_reach": "auto",
+    "news_note_16nov": "owner 16 Nov: same as Kovai - 14 news a day, more at peak hours (05 4, 09 3, 13 2, 17 3, 21 2), only news scoring 7+ (quality over count; a weak round posts fewer); up to 3 more a day of strong news (9+); news types people skip are learned every night from Kovai's + the reference page's insights (news_low_reach auto); power cuts always",
     "news_max_age_hours": 12,
     "news_rounds": {
       "05": 4,

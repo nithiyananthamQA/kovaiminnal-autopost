@@ -376,12 +376,14 @@ def find_news(d, dry=False, log=print):
         for alt in it.get("alts") or []:
             seen[alt] = today
     cands.sort(key=lambda c: -c[0])
-    low_types = list(s.get("news_low_reach") or [])      # owner 16 Nov: the news types people skip (same list as Kovai's PICK_LOW_REACH)
-    if low_types:
+    low_types = s.get("news_low_reach") or []      # owner 16 Nov: the news types people skip - "auto" = the same daily list as Kovai's
+    if low_types == "auto" or low_types == ["auto"]:
         import learned
-        low = [c for c in cands if not pick.LOW_REACH_EXCEPT.search(c[1]) and learned.reach_weight(c[1])[1] in low_types]
+        low_types = learned.skip_topics()
+    if low_types:
+        low = [c for c in cands if pick.low_reach(c[1], list(low_types))]
         for c in low:
-            log(f"news: not written (low-reach type {learned.reach_weight(c[1])[1]}): {c[1][:60]}")
+            log(f"news: not written ({pick.low_reach(c[1], list(low_types))}): {c[1][:60]}")
             seen[c[2]] = today
         cands = [c for c in cands if c not in low]
     floor = float(s.get("news_min_score", 0) or 0)      # owner 16 Nov: quality over count - news under the floor is not written
