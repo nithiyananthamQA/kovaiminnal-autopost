@@ -33,6 +33,10 @@ INSIGHT_RANK = os.environ.get("PICK_INSIGHT_RANK", "1") == "1"      # 0 = the ea
 # this page (insight weight >= EXTRA_WEIGHT) beyond the count, at most EXTRA_MAX more a round (Instagram's 50 posts a day stay safe)
 EXTRA_WEIGHT = float(os.environ.get("PICK_EXTRA_WEIGHT", "0.5"))
 EXTRA_MAX = int(os.environ.get("PICK_EXTRA_MAX", "3"))
+# owner 16 Nov ("quality is important than bunch of reels", Kovai morning: 8 weak news - TNPSC 6.0, school 6.6 - got 100-160 views
+# while 9-10 news got 600-7000): the round's count is a MAXIMUM - only news whose reach score reaches this floor is written; a weak
+# round writes fewer (or none). Power cuts are always written. 0 = off (every round fills its count as before)
+MIN_SCORE = float(os.environ.get("PICK_MIN_SCORE", "0") or 0)
 AD = re.compile(r"தள்ளுபடி|ஆஃபர்|ஆபர்|அள்ளுங்க|அள்ளுவோம்|விற்பனை தொடக்கம்|ஷோரூம்|புதிய கிளை திறப்பு|சிறப்பு விற்பனை")      # advertorials, not news
 DRY = os.environ.get("PICK_DRY", "") in ("1", "true", "yes")
 # owner 2 Nov: "do not ask me to confirm" - no e-mail; every round's top news (PICK_AUTO_TOP, 8 + 6 + 6 = 20 a day) is written at once.
@@ -477,9 +481,13 @@ def cmd_decide():
             log(f"   not picked automatically ({why_}): {t_[:70]}")
         power = [x for x in items if x.get("power_cut")]      # a power cut is always written, on top of the round's count
         rest = [x for x in items if not x.get("power_cut")]
+        weak = [x for x in rest if MIN_SCORE and sc[x["id"]][0] < MIN_SCORE]
+        if weak:
+            log(f"   {len(weak)} news under the quality floor {MIN_SCORE:g} - not written (a weak round posts fewer reels)")
+            rest = [x for x in rest if x not in weak]
         extra = [x for x in rest[top:] if sc[x["id"]][2] >= EXTRA_WEIGHT][:EXTRA_MAX]      # more news people watch, beyond the count
         pick_ = power + rest[:top] + extra
-        log(f"round {rid} (at least {top}, up to {EXTRA_MAX} more of well-watched topics): {len(items)} news to choose from ({sum(1 for x in items if x.get('leftover'))} from earlier rounds), "
+        log(f"round {rid} ({'up to' if MIN_SCORE else 'at least'} {top}{f', score {MIN_SCORE:g}+' if MIN_SCORE else ''}, up to {EXTRA_MAX} more of well-watched topics): {len(items)} news to choose from ({sum(1 for x in items if x.get('leftover'))} from earlier rounds), "
             f"ranked by this page's insights")
         for i, x in enumerate(items, 1):
             s_, t_, w_, how_ = sc[x["id"]]

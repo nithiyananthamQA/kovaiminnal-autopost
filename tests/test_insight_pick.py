@@ -42,7 +42,7 @@ class InsightWeights(unittest.TestCase):
         self.assertEqual(learned.reach_weight("கோயில் திருவிழா", d), (1.2, "temple", "page"))
 
 
-class InsightPick(unittest.TestCase):
+class _PickBase(unittest.TestCase):
     def setUp(self):
         self.d = tempfile.TemporaryDirectory()
         self.old = (pick.STATE, pick.URLS, pick.DRY, pick.EMAIL, pick.INSIGHT_RANK)
@@ -63,6 +63,8 @@ class InsightPick(unittest.TestCase):
             pick.cmd_decide()
         return [u for u in pick.URLS.read_text().split("\n") if u]
 
+
+class InsightPick(_PickBase):
     def test_one_am_writes_2_and_the_rest_waits_for_5_am(self):
         news = [art(i, f"கோவை மாநகராட்சி கூட்டம் {i}") for i in range(10)]      # civic: weight 0, no extra
         self.assertEqual(len(self.decide(news)), 2)
@@ -79,6 +81,34 @@ class InsightPick(unittest.TestCase):
         urls = self.decide(news)
         self.assertIn(news[0]["url"], urls)
         self.assertIn(news[2]["url"], urls)      # an earlier round's crime news beats a new civic one
+
+
+class QualityFloor(_PickBase):
+    """owner 16 Nov: "quality is important than bunch of reels" - the round's count is a maximum; news under PICK_MIN_SCORE
+    is not written (power cuts always are)"""
+    def setUp(self):
+        super().setUp()
+        self.old_min = pick.MIN_SCORE
+        pick.MIN_SCORE = 7.0
+
+    def tearDown(self):
+        pick.MIN_SCORE = self.old_min
+        super().tearDown()
+
+    def test_weak_round_writes_fewer(self):
+        at = T.replace(hour=5)      # the 05:00 round: up to 5
+        news = [art(1, "கோவை மாநகராட்சி கூட்டம் 1", score=9)] + [art(10 + i, f"கல்லூரியில் ஒப்பந்தம் {i}", score=5) for i in range(6)]
+        self.assertEqual(self.decide(news, at), [news[0]["url"]])
+
+    def test_power_cut_always_written(self):
+        news = [art(1, "கோவையில் நாளை மின்தடை", pc=True, score=2), art(2, "கல்லூரியில் ஒப்பந்தம்", score=4)]
+        self.assertEqual(self.decide(news), [news[0]["url"]])
+
+    def test_nothing_good_nothing_written(self):
+        self.assertEqual(self.decide([art(i, f"விழா {i}", score=4) for i in range(5)]), [])
+
+    def test_workflow_sets_the_floor(self):
+        self.assertIn('PICK_MIN_SCORE: "7"', (ROOT / ".github" / "workflows" / "pick.yml").read_text(encoding="utf-8"))
 
 
 class StoryPlanA(unittest.TestCase):
