@@ -49,7 +49,8 @@
    "category": "பொது",
    "score": 4.0,
    "power_cut": false,
-   "listed_at": "2026-11-15T17:36:32.362997+05:30"
+   "listed_at": "2026-11-15T17:36:32.362997+05:30",
+   "picked_at": "2026-11-16T13:04:04.117671+05:30"
   },
   "C6d1d082": {
    "id": "C6d1d082",
@@ -271,7 +272,8 @@
    "alts": [
     "https://www.maalaimalar.com/news/tamilnadu/anti-corruption-raid-agalvilakku-publisher-chennai"
    ],
-   "listed_at": "2026-11-16T13:01:52.388856+05:30"
+   "listed_at": "2026-11-16T13:01:52.388856+05:30",
+   "picked_at": "2026-11-16T13:04:04.117667+05:30"
   },
   "C6df7271": {
    "id": "C6df7271",
@@ -283,7 +285,8 @@
    "category": "குற்றம்",
    "score": 10.0,
    "power_cut": false,
-   "listed_at": "2026-11-16T13:01:52.388856+05:30"
+   "listed_at": "2026-11-16T13:01:52.388856+05:30",
+   "picked_at": "2026-11-16T13:04:04.117669+05:30"
   }
  },
  "rounds": {
@@ -862,8 +865,20 @@
    ],
    "sent": false,
    "deadline": "2026-11-16T14:01:52.388856+05:30",
-   "decided": null,
-   "written": []
+   "decided": {
+    "how": "automatic: top 3 of 19 by insights",
+    "ids": [
+     "Ca59d949",
+     "C6df7271",
+     "C680bfda"
+    ],
+    "at": "2026-11-16T13:04:04.117657+05:30"
+   },
+   "written": [
+    "C680bfda",
+    "C6df7271",
+    "Ca59d949"
+   ]
   }
  },
  "retry": {
