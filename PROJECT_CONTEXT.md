@@ -82,6 +82,24 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-16 | `fe85e28` | Power cuts: a Tiruppur notice never posts on Kovai (owner 16 Nov, RN-52 Uthiyur cut posted at 00:43) |
+| 2026-11-16 | `5e9aca9` | Pick like the reference (owner 16 Nov, port of news360 ab06a9d + its 6 rounds from aba8a65): news chosen by this page's insights, 6 rounds a day, stories only for urgent news |
+| 2026-11-16 | `5482348` | facebook RN-42 |
+| 2026-11-16 | `965b2d2` | powercut: notices written |
+| 2026-11-16 | `92217ab` | facebook RN-41 |
+| 2026-11-16 | `916ee2a` | facebook RN-60 |
+| 2026-11-16 | `3a51615` | powercut: notices written |
+| 2026-11-16 | `f0f32ac` | facebook RN-52 |
+| 2026-11-16 | `323dbb8` | district powercut: notices found |
+| 2026-11-16 | `15b211b` | pick: picked news saved |
+| 2026-11-16 | `d4a3f33` | pick: picked news saved |
+| 2026-11-16 | `3d0f569` | pick: list sent |
+| 2026-11-16 | `b65193a` | powercut: notices written |
+| 2026-11-16 | `9a69198` | district powercut: notices found |
+| 2026-11-15 | `17c5e75` | pick: written and posted |
+| 2026-11-15 | `1794b7f` | powercut: notices written |
+| 2026-11-15 | `5754b38` | powercut: notices written |
+| 2026-11-15 | `9489416` | district powercut: notices found |
 | 2026-11-16 | `1594519` | Reel layout from the owner's phone screenshots (16 Nov): no footer, logo + page name + English name at the top, text block low (card 1140-1390, captions to 1595) right above Instagram's name row |
 | 2026-11-16 | `a414011` | ElevenLabs voice for every reel (owner 16 Nov): Nila (Tamil, eleven_v3) with a news tone per sentence; Anbu stays the fallback |
 | 2026-11-15 | `4b89d52` | facebook RN-51 |
@@ -94,22 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-15 | `41e6819` | Heartbeat |
 | 2026-11-15 | `6108736` | pick: written and posted |
 | 2026-11-15 | `2366fbb` | powercut: notices written |
-| 2026-11-15 | `9dd5567` | powercut: notices written |
-| 2026-11-15 | `59e32d0` | powercut: notices written |
-| 2026-11-15 | `da32572` | stories shared |
-| 2026-11-15 | `aa74aee` | facebook RN-40 |
-| 2026-11-15 | `a0fdea3` | powercut: notices written |
-| 2026-11-15 | `05134e9` | facebook RN-44 |
-| 2026-11-15 | `80d53a2` | powercut: notices written |
-| 2026-11-15 | `00b3c49` | powercut: notices written |
-| 2026-11-15 | `838e0a0` | powercut: notices written |
-| 2026-11-15 | `d7463b8` | district powercut: notices found |
-| 2026-11-15 | `5997dcc` | district powercut: chennai posted |
-| 2026-11-15 | `a6e74db` | pick: picked news saved |
-| 2026-11-15 | `773e779` | facebook RN-39 |
-| 2026-11-15 | `acaa31b` | pick: picked news saved |
-| 2026-11-15 | `c3b1132` | pick: list sent |
-| 2026-11-15 | `3fd0dd0` | pick: written and posted |
-| 2026-11-15 | `e656068` | facebook RN-38 |
-| 2026-11-15 | `7f2f523` | powercut: notices written |
 <!-- recent-changes:end -->
