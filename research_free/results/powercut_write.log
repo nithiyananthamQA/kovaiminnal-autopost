@@ -1009,3 +1009,406 @@ filed: 1 Coimbatore district stories (target 1), reels only
 queue: 0 news waiting to be written
 All News sheet: {"ok":true,"added":1,"updated":0} 
 stories: 1
+05:53:14 Instagram token: the shared minnal-bot token (Minnal bridge)
+writing [N]: நாளைய மின்தடை: ஊதியூா்
+writing [N]: நாளைய மின்தடை: நேதாஜி ஆயத்த ஆடை பூங்கா, வஞ்சிபாளையம்
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok gemini/gemini-3.6-flash (17s)
+attempt 1 gemini/gemini-3.6-flash: 1 problems
+  numbers not found in the article: 7
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok gemini/gemini-3.6-flash (22s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3.6-flash (7s)
+factcheck by gemini/gemini-3.6-flash: 2 problems
+  Year '2026' in the caption is an invented detail not present in the article.
+  Draft mentions 'மாதாந்திரப் பராமரிப்பு' (monthly maintenance), but the article only states 'பராமரிப்புப் பணி' (maintenance work) without specifying monthly.
+attempt 1 gemini/gemini-3.6-flash: 2 problems
+  fact-check: Year '2026' in the caption is an invented detail not present in the article.
+  fact-check: Draft mentions 'மாதாந்திரப் பராமரிப்பு' (monthly maintenance), but the article only states 'பராமரிப்புப் பணி' (maintenance work) without specifying monthly.
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
+fail gemini/gemini-3.6-flash: Expecting ',' delimiter: line 48 column 3 (char 1402)
+poor answer - skipped for 30 min: gemini/gemini-3.6-flash
+ok gemini/gemini-3-flash-preview (11s)
+attempt 2 gemini/gemini-3-flash-preview: 2 problems
+  sentence 1 (one-line story) has 14 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  numbers not found in the article: 7
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
+poor answer - skipped for 30 min: gemini/gemini-3-flash-preview
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 500: {
+  "error": {
+    "code": 500,
+    "message": "Internal error encountered.",
+    "status"
+fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
+poor answer - skipped for 30 min: gemini/gemini-3-flash-preview
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please ch
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please ch
+switching away from gemma/gemma-4-26b-a4b-it for 10 min
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check 
+fail gemma/gemma-4-31b-it: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=90)
+poor answer - skipped for 30 min: gemma/gemma-4-31b-it
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {"error":{"message":"Failed to validate JSON. Please adjust your prompt. See 'failed_gener
+ok groq/qwen/qwen3.8-27b (4s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok groq/qwen/qwen3.8-27b (0s)
+factcheck by groq/qwen/qwen3.8-27b: 0 problems
+attempt 2 groq/qwen/qwen3.8-27b: 0 problems
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+ok groq/openai/gpt-oss-120b (5s)
+proofread rejected (3 problems)
+  missing key: reel_script
+  missing key: caption
+  missing key: scenes
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok groq/openai/gpt-oss-120b (3s)
+real photo step skipped for 'Power cut in Uthiyur on Tuesday': real photos switched off
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+fail gemma/gemma-4-31b-it: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=90)
+poor answer - skipped for 30 min: gemma/gemma-4-31b-it
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+image match: True The photo shows TANGEDCO/electrical workers carrying out maintenance work on a transformer, which matches a scheduled po
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Power cut in Uthiyur on Tuesday'
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+switching away from groq/openai/gpt-oss-120b for 10 min
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261116-0557","first":"RN-52"}
+posting job started at once
+writing [N]: நாளைய மின்தடை: வெள்ளக்கோவில், ராசாத்தாவலசு, தாசவநாயக்கன்பட்ட
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+ok groq/qwen/qwen3.8-27b (4s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok groq/qwen/qwen3.8-27b (0s)
+factcheck by groq/qwen/qwen3.8-27b: 2 problems
+  reel_script claims the maintenance work is currently happening ('நடக்கின்றன'), but the article states it is scheduled to happen ('நடைபெறவுள்ள').
+  reel_script contains the ungrammatical phrase 'மின்சார சாதனங்களை முன்னதாகவே தயார் நிலையில் வைத்துக்கொள்ளுங்கள்' (prepare electrical appliances in advance), which is not a standard or meaningful instruction in this context and is not present in the article.
+attempt 3 groq/qwen/qwen3.8-27b: 2 problems
+  fact-check: reel_script claims the maintenance work is currently happening ('நடக்கின்றன'), but the article states it is scheduled to happen ('நடைபெறவுள்ள').
+  fact-check: reel_script contains the ungrammatical phrase 'மின்சார சாதனங்களை முன்னதாகவே தயார் நிலையில் வைத்துக்கொள்ளுங்கள்' (prepare electrical appliances in advance), which is not a standard or meaningful instruction in this context and is not present in the article.
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)
+poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast
+fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)
+poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (38s)
+attempt 4 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 3 problems
+  sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  numbers not found in the article: 94432
+  hl1 (the first headline on screen) must name the place 'அவிநாசி', e.g. 'அவிநாசி: ...' or 'அவிநாசி-இல் ...' - viewers share news of their own area
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: Expecting ',' delimiter: line 1 column 1318 (char 1317)
+poor answer - skipped for 30 min: cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct
+free models unavailable: no free model answered: Expecting ',' delimiter: line 1 column 1318 (char 1317)
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 2 problems
+  sentence 1 (one-line story) has 15 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): கோவில்பாளையம் ('ராசாத்தாவலசு துணை மின்நிலையம்: ராசாத்தாவலசு, பாப்பினி, அஞ்சூ')
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (34s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free fact-check unavailable, using Claude: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model 
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 3 problems
+  The tamil_headline says 'அவிநாசி மின்தடை', but the article never names Avinashi as the place; it names the Nethaji Readymade Garment Park and Vanjipalayam substations, which the article attributes to the Avinashi electricity department.
+  The reel_script says the outage is 'செய்யப்படுகிறது' (being carried out) for monthly maintenance, which the article does not state as a reason in that wording; the article says the maintenance work is what causes the outage, so the cause is roughly accurate. However, the caption adds 'மொபைல் சார்ஜ், தண்ணீர் போன்றவற்றை முன்கூட்டியே தயார் செய்துகொள்ளுங்கள்', an advisory invented by the draft and not in the article.
+  The caption adds 'Avinashi power cut tomorrow 9 am to 4 pm | Coimbatore news' English line that asserts Avinashi as the location, which the article does not state.
+attempt 5 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 3 problems
+  fact-check: The tamil_headline says 'அவிநாசி மின்தடை', but the article never names Avinashi as the place; it names the Nethaji Readymade Garment Park and Vanjipalayam substations, which the article attributes to the Avinashi electricity department.
+  fact-check: The reel_script says the outage is 'செய்யப்படுகிறது' (being carried out) for monthly maintenance, which the article does not state as a reason in that wording; the article says the maintenance work is what causes the outage, so the cause is roughly accurate. However, the caption adds 'மொபைல் சார்ஜ், தண்ணீர் போன்றவற்றை முன்கூட்டியே தயார் செய்துகொள்ளுங்கள்', an advisory invented by the draft and not in the article.
+  fact-check: The caption adds 'Avinashi power cut tomorrow 9 am to 4 pm | Coimbatore news' English line that asserts Avinashi as the location, which the article does not state.
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
+  hl1 (the first headline on screen) must name the place 'வெள்ளக்கோவில்', e.g. 'வெள்ளக்கோவில்: ...' or 'வெள்ளக்கோவில்-இல் ...' - viewers share news of their own area
+ok groq/qwen/qwen3.8-27b (5s)
+attempt 6 groq/qwen/qwen3.8-27b: 3 problems
+  missing key: reel_script
+  missing key: caption
+  missing key: scenes
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
+  known issue meta_article: cards talks about the article instead of the news ('கட்டுரை') - rewrite so it does not happen again
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free fact-check unavailable, using Claude: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model 
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 3 problems
+  reel_script says the power cut is in 'அவிநாசி பகுதி' and slides_spec loc/hl1 say 'அவிநாசி பகுதிகளில', but the article only names the substations and the Avinashi electricity board issued the notice; calling all the areas Avinashi areas is not stated.
+  reel_script states the power cut is 'செய்யப்படுகிறது' as a deliberate measure; the article only says maintenance works are taking place and supply will not be available.
+  The reel_script's list of affected areas omits the Vanjipalayam substation area list in full, but it also says 'உள்ளிட்ட' — acceptable; however reel_script names 'எஸ் எஸ் நகர்' and 'திருமலைநகர்' etc. consistently, so no issue there.
+claude rewrite 1 anthropic/claude-haiku-5-5: 3 problems
+  fact-check: reel_script says the power cut is in 'அவிநாசி பகுதி' and slides_spec loc/hl1 say 'அவிநாசி பகுதிகளில', but the article only names the substations and the Avinashi electricity board issued the notice; calling all the areas Avinashi areas is not stated.
+  fact-check: reel_script states the power cut is 'செய்யப்படுகிறது' as a deliberate measure; the article only says maintenance works are taking place and supply will not be available.
+  fact-check: The reel_script's list of affected areas omits the Vanjipalayam substation area list in full, but it also says 'உள்ளிட்ட' — acceptable; however reel_script names 'எஸ் எஸ் நகர்' and 'திருமலைநகர்' etc. consistently, so no issue there.
+ok groq/qwen/qwen3.8-27b (5s)
+proofread rejected (3 problems)
+  missing key: reel_script
+  missing key: caption
+  missing key: scenes
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 2 problems
+  sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  hl1 (the first headline on screen) must name the place 'நேதாஜி ஆயத்த ஆடை பூங்கா', e.g. 'நேதாஜி ஆயத்த ஆடை பூங்கா: ...' or 'நேதாஜி ஆயத்த ஆடை பூங்கா-இல் ...' - viewers share news of their own area
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 2 problems
+  numbers not found in the article: 7
+  hl1 (the first headline on screen) must name the place 'அவிநாசி', e.g. 'அவிநாசி: ...' or 'அவிநாசி-இல் ...' - viewers share news of their own area
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok anthropic/claude-haiku-5-5
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+proofread skipped: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6k595xsevr8qckv4ngn66p1` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Requested 1859. The request's expected output tokens exceed the enforced limit; reduce max_tokens (or the request's expected output) and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+ok anthropic/claude-haiku-5-5
+earlier stories still waiting for images: []
+instagram check: 31 recent posts read from the page
+pick round: only the picked links are written (research_free/pick.py)
+manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/tiruppur/2026/Nov/15/%E0%AE%A8%E0%AE%BE%E0%AE%B3%E0%AF%88%E0%AE%AF-%E0%AE%AE%E0%AE%BF%E0%AE%A9%E0%AF%8D%E0%AE%A4%E0%AE%9F%E0%AF%88-%E0%AE%B5%E0%AF%86%E0%AE%B3%E0%AF%8D%E0%AE%B3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%8B%E0%AE%B5%E0%AE%BF%E0%AE%B2%E0%AF%8D-%E0%AE%B0%E0%AE%BE%E0%AE%9A%E0%AE%BE%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%BE%E0%AE%B5%E0%AE%B2%E0%AE%9A%E0%AF%81-%E0%AE%A4%E0%AE%BE%E0%AE%9A%E0%AE%B5%E0%AE%A8%E0%AE%BE%E0%AE%AF%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A9%E0%AF%8D%E0%AE%AA%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF-%E0%AE%AE%E0%AF%87%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AF%81%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%BE%E0%AE%B3%E0%AF%88%E0%AE%AF%E0%AE%AE%E0%AF%8D
+manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/tiruppur/2026/Nov/15/%E0%AE%A8%E0%AE%BE%E0%AE%B3%E0%AF%88%E0%AE%AF-%E0%AE%AE%E0%AE%BF%E0%AE%A9%E0%AF%8D%E0%AE%A4%E0%AE%9F%E0%AF%88-%E0%AE%8A%E0%AE%A4%E0%AE%BF%E0%AE%AF%E0%AF%82%E0%AE%BE%E0%AF%8D
+manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/tiruppur/2026/Nov/15/%E0%AE%A8%E0%AE%BE%E0%AE%B3%E0%AF%88%E0%AE%AF-%E0%AE%AE%E0%AE%BF%E0%AE%A9%E0%AF%8D%E0%AE%A4%E0%AE%9F%E0%AF%88-%E0%AE%A8%E0%AF%87%E0%AE%A4%E0%AE%BE%E0%AE%9C%E0%AE%BF-%E0%AE%86%E0%AE%AF%E0%AE%A4%E0%AF%8D%E0%AE%A4-%E0%AE%86%E0%AE%9F%E0%AF%88-%E0%AE%AA%E0%AF%82%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%BE-%E0%AE%B5%E0%AE%9E%E0%AF%8D%E0%AE%9A%E0%AE%BF%E0%AE%AA%E0%AE%BE%E0%AE%B3%E0%AF%88%E0%AE%AF%E0%AE%AE%E0%AF%8D
+candidate filter: collected=3
+to write: 3 Coimbatore district candidates (max 3 stories)
+round: top 3 of 3 candidates
+candidates waiting: 3 Coimbatore; time left 39 min
+try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/tir
+try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/tir
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})
+posting job started at once
+try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/tir
+NOT filed (N) நாளைய மின்தடை: வெள்ளக்கோவில், ராசாத்தாவலசு, தாசவநா: duplicate after write
+NOT filed (N) நாளைய மின்தடை: நேதாஜி ஆயத்த ஆடை பூங்கா, வஞ்சிபாளைய: not Coimbatore district news (the story's first lines name another place and no Coimbatore place)
+candidate loop ended: left 0, tried={'N': 3}, done={'N': 1}, time left 31 min
+filed: 1 Coimbatore district stories (target 3), reels only
+queue: 0 news waiting to be written
+All News sheet: {"ok":true,"added":3,"updated":0} 
+stories: 1
+06:52:35 Instagram token: the shared minnal-bot token (Minnal bridge)
+writing [N]: நாளைய மின்தடை: நேதாஜி ஆயத்த ஆடை பூங்கா, வஞ்சிபாளையம்
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
+ok gemini/gemini-3-flash-preview (11s)
+attempt 1 gemini/gemini-3-flash-preview: 2 problems
+  numbers not found in the article: 7
+  not grounded: location 'சுற்றுவட்டாரப்' is not in the article
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, plea
+dead for this round: gemini/gemini-3-flash-preview
+ok gemma/gemma-4-26b-a4b-it (28s)
+attempt 2 gemma/gemma-4-26b-a4b-it: 17 problems
+  sentence 1 (one-line story) has 14 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  stray Tamil sign 'ா' after 'ூ' in «முத்தூா், »
+  stray Tamil sign '்' after 'ா' in «ுத்தூா், ந»
+  stray Tamil sign 'ா' after 'ூ' in «, வேலூா், »
+  stray Tamil sign '்' after 'ா' in « வேலூா், ம»
+  stray Tamil sign '்' after 'ா' in «ஸ் நகா், வ»
+  stray Tamil sign '்' after 'ா' in «மலைநகா், ப»
+  stray Tamil sign 'ா' after 'ூ' in «் புதூா், »
+  stray Tamil sign '்' after 'ா' in « புதூா், ம»
+  stray Tamil sign 'ா' after 'ூ' in «முத்தூா், »
+  stray Tamil sign '்' after 'ா' in «ுத்தூா், ந»
+  stray Tamil sign 'ா' after 'ூ' in «, வேலூா், »
+  stray Tamil sign '்' after 'ா' in « வேலூா், ம»
+  stray Tamil sign '்' after 'ா' in «ஸ்.நகா், வ»
+  stray Tamil sign '்' after 'ா' in «மலைநகா், ப»
+  stray Tamil sign 'ா' after 'ூ' in «் புதூா், »
+  stray Tamil sign '்' after 'ா' in « புதூா், ம»
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please ch
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please ch
+switching away from gemma/gemma-4-26b-a4b-it for 10 min
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high dema
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check 
+switching away from gemma/gemma-4-31b-it for 10 min
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+dead for this round: groq/openai/gpt-oss-120b
+ok groq/qwen/qwen3.8-27b (5s)
+attempt 3 groq/qwen/qwen3.8-27b: 3 problems
+  missing key: reel_script
+  missing key: caption
+  missing key: scenes
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)
+poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (36s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: Expecting ',' delimiter: line 1 column 100 (char 99)
+poor answer - skipped for 30 min: cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free fact-check unavailable, using Claude: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model 
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 3 problems
+  slides_spec 'காவிலிபாளையம், 15 வேலம்பாளையம்' and the caption/reel list are fine, but slides_spec spells 'வேங்கமேடு' while the article says 'வெங்கமேடு' (place name differs from source)
+  reel_script says 'அவிநாசி மின்வாரியம்' as the source, which matches the article, but the reel_script omits the detail that the outage is for monthly maintenance at both substations together with the disclosed affected localities being split by substation only in part; no material omission identified beyond this
+  slides_spec slide 2 claims 'பகுதிகளின் முழுப் பட்டியல் வெளியிடப்பட்டது' (full list has been published), which is an added claim not stated in the article
+attempt 4 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 3 problems
+  fact-check: slides_spec 'காவிலிபாளையம், 15 வேலம்பாளையம்' and the caption/reel list are fine, but slides_spec spells 'வேங்கமேடு' while the article says 'வெங்கமேடு' (place name differs from source)
+  fact-check: reel_script says 'அவிநாசி மின்வாரியம்' as the source, which matches the article, but the reel_script omits the detail that the outage is for monthly maintenance at both substations together with the disclosed affected localities being split by substation only in part; no material omission identified beyond this
+  fact-check: slides_spec slide 2 claims 'பகுதிகளின் முழுப் பட்டியல் வெளியிடப்பட்டது' (full list has been published), which is an added claim not stated in the article
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
+  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 400: {"error":{"message":"Failed to generate JSON. Please adjust your prompt. See 'failed_generati
+free fact-check unavailable, using Claude: no free model answered: groq qwen/qwen3.8-27b 400: {"error":{"message":"Failed to generate JSON. Ple
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 5 problems
+  reel_script says the power cut lasts 'ஏழு மணி நேரம்' (seven hours), but 9 AM to 4 PM is seven hours only by calculation; the article gives only the time range, so the duration is an added detail.
+  reel_script and slides_spec describe the power-cut areas as 'அவிநாசி பகுதி' / 'அவிநாசியில்' as a whole, while the article lists specific areas under the two substations; the location framing is an invented generalization.
+  slides_spec 'என்ன செய்வது?' slide advises to 'prepare in advance' and to contact the 'அவிநாசி மின்வாரியம்', and the caption adds 'mobile charge, drinking water' advice; these recommendations are not in the article.
+  reel_script says 'பச்சாம்பாளையம், பள்ளிபாளையம், வேலூர் உள்ளிட்ட பல ஊர்களில்' and '...முருகம்பாளையம், ராக்கியாபாளையம் உள்ளிட்ட இடங்களிலும்' – the listed places are in the article, but the reel omits the substation grouping and the 'பெ.அய்யம்பாளையம் (ஒரு பகுதி)' qualifier, presenting them as complete area names without the partial-area caveat.
+  reel_script's advice 'முழுப் பட்டியலை அவிநாசி மின்வாரியத்தில் சரிபார்த்துக்கொள்ளுங்கள்' is an added instruction not present in the article.
+claude rewrite 2 anthropic/claude-haiku-5-5: 5 problems
+  fact-check: reel_script says the power cut lasts 'ஏழு மணி நேரம்' (seven hours), but 9 AM to 4 PM is seven hours only by calculation; the article gives only the time range, so the duration is an added detail.
+  fact-check: reel_script and slides_spec describe the power-cut areas as 'அவிநாசி பகுதி' / 'அவிநாசியில்' as a whole, while the article lists specific areas under the two substations; the location framing is an invented generalization.
+  fact-check: slides_spec 'என்ன செய்வது?' slide advises to 'prepare in advance' and to contact the 'அவிநாசி மின்வாரியம்', and the caption adds 'mobile charge, drinking water' advice; these recommendations are not in the article.
+  fact-check: reel_script says 'பச்சாம்பாளையம், பள்ளிபாளையம், வேலூர் உள்ளிட்ட பல ஊர்களில்' and '...முருகம்பாளையம், ராக்கியாபாளையம் உள்ளிட்ட இடங்களிலும்' – the listed places are in the article, but the reel omits the substation grouping and the 'பெ.அய்யம்பாளையம் (ஒரு பகுதி)' qualifier, presenting them as complete area names without the partial-area caveat.
+  fact-check: reel_script's advice 'முழுப் பட்டியலை அவிநாசி மின்வாரியத்தில் சரிபார்த்துக்கொள்ளுங்கள்' is an added instruction not present in the article.
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 503: {"error":{"message":"qwen/qwen3.8-27b is currently over capacity. Please try again and back o
+ok groq/qwen/qwen3.8-27b (0s)
+factcheck by groq/qwen/qwen3.8-27b: 0 problems
+claude rewrite 3 anthropic/claude-haiku-5-5: 0 problems
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok groq/qwen/qwen3.8-27b (3s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+switching away from groq/qwen/qwen3.8-27b for 10 min
+free fact-check unavailable, using Claude: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 5 problems
+  reel_script says 'நாளை' (tomorrow) and the headline says 'நாளை' — article is titled 'நாளைய மின்தடை' so this is fine; however the reel_script's sentence 'இந்தத் தகவலைத் தெரிவித்துள்ளனர்' is fine, but the reel_script says the power cut is 'அவிநாசி பகுதியில்' (Avinashi area) generally, which the article does not state as the area; the article only names the two substations.
+  reel_script omits the 'மின் விநியோகம் இருக்காது' phrasing's full meaning? (no issue) — but reel_script's sentence 'இந்த மின்தடை' is an incomplete sentence with no verb, lacking clear meaning.
+  reel_script lists only a few villages per substation and omits the rest, but the article lists many more; the claim that the affected areas are 'உள்ளிட்ட இடங்கள்' is a partial list, which is acceptable only if not implying completeness — omission of the full list of major affected areas such as பள்ளிபாளையம், பரமசிவம்பாளையம், வேலூர் is not an error of content, but 'பாதிக்கப்படும்' for கணக்கம்பாளையம் சிட்கோவிலும் is stated as 'மின்தடை ஏற்படும்', consistent.
+  slides_spec 'loc' is set to 'அவிநாசி', and the article never states the power cut is limited to Avinashi, though the source of the notice is Avinashi electricity board.
+  slides_spec's third slide line 'முழுப் பட்டியல் செய்தியில் உள்ளபடி' is not a fact claim but the caption's villages match the article.
+proofread rejected (5 problems)
+  fact-check: reel_script says 'நாளை' (tomorrow) and the headline says 'நாளை' — article is titled 'நாளைய மின்தடை' so this is fine; however the reel_script's sentence 'இந்தத் தகவலைத் தெரிவித்துள்ளனர்' is fine, but the reel_script says the power cut is 'அவிநாசி பகுதியில்' (Avinashi area) generally, which the article does not state as the area; the article only names the two substations.
+  fact-check: reel_script omits the 'மின் விநியோகம் இருக்காது' phrasing's full meaning? (no issue) — but reel_script's sentence 'இந்த மின்தடை' is an incomplete sentence with no verb, lacking clear meaning.
+  fact-check: reel_script lists only a few villages per substation and omits the rest, but the article lists many more; the claim that the affected areas are 'உள்ளிட்ட இடங்கள்' is a partial list, which is acceptable only if not implying completeness — omission of the full list of major affected areas such as பள்ளிபாளையம், பரமசிவம்பாளையம், வேலூர் is not an error of content, but 'பாதிக்கப்படும்' for கணக்கம்பாளையம் சிட்கோவிலும் is stated as 'மின்தடை ஏற்படும்', consistent.
+  fact-check: slides_spec 'loc' is set to 'அவிநாசி', and the article never states the power cut is limited to Avinashi, though the source of the notice is Avinashi electricity board.
+  fact-check: slides_spec's third slide line 'முழுப் பட்டியல் செய்தியில் உள்ளபடி' is not a fact claim but the caption's villages match the article.
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok anthropic/claude-haiku-5-5
+earlier stories still waiting for images: []
+instagram check: 33 recent posts read from the page
+pick round: only the picked links are written (research_free/pick.py)
+manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/tiruppur/2026/Nov/15/%E0%AE%A8%E0%AE%BE%E0%AE%B3%E0%AF%88%E0%AE%AF-%E0%AE%AE%E0%AE%BF%E0%AE%A9%E0%AF%8D%E0%AE%A4%E0%AE%9F%E0%AF%88-%E0%AE%A8%E0%AF%87%E0%AE%A4%E0%AE%BE%E0%AE%9C%E0%AE%BF-%E0%AE%86%E0%AE%AF%E0%AE%A4%E0%AF%8D%E0%AE%A4-%E0%AE%86%E0%AE%9F%E0%AF%88-%E0%AE%AA%E0%AF%82%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%BE-%E0%AE%B5%E0%AE%9E%E0%AF%8D%E0%AE%9A%E0%AE%BF%E0%AE%AA%E0%AE%BE%E0%AE%B3%E0%AF%88%E0%AE%AF%E0%AE%AE%E0%AF%8D
+candidate filter: collected=1
+to write: 1 Coimbatore district candidates (max 1 stories)
+round: top 1 of 1 candidates
+candidates waiting: 1 Coimbatore; time left 39 min
+try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/tir
+NOT filed (N) நாளைய மின்தடை: நேதாஜி ஆயத்த ஆடை பூங்கா, வஞ்சிபாளைய: not Coimbatore district news (the story's first lines name another place and no Coimbatore place)
+candidate loop ended: left 0, tried={'N': 1}, done={'N': 0}, time left 32 min
+filed: 0 Coimbatore district stories (target 1), reels only
+queue: 0 news waiting to be written
+All News sheet: {"ok":true,"added":0,"updated":1} 
+stories: 0
