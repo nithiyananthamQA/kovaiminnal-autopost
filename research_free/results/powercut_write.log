@@ -1412,3 +1412,349 @@ filed: 0 Coimbatore district stories (target 1), reels only
 queue: 0 news waiting to be written
 All News sheet: {"ok":true,"added":0,"updated":1} 
 stories: 0
+07:22:25 Instagram token: the shared minnal-bot token (Minnal bridge)
+writing [N]: நாளைய மின்தடை: நேதாஜி ஆயத்த ஆடை பூங்கா, வஞ்சிபாளையம்
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, plea
+dead for this round: gemini/gemini-3-flash-preview
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 500: {
+  "error": {
+    "code": 500,
+    "message": "Internal error encountered.",
+    "status"
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high dema
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check 
+switching away from gemma/gemma-4-31b-it for 10 min
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+dead for this round: groq/openai/gpt-oss-120b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)
+poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (36s)
+attempt 1 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 2 problems
+  sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  hl1 (the first headline on screen) must name the place 'அவிநாசி', e.g. 'அவிநாசி: ...' or 'அவிநாசி-இல் ...' - viewers share news of their own area
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (40s)
+attempt 2 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  numbers not found in the article: 7
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (37s)
+attempt 3 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (32s)
+attempt 4 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  hl1 (the first headline on screen) must name the place 'அவிநாசி', e.g. 'அவிநாசி: ...' or 'அவிநாசி-இல் ...' - viewers share news of their own area
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (35s)
+attempt 5 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  numbers not found in the article: 7
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (36s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (48s)
+factcheck by cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 111 problems
+  The article does not mention that the power cut is in the area of நேதாஜி ஆயத்த ஆடை பூங்கா
+  The article does not mention that the power cut is in the area of வஞ்சிபாளையம்
+  The article does not mention that the power cut is in the area of வஞ்சிபாளையம் துணை மின் நிலையம்
+  The article does not mention that the power cut is in the area of நேதாஜி ஆயத்த ஆடை பூங்கா துணை மின் நிலையம்
+  The article does not mention that the power cut is in the area of வேலூர்
+  The article does not mention that the power cut is in the area of கணக்கம்பாளையம் சிட்கோ
+  The article does not mention that the power cut is in the area of 15 வேலம்பாளையம்
+  The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம் புதூர்
+  The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம்
+  The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம்
+  The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம்
+  The article does not mention that the power cut is in the area of கோதபாளையம்
+  The article does not mention that the power cut is in the area of காவிலிபாளையம்
+  The article does not mention that the power cut is in the area of வலையபாளையம்
+  The article does not mention that the power cut is in the area of அனந்தபுரம்
+  The article does not mention that the power cut is in the area of முருகம்பாளையம்
+  The article does not mention that the power cut is in the area of சோளிபாளையம்
+  The article does not mention that the power cut is in the area of ராக்கியாபாளையம்
+  The article does not mention that the power cut is in the area of கணியாம்பூண்டி
+  The article does not mention that the power cut is in the area of வெங்கமேடு
+  The article does not mention that the power cut is in the area of சாமந்தன்கோட்டை
+  The article does not mention that the power cut is in the area of பச்சாம்பாளையம்
+  The article does not mention that the power cut is in the area of பரமசிவம்பாளையம்
+  The article does not mention that the power cut is in the area of பள்ளிபாளையம்
+  The article does not mention that the power cut is in the area of பெரியாயிபாளையம்
+  The article does not mention that the power cut is in the area of காளம்பாளையம்
+  The article does not mention that the power cut is in the area of பொங்குபாளையம்
+  The article does not mention that the power cut is in the area of பழைய ஊஞ்சப்பாளையம்
+  The article does not mention that the power cut is in the area of புது ஊஞ்சப்பாளையம்
+  The article does not mention that the power cut is in the area of குப்பாண்டம்பாளையம்
+  The article does not mention that the power cut is in the area of துலுக்கமுத்தூர்
+  The article does not mention that the power cut is in the area of நல்லாத்துப்பாளையம்
+  The article does not mention that the power cut is in the area of வ.அய்யம்பாளையம்
+  The article does not mention that the power cut is in the area of ஆயிக்கவுண்டம்பாளையம்
+  The article does not mention that the power cut is in the area of மகாராஜா கல்லூரி
+  The article does not mention that the power cut is in the area of எஸ் எஸ் நகர்
+  The article does not mention that the power cut is in the area of வீதிக்காடு
+  The article does not mention that the power cut is in the area of முட்டியங்கிணறு
+  The article does not mention that the power cut is in the area of திருமலைநகர்
+  The article does not mention that the power cut is in the area of பெ.அய்யம்பாளையம் (ஒரு பகுதி)
+  The article does not mention that the power cut is in the area of கணக்கம்பாளையம் சிட்கோ
+  The article does not mention that the power cut is in the area of பச்சாம்பாளையம்
+  The article does not mention that the power cut is in the area of பரமசிவம்பாளையம்
+  The article does not mention that the power cut is in the area of பள்ளிபாளையம்
+  The article does not mention that the power cut is in the area of பெரியாயிபாளையம்
+  The article does not mention that the power cut is in the area of காளம்பாளையம்
+  The article does not mention that the power cut is in the area of பொங்குபாளையம்
+  The article does not mention that the power cut is in the area of பழைய ஊஞ்சப்பாளையம்
+  The article does not mention that the power cut is in the area of புது ஊஞ்சப்பாளையம்
+  The article does not mention that the power cut is in the area of குப்பாண்டம்பாளையம்
+  The article does not mention that the power cut is in the area of துலுக்கமுத்தூர்
+  The article does not mention that the power cut is in the area of நல்லாத்துப்பாளையம்
+  The article does not mention that the power cut is in the area of வ.அய்யம்பாளையம்
+  The article does not mention that the power cut is in the area of ஆயிக்கவுண்டம்பாளையம்
+  The article does not mention that the power cut is in the area of வேலூர்
+  The article does not mention that the power cut is in the area of மகாராஜா கல்லூரி
+  The article does not mention that the power cut is in the area of எஸ் எஸ் நகர்
+  The article does not mention that the power cut is in the area of வீதிக்காடு
+  The article does not mention that the power cut is in the area of முட்டியங்கிணறு
+  The article does not mention that the power cut is in the area of திருமலைநகர்
+  The article does not mention that the power cut is in the area of பெ.அய்யம்பாளையம் (ஒரு பகுதி)
+  The article does not mention that the power cut is in the area of கணக்கம்பாளையம் சிட்கோ
+  The article does not mention that the power cut is in the area of வெங்கமேடு
+  The article does not mention that the power cut is in the area of சாமந்தன்கோட்டை
+  The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம்
+  The article does not mention that the power cut is in the area of கோதபாளையம்
+  The article does not mention that the power cut is in the area of காவிலிபாளையம்
+  The article does not mention that the power cut is in the area of 15 வேலம்பாளையம்
+  The article does not mention that the power cut is in the area of கணியாம்பூண்டி
+  The article does not mention that the power cut is in the area of வலையபாளையம்
+  The article does not mention that the power cut is in the area of அனந்தபுரம்
+  The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம் புதூர்
+  The article does not mention that the power cut is in the area of முருகம்பாளையம்
+  The article does not mention that the power cut is in the area of சோளிபாளையம்
+  The article does not mention that the power cut is in the area of ராக்கியாபாளையம்
+  The article does not mention that the power cut is in the area of பச்சாம்பாளையம்
+  The article does not mention that the power cut is in the area of பரமசிவம்பாளையம்
+  The article does not mention that the power cut is in the area of பள்ளிபாளையம்
+  The article does not mention that the power cut is in the area of பெரியாயிபாளையம்
+  The article does not mention that the power cut is in the area of காளம்பாளையம்
+  The article does not mention that the power cut is in the area of பொங்குபாளையம்
+  The article does not mention that the power cut is in the area of பழைய ஊஞ்சப்பாளையம்
+  The article does not mention that the power cut is in the area of புது ஊஞ்சப்பாளையம்
+  The article does not mention that the power cut is in the area of குப்பாண்டம்பாளையம்
+  The article does not mention that the power cut is in the area of துலுக்கமுத்தூர்
+  The article does not mention that the power cut is in the area of நல்லாத்துப்பாளையம்
+  The article does not mention that the power cut is in the area of வ.அய்யம்பாளையம்
+  The article does not mention that the power cut is in the area of ஆயிக்கவுண்டம்பாளையம்
+  The article does not mention that the power cut is in the area of வேலூர்
+  The article does not mention that the power cut is in the area of மகாராஜா கல்லூரி
+  The article does not mention that the power cut is in the area of எஸ் எஸ் நகர்
+  The article does not mention that the power cut is in the area of வீதிக்காடு
+  The article does not mention that the power cut is in the area of முட்டியங்கிணறு
+  The article does not mention that the power cut is in the area of திருமலைநகர்
+  The article does not mention that the power cut is in the area of பெ.அய்யம்பாளையம் (ஒரு பகுதி)
+  The article does not mention that the power cut is in the area of கணக்கம்பாளையம் சிட்கோ
+  The article does not mention that the power cut is in the area of வெங்கமேடு
+  The article does not mention that the power cut is in the area of சாமந்தன்கோட்டை
+  The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம்
+  The article does not mention that the power cut is in the area of கோதபாளையம்
+  The article does not mention that the power cut is in the area of காவிலிபாளையம்
+  The article does not mention that the power cut is in the area of 15 வேலம்பாளையம்
+  The article does not mention that the power cut is in the area of கணியாம்பூண்டி
+  The article does not mention that the power cut is in the area of வலையபாளையம்
+  The article does not mention that the power cut is in the area of அனந்தபுரம்
+  The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம் புதூர்
+  The article does not mention that the power cut is in the area of முருகம்பாளையம்
+  The article does not mention that the power cut is in the area of சோளிபாளையம்
+  The article does not mention that the power cut is in the area of ராக்கியாபாளையம்
+  The article does not mention that the power cut is in the area of வாகனங்களின் பேட்டரி சரிசெய்து வைக்க
+  The article does not mention that the power cut is in the area of மின்சாரம் இல்லாத காலத்தில் தயாராக இருங்கள்
+attempt 6 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 111 problems
+  fact-check: The article does not mention that the power cut is in the area of நேதாஜி ஆயத்த ஆடை பூங்கா
+  fact-check: The article does not mention that the power cut is in the area of வஞ்சிபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of வஞ்சிபாளையம் துணை மின் நிலையம்
+  fact-check: The article does not mention that the power cut is in the area of நேதாஜி ஆயத்த ஆடை பூங்கா துணை மின் நிலையம்
+  fact-check: The article does not mention that the power cut is in the area of வேலூர்
+  fact-check: The article does not mention that the power cut is in the area of கணக்கம்பாளையம் சிட்கோ
+  fact-check: The article does not mention that the power cut is in the area of 15 வேலம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம் புதூர்
+  fact-check: The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of கோதபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of காவிலிபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of வலையபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of அனந்தபுரம்
+  fact-check: The article does not mention that the power cut is in the area of முருகம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of சோளிபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of ராக்கியாபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of கணியாம்பூண்டி
+  fact-check: The article does not mention that the power cut is in the area of வெங்கமேடு
+  fact-check: The article does not mention that the power cut is in the area of சாமந்தன்கோட்டை
+  fact-check: The article does not mention that the power cut is in the area of பச்சாம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பரமசிவம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பள்ளிபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பெரியாயிபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of காளம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பொங்குபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பழைய ஊஞ்சப்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of புது ஊஞ்சப்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of குப்பாண்டம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of துலுக்கமுத்தூர்
+  fact-check: The article does not mention that the power cut is in the area of நல்லாத்துப்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of வ.அய்யம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of ஆயிக்கவுண்டம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of மகாராஜா கல்லூரி
+  fact-check: The article does not mention that the power cut is in the area of எஸ் எஸ் நகர்
+  fact-check: The article does not mention that the power cut is in the area of வீதிக்காடு
+  fact-check: The article does not mention that the power cut is in the area of முட்டியங்கிணறு
+  fact-check: The article does not mention that the power cut is in the area of திருமலைநகர்
+  fact-check: The article does not mention that the power cut is in the area of பெ.அய்யம்பாளையம் (ஒரு பகுதி)
+  fact-check: The article does not mention that the power cut is in the area of கணக்கம்பாளையம் சிட்கோ
+  fact-check: The article does not mention that the power cut is in the area of பச்சாம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பரமசிவம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பள்ளிபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பெரியாயிபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of காளம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பொங்குபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பழைய ஊஞ்சப்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of புது ஊஞ்சப்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of குப்பாண்டம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of துலுக்கமுத்தூர்
+  fact-check: The article does not mention that the power cut is in the area of நல்லாத்துப்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of வ.அய்யம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of ஆயிக்கவுண்டம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of வேலூர்
+  fact-check: The article does not mention that the power cut is in the area of மகாராஜா கல்லூரி
+  fact-check: The article does not mention that the power cut is in the area of எஸ் எஸ் நகர்
+  fact-check: The article does not mention that the power cut is in the area of வீதிக்காடு
+  fact-check: The article does not mention that the power cut is in the area of முட்டியங்கிணறு
+  fact-check: The article does not mention that the power cut is in the area of திருமலைநகர்
+  fact-check: The article does not mention that the power cut is in the area of பெ.அய்யம்பாளையம் (ஒரு பகுதி)
+  fact-check: The article does not mention that the power cut is in the area of கணக்கம்பாளையம் சிட்கோ
+  fact-check: The article does not mention that the power cut is in the area of வெங்கமேடு
+  fact-check: The article does not mention that the power cut is in the area of சாமந்தன்கோட்டை
+  fact-check: The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of கோதபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of காவிலிபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of 15 வேலம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of கணியாம்பூண்டி
+  fact-check: The article does not mention that the power cut is in the area of வலையபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of அனந்தபுரம்
+  fact-check: The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம் புதூர்
+  fact-check: The article does not mention that the power cut is in the area of முருகம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of சோளிபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of ராக்கியாபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பச்சாம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பரமசிவம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பள்ளிபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பெரியாயிபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of காளம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பொங்குபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of பழைய ஊஞ்சப்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of புது ஊஞ்சப்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of குப்பாண்டம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of துலுக்கமுத்தூர்
+  fact-check: The article does not mention that the power cut is in the area of நல்லாத்துப்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of வ.அய்யம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of ஆயிக்கவுண்டம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of வேலூர்
+  fact-check: The article does not mention that the power cut is in the area of மகாராஜா கல்லூரி
+  fact-check: The article does not mention that the power cut is in the area of எஸ் எஸ் நகர்
+  fact-check: The article does not mention that the power cut is in the area of வீதிக்காடு
+  fact-check: The article does not mention that the power cut is in the area of முட்டியங்கிணறு
+  fact-check: The article does not mention that the power cut is in the area of திருமலைநகர்
+  fact-check: The article does not mention that the power cut is in the area of பெ.அய்யம்பாளையம் (ஒரு பகுதி)
+  fact-check: The article does not mention that the power cut is in the area of கணக்கம்பாளையம் சிட்கோ
+  fact-check: The article does not mention that the power cut is in the area of வெங்கமேடு
+  fact-check: The article does not mention that the power cut is in the area of சாமந்தன்கோட்டை
+  fact-check: The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of கோதபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of காவிலிபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of 15 வேலம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of கணியாம்பூண்டி
+  fact-check: The article does not mention that the power cut is in the area of வலையபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of அனந்தபுரம்
+  fact-check: The article does not mention that the power cut is in the area of செம்மாண்டம்பாளையம் புதூர்
+  fact-check: The article does not mention that the power cut is in the area of முருகம்பாளையம்
+  fact-check: The article does not mention that the power cut is in the area of சோளிபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of ராக்கியாபாளையம்
+  fact-check: The article does not mention that the power cut is in the area of வாகனங்களின் பேட்டரி சரிசெய்து வைக்க
+  fact-check: The article does not mention that the power cut is in the area of மின்சாரம் இல்லாத காலத்தில் தயாராக இருங்கள்
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (35s)
+attempt 7 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (34s)
+attempt 8 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  caption needs 5 hashtags (Instagram max), has 6
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (38s)
+attempt 9 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (37s)
+attempt 10 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  caption needs 5 hashtags (Instagram max), has 6
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
+  numbers not found in the article: 7
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
+  sentence 1 (one-line story) has 15 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
+  numbers not found in the article: 7
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (32s)
+proofread by cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (4s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (9s)
+earlier stories still waiting for images: []
+instagram check: 33 recent posts read from the page
+pick round: only the picked links are written (research_free/pick.py)
+manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/tiruppur/2026/Nov/15/%E0%AE%A8%E0%AE%BE%E0%AE%B3%E0%AF%88%E0%AE%AF-%E0%AE%AE%E0%AE%BF%E0%AE%A9%E0%AF%8D%E0%AE%A4%E0%AE%9F%E0%AF%88-%E0%AE%A8%E0%AF%87%E0%AE%A4%E0%AE%BE%E0%AE%9C%E0%AE%BF-%E0%AE%86%E0%AE%AF%E0%AE%A4%E0%AF%8D%E0%AE%A4-%E0%AE%86%E0%AE%9F%E0%AF%88-%E0%AE%AA%E0%AF%82%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%BE-%E0%AE%B5%E0%AE%9E%E0%AF%8D%E0%AE%9A%E0%AE%BF%E0%AE%AA%E0%AE%BE%E0%AE%B3%E0%AF%88%E0%AE%AF%E0%AE%AE%E0%AF%8D
+candidate filter: collected=1
+to write: 1 Coimbatore district candidates (max 1 stories)
+round: top 1 of 1 candidates
+candidates waiting: 1 Coimbatore; time left 39 min
+try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/tir
+NOT filed (N) நாளைய மின்தடை: நேதாஜி ஆயத்த ஆடை பூங்கா, வஞ்சிபாளைய: not Coimbatore district news (the story's first lines name another place and no Coimbatore place)
+candidate loop ended: left 0, tried={'N': 1}, done={'N': 0}, time left 29 min
+filed: 0 Coimbatore district stories (target 1), reels only
+queue: 0 news waiting to be written
+All News sheet: {"ok":true,"added":0,"updated":1} 
+stories: 0
