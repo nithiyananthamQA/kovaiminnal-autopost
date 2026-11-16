@@ -251,10 +251,48 @@ def tone_of(text, mood="", last=False, default="[serious]"):
 ELEVEN_URL = "https://api.elevenlabs.io/v1/text-to-speech/{vid}?output_format=mp3_44100_128"
 
 
-def eleven_lines(work, texts, voice_id, model="eleven_v3", language="ta", tag="[serious]", tags=None):
+ELEVEN_STT = "https://api.elevenlabs.io/v1/speech-to-text"
+
+
+def heard_names(mp3, key, must, language="ta"):
+    """owner 16 Nov ("வால்பாறை read as valamparai"): ElevenLabs speech-to-text of one line -> the place names of `must` that were NOT
+    heard. None = the check itself failed (the take is kept - a check problem never stops a reel)."""
+    import requests
+    try:
+        with open(mp3, "rb") as f:
+            r = requests.post(ELEVEN_STT, headers={"xi-api-key": key}, data={"model_id": "scribe_v1", "language_code": language},
+                              files={"file": f}, timeout=90)
+        if r.status_code != 200:
+            return None
+        heard = re.sub(r"[\s\.,!?\-]", "", r.json().get("text", ""))
+    except Exception:
+        return None
+    return [w for w in must if w not in heard]
+
+
+def name_checks(spec, texts):
+    """Place names the voice must say right: the reel's place (location pin) + the page's known places (config reach.place_tags)
+    that appear in the spoken lines. Stems of 4+ letters only (வால்பாறை, மேட்டுப்பாளைய, எம்கேபி ...)."""
+    words = set()
+    for w in re.split(r"[\s,]+", str(spec.get("location") or "")):
+        if len(w) >= 4 and not re.search(r"[A-Za-z]", w):
+            words.add(w)
+    try:
+        cfg = json.loads((Path(__file__).resolve().parent.parent / "poster" / "config.json").read_text(encoding="utf-8"))
+        words.update(k for k in ((cfg.get("reach") or {}).get("place_tags") or {}) if len(k) >= 4)
+    except Exception:
+        pass
+    joined = " ".join(texts)
+    return sorted(w for w in words if w in joined)
+
+
+def eleven_lines(work, texts, voice_id, model="eleven_v3", language="ta", tag="[serious]", tags=None, settings=None, check=()):
     """owner 16 Nov: ElevenLabs reads every reel - a human-like voice with emotion (Nila, Tamil). One request per line, the text
     prepared exactly like the other voices (numbers, names), the same silence trim + loudness as edge_lines. Raises on any failure
-    (no key, no credits, network) so main() falls back to the free Anbu voice and the reel is still made."""
+    (no key, no credits, network) so main() falls back to the free Anbu voice and the reel is still made.
+    owner 16 Nov (வால்பாறை heard as "valamparai"): `settings` = voice_settings sent with every line (Nila's own saved stability 0.35
+    is the random "creative" end - the same word came out different per reel); `check` = place names each line must say: the take
+    is checked with ElevenLabs speech-to-text and read again (up to 2 more takes, the best one kept) when a name was not heard."""
     import requests
     import tts
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "research_free"))
@@ -269,17 +307,37 @@ def eleven_lines(work, texts, voice_id, model="eleven_v3", language="ta", tag="[
         spoken = tts.clean(names.spoken(t))
         tg = (tags[i] if tags and i < len(tags) and tags[i] else tag)
         body = {"text": (f"{tg} {spoken}" if tg and model.startswith("eleven_v3") else spoken), "model_id": model, "language_code": language}
-        for k in range(3):
-            r = requests.post(ELEVEN_URL.format(vid=voice_id), json=body, timeout=120,
-                              headers={"xi-api-key": key, "Content-Type": "application/json"})
-            if r.status_code == 200 and len(r.content) > 1000:
-                mp3.write_bytes(r.content)
+        if settings:
+            body["voice_settings"] = dict(settings)
+        must = [w for w in (check or ()) if w in spoken]
+        best = None      # (names missed, audio)
+        for take in range(3 if must else 1):
+            for k in range(3):
+                r = requests.post(ELEVEN_URL.format(vid=voice_id), json=body, timeout=120,
+                                  headers={"xi-api-key": key, "Content-Type": "application/json"})
+                if r.status_code == 200 and len(r.content) > 1000:
+                    mp3.write_bytes(r.content)
+                    break
+                if r.status_code in (401, 402, 403, 422):      # bad key / no credits / voice not allowed: retrying won't help
+                    raise RuntimeError(f"ElevenLabs {r.status_code}: {r.text[:160]}")
+                import time; time.sleep(4 * (k + 1))
+            else:
+                raise RuntimeError(f"ElevenLabs failed for line {i}: {r.status_code} {r.text[:160]}")
+            if not must:
                 break
-            if r.status_code in (401, 402, 403, 422):      # bad key / no credits / voice not allowed: retrying won't help
-                raise RuntimeError(f"ElevenLabs {r.status_code}: {r.text[:160]}")
-            import time; time.sleep(4 * (k + 1))
-        else:
-            raise RuntimeError(f"ElevenLabs failed for line {i}: {r.status_code} {r.text[:160]}")
+            missed = heard_names(mp3, key, must, language)
+            if missed is None:      # the check failed: keep this take
+                best = (0, r.content)
+                break
+            if best is None or len(missed) < best[0]:
+                best = (len(missed), r.content)
+            if not missed:
+                break
+            print(f"line {i}: voice did not say {' '.join(missed)} clearly - reading it again (take {take + 2})")
+        if best is not None:
+            mp3.write_bytes(best[1])
+            if best[0]:
+                print(f"line {i}: best of 3 takes kept ({best[0]} name(s) still unclear)")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mp3), "-af",
                         "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,loudnorm=I=-16:TP=-1.5",
                         "-ar", "22050", "-ac", "1", str(wav)], check=True)
@@ -296,7 +354,9 @@ def pick_voice(spec):
     el = cfg.get("elevenlabs") or {}
     if cfg.get("engine") == "elevenlabs" and el.get("voice_id"):
         vs.update(engine="elevenlabs", eleven_voice=el["voice_id"], eleven_model=el.get("model") or "eleven_v3",
-                  eleven_tag=el.get("tag", "[serious]"))
+                  eleven_tag=el.get("tag", "[serious]"),
+                  eleven_settings={k: el[k] for k in ("stability", "similarity_boost") if isinstance(el.get(k), (int, float))},
+                  eleven_check=el.get("check_names", True) is not False)
     for k in ("rate", "pitch", "outro_voice"):      # only the speed / pitch / English voice may come from config - never another engine
         v = cfg.get(k)
         if isinstance(v, str) and v and "Chirp" not in v and (k != "outro_voice" or v.endswith("Neural")):
@@ -665,7 +725,11 @@ def main(spec_path, out_mp4, page_key="coimbatore"):
             try:
                 mood = os.environ.get("REEL_MUSIC_MOOD", "")
                 tones = [tone_of(t, mood, last=(i == len(texts) - 1), default=vs.get("eleven_tag", "[serious]")) for i, t in enumerate(texts)]
-                eleven_lines(work, texts, vs["eleven_voice"], vs.get("eleven_model", "eleven_v3"), tag=vs.get("eleven_tag", "[serious]"), tags=tones)
+                check = name_checks(spec, texts) if vs.get("eleven_check") else []
+                if check:
+                    print("names the voice must say right (checked by speech-to-text):", " ".join(check))
+                eleven_lines(work, texts, vs["eleven_voice"], vs.get("eleven_model", "eleven_v3"), tag=vs.get("eleven_tag", "[serious]"),
+                             tags=tones, settings=vs.get("eleven_settings"), check=check)
                 print("voice tones:", " ".join(tones))
                 used = "eleven"
                 print("news voice: ElevenLabs", vs["eleven_voice"], vs.get("eleven_model", ""))
