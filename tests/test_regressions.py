@@ -2082,6 +2082,43 @@ class OnlyWatchedNews(unittest.TestCase):
         for title in self.KEEP:
             self.assertEqual("", collect.low_interest(title), title)
 
+    # owner 16 Nov: "why did you choose school functions ... how can other people connect with this"
+    SMALL_GROUP = ["பொள்ளாச்சி அருகே பள்ளியில் குழந்தைகள் தின கலை இலக்கிய திருவிழா",
+                   "கோவையில் கிராமப்புற பள்ளி மாணவர்களுக்கான யோகா போட்டி: 232 பேர் பங்கேற்பு",
+                   "தேசிய அளவிலான போட்டிக்கு வித்யா விகாசினி மாணவர்கள் தேர்வு",
+                   "கோவில்பாளையத்தில் குழந்தைகள் தின விழாவுடன் 327வது வார களப்பணி",
+                   "தினமலர் விளையாட்டு வினாடி வினா: மில்லேனியம் பள்ளி முதலிடம்",
+                   "பேரூர், சவுரிபாளையத்தில் 2,600 மரக்கன்று நடவு: சிறுதுளி முயற்சி",
+                   "கோவையில் கந்த சஷ்டி கவச பாராயண ஆன்மிக பெருவிழா தொடக்கம்",
+                   "சூலக்கல்லில் அங்கக வேளாண்மை பயிற்சி: மண் வளம் காக்க விவசாயிகளுக்கு விளக்கம்",
+                   "மணியகாரம்பாளையம் கேம்போர்டு பள்ளியில் 17-வது நிறுவனர் தின விழா",
+                   "கோவை ஆர்.வி.எஸ். கல்லூரி சர்வதேச பல்கலைக்கழகத்துடன் ஒப்பந்தம்"]
+    SCHOOL_NEWS = ["கனமழை காரணமாக கோவை மாவட்ட பள்ளிகளுக்கு நாளை விடுமுறை",
+                   "பள்ளி மாணவிக்கு பாலியல் தொல்லை: ஆசிரியர் கைது",
+                   "பள்ளி வேன் கவிழ்ந்து விபத்து: 10 மாணவர்கள் காயம்",
+                   "சத்துணவு சாப்பிட்ட 20 பள்ளி மாணவர்கள் மயக்கம்",
+                   "அரசுக் கல்லூரியில் மாணவர் சேர்க்கை: விண்ணப்பிக்க நாளை கடைசி நாள்",
+                   "கட்டண உயர்வை கண்டித்து கல்லூரி மாணவர்கள் போராட்டம்",
+                   "பெரியநாயக்கன்பாளையத்தில் மாணவர் போட்டி: அனுமதியின்றி வெளியே செல்லத் தடை",
+                   "பள்ளிக்குச் சென்ற மாணவர் மாயம்: போலீசார் விசாரணை",
+                   "ரோட்டரி சங்கம் சார்பில் இலவச கண் சிகிச்சை முகாம்",
+                   "பிளஸ் 2 பொதுத் தேர்வு அட்டவணை வெளியீடு: மாணவர்கள் கவனத்திற்கு"]
+
+    def test_one_school_or_clubs_own_event_is_not_written(self):
+        for title in self.SMALL_GROUP:
+            self.assertTrue(collect.low_interest(title), title)
+
+    def test_school_news_that_changes_peoples_day_is_written(self):
+        for title in self.SCHOOL_NEWS:
+            self.assertEqual("", collect.low_interest(title), title)
+
+    def test_school_events_are_left_out_of_both_pages_automatic_pick(self):      # Kovai pick + Chennai/district finder share auto_ok
+        import pick
+        for title in self.SMALL_GROUP:
+            self.assertTrue(pick.auto_ok({"title": title, "url": ""}), title)
+        src = (ROOT / "districts" / "pipeline.py").read_text(encoding="utf-8")
+        self.assertIn("pick.auto_ok(", src)
+
     def test_switch_off_writes_everything(self):
         real = collect._selection
         collect._selection = lambda: {"skip_low_interest": False}

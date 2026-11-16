@@ -71,3 +71,7 @@ Last full check: 14 Nov 2026.
     below at 386 px. Reference: v4 header.
 16. Chennai ranks news by the same score as Kovai (points + 3x the type's reach - age) since 16 Nov ("same setup, only
     the news differs"); it used the plain points before.
+17. One school / college / club / trust's own event (function, contest, camp, training, sapling drive, recitation)
+    is not written automatically on any page since 16 Nov (owner: "the people involved are 500 ... how can other
+    people connect with this"). School news that changes people's day still goes: holiday, result, timetable,
+    admission, fee, ban, harassment, accident, fainting, protest, missing child. Reference: writes them.

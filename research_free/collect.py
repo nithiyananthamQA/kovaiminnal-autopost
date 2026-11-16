@@ -201,6 +201,20 @@ LOW_CEREMONY = re.compile(r"விழிப்புணர்வு\s*(பேர
                           r"போட்டியில்.{0,25}(முதலிடம்|வெற்றி)|தலைவராக.{0,30}தேர்வு|பதவி உயர்வு")
 NEVER_LOW = re.compile(r"மின்\s*தடை|மின்தடை|மின்\s*நிறுத்த|மின்\s*வெட்டு|பலி|உயிரிழ|விபத்து|கைது|தீ\s*விபத்து|தீப்பொறி|தீப்பிடி|மோசடி|பறிமுதல்|கொலை|"
                        r"திருட|காணவில்லை|யானை|சிறுத்தை|வெள்ள|கனமழை|எச்சரிக்கை|குடிநீர்|வேலைவாய்ப்பு|ஆட்சேர்ப்பு")
+# owner 16 Nov ("why did you choose school functions - the people involved are 500, 200 of them on Instagram, our reel is seen by 2 -
+# how can other people connect with this"): a function / contest / camp / training of ONE school, college, club or trust is watched only
+# by the people who were there. 16 Nov posts: children's day art festival at a Pollachi school, rural school yoga contest, students
+# picked for a national contest, an NGO's children's day + 327th week field work, a sapling drive, a Kanda Sashti recitation.
+# A school news that changes people's day stays: holiday, exam result / timetable, admission, fee, ban, closure, harassment,
+# fainting, protest, road, missing child (NEVER_LOW keeps crime / accident / power cut).
+SMALL_WHO = r"பள்ளி|கல்லூரி|மாணவ|மாணாக்க|குழந்தைகள்|சிறுவர்|அரிமா|ரோட்டரி|லயன்ஸ்|அறக்கட்டளை|தன்னார்வ|சங்கத்தின்|சங்கம் சார்பில்|" \
+            r"அமைப்பின்|அமைப்பு சார்பில்|விவசாயிகளுக்கு"
+SMALL_EVENT = r"விழா|கொண்டாட்ட|போட்டி(?!யிட)|வினாடி|யோகா|கலை\s*(விழா|நிகழ்ச்சி|இலக்கிய|போட்டி|திருவிழா)|கலைத்|பயிற்சி|முகாம்|பேரணி|" \
+              r"நிகழ்ச்சி|பங்கேற்|முதலிடம்|பரிசு|சாதனை|சுற்றுலா|கண்காட்சி|ஒப்பந்த|(அளவில|போட்டிக்கு|அணிக்கு).{0,30}தேர்வு"
+LOW_SMALL_GROUP = re.compile(rf"({SMALL_WHO}).{{0,60}}({SMALL_EVENT})|({SMALL_EVENT}).{{0,60}}({SMALL_WHO})|"
+                             r"குழந்தைகள் தின|கலை இலக்கிய|வினாடி வினா|களப்பணி|மரக்கன்று|பாராயண|பட்டிமன்ற")
+SMALL_GROUP_KEEP = re.compile(r"விடுமுறை|தேர்வு முடிவு|ரிசல்ட்|ஹால் டிக்கெட்|அட்டவணை|ஒத்திவை|ரத்து|தடை|மூடல்|மூடப்|கட்டண|சேர்க்கை|"
+                              r"உதவித்தொகை|விண்ணப்ப|இலவச|பாலியல்|தொல்லை|போராட்ட|மறியல்|முற்றுகை|மயக்க|இடிந்|மாயம்|சாலை|போக்குவரத்து|பூங்கா")
 
 
 def low_interest(title, url=""):
@@ -214,6 +228,8 @@ def low_interest(title, url=""):
         return "feature / tips / recipe, not a Coimbatore event"
     if LOW_CEREMONY.search(t):
         return "ceremony / award / awareness event (low views)"
+    if LOW_SMALL_GROUP.search(t) and not SMALL_GROUP_KEEP.search(t):
+        return "one school / college / club's own event - only the people there watch"
     return ""
 
 
