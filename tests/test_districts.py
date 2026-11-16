@@ -317,6 +317,12 @@ _D.T = _D(2026, 11, 14, 10, 40, tzinfo=PL.IST); print("10:40 again:", len(PL.fin
         self.assertIn("08:05: 0", out)      # not a news round: power cuts only
         self.assertIn("10:05: 3", out)      # a news round: 3 (student 1 h, metro 2 h, old 9 h; egg = other district, cut = power cut)
 
+    def test_quality_floor_writes_fewer(self):      # owner 16 Nov: quality over count - news under news_min_score is not written
+        out = run(HEAD + "PL.use_bridge(); PL.apply('chennai')\n" + self.FAKE + """
+PL.settings = lambda: {"enabled": True, "news_live": ["chennai"], "news_per_run": 5, "news_per_day": 14, "news_max_age_hours": 24, "news_min_score": 99}
+print("high floor:", len(PL.find_news(d, log=lambda *a: None)))""")
+        self.assertIn("high floor: 0", out)
+
 
 if __name__ == "__main__":
     unittest.main()

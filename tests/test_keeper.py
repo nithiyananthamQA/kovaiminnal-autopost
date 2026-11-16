@@ -74,7 +74,7 @@ class Keeper(unittest.TestCase):
                 if k in ("dry", "dry_run", "prebuild", "repost", "post_only"):
                     self.assertIn(v, ("0", "false"), (wf, k))
         self.assertEqual(K.LIVE_INPUTS["post.yml"]["timer"], "true")      # post.yml: counts as scheduled (LIVE file, no commit every 5 min)
-        self.assertIn('PICK_ROUND_TOP: "1=2,5=5,9=5,13=3,17=5,21=4"', (ROOT / ".github/workflows/pick.yml").read_text(encoding="utf-8"))      # owner 16 Nov: the reference's rounds
+        self.assertIn('PICK_ROUND_TOP: "1=0,5=4,9=3,13=2,17=3,21=2"', (ROOT / ".github/workflows/pick.yml").read_text(encoding="utf-8"))      # owner 16 Nov: 14 a day, more at peak hours
 
     def test_a_whole_day_starts_each_time_once(self):
         gh = run_day(FakeGh())

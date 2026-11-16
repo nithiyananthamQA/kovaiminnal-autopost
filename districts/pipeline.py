@@ -376,6 +376,13 @@ def find_news(d, dry=False, log=print):
         for alt in it.get("alts") or []:
             seen[alt] = today
     cands.sort(key=lambda c: -c[0])
+    floor = float(s.get("news_min_score", 0) or 0)      # owner 16 Nov: quality over count - news under the floor is not written
+    weak = [c for c in cands if floor and c[0] < floor]
+    if weak:
+        log(f"news: {len(weak)} under the quality floor {floor:g} - not written: " + "; ".join(c[1][:40] for c in weak[:5]))
+        for c in weak:
+            seen[c[2]] = today
+        cands = [c for c in cands if c not in weak]
     room = max(0, min(per_run, per_day - int(days.get(today, 0))))
     take = cands[:room]
     for _, _, u in take:

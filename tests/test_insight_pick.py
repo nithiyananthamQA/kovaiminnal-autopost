@@ -22,8 +22,20 @@ def art(n, title, hours_old=1, score=5, pc=False, left=False):
 class RoundCounts(unittest.TestCase):
     def test_owner_counts_per_round(self):
         got = {h: pick.round_top(T.replace(hour=h, minute=5)) for h in (1, 5, 9, 13, 17, 21)}
-        self.assertEqual(got, {1: 2, 5: 5, 9: 5, 13: 3, 17: 5, 21: 4})
+        self.assertEqual(got, {1: 2, 5: 5, 9: 5, 13: 3, 17: 5, 21: 4})      # the code's default (the reference's rounds)
         self.assertEqual(sum(got.values()), 24)
+
+    def test_owner_14_a_day_in_the_workflow(self):      # owner 16 Nov: 14 a day, more at peak hours, same split on Chennai
+        import json, re
+        wf = (ROOT / ".github" / "workflows" / "pick.yml").read_text(encoding="utf-8")
+        top = dict(x.split("=") for x in re.search(r'PICK_ROUND_TOP: "([^"]+)"', wf).group(1).split(","))
+        self.assertEqual(sum(int(v) for v in top.values()), 14)
+        self.assertIn('PICK_EXTRA_MAX: "0"', wf)
+        cfg = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["district_powercut"]
+        self.assertEqual(sum(cfg["news_rounds"].values()), 14)
+        self.assertEqual(cfg["news_per_day"], 14)
+        self.assertEqual({int(h): n for h, n in cfg["news_rounds"].items()}, {int(h): int(n) for h, n in top.items() if int(n)})
+        self.assertEqual(cfg["news_min_score"], 7)
 
     def test_a_late_run_keeps_its_round(self):
         self.assertEqual(pick.round_top(T.replace(hour=10, minute=40)), 5)      # the 9 AM round started late

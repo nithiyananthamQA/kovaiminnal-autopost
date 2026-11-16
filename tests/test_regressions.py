@@ -2112,7 +2112,8 @@ class RoundsTopThree(unittest.TestCase):
         times = sorted(((int(h) * 60 + int(m) + 330) % 1440) / 60 for m, hs in re.findall(r'cron: "(\d+) ([\d,]+) \* \* \*"', wf)
                        for h in hs.split(","))
         self.assertEqual([1, 5, 9, 13, 17, 21], times)      # owner 13 Nov: every 4 hours (posting waits for 08:00 / 12:00 / 18:00)
-        self.assertIn('PICK_ROUND_TOP: "1=2,5=5,9=5,13=3,17=5,21=4"', wf)      # 4+4+3+3+3+3 = 20      # 8 + 6 + 6 = 20
+        self.assertIn('PICK_ROUND_TOP: "1=0,5=4,9=3,13=2,17=3,21=2"', wf)      # owner 16 Nov: 14 a day (0+4+3+2+3+2)
+        self.assertIn('PICK_EXTRA_MAX: "0"', wf)      # 14 is the maximum
         self.assertIn('PICK_EMAIL: "0"', wf)      # "do not ask me to confirm"
 
     def test_each_round_writes_top_3_of_the_whole_district(self):

@@ -194,12 +194,16 @@
       "chennai"
     ],
     "news_per_run": 1,
-    "news_per_day": 20,
+    "news_per_day": 14,
+    "news_min_score": 7,
+    "news_note_16nov": "owner 16 Nov: same as Kovai - 14 news a day, more at peak hours (05 4, 09 3, 13 2, 17 3, 21 2), only news scoring 7+ (quality over count; a weak round posts fewer); power cuts always",
     "news_max_age_hours": 12,
     "news_rounds": {
-      "06": 8,
-      "10": 6,
-      "19": 6
+      "05": 4,
+      "09": 3,
+      "13": 2,
+      "17": 3,
+      "21": 2
     },
     "news_budget_min": 6,
     "news_max_open": 60
