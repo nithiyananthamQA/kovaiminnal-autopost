@@ -39,6 +39,8 @@ def shared_token(config, own_bridge_url="", env=None, get=None, page=""):
     A page whose own bridge has no token (Kovai: no IG_TOKEN_COIMBATORE; a new district without IG_TOKEN_<KEY>) reads it from there.
     -> token, or "" (nothing secret logged)."""
     env = os.environ if env is None else env
+    if str(env.get("IG_SYSTEM_TOKEN", "")).strip():      # owner 16 Nov: the GitHub secret (token with the insights permission) wins
+        return str(env["IG_SYSTEM_TOKEN"]).strip()
     src = str(((config or {}).get("instagram") or {}).get("shared_token_page") or "").strip()
     url, key = env.get("DISTRICT_BRIDGE_URL", "").strip(), env.get("DISTRICT_BRIDGE_KEY", "").strip()
     if not (src and url and key) or (url == (own_bridge_url or "").strip() and str(page).lower() == src.lower()):

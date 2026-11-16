@@ -26,6 +26,7 @@ concurrency:
 env:
   DISTRICT_BRIDGE_URL: ${{ secrets.DISTRICT_BRIDGE_URL }}
   DISTRICT_BRIDGE_KEY: ${{ secrets.DISTRICT_BRIDGE_KEY }}
+  IG_SYSTEM_TOKEN: ${{ secrets.IG_SYSTEM_TOKEN }}      # owner 16 Nov: minnal-bot token with the insights permission (empty = the bridge's token)
   KOVAI_BRIDGE_URL: ${{ secrets.BRIDGE_URL }}      # only to refuse it: a district row never goes to Kovai's Sheet
   POWERCUT_DRY: ${{ github.event_name == 'workflow_dispatch' && inputs.dry || '0' }}
   POST_ONLY: ${{ github.event_name == 'workflow_dispatch' && inputs.post_only || '0' }}

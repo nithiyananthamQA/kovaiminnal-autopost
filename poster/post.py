@@ -71,6 +71,10 @@ def log(*a):
 
 # ---------------------------------------------------------------- bridge (Apps Script)
 def bridge_get(action, **params):
+    # owner 16 Nov: the minnal-bot token WITH the insights permission (instagram_manage_insights) is the GitHub secret IG_SYSTEM_TOKEN -
+    # set = every page uses it (no Apps Script step); empty = the token from the bridges as before
+    if action == "token" and os.environ.get("IG_SYSTEM_TOKEN", "").strip():
+        return {"ok": True, "token": os.environ["IG_SYSTEM_TOKEN"].strip()}
     # 4 Nov: Apps Script sometimes answers after more than 120 s and the whole post job failed before posting.
     # A read is safe to repeat, so slow / failed answers are retried before giving up.
     for k in range(3):

@@ -34,6 +34,7 @@ env:
   BRIDGE_KEY: ${{ secrets.BRIDGE_KEY }}
   DISTRICT_BRIDGE_URL: ${{ secrets.DISTRICT_BRIDGE_URL }}   # owner 14 Nov: the one minnal-bot token lives in the Minnal bridge
   DISTRICT_BRIDGE_KEY: ${{ secrets.DISTRICT_BRIDGE_KEY }}
+  IG_SYSTEM_TOKEN: ${{ secrets.IG_SYSTEM_TOKEN }}      # owner 16 Nov: minnal-bot token with the insights permission (empty = the bridge's token)
   CLOUDINARY_CLOUD: ${{ secrets.CLOUDINARY_CLOUD }}
   CLOUDINARY_PRESET: ${{ secrets.CLOUDINARY_PRESET }}
   ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}      # owner 16 Nov: ElevenLabs reel voice

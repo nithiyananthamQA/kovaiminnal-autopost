@@ -153,6 +153,23 @@ class ReachMap(_PickBase):
         self.assertEqual(len(self.decide(news, at)), 2)
 
 
+class SystemToken(unittest.TestCase):
+    """owner 16 Nov: the GitHub secret IG_SYSTEM_TOKEN (token with the insights permission) wins; empty = the bridge's token"""
+    def test_secret_wins_and_empty_falls_back(self):
+        import ig_api, post
+        self.assertEqual(ig_api.shared_token({}, env={"IG_SYSTEM_TOKEN": " abc "}), "abc")
+        self.assertEqual(ig_api.shared_token({}, env={"IG_SYSTEM_TOKEN": ""}), "")      # no bridge configured here -> ""
+        with mock.patch.dict(post.os.environ, {"IG_SYSTEM_TOKEN": "xyz"}), mock.patch.object(post.requests, "get") as g:
+            self.assertEqual(post.bridge_get("token", page="coimbatore"), {"ok": True, "token": "xyz"})
+            g.assert_not_called()
+
+    def test_every_bridge_workflow_passes_the_secret(self):
+        for wf in (ROOT / ".github" / "workflows").glob("*.yml"):
+            s = wf.read_text(encoding="utf-8")
+            if "secrets.DISTRICT_BRIDGE_KEY" in s:
+                self.assertIn("IG_SYSTEM_TOKEN: ${{ secrets.IG_SYSTEM_TOKEN }}", s, wf.name)
+
+
 class StoryPlanA(unittest.TestCase):
     def test_story_only_for_urgent(self):
         import post
