@@ -41,7 +41,7 @@ jobs:
       PICK_EXTRA_MAX: "3"      # owner 16 Nov: beyond the 14, strong news may still go out ...
       PICK_EXTRA_SCORE: "9"      # ... only news scoring 9+ (the reels that got 600-7000 views scored 9-12) ...
       PICK_EXTRA_DAY: "3"      # ... at most 3 more a day (14 + 3 = 17 news at most; power cuts always on top)
-      PICK_LOW_REACH: "education,sports_culture,temple"      # owner 16 Nov: types Kovai's reels proved people skip (median ~330 views) - not written (school holiday / exam result still are)
+      PICK_LOW_REACH: "education,sports_culture"      # owner 16 Nov: types people skip - Kovai's reels (median ~335 views) AND the reference page (school events 338-698); temple stays (reference temple reels 913-1,782) - not written (school holiday / exam result still are)
       PICK_MIN_SCORE: "7"      # owner 16 Nov: quality over count - the round count above is a MAXIMUM; only news scoring 7+ (power cuts always) is written; a weak round posts fewer
       PICK_EMAIL: "0"      # owner 2 Nov: "do not ask me to confirm" - no list e-mail, the top news are written at once
       PICK_WAIT_MIN: "60"

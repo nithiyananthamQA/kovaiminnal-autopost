@@ -31,14 +31,14 @@ class RoundCounts(unittest.TestCase):
         top = dict(x.split("=") for x in re.search(r'PICK_ROUND_TOP: "([^"]+)"', wf).group(1).split(","))
         self.assertEqual(sum(int(v) for v in top.values()), 14)
         self.assertIn('PICK_EXTRA_DAY: "3"', wf)
-        self.assertIn('PICK_LOW_REACH: "education,sports_culture,temple"', wf)
+        self.assertIn('PICK_LOW_REACH: "education,sports_culture"', wf)
         cfg = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["district_powercut"]
         self.assertEqual(sum(cfg["news_rounds"].values()), 14)
         self.assertEqual(cfg["news_per_day"], 14)
         self.assertEqual({int(h): n for h, n in cfg["news_rounds"].items()}, {int(h): int(n) for h, n in top.items() if int(n)})
         self.assertEqual(cfg["news_min_score"], 7)
         self.assertEqual((cfg["news_extra_score"], cfg["news_extra_day"]), (9, 3))
-        self.assertEqual(cfg["news_low_reach"], ["education", "sports_culture", "temple"])
+        self.assertEqual(cfg["news_low_reach"], ["education", "sports_culture"])
 
     def test_a_late_run_keeps_its_round(self):
         self.assertEqual(pick.round_top(T.replace(hour=10, minute=40)), 5)      # the 9 AM round started late
