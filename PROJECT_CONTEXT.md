@@ -82,6 +82,11 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-18 | `510ab88` | Posting chain: the Cloudflare Worker waits, not a GitHub machine (owner 18 Nov: 'safe from ban?') |
+| 2026-11-17 | `9e03fbf` | pick: picked news saved |
+| 2026-11-17 | `a1446ee` | pick: picked news saved |
+| 2026-11-17 | `070aad9` | pick: list sent |
+| 2026-11-18 | `60399b1` | Chennai: its own areas, suburbs and city services; state politics stays out (owner 18 Nov: 'chennai is the most populated city ... add even more small areas') |
 | 2026-11-18 | `2e509a8` | Cloudflare Worker "test": one timer for every page's GitHub jobs (owner 18 Nov: 'move to the workers now', 'one worker for all our pages') |
 | 2026-11-18 | `0691bd3` | Power cuts: a list for our district only is kept whole (17 Nov: Chennai never posted a power cut - ABP's Chennai-only list was cut to 0 words); covaimail.com is Kovai's paper only |
 | 2026-11-18 | `693cff7` | sync_pages: also push a page's earlier unpushed commits (17 Nov: Chennai kept safe mode + fixes locally although the owner pushed) |
@@ -107,9 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-17 | `6cffe46` | pick: picked news saved |
 | 2026-11-17 | `10372bb` | pick: picked news saved |
 | 2026-11-17 | `d11fb9e` | pick: list sent |
-| 2026-11-17 | `163eb3a` | powercut: notices written |
-| 2026-11-17 | `2c50b3d` | powercut: notices written |
-| 2026-11-17 | `72a88ab` | comments: normal comments recorded (not e-mailed) |
-| 2026-11-17 | `4f9c418` | powercut: notices written |
-| 2026-11-17 | `ce1dcc6` | facebook RN-85 |
 <!-- recent-changes:end -->
