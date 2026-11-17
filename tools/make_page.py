@@ -125,6 +125,11 @@ def set_assign(src, name, value):
 d_note = ""
 
 
+def powercut_values(src):
+    """17 Nov: covaimail.com is a Coimbatore paper - not a power-cut source (or the 'own district page') of any other page"""
+    return src.replace(', "covaimail.com")', ")")
+
+
 def allnews_values(src, d, PL):
     """the district lists, as the Chennai engine sets them (districts/pipeline.apply) - everything else in allnews.py stays Kovai's"""
     global d_note
@@ -186,6 +191,8 @@ def main(key, out):
         dst.parent.mkdir(parents=True, exist_ok=True)
         if f == "research_free/allnews.py":
             dst.write_text(allnews_values(src.read_text(encoding="utf-8"), d, PL), encoding="utf-8")
+        elif f == "research_free/powercut.py":
+            dst.write_text(powercut_values(swap_text(src.read_text(encoding="utf-8"), d, PL)), encoding="utf-8")
         elif f == "research_free/sources.json":      # the engine's rule: each outlet's district page with this district's name
             dst.write_text(src.read_text(encoding="utf-8").replace("coimbatore", d["dinamalar"]).replace("கோவை", d["ta"]), encoding="utf-8")
         elif f == "poster/config.json":

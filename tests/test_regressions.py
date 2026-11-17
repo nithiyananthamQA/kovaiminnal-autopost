@@ -2577,3 +2577,27 @@ class EmptyPickState17Nov(unittest.TestCase):
                 st = pick.load_state()
         self.assertEqual((st["rounds"], st["pool"], st["last_end"]), ({}, {}, ""))
 
+
+class OwnDistrictList17Nov(unittest.TestCase):
+    """17 Nov: Chennai never posted a power cut - ABP's Chennai-only list ("Chennai Power Cut: ... சென்னையில் நாளை ...") has no
+    district headings, and the state-wide-list cut left 0 words. A list with NO district headings whose title names our district
+    is kept whole; a state-wide list without our district's part is still cut to nothing."""
+    def _run(self, title, text):
+        import allnews
+        from unittest import mock
+        with mock.patch.object(allnews, "article_any", wraps=allnews.article_any) as aa:
+            aa.side_effect = lambda u: {"title": title, "text": text} if "#" not in u else allnews.district_section(u, ("கோவை",))
+            return allnews.district_section("https://x.test/a", ("கோவை",))
+
+    def test_own_district_only_list_is_kept(self):
+        a = self._run("கோவையில் நாளை மின்தடை", "பராமரிப்பு பணிகள் காரணமாக காந்திபுரம், பீளமேடு பகுதிகளில் காலை 9 முதல் மாலை 5 மணி வரை மின்தடை.")
+        self.assertIn("காந்திபுரம்", a["text"])
+
+    def test_state_list_without_our_part_is_still_cut(self):
+        a = self._run("தமிழகத்தில் நாளை மின்தடை", "சேலம்: அம்மாபேட்டை பகுதிகள். ஈரோடு: பெருந்துறை பகுதிகள்.")
+        self.assertEqual(a["text"], "")
+
+    def test_no_heading_and_title_not_ours_is_cut(self):
+        a = self._run("தமிழகத்தில் நாளை மின்தடை", "பல பகுதிகளில் மின்தடை.")
+        self.assertEqual(a["text"], "")
+

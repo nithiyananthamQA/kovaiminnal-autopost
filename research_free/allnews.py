@@ -514,6 +514,10 @@ def district_section(url, names=None):
     heads = list(_SECTION_HEAD.finditer(text))
     own = [m for m in heads if m.group(1) in names]
     if not own:
+        # 17 Nov (ours): a list for OUR district only (ABP "Chennai Power Cut: ... சென்னையில் நாளை ...") has no district headings at
+        # all - its whole text is ours. It was cut to nothing ("only a headline, 0 words"), so Chennai never posted a power cut.
+        if not heads and any(n in (art.get("title") or "") for n in names):
+            return dict(art, url=url)
         return dict(art, url=url, text="")
     m = own[0]
     parts = []      # every part about our district (Samayam splits one district: "கோவை/மெட்ரோ", "கோவை/வடக்கு")
