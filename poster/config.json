@@ -181,12 +181,8 @@
     "note": "owner 11 Nov: separate feature - true = every enabled district page (districts/districts.json) posts its own power cuts; false = nothing runs for the districts and Kovai Minnal works exactly as before. disabled = district keys switched off one by one. live = the pages that run (13 Nov: chennai first); add a district key to put its page live. news_live = pages that also post their other local news (owner 13 Nov: chennai, after the owner approves a sample); news_per_run / news_per_day / news_max_age_hours limit it. news_rounds (owner 14 Nov, like the reference): news only at 06 / 10 / 19 h, that many news per round (power cuts every 30 min). comments_live (owner 14 Nov, Instagram's best practice 'reply to comments'): live pages whose new Instagram comments get 3 reply options e-mailed by the district bridge (the comments job of district_powercut.yml, every run); nothing is posted until the owner chooses; [] = off.",
     "enabled": true,
     "disabled": [],
-    "live": [
-      "chennai"
-    ],
-    "news_live": [
-      "chennai"
-    ],
+    "live": [],
+    "news_live": [],
     "comments_live": [
       "chennai"
     ],
@@ -207,7 +203,8 @@
     },
     "news_budget_min": 6,
     "news_max_open": 60,
-    "news_note_17nov": "owner 17 Nov ('follow his same all, only template and voice differ'): the reference's counts - 24 news a day (01:00 2, 05:00 5, 09:00 5, 13:00 3, 17:00 5, 21:00 4), no score floor, no skip list, no extras rule of our own. Until Chennai runs as a copy of the Kovai code (like the reference's 7 pages) this engine keeps only the counts."
+    "news_note_17nov": "owner 17 Nov ('follow his same all, only template and voice differ'): the reference's counts - 24 news a day (01:00 2, 05:00 5, 09:00 5, 13:00 3, 17:00 5, 21:00 4), no score floor, no skip list, no extras rule of our own. Until Chennai runs as a copy of the Kovai code (like the reference's 7 pages) this engine keeps only the counts.",
+    "note_17nov": "owner 17 Nov: Chennai Minnal runs from its own repo nithiyananthamQA/chennaiminnal-autopost (copy of Kovai); the engine stays for new power-cut pages"
   },
   "real_photo_enabled": false,
   "stories_urgent_only": true,
