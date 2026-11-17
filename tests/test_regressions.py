@@ -2477,3 +2477,30 @@ class BusinessNames17Nov(unittest.TestCase):
         self.assertIn("Only a name the article itself gives", rules)
         self.assertIn("No private individuals' names", rules)
 
+
+
+class OwnWords17Nov(unittest.TestCase):
+    """owner 17 Nov ("is it legal to take news from Dinamalar?"): facts are free, the paper's sentences are not - a draft that copies
+    a long sentence word for word is sent back; our own sentences with the same facts pass; power-cut lists stay as published"""
+    ART = ("சூலூர் அருகே நேற்று இரவு லாரி மோதி இருசக்கர வாகனத்தில் சென்ற இளைஞர் ஒருவர் சம்பவ இடத்திலேயே உயிரிழந்தார் இது குறித்து "
+           "போலீசார் வழக்குப் பதிவு செய்து விசாரணை நடத்தி வருகின்றனர் லாரி ஓட்டுநர் தப்பி ஓடினார்")
+
+    def test_copied_sentence_is_sent_back(self):
+        import validate as V
+        d = {"tamil_headline": "சூலூரில் விபத்து", "reel_script": self.ART + " " + V.LAST, "caption": "x"}
+        self.assertTrue(any("OWN words" in p for p in V.copy_problems(d, self.ART)))
+
+    def test_own_sentences_pass(self):
+        import validate as V
+        d = {"tamil_headline": "சூலூரில் விபத்து", "caption": "x", "reel_script": "சூலூரில் லாரி மோதியதில் இளைஞர் பலியானார். இரவு இருசக்கர "
+             "வாகனத்தில் சென்றபோது விபத்து நடந்தது. ஓட்டுநர் தப்பினார், போலீசார் விசாரிக்கின்றனர். " + V.LAST}
+        self.assertEqual(V.copy_problems(d, self.ART), [])
+
+    def test_power_cut_lists_stay_as_published(self):
+        import validate as V
+        d = {"tamil_headline": "சூலூரில் நாளை மின்தடை", "reel_script": self.ART, "caption": "x"}
+        self.assertEqual(V.copy_problems(d, self.ART), [])
+
+    def test_writer_rule(self):
+        rules = (Path(__file__).resolve().parent.parent / "research_free" / "rules.md").read_text(encoding="utf-8")
+        self.assertIn("OWN WORDS", rules)

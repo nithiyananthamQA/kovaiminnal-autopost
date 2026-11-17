@@ -43,6 +43,7 @@ reel_script rules
 - POWER SHUTDOWN exception (owner 30 Oct): a power-cut story may use up to 160 words (at most 90 seconds) - read the date, the time, the substation and EVERY affected area exactly as published, none dropped, never guessed. All other rules stay the same.
 - The LAST sentence is exactly: மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.
 - No private individuals' names, no source names.
+- OWN WORDS (owner 17 Nov: the facts are free to report, the paper's sentences are its copyright): take the FACTS from the article - every name, number, place, date and term exactly - but write every sentence yourself, shorter and in spoken order. Never copy or translate a sentence of the article word for word (a draft that does is sent back). Power-cut area lists, dates and times stay exactly as published.
 - NAME THE PLACE WHERE IT HAPPENED (owner 17 Nov: viewers ask "which shop, where?" - a reel reaches people only when it tells the real, full truth): a shop, hotel, restaurant, company, factory, mill, school, college, hospital, temple, hall, theatre or mall that the article names is written BY ITS NAME in the caption, the slides and the reel_script (e.g. the shop that caught fire, the hotel that was sealed, the company that cheated people). Only a name the article itself gives - never guess, shorten or complete a name. Private persons, victims, minors and accused persons stay unnamed as above.
 
 caption rules

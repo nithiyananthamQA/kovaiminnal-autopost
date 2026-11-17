@@ -163,7 +163,54 @@ def grounding_problems(d, article):
         miss = [w for w in words if _stem(w) not in stems]
         ratio = 1 - len(miss) / len(words)
         if ratio < 0.5:
-            out.append(f"not grounded: only {int(ratio*100)}% of the words come from the article (e.g. {', '.join(miss[:5])}); use the article's own words and facts")
+            out.append(f"not grounded: only {int(ratio*100)}% of the words come from the article (e.g. {', '.join(miss[:5])}); use the article's facts and terms (in your own sentences)")
+    return out
+
+
+# owner 17 Nov (ours): "is it legal to take news from Dinamalar?" - the FACTS are free to report, the paper's WORDS are its copyright.
+# Measured 17 Nov on 16 posted reels: most re-used 11-20 article words in a row (whole sentences), RN-55's caption 53 % of its
+# 6-word phrases. A draft that copies a long sentence word for word, or most of its text, is sent back to be written in our own
+# sentences. Power-cut notices are left out: their area lists, dates and times must stay exactly as published.
+COPY_RUN, COPY_SHARE, COPY_N = 15, 0.40, 6
+PC_WORDS = ("மின்தடை", "மின் தடை", "மின்நிறுத்த", "மின் நிறுத்த", "மின்விநியோகம் நிறுத்த", "மின் விநியோகம் நிறுத்த")
+
+
+def _all_words(t):
+    return re.findall(r"[\u0B80-\u0BFF]+", t or "")
+
+
+def longest_copied_run(words, art_words):
+    """the longest run of consecutive words of the draft that the article has in the same order"""
+    hay = " " + " ".join(art_words) + " "
+    best = 0
+    for i in range(len(words)):
+        k = best + 1
+        while i + k <= len(words) and (" " + " ".join(words[i:i + k]) + " ") in hay:
+            best = k
+            k += 1
+    return best
+
+
+def copied_share(words, art_words, n=COPY_N):
+    grams = lambda x: {tuple(x[i:i + n]) for i in range(len(x) - n + 1)}      # noqa: E731
+    g = grams(words)
+    return len(g & grams(art_words)) / len(g) if g else 0.0
+
+
+def copy_problems(d, article):
+    head = str(d.get("tamil_headline") or "")
+    if any(w in head for w in PC_WORDS):
+        return []
+    aw = _all_words(article)
+    cap = str(d.get("caption") or "").split("#")[0]
+    body = cap.split("📰 முழு விவரம்:")[-1].split("📍")[0]
+    out = []
+    for name, text in (("reel_script", str(d.get("reel_script") or "").replace(LAST, "")), ("caption", body)):
+        w = _all_words(text)
+        run, share = longest_copied_run(w, aw), copied_share(w, aw)
+        if run >= COPY_RUN or (len(w) >= 30 and share >= COPY_SHARE):
+            out.append(f"{name} copies the article word for word ({run} words in a row, {int(share * 100)}% of its phrases): keep every "
+                       "fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence")
     return out
 
 
@@ -413,6 +460,7 @@ def validate(d, article, today_digits=("2026",)):
     if stray:
         p.append("numbers not found in the article: " + ", ".join(stray[:6]))
     p += grounding_problems(d, article)
+    p += copy_problems(d, article)
     p += place_problems(d)
     blob_all = " ".join([d.get("tamil_headline", ""), rs, cap, json.dumps(sp, ensure_ascii=False)])
     foreign = sorted(set(re.findall(r"[\u0900-\u0B7F\u0C00-\u0D7F\u3040-\u30FF\u3400-\u9FFF\uAC00-\uD7AF]", blob_all)))

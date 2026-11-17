@@ -78,6 +78,13 @@ e-mail tag KOVAIMINNAL. Never "360".
   (the shop that caught fire, the hotel that was sealed). The reference's writer already names businesses most of the time (its
   rules only forbid private persons, victims, minors and accused); ours now says it outright. Private persons stay unnamed.
 
+## 4b. Owner's choice: our own sentences (owner 17 Nov: "is it legal to take news from Dinamalar? ... fix the gap")
+
+- rules.md OWN WORDS + validate.copy_problems: the facts, names and numbers come from the article, the sentences are ours. A
+  reel_script or caption that copies 15+ article words in a row, or 40 %+ of its 6-word phrases, is sent back to the writer.
+  Power-cut notices are left out (area lists stay as published). Measured 17 Nov: most posted reels re-used 11-20 words in a
+  row. The reference has no such check. The reel's top strip still credits the source by name (📰 தினமலர்), no logo, no link.
+
 ## 5. Correctness fixes of ours (owner 17 Nov: "you kept ours better" - the friend is told to fix his copy)
 
 - Tamil proofread never doubles words (poster/tamilcheck.py): a full stop no longer hides a repeat, and a "fix" that only adds
