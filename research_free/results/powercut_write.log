@@ -2116,3 +2116,176 @@ filed: 1 Coimbatore district stories (target 1), reels only
 queue: 0 news waiting to be written
 All News sheet: {"ok":true,"added":1,"updated":0} 
 stories: 1
+10:28:29 Instagram token: the shared minnal-bot token (Minnal bridge)
+writing [N]: நாளை 18.11.26 கோவையில் இங்கெல்லாம் மின் தடை ஏற்படும் - The C
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, plea
+dead for this round: gemini/gemini-3-flash-preview
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high 
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please ch
+switching away from gemma/gemma-4-26b-a4b-it for 10 min
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high dema
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check 
+switching away from gemma/gemma-4-31b-it for 10 min
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {"error":{"message":"Failed to validate JSON. Please adjust your prompt. See 'failed_gener
+ok groq/qwen/qwen3.8-27b (4s)
+attempt 1 groq/qwen/qwen3.8-27b: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): பீளமேடு ('காளப்பட்டி மற்றும் விளாங்குறிச்சி துணை மின் நிலையங்கள் : காள'); சரவணம்பட்டி ('கீரணத்தம், சகாரா மற்றும் அலைன்ஸ்மால் துணை மின் நிலையம் : கீர')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+switching away from groq/qwen/qwen3.8-27b for 10 min
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 413: {"error":{"message":"Request too large for model `openai/gpt-oss-120b` in organization `or
+fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)
+poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (36s)
+attempt 2 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 3 problems
+  missing key: reel_script
+  missing key: caption
+  missing key: scenes
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (37s)
+attempt 3 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 6 problems
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  stray Tamil sign 'ா' after 'ா' in «கா, ஷாா்ப்»
+  stray Tamil sign '்' after 'ா' in «ா, ஷாா்ப் »
+  stray Tamil sign 'ா' after 'ா' in «கா, ஷாா்ப்»
+  stray Tamil sign '்' after 'ா' in «ா, ஷாா்ப் »
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('கோவை மாநகரில் நாளை (18.11.26/ புதன்) மாதாந்திர பராமரிப்பு பண'); 26 ('கோவை மாநகரில் நாளை (18.11.26/ புதன்) மாதாந்திர பராமரிப்பு பண'); 11 ('நாளை 18.11.26 கோவையில் இங்கெல்லாம் மின் தடை ஏற்படும் - The C'); 26 ('நாளை 18.11.26 கோவையில் இங்கெல்லாம் மின் தடை ஏற்படும் - The C')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (35s)
+attempt 4 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  numbers not found in the article: 7
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (38s)
+attempt 5 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 2 problems
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('கோவை மாநகரில் நாளை (18.11.26/ புதன்) மாதாந்திர பராமரிப்பு பண'); 26 ('கோவை மாநகரில் நாளை (18.11.26/ புதன்) மாதாந்திர பராமரிப்பு பண'); 11 ('நாளை 18.11.26 கோவையில் இங்கெல்லாம் மின் தடை ஏற்படும் - The C'); 26 ('நாளை 18.11.26 கோவையில் இங்கெல்லாம் மின் தடை ஏற்படும் - The C')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (38s)
+attempt 6 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 7 problems
+  numbers not found in the article: 7
+  not grounded: location 'நகரம்' is not in the article
+  stray Tamil sign 'ா' after 'ா' in «தி, ஷாா்ப்»
+  stray Tamil sign '்' after 'ா' in «ி, ஷாா்ப் »
+  stray Tamil sign 'ா' after 'ா' in «தி, ஷாா்ப்»
+  stray Tamil sign '்' after 'ா' in «ி, ஷாா்ப் »
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('கோவை மாநகரில் நாளை (18.11.26/ புதன்) மாதாந்திர பராமரிப்பு பண'); 26 ('கோவை மாநகரில் நாளை (18.11.26/ புதன்) மாதாந்திர பராமரிப்பு பண'); 11 ('நாளை 18.11.26 கோவையில் இங்கெல்லாம் மின் தடை ஏற்படும் - The C'); 26 ('நாளை 18.11.26 கோவையில் இங்கெல்லாம் மின் தடை ஏற்படும் - The C')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (42s)
+attempt 7 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (37s)
+attempt 8 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 6 problems
+  numbers not found in the article: 7
+  stray Tamil sign 'ா' after 'ா' in «ட், ஷாா்ப்»
+  stray Tamil sign '்' after 'ா' in «், ஷாா்ப் »
+  stray Tamil sign 'ா' after 'ா' in «ட், ஷாா்ப்»
+  stray Tamil sign '்' after 'ா' in «், ஷாா்ப் »
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('கோவை மாநகரில் நாளை (18.11.26/ புதன்) மாதாந்திர பராமரிப்பு பண'); 26 ('கோவை மாநகரில் நாளை (18.11.26/ புதன்) மாதாந்திர பராமரிப்பு பண')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (38s)
+attempt 9 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 3 problems
+  numbers not found in the article: 7
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('கோவை மாநகரில் நாளை (18.11.26/ புதன்) மாதாந்திர பராமரிப்பு பண'); 26 ('கோவை மாநகரில் நாளை (18.11.26/ புதன்) மாதாந்திர பராமரிப்பு பண'); 11 ('நாளை 18.11.26 கோவையில் இங்கெல்லாம் மின் தடை ஏற்படும் - The C'); 26 ('நாளை 18.11.26 கோவையில் இங்கெல்லாம் மின் தடை ஏற்படும் - The C')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (36s)
+attempt 10 cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: 1 problems
+  numbers not found in the article: 7
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('கோவை மாநகரில் நாளை (18.11.26/ புதன்) மாதாந்திர பராமரிப்பு பண'); 26 ('கோவை மாநகரில் நாளை (18.11.26/ புதன்) மாதாந்திர பராமரிப்பு பண'); 11 ('நாளை 18.11.26 கோவையில் இங்கெல்லாம் மின் தடை ஏற்படும் - The C'); 26 ('நாளை 18.11.26 கோவையில் இங்கெல்லாம் மின் தடை ஏற்படும் - The C')
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: Unterminated string starting at: line 1 column 19849 (char 19848)
+poor answer - skipped for 30 min: cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct
+fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high 
+fail gemma/gemma-4-26b-a4b-it: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=90)
+poor answer - skipped for 30 min: gemma/gemma-4-26b-a4b-it
+fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high dema
+fail gemma/gemma-4-31b-it: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=90)
+poor answer - skipped for 30 min: gemma/gemma-4-31b-it
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {"error":{"message":"Failed to validate JSON. Please adjust your prompt. See 'failed_gener
+ok groq/qwen/qwen3.8-27b (0s)
+factcheck by groq/qwen/qwen3.8-27b: 0 problems
+claude rewrite 2 anthropic/claude-haiku-5-5: 0 problems
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok groq/qwen/qwen3.8-27b (4s)
+proofread rejected (3 problems)
+  missing key: reel_script
+  missing key: caption
+  missing key: scenes
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+ok groq/openai/gpt-oss-120b (3s)
+real photo step skipped for 'Power cut tomorrow (18 Nov) in Coimbator': real photos switched off
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+image match: True The photo depicts electrical utility workers conducting maintenance on a power pole near a substation, which matches a s
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Power cut tomorrow (18 Nov) in Coimbator'
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261117-1043","first":"RN-78"}
+posting job started at once
+earlier stories still waiting for images: []
+instagram check: 50 recent posts read from the page
+pick round: only the picked links are written (research_free/pick.py)
+manual link added: https://covaimail.com/power-shutdown-scheduled-to-take-place-in-coimbatore-on-18th-of-november-2026
+candidate filter: collected=1
+to write: 1 Coimbatore district candidates (max 1 stories)
+round: top 1 of 1 candidates
+candidates waiting: 1 Coimbatore; time left 39 min
+try (N) manual=True: https://covaimail.com/power-shutdown-scheduled-to-take-place
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})
+posting job started at once
+candidate loop ended: left 0, tried={'N': 1}, done={'N': 1}, time left 24 min
+filed: 1 Coimbatore district stories (target 1), reels only
+queue: 0 news waiting to be written
+All News sheet: {"ok":true,"added":1,"updated":0} 
+stories: 1
