@@ -265,7 +265,8 @@
    "category": "விலை",
    "score": 6.67,
    "power_cut": false,
-   "listed_at": "2026-11-17T21:00:58.873619+05:30"
+   "listed_at": "2026-11-17T21:00:58.873619+05:30",
+   "picked_at": "2026-11-18T01:03:03.067957+05:30"
   },
   "Cdc1b30c": {
    "id": "Cdc1b30c",
@@ -277,7 +278,8 @@
    "category": "பொது",
    "score": 6.0,
    "power_cut": false,
-   "listed_at": "2026-11-17T21:00:58.873619+05:30"
+   "listed_at": "2026-11-17T21:00:58.873619+05:30",
+   "picked_at": "2026-11-18T01:03:03.067953+05:30"
   },
   "C52380e1": {
    "id": "C52380e1",
@@ -1431,8 +1433,18 @@
    ],
    "sent": false,
    "deadline": "2026-11-18T02:01:00.739690+05:30",
-   "decided": null,
-   "written": []
+   "decided": {
+    "how": "automatic: top 2 of 26 by insights",
+    "ids": [
+     "Cdc1b30c",
+     "Ca556e5e"
+    ],
+    "at": "2026-11-18T01:03:03.067941+05:30"
+   },
+   "written": [
+    "Ca556e5e",
+    "Cdc1b30c"
+   ]
   }
  },
  "retry": {}
