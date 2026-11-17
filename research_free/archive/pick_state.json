@@ -62,7 +62,8 @@
    "score": 6.88,
    "power_cut": false,
    "listed_at": "2026-11-17T17:02:15.818480+05:30",
-   "picked_at": "2026-11-18T05:03:58.082542+05:30"
+   "picked_at": "2026-11-18T05:03:58.082542+05:30",
+   "refused": "not filed: all free models failed: no usable answer from the models"
   },
   "C51a26af": {
    "id": "C51a26af",
@@ -267,7 +268,8 @@
    "score": 11.09,
    "power_cut": false,
    "listed_at": "2026-11-18T05:01:05.285331+05:30",
-   "picked_at": "2026-11-18T05:03:58.082527+05:30"
+   "picked_at": "2026-11-18T05:03:58.082527+05:30",
+   "refused": "not filed: all free models failed: no usable answer from the models"
   },
   "C2a260ce": {
    "id": "C2a260ce",
@@ -283,7 +285,8 @@
     "https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/17/%E0%AE%B0%E0%AF%82316-%E0%AE%95%E0%AF%8B%E0%AE%9F%E0%AE%BF-%E0%AE%AE%E0%AE%A4%E0%AE%BF%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AF%80%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF%E0%AE%B2%E0%AF%8D-%E0%AE%B5%E0%AE%B3%E0%AE%BE%E0%AF%8D%E0%AE%9A%E0%AF%8D%E0%AE%9A%E0%AE%BF%E0%AE%A4%E0%AF%8D-%E0%AE%A4%E0%AE%BF%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%AA%E0%AF%8D-%E0%AE%AA%E0%AE%A3%E0%AE%BF%E0%AE%95%E0%AE%B3%E0%AF%8D"
    ],
    "listed_at": "2026-11-18T05:01:05.285331+05:30",
-   "picked_at": "2026-11-18T05:03:58.082532+05:30"
+   "picked_at": "2026-11-18T05:03:58.082532+05:30",
+   "refused": "not filed: bad draft: 'scenes'"
   },
   "Cd73d1c6": {
    "id": "Cd73d1c6",
@@ -296,7 +299,8 @@
    "score": 8.0,
    "power_cut": false,
    "listed_at": "2026-11-18T05:01:05.285331+05:30",
-   "picked_at": "2026-11-18T05:03:58.082535+05:30"
+   "picked_at": "2026-11-18T05:03:58.082535+05:30",
+   "refused": "not filed: all free models failed: no usable answer from the models"
   },
   "Ca9e380b": {
    "id": "Ca9e380b",
@@ -312,7 +316,8 @@
     "https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/17/%E0%AE%B5%E0%AF%87%E0%AE%B3%E0%AE%BE%E0%AE%A3%E0%AF%8D-%E0%AE%AA%E0%AE%B2%E0%AF%8D%E0%AE%95%E0%AE%B2%E0%AF%88%E0%AE%AF%E0%AE%BF%E0%AE%B2%E0%AF%8D-%E0%AE%A8%E0%AF%86%E0%AE%B2%E0%AF%8D-%E0%AE%A8%E0%AE%9F%E0%AE%B5%E0%AF%81-%E0%AE%B5%E0%AE%BF%E0%AE%B4%E0%AE%BE"
    ],
    "listed_at": "2026-11-18T05:01:05.285331+05:30",
-   "picked_at": "2026-11-18T05:03:58.082538+05:30"
+   "picked_at": "2026-11-18T05:03:58.082538+05:30",
+   "posted": true
   },
   "Cf3546ff": {
    "id": "Cf3546ff",
@@ -1430,7 +1435,13 @@
     "Cb1d0347",
     "Cd73d1c6",
     "Cedd370e"
-   ]
+   ],
+   "refused": {
+    "Cb1d0347": "not filed: all free models failed: no usable answer from the models",
+    "Cd73d1c6": "not filed: all free models failed: no usable answer from the models",
+    "C2a260ce": "not filed: bad draft: 'scenes'",
+    "Cedd370e": "not filed: all free models failed: no usable answer from the models"
+   }
   }
  },
  "retry": {}
