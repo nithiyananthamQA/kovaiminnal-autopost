@@ -2549,3 +2549,14 @@ class OwnWords17Nov(unittest.TestCase):
     def test_writer_rule(self):
         rules = (Path(__file__).resolve().parent.parent / "research_free" / "rules.md").read_text(encoding="utf-8")
         self.assertIn("OWN WORDS", rules)
+
+
+class NoPrivateNames17Nov(unittest.TestCase):
+    """owner 17 Nov ("be careful - he also faced some issue"): the fact-check reports a named accused / victim / minor / private person"""
+    def test_factcheck_prompt(self):
+        src = (Path(__file__).resolve().parent.parent / "research_free" / "run.py").read_text(encoding="utf-8")
+        i = src.index("CHECK = ")
+        check = src[i:src.index('"""', src.index('"""', i) + 3)]
+        self.assertIn("PERSONAL NAME of an accused or arrested person, a victim, a minor", check)
+        self.assertIn("shops and companies are fine", check)
+

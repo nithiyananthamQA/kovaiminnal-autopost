@@ -103,9 +103,11 @@ def write(art, today):
     return proofread(best, art)
 
 
+# owner 17 Nov (ours): Chennai's first reel from its own repo named an accused ("ஓட்டுநர் சரவணனுக்கு ...") although the writer rule
+# forbids it - the independent fact-check now reports any private person's name, so the draft is rewritten.
 CHECK = """You are a strict fact-checker for a Tamil local-news page. You get an ARTICLE and a DRAFT (JSON with Tamil text).
 Check EVERY claim in the draft's tamil_headline, reel_script, slides_spec and caption against the ARTICLE.
-Report a problem for each of these: a place, person role, number, amount, date, time or cause that is NOT in the article or differs from it; an invented detail; a sentence that is ungrammatical or has no clear meaning in Tamil; two different facts mixed into one sentence; an important fact of the article (who did what, where, result such as an arrest) that is missing from the reel_script.
+Report a problem for each of these: a place, person role, number, amount, date, time or cause that is NOT in the article or differs from it; an invented detail; a sentence that is ungrammatical or has no clear meaning in Tamil; two different facts mixed into one sentence; an important fact of the article (who did what, where, result such as an arrest) that is missing from the reel_script; a PERSONAL NAME of an accused or arrested person, a victim, a minor or any other private person anywhere in the draft (headline, reel_script, slides or caption) - they must be described by their role only (e.g. ஓட்டுநர், 45 வயது நபர்); names of officials, politicians, public figures, shops and companies are fine.
 NOT problems: the caption footer (the 📍 place | posting-date line, the Follow line, hashtags), the fixed closing sentence of reel_script that tells viewers to follow the "கோவை மின்னல்" page, and wording choices such as மூதாட்டி for an elderly woman. The posting date is today's date, not a claim from the article.
 Return ONLY JSON: {"ok": true or false, "problems": ["short English description of each problem"]}. ok is true ONLY when the problems list is empty."""
 

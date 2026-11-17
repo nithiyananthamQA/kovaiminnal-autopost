@@ -81,6 +81,10 @@ e-mail tag KOVAIMINNAL. Never "360".
   (the shop that caught fire, the hotel that was sealed). The reference's writer already names businesses most of the time (its
   rules only forbid private persons, victims, minors and accused); ours now says it outright. Private persons stay unnamed.
 
+- research_free/run.py CHECK (the independent fact-check of every draft) also reports a personal name of an accused, a victim,
+  a minor or another private person (17 Nov: Chennai's first reel from its own repo named an accused driver) - the draft is
+  rewritten. The reference's writer rule forbids it too, but nothing checks it there.
+
 ## 4b. Owner's choice: our own sentences (owner 17 Nov: "is it legal to take news from Dinamalar? ... fix the gap")
 
 - rules.md OWN WORDS + validate.copy_problems: the facts, names and numbers come from the article, the sentences are ours. A
