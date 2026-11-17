@@ -43,7 +43,8 @@ PAGES = {      # owner 14 Nov: every page, each with its own logo and handle; th
     "rasipuram": {"town": "இராசிபுரம்", "name1": "இராசிபுரம்", "handle": "rasipuram.360", "tag": "#Rasipuram360", "brand_px": 50},
     "coimbatore": {"town": "கோவை", "name1": "கோவை", "brand2": " மின்னல்", "handle": "kovai_minnal", "tag": "#KovaiMinnal", "brand_px": 40,
                    "design": "minnal", "brand_en": "KOVAI MINNAL", "city": "coimbatore",      # city: its own rate pages (owner 17 Nov)
-                   "reel": True},      # owner 17 Nov (ours): the same rate also as a reel with our music + sound effects (gold_reel.py)
+                   "reel": True, "post": False},      # owner 17 Nov (ours): "only one post thats reel" - the rate as a reel with our
+                                                      # music + sound effects (gold_reel.py), no image carousel
     "salem": {"town": "சேலம்", "name1": "சேலம்", "handle": "salem360.official", "tag": "#Salem360", "brand_px": 54},
     "erode": {"town": "ஈரோடு", "name1": "ஈரோடு", "handle": "erode360.official", "tag": "#Erode360", "brand_px": 54},
     "tirupur": {"town": "திருப்பூர்", "name1": "திருப்பூர்", "handle": "tiruppur360.official", "tag": "#Tiruppur360", "brand_px": 52},
@@ -283,7 +284,8 @@ def main():
             except Exception as e:
                 log(f"{pg}: no Instagram token - skipped ({str(e)[:120]})")
         pages = [pg for pg in pages if pg in tokens]
-    kinds = {pg: ["post"] + (["reel"] if PAGES[pg].get("reel") and REEL_ON else []) for pg in pages}
+    kinds = {pg: (["post"] if PAGES[pg].get("post", True) else []) + (["reel"] if PAGES[pg].get("reel") and REEL_ON else [])
+             for pg in pages}
     need = {pg: [k for k in kinds[pg] if DRY or not already_posted(pg, day, tokens.get(pg), k)] for pg in pages}
     todo = [pg for pg in pages if need[pg]]
     for pg in pages:
@@ -322,7 +324,7 @@ def main():
         out = ROOT / "out" / "goldrate" / pg
         if "post" in need[pg]:
             post_carousel(pg, p, day, r, out, tokens.get(pg))
-        if "reel" in need[pg]:      # after the carousel (the reference's post comes first; the reel is ours on top)
+        if "reel" in need[pg]:      # after the carousel when a page has both (Kovai: the reel only)
             post_reel(pg, p, day, r, out, tokens.get(pg))
     return 0
 

@@ -54,9 +54,10 @@ e-mail tag KOVAIMINNAL. Never "360".
 ## 3c. Owner's choice: the rate also as a REEL (owner 17 Nov: "we need to do this also as a reel with our best sound effect")
 
 - goldrate/gold_reel.py: minnal_render.reel_page (1080x1920, inside the reel safe area of reel5.SAFE) -> frames -> H.264 with our
-  music bed (reel/assets/music) and our own synthesized sound effects (hit / whoosh / tick / chime / riser). No voice. Posted after
-  the carousel; carousel and reel are tracked apart (state posted_<page>.json / posted_reel_<page>.json). The reference posts the
-  carousel only. GOLD_REEL=0 switches the reel off.
+  music bed (reel/assets/music) and our own synthesized sound effects (hit / whoosh / tick / chime / riser). No voice.
+- Owner 17 Nov "only one post thats reel": our pages post the REEL ONLY (gold_daily.PAGES "post": False); the reference posts
+  the image carousel only. The slide design (minnal_render.page) stays in the code, unused. A page with both posts the carousel
+  first, then the reel, tracked apart (state posted_<page>.json / posted_reel_<page>.json). GOLD_REEL=0 switches the reel off.
 - Posting chain (reference f43a08d / eac718e): the next run it starts carries timer=true, so our LIVE file still stops posting.
 - Scheduler: GitHub's own timer rarely starts our jobs, so tools/keeper.py (keeper.yml) starts each workflow at its own cron times.
   The schedules themselves are the reference's.
@@ -67,7 +68,7 @@ e-mail tag KOVAIMINNAL. Never "360".
 
 ## 4. Held until the owner says yes
 
-- Gold & silver rate carousel (reference bc0eaec): code ported and rebranded, schedule HELD (show-first rule).
+- Gold & silver rate (reference bc0eaec carousel; ours: reel only): code ported and rebranded, schedule HELD (show-first rule).
   Samples (our design, 17 Nov): ~/Videos/kovai-minnal/goldrate-POST-gold-17nov.jpg, goldrate-POST-silver-17nov.jpg,
   goldrate-REEL-sample-17nov.mp4 (13.8 s, music + effects, no voice). To start it: put the three cron lines back in .github/workflows/goldrate.yml
   and add `"goldrate.yml": {"dry": "0", "date": ""}` to tools/keeper.py LIVE_INPUTS.

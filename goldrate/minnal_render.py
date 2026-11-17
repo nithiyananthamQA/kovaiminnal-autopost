@@ -219,18 +219,22 @@ def render(p, r, outdir, log=print):
 # ---------------------------------------------------------------- the reel, 1080 x 1920
 # One metal's screen, seconds after its lightning strike: key -> (start, length, effect). Everything on the page (and every sound
 # cue) comes from this one table, so a cue always sits on something that happens on screen.
-SCENE = 5.8                                             # one metal's screen
-END = 2.2                                               # the follow card
-STEPS = {"logo": (0.05, 0.35, "pop"), "brand": (0.12, 0.35, "fade"), "date": (0.22, 0.35, "fade"),
-         "kick": (0.30, 0.35, "fade"), "title": (0.40, 0.45, "wipe"), "emb": (0.62, 0.40, "pop"),
-         "hero": (0.90, 0.40, "pop"), "count": (1.05, 0.95, "count"), "chip": (2.10, 0.35, "pop"), "vs": (2.25, 0.30, "fade"),
-         "rows": (2.50, 0.30, "fade"), "row0": (2.55, 0.30, "fade"), "row1": (2.90, 0.30, "fade"), "row2": (3.25, 0.30, "fade"),
-         "week": (3.65, 0.35, "pop"), "hl": (4.50, 0.30, "fade"), "tip": (4.90, 0.40, "pop"), "src": (5.10, 0.30, "fade")}
-BAR0, BAR_STEP, BAR_LEN = 3.80, 0.09, 0.40             # the week's bars grow one after another; today's lands last
-COVER = 5.5                                            # the gold screen is fully built here (reel cover)
-CUES = [(0.0, "hit"), (0.40, "whoosh"), (1.05, "tick"), (1.35, "tick"), (1.65, "tick"), (2.0, "chime"), (2.55, "tick"),
-        (2.90, "tick"), (3.25, "tick"), (3.80, "whoosh"), (4.90, "chime"), (5.30, "riser")]
-END_STEPS = {"elogo": (0.10, 0.45, "pop"), "ename": (0.40, 0.35, "fade"), "esub": (0.60, 0.35, "fade"), "efollow": (0.85, 0.40, "pop")}
+# owner 17 Nov: "speed up the animation - if the user sees empty they will scroll": the reel opens ALREADY showing the brand, the
+# title and the price (FIRST: shown from frame 0 on the first screen), every block is in by ~2 s, then ~3 s to read.
+# owner 17 Nov: "make the reel 10 seconds only" - gold 4.3 s + silver 4.3 s + follow card 1.4 s (no silver: 5.7 s)
+SCENE = 4.3                                             # one metal's screen
+END = 1.4                                               # the follow card
+STEPS = {"logo": (0.00, 0.20, "pop"), "brand": (0.00, 0.20, "fade"), "date": (0.04, 0.20, "fade"),
+         "kick": (0.04, 0.20, "fade"), "title": (0.04, 0.25, "wipe"), "emb": (0.12, 0.25, "pop"),
+         "hero": (0.06, 0.22, "pop"), "count": (0.12, 0.48, "count"), "chip": (0.62, 0.20, "pop"), "vs": (0.66, 0.20, "fade"),
+         "rows": (0.70, 0.20, "fade"), "row0": (0.72, 0.20, "fade"), "row1": (0.84, 0.20, "fade"), "row2": (0.96, 0.20, "fade"),
+         "week": (1.05, 0.25, "pop"), "hl": (1.65, 0.20, "fade"), "tip": (1.72, 0.25, "pop"), "src": (1.85, 0.20, "fade")}
+FIRST = ("logo", "brand", "date", "kick", "title", "emb", "hero", "count")      # already on screen at frame 0 (today's price, no count-up)
+BAR0, BAR_STEP, BAR_LEN = 1.10, 0.05, 0.25             # the week's bars grow one after another; today's lands last
+COVER = 3.4                                            # the gold screen is fully built here (reel cover)
+CUES = [(0.0, "hit"), (0.12, "whoosh"), (0.25, "tick"), (0.40, "tick"), (0.55, "tick"), (0.62, "chime"), (0.72, "tick"),
+        (0.84, "tick"), (0.96, "tick"), (1.10, "whoosh"), (1.72, "chime"), (SCENE - 0.1, "riser")]
+END_STEPS = {"elogo": (0.05, 0.30, "pop"), "ename": (0.18, 0.25, "fade"), "esub": (0.28, 0.25, "fade"), "efollow": (0.40, 0.30, "pop")}
 
 REEL_CSS = f"""
 body.reel{{height:1920px}}
@@ -282,7 +286,7 @@ window.seek=t=>{
   const on=t>=SC[i][0]&&(t<SC[i][1]||i==scenes.length-1), u=t-SC[i][0];
   s.style.visibility=on?'visible':'hidden';
   const m=s.querySelector('.metal'); if(m) m.style.transform='translateX('+(-30+u*8).toFixed(2)+'px)';
-  const sh=s.querySelector('.sheen'); if(sh){const q=cl((u-2.2)/1.1);      // one glint across the plate, done long before the cover frame
+  const sh=s.querySelector('.sheen'); if(sh){const q=cl((u-2.1)/0.9);      // one glint across the plate, done long before the cover frame
    sh.style.transform='translateX('+(-400+q*1700).toFixed(1)+'px) skewX(-18deg)';}
  });
  for(const o of els){
@@ -296,8 +300,8 @@ window.seek=t=>{
  }
  let f=0, b=0;      // the lightning strike: a white frame, a flicker, the bolt stays a moment, the glow dies away
  for(const ft of FL){const d=t-ft; if(d>=0&&d<0.46){
-  f=Math.max(f, d<0.10?1-d/0.10*0.7 : d<0.16?0.3+(d-0.10)/0.06*0.3 : 0.6*Math.pow(1-(d-0.16)/0.30,2));
-  b=Math.max(b, d<0.20?1:d<0.36?1-(d-0.20)/0.16:0);}}
+  if(ft>0) f=Math.max(f, d<0.10?1-d/0.10*0.7 : d<0.16?0.3+(d-0.10)/0.06*0.3 : 0.6*Math.pow(1-(d-0.16)/0.30,2));
+  if(ft>0) b=Math.max(b, d<0.20?1:d<0.36?1-(d-0.20)/0.16:0);}}      // the bolt never covers the opening screen
  flash.style.opacity=f.toFixed(3); flash.style.visibility=f>0?'visible':'hidden';
  strike.style.opacity=b.toFixed(3); strike.style.visibility=b>0?'visible':'hidden';
 };
@@ -317,6 +321,8 @@ def reel_timeline(r):
         for t, k in CUES:
             if k == "whoosh" and t == BAR0 and not n:
                 continue
+            if i == 0 and k == "tick" and t < STEPS["chip"][0]:      # the first price is shown at once: no counting ticks
+                continue
             cues.append({"t": round(win[i][0] + t, 2), "kind": k})
         if n:      # today's bar lands
             cues.append({"t": round(win[i][0] + BAR0 + (n - 1) * BAR_STEP + BAR_LEN, 2), "kind": "tick"})
@@ -335,6 +341,8 @@ def reel_page(p, r):
                 st = (t + BAR_LEN - 0.1, 0.25, "fade") if k.startswith("barv") else (t, BAR_LEN, "grow")
             else:
                 st = steps.get(k)
+                if st and s0 == 0 and k in FIRST:
+                    st = (-1.0, st[1], st[2])      # the reel's first frame already shows it
             return f' data-a="{s0 + st[0]:.2f},{st[1]},{st[2]}"' if st else ""
         return a
 
