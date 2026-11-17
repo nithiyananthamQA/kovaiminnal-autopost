@@ -28,6 +28,53 @@ IST = timezone(timedelta(hours=5, minutes=30))
 PAGE = {"chennai": {"fb_page_id": "1450975134763291", "repo": "nithiyananthamQA/chennaiminnal-autopost", "folder": "chennaiminnal",
                     "bot": "chennaiminnal-bot"}}
 
+# owner 18 Nov ("chennai is the most populated city ... add even more small areas", suburbs: yes): the copy had only "சென்னை" as a
+# place word, so the page could not tell a Chennai area story from a state story datelined Chennai, and every pin said "சென்னை".
+# Chennai city + its small areas + the suburbs people call Chennai (Tambaram, Avadi, Pallavaram, Chromepet, Poonamallee ...).
+# Names that are also towns elsewhere (திருமங்கலம், கே.கே.நகர், எம்.ஜி.ஆர். நகர், அசோக் நகர், பாடி, அக்கரை) are left out.
+AREAS = {"chennai": {
+    "ta": ["சென்னை", "மெட்ராஸ்", "எழும்பூர்", "சென்ட்ரல்", "பாரிமுனை", "பிராட்வே", "ஜார்ஜ் டவுன்", "மண்ணடி", "சவுகார்பேட்டை", "சௌகார்பேட்டை",
+           "வேப்பேரி", "புரசைவாக்கம்", "கீழ்ப்பாக்கம்", "அயனாவரம்", "பெரம்பூர்", "ஓட்டேரி", "புளியந்தோப்பு", "வியாசர்பாடி", "கொடுங்கையூர்",
+           "கொருக்குப்பேட்டை", "தண்டையார்பேட்டை", "வண்ணாரப்பேட்டை", "ராயபுரம்", "காசிமேடு", "திருவொற்றியூர்", "எண்ணூர்", "மணலி", "மாதவரம்",
+           "புழல்", "செங்குன்றம்", "ரெட்ஹில்ஸ்", "மூலக்கடை", "கொளத்தூர்", "வில்லிவாக்கம்", "அண்ணா நகர்", "அமைந்தகரை", "அரும்பாக்கம்",
+           "கோயம்பேடு", "முகப்பேர்", "அம்பத்தூர்", "அயப்பாக்கம்", "திருமுல்லைவாயல்", "ஆவடி", "பட்டாபிராம்", "திருநின்றவூர்", "பூந்தமல்லி",
+           "பூவிருந்தவல்லி", "திருவேற்காடு", "மதுரவாயல்", "வளசரவாக்கம்", "போரூர்", "ராமாபுரம்", "நெற்குன்றம்", "விருகம்பாக்கம்", "சாலிகிராமம்",
+           "வடபழனி", "கோடம்பாக்கம்", "மேற்கு மாம்பலம்", "மாம்பலம்", "தி.நகர்", "தி. நகர்", "தியாகராய நகர்", "சைதாப்பேட்டை", "நந்தனம்",
+           "தேனாம்பேட்டை", "நுங்கம்பாக்கம்", "சூளைமேடு", "ஆயிரம் விளக்கு", "சேப்பாக்கம்", "திருவல்லிக்கேணி", "மயிலாப்பூர்", "மந்தைவெளி",
+           "ராயப்பேட்டை", "ஆழ்வார்பேட்டை", "அடையாறு", "அடையார்", "பெசன்ட் நகர்", "சாந்தோம்", "பட்டினப்பாக்கம்", "கோட்டூர்புரம்", "கிண்டி",
+           "ஈக்காட்டுத்தாங்கல்", "ஆலந்தூர்", "பரங்கிமலை", "நங்கநல்லூர்", "ஆதம்பாக்கம்", "மடிப்பாக்கம்", "வேளச்சேரி", "தரமணி", "திருவான்மியூர்",
+           "கொட்டிவாக்கம்", "பாலவாக்கம்", "நீலாங்கரை", "ஈஞ்சம்பாக்கம்", "உத்தண்டி", "கானத்தூர்", "துரைப்பாக்கம்", "பெருங்குடி", "கந்தன்சாவடி",
+           "சோழிங்கநல்லூர்", "செம்மஞ்சேரி", "நாவலூர்", "சிறுசேரி", "கேளம்பாக்கம்", "பள்ளிக்கரணை", "மேடவாக்கம்", "ஜல்லடியன்பேட்டை",
+           "கோவிலம்பாக்கம்", "கீழ்க்கட்டளை", "மீனம்பாக்கம்", "பல்லாவரம்", "குரோம்பேட்டை", "தாம்பரம்", "சேலையூர்", "சிட்லபாக்கம்", "பம்மல்",
+           "அனகாபுத்தூர்", "பொழிச்சலூர்", "பெருங்களத்தூர்", "வண்டலூர்", "ஊரப்பாக்கம்", "கூடுவாஞ்சேரி", "முடிச்சூர்", "குன்றத்தூர்", "மாங்காடு",
+           "ஐயப்பன்தாங்கல்", "காட்டுப்பாக்கம்", "மெரினா", "கிழக்கு கடற்கரை சாலை", "ஓ.எம்.ஆர்", "அண்ணா சாலை", "ஜி.எஸ்.டி. சாலை", "மீஞ்சூர்",
+           "நந்தம்பாக்கம்", "திருநீர்மலை", "நெசப்பாக்கம்"],
+    # city services: a story about them is Chennai news even without an area name
+    "services": ["சென்னை மாநகராட்சி", "மாநகராட்சி மேயர்", "மெட்ரோ ரயில்", "மெட்ரோ குடிநீர்", "சென்னை குடிநீர் வாரியம்", "மாநகர பேருந்து",
+                 "எம்டிசி", "புறநகர் ரயில்", "மின்சார ரயில்", "சென்னை காவல்", "சென்னை போலீஸ்", "சென்னை விமான நிலைய", "சென்னை துறைமுக",
+                 "சென்னை சூப்பர் கிங்ஸ்", "சேப்பாக்கம் மைதான"],
+    "en": ["Chennai", "Madras", "Egmore", "Parrys", "Broadway", "George Town", "Mannady", "Sowcarpet", "Vepery", "Purasawalkam", "Kilpauk",
+           "Ayanavaram", "Perambur", "Otteri", "Pulianthope", "Vyasarpadi", "Kodungaiyur", "Korukkupet", "Tondiarpet", "Washermanpet",
+           "Royapuram", "Kasimedu", "Tiruvottiyur", "Thiruvottiyur", "Ennore", "Manali", "Madhavaram", "Puzhal", "Redhills", "Red Hills",
+           "Kolathur", "Villivakkam", "Anna Nagar", "Aminjikarai", "Arumbakkam", "Koyambedu", "Mogappair", "Ambattur", "Ayapakkam",
+           "Thirumullaivoyal", "Avadi", "Pattabiram", "Thiruninravur", "Poonamallee", "Thiruverkadu", "Maduravoyal", "Valasaravakkam",
+           "Porur", "Ramapuram", "Nerkundram", "Virugambakkam", "Saligramam", "Vadapalani", "Kodambakkam", "West Mambalam", "T Nagar",
+           "T. Nagar", "Saidapet", "Nandanam", "Teynampet", "Nungambakkam", "Choolaimedu", "Chepauk", "Triplicane", "Mylapore",
+           "Mandaveli", "Royapettah", "Alwarpet", "Adyar", "Besant Nagar", "Santhome", "Pattinapakkam", "Kotturpuram", "Guindy",
+           "Ekkaduthangal", "Alandur", "St Thomas Mount", "Nanganallur", "Adambakkam", "Madipakkam", "Velachery", "Taramani",
+           "Thiruvanmiyur", "Kottivakkam", "Palavakkam", "Neelankarai", "Injambakkam", "Uthandi", "Kanathur", "Thoraipakkam",
+           "Perungudi", "Kandanchavadi", "Sholinganallur", "Semmancheri", "Navalur", "Siruseri", "Kelambakkam", "Pallikaranai",
+           "Medavakkam", "Kovilambakkam", "Keelkattalai", "Meenambakkam", "Pallavaram", "Chromepet", "Tambaram", "Selaiyur",
+           "Chitlapakkam", "Pammal", "Anakaputhur", "Pozhichalur", "Perungalathur", "Vandalur", "Urapakkam", "Guduvanchery",
+           "Mudichur", "Kundrathur", "Mangadu", "Iyyappanthangal", "Kattupakkam", "Marina", "Anna Salai", "Minjur", "Nandambakkam"],
+    # municipal bodies / big suburbs: a power-cut notice filed under Chengalpattu / Tiruvallur passes with one of these in its title
+    "section": ["சென்னை", "தாம்பரம்", "ஆவடி", "பல்லாவரம்", "குரோம்பேட்டை", "பூந்தமல்லி", "அம்பத்தூர்", "திருவொற்றியூர்", "மாதவரம்",
+                "சோழிங்கநல்லூர்", "போரூர்", "வேளச்சேரி", "பெருங்களத்தூர்", "வண்டலூர்", "கூடுவாஞ்சேரி", "குன்றத்தூர்", "மாங்காடு", "செங்குன்றம்"],
+    # state politics datelined Chennai is not Chennai news (21:00 list 17 Nov: TVK / Mekedatu / Thiruparankundram statements)
+    "politics": ["தவெக", "திமுக", "அதிமுக", "பாஜக", "காங்கிரஸ்", "நாம் தமிழர்", "பாமக", "விசிக", "மதிமுக", "தேமுதிக", "சட்டப்பேரவை",
+                 "தலைமைச் செயலக", "ஆளுநர்"],
+}}
+
 SKIP = re.compile(r"^(districts/|apps_script/Code\.districts\.gs$|\.github/workflows/district_powercut\.yml$|tests/test_district|"
                   r"tests/test_districts|tests/test_kovai_timer|tests/test_kovai_unified|research_free/archive/|research_free/results/|poster/insights/history\.json$|poster/fb_posted/|"
                   r"poster/prebuilt/|poster/queue|poster/story_shared\.json$|poster/comments_ignored\.json$|goldrate/state/posted_|"
@@ -62,6 +109,26 @@ class PageValues(unittest.TestCase):
         self.assertTrue(allnews.has_place("{ta}யில் பேருந்து விபத்து"))
         self.assertTrue(allnews.other_district("கோவையில் பேருந்து விபத்து"))
         self.assertTrue(allnews.other_district("செங்கல்பட்டு அருகே விபத்து") or "{key}" == "chengalpattu")
+
+    def test_area_news_in_state_news_out(self):      # owner 18 Nov: Chennai's real headlines (17 Nov list + its best reels)
+        if "{key}" != "chennai":
+            return
+        own = ["சென்னையில் நாளை மிக கனமழை: ஆரஞ்ச் அலர்ட்", "வடபழனியில் பிரியாணி கடையில் தீ விபத்து", "தாம்பரம் அருகே லாரி மோதி இருவர் பலி",
+               "சென்னையில் 1,610 தெருவிளக்குகள் எரியவில்லை", "வேளச்சேரியில் குடிநீர் விநியோகம் நிறுத்தம்", "அரும்பாக்கத்தில் பெண்ணுக்கு தொல்லை",
+               "எண்ணூரில் பறவை மோதி ஆளில்லா விமானம் நொறுங்கியது", "கொருக்குப்பேட்டையில் போதை மாத்திரை விற்ற மூவர் கைது",
+               "திருவான்மியூரில் டிஜிட்டல் மோசடி விழிப்புணர்வு", "அம்பத்தூர் அருகே லாரி மோதி மாணவி பலி", "ஆவடியில் வீட்டில் திருட்டு",
+               "கூடுவாஞ்சேரி அருகே தகராறில் ஒருவர் உயிரிழப்பு", "ஓய்வுபெற்றார் தோனி! சென்னை சூப்பர் கிங்ஸ் ஆலோசகராக நியமனம்!",
+               "மெட்ரோ ரயில் சேவை நாளை மாற்றம்", "குரோம்பேட்டையில் நாளை மின்தடை"]
+        for t in own:
+            self.assertTrue(allnews.has_place(t), t)
+            self.assertFalse(allnews.outside_district(t), t)
+        state = ["“சமூக நீதி என்ற பெயரில் மத அரசியல் செய்கிறதா தவெக அரசு?” - நயினார் நாகேந்திரன்",
+                 "மேகேதாட்டு விவகாரத்தில் தமிழக அரசு ஏன் இன்னும் அனைத்துக்கட்சி கூட்டத்தை கூட்டவில்லை",
+                 "திருச்செந்தூர் சூரசம்ஹார விவகாரம்: எடப்பாடி பழனிசாமி கண்டனம்", "“ரீல்ஸ் மோகத்தில் அமைச்சர்கள் காவல் நிலையங்களில் ஆய்வு செய்வது தவறு”"]
+        for t in state:
+            self.assertTrue(allnews.statewide(t) or allnews.outside_district(t), t)
+        self.assertTrue(allnews.other_district("செங்கல்பட்டு அருகே விபத்து"))      # the far town stays another district
+        self.assertTrue(len(allnews.COIMBATORE_WORDS) > 150)
 
     def test_no_kovai_name_left_in_code(self):
         out = subprocess.run(["grep", "-rIlE", "Kovai Minnal|கோவை மின்னல்|kovai_minnal|KovaiMinnal|kovaiminnal", str(ROOT), "--include=*.py",
@@ -140,15 +207,21 @@ def allnews_values(src, d, PL):
         "DISTRICT_SLUGS": (d["dinamalar"], d["key"]),
         "QUERIES": list(d["queries"]),
         "SITE_QUERIES": [d["ta"]],
-        "COIMBATORE_WORDS": words,
-        "TOWNS": [], "CITY_AREAS": [], "TOWN_ROADS": [], "CITY_ROADS": [], "NOT_PLACE": [],
+        "COIMBATORE_WORDS": list(dict.fromkeys(words + (AREAS.get(d["key"], {}).get("ta") or []) + (AREAS.get(d["key"], {}).get("services") or [])
+                                               + (AREAS.get(d["key"], {}).get("en") or []))),
+        "TOWNS": [], "TOWN_ROADS": [], "CITY_ROADS": [], "NOT_PLACE": [],
+        "CITY_AREAS": [w for w in (AREAS.get(d["key"], {}).get("ta") or []) if w != d["ta"]],
         "OTHER_PLACES": [x["ta"] for x in others.values()] + ["கோவை", "கோயம்புத்தூர்"],
         "OTHER_EN": sorted({w for x in others.values() for w in (x["en"].lower(), x["dinamalar"]) if w.isalpha()} | {"coimbatore", "kovai"}),
-        "SECTION_NAMES": (d["ta"],),
+        "SECTION_NAMES": tuple(AREAS.get(d["key"], {}).get("section") or (d["ta"],)),
         "SITES": {k: v for k, v in ast.literal_eval(ast.get_source_segment(src, next(
             n for n in ast.parse(src).body if isinstance(n, ast.Assign) and any(getattr(x, "id", "") == "SITES" for x in n.targets))).split("=", 1)[1]).items()
                   if "covaimail" not in v},      # Kovai Mail is a Coimbatore paper
     }
+    pol = AREAS.get(d["key"], {}).get("politics") or []
+    if pol:
+        seg = next(n for n in ast.parse(src).body if isinstance(n, ast.Assign) and any(getattr(x, "id", "") == "STATE_NEWS" for x in n.targets))
+        vals["STATE_NEWS"] = list(dict.fromkeys(ast.literal_eval(ast.get_source_segment(src, seg).split("=", 1)[1]) + pol))
     for k, v in vals.items():
         src = set_assign(src, k, v)
     for a, b in branding(d)[:5] + [("Kovai Minnal", d["name_en"]), ("கோவை மின்னல்", d["name_ta"])]:

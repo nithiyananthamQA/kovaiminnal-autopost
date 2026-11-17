@@ -122,6 +122,12 @@ e-mail tag KOVAIMINNAL. Never "360".
 
 ## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 
+- Chennai's own places (owner 18 Nov: "chennai is the most populated city ... add even more small areas", suburbs yes):
+  tools/make_page.AREAS - ~136 Tamil + ~123 English area names (city, small areas, Tambaram / Avadi / Pallavaram / Chromepet /
+  Poonamallee ...), city services (corporation, Metro rail / water, MTC, suburban trains, CSK) and the big suburbs that count for a
+  power cut filed under Chengalpattu / Tiruvallur; party / assembly words make a Chennai-datelined state-politics story "state
+  news". tests/test_page_values checks real headlines (17 Nov list + Chennai's best reels).
+
 - LIVE 17 Nov evening: repo nithiyananthamQA/chennaiminnal-autopost, all jobs on, the old Chennai engine in this repo off
   (config district_powercut live / news_live empty).
 - One push updates every page, like the reference (it pushes each change to all 6 page repos in the same minute):

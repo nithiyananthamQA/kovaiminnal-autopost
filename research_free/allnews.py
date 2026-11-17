@@ -516,7 +516,7 @@ def district_section(url, names=None):
     if not own:
         # 17 Nov (ours): a list for OUR district only (ABP "Chennai Power Cut: ... சென்னையில் நாளை ...") has no district headings at
         # all - its whole text is ours. It was cut to nothing ("only a headline, 0 words"), so Chennai never posted a power cut.
-        if not heads and any(n in (art.get("title") or "") for n in names):
+        if not heads and any(f in (art.get("title") or "") for n in names for f in _forms(n)):      # தாம்பரத்தில் = தாம்பரம்
             return dict(art, url=url)
         return dict(art, url=url, text="")
     m = own[0]

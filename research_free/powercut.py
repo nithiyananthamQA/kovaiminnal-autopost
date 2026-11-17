@@ -181,7 +181,7 @@ def check(it, today, now):
     filed = allnews.url_district(it["url"])
     # 17 Nov (ours): only the district's OWN name in the title lets a notice filed under another district through - a shared place
     # name is not enough ("மேட்டுப்பாளையம்" is a Coimbatore town and a Tiruppur village: the Vellakoil cut, RN-11, posted on Kovai)
-    if filed and filed not in allnews.DISTRICT_SLUGS and not any(n in title for n in allnews.SECTION_NAMES):
+    if filed and filed not in allnews.DISTRICT_SLUGS and not any(f in title for n in allnews.SECTION_NAMES for f in allnews._forms(n)):
         return None, "other district"      # owner 13 Nov: filed under another district's page (edition-coimbatore/tiruppur is Tirupur's)
     if not (allnews.has_place(title) or allnews.has_place(text[:800]) or any(d in it["url"] for d in DISTRICT_URL)):
         return None, "not this district"
