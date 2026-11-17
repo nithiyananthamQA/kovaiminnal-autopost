@@ -47,7 +47,10 @@ e-mail tag KOVAIMINNAL. Never "360".
   Sample: ~/Videos/kovai-minnal/goldrate-sample-17nov.jpg. To start it: put the three cron lines back in .github/workflows/goldrate.yml
   and add `"goldrate.yml": {"dry": "0", "date": ""}` to tools/keeper.py LIVE_INPUTS.
 
-## 5. Kept as a correctness fix (owner to confirm)
+## 5. Correctness fixes of ours (owner 17 Nov: "you kept ours better" - the friend is told to fix his copy)
+
+- Tamil proofread never doubles words (poster/tamilcheck.py): a full stop no longer hides a repeat, and a "fix" that only adds
+  words that already follow it is refused. 16 Nov RN-68 went out saying "கைது செய்யப்பட்டனர் செய்யப்பட்டனர்." (also RN-21, RN-23).
 
 - A Tiruppur / Erode power-cut notice printed in the paper's Coimbatore edition never posts on Kovai (16 Nov RN-52, Uthiyur cut
   posted wrongly): extra Tiruppur town names in allnews.OTHER_PLACES / OTHER_EN and the notice-text check in powercut.check.

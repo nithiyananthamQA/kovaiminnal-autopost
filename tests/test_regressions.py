@@ -649,6 +649,21 @@ class Proofread(unittest.TestCase):
             llm.ask_json = old
         self.assertEqual(row, before)
 
+    def test_rn68_verb_never_doubled(self):      # 16 Nov RN-68 (posted): 'இருவர் கைது' -> 'இருவர் கைது செய்யப்பட்டனர்' before the same verb
+        import llm
+        s = "சூலூரில் சிறுமி வழக்கில் கார்த்திக், மோகன் ராஜ் ஆகிய இருவர் கைது செய்யப்பட்டனர். தீர்ப்பு ஒத்திவைப்பு. "
+        row = {"headline_ta": "x", "caption": s, "slides_spec": "{}", "reel_script": s + self.T.LAST}
+        before = dict(row)
+        old = llm.ask_json
+        llm.ask_json = lambda *a, **k: ({"fixes": [{"wrong": "கார்த்திக், மோகன் ராஜ் ஆகிய இருவர் கைது",
+                                                   "right": "கார்த்திக், மோகன் ராஜ் ஆகிய இருவர் கைது செய்யப்பட்டனர்"}]}, "test")
+        try:
+            self.T.proofread(row, log=lambda *a: None, article="")
+        finally:
+            llm.ask_json = old
+        self.assertEqual(row, before)
+        self.assertTrue(self.T._repeats("கைது செய்யப்பட்டனர் செய்யப்பட்டனர்."))      # a full stop no longer hides the repeat
+
     def test_age_shorthand_sent_back(self):
         import validate
         d = dict(json.loads((ROOT / "research_free" / "examples.json").read_text(encoding="utf-8"))[1]["output"])

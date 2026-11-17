@@ -46,7 +46,8 @@ def _whole(w):
 
 def _repeats(t):
     """'X X' or 'X Y X' word runs (28 Oct RN-158: 'செல்லாமல் சென்றனர் செல்லாமல்')"""
-    w = re.findall(r"\S+", t or "")
+    # 17 Nov (ours - RN-68 'கைது செய்யப்பட்டனர் செய்யப்பட்டனர்.' was posted): punctuation never hides a repeat
+    w = [x.strip(".,;:!?\"'()‘’“”") for x in re.findall(r"\S+", t or "")]
     return {" ".join(w[i:i + 3]) for i in range(len(w) - 2) if w[i] == w[i + 2] and len(w[i]) > 3} | \
         {" ".join(w[i:i + 2]) for i in range(len(w) - 1) if w[i] == w[i + 1] and len(w[i]) > 3}
 
@@ -124,6 +125,12 @@ def proofread(row, log=print, article=None):
         for k in FIELDS:
             t = row.get(k) or ""
             if len(_whole(w).findall(t)) != 1:      # not there, or in several places: never replace blindly
+                continue
+            # 17 Nov (ours, RN-68): a "fix" that only adds words which already follow it in the text would say them twice
+            tail = ok[len(w):].strip() if ok.startswith(w) else ""
+            m_ = _whole(w).search(t)
+            if tail and m_ and t[m_.end():].lstrip().startswith(tail):
+                log("proofread fix ignored (the added words already follow):", w[:40], "->", ok[:40])
                 continue
             body, last = (t[:-len(LAST)], LAST) if k == "reel_script" and t.rstrip().endswith(LAST) else (t, "")
             new = _whole(w).sub(lambda _: ok, body, count=1) + last
