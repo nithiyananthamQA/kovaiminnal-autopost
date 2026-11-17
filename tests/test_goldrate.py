@@ -128,3 +128,14 @@ class RateReel(unittest.TestCase):
         for k, f in R.SFX.items():
             x = f()
             self.assertTrue(0 < len(x) and np.abs(x).max() <= 1.0001, k)
+
+    def test_reel_page_contract(self):
+        import minnal_render as M
+        p = dict(G.PAGES["coimbatore"], logo="x.png")
+        r = {"date": "17 நவம்பர் 2026", "g22": 12470, "g22_prev": 12695, "g24": 13604, "g24_prev": 13849, "vs": "நேற்றைய விலையைவிட",
+             "week22": [("16 நவ", 12695), ("17 நவ", 12470)], "silver": 190, "silver_prev": 195, "weeksilver": [("17 நவ", 190)]}
+        h = M.reel_page(p, r)
+        for k in ("window.DUR", "window.seek", "window.CUES", "window.COVER_T", "@kovai_minnal", "கோவை நிலவரம்", "99760"):
+            self.assertIn(k, h.replace(",", "") if k == "99760" else h)
+        self.assertNotIn("சென்னை", h + M.page(p, r, "gold") + M.page(p, r, "silver"))
+        self.assertNotIn("360", h)

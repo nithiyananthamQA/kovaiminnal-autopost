@@ -68,7 +68,8 @@ e-mail tag KOVAIMINNAL. Never "360".
 ## 4. Held until the owner says yes
 
 - Gold & silver rate carousel (reference bc0eaec): code ported and rebranded, schedule HELD (show-first rule).
-  Sample (our design): ~/Videos/kovai-minnal/goldrate-OUR-design-17nov.jpg. To start it: put the three cron lines back in .github/workflows/goldrate.yml
+  Samples (our design, 17 Nov): ~/Videos/kovai-minnal/goldrate-POST-gold-17nov.jpg, goldrate-POST-silver-17nov.jpg,
+  goldrate-REEL-sample-17nov.mp4 (13.8 s, music + effects, no voice). To start it: put the three cron lines back in .github/workflows/goldrate.yml
   and add `"goldrate.yml": {"dry": "0", "date": ""}` to tools/keeper.py LIVE_INPUTS.
 
 ## 5. Correctness fixes of ours (owner 17 Nov: "you kept ours better" - the friend is told to fix his copy)
