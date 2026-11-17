@@ -82,6 +82,7 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-18 | `2e509a8` | Cloudflare Worker "test": one timer for every page's GitHub jobs (owner 18 Nov: 'move to the workers now', 'one worker for all our pages') |
 | 2026-11-18 | `0691bd3` | Power cuts: a list for our district only is kept whole (17 Nov: Chennai never posted a power cut - ABP's Chennai-only list was cut to 0 words); covaimail.com is Kovai's paper only |
 | 2026-11-18 | `693cff7` | sync_pages: also push a page's earlier unpushed commits (17 Nov: Chennai kept safe mode + fixes locally although the owner pushed) |
 | 2026-11-18 | `eb19a89` | pick: a new page's empty state file no longer crashes the round (17 Nov: Chennai's 21:00 round failed - KeyError 'rounds' - no news since 18:26) |
@@ -111,5 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-17 | `72a88ab` | comments: normal comments recorded (not e-mailed) |
 | 2026-11-17 | `4f9c418` | powercut: notices written |
 | 2026-11-17 | `ce1dcc6` | facebook RN-85 |
-| 2026-11-17 | `9b6a525` | powercut: notices written |
 <!-- recent-changes:end -->
