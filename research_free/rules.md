@@ -43,6 +43,7 @@ reel_script rules
 - POWER SHUTDOWN exception (owner 30 Oct): a power-cut story may use up to 160 words (at most 90 seconds) - read the date, the time, the substation and EVERY affected area exactly as published, none dropped, never guessed. All other rules stay the same.
 - The LAST sentence is exactly: மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.
 - No private individuals' names, no source names.
+- NAME THE PLACE WHERE IT HAPPENED (owner 17 Nov: viewers ask "which shop, where?" - a reel reaches people only when it tells the real, full truth): a shop, hotel, restaurant, company, factory, mill, school, college, hospital, temple, hall, theatre or mall that the article names is written BY ITS NAME in the caption, the slides and the reel_script (e.g. the shop that caught fire, the hotel that was sealed, the company that cheated people). Only a name the article itself gives - never guess, shorten or complete a name. Private persons, victims, minors and accused persons stay unnamed as above.
 
 caption rules
 - Instagram search reads the caption, so the FIRST line is a hook that already contains the place name and the key fact (max 110 characters), with 1 emoji, e.g. "⚡ பொள்ளாச்சியில் நாளை மின்தடை - காலை 9 முதல் மாலை 5 மணி வரை". Numbers, times and dates are written as digits in the caption.

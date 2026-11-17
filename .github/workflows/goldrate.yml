@@ -1,11 +1,12 @@
 name: goldrate
-# owner 14 Nov: daily gold & silver rate carousel (2 slides) on every page of this repo, posted as soon as today's rate is confirmed.
+# owner 14 Nov: daily gold & silver rate, posted as soon as today's rate is confirmed (owner 17 Nov: ours = one 10 s REEL with our music).
 # The Chennai jewellers' association fixes the rate at 9:30 AM IST; the job starts 9:40 and checks every 5 minutes. It posts only when
 # 2 rate pages show today's date and the same rate. Backups at 11:00 AM and 12:30 PM (a run skips a page already posted today).
-# HELD until the owner OKs the sample (17 Nov, show-first rule): - cron: "5 4 * * *"       # 09:35 IST - waits until 09:40
-# HELD until the owner OKs the sample (17 Nov, show-first rule): - cron: "30 5 * * *"      # 11:00 IST backup
-# HELD until the owner OKs the sample (17 Nov, show-first rule): - cron: "0 7 * * *"       # 12:30 IST last backup
 on:
+  schedule:      # owner 17 Nov: "nice music use it" - the rate reel goes live
+    - cron: "5 4 * * *"       # 09:35 IST - waits until 09:40
+    - cron: "30 5 * * *"      # 11:00 IST backup
+    - cron: "0 7 * * *"       # 12:30 IST last backup
   workflow_dispatch:
     inputs:
       dry:

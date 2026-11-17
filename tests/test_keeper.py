@@ -82,7 +82,8 @@ class Keeper(unittest.TestCase):
         for wf, _, _ in gh.started:
             n[wf] = n.get(wf, 0) + 1
         self.assertEqual(n, {"post.yml": 288, "powercut.yml": 34, "comments.yml": 36, "district_powercut.yml": 34,
-                             "pick.yml": 7, "rasipalan.yml": 4, "insights.yml": 1, "cloudclean.yml": 1})      # 17 Nov: + the reference's clean-up
+                             "pick.yml": 7, "rasipalan.yml": 4, "insights.yml": 1, "cloudclean.yml": 1,      # 17 Nov: + the reference's clean-up
+                             "goldrate.yml": 3})      # owner 17 Nov: the gold rate reel (09:35 + two backups)
         picks = [t.astimezone(K.IST).strftime("%H:%M") for wf, t, i in gh.started if wf == "pick.yml"]
         # owner 16 Nov: the reference's 6 rounds every 4 hours; the test day starts 05:30, so the missed 05:00 round is caught up then
         self.assertEqual(picks, ["05:30", "09:00", "13:00", "17:00", "21:00", "01:00", "05:00"])

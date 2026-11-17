@@ -2467,3 +2467,13 @@ class StateLeadersReactionIsNotLocal(unittest.TestCase):
     def test_politics_headline(self):
         self.assertTrue(allnews.statewide("கோவை மத்தியச் சிறையில் கைதி தப்பியோட்டம்: உதயநிதி ஸ்டாலின் அரசை விமர்சனம்"))
         self.assertFalse(allnews.statewide("கோவை மத்திய சிறை வாசலில் போலீசாரை ஏமாற்றி கைதி தப்பியோட்டம்"))
+
+
+class BusinessNames17Nov(unittest.TestCase):
+    """owner 17 Nov: "which shop where" - a business the article names is written by its name; private persons stay unnamed"""
+    def test_writer_rule(self):
+        rules = (Path(__file__).resolve().parent.parent / "research_free" / "rules.md").read_text(encoding="utf-8")
+        self.assertIn("NAME THE PLACE WHERE IT HAPPENED", rules)
+        self.assertIn("Only a name the article itself gives", rules)
+        self.assertIn("No private individuals' names", rules)
+

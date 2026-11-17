@@ -69,10 +69,14 @@ e-mail tag KOVAIMINNAL. Never "360".
 
 ## 4. Held until the owner says yes
 
-- Gold & silver rate (reference bc0eaec carousel; ours: reel only): code ported and rebranded, schedule HELD (show-first rule).
-  Samples (our design, 17 Nov): ~/Videos/kovai-minnal/goldrate-POST-gold-17nov.jpg, goldrate-POST-silver-17nov.jpg,
-  goldrate-REEL-sample-17nov.mp4 (13.8 s, music + effects, no voice). To start it: put the three cron lines back in .github/workflows/goldrate.yml
-  and add `"goldrate.yml": {"dry": "0", "date": ""}` to tools/keeper.py LIVE_INPUTS.
+- (none) - the gold & silver rate reel went live on the owner's OK 17 Nov ("nice music use it"): goldrate.yml crons 09:35 /
+  11:00 / 12:30 IST + keeper LIVE_INPUTS. Samples: ~/Videos/kovai-minnal/goldrate-REEL-10s-17nov.mp4 (music then changed to alert).
+
+## 4a. Owner's choice: business names (owner 17 Nov: "which shop where - add the shop name if available")
+
+- research_free/rules.md: a shop / hotel / company / school / hospital / temple ... that the article names is written by its name
+  (the shop that caught fire, the hotel that was sealed). The reference's writer already names businesses most of the time (its
+  rules only forbid private persons, victims, minors and accused); ours now says it outright. Private persons stay unnamed.
 
 ## 5. Correctness fixes of ours (owner 17 Nov: "you kept ours better" - the friend is told to fix his copy)
 
