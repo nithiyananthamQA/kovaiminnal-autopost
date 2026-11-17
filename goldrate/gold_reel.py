@@ -3,8 +3,8 @@ reel with our best sound effect").
 
 minnal_render.reel_page(p, r) is the design: a 1080x1920 page whose every frame is set by window.seek(t) (numbers land on the
 confirmed rate - nothing estimated), window.DUR, window.CUES (sound-effect moments) and window.COVER_T (a fully built frame).
-Here: frames at FPS -> H.264; under it our own music bed (reel/assets/music, composed by tools/make_music.py - no copyright) and our
-own sound effects at the CUES, synthesized below from oscillators and noise (no samples). No voice (ElevenLabs credits).
+Here: frames at FPS -> H.264 with our own music (reel/assets/music, composed by tools/make_music.py - no copyright; owner 17 Nov:
+the upbeat "alert" track, music only). Sound effects at the CUES are synthesized below but switched off (SFX_ON). No voice.
 
   make(p, r, outdir, log) -> {"mp4": Path, "cover": Path, "dur": seconds}"""
 import subprocess, wave
@@ -15,8 +15,10 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 MUSIC = HERE.parent / "reel" / "assets" / "music"
 SR, FPS = 44100, 30
-MOOD = "calm"           # the rate is everyday service news: the calm bed (alert = power cuts, serious = crime / accidents)
-MUSIC_GAIN = 0.55       # the bed carries the reel (no voice); the effects sit on top of it
+# owner 17 Nov: "use music we have ... better music no sad music" - our own upbeat track (120 BPM), music only, no sound effects
+MOOD = "alert"
+SFX_ON = False          # the synthesized effects below stay in the code, switched off
+MUSIC_GAIN = 1.0        # the track is mastered at -16 LUFS like our news reels; with no voice it carries the reel
 SFX_GAIN = 0.9
 
 
@@ -132,7 +134,7 @@ def music_bed(dur, mood=MOOD):
     y = np.frombuffer(raw, dtype=np.float32).astype(np.float64)
     n = int(dur * SR)
     y = np.pad(y, (0, max(0, n - len(y))))[:n]
-    fi, fo = int(0.4 * SR), int(1.5 * SR)
+    fi, fo = int(0.03 * SR), int(1.2 * SR)      # starts at once (no quiet first second), fades out at the end
     y[:fi] *= np.linspace(0, 1, fi)
     y[-fo:] *= np.linspace(1, 0, fo)
     return y
@@ -140,7 +142,7 @@ def music_bed(dur, mood=MOOD):
 
 def soundtrack(cues, dur, path, log=print):
     """music bed + effects -> 16-bit mono wav; the effects duck the bed by a little so they cut through"""
-    fx = effects(cues, dur)
+    fx = effects(cues if SFX_ON else [], dur)
     bed = music_bed(dur)
     if bed is None:
         log("music bed not found - effects only")

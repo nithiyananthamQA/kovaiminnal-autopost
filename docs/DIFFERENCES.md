@@ -54,7 +54,8 @@ e-mail tag KOVAIMINNAL. Never "360".
 ## 3c. Owner's choice: the rate also as a REEL (owner 17 Nov: "we need to do this also as a reel with our best sound effect")
 
 - goldrate/gold_reel.py: minnal_render.reel_page (1080x1920, inside the reel safe area of reel5.SAFE) -> frames -> H.264 with our
-  music bed (reel/assets/music) and our own synthesized sound effects (hit / whoosh / tick / chime / riser). No voice.
+  own music (reel/assets/music/alert.wav, 120 BPM - owner 17 Nov "use music we have ... no sad music"), music only: the
+  synthesized sound effects are in the code but off (gold_reel.SFX_ON). No voice. 10 s, opens already showing today's price.
 - Owner 17 Nov "only one post thats reel": our pages post the REEL ONLY (gold_daily.PAGES "post": False); the reference posts
   the image carousel only. The slide design (minnal_render.page) stays in the code, unused. A page with both posts the carousel
   first, then the reel, tracked apart (state posted_<page>.json / posted_reel_<page>.json). GOLD_REEL=0 switches the reel off.
