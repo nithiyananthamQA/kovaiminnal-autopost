@@ -25,7 +25,7 @@ class CommentFilter(unittest.TestCase):
                 return {"data": [{"id": "M", "caption": "c", "timestamp": comments.datetime.now(comments.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S%z"), "comments_count": 4}]}
             return {"data": [{"id": i, "text": t, "username": "u"} for i, t in texts.items()]}
         with tempfile.TemporaryDirectory() as d, mock.patch.object(comments.post, "bridge_get", side_effect=lambda a, **k: {"token": "t", "ids": []}), \
-                mock.patch.object(comments.post, "ig_account", return_value=("U", "u")), mock.patch.object(comments.post, "ig", side_effect=ig), \
+                mock.patch.object(comments.post, "ig_account", return_value=("U", "page_own_name")), mock.patch.object(comments.post, "ig", side_effect=ig), \
                 mock.patch.object(comments, "options_for", side_effect=lambda cap, t: (kinds[t], ["ok"])), \
                 mock.patch.object(comments.post, "bridge_post", side_effect=lambda a, p: sent.append(p) or {"ok": True, "added": len(p["items"])}):
             if hasattr(comments, "IGNORED"):

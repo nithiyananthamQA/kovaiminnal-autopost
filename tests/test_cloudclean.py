@@ -20,17 +20,17 @@ class CloudClean(unittest.TestCase):
     now = datetime(2026, 11, 12, 10, 3, tzinfo=timezone.utc)
 
     def test_only_this_page_folder(self):
-        self.assertTrue(cc.mine({"public_id": "coimbatore360/abc"}))
-        self.assertTrue(cc.mine({"public_id": "abc", "asset_folder": "coimbatore360"}))
+        self.assertTrue(cc.mine({"public_id": "kovaiminnal/abc"}))
+        self.assertTrue(cc.mine({"public_id": "abc", "asset_folder": "kovaiminnal"}))
         for other in ({"public_id": "rasipalan/abc"}, {"public_id": "otherpage360/abc"}, {"public_id": "abc", "asset_folder": "namakkal"},
-                      {"public_id": "coimbatore3600/abc"}, {"public_id": "abc"}):
+                      {"public_id": "kovaiminnal0/abc"}, {"public_id": "abc"}):
             self.assertFalse(cc.mine(other), other)
 
     def test_keeps_the_last_48_hours(self):      # owner 12 Nov: keep the last 48 h only, videos and pictures alike
-        files = [res("coimbatore360/a", 80, self.now), res("coimbatore360/b", 50, self.now), res("coimbatore360/c", 40, self.now), res("coimbatore360/d", 2, self.now)]
+        files = [res("kovaiminnal/a", 80, self.now), res("kovaiminnal/b", 50, self.now), res("kovaiminnal/c", 40, self.now), res("kovaiminnal/d", 2, self.now)]
         for full in (False, True):
-            self.assertEqual(cc.plan(files, "video", self.now, full=full), ["coimbatore360/a", "coimbatore360/b"])
-            self.assertEqual(cc.plan(files, "image", self.now, full=full), ["coimbatore360/a", "coimbatore360/b"])
+            self.assertEqual(cc.plan(files, "video", self.now, full=full), ["kovaiminnal/a", "kovaiminnal/b"])
+            self.assertEqual(cc.plan(files, "image", self.now, full=full), ["kovaiminnal/a", "kovaiminnal/b"])
 
     def test_skipped_without_keys_and_off_the_hour(self):
         with mock.patch.dict("os.environ", {"CLOUDINARY_CLOUD": "x", "CLOUDINARY_API_KEY": "", "CLOUDINARY_API_SECRET": ""}):
@@ -42,8 +42,8 @@ class CloudClean(unittest.TestCase):
 
     def test_run_deletes_only_old_own_files(self):
         now = self.now
-        listed = {"video": [res("coimbatore360/old", 60, now), res("coimbatore360/new", 3, now), res("namakkal/old", 300, now)],
-                  "image": [res("coimbatore360/pic", 30, now), res("coimbatore360/oldpic", 100, now)]}
+        listed = {"video": [res("kovaiminnal/old", 60, now), res("kovaiminnal/new", 3, now), res("namakkal/old", 300, now)],
+                  "image": [res("kovaiminnal/pic", 30, now), res("kovaiminnal/oldpic", 100, now)]}
 
         def get(url, params=None, auth=None, timeout=None):
             r = mock.Mock(status_code=200)
@@ -65,13 +65,13 @@ class CloudClean(unittest.TestCase):
         with mock.patch.dict("os.environ", {"CLOUDINARY_CLOUD": "x", "CLOUDINARY_API_KEY": "k", "CLOUDINARY_API_SECRET": "s"}), \
                 mock.patch.object(cc.requests, "get", side_effect=get), mock.patch.object(cc.requests, "delete", side_effect=delete):
             self.assertEqual(cc.run(now=now), 2)
-        self.assertEqual(sorted(deleted), ["coimbatore360/old", "coimbatore360/oldpic"])
+        self.assertEqual(sorted(deleted), ["kovaiminnal/old", "kovaiminnal/oldpic"])
 
 
 class CachedLinks(unittest.TestCase):
     def test_deleted_link_means_upload_again(self):
         import post
-        media = {"reel": "https://res.cloudinary.com/x/video/upload/v1/coimbatore360/a.mp4", "carousel": [], "cover": "", "story": ""}
+        media = {"reel": "https://res.cloudinary.com/x/video/upload/v1/kovaiminnal/a.mp4", "carousel": [], "cover": "", "story": ""}
         with mock.patch.object(post.requests, "head", return_value=mock.Mock(status_code=404)):
             self.assertFalse(post.links_alive(media))
         with mock.patch.object(post.requests, "head", return_value=mock.Mock(status_code=200)):

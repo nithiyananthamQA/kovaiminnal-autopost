@@ -7,7 +7,7 @@ name: pick
 # Each reel is posted as soon as it is ready. Posted news never comes back; listed but not posted news returns in the next list (< 24 h).
 on:
   schedule:
-    - cron: "30 23,3 * * *"           # 05:00 / 09:00 IST (owner 16 Nov: the reference's 6 rounds, every 4 hours; our posting times unchanged)
+    - cron: "30 23,3 * * *"           # 05:00 / 09:00 IST (owner 13 Nov: collection every 4 hours; no posting wait since 13 Nov 22:51 - eligible news posts at once)
     - cron: "30 7,11,15,19 * * *"     # 13:00 / 17:00 / 21:00 / 01:00 IST
   workflow_dispatch:
     inputs:
@@ -38,12 +38,7 @@ jobs:
       DISTRICT_BRIDGE_KEY: ${{ secrets.DISTRICT_BRIDGE_KEY }}
       IG_SYSTEM_TOKEN: ${{ secrets.IG_SYSTEM_TOKEN }}      # owner 16 Nov: minnal-bot token with the insights permission (empty = the bridge's token)
       CITY_ONLY: "0"
-      PICK_ROUND_TOP: "1=0,5=4,9=3,13=2,17=3,21=2"      # owner 16 Nov: 14 a day (was 24), more at peak hours: 05:00 4, 09:00 3, 13:00 2, 17:00 3, 21:00 2; 01:00 power cuts only. Same split on Chennai (district_powercut.news_rounds)
-      PICK_EXTRA_MAX: "1"      # owner 16 Nov: beyond the 14, strong news may still go out - one a round ...
-      PICK_EXTRA_SCORE: "11"      # ... only news scoring 11+ (14-15 Nov: 2-4 news a day; 7+ was 10-18 a day) ...
-      PICK_EXTRA_DAY: "3"      # ... at most 3 more a day (14 + 3 = 17 news at most; power cuts always on top)
-      PICK_LOW_REACH: "auto"      # owner 16 Nov: news types people skip, learned every night from OUR reels + the reference page's (learned.skip_topics); power cut / civic / crime / accident / rain never skipped; a ban, closure, holiday, fee, route change never skipped
-      PICK_MIN_SCORE: "7"      # owner 16 Nov: quality over count - the round count above is a MAXIMUM; only news scoring 7+ (power cuts always) is written; a weak round posts fewer
+      PICK_ROUND_TOP: "1=2,5=5,9=5,13=3,17=5,21=4"      # owner 14 Nov: news per round at LEAST (01:00 2, 05:00 5, 09:00 5, 13:00 3, 17:00 5, 21:00 4 = 24 a day) + up to 3 more of well-watched topics, chosen by the page's insights
       PICK_EMAIL: "0"      # owner 2 Nov: "do not ask me to confirm" - no list e-mail, the top news are written at once
       PICK_WAIT_MIN: "60"
       PICK_REQUIRE_EMAIL: "0"

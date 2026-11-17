@@ -69,12 +69,12 @@ class Keeper(unittest.TestCase):
             y = (ROOT / ".github" / "workflows" / wf).read_text(encoding="utf-8")
             d = y[y.index("workflow_dispatch:"):]
             for k in list(ins):
-                self.assertRegex(d, rf"\n      {k}:\n", f"{wf} has no input {k}")
+                self.assertRegex(d, rf"\n      {k}:[ \n]", f"{wf} has no input {k}")
             for k, v in ins.items():
                 if k in ("dry", "dry_run", "prebuild", "repost", "post_only"):
                     self.assertIn(v, ("0", "false"), (wf, k))
         self.assertEqual(K.LIVE_INPUTS["post.yml"]["timer"], "true")      # post.yml: counts as scheduled (LIVE file, no commit every 5 min)
-        self.assertIn('PICK_ROUND_TOP: "1=0,5=4,9=3,13=2,17=3,21=2"', (ROOT / ".github/workflows/pick.yml").read_text(encoding="utf-8"))      # owner 16 Nov: 14 a day, more at peak hours
+        self.assertIn('PICK_ROUND_TOP: "1=2,5=5,9=5,13=3,17=5,21=4"', (ROOT / ".github/workflows/pick.yml").read_text(encoding="utf-8"))      # owner 17 Nov: the reference's 24 a day
 
     def test_a_whole_day_starts_each_time_once(self):
         gh = run_day(FakeGh())
@@ -82,7 +82,7 @@ class Keeper(unittest.TestCase):
         for wf, _, _ in gh.started:
             n[wf] = n.get(wf, 0) + 1
         self.assertEqual(n, {"post.yml": 288, "powercut.yml": 34, "comments.yml": 36, "district_powercut.yml": 34,
-                             "pick.yml": 7, "rasipalan.yml": 4, "insights.yml": 1})
+                             "pick.yml": 7, "rasipalan.yml": 4, "insights.yml": 1, "cloudclean.yml": 1})      # 17 Nov: + the reference's clean-up
         picks = [t.astimezone(K.IST).strftime("%H:%M") for wf, t, i in gh.started if wf == "pick.yml"]
         # owner 16 Nov: the reference's 6 rounds every 4 hours; the test day starts 05:30, so the missed 05:00 round is caught up then
         self.assertEqual(picks, ["05:30", "09:00", "13:00", "17:00", "21:00", "01:00", "05:00"])

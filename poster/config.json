@@ -16,7 +16,9 @@
   "locations": {},
   "carousel": false,
   "facebook": {
-    "page_ids": {"coimbatore": "1475639385631396"},
+    "page_ids": {
+      "coimbatore": "1475639385631396"
+    },
     "note": "14 Nov (owner: same account for every page): no FB_PAGE_ID_/FB_TOKEN_ secrets needed - the page token is read with the one minnal-bot token (instagram.shared_token_page in the Minnal bridge). Secrets, when set, still win."
   },
   "music": {
@@ -147,16 +149,14 @@
   },
   "free_images": {
     "note": "owner 30 Oct: pictures from free services first (Cloudflare -> Pollinations -> NVIDIA), FAL only when all fail",
-    "cloudflare_for_writing": true,
+    "cloudflare_for_writing": false,
     "pictures_per_reel": 2
   },
   "writers": {
     "note": "owner 30 Oct: free writing models in this order; a provider without its key is skipped; Claude (paid) only after all of them. Gemma 4 is ready but NOT in the order: 30 Oct test on a real story gave 503 (high demand) / 500 - add \"gemma\" here once writer-compare proves it. Cerebras removed 30 Oct: it now needs a card (only $5 trial credit, then paid). Sarvam taken out of the live order 30 Oct: writer-compare gave empty answers (finish_reason length) on 3 real stories - add \"sarvam\" back once writer-compare shows it writes",
     "order": [
       "gemini",
-      "gemma",
-      "groq",
-      "cloudflare"
+      "groq"
     ],
     "gemini_first": [
       "gemini-3.6-flash",
@@ -191,22 +191,23 @@
       "chennai"
     ],
     "news_per_run": 1,
-    "news_per_day": 14,
-    "news_min_score": 7,
-    "news_extra_score": 11,
-    "news_extra_day": 3,
-    "news_low_reach": "auto",
-    "news_note_16nov": "owner 16 Nov: same as Kovai - 14 news a day, more at peak hours (05 4, 09 3, 13 2, 17 3, 21 2 - a late start keeps its round, like Kovai), the same score as Kovai (points + reach - age), only news scoring 7+ (quality over count; a weak round posts fewer); up to 3 more a day of strong news (11+); news types people skip are learned every night from Kovai's + the reference page's insights (news_low_reach auto); power cuts always",
+    "news_per_day": 24,
+    "news_min_score": 0,
+    "news_extra_score": 0,
+    "news_extra_day": 0,
+    "news_low_reach": "",
     "news_max_age_hours": 12,
     "news_rounds": {
-      "05": 4,
-      "09": 3,
-      "13": 2,
-      "17": 3,
-      "21": 2
+      "01": 2,
+      "05": 5,
+      "09": 5,
+      "13": 3,
+      "17": 5,
+      "21": 4
     },
     "news_budget_min": 6,
-    "news_max_open": 60
+    "news_max_open": 60,
+    "news_note_17nov": "owner 17 Nov ('follow his same all, only template and voice differ'): the reference's counts - 24 news a day (01:00 2, 05:00 5, 09:00 5, 13:00 3, 17:00 5, 21:00 4), no score floor, no skip list, no extras rule of our own. Until Chennai runs as a copy of the Kovai code (like the reference's 7 pages) this engine keeps only the counts."
   },
   "real_photo_enabled": false,
   "stories_urgent_only": true,

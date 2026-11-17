@@ -21,7 +21,12 @@ import gold_sources as sources      # noqa: E402
 import gold_render as render      # noqa: E402
 
 IST = timezone(timedelta(hours=5, minutes=30))
-IG = "https://graph.instagram.com"
+# 17 Nov (forced): Meta gives our app only the Unified login - the same Instagram connection as every Kovai job (poster/ig_api.py):
+# graph.facebook.com/v24.0 + config.json instagram.user_id, token = the one minnal-bot token. A page without settings: as the reference.
+sys.path.insert(0, str(ROOT / "poster"))
+import ig_api      # noqa: E402
+CONFIG = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))
+IG, IG_VER, IG_USER_ID = ig_api.settings(CONFIG)
 DRY = os.environ.get("DRY_RUN", "") in ("1", "true", "yes")
 START_AT = os.environ.get("START_AT", "09:40")
 SILVER_WAIT_UNTIL = os.environ.get("SILVER_WAIT_UNTIL", "11:30")
@@ -33,7 +38,7 @@ STATE_DIR = HERE / "state"
 PAGES = {      # owner 14 Nov: every page, each with its own logo and handle; the rate is the same Tamil Nadu (Chennai) rate
     "namakkal": {"town": "நாமக்கல்", "name1": "நாமக்கல்", "handle": "namakkal.360", "tag": "#Namakkal360", "brand_px": 54},
     "rasipuram": {"town": "இராசிபுரம்", "name1": "இராசிபுரம்", "handle": "rasipuram.360", "tag": "#Rasipuram360", "brand_px": 50},
-    "coimbatore": {"town": "கோவை", "name1": "கோவை", "brand2": "மின்னல்", "handle": "kovai_minnal", "tag": "#KovaiMinnal", "brand_px": 54},
+    "coimbatore": {"town": "கோவை", "name1": "கோவை", "brand2": " மின்னல்", "handle": "kovai_minnal", "tag": "#KovaiMinnal", "brand_px": 40},
     "salem": {"town": "சேலம்", "name1": "சேலம்", "handle": "salem360.official", "tag": "#Salem360", "brand_px": 54},
     "erode": {"town": "ஈரோடு", "name1": "ஈரோடு", "handle": "erode360.official", "tag": "#Erode360", "brand_px": 54},
     "tirupur": {"town": "திருப்பூர்", "name1": "திருப்பூர்", "handle": "tiruppur360.official", "tag": "#Tiruppur360", "brand_px": 52},
@@ -68,11 +73,24 @@ def bridge_get(action, **params):
 
 def ig(method, path, token, **params):
     params["access_token"] = token
-    r = requests.request(method, f"{IG}/{path}", params=params if method == "GET" else None, data=params if method == "POST" else None, timeout=120)
+    if path == "me" and not ig_api.me_allowed(IG):
+        raise RuntimeError(f"Instagram: no account id for {IG} ('me' there is the system user) - fill poster/config.json instagram.user_id")
+    r = requests.request(method, f"{IG}/{IG_VER + '/' if IG_VER else ''}{path}", params=params if method == "GET" else None,
+                         data=params if method == "POST" else None, timeout=120)
     d = r.json()
     if r.status_code >= 400 or "error" in d:
         raise RuntimeError(f"Instagram {path}: {d.get('error', d)}")
     return d
+
+
+def account_id(token):
+    """the page's Instagram account id: config.json's id on the Unified login, else "me" (Instagram login)"""
+    return IG_USER_ID or ig("GET", "me", token, fields="user_id")["user_id"]
+
+
+def page_token(pg):
+    """the one minnal-bot token (IG_SYSTEM_TOKEN secret / Minnal bridge), else the page bridge's own token (the reference way)"""
+    return ig_api.shared_token(CONFIG, os.environ.get("BRIDGE_URL", ""), page=pg) or bridge_get("token", page=pg)["token"]
 
 
 def wait_ready(cid, token, minutes=6):
@@ -96,7 +114,7 @@ def upload(path):
 
 
 def publish(token, urls, cap):
-    uid = ig("GET", "me", token, fields="user_id")["user_id"]
+    uid = account_id(token)
     if len(urls) == 1:
         cid = ig("POST", f"{uid}/media", token, image_url=urls[0], caption=cap)["id"]
     else:
@@ -206,7 +224,7 @@ def already_posted(page, day, token=None):
         pass
     if token:
         try:
-            uid = ig("GET", "me", token, fields="user_id")["user_id"]
+            uid = account_id(token)
             for m in ig("GET", f"{uid}/media", token, fields="caption,permalink", limit=15).get("data", []):
                 if f"இன்றைய தங்கம், வெள்ளி விலை | {date_ta(day)}" in (m.get("caption") or ""):
                     return f"Instagram already has today's post {m.get('permalink')}"
@@ -224,7 +242,7 @@ def main():
     if not DRY:
         for pg in pages:
             try:
-                tokens[pg] = bridge_get("token", page=pg)["token"]
+                tokens[pg] = page_token(pg)
             except Exception as e:
                 log(f"{pg}: no Instagram token - skipped ({str(e)[:120]})")
         pages = [pg for pg in pages if pg in tokens]

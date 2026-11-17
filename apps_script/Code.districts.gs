@@ -51,7 +51,6 @@ function nowIst_() { return Utilities.formatDate(new Date(), 'Asia/Kolkata', 'dd
 function doGet(e) {
   // owner 1 Nov: the check-box page opened from the pick e-mail (its own one-round token, never the bridge key)
   if (e && e.parameter && e.parameter.action === 'pick') return pickPage_(e);
-  if (e && e.parameter && e.parameter.c) return commentPage_(e);      // owner 11 Nov: comment reply link (comment replies part below; the link's own secret)
   if (!authorized_(e)) return json_({ ok: false, error: 'unauthorized' });
   try {
     var a = e.parameter.action;
@@ -71,7 +70,6 @@ function doGet(e) {
 }
 
 function doPost(e) {
-  if (e && e.parameter && e.parameter.c && e.parameter.what) return commentSubmit_(e);      // owner 11 Nov: the owner's choice (comment replies part below)
   if (!authorized_(e)) return json_({ ok: false, error: 'unauthorized' });
   var lock = LockService.getScriptLock();
   lock.waitLock(30000);
@@ -1186,21 +1184,27 @@ function submitPicks(round, token, ids) {
   return 'புதிய மின்னஞ்சலில் உள்ள Google Form இணைப்பைப் பயன்படுத்துங்கள்.';
 }
 
-// ------------------------------------------------------------------ comment replies (owner 11 Nov; one file - the owner pastes only Code.gs) - NOTHING is posted without the owner
-// The GitHub job poster/comments.py sends new Instagram comments with 3 reply options (action commentNew). They are kept in the private
-// "Comments" tab and e-mailed to the owner, one e-mail per page per run. Each option in the e-mail is a link to a confirmation page
-// (the owner can edit the text there); only the button on that page posts the reply. A link works once and expires after 48 hours.
-// Comment text is never stored in the public GitHub repository or its logs.
-
+// ------------------------------------------------------------------ comment replies (owner 11 Nov) - GOOGLE FORM, like the news picks
+// The GitHub job (poster/comments.py) sends new Instagram comments with 5-7 reply options (action commentNew). Apps Script makes ONE
+// Google Form per page and batch: for each comment the full news, the comment, tick boxes (one or more replies), an own-reply box and an
+// action (Reply / Skip / Hide). The form link is e-mailed; it opens on any phone or computer, with no Google account needed.
+// NOTHING is posted until the owner presses Submit. commentPoll (every 5 minutes, see setupCommentPoll) reads the answers and posts.
 var COMMENTS_TAB = 'Comments';
 var COMMENT_COLS = ['received_ist', 'page', 'comment_id', 'media_id', 'permalink', 'post_title', 'user', 'text', 'kind',
-                    'opt1', 'opt2', 'opt3', 'secret', 'status', 'reply', 'reply_id', 'done_ist', 'received_ms'];
+                    'opt1', 'opt2', 'opt3', 'secret', 'status', 'reply', 'reply_id', 'done_ist', 'received_ms', 'post_text', 'opts_json',
+                    'form_id', 'form_no'];
 var COMMENT_HOURS = 48;
+var COMMENT_MAX_FORM = 20;      // comments per form (a form holds up to 300 questions)
 var IG_REPLY_HOST = 'https://graph.instagram.com/v23.0/';
 // 14 Nov: a system-user token (Meta Unified login, EAA...) works only on graph.facebook.com - same comment endpoints (replies, hide)
 var IG_REPLY_HOST_UNIFIED = 'https://graph.facebook.com/v24.0/';
 function replyHost_(tok) {
   return systemUserToken_(tok) ? IG_REPLY_HOST_UNIFIED : IG_REPLY_HOST;
+}
+var COMMENT_ACTIONS = ['Reply (tick one or more, and/or type your own)', 'Skip', 'Hide this comment'];
+
+function commentEsc_(s) {
+  return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
 function commentsSheet_() {
@@ -1210,6 +1214,8 @@ function commentsSheet_() {
     sh = ss.insertSheet(COMMENTS_TAB);
     sh.appendRow(COMMENT_COLS);
     sh.setFrozenRows(1);
+  } else if (sh.getLastColumn() < COMMENT_COLS.length || sh.getRange(1, COMMENT_COLS.length).getValue() !== COMMENT_COLS[COMMENT_COLS.length - 1]) {
+    sh.getRange(1, 1, 1, COMMENT_COLS.length).setValues([COMMENT_COLS]);      // an older tab: the header is updated
   }
   return sh;
 }
@@ -1226,141 +1232,161 @@ function commentRows_() {
   });
 }
 
+function commentOptions_(r) {
+  try { var o = JSON.parse(r.opts_json || '[]'); if (o.length) return o; } catch (e) {}
+  return [r.opt1, r.opt2, r.opt3].filter(function (x) { return x; });
+}
+
 // GET action=commentsSeen -> the comment ids already handled (the job never sends a comment twice)
 function commentsSeen_() {
   return commentRows_().map(function (r) { return String(r.comment_id); });
 }
 
-// POST action=commentNew {page, items:[{comment_id, media_id, permalink, post_title, user, text, kind, options:[..]}]}
+// POST action=commentNew {page, items:[{comment_id, media_id, permalink, post_title, post_text, user, text, kind, options:[..]}]}
 function commentNew_(b) {
   var sh = commentsSheet_();
   var seen = {};
   commentsSeen_().forEach(function (id) { seen[id] = true; });
   var fresh = [];
   (b.items || []).forEach(function (it) {
-    if (!it.comment_id || seen[String(it.comment_id)]) return;
-    var o = it.options || [];
-    var secret = Utilities.getUuid().replace(/-/g, '');
-    sh.appendRow([nowIst_(), b.page, String(it.comment_id), String(it.media_id || ''), it.permalink || '', it.post_title || '',
-                  it.user || '', it.text || '', it.kind || '', o[0] || '', o[1] || '', o[2] || '', secret, 'waiting', '', '', '', Date.now()]);
-    fresh.push({ it: it, secret: secret, opts: o });
+    if (it.comment_id && !seen[String(it.comment_id)] && fresh.length < COMMENT_MAX_FORM) fresh.push(it);
   });
-  if (fresh.length) commentMail_(b.page, fresh);
+  if (!fresh.length) return { ok: true, added: 0 };
+  var form = commentFormMake_(b.page, fresh);
+  var fid = form.getId();
+  var rows = fresh.map(function (it, i) {
+    var o = it.options || [];
+    return [nowIst_(), b.page, String(it.comment_id), String(it.media_id || ''), it.permalink || '', it.post_title || '', it.user || '',
+            it.text || '', it.kind || '', o[0] || '', o[1] || '', o[2] || '', '', 'waiting', '', '', '', Date.now(),
+            String(it.post_text || '').slice(0, 3000), JSON.stringify(o.slice(0, 7)), fid, i + 1];
+  });
+  sh.getRange(sh.getLastRow() + 1, 1, rows.length, COMMENT_COLS.length).setValues(rows);
+  commentMail_(b.page, fresh, form);
   return { ok: true, added: fresh.length };
 }
 
-function commentLink_(secret, choice) {
-  return ScriptApp.getService().getUrl() + '?c=' + secret + '&o=' + choice;
-}
-
-function esc_(s) {
-  return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-}
-
-function commentMail_(page, fresh) {
+// the Google Form of one batch: per comment a section (news + comment), the action, the reply tick boxes and an own-reply box
+function commentFormMake_(page, items) {
   var label = (typeof PAGE_LABEL !== 'undefined' && PAGE_LABEL[page]) || page;
-  var html = '<div style="font-family:Arial,sans-serif;font-size:15px">' +
-    '<p><b>' + fresh.length + ' new comment(s) on ' + esc_(label) + '.</b> Choose a reply - you can edit it before it is posted. ' +
-    'Nothing is posted until you press "Post this reply" on the next page. Links expire after ' + COMMENT_HOURS + ' hours.</p>';
-  fresh.forEach(function (f) {
-    var it = f.it;
-    html += '<div style="border:1px solid #ddd;border-radius:10px;padding:12px;margin:14px 0">' +
-      '<div style="color:#666">Post: <a href="' + esc_(it.permalink) + '">' + esc_(it.post_title) + '</a></div>' +
-      '<div style="margin:8px 0"><b>@' + esc_(it.user) + '</b>: ' + esc_(it.text) + '</div>' +
-      (it.kind ? '<div style="color:#a00;font-size:13px">' + esc_(it.kind) + '</div>' : '');
-    f.opts.forEach(function (o, k) {
-      if (!o) return;
-      html += '<div style="margin:6px 0"><a href="' + commentLink_(f.secret, k + 1) + '" style="display:inline-block;background:#1a73e8;color:#fff;' +
-        'padding:8px 12px;border-radius:6px;text-decoration:none">Reply ' + (k + 1) + '</a> ' + esc_(o) + '</div>';
+  var form = FormApp.create(label + ' - comment replies - ' + Utilities.formatDate(new Date(), 'Asia/Kolkata', 'dd MMM yyyy HH:mm'));
+  try { DriveApp.getFileById(form.getId()).moveTo(pickFolder_()); } catch (err) { }
+  form.setDescription('For each comment: choose the action, tick one or more replies, or type your own, then press Submit. ' +
+    'Nothing is posted on Instagram before you press Submit. Comments older than ' + COMMENT_HOURS + ' hours are not posted.');
+  form.setCollectEmail(false);
+  form.setAllowResponseEdits(false);
+  form.setProgressBar(true);
+  form.setConfirmationMessage('✅ Received. The chosen replies are posted on Instagram within about 5 minutes.');
+  try { form.setRequireLogin(false); } catch (err) { }
+  items.forEach(function (it, i) {
+    var n = i + 1;
+    var news = String(it.post_text || it.post_title || '').slice(0, 1500);
+    form.addSectionHeaderItem().setTitle('Comment ' + n + ' · @' + (it.user || '')).setHelpText(
+      'NEWS: ' + news + '\n\nCOMMENT: ' + (it.text || '') + '\n\nTYPE: ' + (it.kind || '') + '\nPOST: ' + (it.permalink || ''));
+    form.addMultipleChoiceItem().setTitle('C' + n + ' · Action').setChoiceValues(COMMENT_ACTIONS).setRequired(true);
+    var opts = [];
+    (it.options || []).forEach(function (o) {
+      o = String(o || '').trim().slice(0, 400);
+      if (o && opts.indexOf(o) < 0 && opts.length < 7) opts.push(o);
     });
-    html += '<div style="margin-top:8px"><a href="' + commentLink_(f.secret, 'own') + '">Write my own reply</a> &nbsp;|&nbsp; ' +
-      '<a href="' + commentLink_(f.secret, 'skip') + '">Skip</a> &nbsp;|&nbsp; ' +
-      '<a href="' + commentLink_(f.secret, 'hide') + '">Hide this comment</a></div></div>';
+    if (opts.length) form.addCheckboxItem().setTitle('C' + n + ' · Replies (tick one or more)').setChoiceValues(opts).setRequired(false);
+    form.addParagraphTextItem().setTitle('C' + n + ' · Your own reply (optional - used instead of the ticked replies)').setRequired(false);
   });
-  html += '</div>';
-  GmailApp.sendEmail(OWNER_EMAIL, '[' + label + ' COMMENTS] ' + fresh.length + ' new - choose replies',
-    'Open this e-mail in HTML view to choose the replies.', { htmlBody: html });
+  return form;
 }
 
-function commentFind_(secret) {
-  if (!secret) return null;
-  var rows = commentRows_();
-  for (var i = 0; i < rows.length; i++) if (String(rows[i].secret) === String(secret)) return rows[i];
-  return null;
+function commentMail_(page, fresh, form) {
+  var label = (typeof PAGE_LABEL !== 'undefined' && PAGE_LABEL[page]) || page;
+  var url = form.getPublishedUrl();
+  var html = '<div style="font-family:Arial,sans-serif;font-size:15px">' +
+    '<p><b>' + fresh.length + ' new comment(s) on ' + commentEsc_(label) + '.</b></p>' +
+    '<p><a href="' + url + '" style="display:inline-block;background:#1a73e8;color:#fff;padding:12px 20px;border-radius:8px;' +
+    'text-decoration:none;font-size:17px">Open the reply form</a></p>' +
+    '<p style="color:#666">The form shows the full news for each comment. Choose the action, tick one or more replies or type your own, ' +
+    'then press Submit. Nothing is posted before you press Submit.</p><ul>';
+  fresh.forEach(function (it) {
+    html += '<li><b>@' + commentEsc_(it.user) + '</b>: ' + commentEsc_(it.text) + ' <span style="color:#666">(' + commentEsc_(it.post_title) + ')</span></li>';
+  });
+  html += '</ul></div>';
+  GmailApp.sendEmail(OWNER_EMAIL, '[' + label + ' COMMENTS] ' + fresh.length + ' new - open the reply form',
+    'Open the reply form: ' + url, { htmlBody: html });
 }
 
 function commentOpen_(r) {
-  if (!r) return 'This link is not valid.';
-  if (r.status !== 'waiting') return 'Already handled: ' + r.status + (r.reply ? ' - "' + r.reply + '"' : '') + '.';
   var t = Number(r.received_ms) || 0;
-  if (!t || (Date.now() - t) > COMMENT_HOURS * 3600 * 1000) return 'This link has expired (older than ' + COMMENT_HOURS + ' hours).';
+  if (!t || (Date.now() - t) > COMMENT_HOURS * 3600 * 1000) return 'older than ' + COMMENT_HOURS + ' hours';
   return '';
 }
 
-function htmlPage_(body) {
-  return HtmlService.createHtmlOutput('<div style="font-family:Arial,sans-serif;font-size:17px;max-width:640px;margin:24px auto;padding:0 16px">' +
-    body + '</div>').setTitle('Comment reply').addMetaTag('viewport', 'width=device-width, initial-scale=1');
-}
-
-// GET ?c=<secret>&o=1|2|3|own|skip|hide -> a confirmation page only (e-mail link scanners can open it safely; nothing is posted here)
-function commentPage_(e) {
-  var r = commentFind_(e.parameter.c);
-  var bad = commentOpen_(r);
-  if (bad) return htmlPage_('<p>' + esc_(bad) + '</p>');
-  var o = String(e.parameter.o || '');
-  var head = '<p style="color:#666">@' + esc_(r.user) + ' wrote:</p><p><b>' + esc_(r.text) + '</b></p>';
-  var form = function (what, inner, button) {
-    return '<form method="post" action="' + ScriptApp.getService().getUrl() + '" target="_top">' +
-      '<input type="hidden" name="c" value="' + esc_(r.secret) + '"><input type="hidden" name="what" value="' + what + '">' + inner +
-      '<p><button type="submit" style="font-size:17px;padding:10px 18px;background:#1a73e8;color:#fff;border:0;border-radius:6px">' + button + '</button></p></form>';
-  };
-  if (o === 'skip') return htmlPage_(head + form('skip', '', 'Skip this comment (no reply)'));
-  if (o === 'hide') return htmlPage_(head + form('hide', '<p>The comment will be hidden from other viewers on Instagram.</p>', 'Hide this comment'));
-  var text = { '1': r.opt1, '2': r.opt2, '3': r.opt3 }[o] || '';
-  return htmlPage_(head + form('reply', '<p>Your reply (edit if needed):</p><textarea name="reply" rows="5" style="width:100%;font-size:17px">' +
-    esc_(text) + '</textarea>', 'Post this reply'));
-}
-
-// POST from the confirmation page (form fields c, what, reply)
-function commentSubmit_(e) {
+// every 5 minutes (set up once by setupCommentPoll): reads the owner's submitted forms and posts the chosen replies
+function commentPoll() {
   var lock = LockService.getScriptLock();
-  lock.waitLock(30000);
+  if (!lock.tryLock(20000)) return;
   try {
-    var r = commentFind_(e.parameter.c);
-    var bad = commentOpen_(r);
-    if (bad) return htmlPage_('<p>' + esc_(bad) + '</p>');
-    var sh = commentsSheet_();
-    var col = function (name) { return COMMENT_COLS.indexOf(name) + 1; };
-    var what = String(e.parameter.what || '');
-    if (what === 'skip') {
-      sh.getRange(r.row, col('status')).setValue('skipped');
-      sh.getRange(r.row, col('done_ist')).setValue(nowIst_());
-      return htmlPage_('<p>Skipped - no reply posted.</p>');
-    }
-    var tok = token_(r.page);
-    if (what === 'hide') {
-      var h = UrlFetchApp.fetch(replyHost_(tok) + r.comment_id, { method: 'post', muteHttpExceptions: true,
-        payload: { hide: 'true', access_token: tok } });
-      if (h.getResponseCode() !== 200) return htmlPage_('<p>Instagram did not hide it: ' + esc_(h.getContentText().slice(0, 300)) + '</p>');
-      sh.getRange(r.row, col('status')).setValue('hidden');
-      sh.getRange(r.row, col('done_ist')).setValue(nowIst_());
-      return htmlPage_('<p>Comment hidden ✅</p>');
-    }
-    var msg = String(e.parameter.reply || '').trim();
-    if (!msg) return htmlPage_('<p>The reply is empty - nothing posted.</p>');
-    var res = UrlFetchApp.fetch(replyHost_(tok) + r.comment_id + '/replies', { method: 'post', muteHttpExceptions: true,
-      payload: { message: msg.slice(0, 2200), access_token: tok } });
-    if (res.getResponseCode() !== 200) return htmlPage_('<p>Instagram did not accept the reply: ' + esc_(res.getContentText().slice(0, 300)) +
-      '</p><p>Nothing was posted. You can go back and try again.</p>');
-    var id = (JSON.parse(res.getContentText()) || {}).id || '';
-    sh.getRange(r.row, col('status')).setValue('replied');
-    sh.getRange(r.row, col('reply')).setValue(msg);
-    sh.getRange(r.row, col('reply_id')).setValue(id);
-    sh.getRange(r.row, col('done_ist')).setValue(nowIst_());
-    return htmlPage_('<p>Reply posted ✅</p><p>' + esc_(msg) + '</p><p><a href="' + esc_(r.permalink) + '">Open the post</a></p>');
+    var byForm = {};
+    commentRows_().forEach(function (r) {
+      if (r.status === 'waiting' && r.form_id) (byForm[r.form_id] = byForm[r.form_id] || []).push(r);
+    });
+    Object.keys(byForm).forEach(function (fid) {
+      var resps;
+      try { resps = FormApp.openById(fid).getResponses(); } catch (err) { Logger.log('form ' + fid + ': ' + err); return; }
+      byForm[fid].forEach(function (r) { commentHandle_(r, resps); });
+    });
   } finally {
     lock.releaseLock();
   }
+}
+
+// the newest submitted answer for this comment's section of the form (its number = form_no)
+function commentAnswer_(r, resps) {
+  var n = Number(r.form_no);
+  for (var i = resps.length - 1; i >= 0; i--) {
+    var m = {};
+    resps[i].getItemResponses().forEach(function (ir) { m[ir.getItem().getTitle()] = ir.getResponse(); });
+    var action = m['C' + n + ' · Action'];
+    if (action) return { action: action, ticked: m['C' + n + ' · Replies (tick one or more)'] || [], own: String(m['C' + n + ' · Your own reply (optional - used instead of the ticked replies)'] || '').trim() };
+  }
+  return null;
+}
+
+function commentHandle_(r, resps) {
+  var sh = commentsSheet_();
+  var col = function (name) { return COMMENT_COLS.indexOf(name) + 1; };
+  var set = function (name, v) { sh.getRange(r.row, col(name)).setValue(v); };
+  var a = commentAnswer_(r, resps);
+  if (!a) return;                                       // not submitted yet
+  if (String(r.comment_id).indexOf('TEST-') === 0) { set('status', 'test'); return; }      // the sample e-mail: never posted
+  if (commentOpen_(r)) { set('status', 'expired'); set('done_ist', nowIst_()); return; }
+  if (a.action === COMMENT_ACTIONS[1]) { set('status', 'skipped'); set('done_ist', nowIst_()); return; }
+  var tok = token_(r.page);
+  if (a.action === COMMENT_ACTIONS[2]) {
+    var h = UrlFetchApp.fetch(replyHost_(tok) + r.comment_id, { method: 'post', muteHttpExceptions: true, payload: { hide: 'true', access_token: tok } });
+    set('status', h.getResponseCode() === 200 ? 'hidden' : 'error');
+    set('reply', h.getResponseCode() === 200 ? '' : 'hide failed: ' + h.getContentText().slice(0, 200));
+    set('done_ist', nowIst_());
+    return;
+  }
+  var ticked = (a.ticked instanceof Array) ? a.ticked : (a.ticked ? [a.ticked] : []);
+  var msg = (a.own || ticked.join(' ')).trim();
+  if (!msg) return;                                     // Reply chosen but no text: left waiting (the owner can submit again)
+  var res = UrlFetchApp.fetch(replyHost_(tok) + r.comment_id + '/replies', { method: 'post', muteHttpExceptions: true,
+    payload: { message: msg.slice(0, 2200), access_token: tok } });
+  if (res.getResponseCode() !== 200) {
+    set('status', 'error');
+    set('reply', 'Instagram did not accept: ' + res.getContentText().slice(0, 200));
+    set('done_ist', nowIst_());
+    return;
+  }
+  set('status', 'replied');
+  set('reply', msg);
+  set('reply_id', (JSON.parse(res.getContentText()) || {}).id || '');
+  set('done_ist', nowIst_());
+}
+
+// run ONCE from the Apps Script editor (Run -> setupCommentPoll, then Review permissions -> Allow): starts the 5-minute check
+function setupCommentPoll() {
+  ScriptApp.getProjectTriggers().forEach(function (t) { if (t.getHandlerFunction() === 'commentPoll') ScriptApp.deleteTrigger(t); });
+  ScriptApp.newTrigger('commentPoll').timeBased().everyMinutes(5).create();
+  Logger.log('Comment replies: the submitted forms are checked every 5 minutes');
 }
 
 // ------------------------------------------------------------------ the district job's timer (owner 14 Nov)

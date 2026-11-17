@@ -33,52 +33,12 @@ INSIGHT_RANK = os.environ.get("PICK_INSIGHT_RANK", "1") == "1"      # 0 = the ea
 # this page (insight weight >= EXTRA_WEIGHT) beyond the count, at most EXTRA_MAX more a round (Instagram's 50 posts a day stay safe)
 EXTRA_WEIGHT = float(os.environ.get("PICK_EXTRA_WEIGHT", "0.5"))
 EXTRA_MAX = int(os.environ.get("PICK_EXTRA_MAX", "3"))
-# owner 16 Nov ("quality is important than bunch of reels", Kovai morning: 8 weak news - TNPSC 6.0, school 6.6 - got 100-160 views
-# while 9-10 news got 600-7000): the round's count is a MAXIMUM - only news whose reach score reaches this floor is written; a weak
-# round writes fewer (or none). Power cuts are always written. 0 = off (every round fills its count as before)
-MIN_SCORE = float(os.environ.get("PICK_MIN_SCORE", "0") or 0)
-# owner 16 Nov ("up to 3 more when real news based on the high point - the reachable contents must go out"): beyond the day's 14,
-# at most EXTRA_DAY more a day of news scoring EXTRA_SCORE+ (the strong ones: crime / civic / accident news carried by many papers)
-EXTRA_SCORE = float(os.environ.get("PICK_EXTRA_SCORE", "0") or 0)      # 0 = the earlier rule (topic insight weight >= EXTRA_WEIGHT)
-EXTRA_DAY = int(os.environ.get("PICK_EXTRA_DAY", "0") or 0)      # 0 = no daily limit (EXTRA_MAX a round)
-# owner 16 Nov ("based on the reach we omit the contents"): news types Kovai's own reels proved people skip (198 reels to 14 Nov,
-# median views: education 340, sports / culture 332, temple 312 - power cut 2985, civic 1647, crime 804, rain 757) are not written
-# automatically; a school holiday / exam result is (people do watch those). Power cuts always. Empty = off
-# "auto" (owner 16 Nov, "modify ours once a day"): the types BOTH pages' insights show people skip (learned.skip_topics - ours + the
-# reference page's, refreshed every night)
-LOW_REACH = [t.strip() for t in os.environ.get("PICK_LOW_REACH", "").split(",") if t.strip()]
-# news that changes people's day is never left out, whatever its type: a holiday, exam result, ban / closure, route change, fee
-LOW_REACH_EXCEPT = re.compile(r"விடுமுறை|தேர்வு முடிவு|ரிசல்ட்|ஹால் டிக்கெட்|ஒத்திவை|ரத்து|தடை|மூடப்|மூடல்|போக்குவரத்து மாற்ற|"
-                              r"கட்டணம்|குடிநீர்|சாலை|மின்|எச்சரிக்கை")
-
-
-def low_reach_types():
-    if LOW_REACH == ["auto"]:
-        try:
-            import learned
-            return learned.skip_topics()
-        except Exception:
-            return []
-    return LOW_REACH
-
-
-def low_reach(title, types=None):
-    """'' = a news type people watch; else why it is left out (the proven low-reach types)"""
-    types = low_reach_types() if types is None else types
-    if not types or LOW_REACH_EXCEPT.search(title or ""):
-        return ""
-    try:
-        import learned
-        _, topic, _ = learned.reach_weight(title or "")
-    except Exception:
-        return ""
-    return f"low-reach type ({topic})" if topic in types else ""
 AD = re.compile(r"தள்ளுபடி|ஆஃபர்|ஆபர்|அள்ளுங்க|அள்ளுவோம்|விற்பனை தொடக்கம்|ஷோரூம்|புதிய கிளை திறப்பு|சிறப்பு விற்பனை")      # advertorials, not news
 DRY = os.environ.get("PICK_DRY", "") in ("1", "true", "yes")
 # owner 2 Nov: "do not ask me to confirm" - no e-mail; every round's top news (PICK_AUTO_TOP, 8 + 6 + 6 = 20 a day) is written at once.
 EMAIL = os.environ.get("PICK_EMAIL", "0") == "1"
 # owner 2 Nov: more than two papers - every Tamil outlet the collector already trusts for Coimbatore
-HOME_DINAMALAR = "district-news-coimbatore"      # the page's own Dinamalar district section (a district page sets its own)
+HOME_DINAMALAR = "district-news-coimbatore"      # the page's own Dinamalar district section (districts/pipeline.py sets its own)
 OUTLETS = {"dinamalar.com": "தினமலர்", "dinamani.com": "தினமணி", "dinakaran.com": "தினகரன்", "dailythanthi.com": "தினத்தந்தி",
            "maalaimalar.com": "மாலைமலர்", "hindutamil.in": "இந்து தமிழ்", "polimernews.com": "பாலிமர்"}
 
@@ -300,9 +260,7 @@ def round_top(t):
         slots = []
     if not slots:
         return AUTO_TOP
-    # owner 16 Nov: a run started a little early (00:55 for the 01:00 round) is that round, not the one before
-    early = t + datetime.timedelta(minutes=15) if hasattr(t, "hour") else t
-    hit = [n for h, n in slots if h <= early.hour and early.date() == t.date()] or [n for h, n in slots if h <= t.hour]
+    hit = [n for h, n in slots if h <= t.hour]
     return hit[-1] if hit else slots[-1][1]
 
 
@@ -545,28 +503,7 @@ def cmd_decide():
             log(f"   not picked automatically ({why_}): {t_[:70]}")
         power = [x for x in items if x.get("power_cut")]      # a power cut is always written, on top of the round's count
         rest = [x for x in items if not x.get("power_cut")]
-        low_types = low_reach_types()
-        if low_types:
-            log(f"   news types people skip (ours + the reference's insights): {', '.join(low_types)}")
-        for x in [x for x in rest if low_reach(x.get("title"), low_types)]:
-            log(f"   not written ({low_reach(x.get('title'), low_types)}): {x['title'][:70]}")
-            rest.remove(x)
-        weak = [x for x in rest if MIN_SCORE and sc[x["id"]][0] < MIN_SCORE]
-        if weak:
-            log(f"   {len(weak)} news under the quality floor {MIN_SCORE:g} - not written (a weak round posts fewer reels)")
-            rest = [x for x in rest if x not in weak]
-        if EXTRA_SCORE:      # owner 16 Nov: strong news beyond the count, at most EXTRA_DAY a day
-            day = (at.strftime("%Y-%m-%d") if hasattr(at, "strftime") else str(at)[:10])
-            used = sum(int(r.get("extra", 0)) for k, r in st.get("rounds", {}).items() if k.startswith(day) and k != rid)
-            room_x = min(EXTRA_MAX, max(0, EXTRA_DAY - used)) if EXTRA_DAY else EXTRA_MAX
-            if not top:
-                room_x = 0      # a round with no news count (01:00) writes power cuts only - never extras
-            extra = [x for x in rest[top:] if sc[x["id"]][0] >= EXTRA_SCORE][:room_x]
-            rnd["extra"] = len(extra)
-            if extra:
-                log(f"   {len(extra)} strong news (score {EXTRA_SCORE:g}+) beyond the count - {used + len(extra)} of {EXTRA_DAY or '-'} extra today")
-        else:
-            extra = [x for x in rest[top:] if sc[x["id"]][2] >= EXTRA_WEIGHT][:EXTRA_MAX]      # more news people watch, beyond the count
+        extra = [x for x in rest[top:] if sc[x["id"]][2] >= EXTRA_WEIGHT][:EXTRA_MAX]      # more news people watch, beyond the count
         pick_ = power + rest[:top] + extra
         pick_ids = {x["id"] for x in pick_}
         log(f"round {rid} (at least {top}, up to {EXTRA_MAX} more of well-watched topics): {len(items)} news to choose from ({sum(1 for x in items if x.get('leftover'))} from earlier rounds), "

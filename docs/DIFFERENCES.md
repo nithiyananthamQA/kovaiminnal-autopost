@@ -1,77 +1,67 @@
-# Where Chennai Minnal differs from the reference
+# Where our pages differ from the reference
 
-Reference = news360-tn/coimbatore360-autopost (its code is copied in this repo: research_free/pick.py, collect.py,
-poster/post.py, .github/workflows/pick.yml, powercut.yml, post.yml). This file lists EVERY difference.
-A difference stays only with the owner's OK. Updated with every change.
+Reference = news360-tn/coimbatore360-autopost (the friend's Coimbatore page; his 7 pages run the same code, one repo each).
 
-Last full check: 14 Nov 2026.
+**Owner rule 17 Nov 2026: "follow his same all, only template and voice is differ ... when we create new pages then follow it."**
+Every Minnal page is the reference's code with only the page's names changed. This file lists every difference that remains;
+nothing else may differ. Re-checked with `git diff ref/main` (remote `ref` = the reference repo).
 
-## Same as the reference
+Reference ported up to: **b204b4d (17 Nov 2026 06:48 UTC)** - all 21 of his code changes since our copy (11 Nov, abb1ac1),
+plus ab06a9d (16 Nov). Next port: `git log abb1ac1..ref/main` for commits after b204b4d.
 
-| What | Reference | Chennai |
-|---|---|---|
-| Power-cut check | every 30 min (05:50-21:50) | every 30 min (05:35-22:05) |
-| News rounds | 06:00, 10:00, 19:00 | 06:05, 10:05, 19:05 |
-| News per day | 8 + 6 + 6 = 20 | 8 + 6 + 6 = 20 |
-| News sources | Dinamalar district list, each outlet's district page, Google/Bing searches on 7 outlets | the same, with Chennai's name |
-| Article checks | check_article (Tamil, local, not posted, same event) | the same function |
-| Same news, several papers | merged, +points | the same |
-| Ranking | points (interest, outlets, insights, freshness) | the same function |
-| Skipped automatically | obituaries / suicides, ceremonies, shop offers | the same |
-| Writer, fact checks, Tamil proofread | free writers first, Claude only if all fail | the same |
-| Freshness, duplicate checks, Facebook rules (2 h gap) | post.py | the same code |
+## 1. Owner's choice: reel template and voice (owner 17 Nov: "voice and video template is ours")
 
-## Different - decided by the owner
+- Reel design v5 (reel/reel5.py on reel4.py): our layout, top strip, place pin, no footer; our own music bed (tools/make_music.py,
+  config `music`). Reference: v4.
+- Voice: ElevenLabs Nila (config `reel_voice`), place-name listen-back check. Reference: edge-tts Valluvar.
+- Reel end card: ours (reference cee3548 "Source: <paper> (<date>)" end card is template - not taken; our top strip shows the source).
+- Pictures: our own generated pictures only, no news-site photos (config `real_photo_enabled: false`, owner 14 Nov, part of the video).
+- Gold-rate slides: his design with our name (கோவை மின்னல், @kovai_minnal, #KovaiMinnal); the brand text is smaller (40 px)
+  because "மின்னல்" is wider than "360".
 
-1. Reel look and voice: B2 template, Anbu voice (11 Nov). Reference: v4 design, Valluvar voice.
-2. (removed 14 Nov: power-cut reels are as long as the reference's again - every area read, up to ~90 s.)
-3. Closing lines: power cut = send to that area's people + பவர்கட் follow line; other news = only
-   "சென்னை செய்திகளை உடனுக்குடன் தெரிந்துகொள்ள சென்னை மின்னல் பக்கத்தை ஃபாலோ செய்யுங்கள்." (13-14 Nov).
-4. A power cut whose day (written in the notice) has passed is never posted (13 Nov; stricter than the reference).
+## 2. Names (branding)
 
-## Different - kept by the owner (14 Nov: "our way is better, leave it")
+Kovai Minnal / கோவை மின்னல், #KovaiMinnal, @kovai_minnal, bot name kovaiminnal-bot, Cloudinary folder kovaiminnal,
+e-mail tag KOVAIMINNAL. Never "360".
 
-5a. A news round opens at most 60 articles in 6 minutes (so the power-cut check in the same job is never held up);
-   the reference's news job has no such limit. Whatever is left waits for the next round.
-5b. Posting: Chennai writes and posts in the same job, right after the round (reference: a separate job every 5 minutes).
-    The gap is the same as the reference: at least 12 minutes between posts, power cuts never wait (14 Nov; until then
-    Chennai posted about 5 minutes apart).
-5c. The reference's LIVE file stops only its scheduled posting; Chennai uses the switch in poster/config.json instead.
+## 3. Forced (Meta / GitHub give us no other way)
 
-## Different - forced
+- Instagram connection: Meta's Unified login (app Minnal Pages, minnal-bot system-user token, graph.facebook.com + account id,
+  poster/ig_api.py). Reference: Instagram login (graph.instagram.com, "me"). Same for comments, rasipalan, gold rate, Facebook.
+  The token can come from the GitHub secret IG_SYSTEM_TOKEN or the Minnal bridge.
+- Instagram views: our minnal-bot token lacks `instagram_manage_insights`, so poster/insights.py cannot read our views and
+  research_free/learned.json stays on the starting priority rule. The reference learns from its own views every night - ours
+  will too as soon as the owner's new token (with that permission) is saved as IG_SYSTEM_TOKEN. No substitute is used.
+- Scheduler: GitHub's own timer rarely starts our jobs, so tools/keeper.py (keeper.yml) starts each workflow at its own cron times.
+  The schedules themselves are the reference's.
+- Comment reply forms (reference f7697da / 192dd17): ported; the Apps Script part (apps_script/Code.gs) works only after the owner
+  pastes the new Code.gs into the Kovai bridge and runs setupCommentPoll once.
+- Cloudinary clean-up (reference 5603740 / 9e5d3ed): ported; it needs the GitHub secrets CLOUDINARY_API_KEY and
+  CLOUDINARY_API_SECRET (owner) - until then it deletes nothing.
 
-5. Instagram connection: Meta's new login (app Minnal Pages, bot user minnal-bot, graph.facebook.com). Meta gives new apps
-   no other way. Reference: Instagram login (graph.instagram.com). Posts look the same.
-6. Dinakaran has no Chennai district page; its Chennai news comes through the Google search on dinakaran.com.
+## 4. Held until the owner says yes
 
-## Different - still to fix or decide (owner)
+- Gold & silver rate carousel (reference bc0eaec): code ported and rebranded, schedule HELD (show-first rule).
+  Sample: ~/Videos/kovai-minnal/goldrate-sample-17nov.jpg. To start it: put the three cron lines back in .github/workflows/goldrate.yml
+  and add `"goldrate.yml": {"dry": "0", "date": ""}` to tools/keeper.py LIVE_INPUTS.
 
-7. Comments (reply options by e-mail), insights and rasipalan: the reference runs them for its page; Chennai has none yet.
-8. Ranking uses Kovai Minnal's learned topic weights (learned.json), because Chennai has no insights yet.
+## 5. Kept as a correctness fix (owner to confirm)
 
-## Different - owner 16 Nov (Kovai Minnal AND Chennai Minnal, the same on both pages)
+- A Tiruppur / Erode power-cut notice printed in the paper's Coimbatore edition never posts on Kovai (16 Nov RN-52, Uthiyur cut
+  posted wrongly): extra Tiruppur town names in allnews.OTHER_PLACES / OTHER_EN and the notice-text check in powercut.check.
+  The reference refuses Tiruppur / Erode edition pages (aba8a65) but not this case.
 
-9. News a day: 14, more at peak hours - Kovai 05:00 4, 09:00 3, 13:00 2, 17:00 3, 21:00 2; 01:00 power cuts only
-   (Chennai: the same hours and counts - a late start keeps its round). Reference: 24 a day
-   (01:00 2, 05:00 5, 09:00 5, 13:00 3, 17:00 5, 21:00 4) + up to 3 more a round.
-10. The round count is a MAXIMUM: only news scoring 7+ is written; a weak round posts fewer (14-15 Nov: 10-18 news a
-    day scored 7+). Reference: the count is a minimum, filled from whatever news there is.
-11. Extras: beyond the count, news scoring 11+ (2-4 a day), at most 1 a round and 3 a day. Reference: up to 3 more
-    a round of well-watched topics (insight weight 0.5+).
-12. Power cuts always, every round, outside the 14 and the score rules (same as the reference).
-13. Learning every night (02:10 IST, insights.yml -> research_free/reference_sync.py): the reference page's own
-    published insights (its public repo: poster/insights/history.json + research_free/learned.json) are blended
-    with ours, per news type, by reels measured (learned.reach_map / reach_weight). A type under 0.50x the usual
-    views on 10+ reels is left out until it is back over 0.60x (16 Nov night list: sports). Never left out: power
-    cut, civic, crime, accident, rain, jobs, unsorted news, and any news with a holiday / ban / closure / route
-    change / fee / water / road / power / warning in it. Reference: its own insights only.
-14. Instagram views: since 14 Nov our token cannot read them (no instagram_manage_insights) - until the owner's new
-    token is saved as the GitHub secret IG_SYSTEM_TOKEN, the nightly change comes from the reference's numbers only.
-15. Reel top strip: category / date / 📰 source on one line (the source shortens, never the category), place pin
-    below at 386 px. Reference: v4 header.
-16. Chennai ranks news by the same score as Kovai (points + 3x the type's reach - age) since 16 Nov ("same setup, only
-    the news differs"); it used the plain points before.
-17. One school / college / club / trust's own event (function, contest, camp, training, sapling drive, recitation)
-    is not written automatically on any page since 16 Nov (owner: "the people involved are 500 ... how can other
-    people connect with this"). School news that changes people's day still goes: holiday, result, timetable,
-    admission, fee, ban, harassment, accident, fainting, protest, missing child. Reference: writes them.
+## 6. Chennai Minnal (until it is a copy of the Kovai code like the reference's pages)
+
+Chennai still runs on districts/pipeline.py (my own engine - the reason Kovai and Chennai drifted). Its counts now follow the
+reference (24 a day: 01:00 2, 05:00 5, 09:00 5, 13:00 3, 17:00 5, 21:00 4; no score floor, no skip list; its timer runs
+05:35-22:05, so the 01:00 round does not run there). Plan: Chennai becomes its own repo, a copy of this one with only the
+district words changed (as the reference does for Tirupur, Salem, Erode, Karur, Trichy, Namakkal); the engine stays until the
+owner has seen the copy's reels. The hooks this engine needs (pick.HOME_DINAMALAR, collect.IG_PAGES, powercut.PAGE_KEY,
+validate.DISTRICT_WORDS, post.PAGE_TAGS / PAGE_LOGOS / DEFAULT_LOC / HOME_PLACES) hold Kovai's own values and change nothing on Kovai.
+
+## Removed 17 Nov (our own rules - the reference's way instead)
+
+14 news a day + peak split, score floor 7, extras 11+ (3 a day), the nightly skip list (reference_sync.py, reference_reach.json,
+learned.py blending), the school / club event filter, the 01:00 power-cut-only round, the extra free writers (Gemma, Cloudflare
+Llama - the reference writes with Gemini then Groq, Claude only when both fail).

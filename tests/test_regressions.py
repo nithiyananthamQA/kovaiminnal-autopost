@@ -1837,7 +1837,7 @@ class FreePicturesFirst30Oct(unittest.TestCase):
             os.environ.pop(k, None)
         os.environ.update(CLOUDFLARE_API_TOKEN="t", CLOUDFLARE_ACCOUNT_ID="a")
         try:
-            self.assertTrue([c for c in llm.chain() if c[0] == "cloudflare"])      # Kovai Minnal owner 11 Nov: free only (no Claude) - Cloudflare also writes
+            self.assertFalse([c for c in llm.chain() if c[0] == "cloudflare"])
         finally:
             for k, v in old.items():
                 os.environ.pop(k, None) if v is None else os.environ.__setitem__(k, v)
@@ -1875,14 +1875,14 @@ class FreeWriters30Oct(unittest.TestCase):
                       "OPENROUTER_API_KEY", "NVIDIA_API_KEY", "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID")
         ch = self.build(everything)
         providers = list(dict.fromkeys(p for p, _ in ch))
-        self.assertEqual(["gemini", "gemma", "groq", "cloudflare"], providers)      # Kovai Minnal owner 11 Nov: free only - Gemma and Cloudflare added; Sarvam still off
+        self.assertEqual(["gemini", "groq"], providers)      # Sarvam off until writer-compare proves it (30 Oct: empty answers)      # Gemma ready but not live until proven (30 Oct test: 503/500)
         self.assertEqual(("gemini", "gemini-3.6-flash"), ch[0])
         import llm
         self.assertFalse(hasattr(llm, "_cerebras"))      # 30 Oct: Cerebras needs a card - paid, not used
 
     def test_without_new_keys_same_as_before(self):
         providers = list(dict.fromkeys(p for p, _ in self.build(("GEMINI_API_KEY", "GROQ_API_KEY"))))
-        self.assertEqual(["gemini", "gemma", "groq"], providers)      # Sarvam skipped until its key exists (Kovai Minnal: Gemma on the Gemini key)
+        self.assertEqual(["gemini", "groq"], providers)      # Sarvam skipped until its key exists
         os.environ["WRITERS_ORDER"] = "gemma"
         try:
             self.assertEqual(["gemma"], list(dict.fromkeys(p for p, _ in self.build(("GEMINI_API_KEY",)))))      # writer-compare can test one
@@ -2179,43 +2179,6 @@ class OnlyWatchedNews(unittest.TestCase):
         for title in self.KEEP:
             self.assertEqual("", collect.low_interest(title), title)
 
-    # owner 16 Nov: "why did you choose school functions ... how can other people connect with this"
-    SMALL_GROUP = ["பொள்ளாச்சி அருகே பள்ளியில் குழந்தைகள் தின கலை இலக்கிய திருவிழா",
-                   "கோவையில் கிராமப்புற பள்ளி மாணவர்களுக்கான யோகா போட்டி: 232 பேர் பங்கேற்பு",
-                   "தேசிய அளவிலான போட்டிக்கு வித்யா விகாசினி மாணவர்கள் தேர்வு",
-                   "கோவில்பாளையத்தில் குழந்தைகள் தின விழாவுடன் 327வது வார களப்பணி",
-                   "தினமலர் விளையாட்டு வினாடி வினா: மில்லேனியம் பள்ளி முதலிடம்",
-                   "பேரூர், சவுரிபாளையத்தில் 2,600 மரக்கன்று நடவு: சிறுதுளி முயற்சி",
-                   "கோவையில் கந்த சஷ்டி கவச பாராயண ஆன்மிக பெருவிழா தொடக்கம்",
-                   "சூலக்கல்லில் அங்கக வேளாண்மை பயிற்சி: மண் வளம் காக்க விவசாயிகளுக்கு விளக்கம்",
-                   "மணியகாரம்பாளையம் கேம்போர்டு பள்ளியில் 17-வது நிறுவனர் தின விழா",
-                   "கோவை ஆர்.வி.எஸ். கல்லூரி சர்வதேச பல்கலைக்கழகத்துடன் ஒப்பந்தம்"]
-    SCHOOL_NEWS = ["கனமழை காரணமாக கோவை மாவட்ட பள்ளிகளுக்கு நாளை விடுமுறை",
-                   "பள்ளி மாணவிக்கு பாலியல் தொல்லை: ஆசிரியர் கைது",
-                   "பள்ளி வேன் கவிழ்ந்து விபத்து: 10 மாணவர்கள் காயம்",
-                   "சத்துணவு சாப்பிட்ட 20 பள்ளி மாணவர்கள் மயக்கம்",
-                   "அரசுக் கல்லூரியில் மாணவர் சேர்க்கை: விண்ணப்பிக்க நாளை கடைசி நாள்",
-                   "கட்டண உயர்வை கண்டித்து கல்லூரி மாணவர்கள் போராட்டம்",
-                   "பெரியநாயக்கன்பாளையத்தில் மாணவர் போட்டி: அனுமதியின்றி வெளியே செல்லத் தடை",
-                   "பள்ளிக்குச் சென்ற மாணவர் மாயம்: போலீசார் விசாரணை",
-                   "ரோட்டரி சங்கம் சார்பில் இலவச கண் சிகிச்சை முகாம்",
-                   "பிளஸ் 2 பொதுத் தேர்வு அட்டவணை வெளியீடு: மாணவர்கள் கவனத்திற்கு"]
-
-    def test_one_school_or_clubs_own_event_is_not_written(self):
-        for title in self.SMALL_GROUP:
-            self.assertTrue(collect.low_interest(title), title)
-
-    def test_school_news_that_changes_peoples_day_is_written(self):
-        for title in self.SCHOOL_NEWS:
-            self.assertEqual("", collect.low_interest(title), title)
-
-    def test_school_events_are_left_out_of_both_pages_automatic_pick(self):      # Kovai pick + Chennai/district finder share auto_ok
-        import pick
-        for title in self.SMALL_GROUP:
-            self.assertTrue(pick.auto_ok({"title": title, "url": ""}), title)
-        src = (ROOT / "districts" / "pipeline.py").read_text(encoding="utf-8")
-        self.assertIn("pick.auto_ok(", src)
-
     def test_switch_off_writes_everything(self):
         real = collect._selection
         collect._selection = lambda: {"skip_low_interest": False}
@@ -2246,9 +2209,7 @@ class RoundsTopThree(unittest.TestCase):
         times = sorted(((int(h) * 60 + int(m) + 330) % 1440) / 60 for m, hs in re.findall(r'cron: "(\d+) ([\d,]+) \* \* \*"', wf)
                        for h in hs.split(","))
         self.assertEqual([1, 5, 9, 13, 17, 21], times)      # owner 13 Nov: every 4 hours (posting waits for 08:00 / 12:00 / 18:00)
-        self.assertIn('PICK_ROUND_TOP: "1=0,5=4,9=3,13=2,17=3,21=2"', wf)      # owner 16 Nov: 14 a day (0+4+3+2+3+2)
-        self.assertIn('PICK_EXTRA_DAY: "3"', wf)      # 14 + up to 3 strong news a day
-        self.assertIn('PICK_EXTRA_SCORE: "11"', wf)
+        self.assertIn('PICK_ROUND_TOP: "1=2,5=5,9=5,13=3,17=5,21=4"', wf)      # 4+4+3+3+3+3 = 20      # 8 + 6 + 6 = 20
         self.assertIn('PICK_EMAIL: "0"', wf)      # "do not ask me to confirm"
 
     def test_each_round_writes_top_3_of_the_whole_district(self):
