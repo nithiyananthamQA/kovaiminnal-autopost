@@ -29,9 +29,11 @@ e-mail tag KOVAIMINNAL. Never "360".
 - Instagram connection: Meta's Unified login (app Minnal Pages, minnal-bot system-user token, graph.facebook.com + account id,
   poster/ig_api.py). Reference: Instagram login (graph.instagram.com, "me"). Same for comments, rasipalan, gold rate, Facebook.
   The token can come from the GitHub secret IG_SYSTEM_TOKEN or the Minnal bridge.
-- Instagram views: our minnal-bot token lacks `instagram_manage_insights`, so poster/insights.py cannot read our views and
-  research_free/learned.json stays on the starting priority rule. The reference learns from its own views every night - ours
-  will too as soon as the owner's new token (with that permission) is saved as IG_SYSTEM_TOKEN. No substitute is used.
+- Instagram views: our minnal-bot token lacks `instagram_manage_insights`, so poster/insights.py cannot add OUR reels' views.
+  research_free/learned.json is still rebuilt every night from poster/insights/history.json, which holds the reference page's
+  197 measured reels copied on 11 Nov - so our pick uses HIS insight weights as of 11 Nov, frozen. The reference learns from its
+  own new views every night; ours will too as soon as the owner's new token (with that permission) is saved as IG_SYSTEM_TOKEN.
+- Posting chain (reference f43a08d / eac718e): the next run it starts carries timer=true, so our LIVE file still stops posting.
 - Scheduler: GitHub's own timer rarely starts our jobs, so tools/keeper.py (keeper.yml) starts each workflow at its own cron times.
   The schedules themselves are the reference's.
 - Comment reply forms (reference f7697da / 192dd17): ported; the Apps Script part (apps_script/Code.gs) works only after the owner

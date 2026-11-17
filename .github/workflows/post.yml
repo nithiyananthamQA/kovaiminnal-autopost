@@ -153,7 +153,7 @@ jobs:
         run: |
           echo "${{ needs.check.outputs.waiting }} stories wait only for the gap"
           sleep 660
-          gh workflow run post.yml -R "$GITHUB_REPOSITORY" -f dry_run=false -f prebuild=false && echo "next posting run started"
+          gh workflow run post.yml -R "$GITHUB_REPOSITORY" -f dry_run=false -f prebuild=false -f timer=true && echo "next posting run started"      # timer=true: the LIVE file still stops posting (17 Nov)
 
   post:
     needs: check
@@ -258,9 +258,10 @@ jobs:
     timeout-minutes: 12
     steps:
       - name: Start the next live posting check in 6 minutes
+        # 17 Nov (forced): timer=true = our scheduled run (the LIVE file still stops posting; tools/keeper.py sends the same)
         if: env.DRY_RUN == '' && env.PREBUILD == ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           sleep 360
-          gh api -X POST "repos/${{ github.repository }}/actions/workflows/post.yml/dispatches" -f ref=main -F "inputs[dry_run]=false" || echo "next run not started (the 5-minute schedule still runs)"
+          gh api -X POST "repos/${{ github.repository }}/actions/workflows/post.yml/dispatches" -f ref=main -F "inputs[dry_run]=false" -F "inputs[timer]=true" || echo "next run not started (the 5-minute schedule still runs)"
