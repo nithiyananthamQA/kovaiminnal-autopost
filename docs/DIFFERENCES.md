@@ -60,14 +60,15 @@ e-mail tag KOVAIMINNAL. Never "360".
   posted wrongly): extra Tiruppur town names in allnews.OTHER_PLACES / OTHER_EN and the notice-text check in powercut.check.
   The reference refuses Tiruppur / Erode edition pages (aba8a65) but not this case.
 
-## 6. Chennai Minnal (until it is a copy of the Kovai code like the reference's pages)
+## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 
-Chennai still runs on districts/pipeline.py (my own engine - the reason Kovai and Chennai drifted). Its counts now follow the
-reference (24 a day: 01:00 2, 05:00 5, 09:00 5, 13:00 3, 17:00 5, 21:00 4; no score floor, no skip list; its timer runs
-05:35-22:05, so the 01:00 round does not run there). Plan: Chennai becomes its own repo, a copy of this one with only the
-district words changed (as the reference does for Tirupur, Salem, Erode, Karur, Trichy, Namakkal); the engine stays until the
-owner has seen the copy's reels. The hooks this engine needs (pick.HOME_DINAMALAR, collect.IG_PAGES, powercut.PAGE_KEY,
-validate.DISTRICT_WORDS, post.PAGE_TAGS / PAGE_LOGOS / DEFAULT_LOC / HOME_PLACES) hold Kovai's own values and change nothing on Kovai.
+`python tools/make_page.py chennai ~/chennaiminnal-autopost` makes the copy: the same files with only the district's words and values
+(names, handle @chennaiminnal, #ChennaiMinnal, Kovai's closing lines with Chennai's name, Chennai's place lists and searches, its
+city look for pictures, Instagram 17841452418440882, Facebook page 1450975134763291 via the minnal-bot token, Cloudinary folder
+chennaiminnal, its Sheet = the Minnal bridge). Coimbatore-only tests are skipped there; tests/test_page_values.py checks Chennai's.
+Every Kovai change is carried to Chennai by running make_page again (new pages: the same command with their key).
+Go-live: /tmp/chennai_setup.sh (secrets, push, all jobs off) then /tmp/chennai_live.sh (old engine off + copy on, one step).
+Until then Chennai runs on districts/pipeline.py with the reference's counts. The district engine stays for power-cut-only pages.
 
 ## Removed 17 Nov (our own rules - the reference's way instead)
 
