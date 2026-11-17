@@ -62,7 +62,7 @@ class Keeper(unittest.TestCase):
         self.assertEqual(set(jobs), set(K.LIVE_INPUTS))      # a new scheduled workflow needs its live inputs here
         for wf, lines in jobs.items():
             y = (ROOT / ".github" / "workflows" / wf).read_text(encoding="utf-8")
-            self.assertEqual(lines, re.findall(r'cron: "([^"]+)"', y), wf)
+            self.assertEqual(lines, re.findall(r'^\s*-\s*cron: "([^"]+)"', y, re.M), wf)      # a commented-out line is not a time
 
     def test_inputs_exist_and_mean_a_live_run(self):
         for wf, ins in K.LIVE_INPUTS.items():
@@ -81,26 +81,26 @@ class Keeper(unittest.TestCase):
         n = {}
         for wf, _, _ in gh.started:
             n[wf] = n.get(wf, 0) + 1
-        self.assertEqual(n, {"post.yml": 288, "powercut.yml": 34, "comments.yml": 36, "district_powercut.yml": 34,
-                             "pick.yml": 7, "rasipalan.yml": 4, "insights.yml": 1, "cloudclean.yml": 1,      # 17 Nov: + the reference's clean-up
-                             "goldrate.yml": 3})      # owner 17 Nov: the gold rate reel (09:35 + two backups)
+        # GITHUB SAFE MODE (owner 17 Nov): posting checks hourly (the posting chain does the rest), comments / power cuts hourly,
+        # no district engine (Chennai has its own repo) - back to 288 / 36 / 34 when the Cloudflare Workers timer takes over
+        self.assertEqual(n, {"post.yml": 25, "powercut.yml": 17, "comments.yml": 18, "pick.yml": 7, "rasipalan.yml": 4,
+                             "insights.yml": 1, "cloudclean.yml": 1, "goldrate.yml": 3})      # owner 17 Nov: the gold rate reel (09:35 + two backups)
         picks = [t.astimezone(K.IST).strftime("%H:%M") for wf, t, i in gh.started if wf == "pick.yml"]
         # owner 16 Nov: the reference's 6 rounds every 4 hours; the test day starts 05:30, so the missed 05:00 round is caught up then
         self.assertEqual(picks, ["05:30", "09:00", "13:00", "17:00", "21:00", "01:00", "05:00"])
         first = {wf: t.astimezone(K.IST).strftime("%H:%M") for wf, t, _ in reversed(gh.started)}
         self.assertEqual(first["powercut.yml"], "05:50")
-        self.assertEqual(first["district_powercut.yml"], "05:35")
         self.assertEqual(first["insights.yml"], "02:10")
         self.assertEqual(first["rasipalan.yml"], "07:00")
         self.assertLess(gh.calls, 2500)      # GITHUB_TOKEN: 1000 API calls an hour for the whole repository
 
     def test_switched_off_never_started_and_an_earlier_run_counts(self):
         gh = FakeGh(off={"post.yml", "pick.yml"}, ran={"powercut.yml": [ist("05:52")]})      # e.g. GitHub's own timer ran 05:50
-        run_day(gh, start=ist("05:30"), minutes=60)
+        run_day(gh, start=ist("05:30"), minutes=90)
         started = [(wf, t.astimezone(K.IST).strftime("%H:%M")) for wf, t, _ in gh.started]
         self.assertNotIn("post.yml", [w for w, _ in started])
         self.assertNotIn("pick.yml", [w for w, _ in started])
-        self.assertEqual([t for w, t in started if w == "powercut.yml"], ["06:20"])      # 05:50 already ran
+        self.assertEqual([t for w, t in started if w == "powercut.yml"], ["06:50"])      # 05:50 already ran (hourly in safe mode)
 
     def test_switched_on_late_starts_the_missed_time_within_an_hour(self):
         gh = FakeGh(off={"pick.yml"})

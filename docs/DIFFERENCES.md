@@ -70,6 +70,14 @@ e-mail tag KOVAIMINNAL. Never "360".
 - Cloudinary clean-up (reference 5603740 / 9e5d3ed): ported; it needs the GitHub secrets CLOUDINARY_API_KEY and
   CLOUDINARY_API_SECRET (owner) - until then it deletes nothing.
 
+## 3d. GITHUB SAFE MODE (owner 17 Nov, temporary): a friend's account was suspended for this kind of Actions load
+
+- post.yml hourly backup (was every 5 min) - posting goes one by one through its chain (pick / powercut start the first run,
+  each run starts the next after the 12-minute gap); comments and power cuts hourly (were every 30 min); district engine
+  schedule off (Chennai has its own repo); keeper no longer starts district_powercut. About 75 runs a day per page (was ~400).
+- The owner stops the Google Apps Script timer (stopKovaiTimer) - it could start post.yml every 5 minutes.
+- REVERT when the Cloudflare Workers timer takes over: git revert this commit (tests test_keeper / test_kovai_timer say what).
+
 ## 4. Held until the owner says yes
 
 - (none) - the gold & silver rate reel went live on the owner's OK 17 Nov ("nice music use it"): goldrate.yml crons 09:35 /

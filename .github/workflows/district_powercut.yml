@@ -5,8 +5,9 @@ name: district-powercut
 # first step and Kovai Minnal runs exactly as before. Same rules as powercut.yml: every 30 minutes 5:35 AM - 9:35 PM IST, a cut is
 # posted at once, never twice, never after it is over; each cut only on ITS district's page.
 on:
-  schedule:
-    - cron: "5,35 0-16 * * *"       # owner 14 Nov: like the reference - every 30 min, 05:35 ... 22:05 IST (news only at 06:05 / 10:05 / 19:05); file re-saved 14 Nov 09:45 so GitHub registers the timer
+#  schedule:
+#   - cron: "5,35 0-16 * * *"       # owner 14 Nov: like the reference - every 30 min, 05:35 ... 22:05 IST (news only at 06:05 / 10:05 / 19:05); file re-saved 14 Nov 09:45 so GitHub registers the timer
+    # 17 Nov: off - Chennai moved to its own repo, no district page is live (GITHUB SAFE MODE (owner 17 Nov: a friend's account was suspended for this load) - back when the Cloudflare Workers timer takes over)
   workflow_dispatch:
     inputs:
       dry:

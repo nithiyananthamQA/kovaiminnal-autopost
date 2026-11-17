@@ -34,7 +34,6 @@ LIVE_INPUTS = {
     "comments.yml": {"dry_run": "0"},
     "rasipalan.yml": {"dry": "0", "date": "", "repost": "0"},
     "insights.yml": {},
-    "district_powercut.yml": {"dry": "0", "districts": "", "post_only": "0"},
     "cloudclean.yml": {"keep_hours": "48", "dry": "false"},      # 17 Nov: the reference's clean-up (manual default = count only)
     "goldrate.yml": {"dry": "0", "date": ""},      # owner 17 Nov: the gold & silver rate reel, every morning
 }

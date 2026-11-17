@@ -7,7 +7,7 @@ name: powercut
 on:
   schedule:
     - cron: "20 0-16 * * *"      # 05:50 ... 21:50 IST, every hour
-    - cron: "50 0-16 * * *"      # owner 2 Nov (review): GitHub skips scheduled runs (6 of 10 ran) - a second chance every hour
+#    - cron: "50 0-16 * * *"     # GITHUB SAFE MODE (owner 17 Nov: a friend's account was suspended for this load) - back when the Cloudflare Workers timer takes over: the second hourly chance is off (keeper starts the :20 one)
   workflow_dispatch:
     inputs:
       dry:

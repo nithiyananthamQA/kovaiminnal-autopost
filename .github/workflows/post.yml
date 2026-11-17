@@ -5,7 +5,8 @@ name: Post stories (carousel + reel)
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # every 5 minutes: look for stories whose images you have sent
+    - cron: "7 * * * *"     # GITHUB SAFE MODE (owner 17 Nov: a friend's account was suspended for this load) - back when the Cloudflare Workers timer takes over: hourly backup only (was */5). Posting runs one by one through the chain
+                            # below (pick / powercut start the first run, each run starts the next after the 12-minute gap)
   workflow_dispatch:
     inputs:
       dry_run:

@@ -144,11 +144,12 @@ class KovaiTimer(unittest.TestCase):
     def test_times_follow_the_workflow_schedules(self):
         for f, slots in self.out["slots"].items():
             cron = cron_ist((WF / f).read_text(encoding="utf-8"))
-            if f == "post.yml":      # GitHub: every 5 minutes all day; the Google timer: 05:30 - 23:30 IST
+            if f == "post.yml":      # the Google timer: every 5 minutes 05:30 - 23:30 IST
                 self.assertEqual(slots, [f"{m // 60:02d}:{m % 60:02d}" for m in range(330, 1411, 5)])
-                self.assertTrue(set(slots) <= set(cron))
-            else:
-                self.assertEqual(slots, cron, f)
+                # GITHUB SAFE MODE (owner 17 Nov): post.yml's own schedule is hourly and the owner stops this Google timer
+                # (stopKovaiTimer) - back to "slots within the 5-minute cron" when the Cloudflare Workers timer takes over
+            else:      # SAFE MODE 17 Nov: comments / power cuts hourly on GitHub - every GitHub time is still a timer time
+                self.assertTrue(set(cron) <= set(slots), f)
 
     def test_inputs_exist_and_mean_a_live_run(self):
         live = {"dry": "0", "dry_run": ("0", "false"), "prebuild": "false", "resume": "0", "repost": "0", "date": "", "timer": "true"}

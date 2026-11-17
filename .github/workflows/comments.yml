@@ -4,7 +4,7 @@ name: comments (owner approves every reply)
 # Comment text is never printed here - the repository and its logs are public.
 on:
   schedule:
-    - cron: "15,45 0-17 * * *"      # every 30 minutes, 06:00 - 23:00 IST
+    - cron: "15 0-17 * * *"      # every hour, 05:45 - 22:45 IST (GITHUB SAFE MODE (owner 17 Nov: a friend's account was suspended for this load) - back when the Cloudflare Workers timer takes over; was every 30 minutes)
   workflow_dispatch:
     inputs:
       dry_run:
