@@ -102,5 +102,29 @@ class PassedCutNeverPosted(unittest.TestCase):
         self.assertNotIn("already over", F.power_cut_over("சேலத்தில் நாளை மின் தடை: காலை 9 - மாலை 5 மணி வரை", "", "2026-11-13", now=now))
 
 
+class OtherDistrictEdition(unittest.TestCase):
+    """17 Nov: RN-11 (Vellakoil cut, Dinamani's Coimbatore edition, filed under /tiruppur/) was posted on Kovai because its title
+    also names 'மேட்டுப்பாளையம்' (a Tiruppur village too). A notice filed under another district passes only with OUR district's name."""
+    def check(self, url, title):
+        now = datetime.datetime(2026, 11, 15, 18, 0, tzinfo=IST)
+        art = {"title": title, "text": "காலை 9 முதல் மதியம் 2 மணி வரை மின் விநியோகம் இருக்காது.", "published": "2026-11-15"}
+        with mock.patch.object(powercut.allnews, "article_any", side_effect=lambda u: dict(art, url=u)):
+            return powercut.check({"url": url, "title": ""}, now.date(), now)
+
+    def test_shared_place_name_is_not_enough(self):
+        it, why = self.check("https://www.dinamani.com/all-editions/edition-coimbatore/tiruppur/2026/Nov/15/x",
+                             "நாளைய மின்தடை: வெள்ளக்கோவில், ராசாத்தாவலசு, தாசவநாயக்கன்பட்டி, மேட்டுப்பாளையம்")
+        self.assertIsNone(it)
+        self.assertEqual(why, "other district")
+
+    def test_our_name_or_our_page_still_goes(self):
+        it, why = self.check("https://www.dinamani.com/all-editions/edition-coimbatore/tiruppur/2026/Nov/15/y",
+                             "கோவை மேட்டுப்பாளையம் பகுதிகளில் நாளை (நவ. 16) மின்தடை")
+        self.assertIsNotNone(it, why)
+        it, why = self.check("https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/z/1",
+                             "மேட்டுப்பாளையம் பகுதிகளில் நாளை (நவ. 16) மின்தடை")
+        self.assertIsNotNone(it, why)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -507,6 +507,7 @@ def apply(key, mode="powercut"):
     _set(A, "OTHER_EN", sorted({w for x in others.values() for w in (x["en"].lower(), x["dinamalar"]) if w.isalpha()} | {"coimbatore", "kovai"}))
     _set(A, "QUERIES", list(d["queries"]))
     _set(A, "SITE_QUERIES", [d["ta"]])
+    _set(A, "SECTION_NAMES", (d["ta"],))      # 17 Nov: the district's own name (state-wide lists, notices filed elsewhere)
     import pick as PK
     _set(PK, "HOME_DINAMALAR", f"district-news-{slug}")
     _set(S, "DISTRICT", f"tamil-nadu-district-news-{slug}")

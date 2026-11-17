@@ -52,6 +52,9 @@ e-mail tag KOVAIMINNAL. Never "360".
 - Tamil proofread never doubles words (poster/tamilcheck.py): a full stop no longer hides a repeat, and a "fix" that only adds
   words that already follow it is refused. 16 Nov RN-68 went out saying "கைது செய்யப்பட்டனர் செய்யப்பட்டனர்." (also RN-21, RN-23).
 
+- A power-cut notice the paper filed under another district (e.g. Dinamani /edition-coimbatore/tiruppur/) passes only when its
+  title has OUR district's own name (allnews.SECTION_NAMES) - the reference lets any shared place name through ("மேட்டுப்பாளையம்" is a
+  Coimbatore town and a Tiruppur village: the Vellakoil cut RN-11 went out on Kovai). Tested on the real link 17 Nov.
 - A Tiruppur / Erode power-cut notice printed in the paper's Coimbatore edition never posts on Kovai (16 Nov RN-52, Uthiyur cut
   posted wrongly): extra Tiruppur town names in allnews.OTHER_PLACES / OTHER_EN and the notice-text check in powercut.check.
   The reference refuses Tiruppur / Erode edition pages (aba8a65) but not this case.
