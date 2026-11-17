@@ -1,82 +1,82 @@
 {
- "updated": "2026-11-16T06:50+00:00",
+ "updated": "2026-11-17T03:11+00:00",
  "source": "https://raw.githubusercontent.com/news360-tn/coimbatore360-autopost/main/",
- "reels": 323,
- "median_views": 923,
+ "reels": 345,
+ "median_views": 954,
  "topics": {
   "sports_culture": {
    "n": 7,
-   "ratio": 0.352
+   "ratio": 0.341
   },
   "other": {
    "n": 24,
-   "ratio": 0.355
+   "ratio": 0.344
   },
   "weather": {
-   "n": 46,
-   "ratio": 1.054
+   "n": 47,
+   "ratio": 1.113
   },
   "jobs": {
    "n": 9,
-   "ratio": 0.58
+   "ratio": 0.959
   },
   "power_cut": {
-   "n": 19,
-   "ratio": 4.542
+   "n": 23,
+   "ratio": 3.331
   },
   "education": {
-   "n": 35,
-   "ratio": 0.913
+   "n": 38,
+   "ratio": 0.481
   },
   "politics": {
-   "n": 18,
-   "ratio": 0.366
+   "n": 19,
+   "ratio": 0.378
   },
   "civic": {
-   "n": 49,
-   "ratio": 1.745
+   "n": 51,
+   "ratio": 1.689
   },
   "accident": {
-   "n": 21,
-   "ratio": 1.1
+   "n": 22,
+   "ratio": 1.343
   },
   "crime": {
-   "n": 60,
-   "ratio": 1.496
+   "n": 62,
+   "ratio": 1.45
   },
   "temple": {
-   "n": 19,
-   "ratio": 0.51
+   "n": 24,
+   "ratio": 0.509
   },
   "poultry_agri": {
-   "n": 16,
-   "ratio": 0.82
+   "n": 19,
+   "ratio": 0.85
   }
  },
  "topic_weight": {
-  "education": -0.48,
-  "civic": -0.08,
-  "power_cut": 1.5,
+  "education": -0.5,
+  "civic": -0.12,
+  "power_cut": 1.49,
   "sports_culture": -0.02,
   "politics": -0.5,
-  "crime": 0.2,
-  "weather": 0.0,
-  "accident": 0.67,
-  "poultry_agri": -0.21,
-  "temple": -0.21
+  "crime": 0.18,
+  "weather": 0.08,
+  "accident": 0.68,
+  "poultry_agri": -0.32,
+  "temple": -0.3
  },
  "topic_n": {
-  "education": 37,
-  "civic": 46,
+  "education": 40,
+  "civic": 48,
   "jobs": 2,
-  "power_cut": 18,
+  "power_cut": 22,
   "sports_culture": 3,
-  "politics": 15,
-  "crime": 55,
-  "weather": 41,
-  "accident": 21,
-  "poultry_agri": 14,
-  "temple": 16
+  "politics": 17,
+  "crime": 57,
+  "weather": 42,
+  "accident": 22,
+  "poultry_agri": 16,
+  "temple": 20
  },
  "best_topics": [
   "power_cut",
@@ -84,46 +84,23 @@
   "crime"
  ],
  "weak_topics": [
-  "politics",
-  "education"
+  "education",
+  "politics"
  ],
  "avg_watch_s": 7.9,
  "best_hours_ist": [
-  0,
   4,
-  6,
-  10
+  10,
+  11,
+  6
  ],
  "skip_topics": [
+  "education",
   "sports_culture"
  ],
  "reach_map": {
-  "power_cut": {
-   "ratio": 4.612,
-   "n": 28,
-   "ours": [
-    9,
-    4.761
-   ],
-   "reference": [
-    19,
-    4.542
-   ]
-  },
-  "civic": {
-   "ratio": 2.066,
-   "n": 77,
-   "ours": [
-    28,
-    2.627
-   ],
-   "reference": [
-    49,
-    1.745
-   ]
-  },
   "other": {
-   "ratio": 0.372,
+   "ratio": 0.366,
    "n": 44,
    "ours": [
     20,
@@ -131,83 +108,11 @@
    ],
    "reference": [
     24,
-    0.355
-   ]
-  },
-  "crime": {
-   "ratio": 1.416,
-   "n": 96,
-   "ours": [
-    36,
-    1.282
-   ],
-   "reference": [
-    60,
-    1.496
-   ]
-  },
-  "weather": {
-   "ratio": 1.118,
-   "n": 79,
-   "ours": [
-    33,
-    1.207
-   ],
-   "reference": [
-    46,
-    1.054
-   ]
-  },
-  "accident": {
-   "ratio": 0.992,
-   "n": 31,
-   "ours": [
-    10,
-    0.766
-   ],
-   "reference": [
-    21,
-    1.1
-   ]
-  },
-  "education": {
-   "ratio": 0.787,
-   "n": 53,
-   "ours": [
-    18,
-    0.541
-   ],
-   "reference": [
-    35,
-    0.913
-   ]
-  },
-  "poultry_agri": {
-   "ratio": 0.864,
-   "n": 25,
-   "ours": [
-    9,
-    0.943
-   ],
-   "reference": [
-    16,
-    0.82
-   ]
-  },
-  "temple": {
-   "ratio": 0.505,
-   "n": 31,
-   "ours": [
-    12,
-    0.498
-   ],
-   "reference": [
-    19,
-    0.51
+    0.344
    ]
   },
   "sports_culture": {
-   "ratio": 0.434,
+   "ratio": 0.428,
    "n": 13,
    "ours": [
     6,
@@ -215,23 +120,47 @@
    ],
    "reference": [
     7,
-    0.352
+    0.341
    ]
   },
-  "politics": {
-   "ratio": 0.506,
-   "n": 31,
+  "education": {
+   "ratio": 0.5,
+   "n": 56,
    "ours": [
-    13,
-    0.7
+    18,
+    0.541
    ],
    "reference": [
-    18,
-    0.366
+    38,
+    0.481
+   ]
+  },
+  "accident": {
+   "ratio": 1.163,
+   "n": 32,
+   "ours": [
+    10,
+    0.766
+   ],
+   "reference": [
+    22,
+    1.343
+   ]
+  },
+  "temple": {
+   "ratio": 0.505,
+   "n": 36,
+   "ours": [
+    12,
+    0.498
+   ],
+   "reference": [
+    24,
+    0.509
    ]
   },
   "jobs": {
-   "ratio": 0.575,
+   "ratio": 0.838,
    "n": 13,
    "ours": [
     4,
@@ -239,7 +168,79 @@
    ],
    "reference": [
     9,
-    0.58
+    0.959
+   ]
+  },
+  "weather": {
+   "ratio": 1.152,
+   "n": 80,
+   "ours": [
+    33,
+    1.207
+   ],
+   "reference": [
+    47,
+    1.113
+   ]
+  },
+  "politics": {
+   "ratio": 0.509,
+   "n": 32,
+   "ours": [
+    13,
+    0.7
+   ],
+   "reference": [
+    19,
+    0.378
+   ]
+  },
+  "power_cut": {
+   "ratio": 3.733,
+   "n": 32,
+   "ours": [
+    9,
+    4.761
+   ],
+   "reference": [
+    23,
+    3.331
+   ]
+  },
+  "civic": {
+   "ratio": 2.021,
+   "n": 79,
+   "ours": [
+    28,
+    2.627
+   ],
+   "reference": [
+    51,
+    1.689
+   ]
+  },
+  "crime": {
+   "ratio": 1.388,
+   "n": 98,
+   "ours": [
+    36,
+    1.282
+   ],
+   "reference": [
+    62,
+    1.45
+   ]
+  },
+  "poultry_agri": {
+   "ratio": 0.88,
+   "n": 28,
+   "ours": [
+    9,
+    0.943
+   ],
+   "reference": [
+    19,
+    0.85
    ]
   }
  }
