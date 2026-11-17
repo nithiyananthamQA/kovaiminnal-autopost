@@ -82,34 +82,34 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
-| 2026-11-17 | `69b56bf` | GITHUB SAFE MODE until the Cloudflare Workers timer (owner 17 Nov: a friend's account was suspended for this Actions load) |
-| 2026-11-17 | `22a6959` | Names as the newspaper gives them; never a minor or a sexual-offence victim (owner 17 Nov: 'if newspaper do then post that') |
-| 2026-11-17 | `342fac4` | Fact-check reports a named accused / victim / minor / private person, so the draft is rewritten (17 Nov: Chennai's first reel named an accused driver) |
-| 2026-11-17 | `64f6d7b` | tests workflow: install numpy (goldrate/gold_reel.py needs it - test_goldrate could not load on GitHub since the gold reel) |
-| 2026-11-17 | `2b12290` | Reel: no source label in the video (owner 17 Nov) - the caption still credits the source |
-| 2026-11-17 | `ad33591` | check the uncimtted code |
-| 2026-11-17 | `4c0db94` | Writer: the article's facts, our own sentences (owner 17 Nov: 'is it legal to take news from Dinamalar ... fix the gap') |
-| 2026-11-17 | `a5c3e64` | stories shared |
-| 2026-11-17 | `def531c` | powercut: notices written |
-| 2026-11-17 | `2736f4e` | facebook RN-83 |
-| 2026-11-17 | `0a0991c` | facebook RN-84 |
-| 2026-11-17 | `cff5b26` | powercut: notices written |
-| 2026-11-17 | `7f79d41` | test_district_reach: with Chennai on its own repo no district page is live, so the engine is off (no replies either) |
-| 2026-11-17 | `5bd8ec9` | tools/sync_pages.py: one push updates every page, like the reference (owner 17 Nov: 'if he push all page follow that right?') |
-| 2026-11-17 | `bdcf5bf` | Chennai moves to its own repo (copy of Kovai): the old engine stops posting Chennai |
-| 2026-11-17 | `a8769ba` | district powercut: notices found |
-| 2026-11-17 | `12cb54f` | Writer names the shop / hotel / company the article names; gold rate reel goes live (owner 17 Nov: 'which shop where - add the shop name if available', 'nice music use it') |
-| 2026-11-17 | `1a39847` | Gold rate reel: our upbeat music only, no sound effects (owner 17 Nov: 'use music we have ... better music no sad music') |
-| 2026-11-17 | `0b255b6` | pick: written and posted |
-| 2026-11-17 | `6daa3ef` | Gold rate: reel only, 10 s, opens already showing the title and today's price (owner 17 Nov: 'only one post thats reel', 'speed up the animation - if user see empty they will scroll', '10 seconds only') |
-| 2026-11-17 | `aa96154` | facebook RN-81 |
-| 2026-11-17 | `8c5f2e8` | powercut: notices written |
-| 2026-11-17 | `6611b53` | test_goldrate: city checks work on every page copy (Chennai copy swaps the names) |
-| 2026-11-17 | `42f586d` | Gold rate design by Fable: gold slide feels gold, silver feels silver, our own layout; reel page with seek(t) + sound cues (owner 17 Nov) |
-| 2026-11-17 | `738a3aa` | facebook RN-82 |
-| 2026-11-17 | `90494e1` | district powercut: chennai posted |
-| 2026-11-17 | `23a47c9` | Gold rate: each page's own city, and the rate also as a reel with our music + sound effects (owner 17 Nov) |
-| 2026-11-17 | `fc9c6cf` | facebook RN-80 |
-| 2026-11-17 | `5af1bc5` | powercut: notices written |
-| 2026-11-17 | `5af86d8` | district powercut: notices found |
+| 2026-11-18 | `0691bd3` | Power cuts: a list for our district only is kept whole (17 Nov: Chennai never posted a power cut - ABP's Chennai-only list was cut to 0 words); covaimail.com is Kovai's paper only |
+| 2026-11-18 | `693cff7` | sync_pages: also push a page's earlier unpushed commits (17 Nov: Chennai kept safe mode + fixes locally although the owner pushed) |
+| 2026-11-18 | `eb19a89` | pick: a new page's empty state file no longer crashes the round (17 Nov: Chennai's 21:00 round failed - KeyError 'rounds' - no news since 18:26) |
+| 2026-11-17 | `3e63227` | Heartbeat |
+| 2026-11-17 | `edec4cf` | Heartbeat |
+| 2026-11-17 | `d5f8d15` | pick: written and posted |
+| 2026-11-17 | `d512124` | facebook RN-91 |
+| 2026-11-17 | `03c82df` | powercut: notices written |
+| 2026-11-17 | `1c5be1a` | facebook RN-92 |
+| 2026-11-17 | `a91d8d7` | comments: normal comments recorded (not e-mailed) |
+| 2026-11-17 | `737c7f5` | pick: picked news saved |
+| 2026-11-17 | `dcb1011` | pick: picked news saved |
+| 2026-11-17 | `c5f7a4d` | pick: list sent |
+| 2026-11-17 | `b1559f4` | pick: written and posted |
+| 2026-11-17 | `20ff725` | facebook RN-89 |
+| 2026-11-17 | `bdab5e7` | facebook RN-90 |
+| 2026-11-17 | `9e4b1ff` | powercut: notices written |
+| 2026-11-17 | `774c450` | facebook RN-87 |
+| 2026-11-17 | `9686262` | powercut: notices written |
+| 2026-11-17 | `83dd488` | facebook RN-88 |
+| 2026-11-17 | `39da329` | stories shared |
+| 2026-11-17 | `6cffe46` | pick: picked news saved |
+| 2026-11-17 | `10372bb` | pick: picked news saved |
+| 2026-11-17 | `d11fb9e` | pick: list sent |
+| 2026-11-17 | `163eb3a` | powercut: notices written |
+| 2026-11-17 | `2c50b3d` | powercut: notices written |
+| 2026-11-17 | `72a88ab` | comments: normal comments recorded (not e-mailed) |
+| 2026-11-17 | `4f9c418` | powercut: notices written |
+| 2026-11-17 | `ce1dcc6` | facebook RN-85 |
+| 2026-11-17 | `9b6a525` | powercut: notices written |
 <!-- recent-changes:end -->
