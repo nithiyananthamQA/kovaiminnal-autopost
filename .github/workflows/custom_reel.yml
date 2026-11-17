@@ -34,7 +34,7 @@ jobs:
           python custom/make.py out/custom_reel.mp4
       - name: Hand the video over (branch custom-reel-out)
         run: |
-          git config user.name "news360-bot"; git config user.email "news360-bot@users.noreply.github.com"
+          git config user.name "kovaiminnal-bot"; git config user.email "bot@users.noreply.github.com"
           git checkout -q --orphan custom-reel-out
           git rm -rq --cached . >/dev/null
           git add -f out/custom_reel.mp4 out/custom_reel_cover.jpg 2>/dev/null || git add -f out/custom_reel.mp4

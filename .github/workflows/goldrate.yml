@@ -61,7 +61,7 @@ jobs:
         run: |
           [ -d out/goldrate ] || exit 0
           rm -f out/goldrate/*/*.html
-          git config user.name "news360-bot"; git config user.email "news360-bot@users.noreply.github.com"
+          git config user.name "kovaiminnal-bot"; git config user.email "bot@users.noreply.github.com"
           git checkout -q --orphan goldrate-preview
           git rm -rq --cached . >/dev/null
           git add -f out/goldrate && git commit -qm "preview" && git push -qf origin goldrate-preview
@@ -69,7 +69,7 @@ jobs:
         if: always() && env.DRY_RUN != '1'
         run: |
           [ -n "$(git status --porcelain goldrate/state poster/fb_posted)" ] || exit 0
-          git config user.name "news360-bot"; git config user.email "news360-bot@users.noreply.github.com"
+          git config user.name "kovaiminnal-bot"; git config user.email "bot@users.noreply.github.com"
           git add goldrate/state 2>/dev/null || true; if [ -d poster/fb_posted ]; then git add -f poster/fb_posted; fi
           git commit -qm "goldrate posted"
           for i in 1 2 3 4 5; do git pull -q --rebase -X theirs && git push -q && break; git rebase --abort 2>/dev/null || true; sleep 5; done

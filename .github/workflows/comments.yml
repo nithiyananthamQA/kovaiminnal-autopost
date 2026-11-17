@@ -43,7 +43,7 @@ jobs:
         if: always()
         run: |
           [ -f poster/comments_ignored.json ] || exit 0
-          git config user.name "news360-bot"; git config user.email "bot@users.noreply.github.com"
+          git config user.name "kovaiminnal-bot"; git config user.email "bot@users.noreply.github.com"
           git add -f poster/comments_ignored.json
           git commit -qm "comments: normal comments recorded (not e-mailed)" || exit 0
           for i in 1 2 3 4 5; do git pull -q --rebase -X theirs --autostash origin main && git push -q && break; git rebase --abort 2>/dev/null || true; sleep $((i*4)); done || true

@@ -3,7 +3,7 @@ Instagram and Facebook copy a file when they post it, so the Cloudinary copy is 
 retries, at most 24 h) are done.
 
 Every run (from the post workflow; at most once an hour):
-  - files of THIS page's folder only (FOLDER, e.g. "coimbatore360") older than KEEP_H (72 h) are deleted
+  - files of THIS page's folder only (FOLDER, e.g. "kovaiminnal") older than KEEP_H (72 h) are deleted
     (a story is posted only on the news day or the day after, so nothing still waiting is ever older than 48 h)
   - when the account has used CLEAN_AT % (50) of its monthly credits, reel VIDEOS (the big files) older than
     FULL_KEEP_H (26 h - the Facebook retries stay safe) are deleted too. Pictures are small and stay 72 h.
@@ -17,7 +17,7 @@ from datetime import datetime, timedelta, timezone
 
 import requests
 
-FOLDER = "coimbatore360"
+FOLDER = "kovaiminnal"
 KEEP_H = float(os.environ.get("CLOUDINARY_KEEP_HOURS", "48") or 48)      # owner 12 Nov: keep the last 48 h only
 FULL_KEEP_H = float(os.environ.get("CLOUDINARY_FULL_KEEP_HOURS", "48") or 48)
 CLEAN_AT = float(os.environ.get("CLOUDINARY_CLEAN_AT", "50") or 50)

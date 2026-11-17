@@ -167,7 +167,7 @@ def slide(p, r, kind):
         trend_t = 'ஒரு வாரத்தில் வெள்ளி விலை மாற்றம்'
         pts = r["weeksilver"]; title = "வெள்ளி விலை"; nxt = "தங்கம் விலை ›"; tsize = 100; src = r.get("source_silver", "")
     body = f"""<div class="bokeh"></div><div class="deco">{deco}</div>
-<div class="top"><img src="file://{Path(p['logo']).resolve()}"><div class="brand">{p['name1']}<b>360</b></div><div class="vbar"></div>
+<div class="top"><img src="file://{Path(p['logo']).resolve()}"><div class="brand">{p['name1']}<b>{p.get('brand2', '360')}</b></div><div class="vbar"></div>
  <div class="date">{CAL}{r['date']}</div></div>
 <div class="kick">{p['town']}<em>●</em>காலை நிலவரம்</div>
 <div class="title" style="font-size:{tsize}px">{title}</div><div class="uline"></div>
