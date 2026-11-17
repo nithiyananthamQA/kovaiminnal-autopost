@@ -86,18 +86,21 @@ class MinnalDesign(unittest.TestCase):
 class OwnCity(unittest.TestCase):
     """owner 17 Nov: "keep chennai and kovai separate" - Kovai reads the Coimbatore rate pages and says Kovai, never Chennai"""
     def test_kovai_reads_coimbatore_pages(self):
-        g, s = S.pages_for(G.PAGES["coimbatore"]["city"])
+        city = G.PAGES["coimbatore"]["city"]
+        g, s = S.pages_for(city)
         self.assertEqual(len(g), 4)
         self.assertEqual(len(s), 4)
-        self.assertTrue(all("coimbatore" in u and "chennai" not in u for _, u in g + s))
+        self.assertTrue(all(city in u for _, u in g + s))
+        if city != "chennai":
+            self.assertTrue(all("chennai" not in u for _, u in g + s))
         self.assertEqual(S.pages_for()[0], S.GOLD_PAGES)      # the reference's pages = Chennai
 
     def test_caption_names_the_page_city(self):
         p = dict(G.PAGES["coimbatore"], logo="x.png")
         r = {"g22": 12470, "g22_prev": 12470, "g24": 13604, "g24_prev": 13604}
         cap = G.caption(p, date(2026, 11, 17), r)
-        self.assertIn("கோவை விலை நிலவரம்", cap)
-        self.assertNotIn("சென்னை", cap)
+        self.assertIn(f"{p['town']} விலை நிலவரம்", cap)
+        self.assertNotIn("சந்தை விலை", cap)      # the reference's "சென்னை சந்தை விலை" line
         self.assertIn("சென்னை சந்தை விலை", G.caption(dict(G.PAGES["namakkal"]), date(2026, 11, 17), r))      # reference pages as before
 
 
@@ -135,7 +138,7 @@ class RateReel(unittest.TestCase):
         r = {"date": "17 நவம்பர் 2026", "g22": 12470, "g22_prev": 12695, "g24": 13604, "g24_prev": 13849, "vs": "நேற்றைய விலையைவிட",
              "week22": [("16 நவ", 12695), ("17 நவ", 12470)], "silver": 190, "silver_prev": 195, "weeksilver": [("17 நவ", 190)]}
         h = M.reel_page(p, r)
-        for k in ("window.DUR", "window.seek", "window.CUES", "window.COVER_T", "@kovai_minnal", "கோவை நிலவரம்", "99760"):
+        for k in ("window.DUR", "window.seek", "window.CUES", "window.COVER_T", "@kovai_minnal", f"{p['town']} நிலவரம்", "99760"):
             self.assertIn(k, h.replace(",", "") if k == "99760" else h)
-        self.assertNotIn("சென்னை", h + M.page(p, r, "gold") + M.page(p, r, "silver"))
+        self.assertNotIn("சந்தை விலை", h + M.page(p, r, "gold") + M.page(p, r, "silver"))
         self.assertNotIn("360", h)
