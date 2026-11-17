@@ -81,9 +81,10 @@ e-mail tag KOVAIMINNAL. Never "360".
   (the shop that caught fire, the hotel that was sealed). The reference's writer already names businesses most of the time (its
   rules only forbid private persons, victims, minors and accused); ours now says it outright. Private persons stay unnamed.
 
-- research_free/run.py CHECK (the independent fact-check of every draft) also reports a personal name of an accused, a victim,
-  a minor or another private person (17 Nov: Chennai's first reel from its own repo named an accused driver) - the draft is
-  rewritten. The reference's writer rule forbids it too, but nothing checks it there.
+- Names as the newspaper gives them (owner 17 Nov: "if newspaper do then post that"): rules.md lets the writer name a person
+  exactly as the article does (arrested / accused adults, people in accidents, officials). The reference forbids naming private
+  persons, victims and accused. NEVER (law: POCSO s.23, JJ Act s.74, BNS s.72): a minor or a sexual-offence victim, or a detail
+  that identifies them - research_free/run.py CHECK (the independent fact-check of every draft) reports it and the draft is rewritten.
 
 ## 4b. Owner's choice: our own sentences (owner 17 Nov: "is it legal to take news from Dinamalar? ... fix the gap")
 

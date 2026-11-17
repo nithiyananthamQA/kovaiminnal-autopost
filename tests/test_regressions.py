@@ -2520,7 +2520,7 @@ class BusinessNames17Nov(unittest.TestCase):
         rules = (Path(__file__).resolve().parent.parent / "research_free" / "rules.md").read_text(encoding="utf-8")
         self.assertIn("NAME THE PLACE WHERE IT HAPPENED", rules)
         self.assertIn("Only a name the article itself gives", rules)
-        self.assertIn("No private individuals' names", rules)
+        self.assertIn("never a minor's name or a sexual-offence victim's name", rules)
 
 
 
@@ -2551,12 +2551,16 @@ class OwnWords17Nov(unittest.TestCase):
         self.assertIn("OWN WORDS", rules)
 
 
-class NoPrivateNames17Nov(unittest.TestCase):
-    """owner 17 Nov ("be careful - he also faced some issue"): the fact-check reports a named accused / victim / minor / private person"""
+class NamesLikeTheNewspaper17Nov(unittest.TestCase):
+    """owner 17 Nov ("if newspaper do then post that"): names as the article gives them; the fact-check reports a minor's or a
+    sexual-offence victim's name (the law forbids it) and a name the article does not give"""
     def test_factcheck_prompt(self):
         src = (Path(__file__).resolve().parent.parent / "research_free" / "run.py").read_text(encoding="utf-8")
         i = src.index("CHECK = ")
         check = src[i:src.index('"""', src.index('"""', i) + 3)]
-        self.assertIn("PERSONAL NAME of an accused or arrested person, a victim, a minor", check)
-        self.assertIn("shops and companies are fine", check)
+        self.assertIn("NAME of a minor (under 18) or of the victim of a rape / sexual offence / POCSO case", check)
+        self.assertIn("Names of adults the article itself names (arrested, accused, officials), shops and companies are fine", check)
+        rules = (Path(__file__).resolve().parent.parent / "research_free" / "rules.md").read_text(encoding="utf-8")
+        self.assertIn("NAMES AS THE NEWSPAPER GIVES THEM", rules)
+        self.assertNotIn("Do not name private individuals, victims, minors or accused persons", rules)
 
