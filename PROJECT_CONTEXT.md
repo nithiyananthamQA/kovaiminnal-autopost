@@ -82,34 +82,34 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
-| 2026-11-16 | `ac81bb0` | Leave out one school / club's own event on both pages (owner 16 Nov: 'how can other people connect with this') |
-| 2026-11-16 | `8314b2f` | powercut: notices written |
-| 2026-11-16 | `9e143f7` | district powercut: notices found |
-| 2026-11-16 | `7fad5d0` | powercut: notices written |
-| 2026-11-16 | `94b507a` | facebook RN-64 |
-| 2026-11-16 | `986806c` | powercut: notices written |
-| 2026-11-16 | `4c28292` | powercut: notices written |
-| 2026-11-16 | `c0605ad` | facebook RN-48 |
-| 2026-11-16 | `ccb0544` | pick: written and posted |
-| 2026-11-16 | `3ba9719` | facebook RN-69 |
-| 2026-11-16 | `2c6acce` | powercut: notices written |
-| 2026-11-16 | `d97b03a` | facebook RN-68 |
-| 2026-11-16 | `3ac6a47` | powercut: notices written |
-| 2026-11-16 | `57090df` | pick: picked news saved |
-| 2026-11-16 | `68fad4a` | pick: picked news saved |
-| 2026-11-16 | `af95237` | pick: list sent |
-| 2026-11-16 | `f411076` | facebook RN-65 |
-| 2026-11-16 | `710cd7f` | pick: written and posted |
-| 2026-11-16 | `5692f0a` | Chennai = Kovai setup (owner 16 Nov: 'same setup, only the news varies'): same round hours, same score |
-| 2026-11-16 | `baeae56` | facebook RN-66 |
-| 2026-11-16 | `1a7dcfb` | Pick review fixes (owner 16 Nov): 01:00 no extras, extras 11+ one a round, steady nightly skip list, Chennai first round 06:00 |
-| 2026-11-16 | `f73f235` | powercut: notices written |
-| 2026-11-16 | `cd3f791` | Learn every night from both pages: our reels + the reference page's published insights (owner 16 Nov) |
-| 2026-11-16 | `bc39b6f` | district powercut: notices found |
-| 2026-11-16 | `a92633c` | powercut: notices written |
-| 2026-11-16 | `9b5e150` | Token with the insights permission as GitHub secret IG_SYSTEM_TOKEN (owner 16 Nov: views must be read again, no Apps Script step) |
-| 2026-11-16 | `f143853` | Reach map: temple news stays (reference page temple reels 913-1,782 views); education / sports still left out |
-| 2026-11-16 | `c3a7bf3` | facebook RN-61 |
-| 2026-11-16 | `6c50e8d` | Reach map on both pages (owner 16 Nov): low-reach types left out, up to 3 strong news a day beyond the 14 |
-| 2026-11-16 | `437ba61` | Reel top strip: category / date / source on one line, place pin a little lower (owner 16 Nov: the source made the row wrap onto the pin) |
+| 2026-11-17 | `bdcf5bf` | Chennai moves to its own repo (copy of Kovai): the old engine stops posting Chennai |
+| 2026-11-17 | `a8769ba` | district powercut: notices found |
+| 2026-11-17 | `12cb54f` | Writer names the shop / hotel / company the article names; gold rate reel goes live (owner 17 Nov: 'which shop where - add the shop name if available', 'nice music use it') |
+| 2026-11-17 | `1a39847` | Gold rate reel: our upbeat music only, no sound effects (owner 17 Nov: 'use music we have ... better music no sad music') |
+| 2026-11-17 | `0b255b6` | pick: written and posted |
+| 2026-11-17 | `6daa3ef` | Gold rate: reel only, 10 s, opens already showing the title and today's price (owner 17 Nov: 'only one post thats reel', 'speed up the animation - if user see empty they will scroll', '10 seconds only') |
+| 2026-11-17 | `aa96154` | facebook RN-81 |
+| 2026-11-17 | `8c5f2e8` | powercut: notices written |
+| 2026-11-17 | `6611b53` | test_goldrate: city checks work on every page copy (Chennai copy swaps the names) |
+| 2026-11-17 | `42f586d` | Gold rate design by Fable: gold slide feels gold, silver feels silver, our own layout; reel page with seek(t) + sound cues (owner 17 Nov) |
+| 2026-11-17 | `738a3aa` | facebook RN-82 |
+| 2026-11-17 | `90494e1` | district powercut: chennai posted |
+| 2026-11-17 | `23a47c9` | Gold rate: each page's own city, and the rate also as a reel with our music + sound effects (owner 17 Nov) |
+| 2026-11-17 | `fc9c6cf` | facebook RN-80 |
+| 2026-11-17 | `5af1bc5` | powercut: notices written |
+| 2026-11-17 | `5af86d8` | district powercut: notices found |
+| 2026-11-17 | `b8980eb` | pick: picked news saved |
+| 2026-11-17 | `a4ada9e` | pick: picked news saved |
+| 2026-11-17 | `9d66955` | pick: list sent |
+| 2026-11-17 | `639c9cf` | powercut: notices written |
+| 2026-11-17 | `faf6f34` | powercut: notices written |
+| 2026-11-17 | `fd11b91` | facebook RN-79 |
+| 2026-11-17 | `4487a43` | district powercut: notices found |
+| 2026-11-17 | `27a70a9` | powercut: notices written |
+| 2026-11-17 | `f345330` | powercut: notices written |
+| 2026-11-17 | `c0b4781` | powercut: notices written |
+| 2026-11-17 | `8947c12` | district powercut: chennai posted |
+| 2026-11-17 | `de82246` | powercut: notices written |
+| 2026-11-17 | `459dc12` | stories shared |
+| 2026-11-17 | `4a72294` | DIFFERENCES: Chennai = copy made by tools/make_page.py |
 <!-- recent-changes:end -->
