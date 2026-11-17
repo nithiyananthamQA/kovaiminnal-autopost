@@ -50,10 +50,13 @@ def sync(key, push=True):
         run(["git", "clean", "-qfd", "--", "."] + [f":(exclude){p.strip('/').rstrip('*')}" for p in PROTECT if p != "/.git/"], d)
         return False
     run(["git", "add", "-A"], d)
-    if not run(["git", "status", "--porcelain"], d).stdout.strip():
+    if run(["git", "status", "--porcelain"], d).stdout.strip():
+        run(["git", "commit", "-q", "-m", f"Same code as Kovai Minnal {src}"], d)
+    else:
         print(f"{key}: already the same code as Kovai ({src[:9]})")
+    ahead = run(["git", "rev-list", "--count", "origin/main..HEAD"], d).stdout.strip()
+    if ahead in ("", "0"):      # 17 Nov: commits made earlier (e.g. --no-push) are pushed too, not only a new one
         return True
-    run(["git", "commit", "-q", "-m", f"Same code as Kovai Minnal {src}"], d)
     if push:
         for _ in range(4):      # its bots commit often: take theirs and push again
             if run(["git", "push", "-q", "origin", "main"], d, check=False).returncode == 0:
