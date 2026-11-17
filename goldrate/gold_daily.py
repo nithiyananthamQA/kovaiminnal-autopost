@@ -19,6 +19,7 @@ ROOT = HERE.parent
 sys.path.insert(0, str(HERE))
 import gold_sources as sources      # noqa: E402
 import gold_render as render      # noqa: E402
+import minnal_render      # noqa: E402  (owner 17 Nov: our own slide design for Minnal pages)
 
 IST = timezone(timedelta(hours=5, minutes=30))
 # 17 Nov (forced): Meta gives our app only the Unified login - the same Instagram connection as every Kovai job (poster/ig_api.py):
@@ -38,7 +39,8 @@ STATE_DIR = HERE / "state"
 PAGES = {      # owner 14 Nov: every page, each with its own logo and handle; the rate is the same Tamil Nadu (Chennai) rate
     "namakkal": {"town": "நாமக்கல்", "name1": "நாமக்கல்", "handle": "namakkal.360", "tag": "#Namakkal360", "brand_px": 54},
     "rasipuram": {"town": "இராசிபுரம்", "name1": "இராசிபுரம்", "handle": "rasipuram.360", "tag": "#Rasipuram360", "brand_px": 50},
-    "coimbatore": {"town": "கோவை", "name1": "கோவை", "brand2": " மின்னல்", "handle": "kovai_minnal", "tag": "#KovaiMinnal", "brand_px": 40},
+    "coimbatore": {"town": "கோவை", "name1": "கோவை", "brand2": " மின்னல்", "handle": "kovai_minnal", "tag": "#KovaiMinnal", "brand_px": 40,
+                   "design": "minnal", "brand_en": "KOVAI MINNAL"},
     "salem": {"town": "சேலம்", "name1": "சேலம்", "handle": "salem360.official", "tag": "#Salem360", "brand_px": 54},
     "erode": {"town": "ஈரோடு", "name1": "ஈரோடு", "handle": "erode360.official", "tag": "#Erode360", "brand_px": 54},
     "tirupur": {"town": "திருப்பூர்", "name1": "திருப்பூர்", "handle": "tiruppur360.official", "tag": "#Tiruppur360", "brand_px": 52},
@@ -203,6 +205,9 @@ def caption(p, day, r):
     lines = [f"💰 இன்றைய தங்கம், வெள்ளி விலை | {date_ta(day)}", "",
              f"🟡 22K தங்கம் (1 கிராம்): ₹{render.inr(r['g22'])} ({change_text(r['g22'] - r['g22_prev'], '')})",
              f"🟡 24K தங்கம் (1 கிராம்): ₹{render.inr(r['g24'])} ({change_text(r['g24'] - r['g24_prev'], '')})"]
+    if p.get("design") == "minnal":      # owner 17 Nov: how Tamil Nadu buys gold - the sovereign, and what 3% GST adds
+        lines.insert(2, f"🟡 22K 1 சவரன் (8 கிராம்): ₹{render.inr(r['g22'] * 8)} ({change_text((r['g22'] - r['g22_prev']) * 8, '')})")
+        lines.append(f"💡 1 சவரன் + 3% ஜிஎஸ்டி: ₹{render.inr(r['g22'] * 8 * 1.03)} (செய்கூலி, சேதாரம் தனி)")
     if r.get("silver"):
         lines.append(f"⚪ வெள்ளி (1 கிராம்): ₹{render.inr(r['silver'])} ({change_text(r['silver'] - r['silver_prev'], '')})")
     lines += ["", "சென்னை சந்தை விலை (தமிழ்நாடு). ஜிஎஸ்டி, செய்கூலி, சேதாரம் தனி; கடைகளுக்கு ஏற்ப விலை சற்று மாறலாம்.", "",
@@ -278,7 +283,7 @@ def main():
     for pg in todo:
         p = dict(PAGES[pg], logo=ROOT / "kit" / f"logo_{pg}.png")
         out = ROOT / "out" / "goldrate" / pg
-        jpgs = render.render(p, r, out, log)
+        jpgs = (minnal_render if p.get("design") == "minnal" else render).render(p, r, out, log)
         cap = caption(p, day, r)
         (out / "caption.txt").write_text(cap, encoding="utf-8")
         log(f"{pg} caption:\n{cap}")

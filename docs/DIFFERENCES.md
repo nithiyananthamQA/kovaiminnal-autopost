@@ -16,8 +16,9 @@ plus ab06a9d (16 Nov). Next port: `git log abb1ac1..ref/main` for commits after 
 - Voice: ElevenLabs Nila (config `reel_voice`), place-name listen-back check. Reference: edge-tts Valluvar.
 - Reel end card: ours (reference cee3548 "Source: <paper> (<date>)" end card is template - not taken; our top strip shows the source).
 - Pictures: our own generated pictures only, no news-site photos (config `real_photo_enabled: false`, owner 14 Nov, part of the video).
-- Gold-rate slides: his design with our name (கோவை மின்னல், @kovai_minnal, #KovaiMinnal); the brand text is smaller (40 px)
-  because "மின்னல்" is wider than "360".
+- Gold-rate slides: OUR design (goldrate/minnal_render.py, owner 17 Nov "dont copy his template"): Minnal navy + yellow, the 22K
+  sovereign (8 g) as the hero, 22K / 24K per gram, 24K 10 g, sovereign + 3% GST, this week's bars with high / low; silver 1 kg
+  hero + 1 / 10 / 100 g. Same rate reading and two-source rule as the reference (gold_daily.py, gold_sources.py).
 
 ## 2. Names (branding)
 
@@ -44,7 +45,7 @@ e-mail tag KOVAIMINNAL. Never "360".
 ## 4. Held until the owner says yes
 
 - Gold & silver rate carousel (reference bc0eaec): code ported and rebranded, schedule HELD (show-first rule).
-  Sample: ~/Videos/kovai-minnal/goldrate-sample-17nov.jpg. To start it: put the three cron lines back in .github/workflows/goldrate.yml
+  Sample (our design): ~/Videos/kovai-minnal/goldrate-OUR-design-17nov.jpg. To start it: put the three cron lines back in .github/workflows/goldrate.yml
   and add `"goldrate.yml": {"dry": "0", "date": ""}` to tools/keeper.py LIVE_INPUTS.
 
 ## 5. Correctness fixes of ours (owner 17 Nov: "you kept ours better" - the friend is told to fix his copy)

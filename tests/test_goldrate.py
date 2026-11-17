@@ -60,3 +60,24 @@ class Compare(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class MinnalDesign(unittest.TestCase):
+    """owner 17 Nov: our own slide design with better data - every number is the confirmed rate or plain arithmetic on it"""
+    def test_numbers_are_arithmetic_on_the_rates(self):
+        sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "goldrate"))
+        import minnal_render as M, gold_daily as G
+        p = dict(G.PAGES["coimbatore"], logo="x.png")
+        self.assertEqual(p["design"], "minnal")
+        r = {"date": "17 நவம்பர் 2026", "g22": 12470, "g22_prev": 12695, "g24": 13604, "g24_prev": 13849, "vs": "நேற்றைய விலையைவிட",
+             "week22": [("16 நவ", 12695), ("17 நவ", 12470)], "silver": 190, "silver_prev": 195, "weeksilver": [("17 நவ", 190)]}
+        gold, silver = M.page(p, r, "gold"), M.page(p, r, "silver")
+        self.assertIn("₹99,760", gold)          # 1 சவரன் = 8 g of 22K
+        self.assertIn("₹1,800", gold)           # its change = 8 x 225
+        self.assertIn("₹1,02,753", gold)        # + 3% GST
+        self.assertIn("₹1,36,040", gold)        # 24K 10 g
+        self.assertIn("₹1,90,000", silver)      # 1 kg
+        self.assertNotIn("360", gold + silver)
+        self.assertIn("@kovai_minnal", gold)
+        cap = G.caption(p, G.date.fromisoformat("2026-11-17"), r)
+        self.assertIn("1 சவரன் (8 கிராம்): ₹99,760", cap)
