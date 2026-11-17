@@ -2601,3 +2601,11 @@ class OwnDistrictList17Nov(unittest.TestCase):
         a = self._run("தமிழகத்தில் நாளை மின்தடை", "பல பகுதிகளில் மின்தடை.")
         self.assertEqual(a["text"], "")
 
+
+class RealHandle18Nov(unittest.TestCase):
+    """18 Nov: every Kovai reel's end card said FOLLOW @kovaiminnal - the real Instagram username is kovai_minnal"""
+    def test_end_card_handle(self):
+        sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "reel"))
+        import reel
+        self.assertEqual(reel.PAGES["coimbatore"]["handle"], "kovai_minnal")
+

@@ -18,7 +18,8 @@ FS = NM / "@fontsource"
 ICONS = NM / "@fortawesome" / "fontawesome-free" / "svgs" / "solid"
 # Kovai Minnal: ONE page (no second page). Page name / handle / logo in this one place.
 PAGES = {
-    "coimbatore": {"logo": "logo_coimbatore.png", "name": "கோவை மின்னல்", "handle": "kovaiminnal", "tagline": "கோவை மின்னல்", "follow": "கோவை மாவட்டச்<br>செய்திகளுக்கு",
+    # 18 Nov: kovai_minnal is the real Instagram username (it was kovaiminnal - every Kovai end card showed a handle nobody could find)
+    "coimbatore": {"logo": "logo_coimbatore.png", "name": "கோவை மின்னல்", "handle": "kovai_minnal", "tagline": "கோவை மின்னல்", "follow": "கோவை மாவட்டச்<br>செய்திகளுக்கு",
                    "ticker": "கோவை மின்னல்  •  கோவை மாவட்டச் செய்திகள்  •  Follow செய்யுங்கள்", "footer": "footer_coimbatore.png", "hashtag": "#KovaiMinnal"},
 }
 PAGE = PAGES["coimbatore"]
