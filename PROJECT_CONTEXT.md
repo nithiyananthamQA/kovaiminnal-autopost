@@ -82,6 +82,8 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-18 | `b9ee38d` | Kovai end card: FOLLOW @kovai_minnal, the real username (every Kovai reel showed @kovaiminnal - a handle nobody could find) |
+| 2026-11-17 | `f85d938` | facebook RN-94 |
 | 2026-11-18 | `510ab88` | Posting chain: the Cloudflare Worker waits, not a GitHub machine (owner 18 Nov: 'safe from ban?') |
 | 2026-11-17 | `9e03fbf` | pick: picked news saved |
 | 2026-11-17 | `a1446ee` | pick: picked news saved |
@@ -110,6 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-17 | `83dd488` | facebook RN-88 |
 | 2026-11-17 | `39da329` | stories shared |
 | 2026-11-17 | `6cffe46` | pick: picked news saved |
-| 2026-11-17 | `10372bb` | pick: picked news saved |
-| 2026-11-17 | `d11fb9e` | pick: list sent |
 <!-- recent-changes:end -->
