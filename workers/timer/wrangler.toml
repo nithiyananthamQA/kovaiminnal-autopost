@@ -1,0 +1,12 @@
+# test (owner 18 Nov: a plain name in Cloudflare): the pages' job timer (replaces keeper.yml + the Google Apps Script timers). Deploy: npx wrangler deploy
+# Secret (once): the GitHub token that may start the pages' workflows -> npx wrangler secret put GH_TOKEN
+name = "test"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+workers_dev = false
+
+[triggers]
+crons = ["* * * * *"]
+
+[observability]
+enabled = true

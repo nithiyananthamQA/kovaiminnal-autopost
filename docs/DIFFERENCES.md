@@ -78,6 +78,13 @@ e-mail tag KOVAIMINNAL. Never "360".
 - The owner stops the Google Apps Script timer (stopKovaiTimer) - it could start post.yml every 5 minutes.
 - REVERT when the Cloudflare Workers timer takes over: git revert this commit (tests test_keeper / test_kovai_timer say what).
 
+## 3e. Cloudflare Worker timer (owner 18 Nov: "can we move to the workers now", "one worker for all our pages", plain name)
+
+- workers/timer = Cloudflare Worker "test" (owner's Cloudflare account): every minute it starts each page's workflows at their own
+  cron times (schedule.json from tools/make_timer.py: Kovai + every page clone), once - a run since that time (GitHub's own timer)
+  counts. It replaces keeper.yml (switched off on GitHub) and the Google Apps Script timers. Secret GH_TOKEN = the nithiyananthamQA
+  GitHub login. A new page: clone it, python3 tools/make_timer.py, cd workers/timer && npx wrangler deploy.
+
 ## 4. Held until the owner says yes
 
 - (none) - the gold & silver rate reel went live on the owner's OK 17 Nov ("nice music use it"): goldrate.yml crons 09:35 /

@@ -1,0 +1,175 @@
+{
+ "note": "made by tools/make_timer.py - do not edit by hand",
+ "repos": {
+  "nithiyananthamQA/kovaiminnal-autopost": [
+   {
+    "file": "cloudclean.yml",
+    "crons": [
+     "40 19 */2 * *"
+    ],
+    "inputs": {
+     "keep_hours": "48",
+     "dry": "false"
+    }
+   },
+   {
+    "file": "comments.yml",
+    "crons": [
+     "15 0-17 * * *"
+    ],
+    "inputs": {
+     "dry_run": "0"
+    }
+   },
+   {
+    "file": "goldrate.yml",
+    "crons": [
+     "5 4 * * *",
+     "30 5 * * *",
+     "0 7 * * *"
+    ],
+    "inputs": {
+     "dry": "0",
+     "date": ""
+    }
+   },
+   {
+    "file": "insights.yml",
+    "crons": [
+     "40 20 * * *"
+    ],
+    "inputs": {}
+   },
+   {
+    "file": "pick.yml",
+    "crons": [
+     "30 23,3 * * *",
+     "30 7,11,15,19 * * *"
+    ],
+    "inputs": {
+     "dry": "0",
+     "resume": "0"
+    }
+   },
+   {
+    "file": "post.yml",
+    "crons": [
+     "7 * * * *"
+    ],
+    "inputs": {
+     "dry_run": "false",
+     "prebuild": "false",
+     "timer": "true"
+    }
+   },
+   {
+    "file": "powercut.yml",
+    "crons": [
+     "20 0-16 * * *"
+    ],
+    "inputs": {
+     "dry": "0"
+    }
+   },
+   {
+    "file": "rasipalan.yml",
+    "crons": [
+     "30 1 * * *",
+     "15 2 * * *",
+     "15 4 * * *",
+     "15 6 * * *"
+    ],
+    "inputs": {
+     "dry": "0",
+     "date": "",
+     "repost": "0"
+    }
+   }
+  ],
+  "nithiyananthamQA/chennaiminnal-autopost": [
+   {
+    "file": "cloudclean.yml",
+    "crons": [
+     "40 19 */2 * *"
+    ],
+    "inputs": {
+     "keep_hours": "48",
+     "dry": "false"
+    }
+   },
+   {
+    "file": "comments.yml",
+    "crons": [
+     "15 0-17 * * *"
+    ],
+    "inputs": {
+     "dry_run": "0"
+    }
+   },
+   {
+    "file": "goldrate.yml",
+    "crons": [
+     "5 4 * * *",
+     "30 5 * * *",
+     "0 7 * * *"
+    ],
+    "inputs": {
+     "dry": "0",
+     "date": ""
+    }
+   },
+   {
+    "file": "insights.yml",
+    "crons": [
+     "40 20 * * *"
+    ],
+    "inputs": {}
+   },
+   {
+    "file": "pick.yml",
+    "crons": [
+     "30 23,3 * * *",
+     "30 7,11,15,19 * * *"
+    ],
+    "inputs": {
+     "dry": "0",
+     "resume": "0"
+    }
+   },
+   {
+    "file": "post.yml",
+    "crons": [
+     "7 * * * *"
+    ],
+    "inputs": {
+     "dry_run": "false",
+     "prebuild": "false",
+     "timer": "true"
+    }
+   },
+   {
+    "file": "powercut.yml",
+    "crons": [
+     "20 0-16 * * *"
+    ],
+    "inputs": {
+     "dry": "0"
+    }
+   },
+   {
+    "file": "rasipalan.yml",
+    "crons": [
+     "30 1 * * *",
+     "15 2 * * *",
+     "15 4 * * *",
+     "15 6 * * *"
+    ],
+    "inputs": {
+     "dry": "0",
+     "date": "",
+     "repost": "0"
+    }
+   }
+  ]
+ }
+}

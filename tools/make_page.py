@@ -32,7 +32,7 @@ SKIP = re.compile(r"^(districts/|apps_script/Code\.districts\.gs$|\.github/workf
                   r"tests/test_districts|tests/test_kovai_timer|tests/test_kovai_unified|research_free/archive/|research_free/results/|poster/insights/history\.json$|poster/fb_posted/|"
                   r"poster/prebuilt/|poster/queue|poster/story_shared\.json$|poster/comments_ignored\.json$|goldrate/state/posted_|"
                   r"rasipalan/state/|LIVE$|research_free/ENABLED$|\.last_check$|docs/(GO_LIVE_CHENNAI|KOVAI_AUDIT|SETUP_KOVAI_MINNAL)\.md$|"
-                  r"brand/|tools/make_page\.py$|tools/make_brand\.py$|tools/meta_fb_token\.sh$|tools/sync_pages\.py$|tests/test_sync_pages\.py$)")
+                  r"brand/|tools/make_page\.py$|tools/make_brand\.py$|tools/meta_fb_token\.sh$|tools/sync_pages\.py$|tests/test_sync_pages\.py$|workers/|tools/make_timer\.py$|tests/test_timer_worker\.py$)")
 TEXT = re.compile(r"\.(py|yml|yaml|json|md|gs|txt|sh|html|css|js|cfg|toml)$|^[A-Z_]+$|^\.gitignore$")
 # tests of Kovai's own places / city-only rule / the district engine: the word swap makes them meaningless on another page
 KOVAI_ONLY_TESTS = {"test_regressions.py": ["test_posting_gate_city_only", "test_towns_outside_the_city_skipped", "test_places",
