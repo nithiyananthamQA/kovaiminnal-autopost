@@ -53,4 +53,21 @@ const r3 = await day(kovai, new Date("2026-11-18T23:25:00Z"), 20, {}, new Set([5
 assert.equal(ist(r3.at["pick.yml"][0]), "05:01");
 // a time older than LATE_MIN is left
 assert.equal(mod.lastSlot(["30 23 * * *"], new Date("2026-11-18T23:46:00Z")), null);
+
+// the posting chain: a run asks for the next check in 12 min -> started once at that time, not before; the earliest ask wins
+const kv = new Map(), env = { NEXT: { get: async (k) => kv.get(k) ?? null, put: async (k, v) => kv.set(k, v), delete: async (k) => kv.delete(k) } };
+const KR = "nithiyananthamQA/kovaiminnal-autopost", t0 = new Date("2026-11-18T05:00:00Z");
+const one = { repos: { [KR]: schedule.repos[KR] } };
+assert.equal(await mod.askNext(env, KR, 720, t0, one), 204);
+assert.equal(await mod.askNext(env, KR, 900, t0, one), 204);      // a later ask does not push it back
+assert.equal(await mod.askNext(env, "someone/else", 60, t0, one), 400);
+const posts = [];
+const call2 = async (e, method, path) => {
+  if (method === "GET") return { ok: true, json: async () => ({ total_count: 1 }) };      // every scheduled job already ran
+  posts.push(path); return { status: 204 };
+};
+for (let m = 0; m <= 20; m++) await mod.tick(env, new Date(t0.getTime() + m * 60000), one, call2);
+assert.equal(posts.length, 1);
+assert.ok(posts[0].endsWith("/post.yml/dispatches"));
+assert.equal(kv.size, 0);
 console.log("timer test OK");

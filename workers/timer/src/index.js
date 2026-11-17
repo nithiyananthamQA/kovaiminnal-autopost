@@ -45,8 +45,35 @@ async function gh(env, method, path, body) {
   return r;
 }
 
-export async function tick(env, now, schedule = SCHEDULE, call = gh) {
+// owner 18 Nov: the posting chain. A posting run that leaves news waiting asks for the next check (POST /next {repo, after: seconds})
+// instead of sleeping on a GitHub machine; the earliest asked time per page is kept in KV and started once when it comes.
+export async function askNext(env, repo, after, now, schedule = SCHEDULE) {
+  if (!schedule.repos[repo]) return 400;
+  const s = Math.max(60, Math.min(3600, Number(after) || 360));
+  const due = now.getTime() + s * 1000;
+  const old = Number(await env.NEXT.get("next:" + repo)) || 0;
+  if (!old || due < old) await env.NEXT.put("next:" + repo, String(due));
+  return 204;
+}
+
+async function nextPosts(env, now, schedule, call) {
   const started = [];
+  if (!env.NEXT) return started;
+  for (const [repo, jobs] of Object.entries(schedule.repos)) {
+    const due = Number(await env.NEXT.get("next:" + repo)) || 0;
+    if (!due || due > now.getTime()) continue;
+    const post = jobs.find((j) => j.file === "post.yml");
+    await env.NEXT.delete("next:" + repo);
+    if (!post) continue;
+    const r = await call(env, "POST", `repos/${repo}/actions/workflows/post.yml/dispatches`, { ref: "main", inputs: post.inputs });
+    console.log(repo, "next posting check", r.status === 204 ? "STARTED" : `not started (${r.status})`);
+    if (r.status === 204) started.push(`${repo} post.yml`);
+  }
+  return started;
+}
+
+export async function tick(env, now, schedule = SCHEDULE, call = gh) {
+  const started = await nextPosts(env, now, schedule, call);
   for (const [repo, jobs] of Object.entries(schedule.repos)) {
     for (const job of jobs) {
       const slot = lastSlot(job.crons, now);
@@ -67,7 +94,13 @@ export default {
   async scheduled(event, env, ctx) {
     ctx.waitUntil(tick(env, new Date(event.scheduledTime)));
   },
-  async fetch() {
+  async fetch(req, env) {
+    const url = new URL(req.url);
+    if (req.method === "POST" && url.pathname === "/next") {
+      if (!env.TIMER_KEY || req.headers.get("Authorization") !== `Bearer ${env.TIMER_KEY}`) return new Response("no\n", { status: 403 });
+      const b = await req.json().catch(() => ({}));
+      return new Response(null, { status: await askNext(env, String(b.repo || ""), b.after, new Date()) });
+    }
     return new Response("ok\n");
   },
 };

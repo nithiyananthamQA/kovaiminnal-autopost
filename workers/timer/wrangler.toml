@@ -3,10 +3,16 @@
 name = "test"
 main = "src/index.js"
 compatibility_date = "2025-09-01"
-workers_dev = false
+workers_dev = true      # the pages' posting runs tell it when to start the next one (POST /next)
 
 [triggers]
 crons = ["* * * * *"]
 
 [observability]
 enabled = true
+
+# owner 18 Nov: a posting run no longer sleeps on GitHub before starting the next one - it asks this Worker (POST /next) and ends;
+# the time of each page's next posting check is kept here
+[[kv_namespaces]]
+binding = "NEXT"
+id = "71c3a5d6e1c74d16bc177349a12eed65"

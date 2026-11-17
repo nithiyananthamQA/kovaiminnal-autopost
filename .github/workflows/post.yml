@@ -151,9 +151,14 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Wait for the 12-minute gap, then start the next posting run
+        env:
+          TIMER_URL: ${{ secrets.TIMER_URL }}      # owner 18 Nov: the Cloudflare timer waits instead of this machine
+          TIMER_KEY: ${{ secrets.TIMER_KEY }}
         run: |
           echo "${{ needs.check.outputs.waiting }} stories wait only for the gap"
-          sleep 660
+          if [ -n "$TIMER_URL" ] && curl -fsS -m 30 -X POST "$TIMER_URL/next" -H "Authorization: Bearer $TIMER_KEY" -H "Content-Type: application/json" \
+               -d "{\"repo\": \"$GITHUB_REPOSITORY\", \"after\": 660}"; then echo "the timer starts the next posting run in 11 min"; exit 0; fi
+          sleep 660      # no timer: the old way
           gh workflow run post.yml -R "$GITHUB_REPOSITORY" -f dry_run=false -f prebuild=false -f timer=true && echo "next posting run started"      # timer=true: the LIVE file still stops posting (17 Nov)
 
   post:
@@ -263,6 +268,10 @@ jobs:
         if: env.DRY_RUN == '' && env.PREBUILD == ''
         env:
           GH_TOKEN: ${{ github.token }}
+          TIMER_URL: ${{ secrets.TIMER_URL }}      # owner 18 Nov: the Cloudflare timer waits instead of this machine
+          TIMER_KEY: ${{ secrets.TIMER_KEY }}
         run: |
-          sleep 360
+          if [ -n "$TIMER_URL" ] && curl -fsS -m 30 -X POST "$TIMER_URL/next" -H "Authorization: Bearer $TIMER_KEY" -H "Content-Type: application/json" \
+               -d "{\"repo\": \"$GITHUB_REPOSITORY\", \"after\": 360}"; then echo "the timer starts the next posting check in 6 min"; exit 0; fi
+          sleep 360      # no timer: the old way
           gh api -X POST "repos/${{ github.repository }}/actions/workflows/post.yml/dispatches" -f ref=main -F "inputs[dry_run]=false" -F "inputs[timer]=true" || echo "next run not started (the 5-minute schedule still runs)"

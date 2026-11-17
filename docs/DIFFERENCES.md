@@ -84,6 +84,10 @@ e-mail tag KOVAIMINNAL. Never "360".
   cron times (schedule.json from tools/make_timer.py: Kovai + every page clone), once - a run since that time (GitHub's own timer)
   counts. It replaces keeper.yml (switched off on GitHub) and the Google Apps Script timers. Secret GH_TOKEN = the nithiyananthamQA
   GitHub login. A new page: clone it, python3 tools/make_timer.py, cd workers/timer && npx wrangler deploy.
+- Posting chain (owner 18 Nov: "safe from ban?"): a posting run that leaves news waiting no longer sleeps 6 / 11 minutes on a
+  GitHub machine before starting the next one - it asks the Worker (POST https://test.freelancingfashion.workers.dev/next, secrets
+  TIMER_URL / TIMER_KEY) and ends; the Worker keeps the time in KV (NEXT) and starts exactly one posting run when it comes. No
+  TIMER_URL = the old sleep. Posts stay one by one, 12 minutes apart.
 
 ## 4. Held until the owner says yes
 
