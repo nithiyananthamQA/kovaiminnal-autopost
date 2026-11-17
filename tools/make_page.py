@@ -39,7 +39,8 @@ KOVAI_ONLY_TESTS = {"test_regressions.py": ["test_posting_gate_city_only", "test
                                             "test_town_topic_tamil", "test_other_district_not_posted", "test_five_focused_hashtags",
                                             "test_list", "test_different_towns_are_different_news", "test_city_story_wins_a_tie"],
                     "test_powercut.py": ["test_shared_place_name_is_not_enough"]}
-KEEP_ASIS = {"goldrate/state/history.json", "research_free/sources.json"}      # sources.json: swapped by the engine's own rule below
+KEEP_ASIS = {"goldrate/state/history.json", "research_free/sources.json",      # sources.json: swapped by the engine's own rule below
+             "poster/insights/reference_learned.json"}      # the reference page's insights (his own words, never swapped)
 
 
 PAGE_TEST = '''"""tools/make_page.py: this page's own values (a copy of Kovai Minnal with the district's words)"""
@@ -98,12 +99,16 @@ def branding(d):
             ("Kovai", d["en"]), ("kovai", d["key"]), ("KOVAI", d["en"].upper())]
 
 
+REF_REPO = "news360-tn/coimbatore360-autopost"      # the reference's own repo name is never a word to swap (every page learns from it)
+
+
 def swap_text(text, d, PL):
+    text = text.replace(REF_REPO, "\x00REF\x00")
     for pat, rep in PL.swaps(d):
         text = re.sub(pat, lambda _m, r=rep: r, text)
     for a, b in branding(d):
         text = text.replace(a, b)
-    return text
+    return text.replace("\x00REF\x00", REF_REPO)
 
 
 def set_assign(src, name, value):
@@ -237,6 +242,13 @@ def main(key, out):
         (out / f).unlink(missing_ok=True)
     (out / "poster" / "insights").mkdir(parents=True, exist_ok=True)
     (out / "poster" / "insights" / "history.json").write_text("{}\n", encoding="utf-8")
+    # a new page has no reels yet: its learned.json = the reference page's live insights alone (poster/reference_insights.py)
+    sys.path.insert(0, str(ROOT / "poster"))
+    import reference_insights
+    his = reference_insights.fetch() if not (out / "poster" / "insights" / "reference_learned.json").exists() else \
+        json.loads((out / "poster" / "insights" / "reference_learned.json").read_text(encoding="utf-8"))
+    first = reference_insights.blend({"updated": datetime.now(timezone.utc).isoformat(timespec="minutes"), "posts_measured": 0}, his, 5, 12)
+    (out / "research_free" / "learned.json").write_text(json.dumps(first, ensure_ascii=False, indent=1), encoding="utf-8")
     leftovers = subprocess.run(["grep", "-rIlE", r"Kovai Minnal|கோவை மின்னல்|kovai_minnal|KovaiMinnal|kovaiminnal", str(out),
                                 "--exclude-dir=.git"], capture_output=True, text=True).stdout.split()
     print(f"{n} files -> {out}")

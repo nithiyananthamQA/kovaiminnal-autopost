@@ -115,6 +115,9 @@ def main():
         out["avg_watch_s"] = round(statistics.mean(aw) / 1000, 1) if aw else None
         out["best_topics"] = sorted(tw, key=lambda k: -tw[k])[:3]
         out["weak_topics"] = sorted(tw, key=lambda k: tw[k])[:2]
+    # owner 17 Nov (ours): our own numbers lead, the reference page's live insights fill the gaps (poster/reference_insights.py)
+    import reference_insights
+    out = reference_insights.blend(out, reference_insights.fetch(), learned.TRUST_N, MIN_POSTS)
     json.dump(out, open(os.path.join(HERE, "..", "research_free", "learned.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(json.dumps(out, ensure_ascii=False)[:1500])
 
