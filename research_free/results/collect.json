@@ -3,113 +3,111 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinakaran.com/news/periyar-knowledge-library-case-distribution-fake-books-akalvilakku-publishing-house",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/police-re-investigate-encyclopedia-corruption-case/4378264",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/smuggling-on-the-tamil-nadu-kerala-border/4378175",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/gold-ring-shines-on-3380-baby-fingers/4378432",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/cyber-police-warns-people-not-to-cheat-for-wanting-to-open-a-bank-account/4378433",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/protect-garbage-vehicles/4378450",
   "candidate filter: collected=3",
   "to write: 3 Coimbatore district candidates (max 3 stories)",
   "round: top 3 of 3 candidates",
   "candidates waiting: 3 Coimbatore; time left 79 min",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "try (N) manual=True: https://www.dinakaran.com/news/periyar-knowledge-library-cas",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
-  "candidate loop ended: left 0, tried={'N': 3}, done={'N': 3}, time left 73 min",
+  "candidate loop ended: left 0, tried={'N': 3}, done={'N': 3}, time left 74 min",
   "filed: 3 Coimbatore district stories (target 3), reels only",
   "queue: 0 news waiting to be written",
   "All News sheet: {\"ok\":true,\"added\":3,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok gemini/gemini-3.6-flash (30s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok gemini/gemini-3.6-flash (36s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "ok gemini/gemini-3.6-flash (35s)",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "ok gemini/gemini-3-flash-preview (10s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
-  "ok gemini/gemini-3-flash-preview (16s)",
+  "ok gemini/gemini-3.5-flash (28s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3-flash-preview (29s)",
+  "ok gemini/gemini-3-flash-preview (10s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok gemini/gemini-3.6-flash (40s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
   "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high ",
-  "ok gemini/gemini-3.5-flash (30s)",
+  "ok gemini/gemini-3-flash-preview (4s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please ch",
-  "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please ch",
-  "switching away from gemma/gemma-4-26b-a4b-it for 10 min",
-  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high dema",
+  "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high ",
   "fail gemma/gemma-4-26b-a4b-it: gemma gemma-4-26b-a4b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please ch",
   "switching away from gemma/gemma-4-26b-a4b-it for 10 min",
+  "fail gemini/gemini-3.6-flash: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3.6-flash",
   "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check ",
+  "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high dema",
   "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check ",
   "switching away from gemma/gemma-4-31b-it for 10 min",
+  "ok groq/openai/gpt-oss-120b (7s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "fail gemma/gemma-4-31b-it: gemma gemma-4-31b-it 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check ",
   "switching away from gemma/gemma-4-31b-it for 10 min",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
   "ok groq/qwen/qwen3.8-27b (4s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: cloudflare @cf/meta/llama-3.3-70b-instruct-fp8-fast 400: {\"errors\":[{\"message\":\"AiError: AiError: {\\\"error\\\":{\\\"message\\",
-  "fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
-  "poor answer - skipped for 30 min: gemini/gemini-3-flash-preview",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (1s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "fail cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: Expecting ',' delimiter: line 9 column 719 (char 1096)",
-  "poor answer - skipped for 30 min: cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct",
-  "ok anthropic/claude-haiku-5-5",
+  "fail gemma/gemma-4-26b-a4b-it: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=90)",
+  "poor answer - skipped for 30 min: gemma/gemma-4-26b-a4b-it",
   "fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)",
   "poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-  "ok anthropic/claude-haiku-5-5",
-  "ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (83s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast (89s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (26s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=90)",
+  "poor answer - skipped for 30 min: cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (4s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (26s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct (7s)",
+  "fail cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct: Expecting ',' delimiter: line 1 column 1277 (char 1276)",
+  "poor answer - skipped for 30 min: cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
@@ -120,190 +118,171 @@
  ],
  "stories": [
   {
-   "tamil_headline": "கோவை பெரியார் அறிவுலக நூலக வழக்கு: போலி புத்தகங்கள் விநியோகம், பதிப்பக உரிமையாளர் மோகன் கைது",
-   "english_headline": "Coimbatore Periyar Arivulagam library fake books scam: Publisher Mohan arrested by DVAC, case filed under 11 sections",
+   "tamil_headline": "வங்கி கணக்கு திறக்க சலுகை காட்டி மோசடி: கோவை சைபர் போலீஸ் எச்சரிக்கை",
+   "english_headline": "Coimbatore Cyber Police Warn Against Bank Account Opening Scams",
    "category": "Crime & Safety",
-   "location": "Periyar Arivulagam Library, Coimbatore district",
+   "location": "Coimbatore city, Coimbatore district",
    "importance": "High",
    "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "நூலக முறைகேடு",
+    "cat": "மோசடி எச்சரிக்கை",
     "loc": "கோவை",
-    "hl1": "கோவை பெரியார் அறிவுலக நூலக வழக்கு",
-    "hl2": "பதிப்பக உரிமையாளர் கைது",
+    "hl1": "கோவையில் வங்கி கணக்கு மோசடி எச்சரிக்கை",
+    "hl2": "சலுகை காட்டி",
     "slides": [
      {
-      "title": "போலி புத்தகங்கள்",
+      "title": "எச்சரிக்கை",
       "lines": [
-       "கோவை <b>பெரியார் அறிவுலகத்தில்</b> போலி நூல்கள் கொள்முதல்",
-       "<b>1,800க்கும் மேற்பட்ட</b> நூல்கள் போலியானவை என புகார்",
-       "அகல் விளக்கு, பீனிக்ஸ் பதிப்பகங்கள் மூலம் விநியோகம்"
+       "கோவை சைபர் போலீஸ் எச்சரிக்கை விடுத்துள்ளனர்",
+       "அறிமுகம் இல்லாதவர்கள் வங்கி கணக்கு திறக்க வேண்டாம்"
       ]
      },
      {
-      "title": "சாட் ஜிபிடி போலி",
+      "title": "மோசடி முறை",
       "lines": [
-       "<b>சாட் ஜிபிடி</b> மூலம் கற்பனை பெயர்களில் புத்தகங்கள் உருவாக்கம்",
-       "தரமற்ற, தொடர்பில்லாத தகவல்களுடன் புத்தகங்கள் தயாரிப்பு",
-       "நூலகக் கொள்முதல் கொள்கை விதி மீறல்கள் அம்பலம்"
-      ]
-     },
-     {
-      "title": "ரூ.1.74 கோடி பணம்",
-      "lines": [
-       "பரிந்துரைத்த <b>26,000</b> நூல்கள் தவிர பிற நூல்கள் சேர்ப்பு",
-       "பதிப்பகங்களுக்கு <b>ரூ.1,74,01,162</b> பணம் வழங்கப்பட்டுள்ளது",
-       "சென்னை, கோவை நூலக அதிகாரிகளுடன் கூட்டுச் சதி"
-      ]
-     },
-     {
-      "title": "11 பிரிவில் வழக்கு",
-      "lines": [
-       "அதிகாரிகள் மற்றும் மோகன் மீது <b>11 பிரிவுகளில்</b> வழக்கு",
-       "ஊழல் தடுப்பு <b>சோதனையில்</b> ஆவணங்கள், ஹார்டு டிஸ்க் பறிமுதல்",
-       "பதிப்பக உரிமையாளர் மோகனைக் <b>கைது</b> செய்தது காவல்துறை"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோவை பெரியார் அறிவுலக நூலக வழக்கில் பதிப்பக உரிமையாளர் கைது செய்யப்பட்டார். கோவை பெரியார் அறிவுலக நூலகத்திற்கு 1,800க்கும் மேற்பட்ட போலி நூல்கள் விநியோகிக்கப்பட்டதாக குற்றச்சாட்டு எழுந்தது. சாட் ஜிபிடி போன்ற இணையவழி செயலிகள் மூலம் தகவல்களை எடுத்து, கற்பனையான பெயர்களில் தரமற்ற புத்தகங்கள் உருவாக்கப்பட்டது விசாரணையில் தெரியவந்துள்ளது. இதில் அகல் விளக்கு பதிப்பகம் மற்றும் பீனிக்ஸ் பப்ளிகேஷன்ஸ் நிறுவனங்களுக்கு ரூ.1,74,01,162 பணம் வழங்கப்பட்டுள்ளது. புத்தகப் பரிந்துரை குழு 26,000 புத்தகங்களைப் பரிந்துரைத்த நிலையில், விதிகளை மீறி கூடுதல் புத்தகங்கள் சேர்க்கப்பட்டுள்ளன. சென்னை ஊழல் தடுப்பு மற்றும் கண்காணிப்புத்துறை சோதனைகள் நடத்தி, பதிப்பக உரிமையாளர் மோகனைக் கைது செய்துள்ளது. மோகன் மற்றும் பெயர் குறிப்பிடப்படாத அதிகாரிகள் மீது 11 பிரிவுகளின் கீழ் வழக்குப்பதிவு செய்யப்பட்டுள்ளது. ஹார்டு டிஸ்க் மற்றும் ஆவணங்கள் கைப்பற்றப்பட்டு விசாரணை தொடர்ந்து நடைபெறுகிறது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 கோவை பெரியார் அறிவுலக நூலக வழக்கு: போலி புத்தகங்கள் விநியோகம், பதிப்பக உரிமையாளர் மோகன் கைது!\n\n📰 முழு விவரம்:\nகோயம்புத்தூர் பெரியார் அறிவுலக நூலகத்திற்கு கொள்முதல் செய்யப்பட்ட நூல்களில் 1,800க்கும் மேற்பட்ட நூல்கள் போலியானவை என எழுத்தாளர் பெருமாள் முருகன் குற்றச்சாட்டு முன்வைத்தார். சென்னை அகல் விளக்கு பதிப்பகம் மற்றும் பீனிக்ஸ் பப்ளிகேஷன்ஸ் நிறுவனங்களிடம் வாங்கப்பட்ட புத்தகங்கள் போலியானவை எனக் கூறப்பட்டது.\n\nபள்ளிக் கல்வித்துறை சார்பில் அளிக்கப்பட்ட புகாரைத் தொடர்ந்து சென்னை உயர் நீதிமன்ற மதுரை கிளை உத்தரவின்படி ஊழல் தடுப்பு மற்றும் கண்காணிப்பு இயக்ககம் வழக்குப்பதிவு செய்தது.\n\nவிசாரணையில், பதிப்பக உரிமையாளர் மோகன் சாட் ஜிபிடி உள்ளிட்ட செயலிகளிலிருந்து தகவல்களை எடுத்து கற்பனையான எழுத்தாளர் பெயர்களில் கல்வி மதிப்பற்ற தரமற்ற புத்தகங்களை உருவாக்கியது அம்பலமானது. புத்தக பரிந்துரை குழு 26,000 புத்தகங்களை பரிந்துரைத்த நிலையில், ஒருங்கிணைப்பு குழு விதிகளை மீறி பிற புத்தகங்களைச் சேர்த்துள்ளது. இரு பதிப்பகங்களுக்கும் சேர்த்து ரூ.1,74,01,162 தொகை வழங்கப்பட்டுள்ளது.\n\nபொது நூலக இயக்ககம், அண்ணா நூற்றாண்டு நூலகம் மற்றும் கோவை பெரியார் அறிவுலக நூலக அதிகாரிகள் இதில் கூட்டுச் சதி செய்துள்ளதாக முதல் தகவல் அறிக்கையில் தெரிவிக்கப்பட்டுள்ளது. இதையடுத்து மோகன் மற்றும் பெயர் குறிப்பிடப்படாத அதிகாரிகள் மீது 11 பிரிவுகளின் கீழ் வழக்குப் பதிவு செய்யப்பட்டு, சோதனையில் ஹார்டு டிஸ்க் மற்றும் ஆவணங்கள் பறிமுதல் செய்யப்பட்டன. அகல் விளக்கு பதிப்பக உரிமையாளர் மோகன் கைது செய்யப்பட்டு விசாரணை நடைபெறுகிறது.\n\n📍 இடம்: பெரியார் அறிவுலகம், கோவை\n👮 நடவடிக்கை: 11 பிரிவுகளில் வழக்கு, பதிப்பக உரிமையாளர் மோகன் கைது\n💰 தொகை: ரூ.1,74,01,162 முறைகேடு\nℹ️ மக்கள் கவனத்திற்கு: போலி புத்தகக் கொள்முதல் குறித்து லஞ்ச ஒழிப்புத்துறை விசாரணை தீவிரமாக நடைபெறுகிறது.\n\nமுக்கியமான இந்த செய்தியை அனைவருக்கும் Share செய்யுங்கள்!\n\nCoimbatore Periyar Arivulagam library fake books scam publisher arrested | Coimbatore news\n📍 பெரியார் அறிவுலகம், கோவை மாவட்டம் | 17 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #PeriyarArivulagam #CoimbatoreNews #கோவை",
-   "prompts": "DVAC officers in plain clothes and Tamil Nadu police in khaki escort a publisher, seen from behind, out of a government building in Coimbatore district, with a stack of seized books being carried in cardboard boxes by constables. The setting is the entrance of a public library, a pillared hall with a tiled floor and tall wooden bookshelves lining the walls in the background. The publisher wears a plain white shirt and trousers, hands tied in front of him, walking between two officers in khaki. Two or three library staff stand at a distance in shirts and saris, watching quietly. Several cardboard boxes and piles of thin paperback books with plain covers sit on a table at the side. The light is soft daylight coming through tall windows, and the atmosphere is official and tense. Camera at eye level, 35 mm, wide enough to show the entrance, the officers, the boxes and the shelves. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a table covered with stacks of seized paperback books with plain, unbranded covers, laid out in neat piles beside open files and loose sheets of paper with typed lists. A gloved hand from behind is sorting through the books, and a khaki-uniformed police sleeve is visible at the edge of the frame. In the background, slightly blurred, wooden library bookshelves stand full of books. Soft daylight falls across the table, showing the texture of the cover paper and the printed pages, with no readable text in the frame. The camera is slightly high, 35 mm, focused on the stacks of books and the documents. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinakaran.com/news/periyar-knowledge-library-case-distribution-fake-books-akalvilakku-publishing-house",
-   "published": "2026-11-17T03:27:44+05:30",
-   "verification": "DRAFT (gemini/gemini-3.6-flash) - NOT CLEAN, held from posting - problems: reel_script has 95 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block); numbers not found in the article: 800",
-   "note": "free-model draft gemini/gemini-3.6-flash, 2 attempt(s), 2 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794872301/kovaiminnal/jk9rudphnaamvocswkx7.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794872303/kovaiminnal/fur5qvzwxg4rsg6n6mm0.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "காரமடை: தமிழக-கேரள எல்லை மலை கிராமங்களில் கள்ளச்சாராய விற்பனை",
-   "english_headline": "Illicit liquor brewed in Kerala forests and sold to hill villages on the Tamil Nadu-Kerala border near Karamadai",
-   "category": "Crime & Safety",
-   "location": "Karamadai, Coimbatore district",
-   "importance": "High",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "கள்ளச்சாராயம்",
-    "loc": "காரமடை, கோவை மாவட்டம்",
-    "hl1": "காரமடை மலை கிராமங்களுக்கு கள்ளச்சாராயம்",
-    "hl2": "கேரள வனப்பகுதியில் காய்ச்சல்",
-    "slides": [
-     {
-      "title": "எங்கே?",
-      "lines": [
-       "தமிழக-கேரள எல்லையில் காரமடை அருகே மலை கிராமங்கள்",
-       "கோபனாரி, முள்ளி, பரளிக்காடு, மாங்கரை உள்ளிட்ட பழங்குடி",
-       "இவை அடர்ந்த வனப்பகுதிக்குள் உள்ளன"
-      ]
-     },
-     {
-      "title": "யார்",
-      "lines": [
-       "கேரள வனப்பகுதியில் அத்திக்கடவு ஆறு, குந்தா நதி ஓரத்தில் ஒரு",
-       "ஆற்று நீர், அடர்ந்த வனத்தைப் பயன்படுத்தி சாராயம்",
-       "தமிழக மலை கிராமங்களில் விற்பனை"
-      ]
-     },
-     {
-      "title": "போலீஸ் நடவடிக்கை",
-      "lines": [
-       "காரமடை வனத்துறை தனிக்குழு அமைத்து கண்காணிப்பு",
-       "சில மாதங்களுக்கு முன் அட்டப்பாடியில் கேனில் சாராயம் வாங்கிய",
-       "இடம் அடிக்கடி மாற்றப்படுவதால் கண்காணிப்பு கடினம்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "காரமடை அருகே தமிழக-கேரள எல்லை மலை கிராமங்களில் கள்ளச்சாராயம் விற்பனை நடக்கிறது. கோபனாரி, முள்ளி, பரளிக்காடு, மாங்கரை உள்ளிட்ட பழங்குடி கிராமங்கள் அடர்ந்த வனப்பகுதிக்குள் உள்ளன. கேரள வனப்பகுதியில் அத்திக்கடவு ஆறு, குந்தா நதி ஓரத்தில் ஒரு கும்பல் சாராயம் காய்ச்சுகிறது. ஆற்று நீர் மற்றும் அடர்ந்த வனத்தைப் பயன்படுத்தி காய்ச்சப்படும் சாராயம், தமிழக மலை கிராமங்களில் விற்கப்படுகிறது. சில மலைவாழ் மக்கள் வனவழியாக கேரள எல்லைக்குள் சென்று சாராயம் குடித்து வருகின்றனர். காரமடை வனத்துறையினரும் போலீசாரும் தனிக்குழு அமைத்து தொடர்ந்து கண்காணிக்கின்றனர். ஆனால் ஆய்வு நடப்பதால் கும்பல்கள் அடிக்கடி இடத்தை மாற்றுகின்றனர். சில மாதங்களுக்கு முன் அட்டப்பாடியில் கேனில் சாராயம் வாங்கிய இருவர் கைது செய்யப்பட்டனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 காரமடை மலை கிராமங்களுக்கு கள்ளச்சாராயம்: கேரள வனத்தில் காய்ச்சல்\n\n📰 முழு விவரம்:\nதமிழக-கேரள எல்லையில் காரமடை அருகே கோபனாரி, முள்ளி, பரளிக்காடு, பூச்சமரத்தூர், கீழ்பில்லூர், மேல்பில்லூர், வெள்ளியங்காடு, மாங்கரை ஆகிய பழங்குடி மலை கிராமங்கள் அடர்ந்த வனப்பகுதிக்குள் உள்ளன.\nகேரள வனப்பகுதியில் அத்திக்கடவு ஆற்றங்கரை, குந்தா நதி ஓரத்தில் ஒரு கும்பல் கள்ளச்சாராயம் காய்ச்சுகிறது. அதை தமிழக மலை கிராமங்களில் விற்கின்றனர். சில மலைவாழ் மக்கள் வனவழியாக கேரள எல்லைக்குள் சென்று சாராயம் குடிக்கின்றனர்.\nகோபனாரி பெரியநாயக்கன்பாளையம் வனச்சரகத்துக்கும், முள்ளி காரமடை வனச்சரகத்துக்கும் உட்பட்டவை. இவை காரமடை போலீஸ் எல்லைக்குள் வருகின்றன. கேரள எல்லையில் அட்டப்பாடி, அகளி, சோலையூர், தாவளம், புதூர், முக்காலி மலைக் கிராமங்கள் உள்ளன.\nகாரமடை வனத்துறை தனிக்குழு அமைத்து சாராய ஊறல், காய்ச்சல், விற்பனையை கண்காணிக்கிறது. ஆய்வுக்கு பயந்து இடத்தை அடிக்கடி மாற்றுகின்றனர்.\nமேட்டுப்பாளையம் டி.எஸ்.பி. பாஸ்கர்: கேரள போலீசுடன் இணைந்து கண்காணித்து வாகனத் தணிக்கை நடக்கிறது. சில மாதங்களுக்கு முன் அட்டப்பாடி அகழியில் கேனில் சாராயம் வாங்கிய இருவர் கைது.\nகாரமடை வனச்சரகர் ஜோசப் ஸ்டாலின்: அடர்ந்த வனத்தில் முழு வீச்சில் ரோந்து. பழங்குடி மக்கள் வனத்துக்குள் சென்று கள்ளச்சாராயம் வாங்கிக் குடிக்கக்கூடாது என விழிப்புணர்வு.\n\nKaramadai illicit liquor hill villages Tamil Nadu Kerala border | Coimbatore news\n📍 காரமடை, கோவை மாவட்டம் | 17 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Karamadai #CoimbatoreNews #கோவை",
-   "prompts": "Forest-department rangers and Tamil Nadu police in khaki stand on a dirt track at the edge of a dense green forest near Karamadai, the Western Ghats rising in the hazy background, as they patrol the Tamil Nadu-Kerala border area. Seen from behind at a distance, two forest staff in olive uniforms walk beside a parked government jeep with an open rear door, while a few tribal villagers in simple cotton clothes stand near a bamboo-lined footpath leading into the trees. The scene is bright daylight with soft morning haze over the hills. The sky is pale blue and the forest canopy looks thick and untouched. Camera at eye level, 35 mm, wide enough to show the forest edge, the track and the distant ridgeline. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of several large plastic cans and a pair of metal drums lying on the bank of a shallow forest stream, water flowing over smooth stones, with dense wet undergrowth and tall trees behind them. A rough wooden table nearby holds a few seized plastic containers and a sealed jar, with a khaki police bag beside them. Early daylight, cool and humid, faint mist rising from the river. No people in frame, only a glimpse of a khaki sleeve at the edge. Camera slightly high, 50 mm, shallow depth so the stream and containers stay sharp while the forest behind softens. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/smuggling-on-the-tamil-nadu-kerala-border/4378175",
-   "published": "2026-11-17T03:17:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 82 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794872320/kovaiminnal/dgem7p9eduw5wwf79wb5.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794872353/kovaiminnal/ydikl9skmsoypm1bp80g.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவை அறிவுலக நூலக ஊழல் வழக்கு: லஞ்ச ஒழிப்பு போலீசார் மீண்டும் சோதனை",
-   "english_headline": "Second DVAC raid at Coimbatore E.V.R. Library over book procurement corruption case",
-   "category": "Crime & Safety",
-   "location": "E.V.R. Knowledge World Library, Coimbatore city, Coimbatore district",
-   "importance": "High",
-   "scope": "district",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "ஊழல் வழக்கு",
-    "loc": "கோவை",
-    "hl1": "கோவை நூலக ஊழல்: மீண்டும் சோதனை",
-    "hl2": "5 அதிகாரிகள் சஸ்பெண்ட்",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "ஈ.வெ.ரா. அறிவுலக நூலகத்தில் <b>2வது முறையாக</b> சோதனை",
-       "புத்தகக் கொள்முதலில் முறைகேடு புகார்",
-       "லஞ்ச ஒழிப்பு போலீசார் நேற்று அதிரடி"
-      ]
-     },
-     {
-      "title": "முறைகேடு என்ன?",
-      "lines": [
-       "AI மூலம் உருவாக்கப்பட்ட புத்தகங்கள்",
-       "இல்லாத எழுத்தாளர்கள் பெயரில் கொள்முதல்",
-       "அதிக விலைக்கு புத்தகங்கள் வாங்கியதாக புகார்"
+       "குறைந்த வட்டி, பிணையின்றி கடன் என ஆசை காட்டுகிறார்கள்",
+       "டெபிட் கார்டு, பின் எண் உள்ளிட்ட தகவல்களை வாங்கி"
       ]
      },
      {
       "title": "நடவடிக்கை",
       "lines": [
-       "<b>5 அதிகாரிகள்</b> பணியிடை நீக்கம்",
-       "<b>3 வங்கி கணக்குகள்</b> முடக்கம்",
-       "ஏற்கனவே <b>3,000 புத்தகங்கள்</b> சீல் வைப்பு"
-      ]
-     },
-     {
-      "title": "சோதனை விவரம்",
-      "lines": [
-       "காலை <b>10 மணி</b> முதல் <b>10 போலீசார்</b> சோதனை",
-       "4, 5 மற்றும் 6வது தளங்களில் ஆய்வு",
-       "டி.எஸ்.பி. தலைமையில் விசாரணை"
+       "அப்பாவிகளின் கணக்கில் பண பரிமாற்றம் நடக்கிறது",
+       "கணக்கு திறந்தவர்கள் மீதும் நடவடிக்கை எடுக்கப்படும்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவையில் அறிவுலக நூலக ஊழல் வழக்கில் போலீசார் மீண்டும் சோதனை நடத்தினர். ஈ வெ ரா பெயரில் உள்ள இந்த நூலகத்தில் புத்தகங்கள் வாங்கியதில் முறைகேடு நடந்ததாகப் புகார் எழுந்தது. செயற்கை நுண்ணறிவு மூலம் உருவாக்கப்பட்ட உள்ளடக்கங்கள் மற்றும் இல்லாத எழுத்தாளர்கள் பெயரில் புத்தகங்கள் வாங்கியதாகக் கூறப்படுகிறது. இது தொடர்பாக லஞ்ச ஒழிப்பு போலீசார் நேற்று இரண்டாவது முறையாகச் சோதனையில் ஈடுபட்டனர். காவல் துணை கண்காணிப்பாளர் இம்மானுவேல் சேகரன் தலைமையில் 10 பேர் கொண்ட குழுவினர் காலை 10 மணிக்குச் சோதனையைத் தொடங்கினர். நூலகத்தின் 4, 5 மற்றும் 6வது தளங்களில் உள்ள அலமாரிகளில் இருந்த புத்தகங்கள் ஒவ்வொன்றாக ஆய்வு செய்யப்பட்டன. ஏற்கனவே கடந்த நவம்பர் 10ஆம் தேதி நடந்த சோதனையில் சுமார் 3,000 புத்தகங்களுக்குச் சீல் வைக்கப்பட்டது. இந்த முறைகேடு தொடர்பாகப் பொது நூலகத் துறையைச் சேர்ந்த 5 அதிகாரிகள் பணியிடை நீக்கம் செய்யப்பட்டுள்ளனர். மேலும் அகல் விளக்கு பதிப்பகத்தின் 3 வங்கி கணக்குகளும் முடக்கப்பட்டுள்ளன. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 கோவையில் அறிவுலக நூலக ஊழல் வழக்கு: லஞ்ச ஒழிப்பு போலீசார் மீண்டும் அதிரடி சோதனை!\n\n📰 முழு விவரம்:\nகோவையில் ஈ.வெ.ரா. பெயரில் உள்ள அறிவுலக நூலகத்தில் புத்தகக் கொள்முதல் செய்ததில் முறைகேடு நடந்ததாகப் புகார் எழுந்தது. செயற்கை நுண்ணறிவு மூலம் உருவாக்கப்பட்ட புத்தகங்கள், இல்லாத எழுத்தாளர்கள் பெயர்கள் மற்றும் அதிக விலையில் புத்தகங்கள் வாங்கியதாகக் குற்றம் சாட்டப்பட்டுள்ளது. இது தொடர்பாக லஞ்ச ஒழிப்பு போலீசார் நேற்று இரண்டாவது முறையாகச் சோதனை நடத்தினர்.\n👮 நடவடிக்கை: காவல் துணை கண்காணிப்பாளர் தலைமையில் 10 போலீசார் காலை 10 மணி முதல் சோதனையில் ஈடுபட்டனர். நூலகத்தின் 4, 5 மற்றும் 6வது தளங்களில் உள்ள புத்தகங்கள் ஒவ்வொன்றாக ஆய்வு செய்யப்பட்டன.\n🚫 ஏற்கனவே கடந்த நவம்பர் 10ஆம் தேதி நடந்த சோதனையில் 3,000 புத்தகங்கள் சீல் வைக்கப்பட்டன. சுமார் 1,900-க்கும் மேற்பட்ட சர்ச்சைக்குரிய புத்தகங்கள் வாங்கப்பட்டது கண்டறியப்பட்டுள்ளது.\n⚖️ இந்த விவகாரத்தில் பொது நூலகத் துறையைச் சேர்ந்த 5 அதிகாரிகள் பணியிடை நீக்கம் செய்யப்பட்டுள்ளனர். அகல் விளக்கு பதிப்பகத்தின் 3 வங்கி கணக்குகள் முடக்கப்பட்டுள்ளன.\n\nCoimbatore library corruption case DVAC raid | Coimbatore news\n📍 கோவை, கோவை மாவட்டம் | 17 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #ஊழல் #DVAC #CoimbatoreNews",
-   "prompts": "Inside the upper floors of a large government-style public library in Coimbatore city, several khaki-uniformed Tamil Nadu police officers, seen from behind, stand between tall steel bookshelves packed with hardbound books. A DSP in a crisp uniform leads a team of about ten policemen during the Anti-Corruption (DVAC) search. One officer pulls books from a shelf one by one and checks them, while another holds a stack of books in his arms. The shelves run the length of the hall on the fourth to sixth floor, with daylight coming through tall windows in late morning. Rows of sealed cartons and loose piles of books sit on a wooden table nearby. The people are seen from behind or at a distance, faces not visible. Camera at eye level, 35 mm lens, wide enough to show the rows of shelves and the officers working between them. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a library shelf on an upper floor, its rows of hardbound books partly pulled out and stacked on a wooden table. A gloved hand of a khaki-uniformed police officer, seen only from the wrist down, lifts one book to check it. Nearby, a few books are placed in a neat pile and a brown paper cover or evidence sticker is seen on a sealed carton, with no readable text. The spines are plain and unlabelled in blurred focus behind, and the background shows more shelves in soft daylight from a window. The focus is on the books and the officer's hands, conveying a book-by-book examination of disputed stock. Camera close and slightly high, 50 mm lens, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/police-re-investigate-encyclopedia-corruption-case/4378264",
-   "published": "2026-11-16T23:12:23+05:30",
-   "verification": "DRAFT (gemini/gemini-3-flash-preview) - NOT CLEAN, held from posting - problems: reel_script has numbers without their meaning (4); write what each number is: '15 வயது', '30 பாட்டில்கள்', 'அக்டோபர் 26ஆம் தேதி'",
-   "note": "free-model draft gemini/gemini-3-flash-preview, 2 attempt(s), 1 validator problem(s)",
+   "reel_script": "கோவையில் வங்கி கணக்கு திறக்க சலுகை காட்டி மோசடி செய்யப்படுகிறது. சைபர் கிரைம் போலீஸ் எச்சரிக்கை விடுத்துள்ளனர். தினமும் பல ஆயிரம் பேர் சைபர் மோசடியில் பணத்தை இழக்கின்றனர். மோசடி நபர்கள் டெலிகிராம், வாட்ஸ்அப் மூலம் பகுதி நேர வேலை, பங்கு வர்த்தகம், போக்குவரத்து விதிமீறல் பைல்கள் என தகவல்களை அனுப்புகிறார்கள். இதை நம்பி மக்கள் மோசடிக்கு உள்ளாகிறார்கள். மோசடி நபர்கள் தங்கள் கணக்கை பயன்படுத்தாமல், ஏஜெண்ட்கள் மூலம் அப்பாவிகளின் கணக்குகளை திறக்க வைக்கிறார்கள். குறைந்த வட்டியில் கடன், பிணையின்றி கடன் என சலுகைகள் கிடைக்கும் என ஆசை காட்டுகிறார்கள். அப்போது டெபிட் கார்டு உள்ளிட்ட அனைத்து தகவல்களையும் வாங்கி கொண்டு மோசடி நபர்களுக்கு அனுப்புகிறார்கள். விசாரணையில் அப்பாவிகளின் கணக்கிலேயே பண பரிமாற்றம் நடந்தது தெரியவந்துள்ளது. அவர்களுக்கு இதில் சம்பந்தம் இல்லாவிட்டாலும், கணக்கு திறந்தவர்கள் மீதும் நடவடிக்கை எடுக்கப்படும் என போலீஸ் தெரிவித்துள்ளது. சிறு ஆதாயத்துக்காக சிக்கலில் மாட்டாமல் ஜாக்கிரதையாக இருக்க வேண்டும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 கோவையில் வங்கி கணக்கு திறக்க சலுகை காட்டி மோசடி: சைபர் போலீஸ் எச்சரிக்கை\n\n📰 முழு விவரம்:\nகோவை சைபர் கிரைம் போலீஸ் எச்சரிக்கை விடுத்துள்ளனர். அறிமுகம் இல்லாதவர்கள் வங்கி கணக்கு திறக்கினால் சலுகைகள் கிடைக்கும் என கூறினால் அதை நம்ப வேண்டாம். தினமும் பல ஆயிரம் பேர் சைபர் மோசடியில் பணத்தை இழக்கின்றனர். மோசடி நபர்கள் டெலிகிராம், வாட்ஸ்அப் மூலம் பகுதி நேர வேலை, பங்கு வர்த்தகம், போக்குவரத்து விதிமீறல் பைல்கள் என தகவல்களை அனுப்புகிறார்கள். மோசடி நபர்கள் தங்கள் கணக்கை பயன்படுத்தாமல், ஏஜெண்ட்கள் மூலம் அப்பாவிகளின் கணக்குகளை திறக்க வைக்கிறார்கள். குறைந்த வட்டியில் கடன், பிணையின்றி கடன் என சலுகைகள் கிடைக்கும் என ஆசை காட்டுகிறார்கள். அப்போது டெபிட் கார்டு உள்ளிட்ட அனைத்து தகவல்களையும் வாங்கி கொண்டு மோசடி நபர்களுக்கு அனுப்புகிறார்கள். விசாரணையில் அப்பாவிகளின் கணக்கிலேயே பண பரிமாற்றம் நடந்தது தெரியவந்துள்ளது. அவர்களுக்கு இதில் சம்பந்தம் இல்லாவிட்டாலும், கணக்கு திறந்தவர்கள் மீதும் நடவடிக்கை எடுக்கப்படும் என போலீஸ் தெரிவித்துள்ளது. சிறு ஆதாயத்துக்காக சிக்கலில் மாட்டாமல் ஜாக்கிரதையாக இருக்க வேண்டும்.\n\n📍 இடம்: கோவை\nℹ️ மக்கள் கவனத்திற்கு: அறிமுகம் இல்லாதவர்கள் வங்கி கணக்கு திறக்க வேண்டாம். சலுகை காட்டி ஏமாற்றுகிறார்கள்.\n\nCoimbatore cyber police warn against bank account scams | Coimbatore news\n📍 Coimbatore, Coimbatore | 17 Nov 2026\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #CyberCrime",
+   "prompts": "A police officer in khaki stands in front of a police jeep, warning people about bank account opening scams. The jeep is parked in front of the Coimbatore city police station, a large, white building with a gate. The officer is holding a microphone, speaking to a crowd of people, who are standing at a distance, listening. The people are dressed in casual clothes, typical of Coimbatore city residents. The scene is set in daylight, with clear weather. The camera is at eye level, using a 35 mm lens, wide enough to show the police station and the crowd. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the police jeep, parked in front of the police station. The jeep is white with blue stripes, and has the Tamil Nadu police logo on the side. The jeep is parked on a street with shops and buildings in the background. The scene is set in daylight, with clear weather. The camera is at eye level, using a 35 mm lens, focused on the jeep. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/cyber-police-warns-people-not-to-cheat-for-wanting-to-open-a-bank-account/4378433",
+   "published": "2026-11-17T14:10:15+05:30",
+   "verification": "DRAFT (groq/qwen/qwen3.8-27b) - fact-check: no problems found",
+   "note": "free-model draft groq/qwen/qwen3.8-27b, 2 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794872358/kovaiminnal/crlsiwgevayy3vlpu1zt.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794872390/kovaiminnal/zxnhc9nekg5awu46htwz.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794915574/kovaiminnal/ezurncilzeu856ty6ib9.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794915577/kovaiminnal/ltaqmcqbsrzoybn9n2hw.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "கோவையில் குப்பை வாகன ஓட்டுநர்கள் மணிக்கணக்கில் காத்திருப்பு: பணிச்சுமையால் ஊழியர்கள் வேதனை",
+   "english_headline": "Coimbatore garbage truck drivers forced to wait for hours at sorting centers; workers demand direct transport to Vellalore to reduce workload.",
+   "category": "Civic Issues",
+   "location": "Peelamedu and Ukkadam, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "குப்பை மேலாண்மை",
+    "loc": "பீளமேடு, கோவை",
+    "hl1": "கோவையில் குப்பை வாகனங்கள் காத்திருப்பு",
+    "hl2": "10 மணி நேர வேலை என புகார்",
+    "slides": [
+     {
+      "title": "கோவை மாநகராட்சி",
+      "lines": [
+       "கோவை மாநகராட்சியில் தினமும் <b>1,000 டன்</b> குப்பை சேகரிப்பு",
+       "<b>500-க்கும் மேற்பட்ட</b> வாகனங்கள் பயன்பாடு",
+       "குப்பை பெறும் நடைமுறையில் சிக்கல் என புகார்"
+      ]
+     },
+     {
+      "title": "மையங்களில் தாமதம்",
+      "lines": [
+       "பீளமேடு, உக்கடம் மையங்களில் வாகனங்கள் காத்திருப்பு",
+       "குப்பைகளை உடனடியாகப் பெறாமல் தாமதம்",
+       "ஓட்டுநர்கள் மணிக்கணக்கில் காத்திருக்கும் அவலம்"
+      ]
+     },
+     {
+      "title": "ஊழியர்கள் கோரிக்கை",
+      "lines": [
+       "<b>10 மணி நேரத்திற்கு</b> மேலாக வேலை என வேதனை",
+       "நேரடியாக வெள்ளலூர் செல்ல அனுமதிக்க கோரிக்கை",
+       "கூடுதல் நேர வேலைக்குச் சம்பளம் இல்லை எனத் தகவல்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கோவையில் குப்பை வாகன ஓட்டுநர்கள் மணிக்கணக்கில் காத்திருக்கின்றனர். கோவை மாநகராட்சியில் தினமும் 1,000 டன் குப்பைகள் சேகரிக்கப்படுகின்றன. இதற்காக 500-க்கும் மேற்பட்ட வாகனங்கள் பயன்படுத்தப்பட்டு வருகின்றன. சேகரிக்கப்படும் குப்பைகள் பீளமேடு மற்றும் உக்கடம் தரம் பிரிப்பு மையங்களுக்கு கொண்டு செல்லப்படுகின்றன. அங்கிருந்து குப்பைகள் வெள்ளலூர் குப்பை கிடங்கிற்கு கொண்டு செல்லப்பட வேண்டும். ஆனால் தரம் பிரிப்பு மையங்களில் குப்பைகளை உடனடியாகப் பெறுவதில்லை என்று புகார் எழுந்துள்ளது. இதனால் வாகன ஓட்டுநர்கள் மணிக்கணக்கில் காத்திருக்க வேண்டிய நிலை ஏற்பட்டுள்ளது. ஓட்டுநர்கள் 10 மணி நேரத்திற்கு மேலாக வேலை செய்ய கட்டாயப்படுத்தப்படுகின்றனர். கூடுதல் நேர வேலைக்கு உரிய சம்பளம் வழங்கப்படுவதில்லை என்று ஏ ஐ டி யூ சி தொழிற்சங்கம் தெரிவித்துள்ளது. குப்பைகளை நேரடியாக வெள்ளலூருக்கு கொண்டு செல்ல அனுமதிக்க வேண்டும் என்று கோரிக்கை விடுக்கப்பட்டுள்ளது. அல்லது மையங்களில் குப்பைத் தொட்டிகளின் எண்ணிக்கையை அதிகரிக்க வேண்டும் என்று ஊழியர்கள் கூறுகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚛 கோவையில் குப்பை வாகன ஓட்டுநர்கள் மணிக்கணக்கில் காத்திருப்பு - பணிச்சுமையால் ஊழியர்கள் வேதனை\n\n📰 முழு விவரம்:\nகோவை மாநகராட்சியில் தினமும் 1,000 டன் குப்பைகளைச் சேகரிக்க 500-க்கும் மேற்பட்ட வாகனங்கள் பயன்படுத்தப்படுகின்றன. சேகரிக்கப்படும் குப்பைகள் பீளமேடு மற்றும் உக்கடம் தரம் பிரிப்பு மையங்களுக்குக் கொண்டு செல்லப்பட்டு, அங்கிருந்து வெள்ளலூருக்குக் கொண்டு செல்லப்படுகின்றன. ஆனால், இந்த மையங்களில் குப்பைகளை உடனடியாகப் பெறாமல் வாகனங்களை மணிக்கணக்கில் காக்க வைப்பதாகப் புகார் எழுந்துள்ளது. இதனால் ஓட்டுநர்கள் 10 மணி நேரத்திற்கு மேலாக வேலை செய்ய வேண்டியுள்ளது. கூடுதல் நேர வேலைக்குச் சம்பளம் வழங்கப்படுவதில்லை என்று ஏ.ஐ.டி.யூ.சி. தொழிற்சங்கம் தெரிவித்துள்ளது. குப்பைகளை நேரடியாக வெள்ளலூருக்குக் கொண்டு செல்ல அனுமதிக்க வேண்டும் அல்லது மையங்களில் தொட்டிகளை அதிகரிக்க வேண்டும் என்று ஊழியர்கள் கோரிக்கை விடுத்துள்ளனர்.\n\n📍 இடம்: பீளமேடு, உக்கடம், கோவை\n🚛 வாகனங்கள்: 500-க்கும் மேற்பட்டவை\n⚖️ கோரிக்கை: நேரடியாக வெள்ளலூர் செல்ல அனுமதி\n\nCoimbatore garbage truck drivers protest waiting time | Coimbatore news\n📍 Peelamedu, Coimbatore | 17 November 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Peelamedu #Ukkadam #கோவை",
+   "prompts": "Cover scene: A row of garbage trucks waits at the Peelamedu sorting center, a large open yard with concrete walls and a gate, a few workers in uniform seen from behind standing near the trucks. The sorting center is surrounded by the Peelamedu IT and college campus buildings, with the Western Ghats visible in the far background. The trucks are parked in neat rows, and the workers appear to be discussing something. The time is unknown, but it is daylight. The camera is at eye level, using a 35 mm lens to capture the entire scene, showing the trucks, workers, and the sorting center. The sorting center is a large open yard with concrete walls and a gate, surrounded by the Peelamedu IT and college campus buildings, with the Western Ghats visible in the far background. The trucks are parked in neat rows, and the workers appear to be discussing something. The time is unknown, but it is daylight. The camera is at eye level, using a 35 mm lens to capture the entire scene, showing the trucks, workers, and the sorting center. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nDetail scene: A close-up of the overflowing garbage bins at the Peelamedu sorting center. The bins are filled to the brim with various types of waste, including plastic bags, food scraps, and other household items. The bins are placed in a neat row, and the garbage is spilling out onto the ground. The time is unknown, but it is daylight. The camera is slightly high, using a 35 mm lens to capture the details of the garbage and the bins. The sorting center is a large open yard with concrete walls and a gate, surrounded by the Peelamedu IT and college campus buildings, with the Western Ghats visible in the far background. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/protect-garbage-vehicles/4378450",
+   "published": "2026-11-17T15:00:16+05:30",
+   "verification": "DRAFT (gemini/gemini-3-flash-preview) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3-flash-preview, 2 attempt(s), 0 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794915606/kovaiminnal/romgt7rxqay39ckctln7.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794915610/kovaiminnal/cxwlho57krdl60hpuqwv.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "மேட்டுப்பாளையத்தில் பிறந்த குழந்தைகளுக்கு தங்க மோதிரம்: 459 பேர் பயன்",
+   "english_headline": "Gold rings for newborns: 459 babies at Mettupalayam government hospital among 3,380 in Coimbatore district",
+   "category": "Government & Services",
+   "location": "Mettupalayam, Coimbatore district",
+   "importance": "Medium",
+   "scope": "district",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "அரசுத் திட்டம்",
+    "loc": "மேட்டுப்பாளையம்",
+    "hl1": "மேட்டுப்பாளையத்தில் குழந்தைகளுக்கு தங்க",
+    "hl2": "459 குழந்தைகள் பயன்",
+    "slides": [
+     {
+      "title": "திட்டம் என்ன?",
+      "lines": [
+       "அரசு மருத்துவமனையில் பிறந்த குழந்தைகளுக்கு தங்க மோதிரம்",
+       "செப். 28 அன்று அதிகாரபூர்வமாகத் தொடங்கப்பட்டது",
+       "முதல்வர் விஜய் பிறந்தநாளுக்குப் பின் வழங்கப்படுகிறது"
+      ]
+     },
+     {
+      "title": "எத்தனை பேர்?",
+      "lines": [
+       "கோவையில் இதுவரை <b>3,380</b> குழந்தைகளுக்கு மோதிரம்",
+       "மேட்டுப்பாளையத்தில் <b>459</b> குழந்தைகள் பயன்",
+       "பொள்ளாச்சியில் <b>801</b>, வால்பாறையில் <b>44</b> குழந்தைகள்"
+      ]
+     },
+     {
+      "title": "எப்படி",
+      "lines": [
+       "டிஸ்சார்ஜ் ஆகும்போதே மோதிரம் வழங்கப்படுகிறது",
+       "நான்கு இடங்களில் லாக்கர் உள்ளன",
+       "விவரங்கள் உடனுக்குடன் இணையதளத்தில் பதிவேற்றப்படுகிறது"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "மேட்டுப்பாளையத்தில் பிறந்த 459 குழந்தைகள் தங்க மோதிரம் பெற்றுள்ளனர். கோவை மாவட்டத்தில் இதுவரை 3,380 குழந்தைகளுக்கு இந்த மோதிரம் வழங்கப்பட்டுள்ளதாக அதிகாரிகள் தெரிவித்துள்ளனர். அரசு மருத்துவமனைகளில் பிறந்த குழந்தைகளுக்கு அரசு சார்பில் இந்த மோதிரம் வழங்கப்படுகிறது. இத்திட்டம் செப்டம்பர் 28ஆம் தேதி அதிகாரபூர்வமாகத் தொடங்கப்பட்டது. முதல்வர் விஜய் பிறந்தநாளான ஜூன் 22ஆம் தேதிக்குப் பிறகு இந்தத் திட்டம் அமல்படுத்தப்பட்டுள்ளது. குழந்தைகள் மருத்துவமனையில் இருந்து டிஸ்சார்ஜ் ஆகும்போதே மோதிரம் வழங்கப்படுகிறது. கோவையில் நான்கு இடங்களில் லாக்கர் உள்ளதால், அந்தந்த எல்லைக்குட்பட்ட மருத்துவமனைகளில் பிறக்கும் குழந்தைகளுக்கு உடனே மோதிரம் கிடைக்கிறது. அரசு மருத்துவமனையில் 2,078 குழந்தைகளும், பொள்ளாச்சி அரசு மருத்துவமனையில் 801 குழந்தைகளும், வால்பாறையில் 44 குழந்தைகளும் பயனடைந்துள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🥇 மேட்டுப்பாளையத்தில் 459 குழந்தைகளுக்கு தங்க மோதிரம்\n\n📰 முழு விவரம்:\nஅரசு மருத்துவமனைகளில் பிறந்த குழந்தைகளுக்கு அரசு சார்பில் தங்க மோதிரம் வழங்கப்படுகிறது. இத்திட்டம் செப். 28 அன்று அதிகாரபூர்வமாகத் தொடங்கப்பட்டது. முதல்வர் விஜய் பிறந்தநாளான ஜூன் 22ஆம் தேதிக்குப் பிறகு இது அமல்படுத்தப்பட்டுள்ளது.\nகுழந்தைகள் டிஸ்சார்ஜ் ஆகும்போதே மோதிரம் வழங்கப்படுகிறது. கோவையில் நான்கு இடங்களில் லாக்கர் உள்ளதால், அந்தந்த எல்லைக்குட்பட்ட மருத்துவமனைகளில் பிறக்கும் குழந்தைகளுக்கு உடனே மோதிரம் கிடைக்கிறது.\n📊 இதுவரை கோவையில் மொத்தம் 3,380 குழந்தைகளுக்கு மோதிரம் அளிக்கப்பட்டுள்ளது.\n🏥 கோவை அரசு மருத்துவமனையில் 2,078, பொள்ளாச்சியில் 801, மேட்டுப்பாளையத்தில் 459, வால்பாறையில் 44 குழந்தைகள் பயனடைந்துள்ளனர்.\n\nGold rings for newborns at Mettupalayam government hospital | Coimbatore news\n📍 மேட்டுப்பாளையம், கோவை மாவட்டம் | 17 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Mettupalayam #CoimbatoreNews #கோவை",
+   "prompts": "A hospital staff member in a white coat hands a small gold ring to a young mother holding a newborn wrapped in a cotton cloth, at the discharge counter of Mettupalayam government hospital in the foothills town of Mettupalayam, Coimbatore district. The hospital is a low, plain government building with a covered veranda, long corridor and a few plastic chairs. Behind the counter, a row of relatives sit on benches, some in sarees and salwar kameez, some men in shirts and veshti, waiting with bags and steel tiffin carriers. Outside the open doorway a few two-wheelers are parked and a hint of green hills shows in the far background. The scene is in soft daylight coming through the windows. The mother and newborn are seen from the side and slightly from behind, faces not clearly visible. Camera at eye level, 35 mm, wide enough to show the counter, the waiting people and the veranda. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a small gold ring resting on an open palm in a government hospital discharge area, the newborn's tiny wrapped hand just visible at the edge of the frame. The background is a plain cream-painted wall and a wooden bench, softly out of focus, with a hint of the hospital corridor. The ring shines in gentle daylight from a window. No faces, no readable text or labels. Camera close and slightly high, shallow depth of field, 50 mm feel. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/gold-ring-shines-on-3380-baby-fingers/4378432",
+   "published": "2026-11-17T14:00:20+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 2,647 ('அப்போது கோவையில் 2,647 குழந்தைகளுக்கு, மருத்துவமனையில் இருந்')",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794915652/kovaiminnal/niolg2mkavzgohpn90yt.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794915657/kovaiminnal/bxabbyzdpvplzjk0kzvj.jpg"
    ]
   }
  ]
