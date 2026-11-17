@@ -1274,8 +1274,9 @@ class FacebookTopNewsOnly11Nov(unittest.TestCase):
 
 
 class NewsSourceShown11Nov(unittest.TestCase):
-    """11 Nov: viewers called news 'fake' - every news names its paper + publish date (reel header, end card, captions);
-    an unknown site is never named (no guessed source)"""
+    """11 Nov: viewers called news 'fake' - every news names its paper + publish date (captions; the reel header / end card
+    only with config reel_source_label - off since owner 17 Nov, see NoSourceInVideo17Nov); an unknown site is never named
+    (no guessed source)"""
 
     def row(self, **kw):
         r = {"story_id": "RN-1", "headline_ta": "ராசிபுரம் அருகே 9 பேர் கைது", "headline_en": "9 held near Rasipuram", "location": "ராசிபுரம்",
@@ -1294,11 +1295,55 @@ class NewsSourceShown11Nov(unittest.TestCase):
         self.assertTrue(post.final_caption(self.row()).endswith("📰 Source: தினமலர் (10 நவம்பர் 2026): https://www.dinamalar.com/news/tamil-nadu-district-news-namakkal/x/1"))
         self.assertNotIn("📰", post.final_caption(self.row(source="https://unknown-blog.example/x")))
 
-    def test_reel_shows_it(self):
+    def test_reel_can_still_show_it(self):
+        """the spec still carries the source and reel4 can still draw it - reel5 blanks it while config reel_source_label is
+        false (owner 17 Nov), so turning the switch on brings the 16 Nov top strip / 11 Nov end card back unchanged"""
         src = (ROOT / "reel" / "reel4.py").read_text(encoding="utf-8")
         self.assertIn('class="src">📰', src)
         self.assertIn('class="e5">ஆதாரம்: ', src)
         self.assertIn('"source": source_credit(row)[0]', (ROOT / "poster" / "post.py").read_text(encoding="utf-8"))
+
+
+@unittest.skipUnless(__import__("importlib").util.find_spec("playwright"), "reel5 imports playwright (the library only, no browser)")
+class NoSourceInVideo17Nov(unittest.TestCase):
+    """owner 17 Nov: "remove the source from the video" - no 📰 paper in the reel's top strip and no "📰 Source:" line on the
+    end card (config reel_source_label false); the caption keeps "📰 Source: paper (date): link" (NewsSourceShown11Nov)"""
+    CODE = """
+import sys; sys.path.insert(0, 'reel')
+import reel5 as R5
+R5.R.icon = lambda name: '<svg class="ic"></svg>'      # the test job has no kit/node_modules (icons)
+spec = {"date": "17 நவம்பர் 2026", "cat": "விபத்து", "location": "காந்திபுரம், கோவை", "hook": ["ஹூக்", "வரி"], "mini": "தலைப்பு",
+        "source": "SRCX-PAPER", "source_full": "SRCX-FULL (17 நவம்பர் 2026)", "images": ["/nonexistent/pic.jpg"]}
+sents = [{"a": i * 2.0, "b": i * 2.0 + 2, "say": "வரி", "fact": ""} for i in range(3)]
+caps = [{"a": 0.0, "b": 2.0, "words": [["வரி", 0.0, 2.0]]}]
+shots = [{"a": 0.0, "b": 9.0, "img": 0, "z0": 1, "z1": 1.1, "fx": .5, "fy": .5, "px": 0, "py": 0}]
+print(R5.build_html(spec, shots, sents, caps, 1.5, 6.0, 9.0, R5.R.PAGES["coimbatore"]))
+"""
+
+    def html(self, switch=None):
+        env = {k: v for k, v in os.environ.items() if k not in ("REEL_SOURCE_LABEL", "REEL_STYLE")}
+        if switch is not None:
+            env["REEL_SOURCE_LABEL"] = switch
+        import subprocess      # its own process: importing reel5 patches reel4 for everything after it
+        r = subprocess.run([sys.executable, "-c", self.CODE], cwd=ROOT, env=env, capture_output=True, text=True, timeout=120)
+        self.assertEqual(r.returncode, 0, r.stderr[-2000:])
+        return r.stdout
+
+    def test_config_switch_is_off(self):
+        self.assertIs(json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8")).get("reel_source_label"), False)
+
+    def test_no_source_in_header_or_end_card(self):
+        h = self.html()      # config.json as it is (off)
+        self.assertNotIn("SRCX", h)
+        self.assertNotIn('class="src"', h)
+        self.assertNotIn('class="e5"', h)
+        self.assertNotIn("📰", h)
+        self.assertIn('<span class="tag">விபத்து</span><span>17 நவம்பர் 2026</span></div>', h)      # category + date stay
+
+    def test_switch_on_brings_it_back(self):
+        h = self.html("1")
+        self.assertIn('<span class="src">📰 SRCX-PAPER</span>', h)
+        self.assertIn('<div class="e5">📰 Source: SRCX-FULL (17 நவம்பர் 2026)</div>', h)
 
 
 class CommentRepliesNeedOwner11Nov(unittest.TestCase):

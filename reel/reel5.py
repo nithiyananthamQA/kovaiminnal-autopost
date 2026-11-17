@@ -25,6 +25,18 @@ ASSETS = Path(__file__).resolve().parent / "assets"
 FOOTER_WIDE = ASSETS / "footer_wide_coimbatore.png"
 HEADER_SUFFIX = ""      # owner 11 Nov (later): no "செய்திகள்" in the header - only the page name
 
+
+def source_label_on():
+    """owner 17 Nov: "remove the source from the video" - no 📰 paper in the top strip and no "📰 Source:" line on the end card.
+    poster/config.json "reel_source_label" (missing = off); REEL_SOURCE_LABEL=1/0 for sample renders. The caption still ends with
+    "📰 Source: paper (date): link" (post.final_caption)."""
+    if os.environ.get("REEL_SOURCE_LABEL") in ("0", "1"):
+        return os.environ["REEL_SOURCE_LABEL"] == "1"
+    try:
+        return bool(json.loads((Path(__file__).resolve().parent.parent / "poster" / "config.json").read_text()).get("reel_source_label"))
+    except Exception:
+        return False
+
 # owner 11 Nov: the district power-cut pages (districts/districts.json) - same look, each page its own name, logo and footer
 DISTRICTS_FILE = Path(__file__).resolve().parent.parent / "districts" / "districts.json"
 
@@ -399,7 +411,7 @@ LAYOUT_A_CSS = """
 #hdr .nm{display:inline-flex!important;font-size:42px!important;background:rgba(6,14,43,.66);border-radius:14px;padding:6px 18px 2px 12px;white-space:nowrap}
 #hdr .nm::after{content:"__EN__";margin-left:14px;color:#fff;font:800 24px 'CT',sans-serif;letter-spacing:.08em;opacity:.92;align-self:center}
 #hdr .sub{display:flex!important;flex-wrap:nowrap!important;width:max-content;max-width:880px!important;margin-top:8px!important;background:rgba(6,14,43,.66);border-radius:12px;padding:4px 14px 2px 6px}
-#hdr .src{font-size:24px!important;background:rgba(255,255,255,.16)!important;flex-shrink:1!important;min-width:0!important;max-width:240px!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}      /* owner 16 Nov: the source stays in the top strip (it went missing) */
+#hdr .src{font-size:24px!important;background:rgba(255,255,255,.16)!important;flex-shrink:1!important;min-width:0!important;max-width:240px!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}      /* owner 16 Nov: the source stays in the top strip (it went missing); owner 17 Nov: off - only with config reel_source_label */
 #hdr .sub > span{white-space:nowrap!important;flex-shrink:0}      /* owner 16 Nov: one line always - a long category / source wrapped and hit the place pin */
 #hdr .sub > span.tag{flex-shrink:0!important;max-width:440px;overflow:hidden;text-overflow:ellipsis}      /* the category stays whole; only the source shortens */
 #hdr .sub > span.src{flex-shrink:1!important}
@@ -493,6 +505,8 @@ _orig_build = V4.build_html
 def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
     if not os.environ.get("REEL_STYLE") and not spec.get("style"):
         spec = dict(spec, style="B2")      # owner 11 Nov: B2 (Broadcast) is our look
+    if not source_label_on():      # owner 17 Nov: no source in the video (top strip + end card); the caption still names it
+        spec = dict(spec, source="", source_full="")
     html = _orig_build(spec, shots, sents, caps, hook_end, end_t, total, page)
     style = os.environ.get("REEL_STYLE") or spec.get("style")
     if style in ("K", "D", "B2"):
@@ -505,6 +519,7 @@ def build_html(spec, shots, sents, caps, hook_end, end_t, total, page):
     if HEADER_SUFFIX:
         html = html.replace(f'<div class="nm">{name}</div>', f'<div class="nm">{name} {HEADER_SUFFIX}</div>', 1)
     # owner 11 Nov: the end card shows the news SOURCE - "Source:", not "ஆதாரம்:" (that word reads as "evidence")
+    # (owner 17 Nov: off - only when config reel_source_label is true)
     html = html.replace('<div class="e5">ஆதாரம்: ', '<div class="e5">📰 Source: ', 1)
     wide = Path(page["footer_wide"]) if page.get("footer_wide") else FOOTER_WIDE      # a district page has its own footer
     if wide.exists():
