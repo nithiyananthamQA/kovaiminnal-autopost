@@ -1,51 +1,65 @@
 {
- "updated": "2026-11-17T17:02+05:30",
- "posts_measured": 197,
+ "updated": "2026-11-17T19:01+05:30",
+ "posts_measured": 63,
  "topic_weight": {
-  "education": -0.41,
-  "civic": 0.35,
-  "power_cut": 0.18,
-  "sports_culture": -0.1,
-  "politics": -0.16,
-  "crime": 0.18,
-  "weather": 0.14,
-  "accident": 1.19,
-  "poultry_agri": -0.12,
-  "temple": -0.03
+  "accident": 0.67,
+  "civic": 1.5,
+  "crime": 0.09,
+  "education": -0.5,
+  "politics": -0.5,
+  "poultry_agri": -0.33,
+  "power_cut": -0.22,
+  "sports_culture": 0.89,
+  "temple": -0.31,
+  "weather": -0.05
  },
  "topic_n": {
-  "education": 19,
-  "civic": 28,
+  "power_cut": 10,
+  "crime": 8,
+  "weather": 5,
+  "education": 6,
+  "poultry_agri": 16,
+  "civic": 8,
+  "politics": 17,
+  "accident": 22,
+  "temple": 22,
   "jobs": 1,
-  "power_cut": 8,
-  "sports_culture": 3,
-  "politics": 10,
-  "crime": 32,
-  "weather": 30,
-  "accident": 10,
-  "poultry_agri": 9,
-  "temple": 10
+  "sports_culture": 3
  },
  "best_hours_ist": [
-  0,
-  4,
-  22,
-  10
+  5,
+  6,
+  8,
+  21
  ],
  "top_openings": [
-  "🏆 கோவை நவக்கரையில் ஏ.ஜே.கே. விளையாட்டு திருவிழா 2026: வரும் 16 முதல் 23 வரை",
-  "⚡ தடாகம் அருகே சார்ஜர் இணைத்தபோது மின்சாரம் பாய்ந்து தொழிலாளி உயிரிழப்பு",
-  "🚨 காரமடையில் இரு சாலை விபத்துகள்: இருவர் பலி, மூவர் காயம்",
-  "🚰 மேட்டுப்பாளையத்தில் குடிநீரை காய்ச்சி வடிகட்டி குடிக்க வேண்டுகோள் விடுக்கப்பட்"
+  "🚰 அன்னூரில் கள்ளத்தனமாக குடிநீர் எடுத்த பேக்கரியின் மோட்டார் பறிமுதல்!",
+  "🚧 கோத்தகிரி - மேட்டுப்பாளையம் சாலையில் கடைகள்: போக்குவரத்துக்கு இடையூறு",
+  "🚨 காரமடையில் பெண்ணிடம் நகை பறிப்பு: 108 ஆம்புலன்ஸ் ஓட்டுநர் கைது",
+  "🌳 கோவில்பாளையத்தில் குழந்தைகள் தின விழாவுடன் 327வது வார களப்பணி"
  ],
- "avg_watch_s": 8.1,
+ "avg_watch_s": 5.5,
  "best_topics": [
-  "accident",
   "civic",
-  "power_cut"
+  "sports_culture",
+  "accident"
  ],
  "weak_topics": [
   "education",
   "politics"
- ]
+ ],
+ "topic_source": {
+  "accident": "reference",
+  "civic": "ours",
+  "crime": "ours",
+  "education": "ours",
+  "politics": "reference",
+  "poultry_agri": "reference",
+  "power_cut": "ours",
+  "sports_culture": "ours",
+  "temple": "reference",
+  "weather": "ours"
+ },
+ "reference_posts_measured": 357,
+ "reference_updated": "2026-11-17T18:26+05:30"
 }
