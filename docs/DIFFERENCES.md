@@ -92,6 +92,13 @@ e-mail tag KOVAIMINNAL. Never "360".
 
 ## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 
+- LIVE 17 Nov evening: repo nithiyananthamQA/chennaiminnal-autopost, all jobs on, the old Chennai engine in this repo off
+  (config district_powercut live / news_live empty).
+- One push updates every page, like the reference (it pushes each change to all 6 page repos in the same minute):
+  tools/sync_pages.py rebuilds each page from Kovai with make_page.py, keeps the page's own live data (sync_pages.PROTECT -
+  tests/test_sync_pages.py checks every file a workflow commits is protected), runs the page's tests, pushes only when they pass.
+  The owner's /tmp/push.sh = push Kovai, then python3 tools/sync_pages.py.
+
 `python tools/make_page.py chennai ~/chennaiminnal-autopost` makes the copy: the same files with only the district's words and values
 (names, handle @chennaiminnal, #ChennaiMinnal, Kovai's closing lines with Chennai's name, Chennai's place lists and searches, its
 city look for pictures, Instagram 17841452418440882, Facebook page 1450975134763291 via the minnal-bot token, Cloudinary folder
