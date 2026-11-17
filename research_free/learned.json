@@ -1,36 +1,36 @@
 {
- "updated": "2026-11-17T19:01+05:30",
- "posts_measured": 63,
+ "updated": "2026-11-17T22:40+05:30",
+ "posts_measured": 68,
  "topic_weight": {
-  "accident": 0.67,
+  "accident": 1.03,
   "civic": 1.5,
-  "crime": 0.09,
+  "crime": -0.1,
   "education": -0.5,
   "politics": -0.5,
-  "poultry_agri": -0.33,
-  "power_cut": -0.22,
-  "sports_culture": 0.89,
-  "temple": -0.31,
-  "weather": -0.05
+  "poultry_agri": -0.37,
+  "power_cut": 1.5,
+  "sports_culture": 0.79,
+  "temple": -0.33,
+  "weather": -0.36
  },
  "topic_n": {
-  "power_cut": 10,
+  "power_cut": 12,
   "crime": 8,
-  "weather": 5,
+  "weather": 7,
   "education": 6,
-  "poultry_agri": 16,
+  "poultry_agri": 18,
   "civic": 8,
   "politics": 17,
-  "accident": 22,
+  "accident": 5,
   "temple": 22,
   "jobs": 1,
   "sports_culture": 3
  },
  "best_hours_ist": [
+  18,
+  17,
   5,
-  6,
-  8,
-  21
+  6
  ],
  "top_openings": [
   "🚰 அன்னூரில் கள்ளத்தனமாக குடிநீர் எடுத்த பேக்கரியின் மோட்டார் பறிமுதல்!",
@@ -38,10 +38,10 @@
   "🚨 காரமடையில் பெண்ணிடம் நகை பறிப்பு: 108 ஆம்புலன்ஸ் ஓட்டுநர் கைது",
   "🌳 கோவில்பாளையத்தில் குழந்தைகள் தின விழாவுடன் 327வது வார களப்பணி"
  ],
- "avg_watch_s": 5.5,
+ "avg_watch_s": 5.9,
  "best_topics": [
   "civic",
-  "sports_culture",
+  "power_cut",
   "accident"
  ],
  "weak_topics": [
@@ -49,7 +49,7 @@
   "politics"
  ],
  "topic_source": {
-  "accident": "reference",
+  "accident": "ours",
   "civic": "ours",
   "crime": "ours",
   "education": "ours",
@@ -60,6 +60,6 @@
   "temple": "reference",
   "weather": "ours"
  },
- "reference_posts_measured": 357,
- "reference_updated": "2026-11-17T18:26+05:30"
+ "reference_posts_measured": 366,
+ "reference_updated": "2026-11-17T22:29+05:30"
 }

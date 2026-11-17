@@ -82,6 +82,17 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-17 | `69b56bf` | GITHUB SAFE MODE until the Cloudflare Workers timer (owner 17 Nov: a friend's account was suspended for this Actions load) |
+| 2026-11-17 | `22a6959` | Names as the newspaper gives them; never a minor or a sexual-offence victim (owner 17 Nov: 'if newspaper do then post that') |
+| 2026-11-17 | `342fac4` | Fact-check reports a named accused / victim / minor / private person, so the draft is rewritten (17 Nov: Chennai's first reel named an accused driver) |
+| 2026-11-17 | `64f6d7b` | tests workflow: install numpy (goldrate/gold_reel.py needs it - test_goldrate could not load on GitHub since the gold reel) |
+| 2026-11-17 | `2b12290` | Reel: no source label in the video (owner 17 Nov) - the caption still credits the source |
+| 2026-11-17 | `ad33591` | check the uncimtted code |
+| 2026-11-17 | `4c0db94` | Writer: the article's facts, our own sentences (owner 17 Nov: 'is it legal to take news from Dinamalar ... fix the gap') |
+| 2026-11-17 | `a5c3e64` | stories shared |
+| 2026-11-17 | `def531c` | powercut: notices written |
+| 2026-11-17 | `2736f4e` | facebook RN-83 |
+| 2026-11-17 | `0a0991c` | facebook RN-84 |
 | 2026-11-17 | `cff5b26` | powercut: notices written |
 | 2026-11-17 | `7f79d41` | test_district_reach: with Chennai on its own repo no district page is live, so the engine is off (no replies either) |
 | 2026-11-17 | `5bd8ec9` | tools/sync_pages.py: one push updates every page, like the reference (owner 17 Nov: 'if he push all page follow that right?') |
@@ -101,15 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-17 | `fc9c6cf` | facebook RN-80 |
 | 2026-11-17 | `5af1bc5` | powercut: notices written |
 | 2026-11-17 | `5af86d8` | district powercut: notices found |
-| 2026-11-17 | `b8980eb` | pick: picked news saved |
-| 2026-11-17 | `a4ada9e` | pick: picked news saved |
-| 2026-11-17 | `9d66955` | pick: list sent |
-| 2026-11-17 | `639c9cf` | powercut: notices written |
-| 2026-11-17 | `faf6f34` | powercut: notices written |
-| 2026-11-17 | `fd11b91` | facebook RN-79 |
-| 2026-11-17 | `4487a43` | district powercut: notices found |
-| 2026-11-17 | `27a70a9` | powercut: notices written |
-| 2026-11-17 | `f345330` | powercut: notices written |
-| 2026-11-17 | `c0b4781` | powercut: notices written |
-| 2026-11-17 | `8947c12` | district powercut: chennai posted |
 <!-- recent-changes:end -->
