@@ -3,282 +3,200 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/call-for-crop-insurance/4378926",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/tribals-don-t-benefit-from-fees-collected-by-forest-department-tribal-people-s-association/4378920",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/notice-to-pani-pandal-flyover-late-contractor/4378430",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/sanitation-workers-without-protective-gear-danger-awaits-in-government-hospital/4378458",
-  "candidate filter: collected=4",
-  "to write: 4 Coimbatore district candidates (max 4 stories)",
-  "round: top 4 of 4 candidates",
-  "candidates waiting: 4 Coimbatore; time left 79 min",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/advice-on-disclosing-foreign-property-details/4378957",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/copra-auction-price-kg-rs-160/4378887",
+  "candidate filter: collected=2",
+  "to write: 2 Coimbatore district candidates (max 2 stories)",
+  "round: top 2 of 2 candidates",
+  "candidates waiting: 2 Coimbatore; time left 79 min",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "NOT filed (N) தண்ணீர் பந்தல் மேம்பாலம் லேட் :ஒப்பந்த நிறுவனத்துக: not Coimbatore district news (the story's first lines name another place and no Coimbatore place)",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
-  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 3}, time left 77 min",
-  "filed: 3 Coimbatore district stories (target 4), reels only",
+  "candidate loop ended: left 0, tried={'N': 2}, done={'N': 2}, time left 77 min",
+  "filed: 2 Coimbatore district stories (target 2), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":4,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":2,\"updated\":0}"
  ],
  "llm": [
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "ok gemini/gemini-3-flash-preview (10s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok groq/qwen/qwen3.8-27b (5s)",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.6-flash",
+  "ok gemini/gemini-3-flash-preview (6s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3-flash-preview (11s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing ",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing ",
+  "switching away from gemini/gemini-3-flash-preview for 10 min",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_gener",
+  "ok groq/qwen/qwen3.8-27b (4s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "dead for this round: groq/openai/gpt-oss-120b",
+  "ok gemini/gemini-3-flash-preview (53s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "ஆழியாறு சோதனைச்சாவடியில் வால்பாறை செல்லும் வாகனங்களுக்கும் கட்டணம்: பழங்குடியினருக்கு பலன் இல்லை என குற்றச்சாட்டு",
-   "english_headline": "Forest department entry fees at Aliyar checkpost for Valparai: Tribal association says no benefit reaches tribal people and demands clarity",
-   "category": "Government & Services",
-   "location": "Aliyar checkpost, Pollachi, Coimbatore district",
+   "tamil_headline": "ஆனைமலை கொப்பரை ஏலம்: கிலோ ரூ.160 வரை விற்பனை",
+   "english_headline": "Anaimalai copra auction: Grade 1 copra fetches up to ₹160 per kg",
+   "category": "Business & Prices",
+   "location": "Anaimalai, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "வனத்துறை கட்டணம்",
-    "loc": "ஆழியாறு, பொள்ளாச்சி",
-    "hl1": "ஆழியாறு சோதனைச்சாவடி கட்டணம்: விளக்கம்",
-    "hl2": "பழங்குடியினருக்கு பலன் இல்லை",
+    "cat": "விலை நிலவரம்",
+    "loc": "ஆனைமலை",
+    "hl1": "ஆனைமலையில் கொப்பரை ஏலம்",
+    "hl2": "கிலோ ரூ.160 வரை விற்பனை",
     "slides": [
      {
-      "title": "எவ்வளவு கட்டணம்?",
+      "title": "ஏல விவரம்",
       "lines": [
-       "வால்பாறை செல்லும் பயணியருக்கு <b>30 ரூபாய்</b> நுழைவு கட்டணம்",
-       "இருசக்கர வாகனம் <b>20 ரூபாய்</b>, கார் <b>50 ரூபாய்</b>",
-       "வேன், பஸ் <b>100 ரூபாய்</b>; கவியருவிக்கு <b>50 ரூபாய்</b>"
+       "ஆனைமலை ஒழுங்குமுறை விற்பனை கூடம்",
+       "<b>744</b> கொப்பரை மூட்டைகள் ஏலம்",
+       "<b>88</b> விவசாயிகள் பங்கேற்பு"
       ]
      },
      {
-      "title": "பார்வை இடங்கள்",
+      "title": "முதல் தரம்",
       "lines": [
-       "அட்டகட்டி ஹார்ன்பில் வியூ பாயின்ட்: <b>500 ரூபாய்</b>",
-       "நல்லமுடி, சின்னக்கல்லார் வியூ பாயின்ட்: <b>500 ரூபாய்</b>",
-       "தலநார் வியூ பாயின்ட்: <b>100 ரூபாய்</b>"
+       "<b>525</b> மூட்டைகள் ஏலம் விடப்பட்டன",
+       "கிலோ <b>ரூ.150</b> முதல் <b>ரூ.160</b> வரை விற்பனை",
+       "கண்காணிப்பாளர் தலைமையில் ஏலம்"
       ]
      },
      {
-      "title": "மக்கள் குமுறல்",
+      "title": "இரண்டாம் தரம்",
       "lines": [
-       "வனத்துறை வசூல் நிதியில் ஒரு பைசா கூட பழங்குடியினர்",
-       "நிதி ஊதியம் மட்டுமே, மற்ற நிதி எங்கே செல்கிறது தெரியவில்லை",
-       "வனத்துறை வெளிப்படையான விளக்கம் அளிக்க வேண்டும்"
+       "<b>219</b> மூட்டைகள் ஏலம் விடப்பட்டன",
+       "கிலோ <b>ரூ.112</b> முதல் <b>ரூ.148</b> வரை விற்பனை",
+       "<b>8</b> வியாபாரிகள் பங்கேற்பு"
+      ]
+     },
+     {
+      "title": "மொத்த வரத்து",
+      "lines": [
+       "<b>334.8</b> குவிண்டால் கொப்பரை வரத்து",
+       "மொத்த மதிப்பு <b>ரூ.44 லட்சம்</b>",
+       "விற்பனை கூட கண்காணிப்பாளர் தகவல்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "ஆழியாறு சோதனைச்சாவடியில் வால்பாறை செல்லும் வாகனங்களுக்கும் கட்டணம் வசூலிக்கப்படுவதால் பயணியர் அதிருப்தி அடைந்துள்ளனர். பொள்ளாச்சி அருகே ஆழியாறு, வால்பாறை சுற்றுலாத் தலங்களுக்கு உள்ளூர், வெளி மாவட்ட, வெளி மாநில மற்றும் வெளிநாட்டுப் பயணியர் அதிகளவில் வந்து செல்கின்றனர். வால்பாறை செல்லும் பயணியரிடம் நுழைவு கட்டணமாக 30 ரூபாய் வசூலிக்கப்படுகிறது. இருசக்கர வாகனத்துக்கு 20 ரூபாய், காருக்கு 50 ரூபாய், வேன், பஸ்சுக்கு 100 ரூபாய் வசூலிக்கப்படுகிறது. கவியருவிக்குச் செல்ல 50 ரூபாய் கட்டணம் உள்ளது. அட்டகட்டி ஹார்ன்பில் வியூ பாயின்ட், நல்லமுடி, சின்னக்கல்லார் வியூ பாயின்ட் செல்ல 500 ரூபாயும், தலநார் வியூ பாயின்டுக்கு 100 ரூபாயும் வசூலிக்கப்படுகிறது. தமிழ்நாடு மலைவாழ் மக்கள் சங்கத்தின் கோவை மாவட்ட துணை செயலாளர் பரமசிவம், ஆழியாறு சோதனைச்சாவடியில் வசூலிக்கப்படும் கட்டணம் கட்டணக்கொள்ளை என்று கூறியுள்ளார். வனத்துறை வசூலிக்கும் பல கோடி ரூபாய் நிதியில் ஒரு பைசா கூட பழங்குடியின மக்கள் மேம்பாட்டுக்குப் பயன்படுத்தப்படவில்லை என அவர் குற்றம் சாட்டியுள்ளார். அந்த நிதியில் தற்காலிகப் பணியாளர்கள், வேட்டை தடுப்புக் காவலர்களுக்கு ஊதியம் மட்டுமே வழங்கப்படுகிறது. வனத்துறை கட்டணங்களின் நோக்கம் குறித்து வெளிப்படையான விளக்கம் அளிக்க வேண்டும் என சங்கத்தினர் வலியுறுத்துகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚧 ஆழியாறு சோதனைச்சாவடியில் வால்பாறை செல்லும் வாகனங்களுக்கும் கட்டணம்: பலன் எங்கே? என்று கேள்வி\n\n📰 முழு விவரம்:\nபொள்ளாச்சி அருகே ஆழியாறு, வால்பாறை சுற்றுலாத் தலங்களுக்கு வெளி மாவட்ட, வெளி மாநில மற்றும் வெளிநாட்டுப் பயணியரும் அதிகளவில் வருகின்றனர். வால்பாறை செல்லும் பயணியரிடம் நுழைவு கட்டணம் வசூலிக்கப்படுகிறது. கவியருவிக்கு 50 ரூபாய் வசூலிப்பதும் பயணியருக்கு அதிருப்தியாக உள்ளது.\n🎫 கட்டணங்கள்: நுழைவு 30 ரூபாய், இருசக்கர வாகனம் 20 ரூபாய், கார் 50 ரூபாய், வேன், பஸ் 100 ரூபாய்.\n🏞️ பார்வை இடங்கள்: அட்டகட்டி ஹார்ன்பில் வியூ பாயின்ட், நல்லமுடி, சின்னக்கல்லார் வியூ பாயின்ட் செல்ல 500 ரூபாய்; தலநார் வியூ பாயின்ட் செல்ல 100 ரூபாய்.\n📢 தமிழ்நாடு மலைவாழ் மக்கள் சங்கத்தின் கோவை மாவட்ட துணை செயலாளர் பரமசிவம், ஆழியாறு சோதனைச்சாவடிக் கட்டணம் கட்டணக்கொள்ளை என்றும், வனத்துறை வசூலிக்கும் பல கோடி ரூபாய் நிதியில் ஒரு பைசா கூட பழங்குடியின மக்கள் மேம்பாட்டுக்குப் பயன்படுவதில்லை என்றும் குற்றம் சாட்டியுள்ளார். வசூலிக்கப்படும் நிதியில் தற்காலிகப் பணியாளர்கள், வேட்டை தடுப்புக் காவலர்களுக்கு ஊதியம் மட்டுமே வழங்கப்படுவதாகவும், மற்ற நிதி எங்கே செல்கிறது தெரியவில்லை என்றும் கூறியுள்ளார்.\n🔎 வனத்துறை கட்டணங்களின் நோக்கம், அடிப்படை, வசூல் நடைமுறைகள் குறித்து வெளிப்படையான விளக்கம் அளிக்க வேண்டும் என்று சங்கத்தினர் வலியுறுத்தியுள்ளனர்.\n\nForest entry fees Aliyar checkpost Valparai | Coimbatore news\n📍 ஆழியாறு, பொள்ளாச்சி, கோவை மாவட்டம் | 17 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #Valparai #CoimbatoreNews",
-   "prompts": "A line of tourist cars, two-wheelers and a bus waits at the barrier pole of the Aliyar checkpost on the Pollachi-Valparai hill road, while a forest department staff member in uniform stands at a small fee collection booth beside the road. The setting is a roadside checkpost in Coimbatore district's foothills, with dense green forest slopes of the Western Ghats rising in the background and a narrow tarmac road curving uphill. Tourists are seen from behind or far away: a couple beside a car, a man on a two-wheeler, and a few passengers standing by a bus, all in everyday clothes, with no faces visible. The vehicles are a white car, a van, a motorcycle and a tourist bus, and there is a small wooden-roofed fee counter with a barrier pole across the lane. It is bright daylight with soft clouds over the hills. Camera at eye level, 35 mm, wide enough to show the checkpost, the queued vehicles and the forest behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of the checkpost fee counter at Aliyar: a small booth with a wooden counter and a stack of blank receipt books and a cash box, with a hand in a khaki forest department uniform sleeve placing a folded note on the counter. A white-and-red striped barrier pole is lowered across the lane just beyond it, and a parked two-wheeler and car's bumper edge the frame at the bottom. Behind the booth, forested hill slopes fill the background under daylight. No readable text or signboard is shown; the scene is kept to the counter, cash, receipts and barrier. Camera at slightly high angle, 50 mm, shallow depth of field so the forest blurs gently behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/tribals-don-t-benefit-from-fees-collected-by-forest-department-tribal-people-s-association/4378920",
-   "published": "2026-11-17T19:32:53+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption copies the article word for word (15 words in a row, 16% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
+   "reel_script": "ஆனைமலையில் நடந்த கொப்பரை ஏலத்தில் கிலோ 160 ரூபாய் வரை விலை கிடைத்துள்ளது. ஆனைமலை ஒழுங்குமுறை விற்பனை கூடத்தில் கண்காணிப்பாளர் ஜெயராமகிருஷ்ணன் தலைமையில் இந்த ஏலம் நடைபெற்றது. இதில் 88 விவசாயிகள் கொண்டு வந்த 744 கொப்பரை மூட்டைகள் ஏலம் விடப்பட்டன. முதல் தர கொப்பரை 525 மூட்டைகள் ஏலத்திற்கு வந்தன. இவை ஒரு கிலோ 150 ரூபாய் முதல் 160 ரூபாய் வரை விற்பனையானது. இரண்டாம் தர கொப்பரை 219 மூட்டைகள் ஏலம் விடப்பட்டன. இவை ஒரு கிலோ 112 ரூபாய் முதல் 148 ரூபாய் வரை விலை போனது. இந்த ஏலத்தில் மொத்தம் 8 வியாபாரிகள் கலந்துகொண்டனர். இந்த வாரம் மொத்தம் 334.8 குவிண்டால் கொப்பரை ஏலத்திற்கு கொண்டு வரப்பட்டது. இதன் மொத்த மதிப்பு 44 லட்சம் ரூபாய் ஆகும். இந்த தகவலை விற்பனை கூட கண்காணிப்பாளர் தெரிவித்துள்ளார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🥥 ஆனைமலையில் கொப்பரை ஏலம்: கிலோ ரூ.160 வரை விற்பனை!\n\n📰 முழு விவரம்:\nஆனைமலை ஒழுங்குமுறை விற்பனை கூடத்தில் கண்காணிப்பாளர் (பொ) ஜெயராமகிருஷ்ணன் தலைமையில் கொப்பரை ஏலம் நடைபெற்றது. இந்த ஏலத்தில் 88 விவசாயிகள் மற்றும் 8 வியாபாரிகள் பங்கேற்றனர்.\n💰 முதல் தர கொப்பரை: 525 மூட்டைகள் - கிலோ ரூ.150 முதல் ரூ.160 வரை விற்பனை.\n💰 இரண்டாம் தர கொப்பரை: 219 மூட்டைகள் - கிலோ ரூ.112 முதல் ரூ.148 வரை விற்பனை.\n📊 வரத்து: மொத்தம் 744 மூட்டைகள் (334.8 குவிண்டால்) கொப்பரை ஏலத்திற்கு கொண்டு வரப்பட்டது.\n💎 மொத்த மதிப்பு: ரூ.44 லட்சம் மதிப்பிலான கொப்பரை இந்த வாரம் ஏலம் விடப்பட்டுள்ளது.\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்.\n\nAnaimalai copra auction prices | Coimbatore agriculture news\n📍 ஆனைமலை, கோவை மாவட்டம் | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Anaimalai #விவசாயம் #கோவை",
+   "prompts": "Piled gunny sacks of dried white copra stacked high inside the open-sided regulated sales yard at Anaimalai, with a row of farmers and a few traders standing in the aisle during the auction. Several dozen sacks of Grade 1 copra are lined up on the concrete floor, the top of each bag tied with twine, and the tall stacks reach near the tin roof. In the middle distance a supervisor in a shirt sits at a wooden auction table with a ledger open, while eight traders in shirts and veshti or trousers stand in a loose group near him, seen from behind and slightly blurred. Farmers in simple cotton shirts and dhotis, some with towels on their shoulders, wait by the sacks. The hall is lit by daylight coming through the open walls, with a faint haze of dust in the air. The camera is at eye level, 35 mm, wide enough to show the full sacks and the auction table. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a weighing scale on a wooden counter in the auction hall, with a pile of dried copra pieces spilling from an open gunny sack beside it. The white, dry copra kernels show clear texture and a pale golden tint, and the cloth weave of the sack is visible at the edge of the frame. Behind the scale a stack of more sacks is blurred, and a hand holding a pen rests on an open ledger at the edge of the frame, with no readable writing. The light is soft daylight from the side, and the camera is slightly high at about 35 mm to focus on the copra and scale. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/copra-auction-price-kg-rs-160/4378887",
+   "published": "2026-11-17T19:24:33+05:30",
+   "verification": "DRAFT (gemini/gemini-3-flash-preview) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3-flash-preview, 1 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794935584/kovaiminnal/sq1adasad1tkcyenkbt1.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794935586/kovaiminnal/revpk9vbo5hcen9xsozv.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794944075/kovaiminnal/dntietxwhyx2nb0dsoc2.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794944080/kovaiminnal/oegvysmisk2czt5ikrkh.jpg"
    ]
   },
   {
-   "tamil_headline": "கோவை அரசு மருத்துவமனையில் உப்புத்தண்ணீர் குழாய் அடைப்பு: பாதுகாப்பு உபகரணங்கள் இன்றி தூய்மை பணியாளர்கள் பணி",
-   "english_headline": "Coimbatore govt hospital: salt-water pipe blockage leaks water at entrance; cleaners work without gloves and masks",
-   "category": "Health",
-   "location": "Coimbatore Government Hospital, Coimbatore district",
-   "importance": "High",
-   "scope": "",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "மருத்துவமனை",
-    "loc": "கோவை அரசு மருத்துவமனை",
-    "hl1": "கோவை அரசு மருத்துவமனையில் தண்ணீர் கசிவு",
-    "hl2": "பாதுகாப்பு உபகரணங்கள் இன்றி",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "இன்று <b>காலை 11 மணியளவில்</b> தண்ணீர் கசிவு ஏற்பட்டது",
-       "டவர் 1 கட்டடம் அருகே உப்புத்தண்ணீர் குழாயில் அடைப்பு",
-       "நுழைவாயிலில் தண்ணீர் தேங்கியதால் நோயாளிகள் சிரமம்"
-      ]
-     },
-     {
-      "title": "பணியாளர்கள் நிலை",
-      "lines": [
-       "தேங்கிய நீரை துப்புரவு பணியாளர்கள் வெளியேற்றினர்",
-       "தொட்டியில் இருந்த குப்பை, துணிகளை சுத்தம் செய்தனர்",
-       "கையுறை, முகக்கவசம் இன்றி பணி செய்தனர்"
-      ]
-     },
-     {
-      "title": "காரணம் என்ன?",
-      "lines": [
-       "பார்வையாளர்கள் அமரும் பகுதி அருகே குழாய் இணைப்பு",
-       "பொதுமக்கள் வீசும் டீ கப், பிளாஸ்டிக் குப்பையால் அடைப்பு",
-       "பொதுப்பணித்துறை சரி செய்ய முன்வருவதில்லை என ஊழியர்கள்"
-      ]
-     },
-     {
-      "title": "நிர்வாகம் கூறுவது",
-      "lines": [
-       "போதுமான பாதுகாப்பு உபகரணங்கள் வழங்கப்பட்டுள்ளன",
-       "சிலர் அணிந்தால் வேலை செய்ய சிரமம் என்று அணிவதில்லை",
-       "அணியாமல் பணி செய்ய கூடாது என பலமுறை அறிவுறுத்தப்பட்டது"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோவை அரசு மருத்துவமனையில் இன்று காலை 11 மணியளவில் உப்புத்தண்ணீர் குழாயில் அடைப்பு ஏற்பட்டு தண்ணீர் கசிந்தது. டவர் 1 கட்டடம் அருகே ஏற்பட்ட இந்தக் கசிவால் நுழைவாயிலில் தண்ணீர் தேங்கியது. இதனால் நோயாளிகள் உள்ளே வரவும் வெளியே செல்லவும் பெரிதும் சிரமப்பட்டனர். துப்புரவு பணியாளர்கள் தேங்கிய நீரை வெளியேற்றினர். கசிவை சரிசெய்ய, உப்புத்தண்ணீர் குழாய் இணைப்பு உள்ள தொட்டியை ஊழியர்கள் சுத்தம் செய்தனர். அந்தத் தொட்டியில் இருந்த பிளாஸ்டிக் குப்பை, துணிகளை கையுறை, முகக்கவசம் போன்ற பாதுகாப்பு உபகரணங்கள் இன்றி ஊழியர்கள் அகற்றினர். இதைப் பார்த்த பொதுமக்கள் சிலர் ஊழியர்களுக்காக பரிதாபப்பட்டனர். குழாய் அடிக்கடி அடைபடுவதற்கு, பார்வையாளர்கள் அமரும் பகுதி அருகே உள்ள குழாயில் பொதுமக்கள் வீசும் டீ கப், பிளாஸ்டிக் குப்பை சென்று அடைப்பதே காரணம் என்று ஊழியர்கள் தெரிவித்தனர். பொதுப்பணித்துறை சரிசெய்ய முன்வருவதில்லை என்றும் அவர்கள் கூறினர். இதுகுறித்து ஆர் எம் ஓ சரவணபிரியா, துப்புரவு பணியாளர்களுக்கு போதுமான பாதுகாப்பு உபகரணங்கள் வழங்கப்பட்டுள்ளதாகவும், பலமுறை அறிவுறுத்தியும் சிலர் அணிவதில்லை என்றும் தெரிவித்தார். அணிந்தால் வேலை செய்ய சிரமமாக இருப்பதாகச் சிலர் கூறுவதாகவும் அவர் குறிப்பிட்டார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚰 கோவை அரசு மருத்துவமனையில் தண்ணீர் கசிவு: பாதுகாப்பு உபகரணங்கள் இன்றி பணி\n\n📰 முழு விவரம்:\nகோவை அரசு மருத்துவமனை வளாகத்தில், டவர் 1 கட்டடம் அருகே உப்புத்தண்ணீர் குழாயில் அடைப்பு ஏற்பட்டதால் இன்று (நவ. 17) காலை 11 மணியளவில் தண்ணீர் கசிந்தது. நுழைவாயிலில் தண்ணீர் தேங்கியதால் நோயாளிகள் உள்ளே வரவும் வெளியே செல்லவும் சிரமப்பட்டனர்.\nதுப்புரவு பணியாளர்கள் தேங்கிய நீரை வெளியேற்றினர். கசிவை சரிசெய்ய உப்புத்தண்ணீர் குழாய் இணைப்பு உள்ள தொட்டியை ஊழியர்கள் சுத்தம் செய்தனர். அப்போது தொட்டியில் இருந்த பிளாஸ்டிக் குப்பை, துணிகளை கையுறை, முகக்கவசம் இன்றி சுத்தம் செய்தனர். இதைப் பார்த்த பொதுமக்கள் சிலர் ஊழியர்களுக்காக பரிதாபப்பட்டனர்.\n📍 இடம்: கோவை அரசு மருத்துவமனை, டவர் 1 கட்டடம் அருகே\n🗓️ நாள்: நவம்பர் 17, 2026\n🕘 நேரம்: காலை 11 மணி\n👮 காரணம்: பார்வையாளர்கள் அமரும் பகுதி அருகே உள்ள குழாயில் பொதுமக்கள் வீசும் டீ கப், பிளாஸ்டிக் குப்பை சென்று அடைப்பதாக ஊழியர்கள் கூறுகின்றனர். பொதுப்பணித்துறை சரிசெய்ய முன்வருவதில்லை என்றும் அவர்கள் தெரிவித்தனர்.\n🛡️ நிர்வாகம்: துப்புரவு பணியாளர்களுக்கு போதுமான பாதுகாப்பு உபகரணங்கள் வழங்கப்பட்டுள்ளதாக ஆர்.எம்.ஓ. சரவணபிரியா தெரிவித்தார். அணியாமல் பணி செய்யக் கூடாது என பலமுறை அறிவுறுத்தியும், சிலர் அணிந்தால் வேலை செய்ய சிரமமாக இருப்பதாகக் கூறி அணிவதில்லை என்றார்.\nℹ️ மக்கள் கவனத்திற்கு: குழாய் அருகே குப்பை போடாமல், குப்பைத்தொட்டியை பயன்படுத்துங்கள்.\n\nCoimbatore govt hospital water leak, cleaners without gloves | Coimbatore news\n📍 கோவை அரசு மருத்துவமனை, கோவை மாவட்டம் | 17 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Hospital",
-   "prompts": "A group of government hospital cleaning workers in plain uniforms stands at the entrance of a Coimbatore government hospital, bare-handed and without masks, pumping out a sheet of leaked salt water that has pooled across the floor near the main gate. Seen from a distance behind, patients in sarees, shirts and veshti and relatives carrying bags wait at the edge of the puddle while a crowd gathers in the morning light. The setting is a large hospital campus with a multi-storey tower building in the background, concrete pathways, metal railings and a few parked two-wheelers near the gate. Some workers hold buckets and a long broom, and one bends over a drain. It is late morning on a bright day with soft natural light. Camera: eye level, 35 mm, wide enough to show the entrance and the tower building. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of an open underground sump or tank lid at the side of a hospital building, with a cleaning worker's bare hands and a long-handled tool lifting out a tangle of wet plastic waste and a piece of dirty cloth from the dark water. Around the tank, the concrete floor is wet and grimy, with a few discarded paper cups and scattered plastic debris nearby. A bucket and a plastic mug sit on the edge. The worker wears a plain shirt sleeve, no gloves, no mask. Late morning daylight from the side, with the pooled water reflecting light. Camera: close, slightly high angle, 35 mm, focused on the hands, the waste and the tank opening. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/sanitation-workers-without-protective-gear-danger-awaits-in-government-hospital/4378458",
-   "published": "2026-11-17T15:12:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences; caption copies the article word for word (16 words in a row, 39% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794935594/kovaiminnal/w59jqmk24e6f1p4d0qxj.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794935599/kovaiminnal/xjxihesvjzqd3efjlgoi.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவை மாவட்டத்தில் பயிர் காப்பீடு செய்ய விவசாயிகளுக்கு அழைப்பு",
-   "english_headline": "Coimbatore farmers urged to insure crops under PM crop insurance scheme; maize and chickpea deadline 30 Nov, sorghum 16 Dec",
-   "category": "Weather & Agriculture",
-   "location": "Coimbatore district",
-   "importance": "High",
+   "tamil_headline": "வெளிநாட்டு சொத்து விவரம் வெளிப்படுத்த டிசம்பர் 31 கடைசி நாள்",
+   "english_headline": "Coimbatore: Income Tax advises small taxpayers to disclose undeclared foreign assets by 31 December",
+   "category": "Government & Services",
+   "location": "Coimbatore, Coimbatore district",
+   "importance": "Medium",
    "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "பயிர் காப்பீடு",
-    "loc": "கோவை மாவட்டம்",
-    "hl1": "பயிர் காப்பீடு செய்ய விவசாயிகளுக்கு",
-    "hl2": "மக்காச்சோளம்: <b>30</b>",
+    "cat": "வரி அறிவிப்பு",
+    "loc": "கோவை",
+    "hl1": "கோவை: வெளிநாட்டு சொத்து விவரம் அறிவிக்க",
+    "hl2": "கடைசி நாள் டிச. 31",
     "slides": [
      {
-      "title": "எந்தப் பயிர்கள்?",
+      "title": "என்ன நிகழ்ச்சி?",
       "lines": [
-       "மக்காச்சோளம், கொண்டைக்கடலை பயிர்களுக்கு <b>30</b> நவம்பர்",
-       "சோளம் பயிருக்கு <b>16</b> டிசம்பர் கடைசி நாள்",
-       "இயற்கை இடர்பாடுகளால் ஏற்படும் இழப்புக்கு பாதுகாப்பு"
+       "இந்திய தொழில் வர்த்தக சபையில் வருமானவரித்துறை விழிப்புணர்வு",
+       "சிறு வரி செலுத்துவோருக்கான வெளிநாட்டு சொத்து திட்டம்",
+       "வருமானவரித்துறை முதன்மை கமிஷனர் திவாகர் பிரசாத் விளக்கினார்"
       ]
      },
      {
-      "title": "யார் பதிவு",
+      "title": "திட்டத்தின்",
       "lines": [
-       "பயிர்க்கடன் பெறும் விவசாயிகள்",
-       "கடன் பெறாதவர்கள், குத்தகைதாரர்கள்",
-       "பகிர்வு முறையில் சாகுபடி செய்வோரும் பதிவு செய்யலாம்"
+       "வருமான வரி கணக்கில் காட்டப்படாத வெளிநாட்டு சொத்துகளை",
+       "விண்ணப்பம் சமர்ப்பிக்க <b>டிசம்பர் 31</b> கடைசி நாள்",
+       "வெளிநாட்டில் வேலை, படிப்பு, முதலீடு செய்தவர்களுக்கு பயன்"
       ]
      },
      {
-      "title": "என்ன ஆவணங்கள்?",
+      "title": "கிடைக்கும்",
       "lines": [
-       "அடையாள அட்டை, வங்கிக் கணக்கு புத்தக நகல்",
-       "சிட்டா, அடங்கல் அல்லது பட்டா",
-       "குத்தகை ஒப்பந்தம், விதைப்புச் சான்றிதழ்"
+       "ஒப்புக்கொள்ளப்பட்ட சொத்துக்கு அபராதத்தில் இருந்து பாதுகாப்பு",
+       "வழக்கில் இருந்தும் பாதுகாப்பு வழங்கப்படும்",
+       "துணை கமிஷனர் ஐஸ்வர்யா திட்ட அம்சங்களை விளக்கினார்"
       ]
      },
      {
-      "title": "எங்கே பதிவு?",
+      "title": "கேள்விகளுக்கு",
       "lines": [
-       "pmfby.gov.in இணையதளம் மூலம்",
-       "இ-சேவை மையங்கள், வங்கிகள் மூலம்",
-       "தொடக்க வேளாண்மை கூட்டுறவு கடன் சங்கங்கள் மூலம்"
+       "உறுப்பினர்களின் கேள்விகளுக்கு அதிகாரிகள் பதிலளித்தனர்",
+       "கூடுதல் கமிஷனர் செந்தில்குமார், கூடுதல் இயக்குனர் ஸ்ரீவிஜய்",
+       "வர்த்தக சபை தலைவர் துரைராஜ் உள்ளிட்டோர் பங்கேற்பு"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவை மாவட்ட விவசாயிகள் பயிர்களுக்கு காப்பீடு செய்ய அழைக்கப்பட்டுள்ளனர். பிரதமர் பயிர் காப்பீட்டுத் திட்டத்தின் கீழ் இந்தப் பதிவு நடைபெறுகிறது. இயற்கை இடர்பாடுகள் மற்றும் பருவமழை பொய்த்தல் போன்ற காரணங்களால் ஏற்படும் மகசூல் இழப்பில் இருந்து பாதுகாப்பு பெறலாம். மக்காச்சோளம் மற்றும் கொண்டைக்கடலை பயிர்களுக்கு காப்பீடு செய்ய கடைசி நாள் நவம்பர் 30ஆம் தேதி. சோளம் பயிருக்கு டிசம்பர் 16ஆம் தேதி கடைசி நாள். பயிர்க்கடன் பெறும் விவசாயிகள், கடன் பெறாதவர்கள், குத்தகைதாரர்கள் மற்றும் பகிர்வு முறையில் சாகுபடி செய்வோரும் காப்பீடு செய்யலாம். அடையாள அட்டை, வங்கிக் கணக்கு புத்தக நகல், சிட்டா, அடங்கல் அல்லது பட்டா, குத்தகை ஒப்பந்தம், விதைப்புச் சான்றிதழ் சமர்ப்பிக்க வேண்டும். பி.எம். ஃபசல் பீமா யோஜனா இணையதளம், இ-சேவை மையங்கள், வங்கிகள் மற்றும் தொடக்க வேளாண்மை கூட்டுறவு கடன் சங்கங்கள் மூலம் பதிவு செய்யலாம். கூடுதல் விவரங்களுக்கு மாவட்ட வேளாண்மை இணை இயக்குனர் அல்லது வட்டார வேளாண்மை உதவி இயக்குனர் அலுவலகங்களை தொடர்பு கொள்ளலாம். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🌾 மக்காச்சோளம், கொண்டைக்கடலைக்கு பயிர் காப்பீடு: கடைசி நாள் நவம்பர் 30\n\n📰 முழு விவரம்:\nபிரதமர் பயிர் காப்பீட்டுத் திட்டத்தின் கீழ் கோவை மாவட்ட விவசாயிகள் பயிர்களுக்கு காப்பீடு செய்ய அறிவுறுத்தப்பட்டுள்ளனர். இயற்கை இடர்பாடுகள், பருவமழை பொய்த்தல் உள்ளிட்ட காரணங்களால் ஏற்படும் மகசூல் இழப்பில் இருந்து பாதுகாக்க இத்திட்டத்தில் பதிவு செய்யலாம்.\n🌽 மக்காச்சோளம், கொண்டைக்கடலை: கடைசி நாள் 30 நவம்பர்\n🌾 சோளம்: கடைசி நாள் 16 டிசம்பர்\n👨‍🌾 பயிர்க்கடன் பெறுவோர், கடன் பெறாதவர்கள், குத்தகைதாரர்கள், பகிர்வு முறையில் சாகுபடி செய்வோர் காப்பீடு செய்யலாம்.\n📄 தேவையான ஆவணங்கள்: அடையாள அட்டை, வங்கிக் கணக்கு புத்தக நகல், சிட்டா, அடங்கல் அல்லது பட்டா, குத்தகை ஒப்பந்தம், விதைப்புச் சான்றிதழ்\n💻 பதிவு செய்யும் இடங்கள்: pmfby.gov.in இணையதளம், இ-சேவை மையங்கள், வங்கிகள், தொடக்க வேளாண்மை கூட்டுறவு கடன் சங்கங்கள்\n📞 தொடர்புக்கு: மாவட்ட வேளாண்மை இணை இயக்குனர் அல்லது வட்டார வேளாண்மை உதவி இயக்குனர் அலுவலகம்\n\nCoimbatore farmers crop insurance deadline 30 Nov | Coimbatore news\n📍 கோவை மாவட்டம் | 17 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை",
-   "prompts": "A group of Coimbatore farmers in a dry maize field stands between tall green maize plants, one farmer holding a folder of documents and a bank passbook while a village agriculture officer in a shirt writes on a clipboard beside him. The place is open farmland on the outskirts of Coimbatore city, with a dirt field path, low rain-fed fields of chickpea, and the Western Ghats and Marudhamalai hill faintly visible in the far background. The people are seen from behind or far away, men in shirts with veshti and women in cotton sarees, and the officer is explaining the insurance form to them. In the frame are tall maize stalks with cobs, a small wooden table with stacked papers, and a few bank passbooks and a sowing certificate on top. The time is mid-morning under soft daylight with a slightly overcast sky. Camera at eye level, 35 mm, wide enough to show the maize field and the group together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a stack of papers on a wooden table at a village agricultural office: a bank passbook, a folded land patta, a sowing certificate and an identity card placed on top of each other, with a pen resting beside them. Behind the table, out of focus, a farmer's hand holds a pencil over a form. Through a window of the cooperative society building, a dry maize field with green stalks and a bit of chickpea crop is visible in soft light. The setting is a simple block-level agriculture or cooperative credit society room in Coimbatore district with a plain wall and a calendar-less whitewashed background. Daylight comes from the window, with no readable text, letters or logos anywhere. Camera slightly high, 35 mm, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/call-for-crop-insurance/4378926",
-   "published": "2026-11-17T19:36:23+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script copies the article word for word (16 words in a row, 36% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence; slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
+   "reel_script": "கோவையில் வெளிநாட்டு சொத்து விவரத்தை அறிவிக்க டிசம்பர் 31ஆம் தேதி கடைசி நாள். இந்திய தொழில் வர்த்தக சபையில் வருமானவரித்துறை விழிப்புணர்வு நிகழ்ச்சி நடைபெற்றது. சிறு வரி செலுத்துவோருக்கான வெளிநாட்டு சொத்துகள் வெளிப்படுத்தும் திட்டம் விளக்கப்பட்டது. வருமானவரித்துறை முதன்மை கமிஷனர் திவாகர் பிரசாத், துணை கமிஷனர் ஐஸ்வர்யா ஆகியோர் திட்டத்தின் முக்கிய அம்சங்களையும் பலன்களையும் விளக்கினர். வருமான வரி கணக்கில் காட்டப்படாத வெளிநாட்டு சொத்துகளை வெளிப்படுத்த மத்திய அரசு வாய்ப்பு அளித்துள்ளது. வெளிநாட்டில் வேலை செய்தவர்கள், படித்தவர்கள், முதலீடு செய்தவர்களுக்கு இந்தத் திட்டம் பயனுள்ளதாக இருக்கும். ஒப்புக்கொள்ளப்படும் சொத்துக்கு அபராதம் மற்றும் வழக்கில் இருந்து பாதுகாப்பு வழங்கப்படும் என்று அதிகாரிகள் தெரிவித்தனர். உறுப்பினர்கள் எழுப்பிய கேள்விகளுக்கும் அதிகாரிகள் பதிலளித்தனர். கூடுதல் கமிஷனர் செந்தில்குமார், கூடுதல் இயக்குனர் ஸ்ரீவிஜய், வர்த்தக சபை தலைவர் துரைராஜ் உள்ளிட்டோர் பங்கேற்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "📋 கோவையில் வெளிநாட்டு சொத்து விவரம் அறிவிக்க டிசம்பர் 31 கடைசி நாள்\n\n📰 முழு விவரம்:\nகோவை இந்திய தொழில் வர்த்தக சபையில் வருமானவரித்துறை விழிப்புணர்வு நிகழ்ச்சி நடைபெற்றது. சிறு வரி செலுத்துவோருக்கான வெளிநாட்டு சொத்து வெளிப்படுத்தும் திட்டம் விளக்கப்பட்டது.\nவருமான வரி கணக்கில் காட்டப்படாத வெளிநாட்டு சொத்துகளை வெளிப்படுத்த மத்திய அரசு வாய்ப்பு அளித்துள்ளது. விண்ணப்பங்களை சமர்ப்பிக்க டிசம்பர் 31 கடைசி நாள்.\nவெளிநாட்டில் வேலை செய்தவர்கள், படித்தவர்கள், முதலீடு செய்தவர்களுக்கு இந்தத் திட்டம் பயனுள்ளதாக இருக்கும். ஒப்புக்கொள்ளப்படும் சொத்துக்கு அபராதம் மற்றும் வழக்கில் இருந்து பாதுகாப்பு வழங்கப்படும்.\n🎤 வருமானவரித்துறை முதன்மை கமிஷனர் திவாகர் பிரசாத், துணை கமிஷனர் ஐஸ்வர்யா ஆகியோர் திட்டத்தை விளக்கினர். கூடுதல் கமிஷனர் செந்தில்குமார், கூடுதல் இயக்குனர் ஸ்ரீவிஜய், வர்த்தக சபை தலைவர் துரைராஜ் உள்ளிட்டோர் பங்கேற்றனர்.\n\nCoimbatore income tax foreign assets disclosure deadline 31 December | Coimbatore news\n📍 கோவை | 17 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Income​Tax",
+   "prompts": "Income Tax officials sit on a dais at the Indian Chamber of Commerce hall in Coimbatore city, speaking into microphones to a seated audience of businessmen and taxpayers during an awareness meeting on the foreign asset disclosure scheme. Senior officers in formal shirts and trousers, one in a sari, sit at a long table covered with a cloth, with papers, pens and water glasses in front of them. The hall is a modern indoor conference room with rows of cushioned chairs filled with men in shirts and trousers and a few women in sarees, all seen from behind or slightly to the side. Some audience members raise hands to ask questions. Bright daytime fluorescent and window light, a plain wall backdrop with no readable text. Camera at eye level, 35 mm, wide enough to show the dais and full audience rows. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a stack of official papers, a folder and a pen resting on a polished conference table in the Indian Chamber of Commerce hall in Coimbatore, with a microphone and a glass of water in the background. The documents represent undeclared foreign asset forms being explained by Income Tax officials. Soft indoor light from the hall, shallow depth of field, a blurred row of audience chairs and the legs of officers' trousers at the edge of the frame. No readable text, no faces. Camera slightly high, 50 mm, detail-focused. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/advice-on-disclosing-foreign-property-details/4378957",
+   "published": "2026-11-17T19:54:20+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794935630/kovaiminnal/jbbk6w0hdaeinfg2s3p8.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794935633/kovaiminnal/giarmtbovt529cmzec5a.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794944101/kovaiminnal/b6iznhbafc5jswlgh7hd.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794944104/kovaiminnal/nnhbkorqbqrg77dazmsl.jpg"
    ]
   }
  ]
