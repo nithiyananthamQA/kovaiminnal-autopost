@@ -158,7 +158,8 @@ print(sorted(m for m in sys.modules if m in ('post', 'comments', 'collect')))"""
         self.assertEqual(out.split("\n")[:4], ["True False", "False", "False", "[]"])      # salem is not live; read without imports
         r = subprocess.run([PY, "districts/main.py", "comments", "salem"], cwd=ROOT, env=DENV, capture_output=True, text=True, timeout=60)
         self.assertEqual(r.returncode, 0, r.stderr)
-        self.assertIn("comment replies are off", r.stdout)
+        # 17 Nov: Chennai moved to its own repo - with no live district page the whole engine is off, which also means no replies
+        self.assertTrue("comment replies are off" in r.stdout or "district power-cut pages are switched off" in r.stdout, r.stdout)
 
     def test_kovai_bridge_refused(self):
         env = dict(DENV, DISTRICT_BRIDGE_URL="https://example.invalid/kovai")
