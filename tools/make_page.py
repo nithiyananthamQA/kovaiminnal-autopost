@@ -237,6 +237,8 @@ def main(key, out):
         k = subprocess.run(["git", "show", f"f6bccc2:research_free/archive/{f}"], cwd=ROOT, capture_output=True, text=True)
         if k.returncode == 0:
             (out / "research_free" / "archive" / f).write_text(k.stdout, encoding="utf-8")
+    (out / "research_free" / "archive" / "pick_state.json").write_text(      # 17 Nov: the shape pick.py works with (was {})
+        json.dumps({"last_end": "", "pool": {}, "rounds": {}}) + "\n", encoding="utf-8")
     (out / "research_free" / "START_AT").write_text(datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ") + "\n", encoding="utf-8")      # UTC, like Kovai's
     for f in ("LIVE", "research_free/ENABLED"):
         (out / f).unlink(missing_ok=True)

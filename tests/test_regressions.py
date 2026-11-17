@@ -2564,3 +2564,16 @@ class NamesLikeTheNewspaper17Nov(unittest.TestCase):
         self.assertIn("NAMES AS THE NEWSPAPER GIVES THEM", rules)
         self.assertNotIn("Do not name private individuals, victims, minors or accused persons", rules)
 
+
+class EmptyPickState17Nov(unittest.TestCase):
+    """17 Nov: Chennai's first pick round crashed (KeyError 'rounds') on its new, empty state file {}"""
+    def test_empty_state_file(self):
+        import pick
+        from unittest import mock
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "pick_state.json"
+            f.write_text("{}", encoding="utf-8")
+            with mock.patch.object(pick, "STATE", f):
+                st = pick.load_state()
+        self.assertEqual((st["rounds"], st["pool"], st["last_end"]), ({}, {}, ""))
+

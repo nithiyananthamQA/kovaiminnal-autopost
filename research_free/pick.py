@@ -53,9 +53,12 @@ def now():
 
 def load_state():
     try:
-        return json.loads(STATE.read_text(encoding="utf-8"))
+        st = json.loads(STATE.read_text(encoding="utf-8"))
     except Exception:
-        return {"last_end": "", "pool": {}, "rounds": {}}
+        st = {}
+    for k, v in (("last_end", ""), ("pool", {}), ("rounds", {})):      # 17 Nov (ours): a new page starts with an empty state file {}
+        st.setdefault(k, v)      # (Chennai's first round crashed on it: KeyError 'rounds')
+    return st
 
 
 def save_state(st):
