@@ -82,6 +82,9 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-17 | `cff5b26` | powercut: notices written |
+| 2026-11-17 | `7f79d41` | test_district_reach: with Chennai on its own repo no district page is live, so the engine is off (no replies either) |
+| 2026-11-17 | `5bd8ec9` | tools/sync_pages.py: one push updates every page, like the reference (owner 17 Nov: 'if he push all page follow that right?') |
 | 2026-11-17 | `bdcf5bf` | Chennai moves to its own repo (copy of Kovai): the old engine stops posting Chennai |
 | 2026-11-17 | `a8769ba` | district powercut: notices found |
 | 2026-11-17 | `12cb54f` | Writer names the shop / hotel / company the article names; gold rate reel goes live (owner 17 Nov: 'which shop where - add the shop name if available', 'nice music use it') |
@@ -109,7 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-17 | `f345330` | powercut: notices written |
 | 2026-11-17 | `c0b4781` | powercut: notices written |
 | 2026-11-17 | `8947c12` | district powercut: chennai posted |
-| 2026-11-17 | `de82246` | powercut: notices written |
-| 2026-11-17 | `459dc12` | stories shared |
-| 2026-11-17 | `4a72294` | DIFFERENCES: Chennai = copy made by tools/make_page.py |
 <!-- recent-changes:end -->
