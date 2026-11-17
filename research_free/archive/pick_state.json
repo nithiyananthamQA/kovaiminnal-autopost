@@ -107,7 +107,8 @@
    "category": "பொது",
    "score": 9.0,
    "power_cut": false,
-   "listed_at": "2026-11-17T17:02:15.818480+05:30"
+   "listed_at": "2026-11-17T17:02:15.818480+05:30",
+   "picked_at": "2026-11-17T22:41:47.799585+05:30"
   },
   "Cb706037": {
    "id": "Cb706037",
@@ -119,7 +120,8 @@
    "category": "பொது",
    "score": 8.0,
    "power_cut": false,
-   "listed_at": "2026-11-17T17:02:15.818480+05:30"
+   "listed_at": "2026-11-17T17:02:15.818480+05:30",
+   "picked_at": "2026-11-17T22:41:47.799586+05:30"
   },
   "Cb1d0347": {
    "id": "Cb1d0347",
@@ -287,7 +289,8 @@
    "category": "பொது",
    "score": 10.0,
    "power_cut": false,
-   "listed_at": "2026-11-17T21:00:58.873619+05:30"
+   "listed_at": "2026-11-17T21:00:58.873619+05:30",
+   "picked_at": "2026-11-17T22:41:47.799580+05:30"
   },
   "C9314394": {
    "id": "C9314394",
@@ -302,7 +305,8 @@
    "alts": [
     "https://www.dinamalar.com/news/tamil-nadu-news/tribals-don-t-benefit-from-fees-collected-by-forest-department-tribal-people-s-association/4378920"
    ],
-   "listed_at": "2026-11-17T21:00:58.873619+05:30"
+   "listed_at": "2026-11-17T21:00:58.873619+05:30",
+   "picked_at": "2026-11-17T22:41:47.799583+05:30"
   },
   "Ca556e5e": {
    "id": "Ca556e5e",
@@ -1488,8 +1492,22 @@
    ],
    "sent": false,
    "deadline": "2026-11-17T23:40:35.398224+05:30",
-   "decided": null,
-   "written": []
+   "decided": {
+    "how": "automatic: top 4 of 31 by insights",
+    "ids": [
+     "C8784988",
+     "C9314394",
+     "C9869681",
+     "Cb706037"
+    ],
+    "at": "2026-11-17T22:41:47.799569+05:30"
+   },
+   "written": [
+    "C8784988",
+    "C9314394",
+    "C9869681",
+    "Cb706037"
+   ]
   }
  },
  "retry": {}
