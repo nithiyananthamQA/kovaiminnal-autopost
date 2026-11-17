@@ -2,7 +2,7 @@
 
 Owner 14 Nov: real data only. A rate is used only when at least 2 pages show TODAY's date and the same 22K gold rate
 (silver: the same per-gram rate). Every page is read as plain text, so a small layout change on one site does not break the others.
-collect(day, log) -> {"gold": {...} or None, "silver": {...} or None, "pages": [per-page results for the log]}"""
+collect(day, log, city="chennai") -> {"gold": {...} or None, "silver": {...} or None, "pages": [per-page results for the log]}"""
 import re
 import html as htmllib
 from collections import Counter
@@ -24,6 +24,12 @@ SILVER_PAGES = [
     ("RateToday", "https://ratetoday.co.in/silver/chennai"),
     ("BankBazaar", "https://www.bankbazaar.com/silver-rate-chennai.html"),
 ]
+
+def pages_for(city="chennai"):
+    """owner 17 Nov (ours): "keep chennai and kovai separate" - every page reads its own city's rate pages (the same four sites
+    have one page per city; 17 Nov Coimbatore = Chennai: 22K 12,470, 24K 13,604, silver 190). Chennai = the reference's pages."""
+    return ([(n, u.replace("chennai", city)) for n, u in GOLD_PAGES], [(n, u.replace("chennai", city)) for n, u in SILVER_PAGES])
+
 
 MONTHS = {m: i for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
 NUM = r"([0-9]{1,2}(?:,[0-9]{2})*,?[0-9]{3}|[0-9]{2,6})(?:\.[0-9]+)?"      # 12,695 / 1,01,560 / 12695 / 195 (decimals dropped)
@@ -103,9 +109,10 @@ def agree(values):
     return (v, n) if n >= 2 else (None, n)
 
 
-def collect(day, log, min_agree=2):
+def collect(day, log, min_agree=2, city="chennai"):
     pages = []
-    for name, url in GOLD_PAGES:
+    gold_pages, silver_pages = pages_for(city)
+    for name, url in gold_pages:
         try:
             t = fetch(url)
             today = has_today(t, day)
@@ -115,7 +122,7 @@ def collect(day, log, min_agree=2):
         except Exception as e:
             pages.append({"kind": "gold", "name": name, "url": url, "error": str(e)[:120]})
             log(f"  gold   {name:<11} not read: {str(e)[:120]}")
-    for name, url in SILVER_PAGES:
+    for name, url in silver_pages:
         try:
             t = fetch(url)
             today = has_today(t, day)

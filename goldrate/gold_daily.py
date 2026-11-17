@@ -20,6 +20,7 @@ sys.path.insert(0, str(HERE))
 import gold_sources as sources      # noqa: E402
 import gold_render as render      # noqa: E402
 import minnal_render      # noqa: E402  (owner 17 Nov: our own slide design for Minnal pages)
+import gold_reel      # noqa: E402
 
 IST = timezone(timedelta(hours=5, minutes=30))
 # 17 Nov (forced): Meta gives our app only the Unified login - the same Instagram connection as every Kovai job (poster/ig_api.py):
@@ -32,6 +33,7 @@ DRY = os.environ.get("DRY_RUN", "") in ("1", "true", "yes")
 START_AT = os.environ.get("START_AT", "09:40")
 SILVER_WAIT_UNTIL = os.environ.get("SILVER_WAIT_UNTIL", "11:30")
 GIVE_UP_AT = os.environ.get("GIVE_UP_AT", "13:00")
+REEL_ON = os.environ.get("GOLD_REEL", "1") not in ("0", "false", "no")      # owner 17 Nov: the rate reel (pages with "reel": True)
 FORCE_DATE = os.environ.get("GOLD_DATE", "")      # testing only (dry runs): YYYY-MM-DD the pages still show
 HISTORY = HERE / "state" / "history.json"
 STATE_DIR = HERE / "state"
@@ -40,7 +42,8 @@ PAGES = {      # owner 14 Nov: every page, each with its own logo and handle; th
     "namakkal": {"town": "நாமக்கல்", "name1": "நாமக்கல்", "handle": "namakkal.360", "tag": "#Namakkal360", "brand_px": 54},
     "rasipuram": {"town": "இராசிபுரம்", "name1": "இராசிபுரம்", "handle": "rasipuram.360", "tag": "#Rasipuram360", "brand_px": 50},
     "coimbatore": {"town": "கோவை", "name1": "கோவை", "brand2": " மின்னல்", "handle": "kovai_minnal", "tag": "#KovaiMinnal", "brand_px": 40,
-                   "design": "minnal", "brand_en": "KOVAI MINNAL"},
+                   "design": "minnal", "brand_en": "KOVAI MINNAL", "city": "coimbatore",      # city: its own rate pages (owner 17 Nov)
+                   "reel": True},      # owner 17 Nov (ours): the same rate also as a reel with our music + sound effects (gold_reel.py)
     "salem": {"town": "சேலம்", "name1": "சேலம்", "handle": "salem360.official", "tag": "#Salem360", "brand_px": 54},
     "erode": {"town": "ஈரோடு", "name1": "ஈரோடு", "handle": "erode360.official", "tag": "#Erode360", "brand_px": 54},
     "tirupur": {"town": "திருப்பூர்", "name1": "திருப்பூர்", "handle": "tiruppur360.official", "tag": "#Tiruppur360", "brand_px": 52},
@@ -107,9 +110,9 @@ def wait_ready(cid, token, minutes=6):
     raise RuntimeError(f"container {cid} not ready")
 
 
-def upload(path):
+def upload(path, kind="image"):
     with open(path, "rb") as f:
-        r = requests.post(f"https://api.cloudinary.com/v1_1/{os.environ['CLOUDINARY_CLOUD']}/image/upload",
+        r = requests.post(f"https://api.cloudinary.com/v1_1/{os.environ['CLOUDINARY_CLOUD']}/{kind}/upload",
                           data={"upload_preset": os.environ["CLOUDINARY_PRESET"], "folder": "goldrate"}, files={"file": f}, timeout=300)
     r.raise_for_status()
     return r.json()["secure_url"]
@@ -130,6 +133,25 @@ def publish(token, urls, cap):
     mid = ig("POST", f"{uid}/media_publish", token, creation_id=cid)["id"]
     link = ig("GET", mid, token, fields="permalink").get("permalink", "")
     return mid, link
+
+
+def publish_reel(token, video_url, cap, cover_url=""):
+    """owner 17 Nov (ours): the rate reel - Instagram's own cover when ours is refused (like post.py's reels)"""
+    uid = account_id(token)
+    prm = dict(media_type="REELS", video_url=video_url, caption=cap, share_to_feed="true")
+    if cover_url:
+        prm["cover_url"] = cover_url
+    try:
+        cid = ig("POST", f"{uid}/media", token, **prm)["id"]
+    except RuntimeError as e:
+        if not cover_url:
+            raise
+        log("reel refused with the cover, posting with Instagram's own cover:", str(e)[:150])
+        prm.pop("cover_url")
+        cid = ig("POST", f"{uid}/media", token, **prm)["id"]
+    wait_ready(cid, token, 15)
+    mid = ig("POST", f"{uid}/media_publish", token, creation_id=cid)["id"]
+    return mid, ig("GET", mid, token, fields="permalink").get("permalink", "")
 
 
 # ---------- history: one row per day {"date", "g22", "g24", "silver"} ----------
@@ -210,19 +232,28 @@ def caption(p, day, r):
         lines.append(f"💡 1 சவரன் + 3% ஜிஎஸ்டி: ₹{render.inr(r['g22'] * 8 * 1.03)} (செய்கூலி, சேதாரம் தனி)")
     if r.get("silver"):
         lines.append(f"⚪ வெள்ளி (1 கிராம்): ₹{render.inr(r['silver'])} ({change_text(r['silver'] - r['silver_prev'], '')})")
-    lines += ["", "சென்னை சந்தை விலை (தமிழ்நாடு). ஜிஎஸ்டி, செய்கூலி, சேதாரம் தனி; கடைகளுக்கு ஏற்ப விலை சற்று மாறலாம்.", "",
+    market = f"{p['town']} விலை நிலவரம்" if p.get("city") else "சென்னை சந்தை விலை (தமிழ்நாடு)"      # owner 17 Nov: Kovai says Kovai
+    lines += ["", f"{market}. ஜிஎஸ்டி, செய்கூலி, சேதாரம் தனி; கடைகளுக்கு ஏற்ப விலை சற்று மாறலாம்.", "",
               f"தினமும் காலை தங்கம், வெள்ளி விலை அறிய Follow செய்யுங்கள் 🙏 @{p['handle']}", "",
               f"#தங்கம்விலை #GoldRate #SilverRate #GoldPriceToday #{p['town']} {p['tag']}"]
     return "\n".join(lines)
 
 
-def state_path(page):
-    return STATE_DIR / f"posted_{page}.json"
+def state_path(page, kind="post"):
+    return STATE_DIR / (f"posted_{page}.json" if kind == "post" else f"posted_{kind}_{page}.json")
 
 
-def already_posted(page, day, token=None):
+REEL_HEAD = "⚡ தங்கம், வெள்ளி விலை இன்று"      # the reel caption's first words (never inside the carousel caption)
+
+
+def reel_caption(p, day, r):
+    return caption(p, day, r).replace("💰 இன்றைய தங்கம், வெள்ளி விலை |", REEL_HEAD + " |", 1)
+
+
+def already_posted(page, day, token=None, kind="post"):
+    """kind "post" (the carousel) or "reel" - each is checked on its own, so a failed reel never posts the carousel again"""
     try:
-        st = json.loads(state_path(page).read_text(encoding="utf-8"))
+        st = json.loads(state_path(page, kind).read_text(encoding="utf-8"))
         if st.get("date") == day.isoformat():
             return f"state file: {st.get('permalink')}"
     except Exception:
@@ -230,9 +261,10 @@ def already_posted(page, day, token=None):
     if token:
         try:
             uid = account_id(token)
+            mark = f"இன்றைய தங்கம், வெள்ளி விலை | {date_ta(day)}" if kind == "post" else f"{REEL_HEAD} | {date_ta(day)}"
             for m in ig("GET", f"{uid}/media", token, fields="caption,permalink", limit=15).get("data", []):
-                if f"இன்றைய தங்கம், வெள்ளி விலை | {date_ta(day)}" in (m.get("caption") or ""):
-                    return f"Instagram already has today's post {m.get('permalink')}"
+                if mark in (m.get("caption") or ""):
+                    return f"Instagram already has today's {kind} {m.get('permalink')}"
         except Exception as e:
             log("could not read recent posts:", str(e)[:150])
     return ""
@@ -251,9 +283,12 @@ def main():
             except Exception as e:
                 log(f"{pg}: no Instagram token - skipped ({str(e)[:120]})")
         pages = [pg for pg in pages if pg in tokens]
-    todo = [pg for pg in pages if not (DRY is False and already_posted(pg, day, tokens.get(pg)))]
-    for pg in set(pages) - set(todo):
-        log(f"{pg}: already posted today - {already_posted(pg, day, tokens.get(pg))}")
+    kinds = {pg: ["post"] + (["reel"] if PAGES[pg].get("reel") and REEL_ON else []) for pg in pages}
+    need = {pg: [k for k in kinds[pg] if DRY or not already_posted(pg, day, tokens.get(pg), k)] for pg in pages}
+    todo = [pg for pg in pages if need[pg]]
+    for pg in pages:
+        for k in set(kinds[pg]) - set(need[pg]):
+            log(f"{pg}: {k} already posted today - {already_posted(pg, day, tokens.get(pg), k)}")
     if not todo:
         return 0
     start = clock(START_AT, day)
@@ -261,9 +296,11 @@ def main():
         wait = (start - datetime.now(IST)).total_seconds()
         log(f"waiting {int(wait)} s until {START_AT} (the rate is fixed at 9:30 AM)")
         time.sleep(max(0, wait))
+    cities = {PAGES[pg].get("city", "chennai") for pg in todo}      # owner 17 Nov: a page with its own city reads that city's pages
+    city = cities.pop() if len(cities) == 1 else "chennai"
     while True:
-        log("reading today's rate")
-        got = sources.collect(day, log)
+        log(f"reading today's rate ({city})")
+        got = sources.collect(day, log, city=city)
         gold, silver = got["gold"], got["silver"]
         t = datetime.now(IST)
         if gold and (silver or FORCE_DATE or t >= clock(SILVER_WAIT_UNTIL, day)):
@@ -283,31 +320,70 @@ def main():
     for pg in todo:
         p = dict(PAGES[pg], logo=ROOT / "kit" / f"logo_{pg}.png")
         out = ROOT / "out" / "goldrate" / pg
-        jpgs = (minnal_render if p.get("design") == "minnal" else render).render(p, r, out, log)
-        cap = caption(p, day, r)
-        (out / "caption.txt").write_text(cap, encoding="utf-8")
-        log(f"{pg} caption:\n{cap}")
-        if DRY:
-            log(f"DRY RUN: {pg} slides in {out} - not posted")
-            continue
-        try:
-            if already_posted(pg, day, tokens[pg]):
-                log(f"{pg}: posted meanwhile - stop")
-                continue
-            urls = [upload(j) for j in jpgs]
-            mid, link = publish(tokens[pg], urls, cap)
-            log(f"{pg}: POSTED {link}")
-            state_path(pg).write_text(json.dumps({"date": day.isoformat(), "media_id": mid, "permalink": link,
-                                                  "posted_at": datetime.now(IST).isoformat()}, ensure_ascii=False), encoding="utf-8")
-            try:      # same carousel to the page's Facebook page when it is set up (never touches the Instagram post)
-                sys.path.insert(0, str(ROOT / "poster"))
-                import facebook
-                facebook.share(pg, f"goldrate-{day.isoformat()}", "photos", urls, cap, p["tag"], always=True, story=False)
-            except Exception as e:
-                log("Facebook step skipped:", str(e)[:150])
-        except Exception as e:
-            log(f"{pg}: NOT POSTED - {str(e)[:300]}")
+        if "post" in need[pg]:
+            post_carousel(pg, p, day, r, out, tokens.get(pg))
+        if "reel" in need[pg]:      # after the carousel (the reference's post comes first; the reel is ours on top)
+            post_reel(pg, p, day, r, out, tokens.get(pg))
     return 0
+
+
+def post_carousel(pg, p, day, r, out, token):
+    jpgs = (minnal_render if p.get("design") == "minnal" else render).render(p, r, out, log)
+    cap = caption(p, day, r)
+    (out / "caption.txt").write_text(cap, encoding="utf-8")
+    log(f"{pg} caption:\n{cap}")
+    if DRY:
+        log(f"DRY RUN: {pg} slides in {out} - not posted")
+        return
+    try:
+        if already_posted(pg, day, token):
+            log(f"{pg}: posted meanwhile - stop")
+            return
+        urls = [upload(j) for j in jpgs]
+        mid, link = publish(token, urls, cap)
+        log(f"{pg}: POSTED {link}")
+        state_path(pg).write_text(json.dumps({"date": day.isoformat(), "media_id": mid, "permalink": link,
+                                              "posted_at": datetime.now(IST).isoformat()}, ensure_ascii=False), encoding="utf-8")
+        try:      # same carousel to the page's Facebook page when it is set up (never touches the Instagram post)
+            sys.path.insert(0, str(ROOT / "poster"))
+            import facebook
+            facebook.share(pg, f"goldrate-{day.isoformat()}", "photos", urls, cap, p["tag"], always=True, story=False)
+        except Exception as e:
+            log("Facebook step skipped:", str(e)[:150])
+    except Exception as e:
+        log(f"{pg}: NOT POSTED - {str(e)[:300]}")
+
+
+def post_reel(pg, p, day, r, out, token):
+    """owner 17 Nov (ours): the rate reel. Never stops the carousel: any failure is logged and the carousel goes on."""
+    try:
+        made = gold_reel.make(p, r, out / "reel", log)
+        cap = reel_caption(p, day, r)
+        (out / "reel" / "caption.txt").write_text(cap, encoding="utf-8")
+        if DRY:
+            log(f"DRY RUN: {pg} reel {made['mp4']} - not posted")
+            return
+        if already_posted(pg, day, token, "reel"):
+            log(f"{pg}: reel posted meanwhile - stop")
+            return
+        video = upload(made["mp4"], "video")
+        try:
+            cover = upload(made["cover"])
+        except Exception as e:
+            log("reel cover not uploaded (Instagram's own cover):", str(e)[:120])
+            cover = ""
+        mid, link = publish_reel(token, video, cap, cover)
+        log(f"{pg}: REEL POSTED {link}")
+        state_path(pg, "reel").write_text(json.dumps({"date": day.isoformat(), "media_id": mid, "permalink": link,
+                                                      "posted_at": datetime.now(IST).isoformat()}, ensure_ascii=False), encoding="utf-8")
+        try:      # same reel to the page's Facebook page when it is set up
+            sys.path.insert(0, str(ROOT / "poster"))
+            import facebook
+            facebook.share(pg, f"goldrate-reel-{day.isoformat()}", "reel", [video], cap, p["tag"], always=True, story=False)
+        except Exception as e:
+            log("Facebook reel step skipped:", str(e)[:150])
+    except Exception as e:
+        log(f"{pg}: REEL NOT POSTED - {str(e)[:300]}")
 
 
 if __name__ == "__main__":

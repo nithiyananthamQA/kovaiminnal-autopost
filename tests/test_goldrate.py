@@ -81,3 +81,50 @@ class MinnalDesign(unittest.TestCase):
         self.assertIn("@kovai_minnal", gold)
         cap = G.caption(p, G.date.fromisoformat("2026-11-17"), r)
         self.assertIn("1 சவரன் (8 கிராம்): ₹99,760", cap)
+
+
+class OwnCity(unittest.TestCase):
+    """owner 17 Nov: "keep chennai and kovai separate" - Kovai reads the Coimbatore rate pages and says Kovai, never Chennai"""
+    def test_kovai_reads_coimbatore_pages(self):
+        g, s = S.pages_for(G.PAGES["coimbatore"]["city"])
+        self.assertEqual(len(g), 4)
+        self.assertEqual(len(s), 4)
+        self.assertTrue(all("coimbatore" in u and "chennai" not in u for _, u in g + s))
+        self.assertEqual(S.pages_for()[0], S.GOLD_PAGES)      # the reference's pages = Chennai
+
+    def test_caption_names_the_page_city(self):
+        p = dict(G.PAGES["coimbatore"], logo="x.png")
+        r = {"g22": 12470, "g22_prev": 12470, "g24": 13604, "g24_prev": 13604}
+        cap = G.caption(p, date(2026, 11, 17), r)
+        self.assertIn("கோவை விலை நிலவரம்", cap)
+        self.assertNotIn("சென்னை", cap)
+        self.assertIn("சென்னை சந்தை விலை", G.caption(dict(G.PAGES["namakkal"]), date(2026, 11, 17), r))      # reference pages as before
+
+
+class RateReel(unittest.TestCase):
+    """owner 17 Nov (ours): the rate also as a reel with our music + sound effects; carousel and reel are tracked apart"""
+    def test_reel_caption_never_counts_as_the_carousel(self):
+        p = dict(G.PAGES["coimbatore"], logo="x.png")
+        r = {"g22": 12470, "g22_prev": 12695, "g24": 13604, "g24_prev": 13849}
+        day = date(2026, 11, 17)
+        post_mark = f"இன்றைய தங்கம், வெள்ளி விலை | {G.date_ta(day)}"
+        self.assertIn(post_mark, G.caption(p, day, r))
+        self.assertNotIn(post_mark, G.reel_caption(p, day, r))
+        self.assertTrue(G.reel_caption(p, day, r).startswith(G.REEL_HEAD))
+        self.assertNotEqual(G.state_path("coimbatore"), G.state_path("coimbatore", "reel"))
+        self.assertTrue(G.PAGES["coimbatore"].get("reel"))
+        self.assertFalse(G.PAGES["namakkal"].get("reel"))      # the reference's pages: carousel only, as he does
+
+    def test_sound_effects_land_on_their_cues(self):
+        import numpy as np
+        import gold_reel as R
+        fx = R.effects([{"t": 1.0, "kind": "tick"}, {"t": 2.5, "kind": "riser"}, {"t": 0.5, "kind": "nope"}], 3.0)
+        self.assertEqual(len(fx), 3 * R.SR)
+        sec = lambda a, b: np.abs(fx[int(a * R.SR):int(b * R.SR)]).max()      # noqa: E731
+        self.assertLess(sec(0, 0.99), 1e-6)            # an unknown kind makes no sound
+        self.assertGreater(sec(1.0, 1.06), 0.3)        # the tick at 1.0 s
+        self.assertGreater(sec(2.2, 2.5), 0.2)         # the riser builds up BEFORE its cue ...
+        self.assertLess(sec(2.5, 3.0), 1e-6)           # ... and ends on it
+        for k, f in R.SFX.items():
+            x = f()
+            self.assertTrue(0 < len(x) and np.abs(x).max() <= 1.0001, k)

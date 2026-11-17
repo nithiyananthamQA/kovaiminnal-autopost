@@ -19,6 +19,7 @@ plus ab06a9d (16 Nov). Next port: `git log abb1ac1..ref/main` for commits after 
 - Gold-rate slides: OUR design (goldrate/minnal_render.py, owner 17 Nov "dont copy his template"): Minnal navy + yellow, the 22K
   sovereign (8 g) as the hero, 22K / 24K per gram, 24K 10 g, sovereign + 3% GST, this week's bars with high / low; silver 1 kg
   hero + 1 / 10 / 100 g. Same rate reading and two-source rule as the reference (gold_daily.py, gold_sources.py).
+  Owner 17 Nov: the gold slide feels gold and the silver slide silver, in our own layout (designed by Fable, not his look).
 
 ## 2. Names (branding)
 
@@ -30,10 +31,30 @@ e-mail tag KOVAIMINNAL. Never "360".
 - Instagram connection: Meta's Unified login (app Minnal Pages, minnal-bot system-user token, graph.facebook.com + account id,
   poster/ig_api.py). Reference: Instagram login (graph.instagram.com, "me"). Same for comments, rasipalan, gold rate, Facebook.
   The token can come from the GitHub secret IG_SYSTEM_TOKEN or the Minnal bridge.
-- Instagram views: our minnal-bot token lacks `instagram_manage_insights`, so poster/insights.py cannot add OUR reels' views.
-  research_free/learned.json is still rebuilt every night from poster/insights/history.json, which holds the reference page's
-  197 measured reels copied on 11 Nov - so our pick uses HIS insight weights as of 11 Nov, frozen. The reference learns from its
-  own new views every night; ours will too as soon as the owner's new token (with that permission) is saved as IG_SYSTEM_TOKEN.
+- Instagram views: our minnal-bot token lacks `instagram_manage_insights`, so poster/insights.py cannot add OUR reels' views
+  until the owner's new token (with that permission) is saved as IG_SYSTEM_TOKEN.
+
+## 3a. Owner's choice: insights = ours first, his live numbers help (owner 17 Nov: "main is ours, in the meantime his one also helps us")
+
+- poster/reference_insights.py (called by poster/insights.py before every pick round and nightly): a news type's weight is OUR
+  page's once we have 5 measured reels of it (learned.TRUST_N), else the reference page's LIVE weight (his public
+  research_free/learned.json, 350 reels on 17 Nov), else learned.PATTERN; best hours / openings / watch time: ours from 12 measured
+  reels, else his. learned.json "topic_source" says whose number each type uses. learned.py itself = the reference's.
+- poster/insights/history.json now holds only OUR reels (his 198 rows frozen on 11 Nov were removed - his numbers come live).
+  Until the new token exists every number is his (live, not frozen any more).
+
+## 3b. Owner's choice: each page's own city rate (owner 17 Nov: "keep chennai and kovai separate")
+
+- The gold rate is read from the same four sites' Coimbatore pages for Kovai (gold_sources.pages_for, page "city"), and the
+  slides / caption say "கோவை விலை நிலவரம்", never Chennai. The reference reads Chennai pages for all its pages (same numbers in Tamil
+  Nadu on 17 Nov). Chennai Minnal reads the Chennai pages.
+
+## 3c. Owner's choice: the rate also as a REEL (owner 17 Nov: "we need to do this also as a reel with our best sound effect")
+
+- goldrate/gold_reel.py: minnal_render.reel_page (1080x1920, inside the reel safe area of reel5.SAFE) -> frames -> H.264 with our
+  music bed (reel/assets/music) and our own synthesized sound effects (hit / whoosh / tick / chime / riser). No voice. Posted after
+  the carousel; carousel and reel are tracked apart (state posted_<page>.json / posted_reel_<page>.json). The reference posts the
+  carousel only. GOLD_REEL=0 switches the reel off.
 - Posting chain (reference f43a08d / eac718e): the next run it starts carries timer=true, so our LIVE file still stops posting.
 - Scheduler: GitHub's own timer rarely starts our jobs, so tools/keeper.py (keeper.yml) starts each workflow at its own cron times.
   The schedules themselves are the reference's.
