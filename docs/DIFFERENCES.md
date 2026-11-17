@@ -14,7 +14,10 @@ plus ab06a9d (16 Nov). Next port: `git log abb1ac1..ref/main` for commits after 
 - Reel design v5 (reel/reel5.py on reel4.py): our layout, top strip, place pin, no footer; our own music bed (tools/make_music.py,
   config `music`). Reference: v4.
 - Voice: ElevenLabs Nila (config `reel_voice`), place-name listen-back check. Reference: edge-tts Valluvar.
-- Reel end card: ours (reference cee3548 "Source: <paper> (<date>)" end card is template - not taken; our top strip shows the source).
+- Reel end card: ours (reference cee3548 "Source: <paper> (<date>)" end card is template - not taken).
+- No source label in the video (owner 17 Nov: "remove the source from the video"): no 📰 paper in the top strip, no Source line
+  on the end card (config `reel_source_label: false`, reel5.source_label_on; true = both back). The caption still ends with
+  "📰 Source: paper (date): link".
 - Pictures: our own generated pictures only, no news-site photos (config `real_photo_enabled: false`, owner 14 Nov, part of the video).
 - Gold-rate slides: OUR design (goldrate/minnal_render.py, owner 17 Nov "dont copy his template"): Minnal navy + yellow, the 22K
   sovereign (8 g) as the hero, 22K / 24K per gram, 24K 10 g, sovereign + 3% GST, this week's bars with high / low; silver 1 kg
