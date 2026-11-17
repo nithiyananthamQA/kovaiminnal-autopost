@@ -9,6 +9,15 @@ import post, learned
 MET = ["reach", "views", "saved", "shares", "total_interactions", "ig_reels_avg_watch_time"]
 HIST = os.path.join(HERE, "insights", "history.json")
 MIN_PER_TOPIC, MIN_POSTS = 3, 12
+# owner 17 Nov (ours): history.json = THIS page's reels only. The reference page's reels copied with the code (before our first reel)
+# are left out - his numbers come live from poster/reference_insights.py. "" = keep every row (a new page starts with an empty file).
+OWN_SINCE = (json.load(open(os.path.join(HERE, "config.json"), encoding="utf-8")).get("insights") or {}).get("own_since", "")
+BACKFILL = 60      # reels per run read by id that are no longer among the latest 50 (only until their numbers are final)
+
+
+def own_rows(hist, since=None):
+    since = OWN_SINCE if since is None else since
+    return {k: v for k, v in hist.items() if not since or (v.get("t") or "") >= since}
 IST = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
 
 
@@ -49,6 +58,7 @@ def main():
         hist = json.load(open(HIST, encoding="utf-8"))
     except Exception:
         hist = {}
+    hist = own_rows(hist)
     for page in ("coimbatore",):
         try:
             tok = post.bridge_get("token", page=page)["token"]
@@ -79,8 +89,23 @@ def main():
                 continue
             row = {"page": page, "t": i["timestamp"], "caption": cap[:400], "topic": learned.topic(cap)}
             row.update(metrics(i["id"], tok))
-            row["final"] = age_h > 72            # numbers settle after ~3 days
+            # owner 17 Nov (ours): final only once the numbers were really read - a reel posted while the token could not read
+            # views is read again later (the reference marks it final after 3 days even with no numbers)
+            row["final"] = age_h > 72 and row.get("reach") is not None
             hist[i["id"]] = row
+        # owner 17 Nov (ours): "already we have posted over 50" - reels no longer among the latest 50 are read by id until final
+        seen = {i["id"] for i in items}
+        late = sorted((k for k, v in hist.items() if v.get("page") == page and not v.get("final") and k not in seen),
+                      key=lambda k: hist[k].get("t") or "")[:BACKFILL]
+        for k in late:
+            got = metrics(k, tok)
+            if all(v is None for v in got.values()):
+                continue
+            hist[k].update(got)
+            age_h = (datetime.datetime.now(datetime.timezone.utc) - datetime.datetime.fromisoformat(hist[k]["t"].replace("+0000", "+00:00"))).total_seconds() / 3600
+            hist[k]["final"] = age_h > 72 and hist[k].get("reach") is not None
+        if late:
+            print(page, f"older reels read again by id: {len(late)}")
     os.makedirs(os.path.dirname(HIST), exist_ok=True)
     json.dump(hist, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 

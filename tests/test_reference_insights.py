@@ -61,9 +61,24 @@ class Fetch(unittest.TestCase):
 
 
 class OurHistoryOnly(unittest.TestCase):
-    def test_his_frozen_rows_are_not_in_our_history(self):
-        h = json.loads((ROOT / "poster" / "insights" / "history.json").read_text(encoding="utf-8"))
-        self.assertTrue(all(v["t"] >= "2026-11-14" for v in h.values()))      # our page's first reel: 14 Nov
+    """history.json may still hold the reference's 198 rows copied with the code: insights.py leaves them out by date"""
+    def _insights_source(self):
+        return (ROOT / "poster" / "insights.py").read_text(encoding="utf-8")
+
+    def test_rows_before_our_first_reel_are_left_out(self):
+        src = self._insights_source()
+        ns = {}
+        exec(src[src.index("def own_rows"):src.index("def metrics")], {"OWN_SINCE": "2026-11-14T00:00:00+0000", "datetime": __import__("datetime")}, ns)
+        hist = {"his": {"t": "2026-11-10T08:00:00+0000"}, "ours": {"t": "2026-11-14T14:11:18+0000"}}
+        self.assertEqual(list(ns["own_rows"](hist)), ["ours"])
+        self.assertEqual(len(ns["own_rows"](hist, "")), 2)      # a page without a start date keeps every row
+        cfg = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))
+        self.assertEqual(cfg["insights"]["own_since"][:10], "2026-11-14")
+
+    def test_a_reel_without_numbers_is_never_final(self):
+        src = self._insights_source()
+        self.assertIn('row["final"] = age_h > 72 and row.get("reach") is not None', src)      # read again once the token can
+        self.assertIn("BACKFILL", src)      # reels past the latest 50 are read by id
 
 
 if __name__ == "__main__":

@@ -40,8 +40,10 @@ e-mail tag KOVAIMINNAL. Never "360".
   page's once we have 5 measured reels of it (learned.TRUST_N), else the reference page's LIVE weight (his public
   research_free/learned.json, 350 reels on 17 Nov), else learned.PATTERN; best hours / openings / watch time: ours from 12 measured
   reels, else his. learned.json "topic_source" says whose number each type uses. learned.py itself = the reference's.
-- poster/insights/history.json now holds only OUR reels (his 198 rows frozen on 11 Nov were removed - his numbers come live).
-  Until the new token exists every number is his (live, not frozen any more).
+- poster/insights.py counts only OUR reels: rows before our first reel (config insights.own_since, 14 Nov - his 198 rows copied
+  on 11 Nov) are left out; his numbers come live. A reel is "final" only once its numbers were really read (the reference marks
+  it final after 3 days even with none), and reels past the latest 50 are read again by id - so the 50+ reels posted before the
+  new token are all measured once it exists. Until then every number is his (live, not frozen any more).
 
 ## 3b. Owner's choice: each page's own city rate (owner 17 Nov: "keep chennai and kovai separate")
 
