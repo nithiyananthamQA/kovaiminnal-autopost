@@ -64,7 +64,8 @@
    "score": 6.88,
    "power_cut": false,
    "listed_at": "2026-11-17T17:02:15.818480+05:30",
-   "picked_at": "2026-11-18T07:21:47.029268+05:30"
+   "picked_at": "2026-11-18T07:21:47.029268+05:30",
+   "refused": "not filed: all free models failed: no usable answer from the models"
   },
   "C0cde384": {
    "id": "C0cde384",
@@ -89,7 +90,8 @@
    "score": 6.0,
    "power_cut": false,
    "listed_at": "2026-11-17T17:02:15.818480+05:30",
-   "picked_at": "2026-11-18T07:21:47.029271+05:30"
+   "picked_at": "2026-11-18T07:21:47.029271+05:30",
+   "refused": "not filed: all free models failed: no usable answer from the models"
   },
   "C05fe9a9": {
    "id": "C05fe9a9",
@@ -102,7 +104,8 @@
    "score": 5.88,
    "power_cut": false,
    "listed_at": "2026-11-17T17:02:15.818480+05:30",
-   "picked_at": "2026-11-18T07:21:47.029275+05:30"
+   "picked_at": "2026-11-18T07:21:47.029275+05:30",
+   "refused": "not filed: all free models failed: no usable answer from the models"
   },
   "Ccb537a8": {
    "id": "Ccb537a8",
@@ -115,7 +118,8 @@
    "score": 5.0,
    "power_cut": false,
    "listed_at": "2026-11-17T17:02:15.818480+05:30",
-   "picked_at": "2026-11-18T07:21:47.029277+05:30"
+   "picked_at": "2026-11-18T07:21:47.029277+05:30",
+   "posted": true
   },
   "C52845a5": {
    "id": "C52845a5",
@@ -224,7 +228,8 @@
    "score": 5.0,
    "power_cut": false,
    "listed_at": "2026-11-17T21:00:58.873619+05:30",
-   "picked_at": "2026-11-18T07:21:47.029273+05:30"
+   "picked_at": "2026-11-18T07:21:47.029273+05:30",
+   "refused": "not filed: all free models failed: no usable answer from the models"
   },
   "Ce2ef90a": {
    "id": "Ce2ef90a",
@@ -1407,7 +1412,13 @@
     "Ccb537a8",
     "Ccfab6dd",
     "Cf7dd8ed"
-   ]
+   ],
+   "refused": {
+    "C05fe9a9": "not filed: all free models failed: no usable answer from the models",
+    "Cf7dd8ed": "not filed: all free models failed: no usable answer from the models",
+    "Ccfab6dd": "not filed: all free models failed: no usable answer from the models",
+    "C51a26af": "not filed: all free models failed: no usable answer from the models"
+   }
   }
  },
  "retry": {}
