@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-18T21:01+05:30",
- "posts_measured": 86,
+ "updated": "2026-11-18T22:12+05:30",
+ "posts_measured": 88,
  "topic_weight": {
-  "accident": 0.27,
-  "civic": 1.1,
+  "accident": 0.15,
+  "civic": 1.5,
   "crime": 0.08,
   "education": -0.5,
-  "politics": -0.38,
-  "poultry_agri": 0.5,
-  "power_cut": 1.06,
-  "sports_culture": 0.46,
+  "politics": -0.27,
+  "poultry_agri": -0.46,
+  "power_cut": 0.92,
+  "sports_culture": 0.34,
   "temple": -0.39,
-  "weather": -0.37
+  "weather": -0.43
  },
  "topic_n": {
   "power_cut": 14,
   "crime": 9,
   "weather": 7,
   "education": 7,
-  "poultry_agri": 6,
-  "civic": 9,
+  "poultry_agri": 7,
+  "civic": 10,
   "politics": 6,
   "accident": 5,
   "temple": 23,
@@ -42,11 +42,11 @@
  "best_topics": [
   "civic",
   "power_cut",
-  "poultry_agri"
+  "sports_culture"
  ],
  "weak_topics": [
   "education",
-  "temple"
+  "poultry_agri"
  ],
  "topic_source": {
   "accident": "ours",
