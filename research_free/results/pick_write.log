@@ -1,9 +1,17 @@
-writing [N]: தர்பங்கா-போத்தனூர் இடையே சேலம் வழியாக சிறப்பு ரெயில்
+writing [N]: புனித பயணத்துக்கு ரூ.10,000 நிதி உதவி
+writing [N]: இளம் வயதில் சிறுநீரகம் பாதிப்பதில் வலி மாத்திரைகளுக்கு முக்க
+writing [N]: வேகம் எடுக்கிறது கோவை ஈவெரா அறிவுலகம் புத்தக ஊழல்;  4 பேருக்
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-writing [N]: உயர் நீதிமன்ற நீதிபதி ஜி.ஆர்.சுவாமிநாதன்தனிநபர் தாக்குதலில் 
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
 fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
   "error": {
     "code": 429,
@@ -14,30 +22,57 @@ fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
     "code": 429,
     "message": "You exceeded your current quota, please che
 dead for this round: gemini/gemini-3.5-flash
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
 fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, plea
 dead for this round: gemini/gemini-3-flash-preview
-writing [N]: கார்த்திகை பிறந்தது சரண கோஷம் முழங்கியது
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, plea
+dead for this round: gemini/gemini-3-flash-preview
 fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
 dead for this round: groq/openai/gpt-oss-120b
-ok groq/qwen/qwen3.8-27b (3s)
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+dead for this round: groq/openai/gpt-oss-120b
 fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
-fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {"error":{"message":"Failed to validate JSON. Please adjust your prompt. See 'failed_gener
 fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
 fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
 switching away from groq/qwen/qwen3.8-27b for 10 min
-free fact-check unavailable, using Claude: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model
-factcheck unavailable: anthropic 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_i
-attempt 1 groq/qwen/qwen3.8-27b: 1 problems
-  fact-check: could not be run
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
+claude rewrite failed: anthropic 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+switching away from groq/qwen/qwen3.8-27b for 10 min
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
+claude rewrite failed: anthropic 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go
+writing [N]: அண்ணா நூலக அதிகாரிகளுக்கு லஞ்ச ஒழிப்புத்துறை சம்மன்
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+free models unavailable: no free model answered: None
+claude rewrite failed: anthropic 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go
+writing [N]: லாரிகள் மீது உட்கார்ந்திருப்பவர்களின் தலைக்கு மேலே தொங்குகிற
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+free models unavailable: no free model answered: None
+claude rewrite failed: anthropic 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go
+ok gemini/gemini-3.6-flash (44s)
+attempt 1 gemini/gemini-3.6-flash: 8 problems
+  reel_script has English words (bcmbcmw, gov, in, tn) - the voice cannot read them; write them in Tamil letters
+  reel_script must have no English letters (write English words and abbreviations in Tamil script)
+  source/outlet name or link appears: www.
+  numbers not found in the article: 2027
+  caption copies the article word for word (19 words in a row, 36% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 10 ('கோவை: புத்த, சமண, சீக்கிய மதத்தினர் புனித தலங்களுக்கு பயணம் ')
+  known issue english_in_voice: voice script has English words the voice skips (bcmbcmw, gov, in, tn) - rewrite so it does not happen again
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 free models unavailable: no free model answered: None
 claude rewrite failed: anthropic 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
@@ -48,55 +83,38 @@ groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-
 image brief failed, using the writer's image prompt: anthropic 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to acces
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
-switching away from groq/qwen/qwen3.8-27b for 10 min
-free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
 image brief failed, using the writer's image prompt: anthropic 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to acces
-real photo step skipped for 'Karthigai Vratam begins at Sittapudur Ay': real photos switched off
-claude rewrite failed: anthropic 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go
+real photo step skipped for 'Coimbatore: Rs 10,000 financial aid for ': real photos switched off
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+image match: False The image shows an AI-generated building sign with garbled text and contains no people or event depicted related to the 
 image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
 image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 2 for 'Karthigai Vratam begins at Sittapudur Ay'
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261118-0903","first":"RN-99"}
+images made: 2 for 'Coimbatore: Rs 10,000 financial aid for '
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261118-1009","first":"RN-101"}
 posting job started at once
-writing [N]: கே.எம்.சி.எச் கல்லூரியில் முதலாண்டு வகுப்பு துவக்க விழா
-writing [N]: மீனாட்சிபுரம் – வண்டித்தாவளம்–கோவை பஸ் சேவை மீண்டும் துவங்க 
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-free models unavailable: no free model answered: None
-free models unavailable: no free model answered: None
-claude rewrite failed: anthropic 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go
-claude rewrite failed: anthropic 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go
-fail gemini/gemini-3.6-flash: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
-poor answer - skipped for 30 min: gemini/gemini-3.6-flash
-free models unavailable: no free model answered: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read t
-claude rewrite failed: anthropic 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go
 earlier stories still waiting for images: []
 instagram check: 50 recent posts read from the page
 pick round: only the picked links are written (research_free/pick.py)
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-nilgiris/demand-for-resumption-of-meenachilpuram-vandithavalam-coimbatore-bus-service/4378627
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/inauguration-of-1st-year-at-kmch-college/4378427
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/karthikeya-was-born-and-sarana-chanted/4378888
-manual link added: https://www.dinakaran.com/news/high-court-judge-gr-swaminathan-personal-attack-communist-party-india
-manual link added: https://www.dailythanthi.com/news/tamilnadu/special-train-between-darbhanga-podhanur-via-salem
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/danger-of-hanging-on-top-of-the-head-of-those-sitting-on-the-trucks/4378537
+manual link added: https://www.dailythanthi.com/news/tamilnadu/anti-corruption-department-summons-anna-library-officials
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/pain-pills-play-an-important-role-in-kidney-damage-at-a-young-age/4378435
+manual link added: https://www.dinamalar.com/news/tamil-nadu-news/coimbatore-ivera-enlightenment-book-scam-gaining-momentum-4-summoned-by-anti-corruption-bureau/4378438
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/rs-10000-financial-assistance-for-pilgrimage/4378447
 candidate filter: collected=5
 to write: 5 Coimbatore district candidates (max 5 stories)
 round: top 5 of 5 candidates
 candidates waiting: 5 Coimbatore; time left 79 min
-try (N) manual=True: https://www.dailythanthi.com/news/tamilnadu/special-train-be
-try (N) manual=True: https://www.dinakaran.com/news/high-court-judge-gr-swaminath
 try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
-auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})
+try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-news/coimbatore-iv
+try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
+NOT filed (N) இளம் வயதில் சிறுநீரகம் பாதிப்பதில் வலி மாத்திரைகளு: all free models failed: no usable answer from the models
+try (N) manual=True: https://www.dailythanthi.com/news/tamilnadu/anti-corruption-
+NOT filed (N) வேகம் எடுக்கிறது கோவை ஈவெரா அறிவுலகம் புத்தக ஊழல்;: all free models failed: no usable answer from the models
+try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
+NOT filed (N) அண்ணா நூலக அதிகாரிகளுக்கு லஞ்ச ஒழிப்புத்துறை சம்மன: all free models failed: no usable answer from the models
+NOT filed (N) லாரிகள் மீது உட்கார்ந்திருப்பவர்களின் தலைக்கு மேலே: all free models failed: no usable answer from the models
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 3})
 posting job started at once
-try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
-NOT filed (N) உயர் நீதிமன்ற நீதிபதி ஜி.ஆர்.சுவாமிநாதன்தனிநபர் தா: all free models failed: no usable answer from the models
-try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-nilg
-NOT filed (N) கே.எம்.சி.எச் கல்லூரியில் முதலாண்டு வகுப்பு துவக்க: all free models failed: no usable answer from the models
-NOT filed (N) மீனாட்சிபுரம் – வண்டித்தாவளம்–கோவை பஸ் சேவை மீண்டு: all free models failed: no usable answer from the models
-NOT filed (N) தர்பங்கா-போத்தனூர் இடையே சேலம் வழியாக சிறப்பு ரெயி: all free models failed: no usable answer from the models
 candidate loop ended: left 0, tried={'N': 5}, done={'N': 1}, time left 78 min
 filed: 1 Coimbatore district stories (target 5), reels only
 queue: 0 news waiting to be written
