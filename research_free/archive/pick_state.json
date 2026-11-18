@@ -78,7 +78,8 @@
    "score": 6.59,
    "power_cut": false,
    "listed_at": "2026-11-17T17:02:15.818480+05:30",
-   "picked_at": "2026-11-18T09:02:25.058324+05:30"
+   "picked_at": "2026-11-18T09:02:25.058324+05:30",
+   "refused": "not filed: all free models failed: no usable answer from the models"
   },
   "Ccfab6dd": {
    "id": "Ccfab6dd",
@@ -119,7 +120,8 @@
    "score": 4.0,
    "power_cut": false,
    "listed_at": "2026-11-17T17:02:15.818480+05:30",
-   "picked_at": "2026-11-18T09:02:25.058335+05:30"
+   "picked_at": "2026-11-18T09:02:25.058335+05:30",
+   "refused": "not filed: all free models failed: no usable answer from the models"
   },
   "Cc88d2fa": {
    "id": "Cc88d2fa",
@@ -204,7 +206,8 @@
    "score": 5.0,
    "power_cut": false,
    "listed_at": "2026-11-17T21:00:58.873619+05:30",
-   "picked_at": "2026-11-18T09:02:25.058319+05:30"
+   "picked_at": "2026-11-18T09:02:25.058319+05:30",
+   "refused": "not filed: all free models failed: no usable answer from the models"
   },
   "Cf7dd8ed": {
    "id": "Cf7dd8ed",
@@ -231,7 +234,8 @@
    "score": 4.0,
    "power_cut": false,
    "listed_at": "2026-11-17T21:00:58.873619+05:30",
-   "picked_at": "2026-11-18T09:02:25.058328+05:30"
+   "picked_at": "2026-11-18T09:02:25.058328+05:30",
+   "posted": true
   },
   "C6dae494": {
    "id": "C6dae494",
@@ -301,7 +305,8 @@
    "score": 3.0,
    "power_cut": false,
    "listed_at": "2026-11-18T05:01:05.285331+05:30",
-   "picked_at": "2026-11-18T09:02:25.058332+05:30"
+   "picked_at": "2026-11-18T09:02:25.058332+05:30",
+   "refused": "not filed: all free models failed: no usable answer from the models"
   },
   "C163ea90": {
    "id": "C163ea90",
@@ -1405,7 +1410,13 @@
     "C52845a5",
     "Ce2ef90a",
     "Cf3546ff"
-   ]
+   ],
+   "refused": {
+    "C52845a5": "not filed: all free models failed: no usable answer from the models",
+    "Cf3546ff": "not filed: all free models failed: no usable answer from the models",
+    "C0cde384": "not filed: all free models failed: no usable answer from the models",
+    "C52380e1": "not filed: all free models failed: no usable answer from the models"
+   }
   }
  },
  "retry": {}
