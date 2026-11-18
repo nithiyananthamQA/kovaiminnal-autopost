@@ -3,261 +3,492 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/dressed-in-an-evening-to-go-on-a-pilgrimage-to-sabarimala-devotees/4378626",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/new-building-new-address-for-town-panchayat-office/4378484",
-  "manual link added: https://www.hindutamil.in/news/tamilnadu/altercation-at-vehicle-dealership-tvk-functionary-expelled-from-party",
-  "candidate filter: collected=3",
-  "to write: 3 Coimbatore district candidates (max 3 stories)",
-  "round: top 3 of 3 candidates",
-  "candidates waiting: 3 Coimbatore; time left 79 min",
-  "try (N) manual=True: https://www.hindutamil.in/news/tamilnadu/altercation-at-vehi",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/dengue-spreading-products-seized-competition/4379467",
+  "manual link added: https://www.dailythanthi.com/news/tamilnadu/dk-sivakumar-is-spreading-false-propaganda-on-the-cauvery-issue-durai-vaiko-alleges",
+  "manual link added: https://www.dailythanthi.com/news/tamilnadu/criticism-on-vijaya-balaji-is-baseless-minister-sampath-kumar-explains",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/change-in-train-movement-via-coimbatore/4379406",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/sahitya-akademi-sports-meet-begins/4379408",
+  "candidate filter: collected=5",
+  "to write: 5 Coimbatore district candidates (max 5 stories)",
+  "round: top 5 of 5 candidates",
+  "candidates waiting: 5 Coimbatore; time left 79 min",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "try (N) manual=True: https://www.dailythanthi.com/news/tamilnadu/criticism-on-vij",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
-  "candidate loop ended: left 0, tried={'N': 3}, done={'N': 3}, time left 78 min",
-  "filed: 3 Coimbatore district stories (target 3), reels only",
+  "try (N) manual=True: https://www.dailythanthi.com/news/tamilnadu/dk-sivakumar-is-",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 5})",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 7})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 9})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 11})",
+  "candidate loop ended: left 0, tried={'N': 5}, done={'N': 5}, time left 75 min",
+  "filed: 5 Coimbatore district stories (target 5), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":3,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":5,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.6-flash",
+  "ok gemini/gemini-3.6-flash (17s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3.6-flash (30s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemini/gemini-3.6-flash: Expecting ',' delimiter: line 1 column 1141 (char 1140)",
+  "poor answer - skipped for 30 min: gemini/gemini-3.6-flash",
+  "ok gemini/gemini-3.6-flash (37s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok gemini/gemini-3.6-flash (43s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3.5-flash (24s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok gemini/gemini-3.5-flash (36s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "ok gemini/gemini-3.5-flash (31s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "switching away from gemini/gemini-3.5-flash for 10 min",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
+  "ok gemini/gemini-3.5-flash (34s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
+  "ok gemini/gemini-3-flash-preview (12s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
+  "ok groq/qwen/qwen3.8-27b (3s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok gemini/gemini-3-flash-preview (24s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3-flash-preview",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "ok groq/qwen/qwen3.8-27b (4s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok groq/qwen/qwen3.8-27b (0s)",
   "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok groq/qwen/qwen3.8-27b (3s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "அன்னூர் நஞ்சுண்ட விநாயகர், ஐயப்பன் கோயிலில் 180 பேர் மாலை அணிந்தனர்",
-   "english_headline": "180 devotees wear Ayyappa garlands at Annur Nanjunda Vinayagar-Ayyappan temple on first day of Karthigai",
-   "category": "Temples & Events",
-   "location": "Annur, Coimbatore district",
+   "tamil_headline": "கோவையில் 47வது சகோதயா தடகள போட்டிகள் தொடக்கம்: 1,000 மாணவ மாணவியர் பங்கேற்பு",
+   "english_headline": "47th Coimbatore Sahodaya Athletic Meet begins at Nehru Stadium with 1,000 student participants",
+   "category": "Education",
+   "location": "Coimbatore city, Coimbatore district",
    "importance": "Medium",
-   "scope": "local",
+   "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "கோயில் விழா",
-    "loc": "அன்னூர்",
-    "hl1": "அன்னூரில் 180 பேர் ஐயப்ப மாலை அணிந்தனர்",
-    "hl2": "48 நாட்கள் சிறப்பு வழிபாடு",
+    "cat": "விளையாட்டு",
+    "loc": "கோவை",
+    "hl1": "கோவையில் சகோதயா தடகள போட்டிகள்",
+    "hl2": "1,000 மாணவர்கள் பங்கேற்பு",
     "slides": [
      {
-      "title": "எங்கே, எப்போது?",
+      "title": "47வது போட்டிகள்",
       "lines": [
-       "அன்னூர், தென்னம்பாளையம் ரோடு நஞ்சுண்ட விநாயகர், ஐயப்பன்",
-       "கார்த்திகை முதல் நாளான <b>நவ. 17</b> அன்று",
-       "காலை <b>5 மணிக்கு</b> அபிஷேக பூஜை தொடங்கியது"
+       "கோவை <b>நேரு ஸ்டேடியத்தில்</b> துவங்கியது",
+       "நேற்று தொடங்கியது, <b>நாளை</b> நிறைவு",
+       "47வது கோயம்புத்தூர் சகோதயா போட்டிகள்"
       ]
      },
      {
-      "title": "சிறப்பு பூஜை",
+      "title": "யார் பங்கேற்பு?",
       "lines": [
-       "பால், தயிர், பன்னீர், சந்தனம் உட்பட <b>16 வகை</b>",
-       "காலை <b>6 மணிக்கு</b> அலங்கார பூஜை",
-       "நஞ்சுண்ட விநாயகருக்கு சிறப்பு பூஜை நடந்தது"
+       "மாவட்டத்தின் பல்வேறு பகுதி மாணவர்கள்",
+       "மொத்தம் <b>1,000</b> மாணவ மாணவியர்",
+       "ஆசிய பதக்க வீராங்கனை பரணிகா துவக்கினார்"
       ]
      },
      {
-      "title": "மாலை அணிவு",
+      "title": "வயதுப் பிரிவுகள்",
       "lines": [
-       "ஒரே நாளில் <b>180 பேர்</b> ஐயப்ப மாலை அணிந்து விரதத்தைத் தொடங்கினர்",
-       "வரும் <b>48 நாட்களுக்கு</b> காலை, மாலையில் சிறப்பு வழிபாடு"
+       "<b>12, 14, 16, 19</b> வயதுப் பிரிவுகள்",
+       "4 பிரிவுகளில் தடகள போட்டிகள்"
+      ]
+     },
+     {
+      "title": "என்ன போட்டிகள்?",
+      "lines": [
+       "100, 200, 400 மீட்டர் ஓட்டப் பந்தயங்கள்",
+       "நீளம் தாண்டுதல், உயரம் தாண்டுதல்",
+       "மொத்தம் <b>40 வகையான</b> போட்டிகள்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "அன்னூரில் ஒரே நாளில் 180 பேர் ஐயப்ப மாலை அணிந்து விரதத்தைத் தொடங்கியுள்ளனர். நவம்பர் 17ஆம் தேதி, கார்த்திகை மாதத்தின் முதல் நாளான இன்று, அன்னூர் தென்னம்பாளையம் ரோடு நஞ்சுண்ட விநாயகர், ஐயப்பன் கோயிலில் சிறப்பு பூஜைகள் நடைபெற்றன. காலை 5 மணிக்கு அபிஷேக பூஜை தொடங்கியது. பால், தயிர், பன்னீர், சந்தனம் உள்ளிட்ட 16 வகை திரவியங்களால் அபிஷேகம் செய்யப்பட்டது. இதையடுத்து காலை 6 மணிக்கு அலங்கார பூஜை நடைபெற்றது. மேலும் நஞ்சுண்ட விநாயகருக்குச் சிறப்பு பூஜையும் நடந்தது. பின்னர் ஐயப்ப பக்தர்கள் மாலை அணியும் நிகழ்ச்சி நடைபெற்றது. வரும் 48 நாட்களுக்கு காலை, மாலை வேளைகளில் சிறப்பு வழிபாடு நடக்கும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🙏 அன்னூரில் ஒரே நாளில் 180 பேர் ஐயப்ப மாலை அணிந்தனர்\n\n📰 முழு விவரம்:\nஅன்னூர், தென்னம்பாளையம் ரோடு நஞ்சுண்ட விநாயகர், ஐயப்பன் கோயிலில் கார்த்திகை முதல் நாளான நவ. 17 அன்று காலை 5 மணிக்கு அபிஷேக பூஜை நடைபெற்றது. பால், தயிர், பன்னீர், சந்தனம் உள்ளிட்ட 16 வகை திரவியங்களால் அபிஷேகம் செய்யப்பட்டது. காலை 6 மணிக்கு அலங்கார பூஜை நடந்தது. நஞ்சுண்ட விநாயகருக்கு சிறப்பு பூஜையும், ஐயப்ப பக்தர்கள் மாலை அணியும் வைபவமும் நடந்தது. ஒரே நாளில் 180 பேர் மாலை அணிந்து விரதத்தைத் தொடங்கினர்.\n🕘 நேரம்: காலை 5 மணி முதல் அபிஷேகம், காலை 6 மணிக்கு அலங்கார பூஜை\n📍 இடம்: அன்னூர், தென்னம்பாளையம் ரோடு நஞ்சுண்ட விநாயகர், ஐயப்பன் கோயில்\n🗓️ நாள்: நவ. 17 (கார்த்திகை முதல் நாள்)\nℹ️ மக்கள் கவனத்திற்கு: வரும் 48 நாட்களுக்கு காலை, மாலையில் சிறப்பு வழிபாடு நடைபெறும்.\n\nAnnur Ayyappa garland 180 devotees | Coimbatore news\n📍 அன்னூர், கோவை மாவட்டம் | 17 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Annur #CoimbatoreNews #கோவை",
-   "prompts": "Around 180 Ayyappa devotees in black and dark clothes stand in rows inside the Nanjunda Vinayagar-Ayyappan temple on Thennampalayam Road in Annur, Coimbatore district, as a priest places beaded garlands around their necks at the start of the Karthigai vow. The temple is a modest hall with a tiled floor, a shrine with a deity idol hung with flower garlands, and brass lamps glowing at the front. Men in veshti and shirts sit cross-legged in neat lines, some with folded hands, others being garlanded by the priest, seen from behind and from a distance so no faces are visible. Puja plates with coconut, banana and camphor sit on the floor, and the air looks hazy with incense smoke. Early morning light enters through open doorways. Camera at eye level, 35 mm, wide enough to show the whole congregation and the shrine. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a row of freshly made Ayyappa garlands of dark tulsi and rudraksha beads, hung on a brass plate beside a lit oil lamp and a heap of fresh marigold and jasmine flowers, placed on a polished temple floor. Behind the plate, out of focus, a few devotees in black dhotis sit in the early morning light of the temple hall. A small brass camphor holder and a banana leaf with rice offering sit at the edge of the frame. Soft warm light from the lamp, shallow depth of field, camera slightly above the plate, 50 mm, close enough to show the beads and flowers clearly. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/dressed-in-an-evening-to-go-on-a-pilgrimage-to-sabarimala-devotees/4378626",
-   "published": "2026-11-17T17:36:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b) - fact-check: no problems found",
-   "note": "free-model draft anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b, 11 attempt(s), 0 validator problem(s)",
+   "reel_script": "கோவை நேரு ஸ்டேடியத்தில் 47வது சகோதயா தடகள போட்டிகள் நேற்று துவங்கியது. இந்த 47வது கோயம்புத்தூர் சகோதயா தடகளப் போட்டிகள் நாளை நிறைவடைகின்றன. கோவை மாவட்டத்தின் பல்வேறு பகுதிகளைச் சேர்ந்த 1,000 மாணவ மாணவியர் இதில் பங்கேற்றுள்ளனர். ஆசிய விளையாட்டுப் போட்டியில் போல் வால்ட் பிரிவில் பதக்கம் வென்ற பரணிகா போட்டிகளை துவக்கிவைத்தார். இந்தப் போட்டிகள் 12 வயது, 14 வயது, 16 வயது மற்றும் 19 வயதுக்குட்பட்டோர் பிரிவுகளில் நடைபெறுகின்றன. 100 மீட்டர் ஓட்டம், 200 மீட்டர் ஓட்டம், 400 மீட்டர் ஓட்டம் என ஓட்டப் பந்தயங்கள் நடைபெறுகின்றன. மேலும் நீளம் தாண்டுதல், உயரம் தாண்டுதல் உட்பட 40 வகையான போட்டிகள் இதில் இடம்பெறுகின்றன. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🏆 கோவையில் 47வது சகோதயா தடகள போட்டிகள்: 1,000 மாணவ மாணவியர் பங்கேற்பு!\n\n📰 முழு விவரம்:\nகோவையில் உள்ள நேரு ஸ்டேடியத்தில் 47வது கோயம்புத்தூர் சகோதயா தடகள போட்டிகள் நேற்று துவங்கியது. இந்த போட்டிகள் நாளை நிறைவடைகின்றன. இதில் கோவை மாவட்டத்தின் பல்வேறு பகுதிகளை சேர்ந்த 1,000 மாணவ, மாணவியர் பங்கேற்றுள்ளனர். ஆசிய விளையாட்டு 'போல் வால்ட்' போட்டியில் பதக்கம் வென்ற பரணிகா போட்டிகளை துவக்கிவைத்தார். இந்த தடகள போட்டிகள் 12, 14, 16 மற்றும் 19 வயதுக்குட்பட்டோர் பிரிவுகளில் நடத்தப்படுகின்றன. இதில் 100 மீட்டர், 200 மீட்டர், 400 மீட்டர் ஓட்டம், நீளம் தாண்டுதல், உயரம் தாண்டுதல் உட்பட 40 வகையான போட்டிகள் இடம்பெறுகின்றன.\n\n📍 இடம்: நேரு ஸ்டேடியம், கோவை\n🗓️ நாள்: நேற்று தொடங்கியது, நாளை நிறைவடைகிறது\n🏃 போட்டிகள்: 100, 200, 400 மீட்டர் ஓட்டம், நீளம் தாண்டுதல், உயரம் தாண்டுதல் உள்ளிட்ட 40 போட்டிகள்\n\nவிளையாட்டு ஆர்வலர்களுக்கு Share செய்யுங்கள் 👍\n\n47th Coimbatore Sahodaya athletic meet begins at Nehru Stadium | Coimbatore news\n📍 கோவை, கோவை மாவட்டம் | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #NehruStadium #Sports #கோவை",
+   "prompts": "A group of school athletes in white sports kits and coloured track tops takes their start on the red running track at Nehru Stadium in Coimbatore city, the 100 metre sprint of the 47th Sahodaya athletics meet just beginning. Seen from the stands at a slightly high angle, the wide oval track curves around a green football field inside the stadium, with rows of concrete steps and a few spectators sitting far away at the edges. Several lanes are marked in white, with students in different age groups - younger children in the front lanes, older teenagers behind - standing in starting blocks and crouching, while a few teachers in plain shirts and trousers stand near the track line. Behind them the stadium's raised stands and the Coimbatore sky in daylight complete the scene. Shot at eye level or slightly high, 35 mm lens, wide enough to show the full track and stadium. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the high jump pit at Nehru Stadium, with a school student in a white sports vest and shorts in mid-air over the bar, one foot kicked up, while the landing mat is in the foreground. Behind the bar, the blurred figures of other students and a teacher in a shirt wait in the field-event area, and the red track and stands of the stadium recede into the background. The bar and standards are plain and unlabelled, with no readable markings. Daylight, shot from the side at waist height with a 35 mm lens to show the jump, the mat and the stadium behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/sahitya-akademi-sports-meet-begins/4379408",
+   "published": "2026-11-18T15:41:01+05:30",
+   "verification": "DRAFT (gemini/gemini-3.5-flash) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 12,14,16,19 ('12,14,16,19 வயதுக்குட்பட்டோர் பிரிவுகளில் 100, 200, 400 மீட்')",
+   "note": "free-model draft gemini/gemini-3.5-flash, 4 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794987332/kovaiminnal/cjr5pwskerfqz30yiftb.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794987337/kovaiminnal/mmlsapazggtqhjx37kq7.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795001858/kovaiminnal/aarzgas1guifgwnov6rf.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795001862/kovaiminnal/iy4jymgcdtal5kixfz0v.jpg"
    ]
   },
   {
-   "tamil_headline": "வாகன விற்பனையகத்தில் தகராறு: தவெக நிர்வாகி கட்சியிலிருந்து நீக்கம்",
-   "english_headline": "Dispute at two-wheeler showroom near Vedapatti: TVK town secretary Prakash removed from party",
-   "category": "Crime & Safety",
-   "location": "Kalikanayakkan Palayam near Vedapatti, Coimbatore district",
+   "tamil_headline": "கோவை வழி ரயில் இயக்கத்தில் மாற்றம்: நவம்பர் 20, 22 தேதிகளில் பாலக்காடு ரயில் கரூரில் நிறுத்தம்",
+   "english_headline": "Coimbatore route train change: Palakkad Town train from Trichy stops at Karur on 20 and 22 Nov due to Erode railway maintenance",
+   "category": "Roads & Transport",
+   "location": "Karur, Erode area railway route - Karur, Karur district",
    "importance": "Medium",
-   "scope": "local",
+   "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "தகராறு",
-    "loc": "வேடபட்டி, கோவை",
-    "hl1": "வேடபட்டியில் விற்பனையகத்தில் தகராறு",
-    "hl2": "தவெக நிர்வாகி நீக்கம்",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "கலிக்கநாயக்கன் பாளையத்தில் இருசக்கர வாகன விற்பனையகத்தில்",
-       "கடந்த <b>15ம் தேதி</b> இரவு வேடபட்டி நகர தவெக செயலாளர்",
-       "இதுகுறித்த வீடியோ சமூக வலைதளங்களில் வைரல்"
-      ]
-     },
-     {
-      "title": "குற்றச்சாட்டு",
-      "lines": [
-       "இளைஞரணியில் பதவி வாங்கித் தருவதாக <b>ரூ.1 லட்சம்</b>",
-       "வாகனப் பதிவு பிரச்சினையில் ரகளை செய்ததாகவும் புகார்",
-       "பிரகாஷ் தரப்பிலும் வாகனப் பதிவை தாமதப்படுத்தி மிரட்டியதாக"
-      ]
-     },
-     {
-      "title": "கட்சி நடவடிக்கை",
-      "lines": [
-       "கோவை புறநகர் வடக்கு மாவட்ட தவெக செயலாளர் வி.ராஜ்குமார்",
-       "கட்சி கொள்கைக்கு முரணாக செயல்பட்டதால் பிரகாஷ் நீக்கம்",
-       "கட்சிப் பொறுப்பு, அடிப்படை உறுப்பினர் பதவியிலிருந்து"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "வேடபட்டி அருகே வாகன விற்பனையகத்தில் நடந்த தகராறால் தவெக நிர்வாகி கட்சியிலிருந்து நீக்கப்பட்டார். கடந்த 15ஆம் தேதி இரவு கலிக்கநாயக்கன் பாளையத்தில் உள்ள இருசக்கர வாகன விற்பனையகத்தில் தகராறு நடந்தது. வேடபட்டி நகர தவெக செயலாளர் பிரகாஷுக்கும், விற்பனையகத்தின் உரிமையாளர் மகாராஜனின் மனைவி திவ்யாவுக்கும் இடையே வாக்குவாதம் ஏற்பட்டது. இதன் வீடியோ சமூக வலைதளங்களில் வைரலானது. இளைஞரணியில் பதவி வாங்கித் தருவதாக கூறி பிரகாஷ் ரூ.1 லட்சம் பெற்றதாக திவ்யா குற்றம்சாட்டியுள்ளார். வாகனப் பதிவு பிரச்சினையில் பிரகாஷ் விற்பனையகத்தில் ரகளை செய்ததாகவும் திவ்யா கூறியுள்ளார். வாகனப் பதிவை தாமதப்படுத்தி மிரட்டியதாக பிரகாஷ் தரப்பும் புகார் அளித்துள்ளது. கோவை புறநகர் வடக்கு மாவட்ட தவெக செயலாளர் வி.ராஜ்குமார் வெளியிட்ட அறிக்கையில், கட்சி கொள்கைக்கு முரணாக செயல்பட்டதால் பிரகாஷ் கட்சிப் பொறுப்பு மற்றும் அடிப்படை உறுப்பினர் பதவியிலிருந்து நிரந்தரமாக நீக்கப்படுவதாக அறிவித்துள்ளார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 வேடபட்டியில் விற்பனையகத் தகராறு: தவெக நிர்வாகி கட்சியிலிருந்து நீக்கம்\n\n📰 முழு விவரம்:\nகோவை வேடபட்டி அருகே கலிக்கநாயக்கன் பாளையத்தில் மகாராஜனுக்குச் சொந்தமான இருசக்கர வாகன விற்பனையகம் உள்ளது. கடந்த 15ஆம் தேதி இரவு வேடபட்டி நகர தவெக செயலாளர் பிரகாஷுக்கும், மகாராஜனின் மனைவி திவ்யாவுக்கும் இடையே வாக்குவாதம் ஏற்பட்டது. இதன் வீடியோ சமூக வலைதளங்களில் வைரலானது.\nஇளைஞரணியில் பதவி வாங்கித் தருவதாகக் கூறி பிரகாஷ் ரூ.1 லட்சம் பெற்றதாக திவ்யா குற்றம்சாட்டியுள்ளார். வாகனப் பதிவு பிரச்சினையில் விற்பனையகத்துக்கு வந்து ரகளை செய்ததாகவும் கூறியுள்ளார்.\nவாகனப் பதிவைத் தாமதப்படுத்தி மிரட்டியதாக பிரகாஷ் தரப்பும் புகார் அளித்துள்ளது.\nகோவை புறநகர் வடக்கு மாவட்ட தவெக செயலாளர் வி.ராஜ்குமார் வெளியிட்ட அறிக்கையில், கட்சி கொள்கை மற்றும் கட்டுப்பாட்டுக்கு முரணாக செயல்பட்டதால் பிரகாஷ் கட்சிப் பொறுப்பு மற்றும் அடிப்படை உறுப்பினர் பொறுப்பிலிருந்து நிரந்தரமாக நீக்கப்படுவதாக அறிவித்துள்ளார்.\n\nVedapatti showroom dispute, TVK leader removed | Coimbatore news\n📍 கலிக்கநாயக்கன் பாளையம், வேடபட்டி, கோவை மாவட்டம் | 15 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Vedapatti",
-   "prompts": "A tense night scene outside a two-wheeler showroom in Kalikanayakkan Palayam near Vedapatti on the outskirts of Coimbatore, where a showroom owner's wife and a local political town secretary stand face to face in a heated argument, seen from behind and slightly blurred. Several new scooters and motorcycles are lined up at the showroom front under bright white electric tube lights, with a glass shop front and a plain village-edge road behind them. Two or three onlookers in shirts and trousers stand at a distance, one holding up a mobile phone as if recording, and a few parked two-wheelers sit along the kerb. The woman wears a cotton saree and the man wears a white shirt and dark trousers, both shown from the back at eye level. The time is night, lit only by the showroom lights and a single street lamp, with a dark sky above and the faint outline of distant trees. Shot at eye level on a 35 mm lens, wide enough to show the showroom, the vehicles and the road, with no readable signboards or text. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up detail of a folded, printed party statement sheet resting on the bonnet of a new two-wheeler inside a showroom, lit by harsh white tube lights, with the blurred edges of several scooters and a glass display counter behind it. A mobile phone lies beside the paper, its screen dark, suggesting the video that went viral. The paper has only plain printed lines with no legible words visible, and no faces or people are in frame. The scene conveys a dispute over a vehicle and an official notice, shot slightly from above at a 35 mm lens with shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.hindutamil.in/news/tamilnadu/altercation-at-vehicle-dealership-tvk-functionary-expelled-from-party",
-   "published": "2026-11-18T02:00:58Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 3 ('இந்நிலையில், கோவை புறநகர் வடக்கு மாவட்ட தவெக செயலாளர் வி.ராஜ')",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794987357/kovaiminnal/z4on4065iskou12xsklt.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794987367/kovaiminnal/zg8evihpjjclbyugqz6o.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "அன்னூரில் புதிய பேரூராட்சி கட்டடம் பயன்பாட்டுக்கு வந்தது",
-   "english_headline": "New Annur town panchayat office building now fully in use near Annur bus stand",
-   "category": "Government & Services",
-   "location": "Annur town, Coimbatore district",
-   "importance": "Medium",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "அரசு சேவை",
-    "loc": "அன்னூர்",
-    "hl1": "அன்னூர் பேரூராட்சி புதிய கட்டடம் தயார்",
-    "hl2": "பஸ் ஸ்டாண்ட் அருகே",
+    "cat": "ரயில் மாற்றம்",
+    "loc": "கரூர்",
+    "hl1": "கரூரில் ரயில் நிறுத்தம்: 20, 22",
+    "hl2": "திருச்சி - பாலக்காடு ரயில்",
     "slides": [
      {
       "title": "என்ன மாற்றம்?",
       "lines": [
-       "அன்னூர் பேரூராட்சி அலுவலகம் புதிய கட்டடத்துக்கு மாறியது",
-       "பழைய இடம் குமாரபாளையம் ரோட்டில் இருந்தது",
-       "புதிய கட்டடம் பஸ் ஸ்டாண்ட் அருகே உள்ளது"
+       "ஈரோடு அருகே ரயில்வே பராமரிப்புப் பணிகள் நடைபெறுகின்றன",
+       "இதனால் கோவை வழி ரயில் இயக்கத்தில் மாற்றம்",
+       "சேலம் ரயில்வே இந்தத் தகவலைத் தெரிவித்துள்ளது"
       ]
      },
      {
-      "title": "ஏன் முக்கியம்?",
+      "title": "எந்த ரயில்?",
       "lines": [
-       "பஸ் ஸ்டாண்டிலிருந்து பழைய அலுவலகம் <b>2 கி.மீ.</b> தூரம்",
-       "பொதுமக்கள் நீண்ட நாட்களாக சிரமப்பட்டனர்",
-       "கட்டடம் <b>ரூ.1.10 கோடி</b> மதிப்பில் கட்டப்பட்டது"
+       "திருச்சியில் இருந்து மதியம் <b>1 மணிக்கு</b> புறப்படும் ரயில்",
+       "ரயில் எண் <b>16843</b>, பாலக்காடு டவுன் செல்லும் ரயில்",
+       "இந்த ரயில் <b>கரூர்</b> ரயில் நிலையத்தில் நிறுத்தப்படும்"
       ]
      },
      {
-      "title": "எப்போது திறப்பு?",
+      "title": "எந்த நாட்கள்?",
       "lines": [
-       "<b>அக். 16</b> அன்று முதல்வர் விஜய் காணொலி மூலம் திறந்து வைத்தார்",
-       "கணினிகள், பொருட்கள் பின்னர் இடமாற்றம் செய்யப்பட்டன",
-       "நேற்று முன்தினம் முழுமையாக பயன்பாட்டுக்கு வந்தது"
-      ]
-     },
-     {
-      "title": "என்ன செய்யலாம்?",
-      "lines": [
-       "வரி செலுத்த புதிய கட்டடத்துக்கு செல்லலாம்",
-       "அங்கீகாரம், நலத்திட்ட விண்ணப்பங்களும் இங்கேயே",
-       "தலைவர் பரமேஸ்வரன் இதைத் தெரிவித்தார்"
+       "<b>நவம்பர் 20, 22</b> ஆகிய தேதிகளில் மட்டும் இந்த மாற்றம்",
+       "பணிகள் முடிந்ததும் சிறப்பு ரயில் இயக்கப்படும்",
+       "முன்பதிவில்லா சிறப்பு ரயில், கரூரில் இருந்து பாலக்காடு"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "அன்னூர் பேரூராட்சி அலுவலகம் புதிய கட்டடத்துக்கு மாறியுள்ளது. பழைய அலுவலகம் ஐந்து ஆண்டுகளுக்கு மேலாக குமாரபாளையம் ரோட்டில் செயல்பட்டு வந்தது. அன்னூர் பஸ் ஸ்டாண்டிலிருந்து அது இரண்டு கிலோமீட்டர் தூரத்தில் இருந்ததால் பொதுமக்கள் சிரமப்பட்டனர். இந்நிலையில் அன்னூர் பஸ் ஸ்டாண்ட் அருகில் ஒரு கோடியே 10 லட்சம் ரூபாய் மதிப்பீட்டில் புதிய கட்டடம் கட்டி முடிக்கப்பட்டது. அக்டோபர் 16ஆம் தேதி முதல்வர் விஜய் காணொலி வாயிலாக இந்தக் கட்டடத்தைத் திறந்து வைத்தார். அதன் பிறகும் கணினிகள், பொருட்கள் இடமாற்றம் செய்யப்படாததால் அலுவலகம் முழுமையாகப் பயன்பாட்டுக்கு வரவில்லை. நேற்று முன்தினம் கணினிகள், மேசை, நாற்காலிகள் உள்ளிட்ட அனைத்தும் கொண்டுவரப்பட்டு பொருத்தப்பட்டன. இதையடுத்து அலுவலகம் முழுமையாகச் செயல்படத் தொடங்கியுள்ளது. வரி செலுத்துதல், அங்கீகாரம் பெறுதல், நலத்திட்டங்களுக்கு விண்ணப்பித்தல் உள்ளிட்ட அனைத்துப் பணிகளுக்கும் பொதுமக்கள் புதிய கட்டடத்துக்குச் செல்லலாம் என பேரூராட்சித் தலைவர் பரமேஸ்வரன் தெரிவித்தார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🏢 அன்னூர் பேரூராட்சி அலுவலகம் இனி பஸ் ஸ்டாண்ட் அருகே\n\n📰 முழு விவரம்:\nஅன்னூர் பேரூராட்சி அலுவலகம் ஐந்து ஆண்டுகளுக்கு மேலாக குமாரபாளையம் ரோட்டில் இயங்கியது. பஸ் ஸ்டாண்டிலிருந்து 2 கி.மீ. தூரம் என்பதால் பொதுமக்கள் சிரமப்பட்டு வந்தனர்.\nஇதையடுத்து அன்னூர் பஸ் ஸ்டாண்ட் அருகே ரூ.1.10 கோடி மதிப்பில் புதிய கட்டடம் கட்டி முடிக்கப்பட்டது. அக். 16 அன்று முதல்வர் விஜய் காணொலி வாயிலாக திறந்து வைத்தார்.\nகணினிகள், பொருட்கள் இடமாற்றம் செய்யப்படாததால் அலுவலகம் முழுமையாகப் பயன்படவில்லை. நேற்று முன்தினம் அனைத்தும் கொண்டுவரப்பட்டு பொருத்தப்பட்டு, அலுவலகம் முழுமையாகப் பயன்பாட்டுக்கு வந்தது.\n📍 இடம்: அன்னூர் பஸ் ஸ்டாண்ட் அருகே\nℹ️ மக்கள் கவனத்திற்கு: வரி செலுத்துதல், அங்கீகாரம், நலத்திட்ட விண்ணப்பங்கள் அனைத்தும் புதிய கட்டடத்தில் செய்யலாம் - பேரூராட்சித் தலைவர் பரமேஸ்வரன்.\n\nAnnur town panchayat office shifted near bus stand | Coimbatore news\n📍 அன்னூர், கோவை மாவட்டம் | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Annur #CoimbatoreNews #கோவை",
-   "prompts": "Inside the newly furnished Annur town panchayat office, several office staff sit at desks with computers and chairs, while a few citizens stand at the counter waiting to pay tax and submit applications. Seen from behind a counter at eye level, the room is bright with tube lights and newly polished wooden desks, with fresh computers still set up on the tables. Behind the counter, rows of new chairs and filing cabinets line the walls of the hall. Through a large window, the roofs and a bus stand with a few buses are visible outside, indicating the building is close to the town's bus stand. Daylight streams through the window, and the camera is at eye level, shot on a 35 mm lens wide enough to show the whole office. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a freshly placed computer monitor and keyboard on a new wooden desk in the Annur town panchayat office, with a stack of tax and application forms and a pen set neatly beside it. The screen is switched off, the chair is pushed in, and a few cardboard packing remnants lie at the edge of the desk, showing the furniture was only recently moved in. Behind the desk, a plain office wall and a window let in soft daylight. The shot is taken at slightly high eye level with a 35 mm lens, focusing on the desk and computer so the newness of the setup is clear, with no readable text or labels visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/new-building-new-address-for-town-panchayat-office/4378484",
-   "published": "2026-11-17T16:00:15+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 0 validator problem(s)",
+   "reel_script": "கரூர் ரயில் நிலையத்தில் நவம்பர் 20, 22ஆம் தேதிகளில் திருச்சி-பாலக்காடு ரயில் நிறுத்தப்பட உள்ளது. ஈரோடு அருகே ரயில்வே பராமரிப்புப் பணிகள் நடைபெறுவதால் கோவை வழி ரயில் இயக்கத்தில் மாற்றம் செய்யப்பட்டுள்ளது. இதையடுத்து, நவம்பர் 20, 22ஆம் தேதிகளில் மதியம் 1 மணிக்கு திருச்சியில் இருந்து பாலக்காடு டவுன் புறப்படும் ரயில் எண் 16843, கரூர் ரயில் நிலையத்தில் நிறுத்தப்படும். பணிகள் முடிந்ததும் கரூரில் இருந்து பாலக்காடு ரயில் நிலையத்துக்கு முன்பதிவில்லா சிறப்பு ரயில் இயக்கப்படும். இந்தத் தகவலை சேலம் ரயில்வே தெரிவித்துள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚆 கரூரில் ரயில் நிறுத்தம்: நவம்பர் 20, 22 தேதிகளில் திருச்சி-பாலக்காடு ரயில் மாற்றம்\n\n📰 முழு விவரம்:\nஈரோடு அருகே ரயில்வே பராமரிப்புப் பணிகள் நடைபெறுவதால் கோவை வழி ரயில் இயக்கத்தில் மாற்றம் செய்யப்பட்டுள்ளது.\nநவம்பர் 20, 22 ஆகிய தேதிகளில் மதியம் 1 மணிக்கு திருச்சியில் இருந்து பாலக்காடு டவுன் புறப்படும் ரயில் (எண் 16843) கரூர் ரயில் நிலையத்தில் நிறுத்தப்படும்.\nபணிகள் முடிந்ததும் கரூரில் இருந்து பாலக்காடு ரயில் நிலையத்துக்கு முன்பதிவில்லா சிறப்பு ரயில் இயக்கப்படும் என சேலம் ரயில்வே தெரிவித்துள்ளது.\n\n📍 இடம்: கரூர் ரயில் நிலையம்\n🗓️ நாள்: நவம்பர் 20, 22\n🕐 நேரம்: மதியம் 1 மணி (திருச்சி புறப்பாடு)\n🚆 ரயில் எண்: 16843\n\nTrichy-Palakkad train stops at Karur on 20, 22 Nov | Coimbatore news\n📍 கரூர், கோவை வழித்தடம் | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Karur #ரயில் #CoimbatoreNews",
+   "prompts": "A passenger train stops at the platform of Karur railway station in Karur district, with a line of diesel-engine coaches pulled up beside a concrete platform. Several passengers with travel bags and small suitcases stand on the platform, seen from behind and at a distance, waiting to board. A railway staff member in a uniform walks along the platform near the coaches. Railway tracks run in the foreground, with a few overhead wires and a small station shelter roof behind the platform. It is early afternoon in bright daylight, with the sky mostly clear. Camera: eye level, slightly high, 35 mm lens, wide enough to show the platform, the train and the station building. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the railway tracks at Karur station, with steel rails and wooden sleepers stretching into the distance beside a concrete platform edge. A few metal coach wheels and the lower body of a passenger coach are visible at the frame's edge. A worker's boots step near the track and a yellow-painted safety line runs along the platform. Dust and small stones lie between the sleepers, and the light is clear afternoon sunshine. Camera: low angle, 50 mm lens, focused on the rails and sleepers with the platform edge softly blurred behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/change-in-train-movement-via-coimbatore/4379406",
+   "published": "2026-11-18T13:54:19+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b) - fact-check: no problems found",
+   "note": "free-model draft anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b, 13 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794987377/kovaiminnal/eq0v7hrxwsusptpv5kpz.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1794987382/kovaiminnal/u3vuqa1meoaec0d3wj1s.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795001896/kovaiminnal/yhergg2n7lq9urawseyo.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795001900/kovaiminnal/pufc8wssjghmq2pp0cb5.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "தவெக நிர்வாகிகள் மீதான விமர்சனங்களுக்கு யார் தவறு செய்திருந்தாலும் நடவடிக்கை: அமைச்சர் சம்பத்குமார்",
+   "english_headline": "Minister Sampath Kumar says action will be taken against anyone at fault, regardless of party, over criticism of TVK executives; calls Vijaya Balaji's night call to SP baseless",
+   "category": "Government & Services",
+   "location": "Coimbatore Race Course area, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "அமைச்சர் விளக்கம்",
+    "loc": "கோவை ரேஸ்கோர்ஸ்",
+    "hl1": "கோவையில் அமைச்சர் சம்பத்குமார் விளக்கம்",
+    "hl2": "தவெக நிர்வாகிகள் மீது",
+    "slides": [
+     {
+      "title": "ஹெல்மெட் நிகழ்ச்சி",
+      "lines": [
+       "கோவை ரேஸ்கோர்ஸ் பகுதியில் ஹெல்மெட் வழங்கும் நிகழ்ச்சி",
+       "அமைச்சர் சம்பத்குமார் வாகன ஓட்டிகளுக்கு ஹெல்மெட் வழங்கினார்",
+       "மாவட்ட ஆட்சித் தலைவர், மாநகராட்சி ஆணையாளர் பங்கேற்பு"
+      ]
+     },
+     {
+      "title": "ஹெல்மெட் குறித்து",
+      "lines": [
+       "மிதிவண்டி பெறும் பள்ளி மாணவர்களுக்கும் ஹெல்மெட் வழங்கப்படும்",
+       "ஹெல்மெட் அணியாதது பேஷன் என்ற எண்ணம் மாற வேண்டும்"
+      ]
+     },
+     {
+      "title": "தவெக நிர்வாகிகள்",
+      "lines": [
+       "நிர்வாகிகள் மீதான விமர்சனங்களுக்கு விளக்கம் கேட்கப்பட்டது",
+       "யார் தவறு செய்திருந்தாலும் பாரபட்சமின்றி நடவடிக்கை"
+      ]
+     },
+     {
+      "title": "விஜய பாலாஜி",
+      "lines": [
+       "இரவில் காவல் கண்காணிப்பாளரை வீட்டில் அழைத்து பேசியதாக",
+       "அது முகாந்திரம் இல்லாத தகவல் என அமைச்சர் தெரிவித்தார்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கோவையில் தவெக நிர்வாகிகள் மீதான விமர்சனங்களுக்கு யார் தவறு செய்திருந்தாலும் பாரபட்சமின்றி நடவடிக்கை எடுக்கப்படும் என அமைச்சர் சம்பத்குமார் தெரிவித்துள்ளார். கோவை ரேஸ்கோர்ஸ் பகுதியில் தனியார் கட்டுமான நிறுவனம் சார்பில் வாகன ஓட்டிகளுக்கு ஹெல்மெட் வழங்கும் நிகழ்ச்சி நடைபெற்றது. பிற்படுத்தப்பட்டோர் நலத்துறை அமைச்சர் சம்பத்குமார் சிறப்பு விருந்தினராக கலந்துகொண்டு வாகன ஓட்டிகளுக்கு ஹெல்மெட் வழங்கினார். இந்நிகழ்வில் கோவை மாவட்ட ஆட்சித் தலைவர் மற்றும் மாநகராட்சி ஆணையாளர் கலந்துகொண்டனர். பள்ளி மாணவர்களுக்கு அரசு சார்பில் வழங்கப்படும் மிதிவண்டிகளுடன் ஹெல்மெட்டும் வழங்கப்பட உள்ளது. இதனால் சிறு வயதிலேயே ஹெல்மெட் குறித்த விழிப்புணர்வு ஏற்படும் என அவர் கூறினார். ஹெல்மெட் அணியாதது ஒரு பேஷன் என பலரும் நினைக்கிறார்கள், அது மாற வேண்டும் என்றும் அவர் வலியுறுத்தினார். அமைச்சர் விஜய பாலாஜி, காவல் கண்காணிப்பாளரை இரவு நேரத்தில் வீட்டுக்கு அழைத்துப் பேசியதாக எழுந்த சர்ச்சை குறித்து கேட்கப்பட்டது. அது முகாந்திரம் இல்லாத தகவல் என அமைச்சர் பதிலளித்தார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🏍️ கோவையில் ஹெல்மெட் நிகழ்ச்சி; தவெக நிர்வாகிகள் மீதான விமர்சனங்களுக்கு அமைச்சர் விளக்கம்\n\n📰 முழு விவரம்:\nகோவை ரேஸ்கோர்ஸ் பகுதியில் தனியார் கட்டுமான நிறுவனம் சார்பில் வாகன ஓட்டிகளுக்கு ஹெல்மெட் வழங்கும் நிகழ்ச்சி நடைபெற்றது. பிற்படுத்தப்பட்டோர் நலத்துறை அமைச்சர் சம்பத்குமார் சிறப்பு விருந்தினராக கலந்துகொண்டு ஹெல்மெட் வழங்கினார். கோவை மாவட்ட ஆட்சித் தலைவர் மற்றும் மாநகராட்சி ஆணையாளர் நிகழ்வில் பங்கேற்றனர்.\nபள்ளி மாணவர்களுக்கு அரசு சார்பில் வழங்கப்படும் மிதிவண்டிகளுடன் ஹெல்மெட்டும் வழங்கப்பட உள்ளது. சிறு வயதிலேயே ஹெல்மெட் குறித்த விழிப்புணர்வு ஏற்படுத்துவதே நோக்கம்.\nதமிழக வெற்றி கழக நிர்வாகிகள் மீதான விமர்சனங்கள் குறித்த கேள்விக்கு, யார் தவறு செய்திருந்தாலும் பாரபட்சமின்றி நடவடிக்கை எடுக்கப்படும் என அமைச்சர் தெரிவித்தார்.\nஅமைச்சர் விஜய பாலாஜி, இரவு நேரத்தில் வீட்டுக்கு காவல் கண்காணிப்பாளரை அழைத்துப் பேசியதாக எழுந்த சர்ச்சைக்கு, அது முகாந்திரம் இல்லாத தகவல் என அமைச்சர் பதிலளித்தார்.\n\nCoimbatore helmet event, minister on TVK criticism | Coimbatore news\n📍 கோவை ரேஸ்கோர்ஸ், கோவை மாவட்டம் | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Coimbatore #CoimbatoreNews #கோவை",
+   "prompts": "A line of two-wheeler riders in shirts and trousers stands in front of a small stage at the Race Course area in Coimbatore, as a government minister in a white shirt hands a helmet to a young man in the foreground. Behind the stage, district officials in formal clothes and a few reporters with cameras look on under a canopy. Parked two-wheelers and a few autorickshaws line the road beyond the event tent. Tamil Nadu police in khaki stand near the crowd. The scene is bright daylight with a clear sky and the tall trees of the Race Course visible behind. Shot at eye level from slightly behind the riders, 35 mm, wide enough to show the stage, the crowd and the road. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a row of new black and white helmets stacked on a folding table at a roadside helmet distribution event in Coimbatore, with a rider's hand reaching to pick one up. Behind the table, a blurred two-wheeler is parked on the road and a small group of people in shirts and sarees stands at a distance. Bright daylight falls on the helmets, showing their shiny plastic surface and chin straps. The background is softly out of focus with trees and the tent edge visible. Shot at slightly high eye level, 35 mm, shallow depth of field to keep the focus on the helmets and the reaching hand. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dailythanthi.com/news/tamilnadu/criticism-on-vijaya-balaji-is-baseless-minister-sampath-kumar-explains",
+   "published": "2026-11-18T09:16:21Z",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: sentence 1 (one-line story) has 15 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795001908/kovaiminnal/coqhnk8mg5simpk39a8l.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795001913/kovaiminnal/irjmigzsdddcqkcfsbtd.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "காவிரி விவகாரத்தில் டி.கே.சிவக்குமார் பொய்ப் பிரசாரம் செய்கிறார்: துரை வைகோ குற்றச்சாட்டு",
+   "english_headline": "Durai Vaiko accuses Karnataka CM D.K. Shivakumar of spreading false claims on the Cauvery water dispute",
+   "category": "Government & Services",
+   "location": "Coimbatore airport, Coimbatore district",
+   "importance": "Medium",
+   "scope": "district",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "அரசியல் அறிக்கை",
+    "loc": "கோவை விமான நிலையம்",
+    "hl1": "கோவை விமான நிலையம்: காவிரி விவகாரத்தில்",
+    "hl2": "துரை வைகோ குற்றச்சாட்டு",
+    "slides": [
+     {
+      "title": "என்ன கூறினார்?",
+      "lines": [
+       "கர்நாடக முதல்வர் டி.கே.சிவக்குமார் பொய்யான",
+       "சுப்ரீம் கோர்ட்டு தீர்ப்பைத் திரித்துப் பேசுகிறார்",
+       "பிரதமர் மோடி பங்கேற்ற நிகழ்ச்சியிலேயே இவ்வாறு பேசியுள்ளார்"
+      ]
+     },
+     {
+      "title": "தமிழக பாஜகவுக்கு",
+      "lines": [
+       "தமிழக பாஜக தலைவர்களும் இதைக் கேள்வி எழுப்ப வேண்டும்",
+       "காவிரி நீர் வழங்க வேண்டும் என்பதில் தீர்ப்பு தெளிவாக உள்ளது"
+      ]
+     },
+     {
+      "title": "தமிழக அரசின்",
+      "lines": [
+       "தமிழக அரசு கர்நாடக அரசுக்கு எதிராகச் சட்டரீதியான",
+       "இரு மாநில நீர் பிரச்சினைக்கு மத்திய அரசு தீர்வு காண வேண்டும்"
+      ]
+     },
+     {
+      "title": "நீர் மேலாண்மை",
+      "lines": [
+       "நீர் மேலாண்மை அமைப்பின் அறிவுறுத்தல்களைக் கர்நாடக அரசு",
+       "தவறு செய்தவர்கள் அதிகாரிகளாக இருந்தாலும் அமைச்சர்களாக",
+       "இதுவே தங்களது நிலைப்பாடு என துரை வைகோ கூறினார்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கோவை விமான நிலையத்தில் துரை வைகோ கர்நாடக முதல்வர் மீது குற்றம் சாட்டினார். காவிரி நீர் விவகாரத்தில் கர்நாடக முதல்வர் டி கே சிவக்குமார் பொய்யான தகவல்களைப் பரப்புவதாக அவர் கூறினார். சுப்ரீம் கோர்ட்டு தீர்ப்பைத் திரித்துப் பேசுவதாகவும் குற்றம் சாட்டினார். பிரதமர் மோடி பங்கேற்ற நிகழ்ச்சியிலேயே இவ்வாறு பேசியிருப்பது கண்டிக்கத்தக்கது என்றார். இதைத் தமிழக பாஜக தலைவர்களும் கேள்வி எழுப்ப வேண்டும் என்றும் அவர் கூறினார். காவிரி நீர் வழங்க வேண்டும் என்பதில் உச்ச நீதிமன்றத் தீர்ப்பு தெளிவாக உள்ளது. தமிழக அரசு கர்நாடக அரசுக்கு எதிராகச் சட்டரீதியான நடவடிக்கைகளைத் தொடர்ந்து மேற்கொள்கிறது. இரு மாநில நீர் பிரச்சினைக்கு மத்திய அரசு உரிய தீர்வு காண வேண்டும். நீர் மேலாண்மை அமைப்பின் அறிவுறுத்தல்களையும் கர்நாடக அரசு முறையாகப் பின்பற்றவில்லை. தவறு செய்தவர்கள் அதிகாரிகளாக இருந்தாலும் அமைச்சர்களாக இருந்தாலும் தண்டிக்கப்பட வேண்டும் என்பதே தங்களது நிலைப்பாடு என்றார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🗣️ கோவை விமான நிலையத்தில்: காவிரி விவகாரத்தில் பொய் பிரசாரம் - துரை வைகோ குற்றச்சாட்டு\n\n📰 முழு விவரம்:\nகோவை விமான நிலையத்தில் செய்தியாளர்களைச் சந்தித்த மதிமுக முதன்மைச் செயலாளரும் நாடாளுமன்ற உறுப்பினருமான துரை வைகோ, கர்நாடக முதல்வர் டி.கே.சிவக்குமார் மீது குற்றம் சாட்டினார்.\nகாவிரி நீர் விவகாரத்தில் சுப்ரீம் கோர்ட்டு தீர்ப்பைத் திரித்துப் பேசி அவர் பொய்யான தகவல்களைப் பரப்புவதாகக் கூறினார்.\nபிரதமர் மோடி பங்கேற்ற நிகழ்ச்சியிலேயே இவ்வாறு பேசியிருப்பது கண்டிக்கத்தக்கது என்றார்.\nஇதை தமிழக பாஜக தலைவர்களும் கேள்வி எழுப்ப வேண்டும் என்று கூறினார்.\nஇரு மாநில நீர் பிரச்சினைக்கு மத்திய அரசு உரிய தீர்வு காண வேண்டும் என்றும், நீர் மேலாண்மை அமைப்பின் அறிவுறுத்தல்களைக் கர்நாடக அரசு முறையாகப் பின்பற்றவில்லை என்றும் குற்றம் சாட்டினார்.\nதவறு செய்தவர்கள் அதிகாரிகளாக இருந்தாலும் அமைச்சர்களாக இருந்தாலும் தண்டிக்கப்பட வேண்டும் என்பதே தங்கள் நிலைப்பாடு என்றார்.\n\nDurai Vaiko Cauvery water dispute Shivakumar | Coimbatore news\n📍 கோவை விமான நிலையம், கோவை மாவட்டம் | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Cauvery",
+   "prompts": "A press meet is held at Coimbatore airport arrivals hall, where a Member of Parliament speaks to a group of reporters who crowd around a cluster of microphones on a stand. Seen from behind the press group, the reporters in shirts, trousers and salwar hold up phones and recorders toward a speaker standing before a plain backdrop, with the airport terminal's glass frontage, pillars and polished floor around them. Several uniformed airport staff and Tamil Nadu police in khaki stand at a distance near the terminal doors. The light is bright daylight from the glass ceiling and windows. The camera is at eye level, about 35 mm, wide enough to show the terminal interior and the crowd of press, with the speaker's back and raised hand kept small in the frame and no faces identifiable. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a cluster of microphones and recorders bunched together on a press stand at Coimbatore airport, their black mesh heads and cables spread across a tabletop. Behind them, slightly out of focus, the blurred back of a reporter's shirt and the edge of a plain backdrop mark the press meet. Light comes from the terminal's glass windows in soft daylight. The camera is close and slightly high, about 35 mm, focusing on the microphones with the press crowd softly blurred behind them, no readable text or logos visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dailythanthi.com/news/tamilnadu/dk-sivakumar-is-spreading-false-propaganda-on-the-cauvery-issue-durai-vaiko-alleges",
+   "published": "2026-11-18T09:03:21Z",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 0 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795001920/kovaiminnal/ykyh6s3mipyrniior56w.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795001924/kovaiminnal/edpr2nlz6pdeipwb09ve.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "கோவையில் டெங்கு பொருட்கள் பறிமுதல் செய்யும் கல்லூரி மாணவர்களுக்கான போட்டி தொடக்கம்",
+   "english_headline": "Coimbatore corporation starts college student competition to seize dengue-breeding items; south and east zones first",
+   "category": "Health",
+   "location": "Coimbatore city, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "டெங்கு தடுப்பு",
+    "loc": "கோவை மாநகரம்",
+    "hl1": "கோவையில் டெங்கு பொருட்கள் பறிமுதல்",
+    "hl2": "தெற்கு, கிழக்கு மண்டலத்தில்",
+    "slides": [
+     {
+      "title": "போட்டி ஏன்?",
+      "lines": [
+       "சென்னைக்கு அடுத்து கோவையில் அதிக டெங்கு பாதிப்பு",
+       "டெங்கு பரப்பும் பொருட்களைத் தடுக்க போட்டி நடத்தப்படுகிறது",
+       "தூய்மை பணியாளர்களுக்கு முன்பு போட்டி நடந்தது"
+      ]
+     },
+     {
+      "title": "கல்லூரி மாணவர்கள்",
+      "lines": [
+       "கல்லூரி மாணவர்களுக்கு டெங்கு பொருள் பறிமுதல் போட்டி",
+       "முதல்கட்டமாக தெற்கு, கிழக்கு மண்டலங்களில் நடக்கிறது",
+       "ஒவ்வொரு மண்டலத்திலும் <b>5-10 கல்லூரிகள்</b> பங்கேற்கின்றன"
+      ]
+     },
+     {
+      "title": "போட்டி விதிகள்",
+      "lines": [
+       "மொத்தம் <b>3 நாட்கள்</b> பொருட்களைப் பறிமுதல் செய்ய வேண்டும்",
+       "அதிக பொருட்களை பறிமுதல் செய்யும் <b>2 கல்லூரிகள்</b> தேர்வு",
+       "மண்டலவாரியாக இறுதிப் போட்டி நடக்கும்"
+      ]
+     },
+     {
+      "title": "பரிசு",
+      "lines": [
+       "வெற்றி பெறும் அணிக்கு பரிசு வழங்கப்படும்",
+       "மாநகராட்சி இதைத் தெரிவித்துள்ளது"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கோவையில் டெங்கு பரப்பும் பொருட்களைப் பறிமுதல் செய்யும் கல்லூரி மாணவர்களுக்கான போட்டி தொடங்கியுள்ளது. சென்னைக்கு அடுத்து, கோவையில்தான் அதிக டெங்கு பாதிப்பு பதிவானது. இதைக் கட்டுப்படுத்த, மாநகராட்சி இந்தப் போட்டியை நடத்துகிறது. முன்னதாக, தூய்மை பணியாளர்களிடையே இதேபோன்ற போட்டி நடத்தப்பட்டது. அதிக பொருட்களைப் பறிமுதல் செய்த அணிக்குப் பரிசு வழங்கப்பட்டது. தற்போது முதல் கட்டமாக தெற்கு மற்றும் கிழக்கு மண்டலங்களில் போட்டி நடைபெறுகிறது. ஒவ்வொரு மண்டலத்திலும் 5 முதல் 10 கல்லூரிகள் பங்கேற்கின்றன. மொத்தம் 3 நாட்கள் டெங்கு பொருட்களைப் பறிமுதல் செய்ய வேண்டும். அதிக பொருட்களைப் பறிமுதல் செய்யும் 2 கல்லூரிகள் தேர்வு செய்யப்படும். அவற்றுக்கு மண்டலவாரியாக இறுதிப் போட்டி நடைபெறும். வெற்றி பெறும் அணிக்குப் பரிசு வழங்கப்படும் என மாநகராட்சி தெரிவித்துள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🦟 கோவையில் கல்லூரி மாணவர்களுக்கு டெங்கு பொருள் பறிமுதல் போட்டி\n\n📰 முழு விவரம்:\nசென்னைக்கு அடுத்து, கோவையில் அதிக டெங்கு பாதிப்பு பதிவானது. இதைக் கட்டுப்படுத்த, டெங்கு பரப்பும் பொருட்களைப் பறிமுதல் செய்யும் போட்டி நடத்தப்படுகிறது. ஏற்கனவே தூய்மை பணியாளர்களிடையே டி.பி.எல்., 'அதிரடி சரவெடி' என 2 போட்டிகள் நடத்தப்பட்டன. தற்போது கல்லூரி மாணவர்களுக்கான போட்டி தொடங்கியுள்ளது.\n📍 இடம்: தெற்கு மற்றும் கிழக்கு மண்டலங்கள் (முதல் கட்டம்)\n🏫 பங்கேற்பு: ஒவ்வொரு மண்டலத்திலும் 5-10 கல்லூரிகள்\n🗓️ கால அளவு: மொத்தம் 3 நாட்கள் பொருட்கள் பறிமுதல்\n🏆 இறுதிப் போட்டி: அதிக பொருட்களைப் பறிமுதல் செய்யும் 2 கல்லூரிகள் தேர்வு; மண்டலவாரியாக இறுதிப் போட்டி\n🎁 பரிசு: வெற்றி பெறும் அணிக்கு பரிசு வழங்கப்படும் என மாநகராட்சி தெரிவித்துள்ளது.\n\nCoimbatore college dengue competition | Coimbatore news\n📍 கோவை மாநகரம், கோவை மாவட்டம் | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #டெங்கு",
+   "prompts": "A group of college students in casual clothes, seen from behind, walks along a residential street in Coimbatore city, collecting dengue-breeding items from roadside spots: an old tyre, a broken plastic bucket and coconut shells are being picked up and dropped into a corporation waste cart. Two corporation health workers in uniform stand nearby with a clipboard. Behind them are small houses, a row of two-wheelers parked along the road, and a town bus passing at a distance. It is daylight with soft overcast light, and the camera is at eye level, 35 mm, wide enough to show the street and the students at work. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up detail of a pile of seized dengue-breeding items on the back of a corporation cleaning cart: a rusted old tyre, a cracked plastic bucket holding stagnant rainwater, and a few discarded coconut shells. A student's gloved hand rests on the pile, placing a bottle inside. Blurred in the background, a khaki-uniformed health worker and a college campus gate stand far away. Daylight, slightly high camera angle, 35 mm, shallow depth of field focusing on the items. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/dengue-spreading-products-seized-competition/4379467",
+   "published": "2026-11-18T16:22:24+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 0 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795001931/kovaiminnal/bx8jkvribcprxtkdhf77.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795001934/kovaiminnal/a2oerzf9xrbj1yarilc1.jpg"
    ]
   }
  ]
