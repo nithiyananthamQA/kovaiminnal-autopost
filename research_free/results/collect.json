@@ -3,82 +3,91 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/instructions-to-pay-house-tax-drinking-water-charges-immediately/4379787",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/patchwork-at-605-locations-on-city-roads/4379971",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/spit-and-apologized-but-were-chased-away-arrested/4379624",
-  "manual link added: https://www.dinamalar.com/news/puducherry/11-people-in-action-at-the-venue-arrested/4379578",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/big-price-for-chilli-kg-selling-for-rs-180/4379556",
-  "candidate filter: collected=5",
-  "to write: 5 Coimbatore district candidates (max 5 stories)",
-  "round: top 5 of 5 candidates",
-  "candidates waiting: 5 Coimbatore; time left 79 min",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/183-kg-tobacco-products-seized/4380058",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/gates-garden-opens-at-racecourse-rundana/4379546",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/20-who-asked-for-yajna-handed-over-to-shelter-home/4379699",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/leopard-in-residential-area-people-run-away-in-fear/4379797",
+  "candidate filter: collected=4",
+  "to write: 4 Coimbatore district candidates (max 4 stories)",
+  "round: top 4 of 4 candidates",
+  "candidates waiting: 4 Coimbatore; time left 79 min",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "try (N) manual=True: https://www.dinamalar.com/news/puducherry/11-people-in-actio",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 3})",
-  "NOT filed (N) பொது இடத்தில் ரகளை: 11 பேர் அதிரடி கைது: not Coimbatore district news (the story's first lines name another place and no Coimbatore place)",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 5})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 7})",
-  "candidate loop ended: left 0, tried={'N': 5}, done={'N': 4}, time left 76 min",
-  "filed: 4 Coimbatore district stories (target 5), reels only",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
+  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 78 min",
+  "filed: 4 Coimbatore district stories (target 4), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":5,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":4,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.6-flash",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
-  "switching away from gemini/gemini-3.5-flash for 10 min",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "switching away from gemini/gemini-3.6-flash for 10 min",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
-  "ok gemini/gemini-3-flash-preview (22s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok gemini/gemini-3-flash-preview (14s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.6-flash",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "dead for this round: groq/openai/gpt-oss-120b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
-  "ok groq/qwen/qwen3.8-27b (4s)",
+  "ok anthropic/claude-haiku-5-5",
+  "ok gemini/gemini-3-flash-preview (12s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3-flash-preview (13s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok groq/qwen/qwen3.8-27b (0s)",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok groq/qwen/qwen3.8-27b (0s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok groq/qwen/qwen3.8-27b (2s)",
+  "ok groq/qwen/qwen3.8-27b (3s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
@@ -89,291 +98,251 @@
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
-  "poor answer - skipped for 30 min: gemini/gemini-3-flash-preview",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "பேரூரில் எச்சில் துப்பியதால் தகராறு: துரத்திச் சென்று தாக்கிய இருவர் கைது",
-   "english_headline": "Spitting row in Perur: two men who chased and beat a worker after he apologised arrested",
+   "tamil_headline": "வால்பாறை ரொட்டிக்கடையில் குடியிருப்புக்குள் சிறுத்தை: மக்கள் அலறியடித்து ஓட்டம்",
+   "english_headline": "Leopard enters residential area near Valparai at Rottikkadai; residents flee in panic",
    "category": "Crime & Safety",
-   "location": "Perur, Coimbatore district",
+   "location": "Rottikkadai, Valparai, Coimbatore district",
+   "importance": "High",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "வன விலங்கு",
+    "loc": "ரொட்டிக்கடை, வால்பாறை",
+    "hl1": "ரொட்டிக்கடையில் குடியிருப்புக்குள்",
+    "hl2": "மக்கள் அலறியடித்து ஓட்டம்",
+    "slides": [
+     {
+      "title": "என்ன நடந்தது?",
+      "lines": [
+       "வால்பாறை அருகே ரொட்டிக்கடை குடியிருப்பு பகுதியில் சிறுத்தை",
+       "நேற்று (நவ. 17) மாலை <b>5:45 மணிக்கு</b> நடைபாதையில்",
+       "பெருச்சாலியை கவ்விக்கொண்டு புதருக்குள் சென்றது"
+      ]
+     },
+     {
+      "title": "மக்கள் அச்சம்",
+      "lines": [
+       "சிறுத்தையை கண்ட மக்கள் அலறியடித்து ஓடினர்",
+       "வீடுகளில் வளர்க்கும் வளர்ப்பு பிராணிகளை சிறுத்தை",
+       "பணி முடிந்து வீடு திரும்பும் நேரத்தில் சிறுத்தை வந்தது"
+      ]
+     },
+     {
+      "title": "காரணம் என்ன?",
+      "lines": [
+       "அங்கன்வாடி மற்றும் குடியிருப்பு பகுதியில் புதர்",
+       "புதரில் பதுங்கும் சிறுத்தை இரவில் குடியிருப்புக்குள்"
+      ]
+     },
+     {
+      "title": "அதிகாரிகள் கூறியது",
+      "lines": [
+       "அங்கன்வாடி, குடியிருப்பை சுற்றியுள்ள புதர்கள் அகற்றப்படும்",
+       "நாய், கோழிகளை வளர்ப்பதை தவிர்க்க வனத்துறை அறிவுறுத்தல்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "வால்பாறை அருகே ரொட்டிக்கடை குடியிருப்பு பகுதிக்குள் சிறுத்தை நுழைந்ததால் மக்கள் அலறியடித்து ஓடினர். நேற்று நவம்பர் 17ஆம் தேதி மாலை 5:45 மணிக்கு குடியிருப்பு பகுதியின் நடைபாதையில் சிறுத்தை சென்றது. சிறிது நேரத்தில் பெருச்சாலியை கவ்விக்கொண்டு புதருக்குள் புகுந்தது. சமீப காலமாக இந்தப் பகுதியில் சிறுத்தை வந்து வீட்டு வளர்ப்பு பிராணிகளை கவ்விச் செல்வது வழக்கமாகி விட்டது. அங்கன்வாடி மற்றும் குடியிருப்பு பகுதியில் புதர் சூழ்ந்திருப்பதால் சிறுத்தை அங்கு பதுங்கி இரவில் குடியிருப்புக்குள் நுழைகிறது. பணி முடித்தவர்களும் பள்ளி மாணவர்களும் வீடு திரும்பும் நேரத்தில் சிறுத்தை வந்தது அதிர்ச்சியளிப்பதாக மக்கள் கூறினர். வனத்துறையினர் சிறுத்தையை கூண்டு வைத்து பிடிக்க வேண்டும் என மக்கள் கோரிக்கை வைத்துள்ளனர். அங்கன்வாடி மையம் மற்றும் குடியிருப்பை சுற்றியுள்ள புதர்கள் அகற்றப்படும் என நகராட்சி துப்புரவு அலுவலர் செந்தில்குமார் தெரிவித்தார். வீடுகளில் நாய், கோழிகளை வளர்ப்பதை தவிர்க்க வேண்டும் என வனத்துறையினர் அறிவுறுத்தியுள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🐆 வால்பாறை ரொட்டிக்கடையில் குடியிருப்புக்குள் சிறுத்தை: மக்கள் அலறியடித்து ஓட்டம்\n\n📰 முழு விவரம்:\nவால்பாறை அருகே ரொட்டிக்கடை குடியிருப்பு பகுதியில் மாலை நேரத்தில் சிறுத்தை நுழைந்தது. நேற்று (நவ. 17) மாலை 5:45 மணிக்கு நடைபாதையில் சிறுத்தை சென்றது; சிறிது நேரத்தில் பெருச்சாலியை கவ்விக்கொண்டு புதருக்குள் சென்றது. சிறுத்தையை கண்ட மக்கள் அலறியடித்து ஓடினர்.\n🐾 சமீப காலமாக குடியிருப்பில் வளர்ப்பு பிராணிகளை சிறுத்தை கவ்விச் செல்வது வழக்கமாகி விட்டது.\n🌿 அங்கன்வாடி, குடியிருப்பைச் சுற்றியுள்ள புதர்கள் காரணமாக சிறுத்தை பதுங்கி இரவில் குடியிருப்புக்குள் நுழைகிறது.\n👮 வனத்துறையினர் சிறுத்தையை கூண்டு வைத்து பிடிக்க வேண்டும் என மக்கள் கோரிக்கை.\n🧹 அங்கன்வாடி மற்றும் குடியிருப்பை சுற்றியுள்ள புதர்கள் அகற்றப்படும் என நகராட்சி துப்புரவு அலுவலர் செந்தில்குமார் தெரிவித்தார்.\nℹ️ மக்கள் கவனத்திற்கு: வீடுகளில் நாய், கோழிகளை வளர்ப்பதை தவிர்க்க வேண்டும் என வனத்துறையினர் அறிவுறுத்தியுள்ளனர்.\n\nLeopard enters Valparai residential area Rottikkadai | Coimbatore news\n📍 ரொட்டிக்கடை, வால்பாறை, கோவை மாவட்டம்\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Valparai #வனவிலங்கு #CoimbatoreNews",
+   "prompts": "A leopard walks along a narrow pedestrian pathway in a residential neighborhood, moving away from the camera towards dense green bushes. The scene is set in Rottikkadai, Valparai, a semi-urban area with simple concrete houses and an Anganwadi center visible in the background. Several residents, including men in shirts and women in sarees, are seen from behind, running away in panic towards the left side of the frame, their movements blurred by haste. A goat lies near the edge of the path, partially obscured by foliage. The lighting is dim evening light, casting long shadows, with the sky turning orange. The camera is at eye level, 35 mm, capturing the tension of the animal entering the human space. The bushes are thick and dark, contrasting with the lighter concrete path. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up view of the dense, overgrown bushes surrounding the Anganwadi center in Rottikkadai. The foliage is thick and dark green, with branches extending over the edge of the residential property. A single goat is visible lying calmly within the undergrowth, its white fur contrasting with the dark leaves. The ground is covered in dry leaves and twigs. The lighting is soft evening light, highlighting the texture of the leaves and the stillness of the animal. The camera is slightly high, looking down into the bushes, emphasizing the hidden nature of the leopard's habitat. No people are visible in this shot, focusing solely on the environment where the leopard resides and the potential prey it targets. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/leopard-in-residential-area-people-run-away-in-fear/4379797",
+   "published": "2026-11-18T19:23:02+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 0 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795020243/kovaiminnal/r7xfy08hmnavut1e03z3.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795020248/kovaiminnal/jsjqoso2ngauelatd235.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "காந்திபுரத்தில் யாசகம் கேட்ட 20 பேர் மீட்பு: காப்பகத்தில் ஒப்படைப்பு",
+   "english_headline": "20 people begging at Gandhipuram bus stands rescued by police and handed over to Corporation shelter in RS Puram",
+   "category": "Crime & Safety",
+   "location": "Gandhipuram, Coimbatore city, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "குற்றச் செய்தி",
-    "loc": "பேரூர்",
-    "hl1": "பேரூரில் எச்சில் தகராறு: இருவர் கைது",
-    "hl2": "மன்னிப்பு கேட்டும் தாக்குதல்",
+    "cat": "பொது பாதுகாப்பு",
+    "loc": "காந்திபுரம்",
+    "hl1": "காந்திபுரத்தில் யாசகம் கேட்ட 20 பேர்",
+    "hl2": "காப்பகத்தில் ஒப்படைப்பு",
     "slides": [
      {
       "title": "என்ன நடந்தது?",
       "lines": [
-       "பேரூர் பகுதியில் சாலையில் எச்சில் துப்பிய தொழிலாளி",
-       "எச்சில் பட்டதால் மன்னிப்பு கேட்டார்",
-       "மன்னிப்பு கேட்டும் இருவர் அவரை தாக்கினர்"
+       "காந்திபுரம் பஸ் ஸ்டாண்டுகளில் மதுப்பிரியர்கள் தொல்லை",
+       "பயணிகளிடம் யாசகம் கேட்டு இடையூறு செய்ததாகப் புகார்",
+       "போலீசார் <b>20 பேரை</b> மீட்டனர்"
       ]
      },
      {
-      "title": "எப்படி நடந்தது?",
+      "title": "போலீஸ் நடவடிக்கை",
       "lines": [
-       "நேற்று (நவ. 17) இரவு நடந்த சம்பவம்",
-       "அருண்குமார் (30 வயது), வீட்டுக்குப் பைக்கில் சென்றபோது நடந்தது",
-       "அவர் தப்பி வீட்டுக்குச் சென்றார்"
-      ]
-     },
-     {
-      "title": "துரத்தி தாக்குதல்",
-      "lines": [
-       "பிரதாப் (27 வயது), சத்தியநாதன் (20 வயது), பின்தொடர்ந்தனர்",
-       "வீடு வரை துரத்திச் சென்று சரமாரியாகத் தாக்கினர்",
-       "அருண்குமாருக்கு காயம் ஏற்பட்டது"
-      ]
-     },
-     {
-      "title": "கைது நடவடிக்கை",
-      "lines": [
-       "அருண்குமார் அளித்த புகாரில் வழக்குப் பதிவு",
-       "பேரூர் போலீசார் இருவரையும் கைது செய்தனர்",
-       "பிரதாப், சத்தியநாதன் ஆகிய இருவரும் கைது"
+       "வீடியோ வைரலானதையடுத்து காட்டூர் போலீசார் <b>இருவரை</b> கைது",
+       "மீட்கப்பட்டவர்கள் ஆர்.எஸ்.புரம் மாநகராட்சி காப்பகத்தில்",
+       "அங்கு அவர்களுக்குக் கவுன்சிலிங் வழங்கப்படுகிறது"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "பேரூரில் எச்சில் துப்பியதற்கு மன்னிப்பு கேட்டும் ஒருவர் தாக்கப்பட்டார். நேற்று நவம்பர் 17ஆம் தேதி இரவு தீத்திபாளையம் திருப்பூர் குமரன் வீதியைச் சேர்ந்த அருண்குமார் (30 வயது), மாதம்பட்டியில் உள்ள ஓட்டலில் உணவு வாங்கிக்கொண்டு பைக்கில் வீட்டுக்குச் சென்றார். அப்போது அவர் சாலையில் எச்சில் துப்பினார். அது அங்கு நின்றுகொண்டிருந்த காளிமங்கலத்தைச் சேர்ந்த பிரதாப் (27 வயது), மீது தவறுதலாகப் பட்டது. அருண்குமார் பிரதாப்பிடம் சென்று மன்னிப்பு கேட்டார். ஆனாலும் பிரதாப்பும் அவரது நண்பர் செல்லப்பக்கவுண்டன்புதூரைச் சேர்ந்த சத்தியநாதன் (20 வயது), உம் அருண்குமாரைத் தாக்கினர். அருண்குமார் தப்பி வீட்டுக்குச் சென்றார். ஆனால் பிரதாப்பும் சத்தியநாதனும் பின்தொடர்ந்து சென்று சரமாரியாகத் தாக்கி காயம் ஏற்படுத்தினர். அருண்குமார் அளித்த புகாரின் பேரில் பேரூர் போலீசார் வழக்குப் பதிவு செய்தனர். பிரதாப், சத்தியநாதன் ஆகிய இருவரையும் கைது செய்தனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 பேரூரில் எச்சில் துப்பியதால் தகராறு: மன்னிப்பு கேட்டும் தாக்கிய இருவர் கைது\n\n📰 முழு விவரம்:\nநேற்று (நவ. 17) இரவு பேரூர் பகுதியில் சாலையில் எச்சில் துப்பிய அருண்குமார் (30 வயது), மீது தவறுதலாக எச்சில் பட்டதால் பிரதாப் (27 வயது), என்பவரிடம் மன்னிப்பு கேட்டார்.\nபிரதாப்பும் அவரது நண்பர் சத்தியநாதன் (20 வயது), உம் அருண்குமாரைத் தாக்கினர். அருண்குமார் தப்பி வீட்டுக்குச் சென்றார்; ஆனாலும் அவர்கள் பின்தொடர்ந்து சென்று சரமாரியாகத் தாக்கி காயம் ஏற்படுத்தினர்.\n👮 நடவடிக்கை: அருண்குமார் அளித்த புகாரின் பேரில் பேரூர் போலீசார் வழக்குப் பதிவு செய்து பிரதாப், சத்தியநாதன் ஆகிய இருவரையும் கைது செய்தனர்.\n\nPerur spitting row two arrested | Coimbatore news\n📍 பேரூர், கோவை மாவட்டம் | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Perur #CoimbatoreNews #கோவை",
-   "prompts": "A pair of young men in shirts and trousers stand beside a parked two-wheeler on a dimly lit residential street in Perur, Coimbatore district, while a third man on a motorcycle rides away from them. The scene is a narrow tarred road lined with modest houses and compound walls, with a few shop lights glowing from a small roadside hotel in the distance. The men are seen from behind and far away, their faces not visible; one is holding a paper food parcel from the hotel. The time is night, lit only by street lamps and shop light, with a calm evening atmosphere. Shot at eye level in 35 mm, wide enough to show the street, the parked bike and the figures in the middle distance. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a two-wheeler's handlebar and a crumpled paper food parcel from a roadside hotel resting on the seat of a parked bike, with a worn tarred road surface beneath it. Behind the bike, slightly blurred, two men stand in conversation under the yellow glow of a street lamp on a quiet Perur street at night. The details show the moment the bike was stopped and the apology was made, with no visible injuries and no readable signs or text. Shot at a shallow depth of field in 35 mm at eye level, the parked bike and food parcel sharp in the foreground and the figures softly out of focus behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/spit-and-apologized-but-were-chased-away-arrested/4379624",
-   "published": "2026-11-18T18:03:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: slide 2 line 2 longer than 60 characters",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
+   "reel_script": "காந்திபுரம் பஸ் ஸ்டாண்டுகளில் யாசகம் கேட்டு இடையூறு செய்த 20 பேர் போலீசாரால் மீட்கப்பட்டுள்ளனர். சமீபகாலமாக டவுன் மற்றும் சென்ட்ரல் பஸ் ஸ்டாண்டுகள் மதுப்பிரியர்களின் கூடாரமாக மாறிவருவதாக புகார் எழுந்துள்ளது. பட்ட பகலிலேயே மது அருந்திவிட்டுப் பயணிகள் அமரும் இருக்கைகளில் தூங்குவதால் மக்களுக்குப் பெரும் தொந்தரவாக உள்ளது. இதையடுத்து, பஸ் ஸ்டாண்டில் மது அருந்தும் வீடியோ வைரலானதையடுத்து காட்டூர் போலீசார் இருவரைக் கைது செய்தனர். மேலும், பலர் பஸ் ஸ்டாண்டிலேயே தங்கி மக்களிடம் யாசகம் கேட்டு இடையூறு செய்வதாகவும் புகார் வந்தது. இதனால், யாசகத்தில் ஈடுபட்ட 20 பேரை போலீசார் மீட்டனர். இந்நிலையில், மீட்கப்பட்டவர்கள் ஆர்.எஸ்.புரம் மாநகராட்சி காப்பகத்தில் ஒப்படைக்கப்பட்டுள்ளனர். அங்கு அவர்களுக்குக் கவுன்சிலிங் வழங்கப்படுகிறது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 காந்திபுரம் பஸ் ஸ்டாண்டில் யாசகம் கேட்ட 20 பேர் மீட்பு\n\n📰 முழு விவரம்:\nகாந்திபுரத்தில் உள்ள டவுன் மற்றும் சென்ட்ரல் பஸ் ஸ்டாண்டுகள் சமீபகாலமாக மதுப்பிரியர்களின் இடமாக மாறி வந்ததாகப் புகார் எழுந்தது. பட்டப்பகலிலேயே மது அருந்திவிட்டுப் பயணிகள் இருக்கைகளில் தூங்குவதால் பயணிகளுக்குப் பெரும் சிரமம் ஏற்பட்டது.\nபஸ் ஸ்டாண்டில் மது அருந்தும் வீடியோ வைரலானதையடுத்து, காட்டூர் போலீசார் இருவரைக் கைது செய்தனர்.\nபஸ் ஸ்டாண்டிலேயே தங்கி மக்களிடம் யாசகம் கேட்டு இடையூறு செய்வதாகவும் புகார் வந்தது. அதன்படி போலீசார் யாசகத்தில் ஈடுபட்ட 20 பேரை மீட்டனர்.\nமீட்கப்பட்டவர்கள் ஆர்.எஸ்.புரம் மாநகராட்சி காப்பகத்தில் ஒப்படைக்கப்பட்டனர். அங்கு அவர்களுக்குக் கவுன்சிலிங் அளிக்கப்படுகிறது.\n\nBeggars rescued at Gandhipuram bus stand, handed to RS Puram corporation shelter | Coimbatore news\n📍 காந்திபுரம், கோவை | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Gandhipuram #CoimbatoreNews #கோவை",
+   "prompts": "A group of about 20 destitute people, seen from behind, is led out of the Gandhipuram bus stand by Tamil Nadu police in khaki, with a police jeep parked at the kerb. The place is the busy Gandhipuram Town bus stand in Coimbatore city, with town buses lined up under a concrete canopy, passenger waiting benches, and shops and traffic beyond the stand. Most of the people are men in worn shirts, lungis and trousers, carrying small bundles and plastic bags, walking slowly with heads down while two or three constables walk beside them. Some passengers waiting on the benches look on at a distance. It is bright daylight with a clear sky. Shot at eye level, 35 mm, wide enough to show the stand, the bus lineup and the police jeep. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a row of empty passenger waiting benches at the Gandhipuram bus stand, with a khaki-uniformed policeman's boots and a folded blanket and plastic bags left behind on the seat. Behind the benches, a town bus is parked at the platform edge and a few passengers stand far away, blurred. The bench surface is worn and dusty from daily use, and sunlight falls across the concrete floor in the afternoon. Taken at eye level, 35 mm, focusing on the benches with the bus stand softly visible behind, to show the place where the begging and sleeping happened. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/20-who-asked-for-yajna-handed-over-to-shelter-home/4379699",
+   "published": "2026-11-18T18:36:25+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b) - NOT CLEAN, held from posting - problems: slides must have 3 or 4 items",
+   "note": "free-model draft anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b, 13 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795016308/kovaiminnal/zanipobqpxbydikothi5.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795016343/kovaiminnal/pumpairqlccncosx5trs.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795020262/kovaiminnal/q2wqmak55uutsl4qz3wu.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795020266/kovaiminnal/ftdge1wgiysapmzgr5yr.jpg"
    ]
   },
   {
-   "tamil_headline": "கோவையில் சின்னவெங்காயம் கிலோ 180 ரூபாய்: விலை குறைய இன்னும் ஒரு மாதம் ஆகும்",
-   "english_headline": "Small onion sells at Rs 180 a kg in Coimbatore retail; traders say prices will not fall until the new crop comes in about a month",
-   "category": "Business & Prices",
-   "location": "Coimbatore city, Coimbatore district",
-   "importance": "High",
-   "scope": "district",
+   "tamil_headline": "ரேஸ்கோர்ஸ் ரவுண்டானா ‘காட்ஸ் கார்டன்’ ஆக மாறி திறப்பு",
+   "english_headline": "Race Course roundabout reopened as 'God's Garden' by Adisia Developers; minister Sampath Kumar inaugurates",
+   "category": "Civic Issues",
+   "location": "Race Course, Coimbatore city, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "விலை உயர்வு",
-    "loc": "கோவை",
-    "hl1": "கோவையில் சின்னவெங்காயம் விலை உயர்வு",
-    "hl2": "சில்லறையில் கிலோ <b>180</b>",
+    "cat": "நகர அழகு",
+    "loc": "ரேஸ்கோர்ஸ், கோவை",
+    "hl1": "ரேஸ்கோர்ஸ் ரவுண்டானா ‘காட்ஸ் கார்டன்’",
+    "hl2": "அமைச்சர் சம்பத் குமார்",
     "slides": [
      {
-      "title": "இப்போதைய விலை",
+      "title": "என்ன திறப்பு?",
       "lines": [
-       "சில்லறை விலையில் கிலோ <b>180</b> ரூபாய்",
-       "மொத்த விலையில் கிலோ <b>165</b> ரூபாய்",
-       "இது நேற்றைய நிலவரம்"
+       "ரேஸ்கோர்ஸ் ரவுண்டானா அழகுபடுத்தப்பட்டது",
+       "அடிசியா டெவலப்பர்ஸ் சார்பில் ‘காட்ஸ் கார்டன்’",
+       "பொதுமக்கள் பயன்பாட்டுக்கு திறக்கப்பட்டது"
       ]
      },
      {
-      "title": "விலை ஏறிய விதம்",
+      "title": "யார் பங்கேற்பு?",
       "lines": [
-       "கடந்த மாதம் துவக்கத்தில் மொத்த விலை கிலோ <b>110</b> முதல்",
-       "சில்லறை விலை கிலோ <b>140</b> முதல் <b>150</b> ரூபாய்",
-       "தீபாவளிக்குப் பிறகு கிலோ <b>80</b> ரூபாய் வரை குறைந்தது"
+       "அமைச்சர் சம்பத் குமார் திறந்து வைத்தார்",
+       "கலெக்டர் பவன்குமார், கமிஷனர் ரவி தேஜா பங்கேற்பு",
+       "போலீஸ் துணை கமிஷனர்கள் மகேஸ்வரன், தங்கதுரை பங்கேற்பு"
       ]
      },
      {
-      "title": "ஏன் விலை உயர்வு?",
+      "title": "சாலை பாதுகாப்பு",
       "lines": [
-       "விளைச்சல் குறைவால் விலை உயர்ந்துள்ளது",
-       "மைசூர் பகுதியில் இருந்து வெங்காயம் வரவில்லை",
-       "சென்னை உள்ளிட்ட பிற மாவட்டங்களில் கிலோ <b>220</b> ரூபாய்"
-      ]
-     },
-     {
-      "title": "விலை எப்போது",
-      "lines": [
-       "இப்போது விதைத்த வெங்காயம் அறுவடைக்கு ஒரு மாதம் ஆகும்",
-       "அதுவரை விலை குறைய வாய்ப்பில்லை என வியாபாரிகள் கூறுகின்றனர்",
-       "ஆலாந்துறை, தொண்டாமுத்தூர் பட்டறை வெங்காயம் விற்பனைக்கு"
+       "அடிசியா டெவலப்பர்ஸ் நிறுவனர் மணிகண்டன் முன்னிலையில்",
+       "பொதுமக்களுக்கு ஹெல்மெட் இலவசமாக வழங்கப்பட்டது",
+       "வாரந்தோறும் ஒரு துறையின் <b>100 பேருக்கு</b> ஹெல்மெட்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவையில் சின்னவெங்காயம் சில்லறை விலையில் கிலோ 180 ரூபாய்க்கு விற்கப்படுகிறது. இது நேற்றைய நிலவரம். மொத்த விலையில் கிலோ 165 ரூபாய். கடந்த மாதம் துவக்கத்தில் மொத்த விலை கிலோ 110 முதல் 120 ரூபாய் வரையும், சில்லறை விலை 140 முதல் 150 ரூபாய் வரையும் இருந்தது. தீபாவளிக்குப் பிறகு கிலோ 80 ரூபாய் வரை குறைந்தது. ஆனால் இப்போது மீண்டும் விலை உயர்ந்துள்ளது. விளைச்சல் குறைவே இதற்குக் காரணம். மைசூர் பகுதியில் இருந்து சின்னவெங்காயம் வரவில்லை. சென்னை உள்ளிட்ட பிற மாவட்டங்களில் கிலோ 220 ரூபாய்க்கு விற்கப்படுகிறது. தியாகி குமரன் காய்கறி மார்க்கெட் வியாபாரி பாபு, இப்போது விதைக்கப்பட்ட வெங்காயம் அறுவடைக்கு இன்னும் ஒரு மாதம் ஆகும் என்றும், அதுவரை விலை குறைய வாய்ப்பில்லை என்றும் கூறினார். தற்போது ஆலாந்துறை, தொண்டாமுத்தூர் பகுதி பட்டறையில் சேமித்த வெங்காயம்தான் விற்பனைக்கு வருகிறது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🧅 கோவையில் சின்னவெங்காயம் சில்லறை விலையில் கிலோ 180 ரூபாய்\n\n📰 முழு விவரம்:\nகோவையில் சின்னவெங்காயம் சில்லறை விலையில் கிலோ 180 ரூபாய்க்கும், மொத்த விலையில் கிலோ 165 ரூபாய்க்கும் விற்கப்படுகிறது. இது நேற்றைய நிலவரம்.\nகடந்த மாதம் துவக்கத்தில் மொத்த விலை கிலோ 110 முதல் 120 ரூபாய் வரையும், சில்லறை விலை 140 முதல் 150 ரூபாய் வரையும் இருந்தது. தீபாவளிக்குப் பிறகு கிலோ 80 ரூபாய் வரை குறைந்தது. இப்போது மீண்டும் விலை உயர்ந்துள்ளது.\n🌾 விளைச்சல் குறைவால் விலை உயர்ந்துள்ளது. மைசூர் பகுதியில் இருந்து வெங்காயம் வரவில்லை.\n🏙️ சென்னை உள்ளிட்ட பிற மாவட்டங்களில் கிலோ 220 ரூபாய்க்கு விற்கப்படுகிறது.\n⏳ இப்போது விதைத்த வெங்காயம் அறுவடைக்கு ஒரு மாதம் ஆகும். அதுவரை விலை குறைய வாய்ப்பில்லை என தியாகி குமரன் காய்கறி மார்க்கெட் வியாபாரி பாபு கூறுகிறார்.\n📦 தற்போது ஆலாந்துறை, தொண்டாமுத்தூர் பகுதி பட்டறையில் சேமித்த வெங்காயம்தான் விற்பனைக்கு வருகிறது.\n\nCoimbatore small onion price Rs 180 per kg retail | Coimbatore news\n📍 கோவை மாவட்டம் | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #விலை",
-   "prompts": "A wholesale onion trader in a vegetable market in Coimbatore city sorts a heap of small red onions into a plastic basket while a customer in a saree stands at his stall, weighing the onions on a hanging scale. The stall is one of many open-sided shops in a busy covered market, with sacks of onions stacked on the floor, plastic crates, and hanging gunny bags along the walls. Other vendors and shoppers are seen further back in the aisle, mostly from behind, men in shirts and veshti and women in sarees and salwar. Daylight comes through the open roof edges, and the stall looks busy but the price on the scale is the focus. Taken at eye level with a 35 mm lens, wide enough to show the stall and the market aisle around it, with no readable signboards or labels visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/big-price-for-chilli-kg-selling-for-rs-180/4379556",
-   "published": "2026-11-18T17:30:21+05:30",
+   "reel_script": "ரேஸ்கோர்ஸ் ரவுண்டானா இப்போது ‘காட்ஸ் கார்டன்’ என்ற பெயரில் அழகுபடுத்தப்பட்டு திறக்கப்பட்டுள்ளது. அடிசியா டெவலப்பர்ஸ் நிறுவனம் இந்தப் பணியைச் செய்துள்ளது. அமைச்சர் சம்பத் குமார் இதைத் திறந்து வைத்தார். நிகழ்ச்சியில் கலெக்டர் பவன்குமார், மாநகராட்சி கமிஷனர் ரவி தேஜா, போலீஸ் துணை கமிஷனர்கள் மகேஸ்வரன், தங்கதுரை ஆகியோர் பங்கேற்றனர். அடிசியா டெவலப்பர்ஸ் நிறுவனர் மணிகண்டன் முன்னிலையில் சாலைப் பாதுகாப்பு விழிப்புணர்வு நிகழ்ச்சியும் நடத்தப்பட்டது. பொதுமக்களுக்கு ஹெல்மெட் இலவசமாக வழங்கப்பட்டது. நகரின் அழகை மேம்படுத்தும் பணியுடன் சாலைப் பாதுகாப்புக்கும் முக்கியத்துவம் அளிக்கப்படுவதாக நிறுவனத்தினர் தெரிவித்தனர். வாரந்தோறும் ஒரு துறையைச் சேர்ந்த 100 பேருக்கு ஹெல்மெட் இலவசமாக வழங்க திட்டமிடப்பட்டுள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🌳 ரேஸ்கோர்ஸ் ரவுண்டானா இனி ‘காட்ஸ் கார்டன்’ - அமைச்சர் திறப்பு\n\n📰 முழு விவரம்:\nரேஸ்கோர்ஸ் பகுதி ரவுண்டானா, அடிசியா டெவலப்பர்ஸ் நிறுவனத்தின் பங்களிப்புடன் அழகுபடுத்தப்பட்டு பொதுமக்கள் பயன்பாட்டுக்குத் திறக்கப்பட்டுள்ளது.\n🎗️ அமைச்சர் சம்பத் குமார் இதைத் திறந்து வைத்தார்.\n👥 கலெக்டர் பவன்குமார், மாநகராட்சி கமிஷனர் ரவி தேஜா, போலீஸ் துணை கமிஷனர்கள் (போக்குவரத்து) மகேஸ்வரன், (வடக்கு) தங்கதுரை ஆகியோர் பங்கேற்றனர்.\n🪖 அடிசியா டெவலப்பர்ஸ் நிறுவனர் மணிகண்டன் முன்னிலையில் சாலைப் பாதுகாப்பு விழிப்புணர்வு நடைபெற்றது; பொதுமக்களுக்கு ஹெல்மெட் இலவசமாக வழங்கப்பட்டது.\n🏙️ நகர அழகுடன் சாலைப் பாதுகாப்புக்கும் முக்கியத்துவம் அளிப்பதாக நிறுவனத்தினர் தெரிவித்தனர்.\n📅 வாரந்தோறும் ஒரு துறையைச் சேர்ந்த 100 பேருக்கு ஹெல்மெட் இலவசமாக வழங்கத் திட்டமிட்டுள்ளனர்.\n\nRace Course roundabout 'God's Garden' opened, helmets free | Coimbatore news\n📍 ரேஸ்கோர்ஸ், கோவை | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #RaceCourse #சாலைப்பாதுகாப்பு #CoimbatoreNews",
+   "prompts": "A group of officials in formal shirts and sarees stand near a newly landscaped roundabout at Race Course in Coimbatore city as a minister performs the inauguration of the 'God's Garden' at the centre. The roundabout is a wide circular road island with green lawns, neatly trimmed hedges, flowering plants and a small landscaped garden in the middle, surrounded by a busy city road with two-wheelers, cars and a town bus passing around it. Several people are seen from behind or at a distance: the minister and senior officials in formal dress, a few police officers in khaki standing near the edge, and members of the public gathered on the footpath. The time is daylight with soft morning sunlight and a clear sky. Shot at eye level, 35 mm, wide enough to show the full roundabout, the garden and the traffic around it. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a neat row of new helmets laid out on a table or handed over in a bundle at a road-safety awareness event beside a landscaped roundabout garden in Race Course, Coimbatore city. The helmets are plain, ready for distribution, with green lawn and trimmed plants blurred in the background. In the far background, a few two-wheelers pass on the road around the roundabout. Daylight, clear weather. Camera slightly high, 35 mm, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/gates-garden-opens-at-racecourse-rundana/4379546",
+   "published": "2026-11-18T17:18:25+05:30",
    "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
    "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795016354/kovaiminnal/zs7buvw5ymng7cfii2cf.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795020280/kovaiminnal/s7k1iy1kpahqb8lk0ghi.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795020284/kovaiminnal/o3yymns25c6dkf8j6pfs.jpg"
    ]
   },
   {
-   "tamil_headline": "மாநகர சாலைகளில் 605 இடங்களில் பேட்ச் ஒர்க் பணி",
-   "english_headline": "Patch work done at 605 spots on Coimbatore city roads; 1,846 spots planned",
-   "category": "Civic Issues",
-   "location": "Coimbatore city, Coimbatore district",
-   "importance": "High",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "சாலை பணி",
-    "loc": "கோவை மாநகர்",
-    "hl1": "கோவை மாநகரில் சாலை சீரமைப்பு பணி",
-    "hl2": "605 இடங்களில் பணி நிறைவு",
-    "slides": [
-     {
-      "title": "ஏன் பணி?",
-      "lines": [
-       "மாநகரில் சாலைகள் குண்டும் குழியுமாக உள்ளன",
-       "தீபாவளி பண்டிகையால் பணியில் தாமதம் ஏற்பட்டது",
-       "முதல்வர், நகராட்சி நிர்வாக இயக்குனர் மாநகராட்சியை"
-      ]
-     },
-     {
-      "title": "இதுவரை என்ன?",
-      "lines": [
-       "மொத்தம் <b>1,846 இடங்களில்</b> பேட்ச் ஒர்க் திட்டம்",
-       "இதுவரை <b>605 இடங்களில்</b> பணி நடந்துள்ளது",
-       "<b>11,255 ச.மீ</b> பரப்பில் பேட்ச் ஒர்க் முடிந்தது"
-      ]
-     },
-     {
-      "title": "எப்போது பணி?",
-      "lines": [
-       "மொத்தத் திட்டப் பரப்பு <b>28,733 ச.மீ</b>",
-       "போக்குவரத்து பாதிக்கக்கூடாது என்பதால் இரவில் பணி",
-       "கடந்த சில நாட்களாகச் சீரமைப்புப் பணி நடக்கிறது"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோவை மாநகரில் 605 இடங்களில் சாலை பேட்ச் ஒர்க் பணி நடந்து முடிந்துள்ளது. மாநகரில் சாலைகள் குண்டும் குழியுமாக இருந்தன. தீபாவளி பண்டிகையால் பணியில் தாமதம் ஏற்பட்டது. இதையடுத்து முதல்வரும், நகராட்சி நிர்வாக இயக்குனரும் மாநகராட்சியை எச்சரித்தனர். கடந்த சில நாட்களாகச் சீரமைப்புப் பணி வேகமாக நடைபெற்று வருகிறது. மொத்தம் 1,846 இடங்களில், 28,733 சதுர மீட்டர் பரப்பில் பேட்ச் ஒர்க் செய்ய திட்டமிடப்பட்டுள்ளது. இதுவரை 605 இடங்களில், 11,255 சதுர மீட்டர் பரப்பில் பணி முடிந்துள்ளது. போக்குவரத்துக்குத் தொந்தரவு ஏற்படக்கூடாது என்பதற்காக இரவு நேரத்தில் பணி நடைபெறுவதாக மாநகராட்சி தெரிவித்துள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚧 கோவை மாநகரில் 605 இடங்களில் சாலை பேட்ச் ஒர்க் நிறைவு\n\n📰 முழு விவரம்:\nகோவை மாநகரில் ரோடுகள் குண்டும் குழியுமாக இருந்ததால், சீரமைப்புப் பணி நடைபெற்று வருகிறது.\nதீபாவளி பண்டிகையால் பணியில் சுணக்கம் ஏற்பட்டது. முதல்வர், நகராட்சி நிர்வாக இயக்குனர் மாநகராட்சியை எச்சரித்தனர். கடந்த சில நாட்களாகச் சீரமைப்புப் பணி நடக்கிறது.\n🛣️ மொத்தம் 1,846 இடங்களில், 28,733 ச.மீ பரப்பில் பேட்ச் ஒர்க் செய்ய திட்டம்.\n✅ இதுவரை 605 இடங்களில், 11,255 ச.மீ பரப்பில் பேட்ச் ஒர்க் முடிந்துள்ளது.\n🌙 போக்குவரத்துக்கு இடையூறு இல்லாமல் இருக்க இரவு நேரத்தில் பணி நடைபெறுவதாக மாநகராட்சி தெரிவித்துள்ளது.\n\nCoimbatore city road patch work 605 spots | Coimbatore news\n📍 கோவை மாநகர், கோவை மாவட்டம் | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Roads",
-   "prompts": "At night on a busy Coimbatore city road, corporation road workers in reflective vests and helmets spread fresh black asphalt over a deep pothole in the carriageway. A rear-facing tipper lorry with a tar drum and a small road roller stand beside the patch, and orange traffic cones guide a few two-wheelers and an autorickshaw slowly past. Shuttered shops and shop-front lights line the roadside, with a row of street lamps glowing overhead and a town bus in the distance. The workers, seen from behind or far away, wear shirts and trousers under their vests, and one holds a long-handled rake. The light is warm yellow from the street lamps mixed with the cool headlights of passing vehicles, and the night air looks clear. Shot at eye level, 35 mm lens, wide enough to show the full stretch of road and the work in progress. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a freshly laid patch of black asphalt filling a pothole in a Coimbatore city road, its surface still glossy and slightly uneven where a worker has smoothed it with a rake. Around the edges, the old cracked tarmac and loose gravel show the damage that was repaired. A pair of rubber boots and the tip of a metal shovel are visible at the frame's edge, with a small pile of hot mix on the road. Night-time street light falls across the wet-looking black surface, creating soft reflections. The camera is low and close, 35 mm lens, focused on the texture of the fresh patch with the blurred figures of workers far behind in the background. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/patchwork-at-605-locations-on-city-roads/4379971",
-   "published": "2026-11-18T20:25:16+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script writes ages as newspaper shorthand (இடங்களில், 28,, இடங்களில், 11,); say it as a news reader: '12 வயது மகன் ராஜா', 'கவுசிக் (14 வயது)' -> '14 வயதான கவுசிக்'",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795016387/kovaiminnal/myolmwanujbi0fnukrab.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795016391/kovaiminnal/ska0ozjfmew6vcpptkk5.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "சிறுமுகை பேரூராட்சி: வீட்டு வரி, குடிநீர் கட்டணம் உடனே செலுத்த அறிவுறுத்தல்",
-   "english_headline": "Sirumugai town panchayat asks residents to pay pending house tax and water charges immediately",
-   "category": "Government & Services",
-   "location": "Sirumugai town panchayat, Coimbatore district",
+   "tamil_headline": "சுந்தராபுரத்தில் பெட்டிக்கடையில் 2 கிலோ புகையிலை; வீட்டில் 181.85 கிலோ பறிமுதல், ஒருவர் கைது",
+   "english_headline": "Sundarapuram: 2 kg banned tobacco found at a petty shop; 181.85 kg more seized from the arrested man's house",
+   "category": "Crime & Safety",
+   "location": "Sundarapuram, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "பேரூராட்சி அறிவிப்பு",
-    "loc": "சிறுமுகை",
-    "hl1": "சிறுமுகையில் வரி, குடிநீர் கட்டணம்",
-    "hl2": "உடனே செலுத்த அறிவுறுத்தல்",
+    "cat": "போலீஸ் நடவடிக்கை",
+    "loc": "சுந்தராபுரம், கோவை",
+    "hl1": "சுந்தராபுரத்தில் 183 கிலோ புகையிலை",
+    "hl2": "ஒருவர் கைது",
     "slides": [
      {
-      "title": "எவ்வளவு பாக்கி?",
+      "title": "கடையில் சோதனை",
       "lines": [
-       "வீட்டு, சொத்து வரி: <b>6,30,000</b> ரூபாய் பாக்கி",
-       "குடிநீர் கட்டணம்: <b>17,94,600</b> ரூபாய் பாக்கி",
-       "சிறுமுகை பேரூராட்சியில் 18 வார்டுகள் உள்ளன"
+       "மதுக்கரை மார்க்கெட் சாலையில் பெட்டிக்கடையில் சோதனை",
+       "சுந்தராபுரம் போலீஸ் எஸ்.ஐ. ராஜேஷ் தலைமையில் போலீசார்",
+       "தடை செய்யப்பட்ட <b>2 கிலோ</b> புகையிலை பறிமுதல்"
       ]
      },
      {
-      "title": "எப்போது கட்ட",
+      "title": "ஒருவர் கைது",
       "lines": [
-       "வீட்டு, சொத்து வரி 6 மாதத்துக்கு ஒரு முறை",
-       "முதல் பாதி தொகை <b>செப்டம்பருக்குள்</b> கட்ட வேண்டும்",
-       "அடுத்த பாதி தொகை <b>மார்ச்</b> மாதத்துக்குள் கட்ட வேண்டும்"
+       "கடையில் இருந்த ராஜ்குமார், <b>39</b> கைது",
+       "எம்.ஜி.ஆர். நகரில் வசிப்பவர்",
+       "அவர் கொடுத்த தகவலில் வீட்டில் சோதனை"
       ]
      },
      {
-      "title": "என்ன செய்ய",
+      "title": "வீட்டில் பறிமுதல்",
       "lines": [
-       "செப்டம்பர் வரை மக்கள் முழுமையாக செலுத்தவில்லை",
-       "மக்கள் உடனடியாக செலுத்தி ரசீது பெறலாம்",
-       "செயல் அலுவலர் மாலா தகவல்"
+       "வீட்டில் இருந்த <b>181.85 கிலோ</b> புகையிலை பறிமுதல்",
+       "மொத்தம் சுமார் <b>183 கிலோ</b> புகையிலை பொருட்கள்",
+       "தடை செய்யப்பட்ட பொருட்கள் விற்பனை குறித்து போலீஸ் விசாரணை"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "சிறுமுகை பேரூராட்சியில் வீட்டு வரி மற்றும் குடிநீர் கட்டணம் பாக்கி உள்ளது. வீடு, சொத்து வரியில் 6,30,000 ரூபாயும், குடிநீர் கட்டணத்தில் 17,94,600 ரூபாயும் பாக்கி உள்ளது. பேரூராட்சியில் ஒவ்வொரு 6 மாதத்துக்கு ஒரு முறை வீட்டு வரியும் சொத்து வரியும் கட்ட வேண்டும். முதல் பாதி தொகையை செப்டம்பருக்குள்ளும், அடுத்த பாதி தொகையை மார்ச் மாதத்துக்குள்ளும் கட்ட வேண்டும். செப்டம்பர் வரை வரிகளையும் குடிநீர் கட்டணங்களையும் மக்கள் முழுமையாக செலுத்தவில்லை என்று செயல் அலுவலர் மாலா தெரிவித்துள்ளார். பொதுமக்கள் உடனடியாக பணம் செலுத்தி ரசீது பெற்றுக்கொள்ளலாம். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚰 சிறுமுகையில் வரி, குடிநீர் கட்டணம் பாக்கி: உடனே செலுத்த அறிவுறுத்தல்\n\n📰 முழு விவரம்:\nசிறுமுகை பேரூராட்சியில் வீட்டு வரி, சொத்து வரி மற்றும் குடிநீர் கட்டணம் பாக்கி உள்ளதாக செயல் அலுவலர் மாலா தெரிவித்துள்ளார். பேரூராட்சியின் 18 வார்டுகளில் 7,320 விவசாய நிலங்கள், வீடுகள், கடைகள் உள்ளன; இதில் 4,574 குடிநீர் இணைப்புகள் உள்ளன.\n6 மாதத்துக்கு ஒரு முறை வீட்டு வரி, சொத்து வரி கட்ட வேண்டும். முதல் பாதி தொகையை செப்டம்பருக்குள்ளும், அடுத்த பாதி தொகையை மார்ச் மாதத்துக்குள்ளும் கட்ட வேண்டும்.\n💰 வீடு, சொத்து வரி பாக்கி: 6,30,000 ரூபாய்\n💧 குடிநீர் கட்டண பாக்கி: 17,94,600 ரூபாய்\n👉 மக்கள் உடனடியாக செலுத்தி ரசீது பெறலாம்.\n\nSirumugai house tax and water charges pending, pay now | Coimbatore news\n📍 சிறுமுகை, கோவை மாவட்டம் | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Sirumugai #CoimbatoreNews #கோவை",
-   "prompts": "A line of Sirumugai town panchayat residents, seen from behind, stands at the counter of the town panchayat office to pay pending house tax and water charges. The office is a modest government building in a small town in Coimbatore district, with a tiled or concrete verandah, a grill window and wooden counters. Men in shirts with veshti and women in cotton sarees or salwar wait in a queue, some holding folded papers and bank notes in their hands, while a panchayat clerk sits behind the counter with a ledger open. Parked two-wheelers and a few autorickshaws stand outside the compound gate under a bright daytime sky. Daylight, mild haze, normal office hours. Camera at eye level, 35 mm, wide enough to show the office front and the queue, with faces kept out of frame. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a clerk's wooden desk inside the town panchayat office, showing a stack of paper tax receipt books, a bundle of Indian rupee notes and a small heap of coins beside a ledger and a black ink pad. A steel tumbler of water sits at the edge of the desk and a ceiling fan is visible at the top of the frame. The surface is worn and the light is soft daylight coming through a window. No readable text or numbers, and no people's faces, just hands of a clerk resting on the ledger. Camera close, slightly high, 35 mm, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/instructions-to-pay-house-tax-drinking-water-charges-immediately/4379787",
-   "published": "2026-11-18T19:10:36+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: fact-check: The caption says the 7,320 properties are 'விவசாய நிலங்கள், வீடுகள், கடைகள்' within the 18 wards, which is roughly what the article says; however the reel_script says 'சிறுமுகை பேரூராட்சியில் 18 வார்டுகள் உள்ளன' under slide 1 which is fine — no issue there. Main problem: reel_script says 'வீட்டு வரியும் சொத்து வரியும் கட்ட வேண்டும்' and asserts the payment deadline dates as 'செப்டம்பருக்குள்' and 'மார்ச் மாதத்துக்குள்' without the year/context, and states 'செப்டம்பர் வரை வரிகளையும் குடிநீர் கட்டணங்களையும் மக்கள் முழுமையாக செலுத்தவில்லை' — the article's 'செப்.,வரை' is ambiguous but acceptable. Also the reel_script omits the 4,574 water connections and 7,320 properties figure, which is an important fact missing from the reel_script, and slide 1 lists 18 wards without the property count.",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
+   "reel_script": "சுந்தராபுரத்தில் தடை செய்யப்பட்ட புகையிலை பொருட்கள் சுமார் 183 கிலோ பறிமுதல் செய்யப்பட்டுள்ளது. நவம்பர் 18ஆம் தேதி சுந்தராபுரம் போலீஸ் நிலைய காவல் உதவி ஆய்வாளர் ராஜேஷ் தலைமையில் போலீசார் மதுக்கரை மார்க்கெட் சாலையில் உள்ள பெட்டிக்கடையில் சோதனை நடத்தினர். திருமண மண்டபம் அருகே உள்ள அந்தக் கடையில் தடை செய்யப்பட்ட 2 கிலோ புகையிலை பொருட்கள் இருந்தன. அவற்றைப் போலீசார் பறிமுதல் செய்தனர். கடையில் இருந்த எம் ஜி ஆர் நகரில் வசிக்கும் ராஜ்குமார், 39 என்பவர் கைது செய்யப்பட்டார். அவர் அளித்த தகவலின் அடிப்படையில் வீட்டில் சோதனை நடத்தப்பட்டது. அங்கிருந்து 181.85 கிலோகிராம் புகையிலை பொருட்கள் பறிமுதல் செய்யப்பட்டன. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 சுந்தராபுரத்தில் 183 கிலோ தடை செய்யப்பட்ட புகையிலை பறிமுதல்; ஒருவர் கைது\n\n📰 முழு விவரம்:\nசுந்தராபுரம் போலீஸ் நிலைய எஸ்.ஐ. ராஜேஷ் தலைமையில் போலீசார் மதுக்கரை மார்க்கெட் சாலையில், திருமண மண்டபம் அருகே உள்ள பெட்டிக்கடையில் சோதனை நடத்தினர். அங்கு தடை செய்யப்பட்ட 2 கிலோ புகையிலை பொருட்கள் இருப்பது தெரியவந்து பறிமுதல் செய்யப்பட்டன. கடையில் இருந்த எம்.ஜி.ஆர். நகரில் வசிக்கும் ராஜ்குமார், 39 கைது செய்யப்பட்டார். அவர் கொடுத்த தகவலின் அடிப்படையில் வீட்டில் இருந்த 181.85 கிலோகிராம் புகையிலை பொருட்களும் பறிமுதல் செய்யப்பட்டன.\n📍 இடம்: மதுக்கரை மார்க்கெட் சாலை, சுந்தராபுரம்\n👮 நடவடிக்கை: ராஜ்குமார் கைது; வீட்டில் இருந்த புகையிலை பறிமுதல்\n\nSundarapuram 183 kg tobacco seized, one arrested | Coimbatore news\n📍 சுந்தராபுரம், கோவை மாவட்டம் | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Sundarapuram #CoimbatoreNews #கோவை",
+   "prompts": "A Tamil Nadu police team in khaki uniform stops at a small roadside petty shop on a busy market road in Sundarapuram, Coimbatore, and seizes banned tobacco packets from the counter. The shop is a narrow single-storey concrete front with a wooden counter, shelves of snacks and cigarette bundles, and a hanging plastic sheet over the doorway, set beside a road lined with two-wheelers, an autorickshaw and a parked private bus. A marriage hall with a plain facade stands nearby across the street. Two or three police officers in khaki stand at the counter, one with a notepad, while a few onlookers in shirts and veshti watch from the roadside, seen from behind or far away. The seized packets of banned tobacco are stacked in a plastic bag on the counter. It is bright daytime with soft natural light and a clear sky. Camera at eye level, 35 mm, wide enough to show the road, the shop and the marriage hall. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of several sacks and bags of banned tobacco products piled on the floor of a plain residential house room in MGR Nagar, Coimbatore, after seizure by police. Stacked gunny sacks and heaped plastic packets of tobacco fill one corner of a bare concrete floor, with a steel almirah and a plastic chair in the background and a small window letting in daylight. Two khaki-uniformed police constables stand at the edge of the frame, seen from behind and slightly blurred, while a weighing scale sits beside the pile. The camera is at a slightly high angle, 35 mm, close enough to show the quantity of seized goods clearly. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/183-kg-tobacco-products-seized/4380058",
+   "published": "2026-11-18T21:28:24+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: fact-check: reel_script gives the date as நவம்பர் 18ஆம் தேதி, which does not appear in the article; fact-check: reel_script and slides_spec call the officer a 'காவல் உதவி ஆய்வாளர்' / 'எஸ்.ஐ.' with a name, but the article only says 'எஸ்.ஐ.,ராஜேஷ்' with no mention of a leading team; 'தலைமையில்' (led by) is an embellishment not stated in the article; fact-check: reel_script says the tobacco was seized 'சுமார் 183 கிலோ' total, which is a sum the article does not state explicitly (2 kg + 181.85 kg), presented as a fact in the headline and slides",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 3 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795016399/kovaiminnal/wokbuqidkhdwy1kdfrfv.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795016404/kovaiminnal/dyucuvncqjhksfbdpfbo.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795020295/kovaiminnal/l1zq5vslrkh4wcuqrtlg.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795020300/kovaiminnal/adrpufwersf3d8d9p4wb.jpg"
    ]
   }
  ]
