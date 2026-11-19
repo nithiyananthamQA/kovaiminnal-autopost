@@ -20,7 +20,8 @@ PROTECT = ["/.git/", "/LIVE", "/.last_check", "/.heartbeat", "/PROJECT_CONTEXT.m
            "/research_free/ENABLED", "/research_free/START_AT", "/research_free/archive/", "/research_free/results/",
            "/research_free/learned.json", "/research_free/reference_reach.json",
            "/poster/prebuilt/", "/poster/fb_posted/", "/poster/insights/", "/poster/probe/", "/poster/queue*",
-           "/poster/story_shared.json", "/poster/comments_ignored.json", "/goldrate/state/", "/rasipalan/state/"]
+           "/poster/story_shared.json", "/poster/comments_ignored.json", "/goldrate/state/", "/rasipalan/state/",
+           "/apps_script/*.local.gs"]      # 19 Nov: the page's own filled Apps Script (Sheet / folder ids) - git-ignored, never deleted
 
 
 def run(cmd, cwd, check=True):
