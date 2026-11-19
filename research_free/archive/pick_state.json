@@ -124,7 +124,8 @@
    "alts": [
     "https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/19/%E0%AE%86%E0%AE%A9%E0%AF%8D%E0%AE%B2%E0%AF%88%E0%AE%A9%E0%AF%8D-%E0%AE%AE%E0%AF%82%E0%AE%B2%E0%AE%AE%E0%AF%8D-%E0%AE%B5%E0%AF%86%E0%AE%B5%E0%AF%8D%E0%AE%B5%E0%AF%87%E0%AE%B1%E0%AF%81-%E0%AE%A8%E0%AE%AA%E0%AE%BE%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AE%BF%E0%AE%9F%E0%AE%AE%E0%AF%8D-%E0%AE%B0%E0%AF%82459-%E0%AE%B2%E0%AE%9F%E0%AF%8D%E0%AE%9A%E0%AE%AE%E0%AF%8D-%E0%AE%AE%E0%AF%8B%E0%AE%9A%E0%AE%9F%E0%AE%BF"
    ],
-   "listed_at": "2026-11-20T05:01:19.662538+05:30"
+   "listed_at": "2026-11-20T05:01:19.662538+05:30",
+   "picked_at": "2026-11-20T05:04:23.079496+05:30"
   },
   "Cd407b28": {
    "id": "Cd407b28",
@@ -136,7 +137,8 @@
    "category": "குற்றம்",
    "score": 11.06,
    "power_cut": false,
-   "listed_at": "2026-11-20T05:01:19.662538+05:30"
+   "listed_at": "2026-11-20T05:01:19.662538+05:30",
+   "picked_at": "2026-11-20T05:04:23.079498+05:30"
   },
   "Cee2a151": {
    "id": "Cee2a151",
@@ -148,7 +150,8 @@
    "category": "குற்றம்",
    "score": 10.5,
    "power_cut": false,
-   "listed_at": "2026-11-20T05:01:19.662538+05:30"
+   "listed_at": "2026-11-20T05:01:19.662538+05:30",
+   "picked_at": "2026-11-20T05:04:23.079502+05:30"
   },
   "Ccf19818": {
    "id": "Ccf19818",
@@ -160,7 +163,8 @@
    "category": "விபத்து",
    "score": 10.0,
    "power_cut": false,
-   "listed_at": "2026-11-20T05:01:19.662538+05:30"
+   "listed_at": "2026-11-20T05:01:19.662538+05:30",
+   "picked_at": "2026-11-20T05:04:23.079500+05:30"
   },
   "Cc99fe1f": {
    "id": "Cc99fe1f",
@@ -172,7 +176,8 @@
    "category": "பொது",
    "score": 8.0,
    "power_cut": false,
-   "listed_at": "2026-11-20T05:01:19.662538+05:30"
+   "listed_at": "2026-11-20T05:01:19.662538+05:30",
+   "picked_at": "2026-11-20T05:04:23.079503+05:30"
   }
  },
  "rounds": {
@@ -1024,8 +1029,24 @@
    ],
    "sent": false,
    "deadline": "2026-11-20T06:01:19.662538+05:30",
-   "decided": null,
-   "written": []
+   "decided": {
+    "how": "automatic: top 5 of 13 by insights",
+    "ids": [
+     "C34c82c9",
+     "Cd407b28",
+     "Ccf19818",
+     "Cee2a151",
+     "Cc99fe1f"
+    ],
+    "at": "2026-11-20T05:04:23.079485+05:30"
+   },
+   "written": [
+    "C34c82c9",
+    "Cc99fe1f",
+    "Ccf19818",
+    "Cd407b28",
+    "Cee2a151"
+   ]
   }
  },
  "retry": {}
