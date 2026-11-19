@@ -82,6 +82,8 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-19 | `372461b` | PAGE_SETUP: power-cut page in one day - the full Salem runbook + the mistakes not to repeat (owner 19 Nov) |
+| 2026-11-19 | `a27bd57` | sync_pages: keep each page's filled Apps Script (apps_script/*.local.gs) |
 | 2026-11-19 | `f4b6cab` | pages: Salem ids (salem-bot token, own Meta app Salem Pages) + insights job (owner 19 Nov: "add insight also") |
 | 2026-11-19 | `b12856f` | pages: Salem Minnal = power cuts only, its own Apps Script + Meta app, the reference's own Salem lists (owner 19 Nov) |
 | 2026-11-19 | `18cc826` | powercut: notices written |
@@ -110,6 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-19 | `bbcf95e` | pick: picked news saved |
 | 2026-11-19 | `3e0c967` | pick: picked news saved |
 | 2026-11-19 | `460001c` | pick: list sent |
-| 2026-11-19 | `33f6322` | powercut: notices written |
-| 2026-11-19 | `9f6335d` | The right day: never 'நாளை' about a day that came; power cuts only before their day, first in the queue; party names spoken letter by letter (owner 19 Nov) |
 <!-- recent-changes:end -->
