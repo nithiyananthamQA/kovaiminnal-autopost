@@ -118,6 +118,9 @@ e-mail tag KOVAIMINNAL. Never "360".
   and a draft doing it is sent back (19 Nov: 'கோவையில் நாளை மின்தடை ... (நவம்பர் 19)' went out on the 19th at 11:27).
 - freshness.power_cut_over: a power cut is posted only BEFORE its day - on the day it is skipped (owner: "if the news came today and
   today is the power cut, we are not worth to give that information"); post.pick_all puts power cuts first in the queue.
+- freshness.same_cut_areas: the same power cut from a second paper (other headline words, same cut day, 2+ of the district's
+  known areas in the script) is a duplicate (19 Nov: RN-102 = RN-97 from ABP Live, posted on the cut day). The reference has the same
+  gap: 4 of his last 23 dated power-cut reels went out on / after the cut day saying நாளை.
 - names.spoken: party short names without dots (தவெக, திமுக, அதிமுக, பாஜக ...) are read letter by letter - voice only.
 
 ## 5. Correctness fixes of ours (owner 17 Nov: "you kept ours better" - the friend is told to fix his copy)

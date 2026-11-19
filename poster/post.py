@@ -368,7 +368,9 @@ def _skip_reason_base(row):
         if (freshness.similar(o.get("headline_ta") or "", row.get("headline_ta") or "", 0.62, o.get("researched"))
                 or freshness.similar((o.get("headline_en") or "").lower(), (row.get("headline_en") or "").lower(), 0.65, o.get("researched"))
                 or freshness.same_power_cut(o.get("headline_ta"), o.get("published") or o.get("researched"),      # owner 30 Oct: same cut day + same place
-                                            row.get("headline_ta"), row.get("published") or row.get("researched"))):
+                                            row.get("headline_ta"), row.get("published") or row.get("researched"))
+                or freshness.same_cut_areas(o.get("headline_ta") or "", script_of(o) or "", o.get("published") or o.get("researched"),      # 19 Nov
+                                            row.get("headline_ta") or "", row.get("reel_script") or "", row.get("published") or row.get("researched"))):
             if freshness.follow_up(o, row):
                 continue
             return f"duplicate of {o.get('story_id')}"

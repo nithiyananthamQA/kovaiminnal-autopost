@@ -2636,3 +2636,22 @@ class TomorrowIsToday19Nov(unittest.TestCase):
         key = lambda r: (not post.is_shutdown(r), post.IMPORTANCE.get((r.get("importance") or "").strip(), 1))      # noqa: E731
         self.assertEqual([r["story_id"] for r in sorted(rows, key=key)], ["RN-2", "RN-1"])
 
+
+class SameCutOtherPaper19Nov(unittest.TestCase):
+    """owner 19 Nov ("we need to block like this"): RN-102 was RN-97's power cut again from ABP Live, other words in the headline
+    ('எம்.ஜி.ரோடு' / 'எம்.ஜி. சாலை') - same cut day + the same areas in the script = the same news, never posted twice"""
+    A_H = "கோவையில் நாளை மின்தடை: எம்.ஜி. சாலை, வடவள்ளி, சாய்பாபா காலனி உள்ளிட்ட பகுதிகளில் மின்சாரம் நிறுத்தம்"
+    A_S = "நாளை (நவம்பர் 19) வடவள்ளி, சாய்பாபா காலனி, ஒண்டிப்புதூர், வேடப்பட்டி பகுதிகளில் காலை 9 முதல் மின்தடை."
+    B_H = "கோவை மாவட்டத்தில் நாளை மின்தடை: எம்.ஜி.ரோடு, என்.எஸ்.பாளையம் பகுதிகளில் மின்தடை"
+    B_S = "நாளை (நவம்பர் 19) ஒண்டிப்புதூர், வடவள்ளி, வேடப்பட்டி, சாய்பாபா காலனி பகுதிகளில் மின் கம்பிகளை மாற்றுதல் பணி."
+
+    def test_same_cut(self):
+        self.assertTrue(fr.same_cut_areas(self.A_H, self.A_S, "2026-11-18", self.B_H, self.B_S, "2026-11-18"))
+
+    def test_other_day_or_other_areas_are_new_news(self):
+        self.assertFalse(fr.same_cut_areas(self.A_H, self.A_S, "2026-11-18", self.B_H, self.B_S.replace("19", "21"), "2026-11-20"))
+        self.assertFalse(fr.same_cut_areas(self.A_H, self.A_S, "2026-11-18", "நாளை மின்தடை", "நாளை (நவம்பர் 19) பொள்ளாச்சி, ஆனைமலை பகுதிகளில் மின்தடை.", "2026-11-18"))
+
+    def test_a_cancellation_is_not_a_duplicate(self):
+        self.assertFalse(fr.same_cut_areas(self.A_H, self.A_S, "2026-11-18", "நாளை மின்தடை ரத்து: வடவள்ளி பகுதிகள்", self.B_S, "2026-11-18"))
+

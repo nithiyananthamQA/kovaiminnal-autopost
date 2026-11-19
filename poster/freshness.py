@@ -116,7 +116,7 @@ def power_cut_over(headline_ta, headline_en, published, now=None, more=""):
         return ""
     now = now or datetime.datetime.now(IST)
     today, pub = now.date(), pub_date(published)
-    ds = [d for d in dates_in(f"{text} {more}", today.year) if abs((d - today).days) < 300]      # + the script / slides (19 Nov)
+    ds = [d for d in dates_in(f"{text} {more}", today.year) + _num_dates(f"{text} {more}") if abs((d - today).days) < 300]      # + script / slides (19 Nov)
     day = max(ds) if ds else (pub + datetime.timedelta(days=1) if pub and TOMORROW.search(text) else pub)
     if ds and day < today:      # owner 13 Nov: a cut whose day (written in the notice) has passed is never posted (a manual row skips the age check)
         return f"power cut was on {day:%d %b} - already over"
@@ -152,7 +152,7 @@ def tomorrow_is_late(texts, published, now=None):
         return ""
     now = now or datetime.datetime.now(IST)
     today = now.date()
-    ds = {d for d in dates_in(t, today.year) if abs((d - today).days) < 300}
+    ds = {d for d in dates_in(t, today.year) + _num_dates(t) if abs((d - today).days) < 300}      # also 19-11-2026 / 19.11.26
     if ds:
         if today + datetime.timedelta(days=1) in ds or any(d > today for d in ds):
             return ""
@@ -269,6 +269,30 @@ def same_power_cut(a, a_published, b, b_published):
     def places(t):
         return {w[:6] for w in re.findall(r"[\u0B80-\u0BFFa-zA-Z]{4,}", (t or "").lower()) if not w.startswith(_PLACE_COMMON)}
     return bool(places(a) & places(b))
+
+
+
+def _same_cut_areas(a, a_published, b, b_published):
+    """owner 19 Nov (RN-102 = RN-97 again): the same power cut from a second paper, worded differently ('எம்.ஜி.ரோடு' / 'எம்.ஜி.
+    சாலை') - the headlines share no word, but the scripts name the same areas. Same cut day + at least 2 of the district's known
+    areas in common (headline + script; 1 when a notice names only one) = the same news."""
+    if not (is_power_cut(a) and is_power_cut(b)):
+        return False
+    (da, _), (db, _) = cut_day(a, a_published), cut_day(b, b_published)
+    if not da or not db or da != db:
+        return False
+    try:
+        import sys as _s
+        from pathlib import Path as _P
+        p = str(_P(__file__).resolve().parent.parent / "research_free")
+        if p not in _s.path:
+            _s.path.append(p)
+        import allnews
+        pa, pb = set(allnews.places_in(a)), set(allnews.places_in(b))
+    except Exception:
+        return False
+    shared = pa & pb
+    return bool(shared) and len(shared) >= min(2, len(pa), len(pb))
 
 
 _GENERIC = ("கோவை", "கோயம்", "மாவட்", "kovai", "coimb", "அருகே", "அருகில்", "இன்று", "நாளை", "நேற்று", "உயிரிழ",
@@ -523,6 +547,13 @@ def similar(a, b, thr, other_filed=None, today=None):
 
 def same_power_cut(a, a_published, b, b_published):
     return False if cancel_differs(a, b) else _same_power_cut(a, a_published, b, b_published)
+
+
+def same_cut_areas(a_head, a_script, a_published, b_head, b_script, b_published):
+    """cancellation / change is judged on the HEADLINES only - a maintenance script says 'மின் கம்பிகளை மாற்றுதல்' (19 Nov)"""
+    if cancel_differs(a_head, b_head):
+        return False
+    return _same_cut_areas(f"{a_head} {a_script}", a_published, f"{b_head} {b_script}", b_published)
 
 
 def different_power_cut(a, b, other_filed=None, today=None):
