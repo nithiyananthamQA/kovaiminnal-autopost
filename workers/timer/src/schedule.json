@@ -164,6 +164,13 @@
     }
    },
    {
+    "file": "insights.yml",
+    "crons": [
+     "40 20 * * *"
+    ],
+    "inputs": {}
+   },
+   {
     "file": "post.yml",
     "crons": [
      "7 * * * *"

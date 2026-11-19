@@ -44,7 +44,7 @@ class PowerCutPage19Nov(unittest.TestCase):
     def test_timer_starts_only_the_power_cut_jobs(self):
         import make_timer, make_page
         got = {j["file"] for j in make_timer.jobs(ROOT, make_page.PAGE["salem"]["jobs"])}
-        self.assertEqual(got, {"powercut.yml", "post.yml", "comments.yml", "cloudclean.yml"})
+        self.assertEqual(got, {"powercut.yml", "post.yml", "comments.yml", "insights.yml", "cloudclean.yml"})
         self.assertNotIn("pick.yml", got)
 
     def test_own_token_and_reference_lists(self):

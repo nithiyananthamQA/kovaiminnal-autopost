@@ -25,7 +25,7 @@ sys.path[:0] = [str(ROOT / "districts"), str(ROOT / "research_free"), str(ROOT /
 IST = timezone(timedelta(hours=5, minutes=30))
 
 # a power-cut-only page runs these workflows only (powercut.yml finds + writes + starts post.yml; comments; Cloudinary clean-up; tests)
-POWERCUT_JOBS = ["powercut.yml", "post.yml", "comments.yml", "cloudclean.yml", "tests.yml"]
+POWERCUT_JOBS = ["powercut.yml", "post.yml", "comments.yml", "insights.yml", "cloudclean.yml", "tests.yml"]      # owner 19 Nov: "add insight also"
 
 # found with the minnal-bot token (me/accounts, 17 Nov): the page's Facebook page id; Instagram id is in districts.json
 PAGE = {"chennai": {"fb_page_id": "1450975134763291", "repo": "nithiyananthamQA/chennaiminnal-autopost", "folder": "chennaiminnal",
@@ -34,7 +34,8 @@ PAGE = {"chennai": {"fb_page_id": "1450975134763291", "repo": "nithiyananthamQA/
         # the only workflows the timer starts and GitHub keeps on); its OWN Apps Script + Sheet (BRIDGE_URL) and its OWN Meta app token
         # (IG_SYSTEM_TOKEN secret, `own_token`: never the Minnal bridge's shared token) - a problem on one page never reaches another.
         # Ids filled when the owner has made the Facebook page + Instagram (empty = not yet).
-        "salem": {"fb_page_id": "", "ig_user_id": "", "repo": "nithiyananthamQA/salemminnal-autopost", "folder": "salemminnal",
+        "salem": {"fb_page_id": "1415768578293777", "ig_user_id": "17841453291685225", "handle": "salem_minnal",      # 19 Nov, salem-bot token
+                  "repo": "nithiyananthamQA/salemminnal-autopost", "folder": "salemminnal",
                   "bot": "salemminnal-bot", "own_token": True, "ref": "news360-tn/salem360-autopost",
                   "jobs": POWERCUT_JOBS}}
 

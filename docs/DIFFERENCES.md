@@ -172,7 +172,7 @@ Llama - the reference writes with Gemini then Groq, Claude only when both fail).
 ## Power-cut-only pages (owner 19 Nov: "create pages for only the powercut for that particular city")
 
 - Salem Minnal (and every new district page after it) posts ONLY its district's power cuts: the same code as Kovai
-  (tools/make_page.py), but only `POWERCUT_JOBS` run (powercut, post, comments, cloudclean, tests): the timer starts only those
+  (tools/make_page.py), but only `POWERCUT_JOBS` run (powercut, post, comments, insights, cloudclean, tests): the timer starts only those
   (tools/make_timer.py) and every push switches the page's other workflows off (tools/sync_pages.only_jobs). Reference: his
   salem360 page posts all Salem news.
 - Each such page has its OWN Apps Script + Sheet (owner 19 Nov) and its OWN Meta app token (owner 17 Nov "meta new app for new
