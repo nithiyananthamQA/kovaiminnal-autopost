@@ -132,7 +132,6 @@ jobs:
       CLAUDE_MAX_CALLS: "30"      # cost guard per district run (a notice needs at most a few calls)
       CLOUDINARY_CLOUD: ${{ secrets.CLOUDINARY_CLOUD }}
       CLOUDINARY_PRESET: ${{ secrets.CLOUDINARY_PRESET }}
-      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}      # owner 16 Nov: ElevenLabs reel voice
     steps:
       - uses: actions/checkout@v4
         with: {ref: main}

@@ -31,7 +31,8 @@
   "reel_source_label": false,
   "reel_source_label_note": "owner 17 Nov: no source label in the video - no 📰 paper in the top strip, no 'Source:' line on the end card (reel5.source_label_on). The caption still ends with '📰 Source: paper (date): link'. true = both back in the video",
   "reel_voice": {
-    "engine": "elevenlabs",
+    "engine": "edge",
+    "engine_note": "owner 19 Nov: no cost for voice - free Anbu (edge-tts) reads every reel; ElevenLabs off and its key removed everywhere. Anbu +5% = Nila's speaking speed (measured 19 Nov: 14.6 vs 13.9 letters a second)",
     "elevenlabs": {
       "voice_id": "C2RGMrNBTZaNfddRPeRH",
       "name": "Nila - Warm, Clear and Conversational (Tamil, ElevenLabs voice library)",
