@@ -3,191 +3,104 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinakaran.com/news/mettupalayam-ooty-hill-train-service/amp",
-  "manual link added: https://www.dinamani.com/visual-stories/2026/Nov/19/mettupalayam-wake-up-mountain-train-service-started-after-26-days",
-  "manual link added: https://www.maalaimalar.com/news/tamilnadu/hearing-in-the-case-filed-by-the-dmk-regarding-irregularities-in-the-procurement-of-books-adjourned-to-the-22nd",
-  "candidate filter: collected=3",
-  "to write: 3 Coimbatore district candidates (max 3 stories)",
-  "round: top 3 of 3 candidates",
-  "candidates waiting: 3 Coimbatore; time left 79 min",
-  "try (N) manual=True: https://www.maalaimalar.com/news/tamilnadu/hearing-in-the-ca",
-  "try (N) manual=True: https://www.dinamani.com/visual-stories/2026/Nov/19/mettupal",
-  "try (N) manual=True: https://www.dinakaran.com/news/mettupalayam-ooty-hill-train-",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 3})",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/new-assistant-commissioner-of-intelligence/4379507",
+  "candidate filter: collected=1",
+  "to write: 1 Coimbatore district candidates (max 1 stories)",
+  "round: top 1 of 1 candidates",
+  "candidates waiting: 1 Coimbatore; time left 79 min",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 5})",
-  "NOT filed (N) 26 நாட்களுக்கு பிறகு மேட்டுப்பாளையம் - ஊட்டி மலை ர: duplicate after write",
-  "candidate loop ended: left 0, tried={'N': 3}, done={'N': 2}, time left 77 min",
-  "filed: 2 Coimbatore district stories (target 3), reels only",
+  "candidate loop ended: left 0, tried={'N': 1}, done={'N': 1}, time left 78 min",
+  "filed: 1 Coimbatore district stories (target 1), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":3,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":1,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
-  "ok gemini/gemini-3-flash-preview (13s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
+  "ok groq/openai/gpt-oss-120b (7s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok groq/qwen/qwen3.8-27b (2s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "dead for this round: groq/qwen/qwen3.8-27b",
   "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok gemini/gemini-3.6-flash (54s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok gemini/gemini-3.6-flash (57s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5"
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash"
  ],
  "stories": [
   {
-   "tamil_headline": "பெரியார் அறிவுலக புத்தகக் கொள்முதல் முறைகேடு வழக்கு விசாரணை 23-ந்தேதிக்கு தள்ளிவைப்பு",
-   "english_headline": "Court defers hearing to 23 Nov on DMK plea seeking vigilance probe into book procurement irregularities at Periyar Arivulagam, Coimbatore",
+   "tamil_headline": "கோவை மாநகர உளவுத் துறைக்கு புதிய உதவி கமிஷனர் பொறுப்பேற்பு",
+   "english_headline": "New Assistant Commissioner takes charge of Coimbatore city intelligence wing",
    "category": "Government & Services",
-   "location": "Periyar Arivulagam, Coimbatore city, Coimbatore district",
+   "location": "Coimbatore city, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "நீதிமன்ற வழக்கு",
-    "loc": "கோவை",
-    "hl1": "கோவை பெரியார் அறிவுலகம்: புத்தக",
-    "hl2": "விசாரணை 23-ந்தேதிக்கு",
+    "cat": "அரசு பணி",
+    "loc": "கோவை மாநகரம்",
+    "hl1": "கோவை உளவுத் துறைக்கு புதிய உதவி கமிஷனர்",
+    "hl2": "நேற்று பொறுப்பேற்பு",
     "slides": [
      {
-      "title": "என்ன வழக்கு?",
+      "title": "யார் நியமனம்?",
       "lines": [
-       "கோவை பெரியார் அறிவுலகத்துக்கு புத்தகக் கொள்முதலில் முறைகேடு",
-       "லஞ்ச ஒழிப்புத்துறை வழக்குப்பதிவு செய்ய உத்தரவு கோரி மனு",
-       "மனு தாக்கல் செய்தவர் திமுக சட்டப்பிரிவு இணைச் செயலாளர்"
+       "கரிகால் பாரி சங்கர் நியமிக்கப்பட்டார்",
+       "இதுவரை கருமத்தம்பட்டி டி.எஸ்.பி.யாக பணியாற்றினார்",
+       "கோவை மாநகர உளவுத் துறைக்கு நியமனம்"
       ]
      },
      {
-      "title": "என்ன நடந்தது?",
+      "title": "முன்பிருந்தவர்",
       "lines": [
-       "அகல் விளக்கு, ஃபீனிக்ஸ் பதிப்பகங்களிலிருந்து புத்தகங்கள்",
-       "ஏஐ தொழில்நுட்பத்தில் தயாரிக்கப்பட்ட புத்தகங்கள் அதிக",
-       "<b>7-ந்தேதி</b> லஞ்ச ஒழிப்புத்துறையில் புகார் அளித்தார்"
+       "உதவி கமிஷனர் மணிவர்மன் இரு மாதங்களுக்கு முன் பணியிட மாற்றம்",
+       "அவருக்குப் பதிலாக புதிய அதிகாரி வந்தார்",
+       "இந்தப் பதவி காலியாக இருந்தது"
       ]
      },
      {
-      "title": "நீதிமன்றத்தில்?",
+      "title": "பொறுப்பேற்பு",
       "lines": [
-       "இதுவரை எந்தக் குற்ற வழக்கும் பதிவு செய்யப்படவில்லை",
-       "அகல் விளக்கு பதிப்பாளர் மோகன் ஏற்கெனவே கைது",
-       "மதுரை அமர்வில் நாளை விசாரணை என போலீஸ் தரப்பில் தகவல்"
-      ]
-     },
-     {
-      "title": "அடுத்து?",
-      "lines": [
-       "நூலகத்துறை இயக்குநரிடம் விவரங்கள் சேகரிப்பு",
-       "விவரங்களை மதுரை அமர்வில் தாக்கல் செய்ய முடிவு",
-       "மனு மீதான விசாரணை <b>23-ந்தேதிக்கு</b> தள்ளிவைப்பு"
+       "புதிய உதவி கமிஷனர் நேற்று பொறுப்பேற்றுக் கொண்டார்",
+       "நேற்று என்பது நவம்பர் 18ஆம் தேதி",
+       "உளவுத் துறைப் பணிகளை இனி அவர் கவனிப்பார்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவை பெரியார் அறிவுலக புத்தகக் கொள்முதல் முறைகேடு வழக்கின் விசாரணை 23ஆம் தேதிக்கு தள்ளிவைக்கப்பட்டுள்ளது. திமுக சட்டப்பிரிவு இணைச் செயலாளர் இ.பரந்தாமன் சென்னை ஐகோர்ட்டில் மனு தாக்கல் செய்திருந்தார். அகல் விளக்கு, ஃபீனிக்ஸ் பதிப்பகங்களிலிருந்து ஏஐ தொழில்நுட்பத்தில் தயாரிக்கப்பட்ட புத்தகங்கள் அதிக எண்ணிக்கையில் வாங்கப்பட்டதாக மனுவில் கூறப்பட்டுள்ளது. முறைகேடு குறித்து வழக்குப்பதிவு செய்து விசாரிக்க வேண்டும் என்று கடந்த 7ஆம் தேதி லஞ்ச ஒழிப்புத்துறையில் புகார் அளித்ததாக பரந்தாமன் தெரிவித்துள்ளார். ஆனால் இதுவரை எந்தக் குற்ற வழக்கும் பதிவு செய்யப்படவில்லை. இந்த விவகாரம் தொடர்பாக அகல் விளக்கு பதிப்பாளர் மோகனை லஞ்ச ஒழிப்புத்துறை ஏற்கெனவே கைது செய்துள்ளது. புத்தகக் கொள்முதல் விவரங்கள் பொது நூலகத்துறை இயக்குநரிடம் சேகரிக்கப்பட்டுள்ளதாகவும், அவை மதுரை அமர்வில் தாக்கல் செய்யப்படும் என்றும் காவல்துறை தரப்பில் தெரிவிக்கப்பட்டது. மதுரை அமர்வு ஏற்கெனவே இந்த வழக்கை விசாரித்து வருவதால், விசாரணையை மதுரைக்கு மாற்றுவது குறித்து தலைமை நீதிபதிக்குப் பரிந்துரைக்கலாம் என நீதிபதி தெரிவித்தார். இறுதியாக, மனு மீதான விசாரணையை 23ஆம் தேதிக்கு தள்ளிவைத்து உத்தரவிடப்பட்டது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 கோவை பெரியார் அறிவுலக புத்தகக் கொள்முதல் முறைகேடு வழக்கு: விசாரணை 23-ந்தேதிக்கு தள்ளிவைப்பு\n\n📰 முழு விவரம்:\nகோவை பெரியார் அறிவுலகத்துக்கு புத்தகங்கள் கொள்முதலில் முறைகேடு நடந்ததாகக் கூறி, வழக்குப்பதிவு செய்து லஞ்ச ஒழிப்புத்துறை விசாரிக்க உத்தரவிடக் கோரி திமுக சட்டப்பிரிவு இணைச் செயலாளர் இ.பரந்தாமன் சென்னை ஐகோர்ட்டில் மனு தாக்கல் செய்திருந்தார். அகல் விளக்கு, ஃபீனிக்ஸ் பதிப்பகங்களிலிருந்து ஏஐ தொழில்நுட்பத்தில் தயாரிக்கப்பட்ட புத்தகங்கள் அதிக எண்ணிக்கையில் வாங்கப்பட்டதாக மனுவில் கூறப்பட்டுள்ளது.\n📅 கடந்த 7ஆம் தேதி லஞ்ச ஒழிப்புத்துறையில் புகார் அளித்ததாகவும், இதுவரை எந்தக் குற்ற வழக்கும் பதிவு செய்யப்படவில்லை எனவும் பரந்தாமன் தெரிவித்துள்ளார்.\n👮 இந்த விவகாரம் தொடர்பாக அகல் விளக்கு பதிப்பாளர் மோகனை லஞ்ச ஒழிப்புத்துறை ஏற்கெனவே கைது செய்துள்ளது.\nநீதிபதி வி.லட்சுமிநாராயணன் முன் விசாரணைக்கு வந்தபோது, மதுரை அமர்வில் நாளை விசாரணை என காவல்துறை தரப்பில் தெரிவிக்கப்பட்டது. பொது நூலகத்துறை இயக்குநரிடம் சேகரித்த விவரங்களை மதுரை அமர்வில் தாக்கல் செய்வதாகவும் கூறப்பட்டது.\nஇதையடுத்து, விசாரணையை மதுரை அமர்வு கண்காணிக்கும் உத்தரவு வந்தால், வழக்கை மதுரைக்கு மாற்ற தலைமை நீதிபதிக்குப் பரிந்துரைக்கலாம் என நீதிபதி தெரிவித்தார். மனு மீதான விசாரணை 23-ந்தேதிக்கு தள்ளிவைக்கப்பட்டது.\n\nCoimbatore Periyar Arivulagam book procurement case, hearing adjourned to 23 Nov | Coimbatore news\n📍 கோவை பெரியார் அறிவுலகம், கோவை மாவட்டம் | 19 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Chennai",
-   "prompts": "Inside the reading hall of a large public library in Coimbatore city, rows of wooden bookshelves stacked with hardbound books run back toward the far wall, while a few readers sit at long tables under ceiling fans and tube lights. In the foreground, a group of three men in shirts and trousers stand with a stack of files, seen from behind, discussing the shelves. The city context suggests a government-run library with plain painted walls and a Tamil Nadu government office feel. Daylight from tall windows mixes with warm indoor light. Camera at eye level, 35 mm, wide enough to show the full hall and the shelves of books. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a neat stack of new, identical hardbound books with plain covers piled on a wooden library table, next to a thick bundle of official-looking files tied with string. A few loose pages lie beside the stack, and a shelf of uniform books sits blurred behind. The setting is an indoor government library in Coimbatore city, with cool daylight from a nearby window and a faint hint of a fan overhead. Shallow depth of field, camera slightly high, 50 mm, focused on the book stack and the files to suggest a procurement record. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.maalaimalar.com/news/tamilnadu/hearing-in-the-case-filed-by-the-dmk-regarding-irregularities-in-the-procurement-of-books-adjourned-to-the-22nd",
-   "published": "2026-11-19T07:03:05Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script must tell how the story ENDED, as the article's last lines say ('புத்தகக் கொள்முதல் முறைகேடு தொடர்பாக திமுக தொடர்ந்த வழக்கின் விசாரணை தள்ளிவைப்பு') - say what finally happened (complaint, action promised, released, arrested, case filed, how long it lasted); never write that details are unknown",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "reel_script": "கோவை மாநகர உளவுத் துறைக்கு புதிய உதவி கமிஷனர் பொறுப்பேற்றுள்ளார். கருமத்தம்பட்டி காவல் துணை கண்காணிப்பாளராக பணிபுரிந்து வந்த கரிகால் பாரி சங்கர் இந்தப் பதவிக்கு நியமிக்கப்பட்டார். நேற்று, நவம்பர் 18ஆம் தேதி அவர் பொறுப்பேற்றுக் கொண்டார். இதற்கு முன் உளவுத் துறையின் உதவி கமிஷனராக இருந்த மணிவர்மன் இரு மாதங்களுக்கு முன் பணியிட மாற்றம் செய்யப்பட்டார். இதையடுத்து இந்தப் பதவி காலியாக இருந்தது. இனி உளவுத் துறைப் பணிகளை கரிகால் பாரி சங்கர் கவனிப்பார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 கோவை மாநகர உளவுத் துறைக்கு புதிய உதவி கமிஷனர் பொறுப்பேற்பு\n\n📰 முழு விவரம்:\nகோவை மாநகர உளவுத் துறைக்குப் புதிதாக நியமிக்கப்பட்ட உதவி கமிஷனர் கரிகால் பாரி சங்கர் நேற்று பொறுப்பேற்றுக் கொண்டார்.\nஇந்தப் பதவியில் இருந்த உதவி கமிஷனர் மணிவர்மன் இரு மாதங்களுக்கு முன் பணியிட மாற்றம் செய்யப்பட்டார்.\nஇதையடுத்து கருமத்தம்பட்டி டி.எஸ்.பி.யாக பணிபுரிந்து வந்த கரிகால் பாரி சங்கர் இப்பதவிக்கு நியமிக்கப்பட்டார்.\n\n📍 இடம்: கோவை மாநகர உளவுத் துறை\n🗓️ நாள்: நவம்பர் 18, 2026\n\nCoimbatore city intelligence wing new assistant commissioner | Coimbatore news\n📍 கோவை மாநகரம், கோவை மாவட்டம் | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Police",
+   "prompts": "A senior Tamil Nadu police officer in khaki uniform with a cap under his arm stands at a desk in a government office, taking charge of the city intelligence wing of the Coimbatore city police. The room is a plain police office in Coimbatore city with a wooden desk, a row of metal filing cabinets, a framed portrait-free wall, and a ceiling fan turning slowly overhead. Two or three other police officers in khaki stand a few steps back, seen from behind or in soft profile, and a clerk in a white shirt sits near a stack of files. The officer's posture is formal and upright as he receives the official papers and signs the handover register. Daylight comes through tall windows, giving a calm, official mood. Camera at eye level, 35 mm, wide enough to show the desk, the people and the room, with no readable text or signboards visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of the handover table in a Coimbatore city police office: a neat stack of official files, a fountain pen resting on an open register, and a folded khaki cap placed on the edge of a wooden desk. The surface shows the routine paperwork of a government transfer of charge, with a pair of reading spectacles beside the papers and a steel tumbler of water. In the soft background, a police officer's khaki uniform sleeve is visible as he leans forward to sign, slightly out of focus. Warm daylight from a window falls across the papers, giving a quiet, official tone. Camera slightly high, 35 mm macro-style detail shot, shallow depth of field, with no legible text, names or logos on the documents. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/new-assistant-commissioner-of-intelligence/4379507",
+   "published": "2026-11-18T17:18:02+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b) - fact-check: no problems found",
+   "note": "free-model draft anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b, 13 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795073668/kovaiminnal/mbdvmzaft11ge9komkhm.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795073671/kovaiminnal/zondkqa9mkgmjzvvbfwl.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "மேட்டுப்பாளையம் - உதகை மலை ரயில் சேவை 26 நாள்களுக்குப் பின் தொடங்கியது",
-   "english_headline": "Mettupalayam-Ooty mountain train service restarted after 26 days",
-   "category": "Roads & Transport",
-   "location": "Mettupalayam - Ooty route, Coimbatore district",
-   "importance": "High",
-   "scope": "",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "ரயில் சேவை",
-    "loc": "மேட்டுப்பாளையம்",
-    "hl1": "மேட்டுப்பாளையம் - உதகை மலை ரயில்",
-    "hl2": "<b>26 நாள்களுக்குப் பின்</b>",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "மேட்டுப்பாளையம் - உதகை மலை ரயில் சேவை தொடங்கியது",
-       "<b>26 நாள்களுக்குப்</b> பின் சேவை மீண்டும் தொடங்கியது",
-       "இதுவரை சேவை நிறுத்தப்பட்டிருந்தது"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "மேட்டுப்பாளையம் - உதகை மலை ரயில் சேவை 26 நாள்களுக்குப் பின் மீண்டும் தொடங்கியுள்ளது. இதுவரை இந்தச் சேவை நிறுத்தப்பட்டிருந்தது. இப்போது ரயில் சேவை தொடங்கியதால் மேட்டுப்பாளையம் மற்றும் உதகை பயணிகள் மகிழ்ச்சி அடைந்துள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚂 மேட்டுப்பாளையம் - உதகை மலை ரயில் 26 நாள்களுக்குப் பின் தொடக்கம்\n\n📰 முழு விவரம்:\nமேட்டுப்பாளையம் - உதகை மலை ரயில் சேவை 26 நாள்களுக்குப் பின் மீண்டும் தொடங்கியுள்ளது. இதுவரை சேவை நிறுத்தப்பட்டிருந்தது. சேவை மீண்டும் தொடங்கியதை அடுத்து பயணிகள் வசதியாகப் பயணம் செய்யலாம்.\n\nMettupalayam Ooty mountain train restarted after 26 days | Coimbatore news\n📍 மேட்டுப்பாளையம், கோவை மாவட்டம் | 19 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Mettupalayam #ரயில் #CoimbatoreNews",
-   "prompts": "A small narrow-gauge mountain train with a blue-and-cream carriage and a steam or diesel engine at the front stands on the rails at Mettupalayam railway station, as the service resumes after 26 days. Behind it are the platform and a few waiting passengers seen from behind: men in shirts and veshti, and women in cotton sarees carrying small bags, some boarding the open-sided coaches. The station has a low roof and a plain concrete platform, with the wooded hills of the Nilgiris rising in the far background under soft morning daylight. Railway staff in uniform stand near the engine, and a green signal flag or a station bell is visible near the platform edge. Camera at eye level, 35 mm, wide enough to show the platform and the hills. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of the rack-railway track at the platform edge: the narrow-gauge rails with the toothed central rack rail, sleepers and gravel ballast, with a small cluster of passengers' feet and a station bell or a green flag on a wooden post in the background. Dew or light morning moisture on the steel rails, dry leaves on the ballast, and the forested slope of the Nilgiri hills blurred behind. No readable signboards or text. Daylight, shallow depth of field, camera slightly low, 50 mm. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamani.com/visual-stories/2026/Nov/19/mettupalayam-wake-up-mountain-train-service-started-after-26-days",
-   "published": "2026-11-19T06:40:06.153Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: slides must have 3 or 4 items; reel_script has 31 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795073706/kovaiminnal/gbxtuxo58ck7j0k1tojp.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795073709/kovaiminnal/tc7amnqvj4zbjsava06r.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795088548/kovaiminnal/fwnppakl8roucjqbxd0z.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795088551/kovaiminnal/t18fso5x48dtrzzpvbye.jpg"
    ]
   }
  ]
