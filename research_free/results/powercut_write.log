@@ -3179,3 +3179,94 @@ filed: 1 Coimbatore district stories (target 1), reels only
 queue: 0 news waiting to be written
 All News sheet: {"ok":true,"added":1,"updated":0} 
 stories: 1
+writing [N]: நாளைய மின்தடை (19ம் தேதி)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, plea
+dead for this round: gemini/gemini-3-flash-preview
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+dead for this round: groq/openai/gpt-oss-120b
+ok groq/qwen/qwen3.8-27b (5s)
+attempt 1 groq/qwen/qwen3.8-27b: 3 problems
+  missing key: reel_script
+  missing key: caption
+  missing key: scenes
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+switching away from groq/qwen/qwen3.8-27b for 10 min
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
+  sentence 1 (one-line story) has 17 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 3 problems
+  reel_script talks about the article instead of the news (கட்டுரை) - if the article has no real news, return an empty reel_script
+  hl1 (the first headline on screen) must name the place 'பொள்ளாச்சி', e.g. 'பொள்ளாச்சி: ...' or 'பொள்ளாச்சி-இல் ...' - viewers share news of their own area
+  known issue meta_article: script talks about the article instead of the news ('கட்டுரை') - rewrite so it does not happen again
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+free fact-check unavailable, using Claude: no free model answered: None
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 8 problems
+  reel_script says 'நாளை அக்டோபர் அல்ல, நவம்பர் 19ஆம் தேதி' - the article gives no month or year; the month 'November' and the 'Thursday' weekday are not in the article
+  reel_script states the outage is 'நாளை 5 மணி நேரம்' - the article gives 10:00 to 15:00, which is correct, but the phrase 'Thursday' (வியாழக்கிழமை) in slides_spec and caption is not stated in the article
+  reel_script says the outage affects 'மின்விநியோகம் இருக்காது' and that the source area lists are for 'பொள்ளாச்சி பகுதி' - the article does not say the whole area is Pollachi; the three substations are described only as listed areas
+  caption/slides_spec list the 'பொள்ளாச்சி' location and 'நவ. 19' month abbreviation, which the article does not state
+  caption omits the rest of the 'ஜமீன் முத்தூர...' list is partly correct, but the caption's Marchanaickenpalayam list drops 'ஆத்துபொள்ளாச்சி' and 'திம்மங்குத்து' and others while claiming 'உள்ளிட்ட பகுதிகள்' - the list is incomplete; the caption's Thanakkarai list also invents a split not in the article
+  reel_script claims the shortage notice advises 'மொபைல் சார்ஜ் மற்றும் குடிநீரை முன்கூட்டியே தயார் செய்துகொள்ளுங்கள்' - this advice is not in the article
+  slides_spec title 'மார்ச்சநாயக்கன்பாள' is truncated and ungrammatical as a heading
+  slides_spec gives 'ஆத்துபொள்ளாச்சி' under Marchanaickenpalayam and 'கணபதிபாளையம்' while omitting areas; slide lines group areas and mix Thanakkarai with Marchanaickenpalayam area names (e.g. 'மண்ணூர்' appears under both substations) without the article supporting the grouping
+claude rewrite 3 anthropic/claude-haiku-5-5: 8 problems
+  fact-check: reel_script says 'நாளை அக்டோபர் அல்ல, நவம்பர் 19ஆம் தேதி' - the article gives no month or year; the month 'November' and the 'Thursday' weekday are not in the article
+  fact-check: reel_script states the outage is 'நாளை 5 மணி நேரம்' - the article gives 10:00 to 15:00, which is correct, but the phrase 'Thursday' (வியாழக்கிழமை) in slides_spec and caption is not stated in the article
+  fact-check: reel_script says the outage affects 'மின்விநியோகம் இருக்காது' and that the source area lists are for 'பொள்ளாச்சி பகுதி' - the article does not say the whole area is Pollachi; the three substations are described only as listed areas
+  fact-check: caption/slides_spec list the 'பொள்ளாச்சி' location and 'நவ. 19' month abbreviation, which the article does not state
+  fact-check: caption omits the rest of the 'ஜமீன் முத்தூர...' list is partly correct, but the caption's Marchanaickenpalayam list drops 'ஆத்துபொள்ளாச்சி' and 'திம்மங்குத்து' and others while claiming 'உள்ளிட்ட பகுதிகள்' - the list is incomplete; the caption's Thanakkarai list also invents a split not in the article
+  fact-check: reel_script claims the shortage notice advises 'மொபைல் சார்ஜ் மற்றும் குடிநீரை முன்கூட்டியே தயார் செய்துகொள்ளுங்கள்' - this advice is not in the article
+  fact-check: slides_spec title 'மார்ச்சநாயக்கன்பாள' is truncated and ungrammatical as a heading
+  fact-check: slides_spec gives 'ஆத்துபொள்ளாச்சி' under Marchanaickenpalayam and 'கணபதிபாளையம்' while omitting areas; slide lines group areas and mix Thanakkarai with Marchanaickenpalayam area names (e.g. 'மண்ணூர்' appears under both substations) without the article supporting the grouping
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok anthropic/claude-haiku-5-5
+real photo step skipped for 'Power cut tomorrow (19th) in Pollachi ar': real photos switched off
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Power cut tomorrow (19th) in Pollachi ar'
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261119-0556","first":"RN-126"}
+posting job started at once
+earlier stories still waiting for images: []
+instagram check: 50 recent posts read from the page
+pick round: only the picked links are written (research_free/pick.py)
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/tomorrow-resistor-19th/4380176
+candidate filter: collected=1
+to write: 1 Coimbatore district candidates (max 1 stories)
+round: top 1 of 1 candidates
+candidates waiting: 1 Coimbatore; time left 39 min
+try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})
+posting job started at once
+candidate loop ended: left 0, tried={'N': 1}, done={'N': 1}, time left 38 min
+filed: 1 Coimbatore district stories (target 1), reels only
+queue: 0 news waiting to be written
+All News sheet: {"ok":true,"added":1,"updated":0} 
+stories: 1
