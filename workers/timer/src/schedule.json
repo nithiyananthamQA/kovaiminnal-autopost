@@ -70,20 +70,6 @@
     "inputs": {
      "dry": "0"
     }
-   },
-   {
-    "file": "rasipalan.yml",
-    "crons": [
-     "30 1 * * *",
-     "15 2 * * *",
-     "15 4 * * *",
-     "15 6 * * *"
-    ],
-    "inputs": {
-     "dry": "0",
-     "date": "",
-     "repost": "0"
-    }
    }
   ],
   "nithiyananthamQA/chennaiminnal-autopost": [
@@ -154,20 +140,6 @@
     ],
     "inputs": {
      "dry": "0"
-    }
-   },
-   {
-    "file": "rasipalan.yml",
-    "crons": [
-     "30 1 * * *",
-     "15 2 * * *",
-     "15 4 * * *",
-     "15 6 * * *"
-    ],
-    "inputs": {
-     "dry": "0",
-     "date": "",
-     "repost": "0"
     }
    }
   ]
