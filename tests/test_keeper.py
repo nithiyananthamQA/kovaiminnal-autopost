@@ -83,7 +83,7 @@ class Keeper(unittest.TestCase):
             n[wf] = n.get(wf, 0) + 1
         # GITHUB SAFE MODE (owner 17 Nov): posting checks hourly (the posting chain does the rest), comments / power cuts hourly,
         # no district engine (Chennai has its own repo) - back to 288 / 36 / 34 when the Cloudflare Workers timer takes over
-        self.assertEqual(n, {"post.yml": 25, "powercut.yml": 17, "comments.yml": 18, "pick.yml": 7, "rasipalan.yml": 4,
+        self.assertEqual(n, {"post.yml": 25, "powercut.yml": 17, "comments.yml": 18, "pick.yml": 7,
                              "insights.yml": 1, "cloudclean.yml": 1, "goldrate.yml": 3})      # owner 17 Nov: the gold rate reel (09:35 + two backups)
         picks = [t.astimezone(K.IST).strftime("%H:%M") for wf, t, i in gh.started if wf == "pick.yml"]
         # owner 16 Nov: the reference's 6 rounds every 4 hours; the test day starts 05:30, so the missed 05:00 round is caught up then
@@ -91,7 +91,6 @@ class Keeper(unittest.TestCase):
         first = {wf: t.astimezone(K.IST).strftime("%H:%M") for wf, t, _ in reversed(gh.started)}
         self.assertEqual(first["powercut.yml"], "05:50")
         self.assertEqual(first["insights.yml"], "02:10")
-        self.assertEqual(first["rasipalan.yml"], "07:00")
         self.assertLess(gh.calls, 2500)      # GITHUB_TOKEN: 1000 API calls an hour for the whole repository
 
     def test_switched_off_never_started_and_an_earlier_run_counts(self):

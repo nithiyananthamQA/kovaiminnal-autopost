@@ -38,7 +38,6 @@ assert.equal(n["post.yml"], 24);
 assert.equal(n["pick.yml"], 6);
 assert.equal(n["powercut.yml"], 17);
 assert.equal(n["comments.yml"], 18);
-assert.equal(n["rasipalan.yml"], 4);
 assert.equal(n["insights.yml"], 1);
 assert.equal(n["goldrate.yml"], 3);
 const ist = (d) => new Date(d.getTime() + 330 * 60000).toISOString().slice(11, 16);

@@ -123,6 +123,11 @@ e-mail tag KOVAIMINNAL. Never "360".
   gap: 4 of his last 23 dated power-cut reels went out on / after the cut day saying நாளை.
 - names.spoken: party short names without dots (தவெக, திமுக, அதிமுக, பாஜக ...) are read letter by letter - voice only.
 
+## 4d. No rasipalan (owner 19 Nov: "that rasipalan news we dont need")
+
+- rasipalan.yml has no schedule (manual run still possible), keeper / Worker never start it; the workflow is switched off on GitHub.
+  The reference posts a daily rasipalan.
+
 ## 5. Correctness fixes of ours (owner 17 Nov: "you kept ours better" - the friend is told to fix his copy)
 
 - Tamil proofread never doubles words (poster/tamilcheck.py): a full stop no longer hides a repeat, and a "fix" that only adds

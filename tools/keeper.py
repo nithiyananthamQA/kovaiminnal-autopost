@@ -32,7 +32,6 @@ LIVE_INPUTS = {
     "pick.yml": {"dry": "0", "resume": "0"},      # owner 16 Nov: news per round = pick.yml PICK_ROUND_TOP (the reference's 6 rounds)
     "powercut.yml": {"dry": "0"},
     "comments.yml": {"dry_run": "0"},
-    "rasipalan.yml": {"dry": "0", "date": "", "repost": "0"},
     "insights.yml": {},
     "cloudclean.yml": {"keep_hours": "48", "dry": "false"},      # 17 Nov: the reference's clean-up (manual default = count only)
     "goldrate.yml": {"dry": "0", "date": ""},      # owner 17 Nov: the gold & silver rate reel, every morning
