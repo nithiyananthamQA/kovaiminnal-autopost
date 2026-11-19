@@ -82,6 +82,17 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-19 | `f4b6cab` | pages: Salem ids (salem-bot token, own Meta app Salem Pages) + insights job (owner 19 Nov: "add insight also") |
+| 2026-11-19 | `b12856f` | pages: Salem Minnal = power cuts only, its own Apps Script + Meta app, the reference's own Salem lists (owner 19 Nov) |
+| 2026-11-19 | `18cc826` | powercut: notices written |
+| 2026-11-19 | `fa2b0a0` | powercut: notices written |
+| 2026-11-19 | `5acd4ca` | pick: written and posted |
+| 2026-11-19 | `de5ee94` | facebook RN-146 |
+| 2026-11-19 | `8142d02` | pick: picked news saved |
+| 2026-11-19 | `d1a7b13` | pick: picked news saved |
+| 2026-11-19 | `3ab19f2` | pick: list sent |
+| 2026-11-19 | `7ff01c8` | powercut: notices written |
+| 2026-11-19 | `9bb09c0` | comments: normal comments recorded (not e-mailed) |
 | 2026-11-19 | `31513de` | voice: free Anbu reads every reel, ElevenLabs off and its key removed (owner 19 Nov: no cost for voice) |
 | 2026-11-19 | `7f4dd93` | powercut: notices written |
 | 2026-11-19 | `a73d9f9` | powercut: notices written |
@@ -101,15 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-19 | `460001c` | pick: list sent |
 | 2026-11-19 | `33f6322` | powercut: notices written |
 | 2026-11-19 | `9f6335d` | The right day: never 'நாளை' about a day that came; power cuts only before their day, first in the queue; party names spoken letter by letter (owner 19 Nov) |
-| 2026-11-19 | `3d586ad` | powercut: notices written |
-| 2026-11-19 | `b6ab348` | facebook RN-102 |
-| 2026-11-19 | `b2446b6` | facebook RN-140 |
-| 2026-11-19 | `5d1ca91` | pick: written and posted |
-| 2026-11-19 | `33fbd00` | facebook RN-138 |
-| 2026-11-19 | `0743086` | powercut: notices written |
-| 2026-11-19 | `6c695ff` | facebook RN-139 |
-| 2026-11-19 | `f59049f` | comments: normal comments recorded (not e-mailed) |
-| 2026-11-19 | `22b1d9a` | facebook RN-142 |
-| 2026-11-19 | `001a4d6` | pick: picked news saved |
-| 2026-11-19 | `0535fea` | pick: picked news saved |
 <!-- recent-changes:end -->
