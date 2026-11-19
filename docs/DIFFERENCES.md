@@ -112,6 +112,14 @@ e-mail tag KOVAIMINNAL. Never "360".
   Power-cut notices are left out (area lists stay as published). Measured 17 Nov: most posted reels re-used 11-20 words in a
   row. The reference has no such check. The reel's top strip still credits the source by name (📰 தினமலர்), no logo, no link.
 
+## 4c. Owner's choice 19 Nov: the right day, and power cuts only ahead
+
+- freshness.tomorrow_is_late (posting) + run.day_problems (writing): a reel that says நாளை about a day that has come is never posted
+  and a draft doing it is sent back (19 Nov: 'கோவையில் நாளை மின்தடை ... (நவம்பர் 19)' went out on the 19th at 11:27).
+- freshness.power_cut_over: a power cut is posted only BEFORE its day - on the day it is skipped (owner: "if the news came today and
+  today is the power cut, we are not worth to give that information"); post.pick_all puts power cuts first in the queue.
+- names.spoken: party short names without dots (தவெக, திமுக, அதிமுக, பாஜக ...) are read letter by letter - voice only.
+
 ## 5. Correctness fixes of ours (owner 17 Nov: "you kept ours better" - the friend is told to fix his copy)
 
 - Tamil proofread never doubles words (poster/tamilcheck.py): a full stop no longer hides a repeat, and a "fix" that only adds

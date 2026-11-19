@@ -96,7 +96,8 @@ class PassedCutNeverPosted(unittest.TestCase):
         now = datetime.datetime(2026, 11, 14, 9, 0, tzinfo=F.IST)
         ta = "நுங்கம்பாக்கம், பல்லாவரம் பகுதிகளில் நாளை மறுதினம் (நவ. 13) மின் தடை: காலை 10 - மதியம் 3 மணி வரை"
         self.assertIn("already over", F.power_cut_over(ta, "", "2026-11-11", now=now))
-        self.assertEqual(F.power_cut_over(ta, "", "2026-11-11", now=now.replace(day=13)), "")
+        self.assertIn("is today", F.power_cut_over(ta, "", "2026-11-11", now=now.replace(day=13)))      # owner 19 Nov: never on its day
+        self.assertEqual(F.power_cut_over(ta, "", "2026-11-11", now=now.replace(day=12)), "")
         self.assertEqual(F.power_cut_over("சேலத்தில் நாளை (நவ. 15) மின் தடை: காலை 9 - மாலை 5 மணி வரை", "", "2026-11-14", now=now), "")
         # no date in the notice: the day is taken from the publish date - never blocked as "over" for that reason
         self.assertNotIn("already over", F.power_cut_over("சேலத்தில் நாளை மின் தடை: காலை 9 - மாலை 5 மணி வரை", "", "2026-11-13", now=now))

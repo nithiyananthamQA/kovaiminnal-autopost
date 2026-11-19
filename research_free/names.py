@@ -69,8 +69,18 @@ LATIN = {"A": "ஏ", "B": "பி", "C": "சி", "D": "டி", "E": "இ", "F
          "N": "என்", "O": "ஓ", "P": "பி", "Q": "க்யூ", "R": "ஆர்", "S": "எஸ்", "T": "டி", "U": "யு", "V": "வி", "W": "டபிள்யூ", "X": "எக்ஸ்", "Y": "ஒய்", "Z": "இசட்"}
 
 
+# owner 19 Nov ("the ai voice read தவெக as a full word"): party short names written without dots are read letter by letter, like
+# the dotted ones (தி.மு.க.) - VOICE only, the screen and caption keep the paper's spelling. Longest first (அதிமுக before திமுக).
+PARTIES = [("அமமுக", "அ ம மு க"), ("அதிமுக", "அ தி மு க"), ("தேமுதிக", "தே மு தி க"), ("மதிமுக", "ம தி மு க"), ("திமுக", "தி மு க"),
+           ("தவெக", "த வெ க"), ("தவாக", "த வா க"), ("பாஜக", "பா ஜ க"), ("பாமக", "பா ம க"), ("விசிக", "வி சி க"), ("நாதக", "நா த க")]
+
+
 def spoken(text):
     text = full_places(text)
+    for short, letters in PARTIES:      # a whole word only: திமுகவினர் -> தி மு க வினர், but not inside another word
+        text = re.sub(r"(?<![\u0B80-\u0BFF])" + short + r"(?=[\u0B80-\u0BFF]*)", letters + " ", text)
+        text = text.replace(letters + "  ", letters + " ")
+    text = re.sub(r"(?<=[\u0B80-\u0BFF]) (?=[,.;:!?])", "", text)
     for pat, full in ROLES:
         text = re.sub(pat, full, text)
     # any other abbreviation is read letter by letter: TNPSC -> டி என் பி எஸ் சி, ஐ.பி.எஸ். -> ஐ பி எஸ், தி.மு.க. -> தி மு க

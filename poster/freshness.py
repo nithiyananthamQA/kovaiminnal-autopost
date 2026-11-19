@@ -108,7 +108,7 @@ def news_date(published, source_url="", filed=None):
     return filed.date() if filed else None
 
 
-def power_cut_over(headline_ta, headline_en, published, now=None):
+def power_cut_over(headline_ta, headline_en, published, now=None, more=""):
     """'' or why a power-cut notice is too late to post: the cut is today and its end time ('மதியம் 2 வரை', 'till 5 pm') is less
     than 1 hour away or past. Checked even for stories filed today (27 Oct: a 9-2 cut was about to go out at 1:40 pm as 'tomorrow')."""
     text = f"{headline_ta} {headline_en}"
@@ -116,12 +116,15 @@ def power_cut_over(headline_ta, headline_en, published, now=None):
         return ""
     now = now or datetime.datetime.now(IST)
     today, pub = now.date(), pub_date(published)
-    ds = [d for d in dates_in(text, today.year) if abs((d - today).days) < 300]
+    ds = [d for d in dates_in(f"{text} {more}", today.year) if abs((d - today).days) < 300]      # + the script / slides (19 Nov)
     day = max(ds) if ds else (pub + datetime.timedelta(days=1) if pub and TOMORROW.search(text) else pub)
     if ds and day < today:      # owner 13 Nov: a cut whose day (written in the notice) has passed is never posted (a manual row skips the age check)
         return f"power cut was on {day:%d %b} - already over"
     if day != today:
         return ""
+    # owner 19 Nov: "if the news came today and today is the power cut, we are not worth to give that information" - a cut is
+    # posted only BEFORE its day (tomorrow / the day after: people plan, share, and the reels reach); on the day it is never posted
+    return f"power cut is today ({day:%d %b}) - posted only before its day"
     m = (re.search(r"(மதியம்|மாலை|இரவு|பிற்பகல்)?\s*(\d{1,2})(?:[.:](\d{2}))?\s*(?:மணி\s*)?வரை", headline_ta or "")
          or re.search(r"(?:till|to|until)\s*(\d{1,2})(?:[.:](\d{2}))?\s*(pm|am)?", headline_en or "", re.I))
     if not m:
@@ -136,6 +139,28 @@ def power_cut_over(headline_ta, headline_en, published, now=None):
     end = now.replace(hour=min(h, 23), minute=mi, second=0, microsecond=0)
     if now >= end - datetime.timedelta(minutes=60):
         return f"power cut ends today at {end:%H:%M} - too late to post"
+    return ""
+
+
+
+def tomorrow_is_late(texts, published, now=None):
+    """'' or why a story must not go out as written: it says நாளை (tomorrow) but that day has come. owner 19 Nov: 'கோவையில் நாளை
+    மின்தடை ... (நவம்பர் 19)' - written from the paper of the 18th - went out on the 19th at 11:27, after the cut had begun.
+    texts = what is SPOKEN and SHOWN (headline, script, slide texts) - never the caption footer, which always carries today's date."""
+    t = " ".join(x for x in texts if x)
+    if not TOMORROW.search(t):
+        return ""
+    now = now or datetime.datetime.now(IST)
+    today = now.date()
+    ds = {d for d in dates_in(t, today.year) if abs((d - today).days) < 300}
+    if ds:
+        if today + datetime.timedelta(days=1) in ds or any(d > today for d in ds):
+            return ""
+        day = max(ds)
+        return f"says நாளை but its day ({day:%d %b}) is {'today' if day == today else 'over'}"
+    pub = pub_date(published)
+    if pub and pub < today:
+        return f"says நாளை, written from the paper of {pub:%d %b} - that tomorrow is today or over"
     return ""
 
 

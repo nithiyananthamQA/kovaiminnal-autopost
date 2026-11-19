@@ -6,6 +6,20 @@ sys.path.insert(0, str(HERE))
 import llm, sources
 from validate import autofix, validate
 
+
+def day_problems(d, art):
+    """owner 19 Nov: a draft written today from yesterday's paper must not copy its நாளை when that day is today"""
+    try:
+        sys.path.insert(0, str(HERE.parent / "poster"))
+        import freshness
+        sp = d.get("slides_spec") or {}
+        shown = [d.get("tamil_headline") or "", d.get("reel_script") or "", str(sp.get("hl1", "")), str(sp.get("hl2", ""))] + \
+            [" ".join(map(str, s_.get("lines", []))) for s_ in (sp.get("slides") or []) if isinstance(s_, dict)]
+        why = freshness.tomorrow_is_late(shown, art.get("published") or "")
+    except Exception:
+        return []
+    return [f"day word wrong: the draft {why} - write the day as it is TODAY (இன்று / நாளை from today) together with the date"] if why else []
+
 SYSTEM = (HERE / "rules.md").read_text(encoding="utf-8")
 EX = json.loads((HERE / "examples.json").read_text(encoding="utf-8"))
 IST = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
@@ -73,7 +87,7 @@ def write(art, today):
             errors = [str(e)]
             print(f"attempt {attempt} {model}: {e}")
             continue
-        errors = validate(d, art["text"] + " " + art["title"])
+        errors = validate(d, art["text"] + " " + art["title"]) + day_problems(d, art)
         if not errors:
             errors = factcheck(d, art)
         print(f"attempt {attempt} {model}: {len(errors)} problems", *errors, sep="\n  ")
@@ -90,7 +104,7 @@ def write(art, today):
             except Exception as e:
                 print("claude rewrite failed:", str(e)[:150])
                 break
-            errs = validate(d, art["text"] + " " + art["title"])
+            errs = validate(d, art["text"] + " " + art["title"]) + day_problems(d, art)
             if not errs:
                 errs = factcheck(d, art)
             print(f"claude rewrite {k + 1} {model}: {len(errs)} problems", *errs, sep="\n  ")

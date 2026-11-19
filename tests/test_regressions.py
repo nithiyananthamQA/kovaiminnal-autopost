@@ -129,18 +129,18 @@ class PowerCutTiming(unittest.TestCase):
     def at(self, h, m=0):
         return datetime.datetime.combine(TODAY, datetime.time(h, m), IST)
 
-    def test_late_notice_not_posted(self):      # 27 Oct: RN-131 (cut until 2 pm) went out at 13:42
+    def test_late_notice_not_posted(self):      # 27 Oct: RN-131 (cut until 2 pm) went out at 13:42; owner 19 Nov: on its day never
         y = TODAY - datetime.timedelta(days=1)
-        self.assertIn("too late", fr.power_cut_over(self.A, "", f"{y} 18:33", self.at(13, 35)))
-        self.assertEqual("", fr.power_cut_over(self.A, "", f"{y} 18:33", self.at(10, 0)))
+        self.assertIn("is today", fr.power_cut_over(self.A, "", f"{y} 18:33", self.at(13, 35)))
+        self.assertIn("is today", fr.power_cut_over(self.A, "", f"{y} 18:33", self.at(6, 0)))      # even before it starts
 
     def test_tomorrow_cut_posted_today(self):
         self.assertEqual("", fr.power_cut_over(self.A, "", f"{TODAY} 18:33", self.at(21, 0)))
 
     def test_english_and_evening_end(self):
         y = TODAY - datetime.timedelta(days=1)
-        self.assertIn("14:00", fr.power_cut_over("Power cut in Pollachi tomorrow", "Power cut from 9 am to 2 pm", f"{y}", self.at(13, 45)))
-        self.assertIn("17:00", fr.power_cut_over("கோவையில் இன்று காலை 9 முதல் மாலை 5 வரை மின்தடை", "", f"{TODAY}", self.at(16, 45)))
+        self.assertIn("is today", fr.power_cut_over("Power cut in Pollachi tomorrow", "Power cut from 9 am to 2 pm", f"{y}", self.at(13, 45)))
+        self.assertIn("is today", fr.power_cut_over("கோவையில் இன்று காலை 9 முதல் மாலை 5 வரை மின்தடை", "", f"{TODAY}", self.at(16, 45)))
 
 
 class NewsDate(unittest.TestCase):
@@ -2129,9 +2129,9 @@ class NoRepost(unittest.TestCase):
         old = post.ALL_ROWS
         post.ALL_ROWS = [{"story_id": "RN-61", "headline_ta": self.POSTED, "researched": self.FILED_YESTERDAY, "post_status": "Posted"}]
         try:
-            row = {"story_id": "RN-70", "headline_ta": "கோவை காளப்பட்டி பகுதியில் இன்று மின் தடை", "published": self.NOW.isoformat()}
+            row = {"story_id": "RN-70", "headline_ta": "கோவை காளப்பட்டி பகுதியில் நாளை மின் தடை", "published": self.NOW.isoformat()}
             self.assertEqual("duplicate of RN-61", post.skip_reason(row))
-            row = {"story_id": "RN-71", "headline_ta": "கோவை சூலூரில் இன்று மின் தடை", "published": self.NOW.isoformat()}
+            row = {"story_id": "RN-71", "headline_ta": "கோவை சூலூரில் நாளை மின் தடை", "published": self.NOW.isoformat()}
             self.assertFalse(post.skip_reason(row).startswith("duplicate"))
         finally:
             post.ALL_ROWS = old
@@ -2608,4 +2608,31 @@ class RealHandle18Nov(unittest.TestCase):
         sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "reel"))
         import reel
         self.assertEqual(reel.PAGES["coimbatore"]["handle"], "kovai_minnal")
+
+
+class PartyLetters19Nov(unittest.TestCase):
+    """owner 19 Nov: the voice read தவெக as one word - party short names are spoken letter by letter (voice only)"""
+    def test_spoken(self):
+        import names
+        self.assertEqual(names.spoken("தவெக நிர்வாகிகள் மீது விசாரணை."), "த வெ க நிர்வாகிகள் மீது விசாரணை.")
+        self.assertEqual(names.spoken("அதிமுக, திமுக தொண்டர்கள்."), "அ தி மு க, தி மு க தொண்டர்கள்.")
+        self.assertEqual(names.spoken("திமுகவினர் ஆர்ப்பாட்டம்."), "தி மு க வினர் ஆர்ப்பாட்டம்.")
+        self.assertIn("தவறு", names.spoken("இது தவறு."))      # never inside another word
+
+
+class TomorrowIsToday19Nov(unittest.TestCase):
+    """owner 19 Nov: a reel said 'நாளை (நவம்பர் 19)' and went out on the 19th at 11:27 - never post 'tomorrow' about a day that came;
+    a power cut goes out only BEFORE its day, and first in the queue"""
+    def test_tomorrow_word(self):
+        now = datetime.datetime(2026, 11, 19, 11, 27, tzinfo=IST)
+        self.assertIn("is today", fr.tomorrow_is_late(["கோவையில் நாளை (நவம்பர் 19, 2026) மின்தடை"], "2026-11-18", now))
+        self.assertIn("paper of 18 Nov", fr.tomorrow_is_late(["கோவையில் நாளை குடிநீர் நிறுத்தம்"], "2026-11-18", now))
+        self.assertEqual("", fr.tomorrow_is_late(["கோவையில் நாளை (நவம்பர் 20) மின்தடை"], "2026-11-19", now))
+        self.assertEqual("", fr.tomorrow_is_late(["கோவையில் நாளை குடிநீர் நிறுத்தம்"], "2026-11-19", now))      # today's paper
+        self.assertEqual("", fr.tomorrow_is_late(["கோவையில் இன்று ஆர்ப்பாட்டம்"], "2026-11-18", now))
+
+    def test_power_cut_first(self):
+        rows = [{"story_id": "RN-1", "headline_ta": "சாலை பணி", "importance": "High"}, {"story_id": "RN-2", "headline_ta": "நாளை மின்தடை", "importance": "Medium"}]
+        key = lambda r: (not post.is_shutdown(r), post.IMPORTANCE.get((r.get("importance") or "").strip(), 1))      # noqa: E731
+        self.assertEqual([r["story_id"] for r in sorted(rows, key=key)], ["RN-2", "RN-1"])
 

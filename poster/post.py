@@ -312,8 +312,22 @@ def _skip_reason_base(row):
     if (nd and not manual and (datetime.now(IST).date() - nd).days > max_age      # owner: only today's (or yesterday's) news is posted
             and not freshness.power_cut_ahead(f"{row.get('headline_ta') or ''} {row.get('headline_en') or ''}", nd.isoformat())):      # owner 30 Oct: a power cut by its CUT day
         return f"stale: published {nd:%d %b}, " + ("not today" if max_age == 0 else "older than yesterday")      # (27 Oct: a 25 Oct story went out two days late)
-    why = freshness.power_cut_over(row.get("headline_ta") or "", row.get("headline_en") or "", row.get("published") or (nd.isoformat() if nd else ""))
+    try:
+        _spx = json.loads(row.get("slides_spec") or "{}")
+    except Exception:
+        _spx = {}
+    why = freshness.power_cut_over(row.get("headline_ta") or "", row.get("headline_en") or "", row.get("published") or (nd.isoformat() if nd else ""),
+                                   more=" ".join([row.get("reel_script") or "", str(_spx.get("hl1", "")), str(_spx.get("hl2", ""))]))
     if why:
+        return "stale: " + why
+    try:      # owner 19 Nov: a reel that says நாளை about a day that has come is wrong - never posted
+        _sp = json.loads(row.get("slides_spec") or "{}")
+    except Exception:
+        _sp = {}
+    _shown = [row.get("headline_ta") or "", row.get("reel_script") or "", str(_sp.get("hl1", "")), str(_sp.get("hl2", ""))] + \
+        [" ".join(map(str, s_.get("lines", []))) for s_ in (_sp.get("slides") or []) if isinstance(s_, dict)]
+    why = freshness.tomorrow_is_late(_shown, row.get("published") or (nd.isoformat() if nd else ""))
+    if why and not owner_picked(row):
         return "stale: " + why
     if not is_ready_reel(row):      # owner 29 Oct (RN-189): never post a story that only says the article has no details
         try:
@@ -484,7 +498,8 @@ def is_urgent(row):
 def pick_all(rows):
     """every ready story whose set has started (urgent ones always), urgent first, then the rest oldest first"""
     c = [r for r in rows if ready(r) and (set_started(r) or is_urgent(r))]
-    c.sort(key=lambda r: (IMPORTANCE.get((r.get("importance") or "").strip(), 1), -age_hours(r)))
+    # owner 19 Nov: a power cut goes out FIRST (one waited in the morning queue until 11:27, after the cut had begun)
+    c.sort(key=lambda r: (not is_shutdown(r), IMPORTANCE.get((r.get("importance") or "").strip(), 1), -age_hours(r)))
     return c
 
 
