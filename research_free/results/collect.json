@@ -3,104 +3,356 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/new-assistant-commissioner-of-intelligence/4379507",
-  "candidate filter: collected=1",
-  "to write: 1 Coimbatore district candidates (max 1 stories)",
-  "round: top 1 of 1 candidates",
-  "candidates waiting: 1 Coimbatore; time left 79 min",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/old-man-in-cheindal-poxo-with-schoolboy-arrested/4380734",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/people-urge-for-complete-cleaning-of-godavari-tank/4380491",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/preparations-underway-to-set-up-elephant-camp-shed/4380738",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-news/20-more-fake-books-found-in-coimbatore-library/4380895",
+  "candidate filter: collected=4",
+  "to write: 4 Coimbatore district candidates (max 4 stories)",
+  "round: top 4 of 4 candidates",
+  "candidates waiting: 4 Coimbatore; time left 79 min",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-news/20-more-fake-",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
-  "candidate loop ended: left 0, tried={'N': 1}, done={'N': 1}, time left 78 min",
-  "filed: 1 Coimbatore district stories (target 1), reels only",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
+  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 76 min",
+  "filed: 4 Coimbatore district stories (target 4), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":1,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":4,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing ",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
-  "ok groq/openai/gpt-oss-120b (7s)",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "dead for this round: groq/openai/gpt-oss-120b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "ok gemini/gemini-3.6-flash (34s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok groq/qwen/qwen3.8-27b (2s)",
+  "ok anthropic/claude-haiku-5-5",
+  "fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3-flash-preview",
+  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "dead for this round: groq/qwen/qwen3.8-27b",
   "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash"
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "கோவை மாநகர உளவுத் துறைக்கு புதிய உதவி கமிஷனர் பொறுப்பேற்பு",
-   "english_headline": "New Assistant Commissioner takes charge of Coimbatore city intelligence wing",
-   "category": "Government & Services",
-   "location": "Coimbatore city, Coimbatore district",
+   "tamil_headline": "கோவை நூலகத்தில் மேலும் 20 போலி புத்தகங்கள் பறிமுதல்",
+   "english_headline": "20 more fake books seized from Coimbatore Arivulaga library; sent to Chennai",
+   "category": "Crime & Safety",
+   "location": "Gandhipuram, Coimbatore city, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "அரசு பணி",
-    "loc": "கோவை மாநகரம்",
-    "hl1": "கோவை உளவுத் துறைக்கு புதிய உதவி கமிஷனர்",
-    "hl2": "நேற்று பொறுப்பேற்பு",
+    "cat": "போலி புத்தகங்கள்",
+    "loc": "காந்திபுரம், கோவை",
+    "hl1": "கோவை நூலகத்தில் மேலும் 20 போலி",
+    "hl2": "சென்னைக்கு அனுப்பி வைப்பு",
     "slides": [
      {
-      "title": "யார் நியமனம்?",
+      "title": "என்ன நடந்தது?",
       "lines": [
-       "கரிகால் பாரி சங்கர் நியமிக்கப்பட்டார்",
-       "இதுவரை கருமத்தம்பட்டி டி.எஸ்.பி.யாக பணியாற்றினார்",
-       "கோவை மாநகர உளவுத் துறைக்கு நியமனம்"
+       "காந்திபுரத்தில் ஈ.வெ.ரா. பெயரிலான நூலகத்தில் <b>20 போலி",
+       "லஞ்ச ஒழிப்பு போலீசார் கைப்பற்றி சென்னைக்கு அனுப்பினர்",
+       "நேற்று நடந்த சோதனையில் கண்டுபிடிப்பு"
       ]
      },
      {
-      "title": "முன்பிருந்தவர்",
+      "title": "முறைகேடு பின்னணி",
       "lines": [
-       "உதவி கமிஷனர் மணிவர்மன் இரு மாதங்களுக்கு முன் பணியிட மாற்றம்",
-       "அவருக்குப் பதிலாக புதிய அதிகாரி வந்தார்",
-       "இந்தப் பதவி காலியாக இருந்தது"
+       "புத்தகங்கள் வாங்கியதில் முறைகேடு என எழுத்தாளர் பெருமாள்",
+       "சென்னை 'அகல்விளக்கு', 'பீனிக்ஸ்' பதிப்பகங்களில் இருந்து",
+       "நீதிமன்ற உத்தரவால் லஞ்ச ஒழிப்பு போலீசார் வழக்குப் பதிவு"
       ]
      },
      {
-      "title": "பொறுப்பேற்பு",
+      "title": "இதுவரை நடந்தவை",
       "lines": [
-       "புதிய உதவி கமிஷனர் நேற்று பொறுப்பேற்றுக் கொண்டார்",
-       "நேற்று என்பது நவம்பர் 18ஆம் தேதி",
-       "உளவுத் துறைப் பணிகளை இனி அவர் கவனிப்பார்"
+       "10ஆம் தேதி சோதனை: <b>3000</b> சர்ச்சைக்குரிய புத்தகங்களுக்கு சீல்",
+       "16ஆம் தேதி இரண்டாம் கட்ட சோதனை",
+       "டி.எஸ்.பி. இமானுவேல் சேகரன் தலைமையில் 10 போலீசார் சோதனை"
+      ]
+     },
+     {
+      "title": "அடுத்து என்ன?",
+      "lines": [
+       "சஸ்பெண்ட் செய்யப்பட்ட அதிகாரிகளிடம் விசாரிக்க திட்டம்",
+       "வழக்கு தொடர்ந்து விசாரணையில் உள்ளது"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவை மாநகர உளவுத் துறைக்கு புதிய உதவி கமிஷனர் பொறுப்பேற்றுள்ளார். கருமத்தம்பட்டி காவல் துணை கண்காணிப்பாளராக பணிபுரிந்து வந்த கரிகால் பாரி சங்கர் இந்தப் பதவிக்கு நியமிக்கப்பட்டார். நேற்று, நவம்பர் 18ஆம் தேதி அவர் பொறுப்பேற்றுக் கொண்டார். இதற்கு முன் உளவுத் துறையின் உதவி கமிஷனராக இருந்த மணிவர்மன் இரு மாதங்களுக்கு முன் பணியிட மாற்றம் செய்யப்பட்டார். இதையடுத்து இந்தப் பதவி காலியாக இருந்தது. இனி உளவுத் துறைப் பணிகளை கரிகால் பாரி சங்கர் கவனிப்பார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 கோவை மாநகர உளவுத் துறைக்கு புதிய உதவி கமிஷனர் பொறுப்பேற்பு\n\n📰 முழு விவரம்:\nகோவை மாநகர உளவுத் துறைக்குப் புதிதாக நியமிக்கப்பட்ட உதவி கமிஷனர் கரிகால் பாரி சங்கர் நேற்று பொறுப்பேற்றுக் கொண்டார்.\nஇந்தப் பதவியில் இருந்த உதவி கமிஷனர் மணிவர்மன் இரு மாதங்களுக்கு முன் பணியிட மாற்றம் செய்யப்பட்டார்.\nஇதையடுத்து கருமத்தம்பட்டி டி.எஸ்.பி.யாக பணிபுரிந்து வந்த கரிகால் பாரி சங்கர் இப்பதவிக்கு நியமிக்கப்பட்டார்.\n\n📍 இடம்: கோவை மாநகர உளவுத் துறை\n🗓️ நாள்: நவம்பர் 18, 2026\n\nCoimbatore city intelligence wing new assistant commissioner | Coimbatore news\n📍 கோவை மாநகரம், கோவை மாவட்டம் | 18 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Police",
-   "prompts": "A senior Tamil Nadu police officer in khaki uniform with a cap under his arm stands at a desk in a government office, taking charge of the city intelligence wing of the Coimbatore city police. The room is a plain police office in Coimbatore city with a wooden desk, a row of metal filing cabinets, a framed portrait-free wall, and a ceiling fan turning slowly overhead. Two or three other police officers in khaki stand a few steps back, seen from behind or in soft profile, and a clerk in a white shirt sits near a stack of files. The officer's posture is formal and upright as he receives the official papers and signs the handover register. Daylight comes through tall windows, giving a calm, official mood. Camera at eye level, 35 mm, wide enough to show the desk, the people and the room, with no readable text or signboards visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of the handover table in a Coimbatore city police office: a neat stack of official files, a fountain pen resting on an open register, and a folded khaki cap placed on the edge of a wooden desk. The surface shows the routine paperwork of a government transfer of charge, with a pair of reading spectacles beside the papers and a steel tumbler of water. In the soft background, a police officer's khaki uniform sleeve is visible as he leans forward to sign, slightly out of focus. Warm daylight from a window falls across the papers, giving a quiet, official tone. Camera slightly high, 35 mm macro-style detail shot, shallow depth of field, with no legible text, names or logos on the documents. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/new-assistant-commissioner-of-intelligence/4379507",
-   "published": "2026-11-18T17:18:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b) - fact-check: no problems found",
-   "note": "free-model draft anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b, 13 attempt(s), 0 validator problem(s)",
+   "reel_script": "கோவை காந்திபுரத்தில் நூலகத்தில் மேலும் 20 போலி புத்தகங்கள் பறிமுதல் செய்யப்பட்டன. ஈ வெ ரா பெயரில் புதிதாகத் திறக்கப்பட்ட இந்த நூலகத்துக்குப் புத்தகங்கள் வாங்கியதில் முறைகேடு நடந்ததாக எழுத்தாளர் பெருமாள் முருகன் புகார் அளித்தார். சென்னையைச் சேர்ந்த அகல்விளக்கு, பீனிக்ஸ் ஆகிய பதிப்பகங்களில் இருந்து 1900க்கும் மேற்பட்ட சர்ச்சைக்குரிய புத்தகங்கள் வாங்கப்பட்டது கண்டறியப்பட்டது. நீதிமன்ற உத்தரவின்படி லஞ்ச ஒழிப்புப் போலீசார் வழக்குப் பதிவு செய்து விசாரிக்கின்றனர். முதல் கட்டமாக 10ஆம் தேதி நடந்த சோதனையில் 3000 சர்ச்சைக்குரிய புத்தகங்களுக்கு சீல் வைக்கப்பட்டது. 16ஆம் தேதி இரண்டாம் கட்ட சோதனை நடைபெற்றது. நேற்று காவல் துணை கண்காணிப்பாளர் இமானுவேல் சேகரன் தலைமையில் 10 போலீசார் சோதனை நடத்தி, மேலும் 20 போலி புத்தகங்களைக் கண்டுபிடித்தனர். அவற்றைக் கைப்பற்றி சென்னை லஞ்ச ஒழிப்புத் துறைக்கு அனுப்பி வைத்தனர். நூலக முறைகேடு வழக்கில் சஸ்பெண்ட் செய்யப்பட்ட அதிகாரிகளிடமும் விசாரிக்கத் திட்டமிட்டுள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 கோவை நூலகத்தில் மேலும் 20 போலி புத்தகங்கள் பறிமுதல்; சென்னைக்கு அனுப்பி வைப்பு\n\n📰 முழு விவரம்:\nகாந்திபுரத்தில் ஈ.வெ.ரா. பெயரிலான நூலகத்தில் மேலும் 20 போலி புத்தகங்களை லஞ்ச ஒழிப்புப் போலீசார் கைப்பற்றி சென்னைக்கு அனுப்பியுள்ளனர். நூலகத்துக்குப் புத்தகங்கள் வாங்கியதில் முறைகேடு நடந்ததாக எழுத்தாளர் பெருமாள் முருகன் புகார் அளித்திருந்தார். அகல்விளக்கு, பீனிக்ஸ் பதிப்பகங்களிடமிருந்து 1900க்கும் மேற்பட்ட சர்ச்சைக்குரிய புத்தகங்கள் வாங்கப்பட்டது கண்டறியப்பட்டது. நீதிமன்ற உத்தரவையடுத்து வழக்குப் பதிவு செய்து விசாரணை நடைபெறுகிறது. 10ஆம் தேதி சோதனையில் 3000 புத்தகங்களுக்கு சீல் வைக்கப்பட்டது; 16ஆம் தேதி இரண்டாம் கட்ட சோதனை நடந்தது. நேற்று டி.எஸ்.பி. இமானுவேல் சேகரன் தலைமையிலான 10 போலீசார் நடத்திய சோதனையில் மேலும் 20 போலி புத்தகங்கள் கண்டுபிடிக்கப்பட்டன. சஸ்பெண்ட் செய்யப்பட்ட அதிகாரிகளிடமும் விசாரிக்கத் திட்டமிட்டுள்ளனர்.\n\nCoimbatore library 20 more fake books seized, sent to Chennai | Coimbatore news\n📍 காந்திபுரம், கோவை மாவட்டம் | 19 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Gandhipuram #கோவை #CoimbatoreNews",
+   "prompts": "Inside a library reading hall in Gandhipuram, Coimbatore city, a group of about ten Tamil Nadu police in khaki uniforms stands between tall wooden bookshelves, while a plain-clothes Deputy Superintendent of Police leads the search. Two officers, seen from behind, lift and inspect a stack of hardbound books, placing 20 seized books into a cardboard carton on a long reading table. The room has tubelight ceilings, rows of steel-framed shelves packed with books, and a few empty chairs. Some books are tied with string and stacked on the floor, and a plastic crate waits beside the table. The time is daylight through the windows, with soft, even indoor light. Camera at eye level, 35 mm, wide enough to show the shelves, the police group and the table of seized books. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a wooden library table where 20 hardbound books have been stacked and sealed in a cardboard carton, with a police officer's gloved hand in khaki sleeve placing a last book on top. The books have plain bound spines and dusty covers, and a roll of brown tape and a paper seal lie beside the carton. Behind the table, out of focus, shelves of library books and a police officer in khaki stand in the background of a Coimbatore government library. Soft daylight from a window falls across the table. Camera close and slightly high, 35 mm, shallow depth of field, focusing on the stacked books and the carton. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-news/20-more-fake-books-found-in-coimbatore-library/4380895",
+   "published": "2026-11-19T20:34:43+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: letters of another script inside Tamil words: ् - write every word only in Tamil letters",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795088548/kovaiminnal/fwnppakl8roucjqbxd0z.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795088551/kovaiminnal/t18fso5x48dtrzzpvbye.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795102696/kovaiminnal/zeg9xmfmp9cibxhix6lc.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795102701/kovaiminnal/ctugw3bakctypgr3hxjr.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "மேட்டுப்பாளையத்தில் யானைகள் முகாமுக்கு இடம் தயார், கொட்டகை அமைக்க அளவீடு",
+   "english_headline": "Mettupalayam: site cleaned on Bhavani riverbank for elephant wellness camp; measurement for paagan sheds, kitchen and storage rooms done",
+   "category": "Temples & Events",
+   "location": "Mettupalayam town, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "யானைகள் முகாம்",
+    "loc": "மேட்டுப்பாளையம்",
+    "hl1": "மேட்டுப்பாளையத்தில் யானைகள் முகாம் இடம்",
+    "hl2": "கொட்டகை அமைக்க அளவீடு",
+    "slides": [
+     {
+      "title": "எங்கே?",
+      "lines": [
+       "மேட்டுப்பாளையம் வனபத்ரகாளியம்மன் கோயில் அருகே",
+       "பவானி ஆற்றின் கரையோரம்",
+       "இந்த இடம் சுத்தம் செய்யப்பட்டது"
+      ]
+     },
+     {
+      "title": "என்ன முகாம்?",
+      "lines": [
+       "யானைகள் புத்துணர்வு நல வாழ்வு முகாம்",
+       "தமிழகம், புதுச்சேரி கோயில்கள், தனியார் மடங்களின் யானைகள்",
+       "ஒவ்வொரு யானையுடனும் <b>2 பாகன்கள்</b> வருவர்"
+      ]
+     },
+     {
+      "title": "அளவீட்டுப் பணி",
+      "lines": [
+       "பாகன்கள் தங்கும் கொட்டகைகள் அமைக்க அளவீடு",
+       "சமையல் கூடம், உணவு அருந்தும் கூடம் அளவீடு",
+       "பொருட்கள் இருப்பு அறைகள் அளவீடு"
+      ]
+     },
+     {
+      "title": "அதிகாரிகள்",
+      "lines": [
+       "கோவை இந்து சமய அறநிலையத்துறை செயற்பொறியாளர் திருநாவுக்கரசு",
+       "உதவி கோட்ட பொறியாளர் மாணிக்கவேல்",
+       "உதவி பொறியாளர் தினேஷ் குமார் பங்கேற்பு"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "மேட்டுப்பாளையத்தில் யானைகள் முகாமுக்கான இடம் தயாராகிறது. வனபத்ரகாளியம்மன் கோயில் அருகே, பவானி ஆற்றின் கரையோரம் யானைகள் புத்துணர்வு நல வாழ்வு முகாம் நடைபெற உள்ளது. இந்த இடம் சுத்தம் செய்யப்பட்டுள்ளது. தமிழகம் மற்றும் புதுச்சேரியில் உள்ள கோயில்கள் மற்றும் தனியார் மடங்களில் வளர்க்கப்படும் யானைகள் இந்த முகாமில் இடம் பெற உள்ளன. ஒவ்வொரு யானையுடனும் இரண்டு பாகன்கள் வருவர். இவர்கள் தங்குவதற்காகப் பாதுகாப்புடன் கூடிய கொட்டகைகள் அமைக்கப்படும். முகாம் பகுதியில் பாகன்கள் தங்கும் கொட்டகைகள், சமையல் கூடம், உணவு அருந்தும் கூடம், பொருட்கள் இருப்பு அறைகள் ஆகியவற்றுக்கான அளவீடு பணிகள் நடைபெற்றன. கோவை இந்து சமய அறநிலையத்துறை செயற்பொறியாளர் திருநாவுக்கரசு, உதவி கோட்ட பொறியாளர் மாணிக்கவேல், உதவி பொறியாளர் தினேஷ் குமார் ஆகியோர் இதில் பங்கேற்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🐘 மேட்டுப்பாளையத்தில் யானைகள் முகாமுக்கு இடம் சுத்தம், கொட்டகை அமைக்க அளவீடு\n\n📰 முழு விவரம்:\nமேட்டுப்பாளையம் வனபத்ரகாளியம்மன் கோயில் அருகே, பவானி ஆற்றின் கரையோரம் யானைகள் புத்துணர்வு நல வாழ்வு முகாம் நடைபெற உள்ளது. இந்த இடம் சுத்தம் செய்யப்பட்டது.\nதமிழகம், புதுச்சேரியில் உள்ள கோயில்கள் மற்றும் தனியார் மடங்களில் வளர்க்கப்படும் யானைகள் இதில் இடம் பெற உள்ளன. ஒவ்வொரு யானையுடனும் இரண்டு பாகன்கள் வருவர்.\nபாகன்கள் தங்குவதற்குப் பாதுகாப்புடன் கூடிய கொட்டகைகள் அமைக்கப்படும். பாகன்கள் தங்கும் கொட்டகைகள், சமையல் கூடம், உணவு அருந்தும் கூடம், பொருட்கள் இருப்பு அறைகள் ஆகியவற்றுக்கான அளவீடு பணிகள் நடைபெற்றன.\nகோவை இந்து சமய அறநிலையத்துறை செயற்பொறியாளர் திருநாவுக்கரசு, உதவி கோட்ட பொறியாளர் மாணிக்கவேல், உதவி பொறியாளர் தினேஷ் குமார் ஆகியோர் பங்கேற்றனர்.\n\n📍 இடம்: வனபத்ரகாளியம்மன் கோயில் அருகே, பவானி ஆற்றின் கரையோரம், மேட்டுப்பாளையம், கோவை மாவட்டம்\n🐘 என்ன: யானைகள் புத்துணர்வு நல வாழ்வு முகாம்\n\nMettupalayam elephant camp site cleaned, sheds measured | Coimbatore news\n📍 மேட்டுப்பாளையம், கோவை மாவட்டம் | 19 நவம்பர் 2026\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Mettupalayam #CoimbatoreNews #கோவை",
+   "prompts": "Two government engineers in shirts and trousers stretch a measuring tape across a freshly cleared, swept patch of ground on the bank of the Bhavani river in Mettupalayam town, marking spots with wooden pegs for future shelters. Beside the open riverbank stands the Vanabhadrakaliamman temple gopuram, with a few devotees in sarees and veshti far off near the temple entrance. The cleared ground is flat, bare earth with a line of tall riverside trees and the calm brown river water visible behind it. Some small heaps of cut brush sit at the edge of the cleared area, and a paved path runs along the bank. Soft morning daylight, clear sky, Western Ghats hills faintly visible in the far background. Camera at eye level, 35 mm lens, wide enough to show the riverbank, the temple and the engineers together, subjects seen from behind or at a distance. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a measuring tape stretched taut across the freshly cleared earth of the Bhavani riverbank, held at one end by a hand in a shirt sleeve and pinned to a wooden stake driven into the soil. Next to it, a row of marking pegs and a bundle of bamboo poles lie on the bare, swept ground, with a few loose leaves and dry twigs scattered at the edge. Out of focus behind, the grey-brown river water and green riverside shrubs appear, with the temple wall and gopuram blurred in the far background. Bright daylight, soft shadows on the earth. Camera at low angle, 50 mm lens, shallow depth of field, no readable text or signboards visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/preparations-underway-to-set-up-elephant-camp-shed/4380738",
+   "published": "2026-11-19T19:22:29+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script copies the article word for word (16 words in a row, 33% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence; caption copies the article word for word (18 words in a row, 42% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 2 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795102711/kovaiminnal/nr0tdzjgyk0uufqywsj1.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795102715/kovaiminnal/khgpwyw1lipw9823v1lt.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "கோதவாடி குளத்தை முழுமையாக சுத்தப்படுத்த மக்கள் வலியுறுத்தல்",
+   "english_headline": "Residents urge full cleaning of Kothavadi lake in Kinathukadavu",
+   "category": "Civic Issues",
+   "location": "Kinathukadavu, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "குளம் பராமரிப்பு",
+    "loc": "கிணத்துக்கடவு",
+    "hl1": "கிணத்துக்கடவு: கோதவாடி குளத்தை",
+    "hl2": "312.72 ஏக்கர் குளம்",
+    "slides": [
+     {
+      "title": "என்ன கோரிக்கை?",
+      "lines": [
+       "கோதவாடி குளத்தை முழுமையாக சுத்தப்படுத்த வேண்டும்",
+       "மக்கள் கோரிக்கை விடுத்துள்ளனர்",
+       "குளம் <b>312.72 ஏக்கர்</b> பரப்பளவில் உள்ளது"
+      ]
+     },
+     {
+      "title": "ஏன் இந்த நிலை?",
+      "lines": [
+       "சில ஆண்டுகளாக குளத்தில் நீர் இல்லை",
+       "முள் மரங்கள் வளர்ந்து புதர் போல் உள்ளது",
+       "புதரில் காட்டுப் பன்றிகள் அதிகம் உள்ளன"
+      ]
+     },
+     {
+      "title": "பணி நிறுத்தம்",
+      "lines": [
+       "அக்டோபர் மாதம் 'வீ தி லீடர்ஸ்' அமைப்பு பணியைத் தொடங்கியது",
+       "சீமை கருவேல மரங்கள் வெட்டி அகற்றும் பணி நடந்தது",
+       "மழை பெய்ததால் பணிகள் நிறுத்தப்பட்டன"
+      ]
+     },
+     {
+      "title": "மக்கள் கோரிக்கை",
+      "lines": [
+       "சீமை கருவேல மரங்களை வெட்டி அகற்ற வேண்டும்",
+       "நீர்வழிப் பாதையில் உள்ள செடி, மரங்களை அகற்ற வேண்டும்",
+       "குளத்துக்கு நீர்வரத்து ஏற்படுத்த நடவடிக்கை வேண்டும்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கிணத்துக்கடவு கோதவாடி குளத்தை முழுமையாக சுத்தப்படுத்த வேண்டும் என மக்கள் கோரிக்கை விடுத்துள்ளனர். இந்தக் குளம் 312.72 ஏக்கர் பரப்பளவில் உள்ளது. சில ஆண்டுகளாக குளத்தில் நீர் இல்லாமல், முள் மரங்கள் வளர்ந்து புதர் போல் காணப்படுகிறது. இதனால் புதரில் காட்டுப் பன்றிகள் அதிக அளவில் உள்ளன. மழை பெய்தாலும் குளத்துக்கு நீர்வரத்து இல்லாததால், சுற்றியுள்ள கிராமங்களில் வறட்சி நிலவியது. கடந்த அக்டோபர் மாதம் 'வீ தி லீடர்ஸ்' அமைப்பு சார்பில் குளத்தை மீட்டெடுக்கும் பணிகள் தொடங்கின. பூமி பூஜை நடத்தப்பட்டு, குளத்தில் இருந்த சீமை கருவேல மரங்கள் வெட்டி அரைத்து அகற்றப்பட்டன. அப்போது மழை பெய்ததால் பணிகள் நிறுத்தப்பட்டன. மழை குறைந்த பிறகும் குளத்தை சுத்தம் செய்யும் பணி இன்னும் தொடங்கப்படவில்லை. தற்போது குளத்தின் ஒரு சில இடங்களில் மழைநீர் தேங்கியுள்ளது. மழைநீர் இல்லாத பகுதிகளில் சீமை கருவேல மரங்களை அகற்றவும், நீர்வழிப் பாதையில் உள்ள செடி, மரங்களை நீக்கி குளத்துக்கு நீர்வரத்து ஏற்படுத்தவும் நடவடிக்கை எடுக்க வேண்டும் என மக்கள் கோரியுள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 கிணத்துக்கடவு: கோதவாடி குளத்தை முழுமையாக சுத்தப்படுத்த மக்கள் கோரிக்கை\n\n📰 முழு விவரம்:\nகிணத்துக்கடவில் உள்ள கோதவாடி குளத்தை முழுமையாக சுத்தப்படுத்த வேண்டும் என மக்கள் கோரிக்கை விடுத்துள்ளனர். குளம் 312.72 ஏக்கர் பரப்பளவில் உள்ளது. சில ஆண்டுகளாக நீர் இல்லாமல், முள் மரங்கள் வளர்ந்து புதர் போல் காணப்படுகிறது. இதனால் புதரில் காட்டுப் பன்றிகள் அதிக அளவில் உள்ளன. குளத்துக்கு நீர்வரத்து இல்லாததால் சுற்றியுள்ள கிராமங்களில் வறட்சி நிலவியது.\nகடந்த அக்டோபர் மாதம் 'வீ தி லீடர்ஸ்' அமைப்பு சார்பில் குளத்தை மீட்கும் பணிகள் தொடங்கின. பூமி பூஜை நடத்தப்பட்டு, சீமை கருவேல மரங்கள் வெட்டி அரைத்து அகற்றப்பட்டன. மழை பெய்ததால் பணிகள் நிறுத்தப்பட்டன. மழை குறைந்த பின்னரும் குளத்தை சுத்தம் செய்யும் பணி இன்னும் தொடங்கப்படவில்லை. தற்போது குளத்தின் சில இடங்களில் மழைநீர் தேங்கியுள்ளது.\n📍 இடம்: கிணத்துக்கடவு, கோதவாடி குளம்\n🌾 மக்கள் கோரிக்கை: மழைநீர் இல்லாத பகுதிகளில் சீமை கருவேல மரங்களை வெட்டி அகற்றவும், நீர்வழிப் பாதையில் உள்ள செடி, மரங்களை நீக்கி குளத்துக்கு நீர்வரத்து ஏற்படுத்தவும் நடவடிக்கை வேண்டும்.\nஇந்தச் செய்தியை தேவைப்படுவோருக்கு Share செய்யுங்கள்.\n\nKinathukadavu Kothavadi lake cleaning demand | Coimbatore news\n📍 கிணத்துக்கடவு, கோவை மாவட்டம் | 19 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Kinathukadavu #கோவை #CoimbatoreNews",
+   "prompts": "A group of Kinathukadavu villagers stands at the edge of the dry Kothavadi lake bed, looking out over the vast cracked basin where thorny Seemai karuvelam bushes have grown tall. Shallow pools of rainwater lie in a few patches of the bed, and a dark heap of cut karuvelam branches and logs lies on the dry ground near the bank. In the far background a low line of tree cover and the open village landscape of Kinathukadavu stretch toward the distant hills of the Western Ghats. The villagers are men in shirts and veshti and women in cotton sarees, standing quietly and pointing toward the water channel, seen from behind and at a distance. The light is soft overcast daylight after recent rain, with a muted grey-green palette. Camera: eye level, 35 mm, wide enough to show the full lake bed and the people in it. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of the lake's dry earth and a tangle of cut Seemai karuvelam branches heaped beside a shallow puddle of standing rainwater on the cracked bed of Kothavadi lake. Thorny stems, ground wood chips and dry, grey mud fill the frame, with a few stubborn bushes rising behind the debris. A narrow water channel choked with weeds and roots runs through the foreground, showing why water cannot reach the tank. Overcast daylight after rain gives a soft, even light. Camera: low angle, 50 mm, shallow depth of field, focused on the branches and the water channel. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/people-urge-for-complete-cleaning-of-godavari-tank/4380491",
+   "published": "2026-11-19T17:10:39+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 0 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795102752/kovaiminnal/yw0nsatyxrtyubxyv3vn.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795102756/kovaiminnal/xenofc386jgqpham94ks.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "சூலூரில் பள்ளி மாணவனிடம் சீண்டல்: முதியவர் போக்சோவில் கைது",
+   "english_headline": "Elderly man arrested under POCSO in Sulur for harassing a 17-year-old school student",
+   "category": "Crime & Safety",
+   "location": "Sulur, Coimbatore district",
+   "importance": "High",
+   "scope": "",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "போக்சோ வழக்கு",
+    "loc": "சூலூர்",
+    "hl1": "சூலூரில் மாணவனிடம் சீண்டல்: முதியவர்",
+    "hl2": "போக்சோ சட்டத்தின் கீழ்",
+    "slides": [
+     {
+      "title": "என்ன நடந்தது?",
+      "lines": [
+       "சூலூர் அருகே கிராமத்தில் 17 வயது மாணவனிடம் சீண்டல்",
+       "முதியவர் ஒருவர் பாலியல் சீண்டலில் ஈடுபட்டார்",
+       "மாணவன் தப்பி பெற்றோரிடம் கூறினார்"
+      ]
+     },
+     {
+      "title": "எப்படி நடந்தது?",
+      "lines": [
+       "<b>16ஆம் தேதி</b> பருவத் தேர்வு எழுதிய பின் பஸ் ஸ்டாப்பில் நின்றார்",
+       "பஸ் சென்றதால், இரு சக்கர வாகனத்தில் சென்ற முதியவரிடம்",
+       "தோட்டத்துக்கு அழைத்துச் சென்று இந்தச் செயலில் ஈடுபட்டார்"
+      ]
+     },
+     {
+      "title": "நடவடிக்கை",
+      "lines": [
+       "சூலூர் போலீசில் புகார் அளிக்கப்பட்டது",
+       "தொழிலாளி பன்னீர், <b>65 வயது</b>, மீது போக்சோ வழக்குப் பதிவு",
+       "வழக்கு விசாரணையில் உள்ளது"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "சூலூரில் 17 வயது மாணவனிடம் சீண்டலில் ஈடுபட்ட 65 வயது முதியவர் போக்சோ சட்டத்தின் கீழ் கைது செய்யப்பட்டுள்ளார். சூலூர் அருகே உள்ள கிராமத்தைச் சேர்ந்த அந்த மாணவன், அரசு பள்ளியில் பிளஸ் 2 படித்து வருகிறார். கடந்த 16ஆம் தேதி பருவத் தேர்வு எழுதிய பின், வீட்டுக்குச் செல்ல பஸ் ஸ்டாப்பில் நின்றார். பஸ் சென்றுவிட்டதால், அவ்வழியே இரு சக்கர வாகனத்தில் வந்த முதியவரிடம் லிஃப்ட் கேட்டு ஏறிச் சென்றார். தனது தோட்டத்துக்குச் சென்று கேட்டைப் பூட்டிய முதியவர், ஊரில் இறக்கி விடுவதாக மாணவனிடம் கூறினார். தோட்டத்தில் மாணவனிடம் பாலியல் சீண்டலில் ஈடுபட்டார். அங்கிருந்து தப்பிய மாணவன், பெற்றோரிடம் நடந்ததைக் கூறினார். இதுகுறித்து சூலூர் போலீசில் புகார் அளிக்கப்பட்டது. தொழிலாளி பன்னீர் மீது போக்சோ சட்டத்தின் கீழ் வழக்குப் பதிவு செய்து போலீசார் விசாரித்து வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 சூலூரில் மாணவனிடம் சீண்டல்: 65 வயது முதியவர் போக்சோவில் கைது\n\n📰 முழு விவரம்:\nசூலூர் அருகே கிராமத்தைச் சேர்ந்த 17 வயது மாணவன், அரசு பள்ளியில் பிளஸ் 2 படித்து வருகிறார். கடந்த 16ஆம் தேதி பருவத் தேர்வு எழுதிவிட்டு வீட்டுக்குச் செல்ல பஸ் ஸ்டாப்பில் நின்றார். பஸ் சென்றுவிட்டதால், அவ்வழியே இரு சக்கர வாகனத்தில் வந்த முதியவரிடம் லிஃப்ட் கேட்டு ஏறிச் சென்றார். தனது தோட்டத்துக்குச் சென்று கேட்டைப் பூட்டிய முதியவர், ஊரில் இறக்கி விடுவதாகக் கூறினார். தோட்டத்தில் மாணவனிடம் பாலியல் சீண்டலில் ஈடுபட்டார். அங்கிருந்து தப்பிய மாணவன் பெற்றோரிடம் கூறினார்.\n👮 நடவடிக்கை: சூலூர் போலீசில் புகார் அளிக்கப்பட்டது. தொழிலாளி பன்னீர், 65 வயது, மீது போக்சோ சட்டத்தின் கீழ் வழக்குப் பதிவு செய்து போலீசார் விசாரித்து வருகின்றனர்.\n\nSulur POCSO case, elderly man arrested | Coimbatore news\n📍 சூலூர், கோவை மாவட்டம் | 19 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Sulur #போக்சோ #CoimbatoreNews",
+   "prompts": "A police officer in khaki uniform stands beside a parked two-wheeler at the gate of a farm garden on a village road near Sulur, Coimbatore district, with a parked police jeep at the roadside. A teenage school student in Tamil Nadu government school uniform, carrying a school bag, is seen from behind walking away from the gate toward a village bus stop, while two or three villagers stand at a distance under a neem tree. The scene is a dusty village road with coconut palms, low houses and a green paddy field behind, in bright daylight. Shot at eye level with a 35 mm lens wide enough to show the farm gate, the road and the vehicles, with the faces of all people turned away or blurred and no readable signboards. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a two-wheeler's handlebar and seat with a school bag resting on it, parked beside a closed iron gate of a farm garden on a village road near Sulur. A khaki-uniformed police officer's hand rests on the gate latch, and a folded exam hall ticket or school notebook lies on the seat, out of focus. Behind, a dusty road, a coconut palm and the edge of a green field are visible in bright daylight. Shot at close range with a 35 mm lens, shallow focus on the gate latch and the bag, no faces, no readable text. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/old-man-in-cheindal-poxo-with-schoolboy-arrested/4380734",
+   "published": "2026-11-19T19:16:53+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: sentence 1 (one-line story) has 14 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795102763/kovaiminnal/z8zlsrh6tizbv5ddopm5.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795102767/kovaiminnal/q1o5ibou6vctwxktggar.jpg"
    ]
   }
  ]
