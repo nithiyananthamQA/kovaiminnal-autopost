@@ -82,6 +82,14 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-19 | `31513de` | voice: free Anbu reads every reel, ElevenLabs off and its key removed (owner 19 Nov: no cost for voice) |
+| 2026-11-19 | `7f4dd93` | powercut: notices written |
+| 2026-11-19 | `a73d9f9` | powercut: notices written |
+| 2026-11-19 | `556449d` | comments: normal comments recorded (not e-mailed) |
+| 2026-11-19 | `e611032` | facebook RN-145 |
+| 2026-11-19 | `f1ffc99` | pick: written and posted |
+| 2026-11-19 | `4b95ea7` | powercut: notices written |
+| 2026-11-19 | `a5a00c4` | facebook RN-143 |
 | 2026-11-19 | `b7cad9d` | Worker schedule without rasipalan |
 | 2026-11-19 | `0a18c57` | No rasipalan post (owner 19 Nov: 'that rasipalan news we dont need') |
 | 2026-11-19 | `19b5830` | Same-cut check: the page's own city name never makes two power cuts one (Chennai: 'சென்னை' is in every notice) |
@@ -104,12 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-19 | `22b1d9a` | facebook RN-142 |
 | 2026-11-19 | `001a4d6` | pick: picked news saved |
 | 2026-11-19 | `0535fea` | pick: picked news saved |
-| 2026-11-19 | `ae67ed0` | pick: list sent |
-| 2026-11-19 | `19bf33c` | pick: written and posted |
-| 2026-11-19 | `488aad3` | facebook RN-136 |
-| 2026-11-19 | `aa61c63` | facebook RN-133 |
-| 2026-11-19 | `3b01eb7` | powercut: notices written |
-| 2026-11-19 | `09ef3e2` | goldrate posted |
-| 2026-11-19 | `ab4ebb2` | facebook RN-135 |
-| 2026-11-19 | `fe1a647` | facebook RN-134 |
 <!-- recent-changes:end -->
