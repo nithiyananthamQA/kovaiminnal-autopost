@@ -82,34 +82,34 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
-| 2026-11-18 | `b9ee38d` | Kovai end card: FOLLOW @kovai_minnal, the real username (every Kovai reel showed @kovaiminnal - a handle nobody could find) |
-| 2026-11-17 | `f85d938` | facebook RN-94 |
-| 2026-11-18 | `510ab88` | Posting chain: the Cloudflare Worker waits, not a GitHub machine (owner 18 Nov: 'safe from ban?') |
-| 2026-11-17 | `9e03fbf` | pick: picked news saved |
-| 2026-11-17 | `a1446ee` | pick: picked news saved |
-| 2026-11-17 | `070aad9` | pick: list sent |
-| 2026-11-18 | `60399b1` | Chennai: its own areas, suburbs and city services; state politics stays out (owner 18 Nov: 'chennai is the most populated city ... add even more small areas') |
-| 2026-11-18 | `2e509a8` | Cloudflare Worker "test": one timer for every page's GitHub jobs (owner 18 Nov: 'move to the workers now', 'one worker for all our pages') |
-| 2026-11-18 | `0691bd3` | Power cuts: a list for our district only is kept whole (17 Nov: Chennai never posted a power cut - ABP's Chennai-only list was cut to 0 words); covaimail.com is Kovai's paper only |
-| 2026-11-18 | `693cff7` | sync_pages: also push a page's earlier unpushed commits (17 Nov: Chennai kept safe mode + fixes locally although the owner pushed) |
-| 2026-11-18 | `eb19a89` | pick: a new page's empty state file no longer crashes the round (17 Nov: Chennai's 21:00 round failed - KeyError 'rounds' - no news since 18:26) |
-| 2026-11-17 | `3e63227` | Heartbeat |
-| 2026-11-17 | `edec4cf` | Heartbeat |
-| 2026-11-17 | `d5f8d15` | pick: written and posted |
-| 2026-11-17 | `d512124` | facebook RN-91 |
-| 2026-11-17 | `03c82df` | powercut: notices written |
-| 2026-11-17 | `1c5be1a` | facebook RN-92 |
-| 2026-11-17 | `a91d8d7` | comments: normal comments recorded (not e-mailed) |
-| 2026-11-17 | `737c7f5` | pick: picked news saved |
-| 2026-11-17 | `dcb1011` | pick: picked news saved |
-| 2026-11-17 | `c5f7a4d` | pick: list sent |
-| 2026-11-17 | `b1559f4` | pick: written and posted |
-| 2026-11-17 | `20ff725` | facebook RN-89 |
-| 2026-11-17 | `bdab5e7` | facebook RN-90 |
-| 2026-11-17 | `9e4b1ff` | powercut: notices written |
-| 2026-11-17 | `774c450` | facebook RN-87 |
-| 2026-11-17 | `9686262` | powercut: notices written |
-| 2026-11-17 | `83dd488` | facebook RN-88 |
-| 2026-11-17 | `39da329` | stories shared |
-| 2026-11-17 | `6cffe46` | pick: picked news saved |
+| 2026-11-19 | `b7cad9d` | Worker schedule without rasipalan |
+| 2026-11-19 | `0a18c57` | No rasipalan post (owner 19 Nov: 'that rasipalan news we dont need') |
+| 2026-11-19 | `19b5830` | Same-cut check: the page's own city name never makes two power cuts one (Chennai: 'சென்னை' is in every notice) |
+| 2026-11-19 | `6dcd00c` | The same power cut from a second paper is a duplicate: same cut day + the same areas in the script (owner 19 Nov: 'we need to block like this') |
+| 2026-11-19 | `05262af` | facebook RN-144 |
+| 2026-11-19 | `1d4f617` | powercut: notices written |
+| 2026-11-19 | `bbcf95e` | pick: picked news saved |
+| 2026-11-19 | `3e0c967` | pick: picked news saved |
+| 2026-11-19 | `460001c` | pick: list sent |
+| 2026-11-19 | `33f6322` | powercut: notices written |
+| 2026-11-19 | `9f6335d` | The right day: never 'நாளை' about a day that came; power cuts only before their day, first in the queue; party names spoken letter by letter (owner 19 Nov) |
+| 2026-11-19 | `3d586ad` | powercut: notices written |
+| 2026-11-19 | `b6ab348` | facebook RN-102 |
+| 2026-11-19 | `b2446b6` | facebook RN-140 |
+| 2026-11-19 | `5d1ca91` | pick: written and posted |
+| 2026-11-19 | `33fbd00` | facebook RN-138 |
+| 2026-11-19 | `0743086` | powercut: notices written |
+| 2026-11-19 | `6c695ff` | facebook RN-139 |
+| 2026-11-19 | `f59049f` | comments: normal comments recorded (not e-mailed) |
+| 2026-11-19 | `22b1d9a` | facebook RN-142 |
+| 2026-11-19 | `001a4d6` | pick: picked news saved |
+| 2026-11-19 | `0535fea` | pick: picked news saved |
+| 2026-11-19 | `ae67ed0` | pick: list sent |
+| 2026-11-19 | `19bf33c` | pick: written and posted |
+| 2026-11-19 | `488aad3` | facebook RN-136 |
+| 2026-11-19 | `aa61c63` | facebook RN-133 |
+| 2026-11-19 | `3b01eb7` | powercut: notices written |
+| 2026-11-19 | `09ef3e2` | goldrate posted |
+| 2026-11-19 | `ab4ebb2` | facebook RN-135 |
+| 2026-11-19 | `fe1a647` | facebook RN-134 |
 <!-- recent-changes:end -->
