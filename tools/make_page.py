@@ -84,7 +84,8 @@ TEXT = re.compile(r"\.(py|yml|yaml|json|md|gs|txt|sh|html|css|js|cfg|toml)$|^[A-
 # tests of Kovai's own places / city-only rule / the district engine: the word swap makes them meaningless on another page
 KOVAI_ONLY_TESTS = {"test_regressions.py": ["test_posting_gate_city_only", "test_towns_outside_the_city_skipped", "test_places",
                                             "test_town_topic_tamil", "test_other_district_not_posted", "test_five_focused_hashtags",
-                                            "test_list", "test_different_towns_are_different_news", "test_city_story_wins_a_tie"],
+                                            "test_list", "test_different_towns_are_different_news", "test_city_story_wins_a_tie",
+                                            "test_same_cut", "test_other_day_or_other_areas_are_new_news"],
                     "test_powercut.py": ["test_shared_place_name_is_not_enough"]}
 KEEP_ASIS = {"goldrate/state/history.json", "research_free/sources.json",      # sources.json: swapped by the engine's own rule below
              "poster/insights/reference_learned.json"}      # the reference page's insights (his own words, never swapped)
@@ -129,6 +130,12 @@ class PageValues(unittest.TestCase):
             self.assertTrue(allnews.statewide(t) or allnews.outside_district(t), t)
         self.assertTrue(allnews.other_district("செங்கல்பட்டு அருகே விபத்து"))      # the far town stays another district
         self.assertTrue(len(allnews.COIMBATORE_WORDS) > 150)
+        import sys as _s
+        _s.path.insert(0, str(ROOT / "poster"))
+        import freshness as F      # 19 Nov: the same cut from a second paper; the city name alone never makes two cuts one
+        a_h, a_s = "சென்னையில் நாளை மின்தடை", "நாளை (நவம்பர் 21) வேளச்சேரி, தரமணி, அடையாறு பகுதிகளில் மின்தடை."
+        self.assertTrue(F.same_cut_areas(a_h, a_s, "2026-11-20", "சென்னை: நாளை மின்தடை", "நாளை (நவம்பர் 21) அடையாறு, வேளச்சேரி பகுதிகள்.", "2026-11-20"))
+        self.assertFalse(F.same_cut_areas(a_h, a_s, "2026-11-20", "சென்னையில் நாளை மின்தடை", "நாளை (நவம்பர் 21) தாம்பரம், குரோம்பேட்டை பகுதிகளில் மின்தடை.", "2026-11-20"))
 
     def test_no_kovai_name_left_in_code(self):
         out = subprocess.run(["grep", "-rIlE", "Kovai Minnal|கோவை மின்னல்|kovai_minnal|KovaiMinnal|kovaiminnal", str(ROOT), "--include=*.py",
@@ -214,6 +221,7 @@ def allnews_values(src, d, PL):
         "OTHER_PLACES": [x["ta"] for x in others.values()] + ["கோவை", "கோயம்புத்தூர்"],
         "OTHER_EN": sorted({w for x in others.values() for w in (x["en"].lower(), x["dinamalar"]) if w.isalpha()} | {"coimbatore", "kovai"}),
         "SECTION_NAMES": tuple(AREAS.get(d["key"], {}).get("section") or (d["ta"],)),
+        "OWN_NAMES": tuple(dict.fromkeys([d["ta"]] + (["மெட்ராஸ்"] if d["key"] == "chennai" else []))),      # 19 Nov: never an "area"
         "SITES": {k: v for k, v in ast.literal_eval(ast.get_source_segment(src, next(
             n for n in ast.parse(src).body if isinstance(n, ast.Assign) and any(getattr(x, "id", "") == "SITES" for x in n.targets))).split("=", 1)[1]).items()
                   if "covaimail" not in v},      # Kovai Mail is a Coimbatore paper

@@ -587,6 +587,7 @@ def _place_norm(t):
     return (t or "").replace("\u0bc1\u0bbe", "\u0bc2").replace("ப்ப", "ப")      # மோகனுார் = மோகனூர், பள்ளிப்பாளையம் = பள்ளிபாளையம்
 
 
+OWN_NAMES = ("கோவை", "கோயம்புத்தூர்")      # 19 Nov: the page's own district / city name - never makes two power cuts one (make_page sets each page's)
 CANON_PLACES = [w for w in dict.fromkeys(COIMBATORE_WORDS + TOWNS) if not w.isascii() and w not in ("கோவை", "கோயம்புத்தூர்")]
 
 

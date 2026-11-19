@@ -288,7 +288,8 @@ def _same_cut_areas(a, a_published, b, b_published):
         if p not in _s.path:
             _s.path.append(p)
         import allnews
-        pa, pb = set(allnews.places_in(a)), set(allnews.places_in(b))
+        own = set(getattr(allnews, "OWN_NAMES", ()))
+        pa, pb = set(allnews.places_in(a)) - own, set(allnews.places_in(b)) - own      # 'சென்னை' alone never makes two cuts one
     except Exception:
         return False
     shared = pa & pb
