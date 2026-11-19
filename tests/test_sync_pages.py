@@ -37,3 +37,26 @@ class Protect(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class PowerCutPage19Nov(unittest.TestCase):
+    """owner 19 Nov: Salem = power cuts only, its own Apps Script + Meta app, the reference's own Salem lists"""
+    def test_timer_starts_only_the_power_cut_jobs(self):
+        import make_timer, make_page
+        got = {j["file"] for j in make_timer.jobs(ROOT, make_page.PAGE["salem"]["jobs"])}
+        self.assertEqual(got, {"powercut.yml", "post.yml", "comments.yml", "cloudclean.yml"})
+        self.assertNotIn("pick.yml", got)
+
+    def test_own_token_and_reference_lists(self):
+        import json, make_page
+        sys.path.insert(0, str(ROOT / "districts"))
+        d, PL = make_page.page_values("salem")
+        cfg = make_page.config_values(json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8")), d, PL)
+        self.assertEqual(cfg["instagram"]["shared_token_page"], "")      # never the Minnal bridge's shared token
+        ref = make_page.ref_lists("salem")
+        self.assertIn("news360-tn/salem360-autopost", ref["from"])
+        self.assertIn("மேட்டூர்", ref["allnews"]["TOWNS"])
+        self.assertIn("district-news-salem", ref["powercut"]["DISTRICT_URL"])
+        src = make_page.allnews_values((ROOT / "research_free" / "allnews.py").read_text(encoding="utf-8"), d, PL)
+        self.assertNotIn("SALEM_WORDS", src)      # his name for the list is ours (COIMBATORE_WORDS)
+        self.assertIn("ஆத்தூர்", src)

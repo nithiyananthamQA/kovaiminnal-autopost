@@ -27,6 +27,25 @@ def run(cmd, cwd, check=True):
     return subprocess.run(cmd, cwd=cwd, check=check, text=True, capture_output=True)
 
 
+def only_jobs(key):
+    """19 Nov: a power-cut-only page (make_page.PAGE[key]["jobs"]) keeps every other workflow OFF on GitHub - a workflow file that is
+    new in Kovai arrives switched on, so this runs after every push (needs GH_TOKEN, as /tmp/push.sh sets)."""
+    keep = make_page.PAGE[key].get("jobs")
+    if not keep:
+        return
+    repo = make_page.PAGE[key]["repo"]
+    r = run(["gh", "workflow", "list", "--all", "-R", repo, "--json", "path,state"], ROOT, check=False)
+    if r.returncode:
+        print(f"{key}: workflows not read ({r.stderr.strip()[:120]}) - check them by hand")
+        return
+    import json
+    for w in json.loads(r.stdout or "[]"):
+        name = w["path"].rsplit("/", 1)[-1]
+        if name not in keep and w["state"] == "active":
+            ok = run(["gh", "workflow", "disable", name, "-R", repo], ROOT, check=False).returncode == 0
+            print(f"{key}: {name} switched off" if ok else f"{key}: {name} could NOT be switched off")
+
+
 def sync(key, push=True):
     d = Path.home() / make_page.PAGE[key]["repo"].split("/")[1]
     if not (d / ".git").is_dir():
@@ -61,6 +80,7 @@ def sync(key, push=True):
         for _ in range(4):      # its bots commit often: take theirs and push again
             if run(["git", "push", "-q", "origin", "main"], d, check=False).returncode == 0:
                 print(f"{key}: PUSHED - same code as Kovai ({src[:60]})")
+                only_jobs(key)
                 return True
             run(["git", "pull", "-q", "--no-rebase", "--no-edit", "origin", "main"], d)
         print(f"{key}: push failed - committed locally in {d}")

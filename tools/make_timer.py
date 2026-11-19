@@ -15,11 +15,12 @@ OUT = ROOT / "workers" / "timer" / "src" / "schedule.json"
 KOVAI = "nithiyananthamQA/kovaiminnal-autopost"
 
 
-def jobs(repo_dir):
+def jobs(repo_dir, only=None):
+    """only: the page's own job list (make_page.PAGE[key]["jobs"], a power-cut-only page) - no other workflow is started"""
     out = []
     for p in sorted((Path(repo_dir) / ".github" / "workflows").glob("*.yml")):
         lines = keeper.crons(p.read_text(encoding="utf-8"))
-        if lines and p.name != "keeper.yml":
+        if lines and p.name != "keeper.yml" and (only is None or p.name in only):
             if p.name not in keeper.LIVE_INPUTS:
                 raise SystemExit(f"{repo_dir}: {p.name} has a schedule but no live inputs in tools/keeper.py LIVE_INPUTS")
             out.append({"file": p.name, "crons": lines, "inputs": keeper.LIVE_INPUTS[p.name]})
@@ -32,7 +33,7 @@ def build():
     for key, pg in make_page.PAGE.items():
         d = Path.home() / pg["repo"].split("/")[1]
         if (d / ".github").is_dir():
-            repos[pg["repo"]] = jobs(d)
+            repos[pg["repo"]] = jobs(d, pg.get("jobs"))
     return {"note": "made by tools/make_timer.py - do not edit by hand", "repos": repos}
 
 

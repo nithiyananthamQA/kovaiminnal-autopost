@@ -24,9 +24,19 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path[:0] = [str(ROOT / "districts"), str(ROOT / "research_free"), str(ROOT / "poster")]
 IST = timezone(timedelta(hours=5, minutes=30))
 
+# a power-cut-only page runs these workflows only (powercut.yml finds + writes + starts post.yml; comments; Cloudinary clean-up; tests)
+POWERCUT_JOBS = ["powercut.yml", "post.yml", "comments.yml", "cloudclean.yml", "tests.yml"]
+
 # found with the minnal-bot token (me/accounts, 17 Nov): the page's Facebook page id; Instagram id is in districts.json
 PAGE = {"chennai": {"fb_page_id": "1450975134763291", "repo": "nithiyananthamQA/chennaiminnal-autopost", "folder": "chennaiminnal",
-                    "bot": "chennaiminnal-bot"}}
+                    "bot": "chennaiminnal-bot"},
+        # owner 19 Nov: "pages for only the powercut for that particular city" - the same code, but only the power-cut jobs run (`jobs`:
+        # the only workflows the timer starts and GitHub keeps on); its OWN Apps Script + Sheet (BRIDGE_URL) and its OWN Meta app token
+        # (IG_SYSTEM_TOKEN secret, `own_token`: never the Minnal bridge's shared token) - a problem on one page never reaches another.
+        # Ids filled when the owner has made the Facebook page + Instagram (empty = not yet).
+        "salem": {"fb_page_id": "", "ig_user_id": "", "repo": "nithiyananthamQA/salemminnal-autopost", "folder": "salemminnal",
+                  "bot": "salemminnal-bot", "own_token": True, "ref": "news360-tn/salem360-autopost",
+                  "jobs": POWERCUT_JOBS}}
 
 # owner 18 Nov ("chennai is the most populated city ... add even more small areas", suburbs: yes): the copy had only "சென்னை" as a
 # place word, so the page could not tell a Chennai area story from a state story datelined Chennai, and every pin said "சென்னை".
@@ -87,6 +97,11 @@ KOVAI_ONLY_TESTS = {"test_regressions.py": ["test_posting_gate_city_only", "test
                                             "test_list", "test_different_towns_are_different_news", "test_city_story_wins_a_tie",
                                             "test_same_cut", "test_other_day_or_other_areas_are_new_news"],
                     "test_powercut.py": ["test_shared_place_name_is_not_enough"]}
+# 19 Nov: a page on the reference's own district lists (districts/ref_lists) refuses Kovai's places, as his own copy does - these
+# tests use Coimbatore areas (Kalappatti, Sulur, a Coimbatore town in a Salem-district story) to stand for "our district"
+REF_PLACE_TESTS = {"test_powercut.py": ["test_new_cut_once_and_never_late"],
+                   "test_hold_before_posting.py": ["test_district_only_with_town_in_story_posts"],
+                   "test_regressions.py": ["test_state_list_without_our_part_is_still_cut", "test_the_four_kinds_are_kept"]}
 KEEP_ASIS = {"goldrate/state/history.json", "research_free/sources.json",      # sources.json: swapped by the engine's own rule below
              "poster/insights/reference_learned.json"}      # the reference page's insights (his own words, never swapped)
 
@@ -157,9 +172,17 @@ CITY_LOOK = {"chennai": (
     " trousers, women in sarees or salwar; Tamil Nadu police in khaki; corporation workers; TNEB linemen.\n")}
 
 
+def ref_lists(key):
+    """the reference's own values for this district (tools/ref_lists.py -> districts/ref_lists/<key>.json), or {}"""
+    p = ROOT / "districts" / "ref_lists" / f"{key}.json"
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+
+
 def page_values(key):
     import pipeline as PL
     d = PL.page(key)
+    if PAGE[key].get("ig_user_id") is not None:
+        d = dict(d, instagram={"user_id": PAGE[key]["ig_user_id"]})
     # owner 17 Nov "same like kovai minnal": Kovai's own closing lines with the page's name (never the old engine's news line)
     d = dict(d, follow_spoken=f"மேலும் செய்திகளுக்கு {d['name_ta']} பக்கத்தை பின்தொடருங்கள்.",
              follow_caption="உள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏", **PAGE[key])
@@ -185,6 +208,16 @@ def swap_text(text, d, PL):
     return text.replace("\x00REF\x00", REF_REPO)
 
 
+def set_assign_src(src, name, seg):
+    """replace the whole top-level assignment `name = ...` with `name = <seg>` (the reference's own source text)"""
+    t = ast.parse(src)
+    for n in t.body:
+        if isinstance(n, ast.Assign) and any(getattr(x, "id", "") == name for x in n.targets):
+            lines = src.splitlines(keepends=True)
+            return "".join(lines[:n.lineno - 1]) + f"{name} = {seg}      # {d_note}\n" + "".join(lines[n.end_lineno:])
+    raise SystemExit(f"{name} not found")
+
+
 def set_assign(src, name, value):
     """replace the whole top-level assignment `name = ...` with `name = <value>`"""
     t = ast.parse(src)
@@ -199,9 +232,17 @@ def set_assign(src, name, value):
 d_note = ""
 
 
-def powercut_values(src):
-    """17 Nov: covaimail.com is a Coimbatore paper - not a power-cut source (or the 'own district page') of any other page"""
-    return src.replace(', "covaimail.com")', ")")
+def powercut_values(src, key=""):
+    """17 Nov: covaimail.com is a Coimbatore paper - not a power-cut source (or the 'own district page') of any other page.
+    19 Nov: a district the reference runs takes HIS searches / papers / district page links (districts/ref_lists/<key>.json)."""
+    ref = ref_lists(key).get("powercut") or {}
+    if not ref:
+        return src.replace(', "covaimail.com")', ")")
+    global d_note
+    d_note = f"the reference's own value ({ref_lists(key)['from']})"
+    for name, seg in ref.items():
+        src = set_assign_src(src, name, seg)
+    return src
 
 
 def allnews_values(src, d, PL):
@@ -232,6 +273,12 @@ def allnews_values(src, d, PL):
         vals["STATE_NEWS"] = list(dict.fromkeys(ast.literal_eval(ast.get_source_segment(src, seg).split("=", 1)[1]) + pol))
     for k, v in vals.items():
         src = set_assign(src, k, v)
+    ref = ref_lists(d["key"])
+    if ref.get("allnews"):      # 19 Nov: a district the reference runs - HIS own lists for it (tools/ref_lists.py), over the engine's
+        d_note = f"{d['name_en']}: the reference's own value ({ref['from']})"
+        for k, seg in ref["allnews"].items():
+            src = set_assign_src(src, k, seg)
+        d_note = f"{d['name_en']}: tools/make_page.py"
     for a, b in branding(d)[:5] + [("Kovai Minnal", d["name_en"]), ("கோவை மின்னல்", d["name_ta"])]:
         src = src.replace(a, b)      # names in comments / docstrings only - the lists of OTHER districts keep கோவை
     return src
@@ -239,8 +286,12 @@ def allnews_values(src, d, PL):
 
 def config_values(cfg, d, PL):
     cfg.pop("district_powercut", None)      # no district engine in a page copy
-    cfg["instagram"] = {"api": "unified", "user_id": str(d["instagram"]["user_id"]), "shared_token_page": "chennai",
-                        "note": f"{d['name_en']}: Meta Unified login, the one minnal-bot token (Minnal bridge / IG_SYSTEM_TOKEN)"}
+    if d.get("own_token"):      # owner 17/19 Nov: a new page = its own Meta app; the token is ONLY its own IG_SYSTEM_TOKEN secret
+        cfg["instagram"] = {"api": "unified", "user_id": str(d["instagram"]["user_id"]), "shared_token_page": "",
+                            "note": f"{d['name_en']}: Meta Unified login, its OWN Meta app token (GitHub secret IG_SYSTEM_TOKEN)"}
+    else:
+        cfg["instagram"] = {"api": "unified", "user_id": str(d["instagram"]["user_id"]), "shared_token_page": "chennai",
+                            "note": f"{d['name_en']}: Meta Unified login, the one minnal-bot token (Minnal bridge / IG_SYSTEM_TOKEN)"}
     cfg["facebook"] = {"page_ids": {d["key"]: d["fb_page_id"]},
                        "note": f"{d['name_en']}: the Page token comes from the one minnal-bot token (no FB secrets)"}
     et = d["en_tag"]
@@ -253,6 +304,17 @@ def config_values(cfg, d, PL):
     cfg["locations"] = words
     cfg["location_tags"] = bool(words)
     return cfg
+
+
+def skip_tests(out, table, why):
+    for tf, names in table.items():
+        p = out / "tests" / tf
+        t = p.read_text(encoding="utf-8")
+        for nm in names:
+            t, k = re.subn(rf"^(    def {nm}\(self)", lambda m: f'    @unittest.skip("{why}")\n' + m.group(1), t, count=1, flags=re.M)
+            if not k:
+                raise SystemExit(f"{tf}: {nm} not found")
+        p.write_text(t, encoding="utf-8")
 
 
 def main(key, out):
@@ -273,7 +335,7 @@ def main(key, out):
         if f == "research_free/allnews.py":
             dst.write_text(allnews_values(src.read_text(encoding="utf-8"), d, PL), encoding="utf-8")
         elif f == "research_free/powercut.py":
-            dst.write_text(powercut_values(swap_text(src.read_text(encoding="utf-8"), d, PL)), encoding="utf-8")
+            dst.write_text(powercut_values(swap_text(src.read_text(encoding="utf-8"), d, PL), key), encoding="utf-8")
         elif f == "research_free/sources.json":      # the engine's rule: each outlet's district page with this district's name
             dst.write_text(src.read_text(encoding="utf-8").replace("coimbatore", d["dinamalar"]).replace("கோவை", d["ta"]), encoding="utf-8")
         elif f == "poster/config.json":
@@ -283,7 +345,10 @@ def main(key, out):
             t = src.read_text(encoding="utf-8")
             a = t.index("CITY LOOK (Coimbatore city):")
             b = t.index("CATEGORY GUIDE:", a)
-            dst.write_text(swap_text(t[:a] + CITY_LOOK[key] + t[b:], d, PL), encoding="utf-8")
+            look = CITY_LOOK.get(key) or ref_lists(key).get("city_look")      # 19 Nov: the reference's own city look for his districts
+            if not look:
+                raise SystemExit(f"{key}: no CITY LOOK - add it to CITY_LOOK in tools/make_page.py")
+            dst.write_text(swap_text(t[:a] + look + t[b:], d, PL), encoding="utf-8")
         elif f == "research_free/pick.py":      # the page's search words once each (the swap turns Kovai's 4 town names into one name)
             t = swap_text(src.read_text(encoding="utf-8"), d, PL)
             t = re.sub(r"for q in \(([^)]*)\)", lambda m: "for q in (" + ", ".join(dict.fromkeys(x.strip() for x in m.group(1).split(",") if x.strip())) + ",)", t, count=1)
@@ -297,14 +362,14 @@ def main(key, out):
                 shutil.copy2(src, dst)
         n += 1
     # Kovai-only tests are skipped on a copy (the page's own checks: tests/test_page_values.py)
-    for tf, names in KOVAI_ONLY_TESTS.items():
-        p = out / "tests" / tf
+    skip_tests(out, KOVAI_ONLY_TESTS, "the Coimbatore page\\'s own places (tools/make_page.py)")
+    if ref_lists(key):
+        skip_tests(out, REF_PLACE_TESTS, "Coimbatore places - this page uses the reference's own district lists (tools/make_page.py)")
+    if d.get("jobs") and "goldrate.yml" not in d["jobs"]:      # a power-cut-only page: the gold-rate job never runs here
+        p = out / "tests" / "test_goldrate.py"
         t = p.read_text(encoding="utf-8")
-        for nm in names:
-            t, k = re.subn(rf"^(    def {nm}\(self)", r'    @unittest.skip("the Coimbatore page\'s own places (tools/make_page.py)")\n\1', t, count=1, flags=re.M)
-            if not k:
-                raise SystemExit(f"{tf}: {nm} not found")
-        p.write_text(t, encoding="utf-8")
+        p.write_text('import unittest\nraise unittest.SkipTest("no gold rate on a power-cut-only page (tools/make_page.py POWERCUT_JOBS)")\n' + t,
+                     encoding="utf-8")
     # no district engine in a copy: keeper does not start it
     for f, pat in (("tools/keeper.py", r'^    "district_powercut\.yml": .*\n'),
                    ("tests/test_keeper.py", r'"district_powercut\.yml": 34,\s*|^        self\.assertEqual\(first\["district_powercut\.yml"\], "05:35"\)\n')):

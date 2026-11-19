@@ -847,6 +847,13 @@ function parseIst_(txt) {
 function setup() {
   var p = props_();
   if (!p.getProperty('BRIDGE_KEY')) p.setProperty('BRIDGE_KEY', Utilities.getUuid().replace(/-/g, ''));
+  // 19 Nov (new page): a blank Sheet gets its News tab + the 31 column names, so the first story lands on row 2
+  var ss = SpreadsheetApp.openById(SHEET_ID), sh = ss.getSheetByName(TAB);
+  if (!sh) { sh = ss.getSheets()[0].getLastRow() === 0 ? ss.getSheets()[0].setName(TAB) : ss.insertSheet(TAB); }
+  if (sh.getLastRow() === 0) {
+    var head = Object.keys(C).sort(function (a, b) { return C[a] - C[b]; });
+    sh.getRange(1, 1, 1, NCOLS).setValues([head]); sh.setFrozenRows(1);
+  }
   voiceFolder_();
   ScriptApp.getProjectTriggers().forEach(function (t) {
     var h = t.getHandlerFunction();

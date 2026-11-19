@@ -142,6 +142,47 @@
      "dry": "0"
     }
    }
+  ],
+  "nithiyananthamQA/salemminnal-autopost": [
+   {
+    "file": "cloudclean.yml",
+    "crons": [
+     "40 19 */2 * *"
+    ],
+    "inputs": {
+     "keep_hours": "48",
+     "dry": "false"
+    }
+   },
+   {
+    "file": "comments.yml",
+    "crons": [
+     "15 0-17 * * *"
+    ],
+    "inputs": {
+     "dry_run": "0"
+    }
+   },
+   {
+    "file": "post.yml",
+    "crons": [
+     "7 * * * *"
+    ],
+    "inputs": {
+     "dry_run": "false",
+     "prebuild": "false",
+     "timer": "true"
+    }
+   },
+   {
+    "file": "powercut.yml",
+    "crons": [
+     "20 0-16 * * *"
+    ],
+    "inputs": {
+     "dry": "0"
+    }
+   }
   ]
  }
 }

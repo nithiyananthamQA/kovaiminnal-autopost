@@ -168,3 +168,14 @@ Until then Chennai runs on districts/pipeline.py with the reference's counts. Th
 14 news a day + peak split, score floor 7, extras 11+ (3 a day), the nightly skip list (reference_sync.py, reference_reach.json,
 learned.py blending), the school / club event filter, the 01:00 power-cut-only round, the extra free writers (Gemma, Cloudflare
 Llama - the reference writes with Gemini then Groq, Claude only when both fail).
+
+## Power-cut-only pages (owner 19 Nov: "create pages for only the powercut for that particular city")
+
+- Salem Minnal (and every new district page after it) posts ONLY its district's power cuts: the same code as Kovai
+  (tools/make_page.py), but only `POWERCUT_JOBS` run (powercut, post, comments, cloudclean, tests): the timer starts only those
+  (tools/make_timer.py) and every push switches the page's other workflows off (tools/sync_pages.only_jobs). Reference: his
+  salem360 page posts all Salem news.
+- Each such page has its OWN Apps Script + Sheet (owner 19 Nov) and its OWN Meta app token (owner 17 Nov "meta new app for new
+  channel"; config instagram.shared_token_page ""), so a problem on one page never reaches another.
+- Place lists, power-cut searches, papers and the picture prompt's city look = the REFERENCE's own Salem values
+  (news360-tn/salem360-autopost, tools/ref_lists.py -> districts/ref_lists/salem.json) - same as his Salem page, not a difference.
