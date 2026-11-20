@@ -8,6 +8,15 @@ nothing else may differ. Re-checked with `git diff ref/main` (remote `ref` = the
 
 Reference ported up to: **b204b4d (17 Nov 2026 06:48 UTC)** - all 21 of his code changes since our copy (11 Nov, abb1ac1),
 plus ab06a9d (16 Nov). Next port: `git log abb1ac1..ref/main` for commits after b204b4d.
+Also ported (owner 20 Nov "yes please"): **7312326 (19 Nov) posting time first** - pick rounds 04:00 / 08:30 / 13:00 / 16:30 / 18:30
+IST (PICK_ROUND_TOP 7/5/4/4/4 = 24 a day) and news posting only in 06:00-12:00 + 15:00-21:00 IST (config prime_time, his exact
+object; power cuts at once). post.py already had his window code (prime_wait / in_prime_time are identical). Not taken from it:
+watchdog.py (the Worker starts a missed round). NOT yet ported (owner to decide): 77703119 (NVIDIA picture 'seed' fix),
+1f1bc053 (rasipalan / gold times + watchdog), c9cf170a (reel length + wording, automatic source first comment, insights paging,
+gold reel, posting spacing 0), 94ed96f8 (reel length back to full news, captions fit 2,200), 9acb0c59 / eafa3597 / 84674b84 (his
+gold reel / 360 clock design = template, not taken).
+- Posting gap: the reference posts every ready news of a window at once (c9cf170a, config posting.spacing_min 0); we keep 12 minutes
+  between posts (not ported - owner to decide: 0 = his way, 7-10 reels in one burst when a window opens).
 
 ## 1. Owner's choice: reel template and voice (owner 17 Nov: "voice and video template is ours")
 
@@ -88,6 +97,12 @@ e-mail tag KOVAIMINNAL. Never "360".
   GitHub machine before starting the next one - it asks the Worker (POST https://test.freelancingfashion.workers.dev/next, secrets
   TIMER_URL / TIMER_KEY) and ends; the Worker keeps the time in KV (NEXT) and starts exactly one posting run when it comes. No
   TIMER_URL = the old sleep. Posts stay one by one, 12 minutes apart.
+- Round gate (owner 20 Nov: "chennai why 45 post"): pick.yml's first job (poster/round_gate.py) stops a GitHub schedule run when a
+  workflow_dispatch run (the Worker's or the owner's) already started at or after that cron's time - GitHub's own schedule fired
+  1-2 hours after the Worker (19-20 Nov 22:13, 06:54, 09:36 IST) and ran a SECOND round: 9 rounds a day, Chennai 31 news reels +
+  14 stories in 24 h, then Instagram's limit held the next round (pick run 44672143820 failed). The Worker missed the time = GitHub's
+  run is the round; any error = the round runs. The pick job's concurrency is on the job, so a stopped run never queues. The reference
+  has no Worker (its watchdog.py restarts a missed round instead) - not taken: the Worker does that job.
 
 ## 4. Held until the owner says yes
 

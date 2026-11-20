@@ -51,16 +51,22 @@
     "note": "Kovai Minnal (owner 11 Nov): Anbu (free edge-tts ta-SG-AnbuNeural, +5%) reads every reel via reel5.py; Google voices are never used"
   },
   "prime_time": {
-    "enabled": false,
-    "starts": [
-      "08:00",
-      "12:00",
-      "18:00"
-    ],
+    "enabled": true,
+    "starts": [],
     "grace_min": 60,
     "max_wait_hours": 18,
     "immediate": "power_cut",
-    "note": "owner 13 Nov 22:51: OFF - news is collected every 4 hours and every eligible story posts AT ONCE (no 08:00 / 12:00 / 18:00 wait). Earlier rule kept for reference: each story waits for the first posting START time after it was filed (60 min grace, so a batch still being written joins the start that has just begun), then EVERY waiting news is posted one after another - no end time, nothing skipped. Insights 22 Oct-13 Nov: 8-11 AM best, 2-5 PM and late night weakest. ONLY power cuts post at once. A story that waited max_wait_hours posts whatever the hour. Was OFF from 29/31 Oct."
+    "note": "owner 19 Nov: posting time first (best reach; 19 Nov data, views against each page's median: 06-09 1.02, 09-12 1.12, 12-15 0.84, 15-18 1.02, 18-21 0.92, 21-24 0.80). News posts in 06:00-12:00 and 15:00-21:00 IST; collection is fitted to them (04:00, 08:30, 13:00, 16:30, 18:30) so every window opens with news ready and every news posts the same day. When a window opens every ready news posts at once, news written inside a window posts at once, news written outside waits for the next window (made ahead). Nothing is dropped; power cuts post at once; a news waiting 18 h posts anyway.",
+    "windows": [
+      [
+        "06:00",
+        "12:00"
+      ],
+      [
+        "15:00",
+        "21:00"
+      ]
+    ]
   },
   "reel_punch": false,
   "reel_max_seconds": 88,

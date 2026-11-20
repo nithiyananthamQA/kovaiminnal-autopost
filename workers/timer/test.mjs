@@ -35,21 +35,21 @@ const D = new Date("2026-11-18T18:30:00Z");      // 00:00 IST 19 Nov (an odd day
 const { n, at } = await day(kovai, D, 1440);
 console.log(n);
 assert.equal(n["post.yml"], 24);
-assert.equal(n["pick.yml"], 6);
+assert.equal(n["pick.yml"], 5);
 assert.equal(n["powercut.yml"], 17);
 assert.equal(n["comments.yml"], 18);
 assert.equal(n["insights.yml"], 1);
 assert.equal(n["goldrate.yml"], 3);
 const ist = (d) => new Date(d.getTime() + 330 * 60000).toISOString().slice(11, 16);
-assert.deepEqual(at["pick.yml"].map(ist), ["01:00", "05:00", "09:00", "13:00", "17:00", "21:00"]);
+assert.deepEqual(at["pick.yml"].map(ist), ["04:00", "08:30", "13:00", "16:30", "18:30"]);      // reference 7312326 (19 Nov)
 assert.equal(ist(at["goldrate.yml"][0]), "09:35");
 
-// GitHub's own timer already ran pick at 05:02 -> the Worker does not start it again
-const r2 = await day(kovai, new Date("2026-11-18T23:25:00Z"), 20, { "pick.yml": [new Date("2026-11-18T23:32:00Z")] });
+// GitHub's own timer already ran pick at 04:02 -> the Worker does not start it again
+const r2 = await day(kovai, new Date("2026-11-18T22:25:00Z"), 20, { "pick.yml": [new Date("2026-11-18T22:32:00Z")] });
 assert.equal(r2.n["pick.yml"] || 0, 0);
-// the Worker missed the 05:00 minute (Cloudflare skipped a tick) -> started at 05:01
-const r3 = await day(kovai, new Date("2026-11-18T23:25:00Z"), 20, {}, new Set([5]));
-assert.equal(ist(r3.at["pick.yml"][0]), "05:01");
+// the Worker missed the 04:00 minute (Cloudflare skipped a tick) -> started at 04:01
+const r3 = await day(kovai, new Date("2026-11-18T22:25:00Z"), 20, {}, new Set([5]));
+assert.equal(ist(r3.at["pick.yml"][0]), "04:01");
 // a time older than LATE_MIN is left
 assert.equal(mod.lastSlot(["30 23 * * *"], new Date("2026-11-18T23:46:00Z")), null);
 

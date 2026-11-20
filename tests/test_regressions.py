@@ -482,42 +482,40 @@ class SinglePage(unittest.TestCase):
 
 
 class PrimeTime(unittest.TestCase):
-    """owner 13 Nov: news collected every 4 hours waits for its posting START (08:00 / 12:00 / 18:00 IST), then all of it is posted -
-    no end time, nothing skipped; only power cuts post at once"""
+    """reference 7312326 (owner 20 Nov: copy his posting time): news posts in the best-performing windows (06:00-12:00, 15:00-21:00 IST) - when a window opens every ready news posts
+    at once, news written inside a window posts at once, news written outside waits for the next window; power cuts post at once;
+    nothing is dropped (a news waiting 18 h posts anyway)"""
     def at(self, h, m=0, day=0):
         return datetime.datetime.combine(TODAY, datetime.time(h, m), IST) + datetime.timedelta(days=day)
 
     def row(self, title, h, m=0):
         return {"story_id": "RN-T", "headline_ta": title, "headline_en": "", "category": "", "researched": self.at(h, m).strftime("%d %b %Y, %H:%M")}
 
-    def wait(self, row, now, waited=1.0, enabled=True):
-        pt = dict(json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["prime_time"], enabled=enabled)
+    def wait(self, row, now, waited=1.0):
+        pt = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["prime_time"]
         with mock.patch.object(post, "age_hours", return_value=waited), mock.patch.dict(post.CONFIG, {"prime_time": pt}):
             return post.prime_wait(row, now)
 
-    def test_owner_posts_at_once(self):
-        """owner 13 Nov 22:51: no posting start times - every eligible story posts as soon as it is ready (rule switched OFF)"""
+    def test_windows_switched_on(self):
         pt = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["prime_time"]
-        self.assertFalse(pt["enabled"])
-        for filed, now in (((21, 30), (23, 0)), ((13, 50), (15, 0)), ((5, 40), (6, 0))):
-            self.assertEqual("", post.prime_wait(self.row("கோவில் கும்பாபிஷேக விழா", *filed), self.at(*now)))
+        self.assertTrue(pt["enabled"])
+        self.assertEqual(pt["windows"], [["06:00", "12:00"], ["15:00", "21:00"]])      # owner 19 Nov: collection fitted to these
+        self.assertFalse(pt["starts"])
 
-    def test_each_batch_waits_for_its_start_then_no_end_time(self):
+    def test_inside_a_window_at_once_outside_waits(self):
         news = "கோவில் கும்பாபிஷேக விழா"
-        for filed, now, expect in (((5, 40), (7, 0), "08:00"), ((5, 40), (8, 0), ""), ((5, 40), (23, 0), ""),      # no end time
-                                   ((10, 20), (11, 0), "12:00"), ((10, 20), (12, 5), ""), ((13, 50), (16, 0), "18:00"),
-                                   ((17, 40), (17, 50), "18:00"), ((21, 30), (23, 0), "08:00"), ((8, 30), (8, 40), "")):      # 05:00 batch written late
-            got = self.wait(self.row(news, *filed), self.at(*now))
+        for now, expect in (((5, 30), "06:00"), ((6, 0), ""), ((9, 30), ""), ((11, 59), ""), ((12, 0), "15:00"), ((14, 30), "15:00"),
+                            ((15, 0), ""), ((20, 59), ""), ((21, 0), "06:00"), ((23, 0), "06:00"), ((1, 0), "06:00")):
+            got = self.wait(self.row(news, 0, 30), self.at(*now))
             if expect:
-                self.assertIn(expect, got, (filed, now))
+                self.assertIn(expect, got, now)
             else:
-                self.assertEqual("", got, (filed, now))
-        self.assertEqual("", self.wait(self.row(news, 21, 30), self.at(8, 0, day=1)))      # the night's news goes out at 08:00 next day
+                self.assertEqual("", got, now)
 
     def test_only_power_cut_posts_at_once(self):
         self.assertEqual("", self.wait(self.row("காளப்பநாயக்கன்பட்டி பகுதியில் நாளை மின் தடை", 21, 30), self.at(23)))
         for title in ("தனியார் பேருந்து மோதி தொழிலாளி உயிரிழப்பு", "கனமழை எச்சரிக்கை", "ஆட்சியர் அறிவிப்பு: சிறப்பு முகாம்"):
-            self.assertIn("posting start", self.wait(self.row(title, 13, 50), self.at(15)), title)
+            self.assertIn("prime time", self.wait(self.row(title, 13, 50), self.at(13, 55)), title)      # 12:00-15:00: waits
 
     def test_never_dropped_after_long_wait(self):
         self.assertEqual("", self.wait(self.row("கோவில் கும்பாபிஷேக விழா", 21, 30), self.at(3, day=1), waited=19))
@@ -2268,8 +2266,8 @@ class RoundsTopThree(unittest.TestCase):
         wf = (self.WF / "pick.yml").read_text(encoding="utf-8")
         times = sorted(((int(h) * 60 + int(m) + 330) % 1440) / 60 for m, hs in re.findall(r'cron: "(\d+) ([\d,]+) \* \* \*"', wf)
                        for h in hs.split(","))
-        self.assertEqual([1, 5, 9, 13, 17, 21], times)      # owner 13 Nov: every 4 hours (posting waits for 08:00 / 12:00 / 18:00)
-        self.assertIn('PICK_ROUND_TOP: "1=2,5=5,9=5,13=3,17=5,21=4"', wf)      # 4+4+3+3+3+3 = 20      # 8 + 6 + 6 = 20
+        self.assertEqual([4, 8.5, 13, 16.5, 18.5], times)      # owner 19 Nov: rounds fitted to the posting windows 06-12 / 15-21
+        self.assertIn('PICK_ROUND_TOP: "4=7,8=5,13=4,16=4,18=4"', wf)      # owner 19 Nov: rounds fitted to the posting windows      # 4+4+3+3+3+3 = 20      # 8 + 6 + 6 = 20
         self.assertIn('PICK_EMAIL: "0"', wf)      # "do not ask me to confirm"
 
     def test_each_round_writes_top_3_of_the_whole_district(self):

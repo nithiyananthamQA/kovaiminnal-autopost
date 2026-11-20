@@ -39,7 +39,7 @@ function tick(hhmm) {
 function reset() { store = { GH_DISPATCH_TOKEN: 't' }; mails = []; states = {}; scheduled = {}; dispatchCode = 204; }
 var out = {};
 reset(); out.t0602 = tick('06:02'); out.t0604 = tick('06:04'); out.t1002 = tick('10:02');
-reset(); out.t2335 = tick('23:35'); out.t0100 = tick('01:00');
+reset(); out.t2335 = tick('23:35'); out.t0400 = tick('04:00');
 reset(); out.t0731 = tick('07:31');
 reset(); out.t0215 = tick('02:15');
 reset(); out.t0310 = tick('03:10');
@@ -119,7 +119,7 @@ class KovaiTimer(unittest.TestCase):
     def test_quiet_hours_and_fixed_times(self):
         o = self.out
         self.assertNotIn("post.yml", o["t2335"])      # posting timer 05:30 - 23:30 IST
-        self.assertEqual(o["t0100"], {"pick.yml": {"dry": "0", "resume": "0"}})      # owner 16 Nov: the 01:00 pick round (reference)
+        self.assertEqual(o["t0400"], {"pick.yml": {"dry": "0", "resume": "0"}})      # reference 7312326 (19 Nov): the 04:00 pick round
         self.assertEqual(o["t0731"]["rasipalan.yml"], {"dry": "0", "date": "", "repost": "0"})      # waits until 07:31 itself
         self.assertIn("insights.yml", o["t0215"])
         self.assertNotIn("insights.yml", o["t0310"])
@@ -138,8 +138,8 @@ class KovaiTimer(unittest.TestCase):
     def test_slot_github_already_started_is_not_started_again(self):
         o = self.out
         self.assertNotIn("pick.yml", o["byGithub"])      # a second pick round would post more news
-        self.assertEqual(o["byGithubMark"], "2026-11-14 09:00")
-        self.assertEqual(o["runsQuery"], ["/actions/workflows/pick.yml/runs?event=schedule&per_page=1&created=%3E%3D2026-11-14T03%3A30%3A00Z"])
+        self.assertEqual(o["byGithubMark"], "2026-11-14 08:30")      # reference 7312326: the 08:30 round
+        self.assertEqual(o["runsQuery"], ["/actions/workflows/pick.yml/runs?event=schedule&per_page=1&created=%3E%3D2026-11-14T03%3A00%3A00Z"])
 
     def test_times_follow_the_workflow_schedules(self):
         for f, slots in self.out["slots"].items():
