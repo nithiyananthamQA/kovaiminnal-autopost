@@ -41,7 +41,8 @@ PAGE = {"chennai": {"fb_page_id": "1450975134763291", "repo": "nithiyananthamQA/
         # owner 20 Nov: "this district is for full news like others" - every job (like Chennai), its OWN Meta app token + Apps Script and
         # its OWN free AI accounts (new e-mail; secrets from the TIRUVALLUR_* lines of .env). The reference has no Tiruvallur page (no `ref`).
         # gold_city: the gold-rate sites have no Tiruvallur page (3 of 4 answer 404, 20 Nov) - the Chennai rate is read.
-        "tiruvallur": {"fb_page_id": "", "ig_user_id": "", "handle": "tiruvallur_minnal",
+        "tiruvallur": {"fb_page_id": "1455129871018647", "ig_user_id": "",      # 20 Nov: Facebook page made by Claude (profile 61596457243906)
+                       "handle": "tiruvallur_minnal",
                        "repo": "nithiyananthamQA/tiruvallurminnal-autopost", "folder": "tiruvallurminnal",
                        "bot": "tiruvallurminnal-bot", "own_token": True, "gold_city": "chennai",
                        "live": False}}      # owner 20 Nov: "dont live as of now ... only finish setups" - no job runs (timer, sync) until True

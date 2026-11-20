@@ -189,4 +189,4 @@ One minnal-bot token for ALL pages (owner 14 Nov: "same account for Chennai and 
 | Kovai Minnal | 61596710992967 ✅ | kovai_minnal ✅ (17841410844667843), name pending (owner, phone) | ✅ | ✅ shared token (FB page 1475639385631396) | after push |
 | Madurai | dropped | maduraiminnal suspended | – | – | – |
 | Salem Minnal (power cuts only, 19 Nov) | 1415768578293777 ✅ | salem_minnal ✅ (17841453291685225) | ✅ salem-bot, app Salem Pages | ✅ own token + own Apps Script | after salem_live.sh |
-| Tiruvallur Minnal (FULL news, 20 Nov) | ✅ made (profile 61596457243906); portfolio add = owner ticks terms | tiruvallur_minnal - owner, phone | app Tiruvallur Pages + tiruvallur-bot - next | own AI keys (new e-mail) - owner | NOT live (owner: later) |
+| Tiruvallur Minnal (FULL news, 20 Nov) | 1455129871018647 ✅ (profile 61596457243906; full-news bio + cover); portfolio add = owner ticks terms | tiruvallur_minnal - owner, phone | app Tiruvallur Pages + tiruvallur-bot - next | own AI keys (new e-mail) - owner | NOT live (owner: later) |
