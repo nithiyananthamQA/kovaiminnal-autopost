@@ -3,37 +3,27 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/puducherry/15-people-who-committed-the-crime-arrested/4381835",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/the-monkey-with-the-baby-entered-the-house-and-attacked-the-house/4381700",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/govt-employees-stage-sit-in-to-demand-old-age-pension/4381521",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/funds-are-not-coming-mettupalayam-avinashi-4-lane-road-80-of-the-work-is-done-but-not-worth-it/4381732",
-  "candidate filter: collected=4",
-  "to write: 4 Coimbatore district candidates (max 4 stories)",
-  "round: top 4 of 4 candidates",
-  "candidates waiting: 4 Coimbatore; time left 79 min",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/gold-worth-1-crore-stolen-from-jewellery-workshop/4382011",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/they-don-t-get-paid-much-they-don-t-come-for-cleaning-work/4381942",
+  "candidate filter: collected=2",
+  "to write: 2 Coimbatore district candidates (max 2 stories)",
+  "round: top 2 of 2 candidates",
+  "candidates waiting: 2 Coimbatore; time left 79 min",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
-  "try (N) manual=True: https://www.dinamalar.com/news/puducherry/15-people-who-comm",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
-  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 78 min",
-  "filed: 4 Coimbatore district stories (target 4), reels only",
+  "candidate loop ended: left 0, tried={'N': 2}, done={'N': 2}, time left 77 min",
+  "filed: 2 Coimbatore district stories (target 2), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":4,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":2,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.6-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
@@ -42,309 +32,169 @@
   "dead for this round: gemini/gemini-3.5-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing ",
-  "ok gemini/gemini-3-flash-preview (12s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
+  "ok groq/openai/gpt-oss-120b (6s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "dead for this round: groq/openai/gpt-oss-120b",
-  "ok groq/openai/gpt-oss-120b (3s)",
+  "ok groq/qwen/qwen3.8-27b (4s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "ok groq/qwen/qwen3.8-27b (5s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok gemini/gemini-3-flash-preview (42s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "dead for this round: groq/qwen/qwen3.8-27b",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3-flash-preview",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "நரசிம்மநாயக்கன்பாளையத்தில் குட்டியுடன் பெருங்குரங்கு வீடுகளில் அட்டகாசம்",
-   "english_headline": "Giant monkey with baby terrorises houses in Narasimhanaickenpalayam, residents seek forest department action",
-   "category": "Civic Issues",
-   "location": "Narasimhanaickenpalayam, Coimbatore district",
+   "tamil_headline": "கோவை ஆர்.எஸ்.புரத்தில் நகை பட்டறையில் ரூ.1.60 கோடி தங்கம் திருட்டு",
+   "english_headline": "Worker steals gold worth Rs 1.60 crore from jewellery workshop in Coimbatore's RS Puram; police search for him",
+   "category": "Crime & Safety",
+   "location": "R.S. Puram, Coimbatore city, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "வனவிலங்கு தொல்லை",
-    "loc": "நரசிம்மநாயக்கன்பாளையம்",
-    "hl1": "நரசிம்மநாயக்கன்பாளையத்தில் குரங்கு",
-    "hl2": "குட்டியுடன் வீடுகளில்",
+    "cat": "குற்றச் செய்தி",
+    "loc": "ஆர்.எஸ்.புரம், கோவை",
+    "hl1": "ஆர்.எஸ்.புரத்தில் ரூ.1.60 கோடி தங்கம்",
+    "hl2": "ஊழியர் தப்பி ஓட்டம்",
     "slides": [
      {
-      "title": "என்ன நடக்கிறது?",
+      "title": "என்ன நடந்தது?",
       "lines": [
-       "ஆசிரியர் காலனியில் குட்டியுடன் குரங்கு தொல்லை",
-       "வீடுகளுக்குள் புகுந்து ரகளை செய்கின்றன",
-       "குழந்தைகள் அலறுகின்றனர்"
+       "நகை பட்டறையில் <b>ரூ.1.60 கோடி</b> மதிப்புள்ள தங்கம் திருட்டு",
+       "<b>1,346 கிராம்</b> எடையுள்ள தங்கத்தை ஊழியர் திருடித் தப்பினார்",
+       "பட்டறை உரிமையாளர் ஆர்.எஸ்.புரம் போலீசில் புகார்"
       ]
      },
      {
-      "title": "எப்படி தொடங்கியது?",
+      "title": "யார் இவர்?",
       "lines": [
-       "இரண்டு மாதமாக ஒரு பெரிய குரங்கு தனியாக சுற்றியது",
-       "இரண்டு நாட்களுக்கு முன் ஒரு குட்டியும் சேர்ந்தது",
-       "தண்ணீர், உணவு பாத்திரங்களைக் கீழே தள்ளுகின்றன"
+       "மேற்கு வங்கத்தை சேர்ந்த <b>மருபில்லா காஷி, 21</b>",
+       "அதே பட்டறையில் பணியாற்றி வந்தவர்",
+       "இவரை போலீசார் தேடி வருகின்றனர்"
       ]
      },
      {
-      "title": "மக்களின் கோரிக்கை",
+      "title": "எங்கே?",
       "lines": [
-       "பெரியநாயக்கன்பாளையம் வனத்துறையினர் உடனடியாக பிடிக்க வேண்டும்",
-       "குரங்கையும் குட்டியையும் காட்டில் விட வேண்டும்",
-       "பொதுமக்கள் இதை வலியுறுத்துகின்றனர்"
+       "ஆர்.எஸ்.புரத்தில் உள்ள எஸ்.எம். ஜூவல்லரி கிராப்ட்",
+       "மொத்த ஆர்டர்களுக்கு நகை தயாரித்து கடைகளுக்கு விற்பனை",
+       "புகார் நேற்று அளிக்கப்பட்டது"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "நரசிம்மநாயக்கன்பாளையத்தில் குட்டியுடன் வந்த பெருங்குரங்கு வீடு வீடாகப் புகுந்து அட்டகாசம் செய்கிறது. ஆசிரியர் காலனி குடியிருப்பு பகுதியில் குரங்குகளின் தொல்லை அதிகரித்து வருவதாகப் பொதுமக்கள் கூறுகின்றனர். இரண்டு மாதமாக ஒரு பெரிய குரங்கு தனியாகச் சுற்றி வந்தது. இரண்டு நாட்களுக்கு முன், அதனுடன் ஒரு குட்டியும் சேர்ந்தது. அவை வீடுகளுக்குள் புகுந்து, தண்ணீர் மற்றும் உணவுப் பாத்திரங்களைக் கீழே தள்ளி ரகளை செய்கின்றன. குழந்தைகள் அதைப் பார்த்து அலறுகின்றனர். எனவே, பெரியநாயக்கன்பாளையம் வனத்துறையினர் உடனடியாக குரங்கையும் குட்டியையும் பிடித்து காட்டில் விட வேண்டும் என பொதுமக்கள் கோரிக்கை விடுத்துள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🐒 நரசிம்மநாயக்கன்பாளையத்தில் குட்டியுடன் குரங்கு தொல்லை: வீடுகளில் அட்டகாசம்\n\n📰 முழு விவரம்:\nநரசிம்மநாயக்கன்பாளையம் ஆசிரியர் காலனி குடியிருப்புப் பகுதியில் குட்டியுடன் வந்த குரங்கால் தொல்லைகள் அதிகரித்து வருவதாகப் பொதுமக்கள் கூறுகின்றனர்.\nஇரண்டு மாதமாக ஒரு பெரிய குரங்கு தனியாகச் சுற்றி வந்தது. இரண்டு நாட்களுக்கு முன் அதனுடன் ஒரு குட்டியும் சேர்ந்தது.\nவீடுகளுக்குள் புகுந்து தண்ணீர் மற்றும் உணவுப் பாத்திரங்களைக் கீழே தள்ளி ரகளை செய்வதால் குழந்தைகள் அலறுகின்றனர்.\n👮 கோரிக்கை: பெரியநாயக்கன்பாளையம் வனத்துறையினர் உடனடியாக குரங்கையும் குட்டியையும் பிடித்து காட்டில் விட வேண்டும் என பொதுமக்கள் வலியுறுத்துகின்றனர்.\n\nMonkey with baby troubling houses in Narasimhanaickenpalayam | Coimbatore news\n📍 நரசிம்மநாயக்கன்பாளையம், கோவை மாவட்டம் | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Narasimhanaickenpalayam #CoimbatoreNews #கோவை",
-   "prompts": "A large grey langur monkey sits on the tiled roof edge of a row of small concrete houses in a residential colony in Narasimhanaickenpalayam, Coimbatore, with a small baby monkey clinging to its side. Below, a narrow lane runs between compound walls, a two-wheeler is parked by a gate, and a few residents in a cotton saree and a man in a shirt and veshti stand at a distance, looking up with concern. Clothes are hung on a line between the houses, and the Western Ghats hills are faintly visible far behind the rooftops. It is daytime with bright, even daylight. Shot at eye level from the street, 35 mm, wide enough to show the rooftops, lane and people, with the monkeys as the clear focus. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a plastic water pot and a steel food vessel knocked over on the floor just inside a doorway of a small house, with a few scattered grains and spilled water on the concrete. Beyond the doorway, a baby monkey's small hand and grey fur are visible on the window ledge, while the outside lane is blurred in the background. Daylight from the open doorway lights the scene softly. Camera at slightly high angle, 35 mm, focused on the overturned vessels to show the disturbance inside the home. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/the-monkey-with-the-baby-entered-the-house-and-attacked-the-house/4381700",
-   "published": "2026-11-20T19:54:37+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 0 validator problem(s)",
+   "reel_script": "கோவை ஆர் எஸ் புரத்தில் நகை பட்டறையில் ரூ.1.60 கோடி மதிப்புள்ள தங்கம் திருடப்பட்டுள்ளது. ஆர் எஸ் புரத்தில் எஸ் எம் ஜூவல்லரி கிராப்ட் என்ற பெயரில் தங்க நகை பட்டறை செயல்பட்டு வருகிறது. மொத்த ஆர்டர் பேரில் நகைகள் தயாரிக்கப்பட்டு கடைகளுக்கு விற்பனை செய்யப்படுகின்றன. அந்தப் பட்டறையில் மேற்கு வங்கத்தைச் சேர்ந்த 21 வயது மருபில்லா காஷி பணியாற்றி வந்தார். அவர் 1,346 கிராம் எடையுள்ள தங்கத்தைத் திருடித் தப்பிச் சென்றதாகப் பட்டறை உரிமையாளர் ஸ்மித்தேஸ் ஆர் எஸ் புரம் போலீசில் நேற்று புகார் அளித்தார். போலீசார் வழக்குப் பதிவு செய்து, தப்பிய ஊழியர் மருபில்லா காஷியைத் தேடி வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 ஆர்.எஸ்.புரத்தில் நகை பட்டறையில் ரூ.1.60 கோடி தங்கம் திருட்டு; ஊழியர் தப்பி ஓட்டம்\n\n📰 முழு விவரம்:\nகோவை ஆர்.எஸ்.புரத்தில் எஸ்.எம். ஜூவல்லரி கிராப்ட் என்ற பெயரில் செயல்படும் தங்க நகை பட்டறையில் ரூ.1.60 கோடி மதிப்புள்ள தங்கம் திருடப்பட்டுள்ளது.\nமேற்கு வங்கத்தைச் சேர்ந்த 21 வயது மருபில்லா காஷி அங்கு பணியாற்றி வந்தார்.\nஅவர் 1,346 கிராம் எடையுள்ள தங்கத்தைத் திருடித் தப்பிச் சென்றதாக, பட்டறை உரிமையாளர் ஸ்மித்தேஸ் ஆர்.எஸ்.புரம் போலீசில் நேற்று புகார் அளித்தார்.\nபோலீசார் வழக்குப் பதிவு செய்து, தப்பிய ஊழியரைத் தேடி வருகின்றனர்.\n\n📍 இடம்: ஆர்.எஸ்.புரம், கோவை\n👮 நடவடிக்கை: வழக்குப் பதிவு; தப்பிய ஊழியர் தேடப்படுகிறார்\n\nCoimbatore gold theft RS Puram 1.60 crore | Coimbatore news\n📍 ஆர்.எஸ்.புரம், கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #RSPuram #CoimbatoreNews #கோவை",
+   "prompts": "A pair of Tamil Nadu police officers in khaki stand at the entrance of a small gold jewellery workshop in R.S. Puram, Coimbatore, examining the workshop's shutter while a workshop owner in a shirt and trousers speaks to them from behind. Inside the open doorway, a bench with jewellers' tools and a gas burner shows the workshop setting, and a few workers in plain shirts can be seen from far away at their benches. The street outside is a typical Coimbatore city lane with shops, a parked two-wheeler and a passing autorickshaw in the background. The daylight is even and bright, with no visible weather. Camera at eye level, 35 mm, wide enough to show the shop front and the street, people seen from behind or slightly blurred, no readable signboards. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a wooden workbench inside a jewellery workshop, where a small heap of gold chains and bangles lies on a white cloth beside a jeweller's scale and a set of small crucibles and tools. Behind the bench a police officer's khaki sleeve is visible at the edge of the frame, pointing toward the empty table space where items were kept. The light is soft daylight from a window, showing the fine gold shine of the jewellery. Camera slightly high, 50 mm, shallow depth of field, no readable labels or text. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/gold-worth-1-crore-stolen-from-jewellery-workshop/4382011",
+   "published": "2026-11-20T23:42:45+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script copies the article word for word (17 words in a row, 21% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795192531/kovaiminnal/xx4fbyl1r9qvv4wkbo5m.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795192534/kovaiminnal/me2yrzcrlaqltq6osgus.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795203327/kovaiminnal/cictsbufuivrfuh2qgwu.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795203330/kovaiminnal/kp51tswevxtdhdcamhdk.jpg"
    ]
   },
   {
-   "tamil_headline": "கோவையில் பழைய ஓய்வூதியம் கேட்டு அரசு ஊழியர்கள் தர்ணா",
-   "english_headline": "Government employees stage dharna in Coimbatore demanding old pension scheme",
-   "category": "Government & Services",
-   "location": "Sivananda Colony, Coimbatore city, Coimbatore district",
+   "tamil_headline": "தொண்டாமுத்தூர்: சம்பளம் குறைவால் தூய்மை பணிக்கு ஆட்கள் வருவதில்லை",
+   "english_headline": "Thondamuthur: low pay keeps cleaners away, garbage piling up in village panchayats",
+   "category": "Civic Issues",
+   "location": "Thondamuthur, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "அரசு ஊழியர்கள்",
-    "loc": "சிவானந்தா காலனி, கோவை",
-    "hl1": "கோவையில் பழைய ஓய்வூதியம் கேட்டு தர்ணா",
-    "hl2": "200க்கும் மேற்பட்டோர்",
+    "cat": "தூய்மை பணி",
+    "loc": "தொண்டாமுத்தூர்",
+    "hl1": "தொண்டாமுத்தூரில் குப்பை குவிகிறது",
+    "hl2": "சம்பளம் குறைவால் ஆட்கள்",
     "slides": [
      {
-      "title": "எங்கே, எப்போது?",
+      "title": "என்ன பிரச்சனை?",
       "lines": [
-       "சிவானந்தா காலனியில் இன்று (நவ. 20) தர்ணா போராட்டம்",
-       "தமிழ்நாடு அரசு ஊழியர் சங்கம் சார்பில் நடந்தது",
-       "சங்கத்தின் மாவட்ட தலைவர் பாண்டியராஜன் தலைமை வகித்தார்"
+       "தொண்டாமுத்தூர் ஒன்றிய கிராம ஊராட்சிகளில் தூய்மை பணியாளர்கள்",
+       "சம்பளம் உயர்த்தப்படாததே காரணம்",
+       "பல ஊராட்சிகளில் குப்பை குவிந்து கிடக்கிறது"
       ]
      },
      {
-      "title": "முக்கிய",
+      "title": "சம்பள விவரம்",
       "lines": [
-       "பழைய ஓய்வூதியத் திட்டத்தை வழங்க வேண்டும்",
-       "2003க்கு பின் நியமித்தவர்களுக்கு பணிக்கொடை வேண்டும்",
-       "காலிப்பணியிடங்களை காலமுறை ஊதியத்தில் நிரப்ப வேண்டும்"
+       "தினக்கூலி தூய்மை பணியாளர்களுக்கு <b>587 ரூபாய்</b>",
+       "தூய்மை காவலர்களுக்கு மாதம் <b>6,000 ரூபாய்</b>",
+       "தூய்மை காவலர்கள் காலை 7 முதல் பகல் 2 மணி வரை பணி"
       ]
      },
      {
-      "title": "ஊதிய கோரிக்கைகள்",
+      "title": "கடைசியாக நியமனம்",
       "lines": [
-       "கிராம உதவியாளர்களுக்கு <b>ரூ.15,700</b> அடிப்படை ஊதியம்",
-       "சத்துணவு, அங்கன்வாடி ஊழியர்களுக்கு காலமுறை ஊதியம்",
-       "மாதாந்திர ஓய்வூதியம் <b>ரூ.6750</b> அகவிலைப்படியுடன்"
+       "நிரந்தர தூய்மை பணியாளர்கள் கடைசியாக <b>2013ஆம் ஆண்டு</b>",
+       "அதன்பின் தற்காலிகமாகவே ஆட்கள் நியமிக்கப்படுகின்றனர்",
+       "ஒவ்வொரு ஊராட்சியிலும் 5,000 முதல் 25,000 பேர் வசிக்கின்றனர்"
+      ]
+     },
+     {
+      "title": "தூய்மை காவலர்கள்",
+      "lines": [
+       "சின்ன வெங்காயம் கிலோ <b>180 ரூபாய்</b> விற்கிறது",
+       "6,000 ரூபாயில் குடும்பம் நடத்துவது சிரமம்",
+       "ஊதியத்தை உயர்த்தி வழங்க வேண்டும் என்கின்றனர்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவை சிவானந்தா காலனியில் இன்று நவம்பர் 20ஆம் தேதி அரசு ஊழியர்கள் தர்ணா போராட்டம் நடத்தினர். தமிழ்நாடு அரசு ஊழியர் சங்கம் சார்பில் இந்தப் போராட்டம் நடைபெற்றது. சங்கத்தின் மாவட்ட தலைவர் பாண்டியராஜன் தலைமை வகித்தார். மாநில பொதுச்செயலாளர் ஜெயராஜ ராஜேஷ்வரன் போராட்டத்தைத் தொடங்கி வைத்தார். த வெ க தேர்தல் வாக்குறுதிப்படி, டிஏபிஎஸ் ஓய்வூதியத் திட்டத்தை ரத்து செய்து, பழைய ஓய்வூதியத் திட்டத்தை வழங்க வேண்டும் என்று அவர் கோரிக்கை வைத்தார். 2003ஆம் ஆண்டுக்குப் பின் நியமிக்கப்பட்ட ஊழியர்களுக்கு பணிக்கொடை வழங்க வேண்டும் என்றும், காலிப்பணியிடங்களைக் காலமுறை ஊதியத்தில் நிரப்ப வேண்டும் என்றும் அவர் வலியுறுத்தினார். கிராம உதவியாளர்களுக்கு அலுவலக உதவியாளருக்கு இணையாக ரூ.15,700 அடிப்படை ஊதியம் வழங்க வேண்டும் என்றார். சத்துணவு, அங்கன்வாடி ஊழியர்களுக்கு காலமுறை ஊதியம் வழங்க வேண்டும். மாதாந்திர ஓய்வூதியம் ரூ.6,750 அகவிலைப்படியுடன் வழங்க வேண்டும். அரசு ஓய்வூதியர் சங்கத் தலைவர் பலராமன் உள்ளிட்ட 200க்கும் மேற்பட்ட ஊழியர்கள் பங்கேற்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "📢 கோவையில் பழைய ஓய்வூதியம் கேட்டு அரசு ஊழியர்கள் தர்ணா\n\n📰 முழு விவரம்:\nசிவானந்தா காலனியில் இன்று (நவ. 20) தமிழ்நாடு அரசு ஊழியர் சங்கம் சார்பில் தர்ணா போராட்டம் நடைபெற்றது. சங்கத்தின் மாவட்ட தலைவர் பாண்டியராஜன் தலைமை வகித்தார்.\nமாநில பொதுச்செயலாளர் ஜெயராஜ ராஜேஷ்வரன் போராட்டத்தைத் தொடங்கி வைத்து, த.வெ.க. தேர்தல் வாக்குறுதிப்படி TAPS ஓய்வூதியத் திட்டத்தை ரத்து செய்து பழைய ஓய்வூதியத் திட்டத்தை வழங்க வேண்டும் என்று கோரினார்.\n2003க்குப் பின் நியமிக்கப்பட்ட ஊழியர்களுக்கு பணிக்கொடை, காலிப்பணியிடங்களை காலமுறை ஊதியத்தில் நிரப்புதல் ஆகியவையும் கோரப்பட்டன.\nகிராம உதவியாளர்களுக்கு அலுவலக உதவியாளருக்கு இணையாக ரூ.15,700 அடிப்படை ஊதியம், சத்துணவு, அங்கன்வாடி ஊழியர்களுக்கு காலமுறை ஊதியம், மாதாந்திர ஓய்வூதியம் ரூ.6,750 அகவிலைப்படியுடன் ஆகியவையும் வலியுறுத்தப்பட்டன.\nஅரசு ஓய்வூதியர் சங்கத் தலைவர் பலராமன் உள்ளிட்ட 200க்கும் மேற்பட்ட ஊழியர்கள் பங்கேற்றனர்.\n\nGovernment employees dharna in Coimbatore for old pension | Coimbatore news\n📍 சிவானந்தா காலனி, கோவை | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #அரசு_ஊழியர்",
-   "prompts": "Over two hundred government employees sit in a dharna on a wide road in Sivananda Colony, Coimbatore, their rows stretching back toward a small stage with a microphone and loudspeaker. Most wear shirts, sarees and salwar, and many raise union flags and placards above their heads. The street is lined with ordinary low-rise residential buildings and office frontages typical of a Coimbatore city colony, with a few parked two-wheelers and an autorickshaw at the kerb. It is daylight, the sun is high and warm, and the sky is clear. Shot at eye level or slightly high with a 35 mm lens, wide enough to show the full crowd, the stage and the street, with the people seen mostly from behind or at a distance. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a row of Tamil union placards and flags resting against a road divider and a folded white banner, with a few seated employees' legs and sandals visible at the edge of the frame. A plastic water bottle and a folded sheet sit on the pavement beside the protesters. Behind them, a loudspeaker on a tripod points toward the crowd, and a corner of a government office building with a concrete balcony rises in the background. Daylight, soft shadows on the road. Shot at a low angle with a 50 mm lens, focusing on the placards and flags with the blurred crowd behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/govt-employees-stage-sit-in-to-demand-old-age-pension/4381521",
-   "published": "2026-11-20T18:36:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences; numbers not found in the article: 6, 750",
+   "reel_script": "தொண்டாமுத்தூர் ஒன்றியத்தில் குப்பை அள்ளும் பணிக்கு ஆட்கள் வருவது குறைந்து வருகிறது. சம்பளம் உயர்த்தப்படாததே காரணம். ஒவ்வொரு கிராம ஊராட்சியிலும் 5,000 முதல் 25,000 பேர் வரை வசிக்கின்றனர். தூய்மை காவலர்களும் தூய்மை பணியாளர்களும் தினமும் வீடுவீடாகச் சென்று குப்பை சேகரிக்கின்றனர். ஊராட்சியில் கடைசியாக 2013ஆம் ஆண்டு நிரந்தர தூய்மை பணியாளர்கள் நியமிக்கப்பட்டனர். அதன்பின் தற்காலிகமாகவே ஆட்கள் நியமிக்கப்படுகின்றனர். தினக்கூலி தூய்மை பணியாளர்களுக்கு 587 ரூபாயும், தூய்மை காவலர்களுக்கு மாதம் 6,000 ரூபாயும் வழங்கப்படுகிறது. தூய்மை காவலர்கள் காலை 7 மணி முதல் பகல் 2 மணி வரை பணிபுரிகின்றனர். ஊதியம் குறைவு என்பதால் பலர் பணிக்கு வருவதில்லை. இதனால் ஊராட்சிகளில் குப்பை குவிந்து கிடக்கிறது. சின்ன வெங்காயம் கிலோ 180 ரூபாய்க்கு விற்கும் நிலையில், 6,000 ரூபாயில் குடும்பம் நடத்துவது சிரமம் என்று தூய்மை காவலர்கள் கூறுகின்றனர். ஊதியத்தை உயர்த்தி வழங்க வேண்டும் என்பது அவர்களின் கோரிக்கை. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🗑️ தொண்டாமுத்தூரில் சம்பளம் குறைவால் தூய்மை பணிக்கு ஆட்கள் வருவதில்லை\n\n📰 முழு விவரம்:\nதொண்டாமுத்தூர் ஒன்றியத்தில் உள்ள கிராம ஊராட்சிகளில் தூய்மை பணியாளர்களின் சம்பளம் உயர்த்தப்படாததால், பணிக்கு வருவோர் எண்ணிக்கை குறைந்து வருகிறது.\nஒவ்வொரு ஊராட்சியிலும் 5,000 முதல் 25,000 பேர் வரை வசிக்கின்றனர். தூய்மை காவலர்களும் தூய்மை பணியாளர்களும் தினமும் வீடுவீடாகச் சென்று குப்பை சேகரிக்கின்றனர்.\nஊராட்சியில் கடைசியாக 2013ஆம் ஆண்டு நிரந்தர தூய்மை பணியாளர்கள் நியமிக்கப்பட்டனர். அதன்பின் தற்காலிகமாக, தினக்கூலி மற்றும் சிறப்பு ஊதிய அடிப்படையில் ஆட்கள் நியமிக்கப்படுகின்றனர்.\n💰 தினக்கூலி தூய்மை பணியாளர்களுக்கு 587 ரூபாயும், தூய்மை காவலர்களுக்கு மாதம் 6,000 ரூபாயும் வழங்கப்படுகிறது.\n🕖 தூய்மை காவலர்கள் காலை 7 மணி முதல் பகல் 2 மணி வரை பணிபுரிகின்றனர்.\n🗑️ 6,000 ரூபாய் ஊதியம் குறைவு என்பதால் பலர் பணிக்கு வருவதில்லை. ஊராட்சிகளில் குப்பை குவிந்து கிடக்கிறது.\n🥬 ஒரு கிலோ சின்ன வெங்காயம் 180 ரூபாய்க்கு விற்கப்படும் நிலையில், 6,000 ரூபாயில் குடும்பம் நடத்துவது சிரமம் என தூய்மை காவலர்கள் கூறுகின்றனர். ஊதியத்தை உயர்த்தி வழங்க வேண்டும் என்பது அவர்களின் கோரிக்கை.\n\nThondamuthur cleaners shortage low pay | Coimbatore news\n📍 தொண்டாமுத்தூர், கோவை மாவட்டம் | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Thondamuthur #CoimbatoreNews #கோவை",
+   "prompts": "A pile of uncollected household garbage has built up on the edge of a village street in Thondamuthur, with a few cleaners standing near it, their faces turned away from the camera. Two cleaners in shirts and veshti are seen from behind, one holding a broom and the other a small waste basket, while a single panchayat waste tractor sits idle at the far end of the lane. The street is a narrow village road lined with low concrete houses, dusty and quiet, with a few residents' doorways visible but no one else around. Daylight falls evenly across the scene, showing the heap of plastic bags, leaves and rubbish spilling onto the road. Shot at eye level, 35 mm, wide enough to show the full stretch of the street and the mound of garbage with the cleaners small in the frame. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a heap of household garbage spilling out of an overflowing panchayat waste bin on a village roadside in Thondamuthur, with dry leaves, plastic bags and broken cloth scattered around the base. A cleaner's broom leans against the bin and a worn cloth bag of tools rests on the ground beside it, showing the work left undone. Behind the heap, a blurred stretch of dusty road and a low concrete wall fade into soft daylight, with no readable signs or text in sight. Shot at slightly high angle, 35 mm, close enough to show the texture of the rubbish and the broom as the key detail of the story. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/they-don-t-get-paid-much-they-don-t-come-for-cleaning-work/4381942",
+   "published": "2026-11-20T22:42:39+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script writes ages as newspaper shorthand (நிலையில், 6,); say it as a news reader: '12 வயது மகன் ராஜா', 'கவுசிக் (14 வயது)' -> '14 வயதான கவுசிக்'; caption misses facts of the article (put every one in 📰 முழு விவரம்): 5 ('தொண்டாமுத்தூரில் உள்ள ஒவ்வொரு ஊராட்சியிலும், 5 ஆயிரம் முதல் '); 25 ('தொண்டாமுத்தூரில் உள்ள ஒவ்வொரு ஊராட்சியிலும், 5 ஆயிரம் முதல் '); 6 ('6 ஆயிரத்தில் குடும்பத்தை நடத்துவது சிரமம்.')",
    "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795192560/kovaiminnal/hl7ojsizv5b3z8gl3zyp.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795192564/kovaiminnal/yjitv4x4edjbbmtxgyjw.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "மேட்டுப்பாளையம் - அவிநாசி 4 வழிச்சாலை: 80% பணிகள் முடிந்தும் நிதி இல்லாததால் 6 மாதமாக முடக்கம்",
-   "english_headline": "Mettupalayam-Avinashi 4-lane road: 80% work done but stalled for six months for lack of funds",
-   "category": "Roads & Transport",
-   "location": "Mettupalayam - Annur - Avinashi road, Coimbatore district",
-   "importance": "High",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "சாலை பணி",
-    "loc": "மேட்டுப்பாளையம், கோவை மாவட்டம்",
-    "hl1": "மேட்டுப்பாளையம்-அவிநாசி 4 வழிச்சாலை",
-    "hl2": "80% பணி முடிந்தும் நிதி",
-    "slides": [
-     {
-      "title": "சாலையின் நிலை",
-      "lines": [
-       "மேட்டுப்பாளையம் - அன்னூர் - அவிநாசி இடையே 38 கி.மீ.",
-       "தினமும் <b>4,000</b>க்கும் மேற்பட்ட வாகனங்கள் பயணம்",
-       "காலை, மாலையில் கடும் போக்குவரத்து நெரிசல்"
-      ]
-     },
-     {
-      "title": "பணிகள் நிலை",
-      "lines": [
-       "நான்கு வழிச்சாலையாக தரம் உயர்த்தும் பணி தொடங்கியது",
-       "15 சிறு பாலங்கள் கட்டுதல், சாலை அகலப்படுத்துதல்",
-       "<b>80%</b> பணிகள் முடிந்த நிலையில் ஆறு மாதமாக முடக்கம்"
-      ]
-     },
-     {
-      "title": "முடங்கக் காரணம்",
-      "lines": [
-       "ஒப்பந்ததாரர்களுக்கு வழங்க வேண்டிய நிதி முழுமையாக",
-       "நிதி பற்றாக்குறையால் <b>20%</b> பணிகள் நிறுத்தி வைப்பு",
-       "துறைகள் இணைக்கப்பட்டதால் நிதி ஒதுக்கீட்டில் தாமதம்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "மேட்டுப்பாளையம் - அவிநாசி நான்கு வழிச்சாலைப் பணி நிதி இல்லாததால் ஆறு மாதமாக முடங்கியுள்ளது. மேட்டுப்பாளையம், அன்னூர், அவிநாசி இடையிலான 38 கிலோமீட்டர் தூர இருவழிச்சாலை இப்பகுதியின் முக்கிய போக்குவரத்து வழித்தடமாக உள்ளது. சேலம், ஈரோடு, திருச்சி, கரூர், திண்டுக்கல், திருப்பூர் மாவட்டங்களில் இருந்து ஊட்டிக்குச் செல்லும் சுற்றுலா பயணிகளும் உள்ளூர் மக்களும் இந்தச் சாலையை அதிகம் பயன்படுத்துகின்றனர். தினமும் 4,000க்கும் மேற்பட்ட வாகனங்கள் பயணிப்பதால் காலை, மாலையில் கடும் போக்குவரத்து நெரிசல் ஏற்பட்டது. பொதுமக்களின் கோரிக்கையை ஏற்று, இச்சாலையை நான்கு வழிச்சாலையாக தரம் உயர்த்த தமிழக அரசு அறிவிப்பு வெளியிட்டது. கோவை கோட்ட மாநில நெடுஞ்சாலைத்துறை சார்பில் பணிகள் தொடங்கின. 15 சிறு பாலங்கள் கட்டுதல், சாலை அகலப்படுத்துதல் பணிகள் விறுவிறுப்பாக நடந்தன. சுமார் 800 மரங்கள் வெட்டப்பட்டன; அதற்கு ஈடாக 3,000 மரக்கன்றுகள் நடப்பட்டன. 80 சதவீத பணிகள் முடிந்த நிலையில், ஆறு மாதமாக எந்த முன்னேற்றமும் இல்லை. ஒப்பந்ததாரர்களுக்கு வழங்க வேண்டிய நிதி இன்னும் முழுமையாக ஒதுக்கப்படவில்லை என நெடுஞ்சாலைத்துறை உயர் அதிகாரி தெரிவித்தார். நிதி பற்றாக்குறையால் 20 சதவீத பணிகள் நிறுத்தி வைக்கப்பட்டுள்ளன. துறைகள் ஒருங்கிணைக்கப்பட்டதால் நிதி ஒதுக்குவதில் தாமதம் ஏற்பட்டுள்ளதாக ஒப்பந்த நிறுவனப் பணியாளர் ஒருவர் கூறினார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚧 மேட்டுப்பாளையம் - அவிநாசி 4 வழிச்சாலை 6 மாதமாக முடக்கம்: நிதி இல்லை\n\n📰 முழு விவரம்:\nமேட்டுப்பாளையம் - அன்னூர் - அவிநாசி இடையிலான 38 கி.மீ. இருவழிச்சாலை, மாநில நெடுஞ்சாலைத்துறைக்கு உட்பட்ட முக்கிய வழித்தடம். சேலம், ஈரோடு, திருச்சி, கரூர், திண்டுக்கல், திருப்பூர் வழியாக ஊட்டி செல்லும் சுற்றுலாப் பயணிகளும் உள்ளூர் மக்களும் இந்தச் சாலையை அதிகம் பயன்படுத்துகின்றனர்.\n🚗 தினமும் 4,000க்கும் மேற்பட்ட வாகனங்கள் பயணிப்பதால் காலை, மாலையில் கடும் நெரிசல் ஏற்பட்டது.\n🛣️ பொதுமக்கள் கோரிக்கையை ஏற்று, இச்சாலையை 4 வழிச்சாலையாக தரம் உயர்த்தத் தமிழக அரசு அறிவிப்பு வெளியிட்டது. கோவை கோட்ட மாநில நெடுஞ்சாலைத்துறை சார்பில் பணிகள் தொடங்கின.\n🌳 சுமார் 800 மரங்கள் வெட்டப்பட்டு, அதற்கு ஈடாக 3,000 மரக்கன்றுகள் நடப்பட்டன.\n🏗️ 15 சிறு பாலங்கள் கட்டுதல், சாலை அகலப்படுத்துதல் பணிகள் 80 சதவீதம் முடிந்தன. ஆனால் ஆறு மாதமாக எந்த முன்னேற்றமும் இல்லை.\n💰 ஒப்பந்ததாரர்களுக்கு வழங்க வேண்டிய நிதி இன்னும் முழுமையாக ஒதுக்கப்படவில்லை என நெடுஞ்சாலைத்துறை உயர் அதிகாரி தெரிவித்தார். நிதி பற்றாக்குறையால் 20 சதவீத பணிகள் நிறுத்தி வைக்கப்பட்டுள்ளன.\n🔄 துறைகள் ஒருங்கிணைக்கப்பட்டதால் நிதி ஒதுக்குவதில் தாமதம் என ஒப்பந்த நிறுவனப் பணியாளர் ஒருவர் கூறினார். ஒப்பந்த நிறுவன அதிகாரி கருத்து தெரிவிக்க மறுத்துவிட்டார்.\n\nMettupalayam Avinashi 4 lane road work stalled, funds not released | Coimbatore news\n📍 மேட்டுப்பாளையம், கோவை மாவட்டம் | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Mettupalayam #சாலை #CoimbatoreNews",
-   "prompts": "A stalled road-widening site on the Mettupalayam-Annur-Avinashi state highway in rural Coimbatore district, where a half-finished four-lane stretch lies idle with no workers present. The scene is a two-lane tar road being widened, its new edge marked by raw earth, unfinished concrete and a small culvert or bridge under construction with rebar sticking out. Idle construction machinery such as a parked roller or excavator sits on the shoulder, with a few cars, a tourist bus and a lorry passing slowly on the old narrow lane, showing the heavy daily traffic bound for Ooty. Far in the background, rows of newly planted saplings line the roadside and the Western Ghats hills are faintly visible. The light is clear daylight with a pale sky. Shot at eye level, 35 mm, wide enough to show the full stalled stretch of road and the traffic on it. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up detail of an unfinished concrete culvert and bridge pier on the Mettupalayam-Annur-Avinashi highway, its exposed iron rods rusting and a pile of unused construction material left beside it, with dust and dry grass around the base. Behind it, a stretch of old two-lane tar road is partly widened with raw earth and a stopped roller parked at the edge. A two-wheeler and a passing car blur in the far background, and a few newly planted saplings in tree guards stand along the verge. Daylight, slightly dusty air. Taken at low eye level, 35 mm, focused on the stalled construction. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/funds-are-not-coming-mettupalayam-avinashi-4-lane-road-80-of-the-work-is-done-but-not-worth-it/4381732",
-   "published": "2026-11-20T20:01:36+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: numbers not found in the article: 6",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795192570/kovaiminnal/u1oyy6iufwgqtpniwqtc.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795192573/kovaiminnal/g1r1vibk96gugqotdqzr.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவை மாவட்டத்தில் போதையில் ரகளை: 15 பேர் கைது",
-   "english_headline": "15 arrested for drunken brawls in public places in Puducherry",
-   "category": "Crime & Safety",
-   "location": "Mettupalayam, Coimbatore district",
-   "importance": "Medium",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "போலீஸ் நடவடிக்கை",
-    "loc": "மேட்டுப்பாளையம்",
-    "hl1": "பொது இடத்தில் ரகளை: 15 பேர் கைது",
-    "hl2": "மொத்தம் <b>15 பேர்</b> கைது",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "பொது இடத்தில் போதையில் ரகளை செய்த <b>15 பேர்</b> கைது",
-       "போலீசார் அவர்களை கைது செய்தனர்",
-       "தகவல் கிடைத்ததும் போலீசார் நடவடிக்கை எடுத்தனர்"
-      ]
-     },
-     {
-      "title": "மேட்டுப்பாளையத்தில",
-      "lines": [
-       "மேட்டுப்பாளையம் தொழில்பேட்டை சாலையில் நின்று போதையில் ரகளை",
-       "இன்று (<b>நவ. 20</b>) போலீசாருக்கு தகவல் வந்தது",
-       "அந்த நபரை போலீசார் கைது செய்தனர்"
-      ]
-     },
-     {
-      "title": "மற்ற இடங்களில்",
-      "lines": [
-       "ரெட்டியார்பாளையம்: <b>4 பேர்</b> கைது",
-       "முத்தியால்பேட்டை: <b>2 பேர்</b>, காலாப்பட்டு: <b>2 பேர்</b>",
-       "திருக்கனூர்: <b>2 பேர்</b>, வில்லியனூர்: <b>1 பேர்</b>"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "🚨 போதையில் ரகளை செய்த 15 பேர் போலீசாரால் கைது செய்யப்பட்டனர். மேட்டுப்பாளையம் தொழில்பேட்டை சாலையில் நின்று ஒருவர் போதையில் ரகளை செய்வதாக இன்று நவம்பர் 20ஆம் தேதி மேட்டுப்பாளையம் போலீசாருக்கு தகவல் கிடைத்தது. தகவலின் பேரில் போலீசார் அந்த நபரை கைது செய்தனர். இதேபோல், ரெட்டியார்பாளையம் போலீஸ் நிலையப் பகுதியில் 4 பேரும், முத்தியால்பேட்டையில் 2 பேரும், காலாப்பட்டில் 2 பேரும், திருக்கனூரில் 2 பேரும், வில்லியனூரில் 1 பேரும், பாகூரில் 1 பேரும், கிருமாம்பாக்கம் போலீஸ் நிலையப் பகுதியில் 2 பேரும் கைது செய்யப்பட்டனர். மொத்தம் 15 பேரை அந்தந்த பகுதி போலீசார் கைது செய்தனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 பொது இடத்தில் போதையில் ரகளை: 15 பேர் கைது\n\n📰 முழு விவரம்:\nபொது இடத்தில் போதையில் ரகளை செய்த 15 பேரை போலீசார் கைது செய்தனர்.\nமேட்டுப்பாளையம் தொழில்பேட்டை சாலையில் நின்று ஒருவர் போதையில் ரகளை செய்வதாக இன்று (நவ. 20) மேட்டுப்பாளையம் போலீசாருக்கு தகவல் வந்தது. அதன்படி போலீசார் அந்த நபரை கைது செய்தனர்.\nரெட்டியார்பாளையம் போலீஸ் நிலையப் பகுதியில் 4 பேரும், முத்தியால்பேட்டையில் 2 பேரும், காலாப்பட்டில் 2 பேரும், திருக்கனூரில் 2 பேரும், வில்லியனூரில் 1 பேரும், பாகூரில் 1 பேரும், கிருமாம்பாக்கம் போலீஸ் நிலையப் பகுதியில் 2 பேரும் கைது செய்யப்பட்டனர்.\n📍 இடம்: மேட்டுப்பாளையம் தொழில்பேட்டை சாலை\n🗓️ நாள்: நவ. 20\n👮 நடவடிக்கை: மொத்தம் 15 பேர் கைது\n\nMettupalayam 15 arrested drunken brawl | Coimbatore news\n📍 மேட்டுப்பாளையம், கோவை மாவட்டம் | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Mettupalayam #CoimbatoreNews #கோவை",
-   "prompts": "A Tamil Nadu police team in khaki uniform escorts a group of men, seen from behind, out of a public road in Mettupalayam, Coimbatore district, after arresting them for causing a drunken disturbance. The setting is an industrial estate road lined with small factory sheds, compound walls and a few parked two-wheelers. Two or three policemen in khaki shirts and trousers walk beside the men, who wear shirts and veshti or trousers, their hands held behind their backs or loosely guided. A police jeep is parked at the roadside with its door open, and onlookers stand at a distance under the grey afternoon light of a daytime sky, with the Western Ghats faintly visible in the far background. The camera is at eye level, 35 mm, wide enough to show the full road and the arrest in context, with no visible text or faces. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a police jeep's rear seat or a police station bench where several men sit detained, seen from behind and slightly to the side, with a policeman in khaki standing beside them. Their hands are loosely cuffed and the men are seen as blurred shapes in shirts and veshti. Nearby on the ground or a low table sits an empty liquor bottle and a plastic cup, showing the drunken disturbance. The background is a plain police station compound wall with a bare tree and daylight falling across the scene. The camera is at slightly high angle, 35 mm, focused on the detail of the detention and the seized drinking items, with no readable text. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/puducherry/15-people-who-committed-the-crime-arrested/4381835",
-   "published": "2026-11-20T21:10:03+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: hl1 (the first headline on screen) must name the place 'மேட்டுப்பாளையம்', e.g. 'மேட்டுப்பாளையம்: ...' or 'மேட்டுப்பாளையம்-இல் ...' - viewers share news of their own area",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795192579/kovaiminnal/wkzjm7nqud9qmik4d3m8.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795192582/kovaiminnal/ante2rsrirkllw1an6ky.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795203408/kovaiminnal/c0icgmggmkqnngawo0pf.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795203411/kovaiminnal/b3vjm2yv0ylzbnhvdhqp.jpg"
    ]
   }
  ]
