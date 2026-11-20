@@ -157,7 +157,8 @@
    "category": "குற்றம்",
    "score": 11.04,
    "power_cut": false,
-   "listed_at": "2026-11-21T01:01:23.460415+05:30"
+   "listed_at": "2026-11-21T01:01:23.460415+05:30",
+   "picked_at": "2026-11-21T01:04:30.777892+05:30"
   },
   "C6c494fd": {
    "id": "C6c494fd",
@@ -169,7 +170,8 @@
    "category": "பொது",
    "score": 8.0,
    "power_cut": false,
-   "listed_at": "2026-11-21T01:01:23.460415+05:30"
+   "listed_at": "2026-11-21T01:01:23.460415+05:30",
+   "picked_at": "2026-11-21T01:04:30.777894+05:30"
   },
   "C1d1f4d8": {
    "id": "C1d1f4d8",
@@ -986,8 +988,18 @@
    ],
    "sent": false,
    "deadline": "2026-11-21T02:01:23.460415+05:30",
-   "decided": null,
-   "written": []
+   "decided": {
+    "how": "automatic: top 2 of 17 by insights",
+    "ids": [
+     "Cc2bb9f0",
+     "C6c494fd"
+    ],
+    "at": "2026-11-21T01:04:30.777880+05:30"
+   },
+   "written": [
+    "C6c494fd",
+    "Cc2bb9f0"
+   ]
   }
  },
  "retry": {}
