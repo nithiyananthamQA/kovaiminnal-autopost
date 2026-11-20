@@ -3,200 +3,433 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/tamil-nadu-government-allocated-rs-18-crores-to-repair-the-water-leakage-in-siruvani/4381041",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/highways-department-officials-join-hands-to-design-flyover-at-nilambur-junction/4381040",
-  "candidate filter: collected=2",
-  "to write: 2 Coimbatore district candidates (max 2 stories)",
-  "round: top 2 of 2 candidates",
-  "candidates waiting: 2 Coimbatore; time left 79 min",
+  "manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/19/ஆன்லைன்-மூலம்-வெவ்வேறு-நபா்களிடம்-ரூ459-லட்சம்-மோசடி",
+  "manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/19/sexual-assault-of-a-woman-with-a-disability-daily-wage-laborer-sentenced-to-10-years-in-prison",
+  "manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/19/rs-123-crore-compensation-for-the-family-of-a-headmistress-who-died-in-an-accident",
+  "manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/19/6-laptops-stolen-from-government-engineering-college-hostel-two-people-including-a-student-apprehended",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/source-coimbatore/4381138",
+  "candidate filter: collected=5",
+  "to write: 5 Coimbatore district candidates (max 5 stories)",
+  "round: top 5 of 5 candidates",
+  "candidates waiting: 5 Coimbatore; time left 79 min",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
+  "try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/coi",
+  "try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/coi",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 3})",
   "posting job started at once",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "candidate loop ended: left 0, tried={'N': 2}, done={'N': 2}, time left 77 min",
-  "filed: 2 Coimbatore district stories (target 2), reels only",
+  "try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/coi",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 5})",
+  "try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/coi",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 7})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 9})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 11})",
+  "candidate loop ended: left 0, tried={'N': 5}, done={'N': 5}, time left 77 min",
+  "filed: 5 Coimbatore district stories (target 5), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":2,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":5,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
-  "ok gemini/gemini-3.5-flash (33s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
-  "ok gemini/gemini-3.6-flash (57s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
+  "ok gemini/gemini-3.5-flash (14s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5",
+  "ok gemini/gemini-3.6-flash (48s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok groq/openai/gpt-oss-120b (3s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_gener",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok groq/openai/gpt-oss-120b (5s)",
+  "ok groq/openai/gpt-oss-120b (2s)",
+  "fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3-flash-preview",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
-  "ok groq/qwen/qwen3.8-27b (0s)",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "ok groq/qwen/qwen3.8-27b (4s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok groq/qwen/qwen3.8-27b (0s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail gemini/gemini-3.5-flash: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
-  "poor answer - skipped for 30 min: gemini/gemini-3.5-flash",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "dead for this round: groq/qwen/qwen3.8-27b",
-  "ok groq/qwen/qwen3.8-27b (5s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "நீலாம்பூர் சந்திப்பில் புதிய மேம்பாலம்: வடிவமைப்புக்கு அதிகாரிகள் கூட்டாய்வு",
-   "english_headline": "Officials jointly inspect Neelambur junction for new flyover design; drawings being prepared, construction yet to begin",
+   "tamil_headline": "விபத்தில் உயிரிழந்த தலைமை ஆசிரியை குடும்பத்துக்கு ரூ.1.23 கோடி இழப்பீடு: கோவை நீதிமன்றம் உத்தரவு",
+   "english_headline": "Coimbatore court orders Rs 1.23 crore compensation to family of headmistress killed in 2023 road accident near Mettupalayam",
    "category": "Roads & Transport",
-   "location": "Neelambur junction, Coimbatore",
+   "location": "Mettupalayam, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "சாலை திட்டம்",
-    "loc": "நீலாம்பூர், கோவை",
-    "hl1": "நீலாம்பூரில் புதிய மேம்பாலம் திட்டம்",
-    "hl2": "வடிவமைப்புக்கு கூட்டாய்வு",
+    "cat": "நீதிமன்ற உத்தரவு",
+    "loc": "மேட்டுப்பாளையம்",
+    "hl1": "மேட்டுப்பாளையத்தில் ரூ.1.23 கோடி",
+    "hl2": "கோவை நீதிமன்றம் உத்தரவு",
     "slides": [
      {
       "title": "என்ன நடந்தது?",
       "lines": [
-       "நீலாம்பூர் சந்திப்பில் மேம்பாலம் கட்ட திட்டம்",
-       "மாநில நெடுஞ்சாலைத் துறை, தேசிய நெடுஞ்சாலை ஆணைய அதிகாரிகள்",
-       "நேற்று அளவீடு செய்து பாலத்தின் தொடக்க, முடிவு இடங்களை ஆய்வு"
+       "மேட்டுப்பாளையம் வஞ்சிமாநகரைச் சேர்ந்தவர் சத்தியவேணி (<b>52</b>)",
+       "பெரியநாயக்கன்பாளையம் பெட்டத்தாபுரம் பள்ளித் தலைமை ஆசிரியை",
+       "<b>2023</b>-ல் பணி முடிந்து இருசக்கர வாகனத்தில் சென்றபோது விபத்து"
       ]
      },
      {
-      "title": "பாலம் எங்கே?",
+      "title": "விபத்து விவரம்",
       "lines": [
-       "உப்பிலிபாளையம் முதல் கோல்டுவின்ஸ் வரை 10 கி.மீ. பாலம்",
-       "5 கி.மீ. நீட்டித்து நீலாம்பூர் வரை கட்ட கோரிக்கை",
-       "சேலம் பைபாஸ் வழியாக வருவோருக்கான இணைப்பு வடிவமைக்கப்படும்"
+       "அவ்வழியே வந்த மினி பேருந்து மோதியதில் சத்தியவேணி பலி",
+       "மேட்டுப்பாளையம் காவல் துறையினர் வழக்குப் பதிவு",
+       "குடும்பத்தினர் கோவை விபத்து இழப்பீடு நீதிமன்றத்தில் வழக்கு"
+      ]
+     },
+     {
+      "title": "நீதிமன்றத்",
+      "lines": [
+       "மினி பேருந்தின் காப்பீட்டு நிறுவனம் <b>ரூ.1.23 கோடி</b>",
+       "நீதிபதி <b>கண்ணன்</b> வியாழக்கிழமை தீர்ப்பளித்தார்",
+       "அரசுத் தரப்பில் வழக்கறிஞர் பிரபாகரன் ஆஜரானார்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "மேட்டுப்பாளையம் அருகே விபத்தில் உயிரிழந்த பள்ளித் தலைமை ஆசிரியை குடும்பத்துக்கு ரூ.1.23 கோடி இழப்பீடு வழங்க கோவை நீதிமன்றம் உத்தரவிட்டுள்ளது. மேட்டுப்பாளையம் வஞ்சிமாநகரைச் சேர்ந்த 52 வயது சத்தியவேணி, பெரியநாயக்கன்பாளையம் பெட்டத்தாபுரம் பகுதியில் உள்ள பள்ளியில் தலைமை ஆசிரியையாகப் பணியாற்றி வந்தார். கடந்த 2023ஆம் ஆண்டு மாலை பணி முடிந்து இருசக்கர வாகனத்தில் வீடு திரும்பியபோது, மினி பேருந்து மோதியதில் சத்தியவேணி உயிரிழந்தார். இது குறித்து மேட்டுப்பாளையம் காவல் துறையினர் வழக்குப் பதிவு செய்து விசாரணை நடத்தினர். இதையடுத்து இழப்பீடு கோரி சத்தியவேணியின் குடும்பத்தினர் கோவை மோட்டார் வாகன விபத்து இழப்பீடு தீர்ப்பாய சிறப்பு நீதிமன்றத்தில் வழக்குத் தொடுத்தனர். இந்த வழக்கில், மினி பேருந்து பதிவு செய்துள்ள காப்பீட்டு நிறுவனம் ரூ.1.23 கோடி இழப்பீடு வழங்க வேண்டும் என்று நீதிபதி கண்ணன் உத்தரவிட்டார். அரசுத் தரப்பில் வழக்கறிஞர் பிரபாகரன் ஆஜரானார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "⚖️ மேட்டுப்பாளையத்தில் விபத்தில் உயிரிழந்த ஆசிரியை குடும்பத்துக்கு ரூ.1.23 கோடி இழப்பீடு: கோவை நீதிமன்றம் உத்தரவு\n\n📰 முழு விவரம்:\nகோவை மாவட்டம் மேட்டுப்பாளையம் வஞ்சிமாநகரைச் சேர்ந்தவர் சத்தியவேணி (52 வயது). இவர் பெரியநாயக்கன்பாளையம் பெட்டத்தாபுரம் பள்ளியில் தலைமை ஆசிரியையாகப் பணியாற்றி வந்தார். 2023ஆம் ஆண்டு மாலை பணி முடிந்து இருசக்கர வாகனத்தில் வீடு திரும்பும்போது மினி பேருந்து மோதி உயிரிழந்தார். மேட்டுப்பாளையம் போலீசார் வழக்குப்பதிவு செய்தனர். குடும்பத்தினர் தொடுத்த வழக்கின் முடிவில், மினி பேருந்தின் காப்பீட்டு நிறுவனம் ரூ.1 கோடியே 23 லட்சம் இழப்பீடு வழங்க வேண்டும் என கோவை மோட்டார் வாகன விபத்து இழப்பீடு தீர்ப்பாய சிறப்பு நீதிமன்ற நீதிபதி கண்ணன் உத்தரவிட்டுள்ளார்.\n\n📍 இடம்: மேட்டுப்பாளையம் & பெரியநாயக்கன்பாளையம், கோவை மாவட்டம்\n⚖️ நீதிமன்றம்: கோவை மோட்டார் வாகன விபத்து இழப்பீடு தீர்ப்பாய சிறப்பு நீதிமன்றம் (நீதிபதி கண்ணன்)\n👮 நடவடிக்கை: மினி பேருந்தின் காப்பீட்டு நிறுவனம் ரூ.1.23 கோடி இழப்பீடு வழங்க உத்தரவு\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்\n\nMettupalayam accident compensation court order | Coimbatore news\n📍 மேட்டுப்பாளையம், கோவை மாவட்டம் | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Mettupalayam #CoimbatoreNews #கோவை",
+   "prompts": "A two‑wheeler and a mini‑bus lie side‑by‑side on a narrow road, their front ends twisted and crumpled, indicating a recent collision. PLACE: a typical Coimbatore district road just outside Mettupalayam, bordered by low stone walls and a few roadside trees, with the town’s name sign faintly visible in the background. PEOPLE: from behind, two police officers in khaki uniforms stand a short distance away, one holding a notepad, both looking at the wreckage. VEHICLES/OBJECTS: the damaged two‑wheeler (type unknown, colour not shown) and the mini‑bus (type unknown, colour not shown) with broken bumpers and scattered debris on the asphalt. TIME+LIGHT+WEATHER: evening light casting long shadows, the sky dimming, no rain visible. CAMERA: eye‑level, 35 mm lens, wide enough to capture the road stretch and the two vehicles together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close‑up of the mini‑bus’s front end shows a severely dented bumper, shattered headlight, and twisted metal panels, the damage clearly from a high‑speed impact. PLACE: the same Mettupalayam road, the bus parked slightly off the lane with the road surface visible. PEOPLE: only the backs of two police officers in khaki are faintly visible near the edge, keeping distance. VEHICLES/OBJECTS: the mini‑bus front with broken glass, a torn seat belt strap lying on the ground, and a small piece of the two‑wheeler’s handlebar protruding. TIME+LIGHT+WEATHER: dusk lighting, muted colours, no rain. CAMERA: slightly low angle, 35 mm, tight framing to emphasize the damaged bus front as the story’s detail. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/19/rs-123-crore-compensation-for-the-family-of-a-headmistress-who-died-in-an-accident",
+   "published": "2026-11-19T21:17:42.023Z",
+   "verification": "DRAFT (gemini/gemini-3.6-flash) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3.6-flash, 1 attempt(s), 0 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795131341/kovaiminnal/hbsxgkozc50xjse10kgb.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795131347/kovaiminnal/cv3zeujpjerfylstokea.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "அரசு பொறியியல் கல்லூரி விடுதியில் 6 மடிக்கணினிகள் திருட்டு: இருவர் பிடிபட்டனர்",
+   "english_headline": "6 laptops stolen from Coimbatore government engineering college hostel; a student and another man caught",
+   "category": "Crime & Safety",
+   "location": "Coimbatore government engineering college, Thadagam Road, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "திருட்டு",
+    "loc": "கோவை",
+    "hl1": "கல்லூரி விடுதியில் 6 மடிக்கணினி திருட்டு",
+    "hl2": "இருவர் பிடிபட்டனர்",
+    "slides": [
+     {
+      "title": "என்ன நடந்தது?",
+      "lines": [
+       "கோவை அரசு பொறியியல் கல்லூரி மாணவர் விடுதியில் <b>6",
+       "காலை 9.30 முதல் பிற்பகல் 1 மணி வரை திருடப்பட்டன",
+       "கல்லூரி நிர்வாகம் புகார் அளித்தது"
+      ]
+     },
+     {
+      "title": "எப்படி",
+      "lines": [
+       "காவலாளி அருள்பிரகாசம் உள்ளிட்ட பாதுகாப்பு ஊழியர்கள் சோதனை",
+       "இரு சக்கர வாகனத்தில் வந்த <b>2 இளைஞர்கள்</b> பிடிபட்டனர்",
+       "பையில் 6 மடிக்கணினிகள் இருந்தன"
       ]
      },
      {
       "title": "அடுத்து என்ன?",
       "lines": [
-       "ஆலோசனை நிறுவனம் வரைபடம் தயாரிக்கிறது",
-       "விமான நிலைய நுழைவாயிலுக்கு தனிப்பாதை, டனல் அமைக்கப்படும்",
-       "பணி இன்னும் தொடங்கவில்லை"
+       "மாணவர்கள் மடிக்கணினிகளை உறுதிப்படுத்தினர்",
+       "சாய்பாபா காலனி காவல் நிலையத்தில் ஒப்படைப்பு",
+       "போலீஸார் தொடர்ந்து விசாரணை நடத்துகின்றனர்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "நீலாம்பூர் சந்திப்பில் புதிய மேம்பாலம் கட்ட திட்டமிடப்பட்டுள்ளது. இதையடுத்து, நேற்று மாநில நெடுஞ்சாலைத் துறை மற்றும் தேசிய நெடுஞ்சாலை ஆணைய அதிகாரிகள் இணைந்து கூட்டாய்வு செய்தனர். உப்பிலிபாளையம் முதல் கோல்டுவின்ஸ் வரை 10 கிலோமீட்டர் மேம்பாலம் ஏற்கனவே பயன்பாட்டில் உள்ளது. இதனை 5 கிலோமீட்டர் நீட்டித்து நீலாம்பூர் வரை கட்ட வேண்டும் என பலதரப்பினரும் கோரிக்கை விடுத்தனர். இந்தத் திட்டம் முந்தைய தி.மு.க. ஆட்சியில் அறிவிக்கப்பட்டு, தற்போதைய த.வெ.க. ஆட்சியிலும் நெடுஞ்சாலைத் துறையின் செயல் திட்டத்தில் சேர்க்கப்பட்டுள்ளது. கோல்டுவின்ஸ் பகுதியில் பாலப் பணியை எங்கிருந்து தொடங்குவது, நீலாம்பூரில் எங்கு முடிப்பது என அளவீடு செய்யப்பட்டது. தற்போது ஆலோசனை நிறுவனம் வரைபடம் தயாரித்து வருகிறது. சேலம் பைபாஸில் இருந்து வருவோர் இடதுபுறம் சேலம் நோக்கியும், வலதுபுறம் பாலக்காடு நோக்கியும் சிரமமின்றி திரும்ப வசதியாக பாலம் வடிவமைக்கப்பட வேண்டும். மேலும், விமான நிலைய விரிவாக்கத்துக்குப் பின் லீ மெரிடியன் ஹோட்டல் அருகே புதிய நுழைவாயில் வரவுள்ளது. விமான நிலையத்துக்குச் செல்ல தனிப்பாதையும், ரோட்டுக்கு கீழ் டனலும் அமைக்கப்படும். டனல் செலவை விமான நிலைய ஆணையம் ஏற்பதாகக் கூறியுள்ளது. இந்நிலையில், மேம்பாலம் இன்னும் கட்டத் தொடங்கவில்லை. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 நீலாம்பூர் சந்திப்பில் புதிய மேம்பாலம் திட்டம்: வடிவமைப்புக்கு அதிகாரிகள் கூட்டாய்வு\n\n📰 முழு விவரம்:\nநீலாம்பூர் சந்திப்பில் மேம்பாலம் கட்ட மாநில நெடுஞ்சாலைத் துறை, தேசிய நெடுஞ்சாலை ஆணைய அதிகாரிகள் நேற்று கூட்டாய்வு செய்தனர். உப்பிலிபாளையம் முதல் கோல்டுவின்ஸ் வரை 10 கி.மீ. மேம்பாலம் ஏற்கனவே பயன்பாட்டில் உள்ளது; அதை 5 கி.மீ. நீட்டித்து நீலாம்பூர் வரை கட்ட வேண்டும் என கோரிக்கை எழுந்துள்ளது.\nஇத்திட்டம் முந்தைய தி.மு.க. ஆட்சியில் அறிவிக்கப்பட்டு, தற்போதைய த.வெ.க. ஆட்சியில் நெடுஞ்சாலைத் துறையின் செயல் திட்டத்தில் சேர்க்கப்பட்டுள்ளது.\nகோல்டுவின்ஸ் பகுதியில் பாலப் பணி எங்கு தொடங்கி, நீலாம்பூரில் எங்கு முடியும் என அளவீடு செய்யப்பட்டது. ஆலோசனை நிறுவனம் வரைபடம் தயாரித்து வருகிறது.\nசேலம் பைபாஸில் இருந்து வருவோர் இடதுபுறம் சேலம் நோக்கியும், வலதுபுறம் பாலக்காடு நோக்கியும் எளிதாகத் திரும்பும் வகையில் பாலம் வடிவமைக்கப்பட வேண்டும்.\nவிமான நிலைய விரிவாக்கத்துக்குப் பின் லீ மெரிடியன் ஹோட்டல் அருகே புதிய நுழைவாயில் வரவுள்ளது. விமான நிலையத்துக்குத் தனிப்பாதை, ரோட்டுக்கு கீழ் டனல் அமைக்கப்படும். டனல் செலவை விமான நிலைய ஆணையம் ஏற்பதாகக் கூறியுள்ளது.\nமேம்பாலப் பணி இன்னும் தொடங்கவில்லை.\n\nNeelambur flyover design under review | Coimbatore news\n📍 நீலாம்பூர், கோவை | 19 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Neelambur",
-   "prompts": "Officials from the state highways department and National Highways Authority stand on the Neelambur junction on the Salem Bypass in Coimbatore, one of them holding a survey tripod and another measuring the road edge with a tape while colleagues look on. The place is a wide, busy urban highway junction with a roundabout, concrete median dividers, and a line of existing flyover pillars rising in the background. Traffic of cars, two-wheelers and a private bus moves slowly past. The officials wear formal shirts and trousers, a few of them carry rolled drawings under their arms, and a consultant's team member in a jacket stands a little apart. It is daytime under flat, clear light, and the scene is seen from a distance at eye level, with the flyover pillars and the open road stretching behind them so the viewer understands that a new bridge is planned here but has not yet been built. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a survey tripod set on the edge of a Coimbatore highway road at the Neelambur junction, with a measuring tape stretched along the kerb and a rolled-up set of engineering drawings resting on the concrete divider beside it. Behind the equipment, the edge of the existing flyover's concrete pillar and the grey tarmac of the bypass are visible, with a blurred two-wheeler passing in the far background. The light is bright daytime sunlight casting short shadows across the road. The camera sits low at roughly 35 mm, focusing on the survey instruments and the marked road edge to show that measurement and design work is underway while no construction has begun. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/highways-department-officials-join-hands-to-design-flyover-at-nilambur-junction/4381040",
-   "published": "2026-11-19T22:52:38+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b) - fact-check: no problems found",
-   "note": "free-model draft anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b, 13 attempt(s), 0 validator problem(s)",
+   "reel_script": "கோவை அரசு பொறியியல் கல்லூரி விடுதியில் 6 மடிக்கணினிகள் திருடப்பட்டன. நேற்று முன்தினம் காலை 9.30 மணி முதல் பிற்பகல் 1 மணி வரை இந்தத் திருட்டு நடந்ததாகக் கல்லூரி நிர்வாகம் தெரிவித்தது. கவுண்டம்பாளையம் காவல் கண்காணிப்பாளர் நகரைச் சேர்ந்த காவலாளி அருள்பிரகாசம் பணியில் இருந்தார். தடாகம் சாலையிலுள்ள கல்லூரி நுழைவாயிலில் பாதுகாப்பு ஊழியர்கள் சோதனை நடத்தினர். இரு சக்கர வாகனத்தில் வந்த இரண்டு இளைஞர்களைத் தடுத்து நிறுத்தி பையைச் சோதித்தனர். அதில் 6 மடிக்கணினிகள் இருந்தன. இருவரும் முன்னுக்குப் பின் முரணாகப் பதிலளித்தனர். விடுதி மாணவர்களை வரவழைத்துக் காட்டியபோது, அவை தங்களுடையவை என மாணவர்கள் உறுதிப்படுத்தினர். இருவரும் சாய்பாபா காலனி காவல் நிலையத்தில் ஒப்படைக்கப்பட்டனர். விசாரணையில் காரமடை பெட்டத்தாபுரத்தைச் சேர்ந்த கல்லூரி மாணவர் வசந்த், 22 வயது; தென்காசி மாவட்டம் சங்கரன்கோவிலைச் சேர்ந்த பாண்டியராஜன், 23 வயது என தெரியவந்தது. போலீஸார் தொடர்ந்து விசாரித்து வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 கோவை அரசு பொறியியல் கல்லூரி விடுதியில் 6 மடிக்கணினிகள் திருட்டு: இருவர் பிடிபட்டனர்\n\n📰 முழு விவரம்:\nகோவை அரசு பொறியியல் கல்லூரி மாணவர் விடுதியில் புகுந்து 6 மடிக்கணினிகளைத் திருடிய 2 மாணவர்களை பாதுகாப்பு ஊழியர்கள் கையும் களவுமாகப் பிடித்து காவல் நிலையத்தில் ஒப்படைத்தனர்.\nகவுண்டம்பாளையம் எஸ்.பி. நகரைச் சேர்ந்த காவலாளி அருள்பிரகாசம் (58 வயது) கல்லூரியில் பணியாற்றுகிறார். நேற்று முன்தினம் காலை 9.30 மணி முதல் பிற்பகல் 1 மணி வரை மாணவர்களின் மடிக்கணினிகள் திருடுபோனதாகக் கல்லூரி நிர்வாகம் தெரிவித்தது.\nதடாகம் சாலை நுழைவாயிலில் பாதுகாப்பு ஊழியர்கள் தீவிரக் கண்காணிப்பில் ஈடுபட்டனர். இரு சக்கர வாகனத்தில் வந்த 2 இளைஞர்களின் பைகளைச் சோதித்தபோது 6 மடிக்கணினிகள் இருந்தன.\nவிடுதி மாணவர்களை வரவழைத்துக் காட்டியபோது அவை தங்களுடையவை என உறுதிப்படுத்தினர்.\n👮 நடவடிக்கை: இருவரும் சாய்பாபா காலனி காவல் நிலையத்தில் ஒப்படைக்கப்பட்டனர். விசாரணையில் காரமடை பெட்டத்தாபுரத்தைச் சேர்ந்த கல்லூரி மாணவர் வசந்த் (22 வயது), தென்காசி மாவட்டம் சங்கரன்கோவிலைச் சேர்ந்த பாண்டியராஜன் (23 வயது) என தெரியவந்தது. போலீஸார் தொடர்ந்து விசாரித்து வருகின்றனர்.\n\nCoimbatore engineering college hostel laptops stolen, two caught | Coimbatore news\n📍 தடாகம் சாலை, கோவை | 19 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Coimbatore #CoimbatoreNews #கோவை",
+   "prompts": "Two security guards in uniform stop a two-wheeler at the main gate of a government engineering college campus on Thadagam Road in Coimbatore, holding back two young men seated on the scooter from behind. Inside the open black backpacks on the seat, six laptops are visible, their dark casings stacked together. The gate is a tall grey iron barrier with a small guard booth beside it, and the college campus building with its rows of windows stands in the background under bright daylight around noon. Students in plain shirts and trousers walk past at a distance. Tamil Nadu police in khaki wait near the gate. Shot from eye level at 35 mm, wide enough to show the gate, the scooter, and the campus. Faces are not visible; the young men are seen from behind and slightly blurred. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of six dark laptops stacked inside an open backpack lying on the seat of a two-wheeler at a college gate in Coimbatore. A security guard's hand in a khaki uniform sleeve rests on the bag's edge. Behind the bag, the grey metal gate bars and a concrete guard booth are blurred in the bright midday light. The laptop screens are closed, showing only their plain dark surfaces. Shot at eye level, 35 mm, shallow depth of field to isolate the laptops as the story's key object. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/19/6-laptops-stolen-from-government-engineering-college-hostel-two-people-including-a-student-apprehended",
+   "published": "2026-11-19T21:16:07.790Z",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: hl1 (the first headline on screen) must name the place 'கோவை', e.g. 'கோவை: ...' or 'கோவை-இல் ...' - viewers share news of their own area",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795116976/kovaiminnal/wp9vpmpgz1iciasll963.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795116980/kovaiminnal/rga62xwbecdwkqdvkftt.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795131372/kovaiminnal/w5ijovldipsnzvky5dx6.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795131376/kovaiminnal/cup1hzv34cnfwldob8pv.jpg"
    ]
   },
   {
-   "tamil_headline": "சிறுவாணி அணை நீர்க்கசிவைச் சரி செய்ய ரூ.18 கோடி: தமிழக அரசு நிதி ஒதுக்கீடு",
-   "english_headline": "TN govt allocates Rs 18 crore to seal Siruvani dam leakage following Coimbatore Corporation report",
-   "category": "Civic Issues",
-   "location": "Siruvani Dam, Coimbatore district",
+   "tamil_headline": "மேட்டுப்பாளையத்தில் மாற்றுத்திறனாளி பெண்ணுக்கு பாலியல் வன்கொடுமை: கூலித் தொழிலாளிக்கு 10 ஆண்டுகள் சிறை",
+   "english_headline": "Coimbatore women's court sentences daily-wage labourer to 10 years in prison for sexually assaulting a differently-abled woman in Mettupalayam",
+   "category": "Crime & Safety",
+   "location": "Mettupalayam, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "நீதிமன்ற தீர்ப்பு",
+    "loc": "மேட்டுப்பாளையம்",
+    "hl1": "பாலியல் வன்கொடுமை: 10 ஆண்டுகள் சிறை",
+    "hl2": "கோவை மகளிர் நீதிமன்றம்",
+    "slides": [
+     {
+      "title": "என்ன நடந்தது?",
+      "lines": [
+       "2024 ஜூலை 2ஆம் தேதி காலை சம்பவம்",
+       "மேட்டுப்பாளையம் பகுதியில் நடந்தது",
+       "பக்கத்து வீட்டு கூலித் தொழிலாளி குற்றவாளி"
+      ]
+     },
+     {
+      "title": "புகார், கைது",
+      "lines": [
+       "மேட்டுப்பாளையம் காவல் நிலையத்தில் புகார்",
+       "போலீஸார் வழக்குப் பதிவு செய்து கைது செய்தனர்",
+       "குற்றஞ்சாட்டப்பட்டவர் வயது 46"
+      ]
+     },
+     {
+      "title": "தீர்ப்பு",
+      "lines": [
+       "<b>10 ஆண்டுகள்</b> சிறைத் தண்டனை",
+       "<b>ரூ.2,000</b> அபராதம்",
+       "கோவை மகளிர் நீதிமன்றம் வியாழக்கிழமை தீர்ப்பு"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "மேட்டுப்பாளையத்தில் பாலியல் வன்கொடுமை செய்த கூலித் தொழிலாளிக்கு 10 ஆண்டுகள் சிறைத் தண்டனை விதிக்கப்பட்டுள்ளது. கோவை மகளிர் நீதிமன்றம் வியாழக்கிழமை இந்தத் தீர்ப்பை வழங்கியது. குற்றவாளிக்கு ரூ.2,000 அபராதமும் விதிக்கப்பட்டது. 2024 ஜூலை 2ஆம் தேதி காலை இந்தச் சம்பவம் நடந்தது. மேட்டுப்பாளையம் பகுதியில் வசித்து வந்த 46 வயது கூலித் தொழிலாளி குமார் பக்கத்து வீட்டில் வசித்தார். மாற்றுத்திறனாளி பெண்ணின் தாய் பணிக்குச் சென்றிருந்தபோது, வீட்டில் தனியாக இருந்த அந்தப் பெண்ணுக்கு இந்தக் கொடுமை நிகழ்ந்தது. அந்த நேரத்தில் தாய் வீட்டுக்கு வந்ததும் குமார் தப்பியோடினார். மேட்டுப்பாளையம் காவல் நிலையத்தில் புகார் அளிக்கப்பட்டது. போலீஸார் வழக்குப் பதிவு செய்து குமாரைக் கைது செய்தனர். வழக்கு விசாரணைக்குப் பின் நீதிபதி சுந்தரராஜன் தீர்ப்பளித்தார். அரசுத் தரப்பில் வழக்குரைஞர் அர்ச்சனா ஆஜரானார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "⚖️ மேட்டுப்பாளையத்தில் பாலியல் வன்கொடுமை: கூலித் தொழிலாளிக்கு 10 ஆண்டுகள் சிறை\n\n📰 முழு விவரம்:\nமேட்டுப்பாளையம் பகுதியில் மாற்றுத்திறனாளி பெண்ணுக்கு பாலியல் வன்கொடுமை செய்த வழக்கில், கூலித் தொழிலாளி குமாருக்கு (46 வயது) 10 ஆண்டுகள் சிறைத் தண்டனை விதித்து கோவை மகளிர் நீதிமன்றம் வியாழக்கிழமை தீர்ப்பளித்தது.\nசம்பவம் 2024 ஜூலை 2ஆம் தேதி காலை நடந்தது. பெண்ணின் தாய் பணிக்குச் சென்றிருந்த நேரத்தில் இந்தக் குற்றம் நிகழ்ந்தது. தாய் வீட்டுக்கு வந்தபோது குமார் தப்பியோடினார்.\nமேட்டுப்பாளையம் காவல் நிலையத்தில் புகார் அளிக்கப்பட்டது. போலீஸார் வழக்குப் பதிவு செய்து குமாரைக் கைது செய்தனர்.\n📍 இடம்: மேட்டுப்பாளையம், கோவை மாவட்டம்\n🗓️ தீர்ப்பு: வியாழக்கிழமை, கோவை மகளிர் நீதிமன்றம்\n⚖️ தண்டனை: 10 ஆண்டுகள் சிறை, ரூ.2,000 அபராதம்\n👩‍⚖️ நீதிபதி: சுந்தரராஜன்; அரசுத் தரப்பு வழக்குரைஞர்: அர்ச்சனா\n\nMettupalayam sexual assault case, 10 years jail | Coimbatore news\n📍 மேட்டுப்பாளையம், கோவை மாவட்டம் | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Mettupalayam #CoimbatoreNews #கோவை",
+   "prompts": "A women's court judge in Coimbatore pronounces a verdict in a government court hall, with a Tamil Nadu police constable in khaki standing near the door and a government lawyer seated at a table with stacks of case files. The room is a plain, high-ceilinged Tamil Nadu court with wooden benches, fans overhead and tiled floors, and the judge's raised bench is in the background. Only a few people are visible, seen from behind or far away: a woman in a cotton saree sitting quietly on a bench with her back to the camera, and a male court clerk in a white shirt and veshti. The lighting is soft daylight through tall windows, a Thursday late morning. Taken at eye level with a 35 mm lens, wide enough to show the whole courtroom and its official, solemn atmosphere. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a stack of court case files and a bundle of sealed legal papers resting on a wooden table in a government court office, with a Tamil Nadu police khaki cap placed on top beside a plain steel water tumbler. The surface is worn and dusty, and in the soft-focus background a Coimbatore women's court corridor with a closed wooden door and a tube light. No readable text or labels are visible, and the mood is serious and quiet. Natural daylight from a window falls across the papers, time of day late morning. Shot slightly high at about 35 mm to capture the files and the courthouse setting behind them. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/19/sexual-assault-of-a-woman-with-a-disability-daily-wage-laborer-sentenced-to-10-years-in-prison",
+   "published": "2026-11-19T21:12:02.854Z",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: hl1 (the first headline on screen) must name the place 'மேட்டுப்பாளையம்', e.g. 'மேட்டுப்பாளையம்: ...' or 'மேட்டுப்பாளையம்-இல் ...' - viewers share news of their own area; caption misses facts of the article (put every one in 📰 முழு விவரம்): 24 ('மாற்றுத்திறனாளி பெண்ணைப் பாலியல் வன்கொடுமை செய்த வழக்கில் கூ'); 3 ('இவருக்கு மனைவி மற்றும் 3 குழந்தைகள் உள்ளனா்..இந்நிலையில், மா')",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795131405/kovaiminnal/qcglvdokt5kwgyb4iytn.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795131408/kovaiminnal/c9tuxkn9tzndqdqcurhv.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "பொள்ளாச்சி, உடுமலை அணைகளில் நீர்மட்டம்",
+   "english_headline": "Water levels at Pollachi and Udumalai dams",
+   "category": "Weather & Agriculture",
+   "location": "Pollachi and Udumalai, Coimbatore district",
+   "importance": "Medium",
+   "scope": "district",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "அணை நிலவரம்",
+    "loc": "பொள்ளாச்சி, உடுமலை",
+    "hl1": "பொள்ளாச்சி, உடுமலை அணைகளில் நீர்மட்டம்",
+    "hl2": "நேற்றைய நிலவரம்",
+    "slides": [
+     {
+      "title": "பரம்பிக்குளம் அணை",
+      "lines": [
+       "நீர்மட்டம் <b>51.44</b> அடி",
+       "உயரம் <b>72</b> அடி",
+       "வெளியேற்றம் <b>817</b> கனஅடி"
+      ]
+     },
+     {
+      "title": "ஆழியாறு அணை",
+      "lines": [
+       "நீர்மட்டம் <b>65.50</b> அடி",
+       "உயரம் <b>120</b> அடி",
+       "வெளியேற்றம் <b>152</b> கனஅடி"
+      ]
+     },
+     {
+      "title": "திருமூர்த்தி அணை",
+      "lines": [
+       "நீர்மட்டம் <b>45.30</b> அடி",
+       "உயரம் <b>60</b> அடி",
+       "வெளியேற்றம் <b>1,149</b> கனஅடி"
+      ]
+     },
+     {
+      "title": "அமராவதி அணை",
+      "lines": [
+       "நீர்மட்டம் <b>59.39</b> அடி",
+       "உயரம் <b>90</b> அடி",
+       "வெளியேற்றம் இல்லை"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "பரம்பிக்குளம் அணையில் நீர்மட்டம் 51.44 அடியாக உள்ளது. நேற்றைய நிலவரப்படி இந்த அளவு இருந்தது. அணையின் மொத்த உயரம் 72 அடி. வினாடிக்கு 52 கனஅடி நீர் வரவு உள்ளது. வினாடிக்கு 817 கனஅடி நீர் வெளியேற்றம் செய்யப்படுகிறது. ஆழியாறு அணையில் நீர்மட்டம் 65.50 அடி. அணையின் மொத்த உயரம் 120 அடி. வினாடிக்கு 201 கனஅடி நீர் வரவு உள்ளது. வினாடிக்கு 152 கனஅடி நீர் வெளியேற்றம் செய்யப்படுகிறது. திருமூர்த்தி அணையில் நீர்மட்டம் 45.30 அடி. அணையின் மொத்த உயரம் 60 அடி. வினாடிக்கு 853 கனஅடி நீர் வரவு உள்ளது. வினாடிக்கு 1,149 கனஅடி நீர் வெளியேற்றம் செய்யப்படுகிறது. அமராவதி அணையில் நீர்மட்டம் 59.39 அடி. அணையின் மொத்த உயரம் 90 அடி. வினாடிக்கு 103 கனஅடி நீர் வரவு உள்ளது. இந்த அணையில் நீர் வெளியேற்றம் இல்லை. பொள்ளாச்சியில் வானம் தெளிவாக இருக்கும். உடுமலையில் வானம் தெளிவாக இருக்கும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "💧 பொள்ளாச்சி, உடுமலை அணைகளில் நீர்மட்டம் - நேற்றைய நிலவரம்\n\n📰 முழு விவரம்:\nபரம்பிக்குளம் அணையில் 72 அடி உயரத்தில் 51.44 அடி நீர்மட்டம் உள்ளது. வினாடிக்கு 52 கனஅடி நீர் வரவு, 817 கனஅடி நீர் வெளியேற்றம் உள்ளது. ஆழியாறு அணையில் 120 அடி உயரத்தில் 65.50 அடி நீர்மட்டம் உள்ளது. வினாடிக்கு 201 கனஅடி நீர் வரவு, 152 கனஅடி நீர் வெளியேற்றம் உள்ளது. திருமூர்த்தி அணையில் 60 அடி உயரத்தில் 45.30 அடி நீர்மட்டம் உள்ளது. வினாடிக்கு 853 கனஅடி நீர் வரவு, 1,149 கனஅடி நீர் வெளியேற்றம் உள்ளது. அமராவதி அணையில் 90 அடி உயரத்தில் 59.39 அடி நீர்மட்டம் உள்ளது. வினாடிக்கு 103 கனஅடி நீர் வரவு உள்ளது, வெளியேற்றம் இல்லை. பொள்ளாச்சி மற்றும் உடுமலை பகுதிகளில் வானம் தெளிவாக காணப்படும்.\n\n📍 இடம்: பொள்ளாச்சி, உடுமலை\n🗓️ நாள்: நேற்று நிலவரம்\nℹ️ மக்கள் கவனத்திற்கு: அணைகளில் நீர் வெளியேற்றம் உள்ளதால் கீழ்நீர் பகுதிகளில் இருப்பவர்கள் கவனமாக இருக்கவும்.\n\nPollachi and Udumalai dam water levels | Coimbatore news\n📍 Pollachi, Udumalai, Coimbatore | 20 Nov 2026\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #CoimbatoreNews #கோவை",
+   "prompts": "A wide view of a large reservoir at Pollachi with its water level visibly lowered, showing a dam wall with sluice gates in the middle distance and a stretch of exposed dry bank along the shoreline. Water is flowing out from the lower gates in a white, churning spillway, marking active discharge downstream. The dam sits on the edge of the Western Ghats, with forested hills rising in the far background under a clear blue sky, typical of the Pollachi-Udumalai foothills near Coimbatore city. A few distant figures, a farmer and a couple of men in shirts and veshti, stand from behind on the concrete embankment, looking at the water. The light is bright daytime sun with a clear sky, and the camera is at eye level, 35 mm, wide enough to show the full dam and the hills. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the dam's concrete spillway and sluice gate structure at Thirumoorthy or Aliyar, with a steady sheet of water pouring out over the gate and foaming into the channel below. Metal gate machinery and rust-streaked concrete edges are clearly visible in the foreground, and the reservoir water line is visible behind the gate, low against the stone steps. Dry grass and scrubby forest edge the dam in the background. The light is clear daytime sun with no clouds, and the camera is slightly high, 35 mm, focused on the flowing water and gate to show the outflow and water level. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/source-coimbatore/4381138",
+   "published": "2026-11-20T04:24:02+05:30",
+   "verification": "DRAFT (groq/qwen/qwen3.8-27b) - NOT CLEAN, held from posting - problems: reel_script sentence 1 (heard in the first 3 seconds) must name the place 'பொள்ளாச்சி' and the news itself, e.g. 'பொள்ளாச்சி-இல் ... 3 பேர் கைது.' - viewers decide in 3 seconds whether the news is about their area",
+   "note": "free-model draft groq/qwen/qwen3.8-27b, 1 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795131413/kovaiminnal/ajzl9ddxiti6kxgppmfg.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795131419/kovaiminnal/vorfw7g0vosavovm0dvs.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "ஆன்லைன் மோசடியில் ₹4.59 லட்சம் இழப்பு: பொள்ளாச்சி, பெரியநாயக்கன்பாளையம், கணியூர் பகுதி மக்கள் பாதிப்பு",
+   "english_headline": "Online frauds cost three victims Rs 4.59 lakh across Pollachi, Periyanaickenpalayam and Kaniyur; police probe cyber crime",
+   "category": "Crime & Safety",
+   "location": "Pollachi, Periyanaickenpalayam and Kaniyur, Coimbatore district",
    "importance": "High",
    "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "குடிநீர் திட்டம்",
-    "loc": "சிறுவாணி, கோவை",
-    "hl1": "சிறுவாணியில் நீர்க்கசிவைத் தடுக்க ரூ.18",
-    "hl2": "தமிழக அரசு நிதி ஒதுக்கீடு",
+    "cat": "ஆன்லைன் மோசடி",
+    "loc": "பொள்ளாச்சி, நல்லிகவுண்டம்பாளையம்",
+    "hl1": "ஆன்லைன் மோசடியில் ₹4.59 லட்சம் இழப்பு",
+    "hl2": "3 பேர் ஏமாற்றப்பட்டனர்",
     "slides": [
      {
-      "title": "ரூ.18 கோடி நிதி",
+      "title": "முதல் மோசடி",
       "lines": [
-       "<b>சிறுவாணி</b> அணையின் நீர்க்கசிவைச் சரி செய்ய நிதி",
-       "<b>ரூ.18 கோடி</b> தொகையை ஒதுக்கியது தமிழக அரசு",
-       "கேரள நீர்ப்பாசனத் துறையிடம் விரைவில் வழங்கப்படும்"
+       "பொள்ளாச்சி, நல்லிகவுண்டம்பாளையம் பகுதியைச் சேர்ந்த <b>41",
+       "வேலை வாங்கித் தருவதாக <b>ரூ.1,72,217</b> மோசடி",
+       "கிரெடிட் கார்டு விவரங்களை மர்ம நபர்கள் பயன்படுத்தினர்"
       ]
      },
      {
-      "title": "நீர்க்கசிவு விவரம்",
+      "title": "இரண்டாவது மோசடி",
       "lines": [
-       "மதகு பகுதியில் தினமும் <b>1 கோடி</b> முதல் <b>1.5 கோடி</b>",
-       "புனே விஞ்ஞானிகள் <b>2025 ஜனவரியில்</b> ஆய்வு செய்தனர்",
-       "உயர் அழுத்த சிமென்ட் மூலம் துளைகள் அடைக்கப்படும்"
+       "பெரியநாயக்கன்பாளையம் பகுதியைச் சேர்ந்த <b>44 வயது</b> நபர் பாதிப்பு",
+       "போக்குவரத்து அபராதச் சீட்டு என்று வந்த செய்தியை நம்பினார்",
+       "வங்கிக் கணக்கிலிருந்து <b>ரூ.1,80,000</b> எடுக்கப்பட்டது"
       ]
      },
      {
-      "title": "ஆய்வும்",
+      "title": "மூன்றாவது மோசடி",
       "lines": [
-       "கடந்த <b>ஜூலை 4ல்</b> மாநகராட்சி ஆணையர் ரவி தேஜா ஆய்வு",
-       "தமிழக அரசுக்கு அறிக்கை சமர்ப்பிக்கப்பட்டது",
-       "அணை சீரமைப்புப் பணிகள் விரைவில் தொடங்கும்"
+       "கணியூர் பகுதியைச் சேர்ந்த <b>64 வயது</b> தொழிலதிபர் பாதிப்பு",
+       "பஞ்சாப் மாநிலம் லூதியானா நிறுவனத்துக்கு <b>ரூ.1,07,098</b>",
+       "இரும்புப் பொருள்கள் வரவில்லை; ஏமாற்றப்பட்டது தெரிந்தது"
       ]
      },
      {
-      "title": "முழு கொள்ளளவு",
+      "title": "போலீஸ் நடவடிக்கை",
       "lines": [
-       "நீர்க்கசிவு தடுக்கப்பட்டால் <b>650 மில்லியன்</b> கன அடி",
-       "கோவையின் குடிநீர்ப் பிரச்சினைக்குத் தீர்வு கிடைக்கும்",
-       "கேரள நீர்ப்பாசனத் துறை மூலம் பணிகள் நடைபெறும்"
+       "3 பேரின் புகார்களின் பேரில் சைபர் கிரைம் வழக்கு பதிவு",
+       "கோவை மாவட்ட சைபர் கிரைம் போலீசார் விசாரணை",
+       "தெரியாத எண், செயலி, செய்திகளை நம்ப வேண்டாம்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "சிறுவாணி அணையின் நீர்க்கசிவைச் சரி செய்யத் தமிழக அரசு 18 கோடி ரூபாய் ஒதுக்கியுள்ளது. கோவை மாநகரின் முக்கியக் குடிநீர் ஆதாரமாகச் சிறுவாணி அணை விளங்குகிறது. இந்த அணையின் மதகு பகுதியில் ஒரு நாளைக்கு 1 கோடி முதல் 1.5 கோடி லிட்டர் வரை நீர் கசிகிறது. இந்த நீர்க்கசிவைச் சரி செய்யப் புனே மத்திய நீர் ஆராய்ச்சி விஞ்ஞானிகள் குழு 2025 ஜனவரியில் ஆய்வு செய்தது. உயர் அழுத்தத்தில் சிமென்ட் கலவையைச் செலுத்தி இடைவெளிகளை அடைக்க முடிவு செய்யப்பட்டது. இதற்காகக் கேரள நீர்ப்பாசனத் துறை 18 கோடி ரூபாய் செலவு மதிப்பீடு வழங்கியது. ஜூலை 4ஆம் தேதி மாநகராட்சி ஆணையர் ரவி தேஜா சிறுவாணி அணையை ஆய்வு செய்து அரசுக்கு அறிக்கை அனுப்பினார். தற்போது தமிழக அரசு 18 கோடி ரூபாயை ஒதுக்கியுள்ளது. இந்தத் தொகை விரைவில் கேரள நீர்ப்பாசனத் துறையிடம் ஒப்படைக்கப்படும். சீரமைப்புப் பணி முடிந்ததும் அணையின் முழு கொள்ளளவான 650 மில்லியன் கன அடி நீரைத் தேக்க முடியும். இதனால் கோவை மாநகரக் குடிநீர்ப் பிரச்சினைக்கு நிரந்தரத் தீர்வு கிடைக்கும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "💧 சிறுவாணி அணை நீர்க்கசிவைச் சரி செய்ய ரூ.18 கோடி: தமிழக அரசு நிதி ஒதுக்கீடு\n\n📰 முழு விவரம்:\nகோவை மாநகரின் குடிநீர் ஆதாரமாக விளங்கும் சிறுவாணி அணையின் மதகு பகுதியில் ஒரு நாளைக்கு 1 கோடி முதல் 1.5 கோடி லிட்டர் வரை நீர் கசிந்து வீணாகிறது. இந்த நீர்க்கசிவைச் சரி செய்யப் புனே மத்திய நீர் மற்றும் மின் ஆராய்ச்சி நிலைய விஞ்ஞானிகள் 2025 ஜனவரியில் ஆய்வு செய்தனர். உயர் அழுத்தத்தில் சிமென்ட் கலவையைச் செலுத்தித் துளைகளை அடைக்க முடிவு செய்யப்பட்டது. இதற்கு ரூ.18 கோடி செலவாகும் என கேரள நீர்ப்பாசனத் துறை மதிப்பீடு வழங்கிய நிலையில், ஜூலை 4ம் தேதி மாநகராட்சி ஆணையர் ரவி தேஜா நேரில் ஆய்வு செய்து அரசுக்கு அறிக்கை அளித்தார். தற்போது ரூ.18 கோடி நிதியைத் தமிழக அரசு ஒதுக்கியுள்ளது.\n\n📍 இடம்: சிறுவாணி அணை, கோவை மாவட்டம்\n💰 ஒதுக்கப்பட்ட நிதி: ரூ.18 கோடி\n💧 நீர் இழப்பு: தினமும் 1 கோடி முதல் 1.5 கோடி லிட்டர்\n🎯 பயன்: அணையின் முழு கொள்ளளவான 650 மில்லியன் கன அடி வரை நீர் தேக்க முடியும்; குடிநீர்ப் பிரச்சினை தீரும்\n\nSiruvani dam leak repair works 18 crore allocated by TN govt | Coimbatore news\n📍 சிறுவாணி, கோவை மாவட்டம் | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Siruvani #CoimbatoreNews #கோவை",
-   "prompts": "A group of engineers and officials stand on the concrete spillway of the Siruvani Dam, inspecting a sluice gate from which water seeps and trickles down the wall, showing the leakage that the Rs 18 crore repair will seal. The setting is a reservoir dam in the Western Ghats foothills of Coimbatore district, with the dark green forested hills rising around a wide expanse of still grey-green reservoir water and the far background of misty ridges. Several men in shirts and trousers, seen from behind and at a distance, wear safety helmets and look at the gate, one holding a rolled plan or file, while a few concrete steps and metal railings guide the walkway. The light is soft daylight under an overcast sky, with pale clouds above the hills. The camera is at eye level, slightly high, with a 35 mm wide lens so the dam wall, the leaking gate, the reservoir and the hills all remain in the frame. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the leaking sluice gate area of the Siruvani Dam, where thin streams of water seep through cracks in the old grey concrete and drip down the wall into a shallow pool on the spillway. Rust-stained metal gate fittings and damp, moss-streaked stone surround the leaks, with a few wet patches showing where the water has been escaping every day. In the soft background, a corner of the greenish reservoir and a row of trees on the forested hillside are visible, slightly out of focus, while a worker's gloved hand in the distance points toward the cracks. The light is diffused daylight under an overcast sky, giving a flat, realistic tone. The camera is at close range, at eye level, with a 50 mm lens focused on the leaking concrete and the water trickling from it. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/tamil-nadu-government-allocated-rs-18-crores-to-repair-the-water-leakage-in-siruvani/4381041",
-   "published": "2026-11-19T22:52:41+05:30",
-   "verification": "DRAFT (gemini/gemini-3.5-flash) - NOT CLEAN, held from posting - problems: day word wrong: the draft says நாளை but its day (04 Jul) is over - write the day as it is TODAY (இன்று / நாளை from today) together with the date",
-   "note": "free-model draft gemini/gemini-3.5-flash, 1 attempt(s), 1 validator problem(s)",
+   "reel_script": "ஆன்லைன் மோசடியில் மூன்று பேர் மொத்தம் ரூ.4.59 லட்சம் இழந்துள்ளனர். பொள்ளாச்சி, நல்லிகவுண்டம்பாளையம் பகுதியைச் சேர்ந்த 41 வயது நபர் வேலை தேடி வந்தார். கடந்த 3ஆம் தேதி அவரை கைப்பேசியில் தொடர்பு கொண்ட மர்ம நபர் தனியார் நிறுவன ஊழியர் என்று அறிமுகப்படுத்திக்கொண்டார். வேலை வாங்கித் தருவதாகக் கூறி, ஷைன் ஜாப் ஹைரிங் என்ற செயலியைப் பதிவிறக்கம் செய்து கிரெடிட் கார்டு மூலம் பதிவுக் கட்டணம் செலுத்துமாறு கூறினார். பணம் செலுத்த முயன்றபோது அவரது கிரெடிட் கார்டு விவரங்களைப் பயன்படுத்தி ரூ.1,72,217 மோசடி செய்யப்பட்டது. பெரியநாயக்கன்பாளையம் பகுதியைச் சேர்ந்த 44 வயது நபரின் வாட்ஸ் ஆப் எண்ணுக்கு ஆர்டிஓ போக்குவரத்து அபராதச் சீட்டு என்ற பெயரில் ஒரு செய்தி வந்தது. அதில் கேட்கப்பட்ட ஆதார் எண், கைப்பேசி எண் உள்ளிட்ட தனிப்பட்ட விவரங்களை அவர் பதிவு செய்தார். இதையடுத்து அவரது வங்கிக் கணக்கிலிருந்து ரூ.1,80,000 எடுக்கப்பட்டது. கணியூர் பகுதியைச் சேர்ந்த 64 வயது தொழிலதிபர் பஞ்சாப் மாநிலம் லூதியானாவில் உள்ள நிறுவனத்திடம் 1,100 கிலோ இரும்புப் பொருள்களை ஆர்டர் செய்தார். கடந்த மாதம் 29ஆம் தேதி கூகுள் பே மூலம் ரூ.1,07,098 அனுப்பினார். ஆனால் பொருள்கள் எதுவும் அனுப்பப்படவில்லை. விசாரித்தபோது அவர் ஏமாற்றப்பட்டது தெரியவந்தது. பாதிக்கப்பட்ட மூவரும் அளித்த புகார்களின் பேரில் கோவை மாவட்ட சைபர் கிரைம் போலீசார் வழக்குப் பதிவு செய்து விசாரணை நடத்தி வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 பொள்ளாச்சி, பெரியநாயக்கன்பாளையம், கணியூரில் ஆன்லைன் மோசடி: 3 பேரிடம் ₹4.59 லட்சம் பறிப்பு\n\n📰 முழு விவரம்:\nகோவை மாவட்டத்தில் வெவ்வேறு நபர்களிடம் ஆன்லைன் மூலம் மொத்தம் ரூ.4.59 லட்சம் மோசடி செய்யப்பட்டுள்ளது. இது குறித்து போலீசார் விசாரணை நடத்தி வருகின்றனர்.\nபொள்ளாச்சி, நல்லிகவுண்டம்பாளையம் பகுதியைச் சேர்ந்த 41 வயது நபர் வேலை தேடி வந்தார். கடந்த 3ஆம் தேதி கைப்பேசியில் தொடர்பு கொண்ட மர்ம நபர், வேலை வாங்கித் தருவதாகக் கூறி ஷைன் ஜாப் ஹைரிங் செயலியைப் பதிவிறக்கம் செய்து கிரெடிட் கார்டு மூலம் பதிவுக் கட்டணம் செலுத்துமாறு கூறினார். பணம் செலுத்த முயன்றபோது ரூ.1,72,217 மோசடி செய்யப்பட்டது.\nபெரியநாயக்கன்பாளையம் பகுதியைச் சேர்ந்த 44 வயது நபருக்கு ஆர்டிஓ போக்குவரத்து அபராதச் சீட்டு என்ற பெயரில் வாட்ஸ் ஆப்பில் செய்தி வந்தது. அதில் ஆதார் எண், கைப்பேசி எண் உள்ளிட்ட விவரங்களைப் பதிவு செய்தார். இதையடுத்து அவரது வங்கிக் கணக்கிலிருந்து ரூ.1,80,000 எடுக்கப்பட்டது.\nகணியூர் பகுதியைச் சேர்ந்த 64 வயது தொழிலதிபர், பஞ்சாப் மாநிலம் லூதியானாவில் உள்ள நிறுவனத்திடம் 1,100 கிலோ இரும்புப் பொருள்களை ஆர்டர் செய்து, கடந்த மாதம் 29ஆம் தேதி கூகுள் பே மூலம் ரூ.1,07,098 அனுப்பினார். பொருள்கள் வரவில்லை; விசாரித்தபோது ஏமாற்றப்பட்டது தெரியவந்தது.\nபாதிக்கப்பட்ட மூவரின் புகார்களின் பேரில் கோவை மாவட்ட சைபர் கிரைம் போலீசார் வழக்குப் பதிவு செய்துள்ளனர்.\n\nOnline fraud Pollachi, Periyanaickenpalayam, Kaniyur | Coimbatore news\n📍 பொள்ளாச்சி, பெரியநாயக்கன்பாளையம், கணியூர் | கோவை மாவட்டம்\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #CoimbatoreNews #கோவை",
+   "prompts": "A Tamil Nadu cyber crime police officer in khaki uniform sits at a desk in a police station office in Coimbatore, examining a stack of complaint papers and a mobile phone placed in front of him, while a middle-aged man in a shirt stands at the counter with his back to the camera. The room is a plain government office with a wooden desk, a steel almirah and a ceiling fan, the window showing a Coimbatore street in daylight. The officer and the complainant are seen from behind or at a distance, faces not visible. Two smartphones and a credit card lie on the desk next to a spiral-bound complaint register, and a woman in a cotton saree waits on a bench near the wall. It is bright daylight coming through the window. The camera is at eye level, about 35 mm, wide enough to show the office and the desk. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a mobile phone lying on a wooden desk beside a credit card and a folded bank passbook, all placed on top of a handwritten complaint paper in a police station in Coimbatore. A khaki-uniformed police officer's hand rests on the edge of the paper, the sleeve cropped out of frame. Behind the desk, a steel almirah and a few stacked files are blurred. Natural daylight falls across the desk from a side window, casting soft shadows. The phone screen is dark and shows no readable content, and no text on the cards or papers is visible. The camera is slightly high and close, about 50 mm, focused on the phone and card with the desk surface filling the frame. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/19/ஆன்லைன்-மூலம்-வெவ்வேறு-நபா்களிடம்-ரூ459-லட்சம்-மோசடி",
+   "published": "2026-11-19T21:13:42.491Z",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: hl1 (the first headline on screen) must name the place 'பொள்ளாச்சி', e.g. 'பொள்ளாச்சி: ...' or 'பொள்ளாச்சி-இல் ...' - viewers share news of their own area",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795117010/kovaiminnal/j7cjr9tu8xz7or927ppa.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795117015/kovaiminnal/wxgfzypzmlxmebntcbe3.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795131426/kovaiminnal/ykaotz0ztsamzjvpdi3v.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795131429/kovaiminnal/wsvc2o6hvly2jywx0gqx.jpg"
    ]
   }
  ]
