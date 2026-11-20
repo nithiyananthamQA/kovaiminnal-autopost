@@ -1,10 +1,23 @@
-writing [N]: பொள்ளாச்சி டாப்சிலிப் பகுதியில் சாலையை கம்பீரமாக கடந்த சிறுத
+writing [N]: பெரியார் அறிவுலக விவகாரம்; அதிகாரிகள் மீது ஏன் வழக்குப்பதிவு
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high d
+ok gemini/gemini-3.6-flash (36s)
+attempt 1 gemini/gemini-3.6-flash: 1 problems
+  sentence 1 (one-line story) has 17 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3.6-flash (51s)
+attempt 2 gemini/gemini-3.6-flash: 2 problems
+  reel_script has letters of another script (설명을) - write only Tamil (and English names)
+  letters of another script inside Tamil words: 명 설 을 - write every word only in Tamil letters
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3.6-flash (50s)
+attempt 3 gemini/gemini-3.6-flash: 2 problems
+  sentence 1 (one-line story) has 17 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  not grounded: location 'நகரம்' is not in the article
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
   "error": {
     "code": 429,
@@ -14,92 +27,69 @@ fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please che
-fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 503: {
+dead for this round: gemini/gemini-3.5-flash
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {
   "error": {
     "code": 503,
-    "message": "This model is currently experiencing high d
-switching away from gemini/gemini-3.5-flash for 10 min
-ok gemini/gemini-3-flash-preview (15s)
-attempt 1 gemini/gemini-3-flash-preview: 1 problems
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): கோவை ('வனத்துறையால் நடத்தப்படும் வேன் சபாரி மற்றும் அதிகாலை-மாலை நே'); கோவை ('இந்த வீடியோ தற்போது இணையத்தில் வைரலாக பரவி வருகிறது.பொள்ளாச்'); வால்பாறை ('இந்த வீடியோ தற்போது இணையத்தில் வைரலாக பரவி வருகிறது.பொள்ளாச்')
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok gemini/gemini-3-flash-preview (17s)
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok gemini/gemini-3-flash-preview (38s)
-factcheck by gemini/gemini-3-flash-preview: 3 problems
-  The reel_script says the leopard crossed 'மெதுவாக' (slowly), but the article says 'கம்பீரமாக' (majestically)
-  The caption mentions the date 'நவம்பர் 19' (November 19), which is not in the article
-  The article states the video shows a tiger ('புலி') crossing, but the draft describes it as a video of the leopard
-attempt 2 gemini/gemini-3-flash-preview: 3 problems
-  fact-check: The reel_script says the leopard crossed 'மெதுவாக' (slowly), but the article says 'கம்பீரமாக' (majestically)
-  fact-check: The caption mentions the date 'நவம்பர் 19' (November 19), which is not in the article
-  fact-check: The article states the video shows a tiger ('புலி') crossing, but the draft describes it as a video of the leopard
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, plea
-dead for this round: gemini/gemini-3-flash-preview
-fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {"error":{"message":"Failed to generate JSON. Please adjust your prompt. See 'failed_gener
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
-free models unavailable: no free model answered: groq qwen/qwen3.8-27b 413: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
-ok anthropic/claude-haiku-5-5
-claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): வால்பாறை ('இந்த வீடியோ தற்போது இணையத்தில் வைரலாக பரவி வருகிறது.பொள்ளாச்')
-ok anthropic/claude-haiku-5-5
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok groq/openai/gpt-oss-120b (4s)
-factcheck by groq/openai/gpt-oss-120b: 0 problems
-claude rewrite 2 anthropic/claude-haiku-5-5: 0 problems
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
-fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
-switching away from groq/openai/gpt-oss-120b for 10 min
+    "message": "This model is currently experiencing 
+fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
+poor answer - skipped for 30 min: gemini/gemini-3-flash-preview
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {"error":{"message":"Failed to validate JSON. Please adjust your prompt. See 'failed_gener
 ok groq/qwen/qwen3.8-27b (4s)
+attempt 4 groq/qwen/qwen3.8-27b: 3 problems
+  reel_script must tell how the story ENDED, as the article's last lines say ('- காவல்துறைக்கு ஐகோர்ட்டு கேள்வி') - say what finally happened (complaint, action promised, released, arrested, case filed, how long it lasted); never write that details are unknown
+  sentence 1 (one-line story) has 14 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  reel_script sentence 1 is a teaser ('?'): state the news itself in the first 3 seconds - what happened, where, the number or result - never a question or 'shocking incident'
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
-free fact-check unavailable, using Claude: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model 
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+switching away from groq/qwen/qwen3.8-27b for 10 min
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {"error":{"message":"Failed to generate JSON. Please adjust your prompt. See 'failed_gener
+free models unavailable: no free model answered: groq openai/gpt-oss-120b 400: {"error":{"message":"Failed to generate JSON. Please adjust your p
 ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 4 problems
-  Caption says the leopard crossing happened 'நேற்று' (yesterday) and that tourists were carried 'நேற்று', but the article only says tourists came 'நேற்று' for the safari - the leopard sighting timing is not explicitly stated as yesterday; minor date attribution.
-  Caption adds 'என்று கூறப்படுகிறது' and says crossings are a regular occurrence - article supports this, but caption's English tail line 'Leopard crosses road at Topslip, Pollachi | Coimbatore news' is an added English headline not from the article (not a factual claim, but an invented phrasing).
-  reel_script states the safari vehicle was 'வனத்துறை சபாரி வாகனம் சென்றுகொண்டிருந்தபோது' - consistent, but the reel_script omits the forest department's warning being directed at tourists specifically; not a factual error.
-  reel_script says the leopard was seen at 'எருமைப்பாறை பகுதியில்' - consistent with article; no issue.
-proofread rejected (4 problems)
-  fact-check: Caption says the leopard crossing happened 'நேற்று' (yesterday) and that tourists were carried 'நேற்று', but the article only says tourists came 'நேற்று' for the safari - the leopard sighting timing is not explicitly stated as yesterday; minor date attribution.
-  fact-check: Caption adds 'என்று கூறப்படுகிறது' and says crossings are a regular occurrence - article supports this, but caption's English tail line 'Leopard crosses road at Topslip, Pollachi | Coimbatore news' is an added English headline not from the article (not a factual claim, but an invented phrasing).
-  fact-check: reel_script states the safari vehicle was 'வனத்துறை சபாரி வாகனம் சென்றுகொண்டிருந்தபோது' - consistent, but the reel_script omits the forest department's warning being directed at tourists specifically; not a factual error.
-  fact-check: reel_script says the leopard was seen at 'எருமைப்பாறை பகுதியில்' - consistent with article; no issue.
+claude rewrite 1 anthropic/claude-haiku-5-5: 2 problems
+  reel_script must tell how the story ENDED, as the article's last lines say ('- காவல்துறைக்கு ஐகோர்ட்டு கேள்வி') - say what finally happened (complaint, action promised, released, arrested, case filed, how long it lasted); never write that details are unknown
+  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 2 problems
+  reel_script must tell how the story ENDED, as the article's last lines say ('- காவல்துறைக்கு ஐகோர்ட்டு கேள்வி') - say what finally happened (complaint, action promised, released, arrested, case filed, how long it lasted); never write that details are unknown
+  sentence 1 (one-line story) has 21 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 2 problems
+  reel_script must tell how the story ENDED, as the article's last lines say ('- காவல்துறைக்கு ஐகோர்ட்டு கேள்வி') - say what finally happened (complaint, action promised, released, arrested, case filed, how long it lasted); never write that details are unknown
+  hl1 (the first headline on screen) must name the place 'கோவை', e.g. 'கோவை: ...' or 'கோவை-இல் ...' - viewers share news of their own area
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
-ok anthropic/claude-haiku-5-5
-real photo step skipped for 'Leopard crosses road at Topslip, Pollach': real photos switched off
+ok groq/openai/gpt-oss-120b (6s)
+proofread rejected (3 problems)
+  reel_script has 78 words; need 81-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  sentence 1 (one-line story) has 18 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  caption must contain the exact follow line
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+ok groq/openai/gpt-oss-120b (4s)
+real photo step skipped for 'Chennai High Court questions police over': real photos switched off
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+image match check unavailable: gemini-3.5-flash: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout
 image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 2 for 'Leopard crosses road at Topslip, Pollach'
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261120-1306","first":"RN-171"}
+images made: 2 for 'Chennai High Court questions police over'
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261120-1711","first":"RN-172"}
 posting job started at once
 earlier stories still waiting for images: []
 instagram check: 50 recent posts read from the page
 pick round: only the picked links are written (research_free/pick.py)
-manual link added: https://www.maalaimalar.com/amp/story/news/tamilnadu/leopard-crossing-the-road
+manual link added: https://www.dailythanthi.com/news/tamilnadu/periyars-intellectual-affair-why-were-no-cases-registered-against-the-officials-hc-questions-the-police
 candidate filter: collected=1
 to write: 1 Coimbatore district candidates (max 1 stories)
 round: top 1 of 1 candidates
 candidates waiting: 1 Coimbatore; time left 79 min
-try (N) manual=True: https://www.maalaimalar.com/amp/story/news/tamilnadu/leopard
+try (N) manual=True: https://www.dailythanthi.com/news/tamilnadu/periyars-intelle
 auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})
 posting job started at once
-candidate loop ended: left 0, tried={'N': 1}, done={'N': 1}, time left 76 min
+candidate loop ended: left 0, tried={'N': 1}, done={'N': 1}, time left 73 min
 filed: 1 Coimbatore district stories (target 1), reels only
 queue: 0 news waiting to be written
 All News sheet: {"ok":true,"added":1,"updated":0} 
