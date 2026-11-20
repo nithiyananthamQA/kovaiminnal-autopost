@@ -25,7 +25,8 @@
    "category": "பொது",
    "score": 8.0,
    "power_cut": false,
-   "listed_at": "2026-11-20T21:01:30.084189+05:30"
+   "listed_at": "2026-11-20T21:01:30.084189+05:30",
+   "picked_at": "2026-11-20T22:04:35.054728+05:30"
   },
   "C4e8ef3d": {
    "id": "C4e8ef3d",
@@ -37,7 +38,8 @@
    "category": "பொது",
    "score": 7.0,
    "power_cut": false,
-   "listed_at": "2026-11-20T21:01:30.084189+05:30"
+   "listed_at": "2026-11-20T21:01:30.084189+05:30",
+   "picked_at": "2026-11-20T22:04:35.054729+05:30"
   },
   "Cb7cee39": {
    "id": "Cb7cee39",
@@ -97,7 +99,8 @@
    "category": "சாலை",
    "score": 6.36,
    "power_cut": false,
-   "listed_at": "2026-11-20T21:01:30.084189+05:30"
+   "listed_at": "2026-11-20T21:01:30.084189+05:30",
+   "picked_at": "2026-11-20T22:04:35.054731+05:30"
   },
   "C7f70cc6": {
    "id": "C7f70cc6",
@@ -193,7 +196,8 @@
    "category": "குற்றம்",
    "score": 11.11,
    "power_cut": false,
-   "listed_at": "2026-11-20T22:03:52.319038+05:30"
+   "listed_at": "2026-11-20T22:03:52.319038+05:30",
+   "picked_at": "2026-11-20T22:04:35.054726+05:30"
   }
  },
  "rounds": {
@@ -944,8 +948,22 @@
    ],
    "sent": false,
    "deadline": "2026-11-20T23:03:52.319038+05:30",
-   "decided": null,
-   "written": []
+   "decided": {
+    "how": "automatic: top 4 of 15 by insights",
+    "ids": [
+     "Cede651d",
+     "Cd4dfb18",
+     "C4e8ef3d",
+     "C0b8d4da"
+    ],
+    "at": "2026-11-20T22:04:35.054715+05:30"
+   },
+   "written": [
+    "C0b8d4da",
+    "C4e8ef3d",
+    "Cd4dfb18",
+    "Cede651d"
+   ]
   }
  },
  "retry": {}
