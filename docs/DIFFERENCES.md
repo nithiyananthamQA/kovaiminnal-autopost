@@ -194,3 +194,14 @@ Llama - the reference writes with Gemini then Groq, Claude only when both fail).
   channel"; config instagram.shared_token_page ""), so a problem on one page never reaches another.
 - Place lists, power-cut searches, papers and the picture prompt's city look = the REFERENCE's own Salem values
   (news360-tn/salem360-autopost, tools/ref_lists.py -> districts/ref_lists/salem.json) - same as his Salem page, not a difference.
+
+## Tiruvallur Minnal = a full-news page (owner 20 Nov: "this district is for full news like others"; "dont live as of now")
+
+- Every job, like Chennai (no `jobs` list); its OWN Meta app token + Apps Script, and its OWN free AI accounts on a new e-mail (owner
+  20 Nov) - Kovai's free AI keys are never copied; Claude (paid) = Kovai's key, only when every free AI fails ("when free fails then
+  only paid"). The reference has no Tiruvallur page, so its lists are ours (tools/make_page.py AREAS / CITY_LOOK, like Chennai).
+- Ours: AREAS `roads` -> CITY_ROADS = "சென்னையை அடுத்த / சென்னை அருகே ..." taken out before the other-district / state check (the papers
+  write Tiruvallur news as "near Chennai"; without it such a story counted as Chennai news and never made a round's top).
+- Gold rate: Chennai's rate pages (`gold_city`) - the four rate sites have no Tiruvallur page (3 of 4 answer 404, 20 Nov).
+- Avadi / Poonamallee / Thiruverkadu / Minjur / Redhills news may post on Chennai AND Tiruvallur (owner 20 Nov: both pages).
+- `live: False` in make_page.PAGE until the owner says go: the timer never starts it, every push keeps all its jobs off.

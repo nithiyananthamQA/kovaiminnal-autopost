@@ -60,3 +60,42 @@ class PowerCutPage19Nov(unittest.TestCase):
         src = make_page.allnews_values((ROOT / "research_free" / "allnews.py").read_text(encoding="utf-8"), d, PL)
         self.assertNotIn("SALEM_WORDS", src)      # his name for the list is ours (COIMBATORE_WORDS)
         self.assertIn("ஆத்தூர்", src)
+
+
+class NotLivePage20Nov(unittest.TestCase):
+    """owner 20 Nov: Tiruvallur = full news like Chennai, set up but "dont live as of now" - no job of it ever starts"""
+    def test_timer_never_starts_a_page_that_is_not_live(self):
+        import tempfile, make_timer, make_page
+        from unittest import mock
+        with tempfile.TemporaryDirectory() as home:
+            (Path(home) / "tiruvallurminnal-autopost" / ".github" / "workflows").mkdir(parents=True)
+            with mock.patch.object(Path, "home", return_value=Path(home)):
+                repos = make_timer.build()["repos"]
+        self.assertNotIn("nithiyananthamQA/tiruvallurminnal-autopost", repos)
+        self.assertIs(make_page.PAGE["tiruvallur"]["live"], False)
+
+    def test_sync_switches_every_job_off_until_live(self):
+        import json, make_page
+        from unittest import mock
+        calls = []
+
+        def run(cmd, cwd, check=True):
+            calls.append(cmd)
+            out = json.dumps([{"path": ".github/workflows/pick.yml", "state": "active"},
+                              {"path": ".github/workflows/post.yml", "state": "disabled_manually"}]) if "list" in cmd else ""
+            return mock.Mock(returncode=0, stdout=out, stderr="")
+        with mock.patch.object(sync_pages, "run", run):
+            sync_pages.only_jobs("tiruvallur")
+        self.assertIn(["gh", "workflow", "disable", "pick.yml", "-R", "nithiyananthamQA/tiruvallurminnal-autopost"], calls)
+        self.assertEqual(sum("disable" in c for c in calls), 1)
+
+    def test_full_news_page_values(self):
+        import json, make_page
+        sys.path.insert(0, str(ROOT / "districts"))
+        d, PL = make_page.page_values("tiruvallur")
+        self.assertIsNone(d.get("jobs"))      # every job, like Chennai
+        cfg = make_page.config_values(json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8")), d, PL)
+        self.assertEqual(cfg["instagram"]["shared_token_page"], "")      # its own Meta app token
+        src = make_page.allnews_values((ROOT / "research_free" / "allnews.py").read_text(encoding="utf-8"), d, PL)
+        self.assertIn("சென்னையை அடுத்த", src)      # CITY_ROADS: "near Chennai" is taken out before the other-district check
+        self.assertEqual(make_page.ref_lists("tiruvallur"), {})

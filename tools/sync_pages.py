@@ -31,8 +31,8 @@ def run(cmd, cwd, check=True):
 def only_jobs(key):
     """19 Nov: a power-cut-only page (make_page.PAGE[key]["jobs"]) keeps every other workflow OFF on GitHub - a workflow file that is
     new in Kovai arrives switched on, so this runs after every push (needs GH_TOKEN, as /tmp/push.sh sets)."""
-    keep = make_page.PAGE[key].get("jobs")
-    if not keep:
+    keep = [] if make_page.PAGE[key].get("live") is False else make_page.PAGE[key].get("jobs")      # 20 Nov: not live yet = every job off
+    if keep is None:
         return
     repo = make_page.PAGE[key]["repo"]
     r = run(["gh", "workflow", "list", "--all", "-R", repo, "--json", "path,state"], ROOT, check=False)

@@ -387,7 +387,8 @@ def district_images(pg, key, d):
                               handle=d["handle"], ta_font=DIST_TA), 2160, 400, home / "footer.png")
     out = home / "upload"      # only for uploading by hand to Instagram / Facebook (git-ignored)
     shot(pg, simple_logo_html(1080, line1=d["ta"]), 1080, 1080, out / "profile_1080.png")
-    shot(pg, simple_cover_html(ta=d["ta"], sub=f"{d['en'].upper()} POWER CUT ALERTS · FAST · EVERY DAY"), 1640, 624, out / "fb_cover_1640x624.png",
+    sub = d.get("cover_sub") or f"{d['en'].upper()} POWER CUT ALERTS · FAST · EVERY DAY"      # cover_sub: a full-news page (Tiruvallur, 20 Nov)
+    shot(pg, simple_cover_html(ta=d["ta"], sub=sub), 1640, 624, out / "fb_cover_1640x624.png",
          transparent=False)
 
 

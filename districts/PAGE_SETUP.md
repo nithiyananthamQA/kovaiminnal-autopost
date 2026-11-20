@@ -97,6 +97,20 @@ bot salem-bot, Sheet "Salem Minnal Log", repo nithiyananthamQA/salemminnal-autop
 - Kovai-place tests fail on a page with the reference's lists → REF_PLACE_TESTS skip them (make_page).
 - Worker TIMER_URL/TIMER_KEY are not in .env → the page's posting chain sleeps on GitHub (11 min) when 2+ cuts wait. Fix later.
 
+## FULL-NEWS PAGE (Tiruvallur, 20 Nov 2026; owner: "this district is for full news like others") - the one-day runbook above, plus:
+
+- texts in districts/districts.json are the NEWS ones (ig_name `<City> Minnal | <City> News`, ig_bio / fb_intro like Chennai's, `cover_sub`
+  `<CITY> NEWS · FAST · EVERY DAY` for the Facebook cover) → `python3 tools/make_brand.py --districts <key>` → owner OKs the texts first
+  (Instagram allows 2 name changes per 14 days).
+- PAGE[<key>]: NO `jobs` (every job, like Chennai), `own_token` True, no `ref` unless the reference runs the district, `gold_city` when
+  the gold-rate sites have no page for the town (Tiruvallur reads Chennai), `live: False` until the owner says go (make_timer never
+  starts it, sync_pages switches every job off).
+- AREAS[<key>]: ta / services / en / section, and `roads` = words taken out before the other-district check ("சென்னையை அடுத்த").
+  CITY_LOOK[<key>]. Test headlines in make_page.PAGE_TEST.
+- Own FREE AI accounts on a NEW e-mail (owner 20 Nov): Gemini, Groq, NVIDIA, Cloudflare (Workers AI token), Cloudinary (cloud + unsigned
+  preset + API key/secret) → `.env` `<CITY>_*` lines. Claude (paid) = Kovai's key, only when every free AI fails (llm.py default).
+- `bash /tmp/<key>_setup.sh` stops when a `<CITY>_*` line is empty; it never copies Kovai's free AI keys.
+
 ## Rules (learned the hard way)
 
 - At most **1 new Instagram account and 1 new Facebook page per day**. Edit one Instagram account at a time, slowly.
@@ -175,3 +189,4 @@ One minnal-bot token for ALL pages (owner 14 Nov: "same account for Chennai and 
 | Kovai Minnal | 61596710992967 ✅ | kovai_minnal ✅ (17841410844667843), name pending (owner, phone) | ✅ | ✅ shared token (FB page 1475639385631396) | after push |
 | Madurai | dropped | maduraiminnal suspended | – | – | – |
 | Salem Minnal (power cuts only, 19 Nov) | 1415768578293777 ✅ | salem_minnal ✅ (17841453291685225) | ✅ salem-bot, app Salem Pages | ✅ own token + own Apps Script | after salem_live.sh |
+| Tiruvallur Minnal (FULL news, 20 Nov) | ✅ made (profile 61596457243906); portfolio add = owner ticks terms | tiruvallur_minnal - owner, phone | app Tiruvallur Pages + tiruvallur-bot - next | own AI keys (new e-mail) - owner | NOT live (owner: later) |

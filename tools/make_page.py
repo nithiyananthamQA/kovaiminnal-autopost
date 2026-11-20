@@ -37,7 +37,14 @@ PAGE = {"chennai": {"fb_page_id": "1450975134763291", "repo": "nithiyananthamQA/
         "salem": {"fb_page_id": "1415768578293777", "ig_user_id": "17841453291685225", "handle": "salem_minnal",      # 19 Nov, salem-bot token
                   "repo": "nithiyananthamQA/salemminnal-autopost", "folder": "salemminnal",
                   "bot": "salemminnal-bot", "own_token": True, "ref": "news360-tn/salem360-autopost",
-                  "jobs": POWERCUT_JOBS}}
+                  "jobs": POWERCUT_JOBS},
+        # owner 20 Nov: "this district is for full news like others" - every job (like Chennai), its OWN Meta app token + Apps Script and
+        # its OWN free AI accounts (new e-mail; secrets from the TIRUVALLUR_* lines of .env). The reference has no Tiruvallur page (no `ref`).
+        # gold_city: the gold-rate sites have no Tiruvallur page (3 of 4 answer 404, 20 Nov) - the Chennai rate is read.
+        "tiruvallur": {"fb_page_id": "", "ig_user_id": "", "handle": "tiruvallur_minnal",
+                       "repo": "nithiyananthamQA/tiruvallurminnal-autopost", "folder": "tiruvallurminnal",
+                       "bot": "tiruvallurminnal-bot", "own_token": True, "gold_city": "chennai",
+                       "live": False}}      # owner 20 Nov: "dont live as of now ... only finish setups" - no job runs (timer, sync) until True
 
 # owner 18 Nov ("chennai is the most populated city ... add even more small areas", suburbs: yes): the copy had only "சென்னை" as a
 # place word, so the page could not tell a Chennai area story from a state story datelined Chennai, and every pin said "சென்னை".
@@ -84,6 +91,34 @@ AREAS = {"chennai": {
     # state politics datelined Chennai is not Chennai news (21:00 list 17 Nov: TVK / Mekedatu / Thiruparankundram statements)
     "politics": ["தவெக", "திமுக", "அதிமுக", "பாஜக", "காங்கிரஸ்", "நாம் தமிழர்", "பாமக", "விசிக", "மதிமுக", "தேமுதிக", "சட்டப்பேரவை",
                  "தலைமைச் செயலக", "ஆளுநர்"],
+},
+    # owner 20 Nov (full-news page): Tiruvallur district = 9 taluks since the 2018 Chennai expansion - Avadi, Poonamallee, Tiruvallur,
+    # Uthukottai, Ponneri, Gummidipoondi, Tiruttani, Pallipattu, R.K. Pet. Avadi / Poonamallee / Thiruverkadu / Minjur / Redhills are in
+    # Chennai's list too (the suburbs people call Chennai) - owner 20 Nov: such news goes on both pages. Names that are also towns
+    # elsewhere (திருவாலங்காடு, பூண்டி alone, அத்திப்பட்டு, வல்லூர், ஆரம்பாக்கம்) are left out.
+    "tiruvallur": {
+        "ta": ["திருவள்ளூர்", "திருவள்ளுர்", "ஆவடி", "பட்டாபிராம்", "திருநின்றவூர்", "திருமுல்லைவாயல்", "திருமுல்லைவாயில்", "கோவில்பதாகை",
+               "மிட்டனமல்லி", "நெமிலிச்சேரி", "பூந்தமல்லி", "பூவிருந்தவல்லி", "திருவேற்காடு", "திருமழிசை", "ஐயப்பன்தாங்கல்", "நசரத்பேட்டை",
+               "வேலப்பன்சாவடி", "குமணன்சாவடி", "வெள்ளவேடு", "மணவாளநகர்", "மணவாள நகர்", "காக்களூர்", "புட்லூர்", "திருப்பாச்சூர்",
+               "செவ்வாப்பேட்டை", "வேப்பம்பட்டு", "கடம்பத்தூர்", "பெரியபாளையம்", "ஊத்துக்கோட்டை", "தாமரைப்பாக்கம்", "பொன்னேரி", "மீஞ்சூர்",
+               "பழவேற்காடு", "கும்மிடிப்பூண்டி", "கும்மிடிபூண்டி", "கவரைப்பேட்டை", "எளாவூர்", "சோழவரம்", "காட்டுப்பள்ளி", "செங்குன்றம்",
+               "திருத்தணி", "பள்ளிப்பட்டு", "ஆர்.கே.பேட்டை", "ஆர்.கே. பேட்டை", "ஆர்கே பேட்டை", "பொதட்டூர்பேட்டை", "கனகம்மாசத்திரம்"],
+        # district services / landmarks: a story about them is Tiruvallur news even without a town name
+        "services": ["ஆவடி மாநகராட்சி", "ஆவடி காவல் ஆணையரக", "திருத்தணி முருகன்", "வீரராகவ பெருமாள்", "பூண்டி ஏரி", "புழல் ஏரி", "சோழவரம் ஏரி",
+                     "பழவேற்காடு ஏரி", "கும்மிடிப்பூண்டி சிப்காட்", "காமராஜர் துறைமுக", "காட்டுப்பள்ளி துறைமுக", "கனரக வாகன தொழிற்சாலை",
+                     "பெரியபாளையம் பவானி அம்மன்"],
+        "en": ["Tiruvallur", "Thiruvallur", "Avadi", "Pattabiram", "Thiruninravur", "Tirunindravur", "Thirumullaivoyal", "Poonamallee",
+               "Thiruverkadu", "Tiruverkadu", "Thirumazhisai", "Iyyappanthangal", "Nazarethpet", "Velappanchavadi", "Kumananchavadi",
+               "Manavalanagar", "Kakkalur", "Putlur", "Sevvapet", "Veppampattu", "Kadambathur", "Periyapalayam", "Uthukottai", "Ponneri",
+               "Minjur", "Pulicat", "Pazhaverkadu", "Gummidipoondi", "Kavaraipettai", "Elavur", "Sholavaram", "Kattupalli", "Red Hills",
+               "Redhills", "Tiruttani", "Thiruttani", "Pallipattu", "R.K. Pet", "RK Pet", "Pothatturpet", "Nemilichery", "Thamaraipakkam"],
+        # a power-cut notice filed under Chennai / a state-wide list passes with one of these in its title (the big towns of the district)
+        "section": ["திருவள்ளூர்", "ஆவடி", "பூந்தமல்லி", "பொன்னேரி", "கும்மிடிப்பூண்டி", "திருத்தணி", "திருவேற்காடு", "மீஞ்சூர்"],
+        # "சென்னையை அடுத்த ஆவடியில்" (Avadi, near Chennai) is how the papers write Tiruvallur news: these words are taken out before the
+        # other-district / state check (CITY_ROADS), else every such story counted as Chennai news and never made a round's top
+        "roads": ["சென்னையை அடுத்துள்ள", "சென்னையை அடுத்த", "சென்னை அருகே", "சென்னை அருகில்", "சென்னை புறநகர்", "சென்னை-திருவள்ளூர்",
+                  "சென்னை - திருவள்ளூர்", "சென்னை-திருப்பதி", "சென்னை - திருப்பதி", "சென்னை-பெங்களூரு", "சென்னை - பெங்களூரு",
+                  "சென்னை-கொல்கத்தா", "சென்னை - கொல்கத்தா", "சென்னை வெளிவட்ட சாலை", "சென்னை புறவழிச்சாலை", "near Chennai"],
 }}
 
 SKIP = re.compile(r"^(districts/|apps_script/Code\.districts\.gs$|\.github/workflows/district_powercut\.yml$|tests/test_district|"
@@ -153,6 +188,22 @@ class PageValues(unittest.TestCase):
         self.assertTrue(F.same_cut_areas(a_h, a_s, "2026-11-20", "சென்னை: நாளை மின்தடை", "நாளை (நவம்பர் 21) அடையாறு, வேளச்சேரி பகுதிகள்.", "2026-11-20"))
         self.assertFalse(F.same_cut_areas(a_h, a_s, "2026-11-20", "சென்னையில் நாளை மின்தடை", "நாளை (நவம்பர் 21) தாம்பரம், குரோம்பேட்டை பகுதிகளில் மின்தடை.", "2026-11-20"))
 
+    def test_tiruvallur_area_news(self):      # owner 20 Nov: "சென்னையை அடுத்த ஆவடியில்" is Tiruvallur news; Chennai city news is not
+        if "{key}" != "tiruvallur":
+            return
+        own = ["ஆவடியில் லாரி மோதி இளைஞர் உயிரிழப்பு", "சென்னையை அடுத்த பூந்தமல்லியில் கடையில் தீ விபத்து",
+               "சென்னை அருகே திருவேற்காட்டில் வீட்டில் திருட்டு", "திருத்தணி முருகன் கோயிலில் கிருத்திகை விழா",
+               "பொன்னேரியில் நாளை மின்தடை", "கும்மிடிப்பூண்டி சிப்காட்டில் தொழிலாளி உயிரிழப்பு",
+               "பழவேற்காடு ஏரியில் படகு கவிழ்ந்து மீனவர் மாயம்", "Avadi: lorry hits bike, youth dies"]
+        for t in own:
+            self.assertTrue(allnews.has_place(t), t)
+            self.assertFalse(allnews.outside_district(t), t)
+            self.assertFalse(allnews.statewide(t), t)
+        for t in ["சென்னையில் நாளை மிக கனமழை: ஆரஞ்ச் அலர்ட்", "வடபழனியில் பிரியாணி கடையில் தீ விபத்து"]:
+            self.assertFalse(allnews.has_place(t), t)
+        self.assertTrue(allnews.statewide("சென்னையில் நாளை மிக கனமழை: ஆரஞ்ச் அலர்ட்"))
+        self.assertTrue(allnews.other_district("தாம்பரத்தில் பேருந்து விபத்து: செங்கல்பட்டு போலீஸ் விசாரணை"))
+
     def test_no_kovai_name_left_in_code(self):
         out = subprocess.run(["grep", "-rIlE", "Kovai Minnal|கோவை மின்னல்|kovai_minnal|KovaiMinnal|kovaiminnal", str(ROOT), "--include=*.py",
                               "--include=*.yml", "--include=*.json", "--exclude-dir=fb_posted", "--exclude-dir=.git", "--exclude-dir=tests"],
@@ -170,7 +221,14 @@ CITY_LOOK = {"chennai": (
     " and heavy traffic, T. Nagar and Purasaiwalkam shopping streets, Ripon Building (Greater Chennai Corporation), Chennai Central and Egmore\n"
     " stations, Metro Rail and MRTS lines, Marina beach and the Cooum / Adyar rivers, IT corridor (OMR) offices, the port and Royapuram,\n"
     " TNEB substations and transformers on concrete poles; two-wheelers, autorickshaws, MTC and private buses; men in shirts with veshti or\n"
-    " trousers, women in sarees or salwar; Tamil Nadu police in khaki; corporation workers; TNEB linemen.\n")}
+    " trousers, women in sarees or salwar; Tamil Nadu police in khaki; corporation workers; TNEB linemen.\n"),
+    "tiruvallur": (
+    "CITY LOOK (Tiruvallur district): Tiruvallur town with the Veeraraghava Perumal temple and its tank, the Tiruttani Murugan hill temple and its\n"
+    " steps, Avadi and Pattabiram with suburban EMU trains and the Heavy Vehicles Factory walls, Poonamallee and Thiruverkadu on the busy\n"
+    " Chennai-Bengaluru highway, Ponneri, Minjur and Pulicat lake with fishing boats, Gummidipoondi SIPCOT factories, Kattupalli port cranes and\n"
+    " power-plant chimneys, Poondi and Puzhal reservoirs, paddy fields and village roads with palm trees, TNEB substations and transformers on\n"
+    " concrete poles; two-wheelers, share autos, MTC and TNSTC buses; men in shirts with veshti or trousers, women in sarees or salwar; Tamil Nadu\n"
+    " police in khaki; panchayat and municipality workers; TNEB linemen.\n")}
 
 
 def ref_lists(key):
@@ -258,7 +316,7 @@ def allnews_values(src, d, PL):
         "SITE_QUERIES": [d["ta"]],
         "COIMBATORE_WORDS": list(dict.fromkeys(words + (AREAS.get(d["key"], {}).get("ta") or []) + (AREAS.get(d["key"], {}).get("services") or [])
                                                + (AREAS.get(d["key"], {}).get("en") or []))),
-        "TOWNS": [], "TOWN_ROADS": [], "CITY_ROADS": [], "NOT_PLACE": [],
+        "TOWNS": [], "TOWN_ROADS": [], "CITY_ROADS": list(AREAS.get(d["key"], {}).get("roads") or []), "NOT_PLACE": [],
         "CITY_AREAS": [w for w in (AREAS.get(d["key"], {}).get("ta") or []) if w != d["ta"]],
         "OTHER_PLACES": [x["ta"] for x in others.values()] + ["கோவை", "கோயம்புத்தூர்"],
         "OTHER_EN": sorted({w for x in others.values() for w in (x["en"].lower(), x["dinamalar"]) if w.isalpha()} | {"coimbatore", "kovai"}),
@@ -371,6 +429,12 @@ def main(key, out):
         t = p.read_text(encoding="utf-8")
         p.write_text('import unittest\nraise unittest.SkipTest("no gold rate on a power-cut-only page (tools/make_page.py POWERCUT_JOBS)")\n' + t,
                      encoding="utf-8")
+    if d.get("gold_city"):      # 20 Nov: the gold-rate sites have no page for this town - its rate is gold_city's (Tiruvallur = Chennai)
+        p = out / "goldrate" / "gold_daily.py"
+        t, k = re.subn(rf'"city": "{key}"', f'"city": "{d["gold_city"]}"', p.read_text(encoding="utf-8"))
+        if k != 1:
+            raise SystemExit(f"goldrate/gold_daily.py: the page's \"city\": \"{key}\" not found ({k})")
+        p.write_text(t, encoding="utf-8")
     # no district engine in a copy: keeper does not start it
     for f, pat in (("tools/keeper.py", r'^    "district_powercut\.yml": .*\n'),
                    ("tests/test_keeper.py", r'"district_powercut\.yml": 34,\s*|^        self\.assertEqual\(first\["district_powercut\.yml"\], "05:35"\)\n')):

@@ -32,7 +32,7 @@ def build():
     repos = {KOVAI: jobs(ROOT)}
     for key, pg in make_page.PAGE.items():
         d = Path.home() / pg["repo"].split("/")[1]
-        if (d / ".github").is_dir():
+        if (d / ".github").is_dir() and pg.get("live") is not False:      # 20 Nov: a page set up but not live yet is never started
             repos[pg["repo"]] = jobs(d, pg.get("jobs"))
     return {"note": "made by tools/make_timer.py - do not edit by hand", "repos": repos}
 
