@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-20T13:01+05:30",
- "posts_measured": 141,
+ "updated": "2026-11-20T17:01+05:30",
+ "posts_measured": 142,
  "topic_weight": {
-  "accident": 0.1,
-  "civic": 0.12,
+  "accident": 0.22,
+  "civic": 0.37,
   "crime": 0.04,
   "education": -0.5,
-  "jobs": -0.4,
+  "jobs": -0.41,
   "politics": -0.5,
-  "poultry_agri": 0.01,
-  "power_cut": 1.46,
-  "sports_culture": 0.19,
-  "temple": 0.18,
+  "poultry_agri": -0.1,
+  "power_cut": 1.48,
+  "sports_culture": -0.17,
+  "temple": 0.2,
   "weather": -0.5
  },
  "topic_n": {
@@ -20,12 +20,12 @@
   "weather": 8,
   "education": 16,
   "poultry_agri": 12,
-  "civic": 13,
+  "civic": 14,
   "politics": 9,
   "accident": 6,
   "temple": 8,
   "jobs": 3,
-  "sports_culture": 4
+  "sports_culture": 5
  },
  "best_hours_ist": [
   18,
@@ -36,14 +36,14 @@
  "top_openings": [
   "🚨 மதுக்கரையில் 183.85 கிலோ புகையிலை பறிமுதல்; பதுக்கியவர் சிறையில் அடைக்கப்பட்டா",
   "🚨 பேரூரில் எச்சில் துப்பியதால் தகராறு: மன்னிப்பு கேட்டும் தாக்கிய இருவர் கைது",
-  "🚨 வேடபட்டியில் விற்பனையகத் தகராறு: தவெக நிர்வாகி கட்சியிலிருந்து நீக்கம்",
-  "🚨 சூலூரில் மாணவனிடம் சீண்டல்: 65 வயது முதியவர் போக்சோவில் கைது"
+  "🚨 சூலூரில் மாணவனிடம் சீண்டல்: 65 வயது முதியவர் போக்சோவில் கைது",
+  "🚨 வேடபட்டியில் விற்பனையகத் தகராறு: தவெக நிர்வாகி கட்சியிலிருந்து நீக்கம்"
  ],
- "avg_watch_s": 6.5,
+ "avg_watch_s": 6.6,
  "best_topics": [
   "power_cut",
-  "sports_culture",
-  "temple"
+  "civic",
+  "accident"
  ],
  "weak_topics": [
   "education",
@@ -58,10 +58,10 @@
   "politics": "ours",
   "poultry_agri": "ours",
   "power_cut": "ours",
-  "sports_culture": "ours",
+  "sports_culture": "reference",
   "temple": "ours",
   "weather": "ours"
  },
- "reference_posts_measured": 421,
- "reference_updated": "2026-11-20T09:24+05:30"
+ "reference_posts_measured": 438,
+ "reference_updated": "2026-11-20T17:00+05:30"
 }
