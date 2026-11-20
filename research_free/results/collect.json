@@ -3,409 +3,249 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/random-heart-rate-can-be-detected-early/4381017",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/this-weeks-excitement/4380511",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/farmers-grievance-redressal-meet-to-be-held-on-24th/4380512",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/a-city-made-of-memories-of-a-wife/4380689",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/former-prime-minister-s-birthday-celebrations/4380708",
-  "candidate filter: collected=5",
-  "to write: 5 Coimbatore district candidates (max 5 stories)",
-  "round: top 5 of 5 candidates",
-  "candidates waiting: 5 Coimbatore; time left 79 min",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/quality-is-the-foundation-for-the-growth-of-enterprises/4380610",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/construction-products-exhibition/4380566",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/dr-represented-india-at-the-milan-conference/4380830",
+  "candidate filter: collected=3",
+  "to write: 3 Coimbatore district candidates (max 3 stories)",
+  "round: top 3 of 3 candidates",
+  "candidates waiting: 3 Coimbatore; time left 79 min",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 5})",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 7})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 9})",
-  "candidate loop ended: left 0, tried={'N': 5}, done={'N': 5}, time left 78 min",
-  "filed: 5 Coimbatore district stories (target 5), reels only",
+  "candidate loop ended: left 0, tried={'N': 3}, done={'N': 3}, time left 77 min",
+  "filed: 3 Coimbatore district stories (target 3), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":5,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":3,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
+  "ok gemini/gemini-3.6-flash (15s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
+  "ok gemini/gemini-3.6-flash (19s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok gemini/gemini-3.5-flash (19s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
+  "ok groq/openai/gpt-oss-120b (4s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok groq/openai/gpt-oss-120b (6s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "dead for this round: groq/openai/gpt-oss-120b",
+  "ok groq/qwen/qwen3.8-27b (1s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok gemini/gemini-3-flash-preview (46s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok groq/qwen/qwen3.8-27b (2s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3-flash-preview",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "dead for this round: groq/qwen/qwen3.8-27b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok gemini/gemini-3.6-flash (10s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok gemini/gemini-3.6-flash (16s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
+  "ok groq/qwen/qwen3.8-27b (1s)",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "பொள்ளாச்சி கோட்டத்தில் விவசாயிகள் குறைதீர் கூட்டம் வரும் 24ஆம் தேதி",
-   "english_headline": "Farmers' grievance meeting on 24 November at Pollachi Sub-Collector office",
-   "category": "Government & Services",
-   "location": "Pollachi town, Coimbatore district",
+   "tamil_headline": "கோவையில் 'குவாலிட்டி கான்க்ளேவ் – 2026': நிறுவனங்களின் வளர்ச்சிக்கு தரமே அடித்தளம் என வலியுறுத்தல்",
+   "english_headline": "'Quality Conclave 2026' held in Coimbatore: Quality products vital for company growth",
+   "category": "Business & Prices",
+   "location": "Jenneys Residencie, Coimbatore city, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "அரசு சேவை",
-    "loc": "பொள்ளாச்சி",
-    "hl1": "பொள்ளாச்சியில் விவசாயிகள் குறைதீர்",
-    "hl2": "வரும் <b>24ஆம் தேதி</b>",
+    "cat": "தொழில் செய்தி",
+    "loc": "கோவை",
+    "hl1": "கோவையில் 'குவாலிட்டி கான்க்ளேவ் 2026'",
+    "hl2": "தரமே வளர்ச்சிக்கு அடித்தளம்",
     "slides": [
      {
-      "title": "எப்போது?",
+      "title": "நிகழ்ச்சி",
       "lines": [
-       "வரும் <b>24ஆம் தேதி</b> காலை <b>11 மணி</b>க்கு",
-       "பொள்ளாச்சி சப்-கலெக்டர் அலுவலகத்தில் கூட்டம்",
-       "பொள்ளாச்சி கோட்டத்துக்கான கூட்டம்"
+       "கோவையில் <b>குவாலிட்டி கான்க்ளேவ் – 2026</b> நடைபெற்றது",
+       "ஜென்னீஸ் ரெசிடென்சியில் <b>நவம்பர் 19</b> அன்று நடந்தது",
+       "சி.பி.சி. மற்றும் இந்திய தர நிர்ணய அமைப்பு ஏற்பாடு"
       ]
      },
      {
-      "title": "யார் தலைமை?",
+      "title": "முக்கிய பேச்சு",
       "lines": [
-       "சப்-கலெக்டர் ராமகிருஷ்ணசாமி தலைமையில் கூட்டம்",
-       "அனைத்து அரசுத்துறை அலுவலர்களும் பங்கேற்பர்",
-       "விவசாயிகள் பங்கேற்கலாம்"
+       "அக்வாடெக் நிர்வாக இயக்குனர் <b>அசோக்குமார்</b> பங்கேற்பு",
+       "நிறுவனத்தின் வளர்ச்சிக்கு தரமான தயாரிப்புகள் அவசியம்",
+       "தரம் என்பது ஒட்டுமொத்த அணியின் கூட்டு முயற்சி"
       ]
      },
      {
-      "title": "என்ன செய்யலாம்?",
+      "title": "விவாத மேடை",
       "lines": [
-       "விவசாயம் தொடர்பான குறைகளைத் தெரிவிக்கலாம்",
-       "கோரிக்கைகளையும் நேரில் தெரிவிக்கலாம்",
-       "விவசாயிகள் இதில் பங்கேற்று பயன்பெறலாம்"
+       "ஏ.ஐ. தொழில்நுட்பமா, தனிமனித ஆற்றலா என விவாதம்",
+       "பல்வேறு தொழில் துறை வல்லுநர்கள் கருத்துரையாற்றினர்",
+       "சி.பி.சி. தலைவர் சித்ரா உள்ளிட்ட பலர் பங்கேற்பு"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "பொள்ளாச்சி கோட்டத்தில் விவசாயிகளின் குறைகளைக் கேட்க ஒரு கூட்டம் நடைபெறுகிறது. வரும் 24ஆம் தேதி காலை 11 மணிக்கு பொள்ளாச்சி சப்-கலெக்டர் அலுவலகத்தில் இந்தக் கூட்டம் நடைபெறும். சப்-கலெக்டர் ராமகிருஷ்ணசாமி தலைமையில் நடைபெறும் இந்தக் கூட்டத்தில் அனைத்து அரசுத்துறை அலுவலர்களும் பங்கேற்க உள்ளனர். விவசாயம் தொடர்பான தங்கள் குறைகளையும் கோரிக்கைகளையும் விவசாயிகள் நேரில் தெரிவித்துப் பயன்பெறலாம். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🌾 பொள்ளாச்சியில் வரும் 24ஆம் தேதி விவசாயிகள் குறைதீர் கூட்டம்\n\n📰 முழு விவரம்:\nபொள்ளாச்சி கோட்டத்தில் விவசாயிகள் குறைதீர் கூட்டம் வரும் 24ஆம் தேதி காலை 11 மணிக்குப் பொள்ளாச்சி சப்-கலெக்டர் அலுவலகத்தில் நடைபெறுகிறது. சப்-கலெக்டர் தலைமையில் நடைபெறும் இந்தக் கூட்டத்தில் அனைத்து அரசுத்துறை அலுவலர்களும் பங்கேற்க உள்ளனர். விவசாயம் தொடர்பான தங்கள் குறைகளையும் கோரிக்கைகளையும் விவசாயிகள் தெரிவித்துப் பயன்பெறலாம் என சப்-கலெக்டர் ராமகிருஷ்ணசாமி தெரிவித்துள்ளார்.\n📍 இடம்: பொள்ளாச்சி சப்-கலெக்டர் அலுவலகம்\n🗓️ நாள்: வரும் 24ஆம் தேதி\n🕘 நேரம்: காலை 11 மணி\n👮 நடவடிக்கை: அனைத்து அரசுத்துறை அலுவலர்களும் பங்கேற்பு\nℹ️ மக்கள் கவனத்திற்கு: விவசாயம் தொடர்பான குறைகளையும் கோரிக்கைகளையும் நேரில் தெரிவிக்கலாம்.\nதேவைப்படும் விவசாயிகளுக்கு Share செய்யுங்கள்.\n\nPollachi farmers grievance meeting on 24 Nov | Coimbatore news\n📍 பொள்ளாச்சி, கோவை மாவட்டம் | 24 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #விவசாயம் #CoimbatoreNews",
-   "prompts": "Farmers in dhotis, shirts and towels sit on rows of plastic chairs in a government office hall in Pollachi town, Coimbatore district, at late morning around 11 am, the start of the farmers' grievance meeting on 24 November. Seen from the back of the room at eye level, the farmers face a long table at the front where government officers sit with files and papers, the Sub-Collector presiding at the centre though seen only from behind and far away. The hall has tube lights, plain cream walls, a Tamil Nadu government office look, and tall windows letting in daylight. A few farmers hold cloth bags and folded papers with their petitions. The camera is 35 mm, eye level, wide enough to show the full hall, the officers' table and the farmers' rows, with a bright morning light and no visible text or signboards. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a stack of farmers' grievance petitions and application papers placed on a government officer's wooden table, with a pen, a steel tumbler of water and a thick file beside them, in a Pollachi Sub-Collector office hall in Coimbatore district. Behind the table, slightly blurred, the outline of an officer in shirt and trousers sits working. A farmer's hand in a shirt sleeve rests a folded paper on the pile. The light is soft daylight from a window, late morning. The camera is 35 mm at a slightly high angle, focusing on the papers and table with the blurred hall behind, no readable text or names visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/farmers-grievance-redressal-meet-to-be-held-on-24th/4380512",
-   "published": "2026-11-19T17:34:26+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 46 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "reel_script": "கோவையில் தொழில் நிறுவனங்களின் வளர்ச்சி குறித்த 'குவாலிட்டி கான்க்ளேவ் 2026' நிகழ்ச்சி நடைபெற்றது. கோவை உற்பத்தித் திறன் மேம்பாட்டுக் கவுன்சில் மற்றும் இந்திய தர நிர்ணய அமைப்பு இணைந்து இந்த நிகழ்ச்சியை நடத்தின. இந்த மாநாடு நவம்பர் 19ஆம் தேதி கோவை ஜென்னீஸ் ரெசிடென்சியில் நடைபெற்றது. இதில் அக்வாடெக் சானிட்டரி பிட்டிங்ஸ் நிறுவன நிர்வாக இயக்குனர் அசோக்குமார் தலைமை வகித்து பேசினார். ஒரு நிறுவனத்தின் வளர்ச்சிக்கு தரமான தயாரிப்புகளே மிகவும் அவசியம் என்று அவர் தெரிவித்தார். வாடிக்கையாளர்களின் நம்பிக்கையைப் பெற தரத்தை உறுதி செய்ய வேண்டும் என்றும், இது நிறுவன அணியின் கூட்டு முயற்சி என்றும் கூறினார். தொடர்ந்து, தர மேம்பாட்டிற்கு துணைபுரிவது ஏ ஐ தொழில்நுட்பமா அல்லது தனிமனித ஆற்றலா என்ற தலைப்பில் விவாத மேடை நிகழ்வும் நடைபெற்றது. இந்நிகழ்ச்சியில் அமைப்புத் தலைவர் சித்ரா, துணைத்தலைவர் ஸ்ரீனிவாசன் மற்றும் ரூட்ஸ் நிறுவன இயக்குனர் கவிதாசன் உள்ளிட்ட பலர் கலந்து கொண்டனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🏢 கோவையில் 'குவாலிட்டி கான்க்ளேவ் – 2026' மாநாடு: நிறுவன வளர்ச்சிக்கு தரமே அடித்தளம்!\n\n📰 முழு விவரம்:\nகோவை உற்பத்தித் திறன் மேம்பாட்டுக் கவுன்சில் (சி.பி.சி.) மற்றும் இந்திய தர நிர்ணய அமைப்பு இணைந்து 'குவாலிட்டி கான்க்ளேவ் – 2026' நிகழ்ச்சியை நடத்தின. இந்த மாநாடு நவம்பர் 19ஆம் தேதி கோவை ஜென்னீஸ் ரெசிடென்சியில் நடைபெற்றது.\n\nஇதில் அக்வாடெக் சானிட்டரி பிட்டிங்ஸ் நிறுவன நிர்வாக இயக்குனர் அசோக்குமார் தலைமை வகித்து பேசினார். ஒரு நிறுவனத்தின் வளர்ச்சிக்கும் வாடிக்கையாளர் நம்பிக்கைக்கும் தரமான தயாரிப்புகள் அவசியம் என்றும், தரம் என்பது நிறுவனத்தின் ஒட்டுமொத்த அணியின் கூட்டு முயற்சி என்றும் அவர் தெரிவித்தார்.\n\nமேலும், 'தர மேம்பாட்டிற்கு துணைபுரிவது ஏ.ஐ. தொழில்நுட்ப ஆற்றலா அல்லது தனிமனித ஆற்றலா' என்ற தலைப்பில் விவாத மேடை நிகழ்வும் நடத்தப்பட்டது. இந்நிகழ்ச்சியில் சி.பி.சி. தலைவர் சித்ரா, துணைத்தலைவர் ஸ்ரீனிவாசன், ரூட்ஸ் நிறுவன இயக்குனர் கவிதாசன் உள்ளிட்ட நிர்வாகிகள் கலந்து கொண்டனர்.\n\n📍 இடம்: ஜென்னீஸ் ரெசிடென்சி, கோவை\n🗓️ நாள்: 19 நவம்பர் 2026\n🤝 ஏற்பாடு: கோவை உற்பத்தித் திறன் மேம்பாட்டுக் கவுன்சில் & இந்திய தர நிர்ணய அமைப்பு\n\nதொழில் முனைவோருக்கு Share செய்யுங்கள் 📲\n\nCoimbatore Quality Conclave 2026 organized by CPC and BIS | Coimbatore business news\n📍 Jenneys Residencie, Coimbatore | 19 November 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreCity #CoimbatoreNews #கோவை",
+   "prompts": "A business conference titled 'Quality Conclave 2026' is in progress inside a large hotel banquet hall. The main subject is a man in a formal shirt and trousers standing at a wooden podium, addressing a seated audience. The place is the Jenneys Residencie in Coimbatore city, featuring a spacious indoor hall with high ceilings and professional lighting. People include the speaker at the front, a panel of experts seated at a long table with microphones, and rows of business professionals in formal wear listening attentively from the back. Objects include the podium, microphones, nameplates on the table, and chairs arranged in rows. The time is daytime, with bright artificial lighting illuminating the stage and audience. The camera is positioned at eye level, 35 mm, wide enough to capture the stage and the first few rows of the audience, showing the scale of the event. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up view of the conference table where the panel discussion is taking place. The main subject is the arrangement of microphones and water bottles on a long table covered with a white cloth. The place is the same hotel hall in Coimbatore, with the blurred background showing the audience and stage lights. People are not clearly visible, but the hands of participants resting on the table are seen from a distance. Objects include black microphones, clear water bottles, and documents or papers on the table. The time is daytime, with focused lighting on the table. The camera is slightly high, 35 mm, focusing on the details of the conference setup to convey the professional nature of the business meeting. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/quality-is-the-foundation-for-the-growth-of-enterprises/4380610",
+   "published": "2026-11-19T18:24:02+05:30",
+   "verification": "DRAFT (gemini/gemini-3.5-flash) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3.5-flash, 1 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795138561/kovaiminnal/vbjzq7qahmoxtg4fptxk.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795138564/kovaiminnal/dygifmcpi3ekzyw1gdkf.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795145737/kovaiminnal/n6toeizorx2n6fjpzdfq.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795145755/kovaiminnal/bdr9u1pfmszuoavtdnzl.jpg"
    ]
   },
   {
-   "tamil_headline": "சுந்தராபுரம்: மனைவியின் நினைவாக உருவான ஊர்",
-   "english_headline": "Sundarapuram: a town named after a businessman's late wife, Coimbatore",
-   "category": "Temples & Events",
-   "location": "Sundarapuram, Coimbatore district",
-   "importance": "Low",
-   "scope": "local",
+   "tamil_headline": "கோவை கொடிசியாவில் பில்ட் எக்ஸ்கான் 2026 கண்காட்சி: கட்டுமானப் பொருட்களுக்கு இலவச தரப் பரிசோதனை",
+   "english_headline": "'Build Excon 2026' building materials expo begins at Codissia in Coimbatore with free material quality testing",
+   "category": "Business & Prices",
+   "location": "Codissia, Coimbatore district",
+   "importance": "Medium",
+   "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "வரலாறு",
-    "loc": "சுந்தராபுரம், கோவை",
-    "hl1": "மனைவியின் நினைவில் உருவான சுந்தராபுரம்",
-    "hl2": "1934ல் பெயர் சூட்டப்பட்டது",
+    "cat": "கண்காட்சி",
+    "loc": "கொடிசியா, கோவை",
+    "hl1": "கொடிசியாவில் கட்டுமான கண்காட்சி",
+    "hl2": "இலவச பொருள் தரப் பரிசோதனை",
     "slides": [
      {
-      "title": "யார்",
+      "title": "பில்ட் எக்ஸ்கான்",
       "lines": [
-       "தொழிலதிபர் தேவராஜ் முதலியார்",
-       "கோவையில் பெரிய நிலம் வாங்கி லோட்டஸ் மில்ஸ் பஞ்சாலை",
-       "மனைவி சுந்தரிபாயின் நினைவாக ஊருக்குப் பெயர்"
+       "கோவை <b>கொடிசியா வர்த்தக வளாகத்தில்</b> கண்காட்சி",
+       "கோவை மாவட்ட <b>அனைத்து கட்டுமானப் பொறியாளர்கள் சங்கம்</b> ஏற்பாடு",
+       "'பில்ட் எக்ஸ்கான் 2026' கட்டுமான பொருட்கள் கண்காட்சி"
       ]
      },
      {
-      "title": "எப்போது பெயர்?",
+      "title": "எப்போது, எங்கே?",
       "lines": [
-       "<b>1934</b> செப். <b>18</b>ஆம் தேதி 'சுந்தராபுரம்' என்று பெயரிடப்பட்டது",
-       "ஆலைப் பணியாளர்களுக்காக வீடுகள், கடைகள், பள்ளி கட்டப்பட்டன",
-       "முழு குடியிருப்புப் பகுதியாக உருவானது"
+       "நாட்கள்: <b>நவம்பர் 20, 21, 22</b>",
+       "இடம்: கொடிசியா <b>ஹால் – இ</b>",
+       "கட்டுமானப் பொருட்கள் காட்சிக்கு வைப்பு"
       ]
      },
      {
-      "title": "இன்றைய நிலை",
+      "title": "இலவச பரிசோதனை",
       "lines": [
-       "இன்று கோவையின் முக்கியப் பகுதிகளில் ஒன்று",
-       "தொழிற்சாலைகள், வணிக நிறுவனங்கள், விடுதிகள் உள்ளன",
-       "மக்கள் வசிக்கும் முக்கிய இடமாகவும் உள்ளது"
+       "புதிதாக கட்டும் வீட்டின் <b>கட்டுமான பொருட்கள்</b>",
+       "தரத்தை <b>இலவசமாக பரிசோதனை</b> செய்து கொள்ளலாம்",
+       "பொதுமக்கள் நேரில் சென்று பயன்படுத்தலாம்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "மனைவியின் நினைவாக ஒரு ஊரையே உருவாக்கியவர் கோவையில் இருக்கிறார். தொழிலதிபர் தேவராஜ் முதலியார் கோவையில் பெரிய நிலம் வாங்கி லோட்டஸ் மில்ஸ் என்ற பஞ்சாலையைத் தொடங்கினார். அவர் சிவசமுத்திரம் ஜாகீர்தாரின் மகள் சுந்தரிபாயைத் திருமணம் செய்தார். மனைவியின் நினைவாக அந்தப் பகுதிக்கு 1934 செப். 18ஆம் தேதி 'சுந்தராபுரம்' என்று பெயரிட்டார். வெறும் பெயர் மட்டும் சூட்டவில்லை. ஆலைப் பணியாளர்களுக்காக வீடுகள், கடைகள், பள்ளி என ஒரு குடியிருப்புப் பகுதியையும் உருவாக்கினார். இன்று சுந்தராபுரம் கோவையின் முக்கியப் பகுதிகளில் ஒன்றாகத் திகழ்கிறது. தொழிற்சாலைகள், வணிக நிறுவனங்கள், விடுதிகள், கடைகள் என வளர்ச்சி பெற்றுள்ளது. மக்கள் வசிக்கும் இடமாகவும் முக்கியத்துவம் பெற்றுள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "💑 மனைவியின் நினைவில் உருவான கோவை ஊர்: சுந்தராபுரம்\n\n📰 முழு விவரம்:\nதொழிலதிபர் தேவராஜ் முதலியார் கோவையில் பெரிய நிலம் வாங்கி லோட்டஸ் மில்ஸ் பஞ்சாலையைத் தொடங்கினார்.\nஅவர் சிவசமுத்திரம் ஜாகீர்தாரின் மகள் சுந்தரிபாயைத் திருமணம் செய்தார்.\nமனைவியின் நினைவாக அந்தப் பகுதிக்கு 1934 செப். 18ஆம் தேதி 'சுந்தராபுரம்' என்று பெயரிட்டார்.\nஆலைப் பணியாளர்களுக்காக வீடுகள், கடைகள், பள்ளி என ஒரு குடியிருப்புப் பகுதியையும் உருவாக்கினார்.\nஇன்று சுந்தராபுரம் தொழிற்சாலைகள், வணிக நிறுவனங்கள், விடுதிகள், கடைகளுடன் கோவையின் முக்கியப் பகுதியாகத் திகழ்கிறது.\n📍 இடம்: சுந்தராபுரம், கோவை\n🗓️ நாள்: 1934 செப். 18\n\nSundarapuram Coimbatore history, named after wife | Coimbatore news\n📍 சுந்தராபுரம், கோவை மாவட்டம் | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Sundarapuram #கோவை #CoimbatoreNews",
-   "prompts": "A group of Coimbatore residents stand in front of an old colonial-style mill gate in Sundarapuram, a neighbourhood of Coimbatore city, as they look up at the mill's worn brick entrance and high arched roof. Behind them is a busy street lined with shops, a two-wheeler parked on the roadside and an autorickshaw passing, with the faint outline of the Western Ghats in the far distance. The people are seen from behind or far away, men in shirts and veshti, women in cotton sarees, the mood calm and reflective. Shot in soft daylight, mid-morning sun with a warm tone. Camera at eye level, 35 mm lens, wide enough to show the mill gate, the street and the surrounding shopfronts. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of an old brass nameplate-style foundation stone or a weathered carved stone plaque set into the wall of a century-old mill building in Sundarapuram, Coimbatore, its surface worn smooth by decades of weather, with no readable lettering visible. Beside it, a row of cotton bales stacked against the wall and a few loose cotton fibres caught on the rough brick, hinting at the textile mill history. Soft daylight falls across the stone and brick, with a blurred trace of a street in the background. Camera at close range, slightly low angle, 50 mm macro-style detail shot, shallow depth of field keeping the stone sharp and the background softly out of focus. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/a-city-made-of-memories-of-a-wife/4380689",
-   "published": "2026-11-19T19:09:03+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 0 validator problem(s)",
+   "reel_script": "கோவை கொடிசியாவில் பில்ட் எக்ஸ்கான் 2026 கட்டுமானப் பொருட்கள் கண்காட்சி இன்று தொடங்குகிறது. கோவை மாவட்ட அனைத்து கட்டுமானப் பொறியாளர்கள் சங்கம் சார்பில் இந்த கண்காட்சி நடத்தப்படுகிறது. இதில் புதிதாக வீடு கட்டும் பொதுமக்கள் தங்கள் கட்டுமானப் பொருட்களின் தரத்தை இலவசமாக பரிசோதனை செய்து கொள்ளலாம். இந்த பில்ட் எக்ஸ்கான் 2026 கண்காட்சி கோவை கொடிசியா வர்த்தக வளாகத்தில் உள்ள ஹால் – இ பகுதியில் நடைபெறுகிறது. நவம்பர் 20, 21 மற்றும் 22 ஆகிய தேதிகளில் இந்த கண்காட்சி நடைபெறுகிறது. வீடு கட்ட திட்டமிடுவோர் இந்த கண்காட்சியை நேரில் சென்று பார்வையிடலாம். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🏗️ கோவை கொடிசியாவில் பில்ட் எக்ஸ்கான் 2026 கண்காட்சி - கட்டுமானப் பொருட்களுக்கு இலவச தரப் பரிசோதனை!\n\n📰 முழு விவரம்:\nகோவை மாவட்ட அனைத்து கட்டுமானப் பொறியாளர்கள் சங்கம் சார்பில் ‘பில்ட் எக்ஸ்கான் 2026’ கட்டுமானப் பொருட்கள் கண்காட்சி நடைபெறுகிறது. புதிதாக வீடு கட்டுவோர் தங்கள் கட்டுமானப் பொருட்களின் தரத்தை இங்கு இலவசமாக பரிசோதனை செய்து கொள்ளலாம்.\n📍 இடம்: கொடிசியா வர்த்தக வளாகம், ஹால் – இ, கோவை\n🗓️ நாள்: நவம்பர் 20, 21, 22\nℹ️ மக்கள் கவனத்திற்கு: புதிய வீடு கட்டத் திட்டமிடுவோர் இந்தக் கண்காட்சியைப் பயன்படுத்திக் கொள்ள கேட்டுக் கொள்ளப்படுகிறார்கள்.\n\nவீடு கட்ட விரும்புவோருக்கு Share செய்யுங்கள் 👍\n\nBuild Excon 2026 building materials exhibition Codissia | Coimbatore news\n📍 Codissia, Coimbatore | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Codissia #கண்காட்சி #CoimbatoreNews",
+   "prompts": "A wide view of the interior of Hall-E at the Codissia Trade Complex, filled with stalls displaying various construction materials. Visitors walk between the booths, examining samples of bricks, cement bags, and steel rods. The hall is brightly lit by overhead fluorescent tubes, creating a busy commercial atmosphere. In the foreground, a group of men in shirts and trousers discuss material specifications near a display table. The background shows more stalls and a high ceiling typical of large exhibition halls. The scene captures the scale of the expo with rows of industrial goods neatly arranged. The lighting is even and artificial, suggesting an indoor event during the day. The camera is positioned at eye level, 35 mm, capturing the depth of the hall and the density of the crowd and merchandise. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a testing station where a technician in a white shirt operates a machine to test the strength of a concrete sample or a steel bar. The machine is metallic and industrial, with dials and gauges visible. Next to it, a stack of neatly arranged construction material samples, such as bricks or tiles, sits on a table. A visitor, seen from behind, observes the test. The background is slightly blurred, showing other exhibition stalls. The focus is on the interaction between the testing equipment and the material, highlighting the 'free quality testing' aspect of the event. The lighting is bright and focused on the table. The camera is slightly high, 35 mm, emphasizing the technical nature of the activity. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/construction-products-exhibition/4380566",
+   "published": "2026-11-19T18:26:02+05:30",
+   "verification": "DRAFT (gemini/gemini-3.6-flash) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3.6-flash, 1 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795138570/kovaiminnal/ggkqngvp3hdwftmj0uxo.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795138573/kovaiminnal/hpvnt627bbvaxr0jhpio.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795145789/kovaiminnal/etgqzsgq3ifba4jjuzcn.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795145805/kovaiminnal/mdjestl5sc5coofuddlq.jpg"
    ]
   },
   {
-   "tamil_headline": "பொள்ளாச்சியில் இந்திரா காந்தி 109வது பிறந்த நாள் விழா",
-   "english_headline": "Indira Gandhi's 109th birth anniversary celebrated at Congress office in Pollachi and Kinathukadavu",
-   "category": "Government & Services",
-   "location": "Pollachi town, Coimbatore district",
-   "importance": "Low",
+   "tamil_headline": "மிலான் மாநாட்டில் இந்தியாவை பிரதிநிதித்துவப்படுத்திய கோவை டாக்டர்",
+   "english_headline": "Coimbatore doctor represents India at Milan endoscopic heart surgery conference",
+   "category": "Health",
+   "location": "Milan, Italy (conference); Sri Ramakrishna Hospital, Coimbatore",
+   "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "அரசியல் நிகழ்வு",
-    "loc": "பொள்ளாச்சி",
-    "hl1": "பொள்ளாச்சியில் இந்திரா காந்தி பிறந்த",
-    "hl2": "109வது பிறந்த நாள்",
+    "cat": "மருத்துவம்",
+    "loc": "கோவை",
+    "hl1": "மிலான் மாநாட்டில் கோவை மருத்துவர்",
+    "hl2": "இந்தியாவை பிரதிநிதித்துவம்",
     "slides": [
      {
-      "title": "எங்கே, எப்போது?",
+      "title": "எங்கே நடந்தது?",
       "lines": [
-       "பொள்ளாச்சி நகர காங்கிரஸ் கட்சி அலுவலகத்தில் விழா",
-       "மறைந்த முன்னாள் பிரதமர் இந்திராவின் <b>109வது</b> பிறந்த நாள்",
-       "கோவை தெற்கு மாவட்ட காங்கிரஸ் சார்பில் கொண்டாட்டம்"
+       "இத்தாலியின் மிலான் நகரில் மாநாடு நடந்தது",
+       "உலக எண்டோஸ்கோப்பிக் இதய அறுவைச் சிகிச்சை மாநாடு",
+       "கோவையைச் சேர்ந்த டாக்டர் இந்தியாவை"
       ]
      },
      {
-      "title": "யார் பங்கேற்றனர்?",
+      "title": "யார் பங்கேற்றார்?",
       "lines": [
-       "நகர தலைவர் கவிதா வரவேற்றார்",
-       "மாவட்ட தலைவர் சக்திவேல் தலைமை வகித்தார்",
-       "மாவட்ட பொருளாளர் ஸ்ரீதர் மற்றும் நிர்வாகிகள் பங்கேற்றனர்"
+       "டாக்டர் ராம்பிரசாத், மூத்த இதய அறுவை சிகிச்சை ஆலோசகர்",
+       "ஸ்ரீ ராமகிருஷ்ணா பல்நோக்கு சிறப்பு மருத்துவமனை",
+       "குறைந்த துளையீட்டு எண்டோஸ்கோப்பிக் இதய அறுவை"
       ]
      },
      {
-      "title": "மரியாதை",
+      "title": "எத்தனை பேர்?",
       "lines": [
-       "இந்திராவின் திருவுருவப்படத்துக்கு மாலை அணிவித்து மரியாதை",
-       "கிணத்துக்கடவிலும் நிகழ்வு நடந்தது",
-       "ஒன்றிய தலைவர் சாந்தலிங்கம், நகர தலைவர் செந்தில்குமார் தலைமை"
+       "<b>56 நாடுகளை</b> சேர்ந்த 500-க்கு மேற்பட்ட நிபுணர்கள்",
+       "உலகளவில் நிபுணத்துவம் பெற்ற <b>70 பேரில்</b> ஒருவர்",
+       "டாக்டர் ராம்பிரசாத்தும் அவர்களில் ஒருவர்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "பொள்ளாச்சியில் மறைந்த முன்னாள் பிரதமர் இந்திரா காந்தியின் 109வது பிறந்த நாள் விழா கொண்டாடப்பட்டது. கோவை தெற்கு மாவட்ட மற்றும் பொள்ளாச்சி நகர காங்கிரஸ் சார்பில் கட்சி அலுவலகத்தில் இந்த விழா நடைபெற்றது. நகர காங்கிரஸ் தலைவர் கவிதா வரவேற்புரை வழங்கினார். மாவட்ட தலைவர் சக்திவேல் தலைமை வகித்தார். மாவட்ட பொருளாளர் ஸ்ரீதர் மற்றும் நிர்வாகிகள் பங்கேற்றனர். இந்திராவின் திருவுருவப்படத்துக்கு மாலை அணிவித்து மரியாதை செலுத்தப்பட்டது. கிணத்துக்கடவிலும் இதேபோல் நிகழ்வு நடைபெற்றது. அங்கு ஒன்றிய தலைவர் சாந்தலிங்கம், நகர தலைவர் செந்தில்குமார் தலைமை வகித்தார். ஒன்றிய பொறுப்பாளர் பஞ்சலிங்கம் மற்றும் நிர்வாகிகள் பங்கேற்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🇮🇳 பொள்ளாச்சியில் இந்திரா காந்தி 109வது பிறந்த நாள் விழா\n\n📰 முழு விவரம்:\nகோவை தெற்கு மாவட்டம் மற்றும் பொள்ளாச்சி நகர காங்கிரஸ் சார்பில், மறைந்த முன்னாள் பிரதமர் இந்திராவின் 109வது பிறந்த நாள் விழா கட்சி அலுவலகத்தில் கொண்டாடப்பட்டது. நகர காங்கிரஸ் தலைவர் கவிதா வரவேற்றார். மாவட்ட தலைவர் சக்திவேல் தலைமை வகித்தார். மாவட்ட பொருளாளர் ஸ்ரீதர் மற்றும் நிர்வாகிகள் பங்கேற்றனர். இந்திராவின் திருவுருவப்படத்துக்கு மாலை அணிவித்து மரியாதை செலுத்தப்பட்டது. கிணத்துக்கடவில் நடந்த நிகழ்வில் ஒன்றிய தலைவர் சாந்தலிங்கம், நகர தலைவர் செந்தில்குமார் தலைமை வகித்தார். ஒன்றிய பொறுப்பாளர் பஞ்சலிங்கம் மற்றும் நிர்வாகிகள் பங்கேற்றனர்.\n\nIndira Gandhi 109th birth anniversary Pollachi | Coimbatore news\n📍 பொள்ளாச்சி, கோவை மாவட்டம்\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #அரசியல் #CoimbatoreNews",
-   "prompts": "A small group of Congress party workers gathers in a modest party office in Pollachi town to garland a framed portrait of the late former Prime Minister Indira Gandhi on her 109th birth anniversary. The room is a simple ground-floor office in a Pollachi town street, with plain walls, a wooden table and a few plastic chairs. Several men in white shirts and veshti stand in a row seen from behind and from the side, their hands folded in respect. A fresh garland of flowers hangs over the top of the framed portrait, which is placed on a table draped with a cloth. Daylight comes through an open door and window, giving the scene a calm, respectful mood. Camera at eye level, 35 mm, wide enough to show the whole room and the people around the portrait. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of the framed portrait of Indira Gandhi on a small table in the Congress office, with a fresh fragrant garland of marigolds and roses draped over the top of the frame. A few loose flowers rest on the cloth below. Behind the table, a corner of a Congress flag hangs on the wall and a plastic chair is visible, with the blurred shapes of party workers in white shirts standing at a distance. Soft daylight from a side window falls across the flowers and the glass of the frame. No readable text is visible. Camera slightly high, 35 mm, focused on the garland and the portrait frame. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/former-prime-minister-s-birthday-celebrations/4380708",
-   "published": "2026-11-19T19:10:23+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption copies the article word for word (23 words in a row, 67% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
+   "reel_script": "கோவை மருத்துவர் ஒருவர் இத்தாலியின் மிலான் நகர் மாநாட்டில் இந்தியாவை பிரதிநிதித்துவப்படுத்தினார். உலக எண்டோஸ்கோப்பிக் இதய அறுவைச் சிகிச்சை மாநாடு மிலான் நகரில் நடைபெற்றது. ஸ்ரீ ராமகிருஷ்ணா பல்நோக்கு சிறப்பு மருத்துவமனையின் மூத்த இதய அறுவை சிகிச்சை ஆலோசகர் டாக்டர் ராம்பிரசாத் இதில் பங்கேற்றார். அவர் குறைந்த துளையீட்டு எண்டோஸ்கோப்பிக் இதய அறுவைச் சிகிச்சைப் பிரிவின் தலைவராகவும் உள்ளார். 56 நாடுகளைச் சேர்ந்த 500-க்கு மேற்பட்ட இதய அறுவைச் சிகிச்சை நிபுணர்கள் இந்த மாநாட்டில் பங்கேற்றனர். எண்டோஸ்கோப்பிக் இதய அறுவைச் சிகிச்சையில் உலகளவில் நிபுணத்துவம் பெற்ற 70 பேரில் டாக்டர் ராம்பிரசாத்தும் ஒருவர் என்பது குறிப்பிடத்தக்கது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🩺 மிலான் மாநாட்டில் இந்தியாவுக்காக பங்கேற்ற கோவை மருத்துவர்\n\n📰 முழு விவரம்:\nஇத்தாலியின் மிலான் நகரில் நடந்த உலக எண்டோஸ்கோப்பிக் இதய அறுவைச் சிகிச்சை மாநாட்டில், ஸ்ரீ ராமகிருஷ்ணா பல்நோக்கு சிறப்பு மருத்துவமனையின் டாக்டர் ராம்பிரசாத் இந்தியாவைப் பிரதிநிதித்துவப்படுத்தினார். அவர் அங்கு மூத்த இதய அறுவை சிகிச்சை ஆலோசகராகவும், குறைந்த துளையீட்டு எண்டோஸ்கோப்பிக் இதய அறுவைச் சிகிச்சைப் பிரிவின் தலைவராகவும் பணியாற்றுகிறார்.\n🌍 மாநாட்டில் 56 நாடுகளைச் சேர்ந்த 500-க்கு மேற்பட்ட இதய அறுவைச் சிகிச்சை நிபுணர்கள் பங்கேற்றனர்.\n🏅 எண்டோஸ்கோப்பிக் இதய அறுவைச் சிகிச்சையில் உலகளவில் நிபுணத்துவம் பெற்ற 70 பேரில் டாக்டர் ராம்பிரசாத்தும் ஒருவர்.\n\nCoimbatore doctor represents India at Milan endoscopic heart surgery conference | Coimbatore news\n📍 கோவை மாவட்டம் | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Milan",
+   "prompts": "A Coimbatore-trained cardiac surgeon stands at the podium of a large conference hall in Milan, Italy, addressing an audience of 500-plus heart surgeons gathered from 56 countries at the World Endoscopic Heart Surgery Conference. The hall is modern and wide, with rows of tiered seats filled with delegates seen from behind and in silhouette, some holding conference bags and lanyards. Behind the speaker a large projection screen glows with a blurred surgical diagram, its details unreadable. The doctor is dressed in a dark formal suit, seen from the side at a distance, with the audience's rows of heads in the foreground. Lighting is bright indoor conference light with soft spotlights on the stage, suggesting daytime event hours. Camera: eye level, 35 mm, wide enough to show the full hall and the crowd of surgeons. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a conference table in the Milan hall where an open printed programme booklet and a delegate badge lie beside a small glass of water and a folded national flag pin of India. The objects are shown in sharp focus on a polished wooden surface, with the blurred shapes of delegates' hands and sleeves at the edges. No readable text is visible. Soft indoor light comes from above, with the out-of-focus tiered seating of the hall in the background. Camera: close-up, slightly high angle, 50 mm, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/dr-represented-india-at-the-milan-conference/4380830",
+   "published": "2026-11-19T19:58:23+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption copies the article word for word (20 words in a row, 33% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
    "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795138579/kovaiminnal/n76vud36trh9cvwfctt8.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795138582/kovaiminnal/dnqmux67vhj4i13evnja.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவையில் இந்த வாரம் இசை, ஓவியம், விளையாட்டு, பயிலரங்கு நிகழ்ச்சிகள்",
-   "english_headline": "This week in Coimbatore: music show, medical equipment expo, painting exhibition, sports festival and pottery workshop",
-   "category": "Temples & Events",
-   "location": "Coimbatore city, Coimbatore district",
-   "importance": "Medium",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "நிகழ்ச்சிகள்",
-    "loc": "கோவை",
-    "hl1": "கோவையில் இந்த வாரம் நிகழ்ச்சிகள்",
-    "hl2": "இசை, ஓவியம், விளையாட்டு",
-    "slides": [
-     {
-      "title": "இசை நிகழ்ச்சி",
-      "lines": [
-       "உன்னிகிருஷ்ணனின் <b>‘வைப் வித் யூகே’</b> இசை நிகழ்ச்சி",
-       "2 மணி நேரம், ரசிகர்களும் சேர்ந்து பாடலாம்",
-       "இடம்: மேடை தி ஸ்டேஜ், அவிநாசி சாலை"
-      ]
-     },
-     {
-      "title": "மருத்துவ கண்காட்சி",
-      "lines": [
-       "<b>நவ. 21</b>: ‘மெடிக்கான் எக்ஸ்போ 2026’",
-       "250-க்கும் மேற்பட்ட அரங்குகள், அனுமதி இலவசம்",
-       "இடம்: கொடிசியா வர்த்தகக் கண்காட்சி வளாகம்"
-      ]
-     },
-     {
-      "title": "ஓவியம், விளையாட்டு",
-      "lines": [
-       "<b>நவ. 20</b>: ‘வாய்ஸ் ஆப் தி வைல்ட்’ ஓவியக் கண்காட்சி",
-       "<b>நவ. 18 முதல் 22</b> வரை மாநில விளையாட்டுத் திருவிழா",
-       "கால்பந்து, கூடைப்பந்து, செஸ், கபடி போட்டிகள்"
-      ]
-     },
-     {
-      "title": "பயிலரங்கு",
-      "lines": [
-       "<b>நவ. 16 முதல் 23</b> வரை மண்பாண்டப் பயிலரங்கு",
-       "இடம்: டி கம்யூன், சரவணம்பட்டி",
-       "வெற்றியாளர்களுக்கு பரிசுத்தொகை, கோப்பைகள் வழங்கப்படும்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோவையில் இந்த வாரம் இசை, கண்காட்சி, விளையாட்டு என பல நிகழ்ச்சிகள் நடைபெறுகின்றன. கோவையைச் சேர்ந்த உன்னிகிருஷ்ணன் தனது முதல் இசை நிகழ்ச்சியான ‘வைப் வித் யூகே’ மூலம் சொந்த ஊரில் ரசிகர்களைச் சந்திக்கிறார். பழைய மெலடிகளும் உற்சாகமான பாடல்களும் இடம்பெறும் 2 மணி நேர நிகழ்ச்சி, அவிநாசி சாலையில் உள்ள மேடை தி ஸ்டேஜில் நடைபெறுகிறது. நவம்பர் 21ஆம் தேதி கொடிசியா வர்த்தகக் கண்காட்சி வளாகத்தில் ‘மெடிக்கான் எக்ஸ்போ 2026’ மருத்துவ உபகரணக் கண்காட்சி நடைபெறுகிறது. 250-க்கும் மேற்பட்ட அரங்குகள் இடம்பெறுகின்றன. அனுமதி இலவசம். நவம்பர் 20ஆம் தேதி கஸ்தூரி சீனிவாசன் கலைக்கூடத்தில், அவிநாசி சாலையில் ‘வாய்ஸ் ஆப் தி வைல்ட்’ ஓவியக் கண்காட்சி நடைபெறுகிறது. ஓவியர் சுரேஷ் ராகவன் வரைந்த 113 வனவிலங்கு ஓவியங்கள் இடம்பெறுகின்றன. நவம்பர் 18 முதல் 22ஆம் தேதி வரை நவக்கரையில் உள்ள ஏ ஜே கே கல்லூரி மைதானத்தில் மாநில அளவிலான விளையாட்டுத் திருவிழா நடைபெறுகிறது. கால்பந்து, கூடைப்பந்து, செஸ், கபடி போட்டிகள் நடத்தப்படுகின்றன. வெற்றி பெறுவோருக்கு பரிசுத்தொகையும் கோப்பைகளும் வழங்கப்படும். நவம்பர் 16 முதல் 23ஆம் தேதி வரை சரவணம்பட்டியில் உள்ள டி கம்யூனில் மண்பாண்டப் பயிலரங்கு நடைபெறுகிறது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🎶 கோவையில் இந்த வாரம்: இசை, மருத்துவக் கண்காட்சி, ஓவியம், விளையாட்டுத் திருவிழா, பயிலரங்கு\n\n📰 முழு விவரம்:\nகோவையைச் சேர்ந்த உன்னிகிருஷ்ணன் தனது முதல் இசை நிகழ்ச்சியை சொந்த ஊரில் நடத்துகிறார். பழைய மெலடிகள், உற்சாகப் பாடல்கள், ரசிகர்கள் விரும்பும் பாடல்கள் என 2 மணி நேர நிகழ்ச்சி.\nநவம்பர் 21ஆம் தேதி மருத்துவ உபகரணக் கண்காட்சி நடைபெறுகிறது. அறுவை சிகிச்சை கருவிகள், தீவிர சிகிச்சைப் பிரிவு உபகரணங்கள், ஆய்வக தொழில்நுட்பம் உள்ளிட்ட 250-க்கும் மேற்பட்ட அரங்குகள் உள்ளன.\nநவம்பர் 20ஆம் தேதி ஓவியர் சுரேஷ் ராகவனின் 113 வனவிலங்கு ஓவியங்கள் கொண்ட கண்காட்சி நடைபெறுகிறது.\nநவம்பர் 18 முதல் 22 வரை மாநில அளவிலான விளையாட்டுத் திருவிழா நடைபெறுகிறது. கால்பந்து, கூடைப்பந்து, செஸ், வாலிபால், கபடி போட்டிகளில் வெற்றி பெறுவோருக்கு பரிசுத்தொகையும் கோப்பைகளும் வழங்கப்படும்.\nநவம்பர் 16 முதல் 23 வரை சரவணம்பட்டியில் மண்பாண்டம் தயாரிக்கும் பயிலரங்கு நடைபெறுகிறது.\n📍 இசை: மேடை தி ஸ்டேஜ், அவிநாசி சாலை\n📍 மருத்துவக் கண்காட்சி: கொடிசியா வர்த்தகக் கண்காட்சி வளாகம்\n📍 ஓவியக் கண்காட்சி: கஸ்தூரி சீனிவாசன் கலைக்கூடம், அவிநாசி சாலை\n📍 விளையாட்டுப் போட்டி: ஏ.ஜே.கே. கல்லூரி விளையாட்டு மைதானம், நவக்கரை\n📍 பயிலரங்கு: டி கம்யூன், சரவணம்பட்டி\nℹ️ மருத்துவக் கண்காட்சி அனுமதி இலவசம்.\nநண்பர்களுக்கும் குடும்பத்தினருக்கும் Share செய்யுங்கள்.\n\nThis week in Coimbatore: music show, medical expo, painting exhibition, sports festival | Coimbatore news\n📍 கோவை, கோயம்புத்தூர் மாவட்டம் | 19 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Avinashi",
-   "prompts": "A packed outdoor stage with warm stage lights and a singer at a microphone seen from behind the crowd, with audience members raising their hands and singing along on a city evening in Coimbatore. The place is a music venue on Avinashi Road with a banner-free backdrop of tall buildings and streetlights, and the nearby road has two-wheelers and an autorickshaw passing in the distance. The people in the foreground are young men in shirts and women in sarees and salwar kameez, seen from behind and slightly blurred, swaying and clapping. Hanging stage lights, a microphone stand and speakers frame the scene. The time is early evening with the sky turning dark blue and the lights glowing warm. Camera is at eye level, 35 mm, wide enough to show the stage, crowd and the road beyond, with the faint outline of Western Ghats hills in the far background. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/this-weeks-excitement/4380511",
-   "published": "2026-11-19T17:34:24+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script copies the article word for word (15 words in a row, 10% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795138610/kovaiminnal/usbzaatbz2jctqeb5iha.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவையில் சீரற்ற இதயத் துடிப்பை ஆரம்பத்திலேயே கண்டறிய சிறப்பு மருத்துவ முகாம்",
-   "english_headline": "Special camp at KMCH hospital on Avinashi Road, Coimbatore, to detect irregular heartbeat early until 26 November",
-   "category": "Health",
-   "location": "KMCH hospital, Avinashi Road, Coimbatore, Coimbatore district",
-   "importance": "Medium",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "மருத்துவ முகாம்",
-    "loc": "அவினாசி ரோடு, கோவை",
-    "hl1": "கோவையில் இதய துடிப்பு சிறப்பு முகாம்",
-    "hl2": "நவ. 26 வரை, காலை 9 – மதியம்",
-    "slides": [
-     {
-      "title": "எங்கு, எப்போது?",
-      "lines": [
-       "அவினாசி ரோட்டில் உள்ள கே.எம்.சி.எச். மருத்துவமனையில் முகாம்",
-       "நவ. <b>26</b> ஆம் தேதி வரை நடக்கிறது",
-       "காலை <b>9 மணி</b> முதல் மதியம் <b>1 மணி</b> வரை"
-      ]
-     },
-     {
-      "title": "என்ன பிரச்சனை?",
-      "lines": [
-       "சீரற்ற இதயத் துடிப்பு (அரித்மியா) என்பது இதயம் ஒழுங்கற்று",
-       "வயது முதிர்வு, உயர் ரத்த அழுத்தம், சர்க்கரை நோய் காரணங்கள்",
-       "ஆரம்பத்திலேயே சிகிச்சை பெறாவிட்டால் பக்கவாதம் ஏற்படலாம்"
-      ]
-     },
-     {
-      "title": "என்ன பரிசோதனை?",
-      "lines": [
-       "இ.சி.ஜி., எக்கோ பரிசோதனைகள் செய்யப்படும்",
-       "தைராய்டு, ஹீமோகுளோபின் உள்ளிட்ட ரத்த பரிசோதனைகள்",
-       "இதய சிறப்பு மருத்துவ நிபுணர்களின் நேரடி ஆலோசனை"
-      ]
-     },
-     {
-      "title": "யாருக்கு பயன்?",
-      "lines": [
-       "களைப்பு, தலைசுற்றல், மூச்சுத் திணறல் இருந்தால் வாருங்கள்",
-       "மார்பு வலி அல்லது அழுத்தம் இருந்தால் உடனடியாக வாருங்கள்",
-       "தொடர்புக்கு: 74188 87411"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோவையில் இதயத் துடிப்பு பாதிப்பைக் கண்டறிய சிறப்பு மருத்துவ முகாம் நடைபெறுகிறது. அவினாசி ரோட்டில் உள்ள கே எம் சி எச் மருத்துவமனையில் நவம்பர் 26ஆம் தேதி வரை இந்த முகாம் நடக்கிறது. பொதுமக்கள் காலை 9 மணி முதல் மதியம் 1 மணி வரை வந்து சிகிச்சை பெறலாம். ஆரோக்கியமான ஒருவரின் இதயம் நிமிடத்திற்கு 60 முதல் 100 முறை சீராகத் துடிக்கும். இதயத்தில் மின் சமிக்ஞைகளில் தடங்கல் ஏற்பட்டால் துடிப்பு ஒழுங்கற்றதாக மாறும். இதுவே அரித்மியா எனப்படும் சீரற்ற இதயத் துடிப்பு. வயது முதிர்வு, உயர் ரத்த அழுத்தம், சர்க்கரை நோய், தைராய்டு குறைபாடு ஆகியவை முக்கியக் காரணங்கள். ஆரம்பத்திலேயே சிகிச்சை பெறாவிட்டால் பக்கவாதம், திடீர் இதய செயலிழப்பு ஏற்படலாம். இ சி ஜி, எக்கோ, ரத்தப் பரிசோதனைகள் செய்யப்படும். இதய சிறப்பு மருத்துவ நிபுணர்களின் நேரடி ஆலோசனையும் வழங்கப்படும். களைப்பு, தலைசுற்றல், மூச்சுத் திணறல், மார்பு வலி இருந்தால் அலட்சியம் செய்யாமல் உடனடியாகப் பரிசோதனை செய்யுங்கள். மேலும் விவரங்களுக்கு 74188 87411 என்ற எண்ணில் தொடர்பு கொள்ளலாம். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🩺 கோவையில் இதய துடிப்பு சிறப்பு முகாம்: நவ. 26 வரை\n\n📰 முழு விவரம்:\nஅவினாசி ரோட்டில் உள்ள கே.எம்.சி.எச். மருத்துவமனையில், சீரற்ற இதயத் துடிப்பு பாதிப்பை ஆரம்ப நிலையிலேயே கண்டறிந்து குணப்படுத்த சிறப்பு மருத்துவ முகாம் நடைபெறுகிறது. நவம்பர் 26ஆம் தேதி வரை நடைபெறும் இம்முகாமில் பொதுமக்கள் சிகிச்சை பெறலாம்.\nசீரற்ற இதயத் துடிப்பு (அரித்மியா) என்பது இதயத்தின் மின் சமிக்ஞைகளில் தடங்கல் ஏற்படும்போது, துடிப்பு வேகமாகவோ மெதுவாகவோ ஒழுங்கற்றதாகவோ மாறுவது ஆகும். வயது முதிர்வு, உயர் ரத்த அழுத்தம், சர்க்கரை நோய், தைராய்டு குறைபாடு, தூக்கமின்மை, அதிகப் புகை, மதுப்பழக்கம் ஆகியவை முக்கியக் காரணங்கள். ஆரம்பத்திலேயே சிகிச்சை பெறாவிட்டால் பக்கவாதம், திடீர் இதய செயலிழப்பு போன்ற ஆபத்துகள் ஏற்பட வாய்ப்புள்ளது.\n🩺 பரிசோதனைகள்: இ.சி.ஜி., எக்கோ, தைராய்டு, ஹீமோகுளோபின், பொட்டாசியம், கிரியேட்டினின் ஆகிய ரத்தப் பரிசோதனைகள் செய்யப்படும். இதய சிறப்பு மருத்துவ நிபுணர்களின் நேரடி ஆலோசனையும் வழங்கப்படும்.\n⚠️ உடனடி கவனம் தேவை: காரணமின்றி தொடர் களைப்பு, அடிக்கடி தலைசுற்றல் அல்லது மயக்கம், இதயம் வேகமாகத் துடிப்பது அல்லது துடிப்பு விடுபடுவது, சிறு வேலைக்கே மூச்சுத் திணறல், மார்பு வலி அல்லது அழுத்தம் இருந்தால் உடனடியாக பரிசோதனை செய்யுங்கள்.\n📍 இடம்: கே.எம்.சி.எச். மருத்துவமனை, அவினாசி ரோடு, கோவை\n🗓️ நாள்: நவம்பர் 26ஆம் தேதி வரை\n🕘 நேரம்: காலை 9 மணி முதல் மதியம் 1 மணி வரை\n📞 தொடர்புக்கு: 74188 87411\n\nHeart rhythm special camp Coimbatore till 26 Nov | Coimbatore health news\n📍 அவினாசி ரோடு, கோவை | 19 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Avinashi #மருத்துவம் #CoimbatoreNews",
-   "prompts": "A group of patients sits in the waiting area of a large private hospital on Avinashi Road in Coimbatore, where a free heart screening camp is running until 26 November. Seen from behind and slightly to the side, a doctor in a white coat and a hospital staff member in a uniform guide a middle-aged man and a woman in a cotton saree toward a counter lined with registration forms and a camp banner-free desk. The waiting area has tiled floors, rows of plastic chairs and tall glass windows letting in bright morning light, around 9 am. Traffic on Avinashi Road is faintly visible through the glass, with a town bus and two-wheelers passing. The atmosphere is calm and orderly, with a few people waiting quietly. Eye-level camera, 35 mm lens, wide enough to show the hospital interior and the queue of people. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a medical ECG machine in a hospital examination room, its thin white recording paper showing a rhythmic heartbeat trace, with electrode leads and sticky chest electrodes neatly arranged beside it on a clean white sheet. Beside the machine, a few small blood sample tubes sit in a tray, hinting at the blood tests offered at the camp. Soft morning daylight comes through a window onto the equipment, and a blurred figure of a doctor in a white coat stands far in the background. No readable text or labels are visible. Camera slightly high, 35 mm, detail focus on the machine and heart trace. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/random-heart-rate-can-be-detected-early/4381017",
-   "published": "2026-11-19T22:26:43+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: not grounded: location 'ரோடு' is not in the article; caption misses facts of the article (put every one in 📰 முழு விவரம்): 60 ('ஆரோக்கியமான ஒருவரின் இதயம் நிமிடத்திற்கு, 60 – 100 முறை சீரா'); 100 ('ஆரோக்கியமான ஒருவரின் இதயம் நிமிடத்திற்கு, 60 – 100 முறை சீரா')",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795138618/kovaiminnal/oyq1imue2vf49y2ww3jm.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795138621/kovaiminnal/b0ndrda9cd1tdyqurpuy.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795145821/kovaiminnal/lkyq2jhjl2cbjexdwz99.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795145837/kovaiminnal/peecuzu6rbha0l3ag0ie.jpg"
    ]
   }
  ]

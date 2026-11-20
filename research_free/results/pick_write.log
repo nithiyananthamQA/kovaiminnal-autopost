@@ -1,202 +1,129 @@
-writing [N]: வரும், 24ல் விவசாயிகள் குறைதீர் கூட்டம்
-writing [N]: முன்னாள் பிரதமர் பிறந்த நாள் விழா
-writing [N]: மனைவியின் நினைவுகளால் உருவான ஒரு ஊர்!
+writing [N]: மிலான் மாநாட்டில் இந்தியாவை பிரதிநிதித்துவப்படுத்திய டாக்டர்
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+writing [N]: கட்டுமானப் பொருட்கள் கண்காட்சி
+writing [N]: ‘தொழில் நிறுவனங்களின் வளர்ச்சிக்கு தரமே அடித்தளம்’
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please che
 dead for this round: gemini/gemini-3.6-flash
+ok gemini/gemini-3.6-flash (15s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please che
 dead for this round: gemini/gemini-3.5-flash
+ok gemini/gemini-3.6-flash (19s)
+attempt 1 gemini/gemini-3.6-flash: 2 problems
+  caption copies the article word for word (15 words in a row, 26% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+  reel_script sentence 1 (heard in the first 3 seconds) must name the place 'கோவை' and the news itself, e.g. 'கோவை-இல் ... 3 பேர் கைது.' - viewers decide in 3 seconds whether the news is about their area
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3.5-flash (19s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, plea
 dead for this round: gemini/gemini-3-flash-preview
+ok groq/openai/gpt-oss-120b (4s)
+factcheck by groq/openai/gpt-oss-120b: 0 problems
+attempt 1 gemini/gemini-3.5-flash: 0 problems
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok groq/openai/gpt-oss-120b (6s)
+proofread rejected (3 problems)
+  sentence 1 (one-line story) has 14 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  caption must contain the exact follow line
+  caption has no "📰 முழு விவரம்:" block - put the whole story (every fact) in the caption
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
 fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
 dead for this round: groq/openai/gpt-oss-120b
+ok groq/qwen/qwen3.8-27b (1s)
+real photo step skipped for ''Quality Conclave 2026' held in Coimbato': real photos switched off
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+image match: True The photo clearly shows a conference hall with a backdrop screen titled 'QUALITY CONCLAVE 2026' depicting a speaker addr
+ok gemini/gemini-3-flash-preview (46s)
+factcheck by gemini/gemini-3-flash-preview: 0 problems
+attempt 1 gemini/gemini-3.6-flash: 0 problems
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok groq/qwen/qwen3.8-27b (2s)
+proofread rejected (1 problems)
+  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+image match: True The image depicts a conference room setup with microphones, water bottles, and seated attendees, matching the setting of
+images made: 2 for ''Quality Conclave 2026' held in Coimbato'
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261120-0905","first":"RN-167"}
+posting job started at once
+fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
+poor answer - skipped for 30 min: gemini/gemini-3-flash-preview
 fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
 dead for this round: groq/qwen/qwen3.8-27b
 free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
+ok groq/qwen/qwen3.8-27b (1s)
+real photo step skipped for ''Build Excon 2026' building materials ex': real photos switched off
 ok anthropic/claude-haiku-5-5
 claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
-  reel_script has 55 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
-ok gemini/gemini-3.6-flash (10s)
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-free fact-check unavailable, using Claude: no free model answered: None
+  caption copies the article word for word (20 words in a row, 33% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
 ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 1 problems
-  The article says the Congress birthday event was held at the party office in Pollachi, but the reel_script and caption say it was held in Pollachi, which is consistent; however the reel_script also states the event was held 'பொள்ளாச்சி காங்கிரஸ் கட்சி அலுவலகத்தில்' and slides say 'கட்சி அலுவலகத்தில் மாலை அணிவித்து மரியாதை' - no error there. Real problem: the reel_script says 'இதேபோல் கிணத்துக்கடவிலும் இந்திரா காந்தி பிறந்த நாள் விழா கொண்டாடப்பட்டது' and caption says Kinathukadavu event, which the article supports; but the reel_script calls Indira Gandhi's portrait tribute and the caption states Indira Gandhi's birth anniversary in Pollachi - fine. The caption dated '19 நவம்பர் 2026' is the posting-date line and is not a problem. Main issue: the reel_script and caption attribute the Pollachi office event to 'கோவை தெற்கு மாவட்டம் மற்றும் பொள்ளாச்சி நகர காங்கிரஸ்' which matches the article; the reel_script's 'பொள்ளாச்சி நகர காங்கிரஸ் தலைவர் கவிதா' matches. Additionally, the caption's English tag line 'Indira Gandhi 109th birth anniversary celebration in Pollachi' is an unsupported English addition of a place-specific claim not in the article's wording, though the article does describe the event in Pollachi.
-attempt 1 gemini/gemini-3.6-flash: 1 problems
-  fact-check: The article says the Congress birthday event was held at the party office in Pollachi, but the reel_script and caption say it was held in Pollachi, which is consistent; however the reel_script also states the event was held 'பொள்ளாச்சி காங்கிரஸ் கட்சி அலுவலகத்தில்' and slides say 'கட்சி அலுவலகத்தில் மாலை அணிவித்து மரியாதை' - no error there. Real problem: the reel_script says 'இதேபோல் கிணத்துக்கடவிலும் இந்திரா காந்தி பிறந்த நாள் விழா கொண்டாடப்பட்டது' and caption says Kinathukadavu event, which the article supports; but the reel_script calls Indira Gandhi's portrait tribute and the caption states Indira Gandhi's birth anniversary in Pollachi - fine. The caption dated '19 நவம்பர் 2026' is the posting-date line and is not a problem. Main issue: the reel_script and caption attribute the Pollachi office event to 'கோவை தெற்கு மாவட்டம் மற்றும் பொள்ளாச்சி நகர காங்கிரஸ்' which matches the article; the reel_script's 'பொள்ளாச்சி நகர காங்கிரஸ் தலைவர் கவிதா' matches. Additionally, the caption's English tag line 'Indira Gandhi 109th birth anniversary celebration in Pollachi' is an unsupported English addition of a place-specific claim not in the article's wording, though the article does describe the event in Pollachi.
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-free models unavailable: no free model answered: None
+claude rewrite 2 anthropic/claude-haiku-5-5: 4 problems
+  slide 3 line 2 is cut off mid-phrase ('டாக்டர் ராம்பிரசாத்') - write a complete short phrase
+  reel_script copies the article word for word (19 words in a row, 41% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+  caption copies the article word for word (17 words in a row, 34% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+  known issue card_cut_mid_phrase: card cut off mid-phrase ('டாக்டர் ராம்பிரசாத்') - rewrite so it does not happen again
+image match: False The photo shows banners with Gujarati script, indicating an exhibition in Gujarat rather than at Codissia in Coimbatore,
 ok anthropic/claude-haiku-5-5
-claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
-  reel_script has 45 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
-ok gemini/gemini-3.6-flash (16s)
-attempt 1 gemini/gemini-3.6-flash: 1 problems
-  numbers not found in the article: 80
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-free models unavailable: no free model answered: None
-ok anthropic/claude-haiku-5-5
-claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
-  caption copies the article word for word (23 words in a row, 67% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-ok anthropic/claude-haiku-5-5
-claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
-  reel_script has 46 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+claude rewrite 3 anthropic/claude-haiku-5-5: 3 problems
+  slide 3 line 3 is cut off mid-phrase (' டாக்டர் ராம்பிரசாத்') - write a complete short phrase
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  known issue card_cut_mid_phrase: card cut off mid-phrase ('இவர் டாக்டர் ராம்பிரசாத்') - rewrite so it does not happen again
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 proofread skipped: no free model answered: None
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 ok anthropic/claude-haiku-5-5
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-free fact-check unavailable, using Claude: no free model answered: None
-ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 0 problems
-claude rewrite 1 anthropic/claude-haiku-5-5: 0 problems
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-proofread skipped: no free model answered: None
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok anthropic/claude-haiku-5-5
-real photo step skipped for 'Farmers' grievance meeting on 24 Novembe': real photos switched off
-ok anthropic/claude-haiku-5-5
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-free fact-check unavailable, using Claude: no free model answered: None
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 3 problems
-  reel_script says the Kinathukadavu event was attended by 'நகர தலைவர் செந்தில்குமார்' jointly with ஒன்றிய தலைவர் சாந்தலிங்கம் (the article says the city leader Senthilkumar presided together with the union leader, which is consistent), but the reel_script and slides_spec attribute the Kinathukadavu event as held in Pollachi context; more importantly, slides_spec says 'நகர தலைவர் கவிதா' and the caption says 'கோவை தெற்கு மாவட்ட மற்றும் பொள்ளாச்சி நகர காங்கிரஸ் கட்சி அலுவலகத்தில்' while the article does not say the Kinathukadavu event was in the party office, and the caption also states the Kinathukadavu event had 'மரியாதை' presented by the same people without article support for the Kinathukadavu flower-garland detail
-  reel_script calls செந்தில்குமார் 'நகர தலைவர்' but the article's wording (நகர தலைவர் செந்தில்குமார்) is ambiguous between Pollachi city and Kinathukadavu; the caption's Kinathukadavu tribute sentence adds the claim that tribute was paid there, which the article only partially states
-  caption's Kinathukadavu sentence is ungrammatical/unclear: 'கிணத்துக்கடவில் நடந்த நிகழ்விலும் மரியாதை செலுத்தப்பட்டது' and then assigns the chairing roles, mixing the tribute detail with the presiding detail
-claude rewrite 2 anthropic/claude-haiku-5-5: 3 problems
-  fact-check: reel_script says the Kinathukadavu event was attended by 'நகர தலைவர் செந்தில்குமார்' jointly with ஒன்றிய தலைவர் சாந்தலிங்கம் (the article says the city leader Senthilkumar presided together with the union leader, which is consistent), but the reel_script and slides_spec attribute the Kinathukadavu event as held in Pollachi context; more importantly, slides_spec says 'நகர தலைவர் கவிதா' and the caption says 'கோவை தெற்கு மாவட்ட மற்றும் பொள்ளாச்சி நகர காங்கிரஸ் கட்சி அலுவலகத்தில்' while the article does not say the Kinathukadavu event was in the party office, and the caption also states the Kinathukadavu event had 'மரியாதை' presented by the same people without article support for the Kinathukadavu flower-garland detail
-  fact-check: reel_script calls செந்தில்குமார் 'நகர தலைவர்' but the article's wording (நகர தலைவர் செந்தில்குமார்) is ambiguous between Pollachi city and Kinathukadavu; the caption's Kinathukadavu tribute sentence adds the claim that tribute was paid there, which the article only partially states
-  fact-check: caption's Kinathukadavu sentence is ungrammatical/unclear: 'கிணத்துக்கடவில் நடந்த நிகழ்விலும் மரியாதை செலுத்தப்பட்டது' and then assigns the chairing roles, mixing the tribute detail with the presiding detail
-ok anthropic/claude-haiku-5-5
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 2 for 'Farmers' grievance meeting on 24 Novembe'
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261120-0706","first":"RN-162"}
-ok anthropic/claude-haiku-5-5
-posting job started at once
-real photo step skipped for 'Sundarapuram: a town named after a busin': real photos switched off
-ok anthropic/claude-haiku-5-5
-claude rewrite 3 anthropic/claude-haiku-5-5: 2 problems
-  reel_script copies the article word for word (16 words in a row, 37% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-  caption copies the article word for word (16 words in a row, 45% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-proofread skipped: no free model answered: None
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-writing [N]: இந்த வாரம் ஆரவாரம்
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-free models unavailable: no free model answered: None
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-ok anthropic/claude-haiku-5-5
-images made: 2 for 'Sundarapuram: a town named after a busin'
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261120-0706","first":"RN-163"}
-real photo step skipped for 'Indira Gandhi's 109th birth anniversary ': real photos switched off
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-writing [N]: சீரற்ற இதயத் துடிப்பை ஆரம்பத்திலேயே கண்டறியலாம்
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-free models unavailable: no free model answered: None
-ok anthropic/claude-haiku-5-5
-claude rewrite 1 anthropic/claude-haiku-5-5: 2 problems
-  source/outlet name or link appears: தினமலர்
-  caption copies the article word for word (15 words in a row, 32% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 2 for 'Indira Gandhi's 109th birth anniversary '
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261120-0706","first":"RN-164"}
-ok anthropic/claude-haiku-5-5
-claude rewrite 1 anthropic/claude-haiku-5-5: 2 problems
-  reel_script has 92 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
-  not grounded: location 'ரோடு' is not in the article
-ok anthropic/claude-haiku-5-5
-claude rewrite 2 anthropic/claude-haiku-5-5: 3 problems
-  sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
-  reel_script copies the article word for word (15 words in a row, 13% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-  caption copies the article word for word (15 words in a row, 14% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-ok anthropic/claude-haiku-5-5
-claude rewrite 2 anthropic/claude-haiku-5-5: 2 problems
-  reel_script has 98 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
-  not grounded: location 'ரோடு' is not in the article
-ok anthropic/claude-haiku-5-5
-claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
-  reel_script copies the article word for word (15 words in a row, 10% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-proofread skipped: no free model answered: None
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok anthropic/claude-haiku-5-5
-real photo step skipped for 'This week in Coimbatore: music show, med': real photos switched off
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 1 for 'This week in Coimbatore: music show, med'
-ok anthropic/claude-haiku-5-5
-claude rewrite 3 anthropic/claude-haiku-5-5: 2 problems
-  not grounded: location 'ரோடு' is not in the article
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): 60 ('ஆரோக்கியமான ஒருவரின் இதயம் நிமிடத்திற்கு, 60 – 100 முறை சீரா'); 100 ('ஆரோக்கியமான ஒருவரின் இதயம் நிமிடத்திற்கு, 60 – 100 முறை சீரா')
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-proofread skipped: no free model answered: None
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261120-0706","first":"RN-165"}
-ok anthropic/claude-haiku-5-5
-real photo step skipped for 'Special camp at KMCH hospital on Avinash': real photos switched off
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 2 for 'Special camp at KMCH hospital on Avinash'
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261120-0707","first":"RN-166"}
+image match: True The photo shows an indoor building materials exhibition hall with stalls, material displays, and visitors consistent wit
+image match: True The photo shows a building materials expo setting where a demonstration or testing of building blocks with measuring/qua
+images made: 2 for ''Build Excon 2026' building materials ex'
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261120-0906","first":"RN-168"}
+real photo step skipped for 'Coimbatore doctor represents India at Mi': real photos switched off
+image match: True The photo shows a speaker at a podium inside a conference hall presenting a heart diagram on screen to an audience, whic
+image match: True The photo shows an auditorium conference setting with a participant's desk featuring an Indian flag placard, consistent 
+images made: 2 for 'Coimbatore doctor represents India at Mi'
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261120-0907","first":"RN-169"}
 earlier stories still waiting for images: []
 instagram check: 50 recent posts read from the page
 pick round: only the picked links are written (research_free/pick.py)
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/random-heart-rate-can-be-detected-early/4381017
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/this-weeks-excitement/4380511
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/farmers-grievance-redressal-meet-to-be-held-on-24th/4380512
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/a-city-made-of-memories-of-a-wife/4380689
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/former-prime-minister-s-birthday-celebrations/4380708
-candidate filter: collected=5
-to write: 5 Coimbatore district candidates (max 5 stories)
-round: top 5 of 5 candidates
-candidates waiting: 5 Coimbatore; time left 79 min
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/quality-is-the-foundation-for-the-growth-of-enterprises/4380610
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/construction-products-exhibition/4380566
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/dr-represented-india-at-the-milan-conference/4380830
+candidate filter: collected=3
+to write: 3 Coimbatore district candidates (max 3 stories)
+round: top 3 of 3 candidates
+candidates waiting: 3 Coimbatore; time left 79 min
 try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
 try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
 try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
 auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})
 posting job started at once
-try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
-auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})
-try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
-auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 5})
 auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 7})
-auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 9})
-candidate loop ended: left 0, tried={'N': 5}, done={'N': 5}, time left 78 min
-filed: 5 Coimbatore district stories (target 5), reels only
+candidate loop ended: left 0, tried={'N': 3}, done={'N': 3}, time left 77 min
+filed: 3 Coimbatore district stories (target 3), reels only
 queue: 0 news waiting to be written
-All News sheet: {"ok":true,"added":5,"updated":0} 
-stories: 5
+All News sheet: {"ok":true,"added":3,"updated":0} 
+stories: 3
