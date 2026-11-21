@@ -3,429 +3,171 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/band-music-competition-between-schools/4381406",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/awareness-contest-on-behalf-of-election-education-committee/4381653",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/thiruparankundram/4381991",
-  "manual link added: https://www.dinamani.com/trade/2026/Nov/20/2-new-gold-savings-schemes-saravana-storessuper-jewellery-introduces",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/what-happened-to-the-three-member-inquiry-report-fourth-again-a-committee-why/4381986",
-  "candidate filter: collected=5",
-  "to write: 5 Coimbatore district candidates (max 5 stories)",
-  "round: top 5 of 5 candidates",
-  "candidates waiting: 5 Coimbatore; time left 79 min",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/rs-30-lakh-handling-in-private-company/4381377",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/cable-tv-office-in-the-housing-unit-home/4381505",
+  "candidate filter: collected=2",
+  "to write: 2 Coimbatore district candidates (max 2 stories)",
+  "round: top 2 of 2 candidates",
+  "candidates waiting: 2 Coimbatore; time left 79 min",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "try (N) manual=True: https://www.dinamani.com/trade/2026/Nov/20/2-new-gold-saving",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 3})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 5})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 7})",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 9})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 11})",
-  "candidate loop ended: left 0, tried={'N': 5}, done={'N': 5}, time left 76 min",
-  "filed: 5 Coimbatore district stories (target 5), reels only",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
+  "candidate loop ended: left 0, tried={'N': 2}, done={'N': 2}, time left 78 min",
+  "filed: 2 Coimbatore district stories (target 2), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":5,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":2,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
+  "ok gemini/gemini-3.6-flash (22s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok gemini/gemini-3.5-flash (25s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3-flash-preview (5s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
   "ok gemini/gemini-3-flash-preview (11s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "ok gemini/gemini-3-flash-preview (11s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok groq/qwen/qwen3.8-27b (4s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "dead for this round: groq/openai/gpt-oss-120b",
   "ok groq/qwen/qwen3.8-27b (0s)",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "ok groq/qwen/qwen3.8-27b (4s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "dead for this round: groq/qwen/qwen3.8-27b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
+  "ok groq/openai/gpt-oss-120b (4s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5"
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash"
  ],
  "stories": [
   {
-   "tamil_headline": "பாரதியார் பல்கலை: மூன்று விசாரணைக்குப் பின் நான்காவதாக மீண்டும் ஒரு குழு",
-   "english_headline": "Bharathiar University: fourth inquiry committee formed against Lovelina Little Flower despite three earlier probes",
-   "category": "Education",
-   "location": "Coimbatore, Coimbatore district",
-   "importance": "High",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "பல்கலை விசாரணை",
-    "loc": "கோவை",
-    "hl1": "பாரதியார் பல்கலையில் நான்காவது குழு",
-    "hl2": "இதுவரை நடவடிக்கை இல்லை",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "நான்காவதாக மீண்டும் ஒரு குழு அமைக்கப்பட்டுள்ளது",
-       "பேராசிரியர் லவ்லினா லிட்டில் பிளவர் மீதான புகார்கள்",
-       "கடந்த <b>ஜூலை</b> மாதம் இரண்டு சிண்டிகேட் உறுப்பினர்கள் கொண்ட குழு"
-      ]
-     },
-     {
-      "title": "முந்தைய விசாரணை",
-      "lines": [
-       "மூன்று குழுக்கள் ஏற்கனவே விசாரணை நடத்தின",
-       "<b>2025 பிப்ரவரி 7</b>ல் 17 பி ஒழுங்கு நடவடிக்கை நோட்டீசு",
-       "<b>14</b> வகையான குற்றச்சாட்டுகள் பட்டியலிடப்பட்டுள்ளன"
-      ]
-     },
-     {
-      "title": "ஆசிரியர்கள்",
-      "lines": [
-       "17 பி வழங்கப்பட்டும் இதுவரை இறுதி நடவடிக்கை இல்லை",
-       "விசாரணையை நீட்டிப்பது புகார்களை நீர்த்துப்போகச் செய்யும் என",
-       "பல்கலை நிர்வாகம் தெளிவான விளக்கம் அளிக்கவில்லை"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "பாரதியார் பல்கலையில் மூன்று விசாரணைக்குப் பிறகு நான்காவதாக மீண்டும் ஒரு குழு அமைக்கப்பட்டுள்ளது. பல்கலை முன்னாள் துணைவேந்தர் பொறுப்பு குழு உறுப்பினரும், சமூகப்பணித்துறை பேராசிரியருமான லவ்லினா லிட்டில் பிளவர் மீதான புகார்கள் இதற்குக் காரணம். துணைவேந்தர் குழு உறுப்பினராக இருந்தபோது அதிகாரப் பகிர்வு, விதிமீறல் நிர்வாக முடிவுகள் குறித்துப் புகார்கள் எழுந்தன. ஐ.ஏ.எஸ். அதிகாரி தலைமையிலும், சிண்டிகேட் உறுப்பினர்கள் குழுக்கள் மூலமும் விசாரணை நடத்தப்பட்டது. 2025 பிப்ரவரி 7ஆம் தேதி அவருக்கு ஒழுங்கு நடவடிக்கைக்கான 17 பி நோட்டீசு வழங்கப்பட்டது. அதில் 14 வகையான குற்றச்சாட்டுகள் இடம்பெற்றுள்ளன. இந்த நிலையில், கடந்த ஜூலை மாதம் இரண்டு சிண்டிகேட் உறுப்பினர்கள் அடங்கிய குழு அமைக்கப்பட்டு புதிதாக விசாரணை தொடங்கப்பட்டுள்ளதாகக் கூறப்படுகிறது. 17 பி வழங்கப்பட்டும் இதுவரை இறுதி நடவடிக்கை எடுக்கப்படாதது ஆசிரியர்கள் மத்தியில் அதிருப்தியை ஏற்படுத்தியுள்ளது. குழுக்கள் அமைத்துக் காலம் கடத்துவது புகார்களை நீர்த்துப்போகச் செய்யும் நோக்கமா என ஆசிரியர்கள் சந்தேகம் எழுப்பியுள்ளனர். பல்கலை நிர்வாகத் தரப்பில் தெளிவான விளக்கம் அளிக்கப்படவில்லை. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 பாரதியார் பல்கலையில் நான்காவது விசாரணைக் குழு: இதுவரை இறுதி நடவடிக்கை இல்லை\n\n📰 முழு விவரம்:\nபாரதியார் பல்கலை முன்னாள் துணைவேந்தர் பொறுப்பு குழு உறுப்பினரும், சமூகப்பணித்துறை பேராசிரியருமான லவ்லினா லிட்டில் பிளவர் மீதான புகார்கள் குறித்து மூன்று குழுக்கள் ஏற்கனவே விசாரணை நடத்தின.\nதுணைவேந்தர் குழு உறுப்பினராக இருந்தபோது அதிகாரப் பகிர்வு, விதிகளை மீறிய நிர்வாக முடிவுகள் குறித்துப் புகார்கள் எழுந்தன.\nஐ.ஏ.எஸ். அதிகாரி தலைமையிலும், சிண்டிகேட் உறுப்பினர்கள் குழுக்கள் மூலமும் விசாரணை நடத்தப்பட்டது; ஐ.ஏ.எஸ். அதிகாரி தலைமையிலான குழு பல்கலையில் நேரடி திடீர் ஆய்வும் செய்தது.\n2025 பிப்ரவரி 7ஆம் தேதி ஒழுங்கு நடவடிக்கைக்கான 17 பி நோட்டீசு வழங்கப்பட்டது.\nநோட்டீசில் ஒருங்கிணைப்பாளரின் முன் அனுமதியின்றி 685 தகுதி ஒப்புதல்கள் வழங்கியது, 59 இணைப்புக் கல்லூரிகளுக்கு கூடுதல் இடங்கள் ஒதுக்கியது, 28 பல்கலை பிரதிநிதிகளை நியமித்தது ஆகிய குற்றச்சாட்டுகள் உள்ளன.\nமேலும், 55 கவுரவ விரிவுரையாளர்கள் நியமனம், வழக்கறிஞர் நியமனம், ரூ.30 லட்சம் இறக்குமதி வரி செலுத்தியது, 16.50 லட்சத்துக்கு மேல் முன் அனுமதியின்றி செலவிட்டது உள்ளிட்ட 14 வகையான குற்றச்சாட்டுகள் பட்டியலிடப்பட்டுள்ளன.\nகடந்த ஜூலை மாதம் இரண்டு சிண்டிகேட் உறுப்பினர்கள் அடங்கிய நான்காவது குழு அமைக்கப்பட்டு புதிதாக விசாரணை தொடங்கப்பட்டுள்ளதாகக் கூறப்படுகிறது.\nஇதுவரை இறுதி நடவடிக்கை எடுக்கப்படாததால் ஆசிரியர்கள் அதிருப்தி தெரிவித்துள்ளனர்.\nபல்கலை நிர்வாகத் தரப்பில் தெளிவான விளக்கம் அளிக்கப்படவில்லை.\n\nBharathiar University fourth inquiry committee | Coimbatore news\n📍 பாரதியார் பல்கலை, கோவை | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #BharathiarUniversity #கல்வி #CoimbatoreNews",
-   "prompts": "A group of college teachers in cotton sarees, shirts and trousers walks through the corridor of the Bharathiar University administrative block in Coimbatore, carrying files and papers, discussing the newly formed fourth inquiry committee. The building is a long, low institutional block with tiled floors, pillars, wooden doors and notice boards along the walls, typical of a state university campus on Coimbatore's outskirts with a few palm and neem trees visible through the windows. Some people stand in small clusters while others sit on benches in the waiting area, all seen from behind or in profile at a distance, faces not visible. Several bundles of official files are held in hands and stacked on a wooden table near the entrance. The light is soft daylight coming in through open windows, with a bright, slightly overcast sky outside. Shot at eye level on a 35 mm lens, wide enough to show the corridor, the people and the files together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a stack of official university files and a printed committee order sheet lying on a wooden office table, with a black ink pen resting across them and a steel tumbler of tea beside. The papers are slightly curled at the edges, showing typed Tamil text as blurred lines without any readable words. Behind the table, out of focus, a pair of hands turns a page and a worn-out chair sits empty. Daylight from a window falls across the desk, creating soft shadows over the stack of documents. Shot from slightly above on a 35 mm lens to focus on the papers, with the background softly blurred to show an office setting inside a university building. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/what-happened-to-the-three-member-inquiry-report-fourth-again-a-committee-why/4381986",
-   "published": "2026-11-20T22:59:05+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b) - NOT CLEAN, held from posting - problems: hl1 (the first headline on screen) must name the place 'கோவை', e.g. 'கோவை: ...' or 'கோவை-இல் ...' - viewers share news of their own area",
-   "note": "free-model draft anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b, 13 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795232072/kovaiminnal/axhqlsxd3z8ynmzzq3zt.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795232075/kovaiminnal/yzuiafoffn4iljztymit.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "திருப்பரங்குன்றம்: உச்ச நீதிமன்ற அனுமதிக்கு அர்ஜுன்சம்பத் வரவேற்பு",
-   "english_headline": "Arjun Sampath welcomes Supreme Court permission for Thiruparankundram; protest on the 22nd replaced with prayers",
-   "category": "Temples & Events",
-   "location": "Thiruparankundram, Madurai district",
+   "tamil_headline": "உக்கடம் அரசு குடியிருப்பில் விதிமீறி செயல்படும் கேபிள் டிவி அலுவலகம்: நடவடிக்கை எடுக்கக் கோரிக்கை",
+   "english_headline": "Illegal cable TV office operating in Ukkadam government housing unit; activists demand action",
+   "category": "Civic Issues",
+   "location": "Ukkadam Vincent Road, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "கோயில் செய்தி",
-    "loc": "திருப்பரங்குன்றம்",
-    "hl1": "உச்ச நீதிமன்ற அனுமதிக்கு வரவேற்பு",
-    "hl2": "திருப்பரங்குன்றம் முருகன்",
+    "cat": "விதிமீறல்",
+    "loc": "உக்கடம், கோவை",
+    "hl1": "உக்கடம் அரசு குடியிருப்பில் விதிமீறல்",
+    "hl2": "கேபிள் டிவி அலுவலகம் புகார்",
     "slides": [
      {
       "title": "என்ன நடந்தது?",
       "lines": [
-       "உச்ச நீதிமன்ற அனுமதியை இந்து மக்கள் கட்சித் தலைவர்",
-       "பக்தர்களின் நீண்ட கால கோரிக்கை வெற்றி பெற்றதாகக் கூறினார்",
-       "பூர்ண சந்திரனின் உயிர் தியாகமும் வெற்றிக்கு ஒரு காரணம்"
+       "உக்கடம் <b>வின்சென்ட் ரோடு</b> அரசு குடியிருப்பு",
+       "விதிமுறைகளை மீறி கேபிள் டிவி அலுவலகம்",
+       "கலெக்டர் அலுவலகத்தில் புகார் மனு"
       ]
      },
      {
-      "title": "அரசுக்கு கோரிக்கை",
+      "title": "விதிமுறை என்ன?",
       "lines": [
-       "உத்தரவை செயல்படுத்த தமிழக அரசும் அறநிலையத்துறையும் ஏற்பாடு",
-       "இது ஹிந்துக்களின் ஒற்றுமைக்குக் கிடைத்த வெற்றி என்றார்"
+       "அரசு குடியிருப்பில் அலுவலகம் நடத்தத் தடை",
+       "நிறுவனங்கள், சங்கங்கள் அமைக்கக் கூடாது",
+       "விசாரணையில் புகார் உறுதியானதாகத் தகவல்"
       ]
      },
      {
-      "title": "நிகழ்ச்சிகள்",
+      "title": "வாரியம் பதில்",
       "lines": [
-       "வரும் 22ஆம் தேதி நடத்தவிருந்த கவன ஈர்ப்பு ஆர்ப்பாட்டம்",
-       "கந்தசஷ்டி கவச பாராயணம், வேல் வழிபாடு நடத்தப்படும்",
-       "திருப்பரங்குன்றம் முருகன் கோயிலில் சிறப்பு வழிபாடு"
-      ]
-     },
-     {
-      "title": "பக்தர்களுக்கு",
-      "lines": [
-       "திருப்பரங்குன்றம் சென்று தீப தரிசனம் செய்யுமாறு அழைப்பு",
-       "சட்டப் போராட்டம் நடத்திய அனைவருக்கும் பாராட்டு"
+       "புகார் மீது இன்னும் இறுதி முடிவு எடுக்கவில்லை",
+       "ஆவணங்கள் பரிசீலனையில் உள்ளதாக வாரியம் தகவல்",
+       "சமூக ஆர்வலர்கள் கடும் அதிருப்தி"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "உச்ச நீதிமன்ற அனுமதியை இந்து மக்கள் கட்சித் தலைவர் அர்ஜுன்சம்பத் வரவேற்றுள்ளார். பக்தர்களின் நீண்ட கால கோரிக்கை வெற்றி பெற்றுள்ளதாக அவர் கூறினார். இந்த வெற்றிக்கு பூர்ண சந்திரனின் உயிர் தியாகமும் ஒரு காரணம் என்றார். இது ஹிந்துக்களின் ஒற்றுமைக்குக் கிடைத்த வெற்றி என்றும் குறிப்பிட்டார். உச்ச நீதிமன்ற உத்தரவை செயல்படுத்த தமிழக அரசும் அறநிலையத்துறையும் ஏற்பாடு செய்ய வேண்டும் என அவர் கோரினார். வரும் 22ஆம் தேதி நடத்தவிருந்த கவன ஈர்ப்பு ஆர்ப்பாட்டம் மாற்றப்பட்டுள்ளது. அதற்குப் பதிலாக கந்தசஷ்டி கவச பாராயணம், வேல் வழிபாடு நடத்தப்படும். திருப்பரங்குன்றம் முருகன் கோயிலில் சிறப்பு வழிபாடும் நடத்தப்படும். திருப்பரங்குன்றம் சென்று தீப தரிசனம் செய்யுமாறு பக்தர்களுக்கு அழைப்பு விடுக்கப்பட்டுள்ளது. சட்டப் போராட்டம் நடத்திய அனைவருக்கும் அவர் பாராட்டு தெரிவித்தார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🙏 திருப்பரங்குன்றம்: உச்ச நீதிமன்ற அனுமதிக்கு அர்ஜுன்சம்பத் வரவேற்பு\n\n📰 முழு விவரம்:\nஉச்ச நீதிமன்ற அனுமதியை இந்து மக்கள் கட்சித் தலைவர் அர்ஜுன்சம்பத் வரவேற்றுள்ளார். பக்தர்களின் நீண்ட கால கோரிக்கை வெற்றி பெற்றுள்ளதாக அவர் கூறினார். பூர்ண சந்திரனின் உயிர் தியாகமும் இந்த வெற்றிக்கு ஒரு காரணம் என்றார். இது ஹிந்துக்களின் ஒற்றுமைக்குக் கிடைத்த வெற்றி என்றும் அவர் குறிப்பிட்டார். உச்ச நீதிமன்ற உத்தரவை செயல்படுத்த தமிழக அரசும் அறநிலையத்துறையும் ஏற்பாடு செய்ய வேண்டும் என்று கோரினார்.\n📅 வரும் 22ஆம் தேதி நடத்தவிருந்த கவன ஈர்ப்பு ஆர்ப்பாட்டம் மாற்றப்பட்டுள்ளது.\n🛕 அதற்குப் பதிலாக கந்தசஷ்டி கவச பாராயணம், வேல் வழிபாடு, திருப்பரங்குன்றம் முருகன் கோயிலில் சிறப்பு வழிபாடு நடத்தப்படும்.\nℹ️ மக்கள் கவனத்திற்கு: திருப்பரங்குன்றம் சென்று தீப தரிசனம் செய்யுமாறு பக்தர்களுக்கு அழைப்பு விடுக்கப்பட்டுள்ளது.\n\nThiruparankundram Supreme Court permission welcomed | Coimbatore news\n📍 திருப்பரங்குன்றம், மதுரை மாவட்டம்\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Madurai #திருப்பரங்குன்றம் #CoimbatoreNews",
-   "prompts": "A group of devotees from behind offers prayers at the Thiruparankundram Murugan temple, lamps lit in front of the shrine as the court permission is celebrated with a special worship. The place is a traditional South Indian hill temple: a tall stone gopuram with carved sculpture, pillared mandapam, rocky hill rising behind, and a few palm trees. People seen from behind and far away, men in white veshti and shirts, women in cotton sarees, some with folded hands, standing in an orderly row. A vel (spear) of Murugan is decorated near the sanctum, brass lamps (deepam) glowing with oil flames. Time is early evening with warm lamp light, slight haze over the hill. Camera at eye level, 35 mm, wide enough to show the gopuram and the hill. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a brass lamp (deepam) and a decorated silver vel placed on a stone platform in the temple, flames lit and a garland of flowers beside them. Behind, slightly out of focus, a row of devotees' feet and folded hands on the stone floor, pillars of the mandapam with carved patterns. Warm evening light from the lamps, shallow depth of field. Camera close, 50 mm, focusing on the lamp and vel as the detail that shows a prayer-based observance of the court decision. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/thiruparankundram/4381991",
-   "published": "2026-11-21T02:21:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script sentence 1 (heard in the first 3 seconds) must name the place 'திருப்பரங்குன்றம்' and the news itself, e.g. 'திருப்பரங்குன்றம்-இல் ... 3 பேர் கைது.' - viewers decide in 3 seconds whether the news is about their area",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
+   "reel_script": "உக்கடம் அரசு குடியிருப்பில் விதிமீறி கேபிள் டிவி அலுவலகம் செயல்படுகிறது. கோவை உக்கடம் வின்சென்ட் சாலையில் தமிழ்நாடு நகர்ப்புற வாழ்விட மேம்பாட்டு வாரிய குடியிருப்புகள் உள்ளன. இந்த குடியிருப்புகளில் அலுவலகங்கள் அல்லது நிறுவனங்கள் அமைக்கக் கூடாது என்பது விதியாகும். ஆனால் இந்த விதிகளை மீறி அங்கு ஒரு கேபிள் டிவி நிறுவனம் செயல்பட்டு வருவதாகப் புகார் எழுந்துள்ளது. இது தொடர்பாக மாவட்ட ஆட்சியர் அலுவலகத்தில் பொதுமக்கள் மனு அளித்துள்ளனர். அதிகாரிகள் நடத்திய விசாரணையில் இந்தப் புகார் உறுதியானதாகக் கூறப்படுகிறது. இருப்பினும் அந்த நிறுவனம் தொடர்ந்து அதே இடத்தில் செயல்பட்டு வருகிறது. இது குறித்து தகவல் அறியும் உரிமைச் சட்டத்தின் கீழ் விளக்கம் கேட்கப்பட்டது. புகார்கள் மீது இன்னும் இறுதி முடிவு எடுக்கப்படவில்லை என்று வாரியம் பதில் அளித்துள்ளது. ஆவணங்கள் பரிசீலனையில் இருப்பதால் தற்போது தகவல் வழங்க இயலாது என்றும் தெரிவிக்கப்பட்டுள்ளது. அதிகாரிகள் பெயரளவுக்கு ஆய்வு நடத்துவதாகச் சமூக ஆர்வலர்கள் குற்றம் சாட்டுகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 உக்கடம் அரசு குடியிருப்பில் விதிமீறி கேபிள் டிவி அலுவலகம்: நடவடிக்கை எடுக்கச் சமூக ஆர்வலர்கள் கோரிக்கை\n\n📰 முழு விவரம்:\nகோவை உக்கடம் வின்சென்ட் சாலையில் உள்ள தமிழ்நாடு நகர்ப்புற வாழ்விட மேம்பாட்டு வாரிய குடியிருப்புகளில் அலுவலகங்கள் அல்லது நிறுவனங்கள் செயல்படத் தடை உள்ளது. ஆனால், இந்த விதிகளை மீறி அங்கு ஒரு கேபிள் டிவி நிறுவனம் செயல்பட்டு வருவதாகப் புகார் எழுந்துள்ளது. இது குறித்து மாவட்ட ஆட்சியர் அலுவலகத்தில் மனு அளிக்கப்பட்டும், இன்னும் நடவடிக்கை எடுக்கப்படவில்லை. தகவல் அறியும் உரிமைச் சட்டத்தின் கீழ் கேட்கப்பட்ட கேள்விக்கு, ஆவணங்கள் பரிசீலனையில் உள்ளதாக வாரியம் பதில் அளித்துள்ளது. அதிகாரிகள் பெயரளவுக்கு ஆய்வு நடத்திவிட்டுச் செல்வதாகச் சமூக ஆர்வலர்கள் குற்றம் சாட்டுகின்றனர்.\n\n📍 இடம்: வின்சென்ட் ரோடு ஹவுசிங் யூனிட், உக்கடம், கோவை.\n👮 நடவடிக்கை: புகார் குறித்து ஆவணங்கள் பரிசீலனையில் உள்ளதாக வாரியம் தகவல்.\nℹ️ மக்கள் கவனத்திற்கு: அரசு குடியிருப்புகளை வணிக நோக்கத்திற்காகப் பயன்படுத்துவது விதிமீறலாகும்.\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்\n\nUkkadam housing unit cable TV office issue | Coimbatore news\n📍 Ukkadam, Coimbatore | 21 November 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Ukkadam #CivicIssues #கோவை",
+   "prompts": "A group of residents and social activists stand in front of a multi-storey government housing block on Vincent Road in Ukkadam, Coimbatore, pointing toward a ground-floor unit that has been turned into an office. Seen from behind at a short distance, the activists wear plain cotton shirts and a few women wear cotton sarees, one holding a folded paper petition in her hand. The housing block has grey concrete balconies, rows of windows, and tangled black cable wires hanging from the walls and electric poles beside the building. A two-wheeler and an autorickshaw are parked at the roadside, and a town bus passes in the far background. It is daytime in soft natural light with a light haze over the city. Camera at eye level, 35 mm, wide enough to show the full housing block and street. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a grey concrete wall of a government housing quarter where thick black and grey cable TV wires are clipped and run in messy bundles down to an unmarked metal junction box, with a wooden door of an office unit partly open behind them. A sheet of folded paper, a petition, rests on a plastic table nearby, and a stack of loose cable connectors lies beside it. Daylight falls across the dusty concrete surface, showing peeling paint and rust streaks. Camera slightly high, 35 mm, focused on the cables and petition with the building wall blurred behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/cable-tv-office-in-the-housing-unit-home/4381505",
+   "published": "2026-11-20T18:22:27+05:30",
+   "verification": "DRAFT (gemini/gemini-3-flash-preview) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3-flash-preview, 2 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795232083/kovaiminnal/hvkjz7jjmsw4cjfcoybe.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795232088/kovaiminnal/j7iyhrtoe5ukd8dlw2dt.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795237569/kovaiminnal/zg8buu5r4p6sjbmqvgzi.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795237574/kovaiminnal/htagr3ab5awc15cnptge.jpg"
    ]
   },
   {
-   "tamil_headline": "சூப்பர் ஜூவல்லரி இரு புதிய தங்க சேமிப்புத் திட்டங்கள் அறிமுகம்",
-   "english_headline": "Super Jewellery of Saravana Stores launches two new gold savings schemes: Super Digi Gold and Super Flexi 360",
-   "category": "Business & Prices",
-   "location": "Coimbatore district (Super Jewellery has six branches including Coimbatore, Chennai and Madurai)",
+   "tamil_headline": "கோவையில் ரூ.30 லட்சம் கையாடல்: கணினி நிறுவன ஊழியர் மீது ரத்தினபுரி போலீசார் வழக்கு",
+   "english_headline": "Rs 30 lakh embezzled at computer firm in Sivananda Colony, Coimbatore; Rathinapuri police register case against employee",
+   "category": "Crime & Safety",
+   "location": "Sivananda Colony, Coimbatore city, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "தங்க சேமிப்பு",
-    "loc": "கோவை",
-    "hl1": "கோவையில் இரு புதிய தங்க",
-    "hl2": "ரூ.100 முதல் சேமிக்கலாம்",
+    "cat": "குற்றப் பிரிவு",
+    "loc": "சிவானந்தா காலனி, கோவை",
+    "hl1": "கோவையில் ரூ.30 லட்சம் கையாடல்",
+    "hl2": "தனியார் ஊழியர் மீது வழக்கு",
     "slides": [
      {
-      "title": "புதிய திட்டங்கள்",
+      "title": "ரூ.30 லட்சம் மோசடி",
       "lines": [
-       "சூப்பர் ஜூவல்லரி இரு புதிய திட்டங்களை அறிமுகம் செய்துள்ளது",
-       "சூப்பர் டிஜி கோல்டு, சூப்பர் ஃப்ளெக்ஸி 360",
-       "சென்னை, மதுரை, கோவை உட்பட <b>6 கிளைகள்</b>"
+       "மிஸ்ரி ஐ.டி. சொல்யூஷன்ஸ் நிறுவனத்தில் <b>ரூ.30 லட்சம்</b> கையாடல்",
+       "கணினி உபகரண விற்பனை பணத்தைச் சுருட்டிய ஊழியர்"
       ]
      },
      {
-      "title": "டிஜி கோல்டு",
+      "title": "யார் அவர்கள்?",
       "lines": [
-       "<b>சூப்பர் டிஜிட்டல் ஆப்</b> மூலம் பதிவு செய்யலாம்",
-       "<b>ரூ.100</b> முதல் பல தவணைகளில் சேமிக்கலாம்",
-       "சேமிக்கும் தொகைக்கு <b>6%</b> உடனடி போனஸ்"
+       "நிறுவன உரிமையாளர் <b>24 வயது</b> மனோஜ் ஷங்லா",
+       "ஈரோட்டைச் சேர்ந்த <b>41 வயது</b> சித்திக் அலி"
       ]
      },
      {
-      "title": "ஃப்ளெக்ஸி 360",
+      "title": "போலீஸ் விசாரணை",
       "lines": [
-       "தங்கம், வைரம், பிளாட்டினம், வெள்ளி நகைகள் ஒருங்கிணைப்பு",
-       "தவணைகளைத் தொடர்ச்சியாக உயர்த்தினால் பலன்கள்",
-       "6ஆவது தவணை முதல் <b>15%</b> தள்ளுபடி, குறைந்த செய்கூலி, சேதாரம்"
-      ]
-     },
-     {
-      "title": "கூடுதல் பரிசு",
-      "lines": [
-       "இல்லத்தரசிகளுக்குக் கூடுதல் பரிசுகள் வழங்கப்படுகின்றன",
-       "விருப்பமான நகைகளை வாங்கவும் தொடர்ந்து சேமிக்கவும் வாய்ப்பு"
+       "வசூலித்த பணத்தை நிறுவனத்தில் செலுத்தாமல் ஏமாற்றியதாக புகார்",
+       "<b>ரத்தினபுரி போலீசார்</b> வழக்குப்பதிவு செய்து விசாரணை"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவை உட்பட ஆறு கிளைகள் கொண்ட சூப்பர் ஜூவல்லரி இரு புதிய தங்க சேமிப்புத் திட்டங்களை அறிமுகம் செய்துள்ளது. சூப்பர் டிஜி கோல்டு திட்டத்தில் ரூ.100 முதல் பல தவணைகளில் தங்க சேமிப்பைத் தொடங்கலாம். இதற்காக சூப்பர் டிஜிட்டல் ஆப் செயலியைப் பதிவிறக்கம் செய்ய வேண்டும். வரவு வைக்கப்படும் தொகைக்கு 6 சதவீத உடனடி போனஸ் அறிவிக்கப்பட்டுள்ளது. சூப்பர் ஃப்ளெக்ஸி 360 திட்டத்தில் தங்கம், வைரம், பிளாட்டினம் மற்றும் வெள்ளி ஆபரணங்கள் ஒருங்கிணைக்கப்பட்டுள்ளன. இத்திட்டத்தில் அந்தந்த காலத்தில் பிரபலமான அழகிய நகைகளை வாங்கலாம். தவணைகளைத் தொடர்ச்சியாக உயர்த்தினால் 6ஆவது தவணையில் இருந்து மதிப்புக் கூடுதல் பலன்கள் கிடைக்கும். குறைந்த செய்கூலி மற்றும் சேதாரத்துடன் அந்த மதிப்புக்கு 15 சதவீத தள்ளுபடியும் வழங்கப்படுகிறது. இல்லத்தரசிகளுக்குக் கூடுதல் பரிசுகளும் உண்டு. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "💍 கோவையில் 2 புதிய தங்க சேமிப்புத் திட்டங்கள்: ரூ.100 முதல் சேமிக்கலாம்\n\n📰 முழு விவரம்:\nசூப்பர் சரவணா ஸ்டோர்ஸ் குழுமத்தின் தங்க நகை விற்பனையகமான சூப்பர் ஜூவல்லரி, டிஜிட்டல் யுகத்தில் தங்க சேமிப்பை ஊக்குவிக்க இரு புதிய திட்டங்களை அறிமுகப்படுத்தியுள்ளது.\n💰 சூப்பர் டிஜி கோல்டு: சூப்பர் டிஜிட்டல் ஆப் செயலியைப் பதிவிறக்கம் செய்து ரூ.100 முதல் பல தவணைகளில் தங்க சேமிப்பைத் தொடங்கலாம். வரவு வைக்கப்படும் தொகைக்கு 6 சதவீத உடனடி போனஸ்.\n💎 சூப்பர் ஃப்ளெக்ஸி 360: தங்கம், வைரம், பிளாட்டினம், வெள்ளி ஆபரணங்கள் ஒருங்கிணைக்கப்பட்ட திட்டம். தவணைகளைத் தொடர்ச்சியாக அதிகரித்தால் 6ஆவது தவணையில் இருந்து மதிப்புக் கூடுதல் பலன்கள்.\n🎁 குறைந்த செய்கூலி, சேதாரத்துடன் அந்த மதிப்புக்கு 15 சதவீத தள்ளுபடி; இல்லத்தரசிகளுக்குக் கூடுதல் பரிசுகள்.\n🏬 சென்னை, மதுரை, கோவை உட்பட 6 கிளைகள்.\n\nSuper Jewellery Coimbatore new gold savings scheme 2026 | Coimbatore news\n📍 கோவை மாவட்டம் | 20 நவம்பர் 2026\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்.\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #தங்கம் #கோவை",
-   "prompts": "A customer stands at the glass counter of a Super Jewellery showroom in Coimbatore, looking at a tray of gold necklaces and bangles while a shop staff member in a formal shirt displays them on a velvet tray. The showroom has polished tiled floors, tall glass display cabinets lit from above and a few framed gold jewellery posters on the walls. Other customers, a woman in a saree and a man in a shirt, are seen from behind near the far counter, and a second staff member stands at a computer terminal. Diamond and gold ornaments glint under warm ceiling lights. Shown in soft daylight through the front glass windows, with the street faintly visible outside. Camera at eye level, 35 mm lens, wide enough to show the full showroom interior and the counter with the jewellery. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a smartphone held in a customer's hand, its screen showing a digital gold savings app with a gold coin icon and a row of instalment blocks, placed on a glass jewellery display counter beside a small tray of gold bangles and a diamond ring. Blurred gold ornaments and a shop counter stretch into the background, with a soft showroom light glow. The hand and sleeve of a shopper in a plain shirt are visible at the edge of the frame. Shot in soft warm indoor light, shallow depth of field, close-up at slightly high angle, 35 mm lens. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamani.com/trade/2026/Nov/20/2-new-gold-savings-schemes-saravana-storessuper-jewellery-introduces",
-   "published": "2026-11-20T18:57:02.018Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: sentence 1 (one-line story) has 14 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "reel_script": "கோவையில் கணினி நிறுவனத்தில் ரூ.30 லட்சம் கையாடல் செய்த ஊழியர் மீது காவல்துறை வழக்குப்பதிவு செய்துள்ளது. கோவை சிவானந்தா காலனி டாக்டர் ராதாகிருஷ்ணன் சாலையை சேர்ந்த 24 வயது மனோஜ் ஷங்லா மிஸ்ரி ஐ டி சொல்யூஷன்ஸ் என்ற நிறுவனத்தை நடத்தி வருகிறார். இந்த நிறுவனத்தில் ஈரோடு பவானி பிரதான சாலையை சேர்ந்த 41 வயது சித்திக் அலி என்பவர் பணியாற்றி வந்தார். இவர் பல்வேறு நிறுவனங்களுக்கு தகவல் தொழில்நுட்ப உபகரணங்கள் விற்பனை செய்த வகையில் ரூ.30 லட்சம் பணத்தை வசூலித்துள்ளார். வசூலித்த பணத்தை நிறுவனத்தில் செலுத்தாமல் சித்திக் அலி கையாடல் செய்ததாக கூறப்படுகிறது. இது குறித்து நிறுவன உரிமையாளர் மனோஜ் ஷங்லா காவல் நிலையத்தில் புகார் அளித்துள்ளார். புகாரின் பேரில் ரத்தினபுரி போலீசார் வழக்குப்பதிவு செய்து தீவிர விசாரணை நடத்தி வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 கோவையில் ரூ.30 லட்சம் கையாடல்: கணினி நிறுவன ஊழியர் மீது ரத்தினபுரி போலீசார் வழக்கு!\n\n📰 முழு விவரம்:\nகோவை சிவானந்தா காலனி டாக்டர் ராதாகிருஷ்ணன் சாலையைச் சேர்ந்த மனோஜ் ஷங்லா (24 வயது), 'மிஸ்ரி ஐ.டி. சொல்யூஷன்ஸ்' என்ற கணினி உதிரிபாக விற்பனை நிறுவனத்தை நடத்தி வருகிறார். இந்த நிறுவனத்தில் ஈரோடு பவானி மெயின் ரோட்டைச் சேர்ந்த சித்திக் அலி (41 வயது) என்பவர் பணியாற்றி வந்தார். பல்வேறு நிறுவனங்களுக்குத் தகவல் தொழில்நுட்ப உபகரணங்கள் விற்பனை செய்த வகையில் வசூலான ரூ.30 லட்சம் பணத்தை நிறுவனத்திற்குச் செலுத்தாமல் சித்திக் அலி கையாடல் செய்துள்ளார். இதுகுறித்து மனோஜ் ஷங்லா அளித்த புகாரின் பேரில் ரத்தினபுரி போலீசார் வழக்குப்பதிவு செய்து விசாரணை நடத்தி வருகின்றனர்.\n\n📍 இடம்: சிவானந்தா காலனி, கோவை\n🗓️ நாள்: 20 நவம்பர் 2026\n👮 நடவடிக்கை: ரத்தினபுரி போலீசார் வழக்குப்பதிவு செய்து விசாரணை\n\nதகவலுக்காக இந்தச் செய்தியை நண்பர்களுடன் Share செய்யுங்கள்.\n\nCoimbatore Misri IT Solutions 30 lakh fraud case Siddique Ali Rathinapuri | Coimbatore news\n📍 சிவானந்தா காலனி, கோவை | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Rathinapuri #CoimbatoreNews #கோவை",
+   "prompts": "A Rathinapuri police sub-inspector in khaki uniform stands at the entrance of a small computer spare-parts shop on Dr. Radhakrishnan Road in Sivananda Colony, Coimbatore, examining a case file while a constable beside him takes notes. Seen from slightly behind and at a distance, the shop has a glass front with rows of computer motherboards, hard disks, keyboards and monitors stacked on wooden shelves, and a counter with a cash box. Two or three two-wheelers are parked along the narrow residential-commercial road, with a few pedestrians walking past on the pavement. A young man in a shirt stands inside the shop doorway, facing away from the camera, while an older man in a checked shirt and trousers speaks to the officer. Daylight, mild and even, no harsh shadows. Camera at eye level, 35 mm, wide enough to show the shop front, the parked vehicles and the street. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a neatly stacked pile of bundled currency notes and a few loose bills on a wooden office desk, beside an open ledger book filled with handwritten columns and a stack of invoice papers. Behind the desk, slightly out of focus, shelves hold computer spare parts such as hard disks and cables in cardboard boxes. A police constable's khaki sleeve enters the frame at the edge, placing a plastic file folder on the table. Soft daylight from a window falls across the notes and papers, showing the desk clutter of a small IT trading office. Camera slightly high, 50 mm macro-style close-up, shallow depth of field, no readable text or figures. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/rs-30-lakh-handling-in-private-company/4381377",
+   "published": "2026-11-20T17:10:32+05:30",
+   "verification": "DRAFT (gemini/gemini-3.5-flash) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3.5-flash, 1 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795232120/kovaiminnal/uc8iydvifjky8fwm2glp.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795232125/kovaiminnal/dalqektralmfoulwpo2u.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "வால்பாறையில் தேர்தல் கல்விக்குழு சார்பில் பள்ளி, கல்லூரி மாணவர்களுக்கு விழிப்புணர்வு போட்டிகள்",
-   "english_headline": "Valparai: election education committee holds awareness competitions for school and college students",
-   "category": "Education",
-   "location": "Valparai, Coimbatore district",
-   "importance": "Medium",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "கல்வி",
-    "loc": "வால்பாறை",
-    "hl1": "வால்பாறையில் மாணவர்களுக்கு",
-    "hl2": "தேர்தல் கல்விக்குழு ஏற்பாடு",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "வால்பாறை தேர்தல் கல்விக்குழு சார்பில் போட்டிகள் நடந்தன",
-       "அரசு மேல்நிலைப்பள்ளியில் போட்டிகள் நடைபெற்றன",
-       "பள்ளி, கல்லூரி மாணவர்கள் பங்கேற்றனர்"
-      ]
-     },
-     {
-      "title": "எந்தப் போட்டிகள்?",
-      "lines": [
-       "வினாடி-வினா போட்டி நடத்தப்பட்டது",
-       "கட்டுரைப் போட்டியும் நடத்தப்பட்டது",
-       "தேர்தல் குறித்து விழிப்புணர்வு ஏற்படுத்துவதே நோக்கம்"
-      ]
-     },
-     {
-      "title": "யார் பங்கேற்றனர்?",
-      "lines": [
-       "வால்பாறை தாலுகாவின் பல பள்ளி மாணவர்கள்",
-       "அரசு கலை அறிவியல் கல்லூரி மாணவர்கள்",
-       "தேர்தல் தனி தாசில்தார் முத்து போட்டியைத் துவக்கி வைத்தார்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "வால்பாறையில் மாணவர்களுக்கான தேர்தல் விழிப்புணர்வுப் போட்டிகள் நடைபெற்றன. வால்பாறை சட்டசபை தொகுதி தேர்தல் கல்விக்குழு சார்பில் இந்தப் போட்டிகள் நடத்தப்பட்டன. அரசு மேல்நிலைப்பள்ளியில் போட்டிகள் நடைபெற்றன. போட்டியை தேர்தல் தனி தாசில்தார் முத்து துவக்கி வைத்தார். தேர்தல் குறித்து மாணவர்களிடையே விழிப்புணர்வு ஏற்படுத்த வினாடி-வினா மற்றும் கட்டுரைப் போட்டிகள் நடத்தப்பட்டன. வால்பாறை தாலுகாவின் பல்வேறு பள்ளிகளைச் சேர்ந்த மாணவர்களும், அரசு கலை அறிவியல் கல்லூரி மாணவர்களும் கலந்துகொண்டனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🎓 வால்பாறையில் மாணவர்களுக்கு தேர்தல் விழிப்புணர்வுப் போட்டிகள்\n\n📰 முழு விவரம்:\nவால்பாறை சட்டசபை தொகுதி தேர்தல் கல்விக்குழு சார்பில் அரசு மேல்நிலைப்பள்ளியில் விழிப்புணர்வுப் போட்டிகள் நடைபெற்றன. தேர்தல் தனி தாசில்தார் முத்து போட்டியைத் துவக்கி வைத்தார்.\nதேர்தல் குறித்து மாணவர்களிடையே விழிப்புணர்வு ஏற்படுத்தும் வகையில் வினாடி-வினா மற்றும் கட்டுரைப் போட்டிகள் நடத்தப்பட்டன.\nவால்பாறை தாலுகாவின் பல்வேறு பள்ளிகளைச் சேர்ந்த மாணவர்களும், அரசு கலை அறிவியல் கல்லூரி மாணவர்களும் கலந்துகொண்டனர்.\n\n📍 இடம்: அரசு மேல்நிலைப்பள்ளி, வால்பாறை\n👮 ஏற்பாடு: வால்பாறை சட்டசபை தொகுதி தேர்தல் கல்விக்குழு\n\nValparai election awareness competitions for students | Coimbatore news\n📍 வால்பாறை, கோவை மாவட்டம் | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Valparai #தேர்தல் #CoimbatoreNews",
-   "prompts": "Students of a government higher secondary school in Valparai sit in rows of wooden benches inside a school hall, seen from behind as they bend over question papers and write essays for the election awareness quiz and essay competition. Girls wear white blouses with green-and-white or navy school uniform skirts and boys wear white shirts with grey or navy trousers, while a few college students in casual shirts and trousers sit at the back. On a raised stage, an election official in formal shirt and trousers stands beside a table with a microphone and a trophy tray, slightly blurred and far away. Tea-estate hills and mist are visible through the open windows, and the light is soft morning daylight. Camera at eye level, 35 mm, wide enough to show the full hall with the rows of students and the stage. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up on a table covered with printed quiz question sheets, blank essay answer sheets, sharpened pencils and a small stack of certificates tied with a ribbon, placed on a wooden desk in a school classroom. Beside the papers, a few students' hands are visible in white school uniform sleeves, lightly holding pens, and a blurred row of school benches stretches behind. Through a window in the background the green slopes of Valparai's tea estates and misty hills show soft daylight. Camera slightly high, 35 mm, shallow depth of field to keep the papers sharp and the background softly blurred. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/awareness-contest-on-behalf-of-election-education-committee/4381653",
-   "published": "2026-11-20T19:28:30+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 54 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795232130/kovaiminnal/bny562gv5eomwi0hdhgo.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795232134/kovaiminnal/ulf3ku2aypnpskd85sil.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "மேட்டுப்பாளையம் அருகே பள்ளிகளுக்கு இடையே பேண்ட் இசை போட்டி",
-   "english_headline": "Band music competition among schools held at Kumaran college near Mettupalayam",
-   "category": "Education",
-   "location": "Mettupalayam, Coimbatore district",
-   "importance": "Low",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "கல்வி",
-    "loc": "மேட்டுப்பாளையம்",
-    "hl1": "மேட்டுப்பாளையத்தில் பேண்ட் இசை போட்டி",
-    "hl2": "14 பள்ளிகள் பங்கேற்பு",
-    "slides": [
-     {
-      "title": "போட்டி நடந்த இடம்",
-      "lines": [
-       "மேட்டுப்பாளையம் அருகே குமரன் கலை மற்றும் அறிவியல்",
-       "திருப்பூர், கோவை கல்வி மாவட்டங்களில் இருந்து <b>14"
-      ]
-     },
-     {
-      "title": "போட்டி முடிவுகள்",
-      "lines": [
-       "திருப்பூர்: ஏ.வி.பி. மெட்ரிக் பள்ளி முதலிடம்",
-       "கோவை: பாரதி மெட்ரிக் மேல்நிலைப்பள்ளி முதலிடம்",
-       "சி.பி.எஸ்.இ. பிரிவில் செயின்ட் மேரிஸ், பிஷப் பிரான்சிஸ்"
-      ]
-     },
-     {
-      "title": "நடுவர்கள், பரிசு",
-      "lines": [
-       "நடுவர்கள்: பேண்ட் மாஸ்டர் சீனிவாசன், என்.சி.சி. அலுவலர்",
-       "மாணவிகள் பிரிவில் நிர்மலா பள்ளி முதலிடம்",
-       "கல்லூரி பரிசளிப்பு விழாவில் பரிசுக் கோப்பைகள் வழங்கப்பட்டன"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "மேட்டுப்பாளையம் அருகே நடந்த பேண்ட் இசைப் போட்டியில் 14 பள்ளிகள் பங்கேற்றன. திருப்பூர், கோவை கல்வி மாவட்டங்களைச் சேர்ந்த மாணவ, மாணவிகள் இதில் பங்கேற்றனர். குமரன் கலை மற்றும் அறிவியல் கல்லூரியில் போட்டிகள் நடைபெற்றன. சீருடை அணிந்த மாணவ, மாணவிகள் பேண்ட் இசைக்கருவிகளை வாசித்தபடி அணிவகுத்தனர். பேண்ட் மாஸ்டர் சீனிவாசன், தமிழ்நாடு பட்டாலியன் என் சி சி அலுவலர் ஸ்ரீதர் ஆகியோர் நடுவர்களாக இருந்தனர். திருப்பூர் கல்வி மாவட்டத்தில் ஏ வி பி மெட்ரிக் பள்ளி முதலிடம் பெற்றது. கோவை கல்வி மாவட்டத்தில் பாரதி மெட்ரிக் மேல்நிலைப்பள்ளி முதலிடம் பெற்றது. சி பி எஸ் இ பள்ளிகளுக்கு இடையிலான போட்டியில் திருப்பூரில் செயின்ட் மேரிஸ் பள்ளியும், கோவையில் பிஷப் பிரான்சிஸ் பள்ளியும் முதலிடம் பெற்றன. மாணவிகளுக்கான போட்டியில் நிர்மலா பள்ளி முதலிடம் பெற்றது. கல்லூரியில் நடந்த பரிசளிப்பு விழாவில் வெற்றி பெற்ற மாணவ, மாணவிகளுக்குப் பரிசுக் கோப்பைகள் வழங்கப்பட்டன. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🎺 மேட்டுப்பாளையம் அருகே பள்ளிகளுக்கு இடையிலான பேண்ட் இசைப் போட்டி\n\n📰 முழு விவரம்:\nமேட்டுப்பாளையம் அருகே குமரன் கலை மற்றும் அறிவியல் கல்லூரியில் பள்ளிகளுக்கு இடையிலான பேண்ட் இசைப் போட்டிகள் நடைபெற்றன. திருப்பூர், கோவை கல்வி மாவட்டங்களைச் சேர்ந்த 14 பள்ளிகளின் மாணவ, மாணவிகள் பங்கேற்றனர். சீருடையுடன் இசைக்கருவிகளை வாசித்தபடி அவர்கள் அணிவகுப்பு நடத்தினர். பேண்ட் மாஸ்டர் சீனிவாசன், என்.சி.சி. அலுவலர் ஸ்ரீதர் ஆகியோர் நடுவர்களாகப் பணியாற்றினர்.\n🏆 திருப்பூர்: ஏ.வி.பி. மெட்ரிக் பள்ளி முதலிடம், ஹோலி ஈடம் மெட்ரிக் பள்ளி இரண்டாமிடம்\n🏆 கோவை: பாரதி மெட்ரிக் மேல்நிலைப்பள்ளி முதலிடம், பேப்டிஸ்டி பள்ளி இரண்டாமிடம்\n🏆 சி.பி.எஸ்.இ. பிரிவு: திருப்பூரில் செயின்ட் மேரிஸ் பள்ளி முதலிடம், கோவையில் பிஷப் பிரான்சிஸ் பள்ளி முதலிடம்\n🏆 மாணவிகள் பிரிவு: நிர்மலா பள்ளி முதலிடம், காந்திமாநகர் ஏ.வி.பி. பள்ளி இரண்டாமிடம்\n🎁 கல்லூரியில் நடந்த பரிசளிப்பு விழாவில் முதல்வர் சுகுணா தலைமை வகித்தார். வெற்றி பெற்றவர்களுக்குப் பரிசுக் கோப்பைகள் வழங்கப்பட்டன.\n\nBand music competition among schools in Mettupalayam | Coimbatore news\n📍 மேட்டுப்பாளையம், கோவை மாவட்டம் | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Mettupalayam #CoimbatoreNews #கோவை",
-   "prompts": "A line of school students in neat uniforms marches across a college ground near Mettupalayam, playing brass and drum band instruments during an inter-school band competition. The ground is a wide open campus area with a block of college buildings with plain walls and rows of tall trees behind them, and the distant green slopes of the Nilgiri foothills rising in the background. Boys and girls from several schools stand in organised formation, some seen from behind, others far off and slightly blurred, with a few judges in white shirts and khaki NCC-style uniforms standing at the side with clipboards. Trumpets, drums and cymbals catch the daylight. The time is midday with clear, bright daylight and a light sky. Shot at eye level or slightly high, 35 mm, wide enough to show the whole formation and the campus setting. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a row of gleaming gold and silver prize trophies and cups placed on a plain wooden table in front of a college stage, with a brass band instrument resting beside them. Behind the table, out of focus, stand a few students in school uniform and a judge in a khaki uniform, seen from behind. The setting is an indoor college hall with plain painted walls and a fan above. Daylight comes through the hall windows, giving soft, even light. The trophies are the main subject, arranged neatly with a brass trumpet slightly blurred in the foreground. Camera is at table height, 35 mm, close enough to show the details of the trophies while keeping the hall visible behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/band-music-competition-between-schools/4381406",
-   "published": "2026-11-20T17:34:30+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): காரமடை ('இசை ஆசிரியர் சீனிவாசன், என்.சி.சி., அலுவலர் ஸ்ரீதர், காரமடை ')",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795232167/kovaiminnal/tlmwhhur4s7lwg93rzhn.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795232170/kovaiminnal/tqluij85ofvfcykdz4xl.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795237596/kovaiminnal/pxvtuw3suhmezt4bhfal.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795237618/kovaiminnal/say6e0ooadmcuptolvxh.jpg"
    ]
   }
  ]
