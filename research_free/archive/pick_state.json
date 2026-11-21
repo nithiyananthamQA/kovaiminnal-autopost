@@ -52,7 +52,8 @@
    "alts": [
     "https://www.maalaimalar.com/news/tamilnadu/anbumani-ramadoss-says-rs-450-crore-waste-to-energy-plant-project-must-be-abandoned"
    ],
-   "listed_at": "2026-11-21T13:01:27.158152+05:30"
+   "listed_at": "2026-11-21T13:01:27.158152+05:30",
+   "picked_at": "2026-11-21T13:02:57.251057+05:30"
   },
   "Cf04a375": {
    "id": "Cf04a375",
@@ -64,7 +65,8 @@
    "category": "கல்வி",
    "score": 9.5,
    "power_cut": false,
-   "listed_at": "2026-11-21T13:01:27.158152+05:30"
+   "listed_at": "2026-11-21T13:01:27.158152+05:30",
+   "picked_at": "2026-11-21T13:02:57.251059+05:30"
   },
   "C414bf2b": {
    "id": "C414bf2b",
@@ -76,7 +78,8 @@
    "category": "பொது",
    "score": 6.0,
    "power_cut": false,
-   "listed_at": "2026-11-21T13:01:27.158152+05:30"
+   "listed_at": "2026-11-21T13:01:27.158152+05:30",
+   "picked_at": "2026-11-21T13:02:57.251066+05:30"
   }
  },
  "rounds": {
@@ -755,8 +758,20 @@
    ],
    "sent": false,
    "deadline": "2026-11-21T14:01:27.158152+05:30",
-   "decided": null,
-   "written": []
+   "decided": {
+    "how": "automatic: top 3 of 3 by insights",
+    "ids": [
+     "Cceef94c",
+     "Cf04a375",
+     "C414bf2b"
+    ],
+    "at": "2026-11-21T13:02:57.251047+05:30"
+   },
+   "written": [
+    "C414bf2b",
+    "Cceef94c",
+    "Cf04a375"
+   ]
   }
  },
  "retry": {}
