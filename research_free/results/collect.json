@@ -3,72 +3,87 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dailythanthi.com/news/tamilnadu/coimbatore-waste-incineration-plant-controversy",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/annual-sports-festival-at-vidyashram-school-coimbatore/4382176",
-  "manual link added: https://www.dinamani.com/cinema/cinema-news/2026/Nov/21/kovai-express-unreserved-compartment-vijay-antony-appa-kutty-promotions",
-  "candidate filter: collected=3",
-  "to write: 3 Coimbatore district candidates (max 3 stories)",
-  "round: top 3 of 3 candidates",
-  "candidates waiting: 3 Coimbatore; time left 79 min",
-  "try (N) manual=True: https://www.dinamani.com/cinema/cinema-news/2026/Nov/21/kova",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/farmers-take-out-black-flag-rally-against-elephant-camps/4382196",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/who-owns-the-thandu-mariamman-temple-land-the-new-ghosts-in-the-road-expansion-project/4382283",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/nutrition-awareness-competitions/4382191",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/does-the-racecourse-media-tower-work/4382199",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/living-together-without-getting-a-divorce-is-a-crime/4382284",
+  "candidate filter: collected=5",
+  "to write: 5 Coimbatore district candidates (max 5 stories)",
+  "round: top 5 of 5 candidates",
+  "candidates waiting: 5 Coimbatore; time left 79 min",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "try (N) manual=True: https://www.dailythanthi.com/news/tamilnadu/coimbatore-waste",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
-  "candidate loop ended: left 0, tried={'N': 3}, done={'N': 3}, time left 78 min",
-  "filed: 3 Coimbatore district stories (target 3), reels only",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 10})",
+  "candidate loop ended: left 0, tried={'N': 5}, done={'N': 5}, time left 75 min",
+  "filed: 5 Coimbatore district stories (target 5), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":3,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":5,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "switching away from gemini/gemini-3.6-flash for 10 min",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 413: {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organization `or",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok groq/openai/gpt-oss-120b (6s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "ok gemini/gemini-3-flash-preview (9s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "ok anthropic/claude-haiku-5-5",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing ",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing ",
+  "switching away from gemini/gemini-3-flash-preview for 10 min",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
+  "ok groq/qwen/qwen3.8-27b (4s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "switching away from gemini/gemini-3.5-flash for 10 min",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_gener",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
@@ -76,6 +91,9 @@
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
@@ -85,189 +103,323 @@
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "கோவை வெள்ளலூரில் ரூ.450 கோடி குப்பை எரி உலை திட்டம்: அன்புமணி ராமதாஸ் கைவிட வலியுறுத்தல்",
-   "english_headline": "Anbumani Ramadoss urges Tamil Nadu govt to drop Rs 450 crore waste incinerator plan at Velalur, Coimbatore; tenders close on 25 Nov",
-   "category": "Civic Issues",
-   "location": "Velalur, Coimbatore city, Coimbatore district",
-   "importance": "High",
+   "tamil_headline": "விவாகரத்து பெறாமல் லிவ்விங் டுகெதர் குற்றம்",
+   "english_headline": "Living together with a third person without divorce is a crime, says Allahabad High Court; husband must pay maintenance even after civil jail",
+   "category": "Government & Services",
+   "location": "unknown",
+   "importance": "Low",
    "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "குப்பை எரி உலை",
-    "loc": "வெள்ளலூர், கோவை",
-    "hl1": "வெள்ளலூரில் ரூ.450 கோடி குப்பை எரி உலை",
-    "hl2": "திட்டத்தைக் கைவிட",
+    "cat": "சட்ட விளக்கம்",
+    "loc": "கோவை மாவட்டம்",
+    "hl1": "விவாகரத்து பெறாமல் லிவ்விங் டுகெதர்",
+    "hl2": "ஜீவனாம்சம் கட்டாயம்",
     "slides": [
      {
-      "title": "திட்டம் என்ன?",
+      "title": "சட்டம் என்ன?",
       "lines": [
-       "வெள்ளலூரில் தினமும் <b>1,200 டன்</b> குப்பை எரிப்பு",
-       "ரூ.<b>450 கோடி</b> செலவில் <b>18 முதல் 20 மெகாவாட்</b> மின்சாரம்",
-       "கோவை மாநகராட்சிக்கான திட்டம்"
+       "திருமணமான, துணைவர் உயிருடன் இருக்கும்போது",
+       "விவாகரத்து பெறாமல் மூன்றாவது நபருடன் வாழ்வது <b>குற்றம்</b>",
+       "சட்டப்படி இது தவறு"
       ]
      },
      {
-      "title": "ஒப்பந்தப்புள்ளி",
+      "title": "ஜீவனாம்சம் பற்றி",
       "lines": [
-       "ஒப்பந்தப்புள்ளிகள் <b>25 நவம்பர்</b> வரை தாக்கல் செய்யலாம்",
-       "<b>26 நவம்பர்</b> அன்று திறக்கப்படும்",
-       "பின்னர் ஒப்பந்ததாரர் தேர்வு செய்யப்படுவார்"
+       "ஜீவனாம்சம் தராததால் <b>சிவில் சிறை</b> தண்டனை பெற்றவர்",
+       "சிறைக்குச் சென்று வருவது கடமையிலிருந்து விடுவிக்காது",
+       "ஜீவனாம்சம் நிலுவையைச் செலுத்த வேண்டும்"
       ]
      },
      {
-      "title": "எதிர்ப்பு ஏன்?",
+      "title": "தீர்ப்பு",
       "lines": [
-       "அன்புமணி ராமதாஸ் திட்டத்தைக் கைவிட வலியுறுத்தல்",
-       "புகை, நச்சு வாயுக்களால் நோய் அபாயம் என எச்சரிக்கை",
-       "நிலத்தடி நீர்மட்டம் பாதிக்கப்படும் என அச்சம்"
-      ]
-     },
-     {
-      "title": "பாமக எச்சரிக்கை",
-      "lines": [
-       "திடக்கழிவு மேலாண்மை விதிகளை உடனே செயல்படுத்த வேண்டும்",
-       "மறுத்தால் மக்கள் திரண்டு போராட்டம் நடத்தப்படும்",
-       "திட்டம் கைவிடப்பட வேண்டும் என பாமக வலியுறுத்தல்"
+       "அலகாபாத் ஐகோர்ட் இதை தெளிவாகத் தீர்ப்பளித்துள்ளது",
+       "கணவன் சிறைக்குச் சென்று வந்தாலும் ஜீவனாம்சம் கொடுக்க",
+       "வக்கீல் சண்முகம் அளித்த சட்ட விளக்கம்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவை வெள்ளலூரில் ரூ.450 கோடியில் குப்பை எரி உலை திட்டம் வருகிறது. தினமும் 1,200 டன் குப்பைகளை எரித்து 18 முதல் 20 மெகாவாட் மின்சாரம் தயாரிக்க திட்டமிடப்பட்டுள்ளது. இதற்கான ஒப்பந்தப்புள்ளிகள் நவம்பர் 25ஆம் தேதி வரை தாக்கல் செய்யலாம். நவம்பர் 26ஆம் தேதி ஒப்பந்தப்புள்ளிகள் திறக்கப்பட்டு ஒப்பந்ததாரர் தேர்வு செய்யப்படுவார் என அரசும் கோவை மாநகராட்சியும் அறிவித்துள்ளன. இந்தத் திட்டத்தைக் கைவிட வேண்டும் என பா ம க தலைவர் அன்புமணி ராமதாஸ் வலியுறுத்தியுள்ளார். குப்பை எரி உலையிலிருந்து வெளியாகும் நச்சு வாயுக்களால் புற்றுநோய், இருதய நோய்கள், மூச்சுக்குழல் நோய்கள் ஏற்படும் என அவர் எச்சரித்துள்ளார். இந்தத் திட்டத்துக்கு தினமும் 3 லட்சம் லிட்டர் தண்ணீர் தேவைப்படும்; நிலத்தடி நீர்மட்டமும் பாதிக்கப்படும் என்றும் அவர் கூறியுள்ளார். இந்தத் திட்டத்தை செயல்படுத்தினால் கோவை நச்சுக்காடாக மாறும் என்று அவர் தெரிவித்துள்ளார். திட்டத்தை கைவிடாவிட்டால் மக்களைத் திரட்டி மாபெரும் போராட்டம் நடத்தப்படும் என பா ம க எச்சரித்துள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 வெள்ளலூரில் ரூ.450 கோடி குப்பை எரி உலை திட்டம்: கைவிட அன்புமணி வலியுறுத்தல்\n\n📰 முழு விவரம்:\nகோவை வெள்ளலூரில் தினமும் 1,200 டன் குப்பைகளை எரித்து மின்சாரம் தயாரிக்கும் ரூ.450 கோடி திட்டத்தை கைவிட வேண்டும் என பாமக தலைவர் அன்புமணி ராமதாஸ் வலியுறுத்தியுள்ளார்.\nரூ.450 கோடியில் தினமும் 1,200 டன் குப்பைகளை எரித்து 18 முதல் 20 மெகாவாட் மின்சாரம் தயாரிக்கும் திட்டம் இது.\nஒப்பந்தப்புள்ளிகளை நவம்பர் 25ஆம் தேதி வரை தாக்கல் செய்யலாம்; நவம்பர் 26ஆம் தேதி திறக்கப்பட்டு ஒப்பந்ததாரர் தேர்வு செய்யப்படுவார் என அரசும் கோவை மாநகராட்சியும் அறிவித்துள்ளன.\nஇத்திட்டம் 2025ஆம் ஆண்டில் ரூ.100 கோடியில், தினமும் 300 டன் குப்பை எரிப்பாக முதலில் அறிவிக்கப்பட்டது. பின்னர் விரிவாக்கப்பட்டது.\nதினமும் 3 லட்சம் லிட்டர் தண்ணீர் தேவைப்படும்; நிலத்தடி நீர்மட்டம் பாதிக்கப்படும் என்று அவர் கூறியுள்ளார்.\nநிலக்கரி அனல்மின் நிலையத்தை விட டையாக்சின், பாதரசம் உள்ளிட்ட மாசுக்கள் பல மடங்கு அதிகமாக வெளியாகும் என்றும், இதனால் புற்றுநோய், இருதய நோய் ஏற்படும் என்றும் அவர் எச்சரித்துள்ளார்.\nஇந்தத் திட்டத்தை செயல்படுத்தினால் கோவை நச்சுக்காடாக மாறும் என்று அவர் தெரிவித்துள்ளார். திட்டத்தை கைவிடாவிட்டால் மக்களைத் திரட்டி மாபெரும் போராட்டம் நடத்தப்படும் என பாமக எச்சரித்துள்ளது.\nநவம்பர் 25ஆம் தேதிக்குள் ஒப்பந்தப்புள்ளிகள் தாக்கல் செய்யப்படும் என்பதால் இத்திட்டம் தொடர்பான நகர்வுகளை கவனித்து வாருங்கள்.\n\nCoimbatore waste incinerator Velalur Rs 450 crore plan, Anbumani urges drop | Coimbatore news\n📍 வெள்ளலூர், கோவை மாநகரம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Velalur #CoimbatoreNews #கோவை",
-   "prompts": "A row of Coimbatore Corporation garbage trucks, their rear loads of waste, stands at the entrance of an open waste-dumping ground at Velalur on the outskirts of Coimbatore city. Several corporation workers in shirts and trousers, seen from behind and far away, walk among the heaps of mixed household garbage piled on the bare, dusty ground. Behind the site, a flat, open area stretches toward a line of low trees and the faint silhouette of the Western Ghats far in the background. Daylight, slightly hazy sky. Shot at eye level with a 35 mm lens, wide enough to show the trucks, the garbage mounds and the open land around Velalur. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a large heap of wet, mixed household garbage, with banana leaves, vegetable peels and plastic bags piled high on the ground beside a dirt track at Velalur. A few open cardboard and plastic sacks lie scattered in the foreground, and a corporation worker's rubber boot is visible at the edge of the frame. Behind the heap, a blurred stretch of waste-strewn ground leads toward a distant line of trees. Daylight, flat soft light. Shot at slightly high eye level with a 35 mm lens, focusing on the textures of the garbage and the dusty track. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dailythanthi.com/news/tamilnadu/coimbatore-waste-incineration-plant-controversy",
-   "published": "2026-11-21T05:58:21Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 5 ('தினமும் 300 டன் குப்பைகளை எரித்து 5 முதல் 6 மெகாவாட் மின்சார'); 6 ('தினமும் 300 டன் குப்பைகளை எரித்து 5 முதல் 6 மெகாவாட் மின்சார'); 760 ('என்பதுதான் பாமகவின் வினா..இந்தத் திட்டத்திற்காக கோவை மாநகராட'); 28 ('நிலக்கரி அனல்மின் நிலையத்தை விட 28 மடங்கு டையாக்சின், 3 மடங்'); 14 ('நிலக்கரி அனல்மின் நிலையத்தை விட 28 மடங்கு டையாக்சின், 3 மடங்'); 6 ('நிலக்கரி அனல்மின் நிலையத்தை விட 28 மடங்கு டையாக்சின், 3 மடங்')",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795246445/kovaiminnal/hujflqtzkihhigzehwak.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795246448/kovaiminnal/capp0ugqpbqiakqeckql.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவை எக்ஸ்பிரஸில் முன்பதிவில்லா பெட்டியில் பயணித்த விஜய் ஆண்டனி: அப்பா குட்டி படத்துக்கு வித்தியாசமான புரமோஷன்",
-   "english_headline": "Vijay Antony travels in an unreserved compartment of Kovai Express to promote Appa Kutty film",
-   "category": "Entertainment",
-   "location": "Chennai to Coimbatore, Kovai Express train, Coimbatore district",
-   "importance": "Low",
-   "scope": "",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "சினிமா செய்தி",
-    "loc": "கோவை எக்ஸ்பிரஸ்",
-    "hl1": "கோவை எக்ஸ்பிரஸில் விஜய் ஆண்டனி பயணம்",
-    "hl2": "முன்பதிவில்லா பெட்டியில்",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "நடிகர் விஜய் ஆண்டனி கோவை எக்ஸ்பிரஸில் பயணித்தார்",
-       "முன்பதிவில்லா இருக்கையில் பயணித்தார்",
-       "சென்னையில் இருந்து கோயம்புத்தூர் சென்ற ரயில்"
-      ]
-     },
-     {
-      "title": "ஏன் இந்த பயணம்?",
-      "lines": [
-       "அப்பா குட்டி படத்துக்கான <b>புரமோஷன்</b>",
-       "படம் <b>நவ. 20</b> அன்று தமிழகம் முழுவதும் வெளியானது",
-       "பயணத்தில் பொதுமக்களிடம் பேசினார்"
-      ]
-     },
-     {
-      "title": "படம் பற்றி",
-      "lines": [
-       "மு. மாறன் இயக்கிய தந்தை - மகள் உறவுக் கதை",
-       "விஜய் ஆண்டனியே இசையமைத்துள்ளார்",
-       "படத்துக்கு கலவையான விமர்சனங்கள்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "நடிகர் விஜய் ஆண்டனி கோவை எக்ஸ்பிரஸின் முன்பதிவில்லா பெட்டியில் பயணித்து அனைவரையும் ஆச்சரியப்படுத்தியுள்ளார். சென்னையில் இருந்து கோயம்புத்தூர் சென்ற ரயிலில் அவர் முன்பதிவில்லா இருக்கையில் பயணம் செய்தார். அந்தப் பயணத்தில் பொதுமக்களிடம் பேசி, தனது அப்பா குட்டி படத்துக்காக புரமோஷன் செய்தார். அப்பா குட்டி படம் நவம்பர் 20ஆம் தேதி தமிழகம் முழுவதும் வெளியானது. இயக்குநர் மு. மாறன் இயக்கிய இப்படத்தில் விஜய் ஆண்டனி நாயகனாக நடித்துள்ளார். தந்தை மகள் உறவை மையமாகக் கொண்ட இப்படத்துக்கு விஜய் ஆண்டனியே இசையமைத்துள்ளார். படத்துக்குக் கலவையான விமர்சனங்கள் கிடைத்து வரும் நிலையில், அவரது இந்த வித்தியாசமான புரமோஷன் கவனம் பெற்று வருகிறது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🎬 கோவை எக்ஸ்பிரஸில் முன்பதிவில்லா பெட்டியில் பயணித்த விஜய் ஆண்டனி\n\n📰 முழு விவரம்:\nநடிகர் விஜய் ஆண்டனி, அப்பா குட்டி படத்துக்காக வித்தியாசமான புரமோஷன் செய்துள்ளார். சென்னையில் இருந்து கோயம்புத்தூர் சென்ற கோவை எக்ஸ்பிரஸ் ரயிலில் முன்பதிவில்லா இருக்கையில் அவர் பயணித்தார். அங்கு பொதுமக்களிடமும் பேசினார்.\n🎬 இயக்குநர் மு. மாறன் இயக்கிய அப்பா குட்டி நவம்பர் 20ஆம் தேதி தமிழகம் முழுவதும் வெளியானது.\n🎭 பிரீத்தி அஸ்ரானி, பகவதி பெருமாள், ஜென்ஸன் திவாகர், அருவி மதன் ஆகியோர் முக்கிய வேடங்களில் நடித்துள்ளனர்.\n🎵 படத்துக்கு விஜய் ஆண்டனியே இசையமைத்துள்ளார். இது தந்தை மகள் உறவைப் பற்றிய கதை.\n⭐ படத்துக்குக் கலவையான விமர்சனங்கள் கிடைத்து வருகின்றன.\n\nVijay Antony Kovai Express unreserved compartment | Coimbatore news\n📍 கோவை எக்ஸ்பிரஸ், கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Cinema",
-   "prompts": "A film actor sits among ordinary passengers in the unreserved general compartment of the Kovai Express train, chatting with them as he travels from Chennai towards Coimbatore. The coach is a plain, crowded Indian Railways unreserved compartment with hard wooden-backed bench seats, metal grab rails and overhead luggage racks stacked with cloth bags and travel bundles. Passengers in shirts, trousers, sarees and salwar sit close together, some standing in the aisle, and they turn towards the seated actor with curious, smiling attention; faces are kept partly turned away or blurred so no one is identifiable. Through the open window, bright daylight and a green Tamil Nadu countryside slide past, with a distant line of hills along the horizon. The camera sits at eye level near the aisle, shot on a 35 mm lens, wide enough to show the full coach, the crowd and the moving window scenery. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close detail of the unreserved train compartment: a worn bench seat and a travel bag tucked under it, with a passenger's hand resting on a folded cloth bundle and a steel water bottle beside it. Behind the seat, the window frame shows the rushing green fields and palms of the Tamil Nadu countryside in daylight, with the blurred shoulders of other passengers in shirts and sarees in the background. The scene conveys the everyday, crowded feel of a general-class coach on the Chennai to Coimbatore run. Shot at seat height with a shallow depth of field on a 35 mm lens, so the bags, seat and window scenery stay sharp while the passengers remain soft and unidentifiable. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamani.com/cinema/cinema-news/2026/Nov/21/kovai-express-unreserved-compartment-vijay-antony-appa-kutty-promotions",
-   "published": "2026-11-21T07:17:41.158Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 52 ('அங்கு பொதுமக்களிடமும் பேசி, அப்பா குட்டி படத்திற்காக புரமோஷன'); 6 ('அங்கு பொதுமக்களிடமும் பேசி, அப்பா குட்டி படத்திற்காக புரமோஷன')",
+   "reel_script": "திருமணமான ஒருவர் விவாகரத்து பெறாமல் மூன்றாவது நபருடன் சேர்ந்து வாழ்வது சட்டப்படி குற்றம். துணைவர் உயிருடன் இருக்கும்போது இப்படி வாழ்வது தவறு என்று சட்ட விளக்கம் கூறுகிறது. இன்னொரு கேள்வியும் வந்துள்ளது. வன்கொடுமை வழக்கில் மனைவிக்கு ஜீவனாம்சம் தராததால் சிவில் சிறையில் தண்டனை அனுபவித்த கணவர், ஜீவனாம்சம் கொடுக்க வேண்டியதில்லையா? இதற்கு அலகாபாத் ஐகோர்ட் தெளிவாகத் தீர்ப்பளித்துள்ளது. ஜீவனாம்சம் செலுத்தத் தவறியதால் சிறைக்குச் சென்று வருவது, மாதாந்திர ஜீவனாம்ச நிலுவையைச் செலுத்தும் சட்டப் பொறுப்பிலிருந்து கணவரை விடுவிக்காது. கணவன் சிறைக்குச் சென்று வந்தாலும் ஜீவனாம்சம் கொடுத்துதான் ஆக வேண்டும் என்று நீதிமன்றம் கூறியுள்ளது. இந்த சட்ட விளக்கத்தை வக்கீல் சண்முகம் அளித்துள்ளார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "⚖️ விவாகரத்து பெறாமல் லிவ்விங் டுகெதர் குற்றம்; ஜீவனாம்சம் கட்டாயம்\n\n📰 முழு விவரம்:\nதிருமணமாகி, துணைவர் உயிருடன் இருக்கும்போது விவாகரத்து பெறாமல் மூன்றாவது நபருடன் சேர்ந்து வாழ்வது சட்டப்படி குற்றம்.\nவன்கொடுமை வழக்கில் மனைவிக்கு ஜீவனாம்சம் தராததால் சிவில் சிறையில் தண்டனை அனுபவித்த கணவரும் ஜீவனாம்சம் கொடுக்க வேண்டும் என்று அலகாபாத் ஐகோர்ட் தீர்ப்பளித்துள்ளது.\nஜீவனாம்சம் செலுத்தத் தவறியதற்காக சிறைக்குச் சென்று வருவது, மாதாந்திர ஜீவனாம்ச நிலுவையைச் செலுத்தும் பொறுப்பிலிருந்து விடுவிக்காது.\n\n⚖️ சட்ட விளக்கம்: வக்கீல் சண்முகம்\n\nLiving together without divorce is a crime, Allahabad HC on maintenance | Coimbatore news\n📍 கோவை மாவட்டம்\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #சட்டம்",
+   "prompts": "A lawyer in a black coat and white band stands before a courtroom bench in a Tamil Nadu district court hall, addressing a group of litigants seated on wooden benches with their backs to the camera. The setting is a plain government court building in Coimbatore city with high windows, ceiling fans, and a raised judge's bench covered with case files and law books. Two or three people in shirts and sarees sit quietly on the benches, seen from behind and far away. A court clerk in white shirt sorts thick bundles of legal papers on a long table in the foreground. The light is soft daylight from the windows. Camera at eye level, 35 mm lens, wide enough to show the full courtroom and the judge's bench. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a stack of legal papers and an open law book on a wooden court table, with a pen resting across a typed page of a court order. In the soft-focus background a lawyer's black coat hangs on a chair and a few litigants wait on a bench, seen from behind. The papers show no readable text, only blurred printed lines. Natural window light falls across the desk. Camera slightly high, close enough to show the paper texture and the stack of files, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/living-together-without-getting-a-divorce-is-a-crime/4382284",
+   "published": "2026-11-21T16:46:32+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)",
    "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795246457/kovaiminnal/f9xtks3sj2yqwxlr5ulg.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795246465/kovaiminnal/txaeakfz98ybiqkgcdin.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795261088/kovaiminnal/jfdrbj5g10ulwrbkh7kx.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795261092/kovaiminnal/budepsc88weqwad4ufld.jpg"
    ]
   },
   {
-   "tamil_headline": "கோவில்பாளையம் வித்யாஷ்ரம் பள்ளியில் ஆண்டு விளையாட்டு விழா",
-   "english_headline": "Annual sports day at Vidyashram CBSE school in Kovilpalayam, SP Pavan Kumar gives medals",
-   "category": "Education",
-   "location": "Kovilpalayam, Coimbatore district",
-   "importance": "Low",
-   "scope": "local",
+   "tamil_headline": "கோவையில் ஊட்டச்சத்து விழிப்புணர்வு போட்டிகள்",
+   "english_headline": "Nutrition Awareness Competitions in Coimbatore",
+   "category": "Health",
+   "location": "Coimbatore city, Coimbatore district",
+   "importance": "Medium",
+   "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "பள்ளி விழா",
-    "loc": "கோவில்பாளையம்",
-    "hl1": "கோவில்பாளையத்தில் பள்ளி விளையாட்டு விழா",
-    "hl2": "எஸ்.பி. பவன் குமார்",
+    "cat": "ஆரோக்கியம்",
+    "loc": "கோவை",
+    "hl1": "கோவையில் ஊட்டச்சத்து போட்டிகள்",
+    "hl2": "ரூ.10,000 முதல் பரிசு",
     "slides": [
      {
-      "title": "என்ன நடந்தது?",
+      "title": "போட்டி நோக்கம்",
       "lines": [
-       "கோவில்பாளையத்தில் வித்யாஷ்ரம் சி.பி.எஸ்.இ. பள்ளியின் ஆண்டு",
-       "கோவை ரூரல் எஸ்.பி. பவன் குமார் சிறப்பு விருந்தினராக"
+       "ரத்தசோகை இல்லாத கிராமங்களை உருவாக்க",
+       "பாரம்பரிய உணவுத் திருவிழா நடக்கிறது",
+       "சிறுதானிய போட்டிகள் நடைபெறுகின்றன"
       ]
      },
      {
-      "title": "பரிசுகள்",
+      "title": "நடப்பு நாட்கள்",
       "lines": [
-       "போட்டிகளில் வெற்றி பெற்ற மாணவர்களுக்குப் பதக்கங்கள்",
-       "சான்றிதழ்களும் வழங்கப்பட்டன"
+       "24ம் தேதி வட்டார அளவு போட்டி",
+       "27ம் தேதி மாவட்ட அளவு போட்டி",
+       "கலெக்டர் அலுவலக வளாகத்தில்"
       ]
      },
      {
-      "title": "அறிவுரை",
+      "title": "பரிசு தொகை",
       "lines": [
-       "கல்வியுடன் ஒழுக்கம் மிக முக்கியம் என்றார் எஸ்.பி.",
-       "தீய பழக்கங்களைத் தவிர்க்க வேண்டும்",
-       "பெற்றோருக்கு மதிப்பளிக்க வேண்டும்"
+       "மாவட்ட முதல் பரிசு ரூ.10,000",
+       "இரண்டாம் பரிசு ரூ.8,000",
+       "மூன்றாம் பரிசு ரூ.6,000"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவில்பாளையத்தில் வித்யாஷ்ரம் சி பி எஸ் இ பள்ளியின் ஆண்டு விளையாட்டு விழா நடைபெற்றது. கோவை ரூரல் காவல் கண்காணிப்பாளர் பவன் குமார் சிறப்பு விருந்தினராகப் பங்கேற்றார். மாணவர்களின் திறமையையும் விளையாட்டு ஆர்வத்தையும் அவர் பாராட்டினார். போட்டிகளில் வெற்றி பெற்ற மாணவர்களுக்குப் பதக்கங்களும் சான்றிதழ்களும் வழங்கப்பட்டன. கல்வியுடன் ஒழுக்கம் மிக முக்கியம் என்று அவர் வலியுறுத்தினார். மாணவர்கள் தீய பழக்கங்களைத் தவிர்க்க வேண்டும் என்றும், விளையாட்டில் ஆர்வத்துடன் பங்கேற்க வேண்டும் என்றும் கூறினார். பெற்றோருக்கு மதிப்பளிக்க வேண்டும் என்றும் அறிவுறுத்தினார். பள்ளி முதல்வர் நந்தினி பாய் வரவேற்றார். பள்ளித் தலைவர் பழனிச்சாமி, இயக்குனர் புஷ்பராஜ் உள்பட பலர் பங்கேற்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🏅 கோவில்பாளையத்தில் பள்ளி விளையாட்டு விழா: எஸ்.பி. பவன் குமார் பதக்கம் வழங்கினார்\n\n📰 முழு விவரம்:\nகோவில்பாளையத்தில் வித்யாஷ்ரம் சி.பி.எஸ்.இ. பள்ளியின் ஆண்டு விளையாட்டு விழா நடைபெற்றது.\nகோவை ரூரல் காவல் கண்காணிப்பாளர் பவன் குமார் சிறப்பு விருந்தினராகப் பங்கேற்று, மாணவர்களின் திறமையையும் விளையாட்டு ஆர்வத்தையும் பாராட்டினார்.\nபோட்டிகளில் வெற்றி பெற்றவர்களுக்குப் பதக்கங்களும் சான்றிதழ்களும் வழங்கப்பட்டன.\nகல்வியுடன் ஒழுக்கம் மிக முக்கியம்; தீய பழக்கங்களைத் தவிர்த்து, விளையாட்டில் ஆர்வத்துடன் பங்கேற்று, பெற்றோருக்கு மதிப்பளிக்க வேண்டும் என்று அவர் அறிவுறுத்தினார்.\nபள்ளி முதல்வர் நந்தினி பாய் வரவேற்றார். பள்ளித் தலைவர் பழனிச்சாமி, இயக்குனர் புஷ்பராஜ் உள்பட பலர் பங்கேற்றனர்.\n\nSports day at Vidyashram school Kovilpalayam, SP Pavan Kumar | Coimbatore news\n📍 கோவில்பாளையம், கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Kovilpalayam #Coimbatore #CoimbatoreNews",
-   "prompts": "A khaki-uniformed police Superintendent stands on a stage at a school sports ground in Kovilpalayam, Coimbatore, handing a medal to a young student in a white shirt and navy uniform while a line of other students waits in front. The place is an open school ground with a red running track, green grass, a raised stage with a small table and mic, and a row of plastic chairs where teachers and guests sit in the shade of a tent. Students in Tamil Nadu school uniform stand in rows seen from behind, and a few teachers in sarees and shirts sit on the stage; the officer's face is turned away or far away from the camera. Daylight, bright and clear. Camera at eye level, 35 mm, wide enough to show the track, the stage and the crowd of students. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a shiny gold-coloured medal with a ribbon, resting on a white tablecloth beside a neatly stacked pile of certificates in a folder, a small glass of water and a school sports-day trophy in the blurred background. Behind the table, the hand of a khaki-uniformed officer is partly visible at the edge of the frame, and a few students in school uniform stand in soft focus. The setting is a school stage in daylight with a green tent canopy. Camera at slightly high angle, 35 mm, shallow depth of field keeping the medal sharp. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/annual-sports-festival-at-vidyashram-school-coimbatore/4382176",
-   "published": "2026-11-21T12:46:34+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: fact-check: The draft's tamil_headline and reel_script place the school in Kovilpalayam, but the article's dateline is Kovilpalayam while the school is Coimbatore Vidyashram; the reel_script says the event took place 'கோவில்பாளையத்தில்' which matches the dateline, so this is fine — however the headline says 'கோவில்பாளையம் வித்யாஷ்ரம் பள்ளி', which is acceptable; no clear error found here after closer check, so flagging only as minor: the caption's 'பவன் குமார் பதக்கம் வழங்கினார்' is supported by the article ('பதக்கங்களையும், சான்றிதழ்களையும் வழங்கினார்'); fact-check: The reel_script states Pavan Kumar is 'கோவை ரூரல் காவல் கண்காணிப்பாளர்' (SP, Coimbatore Rural); the article gives 'கோவை ரூரல் போலீஸ் எஸ்.பி.' — this is an equivalent rendering, not a contradiction",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
+   "reel_script": "கோவையில் ஊட்டச்சத்து குறைபாட்டை தவிர்க்கும் போட்டிகள் நடக்கின்றன. ரத்தசோகை இல்லாத கிராமங்களை உருவாக்கும் நோக்கம் இதன் மூலம் நிறைவேறும். பாரம்பரிய உணவுத் திருவிழா மற்றும் சிறுதானிய போட்டிகள் நடைபெறுகின்றன. தமிழ்நாடு மகளிர் மேம்பாட்டு நிறுவனம் இதற்கு கூட்டாண்மை அளிக்கிறது. வட்டார அளவிலான போட்டி 24ம் தேதி நடைபெறும். இது வட்டார இயக்க மேலாண்மை அலுவலகத்தில் நடக்கிறது. மாவட்ட அளவிலான போட்டி 27ம் தேதி நடைபெறும். இது கலெக்டர் அலுவலக வளாகத்தில் நடைபெறும். ஊராட்சி அளவில் முதல் பரிசு ரூ.400 வழங்கப்படும். இரண்டாம் பரிசு ரூ.300 மற்றும் மூன்றாம் பரிசு ரூ.200 வழங்கப்படும். வட்டார அளவில் முதல் இடத்திற்கு ரூ.4,000 வழங்கப்படும். இரண்டாம் இடத்திற்கு ரூ.3,000 மற்றும் மூன்றாம் இடத்திற்கு ரூ.2,000 வழங்கப்படும். மாவட்ட அளவில் முதல் பரிசு ரூ.10,000 வழங்கப்படும். இரண்டாம் பரிசு ரூ.8,000 மற்றும் மூன்றாம் பரிசு ரூ.6,000 வழங்கப்படும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🥗 கோவையில் ஊட்டச்சத்து விழிப்புணர்வு போட்டிகள் - ரூ.10,000 முதல் பரிசு\n\n📰 முழு விவரம்:\nரத்தசோகை இல்லாத கிராமங்களை உருவாக்கும் நோக்கில் கோவையில் ஊட்டச்சத்து குறைபாட்டை தவிர்க்கும் போட்டிகள் நடக்கின்றன. பாரம்பரிய உணவுத் திருவிழா மற்றும் சிறுதானிய போட்டிகள் நடைபெறுகின்றன. தமிழ்நாடு மகளிர் மேம்பாட்டு நிறுவனத்தின் கூட்டாண்மையுடன் இந்த நிகழ்வுகள் நடத்தப்படுகின்றன. வட்டார அளவிலான போட்டி 24ம் தேதி வட்டார இயக்க மேலாண்மை அலுவலகத்தில் நடைபெறுகிறது. மாவட்ட அளவிலான போட்டி 27ம் தேதி கலெக்டர் அலுவலக வளாகத்தில் நடைபெறுகிறது. ஊராட்சி அளவில் ரூ.400 முதல் ரூ.200 வரை பரிசுகள் வழங்கப்படுகின்றன. வட்டார அளவில் ரூ.4,000 முதல் ரூ.2,000 வரை பரிசுகள் வழங்கப்படுகின்றன. மாவட்ட அளவில் முதல் பரிசு ரூ.10,000, இரண்டாம் பரிசு ரூ.8,000, மூன்றாம் பரிசு ரூ.6,000 மற்றும் ஆறுதல் பரிசாக இருவருக்கு தலா ரூ.2,000 வழங்கப்படும்.\n\n📍 இடம்: கோவை\n🗓️ நாள்: 24ம் தேதி (வட்டார), 27ம் தேதி (மாவட்ட)\nℹ️ மக்கள் கவனத்திற்கு: ஊட்டச்சத்து குறைபாட்டை தவிர்க்க இப்போட்டிகளில் பங்கேற்குங்கள்.\n\nCoimbatore nutrition awareness competitions | Coimbatore news\n📍 Coimbatore, Coimbatore | 21 Nov 2026\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Health",
+   "prompts": "A group of rural women in sarees and salwar stand behind a long table at the Collectorate office campus in Coimbatore city, arranging steel plates and bowls filled with traditional millet dishes for a nutrition competition. Their backs are to the camera, and a few are carrying covered vessels. Along the far side of the table sit three judges in government staff clothing, observing the plates with notebooks in hand. Behind them stands a government office building with plain white walls and tiled roofs, and beyond it the outline of the Western Ghats in soft haze. The scene is set in bright daylight with a mild breeze. Camera at eye level, 35 mm lens, wide enough to show the table, the participants, the judges and the office building together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a steel plate holding a heap of freshly cooked millet food, such as ragi balls and little millet pongal, beside a small clay pot and a wooden ladle on a plain cloth-covered table. Fine grains of millet are scattered on the cloth, and a few green leaves are arranged as garnish. Behind the plate, slightly out of focus, a row of other competition plates and the blurred back of a participant in a cotton saree can be seen. The light is natural daylight from the side, giving the food a warm, earthy tone. Camera is close and slightly high, 35 mm lens, shallow depth of field to highlight the textures of the millet food. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/nutrition-awareness-competitions/4382191",
+   "published": "2026-11-21T15:04:30+05:30",
+   "verification": "DRAFT (groq/qwen/qwen3.8-27b) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 300, ('ஊராட்சி அளவிலான போட்டிகளில் முதல் பரிசு ரூ.400, இரண்டாம் பரி'); 3,000, ('ஊராட்சி அளவிலான போட்டிகளில் முதல் பரிசு ரூ.400, இரண்டாம் பரி'); 10 ('மாவட்ட அளவில் முதல் பரிசு ரூ.10 ஆயிரம், இரண்டாம் பரிசு ரூ.8,')",
+   "note": "free-model draft groq/qwen/qwen3.8-27b, 1 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795246472/kovaiminnal/qz5cdmaanut89cabvwi1.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795246476/kovaiminnal/vrk1ddyd8xeo8hwivvcd.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795261100/kovaiminnal/vrqr49umziomkzq8lsbm.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795261102/kovaiminnal/aoqrfe81ptfrt9tkrjd7.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "ரேஸ்கோர்ஸ் மீடியா டவரின் எல்.இ.டி திரை பழுது: 3 மாதமாக சரியாகவில்லை",
+   "english_headline": "Racecourse media tower LED screen still not repaired after 3 months; part to be imported from China",
+   "category": "Civic Issues",
+   "location": "Racecourse, Coimbatore city, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "பொது இடம்",
+    "loc": "ரேஸ்கோர்ஸ், கோவை",
+    "hl1": "ரேஸ்கோர்ஸ் மீடியா டவர் திரை 3 மாதமாக",
+    "hl2": "சீனாவில் இருந்து இறக்குமதி",
+    "slides": [
+     {
+      "title": "என்ன பிரச்சினை?",
+      "lines": [
+       "ரேஸ்கோர்ஸில் <b>15 மீ</b> உயர மீடியா டவர் உள்ளது",
+       "எல்.இ.டி திரையில் பழுது ஏற்பட்டது",
+       "பாடல், குறும்படம் திரையிடுவது தடைபட்டது"
+      ]
+     },
+     {
+      "title": "எப்போது சீரமைப்பு?",
+      "lines": [
+       "ஆகஸ்ட் மாதம் சீரமைப்புப் பணி தொடங்கியது",
+       "திரையைக் கழற்றி சென்னைக்கு அனுப்பினர்",
+       "இரு வாரங்களில் சரியாகும் என்றனர்"
+      ]
+     },
+     {
+      "title": "இப்போது நிலை?",
+      "lines": [
+       "3 மாதம் கடந்தும் திரை சரியாகவில்லை",
+       "சென்னையில் சரி செய்ய முடியாது எனத் திருப்பி அனுப்பினர்",
+       "சீனாவில் இருந்து புதிதாக இறக்குமதி செய்யும் பணி"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "ரேஸ்கோர்ஸ் மீடியா டவரின் எல் இ டி திரை 3 மாதங்களாகப் பழுதாக உள்ளது. கோவை ரேஸ்கோர்ஸில் 15 மீட்டர் உயரத்தில் மீடியா டவர் அமைக்கப்பட்டுள்ளது. ஸ்மார்ட் சிட்டி திட்டத்தின் கீழ் இது அமைக்கப்பட்டது. வார இறுதி மற்றும் பண்டிகை நாட்களில் வண்ண விளக்குகள் ஒளிரும். எல் இ டி திரையில் பாடல்கள், குறும்படம் திரையிடப்படும். பொதுமக்கள் குடும்பத்துடன் வந்து பொழுதுபோக்கினர். திரையில் பழுது ஏற்பட்டதால் திரையிடல் தடைபட்டது. ஆகஸ்ட் மாதம் சீரமைப்புப் பணி தொடங்கியது. திரையைக் கழற்றி சென்னைக்கு அனுப்பினர். இரு வாரங்களில் மீண்டும் செயல்படும் என்று கூறினர். ஆனால் 3 மாதங்கள் கடந்தும் திரை சரியாகவில்லை. மாநகராட்சியில் விசாரித்தபோது, திரை மிகவும் சேதமடைந்துவிட்டதாகத் தெரிவித்தனர். சென்னையில் சரி செய்ய முடியாது எனத் திருப்பி அனுப்பிவிட்டனர். இதனால் சீனாவில் இருந்து புதிதாக இறக்குமதி செய்யும் பணி தொடங்கியுள்ளதாகக் கூறினர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 ரேஸ்கோர்ஸ் மீடியா டவரின் எல்.இ.டி திரை 3 மாதமாக பழுது\n\n📰 முழு விவரம்:\nகோவை ரேஸ்கோர்ஸில் ஸ்மார்ட் சிட்டி திட்டத்தில் 15 மீட்டர் உயர மீடியா டவர் அமைக்கப்பட்டது. வார இறுதி, பண்டிகை நாட்களில் வண்ண விளக்குகள் ஒளிரும்; எல்.இ.டி திரையில் பாடல்கள், குறும்படம் திரையிடப்படும்.\nதிரையில் பழுது ஏற்பட்டதால் திரையிடல் தடைபட்டது. ஆகஸ்ட் மாதம் சீரமைப்புப் பணி தொடங்கி, திரை கழற்றி சென்னைக்கு அனுப்பப்பட்டது. இரு வாரங்களில் சரியாகும் என கூறப்பட்டது.\n3 மாதங்கள் கடந்தும் திரை சரியாகவில்லை. சென்னையில் சரி செய்ய முடியாது எனத் திருப்பி அனுப்பப்பட்டதாக மாநகராட்சி தெரிவித்துள்ளது.\n🏗️ இதனால் சீனாவில் இருந்து புதிதாக இறக்குமதி செய்யும் பணி தொடங்கியுள்ளது.\n\nRacecourse media tower LED screen broken 3 months | Coimbatore news\n📍 ரேஸ்கோர்ஸ், கோவை மாநகரம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Racecourse",
+   "prompts": "A tall 15-metre steel media tower stands in the open grounds of Racecourse in Coimbatore city, its large LED screen dark and switched off, showing no songs or films. The place is a wide public open ground with green lawns, paved walkways and a few tall trees at the edges, with the city's office blocks and buildings faintly visible in the background. A few families and visitors walk on the paths far away, seen from behind and slightly blurred, while the empty screen dominates the scene. The tower's coloured lights are switched off, adding to the sense that it is not working. The scene is in early evening light, when the screen would normally glow during weekends. Camera at eye level, slightly high, 35 mm lens, wide enough to show the tower, the lawns and the people, with the dark screen as the clear focus. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the dark LED screen panel on the lower section of the media tower at Racecourse, Coimbatore, showing the black unlit grid of display modules and the steel frame that holds them. A few exposed cables and a metal bracket hint that the panel was once removed for repair, with a corporation crane hook or ladder leaning nearby on the concrete base. Behind the tower, a few families and visitors stand far away from behind, slightly blurred, on the open grounds with trees at the edge. The light is soft early evening daylight, with no reflection from the screen. Camera at slightly low eye level, 35 mm lens, close enough to show the blank screen and frame details while keeping the open ground visible behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/does-the-racecourse-media-tower-work/4382199",
+   "published": "2026-11-21T15:24:31+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script copies the article word for word (16 words in a row, 15% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795261138/kovaiminnal/ztyoaeupi9qhsfnnmt6b.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795261157/kovaiminnal/sx8ebumhunci2yciaizo.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "தண்டுமாரியம்மன் கோயில் நிலம் யாருக்கு சொந்தம்? சாலை விரிவாக்கத்தில் புதிய சிக்கல்",
+   "english_headline": "Who owns the Thandumariamman temple land? New dispute over road widening project near Periyanaickenpalayam",
+   "category": "Roads & Transport",
+   "location": "Periyanaickenpalayam, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "சாலை விரிவாக்கம்",
+    "loc": "பெரியநாயக்கன்பாளையம்",
+    "hl1": "பெரியநாயக்கன்பாளையம்: கோயில் நிலம்",
+    "hl2": "இரு துறைகளிடையே மோதல்",
+    "slides": [
+     {
+      "title": "என்ன பிரச்னை?",
+      "lines": [
+       "கோவை–மேட்டுப்பாளையம் சாலையில் 1.85 கி.மீ. மேம்பாலம்",
+       "ஜோதிபுரம் பகுதியில் சாலையை <b>விரிவாக்க</b> இடம் தேவை",
+       "7 பேருக்கு இழப்பீடு வழங்கி நிலம் கையகப்படுத்தப்பட்டது"
+      ]
+     },
+     {
+      "title": "கோயில்கள் நிலை",
+      "lines": [
+       "3 கோயில்கள், ஒரு அரச மரம் இருந்தன",
+       "ஒரு கோயிலை நிர்வகித்தவர்களே தாமாக அகற்றினர்",
+       "தண்டுமாரியம்மன் கோயிலை இடிக்க நெடுஞ்சாலை துறை முடிவு"
+      ]
+     },
+     {
+      "title": "புதிய சிக்கல்",
+      "lines": [
+       "கோயில் இடம் நெடுஞ்சாலைத் துறைக்கு சொந்தம் என்பது தவறு என",
+       "பட்டா கேட்டு வருவாய்த் துறையில் விண்ணப்பம்",
+       "வழக்கு தொடரும் ஆலோசனையும் நடைபெறுகிறது"
+      ]
+     },
+     {
+      "title": "அதிகாரிகள் கருத்து",
+      "lines": [
+       "கோயிலை இடிக்க தடை கோரிய மனுவை ஐகோர்ட் தள்ளுபடி செய்தது",
+       "28.6 மீட்டர் அகலச் சாலைக்கு இடம் எடுக்க கோட்டாட்சியர்",
+       "காவல் துறை ஒத்துழைப்பு இல்லை என அதிகாரிகள் ஆதங்கம்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "பெரியநாயக்கன்பாளையத்தில் தண்டுமாரியம்மன் கோயில் நிலம் யாருக்குச் சொந்தம் என்பதில் புதிய சிக்கல் எழுந்துள்ளது. கோவை–மேட்டுப்பாளையம் சாலையில் 1.85 கிலோமீட்டர் தூரத்துக்கு மேம்பாலம் கட்டப்பட்டுள்ளது. ஜோதிபுரம் பகுதியில் சாலையை விரிவாக்க, 7 பேருக்கு இழப்பீடு வழங்கி நிலம் கையகப்படுத்தப்பட்டது. அங்கு 3 கோயில்களும் ஒரு அரச மரமும் இருந்தன. ஒரு கோயிலை நிர்வகித்தவர்களே தாமாக அகற்றினர். தண்டுமாரியம்மன் கோயிலை இடிக்க நெடுஞ்சாலைத் துறை முடிவு செய்தது. அதைத் தடுக்கக் கோரிய மனுவை ஐகோர்ட் தள்ளுபடி செய்தது. இந்நிலையில், கோயில் இருக்கும் இடம் நெடுஞ்சாலைத் துறைக்குச் சொந்தம் என்ற வருவாய்த் துறை ஆவணத் தகவல் தவறு என அறநிலையத் துறை கூறுகிறது. கோயிலுக்குப் பட்டா கேட்டு வருவாய்த் துறையில் ஏற்கனவே விண்ணப்பிக்கப்பட்டுள்ளதாகவும் அறநிலையத் துறை தெரிவித்துள்ளது. இதனால் நெடுஞ்சாலைத் துறை அதிருப்தி அடைந்துள்ளது. 28.6 மீட்டர் அகலச் சாலைக்கு இடம் எடுக்கலாம் என வடக்கு கோட்டாட்சியர் தீர்மானித்திருந்தார். காவல் துறை ஒத்துழைப்பு இல்லை என நெடுஞ்சாலைத் துறை அதிகாரிகள் ஆதங்கம் தெரிவித்துள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 பெரியநாயக்கன்பாளையத்தில் கோயில் நிலம் யாருக்குச் சொந்தம்? சாலை விரிவாக்கத்தில் புதிய சிக்கல்\n\n📰 முழு விவரம்:\nகோவை–மேட்டுப்பாளையம் சாலையில் 1.85 கி.மீ. மேம்பாலம் கட்டப்பட்டுள்ளது. ஜோதிபுரம் பகுதியில் சாலையை விரிவாக்க 7 பேருக்கு இழப்பீடு வழங்கி நிலம் கையகப்படுத்தப்பட்டது.\nஅங்கிருந்த 3 கோயில்களில் ஒன்றை அதன் நிர்வாகிகளே அகற்றினர். விநாயகர் கோயிலை அகற்றி தண்டுமாரியம்மன் கோயில் அருகே அமைத்தனர். அரச மரத்தை வெட்ட வடக்கு கோட்டாட்சியர் அனுமதி அளித்தார்.\nதண்டுமாரியம்மன் கோயிலை இடிக்க நெடுஞ்சாலைத் துறை முடிவு செய்தது. அதற்குத் தடை கோரிய மனுவை ஐகோர்ட் தள்ளுபடி செய்தது.\nஆனால், கோயில் இடம் நெடுஞ்சாலைத் துறைக்குச் சொந்தம் என்ற வருவாய்த் துறை ஆவணத் தகவல் தவறு என அறநிலையத் துறை கூறுகிறது. கோயிலுக்குப் பட்டா கேட்டு வருவாய்த் துறையில் விண்ணப்பித்துள்ளதாகவும் அது தெரிவித்துள்ளது.\nஇதனால் நெடுஞ்சாலைத் துறை அதிருப்தி அடைந்துள்ளது. வருவாய்த் துறை உயர் அதிகாரிகள், கலெக்டர் மீது ஐகோர்ட்டில் வழக்கு தொடர அறநிலையத் துறை ஆலோசித்து வருவதாகத் தகவல்.\nஅதிகாரிகள் கூறுகையில், கோயில் பகுதியை எடுக்கவும், மரம் வெட்டவும், மின் கம்பத்தை அகற்றவும் அனுமதிக்கப்படவில்லை. எஸ்.பி.க்கு 2 முறை கடிதம் எழுதியும் காவல் துறை ஒத்துழைப்பு இல்லை என்றனர்.\n\nPeriyanaickenpalayam temple land dispute road widening | Coimbatore news\n📍 பெரியநாயக்கன்பாளையம், கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Periyanaickenpalayam #சாலை #CoimbatoreNews",
+   "prompts": "A group of National Highways officials in khaki-and-white office uniforms stands beside a small Thandumariamman temple shrine at a busy road junction in Periyanaickenpalayam, Coimbatore, while a yellow-and-white JCB-style work machine waits at the roadside. Seen from behind at a distance: several men in shirts and veshti, one holding a rolled paper plan, with a few devotees in sarees near the temple entrance. Behind them the 1.85 km flyover pillars stretch across the road, with two-wheelers, a town bus and a private car passing on the service road. A large old arasa tree and an electric pole on a concrete base stand inside the boundary, with a marked white line on the road showing the widening plan. Bright daylight with a hazy sky and dusty roadside shops in the background. Camera at eye level, 35 mm, wide enough to show the flyover, temple and road together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up detail of a weathered stone boundary marker and a faded survey stake planted in the dusty roadside soil beside a small temple wall in Periyanaickenpalayam, Coimbatore. A rolled, tied-up survey plan with pencil markings lies on a plastic chair in the foreground, and a shadow of a large arasa tree falls across the ground. Behind, slightly out of focus, a concrete TNEB electric pole and the edge of the highway service road with a parked two-wheeler. Strong midday light, dust in the air, no readable text. Camera low and close, 50 mm, shallow depth of field to emphasise the disputed boundary. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/who-owns-the-thandu-mariamman-temple-land-the-new-ghosts-in-the-road-expansion-project/4382283",
+   "published": "2026-11-21T16:46:29+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 28 ('28.6 மீட்டர் அகலத்துக்கு ரோடு போட இடம் எடுக்கலாம் என கோட்டாட'); 6 ('28.6 மீட்டர் அகலத்துக்கு ரோடு போட இடம் எடுக்கலாம் என கோட்டாட'); 10 ('கோயில் இடம் மட்டுமல்ல, கோயிலுக்கு அப்பால் 10 மீட்டர் வரை அது')",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795261163/kovaiminnal/bscdznhctqtm9kixsnav.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795261165/kovaiminnal/qydcgltgzofbtefi258w.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "மேட்டுப்பாளையத்தில் யானைகள் முகாமுக்கு விவசாயிகள் கருப்பு கொடி பேரணி",
+   "english_headline": "Farmers protest elephant camp near Mettupalayam, threaten black flag rally and shop closure",
+   "category": "Civic Issues",
+   "location": "Mettupalayam, Coimbatore district",
+   "importance": "High",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "விவசாயிகள் போராட்டம்",
+    "loc": "மேட்டுப்பாளையம்",
+    "hl1": "மேட்டுப்பாளையத்தில் யானைகள் முகாமுக்கு",
+    "hl2": "கருப்பு கொடி கட்ட முடிவு",
+    "slides": [
+     {
+      "title": "என்ன முகாம்?",
+      "lines": [
+       "வனபத்ரகாளியம்மன் கோயில் அருகே பவானி ஆற்றங்கரையில் முகாம்",
+       "கோயில், மடங்களில் வளர்க்கப்படும் யானைகள் பங்கேற்பு",
+       "அறநிலையத் துறை ஏற்பாடு செய்துள்ளது"
+      ]
+     },
+     {
+      "title": "விவசாயிகள்",
+      "lines": [
+       "காட்டு யானைகள் வந்து பயிர்கள் சேதமாகும் என அச்சம்",
+       "நேற்று தாசில்தார் அலுவலகம் முன் ஆர்ப்பாட்டம்",
+       "முகாமை வேறு இடத்திற்கு மாற்றக் கோரிக்கை மனு"
+      ]
+     },
+     {
+      "title": "அடுத்த நடவடிக்கை",
+      "lines": [
+       "இன்று முதல் அனைத்து கிராமங்களிலும் கருப்பு கொடி",
+       "முகாம் தொடங்கினால் முதல் நாள் கடையடைப்பு",
+       "சாலை மறியலும் நடத்தப்படும் என எச்சரிக்கை"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "மேட்டுப்பாளையத்தில் யானைகள் முகாமுக்கு விவசாயிகள் கடும் எதிர்ப்பு தெரிவித்துள்ளனர். வனபத்ரகாளியம்மன் கோயில் அருகே, பவானி ஆற்றின் கரையோரம் யானைகள் நல வாழ்வு புத்துணர்வு முகாம் நடத்த அறநிலையத் துறை ஏற்பாடு செய்துள்ளது. கோயில் மற்றும் மடங்களில் வளர்க்கப்படும் யானைகள் இந்த முகாமில் பங்கேற்க உள்ளன. முகாமால் காட்டு யானைகளும் இங்கு வரும் என்றும், அதனால் பயிர்கள் சேதமாகும் என்றும் விவசாயிகள் அச்சம் தெரிவிக்கின்றனர். இதை எதிர்த்து தமிழக விவசாயிகள் சங்கத்தினர் நேற்று தாசில்தார் அலுவலகம் முன்பு ஆர்ப்பாட்டம் நடத்தினர். சங்கத் தலைவர் வேணுகோபால் தலைமை வகித்தார். முகாமை வேறு இடத்திற்கு மாற்றக் கோரி விவசாயிகள் கோஷமிட்டனர். முடிவில் கோரிக்கை மனுவை தாசில்தார் அலுவலகத்தில் வழங்கினர். இன்று முதல் அனைத்து கிராமங்களிலும் கருப்பு கொடி கட்டப்படும் என வேணுகோபால் அறிவித்தார். முகாம் தொடங்கினால், முதல் நாளில் மேட்டுப்பாளையம் நகரில் கடைகள் அடைக்கப்படும்; சாலை மறியல் நடத்தப்படும் என்றும் எச்சரித்தார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 மேட்டுப்பாளையத்தில் யானைகள் முகாமுக்கு விவசாயிகள் எதிர்ப்பு: கருப்பு கொடி கட்ட முடிவு\n\n📰 முழு விவரம்:\nவனபத்ரகாளியம்மன் கோயில் அருகே, பவானி ஆற்றின் கரையோரம் யானைகள் நல வாழ்வு புத்துணர்வு முகாம் நடத்த அறநிலையத் துறை ஏற்பாடு செய்துள்ளது.\nகோயில், மடங்களில் வளர்க்கப்படும் யானைகள் இந்த முகாமில் பங்கேற்க உள்ளன.\nமுகாமால் காட்டு யானைகள் வந்து பயிர்கள் சேதமாகும் என விவசாயிகள் அச்சம் தெரிவிக்கின்றனர்.\nஇதை எதிர்த்து தமிழக விவசாயிகள் சங்கத்தினர் நேற்று தாசில்தார் அலுவலகம் முன்பு ஆர்ப்பாட்டம் நடத்தினர். சங்கத் தலைவர் வேணுகோபால் தலைமை வகித்தார்.\nமுகாமை வேறு இடத்திற்கு மாற்றக் கோரி கோஷமிட்டு, கோரிக்கை மனுவை தாசில்தார் அலுவலகத்தில் வழங்கினர்.\n📍 இடம்: வனபத்ரகாளியம்மன் கோயில் அருகே, பவானி ஆற்றங்கரை, மேட்டுப்பாளையம்\n🗓️ நாள்: இன்று (நவம்பர் 21, சனிக்கிழமை)\n✊ அடுத்த நடவடிக்கை: ஞாயிறு முதல் அனைத்து கிராமங்களிலும் கருப்பு கொடி; முகாம் தொடங்கினால் முதல் நாள் கடையடைப்பு மற்றும் சாலை மறியல்\n\nFarmers protest elephant camp Mettupalayam, black flags | Coimbatore news\n📍 மேட்டுப்பாளையம், கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Mettupalayam #மேட்டுப்பாளையம் #CoimbatoreNews",
+   "prompts": "A crowd of farmers stands in front of the Tahsildar office gate in Mettupalayam town, raising slogans and holding a petition and placards demanding the elephant camp be shifted. Seen from behind and at a distance, the men wear shirts with veshti and some hold up plain black flags on bamboo poles, marking the coming black flag protest. The taluk office is a government building with a plain compound wall and a Tamil Nadu government office entrance. Behind them the Nilgiri foothills rise under a clear daytime sky, with the Bhavani river and a temple gopuram visible in the far background near the Vanabhadrakaliamman temple area. Several farmers wear dhotis and towels on their shoulders. Eye level, 35 mm, wide enough to show the government office and the crowd. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a bundle of black flags tied to bamboo poles, resting against the compound wall of a government office in Mettupalayam town, beside a stack of rolled protest placards. Next to them lies a farmers' petition folder placed on a plastic chair, showing the handover to the Tahsildar's office. Behind, out of focus, a row of farmers' feet and veshti hems can be seen, with a dusty road and a concrete compound wall in the background. Late morning daylight falls softly across the flags and folder. Slightly high angle, 35 mm, shallow depth of field keeps the flags and folder sharp while the background is softened. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/farmers-take-out-black-flag-rally-against-elephant-camps/4382196",
+   "published": "2026-11-21T15:16:28+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: fact-check: Caption says the protest happened 'நேற்று' (yesterday) relative to the article, but the caption states the date as 'இன்று (நவம்பர் 21, சனிக்கிழமை)' - the article gives no specific date, so the date 'நவம்பர் 21' is an invented detail.; fact-check: Caption says the farmers' request for relocation was in the 'கோரிக்கை மனுவை' but also that the camp is 'அறநிலைய துறை ஏற்பாடு' - no problem here; however the caption's 'இன்று' date claim (நவம்பர் 21, சனிக்கிழமை) is not in the article and is an invented date/day.",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 2 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795261170/kovaiminnal/tslksvkpxlk299f4zmay.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795261173/kovaiminnal/nrprooipdylns2dljeyv.jpg"
    ]
   }
  ]
