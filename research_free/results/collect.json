@@ -3,55 +3,116 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/gold-worth-1-crore-stolen-from-jewellery-workshop/4382011",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/they-don-t-get-paid-much-they-don-t-come-for-cleaning-work/4381942",
-  "candidate filter: collected=2",
-  "to write: 2 Coimbatore district candidates (max 2 stories)",
-  "round: top 2 of 2 candidates",
-  "candidates waiting: 2 Coimbatore; time left 79 min",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-news/do-the-recipients-of-the-scholarship-live-at-the-address/4381961",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/infinium-harmony-launched-for-villas-apartments/4381990",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/ukkadam-bus-depots-to-be-closed/4381493",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/rs-10-panipuri-unchanged-for-10-years/4381634",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/national-library-week-celebration-at-selakurachalam/4381699",
+  "candidate filter: collected=5",
+  "to write: 5 Coimbatore district candidates (max 5 stories)",
+  "round: top 5 of 5 candidates",
+  "candidates waiting: 5 Coimbatore; time left 79 min",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "candidate loop ended: left 0, tried={'N': 2}, done={'N': 2}, time left 77 min",
-  "filed: 2 Coimbatore district stories (target 2), reels only",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-news/do-the-recipi",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 10})",
+  "candidate loop ended: left 0, tried={'N': 5}, done={'N': 5}, time left 76 min",
+  "filed: 5 Coimbatore district stories (target 5), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":2,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":5,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.6-flash",
+  "switching away from gemini/gemini-3.6-flash for 10 min",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
+  "ok gemini/gemini-3-flash-preview (11s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3-flash-preview (13s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
-  "ok groq/openai/gpt-oss-120b (6s)",
+  "ok gemini/gemini-3.6-flash (57s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "ok groq/openai/gpt-oss-120b (3s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok groq/openai/gpt-oss-120b (5s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "ok gemini/gemini-3.6-flash (56s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
-  "ok groq/qwen/qwen3.8-27b (4s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "dead for this round: groq/qwen/qwen3.8-27b",
+  "ok groq/openai/gpt-oss-120b (2s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "ok groq/qwen/qwen3.8-27b (1s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
@@ -60,11 +121,8 @@
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
-  "poor answer - skipped for 30 min: gemini/gemini-3-flash-preview",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
@@ -72,129 +130,305 @@
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "கோவை ஆர்.எஸ்.புரத்தில் நகை பட்டறையில் ரூ.1.60 கோடி தங்கம் திருட்டு",
-   "english_headline": "Worker steals gold worth Rs 1.60 crore from jewellery workshop in Coimbatore's RS Puram; police search for him",
-   "category": "Crime & Safety",
-   "location": "R.S. Puram, Coimbatore city, Coimbatore district",
+   "tamil_headline": "10 ஆண்டுகளாக மாறாத ரூ.10 பானிபூரி: கோவையில் அசத்தும் லால் பாபு",
+   "english_headline": "10 years, same price: Lal Babu sells 5 Pani Puris for ₹10 in Coimbatore's Singanallur",
+   "category": "Business & Prices",
+   "location": "Singanallur, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "குற்றச் செய்தி",
-    "loc": "ஆர்.எஸ்.புரம், கோவை",
-    "hl1": "ஆர்.எஸ்.புரத்தில் ரூ.1.60 கோடி தங்கம்",
-    "hl2": "ஊழியர் தப்பி ஓட்டம்",
+    "cat": "குறைந்த விலை",
+    "loc": "சிங்காநல்லூர், கோவை",
+    "hl1": "சிங்காநல்லூரில் ரூ.10-க்கு பானிபூரி",
+    "hl2": "10 ஆண்டுகளாக மாறாத விலை",
     "slides": [
      {
-      "title": "என்ன நடந்தது?",
+      "title": "விலை என்ன?",
       "lines": [
-       "நகை பட்டறையில் <b>ரூ.1.60 கோடி</b> மதிப்புள்ள தங்கம் திருட்டு",
-       "<b>1,346 கிராம்</b> எடையுள்ள தங்கத்தை ஊழியர் திருடித் தப்பினார்",
-       "பட்டறை உரிமையாளர் ஆர்.எஸ்.புரம் போலீசில் புகார்"
+       "<b>5</b> பானிபூரிகள் வெறும் <b>ரூ.10</b> மட்டும்",
+       "10 ஆண்டுகளாக விலையை உயர்த்தவில்லை",
+       "சிங்காநல்லூர் சத்யா எலக்ட்ரானிக்ஸ் அருகே கடை"
       ]
      },
      {
-      "title": "யார் இவர்?",
+      "title": "யார் நடத்துகிறார்?",
       "lines": [
-       "மேற்கு வங்கத்தை சேர்ந்த <b>மருபில்லா காஷி, 21</b>",
-       "அதே பட்டறையில் பணியாற்றி வந்தவர்",
-       "இவரை போலீசார் தேடி வருகின்றனர்"
+       "பீகாரைச் சேர்ந்த <b>லால் பாபு</b> நடத்துகிறார்",
+       "22 வயது தம்பி <b>ஷியாம்லால்</b> உதவி செய்கிறார்",
+       "2016 முதல் முழுநேரமாகக் கடை நடத்துகின்றனர்"
       ]
      },
      {
-      "title": "எங்கே?",
+      "title": "சிறப்பம்சங்கள்",
       "lines": [
-       "ஆர்.எஸ்.புரத்தில் உள்ள எஸ்.எம். ஜூவல்லரி கிராப்ட்",
-       "மொத்த ஆர்டர்களுக்கு நகை தயாரித்து கடைகளுக்கு விற்பனை",
-       "புகார் நேற்று அளிக்கப்பட்டது"
+       "மசாலா, தயிர் பூரிகளும் <b>ரூ.10</b> தான்",
+       "பெரிய கேன்களில் பூரிகள் அடுக்கி வைப்பு",
+       "தொப்பி, கையுறை அணிந்து சுகாதாரம் பேணல்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவை ஆர் எஸ் புரத்தில் நகை பட்டறையில் ரூ.1.60 கோடி மதிப்புள்ள தங்கம் திருடப்பட்டுள்ளது. ஆர் எஸ் புரத்தில் எஸ் எம் ஜூவல்லரி கிராப்ட் என்ற பெயரில் தங்க நகை பட்டறை செயல்பட்டு வருகிறது. மொத்த ஆர்டர் பேரில் நகைகள் தயாரிக்கப்பட்டு கடைகளுக்கு விற்பனை செய்யப்படுகின்றன. அந்தப் பட்டறையில் மேற்கு வங்கத்தைச் சேர்ந்த 21 வயது மருபில்லா காஷி பணியாற்றி வந்தார். அவர் 1,346 கிராம் எடையுள்ள தங்கத்தைத் திருடித் தப்பிச் சென்றதாகப் பட்டறை உரிமையாளர் ஸ்மித்தேஸ் ஆர் எஸ் புரம் போலீசில் நேற்று புகார் அளித்தார். போலீசார் வழக்குப் பதிவு செய்து, தப்பிய ஊழியர் மருபில்லா காஷியைத் தேடி வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 ஆர்.எஸ்.புரத்தில் நகை பட்டறையில் ரூ.1.60 கோடி தங்கம் திருட்டு; ஊழியர் தப்பி ஓட்டம்\n\n📰 முழு விவரம்:\nகோவை ஆர்.எஸ்.புரத்தில் எஸ்.எம். ஜூவல்லரி கிராப்ட் என்ற பெயரில் செயல்படும் தங்க நகை பட்டறையில் ரூ.1.60 கோடி மதிப்புள்ள தங்கம் திருடப்பட்டுள்ளது.\nமேற்கு வங்கத்தைச் சேர்ந்த 21 வயது மருபில்லா காஷி அங்கு பணியாற்றி வந்தார்.\nஅவர் 1,346 கிராம் எடையுள்ள தங்கத்தைத் திருடித் தப்பிச் சென்றதாக, பட்டறை உரிமையாளர் ஸ்மித்தேஸ் ஆர்.எஸ்.புரம் போலீசில் நேற்று புகார் அளித்தார்.\nபோலீசார் வழக்குப் பதிவு செய்து, தப்பிய ஊழியரைத் தேடி வருகின்றனர்.\n\n📍 இடம்: ஆர்.எஸ்.புரம், கோவை\n👮 நடவடிக்கை: வழக்குப் பதிவு; தப்பிய ஊழியர் தேடப்படுகிறார்\n\nCoimbatore gold theft RS Puram 1.60 crore | Coimbatore news\n📍 ஆர்.எஸ்.புரம், கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #RSPuram #CoimbatoreNews #கோவை",
-   "prompts": "A pair of Tamil Nadu police officers in khaki stand at the entrance of a small gold jewellery workshop in R.S. Puram, Coimbatore, examining the workshop's shutter while a workshop owner in a shirt and trousers speaks to them from behind. Inside the open doorway, a bench with jewellers' tools and a gas burner shows the workshop setting, and a few workers in plain shirts can be seen from far away at their benches. The street outside is a typical Coimbatore city lane with shops, a parked two-wheeler and a passing autorickshaw in the background. The daylight is even and bright, with no visible weather. Camera at eye level, 35 mm, wide enough to show the shop front and the street, people seen from behind or slightly blurred, no readable signboards. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a wooden workbench inside a jewellery workshop, where a small heap of gold chains and bangles lies on a white cloth beside a jeweller's scale and a set of small crucibles and tools. Behind the bench a police officer's khaki sleeve is visible at the edge of the frame, pointing toward the empty table space where items were kept. The light is soft daylight from a window, showing the fine gold shine of the jewellery. Camera slightly high, 50 mm, shallow depth of field, no readable labels or text. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/gold-worth-1-crore-stolen-from-jewellery-workshop/4382011",
-   "published": "2026-11-20T23:42:45+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script copies the article word for word (17 words in a row, 21% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
+   "reel_script": "கோவையில் 10 ஆண்டுகளாக 10 ரூபாய்க்கு பானிபூரி விற்கப்படுகிறது. சிங்காநல்லூர் சத்யா எலக்ட்ரானிக்ஸ் அருகே கிருஷ்ணா பானிபூரி என்ற கடையை லால் பாபு நடத்தி வருகிறார். பீகார் மாநிலத்தைச் சேர்ந்த இவர் கடந்த 10 ஆண்டுகளாக 5 பானிபூரிகளை 10 ரூபாய்க்கு வழங்கி வருகிறார். விலைவாசி உயர்வு காலத்திலும் இந்த விலையை அவர் மாற்றவில்லை. பானிபூரி மட்டுமின்றி மசாலா பூரி, தயிர் பூரி, லெமன் பூரி, சேவ் பூரி உள்ளிட்ட வகைகளும் 10 ரூபாய்க்கு கிடைக்கின்றன. 2016ஆம் ஆண்டு முதல் இவர் முழுநேரமாக இந்தக் கடையை நடத்தி வருகிறார். தற்போது தனது 22 வயது தம்பி ஷியாம்லால் மற்றும் உறவினருடன் இணைந்து பணியாற்றுகிறார். மற்ற இடங்களில் 20 ரூபாய் முதல் 50 ரூபாய் வரை விற்கப்படும் நிலையில் இங்கு விலை குறைவாக உள்ளது. கடையைத் தொடங்கிய முதல் நாளில் 30 ரூபாய் மற்றும் இரண்டாம் நாளில் 20 ரூபாய் மட்டுமே வருமானம் கிடைத்துள்ளது. தற்போது சுகாதாரமான முறையில் தொப்பி மற்றும் கையுறை அணிந்து உணவு வழங்குகின்றனர். பெரிய கேன்களில் பானிபூரிகளை அடுக்கி வைத்து வாடிக்கையாளர்களைக் கவர்ந்து வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "😋 கோவையில் 10 ஆண்டுகளாக மாறாத ரூ.10 பானிபூரி - சிங்காநல்லூரில் அசத்தல்!\n\n📰 முழு விவரம்:\nகோவை சிங்காநல்லூர் சத்யா எலக்ட்ரானிக்ஸ் அருகே 'கிருஷ்ணா பானிபூரி' கடையை லால் பாபு நடத்தி வருகிறார். பீகாரைச் சேர்ந்த இவர் கடந்த 10 ஆண்டுகளாக 5 பானிபூரிகளை ரூ.10 என்ற விலையிலேயே விற்பனை செய்து வருகிறார். 2016 முதல் முழுநேரமாக இத்தொழிலைச் செய்யும் இவருக்கு, 22 வயது தம்பி ஷியாம்லால் மற்றும் உறவினர் உதவி செய்கின்றனர். தொடக்கத்தில் முதல் நாள் ரூ.30 மற்றும் இரண்டாம் நாள் ரூ.20 மட்டுமே வருமானம் கிடைத்துள்ளது. தற்போது மசாலா பூரி, தயிர் பூரி, பேல் பூரி என அனைத்தும் ரூ.10-க்கு கிடைக்கிறது. மற்ற இடங்களில் ரூ.20 முதல் ரூ.50 வரை விற்கப்படும் நிலையில், இங்கு விலை குறைவாக உள்ளது. சுகாதாரத்திற்காகத் தொப்பி, கையுறை அணிந்து நேர்த்தியாக உணவு வழங்குகின்றனர். பெரிய கேன்களில் பானிபூரிகளை அடுக்கி வைத்து வித்தியாசமான முறையில் கடையை அமைத்துள்ளனர்.\n\n📍 இடம்: கிருஷ்ணா பானிபூரி, சத்யா எலக்ட்ரானிக்ஸ் அருகே, சிங்காநல்லூர்.\n💰 விலை: அனைத்தும் ரூ.10 மட்டும்.\n👨‍🍳 சிறப்பு: 10 ஆண்டுகளாக மாறாத விலை மற்றும் சுகாதாரம்.\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்.\n\nCoimbatore Singanallur Krishna Pani Puri shop sells for 10 rupees | Coimbatore news\n📍 Singanallur, Coimbatore | 21 November 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Singanallur #PaniPuri #கோவை",
+   "prompts": "A trio of street food vendors sells assorted pani puris, each priced at ₹10, from a modest hand‑cart stall. The stall is set on a busy Singanallur road beside a low‑rise electronics shop, its concrete pavement dotted with occasional pedestrians. From behind, three men in white cooking aprons, caps and gloves arrange the order, one handing a paper plate to an unseen customer while the others attend the large metal cans. Stacked inside the bright cans are neat piles of golden‑brown pani puris, clearly visible through the open tops. Daylight illuminates the scene, with a clear sky and no rain. Shot at eye level with a 35 mm lens, the frame captures the whole stall and its surroundings. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close‑up view focuses on one of the large metal cans that dominate the stall, revealing rows of perfectly stacked pani puris of different varieties. The metal surface of the can is slightly weathered, and the golden puris glisten under daylight, their crisp edges visible. A gloved hand of a vendor rests on the rim, indicating the ongoing sale, while the background shows the edge of the hand‑cart and a blurred hint of the electronics shop façade. The composition highlights the unique selling point – abundant pani puris packed in big cans at a fixed low price. Shot slightly high, eye‑level perspective with a 35 mm lens, the image isolates the cans as the story’s focal object. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/rs-10-panipuri-unchanged-for-10-years/4381634",
+   "published": "2026-11-20T19:16:34+05:30",
+   "verification": "DRAFT (gemini/gemini-3-flash-preview) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3-flash-preview, 2 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795203327/kovaiminnal/cictsbufuivrfuh2qgwu.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795203330/kovaiminnal/kp51tswevxtdhdcamhdk.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795217697/kovaiminnal/h0a9k2mlnq0elac2yorw.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795217701/kovaiminnal/bvxgkprdn6enxb2t8vhz.jpg"
    ]
   },
   {
-   "tamil_headline": "தொண்டாமுத்தூர்: சம்பளம் குறைவால் தூய்மை பணிக்கு ஆட்கள் வருவதில்லை",
-   "english_headline": "Thondamuthur: low pay keeps cleaners away, garbage piling up in village panchayats",
-   "category": "Civic Issues",
-   "location": "Thondamuthur, Coimbatore district",
-   "importance": "Medium",
+   "tamil_headline": "செலக்கரச்சல் நூலகத்தில் 59வது தேசிய நூலக வார விழா",
+   "english_headline": "59th National Library Week celebrated at Selakkarachal branch library, Sulur",
+   "category": "Education",
+   "location": "Selakkarachal, Sulur, Coimbatore district",
+   "importance": "Low",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "தூய்மை பணி",
-    "loc": "தொண்டாமுத்தூர்",
-    "hl1": "தொண்டாமுத்தூரில் குப்பை குவிகிறது",
-    "hl2": "சம்பளம் குறைவால் ஆட்கள்",
+    "cat": "நூலக வார விழா",
+    "loc": "செலக்கரச்சல், சூலூர்",
+    "hl1": "செலக்கரச்சல் நூலகத்தில் வார விழா",
+    "hl2": "25 மாணவர்கள்",
     "slides": [
      {
-      "title": "என்ன பிரச்சனை?",
+      "title": "விழா நடந்தது",
       "lines": [
-       "தொண்டாமுத்தூர் ஒன்றிய கிராம ஊராட்சிகளில் தூய்மை பணியாளர்கள்",
-       "சம்பளம் உயர்த்தப்படாததே காரணம்",
-       "பல ஊராட்சிகளில் குப்பை குவிந்து கிடக்கிறது"
+       "சூலூர் செலக்கரச்சல் கிளை நூலகத்தில் <b>59வது</b> தேசிய நூலக",
+       "வாசகர் வட்டத் தலைவர் சாமிநாதன் தலைமை வகித்தார்",
+       "மாவட்ட நூலக அலுவலர் நந்தகுமார் விழாவின் நோக்கத்தை"
       ]
      },
      {
-      "title": "சம்பள விவரம்",
+      "title": "பரிசுகள் வழங்கல்",
       "lines": [
-       "தினக்கூலி தூய்மை பணியாளர்களுக்கு <b>587 ரூபாய்</b>",
-       "தூய்மை காவலர்களுக்கு மாதம் <b>6,000 ரூபாய்</b>",
-       "தூய்மை காவலர்கள் காலை 7 முதல் பகல் 2 மணி வரை பணி"
+       "பேச்சு மற்றும் ஓவியப் போட்டிகளில் வென்ற மாணவ",
+       "வென்றவர்களுக்குச் சான்றிதழும் வழங்கப்பட்டது"
       ]
      },
      {
-      "title": "கடைசியாக நியமனம்",
+      "title": "புதிய",
       "lines": [
-       "நிரந்தர தூய்மை பணியாளர்கள் கடைசியாக <b>2013ஆம் ஆண்டு</b>",
-       "அதன்பின் தற்காலிகமாகவே ஆட்கள் நியமிக்கப்படுகின்றனர்",
-       "ஒவ்வொரு ஊராட்சியிலும் 5,000 முதல் 25,000 பேர் வசிக்கின்றனர்"
+       "<b>25</b> மாணவ, மாணவியர் நூலகத்தில் உறுப்பினராகச் சேர்ந்தனர்",
+       "<b>2</b> புரவலர்கள் நூலகத்தில் சேர்ந்தனர்"
       ]
      },
      {
-      "title": "தூய்மை காவலர்கள்",
+      "title": "பங்கேற்றோர்",
       "lines": [
-       "சின்ன வெங்காயம் கிலோ <b>180 ரூபாய்</b> விற்கிறது",
-       "6,000 ரூபாயில் குடும்பம் நடத்துவது சிரமம்",
-       "ஊதியத்தை உயர்த்தி வழங்க வேண்டும் என்கின்றனர்"
+       "வருவாய் ஆய்வாளர் ராஜ், கிராம நிர்வாக அலுவலர்கள் குமார்",
+       "நூலகர்கள் செந்தில்குமார், சுகந்தபிரியா, ராஜேஸ்வரி",
+       "மாணவர்கள், ஆசிரியர்கள் பலரும் பங்கேற்றனர்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "தொண்டாமுத்தூர் ஒன்றியத்தில் குப்பை அள்ளும் பணிக்கு ஆட்கள் வருவது குறைந்து வருகிறது. சம்பளம் உயர்த்தப்படாததே காரணம். ஒவ்வொரு கிராம ஊராட்சியிலும் 5,000 முதல் 25,000 பேர் வரை வசிக்கின்றனர். தூய்மை காவலர்களும் தூய்மை பணியாளர்களும் தினமும் வீடுவீடாகச் சென்று குப்பை சேகரிக்கின்றனர். ஊராட்சியில் கடைசியாக 2013ஆம் ஆண்டு நிரந்தர தூய்மை பணியாளர்கள் நியமிக்கப்பட்டனர். அதன்பின் தற்காலிகமாகவே ஆட்கள் நியமிக்கப்படுகின்றனர். தினக்கூலி தூய்மை பணியாளர்களுக்கு 587 ரூபாயும், தூய்மை காவலர்களுக்கு மாதம் 6,000 ரூபாயும் வழங்கப்படுகிறது. தூய்மை காவலர்கள் காலை 7 மணி முதல் பகல் 2 மணி வரை பணிபுரிகின்றனர். ஊதியம் குறைவு என்பதால் பலர் பணிக்கு வருவதில்லை. இதனால் ஊராட்சிகளில் குப்பை குவிந்து கிடக்கிறது. சின்ன வெங்காயம் கிலோ 180 ரூபாய்க்கு விற்கும் நிலையில், 6,000 ரூபாயில் குடும்பம் நடத்துவது சிரமம் என்று தூய்மை காவலர்கள் கூறுகின்றனர். ஊதியத்தை உயர்த்தி வழங்க வேண்டும் என்பது அவர்களின் கோரிக்கை. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🗑️ தொண்டாமுத்தூரில் சம்பளம் குறைவால் தூய்மை பணிக்கு ஆட்கள் வருவதில்லை\n\n📰 முழு விவரம்:\nதொண்டாமுத்தூர் ஒன்றியத்தில் உள்ள கிராம ஊராட்சிகளில் தூய்மை பணியாளர்களின் சம்பளம் உயர்த்தப்படாததால், பணிக்கு வருவோர் எண்ணிக்கை குறைந்து வருகிறது.\nஒவ்வொரு ஊராட்சியிலும் 5,000 முதல் 25,000 பேர் வரை வசிக்கின்றனர். தூய்மை காவலர்களும் தூய்மை பணியாளர்களும் தினமும் வீடுவீடாகச் சென்று குப்பை சேகரிக்கின்றனர்.\nஊராட்சியில் கடைசியாக 2013ஆம் ஆண்டு நிரந்தர தூய்மை பணியாளர்கள் நியமிக்கப்பட்டனர். அதன்பின் தற்காலிகமாக, தினக்கூலி மற்றும் சிறப்பு ஊதிய அடிப்படையில் ஆட்கள் நியமிக்கப்படுகின்றனர்.\n💰 தினக்கூலி தூய்மை பணியாளர்களுக்கு 587 ரூபாயும், தூய்மை காவலர்களுக்கு மாதம் 6,000 ரூபாயும் வழங்கப்படுகிறது.\n🕖 தூய்மை காவலர்கள் காலை 7 மணி முதல் பகல் 2 மணி வரை பணிபுரிகின்றனர்.\n🗑️ 6,000 ரூபாய் ஊதியம் குறைவு என்பதால் பலர் பணிக்கு வருவதில்லை. ஊராட்சிகளில் குப்பை குவிந்து கிடக்கிறது.\n🥬 ஒரு கிலோ சின்ன வெங்காயம் 180 ரூபாய்க்கு விற்கப்படும் நிலையில், 6,000 ரூபாயில் குடும்பம் நடத்துவது சிரமம் என தூய்மை காவலர்கள் கூறுகின்றனர். ஊதியத்தை உயர்த்தி வழங்க வேண்டும் என்பது அவர்களின் கோரிக்கை.\n\nThondamuthur cleaners shortage low pay | Coimbatore news\n📍 தொண்டாமுத்தூர், கோவை மாவட்டம் | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Thondamuthur #CoimbatoreNews #கோவை",
-   "prompts": "A pile of uncollected household garbage has built up on the edge of a village street in Thondamuthur, with a few cleaners standing near it, their faces turned away from the camera. Two cleaners in shirts and veshti are seen from behind, one holding a broom and the other a small waste basket, while a single panchayat waste tractor sits idle at the far end of the lane. The street is a narrow village road lined with low concrete houses, dusty and quiet, with a few residents' doorways visible but no one else around. Daylight falls evenly across the scene, showing the heap of plastic bags, leaves and rubbish spilling onto the road. Shot at eye level, 35 mm, wide enough to show the full stretch of the street and the mound of garbage with the cleaners small in the frame. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a heap of household garbage spilling out of an overflowing panchayat waste bin on a village roadside in Thondamuthur, with dry leaves, plastic bags and broken cloth scattered around the base. A cleaner's broom leans against the bin and a worn cloth bag of tools rests on the ground beside it, showing the work left undone. Behind the heap, a blurred stretch of dusty road and a low concrete wall fade into soft daylight, with no readable signs or text in sight. Shot at slightly high angle, 35 mm, close enough to show the texture of the rubbish and the broom as the key detail of the story. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/they-don-t-get-paid-much-they-don-t-come-for-cleaning-work/4381942",
-   "published": "2026-11-20T22:42:39+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script writes ages as newspaper shorthand (நிலையில், 6,); say it as a news reader: '12 வயது மகன் ராஜா', 'கவுசிக் (14 வயது)' -> '14 வயதான கவுசிக்'; caption misses facts of the article (put every one in 📰 முழு விவரம்): 5 ('தொண்டாமுத்தூரில் உள்ள ஒவ்வொரு ஊராட்சியிலும், 5 ஆயிரம் முதல் '); 25 ('தொண்டாமுத்தூரில் உள்ள ஒவ்வொரு ஊராட்சியிலும், 5 ஆயிரம் முதல் '); 6 ('6 ஆயிரத்தில் குடும்பத்தை நடத்துவது சிரமம்.')",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
+   "reel_script": "செலக்கரச்சல் நூலகத்தில் 25 மாணவர்கள் உறுப்பினராகச் சேர்ந்தனர். சூலூர் செலக்கரச்சல் கிளை நூலகத்தில் 59வது தேசிய நூலக வார விழா நடந்தது. வாசகர் வட்டத் தலைவர் சாமிநாதன் தலைமையில் இந்த விழா நடைபெற்றது. மாவட்ட நூலக அலுவலர் நந்தகுமார் நூலக வார விழா கொண்டாடப்படுவதன் நோக்கத்தை விளக்கினார். பேச்சு மற்றும் ஓவியப் போட்டிகளில் வென்ற மாணவ, மாணவிகளுக்குச் சான்றிதழும் பரிசும் வழங்கப்பட்டன. இரு புரவலர்களும் நூலகத்தில் சேர்ந்தனர். வருவாய் ஆய்வாளர் ராஜ், கிராம நிர்வாக அலுவலர்கள் குமார், சுரேஷ்குமார் ஆகியோர் பங்கேற்றனர். நூலகர்கள் செந்தில்குமார், சுகந்தபிரியா, ராஜேஸ்வரி ஆகியோரும் மாணவர்கள், ஆசிரியர்களும் பங்கேற்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "📚 செலக்கரச்சல் நூலகத்தில் 59வது தேசிய நூலக வார விழா\n\n📰 முழு விவரம்:\nசூலூர் செலக்கரச்சல் கிளை நூலகத்தில் 59வது தேசிய நூலக வார விழா நடைபெற்றது. வாசகர் வட்டத் தலைவர் சாமிநாதன் தலைமை வகித்தார். மாவட்ட நூலக அலுவலர் நந்தகுமார் நூலக வார விழாவின் நோக்கத்தை விளக்கினார். பேச்சு மற்றும் ஓவியப் போட்டிகளில் வென்ற மாணவ, மாணவிகளுக்குச் சான்றிதழும் பரிசும் வழங்கப்பட்டன. 25 மாணவ, மாணவியர் நூலக உறுப்பினராகச் சேர்ந்தனர். இரு புரவலர்கள் சேர்ந்தனர். வருவாய் ஆய்வாளர் ராஜ், கிராம நிர்வாக அலுவலர்கள் குமார், சுரேஷ்குமார், நூலகர்கள் செந்தில்குமார், சுகந்தபிரியா, ராஜேஸ்வரி, மாணவர்கள், ஆசிரியர்கள் ஆகியோர் பங்கேற்றனர்.\n📍 இடம்: செலக்கரச்சல் கிளை நூலகம், சூலூர்\n🗓️ நாள்: 2026 நவம்பர் 20\n\nSelakkarachal library National Library Week | Coimbatore news\n📍 செலக்கரச்சல், சூலூர், கோவை மாவட்டம் | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Sulur #CoimbatoreNews #கோவை",
+   "prompts": "A group of school students in Tamil Nadu school uniform sits in rows on floor mats inside a small government branch library in Sulur, seen from behind, as a library officer in a shirt and trousers stands at a simple table at the front holding a certificate to hand over. Behind the table, wooden bookshelves are filled with books and a few framed paintings hang on the wall. Teachers stand near the back wall, and a few village administrative officers in shirts and veshti sit in a row of plastic chairs near the front. The room is tidy and modestly lit by ceiling tube lights with daylight coming through a window. Women in sarees and salwar and men in shirts are visible from behind. The camera is at eye level, 35 mm, wide enough to show the full room with the bookshelves and the seated audience. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a neat stack of certificates and small prize packets tied with ribbon laid on a wooden table inside a village branch library, next to a row of children's painting sheets with bright crayon artwork pinned on a notice board. Behind them, rows of library books spine-out sit on a shelf, and a small wooden lectern is partly visible. A student's hand may be seen at the edge of the frame placing a folder on the table. Soft daylight from a window falls across the table. The camera is slightly high, 35 mm, focused on the certificates and paintings with the bookshelves softly blurred in the background. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/national-library-week-celebration-at-selakurachalam/4381699",
+   "published": "2026-11-20T19:54:34+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption copies the article word for word (16 words in a row, 27% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795203408/kovaiminnal/c0icgmggmkqnngawo0pf.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795203411/kovaiminnal/b3vjm2yv0ylzbnhvdhqp.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795217734/kovaiminnal/rtkui7tdkbvfuooc1jgg.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795217737/kovaiminnal/vxjhhlslorgx0ccbhk4w.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "கோவை வெள்ளானைப்பட்டி ரோட்டில் ‘இன்பினியம் ஹார்மனி’ வில்லா, அடுக்குமாடி திட்டம் அறிமுகம்",
+   "english_headline": "Infinium Harmony villa and apartment project launched on Vellanaipatti Road near Coimbatore's Goldwins",
+   "category": "Business & Prices",
+   "location": "Vellanaipatti Road near Goldwins, Coimbatore, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "புதிய திட்டம்",
+    "loc": "வெள்ளானைப்பட்டி ரோடு, கோவை",
+    "hl1": "வெள்ளானைப்பட்டி ரோடு: இன்பினியம்",
+    "hl2": "வில்லா, அடுக்குமாடி வீடுகள்",
+    "slides": [
+     {
+      "title": "என்ன திட்டம்?",
+      "lines": [
+       "கோல்ட்வின்ஸ் அருகே வெள்ளானைப்பட்டி ரோட்டில் புதிய திட்டம்",
+       "‘இன்பினியம் ஹார்மனி’ என்ற பெயரில் பிரீமியம் வில்லா",
+       "இன்பினியம் நிறுவனம் நேற்று அறிமுகம் செய்தது"
+      ]
+     },
+     {
+      "title": "இடம், விலை",
+      "lines": [
+       "அவினாசி ரோட்டில் இருந்து <b>3 கி.மீ.</b> தொலைவு",
+       "3 படுக்கை அறை வீடு <b>ரூ.1 கோடியே 7 லட்சம்</b> முதல்",
+       "3, 4 படுக்கை அறை வில்லா <b>ரூ.2 கோடியே 26 லட்சம்</b> முதல்"
+      ]
+     },
+     {
+      "title": "வசதிகள்",
+      "lines": [
+       "<b>40%</b> பிரிக்கப்படாத நிலப் பங்கு",
+       "<b>50%</b> திறந்தவெளி பரப்பு",
+       "<b>50</b> நவீன வாழ்க்கை முறை வசதிகள்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "வெள்ளானைப்பட்டி ரோட்டில் ‘இன்பினியம் ஹார்மனி’ என்ற புதிய வில்லா, அடுக்குமாடி குடியிருப்புத் திட்டம் அறிமுகமாகியுள்ளது. கோவை கோல்ட்வின்ஸ் அருகே உள்ள இந்தத் திட்டத்தை இன்பினியம் நிறுவனம் நேற்று அறிமுகப்படுத்தியது. அவினாசி ரோட்டில் இருந்து வெறும் 3 கிலோமீட்டர் தொலைவில் இந்தத் திட்டம் உள்ளது. நகரின் முக்கிய இடங்களுக்கு எளிதாகச் செல்ல முடியும் என்பது இதன் சிறப்பு. 3 படுக்கை அறைகள் கொண்ட அடுக்குமாடி குடியிருப்பு ரூ.1 கோடியே 7 லட்சத்தில் இருந்து விற்பனைக்கு உள்ளது. 3 மற்றும் 4 படுக்கை அறைகள் கொண்ட வில்லாக்கள் ரூ.2 கோடியே 26 லட்சத்தில் இருந்து விற்கப்படுகின்றன. அதிக நில உரிமைப் பங்கு வழங்கும் வகையில் 40 சதவீத பிரிக்கப்படாத நிலப் பங்கு உள்ளது. 50 சதவீத திறந்தவெளி பரப்பும் உள்ளது. 50 நவீன வாழ்க்கை முறை வசதிகளும் இங்கு உள்ளன. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🏡 வெள்ளானைப்பட்டி ரோட்டில் ‘இன்பினியம் ஹார்மனி’ வில்லா, அடுக்குமாடி திட்டம் அறிமுகம்\n\n📰 முழு விவரம்:\nகோவை, கோல்ட்வின்ஸ் அருகே வெள்ளானைப்பட்டி ரோட்டில் ‘இன்பினியம் ஹார்மனி’ என்ற பிரீமியம் வில்லா, அடுக்குமாடி குடியிருப்புத் திட்டத்தை இன்பினியம் நிறுவனம் நேற்று அறிமுகப்படுத்தியது.\nஇந்தத் திட்டம் அவினாசி ரோட்டில் இருந்து வெறும் 3 கி.மீ. தொலைவில் உள்ளது. நகரின் முக்கிய இடங்களுக்கு எளிதாகச் செல்லலாம்.\n💰 3 படுக்கை அறை அடுக்குமாடி குடியிருப்பு ரூ.1 கோடியே 7 லட்சத்தில் இருந்து விற்பனைக்கு உள்ளது.\n💰 3, 4 படுக்கை அறை வில்லாக்கள் ரூ.2 கோடியே 26 லட்சத்தில் இருந்து விற்கப்படுகின்றன.\n🌳 40 சதவீத பிரிக்கப்படாத நிலப் பங்கு, 50 சதவீத திறந்தவெளி பரப்பு, 50 நவீன வாழ்க்கை முறை வசதிகள் உள்ளன.\n\nInfinium Harmony villas and apartments on Vellanaipatti Road, Coimbatore | Coimbatore news\n📍 வெள்ளானைப்பட்டி ரோடு, கோவை | 20 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Coimbatore #CoimbatoreNews #கோவை",
+   "prompts": "A group of well-dressed real-estate officials and visitors stand at the edge of an open plot on Vellanaipatti Road near Goldwins in Coimbatore, looking toward a new cluster of premium villas and multi-storey apartment blocks under construction. The scene is a dusty, half-developed residential site with fresh concrete frames, green lawns and young trees, and a two-wheeler and a car parked on the unpaved road. Men wear formal shirts and trousers, women wear sarees or salwar, all seen from behind or far away, some holding brochures at a small launch gathering. The Western Ghats and Marudhamalai hill appear faintly in the far background. It is bright daylight with soft clear sky. Camera at eye level, 35 mm, wide enough to show the whole project site and the road. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a neatly arranged stack of printed project brochures and a folded floor plan resting on a small folding table at an open-air launch spot, with a model of a villa and apartment block placed beside them. Behind the table, the edge of a new residential building with bare concrete columns and green landscaped lawn is visible, and a few unidentifiable people stand far back, blurred. Bright daylight, plain sky. Camera slightly high, 35 mm, shallow depth of field focusing on the brochures and the model, with no readable text, logos or signboards. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/infinium-harmony-launched-for-villas-apartments/4381990",
+   "published": "2026-11-20T23:06:40+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: not grounded: location 'ரோடு' is not in the article",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795217746/kovaiminnal/fmyn1gzzttwte3kclsax.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795217750/kovaiminnal/cu6w6x3dlbpsxgymftpl.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "கோவை உக்கடம் பஸ் டிப்போக்களை மூட முடிவு: 124 பஸ்கள், பணியாளர்கள் வேறு இடத்திற்கு மாற்றம்",
+   "english_headline": "Government decides to close Ukkadam Bus Depots 1 and 2 in Coimbatore; 124 buses and staff being shifted",
+   "category": "Roads & Transport",
+   "location": "Ukkadam, Coimbatore district",
+   "importance": "High",
+   "scope": "district",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "பணிமனை மூடல்",
+    "loc": "உக்கடம், கோவை",
+    "hl1": "உக்கடம் பஸ் டிப்போக்களை மூட முடிவு",
+    "hl2": "124 பஸ்கள் வேறு டிப்போவுக்கு",
+    "slides": [
+     {
+      "title": "பணிமனை மூடல்",
+      "lines": [
+       "உக்கடம் அரசுப் பணிமனைகளை மூட அரசு முடிவு செய்துள்ளது",
+       "<b>1992</b>ஆம் ஆண்டு வாலாங்குளம் சாலையில் கட்டப்பட்டவை"
+      ]
+     },
+     {
+      "title": "என்ன காரணம்?",
+      "lines": [
+       "நீர்நிலைகளில் கட்டடம் கட்ட நீதிமன்றத் தடை",
+       "ஓய்வறைச் சுவர்களில் கீறல்; இடிந்து விழும் அபாயம்"
+      ]
+     },
+     {
+      "title": "கடும் எதிர்ப்பு",
+      "lines": [
+       "இங்கிருந்து இயங்கும் <b>124 பஸ்கள்</b> வேறு டிப்போவுக்கு மாற்றம்",
+       "தொழிலாளர்களின் அலைச்சலைத் தவிர்க்க தொழிற்சங்கங்கள் எதிர்ப்பு"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கோவை உக்கடம் பஸ் டிப்போக்களை மூட அரசு முடிவு செய்துள்ளது. உக்கடம் பஸ் ஸ்டாண்ட் அருகே அரசு போக்குவரத்து கழக பணிமனை கிளை 1 மற்றும் கிளை 2 வாலாங்குளம் சாலையில் 1992ஆம் ஆண்டு கட்டப்பட்டது. உக்கடம் மேம்பாலம் கட்டப்பட்டபோது சர்வீஸ் ரோடு அமைப்பதற்காக இந்த பணிமனையின் நுழைவாயில் மற்றும் கட்டடங்கள் இடிக்கப்பட்டன. நீர்நிலைகளில் கட்டடங்கள் கட்டக்கூடாது என்ற உயர் நீதிமன்ற உத்தரவை சுட்டிக்காட்டி இரு பணிமனைகளையும் மூட அரசு தற்போது முடிவு செய்துள்ளது. மேலும் பணிமனை ஓய்வறை சுவர்களில் கீறல் விழுந்து எப்போது வேண்டுமானாலும் இடிந்து விழும் அபாயம் உள்ளதாக அதிகாரிகள் தெரிவிக்கின்றனர். இதனால் புதிய கட்டடம் கட்ட வரைபட அனுமதி கிடைக்காததால் டிப்போக்களை மூடுவதை தவிர வேறு வழியில்லை என அதிகாரிகள் கூறியுள்ளனர். இங்கிருந்து இயக்கப்படும் 124 பஸ்கள், ஓட்டுநர்கள் மற்றும் நடத்துநர்கள் வேறு பணிமனைகளுக்கு மாற்றப்பட்டு வருகின்றனர். ஆனால் பணிமனைகளை மூடக்கூடாது என அனைத்து தொழிற்சங்க கூட்டமைப்பு சார்பில் நேற்று கூடி கடும் எதிர்ப்பு தெரிவிக்கப்பட்டுள்ளது. ஓட்டுநர்கள் அலைச்சலை தவிர்க்க கன்டெய்னர் பாக்ஸ் வைத்து பணிமனையை தொடர்ந்து இயக்க வேண்டும் என சிஐடியு செயலாளர் வேளாங்கன்னிராஜ் வலியுறுத்தியுள்ளார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚌 கோவை உக்கடம் பஸ் டிப்போக்களை மூட முடிவு: 124 பஸ்கள் மாற்றம்\n\n📰 முழு விவரம்:\nகோவை உக்கடம் பஸ் ஸ்டாண்ட் அருகே வாலாங்குளம் சாலையில் 1992-ல் கட்டப்பட்ட அரசு போக்குவரத்து கழக பணிமனை கிளை-1 மற்றும் கிளை-2 ஆகியவற்றை மூட அரசு முடிவு செய்துள்ளது. நீர்நிலைகளில் கட்டடம் கட்டக்கூடாது என்ற உயர் நீதிமன்ற உத்தரவு மற்றும் பணிமனை சுவர்களில் கீறல் விழுந்து இடிந்து விழும் அபாயம் இருப்பது காரணமாகக் கூறப்படுகிறது. புதிய கட்டடத்திற்கு வரைபட அனுமதி கிடைக்காததால், இங்கு இயங்கும் 124 பஸ்கள், ஓட்டுநர்கள் மற்றும் நடத்துநர்களை வேறு பணிமனைகளுக்கு மாற்றும் பணிகள் நடந்து வருகின்றன. இதற்கு தொழிற்சங்கங்கள் கடும் எதிர்ப்பு தெரிவித்துள்ளன. தொழிலாளர்களின் அலைச்சலைக் குறைக்க கன்டெய்னர் பாக்ஸ் வைத்து பணிமனையை இயக்க வேண்டும் என சி.ஐ.டி.யு. செயலாளர் வேளாங்கன்னிராஜ் வலியுறுத்தியுள்ளார்.\n\n📍 இடம்: உக்கடம், கோவை\n🗓️ கட்டப்பட்ட ஆண்டு: 1992\n🚌 மாற்றம்: 124 பஸ்கள், ஓட்டுநர்கள் மற்றும் நடத்துநர்கள்\n⚠️ காரணம்: நீர்நிலை ஆக்கிரமிப்பு விதி மற்றும் கட்டட பலவீனம்\n👮 நடவடிக்கை: வேறு பணிமனைகளுக்கு இடமாற்றம்\n\nபேருந்துப் பணியாளர்கள் மற்றும் பொதுமக்களின் தகவலுக்கு Share செய்யுங்கள்.\n\nUkkadam bus depot closure decision Coimbatore | TNSTC bus depot shift news\n📍 உக்கடம், கோவை | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Ukkadam #TNSTC #கோவை",
+   "prompts": "A row of state transport town buses stands parked inside the Ukkadam bus depot in Coimbatore as the depot is set to close. The depot is a low concrete compound beside the busy Ukkadam flyover and service road, with a tin-sheet roof over the bus bays and a shadow of the flyover pillars at the edge of the frame. Near the bus bays, a small group of drivers and conductors in uniform stand together, seen from behind and far away, while a few depot officials walk between the buses. Vehicles are the state-owned buses lined up in bays, with the Valankulam lake water visible faintly behind the compound wall. It is daytime in soft natural light under an overcast Coimbatore sky. Camera at eye level, 35 mm lens, wide enough to show the depot compound, the parked buses, the flyover pillars and the roadside. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of the cracked interior wall of the Ukkadam bus depot rest room, where long diagonal cracks run down plaster beside a corrugated iron-sheet roof edge and a stack of bus-depot benches. A pair of worn drivers' and conductors' uniform shirts hangs from a nail on the wall, and a steel water pot sits on the floor beneath the crack. Light falls from a small window at daytime, showing peeling paint and dampness near the base of the wall. No readable text or signboards are visible. Camera close and slightly high, 35 mm lens, shallow depth of field to make the crack the clear focus. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/ukkadam-bus-depots-to-be-closed/4381493",
+   "published": "2026-11-20T18:12:28+05:30",
+   "verification": "DRAFT (gemini/gemini-3.6-flash) - NOT CLEAN, held from posting - problems: fact-check: reel_script claims the office was demolished when the overbridge was built ('இடிக்கப்பட்டன'), but the article states only the entrance and buildings adjacent to the road were demolished for the service road, not the main office structure itself.; fact-check: reel_script states the union met 'yesterday' ('நேற்று'), which is a relative time reference not explicitly defined in the article (though implied by context, it is safer to avoid specific relative dates if not strictly 'today' or 'yesterday' relative to publication, but more importantly, the article says they met to discuss, the draft says they expressed strong opposition 'yesterday', which is acceptable, however, the previous point about demolition is the primary factual error).; fact-check: Actually, re-evaluating the 'demolition' point: The article says 'பணிமனை நுழைவாயில், ரோட்டை ஒட்டியிருந்த கட்டடங்கள் இடிக்கப்பட்டன' (The office entrance and buildings adjacent to the road were demolished). The draft says 'இந்த பணிமனையின் நுழைவாயில் மற்றும் கட்டடங்கள் இடிக்கப்பட்டன' (This office's entrance and buildings were demolished). This is a slight exaggeration or misinterpretation, implying the main office buildings were demolished, whereas the article specifies only the entrance and adjacent structures. This is a factual discrepancy.; fact-check: reel_script says 'கன்டெய்னர் பாக்ஸ் வைத்து பணிமனையை தொடர்ந்து இயக்க வேண்டும்' (should continue operating the office by placing container boxes). The article quotes the union leader saying 'கன்டெய்னர் பாக்ஸ் வைக்கலாம்' (can place container boxes) as an alternative to the argument that buildings cannot be built, implying a temporary or alternative structure, not necessarily 'continuing the office' in the same way, but this is a minor interpretation issue. The main issue is the demolition claim.",
+   "note": "free-model draft gemini/gemini-3.6-flash, 1 attempt(s), 4 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795217756/kovaiminnal/xc4q0dwgh5lsn1l8ewbv.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795217760/kovaiminnal/utbjn0ceiji0hjnratpq.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "கோவையில் உதவித்தொகை பெறுவோரின் முகவரி நேரடியாகச் சரிபார்ப்பு",
+   "english_headline": "Coimbatore: field verification of disability aid recipients' addresses, bank accounts and residence",
+   "category": "Government & Services",
+   "location": "Coimbatore district",
+   "importance": "Medium",
+   "scope": "district",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "அரசு திட்டம்",
+    "loc": "கோவை மாவட்டம்",
+    "hl1": "உதவித்தொகை பெறுவோர் முகவரியில்",
+    "hl2": "நேரடி கள ஆய்வு நடக்கிறது",
+    "slides": [
+     {
+      "title": "என்ன ஆய்வு?",
+      "lines": [
+       "மாற்றுத்திறனாளிகள் நலத்துறை உதவித்தொகை பெறுவோரின் விவரங்கள்",
+       "டி.என்.ரைட்ஸ் திட்டப் பணியாளர்கள் ஆய்வு செய்கின்றனர்",
+       "21 வகை மாற்றுத்திறனாளிகளுக்கு மாதாந்திர உதவித்தொகை"
+      ]
+     },
+     {
+      "title": "உதவித்தொகை",
+      "lines": [
+       "75 சதவீதம் வரை குறைபாடு: மாதம் <b>1,500 ரூபாய்</b>",
+       "75 சதவீதத்திற்கு மேல் குறைபாடு: மாதம் <b>2,000 ரூபாய்</b>"
+      ]
+     },
+     {
+      "title": "என்னென்ன",
+      "lines": [
+       "உதவித்தொகை சரியான பயனாளிக்குச் செல்கிறதா",
+       "ஒருவர் பல வங்கிக் கணக்குகளில் பெறுகிறாரா",
+       "குறிப்பிட்ட முகவரியில் வசிக்கிறார்களா"
+      ]
+     },
+     {
+      "title": "ஏன் முக்கியம்?",
+      "lines": [
+       "தமிழகம் முழுதும் ஒரு லட்சத்திற்கும் அதிகமானோர் உதவித்தொகை",
+       "பலர் கொடுத்த முகவரியில் தற்போது இல்லை",
+       "கூடுதல் நிதி ஆதரவு தேவைப்படுவோரையும் கண்டறிய வேண்டும்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "மாற்றுத்திறனாளிகளுக்கு வழங்கப்படும் உதவித்தொகை பெறுவோரின் முகவரி நேரடியாக ஆய்வு செய்யப்படுகிறது. தமிழக அரசின் மாற்றுத்திறனாளிகள் நலத்துறை சார்பில் இந்த ஆய்வு நடைபெறுகிறது. இதற்காக டி என் ரைட்ஸ் திட்டப் பணியாளர்கள் வீடுகளுக்கு நேரில் செல்கின்றனர். 21 வகையான மாற்றுத்திறனாளிகளுக்கு மாதாந்திர பராமரிப்பு உதவித்தொகை வழங்கப்படுகிறது. 75 சதவீதம் வரை குறைபாடு உள்ளவர்களுக்கு மாதம் 1,500 ரூபாயும், 75 சதவீதத்திற்கு மேல் குறைபாடு உள்ளவர்களுக்கு மாதம் 2,000 ரூபாயும் வழங்கப்படுகிறது. உதவித்தொகை சரியான பயனாளிகளுக்குச் செல்கிறதா என்பது சரிபார்க்கப்படுகிறது. ஒருவர் ஒன்றுக்கும் மேற்பட்ட வங்கிக் கணக்குகளில் உதவித்தொகை பெறுகிறாரா என்றும் பார்க்கப்படுகிறது. குறிப்பிட்ட முகவரியில் வசிக்கிறார்களா என்பதும் உறுதி செய்யப்படுகிறது. தமிழகம் முழுவதும் ஒரு லட்சத்திற்கும் அதிகமானோர் உதவித்தொகை பெறுகின்றனர். இவர்களில் பலர் கொடுத்த முகவரியில் தற்போது இல்லை. கூடுதல் நிதி ஆதரவு தேவைப்படுவோரையும் கண்டறிய வேண்டியுள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🏠 உதவித்தொகை பெறுவோர் முகவரியில் வசிக்கிறார்களா? கோவையில் நேரடி கள ஆய்வு\n\n📰 முழு விவரம்:\nமாற்றுத்திறனாளிகள் நலத்துறை உதவித்தொகை பெறுவோரின் விவரங்களை உறுதி செய்ய நேரடி கள ஆய்வு நடத்தப்படுகிறது. 21 வகை மாற்றுத்திறனாளிகளுக்கு மாதாந்திர பராமரிப்பு உதவித்தொகை வழங்கப்படுகிறது.\n💰 75 சதவீதம் வரை குறைபாடு உள்ளவர்களுக்கு மாதம் 1,500 ரூபாய்; 75 சதவீதத்திற்கு மேல் குறைபாடு உள்ளவர்களுக்கு மாதம் 2,000 ரூபாய்.\n🔍 உதவித்தொகை சரியான பயனாளிக்குச் செல்கிறதா, ஒருவர் பல வங்கிக் கணக்குகளில் பெறுகிறாரா, குறிப்பிட்ட முகவரியில் வசிக்கிறாரா என்பதை டி.என்.ரைட்ஸ் திட்டப் பணியாளர்கள் சரிபார்க்கின்றனர்.\n🏘️ தமிழகம் முழுவதும் ஒரு லட்சத்திற்கும் அதிகமானோர் உதவித்தொகை பெறுகின்றனர். இவர்களில் பலர் கொடுத்த முகவரியில் தற்போது இல்லை என்பதால் நேரில் சென்று புதிய முகவரி விவரங்களைச் சேகரிக்கின்றனர்.\n📌 கூடுதல் நிதி ஆதரவு தேவைப்படுவோரும் கண்டறியப்படுவர்.\n\nCoimbatore disability aid address verification field survey | Coimbatore news\n📍 கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Government",
+   "prompts": "A government field worker in a plain shirt and trousers, carrying a clipboard, stands at the doorway of a modest tiled-roof house on a narrow residential street in Coimbatore city, as an elderly woman in a cotton saree and a man using a wheelchair come out to meet him. The street has low concrete houses, a small compound wall with potted plants, a parked two-wheeler and a few bicycles along the road, with a Western Ghats hill faintly visible in the far background. The worker is seen from behind and slightly to the side, with the beneficiaries shown in profile and a little blurred, and the house door open behind them. It is bright daylight with soft natural light and clear weather. Camera at eye level, 35 mm, wide enough to show the whole street and house facade. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a survey clipboard with a pen resting on blank printed household verification forms, held in a worker's hand while a beneficiary's hand rests on the edge of the table holding a small bank passbook, with the cover facing away from the camera. The background is a plain whitewashed wall of a Tamil Nadu home with a wooden chair and a steel water pot in soft focus. Daylight from a window at the side, neutral tones, no legible text or numbers visible. Camera slightly high, 35 mm, shallow depth of field to isolate the forms and passbook. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-news/do-the-recipients-of-the-scholarship-live-at-the-address/4381961",
+   "published": "2026-11-20T22:46:57+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795217784/kovaiminnal/qyjdmn9l43vz2a4ifqkz.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795217788/kovaiminnal/nponudkluyf6zylvcyaq.jpg"
    ]
   }
  ]
