@@ -216,7 +216,8 @@
    "score": 10.08,
    "power_cut": false,
    "listed_at": "2026-11-22T01:01:38.197450+05:30",
-   "picked_at": "2026-11-22T05:03:48.923596+05:30"
+   "picked_at": "2026-11-22T05:03:48.923596+05:30",
+   "posted": true
   },
   "Cef5c9da": {
    "id": "Cef5c9da",
@@ -229,7 +230,8 @@
    "score": 10.0,
    "power_cut": false,
    "listed_at": "2026-11-22T01:01:38.197450+05:30",
-   "picked_at": "2026-11-22T05:03:48.923601+05:30"
+   "picked_at": "2026-11-22T05:03:48.923601+05:30",
+   "posted": true
   },
   "C5a63520": {
    "id": "C5a63520",
@@ -242,7 +244,8 @@
    "score": 10.0,
    "power_cut": false,
    "listed_at": "2026-11-22T01:01:38.197450+05:30",
-   "picked_at": "2026-11-22T05:03:48.923604+05:30"
+   "picked_at": "2026-11-22T05:03:48.923604+05:30",
+   "refused": "not filed: not Coimbatore district news (the story's first lines name another place and no Coimbatore place)"
   },
   "C124828d": {
    "id": "C124828d",
@@ -255,7 +258,8 @@
    "score": 9.0,
    "power_cut": false,
    "listed_at": "2026-11-22T01:01:38.197450+05:30",
-   "picked_at": "2026-11-22T05:03:48.923607+05:30"
+   "picked_at": "2026-11-22T05:03:48.923607+05:30",
+   "posted": true
   },
   "C9b6256f": {
    "id": "C9b6256f",
@@ -268,7 +272,8 @@
    "score": 7.14,
    "power_cut": false,
    "listed_at": "2026-11-22T01:01:38.197450+05:30",
-   "picked_at": "2026-11-22T05:03:48.923611+05:30"
+   "picked_at": "2026-11-22T05:03:48.923611+05:30",
+   "posted": true
   },
   "C80c7575": {
    "id": "C80c7575",
@@ -293,7 +298,8 @@
    "score": 14.45,
    "power_cut": true,
    "listed_at": "2026-11-22T05:01:20.511750+05:30",
-   "picked_at": "2026-11-22T05:03:48.923567+05:30"
+   "picked_at": "2026-11-22T05:03:48.923567+05:30",
+   "refused": "not filed: duplicate after write"
   },
   "C5d08675": {
    "id": "C5d08675",
@@ -1070,7 +1076,11 @@
     "C9b6256f",
     "Ca70afd6",
     "Cef5c9da"
-   ]
+   ],
+   "refused": {
+    "C5a63520": "not filed: not Coimbatore district news (the story's first lines name another place and no Coimbatore place)",
+    "Ca70afd6": "not filed: duplicate after write"
+   }
   }
  },
  "retry": {}
