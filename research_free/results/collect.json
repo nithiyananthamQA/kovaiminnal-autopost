@@ -3,10 +3,10 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/coimbatore-mayor-collects-party-bund-corporation-contractor-complains/4382494",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/gold-ornaments-recovered-from-them-handed-over-to-police/4382352",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/minister-performs-bhoomi-pujan-for-34-projects/4382549",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/don-t-eat-mushrooms-that-sprout-in-the-rain/4382306",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/source-coimbatore/4382315",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/rice-prices-likely-to-fall-by-rs-4-in-coming-days/4382546",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/international-conference-at-the-college/4382529",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/asia-jewels-expo-inaugurated/4382368",
   "candidate filter: collected=4",
   "to write: 4 Coimbatore district candidates (max 4 stories)",
   "round: top 4 of 4 candidates",
@@ -18,9 +18,9 @@
   "posting job started at once",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 7})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 9})",
-  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 74 min",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
+  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 78 min",
   "filed: 4 Coimbatore district stories (target 4), reels only",
   "queue: 0 news waiting to be written",
   "All News sheet: {\"ok\":true,\"added\":4,\"updated\":0}"
@@ -28,68 +28,54 @@
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
-  "ok gemini/gemini-3.6-flash (49s)",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.6-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok gemini/gemini-3.5-flash (49s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3.6-flash: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
-  "poor answer - skipped for 30 min: gemini/gemini-3.6-flash",
-  "ok gemini/gemini-3-flash-preview (9s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok gemini/gemini-3-flash-preview (9s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok gemini/gemini-3-flash-preview (14s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing ",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing ",
-  "fail gemini/gemini-3.5-flash: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
-  "poor answer - skipped for 30 min: gemini/gemini-3.5-flash",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
+  "dead for this round: gemini/gemini-3-flash-preview",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
+  "dead for this round: gemini/gemini-3-flash-preview",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
+  "dead for this round: groq/openai/gpt-oss-120b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "ok gemini/gemini-3-flash-preview (10s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "ok groq/qwen/qwen3.8-27b (0s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "ok groq/openai/gpt-oss-120b (4s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "dead for this round: groq/openai/gpt-oss-120b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "dead for this round: groq/openai/gpt-oss-120b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "ok anthropic/claude-haiku-5-5",
+  "dead for this round: groq/qwen/qwen3.8-27b",
+  "ok groq/qwen/qwen3.8-27b (4s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok groq/qwen/qwen3.8-27b (5s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
@@ -101,275 +87,243 @@
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "வடவள்ளியில் ரூ.17.24 கோடி மதிப்பில் 34 திட்டப் பணிகளுக்கு அமைச்சர் பூமி பூஜை",
-   "english_headline": "Minister starts 34 projects worth Rs 17.24 crore with bhoomi puja in Vadavalli",
-   "category": "Government & Services",
-   "location": "Vadavalli, Coimbatore district",
+   "tamil_headline": "கோவையில் ஆசியா ஜுவல்ஸ் நகைக் கண்காட்சி இன்று தொடக்கம்",
+   "english_headline": "Asia Jewels jewellery exhibition begins in Coimbatore today, runs 21-23 November",
+   "category": "Business & Prices",
+   "location": "Avinashi Road, Coimbatore, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "அரசுப் பணிகள்",
-    "loc": "வடவள்ளி",
-    "hl1": "வடவள்ளியில் 34 திட்டப் பணிகள் துவக்கம்",
-    "hl2": "ரூ.17.24 கோடி மதிப்பில்",
+    "cat": "நகைக் கண்காட்சி",
+    "loc": "அவிநாசி சாலை, கோவை",
+    "hl1": "கோவையில் நகைக் கண்காட்சி இன்று தொடக்கம்",
+    "hl2": "நவ. 21 முதல் 23 வரை",
     "slides": [
      {
-      "title": "என்ன பணிகள்?",
+      "title": "எங்கே? எப்போது?",
       "lines": [
-       "மழைநீர் வடிகால், தார் சாலை, சிறுவர் பூங்கா",
-       "கோவை மத்தியம், மேற்கு, கிழக்கு மண்டலங்களில்",
-       "மாநகராட்சி சார்பில் மேற்கொள்ளப்படும் பணிகள்"
+       "அவிநாசி சாலை, 'தி ரெசிடென்ஸி டவர்ஸ்' ஓட்டலில்",
+       "இன்று (நவ. <b>21</b>) தொடங்கியது",
+       "<b>21, 22, 23</b> தேதிகளில் காலை 10 முதல் இரவு 8 மணி வரை"
       ]
      },
      {
-      "title": "எவ்வளவு மதிப்பு?",
+      "title": "என்ன கிடைக்கும்?",
       "lines": [
-       "மொத்தம் <b>34 பணிகள்</b>",
-       "மதிப்பு <b>ரூ.17.24 கோடி</b>",
-       "இன்று (நவ. 21) பூமி பூஜை நடைபெற்றது"
+       "தங்கம், வைர, பிளாட்டினம் நகைகள்",
+       "திருமண நகைகள், குந்தன், ஜடாவ், வெள்ளி நகைகள்",
+       "இந்தியாவின் <b>50க்கும் மேற்பட்ட</b> நகை வடிவமைப்பாளர்கள் பங்கேற்பு"
       ]
      },
      {
-      "title": "யார் கலந்து",
+      "title": "சலுகைகள்",
       "lines": [
-       "அமைச்சர் சம்பத்குமார் பணிகளைத் துவக்கி வைத்தார்",
-       "கலெக்டர் பவன் குமார், மாநகராட்சி கமிஷனர் கட்டா ரவி தேஜா",
-       "எம்.எல்.ஏ. ஸ்ரீகிரிபிரசாத், கவுன்சிலர் சாந்தி"
+       "நேரில் வாங்குவோருக்கு சிறப்பு சலுகைகள்",
+       "முன்பதிவு செய்வோருக்கும் சிறப்பு சலுகைகள்",
+       "கண்காட்சியைப் பார்வையிட கட்டணம் இல்லை"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "வடவள்ளியில் 34 திட்டப் பணிகள் இன்று துவங்கின. ரூ.17.24 கோடி மதிப்பிலான இந்தப் பணிகளுக்கு அமைச்சர் சம்பத்குமார் பூமி பூஜை செய்து துவக்கி வைத்தார். இன்று நவம்பர் 21ஆம் தேதி வடவள்ளியில் உள்ள சிறுவர் பூங்காவில் பூமி பூஜை நடைபெற்றது. மாநகராட்சிக்கு உட்பட்ட கோவை மத்தியம், மேற்கு, கிழக்கு மண்டலங்களில் பணிகள் மேற்கொள்ளப்படுகின்றன. மழைநீர் வடிகால் அமைத்தல், தார் சாலை அமைத்தல், சிறுவர் பூங்கா அமைத்தல் உள்ளிட்ட பணிகள் இதில் அடங்கும். கலெக்டர் பவன் குமார், மாநகராட்சி கமிஷனர் கட்டா ரவி தேஜா, சட்டமன்ற உறுப்பினர் ஸ்ரீகிரிபிரசாத், கவுன்சிலர் சாந்தி உள்ளிட்ட பலர் கலந்து கொண்டனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🏗️ வடவள்ளியில் ரூ.17.24 கோடியில் 34 திட்டப் பணிகள் துவக்கம்\n\n📰 முழு விவரம்:\nவடவள்ளியில் மாநகராட்சிக்கு உட்பட்ட பகுதிகளில் மேற்கொள்ளப்பட உள்ள 34 திட்டப் பணிகளுக்கு அமைச்சர் சம்பத்குமார் பூமி பூஜை செய்து துவக்கி வைத்தார். இன்று (நவ. 21) வடவள்ளியில் உள்ள சிறுவர் பூங்காவில் பூமி பூஜை நடைபெற்றது.\nகோவை மத்தியம், மேற்கு, கிழக்கு மண்டலங்களில் மழைநீர் வடிகால், தார் சாலை, சிறுவர் பூங்கா அமைத்தல் உள்ளிட்ட பணிகள் நடைபெறவுள்ளன.\n💰 மொத்த மதிப்பு: ரூ.17.24 கோடி\n🏛️ கலெக்டர் பவன் குமார், மாநகராட்சி கமிஷனர் கட்டா ரவி தேஜா, எம்.எல்.ஏ. ஸ்ரீகிரிபிரசாத், கவுன்சிலர் சாந்தி ஆகியோர் கலந்து கொண்டனர்.\n\nVadavalli 34 projects bhoomi puja Rs 17.24 crore | Coimbatore news\n📍 வடவள்ளி, கோவை மாவட்டம் | 21 நவம்பர்\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Vadavalli #CoimbatoreNews #கோவை",
-   "prompts": "A Tamil Nadu minister in a white shirt and veshti stands beside a priest at a bhoomi puja on the open ground of a children's park in Vadavalli, Coimbatore. Brass lamps, coconuts, banana leaves and marigold garlands sit on a small raised platform, and the priest holds a lamp in front of a group of officials. Behind the ceremony, a few children's play equipment and young trees line the edge of the park, with a Coimbatore city street and a concrete compound wall in the background. Officials in shirts, sarees and salwars stand in a loose semicircle, seen from behind or in profile, some folding their hands in greeting. Daylight, clear sky, mild dusty ground. Camera at eye level, 35 mm, wide enough to show the park, the puja platform and the gathered officials. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a brass lamp and a coconut placed on a freshly cleared patch of earth at a children's park in Vadavalli, Coimbatore, marking the start of civic road and drain work. Scattered marigold petals, a pile of raw sand and loose soil surround the puja items, and a shovel or spade rests nearby on the ground. A few paver stones and a wooden peg line the edge of the cleared plot, with the blurred legs of officials in trousers and sarees visible at the frame's edge. Daylight, soft natural light. Camera slightly high, 35 mm, shallow depth of field to keep the puja items sharp. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/minister-performs-bhoomi-pujan-for-34-projects/4382549",
-   "published": "2026-11-21T19:18:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 0 validator problem(s)",
+   "reel_script": "கோவையில் ஆசியா ஜுவல்ஸ் நகைக் கண்காட்சி இன்று தொடங்கியது. இது இதன் 62வது கண்காட்சி. அவிநாசி சாலையில் உள்ள தி ரெசிடென்ஸி டவர்ஸ் ஓட்டலில் இந்தக் கண்காட்சி நடைபெறுகிறது. நவம்பர் 21, 22, 23 ஆகிய தேதிகளில் காலை 10 மணி முதல் இரவு 8 மணி வரை கண்காட்சி நடைபெறும். இந்தியாவின் 50க்கும் மேற்பட்ட நகை வடிவமைப்பாளர்கள் பங்கேற்றுள்ளனர். தங்கம், வைரம், பிளாட்டினம், திருமண நகைகள், ஆன்டிக், குந்தன், ஜடாவ் மற்றும் வெள்ளி நகைகள் காட்சிப்படுத்தப்பட்டுள்ளன. பாரம்பரிய நகைகள் முதல் புதிய வடிவமைப்புகள் வரை பல டிசைன்கள் உள்ளன. திருமணத்துக்கான நகைகளை முன்பதிவு செய்துகொள்ளலாம். நேரில் வாங்குவோருக்கும் முன்பதிவு செய்வோருக்கும் சிறப்புச் சலுகைகள் உண்டு. கண்காட்சியைப் பார்வையிட கட்டணம் கிடையாது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "💎 கோவையில் ஆசியா ஜுவல்ஸ் நகைக் கண்காட்சி இன்று தொடக்கம்\n\n📰 முழு விவரம்:\nதென்னிந்தியாவில் பிரபலமான 'ஆசியா ஜுவல்ஸ்' நகைக் கண்காட்சியின் 62வது நிகழ்ச்சி, அவிநாசி சாலையில் உள்ள 'தி ரெசிடென்ஸி டவர்ஸ்' ஓட்டலில் இன்று (நவ. 21) தொடங்கியது.\nஉயர்தர பிராண்டட் தங்கம் மற்றும் வைர நகைகள் காட்சிப்படுத்தப்படுகின்றன. இந்தியாவின் 50க்கும் மேற்பட்ட நகை வடிவமைப்பாளர்கள் பங்கேற்றுள்ளனர்.\nஃபைன் கோல்ட், டைமண்ட், பிளாட்டினம், திருமண நகைகள், ஆன்டிக், குந்தன், ஜடாவ் ரூ போல்கி மற்றும் வெள்ளி நகைகள் இடம்பெற்றுள்ளன.\n📍 இடம்: அவிநாசி சாலை, 'தி ரெசிடென்ஸி டவர்ஸ்' ஓட்டல், கோவை\n🗓️ நாள்: நவ. 21, 22, 23\n🕘 நேரம்: காலை 10 மணி முதல் இரவு 8 மணி வரை\n🎁 சிறப்பு சலுகைகள்: நேரில் வாங்குவோர் மற்றும் முன்பதிவு செய்வோருக்கு\nℹ️ மக்கள் கவனத்திற்கு: கண்காட்சியைப் பார்வையிட கட்டணம் இல்லை. திருமண நகைகளை முன்பதிவு செய்துகொள்ளலாம்.\n\nAsia Jewels exhibition Coimbatore Avinashi Road | Coimbatore news\n📍 அவிநாசி சாலை, கோவை | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Avinashi",
+   "prompts": "A row of glass display cases glitters under warm hall lights inside a hotel exhibition hall on Avinashi Road in Coimbatore, where the 62nd Asia Jewels jewellery exhibition has opened today. Gold necklaces, bridal sets, kundan and jadau polki pieces, and diamond jewellery are arranged on velvet trays inside the cases. Visitors in sarees and shirts stand a little apart from behind, looking into the cases, while a few staff in plain dark clothes stand near the counter. Morning daylight from large hall windows mixes with the warm ceiling lights, and the Coimbatore skyline of the hotel tower is visible through the glass at the far end. Camera at eye level, 35 mm lens, wide enough to show the hall and its displays. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of velvet trays holding gold bangles, a diamond pendant and a polki necklace laid out inside a glass display case at the Asia Jewels exhibition in Coimbatore. The pieces catch the light with sharp reflections, and a silver jewellery set sits at the edge of the frame. A visitor's hand, seen from behind and slightly blurred, rests on the glass edge. The background shows the hotel hall on Avinashi Road in soft focus, with the daytime exhibition crowd just visible. Camera slightly high, close framing with shallow depth of field, 50 mm lens. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/asia-jewels-expo-inaugurated/4382368",
+   "published": "2026-11-21T17:48:03+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: not grounded: location 'சாலை' is not in the article",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795275493/kovaiminnal/jbqv2n8jzxx2pjpxbbbl.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795275496/kovaiminnal/vlzs0rysyuqk0hxv6mti.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795277930/kovaiminnal/azwajsr9vodgrcslttgj.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795277935/kovaiminnal/dnnmdwzjm9y6ec2rbyr7.jpg"
    ]
   },
   {
-   "tamil_headline": "அன்னூர் சாலையில் கிடந்த பல லட்சம் மதிப்பிலான தங்கச் செயின்: போலீசில் ஒப்படைத்த ஊர்க்காவல் படை வீரர்",
-   "english_headline": "Home Guard member hands over gold chain worth lakhs found on Annur road to police",
-   "category": "Crime & Safety",
-   "location": "Annur town, Coimbatore district",
-   "importance": "Medium",
+   "tamil_headline": "அரிசி விலை கிலோவுக்கு ரூ.3 முதல் ரூ.4 வரை குறைந்தது; மேலும் குறைய வாய்ப்பு",
+   "english_headline": "Rice prices fall by Rs.3 to Rs.4 per kg in Coimbatore; further drop likely as new paddy arrives",
+   "category": "Business & Prices",
+   "location": "Coimbatore city, Coimbatore district (with Pollachi, Karamadai and Ooty rice traders' associations)",
+   "importance": "High",
+   "scope": "district",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "அரிசி விலை",
+    "loc": "கோவை மாவட்டம்",
+    "hl1": "அரிசி விலை கிலோவுக்கு ரூ.4 வரை குறைந்தது",
+    "hl2": "மேலும் குறைய வாய்ப்பு",
+    "slides": [
+     {
+      "title": "விலை நிலவரம்",
+      "lines": [
+       "கடந்த வாரத்தை விட அரிசி கிலோவுக்கு <b>ரூ.3 முதல் ரூ.4</b>",
+       "கோவை, நீலகிரி மாவட்டங்களில் அரிசி கிலோ <b>ரூ.45 முதல்",
+       "வியாபாரிகள் சங்கச் செயலாளர் சரவணன் தகவல்"
+      ]
+     },
+     {
+      "title": "விலை குறைய காரணம்",
+      "lines": [
+       "ஆந்திராவிலிருந்து நெல், அரிசி அதிக அளவில் வருகிறது",
+       "மேற்கு வங்காளத்திலிருந்து குறைந்த விலையில் அரிசி கிடைக்கிறது",
+       "புதிய நெல் வரவால் வரும் மாதங்களில் விலை மேலும் குறையலாம்"
+      ]
+     },
+     {
+      "title": "புதிய விதிமுறை",
+      "lines": [
+       "ஒவ்வொரு வெள்ளிக்கிழமையும் அரிசி இருப்பு விவரம் அரசு",
+       "அனைத்து அரிசி வியாபாரிகளும் அரசு விதிமுறைகளைப் பின்பற்ற"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "அரிசி விலை கிலோவுக்கு ரூ.3 முதல் ரூ.4 வரை குறைந்துள்ளது. கோவை மாவட்ட அரிசி வியாபாரிகள் சங்கம் சார்பில் விலை உயர்வைக் கட்டுப்படுத்துவது குறித்து ஆலோசனைக் கூட்டம் நடைபெற்றது. இக்கூட்டத்தில் கோவை, பொள்ளாச்சி, காரமடை மற்றும் ஊட்டி அரிசி வியாபாரிகள் சங்கங்களின் நிர்வாகிகளும் உறுப்பினர்களும் பங்கேற்றனர். கடந்த வாரத்துடன் ஒப்பிடுகையில் இந்த வாரம் விலை குறைந்துள்ளதாக சங்கச் செயலாளர் சரவணன் தெரிவித்தார். ஆந்திர மாநிலத்திலிருந்து நெல் மற்றும் அரிசி அதிக அளவில் வருவதும், மேற்கு வங்காளத்தில் குறைந்த விலையில் அரிசி கிடைப்பதும் விலை குறைவுக்கு முக்கியக் காரணங்கள். கோவை, நீலகிரி மாவட்டங்களில் பல்வேறு ரக அரிசிகள் கிலோ ரூ.45 முதல் ரூ.80 வரை விற்கப்படுகின்றன. வரும் மாதங்களில் புதிய நெல் வரவால் விலை மேலும் குறைய வாய்ப்புள்ளது. அரசு விதிமுறைப்படி ஒவ்வொரு வெள்ளிக்கிழமையும் அரிசி இருப்பு விவரங்களை அரசு இணையதளத்தில் பதிவேற்றம் செய்ய உள்ளதாக வியாபாரிகள் தெரிவித்தனர். விலை உயர்வைக் கட்டுப்படுத்தவும் நியாயமான விலையில் அரிசி கிடைக்கவும் அனைத்து சங்கங்களும் இணைந்து செயல்பட முடிவு செய்துள்ளன. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🍚 கோவையில் அரிசி விலை கிலோவுக்கு ரூ.4 வரை குறைந்தது\n\n📰 முழு விவரம்:\nகோவை மாவட்ட அரிசி வியாபாரிகள் சங்கம் சார்பில் அரிசி விலை உயர்வைக் கட்டுப்படுத்துவது குறித்த ஆலோசனைக் கூட்டம் நடைபெற்றது. கோவை, பொள்ளாச்சி, காரமடை மற்றும் ஊட்டி அரிசி வியாபாரிகள் சங்கங்களின் நிர்வாகிகளும் உறுப்பினர்களும் பங்கேற்றனர்.\nகடந்த வாரத்துடன் ஒப்பிடுகையில் இந்த வாரம் அரிசி கிலோவுக்கு ரூ.3 முதல் ரூ.4 வரை குறைந்துள்ளதாக சங்கச் செயலாளர் சரவணன் தெரிவித்தார்.\n🌾 ஆந்திராவிலிருந்து நெல், அரிசி அதிக அளவில் வருவதும், மேற்கு வங்காளத்தில் குறைந்த விலையில் அரிசி கிடைப்பதும் விலை குறைவுக்குக் காரணங்கள்.\n💰 கோவை, நீலகிரி மாவட்டங்களில் பல்வேறு ரக அரிசிகள் கிலோ ரூ.45 முதல் ரூ.80 வரை விற்பனையாகின்றன.\n🔜 புதிய நெல் வரவால் வரும் மாதங்களில் விலை மேலும் குறைய வாய்ப்புள்ளது.\n📋 ஒவ்வொரு வெள்ளிக்கிழமையும் அரிசி இருப்பு விவரங்களை அரசு இணையதளத்தில் பதிவேற்றம் செய்ய வியாபாரிகள் முடிவு.\n\nRice price drop Coimbatore Rs.3-4 per kg | Coimbatore news\n📍 கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nநியாயமான விலையில் அரிசி கிடைக்க Share செய்யுங்கள்\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #CoimbatoreNews #கோவை",
+   "prompts": "A group of rice traders sits in a meeting hall in Coimbatore city during a consultation on controlling rice prices. The hall is a plain, functional room with white walls, a long table at the front and rows of plastic chairs, the kind used by local trade associations, with a few ceiling fans turning overhead. Men in shirts and veshti or trousers, and a few in white shirts, sit facing the front, seen from behind and at a distance; the association secretary stands at the table, mid-speech, with a small pile of papers in front of him. On the side wall, stacked gunny sacks of rice rest against the wall, and a rough wooden table holds a manual weighing scale. The light is soft daylight through open windows, suggesting a midday meeting. Camera at eye level, 35 mm, wide enough to show the whole hall and the rows of people. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of stacked white gunny sacks of rice in a traders' godown in Coimbatore city, with loose rice grains spilling from the mouth of one sack onto the concrete floor. In the background, a manual weighing scale sits on a wooden platform, and a pair of hands in a faded shirt sleeve rests on a sack, seen from the side and slightly out of focus. The sacks are heaped in tiers against a plain wall, their rough woven texture and grainy contents clearly visible. Natural light falls from a doorway, casting soft shadows across the sacks. The rice grains look pale and fresh, suggesting the new paddy arrival. Camera slightly high, 35 mm, close enough to show the texture of the grain. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/rice-prices-likely-to-fall-by-rs-4-in-coming-days/4382546",
+   "published": "2026-11-21T19:14:53+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795277943/kovaiminnal/nja10u7u8rg2zrpz0p1z.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795277946/kovaiminnal/infuyu01545u5eyr5c8e.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "எஸ்.என்.எஸ். கல்லூரியில் செயற்கை நுண்ணறிவு சர்வதேச மாநாடு",
+   "english_headline": "International AI conference held at SNS Technical College, Coimbatore; 196 of 513 research papers selected for Scopus indexed publication",
+   "category": "Education",
+   "location": "SNS Technical College, Coimbatore district",
+   "importance": "Low",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "நேர்மை",
-    "loc": "அன்னூர்",
-    "hl1": "அன்னூரில் பல லட்சம் மதிப்பிலான நகை",
-    "hl2": "போலீசில் ஒப்படைத்த வீரர்",
+    "cat": "கல்வி",
+    "loc": "கோவை",
+    "hl1": "எஸ்.என்.எஸ். கல்லூரியில் சர்வதேச மாநாடு",
+    "hl2": "196 ஆய்வுக் கட்டுரைகள்",
     "slides": [
      {
-      "title": "என்ன நடந்தது?",
+      "title": "என்ன நிகழ்வு?",
       "lines": [
-       "அன்னூர் <b>ஓதிமலை சாலையில்</b> கிடந்த தங்கச் செயின்",
-       "நேற்று <b>நவம்பர் 20</b> அன்று கண்டெடுக்கப்பட்டது",
-       "பல லட்சம் ரூபாய் மதிப்புள்ள நகை"
+       "செயற்கை நுண்ணறிவு சார்ந்த சர்வதேச மாநாடு",
+       "எஸ்.என்.எஸ். தொழில்நுட்பக் கல்லூரியில் நடந்தது",
+       "எஸ்.என்.எஸ். குழுமத்தின் வழிகாட்டுதலில் நடந்தது"
       ]
      },
      {
-      "title": "யார் ஒப்படைத்தது?",
+      "title": "சிறப்பு",
       "lines": [
-       "குன்னத்தூரைச் சேர்ந்த <b>சம்பத்</b> (40 வயது)",
-       "ஊர்க்காவல் படை வீரர் மற்றும் அவரது நண்பர்",
-       "அன்னூர் காவல் நிலையத்தில் ஒப்படைப்பு"
+       "ஆக்செஞ்சர் நிர்வாக இயக்குநர் பால் சுந்தர் சிங்",
+       "கனடா யார்க்வில் பல்கலை பேராசிரியர் ஸ்ரீராம் அனந்தன்",
+       "மலேசியா ஐ.என்.டி.ஐ. பேராசிரியர் அன்வர் பாஷா"
       ]
      },
      {
-      "title": "போலீஸ் தகவல்",
+      "title": "ஆய்வுக் கட்டுரைகள்",
       "lines": [
-       "உரிய ஆவணங்களைக் காட்டி நகையைப் பெறலாம்",
-       "நேர்மையாக ஒப்படைத்தவர்களுக்குப் பாராட்டு",
-       "தொடர்புக்கு: <b>அன்னூர் காவல் நிலையம்</b>"
+       "<b>513</b> ஆய்வுக் கட்டுரைகள் சமர்ப்பிக்கப்பட்டன",
+       "<b>196</b> கட்டுரைகள் தேர்வு செய்யப்பட்டன",
+       "ஸ்கோபஸ் தளத்தில் வெளியிட ஏற்றுக்கொள்ளப்பட்டன"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "அன்னூர் ஓதிமலை சாலையில் கிடந்த பல லட்சம் ரூபாய் மதிப்புள்ள தங்கச் செயினை ஊர்க்காவல் படை வீரர் போலீசில் ஒப்படைத்தார். குன்னத்தூரைச் சேர்ந்த 40 வயது சம்பத் என்பவர் ஊர்க்காவல் படை வீரராகப் பணியாற்றி வருகிறார். நேற்று நவம்பர் 20ஆம் தேதி சம்பத் மற்றும் அவரது நண்பர் அன்னூர் ஓதிமலை சாலையில் நடந்து சென்று கொண்டிருந்தனர். அப்போது சாலையோரத்தில் பல லட்சம் ரூபாய் மதிப்புள்ள தங்கச் செயின் ஒன்று கிடப்பதைக் கண்டனர். அந்த நகையை எடுத்த அவர்கள் உடனடியாக அன்னூர் காவல் நிலையத்திற்குச் சென்றனர். அங்கு பணியில் இருந்த காவல் உதவி ஆய்வாளர் குரு கணேசிடம் அந்தத் தங்கச் செயினை ஒப்படைத்தனர். ஊர்க்காவல் படை வீரர் மற்றும் அவரது நண்பரின் நேர்மையைப் பாராட்டிய போலீசார் நகையைப் பாதுகாப்பாகப் பெற்றுக்கொண்டனர். தங்கச் செயினைத் தவறவிட்டவர்கள் உரிய அடையாளங்கள் மற்றும் ஆவணங்களைச் சமர்ப்பித்து காவல் நிலையத்தில் பெற்றுக்கொள்ளலாம் எனத் தெரிவிக்கப்பட்டுள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "✨ அன்னூரில் பல லட்சம் மதிப்பிலான தங்கச் செயின் மீட்பு: போலீசில் ஒப்படைத்து ஊர்க்காவல் படை வீரர் நேர்மை\n\n📰 முழு விவரம்:\nஅன்னூர் அருகே குன்னத்தூரைச் சேர்ந்த 40 வயது ஊர்க்காவல் படை வீரர் சம்பத் மற்றும் அவரது நண்பர் நேற்று (நவ. 20) அன்னூர் ஓதிமலை சாலையில் நடந்து சென்றனர். அப்போது சாலையோரத்தில் பல லட்சம் ரூபாய் மதிப்புள்ள தங்கச் செயின் ஒன்று கிடப்பதைக் கண்டனர். அதனை எடுத்து அன்னூர் காவல் நிலையத்தில் உதவி ஆய்வாளர் குரு கணேசிடம் ஒப்படைத்தனர். இவர்களின் நேர்மையைப் போலீசார் பாராட்டினர்.\n📍 இடம்: ஓதிமலை சாலை, அன்னூர், கோவை மாவட்டம்\n🗓️ நாள்: 20 நவம்பர் 2026\n👮 நடவடிக்கை: நகை போலீசில் ஒப்படைப்பு\nℹ️ மக்கள் கவனத்திற்கு: இந்தத் தங்கச் செயினைத் தவறவிட்டவர்கள், உரிய அடையாளங்கள் மற்றும் ஆவணங்களைச் சமர்ப்பித்து அன்னூர் காவல் நிலையத்தில் பெற்றுக்கொள்ளலாம்.\n\nநேர்மையைப் பாராட்ட Share செய்யுங்கள்.\n\nAnnur Home Guard member hands over lost gold chain to police | Coimbatore news\n📍 Annur, Coimbatore | 21 November 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Annur #தங்கம் #CoimbatoreNews",
-   "prompts": "Two men, one in the khaki uniform of a Tamil Nadu Home Guard, walk along the roadside of a small town road in Annur, Coimbatore district, one of them bending down to pick up a glinting gold chain from the tarmac edge. Seen from behind and at a distance, the road is lined with modest shops, low concrete buildings and a few parked two-wheelers, with a town bus passing in the background. The men are wearing a shirt and trousers, and the Home Guard member's uniform is clearly khaki. The scene is in bright daylight with a clear sky, shot at eye level with a 35 mm lens wide enough to show the whole street and the people in it. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a thick gold chain resting on a police station counter, shown beside a neatly kept register and a khaki police cap placed on the table. Behind it, slightly out of focus, a khaki-uniformed police officer stands in a Tamil Nadu police station room with plain walls and a ceiling fan. The gold catches the soft indoor light and the shallow depth of field keeps the focus on the chain, with no readable text, names or labels in frame. Shot at a slightly high angle, 35 mm, daylight from a window. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/gold-ornaments-recovered-from-them-handed-over-to-police/4382352",
-   "published": "2026-11-21T17:34:02+05:30",
-   "verification": "DRAFT (gemini/gemini-3-flash-preview) - NOT CLEAN, held from posting - problems: sentence 1 (one-line story) has 15 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences",
-   "note": "free-model draft gemini/gemini-3-flash-preview, 1 attempt(s), 1 validator problem(s)",
+   "reel_script": "எஸ் என் எஸ் கல்லூரியில் 196 ஆய்வுக் கட்டுரைகள் சர்வதேச தளத்தில் வெளியாகின்றன. கோவை எஸ் என் எஸ் தொழில்நுட்பக் கல்லூரியில் செயற்கை நுண்ணறிவு சார்ந்த சர்வதேச மாநாடு நடைபெற்றது. எஸ் என் எஸ் குழுமத்தின் தாளாளர் ராஜலட்சுமி, தொழில்நுட்ப இயக்குநர் நளின் ஆகியோரின் வழிகாட்டுதலில் இம்மாநாடு நடந்தது. ஆக்செஞ்சர் நிர்வாக இயக்குநர் பால் சுந்தர் சிங், கனடா யார்க்வில் பல்கலை பேராசிரியர் ஸ்ரீராம் அனந்தன், மலேசியா ஐ என் டி ஐ பல்கலை பேராசிரியர் அன்வர் பாஷா ஆகியோர் சிறப்பு விருந்தினர்களாகப் பங்கேற்றனர். இந்தியா மற்றும் வெளிநாடுகளின் கல்வி நிறுவனங்களிலிருந்து 513 ஆய்வுக் கட்டுரைகள் சமர்ப்பிக்கப்பட்டன. அவற்றில் 196 கட்டுரைகள் தேர்வு செய்யப்பட்டு, ஸ்கோபஸ் தளத்தில் வெளியிட ஏற்றுக்கொள்ளப்பட்டன. கல்லூரி முதல்வர் சார்லஸ், இயக்குநர் அருணாசலம், நிர்வாக இயக்குநர் செந்தூர் பாண்டியன் உள்ளிட்ட பலரும் பங்கேற்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🎓 எஸ்.என்.எஸ். கல்லூரியில் 196 ஆய்வுக் கட்டுரைகள் சர்வதேச தளத்தில் வெளியீடு\n\n📰 முழு விவரம்:\nகோவை எஸ்.என்.எஸ். தொழில்நுட்பக் கல்லூரியில் செயற்கை நுண்ணறிவு சார்ந்த புத்தாக்கம் குறித்த சர்வதேச மாநாடு நடைபெற்றது. எஸ்.என்.எஸ். குழுமத்தின் தாளாளர் ராஜலட்சுமி, தொழில்நுட்ப இயக்குநர் நளின் ஆகியோரின் வழிகாட்டுதலின் கீழ் இது நடந்தது.\nஆக்செஞ்சர் நிர்வாக இயக்குநர் பால் சுந்தர் சிங், கனடா யார்க்வில் பல்கலை பேராசிரியர் ஸ்ரீராம் அனந்தன், மலேசியா ஐ.என்.டி.ஐ. சர்வதேச பல்கலை கல்லூரி பேராசிரியர் அன்வர் பாஷா ஆகியோர் சிறப்பு விருந்தினர்களாகப் பங்கேற்றனர்.\n📚 இந்தியா மற்றும் வெளிநாட்டுக் கல்வி நிறுவனங்களிலிருந்து 513 ஆய்வுக் கட்டுரைகள் சமர்ப்பிக்கப்பட்டன.\n✅ அவற்றில் 196 கட்டுரைகள் தேர்வு செய்யப்பட்டு, ஸ்கோபஸ் குறியீட்டு தளத்தில் வெளியிட ஏற்கப்பட்டன.\n🤖 செயற்கை நுண்ணறிவு உள்ளிட்ட பல முக்கியத் தலைப்புகள் விவாதிக்கப்பட்டன.\nகல்லூரி முதல்வர் சார்லஸ், இயக்குநர் அருணாசலம், நிர்வாக இயக்குநர் செந்தூர் பாண்டியன் உள்ளிட்ட பலர் பங்கேற்றனர்.\n\nSNS College international AI conference Coimbatore | Coimbatore news\n📍 எஸ்.என்.எஸ். தொழில்நுட்பக் கல்லூரி, கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #SNS",
+   "prompts": "A packed conference hall at SNS Technical College in Coimbatore, where an international AI conference is underway. On a raised stage, three speakers in formal shirts and sarees sit at a long table with name cards and microphones, while a large screen behind them shows a slide with abstract neural-network graphics. Rows of students and faculty in neat clothes sit in cushioned chairs on the auditorium floor, photographed from behind and from a distance so no faces are visible. Stacks of printed conference papers and bound proceedings rest on the front table, and a few microphones on stands catch the light. The hall is lit by warm ceiling lights and daylight through tall windows on one side. Camera at eye level, 35 mm lens, wide enough to show the full stage, the audience and the screen. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a neatly stacked pile of bound research papers and conference proceedings on a polished wooden table in a college seminar hall, with a few pages fanned open to show printed diagrams and charts of artificial intelligence and engineering research. A microphone and a folded printed programme sit beside the stack, and blurred chairs of the audience are visible in the far background. Soft daylight from a window falls across the paper edges. Camera slightly high, 35 mm, shallow depth of field focusing on the stack of papers. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/international-conference-at-the-college/4382529",
+   "published": "2026-11-21T19:02:52+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script talks about the article instead of the news (கட்டுரை) - if the article has no real news, return an empty reel_script; caption talks about the article instead of the news (கட்டுரை) - if the article has no real news, return an empty reel_script; caption copies the article word for word (16 words in a row, 24% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence; hl1 (the first headline on screen) must name the place 'கோவை', e.g. 'கோவை: ...' or 'கோவை-இல் ...' - viewers share news of their own area; known issue meta_article: script talks about the article instead of the news ('கட்டுரை') - rewrite so it does not happen again",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 5 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795275532/kovaiminnal/stme4fmj4ogkwez9sudx.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795275535/kovaiminnal/am34gjxabh7ohifpdbys.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795277953/kovaiminnal/zellbc4gbyhuzpujrrmu.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795277955/kovaiminnal/dx0twbtetnpymczigu3n.jpg"
    ]
   },
   {
-   "tamil_headline": "மழையில் முளைக்கும் காளான்களைச் சாப்பிடாதீர்கள்: தோட்டக்கலைத் துறை எச்சரிக்கை",
-   "english_headline": "Don't eat mushrooms growing after rain, horticulture department warns Thondamuthur farmers",
+   "tamil_headline": "பில்லூர் அணையில் நீர்மட்டம் 89.50 அடி; நீர்வரத்து வினாடிக்கு 248 கன அடி",
+   "english_headline": "Billur dam water level 89.50 ft out of 100 ft; inflow 248 cubic feet per second",
    "category": "Weather & Agriculture",
-   "location": "Thondamuthur, Coimbatore district",
-   "importance": "High",
-   "scope": "local",
+   "location": "Billur dam, Coimbatore district",
+   "importance": "Medium",
+   "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "எச்சரிக்கை",
-    "loc": "தொண்டாமுத்தூர்",
-    "hl1": "தொண்டாமுத்தூரில்",
-    "hl2": "விஷக் காளான் ஆபத்து",
+    "cat": "அணை நிலவரம்",
+    "loc": "பில்லூர் அணை",
+    "hl1": "பில்லூர் அணை நீர்மட்டம் 89.50 அடி",
+    "hl2": "வினாடிக்கு 248 கன அடி",
     "slides": [
      {
-      "title": "எச்சரிக்கை ஏன்?",
+      "title": "நீர்மட்டம்",
       "lines": [
-       "தோட்டங்கள், சாலை ஓரங்களில் முளைக்கும் காளானைச் சமைத்து உண்ண",
-       "கடந்த மாத மழையால் பல இடங்களில் பெரிய காளான்கள் முளைத்துள்ளன",
-       "தோட்டக்கலைத் துறை எச்சரித்துள்ளது"
+       "பில்லூர் அணையின் உயரம் <b>100 அடி</b>",
+       "நேற்றைய நிலவரப்படி நீர்மட்டம் <b>89.50 அடி</b>",
+       "அணையின் நீர்மட்டம் உயரத்தின் அளவை விட குறைவு"
       ]
      },
      {
-      "title": "ஆபத்து என்ன?",
+      "title": "நீர்வரத்து",
       "lines": [
-       "சில காளான்கள் கடுமையான நச்சுத்தன்மை கொண்டவை",
-       "வாந்தி, பேதி, வயிற்று வலி, தலை சுற்றல் ஏற்படும்",
-       "கல்லீரல், சிறுநீரகம் பாதிக்கப்பட்டு உயிருக்கே ஆபத்தாகலாம்"
+       "அணைக்கு வினாடிக்கு <b>248 கன அடி</b> நீர்வரத்து இருந்தது",
+       "நேற்றைய நிலவரப்படி இந்த நீர்வரத்து பதிவானது",
+       "அணைக்குள் நீர் தொடர்ந்து வருகிறது"
       ]
      },
      {
-      "title": "பெற்றோருக்கு",
+      "title": "மக்கள் கவனத்திற்கு",
       "lines": [
-       "நல்ல காளானா, விஷக் காளானா என்று தோற்றத்தால் கண்டறிய முடியாது",
-       "குழந்தைகள் இதுபோன்ற காளான்களைத் தொடுவதையோ வாயில் போடுவதையோ"
+       "அணை அருகே செல்பவர்கள் கவனமாக இருங்கள்",
+       "ஆற்றுப்படுகை பகுதி மக்கள் எச்சரிக்கையாக இருங்கள்",
+       "அதிகாரிகளின் அறிவிப்புகளை பின்பற்றுங்கள்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "தொண்டாமுத்தூரில் மழைக் காளான்கள் ஆபத்தானவை. மழை பெய்த பின் தோட்டங்களிலும் சாலை ஓரங்களிலும் முளைக்கும் காளான்களைச் சமைத்து உண்ண வேண்டாம் என்று தோட்டக்கலைத் துறை எச்சரித்துள்ளது. கடந்த மாதம் பெய்த மழையால் தொண்டாமுத்தூர் வட்டாரத்தில் பல இடங்களில் பெரிய காளான்கள் முளைத்துள்ளன. விவசாயக் கூலி வேலைக்குச் செல்வோரும் தோட்டத்தில் இருப்பவர்களும் இவற்றை ஆர்வமாகப் பறித்துச் செல்கின்றனர். மழைக் காலத்தில் ஈரப்பதம் அதிகமாக இருப்பதால் பல வகை காளான்கள் முளைக்கின்றன. சில வகைகள் சாப்பிடத் தகுதியானவை. வேறு சில வகைகள் கடுமையான நச்சுத்தன்மை கொண்டவை. அவற்றைச் சாப்பிட்டால் வாந்தி, பேதி, வயிற்று வலி, தலை சுற்றல் ஏற்படும். சில காளான்களால் கல்லீரல், சிறுநீரகங்கள் கடுமையாகப் பாதிக்கப்பட்டு உயிருக்கே ஆபத்து ஏற்படலாம் என்று தோட்டக்கலைத் துறை உதவி இயக்குனர் சுரேஷ் தெரிவித்தார். நல்ல காளான், விஷக் காளான் என்பதைத் தோற்றம், நிறம், வடிவம், மணம் ஆகியவற்றால் கண்டுபிடிக்க முடியாது. எனவே குழந்தைகள் விளையாடும்போது இதுபோன்ற காளான்களைத் தொடுவதையோ வாயில் போடுவதையோ தடுக்க பெற்றோர் கவனம் செலுத்த வேண்டும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🍄 தொண்டாமுத்தூரில் மழைக் காளான்களைச் சாப்பிடாதீர்கள்\n\n📰 முழு விவரம்:\nகடந்த மாத மழையால் தொண்டாமுத்தூர் வட்டாரத்தில் பல இடங்களில் பெரிய காளான்கள் முளைத்துள்ளன. தோட்டங்கள், சாலை ஓரங்களில் முளைக்கும் இந்தக் காளான்களைச் சமைத்து உண்ண வேண்டாம் என்று தோட்டக்கலைத் துறை எச்சரித்துள்ளது.\n☠️ சில காளான்கள் கடுமையான நச்சுத்தன்மை கொண்டவை. சாப்பிட்டால் வாந்தி, பேதி, வயிற்று வலி, தலை சுற்றல் ஏற்படும்.\n🫀 சில காளான்களால் கல்லீரல், சிறுநீரகங்கள் கடுமையாகப் பாதிக்கப்பட்டு உயிருக்கே ஆபத்து ஏற்படலாம்.\n🔍 நல்ல காளானா, விஷக் காளானா என்பதைத் தோற்றம், நிறம், வடிவம், மணத்தால் கண்டுபிடிக்க முடியாது.\n👶 குழந்தைகள் விளையாடும்போது இதுபோன்ற காளான்களைத் தொடுவதையோ வாயில் போடுவதையோ தடுக்க பெற்றோர் கவனம் செலுத்த வேண்டும்.\nℹ️ தோட்டக்கலைத் துறை உதவி இயக்குனர் சுரேஷ் இந்த எச்சரிக்கையை வெளியிட்டுள்ளார்.\n\nDon't eat rain mushrooms, Thondamuthur warning | Coimbatore news\n📍 தொண்டாமுத்தூர், கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Thondamuthur #CoimbatoreNews #கோவை",
-   "prompts": "Farm labourers, men and women in cotton saris, shirts and veshti, crouch on wet soil at the edge of a coconut and banana garden in Thondamuthur, picking large wild mushrooms that have sprouted after last month's rain. Behind them stands a low rural village house with a tiled roof, and rows of coconut palms rise against a cloudy sky. The ground is dark and damp, with puddles from the rain and green grass in patches. A few workers are seen from behind or far away, slightly blurred, one holding a cloth bag half-filled with picked mushrooms. Daylight, overcast after rain, soft diffused light. Camera at eye level, 35 mm lens, wide enough to show the garden, the palms and the workers together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a cluster of large wild mushrooms growing from damp, dark soil at the base of a banana plant on a farm in Thondamuthur. The caps are pale brown and whitish, with beads of rainwater on them, and fallen wet banana leaves and grass blades surround the cluster. A worker's bare hand, slightly blurred, reaches toward the mushrooms, and a small cloth bag lies nearby on the wet ground. Overcast daylight, soft shadows, shallow depth of field. Camera slightly high, 35 mm lens, focused on the mushrooms with the soil and leaves in the foreground. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/don-t-eat-mushrooms-that-sprout-in-the-rain/4382306",
-   "published": "2026-11-21T17:04:27+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 0 validator problem(s)",
+   "reel_script": "பில்லூர் அணையில் நேற்றைய நிலவரப்படி நீர்மட்டம் 89.50 அடியாக இருந்தது. அணையின் உயரம் 100 அடி. அணைக்கு வினாடிக்கு 248 கன அடி நீர்வரத்து இருந்தது. அணையின் நீர்மட்டம் உயரத்தைவிட குறைவாக உள்ளது. அணை அருகில் செல்பவர்களும், ஆற்றுப்படுகை பகுதி மக்களும் கவனமாக இருக்க வேண்டும். அதிகாரிகளின் அறிவிப்புகளைப் பின்பற்றுங்கள். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🌊 பில்லூர் அணையில் நீர்மட்டம் 89.50 அடி\n\n📰 முழு விவரம்:\nநேற்றைய நிலவரப்படி பில்லூர் அணையின் நீர்மட்டம் 89.50 அடியாக இருந்தது. அணையின் உயரம் 100 அடி ஆகும்.\nஅணைக்கு வினாடிக்கு 248 கன அடி நீர்வரத்து இருந்தது.\n📍 இடம்: பில்லூர் அணை, கோயம்புத்தூர் மாவட்டம்\nℹ️ மக்கள் கவனத்திற்கு: அணை அருகே செல்லும்போதும், ஆற்றுப்படுகை பகுதிகளிலும் கவனமாக இருங்கள். அதிகாரிகளின் அறிவிப்புகளைப் பின்பற்றுங்கள்.\n\nBilloor dam water level 89.50 ft | Coimbatore news\n📍 பில்லூர் அணை, கோயம்புத்தூர் மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Billur #நீர்மட்டம் #CoimbatoreNews",
+   "prompts": "A broad view of the Billur dam reservoir in Coimbatore district, its water spread almost up to the top of the concrete dam wall, showing the water level near 89.50 ft of the 100 ft height. The dam wall runs across the frame, with its spillway and stone-and-concrete structure visible. Water flows steadily into the reservoir from the upstream side, indicating an inflow of 248 cubic feet per second. Green forest-covered hills and the Western Ghats rise in the far background. No people are in the scene, or only a few small figures far away on the dam walkway seen from behind. The light is soft daytime sunlight with a light cloud cover. Shot at eye level or slightly high, 35 mm, wide enough to show the full dam and its reservoir with the hills behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the dam's concrete wall and gate structure at the water line, with the water surface rising close to the top edge of the wall to show the level of nearly 90 feet. Water is seen flowing in gently through the upstream channel, with light ripples across the reservoir surface. The grey concrete and rusted steel gate frame are visible in sharp detail, with green moss marking the wet stone at the water line. Far in the background, the forested hills of the Western Ghats are slightly soft. No people are visible. Daylight, camera at low to eye level, 35 mm, focused on the water line against the dam wall. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/source-coimbatore/4382315",
+   "published": "2026-11-21T17:47:03+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 42 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block); not grounded: only 47% of the words come from the article (e.g. அடியாக, உயரம், குறைவாக, உள்ளது, அருகில்); use the article's facts and terms (in your own sentences)",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 2 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795275568/kovaiminnal/hq2ka4zwiki8nsxgonmu.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795275570/kovaiminnal/ncvowy9yynhgfhx11dyu.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவை மேயர் மீது பார்ட்டி பண்ட் வசூல் புகார்: ஒப்பந்ததாரர் குற்றச்சாட்டு",
-   "english_headline": "Coimbatore Mayor accused of collecting party fund in tender process; contractor alleges lottery-based tenders",
-   "category": "Government & Services",
-   "location": "Coimbatore city, Coimbatore district",
-   "importance": "High",
-   "scope": "",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "அரசு நிர்வாகம்",
-    "loc": "கோவை மாநகராட்சி",
-    "hl1": "கோவை மேயர் மீது பார்ட்டி பண்ட் புகார்",
-    "hl2": "2 சதவீத கமிஷன் கேட்பதாக",
-    "slides": [
-     {
-      "title": "என்ன புகார்?",
-      "lines": [
-       "கோவை மாநகராட்சி ஒப்பந்ததாரர் திருவேங்கடம் புகார்",
-       "மேயர் ரங்கநாயகி பார்ட்டி பண்ட் வசூலிப்பதாக குற்றச்சாட்டு",
-       "குலுக்கல் முறையில் டெண்டர் நடப்பதாகவும் புகார்"
-      ]
-     },
-     {
-      "title": "கமிஷன்",
-      "lines": [
-       "<b>2 சதவீதம்</b> கமிஷன் கேட்பதாக ஒப்பந்ததாரர் கூறுகிறார்",
-       "பணம் தந்த நிறுவனங்களுக்கு மட்டுமே ஜாப் ஆர்டர் என்கிறார்",
-       "பணம் தராதவர்களின் வேலை ரத்து செய்யப்படுவதாகக் கூறுகிறார்"
-      ]
-     },
-     {
-      "title": "பணிகள் பாதிப்பு",
-      "lines": [
-       "பூங்கா, பொதுக்கழிப்பறை, பள்ளி பராமரிப்பு வேலை முடங்கியதாக",
-       "கடந்த 6 மாதங்களில் <b>ரூ.300 கோடி</b> டெண்டர் விடப்பட்டதாக தகவல்",
-       "பணம் தராததால் <b>ரூ.20 கோடிக்கும்</b> மேற்பட்ட பணி கிடப்பில்"
-      ]
-     },
-     {
-      "title": "அதிகாரிகள் பதில்",
-      "lines": [
-       "குலுக்கல் முறை அங்கீகரிக்கப்படாதது என ஒப்பந்ததாரர்",
-       "துணை பொறியாளர் ஜெயலட்சுமி வாய்மொழியாக நடத்துவதாகக் கூறினார்",
-       "முதல்வர், கமிஷனரிடம் புகார் அளித்து நடவடிக்கை கோரியுள்ளார்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோவை மாநகராட்சியில் 2 சதவீத கமிஷன் கேட்கப்படுவதாக ஒப்பந்ததாரர் ஒருவர் புகார் கூறியுள்ளார். கோவை மாநகராட்சி மேயர் ரங்கநாயகி பார்ட்டி பண்ட் வசூலிப்பதாக ஒப்பந்ததாரர் திருவேங்கடம் குற்றம் சாட்டியுள்ளார். குலுக்கல் முறையில் டெண்டர் நடத்தப்படுவதாகவும் அவர் கூறியுள்ளார். அவர் கடந்த 5 ஆண்டுகளாக கோவை மாநகராட்சியில் ஒப்பந்த பணிகள் செய்து வருகிறார். மேயர் 2 சதவீத கமிஷன் கேட்பதாகவும், பணம் கொடுக்கும் நிறுவனங்களுக்கு மட்டுமே ஒப்புதல் வழங்கப்படுவதாகவும் அவர் கூறுகிறார். பணம் கொடுக்காதவர்களின் வேலைகள் ரத்து செய்யப்படுவதாகவும் குற்றம் சாட்டுகிறார். பூங்கா, பொதுக்கழிப்பறை, பள்ளி பராமரிப்பு வேலைகள் முடங்கியுள்ளதாக அவர் தெரிவித்துள்ளார். கடந்த 6 மாதங்களில் ரூ.300 கோடிக்கு டெண்டர் விடப்பட்டதாகவும், ரூ.20 கோடிக்கும் மேற்பட்ட பணி கிடப்பில் போடப்பட்டதாகவும் அவர் கூறுகிறார். குலுக்கல் முறை அங்கீகரிக்கப்படாத முறை என்று அவர் கூறுகிறார். மாநகராட்சி துணை பொறியாளர் ஜெயலட்சுமி வாய்மொழியாக கேட்டு நடத்துவதாகக் கூறியுள்ளதாகத் தெரிவித்துள்ளார். முதல்வர், கமிஷனர் உள்ளிட்டோரிடம் புகார் அளித்து நடவடிக்கை கோரியுள்ளதாக ஒப்பந்ததாரர் கூறியுள்ளார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 கோவை மேயர் மீது பார்ட்டி பண்ட் வசூல் புகார்: 2 சதவீத கமிஷன் குற்றச்சாட்டு\n\n📰 முழு விவரம்:\nகோவை மாநகராட்சி ஒப்பந்ததாரர் திருவேங்கடம், மேயர் ரங்கநாயகி பார்ட்டி பண்ட் வசூலிப்பதாகவும், குலுக்கல் முறையில் டெண்டர் நடப்பதாகவும் புகார் கூறியுள்ளார்.\nமேயர் 2 சதவீத கமிஷன் கேட்பதாகவும், பணம் கொடுக்கும் ஒப்பந்த நிறுவனங்களுக்கு மட்டுமே ஒப்புதல் வழங்கி ஜாப் ஆர்டர் வழங்கப்படுவதாகவும் அவர் கூறியுள்ளார். பணம் கொடுக்காதவர்களின் வேலைகள் ரத்து செய்யப்படுவதாகவும் குற்றம் சாட்டியுள்ளார்.\nபூங்கா, பொதுக்கழிப்பறை, பள்ளி பராமரிப்பு வேலைகள் முடங்கியுள்ளதாகவும், மக்கள் வரிப்பணம் வீணடிக்கப்படுவதாகவும் அவர் தெரிவித்துள்ளார்.\n💰 கடந்த 6 மாதங்களில் ரூ.300 கோடிக்கு டெண்டர் விடப்பட்டுள்ளது. பணம் தராததால் ரூ.20 கோடிக்கும் மேற்பட்ட பணி கிடப்பில் போடப்பட்டுள்ளது.\n🎲 டெண்டரில் ஜீரோ மதிப்பிடும் நிறுவனங்களில் குலுக்கல் நடத்தப்படுவதாகவும், அது அங்கீகரிக்கப்படாத முறை என்றும் அவர் கூறியுள்ளார்.\n👮 மாநகராட்சி துணை பொறியாளர் ஜெயலட்சுமி, வாய்மொழியாக கேட்டு நடத்துவதாகக் கூறியுள்ளார்.\n📝 முதல்வர், துறையின் கூடுதல் செயலர், கமிஷனர் ஆகியோரிடம் புகார் அளித்து நடவடிக்கை கோரியுள்ளதாக ஒப்பந்ததாரர் தெரிவித்துள்ளார்.\n\nCoimbatore Mayor party fund allegation | Coimbatore news\n📍 கோவை மாநகராட்சி, கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #மாநகராட்சி",
-   "prompts": "A group of reporters holds microphones toward a contractor standing in front of the Coimbatore Corporation office building, as he speaks at a press meet about tender irregularities. The place is a government office with a concrete facade, a few corporation staff walking in the background, and the Western Ghats faintly visible far behind. Seen from behind the reporters at eye level, with the contractor in a plain shirt and trousers and a few bundled files in his hand. Daylight, mild sun on the building. Camera at eye level, 35 mm, wide enough to show the office entrance and the press group. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up on a stack of tender files and bid documents spread on a wooden desk inside a government office, with a few loose papers marked with ruled tables and a metal file clip, and a small pile of loose currency notes placed beside them as a suggestion of bribe money. In the blurred background, two corporation clerks in shirts sit at a distance facing away. Warm tube-light and daylight from a window. Camera slightly high, 35 mm, shallow depth so the files stay sharp and the background softens. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/coimbatore-mayor-collects-party-bund-corporation-contractor-complains/4382494",
-   "published": "2026-11-21T18:33:15+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 5 ('நான் கடந்த 5 ஆண்டுகளாக கோவை மாநகராட்சியில் பல்வேறு ஒப்பந்த ப'); 4 ('உதாரணத்துக்கு 4 ஒப்பந்ததாரர்களை அழைத்து குலுக்கல் நடத்துகிறா')",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795275575/kovaiminnal/xmxibey2uz012srhpddl.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795275608/kovaiminnal/tswzu9t0ws7bnj5qk5we.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795277965/kovaiminnal/bkvdred0uwe3catslkop.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795277970/kovaiminnal/ttwvgdt9fbck0fqd9yuf.jpg"
    ]
   }
  ]
