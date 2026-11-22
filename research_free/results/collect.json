@@ -3,10 +3,10 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/woman-dies-after-falling-from-two-wheeler-in-vadavally/4383285",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/rs-2300-crore-loss-in-coimbatore-municipal-corporation-corruption-in-everything-under-the-previous-regime-says-audit-report/4383441",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/selvachintamani-tank-is-a-garbage-dump/4383169",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/truck-with-gravel-seized/4383168",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/fire-police-probe-into-huts/4383683",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/police-say-they-are-trying-to-sell-drugs/4383707",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/drinking-water-pipeline-leakage-rectification-work-in-full-swing/4383636",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/water-to-be-released-for-irrigation-in-pap-canal/4383165",
   "candidate filter: collected=4",
   "to write: 4 Coimbatore district candidates (max 4 stories)",
   "round: top 4 of 4 candidates",
@@ -28,305 +28,308 @@
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
+  "ok gemini/gemini-3-flash-preview (11s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok gemini/gemini-3-flash-preview (10s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
-  "ok groq/qwen/qwen3.8-27b (3s)",
+  "ok gemini/gemini-3.6-flash (28s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "ok gemini/gemini-3-flash-preview (14s)",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "ok gemini/gemini-3.6-flash (30s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "dead for this round: groq/openai/gpt-oss-120b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok anthropic/claude-haiku-5-5",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok anthropic/claude-haiku-5-5",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "switching away from groq/qwen/qwen3.8-27b for 10 min",
   "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "fail gemini/gemini-3.6-flash: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
-  "poor answer - skipped for 30 min: gemini/gemini-3.6-flash",
-  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "கிணத்துக்கடவு அருகே அனுமதியின்றி மண் எடுத்த லாரி பறிமுதல்",
-   "english_headline": "Tipper lorry carrying unauthorised gravel soil seized in Karachery village near Kinathukadavu",
+   "tamil_headline": "அன்னூரில் போதைப் பொருள் பற்றி தகவல் சொல்ல போலீசார் கோரிக்கை",
+   "english_headline": "Annur police ask people to report drug sale, use or stock in their area; calls to three numbers",
    "category": "Crime & Safety",
-   "location": "Karachery village, Arasampalayam panchayat, Kinathukadavu, Coimbatore district",
-   "importance": "Medium",
-   "scope": "local",
+   "location": "Annur police station area, Coimbatore district",
+   "importance": "High",
+   "scope": "",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "சட்டவிரோத மண் கடத்தல்",
-    "loc": "காரச்சேரி, கிணத்துக்கடவு",
-    "hl1": "கிணத்துக்கடவு அருகே மண் கடத்திய லாரி",
-    "hl2": "4 யூனிட் கிராவல் மண்",
+    "cat": "போதைப் பொருள் தகவல்",
+    "loc": "அன்னூர், கோவை மாவட்டம்",
+    "hl1": "அன்னூரில் போதைப் பொருள் பற்றி தகவல்",
+    "hl2": "ரகசியம் காக்கப்படும்",
     "slides": [
      {
-      "title": "என்ன நடந்தது?",
+      "title": "என்ன",
       "lines": [
-       "கிணத்துக்கடவு காரச்சேரி கிராமத்தில் அனுமதியின்றி மண் கடத்தல்",
-       "டிப்பர் லாரியில் <b>4 யூனிட்</b> கிராவல் மண் எடுத்துச் சென்றது",
-       "வருவாய்த்துறையினர் லாரியை பறிமுதல் செய்தனர்"
+       "குட்கா, கஞ்சா பயன்பாடு பற்றி தெரிந்தால் தகவல் தாருங்கள்",
+       "இருப்பு வைப்பது அல்லது விற்பனை பற்றியும் தகவல் தாருங்கள்",
+       "அன்னூர் காவல் நிலைய எல்லைக்குள் உள்ள பகுதிகள்"
       ]
      },
      {
-      "title": "எப்படி பிடிபட்டது?",
+      "title": "எந்த எண்ணுக்கு?",
       "lines": [
-       "கிராவல் மண் கடத்தல் குறித்து தகவல் கிடைத்தது",
-       "மண்டல துணை தாசில்தார் வினோத் தலைமையில் அதிகாரிகள் ஆய்வு",
-       "சாலையில் சென்ற லாரியை சோதனை செய்தபோது ஆவணம் இல்லை"
+       "அன்னூர் காவல் நிலையம்: <b>94981 01173</b>",
+       "உதவி ஆய்வாளர்: <b>94981 77717</b>",
+       "தனிப் பிரிவு தலைமை காவலர்: <b>63835 80068</b>"
       ]
      },
      {
-      "title": "அடுத்து என்ன?",
+      "title": "ரகசியம்",
       "lines": [
-       "சோதனையின்போது லாரி டிரைவர் தப்பி ஓடினார்",
-       "லாரியை கிணத்துக்கடவு போலீஸ் நிலையத்தில் ஒப்படைத்து புகார்",
-       "போலீசார் வழக்குப் பதிவு செய்து விசாரணை நடத்துகின்றனர்"
+       "தகவல் தருபவர் பற்றிய ரகசியம் காக்கப்படும்",
+       "மேலே உள்ள எண்களில் தகவல் தெரிவிக்கலாம்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கிணத்துக்கடவு அருகே அனுமதியின்றி மண் கடத்திய லாரி பிடிபட்டது. காரச்சேரி கிராமத்திலிருந்து உரிய அனுமதி இல்லாமல் கிராவல் மண் எடுத்துச் செல்வதாக வருவாய்த்துறைக்குத் தகவல் கிடைத்தது. இதையடுத்து மண்டல துணை தாசில்தார் வினோத் தலைமையிலான அதிகாரிகள் அப்பகுதியில் ஆய்வு மேற்கொண்டனர். சாலையில் சென்ற டிப்பர் லாரியைச் சோதனை செய்தபோது, ஆவணங்கள் இல்லாமல் 4 யூனிட் கிராவல் மண் எடுத்து வந்தது உறுதியானது. சோதனையின்போது லாரி ஓட்டுநர் தப்பி ஓடினார். லாரி கிணத்துக்கடவு போலீஸ் நிலையத்தில் ஒப்படைக்கப்பட்டு புகார் அளிக்கப்பட்டது. போலீசார் வழக்குப் பதிவு செய்து விசாரணை நடத்துகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚛 கிணத்துக்கடவு அருகே அனுமதியின்றி மண் கடத்திய லாரி பறிமுதல்\n\n📰 முழு விவரம்:\nகிணத்துக்கடவு அரசம்பாளையம் ஊராட்சி காரச்சேரி கிராமத்தில் அனுமதியின்றி கிராவல் மண் கடத்தப்படுவதாக வருவாய்த்துறைக்குத் தகவல் கிடைத்தது. மண்டல துணை தாசில்தார் வினோத் தலைமையிலான அதிகாரிகள் ஆய்வு செய்தனர். சாலையில் வந்த டிப்பர் லாரியைச் சோதனை செய்தபோது, உரிய ஆவணம் இல்லாமல் 4 யூனிட் கிராவல் மண் கொண்டு செல்லப்பட்டது உறுதியானது. சோதனையின்போது ஓட்டுநர் தப்பி ஓடினார். லாரி கிணத்துக்கடவு போலீஸ் நிலையத்தில் ஒப்படைக்கப்பட்டு, புகார் அளிக்கப்பட்டது. போலீசார் வழக்குப் பதிவு செய்து விசாரித்து வருகின்றனர்.\n📍 இடம்: காரச்சேரி கிராமம், அரசம்பாளையம் ஊராட்சி, கிணத்துக்கடவு\n👮 நடவடிக்கை: லாரி பறிமுதல், போலீசில் புகார், வழக்குப் பதிவு\n\nKinathukadavu illegal gravel lorry seized | Coimbatore news\n📍 கிணத்துக்கடவு, கோவை மாவட்டம் | 22 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Kinathukadavu #CoimbatoreNews #கோவை",
-   "prompts": "A tipper lorry loaded with gravel soil stands seized on a narrow village road in Karachery village near Kinathukadavu, while a group of revenue officials in shirts and trousers and Tamil Nadu police in khaki inspect it from a short distance. The place is a rural village road lined with low houses, dry open land and a few coconut palms, with the Western Ghats faintly visible in the far background. The officials are seen from behind or far away, one officer with a file under his arm, another pointing toward the load, and a police constable standing beside the vehicle. The tipper lorry's body is tilted slightly with its heap of reddish-brown gravel soil visible in the open bed, and a couple of two-wheelers are parked at the roadside. It is bright daylight with clear sky and no rain. Shot at eye level, 35 mm lens, wide enough to show the village road, the lorry and the officials together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the open tipper bed of a lorry heaped with reddish-brown gravel soil, the loose grainy earth piled unevenly against the metal sides, with a few dry clods and dust on the ground below. In the blurred background, the shadowy figure of a revenue official in a shirt and a police constable in khaki stand beside the seized vehicle on a village road in Karachery, Kinathukadavu. Daylight falls across the soil, showing its texture and colour clearly, and no readable text or signboards appear anywhere in the frame. Shot at a low-to-mid angle, 50 mm lens, shallow depth of field to keep the gravel sharp and the people softly out of focus. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/truck-with-gravel-seized/4383168",
-   "published": "2026-11-22T17:12:28+05:30",
+   "reel_script": "அன்னூரில் போதைப் பொருள் பற்றி தகவல் தர போலீசார் பொதுமக்களிடம் கேட்டுள்ளனர். அன்னூர் காவல் நிலைய எல்லைக்கு உட்பட்ட பகுதிகளில் குட்கா, கஞ்சா போன்ற போதைப் பொருட்களைப் பயன்படுத்தினாலோ, இருப்பு வைத்திருந்தாலோ, விற்பனை செய்தாலோ போலீசாருக்குத் தகவல் தெரிவிக்கலாம். தகவல் தருபவர் குறித்த ரகசியம் காக்கப்படும். அன்னூர் காவல் நிலையத்துக்கு 94981 01173 என்ற எண்ணிலும், உதவி ஆய்வாளருக்கு 94981 77717 என்ற எண்ணிலும், தனிப் பிரிவு தலைமை காவலருக்கு 63835 80068 என்ற எண்ணிலும் தகவல் தெரிவிக்கலாம். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 அன்னூரில் போதைப் பொருள் பற்றி தகவல் தாருங்கள்: ரகசியம் காக்கப்படும்\n\n📰 முழு விவரம்:\nஅன்னூர் காவல் நிலைய எல்லைக்கு உட்பட்ட பகுதிகளில் குட்கா, கஞ்சா உள்ளிட்ட போதைப் பொருட்களைப் பயன்படுத்துவது, இருப்பு வைத்திருப்பது அல்லது விற்பனை செய்வது தெரிந்தால் போலீசாருக்குத் தகவல் தெரிவிக்கலாம் என அன்னூர் போலீசார் அறிவித்துள்ளனர். தகவல் தருபவர் குறித்த ரகசியம் காக்கப்படும்.\n📞 அன்னூர் காவல் நிலையம்: 94981 01173\n📞 உதவி ஆய்வாளர்: 94981 77717\n📞 தனிப் பிரிவு தலைமை காவலர்: 63835 80068\nℹ️ மக்கள் கவனத்திற்கு: மேலே உள்ள எண்களில் தகவல் தெரிவிக்கலாம்.\n\nAnnur police drug information numbers | Coimbatore news\n📍 அன்னூர், கோவை மாவட்டம் | 23 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Annur #போதைப்பொருள் #CoimbatoreNews",
+   "prompts": "A Tamil Nadu police sub-inspector in khaki uniform stands outside a police station in Annur, Coimbatore district, speaking to a group of local residents seen from behind, while a constable hands out a printed appeal notice. The place is a small town street lined with low concrete shops, a tea stall and a parked two-wheeler, with a police station gate and a blue-and-white police board area visible but with no readable text. Residents include men in shirts and veshti and a woman in a cotton saree standing a little apart, all seen from behind or far away. The police jeep is parked by the gate, and the mood is calm and advisory. Time is mid-morning under bright daylight, with a faint sky and the Western Ghats hills in the far background. Camera is at eye level, 35 mm, wide enough to show the street and the station gate. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a printed police notice pinned on a wooden board outside a police station in Annur, showing a clear Tamil-style layout of paper and a black telephone handset placed on a desk beside it, with a constable's khaki sleeve visible at the edge of the frame. The notice is shown as a blurred block of text with no readable words, and no numbers or letters are legible. Behind the board is a plain cream-painted station wall, a metal grille window and a tube light. Daylight comes through the doorway, making a soft shadow. Camera is close and slightly high, 50 mm, focused on the notice and the phone, with the police station interior softly blurred. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/police-say-they-are-trying-to-sell-drugs/4383707",
+   "published": "2026-11-22T23:38:33+05:30",
    "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
    "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795361845/kovaiminnal/c0g0vuk9ombcplxubjya.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795361850/kovaiminnal/cvklu8ctk2zp3cvux6jz.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795376274/kovaiminnal/pmbz5euglqdogiqgfuxn.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795376277/kovaiminnal/wnbmvni6rdt9pfznzmi0.jpg"
    ]
   },
   {
-   "tamil_headline": "கோவை மாநகராட்சியில் ரூ.2,300 கோடி இழப்பு: தணிக்கை அறிக்கையில் தகவல்",
-   "english_headline": "Rs 2,300 crore loss in Coimbatore Corporation, says audit report; irregularities in property tax, waste management and purchases",
-   "category": "Government & Services",
-   "location": "Coimbatore Corporation, Coimbatore district",
+   "tamil_headline": "பொள்ளாச்சி அருகே பி.ஏ.பி. கால்வாயில் பாசனத்துக்கு தண்ணீர் திறப்பு",
+   "english_headline": "Water released into P.A.P. Senguttaipalayam branch canal near Pollachi for irrigation on 22 Nov",
+   "category": "Weather & Agriculture",
+   "location": "Pollachi, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "பாசனம்",
+    "loc": "பொள்ளாச்சி",
+    "hl1": "பொள்ளாச்சியில் பாசனத்துக்கு நீர் திறப்பு",
+    "hl2": "4,756 ஏக்கர் நிலங்கள் பயன்",
+    "slides": [
+     {
+      "title": "நீர் திறப்பு",
+      "lines": [
+       "நவ. <b>22</b> அன்று பி.ஏ.பி. செங்குட்டைப்பாளையம் கிளை",
+       "உடுமலை திருமூர்த்தி அணையிலிருந்து இரண்டாம் மண்டல",
+       "கால்வாய் நீளம் <b>14.67</b> கி.மீ."
+      ]
+     },
+     {
+      "title": "பயன்பெறும்",
+      "lines": [
+       "கள்ளிப்பட்டி, கொல்லப்பட்டி, வெள்ளாளபாளையம் உள்ளிட்ட",
+       "மொத்தம் <b>4,756</b> ஏக்கர் நிலங்களுக்கு பாசனம்",
+       "தென்னை மரங்களைக் காப்பாற்ற விவசாயிகள் முயற்சி"
+      ]
+     },
+     {
+      "title": "அடைப்பு சீரமைப்பு",
+      "lines": [
+       "நவ. <b>20</b> அன்று குரும்பபாளையம் பகிர்மான கால்வாயில்",
+       "தண்ணீர் வீணாகி சாலையோர பாலத்தின் கீழ் குளம் போல் தேங்கியது",
+       "நீர்வளத்துறை அதிகாரிகள், விவசாயிகள் அடைப்பை சரி செய்தனர்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "பொள்ளாச்சி அருகே 4,756 ஏக்கர் நிலங்களுக்கு பாசனத்துக்காக தண்ணீர் திறக்கப்பட்டுள்ளது. நவம்பர் 22ஆம் தேதி பி ஏ பி செங்குட்டைப்பாளையம் கிளை கால்வாயில் தண்ணீர் திறக்கப்பட்டது. உடுமலை திருமூர்த்தி அணையிலிருந்து இரண்டாம் மண்டல பாசனத்துக்காக இந்த நீர் வழங்கப்படுகிறது. இந்தக் கால்வாய் மொத்தம் 14.67 கிலோமீட்டர் நீளம் கொண்டது. கள்ளிப்பட்டி, கொல்லப்பட்டி, வெள்ளாளபாளையம் உள்ளிட்ட 11 கிராமங்கள் இதனால் பயனடைகின்றன. நீண்ட கால பயிரான தென்னை மரங்களைக் காப்பாற்ற விவசாயிகள் இந்தத் தண்ணீரைப் பயன்படுத்துகின்றனர். முன்னதாக நவம்பர் 20ஆம் தேதி காலை குரும்பபாளையம் பகிர்மான கால்வாயில் தென்னை மட்டை மற்றும் குப்பைகள் சிக்கி அடைப்பு ஏற்பட்டது. இதனால் தண்ணீர் வீணாகி சாலையோரப் பாலத்தின் கீழ் குளம் போல் தேங்கியது. நீர்வளத்துறை அதிகாரிகளும் விவசாயிகளும் அடைப்பை சரி செய்தனர். அதன் பின் கால்வாயில் தண்ணீர் தடையின்றிச் செல்கிறது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "💧 பொள்ளாச்சி அருகே 4,756 ஏக்கருக்கு பாசனத்துக்கு தண்ணீர் திறப்பு\n\n📰 முழு விவரம்:\nபொள்ளாச்சி அருகே பி.ஏ.பி. பிரதான கால்வாயின் 34.190 கி.மீ. தொலைவில் பிரியும் செங்குட்டைப்பாளையம் கிளை கால்வாயில் நவம்பர் 22ஆம் தேதி தண்ணீர் திறக்கப்பட்டது. உடுமலை திருமூர்த்தி அணையிலிருந்து இரண்டாம் மண்டல பாசனத்துக்காக இந்த நீர் வழங்கப்படுகிறது. 14.67 கி.மீ. நீளமுள்ள இந்தக் கால்வாயால் கள்ளிப்பட்டி, கொல்லப்பட்டி, வெள்ளாளபாளையம், சடையகவுண்டன்புதூர், தொப்பம்பட்டி, வரதனூர், சோழனூர், செங்குட்டைபாளையம், கிருஷ்ணராயபுரம், ஒக்கிலிபாளையம், சந்தேகவுண்டன்பாளையம், குள்ளிசெட்டிபாளையம் ஆகிய 12 கிராமங்களில் உள்ள மொத்தம் 4,756 ஏக்கர் நிலங்கள் பாசனம் பெறுகின்றன.\n🌴 நீண்ட கால பயிரான தென்னை மரங்களைக் காப்பாற்ற விவசாயிகள் இந்த உயிர் தண்ணீரைப் பயன்படுத்துகின்றனர்.\n🚧 நவம்பர் 20ஆம் தேதி காலை குரும்பபாளையம் பகிர்மான கால்வாயில் தென்னை மட்டை, குப்பை சிக்கி அடைப்பு ஏற்பட்டது. தண்ணீர் வீணாகி சாலையோரப் பாலத்தின் கீழ் குளம்போல் தேங்கியது. நீர்வளத்துறை அதிகாரிகளும் விவசாயிகளும் அடைப்பை சரிசெய்ததால் இப்போது தண்ணீர் தடையின்றிச் செல்கிறது.\n\nPollachi canal water release for irrigation 4,756 acres | Coimbatore news\n📍 பொள்ளாச்சி, கோவை மாவட்டம் | 22 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #பாசனம் #CoimbatoreNews",
+   "prompts": "A Water Resources Department official in a shirt and trousers opens the sluice gate of the Senguttaipalayam branch canal near Pollachi as irrigation water rushes into the channel, while farmers in lungis and shirts stand along the bank. The place is an open rural canal in Pollachi taluk of Coimbatore district, with a concrete-lined channel running between coconut groves and dry paddy fields, a roadside bridge in the background and a few palm trees on the horizon. Two or three farmers, seen from behind, watch the flowing water; one carries a bundle of tools over his shoulder and another holds a folded umbrella. No vehicles are needed; a single two-wheeler is parked on the embankment road. It is bright daylight with a clear sky and soft sun. Shot at eye level, 35 mm lens, wide enough to show the canal, the groves and the people together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the blocked distributary canal where coconut husks and garbage clog the flow beneath a roadside bridge, with water pooled dark and still on the concrete surface. Several coconut husks and heaps of plastic-like household garbage float and cling to the bridge pillars, while the water spreads in a shallow pond. Farmers in lungis and shirts, seen from behind and slightly away, use long bamboo poles and their hands to clear the debris. The setting is a rural roadside canal in Pollachi, with coconut trees rising in the background and a narrow tar road beside the bridge. Daylight, slightly overcast soft light. Shot at a low-to-mid angle, 35 mm lens, focusing on the blockage and the water flow beyond it. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/water-to-be-released-for-irrigation-in-pap-canal/4383165",
+   "published": "2026-11-22T17:15:02+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: numbers not found in the article: 12",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795376283/kovaiminnal/u5sfvvwebie0wwvfs054.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795376287/kovaiminnal/r8q1mts3tno8fsvmjep0.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "மேட்டுப்பாளையம்-அன்னூர் சாலையில் குடிநீர் கசிவு: 6 இடங்களில் சரி செய்யும் பணி தீவிரம்",
+   "english_headline": "Drinking water leaks on Mettupalayam-Annur road: repair work at 6 spots under way",
+   "category": "Civic Issues",
+   "location": "Mettupalayam-Annur road, Mettupalayam, Coimbatore district",
    "importance": "High",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "அரசு நிதி",
-    "loc": "கோவை மாநகராட்சி",
-    "hl1": "கோவை மாநகராட்சியில் ரூ.2,300 கோடி இழப்பு",
-    "hl2": "தணிக்கை அறிக்கையில் தகவல்",
-    "slides": [
-     {
-      "title": "எவ்வளவு இழப்பு?",
-      "lines": [
-       "கோவை மாநகராட்சியில் <b>ரூ.2,300 கோடி</b> நிதி இழப்பு",
-       "2021–26 காலகட்டத்தில் சிறப்பு தணிக்கை நடந்தது",
-       "அறிக்கை அரசிடம் சமர்ப்பிக்கப்பட்டுள்ளது"
-      ]
-     },
-     {
-      "title": "சொத்து வரியில்",
-      "lines": [
-       "சொத்து வரியில் மட்டும் <b>ரூ.2,000 கோடி</b> இழப்பு",
-       "அனுமதியில்லாத கட்டடங்களுக்கு சட்ட நடவடிக்கை இல்லாமல் வரி",
-       "வரி வசூல் செய்யாததால் பெரும் வருவாய் இழப்பு"
-      ]
-     },
-     {
-      "title": "திடக்கழிவு",
-      "lines": [
-       "திடக்கழிவு மேலாண்மையில் <b>ரூ.150 கோடி</b> இழப்பு",
-       "எல்.இ.டி. விளக்கு, கம்ப்யூட்டர் கொள்முதலில் முறைகேடு",
-       "ஆவணங்கள் இல்லாமல் பணம் செலவிடப்பட்டதாக அறிக்கை"
-      ]
-     },
-     {
-      "title": "பொறுப்பு யாருக்கு?",
-      "lines": [
-       "இழப்புக்கு அதிகாரிகளே பொறுப்பு என அறிக்கை கூறுகிறது",
-       "ஒப்பந்த நிறுவனங்களிடம் தொகையை வசூலிக்க பரிந்துரை",
-       "தொகை வசூலித்து ஈடு செய்ய வேண்டும்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோவை மாநகராட்சியில் ரூ.2,300 கோடி நிதி இழப்பு ஏற்பட்டுள்ளதாகத் தணிக்கைத் துறை கண்டறிந்துள்ளது. 2021 முதல் 2026 வரை கோவை மாநகராட்சியில் சிறப்புத் தணிக்கை நடத்தப்பட்டது. இந்த அறிக்கை அரசிடம் சமர்ப்பிக்கப்பட்டுள்ளது. சொத்து வரியில் மட்டும் ரூ.2,000 கோடி இழப்பு ஏற்பட்டுள்ளது. அனுமதியில்லாத கட்டடங்களுக்கு சட்ட நடவடிக்கை எடுக்காமல் சொத்து வரி விதிக்கப்பட்டதில் ரூ.274 கோடி இழப்பு. நீண்ட காலமாக வசூல் செய்யாத சொத்து வரியால் ரூ.82.25 கோடி வருவாய் இழப்பு. திடக்கழிவு மேலாண்மையில் ரூ.150 கோடி இழப்பு ஏற்பட்டுள்ளது. வெள்ளலூரில் திடக்கழிவு மேலாண்மைக்காக ஒப்பந்த நிறுவனத்துக்கு அதிக விலையில் பட்டியல் தயாரித்து ரூ.53 கோடி இழப்பு. எல் இ டி தெருவிளக்கு கொள்முதலிலும் முறைகேடு நடந்துள்ளது. கம்ப்யூட்டர் கொள்முதலில் டெண்டர் விதிகள் பின்பற்றப்படவில்லை. ஆவணங்கள் சரியாகப் பராமரிக்கப்படாததால் பல செலவுகளை உறுதி செய்ய முடியவில்லை. இழப்புக்கு கமிஷனர், உதவி கமிஷனர் உள்ளிட்ட அதிகாரிகளே பொறுப்பு என அறிக்கை கூறுகிறது. ஒப்பந்த நிறுவனங்களிடம் இருந்து தொகையை வசூலித்து ஈடு செய்ய வேண்டும் என பரிந்துரைக்கப்பட்டுள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🏛️ கோவை மாநகராட்சியில் ரூ.2,300 கோடி நிதி இழப்பு: தணிக்கை அறிக்கையில் அம்பலம்\n\n📰 முழு விவரம்:\n2021–26 காலகட்டத்தில் கோவை மாநகராட்சியில் சிறப்புத் தணிக்கை நடத்தப்பட்டது. சொத்து வரி, திடக்கழிவு மேலாண்மை, எல்.இ.டி. விளக்கு கொள்முதல், பராமரிப்புப் பணி உள்ளிட்ட பிரிவுகளில் மட்டும் ரூ.2,300 கோடி நிதி இழப்பு ஏற்பட்டதாக தணிக்கைத் துறை கண்டறிந்துள்ளது.\nஅ.தி.மு.க. ஆட்சியில் சென்னை, கோவை மாநகராட்சிகளில் ரூ.100 கோடிக்கு டெண்டர் முறைகேடு நடந்ததாக, முன்னாள் அமைச்சர் வேலுமணிக்கு எதிராக அறப்போர் இயக்கம் சென்னை உயர் நீதிமன்றத்தில் வழக்கு தொடர்ந்தது. இதில் ஐ.ஏ.எஸ். அதிகாரிகள் கந்தசாமி, விஜய கார்த்திகேயன் மீது வழக்கு தொடர நீதிமன்றம் அனுமதி வழங்கியது.\n🏠 சொத்து வரி: வணிக, தொழிற்சாலை, கல்வி நிறுவனங்களுக்கு குடியிருப்பு வரி விதித்ததில் ரூ.87.17 கோடி இழப்பு. வீட்டு குடிநீர் இணைப்பை வணிகப் பயன்பாட்டுக்கு வழங்கியதில் ரூ.158.31 கோடி இழப்பு. நிதிக்குழு பரிந்துரையை மீறி சொத்து வரி தள்ளுபடி செய்ததில் ரூ.34.60 கோடி இழப்பு.\n🏗️ அனுமதியில்லாத கட்டடங்களுக்கு சட்ட நடவடிக்கை இல்லாமல் வரி விதித்ததில் ரூ.274 கோடி இழப்பு. அவிநாசி சாலையில் உள்ள பிரபல மருத்துவமனை 1988 முதல் வரி கட்டவில்லை; அவர்களிடம் மட்டும் ரூ.2.4 கோடி வரி நிலுவை உள்ளது.\n📉 நீண்ட காலமாக வசூல் செய்யாத காலியிட வரியால் ரூ.136.51 கோடி இழப்பு. சொத்து வரியை யு.டி.ஐ.எஸ். சர்வரில் முறைப்படுத்தாததால் ரூ.1,194 கோடி வருவாய் இழப்பு. கிழக்கு மண்டலத்தில் 15 கட்டடங்களில் புதிய மொபைல் டவருக்கு வரி நிர்ணயிக்கப்படவில்லை.\n🗑️ திடக்கழிவு மேலாண்மை: ரூ.150 கோடி இழப்பு. வெள்ளலூரில் இரு வாகன எடைமேடைகளுக்கான விலைப் பட்டியல் அதிக மதிப்பில் தயாரிக்கப்பட்டு ரூ.53 கோடி இழப்பு. அதே நிறுவனத்துக்கு 18% ஜி.எஸ்.டி. கூடுதலாக வழங்கியதில் ரூ.26.97 கோடி இழப்பு. விதி மீறி காலநீட்டிப்பு செய்து ஒப்பந்த தொகையை விட ரூ.55 கோடி கூடுதல் செலவு.\n🔥 2024 வெள்ளலூர் குப்பை கிடங்கு தீ விபத்தின்போது பணியாளர்களுக்கு உணவு, குடிநீர் வாங்கியதற்கு ரூ.27.51 லட்சம் செலவானது. ஆவணங்களில் அளவு, விலை, ஜி.எஸ்.டி. எண் எதுவும் இல்லை; பணியாளர் பதிவேடும் பராமரிக்கப்படவில்லை.\n💡 எல்.இ.டி. தெருவிளக்கு: ஒப்பந்தப்புள்ளியை விட கூடுதல் எண்ணிக்கையில் பட்டியல் தயாரித்து ரூ.2.5 கோடி இழப்பு; ஒரு நிறுவனத்துக்கு பொருள் கொள்முதல் செய்யாமலே ரூ.9.25 கோடி வழங்கப்பட்டுள்ளது.\n💻 கம்ப்யூட்டர் கொள்முதல்: ஒரே நிறுவனத்துக்கு பெரும்பாலான ஆணைகள் வழங்கப்பட்டன; அது காகித, எழுதுபொருள் நிறுவனமாக பதிவாகியுள்ளது. விலைப்புள்ளி ஆவணங்கள் இல்லை; டெண்டர் விதிகள் பின்பற்றப்படவில்லை.\n⚖️ இழப்புக்கு கமிஷனர், உதவி கமிஷனர் உள்ளிட்ட அதிகாரிகளே பொறுப்பு என அறிக்கை கூறுகிறது. சம்பந்தப்பட்ட ஒப்பந்த நிறுவனங்களிடம் தொகையை வசூலித்து ஈடு செய்ய வேண்டும் என பரிந்துரைக்கப்பட்டுள்ளது.\n🚛 தூய்மைப் பணி வாகனங்கள்: மாநகராட்சி பதிவில் லாரி, மினி டிப்பர் என உள்ள சில வாகன எண்கள், பரிவாஹன் தளத்தில் ஸ்கூட்டர், கார், பஸ் என காட்டப்பட்டுள்ளன.\n\nCoimbatore Corporation Rs 2,300 crore loss audit report | Coimbatore news\n📍 கோவை மாநகராட்சி, கோவை மாவட்டம் | 22 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Audit",
-   "prompts": "A municipal audit officer in a plain shirt sits at a wooden table in a Coimbatore Corporation office hall, stacks of thick audit report files and loose papers spread in front of him while a clerk stands beside the desk. The setting is a government office in Coimbatore city with tube lights, grey steel almirahs filled with ledger files, a ceiling fan turning, and a row of wooden chairs along a wall; the people are seen from behind and at a distance so no faces are visible. The report files are bound in blue and brown covers, and a few pages with tables of rupee figures lie open on the desk, suggesting the Rs 2,300 crore loss finding. Daylight enters through tall windows, giving a neutral indoor light. Camera at eye level, 35 mm lens, wide enough to show the office and the desk together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a stack of bound audit report pages on a government office desk in Coimbatore Corporation, the printed tables of property tax and waste management figures visible as rows of numbers, though no readable text is shown. Beside the stack, a worn steel tiffin-style file tray and a thick ledger file lie next to a pen. Through a blurred background a waste truck and a pile of garbage can be hinted at through a window, linking the papers to the Vellalur waste site. The light is soft daylight from a window, with slight shadow on the paper. Camera is slightly high, 50 mm macro-style lens, shallow depth of field so the paper stack is sharp and the background softly blurred. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/rs-2300-crore-loss-in-coimbatore-municipal-corporation-corruption-in-everything-under-the-previous-regime-says-audit-report/4383441",
-   "published": "2026-11-22T20:01:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 82 ('நீண்ட காலமாக நிலுவையில் உள்ள சொத்து வரி வசூல் செய்யாததில் ரூ'); 1 ('கட்டுமானம் அல்லாத பணிக்கு 1 சதவீத தொழிலாளர் நலநிதி வழங்கியதி'); 3 ('கட்டுமானம் அல்லாத பணிக்கு 1 சதவீத தொழிலாளர் நலநிதி வழங்கியதி'); 36 ('கட்டுமானம் அல்லாத பணிக்கு 1 சதவீத தொழிலாளர் நலநிதி வழங்கியதி'); 8 ('மாமன்றத்தில் ஒப்புதல் வழங்கிய தொகையை விட, குறைவான தொகை நிர்ண'); 30 ('மாமன்றத்தில் ஒப்புதல் வழங்கிய தொகையை விட, குறைவான தொகை நிர்ண')",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795361868/kovaiminnal/fiz0j1wupopzcxqxfowz.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795361872/kovaiminnal/eh0fjelty13idlwfbf9k.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "வடவள்ளியில் இருசக்கர வாகனத்தில் இருந்து தவறி விழுந்த பெண் உயிரிழப்பு",
-   "english_headline": "Woman dies after falling from two-wheeler in Vadavalli, Thondamuthur",
-   "category": "Roads & Transport",
-   "location": "Vadavalli, Thondamuthur taluk, Coimbatore district",
-   "importance": "Medium",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "சாலை விபத்து",
-    "loc": "வடவள்ளி, தொண்டாமுத்தூர்",
-    "hl1": "வடவள்ளியில் பெண் உயிரிழப்பு",
-    "hl2": "இருசக்கர வாகனத்தில் இருந்து",
+    "cat": "குடிநீர் கசிவு",
+    "loc": "மேட்டுப்பாளையம்",
+    "hl1": "மேட்டுப்பாளையத்தில் குடிநீர் கசிவு சரி",
+    "hl2": "6 இடங்களில் வேலை நடக்கிறது",
     "slides": [
      {
       "title": "என்ன நடந்தது?",
       "lines": [
-       "வடவள்ளி, வி.என்.ஆர். நகர் சாவித்ரி, <b>49</b>, இருசக்கர",
-       "நேற்று (நவ. 21) இரவு, பேரூரில் இருந்து மகன் பிரகாஷுடன்",
-       "நாகராஜபுரம் அருகே நிலை தடுமாறி விழுந்தார்"
+       "மேட்டுப்பாளையம்-அன்னூர் சாலையில் குடிநீர் குழாய் உடைந்தது",
+       "லட்சக்கணக்கான லிட்டர் குடிநீர் சாலையில் தேங்கி வீணானது",
+       "35 ஆண்டுகள் பழமையான குழாய்களில் அடுத்தடுத்து கசிவு"
       ]
      },
      {
-      "title": "காயம், உயிரிழப்பு",
+      "title": "என்ன ஆபத்து?",
       "lines": [
-       "தலையில் பலத்த காயம் ஏற்பட்டது",
-       "இன்று (நவ. 22) காலை சிகிச்சை பலனின்றி உயிரிழந்தார்"
+       "சாலையில் தண்ணீர் தேங்கி, புதிய நான்கு வழிச்சாலை சேதமடையும்",
+       "பொதுமக்களின் கோரிக்கையை தொடர்ந்து நடவடிக்கை"
       ]
      },
      {
-      "title": "போலீஸ் நடவடிக்கை",
+      "title": "இப்போது என்ன?",
       "lines": [
-       "தொண்டாமுத்தூர் போலீசார் வழக்குப் பதிவு செய்து"
+       "6 இடங்களில் நீர்க்கசிவுகளை சரி செய்யும் வேலை நடக்கிறது",
+       "தமிழ்நாடு குடிநீர் வடிகால் வாரியத்தினர் பணியில்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "வடவள்ளியில் இருசக்கர வாகனத்தில் இருந்து விழுந்த பெண் சிகிச்சை பலனின்றி உயிரிழந்தார். வடவள்ளி, வி என் ஆர் நகரைச் சேர்ந்த பழனிசாமியின் மனைவி சாவித்ரி, 49 வயது. நேற்று, நவம்பர் 21ஆம் தேதி இரவு, பேரூரில் இருந்து மகன் பிரகாஷுடன் இருசக்கர வாகனத்தில் பின்னால் அமர்ந்து வீட்டுக்குச் சென்று கொண்டிருந்தார். நாகராஜபுரம் அருகே நிலை தடுமாறி, சாவித்ரி வாகனத்தில் இருந்து தவறி விழுந்தார். தலையில் பலத்த காயம் ஏற்பட்டது. இன்று, நவம்பர் 22ஆம் தேதி காலை சிகிச்சை பலனின்றி அவர் உயிரிழந்தார். தொண்டாமுத்தூர் போலீசார் வழக்குப் பதிவு செய்து விசாரித்து வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 வடவள்ளியில் இருசக்கர வாகனத்தில் இருந்து விழுந்த பெண் உயிரிழப்பு\n\n📰 முழு விவரம்:\nவடவள்ளி, வி.என்.ஆர். நகரைச் சேர்ந்த பழனிசாமியின் மனைவி சாவித்ரி (49 வயது), நேற்று (நவ. 21) இரவு பேரூரில் இருந்து மகன் பிரகாஷுடன் இருசக்கர வாகனத்தில் பின்னால் அமர்ந்து வீட்டுக்குச் சென்று கொண்டிருந்தார். நாகராஜபுரம் அருகே நிலை தடுமாறி அவர் வாகனத்தில் இருந்து தவறி விழுந்தார். தலையில் பலத்த காயம் ஏற்பட்டது. இன்று (நவ. 22) காலை சிகிச்சை பலனின்றி உயிரிழந்தார்.\n📍 இடம்: நாகராஜபுரம் அருகே, வடவள்ளி, தொண்டாமுத்தூர்\n🗓️ நாள்: நவ. 21 இரவு (விபத்து), நவ. 22 காலை (உயிரிழப்பு)\n👮 நடவடிக்கை: தொண்டாமுத்தூர் போலீசார் வழக்குப் பதிவு செய்து விசாரிக்கின்றனர்.\n\nVadavalli woman dies after falling from two-wheeler | Coimbatore news\n📍 வடவள்ளி, கோவை மாவட்டம் | 22 நவம்பர் 2026\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்.\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Vadavalli #சாலைவிபத்து #CoimbatoreNews",
-   "prompts": "A two-wheeler with a rider and a pillion passenger is parked on the side of a quiet residential road in Vadavalli, a suburban locality on the outskirts of Coimbatore city, with a police constable in khaki standing near it and examining the spot. The road is narrow, lined with compound walls, small houses and a few tall coconut palms, with a single street light glowing overhead, showing the look of a Nagarajapuram-area lane near Thondamuthur taluk. The two-wheeler is a scooter or motorcycle, its seat slightly pushed aside, with a dark helmet resting on the roadside kerb. Two men in shirts and trousers stand a little distance away, seen from behind, while a few onlookers in sarees and shirts remain far off near a gate. The time is late night and the light is warm yellow from the street lamp with a dark sky above, the air still and damp. Shot at eye level with a 35 mm lens, wide enough to show the whole road and the quiet houses, with the lamp and parked vehicle in focus. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a black two-wheeler helmet lying on the tarmac at the edge of a village-style road in Vadavalli, with a small patch of spilt dust and a dropped tiffin-carrier-style bag nearby, the only objects marking a roadside accident. The road surface is dark asphalt with faint tyre marks and a bit of loose gravel at the kerb, and a blurred compound wall and a green plant in the background identify the residential outskirts of Coimbatore. Behind the helmet a police constable's khaki boot is just visible at the frame's edge, seen from behind and out of focus. The light is the dim yellow glow of a single street lamp at night, the surroundings shadowy and calm. Shot close, at low angle, with a 35 mm lens and shallow depth of field so the helmet is sharp and the background softly blurred. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/woman-dies-after-falling-from-two-wheeler-in-vadavally/4383285",
-   "published": "2026-11-22T18:15:03+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: slide 3 must have 2-3 lines",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "reel_script": "மேட்டுப்பாளையத்தில் குடிநீர் குழாய் கசிவுகளை சரி செய்யும் பணி தீவிரமாக நடைபெறுகிறது. மேட்டுப்பாளையம்-அன்னூர் சாலையில் திருப்பூர் 2ஆம் குடிநீர் திட்டக் குழாயில் உடைப்பு ஏற்பட்டது. இதனால் லட்சக்கணக்கான லிட்டர் குடிநீர் சாலையில் தேங்கி வீணானது. இந்தக் குழாய்கள் 35 ஆண்டுகள் பழமையானவை. அடுத்தடுத்து கசிவு ஏற்படுவதால், சாலையில் தண்ணீர் தேங்கும் அபாயம் உள்ளது. புதிதாக அமைக்கப்படும் நான்கு வழிச்சாலையும் சேதமடையக்கூடும். பொதுமக்களின் கோரிக்கையை தொடர்ந்து, 6 இடங்களில் உள்ள நீர்க்கசிவுகளை சரி செய்யும் பணியில் தமிழ்நாடு குடிநீர் வடிகால் வாரியத்தினர் ஈடுபட்டுள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚰 மேட்டுப்பாளையம்-அன்னூர் சாலையில் குடிநீர் கசிவு: 6 இடங்களில் சரி செய்யும் பணி\n\n📰 முழு விவரம்:\nமேட்டுப்பாளையம்-அன்னூர் சாலையில் திருப்பூர் 2ஆம் குடிநீர் திட்டக் குழாயில் உடைப்பு ஏற்பட்டதால் லட்சக்கணக்கான லிட்டர் குடிநீர் சாலையில் தேங்கி வீணானது.\n35 ஆண்டுகள் பழமையான இந்தக் குழாய்களில் அடுத்தடுத்து கசிவு ஏற்படுகிறது.\nசாலையில் தண்ணீர் தேங்கி, புதிதாக அமைக்கப்படும் நான்கு வழிச்சாலை சேதமடையும் அபாயம் உள்ளது.\nபொதுமக்களின் கோரிக்கையை தொடர்ந்து, 6 இடங்களில் உள்ள நீர்க்கசிவுகளை சரி செய்யும் பணியில் தமிழ்நாடு குடிநீர் வடிகால் வாரியத்தினர் ஈடுபட்டுள்ளனர்.\n\n📍 இடம்: மேட்டுப்பாளையம்-அன்னூர் சாலை, மேட்டுப்பாளையம், கோவை மாவட்டம்\n👷 நடவடிக்கை: 6 இடங்களில் நீர்க்கசிவு சரி செய்யும் பணி, தமிழ்நாடு குடிநீர் வடிகால் வாரியம்\n\nMettupalayam drinking water leak repair on Annur road | Coimbatore news\n📍 மேட்டுப்பாளையம், கோவை மாவட்டம் | 23 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Mettupalayam #குடிநீர் #CoimbatoreNews",
+   "prompts": "A Tamil Nadu Water Supply and Drainage Board crew repairs a burst drinking-water pipeline on the Mettupalayam-Annur road in Mettupalayam, Coimbatore district. Workers in work clothes, seen from behind and at a distance, kneel beside an open trench in the road surface while clear water still glistens in puddles spreading across the tarmac. The setting is a wide suburban highway in the Coimbatore district foothills, with a new four-lane carriageway being laid alongside the old road, raw gravel shoulders and a stretch of freshly built divider edge. Two-wheelers and a private bus slow down at a distance, their riders watching, and a few bystanders in shirts and sarees stand on the verge. Daylight, soft overcast sky, the Western Ghats faintly visible in the far background. Shot at eye level, 35 mm, wide enough to show the road and the trench. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a leaking old pipeline on a Coimbatore district road in Mettupalayam. Rusted, aged iron-grey water pipe joints lie exposed in an open trench, with clear water seeping from a cracked coupling and pooling on the damp tarmac edge. A corporation-style workers' tool bag and a pipe wrench rest on the gravel beside the trench, and a rubber hose is laid across the wet road surface. Blurred new four-lane road edge in the background. Daylight, shallow depth of field, camera low and close, 35 mm. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/drinking-water-pipeline-leakage-rectification-work-in-full-swing/4383636",
+   "published": "2026-11-22T22:10:24+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795361891/kovaiminnal/a5qwjxglvbzm4drvbgji.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795361895/kovaiminnal/abcvauvbh6wezt0y0avk.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795376293/kovaiminnal/zx22jxnou60nxyx5zrye.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795376297/kovaiminnal/trcu7s5z3wevmj4yiyzh.jpg"
    ]
   },
   {
-   "tamil_headline": "கோவையில் செல்வ சிந்தாமணி குளம் குப்பைக்கூளமாக மாறியது",
-   "english_headline": "Selva Sinthamani lake in Coimbatore turns into a dump of plastic bottles and waste; residents warn of harm to health and wildlife",
-   "category": "Civic Issues",
-   "location": "Selva Sinthamani lake, Ward 78, Coimbatore",
+   "tamil_headline": "அன்னூர் அருகே குடிசைகளுக்கு தீ: போலீஸ் விசாரணை",
+   "english_headline": "Fire destroys four huts in Koulegoundanpudur near Annur; police investigating",
+   "category": "Crime & Safety",
+   "location": "Koulegoundanpudur, Pogalur panchayat, Annur, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "குப்பை பிரச்சனை",
-    "loc": "செல்வ சிந்தாமணி குளம், கோவை",
-    "hl1": "கோவையில் குப்பைக்கூளமாக மாறிய செல்வ",
-    "hl2": "பிளாஸ்டிக் பாட்டில், பைகள்",
+    "cat": "தீ விபத்து",
+    "loc": "அன்னூர்",
+    "hl1": "அன்னூர் அருகே குடிசைகளில் தீ விபத்து",
+    "hl2": "4 குடிசைகள் முழுவதும் கருகின",
     "slides": [
      {
-      "title": "என்ன பிரச்சனை?",
+      "title": "என்ன நடந்தது?",
       "lines": [
-       "வார்டு <b>78</b>, செல்வ சிந்தாமணி குளத்தில் குப்பை அதிகம்",
-       "பிளாஸ்டிக் பாட்டில்கள், பைகள், தேவையற்ற கழிவுகள்",
-       "குளம் மிகவும் அசுத்தமாக உள்ளது"
+       "நவ. 21 நள்ளிரவில் குடிசைகளில் தீப்பிடித்தது",
+       "பொகலூர் ஊராட்சி, கூளே கவுண்டன் புதூரில் சம்பவம்",
+       "அரசு வழங்கிய இலவச இடத்தில் குடிசைகள் இருந்தன"
       ]
      },
      {
-      "title": "என்ன பாதிப்பு?",
+      "title": "பாதிப்பு",
       "lines": [
-       "குளத்தின் நீர்நிலையும் சுற்றுப்புறமும் மாசடைந்துள்ளன",
-       "நீர்வாழ் உயிரினங்கள், பறவைகளுக்கு பாதிப்பு அபாயம்",
-       "பொதுமக்களின் ஆரோக்கியத்துக்கும் ஆபத்து"
+       "20க்கும் மேற்பட்ட குடும்பங்களின் குடிசைகள் இருந்தன",
+       "<b>4 குடிசைகள்</b> முழுவதும் கருகின",
+       "அன்னூர் தீயணைப்பு வீரர்கள் தீயை அணைக்க போராடினர்"
       ]
      },
      {
-      "title": "புகார்",
+      "title": "போலீஸ் விசாரணை",
       "lines": [
-       "நவுபல், கோவை என்பவர் இந்தப் பிரச்சனையை தெரிவித்துள்ளார்",
-       "குளத்தைச் சுத்தம் செய்ய வேண்டும் என மக்கள் கோருகின்றனர்"
+       "மர்ம நபர்கள் தீ வைத்திருக்கலாம் என மக்கள் சந்தேகம்",
+       "சிறுமுகை போலீசார் விசாரணை நடத்தி வருகின்றனர்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவை செல்வ சிந்தாமணி குளம் குப்பைக்கூளமாக மாறியுள்ளது. வார்டு 78இல் உள்ள இந்தக் குளத்தில் அதிக அளவில் பிளாஸ்டிக் பாட்டில்கள், பிளாஸ்டிக் பைகள் மற்றும் தேவையற்ற கழிவுகள் கொட்டப்பட்டுள்ளன. குளம் மிகவும் அசுத்தமான நிலையில் காணப்படுகிறது. குளத்தின் நீர்நிலையும் சுற்றுப்புறச் சூழலும் மாசடைந்துள்ளன. இதனால் நீர்வாழ் உயிரினங்கள், பறவைகள் மற்றும் பொதுமக்களின் ஆரோக்கியத்துக்கும் பாதிப்பு ஏற்படும் அபாயம் உள்ளது. கோவையைச் சேர்ந்த நவுபல் என்பவர் இந்தப் பிரச்சனையைத் தெரிவித்துள்ளார். குளத்தைச் சுத்தம் செய்ய வேண்டும் என மக்கள் கோருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🗑️ கோவை செல்வ சிந்தாமணி குளம் குப்பைக்கூளமாக மாறியது\n\n📰 முழு விவரம்:\nவார்டு எண் 78இல் உள்ள செல்வ சிந்தாமணி குளத்தில் அதிக அளவில் பிளாஸ்டிக் பாட்டில்கள், பிளாஸ்டிக் பைகள் மற்றும் தேவையற்ற கழிவுகள் கொட்டப்பட்டுள்ளன.\nகுளம் மிகவும் அசுத்தமான நிலையில் உள்ளது. குளத்தின் நீர்நிலையும் சுற்றுப்புறச் சூழலும் மாசடைந்துள்ளன.\nஇதனால் நீர்வாழ் உயிரினங்கள், பறவைகள் மற்றும் பொதுமக்களின் ஆரோக்கியத்துக்கும் பாதிப்பு ஏற்படும் அபாயம் உள்ளது.\nகோவையைச் சேர்ந்த நவுபல் என்பவர் இந்தப் பிரச்சனையைத் தெரிவித்துள்ளார்.\n\n📍 இடம்: வார்டு 78, செல்வ சிந்தாமணி குளம், கோவை\n\nஇதே நாளில் பிற பகுதி பிரச்சனைகள்:\n🕳️ இடையர்பாளையம் சாலை சேதம் (குனியமுத்தூர் - சுந்தராபுரம் சாலை)\n🚰 ஆர்.எஸ்.புரம் 73வது வார்டு, நாதன் நகர் 2வது தெருவில் சாக்கடை அடைப்பால் கழிவுநீர் தேக்கம், கொசு தொல்லை\n🗑️ எல்.ஐ.சி. காலனியில் பொது இடத்தில் குப்பை குவியல் (பொள்ளாச்சி பிரதான சாலை)\n💧 வரதராஜபுரம் வடக்கு வீதி 2இல் உடைந்த குழாயால் தண்ணீர் வீணாகிறது (வார்டு 60)\n🌙 இடிகரை மணியகாரம்பாளையம் ஜீ.ஜே.வி. நகரில் 20க்கும் மேற்பட்ட தெரு விளக்குகள் எரியவில்லை\n\nKovai Selva Sinthamani lake garbage dump | Coimbatore news\n📍 கோவை | 22 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #சுற்றுச்சூழல்",
-   "prompts": "A pile of discarded plastic bottles and plastic bags floats and lies along the murky edge of Selva Sinthamani lake in Coimbatore city, turning the water surface dirty and polluted. The lake is an open urban tank with concrete steps and grassy banks, with a few residential buildings and a row of trees visible in the background. Seen from a distance, two or three residents stand at the bank in plain shirts and trousers, one woman in a cotton saree, looking at the lake, their backs turned to the camera. A faint shimmer of morning daylight falls on the greenish water, with a few birds perched on the far edge. Shot at eye level on a 35 mm lens, wide enough to show the full stretch of the lake and the litter spread across the water. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of plastic water bottles and crumpled plastic bags caught in the dark, dirty water at the edge of the lake, with a dense mass of waste heaped on the concrete bank beside them. Dried leaves and debris are scattered among the bottles, and the murky surface shows an oily sheen. Soft natural daylight, no people in frame, the focus sharp on the plastic litter and the contaminated water. Shot at slightly high angle on a 35 mm lens, showing the texture of the waste and the polluted water clearly. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/selvachintamani-tank-is-a-garbage-dump/4383169",
-   "published": "2026-11-22T17:16:21+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 62 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block); caption misses facts of the article (put every one in 📰 முழு விவரம்): 500 ('ஹோப்ஸ் அருகில் அவிநாசி சாலையில் இருத்து 500 அடி தூரத்தில் மச')",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
+   "reel_script": "அன்னூர் அருகே குடிசைகளில் தீ விபத்து. நவம்பர் 21ஆம் தேதி நள்ளிரவில் அன்னூர் பொகலூர் ஊராட்சிக்கு உட்பட்ட கூளே கவுண்டன் புதூரில் குடிசைகளில் தீப்பிடித்தது. அரசு வழங்கிய இலவச இடத்தில் 20க்கும் மேற்பட்ட குடும்பங்களின் தற்காலிக குடிசைகள் இருந்தன. அன்னூர் தீயணைப்பு நிலைய வீரர்கள் தீயை அணைக்கப் போராடினர். எனினும் நான்கு குடிசைகள் முழுவதும் கருகின. மர்ம நபர்கள் குடிசைகளுக்கு தீ வைத்திருக்கலாம் என அப்பகுதி மக்கள் சந்தேகம் தெரிவித்துள்ளனர். சிறுமுகை போலீசார் விசாரணை நடத்தி வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 அன்னூர் அருகே குடிசைகளுக்கு தீ: 4 குடிசைகள் கருகின\n\n📰 முழு விவரம்:\nநவ. 21 நள்ளிரவில் அன்னூர் பொகலூர் ஊராட்சி, கூளே கவுண்டன் புதூரில் குடிசைகளில் தீப்பிடித்தது.\nஅரசு வழங்கிய இலவச இடத்தில் 20க்கும் மேற்பட்ட குடும்பங்களின் தற்காலிக குடிசைகள் இருந்தன.\nஅன்னூர் தீயணைப்பு நிலைய வீரர்கள் தீயை அணைக்கப் போராடினர்; எனினும் 4 குடிசைகள் முழுவதும் கருகின.\nமர்ம நபர்கள் தீ வைத்திருக்கலாம் என மக்கள் சந்தேகம் தெரிவித்துள்ளனர். சிறுமுகை போலீசார் விசாரணை நடத்தி வருகின்றனர்.\n\n📍 இடம்: கூளே கவுண்டன் புதூர், பொகலூர் ஊராட்சி, அன்னூர்\n🗓️ நாள்: நவ. 21 நள்ளிரவு\n👮 நடவடிக்கை: சிறுமுகை போலீசார் விசாரணை\n\nAnnur hut fire, police probe | Coimbatore news\n📍 அன்னூர், கோவை மாவட்டம் | 22 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Annur #CoimbatoreNews #கோவை",
+   "prompts": "A fire engine from the Annur fire station stands on a dirt track while firemen in uniform direct a hose toward four small thatched huts that are still smoking after a late-night blaze in Koulegoundanpudur village. The place is a rural plot of free government land in Pogalur panchayat, near Annur in Coimbatore district, with a row of other temporary huts with palm-leaf and tin roofs, bare earth ground, a few scattered coconut palms and dry scrub around it. Several villagers, seen from behind at a distance, stand together watching the smoke, the men in shirts and veshti and the women in cotton sarees with their heads covered, and a few police in khaki stand a little apart. The four burnt huts show blackened thatch and collapsed walls, with smoke rising in the early morning light. Time is early morning after the night fire, soft daylight with a grey sky and no rain. Camera at eye level, 35 mm, wide enough to show the huts, the fire engine and the villagers. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the blackened and collapsed thatch roof of one burnt hut in Koulegoundanpudur village, with charred palm-leaf strips, twisted tin sheets and a pile of wet ash spread on the bare earth floor. Beside it lie a few scorched household items, such as a broken clay pot and a blackened cooking vessel, and a cluster of half-burnt bamboo poles still smoking slightly. Behind the wreckage, slightly out of focus, a fireman's boot and a length of wet fire hose cross the ground, with the edge of a neighbouring intact hut visible. The time is early morning in soft daylight, with a grey sky and dust in the air. Camera is close, slightly high, 35 mm, with shallow depth of field to isolate the charred roof and ash in the foreground. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/fire-police-probe-into-huts/4383683",
+   "published": "2026-11-22T22:48:02+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795361903/kovaiminnal/rwjl6lxceib8tirvbeby.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795361907/kovaiminnal/ihaokgdljouvmazvwrhg.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795376304/kovaiminnal/kkt5cogqy7adx7sb2gao.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795376308/kovaiminnal/qgpmejjug8uyi0h0qc6a.jpg"
    ]
   }
  ]
