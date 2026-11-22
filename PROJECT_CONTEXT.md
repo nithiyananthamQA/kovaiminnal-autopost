@@ -82,34 +82,34 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
-| 2026-11-19 | `372461b` | PAGE_SETUP: power-cut page in one day - the full Salem runbook + the mistakes not to repeat (owner 19 Nov) |
-| 2026-11-19 | `a27bd57` | sync_pages: keep each page's filled Apps Script (apps_script/*.local.gs) |
-| 2026-11-19 | `f4b6cab` | pages: Salem ids (salem-bot token, own Meta app Salem Pages) + insights job (owner 19 Nov: "add insight also") |
-| 2026-11-19 | `b12856f` | pages: Salem Minnal = power cuts only, its own Apps Script + Meta app, the reference's own Salem lists (owner 19 Nov) |
-| 2026-11-19 | `18cc826` | powercut: notices written |
-| 2026-11-19 | `fa2b0a0` | powercut: notices written |
-| 2026-11-19 | `5acd4ca` | pick: written and posted |
-| 2026-11-19 | `de5ee94` | facebook RN-146 |
-| 2026-11-19 | `8142d02` | pick: picked news saved |
-| 2026-11-19 | `d1a7b13` | pick: picked news saved |
-| 2026-11-19 | `3ab19f2` | pick: list sent |
-| 2026-11-19 | `7ff01c8` | powercut: notices written |
-| 2026-11-19 | `9bb09c0` | comments: normal comments recorded (not e-mailed) |
-| 2026-11-19 | `31513de` | voice: free Anbu reads every reel, ElevenLabs off and its key removed (owner 19 Nov: no cost for voice) |
-| 2026-11-19 | `7f4dd93` | powercut: notices written |
-| 2026-11-19 | `a73d9f9` | powercut: notices written |
-| 2026-11-19 | `556449d` | comments: normal comments recorded (not e-mailed) |
-| 2026-11-19 | `e611032` | facebook RN-145 |
-| 2026-11-19 | `f1ffc99` | pick: written and posted |
-| 2026-11-19 | `4b95ea7` | powercut: notices written |
-| 2026-11-19 | `a5a00c4` | facebook RN-143 |
-| 2026-11-19 | `b7cad9d` | Worker schedule without rasipalan |
-| 2026-11-19 | `0a18c57` | No rasipalan post (owner 19 Nov: 'that rasipalan news we dont need') |
-| 2026-11-19 | `19b5830` | Same-cut check: the page's own city name never makes two power cuts one (Chennai: 'சென்னை' is in every notice) |
-| 2026-11-19 | `6dcd00c` | The same power cut from a second paper is a duplicate: same cut day + the same areas in the script (owner 19 Nov: 'we need to block like this') |
-| 2026-11-19 | `05262af` | facebook RN-144 |
-| 2026-11-19 | `1d4f617` | powercut: notices written |
-| 2026-11-19 | `bbcf95e` | pick: picked news saved |
-| 2026-11-19 | `3e0c967` | pick: picked news saved |
-| 2026-11-19 | `460001c` | pick: list sent |
+| 2026-11-22 | `825e366` | Never நாளை alone: the date goes with it in the voice, caption, headline and screen lines (owner 22 Nov, viewer comment) |
+| 2026-11-22 | `c0b949c` | facebook RN-241 |
+| 2026-11-22 | `e9c2606` | powercut: notices written |
+| 2026-11-22 | `867d753` | pick: written and posted |
+| 2026-11-22 | `22b9603` | powercut: notices written |
+| 2026-11-22 | `3a816a2` | comments: normal comments recorded (not e-mailed) |
+| 2026-11-22 | `bcaebb2` | powercut: notices written |
+| 2026-11-22 | `bc1c15d` | facebook RN-240 |
+| 2026-11-22 | `ac82c46` | pick: picked news saved |
+| 2026-11-22 | `0ecc39a` | pick: picked news saved |
+| 2026-11-22 | `213c841` | pick: list sent |
+| 2026-11-22 | `a153598` | powercut: notices written |
+| 2026-11-22 | `b379e56` | powercut: notices written |
+| 2026-11-22 | `e47e6ad` | powercut: notices written |
+| 2026-11-22 | `bdc7293` | pick: written and posted |
+| 2026-11-22 | `6197dc4` | powercut: notices written |
+| 2026-11-22 | `11c2205` | facebook RN-236 |
+| 2026-11-22 | `5db23e3` | comments: normal comments recorded (not e-mailed) |
+| 2026-11-22 | `34e5b72` | facebook RN-237 |
+| 2026-11-22 | `51e0159` | facebook RN-234 |
+| 2026-11-22 | `165e5ee` | facebook RN-233 |
+| 2026-11-22 | `07211b7` | powercut: notices written |
+| 2026-11-22 | `79f2c06` | facebook RN-235 |
+| 2026-11-22 | `6c1262a` | goldrate posted |
+| 2026-11-22 | `4dcb227` | pick: picked news saved |
+| 2026-11-22 | `bf9afbc` | pick: picked news saved |
+| 2026-11-22 | `78204d1` | pick: list sent |
+| 2026-11-22 | `9600ab7` | pick: written and posted |
+| 2026-11-22 | `d8ae504` | facebook RN-228 |
+| 2026-11-22 | `9137c16` | facebook RN-231 |
 <!-- recent-changes:end -->
