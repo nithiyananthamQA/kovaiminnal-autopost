@@ -114,7 +114,9 @@ def write(art, today):
                 break
     if best is None:
         raise RuntimeError("no usable answer from the models")
-    return proofread(best, art)
+    d, model, errs, att = proofread(best, art)
+    import daydate      # owner 22 Nov: never நாளை alone - the date goes with it (people watch the reel later)
+    return daydate.add_dates(d), model, errs, att
 
 
 # owner 17 Nov (ours): names as the newspaper gives them ("if newspaper do then post that"), but the independent fact-check reports

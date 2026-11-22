@@ -155,6 +155,10 @@ e-mail tag KOVAIMINNAL. Never "360".
   posted wrongly): extra Tiruppur town names in allnews.OTHER_PLACES / OTHER_EN and the notice-text check in powercut.check.
   The reference refuses Tiruppur / Erode edition pages (aba8a65) but not this case.
 
+- Never "நாளை" alone (owner 22 Nov, a viewer's comment: people watch the reel later). research_free/daydate.py adds the date to every
+  நாளை / நாளை மறுநாள் of the finished draft (run.write, after the checks): voice "நாளை, நவம்பர் 23ஆம் தேதி,", caption and headline
+  "நாளை (நவம்பர் 23)", screen lines "நாளை (நவ.23)" or only "நவ.23" when the line is full. A நாளை that already has a date is left alone.
+
 ## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 
 - Chennai's own places (owner 18 Nov: "chennai is the most populated city ... add even more small areas", suburbs yes):
