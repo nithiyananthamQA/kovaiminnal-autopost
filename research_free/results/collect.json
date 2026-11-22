@@ -3,11 +3,11 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/medical-devices-expo-medicon-2026-concludes-today/4382328",
-  "manual link added: https://www.maalaimalar.com/news/tamilnadu/vaiko-says-i-am-happy-to-be-criticized-as-the-vadivelu-of-politics",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/aging-joint-pain-and-muscle-weakness/4382178",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/book-i-m-reading-silent-conversation-with-the-mind/4382180",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/your-toothbrush-should-always-be-brushed/4382181",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/suresh-raghavan-s-hand-gives-life-to-endangered-rare-animals/4382182",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/we-buy-books-for-money-but-don-t-take-the-time-to-read/4382188",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/commemorative-lecture-of-the-founder-of-avinashilingam/4382189",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/sanitation-workers-protest-demanding-42000-monthly-salaries-rs/4382190",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/with-a-timely-check-up-it-s-easy-to-keep-sugar-under-control/4382202",
   "candidate filter: collected=5",
   "to write: 5 Coimbatore district candidates (max 5 stories)",
   "round: top 5 of 5 candidates",
@@ -17,13 +17,13 @@
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
-  "try (N) manual=True: https://www.maalaimalar.com/news/tamilnadu/vaiko-says-i-am-h",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 10})",
-  "candidate loop ended: left 0, tried={'N': 5}, done={'N': 5}, time left 77 min",
+  "candidate loop ended: left 0, tried={'N': 5}, done={'N': 5}, time left 78 min",
   "filed: 5 Coimbatore district stories (target 5), reels only",
   "queue: 0 news waiting to be written",
   "All News sheet: {\"ok\":true,\"added\":5,\"updated\":0}"
@@ -33,12 +33,12 @@
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
@@ -47,61 +47,28 @@
   "dead for this round: groq/openai/gpt-oss-120b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "dead for this round: groq/openai/gpt-oss-120b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok gemini/gemini-3-flash-preview (12s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok groq/qwen/qwen3.8-27b (0s)",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "ok groq/qwen/qwen3.8-27b (3s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "dead for this round: groq/qwen/qwen3.8-27b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "ok groq/qwen/qwen3.8-27b (1s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "ok groq/qwen/qwen3.8-27b (3s)",
+  "dead for this round: groq/qwen/qwen3.8-27b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
@@ -111,6 +78,28 @@
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
@@ -118,17 +107,71 @@
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "மனதோடு ஒரு சிட்டிங்: மனதுடன் பேசும் வழிகாட்டி நூல்",
-   "english_headline": "Coimbatore writer Somu Valliappan's book 'Manathodu Oru Sitting' on understanding the mind, reviewed by poet Mythili Yogaraj",
+   "tamil_headline": "மாத சம்பளம் ரூ.42,000 தர கோரி தூய்மை பணியாளர் ஆர்ப்பாட்டம்",
+   "english_headline": "Coimbatore sanitation workers protest at Kuniyamuthur demanding ₹42,000 monthly wage and permanent jobs",
+   "category": "Labour & Workers",
+   "location": "Kuniyamuthur, Coimbatore city, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "தொழிலாளர் நலன்",
+    "loc": "குனியமுத்தூர், கோவை",
+    "hl1": "குனியமுத்தூரில் தூய்மை பணியாளர்கள்",
+    "hl2": "மாத ஊதியம் <b>ரூ.42,000</b>",
+    "slides": [
+     {
+      "title": "என்ன நடந்தது?",
+      "lines": [
+       "பணி நிரந்தரம் கோரி தூய்மை பணியாளர்கள் ஆர்ப்பாட்டம்",
+       "குனியமுத்தூர் இடையர்பாளையம் பிரிவில் நடைபெற்றது",
+       "ஏ.ஐ.டி.யு.சி. சங்கத்தினர் ஏற்பாடு செய்தனர்"
+      ]
+     },
+     {
+      "title": "முக்கிய",
+      "lines": [
+       "அனைவரையும் பணி நிரந்தரம் செய்ய வேண்டும்",
+       "குறைந்தபட்ச ஊதியம் மாதம் <b>ரூ.42,000</b>",
+       "அவுட்சோர்சிங் முறையை ரத்து செய்ய வேண்டும்"
+      ]
+     },
+     {
+      "title": "யார் பேசினர்?",
+      "lines": [
+       "மாவட்டத் தலைவர் சந்திரசேகரன் தலைமை வகித்தார்",
+       "மாநில செயலாளர் செல்வராஜ் பேசினார்",
+       "கோவை லேபர் யூனியன் செயலாளர் பாலகிருஷ்ணன் பேசினார்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "குனியமுத்தூரில் தூய்மை பணியாளர்கள் மாத ஊதியம் ரூ.42,000 வழங்கக் கோரி ஆர்ப்பாட்டம் செய்தனர். இந்த ஆர்ப்பாட்டம் குனியமுத்தூர் இடையர்பாளையம் பிரிவில் நடைபெற்றது. பணி நிரந்தரம் உள்ளிட்ட கோரிக்கைகளை வலியுறுத்தி ஏ ஐ டி யு சி சங்கத்தினர் இதில் பங்கேற்றனர். மாவட்டத் தலைவர் சந்திரசேகரன் தலைமை வகித்தார். மாநில செயலாளர் செல்வராஜ் உரையாற்றினார். அனைத்து தூய்மை பணியாளர்களையும் பணி நிரந்தரம் செய்ய வேண்டும் என்று அவர் வலியுறுத்தினார். குறைந்தபட்ச ஊதியமாக மாதம் ரூ.42,000 வழங்க வேண்டும் என்றும் கோரினார். அவுட்சோர்சிங் முறையை ரத்து செய்ய வேண்டும் என்றும் தெரிவித்தார். கோவை லேபர் யூனியன் செயலாளர் பாலகிருஷ்ணன், கட்டட தொழிலாளர் சங்கத் தலைவர் நாராயணன் ஆகியோரும் பேசினர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "👷 குனியமுத்தூரில் தூய்மை பணியாளர்கள் ஆர்ப்பாட்டம்: மாத ஊதியம் ரூ.42,000 கோரிக்கை\n\n📰 முழு விவரம்:\nபணி நிரந்தரம் உள்ளிட்ட கோரிக்கைகளை வலியுறுத்தி ஏ.ஐ.டி.யு.சி. சங்கத் தூய்மை பணியாளர்கள் குனியமுத்தூர் இடையர்பாளையம் பிரிவில் ஆர்ப்பாட்டம் செய்தனர்.\nமாவட்டத் தலைவர் சந்திரசேகரன் தலைமை வகித்தார். மாநில செயலாளர் செல்வராஜ், அனைத்து தூய்மை பணியாளர்களையும் பணி நிரந்தரம் செய்ய வேண்டும் என வலியுறுத்தினார்.\nகுறைந்தபட்ச ஊதியமாக மாதம் ரூ.42,000 வழங்க வேண்டும்; அவுட்சோர்சிங் முறையை ரத்து செய்ய வேண்டும் என்றும் கோரிக்கை வைக்கப்பட்டது.\nகோவை லேபர் யூனியன் செயலாளர் பாலகிருஷ்ணன், கட்டட தொழிலாளர் சங்கத் தலைவர் நாராயணன் ஆகியோரும் பேசினர்.\n\nCoimbatore sanitation workers protest Kuniyamuthur | Coimbatore news\n📍 குனியமுத்தூர், கோவை | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Kuniyamuthur #தூய்மைப்பணியாளர் #CoimbatoreNews",
+   "prompts": "A group of sanitation workers in work clothes stands gathered at a road junction in Kuniyamuthur, Coimbatore, holding up placards and a red union flag as they protest for permanent jobs and a monthly wage of Rs 42,000. The place is a busy city junction with two-wheelers, a private bus and an autorickshaw waiting at the signal, shop fronts lining the road and a concrete flyover pillar in the background. Men and women in shirts, veshti and sarees stand close together, most seen from behind or from a distance, with one speaker standing on a low platform raised above the crowd. Daylight, slightly overcast sky, a clear morning feel. Eye-level camera at 35 mm, wide enough to show the junction, the crowd and the traffic together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a row of placards and a union flag held up by workers at the protest, with the handwritten demand for permanent jobs and a Rs 42,000 minimum wage implied on the boards, though no readable text is shown. Behind the placards, the blurred roadside of Idayarpalayam junction shows a two-wheeler and a town bus passing slowly, and a pile of collected sweeping brooms and a dustbin lies at the edge of the pavement as a symbol of the sanitation work. Daylight, hard sun on the placards. Camera at slightly high angle, 35 mm, shallow focus on the boards with the crowd softly blurred behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/sanitation-workers-protest-demanding-42000-monthly-salaries-rs/4382190",
+   "published": "2026-11-21T15:04:27+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 0 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320083/kovaiminnal/gra2b4uba54ochz20ysi.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320088/kovaiminnal/pfi4pnrx6nhsvrer9ofi.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "அவினாசிலிங்கம் நிறுவனர் நினைவு சொற்பொழிவு: அறநெறி சார்ந்த ஒழுக்கக் கல்வி அவசியம்",
+   "english_headline": "Avinashilingam founder's 35th memorial lecture stresses moral education in Coimbatore",
    "category": "Education",
    "location": "Coimbatore city, Coimbatore district",
    "importance": "Low",
@@ -136,295 +179,230 @@
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "நூல் அறிமுகம்",
+    "cat": "கல்வி",
     "loc": "கோவை",
-    "hl1": "மனதோடு ஒரு சிட்டிங்: மனதுடன் பேசுதல்",
-    "hl2": "கவிஞர் மைதிலி யோகராஜ்",
+    "hl1": "கோவை: அவினாசிலிங்கம் நினைவு சொற்பொழிவு",
+    "hl2": "35வது ஆண்டு நினைவு நாள்",
     "slides": [
      {
-      "title": "என்ன நூல்?",
+      "title": "என்ன நிகழ்ச்சி?",
       "lines": [
-       "எழுத்தாளர் சோம.வள்ளியப்பன் எழுதிய நூல்",
-       "நூல் பெயர்: 'மனதோடு ஒரு சிட்டிங்'",
-       "கவிஞர் மைதிலி யோகராஜ் வாசிப்பு அனுபவம்"
+       "அவினாசிலிங்கம் கல்வி அறக்கட்டளை சார்பில் <b>35வது</b> ஆண்டு",
+       "தலைப்பு: 'அறநெறி சார்ந்த ஒழுக்கக் கல்வி அவசியம்'",
+       "நிறுவன வளாகத்தில் நடைபெற்றது"
       ]
      },
      {
-      "title": "நூல் சொல்வது",
+      "title": "சிறப்புரை",
       "lines": [
-       "மனம் முடிவுகள், செயல்களில் பங்கு வகிக்கிறது",
-       "மனதை புரிந்துகொள்ள நடைமுறை வழிகள்",
-       "மனத்தை நாமே சுத்தப்படுத்த வேண்டும்"
+       "பேரூர் ஆதினம் சாந்தலிங்க மருதாச்சல அடிகளார் சிறப்புரை",
+       "தைரியம், விடாமுயற்சி, தியாகம், அன்பு, சேவை ஆகியவை முக்கியம்",
+       "அறிவுக் கல்வியால் அறநெறி, இறைநெறியில் தெளிவு கிடைக்கும்"
       ]
      },
      {
-      "title": "யாருக்கு உதவும்?",
+      "title": "பங்கேற்பாளர்கள்",
       "lines": [
-       "அன்றாட வாழ்க்கையுடன் இணைத்து விளக்குகிறது",
-       "தனக்காகவும் நேரம் ஒதுக்க வேண்டும்",
-       "தன்னம்பிக்கை, தெளிவு, நிம்மதி பற்றி"
+       "நிர்வாக அறங்காவலர் மீனாட்சி சுந்தரம் பங்கேற்பு",
+       "துணை நிர்வாக அறங்காவலர் கவுரி ராமகிருஷ்ணன் பங்கேற்பு",
+       "பலரும் நிகழ்ச்சியில் கலந்துகொண்டனர்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "மனதோடு ஒரு சிட்டிங் என்ற நூல் மனதை புரிந்துகொள்ள வழிகாட்டுகிறது. எழுத்தாளர் சோம.வள்ளியப்பன் எழுதிய இந்த நூல் குறித்து கவிஞர் மைதிலி யோகராஜ் தனது வாசிப்பு அனுபவத்தைப் பகிர்ந்துள்ளார். மனிதனின் உண்மையான போராட்டம் அவனுடைய மனதுடன்தான் நடைபெறுகிறது என்று இந்த நூல் சொல்கிறது. மேலும், மனம் நம் முடிவுகள், செயல்கள், உறவுகளில் முக்கியப் பங்கு வகிக்கிறது என்பதை இந்நூல் உணர்த்துகிறது. கடினமான கோட்பாடுகள் இல்லாமல், அன்றாட வாழ்க்கையுடன் தொடர்புபடுத்தி மனத்தை விளக்குகிறது. இதனால், பிறரின் குறைகளை ஆராய்வதற்கு முன், நம் எண்ணங்களையும் செயல்களையும் கவனிக்க வேண்டும் என்று வலியுறுத்துகிறது. மனதை நமக்கு சாதகமாகப் பயன்படுத்துவது எப்படி என்பதையும் சிந்திக்க வைக்கிறது. இந்நிலையில், மனிதன் பிறருக்காக ஒதுக்கும் நேரத்தில் சிறிதளவாவது தனக்காகவும் ஒதுக்க வேண்டும் என்பதையும் இந்நூல் விளக்குகிறது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "📖 மனதோடு ஒரு சிட்டிங்: மனதை புரிந்துகொள்ள வழிகாட்டும் நூல்\n\n📰 முழு விவரம்:\nஎழுத்தாளர் சோம.வள்ளியப்பன் எழுதிய 'மனதோடு ஒரு சிட்டிங்' நூல் குறித்து கவிஞர் மைதிலி யோகராஜ் தனது வாசிப்பு அனுபவங்களைப் பகிர்ந்துள்ளார். மனிதனின் உண்மையான போராட்டம் வெளி உலகத்தோடு மட்டுமல்ல, அவனுடைய மனதுடனும்தான் நிகழ்கிறது என்று நூல் சொல்கிறது. மனம் ஏன் இப்படிச் செயல்படுகிறது, எண்ணங்களுக்கும் செயல்களுக்கும் இடையே என்ன தொடர்பு உள்ளது என்ற கேள்விகளை எழுப்பி சிந்திக்க வைக்கிறது.\n🧠 மனம் வெறும் எண்ணங்களின் தொகுப்பு அல்ல; முடிவுகள், செயல்கள், உறவுகளிலும் முக்கியப் பங்கு வகிக்கிறது.\n📚 கடினமான கோட்பாடுகள் இல்லாமல், அன்றாட வாழ்க்கையுடன் இணைத்து மனதை விளக்குகிறது.\n🧘 மனத்தை நாமே சுத்தப்படுத்திக் கொண்டே இருக்க வேண்டும் என வலியுறுத்துகிறது.\n⏳ தனக்காகவும், தன் மனதுக்காகவும் சிறிது நேரம் ஒதுக்க வேண்டும் என்பதை விளக்குகிறது.\n\nManathodu Oru Sitting book review Coimbatore | Kovai news\n📍 கோவை | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #கோவை #CoimbatoreNews #Book",
-   "prompts": "A poet sits at a small table in a book-review meeting hall in Coimbatore city, holding up a copy of the book 'Manathodu Oru Sitting' while speaking to a seated audience of readers, many of them students and men in shirts and women in sarees, arranged in rows of plastic chairs facing a simple wooden stage with a microphone. The hall has white walls, tube lights and a stack of books on a table beside the speaker. Seen from the back of the audience at eye level, the speaker is shown from the side and slightly blurred, with a few audience members listening attentively, some taking notes in notebooks. The light is bright indoor fluorescent with daylight from open windows, the mood calm and reflective. Camera: 35 mm, eye level, wide enough to show the whole hall and audience. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up on a table in a Coimbatore city book-review hall where a copy of the book 'Manathodu Oru Sitting' lies open beside a glass of water, a pen and a notebook. The book's cover and pages are the central focus, with a few other books stacked behind it and a small microphone resting on the table edge. Soft indoor light falls across the pages, showing a quiet, thoughtful atmosphere. In the blurred background, a few audience members' shoulders and chairs are visible, seen from behind. No readable text is shown on the cover. Camera: 35 mm, shallow focus, slightly high angle over the table. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/book-i-m-reading-silent-conversation-with-the-mind/4382180",
-   "published": "2026-11-21T13:22:26+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b) - NOT CLEAN, held from posting - problems: reel_script has 89 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block); hl1 (the first headline on screen) must name the place 'கோவை', e.g. 'கோவை: ...' or 'கோவை-இல் ...' - viewers share news of their own area",
-   "note": "free-model draft anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b, 13 attempt(s), 2 validator problem(s)",
+   "reel_script": "கோவையில் அவினாசிலிங்கம் நினைவு சொற்பொழிவில் அறநெறிக் கல்வியின் அவசியம் வலியுறுத்தப்பட்டது. அவினாசிலிங்கம் கல்வி அறக்கட்டளை நிறுவனர் பத்மபூஷன் அவினாசிலிங்கத்தின் 35வது ஆண்டு நினைவு சொற்பொழிவு நிறுவன வளாகத்தில் நடைபெற்றது. அறநெறி சார்ந்த ஒழுக்கக் கல்வி அவசியம் என்பது இதன் தலைப்பு. சிறப்பு விருந்தினராகப் பேரூர் ஆதினம் சாந்தலிங்க மருதாச்சல அடிகளார் சொற்பொழிவாற்றினார். தைரியம், விடாமுயற்சி, தியாகம், அன்பு, சேவை ஆகியவற்றைக் கடமையாகக் கொண்டு கல்வியை வளர்த்தவர் அவினாசிலிங்கம் என்று அவர் பாராட்டினார். அறநெறி, இறைநெறி இரண்டிலும் தெளிவு பெற அறிவுக் கல்வி அவசியம் என்றும் அவர் கூறினார். நிர்வாக அறங்காவலர் மீனாட்சி சுந்தரம், துணை நிர்வாக அறங்காவலர் கவுரி ராமகிருஷ்ணன் உள்ளிட்ட பலர் நிகழ்ச்சியில் பங்கேற்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🎓 கோவை: அவினாசிலிங்கம் நினைவு சொற்பொழிவில் அறநெறிக் கல்விக்கு வலியுறுத்தல்\n\n📰 முழு விவரம்:\nஅவினாசிலிங்கம் கல்வி அறக்கட்டளை நிறுவனர் பத்மபூஷன் அவினாசிலிங்கத்தின் 35வது ஆண்டு நினைவு சொற்பொழிவு நிறுவன வளாகத்தில் நடைபெற்றது. அறநெறி சார்ந்த ஒழுக்கக் கல்வி அவசியம் என்பது தலைப்பு. பேரூர் ஆதினம் சாந்தலிங்க மருதாச்சல அடிகளார் சிறப்பு விருந்தினராகப் பங்கேற்று உரையாற்றினார். அவினாசிலிங்கம் எழுத்தறிவுக் கொள்கையின் மூலம் கல்வியை வளர்த்தவர் என்று அவர் பாராட்டினார். அறநெறி, இறைநெறியில் தெளிவு பெற அறிவுக் கல்வி அவசியம் என்றும் வலியுறுத்தினார். நிர்வாக அறங்காவலர் மீனாட்சி சுந்தரம், துணை நிர்வாக அறங்காவலர் கவுரி ராமகிருஷ்ணன் உள்ளிட்ட பலர் பங்கேற்றனர்.\n\nAvinashilingam memorial lecture on moral education | Coimbatore news\n📍 கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #கோவை #கல்வி #CoimbatoreNews",
+   "prompts": "A seated audience of students and staff in a campus auditorium in Coimbatore city listens to a memorial lecture on moral education. On the stage, a saffron-clad seer and trust administrators sit behind a wooden lectern with a microphone, and a garlanded portrait of the founder, Padma Bhushan Avinashilingam, is placed on a raised stand beside them. Rows of chairs fill the hall, with people in Tamil Nadu school-style uniforms and men in shirts and veshti, seen from behind and from a distance. Overhead ceiling fans, pillars and a banner-free stage wall frame the scene. Daylight from tall windows lights the hall evenly. Camera at eye level, 35 mm, wide enough to show the stage, the audience and the portrait together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a garlanded framed portrait of the founder placed on a wooden stand beside a brass lamp and a small bouquet of flowers on a stage in the campus hall. Behind it, slightly blurred, a saffron-clad seer's shoulder and a microphone stand on a lectern. The frame is kept tight on the objects, with the hall's pillars and soft daylight in the background. No readable text is visible. Camera at slightly high angle, 50 mm, shallow depth of field to isolate the portrait and lamp. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/commemorative-lecture-of-the-founder-of-avinashilingam/4382189",
+   "published": "2026-11-21T15:00:30+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795317687/kovaiminnal/sqyjoi8gfsl9o8devs4s.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795317690/kovaiminnal/si9njnezfdzj7kfflciu.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320099/kovaiminnal/lmcm4gxsknrlidtjmjoe.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320103/kovaiminnal/cgjcbyslh2duael2gi2r.jpg"
    ]
   },
   {
-   "tamil_headline": "முதியவர்களின் மூட்டுவலி, தசை பலவீனம்: டாக்டர் கூறும் தீர்வு",
-   "english_headline": "Coimbatore doctor explains why elderly walk slowly: knee wear and weak muscles, with food and exercise remedies",
+   "tamil_headline": "தக்க நேர பரிசோதனையால் சர்க்கரை பாதிப்பை கட்டுக்குள் வைப்பது சுலபமே!",
+   "english_headline": "Timely testing makes diabetes easier to control, say KMCH doctors; 43% of 8.98 crore Indians with diabetes don't know they have it",
    "category": "Health",
-   "location": "Coimbatore city, Coimbatore district",
+   "location": "Coimbatore, Coimbatore district",
    "importance": "Medium",
    "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "ஆரோக்கியம்",
+    "cat": "சர்க்கரை நோய்",
     "loc": "கோவை",
-    "hl1": "கோவை: முதியவர்கள் மெதுவாக நடப்பது ஏன்?",
-    "hl2": "மூட்டுவலி, தசை பலவீனமே",
+    "hl1": "சர்க்கரை பாதிப்பு: தக்க நேர பரிசோதனை",
+    "hl2": "43% பேருக்கு தெரியாமலே",
     "slides": [
      {
-      "title": "காரணங்கள்",
+      "title": "எத்தனை பேர்?",
       "lines": [
-       "வயதானவர்கள் சிறிது தூரம் நடக்கவும் சிரமப்படுகின்றனர்",
-       "மூட்டுகளின் தேய்மானத்தால் கால்கள் வளையத் தொடங்கும்",
-       "தசைகள் வலுவிழப்பதால் கால்களை நேராக எடுத்து வைக்க முடியாது"
+       "இந்தியாவில் <b>8.98 கோடி</b> பேருக்கு சர்க்கரை பாதிப்பு உள்ளது",
+       "இதில் <b>43 சதவீதம்</b> பேருக்கு பாதிப்பு தெரியாது",
+       "கே.எம்.சி.எச். மருத்துவர்கள் தகவல்"
       ]
      },
      {
-      "title": "உணவு தீர்வு",
+      "title": "பாதிப்பு ஏற்படும்",
       "lines": [
-       "வாரம் ஒருமுறை பிரண்டையை துவையல் அல்லது உணவில் சேர்க்கலாம்",
-       "முருங்கை கீரை, ராகி போன்ற சிறுதானியங்கள் நல்லது",
-       "பனங்கிழங்கு மூட்டுகளுக்கு வலிமை தரும்"
+       "உணவிலிருந்து கிடைக்கும் குளூக்கோஸ் உடலுக்கு ஆற்றல் தரும்",
+       "கணைய இன்சுலின் குளூக்கோஸை பயன்படுத்த உதவும்",
+       "இன்சுலின் குறைந்தால் ரத்த சர்க்கரை அதிகரிக்கும்"
       ]
      },
      {
-      "title": "பயிற்சி",
+      "title": "முக்கிய காரணங்கள்",
       "lines": [
-       "தரையில் கால்களை நீட்டி அமர்ந்து முட்டியை கீழ்நோக்கி",
-       "இதை தினமும் 10 முறை செய்ய வேண்டும்",
-       "மாத்திரைகள் தற்காலிகம்; தசை வலுவே நிரந்தரத் தீர்வு"
+       "பரம்பரை, உடல் பருமன், உடற்பயிற்சியின்மை",
+       "அதிக கலோரி உணவு, சர்க்கரை பானங்கள் அதிகம் குடிப்பது",
+       "குடும்பத்தில் பாதிப்பு இருந்தால் வாய்ப்பு அதிகம்"
+      ]
+     },
+     {
+      "title": "தடுக்கும் வழிகள்",
+      "lines": [
+       "தினமும் <b>30 நிமிடங்கள்</b> நடைப்பயிற்சி செய்யுங்கள்",
+       "உணவுக்குப் பின் <b>10 நிமிடங்கள்</b> மெதுவாக நடங்கள்",
+       "புகைப்பிடிப்பதை தவிர்த்து, காய்கறி, பழங்கள் சாப்பிடுங்கள்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "வயதானவர்கள் சிறிது தூரம் நடக்கவும் மூட்டுவலியால் சிரமப்படுகின்றனர். ஓய்வு பெற்ற அரசு மருத்துவமனை முடநீக்கியல் மற்றும் எலும்பியல் துறை தலைவர் டாக்டர் வெற்றிவேல்செழியன் காரணங்களை விளக்கினார். முதல் காரணம், வயதாகும்போது மூட்டுகளில் ஏற்படும் தேய்மானம். இதனால் கால்கள் சற்று வளையத் தொடங்கும். இரண்டாவது காரணம், தசை பலவீனம். இடுப்பு மற்றும் முதுகு பகுதி தசைகளின் பலம் குறையும்போது, கால்களை நேராக முன்னோக்கி எடுத்து வைக்க முடியாது. மூட்டு மாற்று அறுவை சிகிச்சைக்குப் பிறகும் தசை பலம் இல்லாவிட்டால் நடப்பதில் சிரமம் நீடிக்கும். வாரம் ஒருமுறை பிரண்டையை துவையலாகவோ உணவிலோ சேர்ப்பது எலும்புகளுக்கு நல்ல பலம் தரும். முருங்கை கீரை, ராகி போன்ற சிறுதானியங்களையும் உணவில் சேர்க்க வேண்டும். மாத்திரைகள் தற்காலிகத் தீர்வுதான். தரையில் கால்களை நீட்டி அமர்ந்து முட்டியை கீழ்நோக்கி அழுத்தும் பயிற்சியை தினமும் 10 முறை செய்யலாம். இதனால் ரத்த ஓட்டம் அதிகரித்து வலி குறையும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🦵 முதியவர்கள் மெதுவாக நடப்பதற்கு மூட்டுவலியும் தசை பலவீனமும் காரணம்\n\n📰 முழு விவரம்:\nகோவையில் வயதானவர்கள் சிறிது தூரம் செல்லவும் மெதுவாக, சிறிய அடிகளாக நடக்கின்றனர். ஓய்வு பெற்ற அரசு மருத்துவமனை முடநீக்கியல் மற்றும் எலும்பியல் துறை தலைவர் டாக்டர் வெற்றிவேல்செழியன் இதற்கான காரணங்களை விளக்கினார்.\nமுதல் காரணம், வயதாகும்போது மூட்டுகளில் ஏற்படும் தேய்மானம். கால்கள் நேராக இல்லாமல் வளையத் தொடங்கும்.\nஇரண்டாவது காரணம், தசை பலவீனம். இடுப்பு, முதுகு தசைகள் வலுவிழந்தால் கால்களை நேராக எடுத்து வைக்க முடியாது.\n🥗 உணவு: வாரம் ஒருமுறை பிரண்டை துவையல், முருங்கை கீரை, ராகி போன்ற சிறுதானியங்கள், சீசனில் பனங்கிழங்கு.\n🧘 பயிற்சி: தரையில் கால்களை நீட்டி அமர்ந்து, முட்டியை கீழ்நோக்கி 10 முறை அழுத்தலாம். இதனால் ரத்த ஓட்டம் அதிகரித்து வலி கணிசமாக குறையும்.\n💊 மாத்திரைகள் தற்காலிக தீர்வுதான்; தசை வலுப்படுத்துவதே நிரந்தரத் தீர்வு.\n\nCoimbatore elderly knee pain and weak muscles, doctor advice | Coimbatore health news\n📍 கோவை | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #ஆரோக்கியம்",
-   "prompts": "An elderly woman in a cotton saree walks slowly with small careful steps, leaning on a wooden walking stick, along a clean tiled corridor of a Coimbatore city government hospital in daylight. Seen from slightly behind and at a distance, her knees are slightly bent and her back is hunched. Beside the corridor, a few patients and attendants sit on plastic chairs, and a doctor in a white coat stands at the far end, partly out of focus. Through the open windows, the view shows a street of city buildings and a faint silhouette of the Western Ghats hills in the far background. Soft daylight falls across the floor. Camera at eye level, 35 mm, wide enough to show the corridor and the hospital setting. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up detail of a steel plate on a wooden table holding fresh green murungai keerai leaves, a heap of golden-brown ragi grains in a small bowl, and a few green pirandai stalks with segmented joints beside them. A wooden spoon rests on the table. The background is softly blurred, showing the edge of a kitchen counter in a Coimbatore home with warm natural daylight from a window. Camera slightly above the table, 35 mm macro-style, focused on the food items so the healthy ingredients for elderly bone and joint care are clearly visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/aging-joint-pain-and-muscle-weakness/4382178",
-   "published": "2026-11-21T13:16:26+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script sentence 1 (heard in the first 3 seconds) must name the place 'கோவை' and the news itself, e.g. 'கோவை-இல் ... 3 பேர் கைது.' - viewers decide in 3 seconds whether the news is about their area",
+   "reel_script": "இந்தியாவில் 8.98 கோடி பேருக்கு சர்க்கரை பாதிப்பு உள்ளது. இதில் 43 சதவீதம் பேருக்கு அது தெரியாமலே இருக்கிறது. கே எம் சி எச் மருத்துவமனை தலைவர் நல்லா பழனிசாமி மற்றும் நீரிழிவு நோய் மருத்துவர்கள் சிவஞானம், சங்கர் ஆகியோர் இதைத் தெரிவித்துள்ளனர். நாம் உண்ணும் உணவிலிருந்து கிடைக்கும் குளூக்கோஸ் உடலுக்கு ஆற்றல் தருகிறது. அதை உடல் செல்கள் பயன்படுத்த கணையத்தில் சுரக்கும் இன்சுலின் உதவுகிறது. இன்சுலின் போதுமான அளவு சுரக்காத போதோ, சுரக்கும் இன்சுலினை உடல் சரியாக பயன்படுத்த முடியாத போதோ ரத்த சர்க்கரை அளவு அதிகரிக்கும். பரம்பரை, உடல் பருமன், உடற்பயிற்சியின்மை, அதிக கலோரி உணவு, சர்க்கரை பானங்கள் ஆகியவை முக்கிய காரணங்கள். குடும்பத்தில் பெற்றோர் அல்லது உடன்பிறந்தவர்களுக்கு பாதிப்பு இருந்தால் மற்றவருக்கும் வாய்ப்பு அதிகம். நீண்ட காலம் சர்க்கரை கட்டுப்பாடின்றி இருந்தால் இதய பாதிப்பு, மாரடைப்பு, பக்கவாதம், சிறுநீரக செயலிழப்பு, பார்வை குறைபாடு ஏற்படலாம். தினமும் 30 நிமிடங்கள் நடைப்பயிற்சி செய்யுங்கள். உணவுக்குப் பிறகு 10 நிமிடங்கள் மெதுவாக நடப்பது சர்க்கரை அதிகரிப்பைக் கட்டுப்படுத்தும். அறிகுறி இல்லாவிட்டாலும் உரிய இடைவெளியில் ரத்த பரிசோதனை செய்வது அவசியம். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🩺 சர்க்கரை பாதிப்பு: 43% பேருக்கு தெரியாமலே உள்ளது\n\n📰 முழு விவரம்:\nஇந்தியாவில் 8.98 கோடி பேருக்கு சர்க்கரை பாதிப்பு உள்ளது; இதில் 43 சதவீதம் பேருக்கு பாதிப்பு இருப்பது தெரியாது என கே.எம்.சி.எச். மருத்துவமனை தலைவர் நல்லா பழனிசாமி, நீரிழிவு நோய் மருத்துவர்கள் சிவஞானம், சங்கர் ஆகியோர் தெரிவித்துள்ளனர்.\nகணையத்திலிருந்து சுரக்கும் இன்சுலின் குளூக்கோஸை பயன்படுத்த உதவுகிறது; இன்சுலின் குறைந்தாலோ சரியாக பயன்படாவிட்டாலோ ரத்த சர்க்கரை அளவு அதிகரிக்கும்.\nபரம்பரை, உடல் பருமன், உடற்பயிற்சியின்மை, அதிக கலோரி உணவு, சர்க்கரை பானங்கள் அதிகம் குடிப்பது ஆகியவை முக்கிய காரணங்கள்.\nநீண்ட காலம் கட்டுப்படுத்தாவிட்டால் இதய ரத்த நாள பாதிப்பு, மாரடைப்பு, பக்கவாதம், சிறுநீரக செயலிழப்பு, பார்வைக் குறைபாடு, கால் காயங்கள் ஆறாமல் போவது ஏற்படலாம்.\n\n🏃 தினமும் 30 நிமிடங்கள் நடைப்பயிற்சி செய்யுங்கள்; உணவுக்குப் பின் 10 நிமிடங்கள் மெதுவாக நடப்பது சர்க்கரை அதிகரிப்பைக் கட்டுப்படுத்த உதவும்.\n\n🤰 கர்ப்பிணிகள் கவனம்: கர்ப்ப காலத்தில் நஞ்சுக்கொடி ஹார்மோன்கள் 2–3 வது மாதங்களில் இன்சுலின் செயல்பாட்டைக் குறைக்கும். இதனால் கர்ப்பகால சர்க்கரை பாதிப்பு ஏற்படலாம். ஆரம்பத்தில் சர்க்கரை மிக அதிகமாக இருந்தால் குழந்தை வளர்ச்சியில் பாதிப்பு, பிறவிக் குறைபாடு ஏற்படலாம். உயர் ரத்த அழுத்தம், பிரசவத்தில் சிக்கல், அதிக எடையுள்ள குழந்தை, குறைப்பிரசவம், குழந்தைக்கு சுவாசப் பிரச்னை, ரத்த சர்க்கரை குறைவு ஆகியவை ஏற்படலாம். பெரும்பாலான கர்ப்பிணிகளுக்கு அறிகுறி இருக்காது; அதனால் பரிசோதனை அவசியம்.\n\n⚠️ அறிகுறிகள்: அதிக தாகம், அடிக்கடி சிறுநீர், அதிகப் பசி, சோர்வு, காரணமின்றி எடை குறைவு. 30 வயதைக் கடந்தோர், குடும்பத்தில் பாதிப்பு உள்ளோர், உடல் பருமன் உள்ளோர், உடற்பயிற்சியின்றி அமர்ந்தே வேலை செய்வோர் கூடுதல் கவனம் செலுத்துங்கள்.\n\n🔬 வகைகள்: டைப் 1 – கணைய இன்சுலின் செல்கள் அழிவதால் வாழ்நாள் முழுவதும் இன்சுலின் தேவைப்படலாம். டைப் 2 – 90 சதவீத நோயாளிகள் இந்த வகை; இன்சுலின் சுரப்பும் நாளடைவில் குறையும். கர்ப்பகால சர்க்கரை – பிரசவத்துக்குப் பின் பலருக்கு இயல்பாகும்; ஆனால் எதிர்காலத்தில் டைப் 2 வர வாய்ப்பு இருப்பதால் தொடர் பரிசோதனை அவசியம்.\n\nDiabetes 43% undiagnosed India | Coimbatore health news\n📍 கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #சர்க்கரைநோய் #HealthNews #CoimbatoreNews",
+   "prompts": "A Coimbatore diabetes specialist in a white coat checks a patient's blood sugar with a glucometer in a clinic consultation room of a city hospital. The room is clean and well lit, with a desk, a wall chart of diabetes, a blood pressure machine and a small stool. The patient, an adult man in a shirt and trousers, sits with his sleeve rolled up, seen from the side and slightly blurred. Two other doctors in white coats stand in the background near the door, seen from behind. Outside the window, Coimbatore's ordinary daylight shows a tree and the edge of a city road with a two-wheeler passing. Eye level, 35 mm, medium wide shot showing the room and the consultation. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a glucometer with a fresh blood test strip inserted, a finger-prick lancet and cotton placed on a clean white table. Beside them lies a bowl of fresh vegetables, green leafy greens, a few sliced fruits and a glass of water, suggesting a healthy diet and walking habit. Soft daylight from a nearby window falls across the table, and the background is a blurred hospital consultation room with a pale wall. No readable labels or text are visible. Camera slightly high, 35 mm, tight focus on the glucometer with the food in soft focus behind it. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/with-a-timely-check-up-it-s-easy-to-keep-sugar-under-control/4382202",
+   "published": "2026-11-21T15:34:27+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: hl1 (the first headline on screen) must name the place 'கோவை', e.g. 'கோவை: ...' or 'கோவை-இல் ...' - viewers share news of their own area",
    "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795317703/kovaiminnal/zomkjqdfyxnuh8lub2bp.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795317716/kovaiminnal/qbspbd6omysiwpwsezho.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320109/kovaiminnal/csjdnr5pir5vkc6g3d3r.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320113/kovaiminnal/tlo0lczvfibfq1tiiff2.jpg"
    ]
   },
   {
-   "tamil_headline": "கோவையில் டூத் பிரஷ்ஷை எப்படிப் பராமரிப்பது: தினமும் கழுவி உலர வைக்க வேண்டும்",
-   "english_headline": "Coimbatore dentist advises: wash and dry toothbrush daily, keep it away from the toilet, replace every 3-4 months",
-   "category": "Health",
-   "location": "Coimbatore district",
-   "importance": "Medium",
-   "scope": "district",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "ஆரோக்கியம்",
-    "loc": "கோவை",
-    "hl1": "கோவையில் பல் பிரஷ் பராமரிப்பு டிப்ஸ்",
-    "hl2": "3-4 மாதத்துக்கு ஒருமுறை",
-    "slides": [
-     {
-      "title": "தினமும் சுத்தம்",
-      "lines": [
-       "பல் துலக்கும் முன்பும் பின்பும் குழாய் தண்ணீரில் கழுவுங்கள்",
-       "பற்பசை எச்சம், உணவுத் துகள்களை அகற்றுங்கள்",
-       "தண்ணீரை உதறி, காற்றோட்டமான இடத்தில் செங்குத்தாக உலர"
-      ]
-     },
-     {
-      "title": "இவற்றைத்",
-      "lines": [
-       "ஈரமான பிரஷை மூடி இல்லாமல் வைக்க வேண்டாம்",
-       "பிரஷ்களின் முட்கள் ஒன்றோடொன்று உரசும்படி வைக்க வேண்டாம்",
-       "பிரஷை மற்றவர்களுடன் பகிர்ந்து பயன்படுத்த வேண்டாம்"
-      ]
-     },
-     {
-      "title": "கழிப்பறையில்",
-      "lines": [
-       "பிரஷை கழிப்பறையில் வைப்பதை முழுமையாகத் தவிர்க்கவும்",
-       "பிளஷ் செய்யும்போது எழும் கிருமிகள் பிரஷில் தங்கும்",
-       "மறுநாள் அந்தக் கிருமிகள் வாய்க்குள் செல்லலாம்"
-      ]
-     },
-     {
-      "title": "எப்போது மாற்ற?",
-      "lines": [
-       "3 முதல் 4 மாதங்களுக்கு ஒருமுறை பிரஷை மாற்றுங்கள்",
-       "முட்கள் சிதைந்தால் உடனே மாற்றுங்கள்",
-       "யு.வி. கருவி கூடுதல் பாதுகாப்புக்கு மட்டுமே பயன்படும்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோவை-இல் பல் பிரஷை தினமும் சுத்தம் செய்யாவிட்டால் கிருமிகள் வளரும் அபாயம் உள்ளது. ஈரப்பதமான இடத்தில் பிரஷை வைப்பதால் நுண்ணுயிரிகள் வளர வாய்ப்பு ஏற்படும். ஒவ்வொரு முறை பல் துலக்கும் முன்பும் பின்பும் பிரஷை ஓடும் குழாய் தண்ணீரில் நன்றாகக் கழுவ வேண்டும். பற்பசை எச்சங்கள், உணவுத் துகள்களை அகற்ற வேண்டும். பின்னர் தண்ணீரை உதறிவிட்டு, காற்றோட்டமான இடத்தில் செங்குத்தாக வைத்து உலர விட வேண்டும். ஈரமான பிரஷை மூடி இல்லாமல் வைப்பதைத் தவிர்க்க வேண்டும். மற்றவர்களின் பிரஷ்களுடன் முட்கள் உரசும்படி வைக்கக் கூடாது. பிரஷை மற்றவர்களுடன் பகிர்ந்து பயன்படுத்தக் கூடாது. பல் டாக்டர் காயத்ரி, 3 முதல் 4 மாதங்களுக்கு ஒருமுறை அல்லது முட்கள் சிதைந்தவுடன் பிரஷை மாற்ற வேண்டும் என்கிறார். கழிப்பறையில் பிரஷை வைப்பதை முழுமையாகத் தவிர்க்க வேண்டும். பிளஷ் செய்யும்போது எழும் கிருமிகள் பிரஷில் தங்கி, மறுநாள் வாயினுள் செல்லலாம். யு வி கிருமி நீக்கச் சாதனங்கள் கூடுதல் பாதுகாப்புக்கு மட்டுமே பயன்படும்; பல் நோய்களைத் தடுக்கும் என்பதற்கு மருத்துவ ஆதாரங்கள் இல்லை. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🪥 கோவையில் பல் பிரஷை தினமும் கழுவி உலர வைக்க வேண்டும்\n\n📰 முழு விவரம்:\nபல் பிரஷை முறையாகச் சுத்தம் செய்யாவிட்டால் நுண்ணுயிரிகள் வளரலாம். ஒவ்வொரு முறை பல் துலக்கும் முன்பும் பின்பும் பிரஷை குழாய் தண்ணீரில் நன்றாகக் கழுவ வேண்டும். பின்னர் தண்ணீரை உதறி, காற்றோட்டமான இடத்தில் செங்குத்தாக உலர விட வேண்டும்.\nஈரமான பிரஷை மூடி இல்லாமல் வைப்பதையும், பிரஷ்களின் முட்கள் ஒன்றோடொன்று உரசும்படி வைப்பதையும் தவிர்க்க வேண்டும். பிரஷை மற்றவர்களுடன் பகிரக் கூடாது.\nபல் டாக்டர் காயத்ரி கூறியதாவது: 3 முதல் 4 மாதங்களுக்கு ஒருமுறை அல்லது முட்கள் சிதைந்தவுடன் பிரஷை மாற்ற வேண்டும். பிரஷை கழிப்பறையில் வைப்பதை முழுமையாகத் தவிர்க்க வேண்டும்; பிளஷ் செய்யும்போது எழும் கிருமிகள் பிரஷில் தங்கி மறுநாள் வாயினுள் செல்லலாம்.\nயு.வி–சி கதிர்கள் கொண்ட கிருமி நீக்கச் சாதனங்கள் பிரஷில் உள்ள பாக்டீரியாக்களைக் குறைக்க உதவினாலும், பல் மற்றும் ஈறு நோய்களைத் தடுக்கும் என்பதற்கு மருத்துவ ஆதாரங்கள் இல்லை. எனவே, தினமும் கழுவி உலர வைப்பதே அடிப்படை சுகாதார முறை. யு.வி. சாதனங்களை கூடுதல் பாதுகாப்பு முறையாக மட்டுமே பயன்படுத்த வேண்டும்.\n\nCoimbatore toothbrush care tips, dry brush daily | Coimbatore news\n📍 கோவை மாவட்டம் | 22 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #Health #கோவை",
-   "prompts": "A close-up of a bathroom wash basin in a Coimbatore home, where a person's hand holds a toothbrush under a running tap, rinsing away white toothpaste residue from the bristles. Behind the basin a few other toothbrushes stand upright in a small wall holder, their heads separated and not touching. The tiled wall is light and clean, and the bathroom door is partly open to the daylight of a morning. The person is seen only from the shoulder down, the face out of frame. The toilet is visible faintly at the edge of the frame, kept at a distance from the brushes. Camera at eye level, 35 mm, shallow depth of field, with the tap water and bristles sharp in the foreground. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA detail close-up of a clean toothbrush standing upright to dry in a ventilated spot on a bathroom shelf in a Coimbatore home. The bristles are slightly wet, with a few drops of water on the handle, and the brush stands apart from other brushes with no contact between the bristles. Behind it is a plain tiled wall and a small window letting in soft daylight. Two older brushes with splayed bristles sit in a separate cup to show the need for replacement, but no text or labels are visible. Camera at slightly high angle, 35 mm macro-style, shallow focus on the bristles. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/your-toothbrush-should-always-be-brushed/4382181",
-   "published": "2026-11-21T13:34:26+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script copies the article word for word (20 words in a row, 21% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795317722/kovaiminnal/s9ugz8ujj2hhvotl1dey.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795317725/kovaiminnal/oordtcgbxygativ2pe5t.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவையில் வைகோ: காவிரி, மேகதாது அணைக்கு எதிராக தஞ்சையில் 28ஆம் தேதி போராட்டம்",
-   "english_headline": "Vaiko in Coimbatore: protest against Mekedatu dam on 28th in Thanjavur; Cauvery verdict called against Tamil Nadu",
-   "category": "Government & Services",
+   "tamil_headline": "புத்தகம் வாங்குகிறோம், ஆனால் படிக்க நேரம் இல்லை: கோவை வாசகர்களின் கருத்து",
+   "english_headline": "Coimbatore readers buy books but struggle to finish them, citing lack of time and wrong book choices",
+   "category": "Education",
    "location": "Coimbatore city, Coimbatore district",
-   "importance": "High",
-   "scope": "district",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "அரசியல் செய்தி",
-    "loc": "கோயம்புத்தூர்",
-    "hl1": "கோயம்புத்தூர்: வைகோ பேட்டி, போராட்ட",
-    "hl2": "28ஆம் தேதி தஞ்சாவூரில்",
-    "slides": [
-     {
-      "title": "வைகோ என்ன",
-      "lines": [
-       "கோயம்புத்தூரில் நிருபர்களிடம் பேட்டி அளித்தார்",
-       "தன்னை அரசியல் வடிவேலு என விமர்சிப்பதை வரவேற்றார்",
-       "வடிவேலுவுடன் ஒப்பிட்டதில் மகிழ்ச்சி என்றார்"
-      ]
-     },
-     {
-      "title": "மேகதாது அணை",
-      "lines": [
-       "மேகதாது அணை விவகாரத்தில் மத்திய அரசின் மறைமுக ஆதரவை",
-       "அனைத்துக்கட்சி கூட்டம் தேவையற்றது என்றார்",
-       "அணை கட்டினால் காவிரி டெல்டா அழிந்துபோகும் என எச்சரித்தார்"
-      ]
-     },
-     {
-      "title": "காவிரி தீர்ப்பு",
-      "lines": [
-       "காவிரி தீர்ப்பு தமிழகத்திற்கு எதிரானது என்றார்",
-       "கூடுதலாக <b>11 டிஎம்சி</b> தண்ணீர் கோரிக்கை நிராகரிக்கப்பட்டது",
-       "இதனால் விவசாயிகள் பாதிக்கப்படுவார்கள் என்றார்"
-      ]
-     },
-     {
-      "title": "போராட்டம்",
-      "lines": [
-       "வருகிற <b>28ஆம் தேதி</b> தஞ்சாவூரில் பெரிய கண்டன போராட்டம்",
-       "விவசாயிகள் சங்கத் தலைவர் பி.ஆர். பாண்டியன் பங்கேற்பார்",
-       "மத்திய அரசின் நிலைப்பாட்டை வன்மையாக கண்டித்தார்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோயம்புத்தூரில் வைகோ, மேகதாது அணைக்கு எதிராக அக்டோபர் 28ஆம் தேதி தஞ்சாவூரில் போராட்டம் நடத்தப்படும் என அறிவித்தார். இது அவர் நிருபர்களிடம் அளித்த பேட்டியில் தெரிவிக்கப்பட்டது. மேகதாது அணை விவகாரத்தில் மத்திய அரசு மறைமுகமாக ஆதரவு அளிப்பதாக வைகோ குற்றம் சாட்டினார். அணை கட்டப்பட்டால் காவிரி டெல்டா பகுதி அழிந்துபோகும் என்று அவர் எச்சரித்தார். காவிரி நீர்ப் பங்கீடு தொடர்பான சுப்ரீம் கோர்ட் தீர்ப்பு தமிழகத்திற்கு எதிரானது என்றார். கூடுதலாக 11 டிஎம்சி தண்ணீர் வழங்கக் கோரிய தமிழகத்தின் கோரிக்கை நிராகரிக்கப்பட்டதால் விவசாயிகள் பாதிக்கப்படுவார்கள் என்றார். விவசாயிகள் சங்கத் தலைவர் பி ஆர் பாண்டியன் உள்ளிட்ட விவசாய அமைப்புகள் இந்தப் போராட்டத்தில் பங்கேற்கின்றன. தன்னை அரசியல் வடிவேலு என விமர்சிப்பதில் மகிழ்ச்சி என்றும் வைகோ கூறினார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 கோயம்புத்தூரில் வைகோ: மேகதாது அணைக்கு எதிராக 28ஆம் தேதி தஞ்சாவூரில் போராட்டம்\n\n📰 முழு விவரம்:\nகோயம்புத்தூரில் ம.தி.மு.க. பொதுச்செயலாளர் வைகோ நிருபர்களுக்கு பேட்டி அளித்தார். மேகதாது அணை விவகாரத்தில் மத்திய அரசின் மறைமுக ஆதரவைக் கண்டித்து போராட்டம் நடத்தப்படும் என்று தெரிவித்தார். அணை கட்டப்பட்டால் காவிரி டெல்டா பகுதி அழிந்துபோகும் என்று மக்களை எச்சரித்ததாகவும் கூறினார்.\n📅 வருகிற 28ஆம் தேதி தஞ்சாவூரில் மிகப்பெரிய கண்டன போராட்டம் நடைபெறும்.\n🌾 விவசாயிகள் சங்கத் தலைவர் பி.ஆர். பாண்டியன் உள்ளிட்ட விவசாய அமைப்புகளின் பிரதிநிதிகள் இந்தப் போராட்டத்தில் பங்கேற்பார்கள்.\n⚖️ காவிரி நீர்ப் பங்கீடு தொடர்பான சுப்ரீம் கோர்ட் தீர்ப்பு தமிழகத்திற்கு எதிரானது. கூடுதலாக 11 டிஎம்சி தண்ணீர் வழங்கக் கோரிய தமிழகத்தின் கோரிக்கை நிராகரிக்கப்பட்டது. இதனால் விவசாயிகள் பாதிக்கப்படுவார்கள் என்று வைகோ கூறினார்.\n🗣️ தன்னை அரசியல் வடிவேலு என விமர்சிப்பதில் மகிழ்ச்சி என்றும், மேகதாது விவகாரத்தில் அனைத்துக்கட்சி கூட்டம் தேவையற்றது என்றும் அவர் தெரிவித்தார்.\n\nVaiko Coimbatore Mekedatu protest 28th Thanjavur | Coimbatore news\n📍 கோயம்புத்தூர் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Vaiko",
-   "prompts": "A group of reporters with notepads and microphones gathers around a table in a Coimbatore city press hall, facing a senior politician seated behind a cluster of microphones. The politician is an elderly man in a white shirt and white veshti, seen from behind and far away, not identifiable. Party cadres in white shirts stand along the back wall holding a banner-less stand with no readable text. The table holds water bottles and recording devices. The room has ceiling fans, plain white walls and tube lights, and the scene reads as an ordinary Coimbatore city press meet in daylight through a window. Camera at eye level, 35 mm, wide enough to show the whole room and the crowd of reporters. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a row of microphones and voice recorders clustered on a plain table covered with a white cloth, with a glass water jug and tumblers beside them. Behind the table, out of focus, the blurred silhouettes of reporters with notepads stand in a Coimbatore press hall with tube lights overhead. The microphones are pointed toward an unseen speaker, suggesting a statement about the Cauvery water dispute and the Mekedatu dam. Soft daylight from a side window, camera at slightly high eye level, 35 mm, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.maalaimalar.com/news/tamilnadu/vaiko-says-i-am-happy-to-be-criticized-as-the-vadivelu-of-politics",
-   "published": "2026-11-21T08:12:07Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 88 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block); sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 2 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795317748/kovaiminnal/cadpouc7bwk7mumxxbhf.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795317763/kovaiminnal/ehdl3uth1kbdblpiwhoj.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவையில் மருத்துவ கருவிகள் கண்காட்சி மெடிக்கான் 2026 நாளை நிறைவு",
-   "english_headline": "Medican 2026 medical equipment expo in Coimbatore ends tomorrow, Nov 22",
-   "category": "Health",
-   "location": "Kodissia Trade Fair Complex, Coimbatore city, Coimbatore district",
-   "importance": "Medium",
+   "importance": "Low",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "மருத்துவம்",
+    "cat": "வாசிப்பு",
     "loc": "கோவை",
-    "hl1": "கோவையில் மெடிக்கான் 2026 கண்காட்சி நாளை",
-    "hl2": "நவ. 22 வரை, 210 அரங்குகள்",
+    "hl1": "கோவையில் புத்தகம் வாங்கி படிக்காதவர்கள்",
+    "hl2": "நேரம் இல்லாததே முக்கிய",
     "slides": [
      {
-      "title": "எங்கே, எப்போது?",
+      "title": "நிலைமை என்ன?",
       "lines": [
-       "கொடிசியா வளாகம், அரங்கு ஏ, பி, ஹால்",
-       "காலை <b>10.30</b> முதல் மாலை <b>6.00</b> மணி வரை",
-       "கண்காட்சி <b>நாளை (நவ. 22)</b> நிறைவு பெறுகிறது"
+       "பலர் புத்தகங்களை உடனே வாங்கி விடுகின்றனர்",
+       "பலரால் வாங்கிய புத்தகத்தை முழுமையாகப் படிக்க முடிவதில்லை",
+       "சில புத்தகங்கள் பாதியிலேயே நின்றுவிடுகின்றன"
       ]
      },
      {
-      "title": "என்ன காணலாம்?",
+      "title": "வாசகர்கள் சொல்வது",
       "lines": [
-       "அறுவை சிகிச்சை கருவிகள் முதல் மைக்ராஸ்கோப் வரை",
-       "இரத்தப் பரிசோதனை கருவிகள், மருந்து ரேக்குகள்",
-       "சி.டி. ஸ்கேன் உள்ளிட்ட மருத்துவமனை கருவிகள்"
+       "வேலை அதிகம், வீட்டுக்குத் தாமதமாக வருகின்றனர்",
+       "எந்தப் புத்தகம் படிப்பது என்று தெரியாமல் வாங்குகின்றனர்",
+       "முதல் பக்கங்கள் மெதுவாக இருப்பதால் சிலர் படிக்காமல்"
       ]
      },
      {
-      "title": "பயனுள்ள பொருட்கள்",
+      "title": "என்ன செய்யலாம்?",
       "lines": [
-       "வீல் சேர்கள், படுக்கைகள், நடை உதவி குச்சிகள்",
-       "மூச்சை நிலைநிறுத்தும் கருவிகள்",
-       "<b>210</b> அரங்குகளில் உலகத்தரம் வாய்ந்த கருவிகள்"
+       "உங்களுக்குப் பிடித்த புத்தகத்தைத் தேர்வு செய்யுங்கள்",
+       "கஷ்டமாக இருந்தால் சிறுகதைகளைத் தேர்வு செய்யுங்கள்",
+       "தினமும் 10 முதல் 15 நிமிடங்கள் வாசியுங்கள்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவையில் நடைபெறும் மெடிக்கான் 2026 மருத்துவ கருவிகள் கண்காட்சி நாளை நிறைவு பெறுகிறது. இந்தக் கண்காட்சி கொடிசியா தொழில் வர்த்தக கண்காட்சி வளாகத்தில், அரங்கு ஏ, பி, ஹாலில் நடைபெறுகிறது. போயன்ட் மீடியா நிறுவனம் இதை நடத்துகிறது. நாளை, நவம்பர் 22ஆம் தேதி வரை காலை 10.30 மணி முதல் மாலை 6.00 மணி வரை கண்காட்சி நடைபெறும். அறுவை சிகிச்சை அரங்குகளில் பயன்படும் கத்தரிக்கோல் முதல் மைக்ராஸ்கோப் வரை பல கருவிகள் உள்ளன. இரத்தத்தை பரிசோதிக்கும் கருவிகளும், மருந்துகளை அடுக்கும் ரேக்குகளும் காட்சிக்கு உள்ளன. வீல் சேர்கள், படுக்கைகள், நடை உதவி குச்சிகள் போன்ற பொருட்களும் இடம்பெற்றுள்ளன. மருத்துவமனைகளுக்குத் தேவையான சி டி ஸ்கேன் உள்ளிட்ட அனைத்துக் கருவிகளும் காட்சிப்படுத்தப்பட்டுள்ளன. மொத்தம் 210 அரங்குகளில் உலகத்தரம் வாய்ந்த கருவிகள் இடம்பெற்றுள்ளன. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🏥 கோவையில் மெடிக்கான் 2026 மருத்துவ கருவிகள் கண்காட்சி நாளை நிறைவு\n\n📰 முழு விவரம்:\nகோவை கொடிசியா தொழில் வர்த்தக கண்காட்சி வளாகத்தில், அரங்கு ஏ, பி, ஹாலில் போயன்ட் மீடியா நடத்தும் மெடிக்கான் 2026 மருத்துவ கருவிகள் கண்காட்சி நடைபெறுகிறது. இந்தக் கண்காட்சி நாளை (நவ. 22) நிறைவு பெறுகிறது.\nஅறுவை சிகிச்சை அரங்குகளில் பயன்படும் கத்தரிக்கோல் முதல் மைக்ராஸ்கோப் வரை, இரத்தத்தைப் பரிசோதிக்கும் கருவிகள் முதல் மருந்து ரேக்குகள் வரை பல கருவிகள் உள்ளன.\nவீல் சேர்கள், படுக்கைகள், நடை உதவி குச்சிகள், சாதாரண சேர்கள் ஆகியவையும் இடம்பெற்றுள்ளன. மருத்துவமனைகளுக்குத் தேவையான சி.டி. ஸ்கேன் உள்ளிட்ட அனைத்துக் கருவிகளும் காட்சிப்படுத்தப்பட்டுள்ளன.\nமொத்தம் 210 அரங்குகளில் உலகத்தரம் வாய்ந்த கருவிகள் இடம்பெற்றுள்ளன.\n\n🕘 நேரம்: காலை 10.30 முதல் மாலை 6.00 மணி வரை\n📍 இடம்: கொடிசியா தொழில் வர்த்தக கண்காட்சி வளாகம், அரங்கு ஏ, பி, ஹால்\n🗓️ நாள்: நாளை (நவ. 22) நிறைவு\n\nMedican 2026 medical equipment expo Coimbatore ends tomorrow | Coimbatore news\n📍 கொடிசியா, கோவை | 22 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Kodissia #மருத்துவம் #CoimbatoreNews",
-   "prompts": "A busy indoor medical equipment expo fills the large exhibition halls of Kodissia Trade Fair Complex in Coimbatore city, with visitors walking between rows of stalls on the closing day of the Medican 2026 medical show. Seen from a raised position at the back of the hall, a wide aisle runs between dozens of exhibition booths with bright white and blue display panels. Inside the stalls, hospital beds, wheelchairs, walking-aid sticks, and stainless steel medical trolleys are arranged for viewing, while a CT scan machine and blood-testing units stand on glossy floors. Small groups of visitors, men in shirts and trousers and women in sarees and salwar, are seen from behind or far away, looking at the equipment. Ceiling lights and daylight from high windows give an even, bright tone. Shot at eye level or slightly high, on a 35 mm lens wide enough to show the full hall and the rows of stalls, with no readable text or logos visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the stainless steel surgical instruments and a hospital bed display on a clean white table at the Medican 2026 medical equipment expo in Kodissia Trade Fair Complex, Coimbatore. Neatly arranged surgical scissors, forceps, and a compact microscope sit on a glass-topped display counter, with a pair of wheelchairs and a folding walking-aid stick placed nearby. Behind the table, a blurred row of exhibition stalls and visitors seen from far away suggests the busy hall. Bright overhead lights reflect off the metal instruments, and the scene has the clean, sterile look of a medical showroom. Daylight from high windows falls evenly across the hall. Shot at slightly high eye level on a 35 mm lens, close enough to show the instruments clearly while keeping the background of the expo hall visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/medical-devices-expo-medicon-2026-concludes-today/4382328",
-   "published": "2026-11-21T17:26:25+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: day word wrong: the draft says நாளை but its day (22 Nov) is today - write the day as it is TODAY (இன்று / நாளை from today) together with the date",
+   "reel_script": "கோவையில் பலர் புத்தகங்களை வாங்குகின்றனர், ஆனால் முழுமையாகப் படிப்பதில்லை. நேரம் இல்லாததே முக்கியக் காரணம் என வாசகர்கள் கூறுகின்றனர். தனியார் நிறுவன ஊழியர் கார்த்திக், வேலை முடிந்து வீட்டுக்கு வர தாமதமாவதால் படிக்க நேரம் கிடைப்பதில்லை என்கிறார். ஐ டி ஊழியர் காவியா, என்ன புத்தகம் வாங்குவது என்று தெரியாமல் கண்காட்சியில் வாங்கியதாகவும், இரண்டு மூன்று பக்கங்கள் படித்துவிட்டு விட்டுவிட்டதாகவும் கூறுகிறார். பிளஸ் 2 மாணவி அக்ஷயாவுக்கு கிரைம் நாவல் பிடிக்கும், ஆனால் ஆரம்பப் பக்கங்கள் மெதுவாக இருப்பதால் சில பக்கங்களைத் தவிர்ப்பதாகக் கூறுகிறார். அரசு நிறுவன ஊழியர் அருண், நான்கு நாட்கள் படிக்காமல் விட்டால் படிக்கும் பழக்கமே மறந்துவிடும் என்கிறார். பிடித்த புத்தகத்தைத் தேர்வு செய்யுங்கள், கடினமாக இருந்தால் சிறுகதைகளைப் படியுங்கள், தினமும் 10 முதல் 15 நிமிடங்கள் வாசியுங்கள், படிக்கும்போது செல்போனைத் தள்ளி வையுங்கள். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "📚 கோவையில் புத்தகம் வாங்கினாலும் படிக்க நேரம் கிடைப்பதில்லை\n\n📰 முழு விவரம்:\nபுத்தகம் படிக்க ஆசை பலருக்கு இருந்தாலும், வாங்கிய புத்தகத்தை முழுமையாகப் படிப்பவர்கள் குறைவு என வாசகர்கள் கூறுகின்றனர். சிலரின் புத்தகங்கள் அலமாரியில் அழகாக இருக்கின்றன, சிலவை இரண்டு மூன்று பக்கங்களுடன் பாதியில் நிற்கின்றன.\nவேலைப்பளு காரணமாக நேரம் கிடைக்கவில்லை என தனியார் நிறுவன ஊழியர் கார்த்திக் தெரிவித்துள்ளார். என்ன புத்தகம் படிப்பது என்று தெரியாமல் கண்காட்சியில் புத்தகம் வாங்கிய ஐ.டி. ஊழியர் காவியாவுக்கு அது பிடிக்கவில்லை. கிரைம் நாவல் பிடித்த பிளஸ் 2 மாணவி அக்ஷயா, ஆரம்பப் பக்கங்களைத் தவிர்ப்பதாகக் கூறுகிறார். அரசு நிறுவன ஊழியர் அருண், சில நாட்கள் படிக்காமல் விட்டால் பழக்கமே மறந்துவிடும் என்கிறார்.\n📌 வாசிப்பைத் தொடர:\n1. உங்களுக்குப் பிடித்த கதை, துறை அல்லது எழுத்தாளரின் புத்தகத்தைத் தேர்வு செய்யுங்கள்.\n2. கடினமாக இருந்தால் சிறுகதைகளைத் தேர்வு செய்யுங்கள்.\n3. தினமும் 10 முதல் 15 நிமிடங்கள் வாசிக்கத் தொடங்குங்கள்.\n4. படிக்கும்போது செல்போனை சைலன்டில் வைத்து, கவனச்சிதறல் இல்லாத இடத்தில் படியுங்கள்.\n5. பிடித்த வரிகள், முக்கியக் கருத்துகளைக் குறித்து வையுங்கள்; இது ஆர்வத்தைத் தொடர உதவும்.\n\nCoimbatore readers buy books but rarely finish them | Coimbatore news\n📍 கோவை | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Books",
+   "prompts": "A young office-goer sits alone at a table in a quiet corner of a Coimbatore home, a half-read paperback open with a few pages turned, a phone lying face down and switched to silent beside it. Behind him a wooden bookshelf in a small flat is crowded with books, some standing upright and some lying flat, and a single pen rests on the table. He is seen from behind and slightly to the side, his face not visible, and the room is lit by soft daylight through a window with a plain curtain. The shot is taken at eye level with a 35 mm lens, wide enough to show the shelf, the table and the window. Nothing on the shelf or the book cover shows readable text, letters or brand names. The mood is calm and thoughtful, showing a reader trying to build a daily reading habit rather than a rushed or stressed moment. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a small stack of partly read paperback books on a plain wooden table, each with a few thin bookmark strips sticking out at early pages, showing that the reading was stopped halfway. A phone lies face down in the corner of the frame, and a pen and a notebook are placed beside the books as if ready for marking favourite lines. The light is soft daylight from a side window, creating gentle shadows across the covers, with no readable text, labels or logos visible. The camera is slightly high, using a 35 mm lens, focusing sharply on the bookmarks and the open pages with the background softly blurred, so the story of unfinished books and the need for focus is clear at a glance. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/we-buy-books-for-money-but-don-t-take-the-time-to-read/4382188",
+   "published": "2026-11-21T15:00:27+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 96 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
    "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795317770/kovaiminnal/ia88te6u6y7jz978egax.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795317778/kovaiminnal/r88bdonhdmaqffrfzp2s.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320132/kovaiminnal/sbnioxouhu9xqiizaljf.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320137/kovaiminnal/kcj4tyz379wfi39anxjw.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "கோவையில் அழியும் அரிய விலங்குகளுக்கு ஓவியர் சுரேஷ் ராகவன் உயிர் கொடுக்கிறார்",
+   "english_headline": "Artist Suresh Raghavan brings endangered rare animals back to life through paintings in Coimbatore exhibition",
+   "category": "Temples & Events",
+   "location": "Peelamedu, Coimbatore, Coimbatore district",
+   "importance": "Low",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "கண்காட்சி",
+    "loc": "பீளமேடு, கோவை",
+    "hl1": "அரிய விலங்குகளுக்கு ஓவியத்தில் உயிர்",
+    "hl2": "இன்று நிறைவு",
+    "slides": [
+     {
+      "title": "கண்காட்சி விவரம்",
+      "lines": [
+       "பீளமேடு கஸ்தூரி சீனிவாசன் ஆர்ட் கேலரியில் 'கட்டின் குரல்'",
+       "அழிந்து வரும் அரிய விலங்குகளின் <b>113</b> ஓவியங்கள் இடம்பெற்றுள்ளன",
+       "இன்று கண்காட்சி நிறைவடைகிறது"
+      ]
+     },
+     {
+      "title": "ஓவியங்களின்",
+      "lines": [
+       "வண்ண அலங்காரம் இன்றி விலங்குகளின் இயல்பான தோற்றத்தில்",
+       "ஒவ்வொரு ஓவியத்திலும் அறிவியல், ஆங்கில, தமிழ் பெயர்கள்",
+       "வாழ்விடம், உணவுப் பழக்கம், ஆயுள் காலம், பாதுகாப்பு நிலை"
+      ]
+     },
+     {
+      "title": "ஓவியரின் கருத்து",
+      "lines": [
+       "<b>109</b> ஓவியங்கள் ஓவியர் சுரேஷ் ராகவனின் படைப்புகள்",
+       "மேற்கு தொடர்ச்சி மலைகள், இந்தியாவின் பிற பகுதி விலங்குகள்",
+       "வனவிலங்குகளைக் காப்பது நம் கடமை என்கிறார்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கோவையில் அழியும் நிலையில் உள்ள அரிய விலங்குகளுக்கு ஓவியங்கள் மூலம் உயிர் கொடுக்கப்படுகிறது. கோவை பீளமேட்டில் உள்ள கஸ்தூரி சீனிவாசன் ஆர்ட் கேலரியில் 'கட்டின் குரல்' ஓவியக் கண்காட்சி நடைபெறுகிறது. இங்கு அழிந்து வரும் அரிய விலங்குகளின் 113 ஓவியங்கள் இடம்பெற்றுள்ளன. இந்த ஓவியங்கள் வண்ண அலங்காரம் இல்லாமல் விலங்குகளின் இயல்பான தோற்றத்தில் வரையப்பட்டுள்ளன. ஒவ்வொரு ஓவியத்திலும் விலங்கின் அறிவியல், ஆங்கில மற்றும் தமிழ் பெயர்கள் இடம்பெற்றுள்ளன. வாழ்விடம், உணவுப் பழக்கம், ஆயுள் காலம், பாதுகாப்பு நிலை ஆகிய விவரங்களும் உள்ளன. இவற்றில் 109 ஓவியங்கள் ஓவியர் சுரேஷ் ராகவன் வரைந்தவை. மேற்கு தொடர்ச்சி மலைகள் மற்றும் இந்தியாவின் பிற பகுதிகளில் அழியும் நிலையில் உள்ள விலங்குகளை அவர் வரைந்துள்ளார். வனவிலங்குகள் மற்றும் பறவைகளை கவனித்து முழு விவரங்களை சேகரித்த பிறகே ஓவியமாக வரைவதாக அவர் கூறினார். காலநிலை மாற்றம், காடழிப்பு, வேட்டை, மனித ஆக்கிரமிப்பு ஆகியவை காடுகளின் சமநிலைக்கு அச்சுறுத்தலாக உள்ளன என்றும், வனவிலங்குகளைக் காப்பது நம் கடமை என்றும் அவர் கூறினார். இந்தக் கண்காட்சி இன்று நிறைவடைகிறது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🎨 கோவையில் அரிய விலங்குகளுக்கு ஓவியத்தில் உயிர்: 'கட்டின் குரல்' கண்காட்சி இன்று நிறைவு\n\n📰 முழு விவரம்:\nகோவை பீளமேட்டில் உள்ள கஸ்தூரி சீனிவாசன் ஆர்ட் கேலரியில் 'கட்டின் குரல்' ஓவியக் கண்காட்சி நடைபெறுகிறது. இதில் அழிந்து வரும் அரிய விலங்குகளின் 113 ஓவியங்கள் இடம்பெற்றுள்ளன. இவற்றில் 109 ஓவியங்கள் ஓவியர் சுரேஷ் ராகவனின் படைப்புகள்.\nஓவியங்கள் வண்ண அலங்காரம் இன்றி விலங்குகளின் இயல்பான தோற்றத்தில் வரையப்பட்டுள்ளன. ஒவ்வொரு ஓவியத்துடனும் விலங்கின் அறிவியல், ஆங்கில, தமிழ் பெயர்கள் மற்றும் வாழ்விடம், உணவுப் பழக்கம், ஆயுள் காலம், பாதுகாப்பு நிலை குறித்த விளக்கக் குறிப்புகள் உள்ளன.\n🌿 மேற்கு தொடர்ச்சி மலைகள் மற்றும் இந்தியாவின் பிற பகுதிகளில் அழியும் நிலையில் உள்ள விலங்குகள் குறித்த ஓவியங்கள் இவை.\n🗣️ ஓவியர் சுரேஷ் ராகவன் கூறுகையில்: வனவிலங்குகள், பறவைகளை கூர்ந்து கவனித்து முழு விவரங்களை சேகரித்த பிறகே ஓவியமாக வரைகிறேன். பல்லுயிர் பாதுகாப்பின் அவசரத் தேவை குறித்த விழிப்புணர்வை ஏற்படுத்துவதே என் நோக்கம்.\n⚠️ காலநிலை மாற்றம், காடழிப்பு, வேட்டையாடுதல், மனித ஆக்கிரமிப்பு ஆகியவை காடுகளின் சமநிலைக்கு அச்சுறுத்தலாக உள்ளன. வனவிலங்குகளைக் காப்பது நம் கடமை.\n📅 இந்தக் கண்காட்சி இன்று (நவ. 22) நிறைவடைகிறது.\n\nRare endangered animals paintings exhibition Peelamedu Coimbatore | Coimbatore news\n📍 பீளமேடு, கோவை மாவட்டம் | 22 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Peelamedu #கோவை #CoimbatoreNews",
+   "prompts": "A few visitors stand quietly in a bright indoor art gallery in Peelamedu, Coimbatore, looking at a wall of framed paintings of endangered wild animals and birds drawn in natural colours. Seen from behind at a distance, two people in a shirt and a saree stand before a large canvas showing a rare Western Ghats animal in its forest habitat, with a small explanatory card mounted beside each painting. The white gallery walls hold rows of framed works, lit by soft ceiling spotlights in the daytime, with polished wooden floors and a few empty benches. The atmosphere is calm and reflective. The gallery sits in a quiet urban Coimbatore neighbourhood, and the exhibition title 'Kattin Kural' is suggested by the mood of the room rather than any readable text. Camera at eye level, 35 mm, wide enough to show the gallery walls and the visitors. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a framed painting in a Coimbatore art gallery, showing a rare endangered wild animal from the Western Ghats rendered in natural, unexaggerated colours against a green forest background with a few leaves and branches. Beside the frame, a small plain card with no readable text sits on the white gallery wall, lit by soft ceiling spotlights in daylight. The brushwork is fine and realistic, giving the animal a lifelike presence. Out of focus at the edge of the frame, a visitor's shoulder in a cotton shirt is visible from behind. Shallow depth of field, camera at eye level, 50 mm macro-like framing, emphasising the lifelike animal and the theme of saving biodiversity. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/suresh-raghavan-s-hand-gives-life-to-endangered-rare-animals/4382182",
+   "published": "2026-11-21T13:46:28+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: hl1 (the first headline on screen) must name the place 'பீளமேடு', e.g. 'பீளமேடு: ...' or 'பீளமேடு-இல் ...' - viewers share news of their own area",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320152/kovaiminnal/mlwmwrj6wthq3jtzwsn6.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320155/kovaiminnal/bwzrzch7bsmjxrw6audr.jpg"
    ]
   }
  ]
