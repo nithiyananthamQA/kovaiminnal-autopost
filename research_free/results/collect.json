@@ -3,127 +3,269 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.maalaimalar.com/amp/story/news/tamilnadu/leopard-crossing-the-road",
-  "candidate filter: collected=1",
-  "to write: 1 Coimbatore district candidates (max 1 stories)",
-  "round: top 1 of 1 candidates",
-  "candidates waiting: 1 Coimbatore; time left 79 min",
-  "try (N) manual=True: https://www.maalaimalar.com/amp/story/news/tamilnadu/leopard",
+  "manual link added: https://www.maalaimalar.com/news/tamilnadu/mettupalayam-near-worker-murder-2",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/what-s-the-money-for-love/4382237",
+  "manual link added: https://www.hindutamil.in/news/tamilnadu/sp-velumani-is-one-of-the-2-crore-members-of-the-aiadmk-says-palaniswami",
+  "candidate filter: collected=3",
+  "to write: 3 Coimbatore district candidates (max 3 stories)",
+  "round: top 3 of 3 candidates",
+  "candidates waiting: 3 Coimbatore; time left 79 min",
+  "try (N) manual=True: https://www.hindutamil.in/news/tamilnadu/sp-velumani-is-one-",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "try (N) manual=True: https://www.maalaimalar.com/news/tamilnadu/mettupalayam-near",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
-  "candidate loop ended: left 0, tried={'N': 1}, done={'N': 1}, time left 76 min",
-  "filed: 1 Coimbatore district stories (target 1), reels only",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
+  "candidate loop ended: left 0, tried={'N': 3}, done={'N': 3}, time left 77 min",
+  "filed: 3 Coimbatore district stories (target 3), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":1,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":3,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
-  "switching away from gemini/gemini-3.5-flash for 10 min",
-  "ok gemini/gemini-3-flash-preview (15s)",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "ok gemini/gemini-3-flash-preview (11s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok gemini/gemini-3-flash-preview (17s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok gemini/gemini-3-flash-preview (38s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_gener",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
+  "ok gemini/gemini-3.6-flash (14s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok groq/openai/gpt-oss-120b (4s)",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
+  "dead for this round: gemini/gemini-3-flash-preview",
+  "ok gemini/gemini-3.6-flash (18s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok gemini/gemini-3-flash-preview (12s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "ok groq/qwen/qwen3.8-27b (4s)",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok groq/qwen/qwen3.8-27b (0s)",
+  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash"
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "பொள்ளாச்சி டாப்சிலிப்பில் சிறுத்தை கம்பீரமாக சாலையைக் கடந்தது",
-   "english_headline": "Leopard crosses road at Topslip, Pollachi; tourists filmed it, video goes viral",
-   "category": "Weather & Agriculture",
-   "location": "Topslip, Anamalai Tiger Reserve, Pollachi, Coimbatore district",
-   "importance": "Medium",
+   "tamil_headline": "மேட்டுப்பாளையம்-அன்னூர் சாலை நால்ரோடு பெட்ரோல் பங்கில் தொழிலாளி கழுத்து அறுத்துக் கொலை",
+   "english_headline": "Labourer Vinod Balaji (44) found with throat slit at Nalroad petrol bunk on Mettupalayam-Annur road, Coimbatore district",
+   "category": "Crime & Safety",
+   "location": "Nalroad, Mettupalayam-Annur road, Mettupalayam taluk, Coimbatore district",
+   "importance": "High",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "வனவிலங்கு",
-    "loc": "டாப்சிலிப், பொள்ளாச்சி",
-    "hl1": "டாப்சிலிப்பில் சாலையைக் கடந்த சிறுத்தை",
-    "hl2": "வீடியோ வைரல்",
+    "cat": "குற்றச் செய்தி",
+    "loc": "நால்ரோடு, மேட்டுப்பாளையம்",
+    "hl1": "மேட்டுப்பாளையத்தில் பெட்ரோல் பங்கில்",
+    "hl2": "கழுத்து அறுக்கப்பட்ட",
     "slides": [
      {
       "title": "என்ன நடந்தது?",
       "lines": [
-       "டாப்சிலிப் பகுதியில் சிறுத்தை சாலையைக் கடந்தது",
-       "எருமைப்பாறை பகுதியில் சிறுத்தை சாலையோரம் நின்றது",
-       "வனத்துறை வாகனம் உடனடியாக நிறுத்தப்பட்டது"
+       "மேட்டுப்பாளையம்-அன்னூர் சாலை நால்ரோடு பெட்ரோல் பங்கில் கொலை",
+       "வினோத் பாலாஜி (<b>44</b>) கழுத்து அறுக்கப்பட்டு உயிரிழந்தார்",
+       "இன்று அதிகாலை சுமார் <b>5 மணிக்கு</b> தொழிலாளர்கள் பார்த்தனர்"
       ]
      },
      {
-      "title": "சுற்றுலா பயணிகள்",
+      "title": "பின்னணி",
       "lines": [
-       "சபாரி சென்ற பயணிகள் சிறுத்தையைக் கண்டு ரசித்தனர்",
-       "சிலர் செல்போனில் வீடியோ எடுத்தனர்",
-       "அந்த வீடியோ இணையத்தில் வைரலாகப் பரவுகிறது"
+       "பங்கை லீஸுக்கு எடுத்த விவகாரத்தில் தகராறு",
+       "பங்கின் உரிமையாளர் சேகர், அரசு ஒப்பந்ததாரர்",
+       "இவர் வினோத் பாலாஜியிடம் பங்கைக் கவனிக்கக் கூறியிருந்தார்"
       ]
      },
      {
-      "title": "சபாரி நேரம்",
+      "title": "போலீஸ் விசாரணை",
       "lines": [
-       "காலை <b>6:30</b> முதல் <b>9:30</b> வரை",
-       "பிற்பகல் <b>3</b> முதல் மாலை <b>5:30</b> வரை",
-       "தமிழ்நாடு வனத்துறை இணையதளத்தில் முன்பதிவு அவசியம்"
-      ]
-     },
-     {
-      "title": "வனத்துறை",
-      "lines": [
-       "வாகனங்களை விட்டு இறங்கக் கூடாது",
-       "வனவிலங்குகளுக்கு இடையூறு செய்யக் கூடாது",
-       "ஆனைமலை புலிகள் காப்பக அதிகாரிகள் எச்சரிக்கை"
+       "டி.எஸ்.பி. பாலாஜி தலைமையில் போலீசார் விசாரணை",
+       "மோப்ப நாய், தடயவியல் நிபுணர்கள் வரவழைக்கப்பட்டனர்",
+       "உடல் மேட்டுப்பாளையம் அரசு மருத்துவமனைக்கு அனுப்பப்பட்டது"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "பொள்ளாச்சி டாப்சிலிப் பகுதியில் சிறுத்தை ஒன்று சாலையை கம்பீரமாகக் கடந்து சென்றது. ஆனைமலை புலிகள் காப்பகத்தில் வனத்துறை சபாரி வாகனம் சென்றுகொண்டிருந்தபோது இந்தக் காட்சி நடந்தது. டாப்சிலிப்பில் இருந்து பரம்பிக்குளம் செல்லும் சாலையில் எருமைப்பாறை பகுதியில் சிறுத்தை சாலையோரம் நிற்பது தெரியவந்தது. உடனடியாக வனத்துறை வாகனம் நிறுத்தப்பட்டது. சிறுத்தை சாலையைக் கடந்து மறுபுறம் சென்றது. வாகனத்தில் இருந்த சுற்றுலா பயணிகள் அதை ஆச்சரியத்துடன் கண்டு ரசித்தனர். சிலர் செல்போனில் வீடியோ எடுத்து சமூக வலைதளத்தில் பதிவிட்டனர். அந்த வீடியோ தற்போது இணையத்தில் வைரலாகப் பரவி வருகிறது. வனத்துறை சபாரி காலை 6:30 முதல் 9:30 வரையும், பிற்பகல் 3 முதல் மாலை 5:30 வரையும் நடைபெறுகிறது. சபாரிக்கு தமிழ்நாடு வனத்துறை இணையதளத்தில் முன்பதிவு செய்வது அவசியம். வனப்பகுதியில் வாகனங்களை விட்டு இறங்கக் கூடாது, வனவிலங்குகளுக்கு இடையூறு செய்யக் கூடாது என்று ஆனைமலை புலிகள் காப்பக அதிகாரிகள் எச்சரித்துள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🐆 பொள்ளாச்சி டாப்சிலிப்பில் சாலையைக் கடந்த சிறுத்தை: வீடியோ வைரல்\n\n📰 முழு விவரம்:\nபொள்ளாச்சி அடுத்த ஆனைமலை புலிகள் காப்பகப் பகுதியில் உள்ள டாப்சிலிப்பில் சிறுத்தை ஒன்று சாலையைக் கம்பீரமாகக் கடந்தது. நேற்று சுற்றுலா பயணிகளை ஏற்றிச் சென்ற வனத்துறை சபாரி வாகனம் டாப்சிலிப்பில் இருந்து பரம்பிக்குளம் செல்லும் சாலையில் சென்றுகொண்டிருந்தது. எருமைப்பாறை பகுதியில் சிறுத்தை சாலையோரம் நிற்பது தெரியவந்ததால் வாகனம் உடனடியாக நிறுத்தப்பட்டது. சிறுத்தை சாலையைக் கடந்து மறுபுறம் சென்றது. பயணிகள் சிலர் செல்போனில் வீடியோ எடுத்துச் சமூக வலைதளத்தில் பதிவிட்டனர்; அது தற்போது இணையத்தில் வைரலாகப் பரவி வருகிறது.\nவால்பாறை மலைப்பாதைகளிலும், டாப்சிலிப் முதல் பரம்பிக்குளம் வரையிலான வனச்சாலையிலும் சிறுத்தைகள் சாலையைக் கடப்பதும், இரவு நேர சவாரியில் தென்படுவதும் வழக்கமான நிகழ்வு என்று கூறப்படுகிறது.\n🕘 சபாரி நேரம்: காலை 6:30 முதல் 9:30 வரை; பிற்பகல் 3 முதல் மாலை 5:30 வரை\n📝 வன சவாரிக்கு தமிழ்நாடு வனத்துறை இணையதளத்தில் முன்பதிவு செய்வது அவசியம்.\nℹ️ மக்கள் கவனத்திற்கு: வனப்பகுதிக்குள் வாகனங்களை விட்டு இறங்கக் கூடாது; வனவிலங்குகளுக்கு இடையூறு செய்யக் கூடாது என்று ஆனைமலை புலிகள் காப்பக அதிகாரிகள் எச்சரித்துள்ளனர்.\n\nLeopard crosses road at Topslip, Pollachi | Coimbatore news\n📍 டாப்சிலிப், பொள்ளாச்சி, கோவை மாவட்டம்\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #வனவிலங்கு #CoimbatoreNews",
-   "prompts": "A spotted leopard crosses a narrow forest road at Topslip in the Anamalai Tiger Reserve near Pollachi, Coimbatore district, while a stopped forest department safari jeep waits on the road. The road runs through dense green Western Ghats forest with tall trees and undergrowth on both sides, seen in soft early morning light during the cool winter season. Inside the open jeep, a few tourists sit seen from behind, some leaning forward and raising mobile phones to film the animal, their backs and shoulders visible and their faces turned away from the camera. A forest department driver sits at the wheel, also seen from behind. The leopard is mid-stride across the tarmac, its tawny coat with dark rosettes clearly visible, its body low and confident. The camera is at eye level from slightly behind the jeep, 35 mm, wide enough to show the road, the forest and the jeep together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a tourist's mobile phone held up in a jeep window, its screen showing the blurred view of a leopard on a forest road, with the tip of a leopard's tail just visible at the edge of the frame. The phone is held by a hand seen from behind, wearing a plain sleeve, and the edge of the jeep door and window frame surround it. Behind the phone the dense green forest and the narrow tarmac road are softly out of focus in cool, filtered daylight. No readable text or screen content is visible; the shot emphasises the act of filming the wild animal. Camera is close and slightly high, 35 mm, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.maalaimalar.com/amp/story/news/tamilnadu/leopard-crossing-the-road",
-   "published": "2026-11-20T05:29:29Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 0 validator problem(s)",
+   "reel_script": "மேட்டுப்பாளையம்-அன்னூர் சாலை நால்ரோடு பெட்ரோல் பங்கில் தொழிலாளி கழுத்து அறுக்கப்பட்டு கொல்லப்பட்டார். உயிரிழந்தவர் மேட்டுப்பாளையம் டேன் இந்திய காலனி, எல் எஸ் புரம் பாக்குகார வீதியைச் சேர்ந்த வினோத் பாலாஜி, 44 வயது. அவர் அந்தப் பங்கைக் கவனித்து வந்தார். பங்கின் உரிமையாளர் கோத்தகிரியைச் சேர்ந்த அரசு ஒப்பந்ததாரர் சேகர். பங்கை லீஸுக்கு எடுத்த விவகாரத்தில் மனோன்மணிக்கும் சேகருக்கும் இடையே கொடுக்கல் வாங்கலில் தகராறு இருந்ததாகக் கூறப்படுகிறது. இதில் மனோன்மணி மீது சேகர் செக் மோசடி வழக்கு தொடுத்தார். நீதிமன்றத் தீர்ப்பின்படி மனோன்மணி தற்போது கோவை சிறையில் உள்ளார். நேற்று இரவு 10.30 மணி அளவில் வினோத் பாலாஜி பங்கின் பின்புறம் தங்கியிருந்த கூலித் தொழிலாளர்களிடம் உணவு கேட்டார். இன்று அதிகாலை சுமார் 5 மணிக்கு, அங்கு தங்கியிருந்த சபான், ஆபி ஜூல், சவுக்கத் அலி ஆகியோர் எழுந்தபோது, கட்டிலில் வினோத் பாலாஜி கழுத்து அறுக்கப்பட்ட நிலையில் உயிரிழந்து கிடந்தார். அவர்கள் பங்கின் பின்புறம் தங்கியிருந்தவர்களிடம் கூறினர். அவர்கள் போலீசாருக்குத் தகவல் கொடுத்தனர். மேட்டுப்பாளையம் காவல் துணை கண்காணிப்பாளர் பாலாஜி தலைமையில் போலீசார் சம்பவ இடத்துக்கு வந்து உடலைக் கைப்பற்றி மேட்டுப்பாளையம் அரசு மருத்துவமனைக்கு அனுப்பினர். தடயவியல் நிபுணர்களும் மோப்ப நாய்களும் வரவழைக்கப்பட்டு விசாரணை நடந்தது. போலீசார் தீவிர விசாரணை நடத்தி வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 மேட்டுப்பாளையத்தில் பெட்ரோல் பங்கில் தொழிலாளி கழுத்து அறுத்துக் கொலை\n\n📰 முழு விவரம்:\nமேட்டுப்பாளையம்-அன்னூர் சாலை நால்ரோடு பகுதியில் உள்ள பெட்ரோல் பங்கில் வினோத் பாலாஜி (44 வயது) கழுத்து அறுக்கப்பட்டு உயிரிழந்தார்.\nஅவர் மேட்டுப்பாளையம் டேன் இந்திய காலனி, எல்.எஸ்.புரம் பாக்குகார வீதியைச் சேர்ந்தவர். பெட்ரோல் பங்கின் உரிமையாளர் சேகர், கோத்தகிரியைச் சேர்ந்த அரசு ஒப்பந்ததாரர். சேகர் கடந்த 2 ஆண்டுகளுக்கு முன்பு கோவையைச் சேர்ந்த கால்நடை மருத்துவர் சுரேஷ் மற்றும் அவரது மனைவி மனோன்மணியிடம் இருந்து பங்கை லீஸுக்கு எடுத்து நடத்தி வந்தார்.\nபங்கை லீஸுக்கு எடுத்த விவகாரத்தில் மனோன்மணிக்கும் சேகருக்கும் இடையே கொடுக்கல் வாங்கலில் தகராறு ஏற்பட்டதாகக் கூறப்படுகிறது. இதில் மனோன்மணி மீது சேகர் செக் மோசடி வழக்கு தொடுத்தார். நீதிமன்றத் தீர்ப்பின்படி மனோன்மணி தற்போது கோவை சிறையில் உள்ளதாகக் கூறப்படுகிறது.\nபங்கில் வேறு யாரும் உரிமை கொண்டாடக்கூடாது என்பதற்காக, சேகர் 10 ஆண்டுகளுக்கு மேல் தன்னிடம் பணிபுரிந்த வினோத் பாலாஜியை பங்கைக் கவனிக்கச் சொன்னார். வினோத் பாலாஜி பங்கையும் சேகரின் மற்ற அரசு பணிகளையும் கவனித்து வந்தார். அரசு ஒப்பந்தப் பணிகளில் ஈடுபட்ட கூலித் தொழிலாளர்களை தற்காலிகமாகப் பங்கின் பின்புறம் தனி அறையில் தங்கவைத்து கவனித்து வந்தார்.\nபகலில் பெள்ளாதியைச் சேர்ந்த வசந்தி (36 வயது) பங்கைக் கவனித்தார்; இரவில் வினோத் பாலாஜி கவனித்தார்.\nநேற்று இரவு 10.30 மணி அளவில் வினோத் பாலாஜி, அறையில் சமைத்து சாப்பிட்டிருந்தவர்களிடம் உணவு கேட்டார். அவர்கள் அவருக்குத் தனித் தட்டில் ஒரு முட்டையுடன் உணவு கொடுத்து அனுப்பினர். பின்னர் ஐந்து தொழிலாளர்களும் அறைக்குள் தூங்கினர். வினோத் பாலாஜியுடன் சபான், ஆபிஜூல், சவுக்கத் அலி ஆகியோர் பங்கு வளாகத்தில் தங்கினர்.\nஇன்று அதிகாலை சுமார் 5 மணிக்கு சபான், சவுக்கத் அலி, ஆபிஜூல் ஆகியோர் எழுந்தபோது, கட்டிலில் வினோத் பாலாஜி ரத்த வெள்ளத்தில் உயிரிழந்து கிடந்தார். மூவரும் பின்புறம் தங்கியிருந்தவர்களிடம் கூறி போலீசாருக்குத் தகவல் கொடுத்தனர்.\nமேட்டுப்பாளையம் டி.எஸ்.பி. பாலாஜி தலைமையில் போலீசார் சம்பவ இடத்துக்கு வந்து உடலைக் கைப்பற்றி மேட்டுப்பாளையம் அரசு மருத்துவமனைக்கு அனுப்பினர். தடயவியல் நிபுணர்கள், மோப்ப நாய்கள் வரவழைக்கப்பட்டன. மோப்ப நாய் பங்கின் பின்புறப் பகுதியில் சிறிது தூரம் ஓடி நின்றது. போலீசார் தீவிர விசாரணை நடத்தி வருகின்றனர்.\n\nMettupalayam petrol bunk worker throat slit murder | Coimbatore news\n📍 நால்ரோடு, மேட்டுப்பாளையம் | 22 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Mettupalayam #குற்றம் #CoimbatoreNews",
+   "prompts": "A police cordon tape stretches across the entrance of a small, single-story petrol bunk on the Mettupalayam-Annur road in Nalroad. The scene is quiet and tense, with no active movement inside the premises. The location is a roadside fuel station with a concrete forecourt and a small attendant room visible at the back. Several police officers in khaki uniforms stand at a distance, facing the building, maintaining the perimeter. No vehicles are moving; a few parked two-wheelers are visible near the pump island. The time is early morning, around 5 AM, with dim, cool natural light and clear weather. The camera is positioned at eye level, 35 mm lens, capturing the wide view of the petrol bunk and the road behind it to establish the isolated nature of the crime scene. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up view of the back room of the petrol bunk where the incident occurred. The room is small and sparsely furnished, with a simple iron bed frame visible. The floor shows signs of disturbance, and the atmosphere is heavy and still. Police officers in khaki stand just outside the doorway, their backs to the camera, observing the interior. The lighting is artificial, casting harsh shadows within the confined space. The camera is slightly high, looking down into the room, 35 mm lens, focusing on the bed and the immediate surroundings to highlight the location of the discovery without showing any bodies or graphic details, emphasizing the forensic nature of the scene. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.maalaimalar.com/news/tamilnadu/mettupalayam-near-worker-murder-2",
+   "published": "2026-11-22T06:50:54Z",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 26 ('இந்நிலையில் நேற்று இரவு பெட்ரோல் பங்கில் ஜார்க்கண்ட் மாநிலத்'); 29 ('இந்நிலையில் நேற்று இரவு பெட்ரோல் பங்கில் ஜார்க்கண்ட் மாநிலத்'); 48 ('இந்நிலையில் நேற்று இரவு பெட்ரோல் பங்கில் ஜார்க்கண்ட் மாநிலத்'); 28 ('இந்நிலையில் நேற்று இரவு பெட்ரோல் பங்கில் ஜார்க்கண்ட் மாநிலத்'); 25 ('இந்நிலையில் நேற்று இரவு பெட்ரோல் பங்கில் ஜார்க்கண்ட் மாநிலத்'); 45 ('இந்நிலையில் நேற்று இரவு பெட்ரோல் பங்கில் ஜார்க்கண்ட் மாநிலத்')",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795160184/kovaiminnal/y6iens5x9uawrxjkvnom.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795160189/kovaiminnal/wmtivlgmopul8f7kwixl.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795332891/kovaiminnal/lmqd3gr1j4k5lbhk8a3g.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795332896/kovaiminnal/vctkozvrb44iqgvnc9g5.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "சட்டம்-ஒழுங்கு சீரழிந்துவிட்டது: பழனிசாமி குற்றச்சாட்டு",
+   "english_headline": "Palaniswami alleges law and order collapsed in six months of TVK government",
+   "category": "Government & Services",
+   "location": "Coimbatore airport, Coimbatore district",
+   "importance": "High",
+   "scope": "district",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "அரசியல் செய்தி",
+    "loc": "கோவை விமான நிலையம்",
+    "hl1": "தவெக அரசில் சட்டம்-ஒழுங்கு சீரழிவு",
+    "hl2": "பழனிசாமி குற்றச்சாட்டு",
+    "slides": [
+     {
+      "title": "என்ன சொன்னார்?",
+      "lines": [
+       "தவெக அரசு பொறுப்பேற்ற 6 மாதங்களில் சட்டம்-ஒழுங்கு",
+       "போதைப்பொருள் விற்பனை அதிகரித்துவிட்டது",
+       "தமிழகத்திலேயே போதைப்பொருள் தயாரிக்கும் நிலை ஏற்பட்டுள்ளது"
+      ]
+     },
+     {
+      "title": "எந்த சம்பவங்கள்?",
+      "lines": [
+       "சென்னையில் ரூ.700 கோடி மதிப்பிலான போதைப்பொருள் பிடிபட்டது",
+       "நாகப்பட்டினத்தில் த.வெ.க. நிர்வாகி வீட்டில்",
+       "எம்.எல்.ஏ. ஆட்சியருக்கு ஆபாச குறுஞ்செய்தி அனுப்பியதாக"
+      ]
+     },
+     {
+      "title": "பிற",
+      "lines": [
+       "டெல்டா மாவட்டங்களில் சம்பா சாகுபடிக்கு தண்ணீர் கேள்விக்குறி",
+       "யூனிட் ரூ.37-க்கு மின்சாரம் கொள்முதல் செய்வதில் ஊழல் கேள்வி",
+       "முதல்வர் விஜய் தண்ணீரைப் பெற போதிய நடவடிக்கை எடுக்கவில்லை"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "த வெ க அரசு மீது பழனிசாமி கடும் குற்றச்சாட்டு வைத்துள்ளார். அ தி மு க பொதுச் செயலாளர் பழனிசாமி கோவை விமான நிலையத்தில் நவம்பர் 21ஆம் தேதி செய்தியாளர்களிடம் பேசினார். த வெ க அரசு பொறுப்பேற்ற 6 மாதங்களில் தமிழகத்தில் சட்டம்-ஒழுங்கு அடியோடு சீரழிந்துவிட்டதாக அவர் கூறினார். போதைப்பொருள் விற்பனை அதிகரித்துவிட்டதாகவும், தமிழகத்திலேயே போதைப்பொருள் தயாரிக்கும் நிலை ஏற்பட்டுவிட்டதாகவும் குற்றம்சாட்டினார். சென்னையில் ரூ.700 கோடி மதிப்பிலான போதைப்பொருளை மத்திய புலனாய்வு பிரிவு பிடித்ததையும் சுட்டிக்காட்டினார். டெல்டா மாவட்டங்களில் சம்பா சாகுபடிக்குத் தண்ணீர் கிடைப்பது கேள்விக்குறியாக உள்ளது என்றும் அவர் கூறினார். யூனிட் ரூ.37-க்கு மின்சாரம் கொள்முதல் செய்யப்படுவதில் ஊழல் நடந்திருக்குமோ என்ற கேள்வி எழுவதாகவும் தெரிவித்தார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 தவெக அரசில் சட்டம்-ஒழுங்கு சீரழிந்துவிட்டது: பழனிசாமி குற்றச்சாட்டு\n\n📰 முழு விவரம்:\nஅதிமுக பொதுச் செயலாளர் பழனிசாமி கோவை விமான நிலையத்தில் நவ. 21 அன்று செய்தியாளர்களிடம் பேசினார். தவெக அரசு பொறுப்பேற்ற 6 மாதங்களில் தமிழகத்தில் சட்டம்-ஒழுங்கு அடியோடு சீரழிந்துவிட்டதாக அவர் குற்றம்சாட்டினார்.\nதொழில் முதலீடுகளை ஈர்ப்பதில் அரசு ஆக்கப்பூர்வமான நடவடிக்கை எடுக்கவில்லை என்றும், நிர்வாகத் தோல்விகளை மறைக்க மற்றவர்கள் மீது பழி சுமத்துவதாகவும் கூறினார்.\nதிருப்பரங்குன்றம் தீப விவகாரத்தில் உச்ச நீதிமன்றம் கருத்து தெரிவித்துள்ளது; தமிழக அரசு நீதிமன்றத்தில் தனது வாதங்களை சரியாக முன்வைக்க வேண்டும் என்றார். விசாரணை முடிவில்தான் முழுமையாகப் பேச முடியும் என்றார்.\nதமிழகத்தில் போதைப்பொருள் விற்பனை அதிகரித்துள்ளது. சென்னையில் ரூ.700 கோடி மதிப்பிலான போதைப்பொருளை மத்திய புலனாய்வு பிரிவு பிடித்துள்ளது. நாகப்பட்டினத்தில் த.வெ.க. நிர்வாகி வீட்டில் மெத்தம்பெட்டமைன் தயாரித்தது கண்டுபிடிக்கப்பட்டது என்றும் கூறினார்.\nஒரு எம்.எல்.ஏ. ஆட்சியருக்கு ஆபாச குறுஞ்செய்தி அனுப்பியதாகக் கூறப்படுவதையும், எம்.எல்.ஏ. காவல் நிலையத்திற்கு சென்று போலீஸாரின் செல்போனை பிடுங்கிப் பார்த்ததையும் கண்டித்தார்.\nடெல்டா மாவட்டங்களில் சம்பா சாகுபடிக்குத் தண்ணீர் கிடைப்பது கேள்விக்குறியாக உள்ளது. குடிநீருக்கும் மேட்டூர் அணை நீர் போதவில்லை என்றார். ஆனால் தமிழகத்திற்கு உரிய தண்ணீரைப் பெற முதல்வர் விஜய் போதிய நடவடிக்கை எடுக்கவில்லை என்றார்.\nமுந்தைய ஆட்சியில் யூனிட் ரூ.20-க்கு வாங்கியதை ஊழல் என்று கூறினோம்; தற்போது ரூ.37-க்கு வாங்கப்படுவதில் ஊழல் நடந்திருக்காதா என்ற கேள்வி எழுவதாகக் கூறினார்.\nதொழிற்சாலைகள் அண்டை மாநிலத்துக்குச் செல்வதாகவும், இந்த ஆட்சியால் மக்களுக்கு நன்மை எதுவும் கிடைக்கவில்லை என்றும் விமர்சித்தார். அதிமுகவில் 41 எம்.எல்.ஏ.க்கள் உள்ளதாகவும், ஆட்சியைக் கவிழ்க்க முடியாது என்றும் கூறினார்.\nசெங்கோட்டையன், எஸ்.பி.வேலுமணி ஒரு திருமண விழாவில் ஒன்றாக இருந்தது குறித்த கேள்விக்கு, அதிமுகவின் 2 கோடி உறுப்பினர்களில் எஸ்.பி.வேலுமணியும் ஒருவர் என்றும், அவரைப் பற்றி இங்கு கேள்வி எழுப்ப வேண்டாம் என்றும் பதிலளித்தார். கொளத்தூர் தொகுதியில் தேர்தல் வரும்போது நிலைப்பாட்டைத் தெரிவிப்பதாகவும் கூறினார்.\n\nPalaniswami alleges law and order collapse in Tamil Nadu | Coimbatore news\n📍 கோவை விமான நிலையம், கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #அரசியல்",
+   "prompts": "Inside the Coimbatore airport terminal, a senior politician in a white shirt and veshti stands before a cluster of Tamil reporters who hold up microphones and recorders, seen from behind and slightly to the side. Behind them are glass panels, a few airport staff and a couple of AIADMK party workers in white shirts and caps with a plain party flag resting against a pillar, the polished tiled floor reflecting the overhead lights. Daytime, bright indoor light from high windows. The scene feels like a busy press briefing in a modern airport hall, with travellers' suitcases rolling at the edges. The politician's face is not shown; the camera is at eye level, 35 mm, wide enough to show the whole group and the airport space around them. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a cluster of microphones and recording devices pointed toward a speaker just out of frame, held by unseen reporters' hands in shirtsleeves on a glossy airport floor. Behind the mics, a blurred row of AIADMK party flags and a few white-shirted party workers standing at the edge of the frame. The detail shows the moment of an allegation being recorded by the press. Bright indoor daylight from the terminal windows, shallow depth of field, camera slightly high, 50 mm, no readable text or logos visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.hindutamil.in/news/tamilnadu/sp-velumani-is-one-of-the-2-crore-members-of-the-aiadmk-says-palaniswami",
+   "published": "2026-11-21T13:41:13Z",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 84 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block); hl1 (the first headline on screen) must name the place 'கோவை விமான நிலையம்', e.g. 'கோவை விமான நிலையம்: ...' or 'கோவை விமான நிலையம்-இல் ...' - viewers share news of their own area",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795332918/kovaiminnal/omiqiffvn4xf0lrt0qhj.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795332922/kovaiminnal/wi0kiqk0k6yfot0gldyv.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "அன்புக்கு எதுக்கு காசு: கோவை அரசு மருத்துவமனை அருகே கை இழந்த மூர்த்தியின் சேவை",
+   "english_headline": "No money for love: Moorthy, who lost a hand in an accident, helps patients and the homeless outside Coimbatore Government Hospital",
+   "category": "Health",
+   "location": "Coimbatore Government Hospital area, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "மனிதநேயம்",
+    "loc": "கோவை அரசு மருத்துவமனை",
+    "hl1": "கோவை அரசு மருத்துவமனை: அன்பு செய்யும்",
+    "hl2": "ஒரு கையால் உதவும் மனிதர்",
+    "slides": [
+     {
+      "title": "யார் இவர்?",
+      "lines": [
+       "கூலித் தொழிலாளி மூர்த்தி, சேலம் பூர்வீகம்",
+       "2009ல் ரயில் ஏறும்போது விபத்து, இடது கை போனது",
+       "இப்போது 2 வருடமாக அரசு மருத்துவமனைக்கு வெளியே வசிக்கிறார்"
+      ]
+     },
+     {
+      "title": "என்ன செய்கிறார்?",
+      "lines": [
+       "நோயாளிகளுக்கு சாப்பாடு, தண்ணீர், டீ, காபி வாங்கித் தருகிறார்",
+       "தேவைப்படும்போது மாத்திரை, மருந்து வாங்கித் தருகிறார்",
+       "ஷேவிங், மொட்டை அடிப்பது போன்ற உதவிகளும் செய்கிறார்"
+      ]
+     },
+     {
+      "title": "வாழ்க்கை நிலை",
+      "lines": [
+       "மனைவி இறந்துவிட்டார், மகனை அக்கா வளர்க்கிறார்",
+       "பழைய முதலாளியிடம் வேலை கேட்டுள்ளார்",
+       "ஆதரவற்றவர்களின் உணவு தானம் வழியாக வாழ்கிறார்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கை இழந்த ஒருவர் கோவை அரசு மருத்துவமனை அருகே பிறருக்கு உதவி செய்து வருகிறார். அவர் பெயர் மூர்த்தி. சேலம் பூர்வீகமாகக் கொண்ட இவர் கூலித் தொழிலாளியாக இருந்தவர். 2009ஆம் ஆண்டு ரயிலில் ஏறும்போது நடந்த விபத்தில் அவர் இடது கையை இழந்தார். அதன் பிறகு லோடிங் வேலைக்குச் செல்ல முடியவில்லை. குத்தகை பார்க்கிங் வேலையும் நின்றுபோனது. இப்போது இரண்டு ஆண்டுகளாக அரசு மருத்துவமனைக்கு வெளியே தங்கியுள்ளார். மருத்துவமனையில் நோயாளிகளைப் பார்த்துக்கொள்ள ஆள் இல்லாதவர்களுக்கு, சாப்பாடு, தண்ணீர், டீ, காபி வாங்கித் தருகிறார். தேவைப்படும்போது மாத்திரை, மருந்தும் வாங்கித் தருகிறார். தலையில் காயம் ஏற்பட்டு நான்கு மாதங்களாக முடி வெட்டாமல் இருந்த ஒருவருக்கு மொட்டை அடித்து விட்டார். மூர்த்தியின் மனைவி உடல்நலக் குறைவால் இறந்துவிட்டார். மகனை அக்கா வளர்த்து வருகிறார். பழைய முதலாளியிடம் வேலை கேட்டுள்ளார். விரைவில் அழைப்பதாக அவர் உறுதியளித்துள்ளார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🤝 கோவை அரசு மருத்துவமனை அருகே ஒரு கையால் உதவும் மூர்த்தி\n\n📰 முழு விவரம்:\nகோவை அரசு மருத்துவமனையில் தினமும் பல ஆயிரக்கணக்கானோர் சிகிச்சை பெறுகின்றனர். மருத்துவமனை வளாகத்தைச் சுற்றி ஆதரவற்ற மக்கள் அதிகம் உள்ளனர். அவர்களுக்கு தானமாக வரும் உணவும், எதிர்பார்ப்பில்லாத அன்பும்தான் ஆதரவு.\nஅவர்களில் ஒருவர் மூர்த்தி. கூலித் தொழிலாளியான இவர் 2009ஆம் ஆண்டு விபத்தில் இடது கையை இழந்தார். வலது கையால் தன் தேவைகளைச் சமாளித்து, பிறருக்கும் உதவுகிறார். ஷேவிங், மொட்டை அடித்தல், உணவு, மருந்து வாங்கித் தருதல் ஆகியவற்றைச் செய்கிறார்.\nசேலம் பூர்வீகமான இவர் ஏழாம் வகுப்பு வரை படித்தவர். லோடிங் வேலை செய்தவர். மனைவி உடல்நலக் குறைவால் இறந்துவிட்டார். மகனை அக்கா வளர்க்கிறார். குத்தகை பார்க்கிங் வேலை முடிந்ததால் அதுவும் நின்றுபோனது. இரண்டு ஆண்டுகளாக அரசு மருத்துவமனைக்கு வெளியே தங்கியுள்ளார்.\nபழைய முதலாளியிடம் வேலை கேட்டுள்ளார். விரைவில் அழைப்பதாக அவர் கூறியுள்ளார்.\n\nKovai Government Hospital helper Moorthy one hand kindness | Coimbatore news\n📍 கோவை அரசு மருத்துவமனை, கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Humanity",
+   "prompts": "A one-armed man in worn shirt and veshti, Moorthy, kneels beside a seated patient on a pavement outside the Coimbatore Government Hospital and gently shaves the man's head with a razor, his right hand steady while his left sleeve hangs empty. The setting is the open footpath along the hospital compound wall, with tall multi-storey government hospital blocks rising behind, a few parked two-wheelers and an autorickshaw at the roadside, and visitors walking past in the background. Around them sit other patients and attendants on plastic sheets and low benches, some with bandages, and a steel tumbler of tea and a small packet of food rests on the ground. The time is bright daylight with soft warm sun, the sky clear over the hospital roofs. The camera is at eye level, 35 mm, slightly wide, with the man and the patient in the foreground and the hospital building in the background; people in the far distance are seen from behind or softly blurred. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up detail of a steel tumbler of hot tea and a few paper cups of coffee placed on a worn cloth beside a small packet of medicine strips and a folded hand towel on a pavement outside the Coimbatore Government Hospital. A single right hand, with a plain wristwatch, is just setting a cup down on the ground, the empty left sleeve of the shirt visible at the edge of the frame. Behind the objects, out of focus, lies the compound wall and the grey pillars of the hospital gate, with sandals and bare feet of patients and attendants partly visible on the footpath. The light is natural daylight, soft and even. The camera is close and slightly high, 35 mm macro-style, shallow depth of field to isolate the tumbler, cups and medicine strips. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/what-s-the-money-for-love/4382237",
+   "published": "2026-11-21T16:02:27+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 2 ('இப்ப 2 வருஷமா ஜி.எச்.,க்கு வெளியேதான் தங்கிருக்கேன்.'); 4 ('பக்கத்துல ஒருத்தர் தலையில் காயமாகி 4 மாசம் முடி வெட்டாம இருந')",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795332931/kovaiminnal/bxzqpgul4vdwbubimtsw.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795332934/kovaiminnal/rthizzvgzargecrtmwph.jpg"
    ]
   }
  ]
