@@ -1,53 +1,185 @@
-writing [N]: எம்ஜிஆர், ஜெயலலிதா உருவாக்கிய அதிமுக எங்கே? கேட்கிறார் செங்க
+writing [N]: கிராவல் மண்ணுடன் லாரி சிறை பிடிப்பு
+writing [N]: கோவை மாநகராட்சியில் ரூ.2,300 கோடி இழப்பு: கடந்த ஆட்சியில் எல
+writing [N]: குப்பைக்கூளமாக இருக்கிறது செல்வசிந்தாமணி குளம்
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok gemini/gemini-3.6-flash (18s)
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok gemini/gemini-3.6-flash (34s)
-factcheck by gemini/gemini-3.6-flash: 0 problems
-attempt 1 gemini/gemini-3.6-flash: 0 problems
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok gemini/gemini-3.6-flash (12s)
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please che
 dead for this round: gemini/gemini-3.6-flash
-ok gemini/gemini-3.5-flash (7s)
-factcheck by gemini/gemini-3.5-flash: 0 problems
-proofread by gemini/gemini-3.6-flash: 0 problems
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
 fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please che
 dead for this round: gemini/gemini-3.5-flash
-ok gemini/gemini-3-flash-preview (6s)
-real photo step skipped for 'Sengottaiyan criticizes EPS at Coimbator': real photos switched off
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, plea
+dead for this round: gemini/gemini-3-flash-preview
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+dead for this round: groq/openai/gpt-oss-120b
+ok groq/qwen/qwen3.8-27b (3s)
+attempt 1 groq/qwen/qwen3.8-27b: 3 problems
+  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  reel_script copies the article word for word (21 words in a row, 34% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+  caption copies the article word for word (21 words in a row, 40% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok gemini/gemini-3-flash-preview (14s)
+attempt 1 gemini/gemini-3-flash-preview: 3 problems
+  reel_script must tell how the story ENDED, as the article's last lines say ('கோவை மாநகராட்சியில் ரூ.2,300 கோடி இழப்பு: கடந்த ஆட்சியில் எல்லாவற்றிலும் ஊழல்; சொல்கிறது தணிக்கை அறிக்கை') - say what finally happened (complaint, action promised, released, arrested, case filed, how long it lasted); never write that details are unknown
+  hl1 (the first headline on screen) must name the place 'கோயம்புத்தூர்', e.g. 'கோயம்புத்தூர்: ...' or 'கோயம்புத்தூர்-இல் ...' - viewers share news of their own area
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 100 ('ஆட்சியில் சென்னை, கோவை மாநகராட்சிகளில் ரூ.100 கோடிக்கு டெண்ட'); 26 ('2021-–26ல் கோவை மாநகராட்சியில் சிறப்பு தணிக்கை நடந்தது.'); 87 ('வணிகம், தொழிற்சாலை, கல்வி நிறுவனங்களுக்கு குடியிருப்புக்கான '); 17 ('வணிகம், தொழிற்சாலை, கல்வி நிறுவனங்களுக்கு குடியிருப்புக்கான '); 158 ('வீடுகளுக்கு வழங்கும் குடிநீர் இணைப்பை வணிக பயன்பாட்டுக்கு வழ'); 31 ('வீடுகளுக்கு வழங்கும் குடிநீர் இணைப்பை வணிக பயன்பாட்டுக்கு வழ')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+switching away from groq/qwen/qwen3.8-27b for 10 min
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 3 problems
+  not grounded: place word 'கோயம்புத்தூர்' is not in the article
+  reel_script copies the article word for word (15 words in a row, 14% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 100 ('ஆட்சியில் சென்னை, கோவை மாநகராட்சிகளில் ரூ.100 கோடிக்கு டெண்ட'); 136 ('நீண்டகாலமாக காலியிட வரி வசூல் செய்யாததில் ரூ.136.51 கோடி இழப'); 51 ('நீண்டகாலமாக காலியிட வரி வசூல் செய்யாததில் ரூ.136.51 கோடி இழப'); 1,194 ('சர்வரில் முறைப்படுத்தாத காரணத்தால் ரூ.1,194 கோடி வருவாய் இழப'); 15 ('கிழக்கு மண்டலத்தில் 15 கட்டடங்களில் புதிதாக மொபைல் டவர் அமைக'); 53 ('பதிவேட்டு உடை அளவைவிட, அதிக மதிப்பில் விலை பட்டியல் தயாரித்த')
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+free fact-check unavailable, using Claude: no free model answered: None
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 0 problems
+claude rewrite 1 anthropic/claude-haiku-5-5: 0 problems
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok anthropic/claude-haiku-5-5
+real photo step skipped for 'Tipper lorry carrying unauthorised grave': real photos switched off
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 100 ('ஆட்சியில் சென்னை, கோவை மாநகராட்சிகளில் ரூ.100 கோடிக்கு டெண்ட'); 4 ('அவர்கள் மட்டுமே ரூ.2.4 கோடி வரி நிலுவை வைத்துள்ளனர்.'); 1 ('கட்டுமானம் அல்லாத பணிக்கு 1 சதவீத தொழிலாளர் நலநிதி வழங்கியதி'); 3 ('கட்டுமானம் அல்லாத பணிக்கு 1 சதவீத தொழிலாளர் நலநிதி வழங்கியதி'); 36 ('கட்டுமானம் அல்லாத பணிக்கு 1 சதவீத தொழிலாளர் நலநிதி வழங்கியதி'); 8 ('மாமன்றத்தில் ஒப்புதல் வழங்கிய தொகையை விட, குறைவான தொகை நிர்ண')
 image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 2 for 'Sengottaiyan criticizes EPS at Coimbator'
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261122-1706","first":"RN-242"}
+images made: 2 for 'Tipper lorry carrying unauthorised grave'
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261122-2107","first":"RN-244"}
 posting job started at once
+writing [N]: வடவள்ளியில் டூவீலரில் இருந்து தவறி விழுந்த பெண் உயிரிழப்பு
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+free models unavailable: no free model answered: None
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 82 ('நீண்ட காலமாக நிலுவையில் உள்ள சொத்து வரி வசூல் செய்யாததில் ரூ'); 1 ('கட்டுமானம் அல்லாத பணிக்கு 1 சதவீத தொழிலாளர் நலநிதி வழங்கியதி'); 3 ('கட்டுமானம் அல்லாத பணிக்கு 1 சதவீத தொழிலாளர் நலநிதி வழங்கியதி'); 36 ('கட்டுமானம் அல்லாத பணிக்கு 1 சதவீத தொழிலாளர் நலநிதி வழங்கியதி'); 8 ('மாமன்றத்தில் ஒப்புதல் வழங்கிய தொகையை விட, குறைவான தொகை நிர்ண'); 30 ('மாமன்றத்தில் ஒப்புதல் வழங்கிய தொகையை விட, குறைவான தொகை நிர்ண')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
+  slide 1 line 1 longer than 60 characters
+ok anthropic/claude-haiku-5-5
+real photo step skipped for 'Rs 2,300 crore loss in Coimbatore Corpor': real photos switched off
+fail gemini/gemini-3.6-flash: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
+poor answer - skipped for 30 min: gemini/gemini-3.6-flash
+free models unavailable: no free model answered: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read t
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+free fact-check unavailable, using Claude: no free model answered: None
+images made: 2 for 'Rs 2,300 crore loss in Coimbatore Corpor'
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 4 problems
+  The draft refers to 'நாகராஜபுரம் அருகே வாகனம் நிலை தடுமாறியதில்' (the vehicle lost balance), which slightly shifts the article's cause: the article says she lost balance and fell from the two-wheeler, not that the vehicle itself lost balance. This is a minor wording change in the cause.
+  The slides and caption add the safety advice 'இருசக்கர வாகனத்தில் பயணிக்கும்போது கவனமாக இருங்கள்' / 'பாதுகாப்பாக இருங்கள்', which is not in the article (an invented editorial detail).
+  The draft's tamil_headline and reel_script say 'இருசக்கர வாகனத்தில் இருந்து விழுந்த பெண்' while the article's headline and body say she fell from the two-wheeler; this is consistent, so not a problem, but the reel_script's first sentence and the caption's '📰 முழு விவரம்' do not state the cause 'slipped/lost balance' as the article does, leaving the cause 'நிலை தடுமாறி' only partially reflected in the headline.
+  The reel_script does not mention that the son Prakash was riding with her as the person who was on the bike; it does mention him, so not a problem. No further factual problems found.
+claude rewrite 2 anthropic/claude-haiku-5-5: 4 problems
+  fact-check: The draft refers to 'நாகராஜபுரம் அருகே வாகனம் நிலை தடுமாறியதில்' (the vehicle lost balance), which slightly shifts the article's cause: the article says she lost balance and fell from the two-wheeler, not that the vehicle itself lost balance. This is a minor wording change in the cause.
+  fact-check: The slides and caption add the safety advice 'இருசக்கர வாகனத்தில் பயணிக்கும்போது கவனமாக இருங்கள்' / 'பாதுகாப்பாக இருங்கள்', which is not in the article (an invented editorial detail).
+  fact-check: The draft's tamil_headline and reel_script say 'இருசக்கர வாகனத்தில் இருந்து விழுந்த பெண்' while the article's headline and body say she fell from the two-wheeler; this is consistent, so not a problem, but the reel_script's first sentence and the caption's '📰 முழு விவரம்' do not state the cause 'slipped/lost balance' as the article does, leaving the cause 'நிலை தடுமாறி' only partially reflected in the headline.
+  fact-check: The reel_script does not mention that the son Prakash was riding with her as the person who was on the bike; it does mention him, so not a problem. No further factual problems found.
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 2 problems
+  reel_script has 68 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 73 ('ஆர்.எஸ்.புரம் 73வது வார்டு ஏ.ஏ.ஸ்கீம் ரோடு நாதன் நகர் 2வது த'); 2 ('ஆர்.எஸ்.புரம் 73வது வார்டு ஏ.ஏ.ஸ்கீம் ரோடு நாதன் நகர் 2வது த'); ஆர்.எஸ்.புரம் ('ஆர்.எஸ்.புரம் 73வது வார்டு ஏ.ஏ.ஸ்கீம் ரோடு நாதன் நகர் 2வது த'); 500 ('ஹோப்ஸ் அருகில் அவிநாசி சாலையில் இருத்து 500 அடி தூரத்தில் மச')
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261122-2107","first":"RN-245"}
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
+  slide 3 must have 2-3 lines
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 2 problems
+  reel_script has 66 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 73 ('ஆர்.எஸ்.புரம் 73வது வார்டு ஏ.ஏ.ஸ்கீம் ரோடு நாதன் நகர் 2வது த'); 2 ('ஆர்.எஸ்.புரம் 73வது வார்டு ஏ.ஏ.ஸ்கீம் ரோடு நாதன் நகர் 2வது த'); ஆர்.எஸ்.புரம் ('ஆர்.எஸ்.புரம் 73வது வார்டு ஏ.ஏ.ஸ்கீம் ரோடு நாதன் நகர் 2வது த')
+ok anthropic/claude-haiku-5-5
+real photo step skipped for 'Woman dies after falling from two-wheele': real photos switched off
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 2 problems
+  reel_script has 62 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 500 ('ஹோப்ஸ் அருகில் அவிநாசி சாலையில் இருத்து 500 அடி தூரத்தில் மச')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Woman dies after falling from two-wheele'
+ok anthropic/claude-haiku-5-5
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261122-2108","first":"RN-246"}
+real photo step skipped for 'Selva Sinthamani lake in Coimbatore turn': real photos switched off
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Selva Sinthamani lake in Coimbatore turn'
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261122-2108","first":"RN-247"}
 earlier stories still waiting for images: []
 instagram check: 50 recent posts read from the page
 pick round: only the picked links are written (research_free/pick.py)
-manual link added: https://www.dinamalar.com/news/tamil-nadu-news/where-is-aiadmk-created-by-mgr-and-jayalalithaa-asks-sengottaiyan/4383117
-candidate filter: collected=1
-to write: 1 Coimbatore district candidates (max 1 stories)
-round: top 1 of 1 candidates
-candidates waiting: 1 Coimbatore; time left 79 min
-try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-news/where-is-aiad
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/woman-dies-after-falling-from-two-wheeler-in-vadavally/4383285
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/rs-2300-crore-loss-in-coimbatore-municipal-corporation-corruption-in-everything-under-the-previous-regime-says-audit-report/4383441
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/selvachintamani-tank-is-a-garbage-dump/4383169
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/truck-with-gravel-seized/4383168
+candidate filter: collected=4
+to write: 4 Coimbatore district candidates (max 4 stories)
+round: top 4 of 4 candidates
+candidates waiting: 4 Coimbatore; time left 79 min
+try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
+try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
+try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
 auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})
 posting job started at once
-candidate loop ended: left 0, tried={'N': 1}, done={'N': 1}, time left 78 min
-filed: 1 Coimbatore district stories (target 1), reels only
+try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})
+candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 78 min
+filed: 4 Coimbatore district stories (target 4), reels only
 queue: 0 news waiting to be written
-All News sheet: {"ok":true,"added":1,"updated":0} 
-stories: 1
+All News sheet: {"ok":true,"added":4,"updated":0} 
+stories: 4
