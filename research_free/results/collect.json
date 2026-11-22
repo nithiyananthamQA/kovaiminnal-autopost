@@ -3,57 +3,88 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/suresh-raghavan-s-hand-gives-life-to-endangered-rare-animals/4382182",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/we-buy-books-for-money-but-don-t-take-the-time-to-read/4382188",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/commemorative-lecture-of-the-founder-of-avinashilingam/4382189",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/sanitation-workers-protest-demanding-42000-monthly-salaries-rs/4382190",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/with-a-timely-check-up-it-s-easy-to-keep-sugar-under-control/4382202",
-  "candidate filter: collected=5",
-  "to write: 5 Coimbatore district candidates (max 5 stories)",
-  "round: top 5 of 5 candidates",
-  "candidates waiting: 5 Coimbatore; time left 79 min",
+  "manual link added: https://www.maalaimalar.com/news/tamilnadu/mettupalayam-near-worker-murder-2",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/what-s-the-money-for-love/4382237",
+  "manual link added: https://www.hindutamil.in/news/tamilnadu/sp-velumani-is-one-of-the-2-crore-members-of-the-aiadmk-says-palaniswami",
+  "candidate filter: collected=3",
+  "to write: 3 Coimbatore district candidates (max 3 stories)",
+  "round: top 3 of 3 candidates",
+  "candidates waiting: 3 Coimbatore; time left 79 min",
+  "try (N) manual=True: https://www.hindutamil.in/news/tamilnadu/sp-velumani-is-one-",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "try (N) manual=True: https://www.maalaimalar.com/news/tamilnadu/mettupalayam-near",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 10})",
-  "candidate loop ended: left 0, tried={'N': 5}, done={'N': 5}, time left 78 min",
-  "filed: 5 Coimbatore district stories (target 5), reels only",
+  "candidate loop ended: left 0, tried={'N': 3}, done={'N': 3}, time left 77 min",
+  "filed: 3 Coimbatore district stories (target 3), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":5,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":3,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
+  "ok gemini/gemini-3-flash-preview (11s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok gemini/gemini-3.6-flash (14s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
+  "ok gemini/gemini-3.6-flash (18s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok gemini/gemini-3-flash-preview (12s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok groq/qwen/qwen3.8-27b (0s)",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "dead for this round: groq/qwen/qwen3.8-27b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "dead for this round: groq/qwen/qwen3.8-27b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
@@ -61,348 +92,180 @@
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "மாத சம்பளம் ரூ.42,000 தர கோரி தூய்மை பணியாளர் ஆர்ப்பாட்டம்",
-   "english_headline": "Coimbatore sanitation workers protest at Kuniyamuthur demanding ₹42,000 monthly wage and permanent jobs",
-   "category": "Labour & Workers",
-   "location": "Kuniyamuthur, Coimbatore city, Coimbatore district",
-   "importance": "Medium",
+   "tamil_headline": "மேட்டுப்பாளையம்-அன்னூர் சாலை நால்ரோடு பெட்ரோல் பங்கில் தொழிலாளி கழுத்து அறுத்துக் கொலை",
+   "english_headline": "Labourer Vinod Balaji (44) found with throat slit at Nalroad petrol bunk on Mettupalayam-Annur road, Coimbatore district",
+   "category": "Crime & Safety",
+   "location": "Nalroad, Mettupalayam-Annur road, Mettupalayam taluk, Coimbatore district",
+   "importance": "High",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "தொழிலாளர் நலன்",
-    "loc": "குனியமுத்தூர், கோவை",
-    "hl1": "குனியமுத்தூரில் தூய்மை பணியாளர்கள்",
-    "hl2": "மாத ஊதியம் <b>ரூ.42,000</b>",
+    "cat": "குற்றச் செய்தி",
+    "loc": "நால்ரோடு, மேட்டுப்பாளையம்",
+    "hl1": "மேட்டுப்பாளையத்தில் பெட்ரோல் பங்கில்",
+    "hl2": "கழுத்து அறுக்கப்பட்ட",
     "slides": [
      {
       "title": "என்ன நடந்தது?",
       "lines": [
-       "பணி நிரந்தரம் கோரி தூய்மை பணியாளர்கள் ஆர்ப்பாட்டம்",
-       "குனியமுத்தூர் இடையர்பாளையம் பிரிவில் நடைபெற்றது",
-       "ஏ.ஐ.டி.யு.சி. சங்கத்தினர் ஏற்பாடு செய்தனர்"
+       "மேட்டுப்பாளையம்-அன்னூர் சாலை நால்ரோடு பெட்ரோல் பங்கில் கொலை",
+       "வினோத் பாலாஜி (<b>44</b>) கழுத்து அறுக்கப்பட்டு உயிரிழந்தார்",
+       "இன்று அதிகாலை சுமார் <b>5 மணிக்கு</b> தொழிலாளர்கள் பார்த்தனர்"
       ]
      },
      {
-      "title": "முக்கிய",
+      "title": "பின்னணி",
       "lines": [
-       "அனைவரையும் பணி நிரந்தரம் செய்ய வேண்டும்",
-       "குறைந்தபட்ச ஊதியம் மாதம் <b>ரூ.42,000</b>",
-       "அவுட்சோர்சிங் முறையை ரத்து செய்ய வேண்டும்"
+       "பங்கை லீஸுக்கு எடுத்த விவகாரத்தில் தகராறு",
+       "பங்கின் உரிமையாளர் சேகர், அரசு ஒப்பந்ததாரர்",
+       "இவர் வினோத் பாலாஜியிடம் பங்கைக் கவனிக்கக் கூறியிருந்தார்"
       ]
      },
      {
-      "title": "யார் பேசினர்?",
+      "title": "போலீஸ் விசாரணை",
       "lines": [
-       "மாவட்டத் தலைவர் சந்திரசேகரன் தலைமை வகித்தார்",
-       "மாநில செயலாளர் செல்வராஜ் பேசினார்",
-       "கோவை லேபர் யூனியன் செயலாளர் பாலகிருஷ்ணன் பேசினார்"
+       "டி.எஸ்.பி. பாலாஜி தலைமையில் போலீசார் விசாரணை",
+       "மோப்ப நாய், தடயவியல் நிபுணர்கள் வரவழைக்கப்பட்டனர்",
+       "உடல் மேட்டுப்பாளையம் அரசு மருத்துவமனைக்கு அனுப்பப்பட்டது"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "குனியமுத்தூரில் தூய்மை பணியாளர்கள் மாத ஊதியம் ரூ.42,000 வழங்கக் கோரி ஆர்ப்பாட்டம் செய்தனர். இந்த ஆர்ப்பாட்டம் குனியமுத்தூர் இடையர்பாளையம் பிரிவில் நடைபெற்றது. பணி நிரந்தரம் உள்ளிட்ட கோரிக்கைகளை வலியுறுத்தி ஏ ஐ டி யு சி சங்கத்தினர் இதில் பங்கேற்றனர். மாவட்டத் தலைவர் சந்திரசேகரன் தலைமை வகித்தார். மாநில செயலாளர் செல்வராஜ் உரையாற்றினார். அனைத்து தூய்மை பணியாளர்களையும் பணி நிரந்தரம் செய்ய வேண்டும் என்று அவர் வலியுறுத்தினார். குறைந்தபட்ச ஊதியமாக மாதம் ரூ.42,000 வழங்க வேண்டும் என்றும் கோரினார். அவுட்சோர்சிங் முறையை ரத்து செய்ய வேண்டும் என்றும் தெரிவித்தார். கோவை லேபர் யூனியன் செயலாளர் பாலகிருஷ்ணன், கட்டட தொழிலாளர் சங்கத் தலைவர் நாராயணன் ஆகியோரும் பேசினர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "👷 குனியமுத்தூரில் தூய்மை பணியாளர்கள் ஆர்ப்பாட்டம்: மாத ஊதியம் ரூ.42,000 கோரிக்கை\n\n📰 முழு விவரம்:\nபணி நிரந்தரம் உள்ளிட்ட கோரிக்கைகளை வலியுறுத்தி ஏ.ஐ.டி.யு.சி. சங்கத் தூய்மை பணியாளர்கள் குனியமுத்தூர் இடையர்பாளையம் பிரிவில் ஆர்ப்பாட்டம் செய்தனர்.\nமாவட்டத் தலைவர் சந்திரசேகரன் தலைமை வகித்தார். மாநில செயலாளர் செல்வராஜ், அனைத்து தூய்மை பணியாளர்களையும் பணி நிரந்தரம் செய்ய வேண்டும் என வலியுறுத்தினார்.\nகுறைந்தபட்ச ஊதியமாக மாதம் ரூ.42,000 வழங்க வேண்டும்; அவுட்சோர்சிங் முறையை ரத்து செய்ய வேண்டும் என்றும் கோரிக்கை வைக்கப்பட்டது.\nகோவை லேபர் யூனியன் செயலாளர் பாலகிருஷ்ணன், கட்டட தொழிலாளர் சங்கத் தலைவர் நாராயணன் ஆகியோரும் பேசினர்.\n\nCoimbatore sanitation workers protest Kuniyamuthur | Coimbatore news\n📍 குனியமுத்தூர், கோவை | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Kuniyamuthur #தூய்மைப்பணியாளர் #CoimbatoreNews",
-   "prompts": "A group of sanitation workers in work clothes stands gathered at a road junction in Kuniyamuthur, Coimbatore, holding up placards and a red union flag as they protest for permanent jobs and a monthly wage of Rs 42,000. The place is a busy city junction with two-wheelers, a private bus and an autorickshaw waiting at the signal, shop fronts lining the road and a concrete flyover pillar in the background. Men and women in shirts, veshti and sarees stand close together, most seen from behind or from a distance, with one speaker standing on a low platform raised above the crowd. Daylight, slightly overcast sky, a clear morning feel. Eye-level camera at 35 mm, wide enough to show the junction, the crowd and the traffic together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a row of placards and a union flag held up by workers at the protest, with the handwritten demand for permanent jobs and a Rs 42,000 minimum wage implied on the boards, though no readable text is shown. Behind the placards, the blurred roadside of Idayarpalayam junction shows a two-wheeler and a town bus passing slowly, and a pile of collected sweeping brooms and a dustbin lies at the edge of the pavement as a symbol of the sanitation work. Daylight, hard sun on the placards. Camera at slightly high angle, 35 mm, shallow focus on the boards with the crowd softly blurred behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/sanitation-workers-protest-demanding-42000-monthly-salaries-rs/4382190",
-   "published": "2026-11-21T15:04:27+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 0 validator problem(s)",
+   "reel_script": "மேட்டுப்பாளையம்-அன்னூர் சாலை நால்ரோடு பெட்ரோல் பங்கில் தொழிலாளி கழுத்து அறுக்கப்பட்டு கொல்லப்பட்டார். உயிரிழந்தவர் மேட்டுப்பாளையம் டேன் இந்திய காலனி, எல் எஸ் புரம் பாக்குகார வீதியைச் சேர்ந்த வினோத் பாலாஜி, 44 வயது. அவர் அந்தப் பங்கைக் கவனித்து வந்தார். பங்கின் உரிமையாளர் கோத்தகிரியைச் சேர்ந்த அரசு ஒப்பந்ததாரர் சேகர். பங்கை லீஸுக்கு எடுத்த விவகாரத்தில் மனோன்மணிக்கும் சேகருக்கும் இடையே கொடுக்கல் வாங்கலில் தகராறு இருந்ததாகக் கூறப்படுகிறது. இதில் மனோன்மணி மீது சேகர் செக் மோசடி வழக்கு தொடுத்தார். நீதிமன்றத் தீர்ப்பின்படி மனோன்மணி தற்போது கோவை சிறையில் உள்ளார். நேற்று இரவு 10.30 மணி அளவில் வினோத் பாலாஜி பங்கின் பின்புறம் தங்கியிருந்த கூலித் தொழிலாளர்களிடம் உணவு கேட்டார். இன்று அதிகாலை சுமார் 5 மணிக்கு, அங்கு தங்கியிருந்த சபான், ஆபி ஜூல், சவுக்கத் அலி ஆகியோர் எழுந்தபோது, கட்டிலில் வினோத் பாலாஜி கழுத்து அறுக்கப்பட்ட நிலையில் உயிரிழந்து கிடந்தார். அவர்கள் பங்கின் பின்புறம் தங்கியிருந்தவர்களிடம் கூறினர். அவர்கள் போலீசாருக்குத் தகவல் கொடுத்தனர். மேட்டுப்பாளையம் காவல் துணை கண்காணிப்பாளர் பாலாஜி தலைமையில் போலீசார் சம்பவ இடத்துக்கு வந்து உடலைக் கைப்பற்றி மேட்டுப்பாளையம் அரசு மருத்துவமனைக்கு அனுப்பினர். தடயவியல் நிபுணர்களும் மோப்ப நாய்களும் வரவழைக்கப்பட்டு விசாரணை நடந்தது. போலீசார் தீவிர விசாரணை நடத்தி வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 மேட்டுப்பாளையத்தில் பெட்ரோல் பங்கில் தொழிலாளி கழுத்து அறுத்துக் கொலை\n\n📰 முழு விவரம்:\nமேட்டுப்பாளையம்-அன்னூர் சாலை நால்ரோடு பகுதியில் உள்ள பெட்ரோல் பங்கில் வினோத் பாலாஜி (44 வயது) கழுத்து அறுக்கப்பட்டு உயிரிழந்தார்.\nஅவர் மேட்டுப்பாளையம் டேன் இந்திய காலனி, எல்.எஸ்.புரம் பாக்குகார வீதியைச் சேர்ந்தவர். பெட்ரோல் பங்கின் உரிமையாளர் சேகர், கோத்தகிரியைச் சேர்ந்த அரசு ஒப்பந்ததாரர். சேகர் கடந்த 2 ஆண்டுகளுக்கு முன்பு கோவையைச் சேர்ந்த கால்நடை மருத்துவர் சுரேஷ் மற்றும் அவரது மனைவி மனோன்மணியிடம் இருந்து பங்கை லீஸுக்கு எடுத்து நடத்தி வந்தார்.\nபங்கை லீஸுக்கு எடுத்த விவகாரத்தில் மனோன்மணிக்கும் சேகருக்கும் இடையே கொடுக்கல் வாங்கலில் தகராறு ஏற்பட்டதாகக் கூறப்படுகிறது. இதில் மனோன்மணி மீது சேகர் செக் மோசடி வழக்கு தொடுத்தார். நீதிமன்றத் தீர்ப்பின்படி மனோன்மணி தற்போது கோவை சிறையில் உள்ளதாகக் கூறப்படுகிறது.\nபங்கில் வேறு யாரும் உரிமை கொண்டாடக்கூடாது என்பதற்காக, சேகர் 10 ஆண்டுகளுக்கு மேல் தன்னிடம் பணிபுரிந்த வினோத் பாலாஜியை பங்கைக் கவனிக்கச் சொன்னார். வினோத் பாலாஜி பங்கையும் சேகரின் மற்ற அரசு பணிகளையும் கவனித்து வந்தார். அரசு ஒப்பந்தப் பணிகளில் ஈடுபட்ட கூலித் தொழிலாளர்களை தற்காலிகமாகப் பங்கின் பின்புறம் தனி அறையில் தங்கவைத்து கவனித்து வந்தார்.\nபகலில் பெள்ளாதியைச் சேர்ந்த வசந்தி (36 வயது) பங்கைக் கவனித்தார்; இரவில் வினோத் பாலாஜி கவனித்தார்.\nநேற்று இரவு 10.30 மணி அளவில் வினோத் பாலாஜி, அறையில் சமைத்து சாப்பிட்டிருந்தவர்களிடம் உணவு கேட்டார். அவர்கள் அவருக்குத் தனித் தட்டில் ஒரு முட்டையுடன் உணவு கொடுத்து அனுப்பினர். பின்னர் ஐந்து தொழிலாளர்களும் அறைக்குள் தூங்கினர். வினோத் பாலாஜியுடன் சபான், ஆபிஜூல், சவுக்கத் அலி ஆகியோர் பங்கு வளாகத்தில் தங்கினர்.\nஇன்று அதிகாலை சுமார் 5 மணிக்கு சபான், சவுக்கத் அலி, ஆபிஜூல் ஆகியோர் எழுந்தபோது, கட்டிலில் வினோத் பாலாஜி ரத்த வெள்ளத்தில் உயிரிழந்து கிடந்தார். மூவரும் பின்புறம் தங்கியிருந்தவர்களிடம் கூறி போலீசாருக்குத் தகவல் கொடுத்தனர்.\nமேட்டுப்பாளையம் டி.எஸ்.பி. பாலாஜி தலைமையில் போலீசார் சம்பவ இடத்துக்கு வந்து உடலைக் கைப்பற்றி மேட்டுப்பாளையம் அரசு மருத்துவமனைக்கு அனுப்பினர். தடயவியல் நிபுணர்கள், மோப்ப நாய்கள் வரவழைக்கப்பட்டன. மோப்ப நாய் பங்கின் பின்புறப் பகுதியில் சிறிது தூரம் ஓடி நின்றது. போலீசார் தீவிர விசாரணை நடத்தி வருகின்றனர்.\n\nMettupalayam petrol bunk worker throat slit murder | Coimbatore news\n📍 நால்ரோடு, மேட்டுப்பாளையம் | 22 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Mettupalayam #குற்றம் #CoimbatoreNews",
+   "prompts": "A police cordon tape stretches across the entrance of a small, single-story petrol bunk on the Mettupalayam-Annur road in Nalroad. The scene is quiet and tense, with no active movement inside the premises. The location is a roadside fuel station with a concrete forecourt and a small attendant room visible at the back. Several police officers in khaki uniforms stand at a distance, facing the building, maintaining the perimeter. No vehicles are moving; a few parked two-wheelers are visible near the pump island. The time is early morning, around 5 AM, with dim, cool natural light and clear weather. The camera is positioned at eye level, 35 mm lens, capturing the wide view of the petrol bunk and the road behind it to establish the isolated nature of the crime scene. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up view of the back room of the petrol bunk where the incident occurred. The room is small and sparsely furnished, with a simple iron bed frame visible. The floor shows signs of disturbance, and the atmosphere is heavy and still. Police officers in khaki stand just outside the doorway, their backs to the camera, observing the interior. The lighting is artificial, casting harsh shadows within the confined space. The camera is slightly high, looking down into the room, 35 mm lens, focusing on the bed and the immediate surroundings to highlight the location of the discovery without showing any bodies or graphic details, emphasizing the forensic nature of the scene. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.maalaimalar.com/news/tamilnadu/mettupalayam-near-worker-murder-2",
+   "published": "2026-11-22T06:50:54Z",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 26 ('இந்நிலையில் நேற்று இரவு பெட்ரோல் பங்கில் ஜார்க்கண்ட் மாநிலத்'); 29 ('இந்நிலையில் நேற்று இரவு பெட்ரோல் பங்கில் ஜார்க்கண்ட் மாநிலத்'); 48 ('இந்நிலையில் நேற்று இரவு பெட்ரோல் பங்கில் ஜார்க்கண்ட் மாநிலத்'); 28 ('இந்நிலையில் நேற்று இரவு பெட்ரோல் பங்கில் ஜார்க்கண்ட் மாநிலத்'); 25 ('இந்நிலையில் நேற்று இரவு பெட்ரோல் பங்கில் ஜார்க்கண்ட் மாநிலத்'); 45 ('இந்நிலையில் நேற்று இரவு பெட்ரோல் பங்கில் ஜார்க்கண்ட் மாநிலத்')",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320083/kovaiminnal/gra2b4uba54ochz20ysi.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320088/kovaiminnal/pfi4pnrx6nhsvrer9ofi.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795332891/kovaiminnal/lmqd3gr1j4k5lbhk8a3g.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795332896/kovaiminnal/vctkozvrb44iqgvnc9g5.jpg"
    ]
   },
   {
-   "tamil_headline": "அவினாசிலிங்கம் நிறுவனர் நினைவு சொற்பொழிவு: அறநெறி சார்ந்த ஒழுக்கக் கல்வி அவசியம்",
-   "english_headline": "Avinashilingam founder's 35th memorial lecture stresses moral education in Coimbatore",
-   "category": "Education",
-   "location": "Coimbatore city, Coimbatore district",
-   "importance": "Low",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "கல்வி",
-    "loc": "கோவை",
-    "hl1": "கோவை: அவினாசிலிங்கம் நினைவு சொற்பொழிவு",
-    "hl2": "35வது ஆண்டு நினைவு நாள்",
-    "slides": [
-     {
-      "title": "என்ன நிகழ்ச்சி?",
-      "lines": [
-       "அவினாசிலிங்கம் கல்வி அறக்கட்டளை சார்பில் <b>35வது</b> ஆண்டு",
-       "தலைப்பு: 'அறநெறி சார்ந்த ஒழுக்கக் கல்வி அவசியம்'",
-       "நிறுவன வளாகத்தில் நடைபெற்றது"
-      ]
-     },
-     {
-      "title": "சிறப்புரை",
-      "lines": [
-       "பேரூர் ஆதினம் சாந்தலிங்க மருதாச்சல அடிகளார் சிறப்புரை",
-       "தைரியம், விடாமுயற்சி, தியாகம், அன்பு, சேவை ஆகியவை முக்கியம்",
-       "அறிவுக் கல்வியால் அறநெறி, இறைநெறியில் தெளிவு கிடைக்கும்"
-      ]
-     },
-     {
-      "title": "பங்கேற்பாளர்கள்",
-      "lines": [
-       "நிர்வாக அறங்காவலர் மீனாட்சி சுந்தரம் பங்கேற்பு",
-       "துணை நிர்வாக அறங்காவலர் கவுரி ராமகிருஷ்ணன் பங்கேற்பு",
-       "பலரும் நிகழ்ச்சியில் கலந்துகொண்டனர்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோவையில் அவினாசிலிங்கம் நினைவு சொற்பொழிவில் அறநெறிக் கல்வியின் அவசியம் வலியுறுத்தப்பட்டது. அவினாசிலிங்கம் கல்வி அறக்கட்டளை நிறுவனர் பத்மபூஷன் அவினாசிலிங்கத்தின் 35வது ஆண்டு நினைவு சொற்பொழிவு நிறுவன வளாகத்தில் நடைபெற்றது. அறநெறி சார்ந்த ஒழுக்கக் கல்வி அவசியம் என்பது இதன் தலைப்பு. சிறப்பு விருந்தினராகப் பேரூர் ஆதினம் சாந்தலிங்க மருதாச்சல அடிகளார் சொற்பொழிவாற்றினார். தைரியம், விடாமுயற்சி, தியாகம், அன்பு, சேவை ஆகியவற்றைக் கடமையாகக் கொண்டு கல்வியை வளர்த்தவர் அவினாசிலிங்கம் என்று அவர் பாராட்டினார். அறநெறி, இறைநெறி இரண்டிலும் தெளிவு பெற அறிவுக் கல்வி அவசியம் என்றும் அவர் கூறினார். நிர்வாக அறங்காவலர் மீனாட்சி சுந்தரம், துணை நிர்வாக அறங்காவலர் கவுரி ராமகிருஷ்ணன் உள்ளிட்ட பலர் நிகழ்ச்சியில் பங்கேற்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🎓 கோவை: அவினாசிலிங்கம் நினைவு சொற்பொழிவில் அறநெறிக் கல்விக்கு வலியுறுத்தல்\n\n📰 முழு விவரம்:\nஅவினாசிலிங்கம் கல்வி அறக்கட்டளை நிறுவனர் பத்மபூஷன் அவினாசிலிங்கத்தின் 35வது ஆண்டு நினைவு சொற்பொழிவு நிறுவன வளாகத்தில் நடைபெற்றது. அறநெறி சார்ந்த ஒழுக்கக் கல்வி அவசியம் என்பது தலைப்பு. பேரூர் ஆதினம் சாந்தலிங்க மருதாச்சல அடிகளார் சிறப்பு விருந்தினராகப் பங்கேற்று உரையாற்றினார். அவினாசிலிங்கம் எழுத்தறிவுக் கொள்கையின் மூலம் கல்வியை வளர்த்தவர் என்று அவர் பாராட்டினார். அறநெறி, இறைநெறியில் தெளிவு பெற அறிவுக் கல்வி அவசியம் என்றும் வலியுறுத்தினார். நிர்வாக அறங்காவலர் மீனாட்சி சுந்தரம், துணை நிர்வாக அறங்காவலர் கவுரி ராமகிருஷ்ணன் உள்ளிட்ட பலர் பங்கேற்றனர்.\n\nAvinashilingam memorial lecture on moral education | Coimbatore news\n📍 கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #கோவை #கல்வி #CoimbatoreNews",
-   "prompts": "A seated audience of students and staff in a campus auditorium in Coimbatore city listens to a memorial lecture on moral education. On the stage, a saffron-clad seer and trust administrators sit behind a wooden lectern with a microphone, and a garlanded portrait of the founder, Padma Bhushan Avinashilingam, is placed on a raised stand beside them. Rows of chairs fill the hall, with people in Tamil Nadu school-style uniforms and men in shirts and veshti, seen from behind and from a distance. Overhead ceiling fans, pillars and a banner-free stage wall frame the scene. Daylight from tall windows lights the hall evenly. Camera at eye level, 35 mm, wide enough to show the stage, the audience and the portrait together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a garlanded framed portrait of the founder placed on a wooden stand beside a brass lamp and a small bouquet of flowers on a stage in the campus hall. Behind it, slightly blurred, a saffron-clad seer's shoulder and a microphone stand on a lectern. The frame is kept tight on the objects, with the hall's pillars and soft daylight in the background. No readable text is visible. Camera at slightly high angle, 50 mm, shallow depth of field to isolate the portrait and lamp. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/commemorative-lecture-of-the-founder-of-avinashilingam/4382189",
-   "published": "2026-11-21T15:00:30+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 0 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320099/kovaiminnal/lmcm4gxsknrlidtjmjoe.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320103/kovaiminnal/cgjcbyslh2duael2gi2r.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "தக்க நேர பரிசோதனையால் சர்க்கரை பாதிப்பை கட்டுக்குள் வைப்பது சுலபமே!",
-   "english_headline": "Timely testing makes diabetes easier to control, say KMCH doctors; 43% of 8.98 crore Indians with diabetes don't know they have it",
-   "category": "Health",
-   "location": "Coimbatore, Coimbatore district",
-   "importance": "Medium",
+   "tamil_headline": "சட்டம்-ஒழுங்கு சீரழிந்துவிட்டது: பழனிசாமி குற்றச்சாட்டு",
+   "english_headline": "Palaniswami alleges law and order collapsed in six months of TVK government",
+   "category": "Government & Services",
+   "location": "Coimbatore airport, Coimbatore district",
+   "importance": "High",
    "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "சர்க்கரை நோய்",
-    "loc": "கோவை",
-    "hl1": "சர்க்கரை பாதிப்பு: தக்க நேர பரிசோதனை",
-    "hl2": "43% பேருக்கு தெரியாமலே",
+    "cat": "அரசியல் செய்தி",
+    "loc": "கோவை விமான நிலையம்",
+    "hl1": "தவெக அரசில் சட்டம்-ஒழுங்கு சீரழிவு",
+    "hl2": "பழனிசாமி குற்றச்சாட்டு",
     "slides": [
      {
-      "title": "எத்தனை பேர்?",
+      "title": "என்ன சொன்னார்?",
       "lines": [
-       "இந்தியாவில் <b>8.98 கோடி</b> பேருக்கு சர்க்கரை பாதிப்பு உள்ளது",
-       "இதில் <b>43 சதவீதம்</b> பேருக்கு பாதிப்பு தெரியாது",
-       "கே.எம்.சி.எச். மருத்துவர்கள் தகவல்"
+       "தவெக அரசு பொறுப்பேற்ற 6 மாதங்களில் சட்டம்-ஒழுங்கு",
+       "போதைப்பொருள் விற்பனை அதிகரித்துவிட்டது",
+       "தமிழகத்திலேயே போதைப்பொருள் தயாரிக்கும் நிலை ஏற்பட்டுள்ளது"
       ]
      },
      {
-      "title": "பாதிப்பு ஏற்படும்",
+      "title": "எந்த சம்பவங்கள்?",
       "lines": [
-       "உணவிலிருந்து கிடைக்கும் குளூக்கோஸ் உடலுக்கு ஆற்றல் தரும்",
-       "கணைய இன்சுலின் குளூக்கோஸை பயன்படுத்த உதவும்",
-       "இன்சுலின் குறைந்தால் ரத்த சர்க்கரை அதிகரிக்கும்"
+       "சென்னையில் ரூ.700 கோடி மதிப்பிலான போதைப்பொருள் பிடிபட்டது",
+       "நாகப்பட்டினத்தில் த.வெ.க. நிர்வாகி வீட்டில்",
+       "எம்.எல்.ஏ. ஆட்சியருக்கு ஆபாச குறுஞ்செய்தி அனுப்பியதாக"
       ]
      },
      {
-      "title": "முக்கிய காரணங்கள்",
+      "title": "பிற",
       "lines": [
-       "பரம்பரை, உடல் பருமன், உடற்பயிற்சியின்மை",
-       "அதிக கலோரி உணவு, சர்க்கரை பானங்கள் அதிகம் குடிப்பது",
-       "குடும்பத்தில் பாதிப்பு இருந்தால் வாய்ப்பு அதிகம்"
-      ]
-     },
-     {
-      "title": "தடுக்கும் வழிகள்",
-      "lines": [
-       "தினமும் <b>30 நிமிடங்கள்</b> நடைப்பயிற்சி செய்யுங்கள்",
-       "உணவுக்குப் பின் <b>10 நிமிடங்கள்</b> மெதுவாக நடங்கள்",
-       "புகைப்பிடிப்பதை தவிர்த்து, காய்கறி, பழங்கள் சாப்பிடுங்கள்"
+       "டெல்டா மாவட்டங்களில் சம்பா சாகுபடிக்கு தண்ணீர் கேள்விக்குறி",
+       "யூனிட் ரூ.37-க்கு மின்சாரம் கொள்முதல் செய்வதில் ஊழல் கேள்வி",
+       "முதல்வர் விஜய் தண்ணீரைப் பெற போதிய நடவடிக்கை எடுக்கவில்லை"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "இந்தியாவில் 8.98 கோடி பேருக்கு சர்க்கரை பாதிப்பு உள்ளது. இதில் 43 சதவீதம் பேருக்கு அது தெரியாமலே இருக்கிறது. கே எம் சி எச் மருத்துவமனை தலைவர் நல்லா பழனிசாமி மற்றும் நீரிழிவு நோய் மருத்துவர்கள் சிவஞானம், சங்கர் ஆகியோர் இதைத் தெரிவித்துள்ளனர். நாம் உண்ணும் உணவிலிருந்து கிடைக்கும் குளூக்கோஸ் உடலுக்கு ஆற்றல் தருகிறது. அதை உடல் செல்கள் பயன்படுத்த கணையத்தில் சுரக்கும் இன்சுலின் உதவுகிறது. இன்சுலின் போதுமான அளவு சுரக்காத போதோ, சுரக்கும் இன்சுலினை உடல் சரியாக பயன்படுத்த முடியாத போதோ ரத்த சர்க்கரை அளவு அதிகரிக்கும். பரம்பரை, உடல் பருமன், உடற்பயிற்சியின்மை, அதிக கலோரி உணவு, சர்க்கரை பானங்கள் ஆகியவை முக்கிய காரணங்கள். குடும்பத்தில் பெற்றோர் அல்லது உடன்பிறந்தவர்களுக்கு பாதிப்பு இருந்தால் மற்றவருக்கும் வாய்ப்பு அதிகம். நீண்ட காலம் சர்க்கரை கட்டுப்பாடின்றி இருந்தால் இதய பாதிப்பு, மாரடைப்பு, பக்கவாதம், சிறுநீரக செயலிழப்பு, பார்வை குறைபாடு ஏற்படலாம். தினமும் 30 நிமிடங்கள் நடைப்பயிற்சி செய்யுங்கள். உணவுக்குப் பிறகு 10 நிமிடங்கள் மெதுவாக நடப்பது சர்க்கரை அதிகரிப்பைக் கட்டுப்படுத்தும். அறிகுறி இல்லாவிட்டாலும் உரிய இடைவெளியில் ரத்த பரிசோதனை செய்வது அவசியம். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🩺 சர்க்கரை பாதிப்பு: 43% பேருக்கு தெரியாமலே உள்ளது\n\n📰 முழு விவரம்:\nஇந்தியாவில் 8.98 கோடி பேருக்கு சர்க்கரை பாதிப்பு உள்ளது; இதில் 43 சதவீதம் பேருக்கு பாதிப்பு இருப்பது தெரியாது என கே.எம்.சி.எச். மருத்துவமனை தலைவர் நல்லா பழனிசாமி, நீரிழிவு நோய் மருத்துவர்கள் சிவஞானம், சங்கர் ஆகியோர் தெரிவித்துள்ளனர்.\nகணையத்திலிருந்து சுரக்கும் இன்சுலின் குளூக்கோஸை பயன்படுத்த உதவுகிறது; இன்சுலின் குறைந்தாலோ சரியாக பயன்படாவிட்டாலோ ரத்த சர்க்கரை அளவு அதிகரிக்கும்.\nபரம்பரை, உடல் பருமன், உடற்பயிற்சியின்மை, அதிக கலோரி உணவு, சர்க்கரை பானங்கள் அதிகம் குடிப்பது ஆகியவை முக்கிய காரணங்கள்.\nநீண்ட காலம் கட்டுப்படுத்தாவிட்டால் இதய ரத்த நாள பாதிப்பு, மாரடைப்பு, பக்கவாதம், சிறுநீரக செயலிழப்பு, பார்வைக் குறைபாடு, கால் காயங்கள் ஆறாமல் போவது ஏற்படலாம்.\n\n🏃 தினமும் 30 நிமிடங்கள் நடைப்பயிற்சி செய்யுங்கள்; உணவுக்குப் பின் 10 நிமிடங்கள் மெதுவாக நடப்பது சர்க்கரை அதிகரிப்பைக் கட்டுப்படுத்த உதவும்.\n\n🤰 கர்ப்பிணிகள் கவனம்: கர்ப்ப காலத்தில் நஞ்சுக்கொடி ஹார்மோன்கள் 2–3 வது மாதங்களில் இன்சுலின் செயல்பாட்டைக் குறைக்கும். இதனால் கர்ப்பகால சர்க்கரை பாதிப்பு ஏற்படலாம். ஆரம்பத்தில் சர்க்கரை மிக அதிகமாக இருந்தால் குழந்தை வளர்ச்சியில் பாதிப்பு, பிறவிக் குறைபாடு ஏற்படலாம். உயர் ரத்த அழுத்தம், பிரசவத்தில் சிக்கல், அதிக எடையுள்ள குழந்தை, குறைப்பிரசவம், குழந்தைக்கு சுவாசப் பிரச்னை, ரத்த சர்க்கரை குறைவு ஆகியவை ஏற்படலாம். பெரும்பாலான கர்ப்பிணிகளுக்கு அறிகுறி இருக்காது; அதனால் பரிசோதனை அவசியம்.\n\n⚠️ அறிகுறிகள்: அதிக தாகம், அடிக்கடி சிறுநீர், அதிகப் பசி, சோர்வு, காரணமின்றி எடை குறைவு. 30 வயதைக் கடந்தோர், குடும்பத்தில் பாதிப்பு உள்ளோர், உடல் பருமன் உள்ளோர், உடற்பயிற்சியின்றி அமர்ந்தே வேலை செய்வோர் கூடுதல் கவனம் செலுத்துங்கள்.\n\n🔬 வகைகள்: டைப் 1 – கணைய இன்சுலின் செல்கள் அழிவதால் வாழ்நாள் முழுவதும் இன்சுலின் தேவைப்படலாம். டைப் 2 – 90 சதவீத நோயாளிகள் இந்த வகை; இன்சுலின் சுரப்பும் நாளடைவில் குறையும். கர்ப்பகால சர்க்கரை – பிரசவத்துக்குப் பின் பலருக்கு இயல்பாகும்; ஆனால் எதிர்காலத்தில் டைப் 2 வர வாய்ப்பு இருப்பதால் தொடர் பரிசோதனை அவசியம்.\n\nDiabetes 43% undiagnosed India | Coimbatore health news\n📍 கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #சர்க்கரைநோய் #HealthNews #CoimbatoreNews",
-   "prompts": "A Coimbatore diabetes specialist in a white coat checks a patient's blood sugar with a glucometer in a clinic consultation room of a city hospital. The room is clean and well lit, with a desk, a wall chart of diabetes, a blood pressure machine and a small stool. The patient, an adult man in a shirt and trousers, sits with his sleeve rolled up, seen from the side and slightly blurred. Two other doctors in white coats stand in the background near the door, seen from behind. Outside the window, Coimbatore's ordinary daylight shows a tree and the edge of a city road with a two-wheeler passing. Eye level, 35 mm, medium wide shot showing the room and the consultation. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a glucometer with a fresh blood test strip inserted, a finger-prick lancet and cotton placed on a clean white table. Beside them lies a bowl of fresh vegetables, green leafy greens, a few sliced fruits and a glass of water, suggesting a healthy diet and walking habit. Soft daylight from a nearby window falls across the table, and the background is a blurred hospital consultation room with a pale wall. No readable labels or text are visible. Camera slightly high, 35 mm, tight focus on the glucometer with the food in soft focus behind it. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/with-a-timely-check-up-it-s-easy-to-keep-sugar-under-control/4382202",
-   "published": "2026-11-21T15:34:27+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: hl1 (the first headline on screen) must name the place 'கோவை', e.g. 'கோவை: ...' or 'கோவை-இல் ...' - viewers share news of their own area",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "reel_script": "த வெ க அரசு மீது பழனிசாமி கடும் குற்றச்சாட்டு வைத்துள்ளார். அ தி மு க பொதுச் செயலாளர் பழனிசாமி கோவை விமான நிலையத்தில் நவம்பர் 21ஆம் தேதி செய்தியாளர்களிடம் பேசினார். த வெ க அரசு பொறுப்பேற்ற 6 மாதங்களில் தமிழகத்தில் சட்டம்-ஒழுங்கு அடியோடு சீரழிந்துவிட்டதாக அவர் கூறினார். போதைப்பொருள் விற்பனை அதிகரித்துவிட்டதாகவும், தமிழகத்திலேயே போதைப்பொருள் தயாரிக்கும் நிலை ஏற்பட்டுவிட்டதாகவும் குற்றம்சாட்டினார். சென்னையில் ரூ.700 கோடி மதிப்பிலான போதைப்பொருளை மத்திய புலனாய்வு பிரிவு பிடித்ததையும் சுட்டிக்காட்டினார். டெல்டா மாவட்டங்களில் சம்பா சாகுபடிக்குத் தண்ணீர் கிடைப்பது கேள்விக்குறியாக உள்ளது என்றும் அவர் கூறினார். யூனிட் ரூ.37-க்கு மின்சாரம் கொள்முதல் செய்யப்படுவதில் ஊழல் நடந்திருக்குமோ என்ற கேள்வி எழுவதாகவும் தெரிவித்தார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 தவெக அரசில் சட்டம்-ஒழுங்கு சீரழிந்துவிட்டது: பழனிசாமி குற்றச்சாட்டு\n\n📰 முழு விவரம்:\nஅதிமுக பொதுச் செயலாளர் பழனிசாமி கோவை விமான நிலையத்தில் நவ. 21 அன்று செய்தியாளர்களிடம் பேசினார். தவெக அரசு பொறுப்பேற்ற 6 மாதங்களில் தமிழகத்தில் சட்டம்-ஒழுங்கு அடியோடு சீரழிந்துவிட்டதாக அவர் குற்றம்சாட்டினார்.\nதொழில் முதலீடுகளை ஈர்ப்பதில் அரசு ஆக்கப்பூர்வமான நடவடிக்கை எடுக்கவில்லை என்றும், நிர்வாகத் தோல்விகளை மறைக்க மற்றவர்கள் மீது பழி சுமத்துவதாகவும் கூறினார்.\nதிருப்பரங்குன்றம் தீப விவகாரத்தில் உச்ச நீதிமன்றம் கருத்து தெரிவித்துள்ளது; தமிழக அரசு நீதிமன்றத்தில் தனது வாதங்களை சரியாக முன்வைக்க வேண்டும் என்றார். விசாரணை முடிவில்தான் முழுமையாகப் பேச முடியும் என்றார்.\nதமிழகத்தில் போதைப்பொருள் விற்பனை அதிகரித்துள்ளது. சென்னையில் ரூ.700 கோடி மதிப்பிலான போதைப்பொருளை மத்திய புலனாய்வு பிரிவு பிடித்துள்ளது. நாகப்பட்டினத்தில் த.வெ.க. நிர்வாகி வீட்டில் மெத்தம்பெட்டமைன் தயாரித்தது கண்டுபிடிக்கப்பட்டது என்றும் கூறினார்.\nஒரு எம்.எல்.ஏ. ஆட்சியருக்கு ஆபாச குறுஞ்செய்தி அனுப்பியதாகக் கூறப்படுவதையும், எம்.எல்.ஏ. காவல் நிலையத்திற்கு சென்று போலீஸாரின் செல்போனை பிடுங்கிப் பார்த்ததையும் கண்டித்தார்.\nடெல்டா மாவட்டங்களில் சம்பா சாகுபடிக்குத் தண்ணீர் கிடைப்பது கேள்விக்குறியாக உள்ளது. குடிநீருக்கும் மேட்டூர் அணை நீர் போதவில்லை என்றார். ஆனால் தமிழகத்திற்கு உரிய தண்ணீரைப் பெற முதல்வர் விஜய் போதிய நடவடிக்கை எடுக்கவில்லை என்றார்.\nமுந்தைய ஆட்சியில் யூனிட் ரூ.20-க்கு வாங்கியதை ஊழல் என்று கூறினோம்; தற்போது ரூ.37-க்கு வாங்கப்படுவதில் ஊழல் நடந்திருக்காதா என்ற கேள்வி எழுவதாகக் கூறினார்.\nதொழிற்சாலைகள் அண்டை மாநிலத்துக்குச் செல்வதாகவும், இந்த ஆட்சியால் மக்களுக்கு நன்மை எதுவும் கிடைக்கவில்லை என்றும் விமர்சித்தார். அதிமுகவில் 41 எம்.எல்.ஏ.க்கள் உள்ளதாகவும், ஆட்சியைக் கவிழ்க்க முடியாது என்றும் கூறினார்.\nசெங்கோட்டையன், எஸ்.பி.வேலுமணி ஒரு திருமண விழாவில் ஒன்றாக இருந்தது குறித்த கேள்விக்கு, அதிமுகவின் 2 கோடி உறுப்பினர்களில் எஸ்.பி.வேலுமணியும் ஒருவர் என்றும், அவரைப் பற்றி இங்கு கேள்வி எழுப்ப வேண்டாம் என்றும் பதிலளித்தார். கொளத்தூர் தொகுதியில் தேர்தல் வரும்போது நிலைப்பாட்டைத் தெரிவிப்பதாகவும் கூறினார்.\n\nPalaniswami alleges law and order collapse in Tamil Nadu | Coimbatore news\n📍 கோவை விமான நிலையம், கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #அரசியல்",
+   "prompts": "Inside the Coimbatore airport terminal, a senior politician in a white shirt and veshti stands before a cluster of Tamil reporters who hold up microphones and recorders, seen from behind and slightly to the side. Behind them are glass panels, a few airport staff and a couple of AIADMK party workers in white shirts and caps with a plain party flag resting against a pillar, the polished tiled floor reflecting the overhead lights. Daytime, bright indoor light from high windows. The scene feels like a busy press briefing in a modern airport hall, with travellers' suitcases rolling at the edges. The politician's face is not shown; the camera is at eye level, 35 mm, wide enough to show the whole group and the airport space around them. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a cluster of microphones and recording devices pointed toward a speaker just out of frame, held by unseen reporters' hands in shirtsleeves on a glossy airport floor. Behind the mics, a blurred row of AIADMK party flags and a few white-shirted party workers standing at the edge of the frame. The detail shows the moment of an allegation being recorded by the press. Bright indoor daylight from the terminal windows, shallow depth of field, camera slightly high, 50 mm, no readable text or logos visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.hindutamil.in/news/tamilnadu/sp-velumani-is-one-of-the-2-crore-members-of-the-aiadmk-says-palaniswami",
+   "published": "2026-11-21T13:41:13Z",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 84 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block); hl1 (the first headline on screen) must name the place 'கோவை விமான நிலையம்', e.g. 'கோவை விமான நிலையம்: ...' or 'கோவை விமான நிலையம்-இல் ...' - viewers share news of their own area",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320109/kovaiminnal/csjdnr5pir5vkc6g3d3r.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320113/kovaiminnal/tlo0lczvfibfq1tiiff2.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795332918/kovaiminnal/omiqiffvn4xf0lrt0qhj.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795332922/kovaiminnal/wi0kiqk0k6yfot0gldyv.jpg"
    ]
   },
   {
-   "tamil_headline": "புத்தகம் வாங்குகிறோம், ஆனால் படிக்க நேரம் இல்லை: கோவை வாசகர்களின் கருத்து",
-   "english_headline": "Coimbatore readers buy books but struggle to finish them, citing lack of time and wrong book choices",
-   "category": "Education",
-   "location": "Coimbatore city, Coimbatore district",
-   "importance": "Low",
+   "tamil_headline": "அன்புக்கு எதுக்கு காசு: கோவை அரசு மருத்துவமனை அருகே கை இழந்த மூர்த்தியின் சேவை",
+   "english_headline": "No money for love: Moorthy, who lost a hand in an accident, helps patients and the homeless outside Coimbatore Government Hospital",
+   "category": "Health",
+   "location": "Coimbatore Government Hospital area, Coimbatore district",
+   "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "வாசிப்பு",
-    "loc": "கோவை",
-    "hl1": "கோவையில் புத்தகம் வாங்கி படிக்காதவர்கள்",
-    "hl2": "நேரம் இல்லாததே முக்கிய",
+    "cat": "மனிதநேயம்",
+    "loc": "கோவை அரசு மருத்துவமனை",
+    "hl1": "கோவை அரசு மருத்துவமனை: அன்பு செய்யும்",
+    "hl2": "ஒரு கையால் உதவும் மனிதர்",
     "slides": [
      {
-      "title": "நிலைமை என்ன?",
+      "title": "யார் இவர்?",
       "lines": [
-       "பலர் புத்தகங்களை உடனே வாங்கி விடுகின்றனர்",
-       "பலரால் வாங்கிய புத்தகத்தை முழுமையாகப் படிக்க முடிவதில்லை",
-       "சில புத்தகங்கள் பாதியிலேயே நின்றுவிடுகின்றன"
+       "கூலித் தொழிலாளி மூர்த்தி, சேலம் பூர்வீகம்",
+       "2009ல் ரயில் ஏறும்போது விபத்து, இடது கை போனது",
+       "இப்போது 2 வருடமாக அரசு மருத்துவமனைக்கு வெளியே வசிக்கிறார்"
       ]
      },
      {
-      "title": "வாசகர்கள் சொல்வது",
+      "title": "என்ன செய்கிறார்?",
       "lines": [
-       "வேலை அதிகம், வீட்டுக்குத் தாமதமாக வருகின்றனர்",
-       "எந்தப் புத்தகம் படிப்பது என்று தெரியாமல் வாங்குகின்றனர்",
-       "முதல் பக்கங்கள் மெதுவாக இருப்பதால் சிலர் படிக்காமல்"
+       "நோயாளிகளுக்கு சாப்பாடு, தண்ணீர், டீ, காபி வாங்கித் தருகிறார்",
+       "தேவைப்படும்போது மாத்திரை, மருந்து வாங்கித் தருகிறார்",
+       "ஷேவிங், மொட்டை அடிப்பது போன்ற உதவிகளும் செய்கிறார்"
       ]
      },
      {
-      "title": "என்ன செய்யலாம்?",
+      "title": "வாழ்க்கை நிலை",
       "lines": [
-       "உங்களுக்குப் பிடித்த புத்தகத்தைத் தேர்வு செய்யுங்கள்",
-       "கஷ்டமாக இருந்தால் சிறுகதைகளைத் தேர்வு செய்யுங்கள்",
-       "தினமும் 10 முதல் 15 நிமிடங்கள் வாசியுங்கள்"
+       "மனைவி இறந்துவிட்டார், மகனை அக்கா வளர்க்கிறார்",
+       "பழைய முதலாளியிடம் வேலை கேட்டுள்ளார்",
+       "ஆதரவற்றவர்களின் உணவு தானம் வழியாக வாழ்கிறார்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவையில் பலர் புத்தகங்களை வாங்குகின்றனர், ஆனால் முழுமையாகப் படிப்பதில்லை. நேரம் இல்லாததே முக்கியக் காரணம் என வாசகர்கள் கூறுகின்றனர். தனியார் நிறுவன ஊழியர் கார்த்திக், வேலை முடிந்து வீட்டுக்கு வர தாமதமாவதால் படிக்க நேரம் கிடைப்பதில்லை என்கிறார். ஐ டி ஊழியர் காவியா, என்ன புத்தகம் வாங்குவது என்று தெரியாமல் கண்காட்சியில் வாங்கியதாகவும், இரண்டு மூன்று பக்கங்கள் படித்துவிட்டு விட்டுவிட்டதாகவும் கூறுகிறார். பிளஸ் 2 மாணவி அக்ஷயாவுக்கு கிரைம் நாவல் பிடிக்கும், ஆனால் ஆரம்பப் பக்கங்கள் மெதுவாக இருப்பதால் சில பக்கங்களைத் தவிர்ப்பதாகக் கூறுகிறார். அரசு நிறுவன ஊழியர் அருண், நான்கு நாட்கள் படிக்காமல் விட்டால் படிக்கும் பழக்கமே மறந்துவிடும் என்கிறார். பிடித்த புத்தகத்தைத் தேர்வு செய்யுங்கள், கடினமாக இருந்தால் சிறுகதைகளைப் படியுங்கள், தினமும் 10 முதல் 15 நிமிடங்கள் வாசியுங்கள், படிக்கும்போது செல்போனைத் தள்ளி வையுங்கள். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "📚 கோவையில் புத்தகம் வாங்கினாலும் படிக்க நேரம் கிடைப்பதில்லை\n\n📰 முழு விவரம்:\nபுத்தகம் படிக்க ஆசை பலருக்கு இருந்தாலும், வாங்கிய புத்தகத்தை முழுமையாகப் படிப்பவர்கள் குறைவு என வாசகர்கள் கூறுகின்றனர். சிலரின் புத்தகங்கள் அலமாரியில் அழகாக இருக்கின்றன, சிலவை இரண்டு மூன்று பக்கங்களுடன் பாதியில் நிற்கின்றன.\nவேலைப்பளு காரணமாக நேரம் கிடைக்கவில்லை என தனியார் நிறுவன ஊழியர் கார்த்திக் தெரிவித்துள்ளார். என்ன புத்தகம் படிப்பது என்று தெரியாமல் கண்காட்சியில் புத்தகம் வாங்கிய ஐ.டி. ஊழியர் காவியாவுக்கு அது பிடிக்கவில்லை. கிரைம் நாவல் பிடித்த பிளஸ் 2 மாணவி அக்ஷயா, ஆரம்பப் பக்கங்களைத் தவிர்ப்பதாகக் கூறுகிறார். அரசு நிறுவன ஊழியர் அருண், சில நாட்கள் படிக்காமல் விட்டால் பழக்கமே மறந்துவிடும் என்கிறார்.\n📌 வாசிப்பைத் தொடர:\n1. உங்களுக்குப் பிடித்த கதை, துறை அல்லது எழுத்தாளரின் புத்தகத்தைத் தேர்வு செய்யுங்கள்.\n2. கடினமாக இருந்தால் சிறுகதைகளைத் தேர்வு செய்யுங்கள்.\n3. தினமும் 10 முதல் 15 நிமிடங்கள் வாசிக்கத் தொடங்குங்கள்.\n4. படிக்கும்போது செல்போனை சைலன்டில் வைத்து, கவனச்சிதறல் இல்லாத இடத்தில் படியுங்கள்.\n5. பிடித்த வரிகள், முக்கியக் கருத்துகளைக் குறித்து வையுங்கள்; இது ஆர்வத்தைத் தொடர உதவும்.\n\nCoimbatore readers buy books but rarely finish them | Coimbatore news\n📍 கோவை | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Books",
-   "prompts": "A young office-goer sits alone at a table in a quiet corner of a Coimbatore home, a half-read paperback open with a few pages turned, a phone lying face down and switched to silent beside it. Behind him a wooden bookshelf in a small flat is crowded with books, some standing upright and some lying flat, and a single pen rests on the table. He is seen from behind and slightly to the side, his face not visible, and the room is lit by soft daylight through a window with a plain curtain. The shot is taken at eye level with a 35 mm lens, wide enough to show the shelf, the table and the window. Nothing on the shelf or the book cover shows readable text, letters or brand names. The mood is calm and thoughtful, showing a reader trying to build a daily reading habit rather than a rushed or stressed moment. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a small stack of partly read paperback books on a plain wooden table, each with a few thin bookmark strips sticking out at early pages, showing that the reading was stopped halfway. A phone lies face down in the corner of the frame, and a pen and a notebook are placed beside the books as if ready for marking favourite lines. The light is soft daylight from a side window, creating gentle shadows across the covers, with no readable text, labels or logos visible. The camera is slightly high, using a 35 mm lens, focusing sharply on the bookmarks and the open pages with the background softly blurred, so the story of unfinished books and the need for focus is clear at a glance. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/we-buy-books-for-money-but-don-t-take-the-time-to-read/4382188",
-   "published": "2026-11-21T15:00:27+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 96 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "reel_script": "கை இழந்த ஒருவர் கோவை அரசு மருத்துவமனை அருகே பிறருக்கு உதவி செய்து வருகிறார். அவர் பெயர் மூர்த்தி. சேலம் பூர்வீகமாகக் கொண்ட இவர் கூலித் தொழிலாளியாக இருந்தவர். 2009ஆம் ஆண்டு ரயிலில் ஏறும்போது நடந்த விபத்தில் அவர் இடது கையை இழந்தார். அதன் பிறகு லோடிங் வேலைக்குச் செல்ல முடியவில்லை. குத்தகை பார்க்கிங் வேலையும் நின்றுபோனது. இப்போது இரண்டு ஆண்டுகளாக அரசு மருத்துவமனைக்கு வெளியே தங்கியுள்ளார். மருத்துவமனையில் நோயாளிகளைப் பார்த்துக்கொள்ள ஆள் இல்லாதவர்களுக்கு, சாப்பாடு, தண்ணீர், டீ, காபி வாங்கித் தருகிறார். தேவைப்படும்போது மாத்திரை, மருந்தும் வாங்கித் தருகிறார். தலையில் காயம் ஏற்பட்டு நான்கு மாதங்களாக முடி வெட்டாமல் இருந்த ஒருவருக்கு மொட்டை அடித்து விட்டார். மூர்த்தியின் மனைவி உடல்நலக் குறைவால் இறந்துவிட்டார். மகனை அக்கா வளர்த்து வருகிறார். பழைய முதலாளியிடம் வேலை கேட்டுள்ளார். விரைவில் அழைப்பதாக அவர் உறுதியளித்துள்ளார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🤝 கோவை அரசு மருத்துவமனை அருகே ஒரு கையால் உதவும் மூர்த்தி\n\n📰 முழு விவரம்:\nகோவை அரசு மருத்துவமனையில் தினமும் பல ஆயிரக்கணக்கானோர் சிகிச்சை பெறுகின்றனர். மருத்துவமனை வளாகத்தைச் சுற்றி ஆதரவற்ற மக்கள் அதிகம் உள்ளனர். அவர்களுக்கு தானமாக வரும் உணவும், எதிர்பார்ப்பில்லாத அன்பும்தான் ஆதரவு.\nஅவர்களில் ஒருவர் மூர்த்தி. கூலித் தொழிலாளியான இவர் 2009ஆம் ஆண்டு விபத்தில் இடது கையை இழந்தார். வலது கையால் தன் தேவைகளைச் சமாளித்து, பிறருக்கும் உதவுகிறார். ஷேவிங், மொட்டை அடித்தல், உணவு, மருந்து வாங்கித் தருதல் ஆகியவற்றைச் செய்கிறார்.\nசேலம் பூர்வீகமான இவர் ஏழாம் வகுப்பு வரை படித்தவர். லோடிங் வேலை செய்தவர். மனைவி உடல்நலக் குறைவால் இறந்துவிட்டார். மகனை அக்கா வளர்க்கிறார். குத்தகை பார்க்கிங் வேலை முடிந்ததால் அதுவும் நின்றுபோனது. இரண்டு ஆண்டுகளாக அரசு மருத்துவமனைக்கு வெளியே தங்கியுள்ளார்.\nபழைய முதலாளியிடம் வேலை கேட்டுள்ளார். விரைவில் அழைப்பதாக அவர் கூறியுள்ளார்.\n\nKovai Government Hospital helper Moorthy one hand kindness | Coimbatore news\n📍 கோவை அரசு மருத்துவமனை, கோவை மாவட்டம் | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Humanity",
+   "prompts": "A one-armed man in worn shirt and veshti, Moorthy, kneels beside a seated patient on a pavement outside the Coimbatore Government Hospital and gently shaves the man's head with a razor, his right hand steady while his left sleeve hangs empty. The setting is the open footpath along the hospital compound wall, with tall multi-storey government hospital blocks rising behind, a few parked two-wheelers and an autorickshaw at the roadside, and visitors walking past in the background. Around them sit other patients and attendants on plastic sheets and low benches, some with bandages, and a steel tumbler of tea and a small packet of food rests on the ground. The time is bright daylight with soft warm sun, the sky clear over the hospital roofs. The camera is at eye level, 35 mm, slightly wide, with the man and the patient in the foreground and the hospital building in the background; people in the far distance are seen from behind or softly blurred. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up detail of a steel tumbler of hot tea and a few paper cups of coffee placed on a worn cloth beside a small packet of medicine strips and a folded hand towel on a pavement outside the Coimbatore Government Hospital. A single right hand, with a plain wristwatch, is just setting a cup down on the ground, the empty left sleeve of the shirt visible at the edge of the frame. Behind the objects, out of focus, lies the compound wall and the grey pillars of the hospital gate, with sandals and bare feet of patients and attendants partly visible on the footpath. The light is natural daylight, soft and even. The camera is close and slightly high, 35 mm macro-style, shallow depth of field to isolate the tumbler, cups and medicine strips. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/what-s-the-money-for-love/4382237",
+   "published": "2026-11-21T16:02:27+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 2 ('இப்ப 2 வருஷமா ஜி.எச்.,க்கு வெளியேதான் தங்கிருக்கேன்.'); 4 ('பக்கத்துல ஒருத்தர் தலையில் காயமாகி 4 மாசம் முடி வெட்டாம இருந')",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320132/kovaiminnal/sbnioxouhu9xqiizaljf.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320137/kovaiminnal/kcj4tyz379wfi39anxjw.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவையில் அழியும் அரிய விலங்குகளுக்கு ஓவியர் சுரேஷ் ராகவன் உயிர் கொடுக்கிறார்",
-   "english_headline": "Artist Suresh Raghavan brings endangered rare animals back to life through paintings in Coimbatore exhibition",
-   "category": "Temples & Events",
-   "location": "Peelamedu, Coimbatore, Coimbatore district",
-   "importance": "Low",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "கண்காட்சி",
-    "loc": "பீளமேடு, கோவை",
-    "hl1": "அரிய விலங்குகளுக்கு ஓவியத்தில் உயிர்",
-    "hl2": "இன்று நிறைவு",
-    "slides": [
-     {
-      "title": "கண்காட்சி விவரம்",
-      "lines": [
-       "பீளமேடு கஸ்தூரி சீனிவாசன் ஆர்ட் கேலரியில் 'கட்டின் குரல்'",
-       "அழிந்து வரும் அரிய விலங்குகளின் <b>113</b> ஓவியங்கள் இடம்பெற்றுள்ளன",
-       "இன்று கண்காட்சி நிறைவடைகிறது"
-      ]
-     },
-     {
-      "title": "ஓவியங்களின்",
-      "lines": [
-       "வண்ண அலங்காரம் இன்றி விலங்குகளின் இயல்பான தோற்றத்தில்",
-       "ஒவ்வொரு ஓவியத்திலும் அறிவியல், ஆங்கில, தமிழ் பெயர்கள்",
-       "வாழ்விடம், உணவுப் பழக்கம், ஆயுள் காலம், பாதுகாப்பு நிலை"
-      ]
-     },
-     {
-      "title": "ஓவியரின் கருத்து",
-      "lines": [
-       "<b>109</b> ஓவியங்கள் ஓவியர் சுரேஷ் ராகவனின் படைப்புகள்",
-       "மேற்கு தொடர்ச்சி மலைகள், இந்தியாவின் பிற பகுதி விலங்குகள்",
-       "வனவிலங்குகளைக் காப்பது நம் கடமை என்கிறார்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோவையில் அழியும் நிலையில் உள்ள அரிய விலங்குகளுக்கு ஓவியங்கள் மூலம் உயிர் கொடுக்கப்படுகிறது. கோவை பீளமேட்டில் உள்ள கஸ்தூரி சீனிவாசன் ஆர்ட் கேலரியில் 'கட்டின் குரல்' ஓவியக் கண்காட்சி நடைபெறுகிறது. இங்கு அழிந்து வரும் அரிய விலங்குகளின் 113 ஓவியங்கள் இடம்பெற்றுள்ளன. இந்த ஓவியங்கள் வண்ண அலங்காரம் இல்லாமல் விலங்குகளின் இயல்பான தோற்றத்தில் வரையப்பட்டுள்ளன. ஒவ்வொரு ஓவியத்திலும் விலங்கின் அறிவியல், ஆங்கில மற்றும் தமிழ் பெயர்கள் இடம்பெற்றுள்ளன. வாழ்விடம், உணவுப் பழக்கம், ஆயுள் காலம், பாதுகாப்பு நிலை ஆகிய விவரங்களும் உள்ளன. இவற்றில் 109 ஓவியங்கள் ஓவியர் சுரேஷ் ராகவன் வரைந்தவை. மேற்கு தொடர்ச்சி மலைகள் மற்றும் இந்தியாவின் பிற பகுதிகளில் அழியும் நிலையில் உள்ள விலங்குகளை அவர் வரைந்துள்ளார். வனவிலங்குகள் மற்றும் பறவைகளை கவனித்து முழு விவரங்களை சேகரித்த பிறகே ஓவியமாக வரைவதாக அவர் கூறினார். காலநிலை மாற்றம், காடழிப்பு, வேட்டை, மனித ஆக்கிரமிப்பு ஆகியவை காடுகளின் சமநிலைக்கு அச்சுறுத்தலாக உள்ளன என்றும், வனவிலங்குகளைக் காப்பது நம் கடமை என்றும் அவர் கூறினார். இந்தக் கண்காட்சி இன்று நிறைவடைகிறது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🎨 கோவையில் அரிய விலங்குகளுக்கு ஓவியத்தில் உயிர்: 'கட்டின் குரல்' கண்காட்சி இன்று நிறைவு\n\n📰 முழு விவரம்:\nகோவை பீளமேட்டில் உள்ள கஸ்தூரி சீனிவாசன் ஆர்ட் கேலரியில் 'கட்டின் குரல்' ஓவியக் கண்காட்சி நடைபெறுகிறது. இதில் அழிந்து வரும் அரிய விலங்குகளின் 113 ஓவியங்கள் இடம்பெற்றுள்ளன. இவற்றில் 109 ஓவியங்கள் ஓவியர் சுரேஷ் ராகவனின் படைப்புகள்.\nஓவியங்கள் வண்ண அலங்காரம் இன்றி விலங்குகளின் இயல்பான தோற்றத்தில் வரையப்பட்டுள்ளன. ஒவ்வொரு ஓவியத்துடனும் விலங்கின் அறிவியல், ஆங்கில, தமிழ் பெயர்கள் மற்றும் வாழ்விடம், உணவுப் பழக்கம், ஆயுள் காலம், பாதுகாப்பு நிலை குறித்த விளக்கக் குறிப்புகள் உள்ளன.\n🌿 மேற்கு தொடர்ச்சி மலைகள் மற்றும் இந்தியாவின் பிற பகுதிகளில் அழியும் நிலையில் உள்ள விலங்குகள் குறித்த ஓவியங்கள் இவை.\n🗣️ ஓவியர் சுரேஷ் ராகவன் கூறுகையில்: வனவிலங்குகள், பறவைகளை கூர்ந்து கவனித்து முழு விவரங்களை சேகரித்த பிறகே ஓவியமாக வரைகிறேன். பல்லுயிர் பாதுகாப்பின் அவசரத் தேவை குறித்த விழிப்புணர்வை ஏற்படுத்துவதே என் நோக்கம்.\n⚠️ காலநிலை மாற்றம், காடழிப்பு, வேட்டையாடுதல், மனித ஆக்கிரமிப்பு ஆகியவை காடுகளின் சமநிலைக்கு அச்சுறுத்தலாக உள்ளன. வனவிலங்குகளைக் காப்பது நம் கடமை.\n📅 இந்தக் கண்காட்சி இன்று (நவ. 22) நிறைவடைகிறது.\n\nRare endangered animals paintings exhibition Peelamedu Coimbatore | Coimbatore news\n📍 பீளமேடு, கோவை மாவட்டம் | 22 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Peelamedu #கோவை #CoimbatoreNews",
-   "prompts": "A few visitors stand quietly in a bright indoor art gallery in Peelamedu, Coimbatore, looking at a wall of framed paintings of endangered wild animals and birds drawn in natural colours. Seen from behind at a distance, two people in a shirt and a saree stand before a large canvas showing a rare Western Ghats animal in its forest habitat, with a small explanatory card mounted beside each painting. The white gallery walls hold rows of framed works, lit by soft ceiling spotlights in the daytime, with polished wooden floors and a few empty benches. The atmosphere is calm and reflective. The gallery sits in a quiet urban Coimbatore neighbourhood, and the exhibition title 'Kattin Kural' is suggested by the mood of the room rather than any readable text. Camera at eye level, 35 mm, wide enough to show the gallery walls and the visitors. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a framed painting in a Coimbatore art gallery, showing a rare endangered wild animal from the Western Ghats rendered in natural, unexaggerated colours against a green forest background with a few leaves and branches. Beside the frame, a small plain card with no readable text sits on the white gallery wall, lit by soft ceiling spotlights in daylight. The brushwork is fine and realistic, giving the animal a lifelike presence. Out of focus at the edge of the frame, a visitor's shoulder in a cotton shirt is visible from behind. Shallow depth of field, camera at eye level, 50 mm macro-like framing, emphasising the lifelike animal and the theme of saving biodiversity. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/suresh-raghavan-s-hand-gives-life-to-endangered-rare-animals/4382182",
-   "published": "2026-11-21T13:46:28+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: hl1 (the first headline on screen) must name the place 'பீளமேடு', e.g. 'பீளமேடு: ...' or 'பீளமேடு-இல் ...' - viewers share news of their own area",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320152/kovaiminnal/mlwmwrj6wthq3jtzwsn6.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795320155/kovaiminnal/bwzrzch7bsmjxrw6audr.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795332931/kovaiminnal/bxzqpgul4vdwbubimtsw.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795332934/kovaiminnal/rthizzvgzargecrtmwph.jpg"
    ]
   }
  ]
