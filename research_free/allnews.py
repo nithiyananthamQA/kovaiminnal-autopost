@@ -545,8 +545,16 @@ def _items(t):
     return out
 
 
+def _utc(at):
+    """an ISO time (any zone) as a UTC ISO string; '' (never too new) when it cannot be read"""
+    try:
+        return datetime.datetime.fromisoformat(str(at)).astimezone(datetime.timezone.utc).isoformat()
+    except Exception:
+        return ""
+
+
 def _paper_hours(day, areas, names):
-    """{(hours, paper): [areas]} - the hours the district papers' own notices of that cut day (the power-cut check's written list,
+    """{hours: [areas]} - the hours the district papers' own notices of that cut day (the power-cut check's written list,
     research_free/archive/powercut_state.json) print for the list's areas. A notice counts only when 2+ of the areas are in it; in a
     notice with several substations an area takes the hours printed before it (Covai Mail: 'X துணை மின் நிலையம்: ... காலை 9 மணி
     முதல் மாலை 4 மணி வரை: areas'). Papers in the power-cut check's order (Dinamani, Dinamalar, Covai Mail) - the first one wins."""
@@ -558,8 +566,11 @@ def _paper_hours(day, areas, names):
         rank = powercut.site_rank
     except Exception:
         return {}
+    # only notices saved 20+ minutes ago: one found in this same run may not be pushed yet when the post run re-reads the list
+    old = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(minutes=20)).isoformat()
     notes = sorted((v for v in (st.get("done") or {}).values()
-                    if v.get("cut_day") == day and SECTION_MARK not in str(v.get("url") or "") and any(d in str(v.get("url")) for d in PAPER_NAMES)),
+                    if v.get("cut_day") == day and SECTION_MARK not in str(v.get("url") or "") and any(d in str(v.get("url")) for d in PAPER_NAMES)
+                    and _utc(v.get("at")) <= old),
                    key=lambda v: rank(v["url"]))
     left = []
     for a in (b for x in areas for b in re.split(r"\s*\d{1,2}\s*[.)]\s*", x)):      # Samayam: "1.மடம்பட்டி 2.ஆலாந்துறை"
@@ -588,9 +599,8 @@ def _paper_hours(day, areas, names):
                 hit.append((a, re.sub(r"\s+", " ", r.group(0)).strip()))
         if len(hit) < 2:
             continue
-        paper = next(n for d, n in PAPER_NAMES.items() if d in v["url"])
         for a, h in hit:
-            got.setdefault((h, paper), []).append(a)
+            got.setdefault(h, []).append(a)
         left = [a for a in left if a not in {x for x, _ in hit}]
     return got
 
@@ -629,8 +639,8 @@ def district_section(url, names=None):
     new_title = f"{name} மாவட்டத்தில் {when.group(0) if when else 'நாளை'} மின்தடை: {', '.join(a.strip() for a in areas[:4] if a.strip())}"
     # owner 23 Nov ("some video missed the timings ... at least try to get or post what we have"): Samayam's list gives no hours in
     # its body (Kovai RN-83, RN-97, RN-241 and Salem RN-2 went out with no time). 1) the hours of the same areas from the district
-    # papers' own notices of that day (RN-241's Kavundampalayam areas: Dinamalar 10-3); 2) else Samayam's synopsis line (one line
-    # for the whole state, "காலை 9 மணி முதல் மாலை 4 மணி வரை" - not always right: Dinamalar gave 10-3 for RN-241's areas).
+    # papers' own notices of that day (RN-241's Kavundampalayam areas: Dinamalar 10-3); 2) Samayam's synopsis line (one line for
+    # the whole state, "காலை 9 மணி முதல் மாலை 4 மணி வரை" - not always right: Dinamalar gave 10-3 for RN-241's areas).
     extra = ""
     if not _HOURS.search(intro + " " + part):
         try:
@@ -638,12 +648,15 @@ def district_section(url, names=None):
         except Exception as e:      # owner 23 Nov: this never stops a power cut - no hours found = the list as before
             print("power-cut hours from the papers skipped:", str(e)[:120])
             got = {}
+        # no paper's name in the text: the writer never names a source (rules.md); the papers print it as the board's notice
+        extra = " ".join(f"{', '.join(a)} ஆகிய பகுதிகளில் {h} மின்தடை (மின்வாரிய அறிவிப்பு)." for h, a in got.items())
         if got:
-            extra = " ".join(f"{', '.join(a[:10])} உள்ளிட்ட பகுதிகளில் {h} மின்தடை ({paper} அறிவிப்பு)." for (h, paper), a in got.items())
-        else:
-            desc = re.sub(r"\s+", " ", str(art.get("description") or "")).strip()
-            if _HOURS.search(desc) and not any(d in desc for d in others):
-                intro = (desc + " " + intro).strip()
+            print("power-cut hours from the papers:", "; ".join(f"{h}: {len(a)} areas" for h, a in got.items()))
+        # Samayam's own line always stays: the fact check re-reads this text in the post run, and a draft written with either time
+        # must still be backed by it (a paper that cannot be opened there must never hold a power cut)
+        desc = re.sub(r"\s+", " ", str(art.get("description") or "")).strip()
+        if _HOURS.search(desc) and not any(d in desc for d in others):
+            intro = (desc + " " + intro).strip()
     body = (intro + "\n" if intro else "") + f"{name} மாவட்டம் - மின்தடை ஏற்படும் பகுதிகள்: {part}." + ("\n" + extra if extra else "")
     return dict(art, url=url, title=new_title[:200], text=body)
 

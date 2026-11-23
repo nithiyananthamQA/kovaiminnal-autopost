@@ -160,11 +160,13 @@ e-mail tag KOVAIMINNAL. Never "360".
   "நாளை (நவம்பர் 23)", screen lines "நாளை (நவ.23)" or only "நவ.23" when the line is full. A நாளை that already has a date is left alone.
 - Power-cut hours for Samayam's state-wide list (owner 23 Nov: "some video missed the timings", "at least try to get or post what we
   have"). Samayam's body prints no hours, so Kovai RN-83, RN-97, RN-241 and Salem RN-2 went out with no time. allnews.district_section,
-  when the list gives no hours: 1) the same areas' hours from the district papers' own notices of that cut day (the power-cut check's
-  written list, Dinamani > Dinamalar > Covai Mail; 2+ areas must match as whole names; in a notice with several substations each area
-  takes the hours printed before it) - "X, Y உள்ளிட்ட பகுதிகளில் காலை 10 முதல் மதியம் 3 மணி வரை மின்தடை (தினமலர் அறிவிப்பு)";
-  2) else Samayam's synopsis line ("தமிழகம் முழுவதும் ... காலை 9 மணி முதல் மாலை 4 மணி வரை" - one line for the whole state, not
-  always right: Dinamalar gave 10-3 for RN-241's areas). Any error = the list as before (never stops a power cut).
+  when the list gives no hours, adds: 1) the same areas' hours from the district papers' own notices of that cut day (the power-cut
+  check's written list, saved 20+ minutes before; Dinamani > Dinamalar > Covai Mail; 2+ areas must match as whole names; in a notice
+  with several substations each area takes the hours printed before it) - "X, Y ஆகிய பகுதிகளில் காலை 10 முதல் மதியம் 3 மணி வரை
+  மின்தடை (மின்வாரிய அறிவிப்பு)", no paper's name (the writer never names a source); 2) Samayam's synopsis line ("தமிழகம் முழுவதும்
+  ... காலை 9 மணி முதல் மாலை 4 மணி வரை" - one line for the whole state, not always right: Dinamalar gave 10-3 for RN-241's areas). The
+  synopsis always stays, so the post run's fact check (it re-reads the text) backs a draft written with either time. Any error = the
+  list as before (never stops a power cut).
 
 ## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 

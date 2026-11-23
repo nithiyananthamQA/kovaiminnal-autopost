@@ -90,8 +90,8 @@ class SamayamHours(unittest.TestCase):
         self.addCleanup(p.stop)
         self.state([])
 
-    def state(self, urls, day="2026-11-23"):
-        self.tmp.write_text(json.dumps({"done": {powercut.pid(u): {"url": u, "cut_day": day} for u in urls}, "seen": {}}), encoding="utf-8")
+    def state(self, urls, day="2026-11-23", at="2026-11-22T10:00:00+05:30"):
+        self.tmp.write_text(json.dumps({"done": {powercut.pid(u): {"url": u, "cut_day": day, "at": at} for u in urls}, "seen": {}}), encoding="utf-8")
 
     def samayam(self, body, desc):
         ld = json.dumps({"@type": "NewsArticle", "headline": "தமிழகத்தில் நாளை (23-11-2026) மின்தடை அறிவிப்பு!", "description": desc,
@@ -107,45 +107,53 @@ class SamayamHours(unittest.TestCase):
         self.notices = {self.DINAMALAR: self.KAVUNDAMPALAYAM}
         self.state([self.DINAMALAR])
         a = self.samayam(self.NO_HOURS, self.SYN)
-        self.assertIn("ஹவுசிங் யூனிட், ஏஆர் நகர், சுகுணா நகர் உள்ளிட்ட பகுதிகளில் காலை 10 முதல் மதியம் 3 மணி வரை மின்தடை (தினமலர் அறிவிப்பு)", a["text"])
-        self.assertNotIn("மாலை 4 மணி", a["text"])      # Samayam's state-wide line is not used when a paper gives the hours
-        self.assertNotIn("மடம்பட்டி உள்ளிட்ட", a["text"])      # areas no paper printed get no time
+        self.assertIn("ஹவுசிங் யூனிட், ஏஆர் நகர், சுகுணா நகர் ஆகிய பகுதிகளில் காலை 10 முதல் மதியம் 3 மணி வரை மின்தடை (மின்வாரிய அறிவிப்பு)", a["text"])
+        self.assertIn("காலை 9 மணி முதல் மாலை 4 மணி வரை", a["text"])      # Samayam's own line stays (the post run's fact check re-reads it)
+        self.assertNotIn("மடம்பட்டி ஆகிய", a["text"])      # areas no paper printed get no time
+
+    def test_notice_of_this_same_run_waits(self):
+        # found minutes ago: the post run may not have it yet - never a time the post run's fact check cannot see
+        self.notices = {self.DINAMALAR: self.KAVUNDAMPALAYAM}
+        self.state([self.DINAMALAR], at=datetime.datetime.now(IST).isoformat())
+        a = self.samayam(self.NO_HOURS, self.SYN)
+        self.assertNotIn("(மின்வாரிய அறிவிப்பு)", a["text"])
+        self.assertIn("காலை 9 மணி முதல் மாலை 4 மணி வரை", a["text"])
 
     def test_each_substation_its_own_hours(self):
         self.notices = {self.COVAIMAIL: "கவுண்டம்பாளையம் துணை மின் நிலையம் : காலை 10 மணி முதல் மதியம் 3 மணி வரை ஹவுசிங் யூனிட், ஏ.ஆர். நகர். "
                                         "மடம்பட்டி துணை மின் நிலையம் : காலை 9 மணி முதல் மதியம் 2 மணி வரை மடம்பட்டி, ஆலாந்துறை, குப்பனூர்."}
         self.state([self.COVAIMAIL])
         a = self.samayam(self.NO_HOURS, self.SYN)
-        self.assertIn("ஹவுசிங் யூனிட், ஏஆர் நகர் உள்ளிட்ட பகுதிகளில் காலை 10 மணி முதல் மதியம் 3 மணி வரை மின்தடை (கோவை மெயில் அறிவிப்பு)", a["text"])
-        self.assertIn("மடம்பட்டி, ஆலாந்துறை, குப்பனூர் உள்ளிட்ட பகுதிகளில் காலை 9 மணி முதல் மதியம் 2 மணி வரை", a["text"])
+        self.assertIn("ஹவுசிங் யூனிட், ஏஆர் நகர் ஆகிய பகுதிகளில் காலை 10 மணி முதல் மதியம் 3 மணி வரை மின்தடை (மின்வாரிய அறிவிப்பு)", a["text"])
+        self.assertIn("மடம்பட்டி, ஆலாந்துறை, குப்பனூர் ஆகிய பகுதிகளில் காலை 9 மணி முதல் மதியம் 2 மணி வரை", a["text"])
 
     def test_spellings_of_the_papers(self):
         # Dinamani / Covai Mail write ஆா் for ஆர் and சாலை for ரோடு; a name inside a longer one ('கே.கே. புதூர்') is not that place
         self.notices = {self.DINAMANI: "காலை 10 மணி முதல் பிற்பகல் 3 மணி வரை: ஹவுசிங் யூனிட் சாலை, சுகுணா நகா், கே.கே. புதூர் 6வது வீதி."}
         self.state([self.DINAMANI])
         a = self.samayam(self.NO_HOURS.replace("ஹவுசிங் யூனிட்", "ஹவுசிங் யூனிட் ரோடு").replace("3.குப்பனூர்", "3.புதூர்"), self.SYN)
-        self.assertIn("ஹவுசிங் யூனிட் ரோடு, சுகுணா நகர் உள்ளிட்ட பகுதிகளில் காலை 10 மணி முதல் பிற்பகல் 3 மணி வரை", a["text"])
-        self.assertNotIn("புதூர் உள்ளிட்ட", a["text"])
+        self.assertIn("ஹவுசிங் யூனிட் ரோடு, சுகுணா நகர் ஆகிய பகுதிகளில் காலை 10 மணி முதல் பிற்பகல் 3 மணி வரை", a["text"])
+        self.assertNotIn("புதூர் ஆகிய", a["text"])
 
     def test_papers_in_the_power_cut_order(self):
         self.notices = {self.COVAIMAIL: "காலை 9 மணி முதல் மாலை 4 மணி வரை ஹவுசிங் யூனிட், ஏ.ஆர். நகர், சுகுணா நகர்.",
                         self.DINAMANI: "காலை 10 மணி முதல் பிற்பகல் 3 மணி வரை ஹவுசிங் யூனிட், ஏ.ஆர். நகர், சுகுணா நகர்."}
         self.state([self.COVAIMAIL, self.DINAMANI])
         a = self.samayam(self.NO_HOURS, self.SYN)
-        self.assertIn("காலை 10 மணி முதல் பிற்பகல் 3 மணி வரை மின்தடை (தினமணி அறிவிப்பு)", a["text"])
-        self.assertNotIn("கோவை மெயில்", a["text"])
+        self.assertIn("காலை 10 மணி முதல் பிற்பகல் 3 மணி வரை மின்தடை (மின்வாரிய அறிவிப்பு)", a["text"])
+        self.assertNotIn("மாலை 4 மணி வரை மின்தடை (மின்வாரிய", a["text"])      # Dinamani before Covai Mail
 
     def test_one_shared_area_is_not_the_same_cut(self):
         self.notices = {self.DINAMALAR: "காலை 10 முதல் மதியம் 3 மணி வரை சுகுணா நகர், தாமரை நகர்."}
         self.state([self.DINAMALAR])
         a = self.samayam(self.NO_HOURS, self.SYN)
-        self.assertNotIn("தினமலர்", a["text"])
+        self.assertNotIn("(மின்வாரிய அறிவிப்பு)", a["text"])
         self.assertIn("காலை 9 மணி முதல் மாலை 4 மணி வரை", a["text"])      # nothing from the papers: Samayam's own line
 
     def test_another_day_is_not_used(self):
         self.notices = {self.DINAMALAR: self.KAVUNDAMPALAYAM}
         self.state([self.DINAMALAR], day="2026-11-24")
-        self.assertNotIn("தினமலர்", self.samayam(self.NO_HOURS, self.SYN)["text"])
+        self.assertNotIn("(மின்வாரிய அறிவிப்பு)", self.samayam(self.NO_HOURS, self.SYN)["text"])
 
     def test_hours_from_the_synopsis(self):
         a = self.samayam(self.NO_HOURS, self.SYN)
@@ -160,7 +168,7 @@ class SamayamHours(unittest.TestCase):
         a = self.samayam(body, self.SYN)
         self.assertIn("காலை 10 மணி", a["text"])
         self.assertNotIn("மாலை 4 மணி", a["text"])
-        self.assertNotIn("தினமலர்", a["text"])
+        self.assertNotIn("(மின்வாரிய அறிவிப்பு)", a["text"])
 
     def test_synopsis_of_another_district_not_used(self):
         a = self.samayam(self.NO_HOURS, "சேலம் மாவட்டத்தில் நாளை காலை 9 மணி முதல் மாலை 4 மணி வரை மின்தடை.")
