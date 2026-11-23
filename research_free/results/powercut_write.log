@@ -4358,3 +4358,81 @@ filed: 0 Coimbatore district stories (target 1), reels only
 queue: 0 news waiting to be written
 All News sheet: {"ok":true,"added":0,"updated":1} 
 stories: 0
+writing [N]: நாளை 24.11.26 கோவையில் இங்கெல்லாம் மின்தடை - The Covai Mail
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, plea
+dead for this round: gemini/gemini-3-flash-preview
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+dead for this round: groq/openai/gpt-oss-120b
+ok groq/qwen/qwen3.8-27b (4s)
+attempt 1 groq/qwen/qwen3.8-27b: 2 problems
+  numbers not found in the article: 20, 6
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 1 ('துணை மின் நிலையங்களில் மாதாந்திர பராமரிப்பு பணிகள் மாதம் 1 ம')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+dead for this round: groq/qwen/qwen3.8-27b
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 9 problems
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  stray Tamil sign '்' after 'ா' in «ரிக்கா் சா»
+  stray Tamil sign 'ா' after 'ா' in «்கிரவாா்பே»
+  stray Tamil sign '்' after 'ா' in «கிரவாா்பேட»
+  stray Tamil sign 'ா' after 'ூ' in «ம்புதூா், »
+  stray Tamil sign '்' after 'ா' in «்புதூா், ச»
+  stray Tamil sign '்' after 'ா' in « இடையா் வீ»
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 1 ('துணை மின் நிலையங்களில் மாதாந்திர பராமரிப்பு பணிகள் மாதம் 1 ம')
+  known issue meta_article: cards talks about the article instead of the news ('கட்டுரை') - rewrite so it does not happen again
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 11 problems
+  reel_script sentence 1 (heard in the first 3 seconds) must name the place 'ஆர்.எஸ்.புரம்' and the news itself, e.g. 'ஆர்.எஸ்.புரம்-இல் ... 3 பேர் கைது.' - viewers decide in 3 seconds whether the news is about their area
+  stray Tamil sign '்' after 'ா' in «ரிக்கா் சா»
+  stray Tamil sign 'ா' after 'ா' in «்கிரவாா்பே»
+  stray Tamil sign '்' after 'ா' in «கிரவாா்பேட»
+  stray Tamil sign '்' after 'ா' in «ரிக்கா் சா»
+  stray Tamil sign 'ா' after 'ா' in «்கிரவாா்பே»
+  stray Tamil sign '்' after 'ா' in «கிரவாா்பேட»
+  stray Tamil sign 'ா' after 'ூ' in «ம்புதூா், »
+  stray Tamil sign '்' after 'ா' in «்புதூா், ச»
+  stray Tamil sign '்' after 'ா' in « இடையா் வீ»
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 1 ('துணை மின் நிலையங்களில் மாதாந்திர பராமரிப்பு பணிகள் மாதம் 1 ம')
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 2 problems
+  sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 1 ('துணை மின் நிலையங்களில் மாதாந்திர பராமரிப்பு பணிகள் மாதம் 1 ம')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok anthropic/claude-haiku-5-5
+earlier stories still waiting for images: []
+instagram check: 50 recent posts read from the page
+pick round: only the picked links are written (research_free/pick.py)
+manual link added: https://covaimail.com/power-shutdown-scheduled-to-take-place-in-coimbatore-on-24th-of-november-2026
+candidate filter: collected=1
+to write: 1 Coimbatore district candidates (max 1 stories)
+round: top 1 of 1 candidates
+candidates waiting: 1 Coimbatore; time left 39 min
+try (N) manual=True: https://covaimail.com/power-shutdown-scheduled-to-take-place
+NOT filed (N) நாளை 24.11.26 கோவையில் இங்கெல்லாம் மின்தடை - The C: duplicate after write
+candidate loop ended: left 0, tried={'N': 1}, done={'N': 0}, time left 39 min
+filed: 0 Coimbatore district stories (target 1), reels only
+queue: 0 news waiting to be written
+All News sheet: {"ok":true,"added":1,"updated":0} 
+stories: 0
