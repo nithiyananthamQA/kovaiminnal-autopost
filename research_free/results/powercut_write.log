@@ -4522,3 +4522,138 @@ filed: 0 Coimbatore district stories (target 1), reels only
 queue: 0 news waiting to be written
 All News sheet: {"ok":true,"added":0,"updated":1} 
 stories: 0
+writing [N]: நாளை 24.11.26 கோவையில் இங்கெல்லாம் மின்தடை - The Covai Mail
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemini/gemini-3.6-flash: Expecting ',' delimiter: line 49 column 3 (char 1449)
+poor answer - skipped for 30 min: gemini/gemini-3.6-flash
+ok gemini/gemini-3.5-flash (29s)
+attempt 1 gemini/gemini-3.5-flash: 2 problems
+  sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 1 ('துணை மின் நிலையங்களில் மாதாந்திர பராமரிப்பு பணிகள் மாதம் 1 ம')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3.5-flash (25s)
+attempt 2 gemini/gemini-3.5-flash: 14 problems
+  hl1 (the first headline on screen) must name the place 'கோவை', e.g. 'கோவை: ...' or 'கோவை-இல் ...' - viewers share news of their own area
+  stray Tamil sign '்' after 'ா' in «ரிக்கா் சா»
+  stray Tamil sign 'ா' after 'ா' in «்கிரவாா்பே»
+  stray Tamil sign '்' after 'ா' in «கிரவாா்பேட»
+  stray Tamil sign 'ா' after 'ூ' in «ம்புதூா் ஆ»
+  stray Tamil sign '்' after 'ா' in «்புதூா் ஆக»
+  stray Tamil sign '்' after 'ா' in « இடையா் வீ»
+  stray Tamil sign '்' after 'ா' in «ரிக்கா் சா»
+  stray Tamil sign 'ா' after 'ா' in «்கிரவாா்பே»
+  stray Tamil sign '்' after 'ா' in «கிரவாா்பேட»
+  stray Tamil sign 'ா' after 'ூ' in «ம்புதூா், »
+  stray Tamil sign '்' after 'ா' in «்புதூா், ச»
+  stray Tamil sign '்' after 'ா' in « இடையா் வீ»
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 26 ('நாளை 24.11.26 கோவையில் இங்கெல்லாம் மின்தடை - The Covai Mail')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok gemini/gemini-3.5-flash (26s)
+attempt 3 gemini/gemini-3.5-flash: 2 problems
+  sentence 1 (one-line story) has 14 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 1 ('துணை மின் நிலையங்களில் மாதாந்திர பராமரிப்பு பணிகள் மாதம் 1 ம'); 26 ('நாளை 24.11.26 கோவையில் இங்கெல்லாம் மின்தடை - The Covai Mail')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemini/gemini-3.5-flash: Expecting ',' delimiter: line 1 column 1302 (char 1301)
+poor answer - skipped for 30 min: gemini/gemini-3.5-flash
+ok gemini/gemini-3-flash-preview (13s)
+attempt 4 gemini/gemini-3-flash-preview: 2 problems
+  reel_script sentence 1 (heard in the first 3 seconds) must name the place 'ஆர்.எஸ்.புரம்' and the news itself, e.g. 'ஆர்.எஸ்.புரம்-இல் ... 3 பேர் கைது.' - viewers decide in 3 seconds whether the news is about their area
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 1 ('துணை மின் நிலையங்களில் மாதாந்திர பராமரிப்பு பணிகள் மாதம் 1 ம')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3-flash-preview (13s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok gemini/gemini-3-flash-preview (30s)
+factcheck by gemini/gemini-3-flash-preview: 4 problems
+  The article does not mention preparing water or mobile charging, nor does it mention advising the public to plan ahead, but these are included in the slides and caption.
+  The reel script and slides omit the 'part of' (ஒரு பகுதி) qualifier for several locations (R.S. Puram, Thadagam Road, D.B. Road, Sukrawarpet, Raja Street, Big Bazaar Street, Pannimadai), implying the entire areas are affected.
+  The reel script and slides omit the 'East and West' (கிழக்கு மற்றும் மேற்கு) specification for Sambandam Road and T.V. Swamy Road.
+  The reel_script omits several locations mentioned in the article, such as Cowley Brown Road, McRicker Road, Tyagi Kumaran Street, Light House Road, E.B. Colony, Sullivan Street, Telugu Street, Edaiyar Street, P.M. Swamy Colony, and Sundapalayam Road.
+attempt 5 gemini/gemini-3-flash-preview: 4 problems
+  fact-check: The article does not mention preparing water or mobile charging, nor does it mention advising the public to plan ahead, but these are included in the slides and caption.
+  fact-check: The reel script and slides omit the 'part of' (ஒரு பகுதி) qualifier for several locations (R.S. Puram, Thadagam Road, D.B. Road, Sukrawarpet, Raja Street, Big Bazaar Street, Pannimadai), implying the entire areas are affected.
+  fact-check: The reel script and slides omit the 'East and West' (கிழக்கு மற்றும் மேற்கு) specification for Sambandam Road and T.V. Swamy Road.
+  fact-check: The reel_script omits several locations mentioned in the article, such as Cowley Brown Road, McRicker Road, Tyagi Kumaran Street, Light House Road, E.B. Colony, Sullivan Street, Telugu Street, Edaiyar Street, P.M. Swamy Colony, and Sundapalayam Road.
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3-flash-preview (17s)
+attempt 6 gemini/gemini-3-flash-preview: 2 problems
+  caption needs 5 hashtags (Instagram max), has 6
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 1 ('துணை மின் நிலையங்களில் மாதாந்திர பராமரிப்பு பணிகள் மாதம் 1 ம')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3-flash-preview (12s)
+attempt 7 gemini/gemini-3-flash-preview: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 1 ('துணை மின் நிலையங்களில் மாதாந்திர பராமரிப்பு பணிகள் மாதம் 1 ம')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3-flash-preview (14s)
+attempt 8 gemini/gemini-3-flash-preview: 2 problems
+  reel_script sentence 1 (heard in the first 3 seconds) must name the place 'ஆர்.எஸ்.புரம்' and the news itself, e.g. 'ஆர்.எஸ்.புரம்-இல் ... 3 பேர் கைது.' - viewers decide in 3 seconds whether the news is about their area
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 1 ('துணை மின் நிலையங்களில் மாதாந்திர பராமரிப்பு பணிகள் மாதம் 1 ம')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3-flash-preview (13s)
+attempt 9 gemini/gemini-3-flash-preview: 2 problems
+  caption needs 5 hashtags (Instagram max), has 6
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 1 ('துணை மின் நிலையங்களில் மாதாந்திர பராமரிப்பு பணிகள் மாதம் 1 ம')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok gemini/gemini-3-flash-preview (27s)
+attempt 10 gemini/gemini-3-flash-preview: 2 problems
+  reel_script sentence 1 (heard in the first 3 seconds) must name the place 'ஆர்.எஸ்.புரம்' and the news itself, e.g. 'ஆர்.எஸ்.புரம்-இல் ... 3 பேர் கைது.' - viewers decide in 3 seconds whether the news is about their area
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 1 ('துணை மின் நிலையங்களில் மாதாந்திர பராமரிப்பு பணிகள் மாதம் 1 ம'); 11 ('நாளை 24.11.26 கோவையில் இங்கெல்லாம் மின்தடை - The Covai Mail'); 26 ('நாளை 24.11.26 கோவையில் இங்கெல்லாம் மின்தடை - The Covai Mail')
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 7 problems
+  stray Tamil sign '்' after 'ா' in «ரிக்கா் சா»
+  stray Tamil sign 'ா' after 'ா' in «்கிரவாா்பே»
+  stray Tamil sign '்' after 'ா' in «கிரவாா்பேட»
+  stray Tamil sign 'ா' after 'ூ' in «ம்புதூா், »
+  stray Tamil sign '்' after 'ா' in «்புதூா், ச»
+  stray Tamil sign '்' after 'ா' in « இடையா் வீ»
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 1 ('துணை மின் நிலையங்களில் மாதாந்திர பராமரிப்பு பணிகள் மாதம் 1 ம')
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 2 problems
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 1 ('துணை மின் நிலையங்களில் மாதாந்திர பராமரிப்பு பணிகள் மாதம் 1 ம')
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 8 problems
+  hl1 (the first headline on screen) must name the place 'ஆர்.எஸ்.புரம்', e.g. 'ஆர்.எஸ்.புரம்: ...' or 'ஆர்.எஸ்.புரம்-இல் ...' - viewers share news of their own area
+  stray Tamil sign '்' after 'ா' in «ரிக்கா் சா»
+  stray Tamil sign 'ா' after 'ா' in «்கிரவாா்பே»
+  stray Tamil sign '்' after 'ா' in «கிரவாா்பேட»
+  stray Tamil sign 'ா' after 'ூ' in «ம்புதூா், »
+  stray Tamil sign '்' after 'ா' in «்புதூா், ச»
+  stray Tamil sign '்' after 'ா' in « இடையா் வீ»
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 1 ('துணை மின் நிலையங்களில் மாதாந்திர பராமரிப்பு பணிகள் மாதம் 1 ம')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
+poor answer - skipped for 30 min: gemini/gemini-3-flash-preview
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {"error":{"message":"Failed to validate JSON. Please adjust your prompt. See 'failed_gener
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+proofread skipped: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6k595xsevr8qckv4ngn66p1` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Requested 1255. The request's expected output tokens exceed the enforced limit; reduce max_tokens (or the request's expected output) and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok groq/openai/gpt-oss-120b (2s)
+earlier stories still waiting for images: []
+instagram check: 50 recent posts read from the page
+pick round: only the picked links are written (research_free/pick.py)
+manual link added: https://covaimail.com/power-shutdown-scheduled-to-take-place-in-coimbatore-on-24th-of-november-2026
+candidate filter: collected=1
+to write: 1 Coimbatore district candidates (max 1 stories)
+round: top 1 of 1 candidates
+candidates waiting: 1 Coimbatore; time left 39 min
+try (N) manual=True: https://covaimail.com/power-shutdown-scheduled-to-take-place
+NOT filed (N) நாளை 24.11.26 கோவையில் இங்கெல்லாம் மின்தடை - The C: duplicate after write
+candidate loop ended: left 0, tried={'N': 1}, done={'N': 0}, time left 33 min
+filed: 0 Coimbatore district stories (target 1), reels only
+queue: 0 news waiting to be written
+All News sheet: {"ok":true,"added":0,"updated":1} 
+stories: 0
