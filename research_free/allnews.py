@@ -499,9 +499,100 @@ TN_DISTRICTS = ("அரியலூர்", "செங்கல்பட்ட�
                 "நாமக்கல்", "நீலகிரி", "உதகை", "பெரம்பலூர்", "புதுக்கோட்டை", "ராமநாதபுரம்", "ராணிப்பேட்டை", "சேலம்", "சிவகங்கை", "தென்காசி",
                 "தஞ்சாவூர்", "தஞ்சை", "தேனி", "தூத்துக்குடி", "திருச்சி", "திருச்சிராப்பள்ளி", "திருநெல்வேலி", "நெல்லை", "திருப்பத்தூர்",
                 "திருப்பூர்", "திருவள்ளூர்", "திருவண்ணாமலை", "திருவாரூர்", "வேலூர்", "விழுப்புரம்", "விருதுநகர்", "புதுச்சேரி")
+_HOURS = re.compile(r"\d{1,2}(?:[.:]\d{2})?\s*மணி\s*(?:முதல்|வரை)|(?:காலை|மாலை|மதியம்|பிற்பகல்|இரவு)\s*\d")      # a cut's hours, not '24 மணி நேரமும்'
 _SECTION_HEAD = re.compile(r'(?:^|(?<=[\s.,;:|>\-–"]))(' + "|".join(sorted(TN_DISTRICTS, key=len, reverse=True)) +
                            r')(?:\s*/\s*[^\s":,.]+)?'      # Samayam: "கோவை/மெட்ரோ மின் தடை பகுதிகள்":- "..."
                            r'(?:\s*(?:மாவட்டத்தில்|மாவட்டம்)\s*(?:பகுதிகள்)?\s*[:\-–]?|\s*(?:மின்\s*தடை|மின்தடை|மின்வெட்டு)?\s*(?:பகுதிகள்)?\s*"?\s*[:\-–])')
+
+
+_PERIOD = r"(?:காலை|மாலை|மதியம்|பிற்பகல்|இரவு)"
+_RANGE = re.compile(_PERIOD + r"\s*\d{1,2}(?:[.:]\d{2})?\s*(?:மணி\s*)?(?:முதல்|-|–)\s*(?:" + _PERIOD + r"\s*)?\d{1,2}(?:[.:]\d{2})?\s*(?:மணி\s*)?(?:வரை)?")
+PAPER_NAMES = {"dinamani.com": "தினமணி", "dinamalar.com": "தினமலர்", "covaimail.com": "கோவை மெயில்"}
+_NOTICE_TEXT = {}
+
+
+def _list_day(text):
+    """the cut day a state-wide list is about: 'நாளை (23-11-2026)' -> '2026-11-23' ('' when it prints none)"""
+    m = re.search(r"(\d{1,2})[.\-/](\d{1,2})[.\-/](20\d{2}|\d{2})(?!\d)", text or "")
+    if not m:
+        return ""
+    y = int(m.group(3)) + (2000 if len(m.group(3)) == 2 else 0)
+    try:
+        return datetime.date(y, int(m.group(2)), int(m.group(1))).isoformat()
+    except ValueError:
+        return ""
+
+
+_FILLER = re.compile(r"\(.*?\)|மற்றும்|ஆகிய|உள்ளிட்ட|சில\s*பகுதிகள்|ஒரு\s*சில\s*பகுதி|ஒரு\s*பகுதி|பகுதிகளில்|பகுதிகள்|பகுதியில்")
+
+
+def _area_key(a):
+    """one area name as papers print it differently: 'ஏஆர் நகர்' = 'ஏ.ஆர். நகர்' = 'ஏ.ஆர்.நகர்(ஒரு பகுதி)'"""
+    k = _place_norm(_FILLER.sub("", a or "")).replace("ா்", "ர்").replace("ரோடு", "சாலை")      # ஆா் = ஆர் (Dinamani, Covai Mail)
+    return re.sub(r"[\s.\-\u200c\u200b\"'“”]", "", k)
+
+
+def _items(t):
+    """{area key: position} for every listed name of a notice (commas, colons, lines) - a whole item only, so 'புதூர்' is never
+    found inside 'கே.கே. புதூர் 6வது வீதி'"""
+    out, blank = {}, (lambda m: "," * len(m.group(0)))      # same length: positions stay those of the notice text
+    t = _RANGE.sub(blank, t)      # '... 3 மணி வரை ஹவுசிங் யூனிட்' - the hours are not part of the first name
+    t = re.sub(r"(?<=[஀-௿]{4})\.\s+|(?<=\))\.\s*|\d{1,2}\s*[.)]\s*", blank, t)      # 'அசோக் நகர். கே.கே. புதூர்', '1.மடம்பட்டி' (never 'ஏ.ஆர். நகர்')
+    for m in re.finditer(r"[^,;:\n]+", t):
+        k = _area_key(m.group(0))
+        if len(k) >= 4:
+            out.setdefault(k, m.start())
+    return out
+
+
+def _paper_hours(day, areas, names):
+    """{(hours, paper): [areas]} - the hours the district papers' own notices of that cut day (the power-cut check's written list,
+    research_free/archive/powercut_state.json) print for the list's areas. A notice counts only when 2+ of the areas are in it; in a
+    notice with several substations an area takes the hours printed before it (Covai Mail: 'X துணை மின் நிலையம்: ... காலை 9 மணி
+    முதல் மாலை 4 மணி வரை: areas'). Papers in the power-cut check's order (Dinamani, Dinamalar, Covai Mail) - the first one wins."""
+    if not day:
+        return {}
+    try:
+        import powercut
+        st = json.loads(Path(powercut.STATE).read_text(encoding="utf-8"))
+        rank = powercut.site_rank
+    except Exception:
+        return {}
+    notes = sorted((v for v in (st.get("done") or {}).values()
+                    if v.get("cut_day") == day and SECTION_MARK not in str(v.get("url") or "") and any(d in str(v.get("url")) for d in PAPER_NAMES)),
+                   key=lambda v: rank(v["url"]))
+    left = []
+    for a in (b for x in areas for b in re.split(r"\s*\d{1,2}\s*[.)]\s*", x)):      # Samayam: "1.மடம்பட்டி 2.ஆலாந்துறை"
+        a = _FILLER.sub("", a).strip(' ."')
+        if len(_area_key(a)) >= 4 and a not in names and a not in left:
+            left.append(a)
+    got = {}
+    for v in notes[:4]:
+        if len(left) < 2:
+            break
+        u = v["url"]
+        if u not in _NOTICE_TEXT:      # each notice opened once per run (a slow paper never slows a round twice)
+            try:
+                _NOTICE_TEXT[u] = article_any(u).get("text") or ""
+            except Exception:
+                _NOTICE_TEXT[u] = ""
+        t = _place_norm(re.sub(r"[ \t]+", " ", _NOTICE_TEXT[u]))      # lines kept: one name per line
+        hrs = [r for r in _RANGE.finditer(t) if "மணி" in r.group(0) or "வரை" in r.group(0)]
+        if not hrs:
+            continue
+        hit, items = [], _items(t)
+        for a in left:
+            at = items.get(_area_key(a))
+            if at is not None:
+                r = next((r for r in reversed(hrs) if r.start() < at), hrs[0])
+                hit.append((a, re.sub(r"\s+", " ", r.group(0)).strip()))
+        if len(hit) < 2:
+            continue
+        paper = next(n for d, n in PAPER_NAMES.items() if d in v["url"])
+        for a, h in hit:
+            got.setdefault((h, paper), []).append(a)
+        left = [a for a in left if a not in {x for x, _ in hit}]
+    return got
 
 
 def district_section(url, names=None):
@@ -536,7 +627,24 @@ def district_section(url, names=None):
     areas = [x.strip(' "') for x in re.split(r"[,،;]\s*", part)]
     name = m.group(1)
     new_title = f"{name} மாவட்டத்தில் {when.group(0) if when else 'நாளை'} மின்தடை: {', '.join(a.strip() for a in areas[:4] if a.strip())}"
-    body = (intro + "\n" if intro else "") + f"{name} மாவட்டம் - மின்தடை ஏற்படும் பகுதிகள்: {part}."
+    # owner 23 Nov ("some video missed the timings ... at least try to get or post what we have"): Samayam's list gives no hours in
+    # its body (Kovai RN-83, RN-97, RN-241 and Salem RN-2 went out with no time). 1) the hours of the same areas from the district
+    # papers' own notices of that day (RN-241's Kavundampalayam areas: Dinamalar 10-3); 2) else Samayam's synopsis line (one line
+    # for the whole state, "காலை 9 மணி முதல் மாலை 4 மணி வரை" - not always right: Dinamalar gave 10-3 for RN-241's areas).
+    extra = ""
+    if not _HOURS.search(intro + " " + part):
+        try:
+            got = _paper_hours(_list_day(title + " " + text[:300]), areas, names)
+        except Exception as e:      # owner 23 Nov: this never stops a power cut - no hours found = the list as before
+            print("power-cut hours from the papers skipped:", str(e)[:120])
+            got = {}
+        if got:
+            extra = " ".join(f"{', '.join(a[:10])} உள்ளிட்ட பகுதிகளில் {h} மின்தடை ({paper} அறிவிப்பு)." for (h, paper), a in got.items())
+        else:
+            desc = re.sub(r"\s+", " ", str(art.get("description") or "")).strip()
+            if _HOURS.search(desc) and not any(d in desc for d in others):
+                intro = (desc + " " + intro).strip()
+    body = (intro + "\n" if intro else "") + f"{name} மாவட்டம் - மின்தடை ஏற்படும் பகுதிகள்: {part}." + ("\n" + extra if extra else "")
     return dict(art, url=url, title=new_title[:200], text=body)
 
 
@@ -547,7 +655,7 @@ def article_any(url):
     if "dinamalar.com" in url:
         return dinamalar.article(url)
     h = _get(url, timeout=40).text
-    title = pub = body = ""
+    title = pub = body = desc = ""
     for blk in re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', h, flags=re.S):
         try:
             data = json.loads(blk)
@@ -559,6 +667,10 @@ def article_any(url):
                     title = title or e.get("headline", "")
                     pub = pub or e.get("datePublished", "")
                     body = body or e.get("articleBody", "")
+                    desc = desc or e.get("description", "")
+    if not desc:      # the outlet's own synopsis (Samayam prints a power cut's hours only there)
+        m = re.search(r'property="og:description"\s+content="([^"]+)"', h)
+        desc = m.group(1) if m else ""
     if not title:
         m = re.search(r'property="og:title"\s+content="([^"]+)"', h) or re.search(r"<title>([^<]+)</title>", h)
         title = html.unescape(m.group(1)).strip() if m else ""
@@ -570,7 +682,8 @@ def article_any(url):
         body = max(body, dinamalar.article_paragraphs(h), key=len)
     if len(body) < 200:      # last resort: the page's long Tamil lines
         body = max(body, dinamalar.long_lines(h), key=len)
-    return {"url": url, "title": html.unescape(title).strip(), "published": pub, "text": html.unescape(body).strip()}
+    return {"url": url, "title": html.unescape(title).strip(), "published": pub, "text": html.unescape(body).strip(),
+            "description": html.unescape(str(desc or "")).strip()}
 
 
 SENTENCE_END = re.compile(r"[.!?।\u0964\u201d\"')\]]\s*$")
