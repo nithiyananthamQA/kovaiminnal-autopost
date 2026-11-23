@@ -3,74 +3,90 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/fire-force-rescues-farmer-who-fell-into-100-feet-well/4383581",
-  "manual link added: https://www.maalaimalar.com/news/tamilnadu/one-cannot-erase-the-mark-left-by-time-sengottaiyan-clarifies-his-conversation-with-sp-velumani",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/number-of-offerings-at-masani-amman-temple/4383204",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/patron-admission-intensifies-at-samathur-branch-library/4383390",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/labourer-killed-as-private-bus-overturns/4384362",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/1146-lorry-driver-from-andhra-pradesh-cheated-by-selling-tons-of-coconuts-arrested/4384328",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/two-get-into-fight-over-money/4384360",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/forest-department-protest-against-ban-on-trekking-to-hill-shrine/4384048",
   "candidate filter: collected=4",
   "to write: 4 Coimbatore district candidates (max 4 stories)",
   "round: top 4 of 4 candidates",
   "candidates waiting: 4 Coimbatore; time left 79 min",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "try (N) manual=True: https://www.maalaimalar.com/news/tamilnadu/one-cannot-erase-",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 5})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
-  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 74 min",
+  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 78 min",
   "filed: 4 Coimbatore district stories (target 4), reels only",
   "queue: 0 news waiting to be written",
   "All News sheet: {\"ok\":true,\"added\":4,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.6-flash",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing ",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing ",
+  "ok gemini/gemini-3-flash-preview (10s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "dead for this round: groq/openai/gpt-oss-120b",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok groq/qwen/qwen3.8-27b (5s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "dead for this round: groq/qwen/qwen3.8-27b",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
+  "dead for this round: gemini/gemini-3-flash-preview",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing ",
+  "switching away from gemini/gemini-3-flash-preview for 10 min",
   "ok anthropic/claude-haiku-5-5",
-  "ok gemini/gemini-3-flash-preview (12s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
@@ -79,258 +95,257 @@
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "ok anthropic/claude-haiku-5-5",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "சமத்தூர் கிளை நூலகத்தில் மூன்று பேர் புரவலர்களாக இணைந்தனர்",
-   "english_headline": "Three people join as patrons at Samathur branch library near Pollachi during the 59th National Week celebrations",
-   "category": "Education",
-   "location": "Samathur, Pollachi, Coimbatore district",
-   "importance": "Low",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "நூலகம்",
-    "loc": "சமத்தூர், பொள்ளாச்சி",
-    "hl1": "சமத்தூர் நூலகத்தில் புரவலர் சேர்ப்பு",
-    "hl2": "மூன்று பேர் புரவலர்களாக",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "பொள்ளாச்சி அருகே சமத்தூர் கிளை நூலகத்தில் <b>59வது</b>",
-       "முன்னாள் சிறைத்துறை துணை தலைவர் கோவிந்தராசன் முன்னிலை",
-       "சமத்தூர் நாகராஜன் தலைமை வகித்தார்"
-      ]
-     },
-     {
-      "title": "புரவலர்கள் யார்?",
-      "lines": [
-       "சேவாலயம் செயலாளர் ஞானசேகரன் புரவலராக இணைந்தார்",
-       "அழகப்பா காலனி சரவணக்குமார் புரவலராக இணைந்தார்",
-       "முன்னாள் சிறை துணை தலைவரின் மகன் ஆனந்த்கார்த்திக் இணைந்தார்"
-      ]
-     },
-     {
-      "title": "எவ்வளவு",
-      "lines": [
-       "மூவரும் தலா <b>ரூ.1,000</b> செலுத்தி புரவலர்களாக சேர்ந்தனர்",
-       "மூவருக்கும் பாராட்டு தெரிவிக்கப்பட்டது",
-       "வாசகர்கள் பங்கேற்றனர், நூலகர் ஆனந்தகுமார் நன்றி கூறினார்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "பொள்ளாச்சி அருகே சமத்தூர் கிளை நூலகத்தில் மூன்று பேர் புரவலர்களாக இணைந்தனர். சமத்தூர் கிளை நூலகத்தில் 59வது தேசிய வார விழா கொண்டாடப்பட்டது. முன்னாள் சிறைத்துறை துணை தலைவர் கோவிந்தராசன் முன்னிலை வகித்தார். சமத்தூர் நாகராஜன் தலைமை வகித்தார். சேவாலயம் செயலாளர் ஞானசேகரன், அழகப்பா காலனியை சேர்ந்த சரவணக்குமார், முன்னாள் சிறைத்துறை துணை தலைவரின் மகன் ஆனந்த்கார்த்திக் ஆகியோர் தலா ரூ.1,000 செலுத்தி புரவலர்களாக சேர்ந்தனர். அவர்களுக்கு பாராட்டு தெரிவிக்கப்பட்டது. வாசகர்கள் பங்கேற்றனர். நூலகர் ஆனந்தகுமார் நன்றி கூறினார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "📚 பொள்ளாச்சி சமத்தூர் நூலகத்தில் மூன்று பேர் புரவலர்களாக இணைந்தனர்\n\n📰 முழு விவரம்:\nபொள்ளாச்சி அருகே சமத்தூர் கிளை நூலகத்தில் 59வது தேசிய வார விழா கொண்டாடப்பட்டது. முன்னாள் சிறைத்துறை துணை தலைவர் கோவிந்தராசன் முன்னிலை வகித்தார். சமத்தூர் நாகராஜன் தலைமை வகித்தார்.\nசேவாலயம் செயலாளர் ஞானசேகரன், அழகப்பா காலனியை சேர்ந்த சரவணக்குமார், முன்னாள் சிறை துணை தலைவரின் மகன் ஆனந்த்கார்த்திக் ஆகியோர் தலா ரூ.1,000 செலுத்தி புரவலர்களாக சேர்ந்தனர். அவர்களுக்கு பாராட்டு தெரிவிக்கப்பட்டது. வாசகர்கள் பங்கேற்றனர்; நூலகர் ஆனந்தகுமார் நன்றி கூறினார்.\n\n📍 இடம்: சமத்தூர் கிளை நூலகம், பொள்ளாச்சி அருகே\n🎉 நிகழ்வு: 59வது தேசிய வார விழா\n\nSamathur library patrons Pollachi | Coimbatore news\n📍 சமத்தூர், பொள்ளாச்சி, கோவை மாவட்டம் | 22 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #நூலகம் #CoimbatoreNews",
-   "prompts": "Inside a modest branch library reading hall in Samathur near Pollachi, three men stand together at a low wooden dais while an older man in a white shirt and veshti places a shawl over one of them as a mark of honour. Behind them, a wall-mounted banner for the 59th National Week celebration is hung, and the shelves are filled with Tamil books and bound magazines. Around the hall, a few readers sit on plastic chairs and wooden benches, some men in shirts and trousers, a woman in a cotton saree, all seen from behind or at a distance. A tubelight hangs from the ceiling and daylight comes through the open windows. Shot at eye level with a 35 mm lens, wide enough to show the whole reading room and the small crowd, with no readable text on banners or books. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up on a plain wooden table in the Samathur branch library, where a neatly stacked pile of newspapers and a few open Tamil books sit beside a small brass lamp and a folded white shawl. A pair of hands in a light-coloured shirt sleeve rests on the table, placing a bundle of ten-rupee notes, the patron fees, into a receipt book, with the corner of a wooden bookshelf filled with library volumes visible behind. Soft natural daylight falls from a side window, the surface slightly worn and dusty. Shot from slightly above at close range with a 35 mm lens, keeping the table, cash and shelves in sharp focus, with no readable text or logos. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/patron-admission-intensifies-at-samathur-branch-library/4383390",
-   "published": "2026-11-22T19:02:21+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: numbers not found in the article: 1000; reel_script copies the article word for word (19 words in a row, 56% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence; caption copies the article word for word (21 words in a row, 75% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 3 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795434075/kovaiminnal/xsbij3vxdhxmaad67z8i.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795434077/kovaiminnal/lgjkukzxswreh4zznz4e.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "ஆனைமலை மாசாணி அம்மன் கோவில் உண்டியல்: ரூ.44 லட்சம் காணிக்கை",
-   "english_headline": "Rs 44.46 lakh offerings counted at Masani Amman temple, Anaimalai, Pollachi",
-   "category": "Temples & Events",
-   "location": "Anaimalai, Pollachi taluk, Coimbatore district",
-   "importance": "Medium",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "கோவில் காணிக்கை",
-    "loc": "ஆனைமலை, பொள்ளாச்சி",
-    "hl1": "ஆனைமலை மாசாணி அம்மன் கோவிலில் ரூ.44",
-    "hl2": "31 உண்டியல்கள் எண்ணிக்கை",
-    "slides": [
-     {
-      "title": "எவ்வளவு காணிக்கை?",
-      "lines": [
-       "காணிக்கை <b>₹44,46,247</b> கிடைத்தது",
-       "தங்கம் <b>34 கிராம்</b>, வெள்ளி <b>126 கிராம்</b>",
-       "கடந்த <b>20ம் தேதி</b> உண்டியல் எண்ணப்பட்டது"
-      ]
-     },
-     {
-      "title": "எங்கே நடந்தது?",
-      "lines": [
-       "ஆனைமலை மாசாணியம்மன் கோவில்",
-       "பொள்ளாச்சி அருகே உள்ள கோவில்",
-       "உள்ளூர், வெளியூர் பக்தர்கள் அதிகம் வருவர்"
-      ]
-     },
-     {
-      "title": "யார் பங்கேற்றனர்?",
-      "lines": [
-       "கோவில் தக்கார் ராஜ்குமார் உட்பட அதிகாரிகள்",
-       "மருதமலை கோவில் துணை ஆணையர் விமலா",
-       "பணியாளர்கள், தன்னார்வலர்களும் கலந்துகொண்டனர்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "ஆனைமலை மாசாணி அம்மன் கோவிலில் உண்டியல் காணிக்கை 44 லட்சத்தைத் தாண்டியது. கடந்த 20ஆம் தேதி கோவில் உண்டியல்கள் திறந்து எண்ணப்பட்டன. மொத்தம் 31 உண்டியல்கள் திறக்கப்பட்டன. காணிக்கையாக ரூபாய் 44 லட்சத்து 46 ஆயிரத்து 247 கிடைத்தது. இதனுடன் 34 கிராம் தங்க ஆபரணங்களும், 126 கிராம் வெள்ளிப் பொருட்களும் கிடைத்துள்ளன. பொள்ளாச்சி அருகே உள்ள இந்தக் கோவிலுக்கு உள்ளூர், வெளியூர் பக்தர்கள் அதிக அளவில் வருகின்றனர். வேண்டுதல் நிறைவேறிய பின் பலர் காணிக்கை செலுத்துகின்றனர். உண்டியல் திறப்பின்போது கோவில் தக்கார் ராஜ்குமார், துணை ஆணையர் சுவாமிநாதன், மருதமலை சுப்பிரமணிய சுவாமி கோவில் துணை ஆணையர் விமலா உள்ளிட்ட அதிகாரிகள் பங்கேற்றனர். மேலும் பணியாளர்கள், தன்னார்வலர்களும் கலந்துகொண்டனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🛕 ஆனைமலை மாசாணி அம்மன் கோவில் உண்டியலில் ரூ.44.46 லட்சம் காணிக்கை\n\n📰 முழு விவரம்:\nபொள்ளாச்சி அருகே ஆனைமலை மாசாணியம்மன் கோவிலில் கடந்த 20ஆம் தேதி உண்டியல்கள் எண்ணப்பட்டன. மொத்தம் 31 உண்டியல்கள் திறந்து கணக்கிடப்பட்டன.\nபக்தர்களின் காணிக்கையாக ரூ.44,46,247 கிடைத்தது. 34 கிராம் தங்கம், 126 கிராம் வெள்ளி பொருட்களும் கிடைத்தன.\nவேண்டுதல் நிறைவேறியதும் பக்தர்கள் காணிக்கை செலுத்துவது வழக்கம் என்று கோவில் தகவல் தெரிவிக்கிறது.\n\n📍 இடம்: ஆனைமலை மாசாணியம்மன் கோவில், பொள்ளாச்சி\n🗓️ நாள்: 20 நவம்பர் 2026\n👥 பங்கேற்றோர்: கோவில் தக்கார் ராஜ்குமார், துணை ஆணையர் சுவாமிநாதன், மருதமலை கோவில் துணை ஆணையர் விமலா, தக்கார் பிரதிநிதி அருண்குமார், ஆனைமலை சரக ஆய்வர் வடிவுக்கரசி, பணியாளர்கள், தன்னார்வலர்கள்\n\nAnaimalai Masani Amman temple hundi count Rs 44 lakh | Coimbatore news\n📍 ஆனைமலை, கோவை மாவட்டம் | 23 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #கோவில் #CoimbatoreNews",
-   "prompts": "A temple trustee and temple staff open a row of iron hundi donation boxes in the counting hall of the Masani Amman temple in Anaimalai, Pollachi, with stacks of cash notes and coins piling up on long tables in front of them. The hall is a plain temple counting room with pillars, a tiled or concrete floor and a view of the temple's gopuram beyond an open doorway. Several officials and volunteers in shirts, veshti and saree-clad women sit or stand around the tables, seen from behind or from a distance, busy counting. Visible objects are the 31 opened hundis, bundles of currency notes, heaps of coins, and small piles of gold and silver offerings on a cloth. Daylight streams in through the doorway, and the camera sits at eye level about 35 mm wide enough to show the whole hall and the people working together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of gleaming gold ornaments and silver items spread on a white cloth beside a heap of cash notes and coins, all from the temple hundi offerings at Masani Amman temple, Anaimalai. Behind the table, out of focus, the edge of an open iron hundi box and the blurred figures of temple staff counting money can be seen. The surface is a plain wooden or steel counting table in a temple hall with the soft light of daytime filtering through. Small gold pieces and about 126 grams of silver catch the light, with the stacked currency notes adding texture. The camera is slightly high, shooting from above the table, so the valuables and cash fill the frame while the workers remain only partially visible from behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/number-of-offerings-at-masani-amman-temple/4383204",
-   "published": "2026-11-22T17:22:39+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: numbers not found in the article: 4446247; caption misses facts of the article (put every one in 📰 முழு விவரம்): 247 ('பொள்ளாச்சி: ஆனைமலை மாசாணி அம்மன் கோவிலில் உண்டியல் காணிக்கைய'); 247 ('31 உண்டியல்கள் திறந்து கணக்கிடப்பட்டதில், காணிக்கையாக, 44 லட')",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795434121/kovaiminnal/flwfkhaidvr6ovsp9e7l.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795434169/kovaiminnal/m5d778nhjkkbkvkpjp57.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "100 அடி கிணற்றில் விழுந்த விவசாயி காயமின்றி மீட்பு",
-   "english_headline": "Annur farmer who fell into 100 ft well brought up without injury by fire service",
+   "tamil_headline": "பொள்ளாச்சியில் பணத் தகராறு: முதியவர் மற்றும் ஓட்டுநருக்கு கத்திக்குத்து",
+   "english_headline": "Money dispute leads to stabbing of two people in Pollachi; police investigation underway",
    "category": "Crime & Safety",
-   "location": "Annur, Coimbatore district",
+   "location": "Jyothi Nagar, Pollachi town, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "தீயணைப்பு மீட்பு",
-    "loc": "அன்னூர்",
-    "hl1": "அன்னூரில் 100 அடி கிணற்றில் விழுந்த",
-    "hl2": "காயமின்றி மேலே கொண்டு",
+    "cat": "கத்திக்குத்து",
+    "loc": "ஜோதிநகர், பொள்ளாச்சி",
+    "hl1": "பொள்ளாச்சியில் இருவருக்கு கத்திக்குத்து",
+    "hl2": "பணத் தகராறில் மோதல்",
     "slides": [
      {
       "title": "என்ன நடந்தது?",
       "lines": [
-       "அன்னூர் குப்பனூரில் 100 அடி ஆழ விவசாயக் கிணறு",
-       "விவசாயி சுரேஷ், <b>52</b> வயது கிணற்றில் விழுந்தார்",
-       "பழுதான மின் மோட்டாரை எடுக்க இறங்கியபோது கால் தவறியது"
+       "பொள்ளாச்சி <b>ஜோதிநகர்</b> பகுதியில் மோதல்",
+       "பணத் தகராறில் இருவருக்கு கத்திக்குத்து",
+       "நேற்று நடந்த சம்பவத்தால் பரபரப்பு"
       ]
      },
      {
-      "title": "மீட்பு பணி",
+      "title": "யார் அவர்கள்?",
       "lines": [
-       "அன்னூர் தீயணைப்பு நிலைய அலுவலர் டேனியல் கந்தசாமி தலைமையில்",
-       "தீயணைப்பு வீரர்கள் பாதுகாப்பு உபகரணங்களுடன் கிணற்றில்",
-       "ஒன்றரை மணி நேரம் போராடி மேலே கொண்டு வந்தனர்"
+       "பாதிக்கப்பட்டவர் <b>65 வயது</b> ராஜகோபால்",
+       "ஓட்டுநர் <b>44 வயது</b> அப்துல் முனாப்",
+       "தாக்கியவர் <b>53 வயது</b> சீனிவாசன்"
       ]
      },
      {
-      "title": "முடிவு",
+      "title": "நடவடிக்கை",
       "lines": [
-       "கயிற்றில் கட்டி <b>காயமின்றி</b> மேலே கொண்டு வரப்பட்டார்",
-       "தீயணைப்பு வீரர்களுக்கு விவசாயிகள், பொதுமக்கள் நன்றி"
+       "பொள்ளாச்சி அரசு மருத்துவமனையில் அனுமதி",
+       "பொள்ளாச்சி கிழக்கு போலீசார் விசாரணை",
+       "இரு தரப்பு புகார் மீது நடவடிக்கை"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "அன்னூரில் 100 அடி ஆழக் கிணற்றில் விழுந்த விவசாயி காயமின்றி மீட்கப்பட்டார். அன்னூர் குப்பனூரைச் சேர்ந்த 52 வயது விவசாயி சுரேஷ், இன்று நவம்பர் 22ஆம் தேதி மதியம் அப்பகுதியில் உள்ள விவசாயக் கிணற்றுக்குள் இறங்கினார். கிணற்றில் பொருத்தப்பட்டிருந்த பழுதான மின் மோட்டாரை மேலே எடுப்பதற்காக அவர் இறங்கியபோது, கால் தவறி கிணற்றுக்குள் விழுந்தார். தகவல் அறிந்த அன்னூர் தீயணைப்பு நிலைய பொறுப்பு அலுவலர் டேனியல் கந்தசாமி தலைமையில் தீயணைப்பு வீரர்கள் பாதுகாப்பு உபகரணங்களுடன் கிணற்றுக்குள் இறங்கினர். ஒன்றரை மணி நேரம் போராடி, கயிற்றில் சுரேஷைக் கட்டி காயமின்றி மேலே கொண்டு வந்தனர். தீயணைப்பு வீரர்களின் இந்தப் பணிக்கு அப்பகுதி விவசாயிகளும் பொதுமக்களும் நன்றி தெரிவித்தனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚒 அன்னூரில் 100 அடி கிணற்றில் விழுந்த விவசாயி காயமின்றி மீட்பு\n\n📰 முழு விவரம்:\nஅன்னூர் குப்பனூரைச் சேர்ந்த விவசாயி சுரேஷ் (52 வயது), அப்பகுதியில் உள்ள 100 அடி ஆழ விவசாயக் கிணற்றில் பழுதான மின் மோட்டாரை மேலே எடுப்பதற்காக இன்று (நவ. 22) மதியம் இறங்கினார். அப்போது கால் தவறி கிணற்றுக்குள் விழுந்தார்.\nதகவல் அறிந்த அன்னூர் தீயணைப்பு நிலைய பொறுப்பு அலுவலர் டேனியல் கந்தசாமி தலைமையில், தீயணைப்பு வீரர்கள் பாதுகாப்பு உபகரணங்களுடன் கிணற்றில் இறங்கினர். ஒன்றரை மணி நேரம் போராடி, கயிற்றில் கட்டி சுரேஷ் காயமின்றி மேலே கொண்டு வரப்பட்டார்.\n🙏 சாதித்த தீயணைப்பு வீரர்களுக்கு அப்பகுதி விவசாயிகள், பொதுமக்கள் நன்றி தெரிவித்தனர்.\n\nAnnur well rescue, fire service | Coimbatore news\n📍 அன்னூர், கோவை மாவட்டம் | 22 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Annur #CoimbatoreNews #கோவை",
-   "prompts": "A team of Tamil Nadu fire and rescue service personnel in dark uniforms and helmets hauls a rope from a deep open farm well in a village near Annur, Coimbatore district, as a rescued farmer in a wet white shirt and veshti is lifted up toward the top of the well. The setting is a dry, open agricultural field with a low stone and cement well parapet, a green fire service vehicle parked at the edge, a tangle of pipes and an electric pump motor lying on the ground, and rows of coconut palms and scrubby trees in the background. Local villagers in lungis and sarees stand at a distance, watching quietly. Midday bright daylight with harsh sun and a clear sky. Camera at eye level, 35 mm lens, wide enough to show the well, the rescue rope and the surrounding field, people seen from behind or far off. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a thick coir-and-nylon rescue rope running taut over the rounded stone edge of a 100-foot farm well, with a firefighter's gloved hands gripping it just above a fastened harness and a yellow safety helmet visible at the top. Next to the rope lies a rusted electric submersible pump motor with black cable wires coiled on the dusty ground, and a bundle of blue plastic water pipes beside it. The background shows dry red soil, a few palm fronds and a faded fire service vehicle slightly out of focus. Bright midday sunlight casts sharp shadows. Camera slightly high, 50 mm macro-style lens, shallow depth of field, no readable text or signs. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/fire-force-rescues-farmer-who-fell-into-100-feet-well/4383581",
-   "published": "2026-11-22T21:09:03+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 0 validator problem(s)",
+   "reel_script": "பொள்ளாச்சியில் பணத் தகராறில் முதியவர் மற்றும் அவரது ஓட்டுநருக்கு கத்திக்குத்து விழுந்தது. பொள்ளாச்சி ஜோதிநகர் டி காலனியைச் சேர்ந்த 65 வயது ராஜகோபால் என்பவரின் மகன் பிரபுவுக்கும், அதே பகுதியைச் சேர்ந்த 53 வயது சீனிவாசனுக்கும் இடையே பணப் பரிமாற்றத்தில் பிரச்சினை இருந்ததாகக் கூறப்படுகிறது. இந்நிலையில் நேற்று இது தொடர்பாக மீண்டும் தகராறு ஏற்பட்டது. அப்போது சீனிவாசன் என்பவர் கத்தியால் ராஜகோபால் மற்றும் அவரது ஓட்டுநரான 44 வயது அப்துல் முனாப் ஆகியோரைத் தாக்கினார். இதில் காயமடைந்த ராஜகோபால் மற்றும் அப்துல் முனாப் ஆகிய இருவரும் பொள்ளாச்சி அரசு மருத்துவமனையில் சிகிச்சைக்காக அனுமதிக்கப்பட்டுள்ளனர். இந்தச் சம்பவம் குறித்து பொள்ளாச்சி கிழக்கு போலீசார் வழக்குப் பதிவு செய்துள்ளனர். இரு தரப்பினரும் அளித்த புகாரின் பேரில் போலீசார் தீவிர விசாரணை நடத்தி வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 பொள்ளாச்சியில் பணத் தகராறில் இருவருக்கு கத்திக்குத்து: போலீசார் விசாரணை\n\n📰 முழு விவரம்:\nபொள்ளாச்சி அருகே பணத் தகராறில் இரு தரப்பு மோதல் ஏற்பட்டு இருவருக்கு கத்திக்குத்து விழுந்தது. பொள்ளாச்சி ஜோதிநகர் 'டி' காலனியைச் சேர்ந்த 65 வயது ராஜகோபால் என்பவரின் மகன் பிரபுவுக்கும், அதே பகுதியைச் சேர்ந்த 53 வயது சீனிவாசனுக்கும் இடையே பணக் கொடுக்கல் வாங்கல் தொடர்பாகப் பிரச்சினை இருந்துள்ளது. நேற்று இது குறித்து ஏற்பட்ட தகராறில், சீனிவாசன் என்பவர் ராஜகோபால் மற்றும் அவரது ஓட்டுநர் 44 வயது அப்துல் முனாப் ஆகியோரை கத்தியால் குத்தினார். காயமடைந்த இருவரும் பொள்ளாச்சி அரசு மருத்துவமனையில் அனுமதிக்கப்பட்டுள்ளனர். பொள்ளாச்சி கிழக்கு போலீசார் இரு தரப்பு புகார்களின் அடிப்படையில் விசாரணை நடத்தி வருகின்றனர்.\n\n📍 இடம்: ஜோதிநகர், பொள்ளாச்சி\n🗓️ நாள்: 22 நவம்பர் 2026\n👮 நடவடிக்கை: போலீசார் விசாரணை நடத்தி வருகின்றனர்\n\nPollachi money dispute stabbing case | Coimbatore crime news\n📍 Jyothi Nagar, Pollachi | 23 November 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #CrimeNews #கோவை",
+   "prompts": "Two Pollachi East police officers in khaki stand at the entrance of a narrow residential street in Jyothi Nagar 'D' Colony, Pollachi town, while a small group of local residents stands at a distance near the low concrete houses and tiled roofs. A man in a shirt and veshti is walking away from the group, seen from behind, and a parked two-wheeler sits by the roadside. The street is lined with compound walls, electric poles and a few shops. The scene is in daylight with soft, even light and a clear sky. The camera is at eye level, shot from roughly 20 metres in a 35 mm wide framing that shows the whole lane, the houses and the officers. The people are far away and seen from behind, faces not visible, and no injured person or weapon is shown, the mood being calm, serious and investigative. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nOn a plain wooden table inside a police station room in Pollachi, a small cluster of confiscated evidence sits in focus: a folded cloth, a pair of plastic bags and a few loose papers lying beside a notebook, with the edge of a khaki police sleeve visible at the frame's edge. The surface is worn and dusty, lit by a single tube light from above with a faint daylight glow from a window behind. The camera is slightly high, a close-up at about 1 metre in 35 mm, focused on the objects with the background softly blurred. No weapon, blood, text, labels or faces are shown; the detail is neutral, serious and focused on the investigation. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/two-get-into-fight-over-money/4384360",
+   "published": "2026-11-23T19:32:27+05:30",
+   "verification": "DRAFT (gemini/gemini-3-flash-preview) - NOT CLEAN, held from posting - problems: slide 2 line 2 is cut off mid-phrase (' வயது அப்துல் முனாப்') - write a complete short phrase; known issue card_cut_mid_phrase: card cut off mid-phrase ('் 44 வயது அப்துல் முனாப்') - rewrite so it does not happen again",
+   "note": "free-model draft gemini/gemini-3-flash-preview, 1 attempt(s), 2 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795434189/kovaiminnal/gbjkb2bnrhakmzmwgc5f.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795448514/kovaiminnal/xeockuwei5vqxjvtbltr.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795448517/kovaiminnal/sjomtwez07942uqpbpnq.jpg"
    ]
   },
   {
-   "tamil_headline": "பொள்ளாச்சி திருமணத்தில் வேலுமணி-செங்கோட்டையன் சந்திப்பு: காலம் பதில் சொல்லும் என்கிறார் செங்கோட்டையன்",
-   "english_headline": "Sengottaiyan explains his talk with SP Velumani at a Pollachi wedding; says time will answer Edappadi Palaniswami",
-   "category": "Government & Services",
+   "tamil_headline": "பொள்ளாச்சி: 11.46 டன் தேங்காய் விற்று மோசடி; ஆந்திர லாரி டிரைவர் கைது",
+   "english_headline": "Pollachi: lorry driver from Andhra Pradesh arrested for selling 11.46 tonnes of coconuts instead of delivering them",
+   "category": "Crime & Safety",
    "location": "Pollachi, Coimbatore district",
    "importance": "Medium",
-   "scope": "district",
+   "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "அரசியல் செய்தி",
+    "cat": "மோசடி கைது",
     "loc": "பொள்ளாச்சி",
-    "hl1": "பொள்ளாச்சி திருமணத்தில் சந்திப்பு",
-    "hl2": "காலம் பதில் சொல்லும்",
+    "hl1": "பொள்ளாச்சி: 11.46 டன் தேங்காய் மோசடி",
+    "hl2": "ஆந்திர லாரி டிரைவர் கைது",
     "slides": [
      {
-      "title": "சந்திப்பு என்ன?",
+      "title": "என்ன நடந்தது?",
       "lines": [
-       "பொள்ளாச்சி திருமணத்தில் எஸ்.பி. வேலுமணியும் செங்கோட்டையனும்",
-       "அரசியல் பேசவில்லை என்று செங்கோட்டையன் கூறினார்",
-       "இருவரும் அருகில் அமர்ந்து கருத்துகள் பேசினர்"
+       "பொள்ளாச்சியில் இருந்து ஆந்திராவுக்கு அனுப்பிய தேங்காய் மோசடி",
+       "11,460 கிலோ தேங்காயை லாரி டிரைவர் உரிய இடத்தில்",
+       "தேங்காயை வேறு கடையில் விற்றதாக டிரைவர் கூறினார்"
       ]
      },
      {
-      "title": "செங்கோட்டையன்",
+      "title": "யார் புகார்?",
       "lines": [
-       "எடப்பாடி பழனிசாமி அதிகாரத்தை பயன்படுத்துவதாக குற்றச்சாட்டு",
-       "காலத்தை எதிர்த்து போரிட முடியாது என்றார்",
-       "மன்னிக்கும் பெருந்தன்மை இல்லாத தலைமை நீடிக்காது"
+       "சிங்காநல்லூரைச் சேர்ந்த நந்தகுமார் (37 வயது), தேங்காய் வியாபாரி",
+       "7ம் தேதி லாரி புக்கிங் செய்யப்பட்டது",
+       "ரூ.6,28,620 பண நஷ்டம் ஏற்பட்டதாக புகார்"
       ]
      },
      {
-      "title": "வேலுமணி குறித்து",
+      "title": "போலீஸ் நடவடிக்கை",
       "lines": [
-       "2 கோடி தொண்டர்களில் வேலுமணியும் ஒருவர் என்ற கருத்துக்கு",
-       "வேலுமணி முக்கிய பொறுப்பாளராக இருந்தவர் என்றார்",
-       "எம்.ஜி.ஆர், ஜெயலலிதா வழியை மக்கள் கேட்பதாக கூறினார்"
+       "வடக்கிபாளையம் போலீசில் புகார் கொடுக்கப்பட்டது",
+       "தனிப்படை ஆந்திராவில் டிரைவர் கனல் நாகன்னாவை கைது செய்தது",
+       "லாரி பறிமுதல் செய்யப்பட்டது"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "பொள்ளாச்சி திருமணத்தில் வேலுமணியும் செங்கோட்டையனும் சந்தித்துப் பேசியது அ தி மு க வட்டாரத்தில் பேசுபொருளாகியுள்ளது. பொள்ளாச்சியில் நடைபெற்ற திருமணத்தில் காவல் கண்காணிப்பாளர் வேலுமணி, செங்கோட்டையனை சந்தித்துப் பேசினார். இந்த சந்திப்பு குறித்து கோவையில் செய்தியாளர்கள் கேட்ட கேள்விக்கு செங்கோட்டையன் பதிலளித்தார். திருமணம் இருவருக்கும் உறவு முறையில் வேண்டிய நிகழ்வு என்றும், அங்கு அருகருகே அமர்ந்து கருத்துகள் மட்டுமே பேசியதாகவும் அவர் கூறினார். அரசியல் பேசவில்லை என்றும் தெரிவித்தார். எடப்பாடி பழனிசாமி தனது அதிகாரத்தை பயன்படுத்தி ஒவ்வொருவராக வெளியேற்றுவதாக செங்கோட்டையன் குற்றம் சாட்டினார். காலத்தை எதிர்த்து போரிட முடியாது என்றும், காலம் வைக்கும் புள்ளியை அழிக்க இயலாது என்றும் கூறினார். 2 கோடி தொண்டர்களில் வேலுமணியும் ஒருவர் என்று எடப்பாடி பழனிசாமி பேசியதற்கும் அவர் பதிலளித்தார். வேலுமணி முக்கியப் பொறுப்பாளராக இருந்து, ஒருவர் முதலமைச்சராகவும் பொதுச்செயலாளராகவும் வர உறுதுணையாக இருந்தவர் என்றார். மன்னிக்கும் பெருந்தன்மை இல்லாத தலைமை நீடித்த வரலாறு இல்லை என்றும், அது பழனிசாமிக்கும் ஏற்படும் என்றும் கூறினார். எம் ஜி ஆர், ஜெயலலிதா வழியில் வந்த இயக்கம் எங்கே செல்கிறது என்று மக்கள் கேட்பதாகவும் அவர் தெரிவித்தார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🗣️ பொள்ளாச்சி திருமணத்தில் வேலுமணி-செங்கோட்டையன் சந்திப்பு: காலம் பதில் சொல்லும் என்கிறார் செங்கோட்டையன்\n\n📰 முழு விவரம்:\nபொள்ளாச்சியில் நடைபெற்ற திருமண நிகழ்வில் அமைச்சர் செங்கோட்டையனை எஸ்.பி. வேலுமணி சந்தித்துப் பேசியது அதிமுக வட்டாரத்தில் பேசுபொருளாகியுள்ளது.\nகோவையில் செய்தியாளர்கள் கேட்ட கேள்விக்கு பதிலளித்த செங்கோட்டையன், திருமணம் இருவருக்கும் உறவு முறையில் வேண்டிய நிகழ்வு என்றும், அங்கு அருகருகே அமர்ந்து கருத்துகள் பேசியதாகவும், அரசியல் பேசவில்லை என்றும் கூறினார்.\nஎடப்பாடி பழனிசாமி தனது அதிகாரத்தைப் பயன்படுத்தி ஒவ்வொருவராக வெளியேற்றுவதாக குற்றம் சாட்டிய செங்கோட்டையன், காலத்தை எதிர்த்துப் போரிட முடியாது, காலம் வைக்கும் புள்ளியை அழிக்க இயலாது என்றார்.\n2 கோடி தொண்டர்களில் வேலுமணியும் ஒருவர் என்ற எடப்பாடி பழனிசாமியின் கருத்துக்கு பதிலளித்த அவர், வேலுமணி முக்கியப் பொறுப்பாளராக இருந்து ஒருவர் முதலமைச்சராகவும் பொதுச்செயலாளராகவும் வர உறுதுணையாக இருந்தவர் என்றார்.\nமன்னிக்கும் பெருந்தன்மை இல்லாத தலைமை நீடித்த வரலாறு இல்லை; அது பழனிசாமிக்கும் ஏற்படும் என்றும் கூறினார்.\nஎம்.ஜி.ஆர், ஜெயலலிதா வழியில் வந்த இயக்கம் எங்கே செல்கிறது என்று மக்கள் கேட்பதாகவும் அவர் குறிப்பிட்டார்.\n\nSengottaiyan on Velumani meeting at Pollachi wedding | Coimbatore news\n📍 பொள்ளாச்சி, கோவை மாவட்டம் | 23 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #அரசியல் #CoimbatoreNews",
-   "prompts": "A group of reporters holds microphones and recorders toward a senior AIADMK leader seated in a plain chair inside a Coimbatore press-meet hall, while party cadres in white shirts and veshti stand near the back wall. The setting is a modest hall in Coimbatore city with a table covered in a cloth and a few plastic chairs, with a row of framed portraits of party figures on the wall behind, though no readable text is visible. The leader is seen from behind and slightly to the side, wearing a white shirt and veshti, and the reporters, seen from behind in shirts and sarees, lean forward with their microphones. The scene is lit by daytime light from tube lights and a window, with a calm but charged atmosphere. Shot at eye level on a 35 mm lens, wide enough to show the entire seating area and the crowd of reporters. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a pair of microphones bunched together on a wooden table, with several recorder devices and a notepad placed next to them, while the hand of a reporter holds a pen over the page. The background shows a blurred outline of a seated man in a white shirt, out of focus. The table surface is cluttered slightly with a glass of water and loose papers. Natural daylight from a nearby window casts soft shadows across the table. Shot at a slightly high angle on a 35 mm lens, focusing sharply on the microphones and the reporter's hand while keeping the background softly blurred. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.maalaimalar.com/news/tamilnadu/one-cannot-erase-the-mark-left-by-time-sengottaiyan-clarifies-his-conversation-with-sp-velumani",
-   "published": "2026-11-22T11:58:24Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences",
+   "reel_script": "பொள்ளாச்சியில் தேங்காய் அனுப்பிய லாரி டிரைவர் 11.46 டன் தேங்காயை விற்று மோசடி செய்துள்ளார். பொள்ளாச்சி அருகே சிங்காநல்லூரைச் சேர்ந்த நந்தகுமார் (37 வயது), தேங்காய் வியாபாரம் செய்து வருகிறார். 7ம் தேதி ஆந்திரா மாநிலத்தில் ராயச்சுட்டி என்ற கடைக்கு தேங்காய் அனுப்ப ராஜாமில் ரோட்டில் உள்ள தனியார் லாரி புக்கிங் அலுவலகத்தில் லாரி பதிவு செய்யப்பட்டது. ஏபி 39 யுஜி 8137 பதிவு எண் கொண்ட அந்த லாரியில், வடக்கிபாளையத்தில் வேலுச்சாமியிடம் வாங்கிய 11,460 கிலோ தேங்காய் ஏற்றப்பட்டது. லாரியை ஆந்திராவைச் சேர்ந்த 40 வயது கனல் நாகன்னா ஓட்டிச் சென்றார். ஆனால் தேங்காய் உரிய இடத்துக்குச் சென்று சேரவில்லை. நந்தகுமார் டிரைவரைத் தொடர்பு கொண்டபோது போன் சுவிட்ச் ஆப் என வந்தது. கடைக்காரரிடம் கேட்டபோது லோடு வரவில்லை என்று தெரிவித்தார். பின்னர் டிரைவர், தேங்காயை ஆந்திராவில் வேறு கடையில் விற்றுவிட்டதாகக் கூறி போனை துண்டித்தார். இதனால் ரூ.6,28,620 பண நஷ்டம் ஏற்பட்டது. வடக்கிப்பாளையம் போலீஸ் நிலையத்தில் நந்தகுமார் புகார் கொடுத்தார். போலீசார் வழக்குப்பதிவு செய்து, தனிப்படை ஆந்திராவில் டிரைவர் கனல் நாகன்னாவைக் கைது செய்தனர். லாரியும் பறிமுதல் செய்யப்பட்டது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 பொள்ளாச்சி: 11.46 டன் தேங்காய் விற்று மோசடி; ஆந்திர லாரி டிரைவர் கைது\n\n📰 முழு விவரம்:\nபொள்ளாச்சியில் இருந்து ஆந்திராவில் உள்ள ராயச்சுட்டி கடைக்கு அனுப்ப வேண்டிய தேங்காயை, லாரி டிரைவர் உரிய இடத்தில் சேர்க்காமல் விற்று மோசடி செய்துள்ளார்.\nசிங்காநல்லூரைச் சேர்ந்த தேங்காய் வியாபாரி நந்தகுமார் (37 வயது), கடந்த 7ம் தேதி பொள்ளாச்சி ராஜாமில் ரோட்டில் உள்ள தனியார் லாரி புக்கிங் அலுவலகத்தில் லாரியை பதிவு செய்தார். ஏபி 39 யுஜி 8137 பதிவு எண் கொண்ட லாரியில், வடக்கிபாளையத்தில் வேலுச்சாமியிடம் வாங்கிய 11,460 கிலோ தேங்காய் ஏற்றப்பட்டது. லாரியை ஆந்திராவைச் சேர்ந்த 40 வயது கனல் நாகன்னா ஓட்டினார்.\nதேங்காய் உரிய இடத்துக்குச் சேரவில்லை. டிரைவர் போனை சுவிட்ச் ஆப் செய்துவிட்டார். கடைக்காரர் லோடு வரவில்லை என்றார். டிரைவர் தேங்காயை ஆந்திராவில் வேறு கடையில் விற்றுவிட்டதாகக் கூறி போனை துண்டித்தார்.\nரூ.6,28,620 பண நஷ்டம் ஏற்பட்டதாக நந்தகுமார் வடக்கிப்பாளையம் போலீஸ் நிலையத்தில் புகார் கொடுத்தார். போலீசார் வழக்குப்பதிவு செய்து, தனிப்படை ஆந்திராவில் டிரைவர் கனல் நாகன்னாவைக் கைது செய்தனர். லாரியும் பறிமுதல் செய்யப்பட்டது.\n\nPollachi coconut fraud lorry driver arrested | Coimbatore news\n📍 பொள்ளாச்சி, கோவை மாவட்டம் | 23 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #CoimbatoreNews #கோவை",
+   "prompts": "A Tamil Nadu police team in khaki stands beside a seized large lorry parked outside a lorry booking office on Rajamill Road in Pollachi, Coimbatore district, after arresting its Andhra Pradesh driver for selling a cargo of coconuts. The lorry is an open-body goods truck loaded high with heaps of brown husked coconuts, with a few two-wheelers and a town bus passing on the busy street behind it. Traffic stands out as a small group of onlookers from a distance, seen from behind. Daylight, clear sky, typical Pollachi town look with shop fronts and concrete buildings. Camera at eye level, 35 mm, wide enough to show the lorry, the coconut load and the street. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a large heap of brown husked coconuts piled inside the open cargo bed of a seized lorry in Pollachi, Coimbatore district, the cargo that was taken from the trader and sold instead of being delivered. A corner of the lorry's dusty steel body and a rope tied over the load are visible, with a Tamil Nadu police khaki sleeve and boot at the edge of the frame. Behind, a blurred street of Pollachi with a two-wheeler and a parked autorickshaw. Daylight, neutral soft light. Camera at slightly high angle, 35 mm, focus on the coconuts with the lorry body in the background. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/1146-lorry-driver-from-andhra-pradesh-cheated-by-selling-tons-of-coconuts-arrested/4384328",
+   "published": "2026-11-23T19:22:33+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: slide 2 line 1 longer than 60 characters",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795448528/kovaiminnal/k6hku8pnwmahnyxhuqq4.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795448530/kovaiminnal/hfgrezlslhkp8cw0s5pr.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "தாடகை நாச்சியம்மன் கோவிலுக்கு செல்ல வனத்துறை தடை; ஹிந்து அமைப்புகள் எதிர்ப்பு",
+   "english_headline": "Forest department bans visits to Thadagai Nachiyamman temple due to elephants; Hindu groups protest",
+   "category": "Government & Services",
+   "location": "Anaimalai, Pollachi, Coimbatore district",
+   "importance": "High",
+   "scope": "",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "வனத்துறை தடை",
+    "loc": "ஆனைமலை, பொள்ளாச்சி",
+    "hl1": "ஆனைமலையில் கோவிலுக்கு செல்ல வனத்துறை தடை",
+    "hl2": "ஹிந்து அமைப்புகள் எதிர்ப்பு",
+    "slides": [
+     {
+      "title": "என்ன தடை?",
+      "lines": [
+       "ஆனைமலை அருகே தாடகை நாச்சியம்மன் கோவிலுக்கு செல்ல தடை",
+       "யானைகள் குட்டிகளுடன் அதிகம் நடமாடுவதால் தடை",
+       "சமூக வலைதளங்களில் அறிவிப்பு வெளியிடப்பட்டது"
+      ]
+     },
+     {
+      "title": "கோவில் எங்கே?",
+      "lines": [
+       "அங்கலக்குறிச்சி அருகே, ஆனைமலை புலிகள் காப்பகத்தில் கோவில்",
+       "கடல் மட்டத்தில் இருந்து <b>5 ஆயிரம் அடி</b> உயரத்தில் உள்ளது",
+       "ஆண்டுக்கு ஒருமுறை கார்த்திகை தீபத்தன்று அனுமதி"
+      ]
+     },
+     {
+      "title": "எதிர்ப்பு",
+      "lines": [
+       "ஹிந்து முன்னணி சப்-கலெக்டரிடம் மனு கொடுத்தது",
+       "தடையை நீக்காவிட்டால் வனத்துறை அலுவலகம் முற்றுகை",
+       "பக்தர்கள் தடையை மறுபரிசீலனை செய்ய கோரினர்"
+      ]
+     },
+     {
+      "title": "வனத்துறை விளக்கம்",
+      "lines": [
+       "ஆனைமலை, கோட்டூர் உள்ளூர் மக்களுக்கு அனுமதி",
+       "புதுச்சேரி, சென்னை பிற மாவட்டத்தினருக்கு அனுமதி இல்லை",
+       "தடை குறித்து தொடர்ந்து விவாதம் நடைபெறுகிறது"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "ஆனைமலை அருகே தாடகை நாச்சியம்மன் கோவிலுக்கு செல்ல வனத்துறை தடை விதித்துள்ளது. யானைகள் குட்டிகளுடன் அதிகம் நடமாடுவதால் பொதுமக்கள் பாதுகாப்பு கருதி இந்த முடிவு எடுக்கப்பட்டதாக வனத்துறை தெரிவித்துள்ளது. இந்தத் தடை குறித்த அறிவிப்பு நேற்று சமூக வலைதளங்களில் வெளியிடப்பட்டது. ஆனைமலை புலிகள் காப்பகத்தில், அங்கலக்குறிச்சி அருகே, கடல் மட்டத்தில் இருந்து 5 ஆயிரம் அடி உயரத்தில் இந்தக் கோவில் உள்ளது. ஆண்டுக்கு ஒருமுறை கார்த்திகை தீபத்தன்று மட்டுமே பக்தர்கள் கோவிலுக்குச் செல்ல வனத்துறை அனுமதி வழங்கும். இரண்டு ஆண்டுகளுக்கு முன் கனமழையால் அனுமதி மறுக்கப்பட்டது. கடந்த ஆண்டு பக்தர்கள் மலையேறி அம்மனை தரிசிக்க அனுமதி அளிக்கப்பட்டது. இந்த ஆண்டுத் தடையை எதிர்த்து ஹிந்து அமைப்புகள் போராட்டத்தில் ஈடுபட்டுள்ளன. பொள்ளாச்சி சப்-கலெக்டரிடம் மனு கொடுத்த ஹிந்து முன்னணியினர், தடையை உடனே நீக்கவில்லையெனில் பக்தர்களைத் திரட்டி பொள்ளாச்சி வனத்துறை அலுவலகத்தை முற்றுகையிடுவோம் என எச்சரித்துள்ளனர். வனத்துறை அதிகாரிகள், ஆனைமலை, கோட்டூர் உள்ளிட்ட உள்ளூர் மக்களுக்கு அனுமதி உண்டு என்றும், புதுச்சேரி, சென்னை உள்ளிட்ட பிற மாவட்டத்தினருக்கு அனுமதி இல்லை என்றும் தெரிவித்துள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🛕 ஆனைமலையில் தாடகை நாச்சியம்மன் கோவிலுக்கு வனத்துறை தடை: ஹிந்து அமைப்புகள் எதிர்ப்பு\n\n📰 முழு விவரம்:\nயானைகள் குட்டிகளுடன் அதிகம் நடமாடுவதால், ஆனைமலை அருகே உள்ள தாடகை நாச்சியம்மன் கோவிலுக்கு செல்ல வனத்துறை தடை விதித்துள்ளது. இதுகுறித்த அறிவிப்பு சமூக வலைதளங்களில் வெளியானது.\nகடல் மட்டத்தில் இருந்து 5 ஆயிரம் அடி உயரத்தில், அங்கலக்குறிச்சி அருகே அடர்ந்த வனப்பகுதியில் இந்தக் கோவில் அமைந்துள்ளது. ஆண்டுக்கு ஒருமுறை கார்த்திகை தீபத்தன்று மட்டுமே பக்தர்கள் செல்ல அனுமதி வழங்கப்படும். சிறப்பு பூஜையுடன் மகா தீபம் ஏற்றப்படும்.\nஇரண்டு ஆண்டுகளுக்கு முன் கனமழையால் அனுமதி மறுக்கப்பட்டது. கடந்த ஆண்டு மலையேறி அம்மனை தரிசிக்க அனுமதி அளிக்கப்பட்டது.\nஇந்த ஆண்டுத் தடைக்கு ஹிந்து அமைப்புகள் எதிர்ப்பு தெரிவித்துள்ளன. ஹிந்து முன்னணியினர் பொள்ளாச்சி சப்-கலெக்டரிடம் மனு கொடுத்து, தடையை உடனே நீக்கக் கோரியுள்ளனர். நீக்காவிட்டால் பக்தர்களைத் திரட்டி பொள்ளாச்சி வனத்துறை அலுவலகத்தை முற்றுகையிடுவோம் என எச்சரித்துள்ளனர்.\nவனத்துறை அதிகாரிகள், ஆனைமலை, கோட்டூர் உள்ளிட்ட உள்ளூர் மக்களுக்கு அனுமதி உண்டு என்றும், புதுச்சேரி, சென்னை உள்ளிட்ட பிற மாவட்டத்தினருக்கு அனுமதி இல்லை என்றும் தெரிவித்துள்ளனர்.\nℹ️ மக்கள் கவனத்திற்கு: பாதுகாப்பு கருதி வனத்துறைக்கு ஒத்துழையுங்கள்.\n\nAnaimalai temple visit banned by forest department | Coimbatore news\n📍 ஆனைமலை, பொள்ளாச்சி, கோவை மாவட்டம் | 23 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #பொள்ளாச்சி #CoimbatoreNews",
+   "prompts": "A group of Hindu devotees and Hindu Munnani office-bearers stand in a line on a dirt track at the edge of a dense green forest in the Anaimalai hills near Pollachi, Coimbatore district, protesting a forest department ban on visiting the Thadagai Nachiyamman temple. Seen from behind at a distance, the men wear white shirts and veshti and a few women wear cotton sarees; some hold a rolled-up petition and a handmade banner with no readable text. Beyond the group, a forest path winds upward into thick trees and a distant ridge of the Western Ghats rises under a soft morning haze. A small forest department wooden barricade with a red-and-white striped pole blocks the track, and a couple of forest department officials in khaki uniforms stand a few metres away, seen from behind. The light is soft daylight with overcast sky. Camera: eye level, 35 mm lens, wide enough to show the forest, the barricade and the crowd together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of the forest department barricade on the hill track: a wooden barrier with a red-and-white striped pole lying across a dirt path that climbs into dense forest, with a small heap of dried leaves at its base. Beside it, a folded petition sheet is placed on a flat rock, held down by a small stone, with the edge of a Hindu devotee's cloth sleeve visible in the frame. Behind the barricade, tall tree trunks and thick undergrowth fade into soft mist, suggesting an elephant habitat. Daylight, slightly overcast. Camera: slightly high angle, 50 mm lens, shallow depth of field keeping the barricade and petition sharp while the forest behind is softly blurred. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/forest-department-protest-against-ban-on-trekking-to-hill-shrine/4384048",
+   "published": "2026-11-23T17:31:02+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script must tell how the story ENDED, as the article's last lines say ('வனத்துறை நடவடிக்கையால் ஆவேசம்') - say what finally happened (complaint, action promised, released, arrested, case filed, how long it lasted); never write that details are unknown",
    "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795434362/kovaiminnal/fh2y3tr8qpbbb10ajqpq.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795434369/kovaiminnal/cvoticz9dwijml4phtug.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795448536/kovaiminnal/dfgxhpzfccmcys6c1not.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795448539/kovaiminnal/zpcfbepizvp1zve5y8rp.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "கோவில்பாளையம் அருகே தனியார் பஸ் மோதி கூலி தொழிலாளி பலி",
+   "english_headline": "Daily-wage worker dies after private bus hits his bike near Kovilpalayam on Pollachi-Coimbatore road",
+   "category": "Roads & Transport",
+   "location": "Kovilpalayam, Kinathukadavu taluk, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "சாலை விபத்து",
+    "loc": "கோவில்பாளையம்",
+    "hl1": "கோவில்பாளையம் அருகே பஸ் மோதி ஒருவர் பலி",
+    "hl2": "பொள்ளாச்சி–கோவை சாலையில்",
+    "slides": [
+     {
+      "title": "என்ன நடந்தது?",
+      "lines": [
+       "பொள்ளாச்சி–கோவை சாலையில் தனியார் பஸ் மோதி விபத்து",
+       "கோவில்பாளையம் சேரன் நகர் அருகே நடந்தது",
+       "கூலி தொழிலாளி <b>சுரேஷா</b> பலியானார்"
+      ]
+     },
+     {
+      "title": "யார் அவர்?",
+      "lines": [
+       "கர்நாடகா, மைசூரு பகுதியைச் சேர்ந்தவர்",
+       "வயது <b>33</b>; கோவில்பாளையத்தில் தங்கி கூலி வேலை",
+       "இன்று மதியம் உணவு சாப்பிடச் பைக்கில் சென்றபோது"
+      ]
+     },
+     {
+      "title": "விபத்து எப்படி?",
+      "lines": [
+       "கோவையில் இருந்து பொள்ளாச்சி நோக்கிச் சென்ற பஸ்",
+       "பஸ்ஸை ஓட்டியவர் <b>ராமசாமி</b>, வயது <b>47</b>",
+       "சுரேஷா சென்ற பைக் மீது பஸ் மோதியது"
+      ]
+     },
+     {
+      "title": "அடுத்து என்ன?",
+      "lines": [
+       "படுகாயமடைந்தவர் பொள்ளாச்சி அரசு மருத்துவமனைக்கு",
+       "டாக்டர்கள் பரிசோதித்து இறந்ததாக அறிவித்தனர்",
+       "கிணத்துக்கடவு போலீசார் வழக்குப்பதிவு செய்து விசாரணை"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "பொள்ளாச்சி–கோவை சாலையில் தனியார் பஸ் மோதியதில் கூலித் தொழிலாளி ஒருவர் உயிரிழந்தார். கிணத்துக்கடவு அருகே கோவில்பாளையம் சேரன் நகர் பகுதியில் இந்த விபத்து நடந்தது. கர்நாடகா மாநிலம் மைசூரு பகுதியைச் சேர்ந்த 33 வயது சுரேஷா கோவில்பாளையத்தில் தங்கி கூலி வேலை செய்து வந்தார். இன்று மதியம் உணவு சாப்பிடுவதற்காக அவர் பைக்கில் பொள்ளாச்சி–கோவை தேசிய நெடுஞ்சாலையில் சென்றார். அப்போது கோவையில் இருந்து பொள்ளாச்சி நோக்கிச் சென்ற தனியார் பஸ், அவரது பைக் மீது மோதியது. பஸ்ஸை 47 வயது ராமசாமி ஓட்டி வந்தார். படுகாயமடைந்த சுரேஷாவை மீட்டு பொள்ளாச்சி அரசு மருத்துவமனைக்கு அனுப்பினர். பரிசோதித்த டாக்டர்கள் அவர் இறந்துவிட்டதாகத் தெரிவித்தனர். கிணத்துக்கடவு போலீசார் வழக்குப்பதிவு செய்து விசாரித்து வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 கோவில்பாளையம் அருகே தனியார் பஸ் மோதி கூலி தொழிலாளி பலி\n\n📰 முழு விவரம்:\nபொள்ளாச்சி–கோவை தேசிய நெடுஞ்சாலையில், கோவில்பாளையம் சேரன் நகர் அருகே தனியார் பஸ் மோதியதில் கூலி தொழிலாளி ஒருவர் உயிரிழந்தார்.\nகர்நாடகா மாநிலம் மைசூரு பகுதியைச் சேர்ந்த 33 வயது சுரேஷா, கோவில்பாளையத்தில் தங்கி கூலி வேலை செய்து வந்தார். இன்று மதியம் உணவு சாப்பிடச் சென்றபோது பைக்கில் சென்றார்.\nகோவையில் இருந்து பொள்ளாச்சி நோக்கிச் சென்ற தனியார் பஸ், அவரது பைக் மீது மோதியது. பஸ்ஸை 47 வயது ராமசாமி ஓட்டி வந்தார்.\nபடுகாயமடைந்த சுரேஷாவை மீட்டு பொள்ளாச்சி அரசு மருத்துவமனைக்கு அனுப்பினர். டாக்டர்கள் பரிசோதித்து அவர் இறந்துவிட்டதாகத் தெரிவித்தனர்.\n👮 நடவடிக்கை: கிணத்துக்கடவு போலீசார் வழக்குப்பதிவு செய்து விசாரிக்கின்றனர்.\n\nKinathukadavu road accident, bus hits bike near Kovilpalayam | Coimbatore news\n📍 கோவில்பாளையம், கிணத்துக்கடவு, கோவை மாவட்டம்\n\nமேலும் தகவல்களுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Kinathukadavu #விபத்து #CoimbatoreNews",
+   "prompts": "A private bus stands on the Pollachi-Coimbatore national highway near Kovilpalayam while a small crowd of onlookers gathers at a distance, and a police constable in khaki begins to examine the scene after the accident. The road is a wide, busy two-lane national highway lined with shops, dusty footpaths and a concrete median, with a few town buses and two-wheelers moving slowly past. Several onlookers in shirts and trousers, a few women in sarees, and a police constable in khaki are seen from behind or far away, not facing the camera. The bus is parked at an angle on the left lane, its front slightly dented, and a motorcycle lies nearby on the road shoulder. It is midday under bright daylight with a hazy sky, and the Western Ghats hills faintly visible in the background. Shot from eye level at 35 mm, wide enough to show the highway, the bus and the gathering crowd. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up on the damaged motorcycle lying on the road shoulder beside the crushed front of a private bus, with a police constable's khaki-clad leg and a police notebook partly visible at the edge of the frame. The motorcycle has a bent handlebar and a broken front fender, with the road's tarmac and a few scattered pieces of plastic around it. Behind it, the white-and-cream body of a bus with its front bumper bent is blurred. Bright midday light, no visible injured person, no blood. Shot close and slightly high at 35 mm, focusing on the twisted two-wheeler against the rough asphalt of the national highway. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/labourer-killed-as-private-bus-overturns/4384362",
+   "published": "2026-11-23T19:36:02+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption must contain the exact follow line; reel_script sentence 1 (heard in the first 3 seconds) must name the place 'கோவில்பாளையம்' and the news itself, e.g. 'கோவில்பாளையம்-இல் ... 3 பேர் கைது.' - viewers decide in 3 seconds whether the news is about their area; caption misses facts of the article (put every one in 📰 முழு விவரம்): 23 ('இந்நிலையில், இன்று (நவ.,23) மதியம் உணவு சாப்பிட பொள்ளாச்சி –')",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 3 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795448562/kovaiminnal/msfoqmyqve5qhbb5w6zg.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795448565/kovaiminnal/gjrpqlbn1sjhnbzjsfv1.jpg"
    ]
   }
  ]
