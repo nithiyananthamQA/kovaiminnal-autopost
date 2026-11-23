@@ -65,6 +65,41 @@ class SamayamFormat(unittest.TestCase):
             self.assertNotIn(w, a["text"] + a["title"], w)
         self.assertTrue(a["title"].startswith("கோவை மாவட்டத்தில் நாளை (13-11-2026) மின்தடை: இருகூர், ஒண்டிப்புதூர்"), a["title"])
 
+    # 23 Nov (ours): Samayam prints the hours only in its synopsis (JSON-LD / og description), never in the article body - the reels
+    # RN-83, RN-97, RN-241 (Kovai) and RN-2 (Salem) went out with no time. The synopsis now gives the hours when the body has none.
+    SYN = "தமிழகம் முழுவதும் நாளை நவம்பர் 23-ந் தேதி திங்கட்கிழமை அன்று காலை 9 மணி முதல் மாலை 4 மணி வரை  மின்தடை ஏற்படும் பகுதிகள் குறித்த அறிவிப்பு வெளியாகியுள்ளது."
+    NO_HOURS = ("தமிழகத்தில் நவம்பர் 23-ந் தேதி திங்கட்கிழமை அன்று துணை மின் நிலையங்களில் மின்வாரிய பராமரிப்பு பணிகள் காரணமாக மின்தடை செய்யப்படும் "
+                "பகுதிகள் குறித்த முழு விவரங்களை இங்கு காணலாம்.கோவை மின் தடை பகுதிகள்:- அத்திகடவு திட்டம், ஹவுசிங் போர்டு, ஏஆர் நகர், "
+                "சேலம் மின் தடை பகுதிகள்:- சுமங்கலி நகர், சந்தைப்பேட்டை")
+
+    def samayam(self, body, desc):
+        ld = json.dumps({"@type": "NewsArticle", "headline": "தமிழகத்தில் நாளை (23-11-2026) மின்தடை அறிவிப்பு!", "description": desc,
+                         "datePublished": "2026-11-22T15:43:27+05:30", "articleBody": body}, ensure_ascii=False)
+        with mock.patch.object(allnews, "_get", return_value=mock.Mock(text=f'<html><script type="application/ld+json">{ld}</script></html>')):
+            return allnews.article_any(LIST_URL + allnews.SECTION_MARK)
+
+    def test_hours_from_the_synopsis(self):
+        a = self.samayam(self.NO_HOURS, self.SYN)
+        self.assertIn("காலை 9 மணி முதல் மாலை 4 மணி வரை", a["text"])
+        self.assertIn("அத்திகடவு திட்டம்", a["text"])
+        self.assertNotIn("சுமங்கலி நகர்", a["text"])
+
+    def test_hours_in_the_body_are_kept_alone(self):
+        body = self.NO_HOURS.replace("அன்று துணை", "அன்று காலை 10 மணி முதல் மாலை 5 மணி வரை துணை")
+        a = self.samayam(body, self.SYN)
+        self.assertIn("காலை 10 மணி", a["text"])
+        self.assertNotIn("மாலை 4 மணி", a["text"])
+
+    def test_synopsis_of_another_district_not_used(self):
+        a = self.samayam(self.NO_HOURS, "சேலம் மாவட்டத்தில் நாளை காலை 9 மணி முதல் மாலை 4 மணி வரை மின்தடை.")
+        self.assertNotIn("மாலை 4 மணி", a["text"])
+        self.assertIn("அத்திகடவு திட்டம்", a["text"])
+
+    def test_article_gives_its_description(self):
+        ld = json.dumps({"@type": "NewsArticle", "headline": "x", "description": self.SYN, "articleBody": "y" * 300}, ensure_ascii=False)
+        with mock.patch.object(allnews, "_get", return_value=mock.Mock(text=f'<html><script type="application/ld+json">{ld}</script></html>')):
+            self.assertEqual(allnews.article_any(LIST_URL)["description"], self.SYN)
+
 
 if __name__ == "__main__":
     unittest.main()

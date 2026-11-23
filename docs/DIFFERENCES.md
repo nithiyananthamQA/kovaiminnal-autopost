@@ -158,6 +158,10 @@ e-mail tag KOVAIMINNAL. Never "360".
 - Never "நாளை" alone (owner 22 Nov, a viewer's comment: people watch the reel later). research_free/daydate.py adds the date to every
   நாளை / நாளை மறுநாள் of the finished draft (run.write, after the checks): voice "நாளை, நவம்பர் 23ஆம் தேதி,", caption and headline
   "நாளை (நவம்பர் 23)", screen lines "நாளை (நவ.23)" or only "நவ.23" when the line is full. A நாளை that already has a date is left alone.
+- Power-cut hours from Samayam's synopsis (owner 23 Nov: "some video missed the timings ... fix"). Samayam's state-wide list prints
+  "காலை 9 மணி முதல் மாலை 4 மணி வரை" only in its synopsis (JSON-LD / og description), never in the body, so Kovai RN-83, RN-97,
+  RN-241 and Salem RN-2 went out with no time. allnews.article_any now also returns the outlet's "description"; district_section puts
+  it before our district's part when the body gives no hours (never a synopsis naming another district).
 
 ## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 
