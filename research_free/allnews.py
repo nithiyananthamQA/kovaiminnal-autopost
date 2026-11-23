@@ -499,7 +499,6 @@ TN_DISTRICTS = ("அரியலூர்", "செங்கல்பட்ட�
                 "நாமக்கல்", "நீலகிரி", "உதகை", "பெரம்பலூர்", "புதுக்கோட்டை", "ராமநாதபுரம்", "ராணிப்பேட்டை", "சேலம்", "சிவகங்கை", "தென்காசி",
                 "தஞ்சாவூர்", "தஞ்சை", "தேனி", "தூத்துக்குடி", "திருச்சி", "திருச்சிராப்பள்ளி", "திருநெல்வேலி", "நெல்லை", "திருப்பத்தூர்",
                 "திருப்பூர்", "திருவள்ளூர்", "திருவண்ணாமலை", "திருவாரூர்", "வேலூர்", "விழுப்புரம்", "விருதுநகர்", "புதுச்சேரி")
-_HOURS = re.compile(r"\d{1,2}(?:[.:]\d{2})?\s*மணி\s*(?:முதல்|வரை)|(?:காலை|மாலை|மதியம்|பிற்பகல்|இரவு)\s*\d")      # a cut's hours, not '24 மணி நேரமும்'
 _SECTION_HEAD = re.compile(r'(?:^|(?<=[\s.,;:|>\-–"]))(' + "|".join(sorted(TN_DISTRICTS, key=len, reverse=True)) +
                            r')(?:\s*/\s*[^\s":,.]+)?'      # Samayam: "கோவை/மெட்ரோ மின் தடை பகுதிகள்":- "..."
                            r'(?:\s*(?:மாவட்டத்தில்|மாவட்டம்)\s*(?:பகுதிகள்)?\s*[:\-–]?|\s*(?:மின்\s*தடை|மின்தடை|மின்வெட்டு)?\s*(?:பகுதிகள்)?\s*"?\s*[:\-–])')
@@ -532,11 +531,6 @@ def district_section(url, names=None):
     intro = [s.strip() for s in re.split(r"(?<=[.!?])\s+|\n+", text[:first]) if s.strip()]
     others = [d for d in TN_DISTRICTS if d not in names]
     intro = " ".join(s for s in intro if ("மணி" in s or "பராமரிப்பு" in s) and not any(d in s for d in others))[:400]
-    # 23 Nov (ours): Samayam prints the hours only in its synopsis (JSON-LD / og description), never in the body - RN-83, RN-97,
-    # RN-241 and Salem RN-2 went out with no time. When the body gives no hours, the synopsis does (never one about another district).
-    desc = re.sub(r"\s+", " ", art.get("description") or "").strip()
-    if not _HOURS.search(intro) and _HOURS.search(desc) and not any(d in desc for d in others):
-        intro = (desc + " " + intro).strip()
     title = art.get("title") or ""
     when = re.search(r"நாளை\s*(?:\(|மறுநாள்)?\s*\d{1,2}[.\-/]\d{1,2}[.\-/]\d{2,4}\)?|\d{1,2}[.\-/]\d{1,2}[.\-/]\d{2,4}|நாளை", title)
     areas = [x.strip(' "') for x in re.split(r"[,،;]\s*", part)]
@@ -553,7 +547,7 @@ def article_any(url):
     if "dinamalar.com" in url:
         return dinamalar.article(url)
     h = _get(url, timeout=40).text
-    title = pub = body = desc = ""
+    title = pub = body = ""
     for blk in re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', h, flags=re.S):
         try:
             data = json.loads(blk)
@@ -565,10 +559,6 @@ def article_any(url):
                     title = title or e.get("headline", "")
                     pub = pub or e.get("datePublished", "")
                     body = body or e.get("articleBody", "")
-                    desc = desc or e.get("description", "")
-    if not desc:      # the outlet's own synopsis (Samayam prints a power cut's hours only there)
-        m = re.search(r'property="og:description"\s+content="([^"]+)"', h)
-        desc = m.group(1) if m else ""
     if not title:
         m = re.search(r'property="og:title"\s+content="([^"]+)"', h) or re.search(r"<title>([^<]+)</title>", h)
         title = html.unescape(m.group(1)).strip() if m else ""
@@ -580,8 +570,7 @@ def article_any(url):
         body = max(body, dinamalar.article_paragraphs(h), key=len)
     if len(body) < 200:      # last resort: the page's long Tamil lines
         body = max(body, dinamalar.long_lines(h), key=len)
-    return {"url": url, "title": html.unescape(title).strip(), "published": pub, "text": html.unescape(body).strip(),
-            "description": html.unescape(str(desc or "")).strip()}
+    return {"url": url, "title": html.unescape(title).strip(), "published": pub, "text": html.unescape(body).strip()}
 
 
 SENTENCE_END = re.compile(r"[.!?।\u0964\u201d\"')\]]\s*$")
