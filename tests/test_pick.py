@@ -221,13 +221,14 @@ class EndToEndOwnerPick(unittest.TestCase):
         rnd = {"written": ["a1", "a2"], "decided": {"ids": ["a1", "a2"]}}
         rows = [{"source": "https://x/a1", "story_id": "RN-141", "post_status": "Queued"},
                 {"source": "https://x/a2", "story_id": "RN-144", "post_status": "Queued"}]
-        old = (pick.pid, pick._never_posted)
+        old = (pick.pid, pick._never_posted, pick._waits)
         pick.pid = lambda u: u.rstrip("/").split("/")[-1]
         pick._never_posted = lambda r: "held: fact-check problems - numbers not found in the article: 1000" if r["story_id"] == "RN-141" else ""
+        pick._waits = lambda r: ""      # 24 Nov: inside the posting window - after 21:00 IST the news reads 'waiting for prime time'
         try:
             st = pick.picked_status(rnd, rows)
         finally:
-            pick.pid, pick._never_posted = old
+            pick.pid, pick._never_posted, pick._waits = old
         self.assertTrue(st["a1"].startswith("skipped RN-141: held"))
         self.assertTrue(st["a2"].startswith("queued RN-144"))      # still waiting: the run keeps checking / fails if never posted
 
