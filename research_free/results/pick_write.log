@@ -1,12 +1,17 @@
-writing [N]: மறியலில் ஈடுபட்ட பா.ஜ.,வினர் கைது
-writing [N]: ஓ.இ.நூல் மில்லில் பயங்கர தீ: பல கோடி ரூபாய் நூல் எரிந்து கரு
-writing [N]: பிசியோதெரபிஸ்ட்டுக்கு பாலியல் தொல்லை
+writing [N]: முன்னாள் மாணவர்கள் உதவியால் கல்வி சுற்றுலா சென்ற மாணவர்கள்
+writing [N]: இலக்கணம் தெரியாமல் கவிதை எழுதலாமா? தமிழ் கவிஞர்களுக்கு கல்வி
+writing [N]: ‘குழந்தைகளை ஸ்கூலுக்கு அனுப்புங்க’
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
 fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
   "error": {
     "code": 429,
@@ -27,45 +32,21 @@ fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
     "code": 429,
     "message": "You exceeded your current quota, please che
 dead for this round: gemini/gemini-3.5-flash
-ok gemini/gemini-3-flash-preview (11s)
-attempt 1 gemini/gemini-3-flash-preview: 2 problems
-  sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
-  caption needs 5 hashtags (Instagram max), has 6
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok gemini/gemini-3-flash-preview (11s)
-attempt 1 gemini/gemini-3-flash-preview: 1 problems
-  sentence 1 (one-line story) has 15 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
   "error": {
-    "code": 503,
-    "message": "This model is currently experiencing 
-ok gemini/gemini-3-flash-preview (9s)
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
 fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, plea
 dead for this round: gemini/gemini-3-flash-preview
-ok gemini/gemini-3.6-flash (26s)
-attempt 1 gemini/gemini-3.6-flash: 1 problems
-  numbers not found in the article: 6
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
-ok groq/openai/gpt-oss-120b (5s)
-factcheck by groq/openai/gpt-oss-120b: 2 problems
-  Police rank is incorrectly stated as "உதவி ஆய்வாளர்" (assistant inspector) while article says the arrest was led by SI (எஸ்.ஐ.)
-  The draft uses the abbreviation "பா.ஜ.க." which does not appear in the article; the article refers to "பா.ஜ." only
-attempt 2 gemini/gemini-3-flash-preview: 2 problems
-  fact-check: Police rank is incorrectly stated as "உதவி ஆய்வாளர்" (assistant inspector) while article says the arrest was led by SI (எஸ்.ஐ.)
-  fact-check: The draft uses the abbreviation "பா.ஜ.க." which does not appear in the article; the article refers to "பா.ஜ." only
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, plea
+dead for this round: gemini/gemini-3-flash-preview
 fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
   "error": {
     "code": 429,
@@ -73,23 +54,28 @@ fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
 dead for this round: gemini/gemini-3-flash-preview
 fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
 fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
-dead for this round: groq/openai/gpt-oss-120b
-fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
-dead for this round: groq/openai/gpt-oss-120b
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
-ok groq/qwen/qwen3.8-27b (4s)
-attempt 3 groq/qwen/qwen3.8-27b: 2 problems
-  reel_script copies the article word for word (26 words in a row, 65% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-  caption copies the article word for word (33 words in a row, 73% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
-ok groq/openai/gpt-oss-120b (8s)
-attempt 2 groq/openai/gpt-oss-120b: 3 problems
+ok groq/openai/gpt-oss-120b (7s)
+attempt 1 groq/openai/gpt-oss-120b: 3 problems
   missing key: reel_script
   missing key: caption
   missing key: scenes
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+switching away from groq/openai/gpt-oss-120b for 10 min
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+switching away from groq/openai/gpt-oss-120b for 10 min
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+switching away from groq/openai/gpt-oss-120b for 10 min
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok groq/qwen/qwen3.8-27b (9s)
+attempt 1 groq/qwen/qwen3.8-27b: 3 problems
+  caption copies the article word for word (16 words in a row, 22% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+  reel_script sentence 1 (heard in the first 3 seconds) must name the place 'ரயில்வே குடியிருப்பு' and the news itself, e.g. 'ரயில்வே குடியிருப்பு-இல் ... 3 பேர் கைது.' - viewers decide in 3 seconds whether the news is about their area
+  reel_script sentence 1 is a teaser ('?'): state the news itself in the first 3 seconds - what happened, where, the number or result - never a question or 'shocking incident'
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
 fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
@@ -98,165 +84,251 @@ free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"er
 fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
 switching away from groq/qwen/qwen3.8-27b for 10 min
 free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+free fact-check unavailable, using Claude: no free model answered: None
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 0 problems
+claude rewrite 1 anthropic/claude-haiku-5-5: 0 problems
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
 switching away from groq/qwen/qwen3.8-27b for 10 min
 free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
 ok anthropic/claude-haiku-5-5
-claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): 3 ('அன்னூர்: அச்சம்பாளையத்தில் சில ஆண்டுகளாக தினமும் 3 ஷிப்டுகளி')
+real photo step skipped for '630 students of Kangayampalayam govt sch': real photos switched off
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+free fact-check unavailable, using Claude: no free model answered: None
 ok anthropic/claude-haiku-5-5
 claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
-  reel_script must have no English letters (write English words and abbreviations in Tamil script)
+  reel_script sentence 1 (heard in the first 3 seconds) must name the place 'கோவை' and the news itself, e.g. 'கோவை-இல் ... 3 பேர் கைது.' - viewers decide in 3 seconds whether the news is about their area
 ok anthropic/claude-haiku-5-5
-claude rewrite 1 anthropic/claude-haiku-5-5: 2 problems
-  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
-  numbers not found in the article: 6
-ok anthropic/claude-haiku-5-5
-claude rewrite 2 anthropic/claude-haiku-5-5: 3 problems
-  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
-  reel_script copies the article word for word (25 words in a row, 36% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-  caption copies the article word for word (22 words in a row, 36% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+factcheck by anthropic/claude-haiku-5-5: 4 problems
+  The reel_script says the 94 children are being 'கண்டறியப்பட்டனர்' (were identified) in the headline; the article only says 94 students are out of school in the union, not that they were identified by the camp — minor overstatement in tamil_headline.
+  reel_script says the camp was held 'to enrol 94 children in school' (சிறப்பு முகாம் நடைபெற்றது ... சேர்க்க), which slightly reframes the article's statement that efforts to enrol them are underway; the article does not say the camp itself was for enrolling them.
+  reel_script omits that the camp was attended by officials including the medical officer, the education officer, and a police SI (குரு கணேஷ்), and that parents and students participated — the police/official participation is an important element of the event that is missing.
+  The caption's 'முழு விவரம்' summary wrongly labels the 94 as 'பள்ளி செல்லாத, இடைநிற்றல்' students and the phrase 'அவர்களைப் பள்ளியில் சேர்க்க முயற்சி நடக்கிறது' is accurate, but the slide 'எத்தனை பேர்?' states 94 people are 'பள்ளி செல்லாதவர்கள்' while the article says பள்ளி செல்லாத மற்றும் இடைநிற்றல் combined; the slide wording 'இடைநிற்றல் மாணவர்களும் இதில் அடங்குவர்' is fine, but the headline 'பள்ளி செல்லாத குழந்தைகளுக்கான' drops the இடைநிற்றல் category.
+claude rewrite 1 anthropic/claude-haiku-5-5: 4 problems
+  fact-check: The reel_script says the 94 children are being 'கண்டறியப்பட்டனர்' (were identified) in the headline; the article only says 94 students are out of school in the union, not that they were identified by the camp — minor overstatement in tamil_headline.
+  fact-check: reel_script says the camp was held 'to enrol 94 children in school' (சிறப்பு முகாம் நடைபெற்றது ... சேர்க்க), which slightly reframes the article's statement that efforts to enrol them are underway; the article does not say the camp itself was for enrolling them.
+  fact-check: reel_script omits that the camp was attended by officials including the medical officer, the education officer, and a police SI (குரு கணேஷ்), and that parents and students participated — the police/official participation is an important element of the event that is missing.
+  fact-check: The caption's 'முழு விவரம்' summary wrongly labels the 94 as 'பள்ளி செல்லாத, இடைநிற்றல்' students and the phrase 'அவர்களைப் பள்ளியில் சேர்க்க முயற்சி நடக்கிறது' is accurate, but the slide 'எத்தனை பேர்?' states 94 people are 'பள்ளி செல்லாதவர்கள்' while the article says பள்ளி செல்லாத மற்றும் இடைநிற்றல் combined; the slide wording 'இடைநிற்றல் மாணவர்களும் இதில் அடங்குவர்' is fine, but the headline 'பள்ளி செல்லாத குழந்தைகளுக்கான' drops the இடைநிற்றல் category.
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for '630 students of Kangayampalayam govt sch'
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261125-0511","first":"RN-308"}
+posting job started at once
 ok anthropic/claude-haiku-5-5
 claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
-  reel_script copies the article word for word (16 words in a row, 39% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-ok anthropic/claude-haiku-5-5
+  sentence 1 (one-line story) has 14 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+writing [N]: யானைகள் புத்துணர்வு முகாமுக்கு விவசாயிகள் சங்கம் எதிர்ப்பு
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-free fact-check unavailable, using Claude: no free model answered: None
+free models unavailable: no free model answered: None
 ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 4 problems
-  The draft names the victim's role in ways that are fine, but the reel_script and slides say the 24-year-old woman was the victim, which is allowed; however, the draft describes her as 'பாதிக்கப்பட்ட பெண்' only, so no name is given. No name problem found for the victim.
-  The reel_script says the incident happened at the 'சீனியர் சிட்டிசன் தனியார் குடியிருப்பு' and that the woman was 'பணியில் சேர்ந்த' six months earlier - consistent with the article.
-  The slides_spec line 'ஆனந்த் என்கிற வர்கீஸ் தாமஸ் என்றும் அழைக்கப்படுகிறார்' is supported by the article, so not a problem.
-  The caption's posting date line 'நாள்: நவம்பர் 24, 2026' gives a year the article does not state; the article only says 'இன்று (நவ.,24)' with no year, so the year 2026 is an invented detail.
-claude rewrite 2 anthropic/claude-haiku-5-5: 4 problems
-  fact-check: The draft names the victim's role in ways that are fine, but the reel_script and slides say the 24-year-old woman was the victim, which is allowed; however, the draft describes her as 'பாதிக்கப்பட்ட பெண்' only, so no name is given. No name problem found for the victim.
-  fact-check: The reel_script says the incident happened at the 'சீனியர் சிட்டிசன் தனியார் குடியிருப்பு' and that the woman was 'பணியில் சேர்ந்த' six months earlier - consistent with the article.
-  fact-check: The slides_spec line 'ஆனந்த் என்கிற வர்கீஸ் தாமஸ் என்றும் அழைக்கப்படுகிறார்' is supported by the article, so not a problem.
-  fact-check: The caption's posting date line 'நாள்: நவம்பர் 24, 2026' gives a year the article does not state; the article only says 'இன்று (நவ.,24)' with no year, so the year 2026 is an invented detail.
+claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
+  caption copies the article word for word (15 words in a row, 19% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
+  reel_script sentence 1 (heard in the first 3 seconds) must name the place 'கோவை' and the news itself, e.g. 'கோவை-இல் ... 3 பேர் கைது.' - viewers decide in 3 seconds whether the news is about their area
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 ok anthropic/claude-haiku-5-5
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 free fact-check unavailable, using Claude: no free model answered: None
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 4 problems
+  Caption says the Tamil Nadu Farmers' Association (and other groups) oppose the camp and the article says protest started; caption calls it 'கடும் எதிர்ப்பு' (fierce opposition), an intensifier not in the article
+  Reel script says the farmers' association 'கடுமையாக எதிர்க்கிறது' (strongly opposes), adding an intensity not stated in the article
+  Reel script says the protesters were a 'சங்கத்தினர்' and 'அவர்' statements mostly match, but the statement that the association is starting the black flag protest 'தொடங்கியுள்ளனர்' is fine; however the caption's 'முடிவு செய்துள்ளனர்' for black flags is accurate - no issue there
+  Caption and reel script say the association will 'முற்றுகையிடுவார்கள்' / முற்றுகையிட முடிவு செய்துள்ளதாக, which is a plan stated by the leader, but the reel script states it as a definite future action rather than a decision/plan - minor framing change
+claude rewrite 1 anthropic/claude-haiku-5-5: 4 problems
+  fact-check: Caption says the Tamil Nadu Farmers' Association (and other groups) oppose the camp and the article says protest started; caption calls it 'கடும் எதிர்ப்பு' (fierce opposition), an intensifier not in the article
+  fact-check: Reel script says the farmers' association 'கடுமையாக எதிர்க்கிறது' (strongly opposes), adding an intensity not stated in the article
+  fact-check: Reel script says the protesters were a 'சங்கத்தினர்' and 'அவர்' statements mostly match, but the statement that the association is starting the black flag protest 'தொடங்கியுள்ளனர்' is fine; however the caption's 'முடிவு செய்துள்ளனர்' for black flags is accurate - no issue there
+  fact-check: Caption and reel script say the association will 'முற்றுகையிடுவார்கள்' / முற்றுகையிட முடிவு செய்துள்ளதாக, which is a plan stated by the leader, but the reel script states it as a definite future action rather than a decision/plan - minor framing change
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+free fact-check unavailable, using Claude: no free model answered: None
+ok anthropic/claude-haiku-5-5
+real photo step skipped for 'Educator urges Tamil poets to learn gram': real photos switched off
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 5 problems
+  reel_script says the 94 children were 'identified' as a goal of the camp framed as 'பள்ளியில் சேர்க்க சிறப்பு முகாம்' - acceptable, but the article does not say the camp was for 'enrolling' them; minor framing only
+  reel_script and slides say 29 'குழந்தைகள் இல்லங்கள்' (children's homes) - article says 29 இல்லங்கள', acceptable; however the slide line 'பெற்றோர் 18 வயது வரை மாதம் ரூ.2,000 உதவித் தொகை பெறலாம்' misstates the article, which says the 2,000 aid is for children who lost parents or whose parents have a fatal disease, not for all parents
+  reel_script omits that the aid is for orphaned children or children of parents with a fatal disease in the sense of who receives it; the reel_script version is accurate, but the caption and slide are inconsistent with the article on this point
+  reel_script and caption state that the camp 'identified' or involved 94 children at the camp level, while the article only says 94 children are out of school in the union and an effort is underway to enrol them
+  caption says 'அரசு அதிகாரிகள்' spoke; article names the speakers including a police S.I., which is consistent, but the caption omits the district coordinator and child-welfare counsellor's role details - not an error
+claude rewrite 3 anthropic/claude-haiku-5-5: 5 problems
+  fact-check: reel_script says the 94 children were 'identified' as a goal of the camp framed as 'பள்ளியில் சேர்க்க சிறப்பு முகாம்' - acceptable, but the article does not say the camp was for 'enrolling' them; minor framing only
+  fact-check: reel_script and slides say 29 'குழந்தைகள் இல்லங்கள்' (children's homes) - article says 29 இல்லங்கள', acceptable; however the slide line 'பெற்றோர் 18 வயது வரை மாதம் ரூ.2,000 உதவித் தொகை பெறலாம்' misstates the article, which says the 2,000 aid is for children who lost parents or whose parents have a fatal disease, not for all parents
+  fact-check: reel_script omits that the aid is for orphaned children or children of parents with a fatal disease in the sense of who receives it; the reel_script version is accurate, but the caption and slide are inconsistent with the article on this point
+  fact-check: reel_script and caption state that the camp 'identified' or involved 94 children at the camp level, while the article only says 94 children are out of school in the union and an effort is underway to enrol them
+  fact-check: caption says 'அரசு அதிகாரிகள்' spoke; article names the speakers including a police S.I., which is consistent, but the caption omits the district coordinator and child-welfare counsellor's role details - not an error
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Educator urges Tamil poets to learn gram'
+ok anthropic/claude-haiku-5-5
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+free fact-check unavailable, using Claude: no free model answered: None
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261125-0512","first":"RN-309"}
+real photo step skipped for 'Annur holds 'Puthiya Thodakkam' special ': real photos switched off
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 4 problems
+  Draft describes the elephant camp as 'யானைகள் புத்துணர்வு முகாம்' (rejuvenation camp), but the article only says 'யானைகள் முகாம்' without specifying the purpose; the name 'புத்துணர்வு' is not in the article (appears in headline and reel_script)
+  Caption says the camp is being opposed for 'mettupalayam' and the state farmers' association is 'உள்ளிட்ட அமைப்புகள்' – minor, but caption also states the leader asked 'வேறு இடத்தில்' while simultaneously opposing holding it in Mettupalayam, which is consistent; no issue there
+  Caption English line 'Mettupalayam farmers oppose elephant camp, black flag protest | Coimbatore news' is a footer-type line and not a problem
+  Reel_script says the Tamil Nadu farmers' association leader is 'வேணுகோபால்' – the article gives this name as the state president, which is fine; however reel_script says the association 'முகாமை முற்றுகையிட' decided, matching the article
+claude rewrite 2 anthropic/claude-haiku-5-5: 4 problems
+  fact-check: Draft describes the elephant camp as 'யானைகள் புத்துணர்வு முகாம்' (rejuvenation camp), but the article only says 'யானைகள் முகாம்' without specifying the purpose; the name 'புத்துணர்வு' is not in the article (appears in headline and reel_script)
+  fact-check: Caption says the camp is being opposed for 'mettupalayam' and the state farmers' association is 'உள்ளிட்ட அமைப்புகள்' – minor, but caption also states the leader asked 'வேறு இடத்தில்' while simultaneously opposing holding it in Mettupalayam, which is consistent; no issue there
+  fact-check: Caption English line 'Mettupalayam farmers oppose elephant camp, black flag protest | Coimbatore news' is a footer-type line and not a problem
+  fact-check: Reel_script says the Tamil Nadu farmers' association leader is 'வேணுகோபால்' – the article gives this name as the state president, which is fine; however reel_script says the association 'முகாமை முற்றுகையிட' decided, matching the article
+writing [N]: தீ விபத்தில் பல கோடி ரூபாய் நூல் நாசம்
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+free models unavailable: no free model answered: None
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
+  reel_script copies the article word for word (17 words in a row, 26% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 2 problems
+  sentence 1 (one-line story) has 15 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  numbers not found in the article: 8
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Annur holds 'Puthiya Thodakkam' special '
+ok anthropic/claude-haiku-5-5
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261125-0512","first":"RN-310"}
+writing [N]: போதைப்பொருள் வழக்கில் கைதானவா் குண்டா் சட்டத்தில் அடைப்பு
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+free models unavailable: no free model answered: None
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
+  numbers not found in the article: 8
+writing [N]: தனி பட்டா வழங்க ரூ.25,000 லஞ்சம்: நில அளவையர், உதவியாளர் மீத
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+free models unavailable: no free model answered: None
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
 ok anthropic/claude-haiku-5-5
 claude rewrite 3 anthropic/claude-haiku-5-5: 2 problems
-  sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): மேட்டுப்பாளையம் ('தீயணைப்புத்துறை மாவட்ட அலுவலர் கணேசன் தலைமையில், அன்னூர், மே'); கருமத்தம்பட்டி ('தீயணைப்புத்துறை மாவட்ட அலுவலர் கணேசன் தலைமையில், அன்னூர், மே')
+  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  numbers not found in the article: 8
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 proofread skipped: no free model answered: None
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 4 problems
-  The article says the protest was against the TVK (த.வெ.க.) government, but the reel_script and caption say the protest was against the TVK government only in part; the caption omits that it was directed at the TVK government, so the stated cause is incomplete/misattributed in the caption ("இதைக் கண்டித்து" refers to the Thiruparankundram issue without naming the TVK government, unlike the article)
-  The slides_spec "என்ன நடந்தது?" slide says BJP protested against the TVK government, while the 'ஏன் மறியல்?' slide attributes the reason only to the Thiruparankundram deepam not being lit; the article's stated target of protest (TVK govt) is mixed with the cause in a way that blurs two facts
-  The reel_script's "த வெ க அரசுக்கு எதிராகவும்" phrasing merges two separate facts (the Thiruparankundram deepam issue and the TVK government) into one sentence, which the article presents as the reason and the target respectively
-  The article says the arrested 25 people were 'பா.ஜ.,வினர்' and the draft's slides say 'ஜெயபால் உள்ளிட்ட 25 பேர்' with a bolded tag; the bolded HTML tag <b> appears inside slide text, which is a formatting artifact rather than a factual problem but is an invalid-looking Tamil content element
-claude rewrite 3 anthropic/claude-haiku-5-5: 4 problems
-  fact-check: The article says the protest was against the TVK (த.வெ.க.) government, but the reel_script and caption say the protest was against the TVK government only in part; the caption omits that it was directed at the TVK government, so the stated cause is incomplete/misattributed in the caption ("இதைக் கண்டித்து" refers to the Thiruparankundram issue without naming the TVK government, unlike the article)
-  fact-check: The slides_spec "என்ன நடந்தது?" slide says BJP protested against the TVK government, while the 'ஏன் மறியல்?' slide attributes the reason only to the Thiruparankundram deepam not being lit; the article's stated target of protest (TVK govt) is mixed with the cause in a way that blurs two facts
-  fact-check: The reel_script's "த வெ க அரசுக்கு எதிராகவும்" phrasing merges two separate facts (the Thiruparankundram deepam issue and the TVK government) into one sentence, which the article presents as the reason and the target respectively
-  fact-check: The article says the arrested 25 people were 'பா.ஜ.,வினர்' and the draft's slides say 'ஜெயபால் உள்ளிட்ட 25 பேர்' with a bolded tag; the bolded HTML tag <b> appears inside slide text, which is a formatting artifact rather than a factual problem but is an invalid-looking Tamil content element
+claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 25 ('கோவை மாவட்டம், பொள்ளாச்சியில் தனிபட்டா வழங்க, 25 ஆயிரம் ரூபா'); 20 ('அவரை நில அளவையர், சூலூரை சேர்ந்த பாலமுருகன் தொடர்பு கொண்டு, '); 25 ('புகார் குறித்து அறிந்த பாலமுருகன், லஞ்ச தொகையை, 25 ஆயிரம் ரூ')
+ok anthropic/claude-haiku-5-5
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 5 problems
+  slide 4 must have 2-3 lines
+  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  caption must contain the exact follow line
+  caption copies the article word for word (17 words in a row, 25% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+  hl1 (the first headline on screen) must name the place 'பொள்ளாச்சி', e.g. 'பொள்ளாச்சி: ...' or 'பொள்ளாச்சி-இல் ...' - viewers share news of their own area
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 8 problems
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  stray Tamil sign '்' after 'ா' in «குண்டா் சட»
+  stray Tamil sign '்' after 'ா' in «குண்டா் தட»
+  stray Tamil sign '்' after 'ா' in «குண்டா் தட»
+  stray Tamil sign '்' after 'ா' in «குண்டா் சட»
+  stray Tamil sign '்' after 'ா' in «குண்டா் தட»
+  stray Tamil sign '்' after 'ா' in «குண்டா் சட»
+  stray Tamil sign '்' after 'ா' in «குண்டா் தட»
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok anthropic/claude-haiku-5-5
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 ok anthropic/claude-haiku-5-5
 claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
-  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 25 ('கோவை மாவட்டம், பொள்ளாச்சியில் தனிபட்டா வழங்க, 25 ஆயிரம் ரூபா'); 20 ('அவரை நில அளவையர், சூலூரை சேர்ந்த பாலமுருகன் தொடர்பு கொண்டு, '); 25 ('புகார் குறித்து அறிந்த பாலமுருகன், லஞ்ச தொகையை, 25 ஆயிரம் ரூ')
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+ok anthropic/claude-haiku-5-5
+real photo step skipped for 'Raghothaman, arrested in a drug sale and': real photos switched off
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 proofread skipped: no free model answered: None
-ok anthropic/claude-haiku-5-5
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-real photo step skipped for 'Huge fire at Annur yarn mill in Achampal': real photos switched off
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok anthropic/claude-haiku-5-5
-ok anthropic/claude-haiku-5-5
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-image match: False The image is an AI-generated scene showing a building on fire with garbled text, not a real photograph from the Annur ya
-image match: False The image is an AI-generated synthetic picture featuring unnatural water stream artifacts and generic details, rather th
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 2 for 'Huge fire at Annur yarn mill in Achampal'
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261125-0109","first":"RN-304"}
-posting job started at once
-real photo step skipped for '25 BJP members arrested for road blockad': real photos switched off
-writing [N]: தமிழக அரசை கண்டித்து 17 பேர் கைது
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-free models unavailable: no free model answered: None
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-ok anthropic/claude-haiku-5-5
-claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
-  known issue meta_article: cards talks about the article instead of the news ('விவரம் இல்லை') - rewrite so it does not happen again
-image match: False The photo only shows flags lying on a road with motorcycle tires in the background; it does not depict 25 BJP members, a
-ok anthropic/claude-haiku-5-5
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-free fact-check unavailable, using Claude: no free model answered: None
-ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 3 problems
-  The reel_script and slides_spec describe the police officer as 'காவல் துணை கண்காணிப்பாளர்' (DSP) in the reel_script, while the caption and slides use 'டி.எஸ்.பி.' — minor inconsistency is acceptable, but the reel_script's 'காவல் துணை கண்காணிப்பாளர்' is a rendering of D.S.P. that is consistent with the article; no error here.
-  The caption's posting date line says 'நவம்பர் 24, 2026', which is an invented year not stated in the article; however the year is part of the posting-date footer, which is excluded from checking, so this is not counted as a problem.
-  The caption's '🗓️ நாள்: நவம்பர் 24, 2026' and the reel_script's 'நவம்பர் 24ஆம் தேதி இரவு' are consistent with the article's 'இன்று (நவ.,24) இரவு'; no factual problem found in the body text.
-claude rewrite 2 anthropic/claude-haiku-5-5: 3 problems
-  fact-check: The reel_script and slides_spec describe the police officer as 'காவல் துணை கண்காணிப்பாளர்' (DSP) in the reel_script, while the caption and slides use 'டி.எஸ்.பி.' — minor inconsistency is acceptable, but the reel_script's 'காவல் துணை கண்காணிப்பாளர்' is a rendering of D.S.P. that is consistent with the article; no error here.
-  fact-check: The caption's posting date line says 'நவம்பர் 24, 2026', which is an invented year not stated in the article; however the year is part of the posting-date footer, which is excluded from checking, so this is not counted as a problem.
-  fact-check: The caption's '🗓️ நாள்: நவம்பர் 24, 2026' and the reel_script's 'நவம்பர் 24ஆம் தேதி இரவு' are consistent with the article's 'இன்று (நவ.,24) இரவு'; no factual problem found in the body text.
-ok anthropic/claude-haiku-5-5
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-free fact-check unavailable, using Claude: no free model answered: None
-ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 2 problems
-  reel_script and slides_spec describe Badaran/Mettupalayam DSP as 'காவல் துணை கண்காணிப்பாளர்' — acceptable translation of DSP, not a problem; however the reel_script says 'ஹிந்து முன்னணியினர்' — matches article; the article says the protest was 'இரவு' — matches. Substantive issue: the caption and reel_script state the 17 people were arrested and then released, which matches the article; no invented facts found in the reel_script or caption beyond the article.
-  Slides_spec 'தமிழக அரசுக்கு எதிரான போராட்டம்' and 'இரவு நேரப் போராட்டம்' are paraphrases consistent with the article, so no invented claims were identified.
-claude rewrite 3 anthropic/claude-haiku-5-5: 2 problems
-  fact-check: reel_script and slides_spec describe Badaran/Mettupalayam DSP as 'காவல் துணை கண்காணிப்பாளர்' — acceptable translation of DSP, not a problem; however the reel_script says 'ஹிந்து முன்னணியினர்' — matches article; the article says the protest was 'இரவு' — matches. Substantive issue: the caption and reel_script state the 17 people were arrested and then released, which matches the article; no invented facts found in the reel_script or caption beyond the article.
-  fact-check: Slides_spec 'தமிழக அரசுக்கு எதிரான போராட்டம்' and 'இரவு நேரப் போராட்டம்' are paraphrases consistent with the article, so no invented claims were identified.
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-proofread skipped: no free model answered: None
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
 ok anthropic/claude-haiku-5-5
-image match: False The photo shows flags lying on a road with traffic in the background, but does not show any people, arrests, or a road b
-images made: 2 for '25 BJP members arrested for road blockad'
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261125-0110","first":"RN-305"}
-real photo step skipped for 'Kinathukadavu: manager arrested for sexu': real photos switched off
 image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
+images made: 2 for 'Raghothaman, arrested in a drug sale and'
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261125-0513","first":"RN-311"}
+real photo step skipped for 'Pollachi: surveyor and assistant booked ': real photos switched off
 image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 2 for 'Kinathukadavu: manager arrested for sexu'
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261125-0110","first":"RN-306"}
-real photo step skipped for '17 Hindu Munnani members arrested in Met': real photos switched off
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-image match check unavailable: gemini-3.5-flash: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/g
-images made: 2 for '17 Hindu Munnani members arrested in Met'
-bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261125-0110","first":"RN-307"}
+images made: 1 for 'Pollachi: surveyor and assistant booked '
+bridge: 200 {"ok":true,"added":1,"auto_queued":1,"emailed":0,"reoffered":0,"batch":"B20261125-0513","first":"RN-312"}
 earlier stories still waiting for images: []
 instagram check: 50 recent posts read from the page
 pick round: only the picked links are written (research_free/pick.py)
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/17-people-condemn-tamil-nadu-government-arrested/4385433
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/bjp-arrested/4385443
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/sexual-harassment-by-a-physiotherapist/4385468
-manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/massive-fire-breaks-out-at-oil-mill-books-worth-crores-of-rupees-gutted/4385367
-candidate filter: collected=4
-to write: 4 Coimbatore district candidates (max 4 stories)
-round: top 4 of 4 candidates
-candidates waiting: 4 Coimbatore; time left 79 min
+manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/24/போதைப்பொருள்-வழக்கில்-கைதானவா்-குண்டா்-சட்டத்தில்-அடைப்பு
+manual link added: https://www.dinamalar.com/news/tamil-nadu-news/rs-25000-bribe-for-issuing-separate-patta-land-surveyor-assistant-sued/4385441
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/millions-of-rupees-were-lost-in-the-fire/4385473
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/farmers-protest-against-elephant-rejuvenation-camp/4385397
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/send-your-children-to-school/4385379
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/students-go-on-educational-tours-with-the-help-of-alumni/4385442
+manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/can-you-write-poetry-without-knowing-grammar/4384830
+candidate filter: collected=7
+to write: 7 Coimbatore district candidates (max 7 stories)
+round: top 7 of 7 candidates
+candidates waiting: 7 Coimbatore; time left 79 min
 try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
 try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
 try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
-auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 3})
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})
 posting job started at once
 try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})
+try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim
 auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})
+try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-news/rs-25000-brib
+NOT filed (N) யானைகள் புத்துணர்வு முகாமுக்கு விவசாயிகள் சங்கம் எ: duplicate after write
+try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/coi
+NOT filed (N) தீ விபத்தில் பல கோடி ரூபாய் நூல் நாசம்: duplicate after write
 auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})
-auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 10})
-candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 75 min
-filed: 4 Coimbatore district stories (target 4), reels only
+auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 9})
+candidate loop ended: left 0, tried={'N': 7}, done={'N': 5}, time left 77 min
+filed: 5 Coimbatore district stories (target 7), reels only
 queue: 0 news waiting to be written
-All News sheet: {"ok":true,"added":4,"updated":0} 
-stories: 4
+All News sheet: {"ok":true,"added":7,"updated":0} 
+stories: 5
