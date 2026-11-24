@@ -183,6 +183,10 @@ e-mail tag KOVAIMINNAL. Never "360".
   added, more crime / accident words ('சிறை' alone is not crime). The writer's style examples (top_openings) = most-watched
   openings against their day, never a POCSO / sexual / suicide / death story. Replay of the last 28 rounds: 21 pick differently.
 
+- Writer "THE TWIST FIRST" (owner 24 Nov: "some of the news got viral ... post the same way ... if it looks funny inside but dont
+  hurt the people involved"): rules.md - the article's unusual detail leads sentence 1 and the caption hook; a light tone only
+  where nobody is hurt, dead, a victim, a minor or arrested; never mocking any person. Dry-written on RN-70 / RN-81: 3 Claude calls
+  each (as usual), no new check problems; the hook kept the twist on RN-81, RN-70's lost 'கள்ளத்தனமாக' (effect small so far).
 ## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 
 - Chennai's own places (owner 18 Nov: "chennai is the most populated city ... add even more small areas", suburbs yes):
