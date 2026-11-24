@@ -3,10 +3,10 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/mr-ai-are-you-good-or-bad/4384824",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/the-butterfly-park-is-coming-up-in-the-center-of-the-zone-science/4384826",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/training-for-teachers/4384822",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/i-am-happy-that-this-project-is-working-industry-is-aware-of-the-chennai-coimbatore-thoothukudi-expressway/4384821",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/1782-cases-of-traffic-violations/4385078",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/floodwaters-are-prone-to-high-fever-health-department/4384966",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/the-design-of-the-flyover-up-to-nilambur-neet-is-being-finalised/4385112",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/jcd-students-set-new-record-in-state-silambu-competition/4385024",
   "candidate filter: collected=4",
   "to write: 4 Coimbatore district candidates (max 4 stories)",
   "round: top 4 of 4 candidates",
@@ -17,11 +17,11 @@
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 5})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 11})",
-  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 75 min",
-  "filed: 4 Coimbatore district stories (target 4), reels only",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
+  "NOT filed (N) போக்குவரத்து விதிமீறியதாக 1,782 வழக்கு: duplicate after write",
+  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 3}, time left 75 min",
+  "filed: 3 Coimbatore district stories (target 4), reels only",
   "queue: 0 news waiting to be written",
   "All News sheet: {\"ok\":true,\"added\":4,\"updated\":0}"
  ],
@@ -30,349 +30,276 @@
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "ok gemini/gemini-3.6-flash (39s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "ok gemini/gemini-3.5-flash (26s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok gemini/gemini-3.6-flash (26s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
-  "ok gemini/gemini-3-flash-preview (10s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
   "poor answer - skipped for 30 min: gemini/gemini-3.6-flash",
-  "ok gemini/gemini-3-flash-preview (26s)",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "ok gemini/gemini-3.6-flash (34s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing ",
+  "ok gemini/gemini-3-flash-preview (34s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
-  "poor answer - skipped for 30 min: gemini/gemini-3-flash-preview",
-  "ok gemini/gemini-3-flash-preview (11s)",
+  "ok gemini/gemini-3-flash-preview (20s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing ",
+  "switching away from gemini/gemini-3-flash-preview for 10 min",
+  "ok groq/openai/gpt-oss-120b (5s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok groq/openai/gpt-oss-120b (6s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "ok groq/openai/gpt-oss-120b (2s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok gemini/gemini-3-flash-preview (43s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "dead for this round: groq/openai/gpt-oss-120b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "ok gemini/gemini-3-flash-preview (11s)",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok gemini/gemini-3-flash-preview (48s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok groq/qwen/qwen3.8-27b (4s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok groq/qwen/qwen3.8-27b (3s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok groq/qwen/qwen3.8-27b (1s)",
   "ok groq/qwen/qwen3.8-27b (10s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "switching away from groq/qwen/qwen3.8-27b for 10 min",
   "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "சென்னை - கோவை - தூத்துக்குடி விரைவு சாலைத் திட்டம்: டிசம்பர் 22-க்குள் அறிக்கை தாக்கல் செய்ய உத்தரவு",
-   "english_headline": "Chennai-Coimbatore-Tuticorin Expressway: TN Highway Dept orders feasibility report by Dec 22",
+   "tamil_headline": "கோவை அவிநாசி சாலை மேம்பாலம் நீலாம்பூர் வரை நீட்டிப்பு: டிசம்பருக்குள் டிசைன் இறுதி செய்ய திட்டம்",
+   "english_headline": "Avinashi Road elevated corridor extension up to Neelambur design to be finalized by December",
    "category": "Roads & Transport",
-   "location": "Coimbatore city, Coimbatore district",
+   "location": "Avinashi Road, Coimbatore district",
    "importance": "High",
    "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "சாலைத் திட்டம்",
-    "loc": "கோவை",
-    "hl1": "சென்னை-கோவை-தூத்துக்குடி விரைவு சாலை",
-    "hl2": "டிசம்பர் 22-க்குள் அறிக்கை",
+    "cat": "மேம்பால திட்டம்",
+    "loc": "அவிநாசி சாலை, கோவை",
+    "hl1": "அவிநாசி சாலை மேம்பாலம் நீட்டிப்பு",
+    "hl2": "நீலாம்பூர் வரை புதிய திட்டம்",
     "slides": [
      {
-      "title": "புதிய விரைவு சாலை",
+      "title": "திட்டம் என்ன?",
       "lines": [
-       "<b>5 ஆண்டுகளில்</b> செயல்படுத்த இலக்கு",
-       "சென்னை - கோவை - தூத்துக்குடி விரைவு சாலை",
-       "'வெற்றித் தமிழகம்' திட்டத்தின் கீழ் அறிவிப்பு"
+       "<b>ஜி.டி.நாயுடு</b> மேம்பாலம் நீலாம்பூர் வரை நீட்டிப்பு",
+       "விரிவான திட்ட அறிக்கை தயாரிப்பு மும்முரம்",
+       "டிசம்பருக்குள் அனைத்து ஒப்புதல்களும் பெற திட்டம்"
       ]
      },
      {
-      "title": "ஆய்வுப் பணிகள்",
+      "title": "ஏறு, இறங்கு",
       "lines": [
-       "தொழில்நுட்ப மற்றும் பொருளாதார ஆய்வு",
-       "<b>டிசம்பர் 22</b>-க்குள் அறிக்கை தாக்கல் செய்ய உத்தரவு",
-       "மாநில நெடுஞ்சாலை ஆணையம் அறிவிப்பு"
+       "ஆர்.ஜி.புதூர், சின்னியம்பாளையத்தில் ஏறு, இறங்கு தளம்",
+       "விமான நிலையத்திற்குச் செல்ல தனி இறங்கு தளம்",
+       "நீலாம்பூர் சந்திப்பில் 'யூ டர்ன்' வடிவமைப்பு"
       ]
      },
      {
-      "title": "உத்தேச வழித்தடம்",
+      "title": "சுரங்கப் பாதை",
       "lines": [
-       "சென்னை - சேலம் - கோவை - மதுரை - தூத்துக்குடி",
-       "நகருக்கு வெளியே அமையும் <b>சுங்கச்சாலை</b>",
-       "நகரங்களுக்குச் செல்ல இணைப்புச் சாலைகள்"
-      ]
-     },
-     {
-      "title": "தொழில்துறை",
-      "lines": [
-       "சரக்கு போக்குவரத்தை எளிதாக்க தனி வழித்தடம்",
-       "திட்டங்களை விரைந்து செயல்படுத்த எதிர்பார்ப்பு",
-       "நிதி ஒதுக்கீடு குறித்துத் தெளிவு தேவை"
+       "விமான நிலைய சுரங்கப் பாதையில் பொதுமக்களுக்கு அனுமதி",
+       "தேசிய நெடுஞ்சாலைத்துறை அதிகாரிகள் ஒப்புதல்",
+       "அடுத்த நிதியாண்டில் நிதி ஒதுக்கி பணிகள் தொடங்கும்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "சென்னை - கோவை - தூத்துக்குடி இடையே புதிய விரைவு சாலை அமைக்கத் திட்டமிடப்பட்டுள்ளது. தமிழக நெடுஞ்சாலைத் துறையின் 5 ஆண்டு கால 'வெற்றித் தமிழகம்' திட்டத்தின் கீழ் இந்த அறிவிப்பு வெளியிடப்பட்டுள்ளது. சரக்கு வாகனங்கள் துறைமுகங்களுக்கும் விமான நிலையங்களுக்கும் எளிதாகச் செல்ல இந்தத் தனி வழித்தடம் உருவாக்கப்படுகிறது. இந்தத் திட்டத்திற்கான தொழில்நுட்ப மற்றும் பொருளாதார சாத்தியக்கூறுகள் குறித்து ஆய்வு செய்து, டிசம்பர் 22ஆம் தேதிக்குள் விரிவான அறிக்கையைச் சமர்ப்பிக்க மாநில நெடுஞ்சாலை ஆணையம் உத்தரவிட்டுள்ளது. இந்தச் சாலை சென்னை, சேலம் வழியாக கோவைக்கும், கோவையிலிருந்து திண்டுக்கல், மதுரை வழியாகத் தூத்துக்குடிக்கும் செல்லும் வகையில் அமையலாம். இது நகருக்கு வெளியே அமையும் சுங்கச்சாலையாக இருக்கும் என்றும், நகரங்களுக்குச் செல்ல இணைப்புச் சாலைகள் வழங்கப்படும் என்றும் தெரிவிக்கப்பட்டுள்ளது. கோவையிலிருந்து பொள்ளாச்சி வழியாக மதுரை செல்ல ஏற்கனவே தேசிய நெடுஞ்சாலை உள்ள நிலையில், புதிய திட்டத்திற்கான நிதி ஒதுக்கீடு குறித்துத் தொழில்துறையினர் கேள்வி எழுப்பியுள்ளனர். கோவை மெட்ரோ, கரூர் விரைவு சாலை போன்ற திட்டங்கள் போல் தாமதமாகாமல் இது விரைவில் செயல்பாட்டுக்கு வர வேண்டும் என மக்கள் எதிர்பார்க்கின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🛣️ சென்னை - கோவை - தூத்துக்குடி இடையே புதிய விரைவு சாலை: டிசம்பர் 22-க்குள் அறிக்கை தாக்கல் செய்ய உத்தரவு\n\n📰 முழு விவரம்:\nதமிழக நெடுஞ்சாலைத் துறையின் 'வெற்றித் தமிழகம்' 5 ஆண்டு திட்டத்தின் கீழ் சென்னை - கோவை - தூத்துக்குடி விரைவு சாலை அமைக்கப்பட உள்ளது. சரக்கு போக்குவரத்தை வேகப்படுத்த இந்தத் தனி வழித்தடம் அமைகிறது. இதற்கான சாத்தியக்கூறு ஆய்வு மற்றும் விரிவான திட்ட அறிக்கையை டிசம்பர் 22-க்குள் தாக்கல் செய்ய மாநில நெடுஞ்சாலை ஆணையம் உத்தரவிட்டுள்ளது. இந்தச் சாலை சென்னை - சேலம் - கோவை - திண்டுக்கல் - மதுரை - தூத்துக்குடி வழித்தடத்தில் அமைய வாய்ப்புள்ளது. இது நகருக்கு வெளியே அமையும் சுங்கச்சாலையாக இருக்கும். கோவையிலிருந்து பொள்ளாச்சி வழியாக மதுரை செல்ல ஏற்கனவே தேசிய நெடுஞ்சாலை ஆணையம் சாலை அமைத்துள்ள நிலையில், புதிய திட்டத்தின் நிதி மற்றும் வழித்தடம் குறித்துத் தொழில்துறையினர் தெளிவு கோரியுள்ளனர். கோவை மெட்ரோ, கரூர் விரைவு சாலை போன்ற திட்டங்கள் போல் இது தாமதமாகாமல் விரைவில் செயல்பாட்டுக்கு வர வேண்டும் என்பதே மக்களின் எதிர்பார்ப்பாக உள்ளது.\n\n📍 இடம்: சென்னை, கோவை, தூத்துக்குடி வழித்தடம்\n🗓️ அறிக்கை தாக்கல்: டிசம்பர் 22, 2026\nℹ️ நோக்கம்: சரக்கு போக்குவரத்து மற்றும் தொழில்துறை வளர்ச்சி\n\nChennai Coimbatore Tuticorin Expressway project | Coimbatore industrial news\n📍 கோவை | 24 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Roads #Expressway #கோவை",
-   "prompts": "A row of heavy freight lorries and container trucks crawls along a wide multi-lane highway on the outskirts of Coimbatore city, with a government highway sign pole in the background and a concrete flyover pillar on the left. Two-wheelers and a private car share the lanes, and a few men in shirts and trousers walk along the shoulder, seen from behind and far away. The vehicles are the focus, showing the heavy freight traffic that prompted the new expressway plan. The scene is in daylight with a clear sky, and the Western Ghats faintly visible on the far horizon. Camera at eye level, 35 mm, wide enough to show the road stretching into the distance. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a thick stack of bound official project report papers lying on a government office desk, with a plain pen and a folded file beside it, and a blurred table edge in the foreground. Behind the desk, a slightly out-of-focus wall and a window let in soft daylight. No readable text or signboards are visible. The detail suggests the feasibility study and detailed project report due by 22 December. Camera slightly high, close framing, 35 mm, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/i-am-happy-that-this-project-is-working-industry-is-aware-of-the-chennai-coimbatore-thoothukudi-expressway/4384821",
-   "published": "2026-11-24T14:20:13+05:30",
-   "verification": "DRAFT (gemini/gemini-3-flash-preview) - NOT CLEAN, held from posting - problems: fact-check: The caption specifies the year 2026 for the report submission date, but the article only mentions December 22 without a year.",
-   "note": "free-model draft gemini/gemini-3-flash-preview, 2 attempt(s), 1 validator problem(s)",
+   "reel_script": "அவிநாசி சாலை மேம்பாலம் நீலாம்பூர் வரை நீட்டிக்கப்படுகிறது. கோவை அவிநாசி சாலையில் உள்ள ஜி டி நாயுடு மேம்பாலத்தை நீலாம்பூர் வரை நீட்டிக்க விரிவான திட்ட அறிக்கை தயாராகிறது. சமீபத்தில் மாநில மற்றும் தேசிய நெடுஞ்சாலைத்துறை அதிகாரிகள் இணைந்து ஆய்வு செய்தனர். விமான நிலையத்திற்குச் செல்லும் சுரங்கப் பாதையில் பொதுமக்களும் செல்ல அதிகாரிகள் சம்மதித்துள்ளனர். நீலாம்பூர் சந்திப்பில் பாலக்காடு சாலைக்குச் செல்ல 'யூ டேர்ன்' எடுக்கும் வகையில் மேம்பாலம் வடிவமைக்கப்படுகிறது. ஆர் ஜி புதூர் மற்றும் சின்னியம்பாளையத்தில் ஏறு தளம், இறங்கு தளங்கள் அமைக்க திட்டமிடப்பட்டுள்ளது. விமான நிலையத்திற்குச் செல்லவும், அங்கிருந்து வரவும் ஏறு மற்றும் இறங்கு தளங்கள் அமைக்கப்படும். அனைத்து ஒப்புதல்களும் டிசம்பர் மாதத்திற்குள் பெறப்பட்டு, அடுத்த நிதியாண்டில் நிதி ஒதுக்கீடு செய்யப்படும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚗 அவிநாசி சாலை மேம்பாலம் நீலாம்பூர் வரை நீட்டிப்பு: டிசம்பருக்குள் திட்ட அறிக்கை இறுதி!\n\n📰 முழு விவரம்:\nகோவை அவிநாசி சாலையில் உள்ள ஜி.டி.நாயுடு மேம்பாலத்தை நீலாம்பூர் வரை நீட்டிக்க விரிவான திட்ட அறிக்கை தயாரிக்கும் பணி மும்முரமாக நடந்து வருகிறது. சமீபத்தில் மாநில நெடுஞ்சாலைத்துறை மற்றும் தேசிய நெடுஞ்சாலைத்துறை அதிகாரிகள் இணைந்து கூட்டாய்வு செய்தனர்.\nவிமான நிலையத்திற்குச் செல்லும் சுரங்கப் பாதையில் பொதுமக்களும் செல்ல அனுமதிக்கப்பட்டுள்ளது. நீலாம்பூர் சந்திப்பில் பாலக்காடு சாலைக்குச் செல்ல ‘யூ டேர்ன்’ எடுத்துச் செல்லும் வகையில் வழித்தடம் வடிவமைக்கப்படுகிறது.\nஆர்.ஜி.புதூர், சின்னியம்பாளையம் மற்றும் விமான நிலையப் பகுதிகளில் ஏறு தளம் மற்றும் இறங்கு தளங்கள் அமைக்கப்பட உள்ளன. அனைத்து ஒப்புதல்களும் டிசம்பர் மாதத்திற்குள் பெறப்பட்டு, அடுத்த நிதியாண்டில் அரசு நிதி ஒதுக்கீடு செய்து பணிகள் செயல்படுத்தப்படும்.\n\n📍 இடம்: அவிநாசி சாலை, கோவை\n🗓️ திட்டம்: மேம்பால நீட்டிப்பு (நீலாம்பூர் வரை)\nℹ️ மக்கள் கவனத்திற்கு: டிசம்பருக்குள் திட்டப்பணிகள் இறுதி செய்யப்பட்டு அடுத்த நிதியாண்டில் பணிகள் தொடங்கும்.\n\nமுக்கிய தகவலுக்கு Share செய்யுங்கள்!\n\nAvinashi Road elevated corridor extension to Neelambur DPR preparation | Coimbatore news\n📍 Avinashi Road, Coimbatore | 24 November 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #AvinashiRoad #CoimbatoreNews #கோவை",
+   "prompts": "Officials from the State Highways Department and the National Highways Authority sit around a long conference table reviewing large rolled‑out maps that show the proposed elevated corridor on Avinashi Road extending to Neelambur. The room is a government meeting hall with a glass wall that frames a view of Avinashi Road’s flyover and traffic below. The officials are seen from behind, in khaki‑tone shirts, some holding pens, others pointing at the map. On the table lie sealed folders marked “Project Report” and a laptop. It is daylight, clear sky, interior lighting bright. Shot at eye level with a 35 mm lens, wide enough to capture the table, the window view of the road, and the participants. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close‑up of a large blueprint spread on the conference table, the paper showing a schematic of Avinashi Road with a bold red line tracing the new elevated stretch toward Neelambur. A red pin marks the Neelambur junction, and a small legend indicates “U‑turn” and “flyover”. The edges of the paper are slightly curled, and a black‑bound project report sits beside it, its cover embossed with a generic government seal (no readable text). The background shows the blurred backs of the officials and a hint of the conference room’s whiteboard. Shot slightly high, 35 mm, focusing on the drawing to convey the design work. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/the-design-of-the-flyover-up-to-nilambur-neet-is-being-finalised/4385112",
+   "published": "2026-11-24T18:44:31+05:30",
+   "verification": "DRAFT (gemini/gemini-3.6-flash) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3.6-flash, 2 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520590/kovaiminnal/rsd5g7islmfyazrnauk0.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520592/kovaiminnal/bdrpgg7pdavavdurllhg.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795535026/kovaiminnal/dlujbgbzrt29ajrrccts.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795535028/kovaiminnal/jrmfmkdhrhyz4wnol2ly.jpg"
    ]
   },
   {
-   "tamil_headline": "கோவையில் ஆசிரியர்களுக்கு சிறப்புப் பயிற்சி: 10-ஆம் வகுப்பு பொதுத்தேர்வு தேர்ச்சி விகிதத்தை உயர்த்த நடவடிக்கை",
-   "english_headline": "Special training for Govt school teachers in Coimbatore to boost 10th board exam pass percentage",
+   "tamil_headline": "மாநில சிலம்பப் போட்டியில் கோவை ஜே.சி.டி. மாணவர்கள் சாதனை: 14 பதக்கங்களை வென்று அசத்தல்",
+   "english_headline": "Coimbatore JCT students win 14 medals in 23rd State Silambam Championship held in Kanyakumari",
    "category": "Education",
-   "location": "Coimbatore city, Coimbatore district",
-   "importance": "Medium",
-   "scope": "district",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "சிறப்புப் பயிற்சி",
-    "loc": "கோவை",
-    "hl1": "கோவையில் ஆசிரியர்களுக்கு சிறப்பு பயிற்சி",
-    "hl2": "தேர்ச்சி விகிதம் உயர்த்த",
-    "slides": [
-     {
-      "title": "யாருக்குப்",
-      "lines": [
-       "அரசு, உதவி பெறும் பள்ளி <b>பட்டதாரி ஆசிரியர்களுக்கு</b> பயிற்சி",
-       "கணிதம், சமூக அறிவியல் பாட ஆசிரியர்களுக்குக் கூடுதல் கவனம்",
-       "நாளை (நவ.25) மற்றும் நாளை மறுநாள் (நவ.26) பயிற்சி நடைபெறும்"
-      ]
-     },
-     {
-      "title": "எங்கே நடக்கிறது?",
-      "lines": [
-       "<b>கோவை சி.எஸ்.ஐ. ஆண்கள் பள்ளியில்</b> பயிற்சி நடைபெறும்",
-       "கடினமான பாடப் பகுதிகளை எளிதாகக் கற்பிக்க நுட்பங்கள்",
-       "முதன்மை கல்வி அலுவலர் <b>கிருஷ்ணப்பிரியா</b> தகவல்"
-      ]
-     },
-     {
-      "title": "கடந்த தேர்வு",
-      "lines": [
-       "10ஆம் வகுப்பு கணிதத்தில் <b>98.47%</b> மட்டுமே தேர்ச்சி",
-       "சமூக அறிவியலில் <b>98.95%</b> தேர்ச்சி பதிவானது",
-       "தமிழ், ஆங்கிலம், அறிவியலில் 99%-க்கும் மேல் தேர்ச்சி"
-      ]
-     },
-     {
-      "title": "அடுத்த கட்ட",
-      "lines": [
-       "அரையாண்டுத் தேர்வுக்கு பின் முடிவுகள் ஆய்வு செய்யப்படும்",
-       "தேவையான பாடங்களுக்குத் தொடர்ந்து சிறப்புப் பயிற்சி"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோவையில் அரசு பள்ளி ஆசிரியர்களுக்கு நாளை, நவம்பர் 25ஆம் தேதி, சிறப்புப் பயிற்சி தொடங்குகிறது. பொதுத் தேர்வில் மாணவர்களின் தேர்ச்சி விகிதத்தை உயர்த்த இந்த நடவடிக்கை எடுக்கப்பட்டுள்ளது. கோவை சி எஸ் ஐ ஆண்கள் பள்ளியில் நாளை, நவம்பர் 25ஆம் தேதி, மற்றும் நாளை மறுநாள், நவம்பர் 26ஆம் தேதி, கணிதம், சமூக அறிவியல் ஆசிரியர்களுக்குப் பயிற்சி அளிக்கப்படுகிறது. அரசு மற்றும் அரசு உதவி பெறும் மேல்நிலைப்பள்ளி பட்டதாரி ஆசிரியர்கள் இதில் பங்கேற்கின்றனர். கடந்த 10ஆம் வகுப்பு பொதுத் தேர்வில் கணிதத்தில் 98.47 சதவீதமும், சமூக அறிவியலில் 98.95 சதவீதமும் தேர்ச்சி பதிவானது. அதேநேரம் தமிழ் பாடத்தில் 99.42 சதவீதமும், ஆங்கிலத்தில் 99.86 சதவீதமும், அறிவியலில் 99.11 சதவீதமும் தேர்ச்சி கிடைத்துள்ளது. இதனால் கணிதம் மற்றும் சமூக அறிவியல் பாடங்களில் தேர்ச்சி விகிதத்தை உயர்த்த சிறப்பு நிபுணர்கள் மூலம் பயிற்சி தரப்படுகிறது. கடினமான பாடப் பகுதிகளை எளிமையாகக் கற்பிக்கும் நுட்பங்கள் குறித்து பயிற்சி அளிக்கப்படும் என முதன்மை கல்வி அலுவலர் கிருஷ்ணப்பிரியா தெரிவித்துள்ளார். அரையாண்டுத் தேருக்குப் பிறகு முடிவுகள் ஆய்வு செய்யப்பட்டு, தேவையான பாடங்களுக்குத் தொடர்ந்து பயிற்சி அளிக்கப்படும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🎓 கோவையில் பள்ளி ஆசிரியர்களுக்கு நாளை (நவம்பர் 25) சிறப்புப் பயிற்சி - 10-ஆம் வகுப்பு தேர்ச்சி விகிதம் உயர்த்த திட்டம்\n\n📰 முழு விவரம்:\nகோவை மாவட்டத்தில் 10ஆம் வகுப்பு பொதுத் தேர்வில் மாணவர்களின் தேர்ச்சி விகிதத்தை அதிகரிக்கும் நோக்கில் அரசு மற்றும் அரசு உதவி பெறும் பள்ளி ஆசிரியர்களுக்குச் சிறப்புப் பயிற்சி அளிக்கப்படுகிறது. நாளை (நவம்பர் 25) மற்றும் நாளை மறுநாள் (நவம்பர் 26) கோவை சி.எஸ்.ஐ. ஆண்கள் பள்ளியில் கணிதம் மற்றும் சமூக அறிவியல் பாடப் பட்டதாரி ஆசிரியர்களுக்கு இப்பயிற்சி நடைபெறுகிறது.\nகடந்த பொதுத் தேர்வில் கணிதத்தில் 98.47% மற்றும் சமூக அறிவியலில் 98.95% தேர்ச்சி பதிவானது. தமிழ், ஆங்கிலம், அறிவியல் பாடங்களில் 99%-க்கும் மேல் தேர்ச்சி கிடைத்தது. இதையடுத்து கணிதம், சமூக அறிவியலில் தேர்ச்சியை உயர்த்த இந்த நடவடிக்கை எடுக்கப்பட்டுள்ளது. கடினமான பாடங்களை எளிமையாகக் கற்பிக்கும் நுட்பங்கள் கற்றுத்தரப்படும் என முதன்மை கல்வி அலுவலர் கிருஷ்ணப்பிரியா தெரிவித்துள்ளார். அரையாண்டுத் தேர்வுக்குப் பின் முடிவுகள் ஆய்வு செய்யப்பட்டுத் தொடர்ந்து பயிற்சிகள் வழங்கப்படும்.\n\n📍 இடம்: கோவை சி.எஸ்.ஐ. ஆண்கள் பள்ளி\n🗓️ நாள்: 25 மற்றும் 26 நவம்பர் 2026\nℹ️ தகவல்: முதன்மை கல்வி அலுவலர் கிருஷ்ணப்பிரியா\n\nஆசிரியர்கள் மற்றும் மாணவர்களுக்குப் பயன்பட Share செய்யுங்கள்!\n\nCoimbatore school teachers special training for board exam pass percentage | Coimbatore news\n📍 கோவை | 24 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Education #CoimbatoreNews #கோவை",
-   "prompts": "A row of government school teachers, seen from behind, sits attentively on wooden benches in a bright school training hall in Coimbatore city, listening to a subject expert who stands at the front near a whiteboard. Most of the teachers are women in cotton sarees and men in shirts with trousers, and the room is filled with the calm focus of a subject-wise training session. The hall is a plain, well-lit government school room with tube lights on the ceiling, tall windows letting in daylight, and tables with notebooks, pens and printed teaching material spread out in front of the attendees. In the far background a faded green wall and a few ceiling fans give the room a modest, lived-in look typical of Tamil Nadu government schools. The time appears to be mid-morning in clear daylight. Shot at eye level or slightly high, 35 mm, wide enough to show the whole hall and the expert at the board. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a stack of open notebooks, printed subject-wise training sheets and a few sharpened pencils lying on a wooden school desk, with a teacher's hand just turning a page in the foreground. The papers show only blank ruled lines and simple diagrams, with no readable text. Behind the desk, slightly blurred, a row of other teachers' bags and water bottles sits on the bench, and beyond them a whiteboard and bench rows of a government school training hall in Coimbatore city fade into soft daylight from a window. The scene conveys the focused preparation for teaching difficult lessons better. Shot at a slightly high angle, 35 mm, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/training-for-teachers/4384822",
-   "published": "2026-11-24T15:45:02+05:30",
-   "verification": "DRAFT (gemini/gemini-3.5-flash) - NOT CLEAN, held from posting - problems: numbers not found in the article: 10; caption misses facts of the article (put every one in 📰 முழு விவரம்): 42 ('கடந்த பத்தாம் வகுப்பு பொதுத்தேர்வில் கோவை மாவட்டத்தில் தமிழ்'); 86 ('கடந்த பத்தாம் வகுப்பு பொதுத்தேர்வில் கோவை மாவட்டத்தில் தமிழ்'); 11 ('கடந்த பத்தாம் வகுப்பு பொதுத்தேர்வில் கோவை மாவட்டத்தில் தமிழ்')",
-   "note": "free-model draft gemini/gemini-3.5-flash, 1 attempt(s), 2 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520600/kovaiminnal/yubbyrlmzjgjysmuaowh.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520621/kovaiminnal/t0njqgptadux4opusoxb.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "மண்டல அறிவியல் மையத்தில் பட்டாம்பூச்சி பூங்கா வருகிறது",
-   "english_headline": "Butterfly park coming up at Regional Science Centre in Coimbatore; soil test done and 15 cents land allotted",
-   "category": "Temples & Events",
-   "location": "Regional Science Centre, Coimbatore district",
+   "location": "Pichanur, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "புதிய பூங்கா",
-    "loc": "கோவை மண்டல அறிவியல் மையம்",
-    "hl1": "கோவை அறிவியல் மையத்தில் பட்டாம்பூச்சி",
-    "hl2": "<b>15 சென்ட்</b> நிலம்",
+    "cat": "சாதனை",
+    "loc": "பிச்சனூர், கோவை",
+    "hl1": "சிலம்பப் போட்டியில் கோவை மாணவர்கள் சாதனை",
+    "hl2": "14 பதக்கங்களை வென்று அசத்தல்",
     "slides": [
      {
-      "title": "என்ன வருகிறது?",
+      "title": "மாநிலப் போட்டி",
       "lines": [
-       "மண்டல அறிவியல் மையத்தில் பட்டாம்பூச்சி பூங்கா",
-       "சுற்றுச்சூழல், இயற்கை பாதுகாப்பு விழிப்புணர்வுக்காக",
-       "மண் வளப் பரிசோதனை செய்யப்பட்டு இடம் ஒதுக்கப்பட்டுள்ளது"
+       "கன்னியாகுமாரியில் நடந்த <b>23வது மாநில சிலம்பப் போட்டி</b>",
+       "கோவை பிச்சனூர் <b>ஜே.சி.டி.</b> மாணவர்கள் பங்கேற்பு",
+       "மொத்தம் <b>14 பதக்கங்களை</b> வென்று சாதனை"
       ]
      },
      {
-      "title": "இடம் எவ்வளவு?",
+      "title": "பதக்க விவரம்",
       "lines": [
-       "அறிவியல் மையம் <b>7.5 ஏக்கர்</b> பரப்பில் உள்ளது",
-       "பூங்காவுக்கு <b>15 சென்ட்</b> நிலம் ஒதுக்கப்பட்டுள்ளது",
-       "அருளகம் இயற்கை பாதுகாப்பு அமைப்பு மண், தண்ணீர் பரிசோதனை"
+       "<b>6 தங்கம்</b>, <b>6 வெள்ளி</b>, <b>2 வெண்கலம்</b>",
+       "7 மாணவர்கள் பல்வேறு பிரிவுகளில் வெற்றி",
+       "கவுதம்குமார், கோகுல்ராஜ் தங்கம் வென்றனர்"
       ]
      },
      {
-      "title": "மாணவர்களுக்கு",
+      "title": "மாணவிகள் சாதனை",
       "lines": [
-       "நாள் ஒன்றுக்கு <b>600 பள்ளி மாணவர்கள்</b> வந்து செல்கின்றனர்",
-       "அறிவியல் மட்டுமின்றி இயற்கை பற்றிய விழிப்புணர்வு கிடைக்கும்",
-       "அருகிலேயே கூடுதலாக விளையாட்டு பூங்கா அமைக்கும் பணியும்"
-      ]
-     },
-     {
-      "title": "அடுத்து என்ன?",
-      "lines": [
-       "பட்டாம்பூச்சிகளை ஈர்க்கும் செடி, மரங்கள் அடையாளம்",
-       "பணிகள் விரைவில் தொடங்கவுள்ளன",
-       "ஒருங்கிணைப்பாளர் லெனின் பாரதி தகவல் தெரிவித்தார்"
+       "ஸ்ரீமதி, லாவண்யா கம்பு சண்டையில் தங்கம்",
+       "குகனேஷ், சிவயோகேஷ், கார்த்திகேயன் வெற்றி",
+       "நிர்வாகத்தினர் மாணவர்களுக்கு வாழ்த்து"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவை மண்டல அறிவியல் மையத்தில் பட்டாம்பூச்சி பூங்கா அமைக்கப்படுகிறது. இதற்காக மண் வளப் பரிசோதனை செய்யப்பட்டு இடம் ஒதுக்கப்பட்டுள்ளது. மண்டல அறிவியல் மையம் 7.5 ஏக்கர் பரப்பில் அமைந்துள்ளது. இங்கு ஜவுளி அரங்கம், கோளரங்கம், கேளிக்கை அறிவியல் அரங்கம் உள்ளிட்ட 10 அரங்குகள் உள்ளன. நாள் ஒன்றுக்கு 600 பள்ளி மாணவர்கள் பள்ளிகள் மூலம் வந்து செல்கின்றனர். இந்த மாணவர்களுக்கு இயற்பியல், வேதியியல் போன்ற அறிவியல் மட்டுமின்றி சுற்றுச்சூழல், இயற்கை பாதுகாப்பு பற்றிய விழிப்புணர்வு ஏற்படுத்தும் நோக்கில் பட்டாம்பூச்சி பூங்கா அமைக்கப்படவுள்ளது. இதற்காக மையம் 15 சென்ட் நிலம் ஒதுக்கியுள்ளது. அருளகம் இயற்கை பாதுகாப்பு அமைப்பு சார்பில் மண், தண்ணீர் பரிசோதனைகள் செய்யப்பட்டு, பட்டாம்பூச்சிகளை ஈர்க்கும் செடி, மரங்கள், புதர் வகைகள் அடையாளம் காணப்படுகின்றன. ஒருங்கிணைப்பாளர் லெனின் பாரதி கூறுகையில், பணிகள் விரைவில் தொடங்கவுள்ளன. மாணவர்கள் அதிகம் வருவதால் பட்டாம்பூச்சி பூங்கா அருகிலேயே கூடுதலாக ஒரு விளையாட்டு பூங்காவும் அமைக்கப்படுகிறது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🦋 கோவை மண்டல அறிவியல் மையத்தில் பட்டாம்பூச்சி பூங்கா வருகிறது\n\n📰 முழு விவரம்:\nகோவை மண்டல அறிவியல் மையத்தில் பட்டாம்பூச்சி பூங்கா அமைக்க மண் வளப் பரிசோதனை செய்யப்பட்டு இடம் ஒதுக்கப்பட்டுள்ளது. சுற்றுச்சூழல், இயற்கை பாதுகாப்பு பற்றிய விழிப்புணர்வுக்காக இந்தப் பூங்கா அமைக்கப்படுகிறது.\n🏢 மையம் 7.5 ஏக்கரில் அமைந்துள்ளது. ஜவுளி அரங்கம், கோளரங்கம், கேளிக்கை அறிவியல் அரங்கம் உள்ளிட்ட 10 அரங்குகள் உள்ளன.\n👩‍🎓 நாள் ஒன்றுக்கு 600 பள்ளி மாணவர்கள் வந்து செல்கின்றனர்.\n🌿 பூங்காவுக்காக 15 சென்ட் நிலம் ஒதுக்கப்பட்டுள்ளது. அருளகம் இயற்கை பாதுகாப்பு அமைப்பு சார்பில் மண், தண்ணீர் பரிசோதனைகள் செய்யப்பட்டு, பட்டாம்பூச்சிகளை ஈர்க்கும் செடி, மரங்கள், புதர் வகைகள் அடையாளம் காணப்படுகின்றன.\n🎠 மாணவர்கள் அதிகம் வருவதால் பட்டாம்பூச்சி பூங்கா அருகிலேயே கூடுதலாக ஒரு விளையாட்டு பூங்காவும் வேறு அமைப்பு மூலம் அமைக்கப்படுகிறது.\n🗣️ ஒருங்கிணைப்பாளர் லெனின் பாரதி, பணிகள் விரைவில் தொடங்கவுள்ளதாகத் தெரிவித்தார்.\n\nButterfly park coming at Coimbatore Regional Science Centre | Coimbatore news\n📍 மண்டல அறிவியல் மையம், கோவை | 24 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #மண்டல_அறிவியல்_மையம்",
-   "prompts": "A small team from the Arulagam nature conservation group kneels on bare soil at the Regional Science Centre in Coimbatore, taking soil samples and checking water with testing tools for a planned butterfly park. The place is the open green corner of a government science campus, with a few young saplings, low shrubs and grass patches, and the low, rectangular outline of the science centre's halls in the background. Two or three workers wear casual shirts and trousers, seen from behind or from a distance, one holding a clipboard and another a plastic sample bag. Small pegs or marked plots indicate the 15-cent area allotted by the centre. The scene is in bright daylight with a clear sky, shot at eye level on a 35 mm lens, wide enough to show the campus space and the survey work. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the soil and plant test at the planned butterfly park site in the Regional Science Centre campus, Coimbatore. Fresh brown soil is heaped on a white cloth, with a small glass water-testing vial and a plastic soil-testing kit placed beside it, and a few cut stems of nectar-bearing shrubs laid out for identification. Green leaves of young plants fill the blurred background, and a worker's hand in a loose-sleeved shirt rests near the sample. The scene is in soft daylight with natural shadows, shot close and slightly from above on a 35 mm lens to show the soil texture, the testing tools and the greenery that will attract butterflies. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/the-butterfly-park-is-coming-up-in-the-center-of-the-zone-science/4384826",
-   "published": "2026-11-24T14:54:13+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script copies the article word for word (19 words in a row, 22% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "reel_script": "கோவை ஜே சி டி மாணவர்கள் மாநில சிலம்பப் போட்டியில் 14 பதக்கங்களை வென்றனர். கன்னியாகுமாரியில் உள்ள சி எஸ் ஐ அரங்கில் 23வது மாநில அளவிலான சிலம்பப் போட்டி நடைபெற்றது. இதில் கோவை பிச்சனூர் ஜே சி டி கல்வி நிறுவனத்தைச் சேர்ந்த 7 மாணவர்கள் பங்கேற்றனர். இந்த மாணவர்கள் மொத்தம் 6 தங்கம், 6 வெள்ளி மற்றும் 2 வெண்கலப் பதக்கங்களை வென்று சாதனை படைத்துள்ளனர். மூன்றாம் ஆண்டு மாணவர் கோகுல்ராஜ் வேல்கம்பு மற்றும் ஒற்றை சுருள் வாள் வீச்சில் 2 தங்கப் பதக்கங்களை வென்றார். மாணவர் கவுதம்குமார் நெடுங்கம்பு வீச்சில் தங்கமும், வேல்கம்பு வீச்சில் வெள்ளியும் பெற்றார். மாணவிகள் ஸ்ரீமதி மற்றும் லாவண்யா கம்பு சண்டைப் பிரிவில் தலா ஒரு தங்கப் பதக்கத்தை வென்றனர். முதலாம் ஆண்டு மாணவர் குகனேஷ் கம்பு சண்டையில் தங்கமும், ஒற்றை வாள் வீச்சில் வெள்ளியும் வென்றார். மேலும் சிவயோகேஷ் மற்றும் கார்த்திகேயன் ஆகியோரும் வெள்ளி மற்றும் வெண்கலப் பதக்கங்களை வென்றுள்ளனர். வெற்றி பெற்ற 7 மாணவர்களையும் ஜே சி டி கல்வி நிறுவனத்தின் நிர்வாகிகள் மற்றும் முதல்வர்கள் நேரில் வாழ்த்தினர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🏆 மாநில சிலம்பப் போட்டியில் கோவை ஜே.சி.டி. மாணவர்கள் 14 பதக்கங்களை வென்று சாதனை!\n\n📰 முழு விவரம்:\nகன்னியாகுமாரியில் உள்ள சி.எஸ்.ஐ. அரங்கில் 23வது மாநில அளவிலான சிலம்பப் போட்டி நடைபெற்றது. இதில் கோவை பிச்சனூர் ஜே.சி.டி. கல்வி நிறுவனத்தைச் சேர்ந்த 7 மாணவர்கள் பங்கேற்று மொத்தம் 14 பதக்கங்களை வென்றுள்ளனர். இதில் 6 தங்கம், 6 வெள்ளி மற்றும் 2 வெண்கலப் பதக்கங்கள் அடங்கும். கோகுல்ராஜ் 2 தங்கப் பதக்கங்களையும், கவுதம்குமார், ஸ்ரீமதி, குகனேஷ் மற்றும் லாவண்யா ஆகியோர் தலா ஒரு தங்கப் பதக்கத்தையும் வென்றனர். சிவயோகேஷ் மற்றும் கார்த்திகேயன் ஆகியோரும் வெள்ளி மற்றும் வெண்கலப் பதக்கங்களைப் பெற்று சாதனை படைத்தனர்.\n🥇 தங்கம்: 6\n🥈 வெள்ளி: 6\n🥉 வெண்கலம்: 2\n🎓 கல்வி நிறுவனம்: ஜே.சி.டி. கல்வி நிறுவனங்கள், பிச்சனூர்\n👏 வெற்றி பெற்ற மாணவர்களைக் கல்வி நிறுவன நிர்வாகிகள் மற்றும் முதல்வர்கள் வாழ்த்தினர்.\n\nJCT college students win 14 medals in Silambam | Coimbatore news\n📍 பிச்சனூர், கோவை மாவட்டம் | 24 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pichanur #Silambam #CoimbatoreNews",
+   "prompts": "A group of seven young students in white sports uniforms stand in a semi-circle on a concrete floor, holding long wooden Silambam sticks vertically. They are seen from behind, facing a group of older men in formal shirts and trousers who are clapping. The setting is the interior of a large sports hall with high ceilings and bright artificial lighting, typical of a state-level arena. The students hold the sticks firmly, some with both hands, others with one, displaying their equipment. The management staff stand in the foreground, slightly blurred, celebrating the victory. The floor is smooth and light-colored, reflecting the overhead lights. No readable text or logos are visible on the walls or clothing. The atmosphere is celebratory and formal, capturing the moment of recognition for the 14 medals won at the championship. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up shot of a table covered with a white cloth, displaying a collection of medals and Silambam equipment. On the table, six gold medals, six silver medals, and two bronze medals are arranged in neat rows, their ribbons draped over the edge. Next to the medals, several long wooden Silambam poles and shorter fighting sticks are laid out, showing their smooth, polished surfaces. The background is softly blurred, showing the indistinct shapes of the students and management in the hall. The lighting is bright and even, highlighting the metallic sheen of the medals and the texture of the wood. The focus is sharp on the objects, emphasizing the tangible results of the competition. No faces or readable text are visible, only the symbols of achievement and the traditional sports equipment. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/jcd-students-set-new-record-in-state-silambu-competition/4385024",
+   "published": "2026-11-24T18:00:15+05:30",
+   "verification": "DRAFT (gemini/gemini-3-flash-preview) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3-flash-preview, 2 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520649/kovaiminnal/mgzkjctye9j4vilqjibo.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520674/kovaiminnal/fc3cxutkwv4ffzjiahxz.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795535072/kovaiminnal/ot4odl8qwhnvhk02qbkq.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795535074/kovaiminnal/ui3azroetzgt1rve3cry.jpg"
    ]
   },
   {
-   "tamil_headline": "ஏஐயிடம் தனிப்பட்ட தகவல் பகிர்வது ஆபத்து: பேராசிரியர் எச்சரிக்கை",
-   "english_headline": "Sharing personal details with AI can lead to data theft and wrong profiling, warns professor Satheeshkumar",
-   "category": "Crime & Safety",
-   "location": "Coimbatore, Coimbatore district",
-   "importance": "Medium",
+   "tamil_headline": "கோவையில் பெருகும் சுகாதார சீர்கேடு: வெள்ளக்கிணற்றில் 20 பேருக்கு டெங்கு பாதிப்பு",
+   "english_headline": "Dengue outbreak in Vellakinar; 20+ affected as civic issues plague various parts of Coimbatore",
+   "category": "Civic Issues",
+   "location": "Vellakinar, Coimbatore city",
+   "importance": "High",
    "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "டிஜிட்டல் பாதுகாப்பு",
-    "loc": "கோவை",
-    "hl1": "கோவை: ஏஐயிடம் தனிப்பட்ட தகவல் ஆபத்து",
-    "hl2": "டேட்டா திருட்டுக்கு",
+    "cat": "சுகாதார சீர்கேடு",
+    "loc": "வெள்ளக்கிணறு, கோவை",
+    "hl1": "கோவையில் பெருகும் சுகாதார சீர்கேடு",
+    "hl2": "20 பேருக்கு டெங்கு பாதிப்பு",
     "slides": [
      {
-      "title": "என்ன எச்சரிக்கை?",
+      "title": "டெங்கு பாதிப்பு",
       "lines": [
-       "நாம் விளையாட்டாகப் பகிரும் தகவல்களும் சேமிக்கப்படலாம்",
-       "நம்மைப் பற்றிய தவறான புரிதல்களை உருவாக்கலாம்",
-       "எதிர்காலத்தில் <b>டேட்டா திருட்டுக்கு</b> வழிவகுக்கலாம்"
+       "வெள்ளக்கிணறு வன்னி நகரில் <b>20-க்கும் மேற்பட்டோருக்கு</b> டெங்கு",
+       "பழைய பேப்பர் குடோன் கழிவுகளால் கொசு உற்பத்தி",
+       "சுகாதாரத்துறை உடனே நடவடிக்கை எடுக்க மக்கள் கோரிக்கை"
       ]
      },
      {
-      "title": "ஏஐ",
+      "title": "கழிவுநீர் புகார்",
       "lines": [
-       "ஏஐ நம் கேள்விகளை நம்மைப் பற்றிய தகவலாக எடுக்கலாம்",
-       "திருப்பூர் கேள்வி உதாரணம்: சொந்த ஊர் தவறாகப் புரியலாம்",
-       "பேராசிரியர் சதீஸ்குமார் இதை எச்சரித்துள்ளார்"
+       "வெள்ளலூர் குளத்தில் சுத்திகரிக்கப்படாத சாக்கடை நீர் கலப்பு",
+       "சிங்காநல்லூர், பீளமேடு, பாப்பநாயக்கன்பாளையத்தில் கழிவுநீர்",
+       "செட்டிபாளையத்தில் கேரள மருத்துவக் கழிவுகள் கொட்டப்படுகின்றன"
       ]
      },
      {
-      "title": "பாதுகாப்பாக இருக்க",
+      "title": "அடிப்படை வசதிகள்",
       "lines": [
-       "வங்கிக் கணக்கு, <b>கடவுச்சொல்</b> பகிர்வதைத் தவிர்க்கவும்",
-       "தேவையற்ற அனுமதிகளைக் கொடுக்க வேண்டாம்",
-       "ஏஐ மெமரியில் உள்ள தகவலை நீக்கும் பழக்கம் நல்லது"
+       "கே.கே.புதூர் வார்டு 34-ல் <b>4 மாதங்களாக</b> தெருவிளக்கு எரியவில்லை",
+       "உப்பு கிணறு சந்தில் <b>6 மாதங்களாக</b> இருள் சூழ்ந்துள்ளது",
+       "வார்டு 51 ராஜீவ்காந்தி நகரில் <b>4 மாதங்களாக</b> குப்பை குவியல்"
       ]
      },
      {
-      "title": "பதிவு",
+      "title": "பிற புகார்கள்",
       "lines": [
-       "தேவைப்பட்டால் தகவலை நகலெடுத்து லோக்கல் டிரைவில் வைக்கலாம்",
-       "ஏஐ ஹிஸ்டரியை அவ்வப்போது <b>டெலீட்</b> செய்யுங்கள்"
+       "விளாங்குறிச்சியில் நாய்கள் தொல்லை அதிகரிப்பு",
+       "ராமநாதபுரம் கோயில் தெருவில் சாலை ஆக்கிரமிப்புகள்",
+       "பெரியநாயக்கன்பாளையம் மின்கம்பத்தில் படர்ந்துள்ள செடிகள்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "ஏஐயிடம் பகிரும் தனிப்பட்ட தகவல்கள் டேட்டா திருட்டுக்கு வழிவகுக்கலாம் என எச்சரிக்கை எழுந்துள்ளது. விளையாட்டாகப் பகிரும் தகவல்களும் சேமிக்கப்பட்டு, நம்மைப் பற்றிய தவறான புரிதல்களை உருவாக்கலாம். ஏஐ ஒரு கேள்வியையும் நம்மைப் பற்றிய தகவலாக எடுத்துக்கொள்ளலாம் என்று பேராசிரியர் சதீஸ்குமார் தெரிவித்துள்ளார். திருப்பூரில் இருந்து குறுக்கு வழி கேட்டால், சொந்த ஊர் திருப்பூர் என ஏஐ தவறாகப் புரிந்துகொள்ள வாய்ப்புள்ளது. வங்கிக் கணக்கு விவரங்கள், கடவுச்சொற்கள் போன்றவற்றைப் பகிர்வதைத் தவிர்க்க வேண்டும். தேவையற்ற அனுமதிகளைக் கொடுக்கக்கூடாது. ஏஐ மெமரியில் உள்ள தகவலை நீக்கும் பழக்கத்தை உருவாக்கிக்கொள்வது நல்லது. தேவைப்பட்டால் தகவலை நகலெடுத்து லோக்கல் டிரைவில் வைத்துக்கொள்ளலாம். ஏஐ ஹிஸ்டரியை அவ்வப்போது டெலீட் செய்வதும் நல்லது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 ஏஐயிடம் தனிப்பட்ட தகவல் பகிர்வது டேட்டா திருட்டுக்கு வழிவகுக்கலாம்\n\n📰 முழு விவரம்:\nதனிப்பட்ட விஷயங்களை ஏஐயிடம் பகிர்ந்து கொள்ளும் பலர், நாம் விளையாட்டாகப் பகிரும் தகவல்களும் சேமிக்கப்பட்டு, நம்மைப் பற்றிய தவறான புரிதல்களை உருவாக்கலாம் என எச்சரிக்கப்படுகின்றனர்.\nஏஐ மற்றும் மெஷின் லேர்னிங் துறை பேராசிரியர் சதீஸ்குமார், ஏஐ ஒரு கேள்வியையும் நம்மைப் பற்றிய தகவலாக எடுத்துக்கொள்ளலாம் என்று தெரிவித்துள்ளார். திருப்பூரில் இருந்து குறுக்கு வழி கேட்டால், சொந்த ஊர் திருப்பூர் என ஏஐ தவறாகப் புரிந்துகொள்ள வாய்ப்புள்ளது.\n🔐 வங்கிக் கணக்கு விவரங்கள், கடவுச்சொற்களைப் பகிர்வதைத் தவிர்க்கவும்.\n🚫 தேவையற்ற அனுமதிகளைக் கொடுக்க வேண்டாம்.\n🗑️ ஏஐயிடம் பெற்ற தகவலை பின்னர் மெமரியில் இருந்து நீக்கும் பழக்கத்தை உருவாக்கிக்கொள்ளுங்கள்.\n💾 தேவைப்பட்டால் தகவலை நகலெடுத்து லோக்கல் டிரைவில் வைத்துக்கொள்ளலாம்; ஏஐ ஹிஸ்டரியை அவ்வப்போது டெலீட் செய்யுங்கள்.\n\nAI privacy warning Coimbatore, data theft risk | Coimbatore news\n📍 கோவை | 24 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #AIPrivacy",
-   "prompts": "A young man sits at a wooden desk in a small Coimbatore internet cafe, seen from behind, typing into a laptop while a glowing chat window fills the screen with text bubbles and a cursor blinking. Around him are other users at similar desks, a few with phones held near their faces, and a ceiling fan turning above. The room has plain white walls, a tiled floor and a row of plastic chairs by the entrance. He wears a checked shirt and dark trousers, and his shoulders are slightly hunched as if he is sharing something personal. The light is soft daylight from a window on the left mixed with the cool glow of the screens. Shot at eye level with a 35 mm lens, wide enough to show the room and the people, with no readable text on screen. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a smartphone resting on a wooden table, its screen showing a blank chat window with a blinking cursor and the top of a scrolling conversation thread, while a hand hovers above it with one finger lifted, as if about to delete something. Beside the phone lie a folded paper notebook, a pen and a small steel tumbler of tea. The background is slightly blurred, showing the edge of a laptop keyboard and a calm office desk in a Coimbatore university or IT-campus room with soft afternoon light from a side window. The mood is careful and deliberate, suggesting privacy and caution. Shot at close range with a 35 mm lens, shallow depth of field, eye level, with no readable letters, logos or signboards on screen. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/mr-ai-are-you-good-or-bad/4384824",
-   "published": "2026-11-24T14:32:13+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 80 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block); reel_script sentence 1 (heard in the first 3 seconds) must name the place 'கோவை' and the news itself, e.g. 'கோவை-இல் ... 3 பேர் கைது.' - viewers decide in 3 seconds whether the news is about their area",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
+   "reel_script": "கோவை வெள்ளக்கிணறு பகுதியில் 20-க்கும் மேற்பட்டோர் டெங்கு காய்ச்சலால் பாதிக்கப்பட்டுள்ளனர். ஜி என் மில்ஸ் அருகே உள்ள வன்னி நகரில் பழைய பேப்பர் குடோன் கழிவுகளால் கொசுக்கள் உற்பத்தியாகி இந்த பாதிப்பு ஏற்பட்டுள்ளது. செட்டிபாளையத்தில் கேரளாவிலிருந்து கொண்டு வரப்படும் மருத்துவக் கழிவுகள் ரயில் தண்டவாளம் அருகே கொட்டப்படுவதால் நிலத்தடி நீர் மாசுபடுகிறது. வெள்ளலூர் குளத்தில் அரசு அடுக்குமாடி குடியிருப்பின் சுத்திகரிக்கப்படாத கருப்பு நிற சாக்கடை நீர் கலப்பதாகப் புகார் எழுந்துள்ளது. கே கே புதூர் வார்டு 34 மற்றும் டவுன்ஹால் உப்பு கிணறு சந்தில் 4 முதல் 6 மாதங்களாகத் தெருவிளக்குகள் எரியவில்லை. சிங்காநல்லூர் பேருந்து நிலையத்தின் பின்புறம் மற்றும் பாப்பநாயக்கன்பாளையம் சாலையில் கழிவுநீர் வழிந்தோடி வருகிறது. பீளமேடு கல்லூரி நகர் 4-வது குறுக்குத் தெருவில் ஓட்டல் கழிவுநீராலும், விளாங்குறிச்சி வி ஐ பி நகரில் நாய்கள் தொல்லையாலும் மக்கள் அவதிப்படுகின்றனர். ராமநாதபுரம் சுப்ரமணியசுவாமி கோயில் தெருவில் ஆக்கிரமிப்புகளால் போக்குவரத்து பாதிக்கப்பட்டுள்ளது. பெரியநாயக்கன்பாளையம் அண்ணா நகரில் மின்கம்பத்தில் செடிகள் படர்ந்துள்ளதால் ஆபத்து ஏற்பட்டுள்ளது. மாநகராட்சி 51-வது வார்டு ராஜீவ்காந்தி நகரில் 4 மாதங்களாகக் குப்பைகள் அகற்றப்படவில்லை. இந்தச் சுகாதாரச் சீர்கேடுகளைச் சரிசெய்ய அதிகாரிகள் நடவடிக்கை எடுக்க வேண்டும் என மக்கள் கோரிக்கை விடுத்துள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 கோவையில் அதிகரிக்கும் சுகாதாரச் சீர்கேடு: 20 பேருக்கு டெங்கு பாதிப்பு\n\n📰 முழு விவரம்:\nகோவை மாநகராட்சியின் பல்வேறு பகுதிகளில் சுகாதார மற்றும் அடிப்படை வசதி குறைபாடுகள் குறித்துப் பொதுமக்கள் புகார் தெரிவித்துள்ளனர்.\n🦟 வெள்ளக்கிணறு வன்னி நகரில் பழைய பேப்பர் குடோன் கழிவுகளால் கொசுக்கள் உற்பத்தியாகி, 20-க்கும் மேற்பட்டோருக்கு டெங்கு காய்ச்சல் ஏற்பட்டுள்ளது.\n🏥 செட்டிபாளையத்தில் கேரள மருத்துவக் கழிவுகள் கொட்டப்படுவதால் நிலத்தடி நீர் மாசுபடுகிறது.\n🌊 வெள்ளலூர் குளத்தில் சுத்திகரிக்கப்படாத சாக்கடை நீர் கலக்கிறது.\n💡 கே.கே.புதூர் வார்டு 34 மற்றும் டவுன்ஹால் உப்பு கிணறு சந்தில் 4 முதல் 6 மாதங்களாகத் தெருவிளக்குகள் எரியவில்லை.\n🗑️ வார்டு 51 ராஜீவ்காந்தி நகரில் 4 மாதங்களாகக் குப்பைகள் அகற்றப்படவில்லை.\n🐕 விளாங்குறிச்சியில் நாய்கள் தொல்லை, சிங்காநல்லூர் மற்றும் பீளமேட்டில் கழிவுநீர் கசிவு எனப் பல்வேறு புகார்கள் எழுந்துள்ளன.\n📍 இடம்: வெள்ளக்கிணறு, செட்டிபாளையம், ராமநாதபுரம், கோவை\n👮 நடவடிக்கை: சுகாதாரத்துறை மற்றும் மாநகராட்சி அதிகாரிகள் உடனடியாக நடவடிக்கை எடுக்க மக்கள் கோரிக்கை.\n\nCoimbatore civic issues dengue outbreak Vellakinar | Coimbatore news\n📍 கோவை மாவட்டம் | 24 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Vellakinar #CivicIssues #CoimbatoreNews",
+   "prompts": "A Coimbatore Corporation health inspector in a khaki shirt and trousers, with a fogging machine on his shoulder, walks down a narrow residential lane in Vellakinar near G.N. Mills, spraying mosquito fog while a corporation worker behind him carries a bucket. The lane is lined with single-storey tiled-roof houses, a few with concrete walls, and an old paper mart godown with stacked bundles of waste paper and scrap heaps at its gate. Several residents, seen from behind and far away, stand at doorways with their hands near their faces against the mist. Stagnant water pools in the roadside drain, and a two-wheeler and a parked autorickshaw sit at the edge of the lane. It is bright daylight with a hazy sky, and the Western Ghats faintly visible in the far background. Shot at eye level, 35 mm, wide enough to show the lane, the godown and the fogging in one frame. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of stacked bundles of waste paper and scrap piled inside the open gate of an old paper mart godown in Vellakinar, with a stagnant puddle of dark water and discarded plastic cups collecting in a shallow pit at the foot of the heap. A cluster of mosquitoes hovers over the damp cardboard and water surface, a corporation worker's hand holding a spray nozzle enters the frame from the edge. Concrete floor, rusting metal shutter and a tiled wall form the background, with daylight falling softly across the paper bundles. Eye-level view, 35 mm, tight framing on the waste pile and the water to show the source of breeding. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/floodwaters-are-prone-to-high-fever-health-department/4384966",
+   "published": "2026-11-24T17:14:22+05:30",
+   "verification": "DRAFT (gemini/gemini-3-flash-preview) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 14, ('மாநகராட்சி வார்டு எண் 14, வெள்ளக்கிணறு பிரிவு, ஜி.என்.மில்ஸி'); பெரியநாயக்கன்பாளையம் ('பெரியநாயக்கன்பாளையம், பாலமலை ரோடு, அண்ணா நகர் பேருத்து நிறுத'); பீளமேடு ('பீளமேடு கல்லூரி நகர் 4வது குறுக்கு தெருவில் குடியிருப்பு பகு')",
+   "note": "free-model draft gemini/gemini-3-flash-preview, 2 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520692/kovaiminnal/oaazmebiynphodl5quqv.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520694/kovaiminnal/lf6s8zdeygb5crasqd0m.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795535084/kovaiminnal/c3hrmwmhjdrh0xqccnrr.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795535089/kovaiminnal/zzfb1igarzlx2kkrjfwg.jpg"
    ]
   }
  ]
