@@ -3,10 +3,10 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/love-should-be-shown-to-all-living-beings/4383685",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/kumbhabhishekam-at-uchi-mahalaimman-temple/4383152",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/empty-bottle-dispute-at-tasmac-wine-bar/4383617",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/houses-with-all-facilities-by-paripurna-shelters/4383657",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/mr-ai-are-you-good-or-bad/4384824",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/the-butterfly-park-is-coming-up-in-the-center-of-the-zone-science/4384826",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/training-for-teachers/4384822",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/i-am-happy-that-this-project-is-working-industry-is-aware-of-the-chennai-coimbatore-thoothukudi-expressway/4384821",
   "candidate filter: collected=4",
   "to write: 4 Coimbatore district candidates (max 4 stories)",
   "round: top 4 of 4 candidates",
@@ -17,10 +17,10 @@
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 5})",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
-  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 78 min",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 11})",
+  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 75 min",
   "filed: 4 Coimbatore district stories (target 4), reels only",
   "queue: 0 news waiting to be written",
   "All News sheet: {\"ok\":true,\"added\":4,\"updated\":0}"
@@ -28,325 +28,351 @@
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.6-flash",
+  "ok gemini/gemini-3.5-flash (26s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok gemini/gemini-3.6-flash (26s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
-  "ok groq/qwen/qwen3.8-27b (4s)",
+  "ok gemini/gemini-3-flash-preview (10s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "ok gemini/gemini-3-flash-preview (13s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "ok gemini/gemini-3.6-flash (27s)",
+  "fail gemini/gemini-3.6-flash: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3.6-flash",
+  "ok gemini/gemini-3-flash-preview (26s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "ok groq/openai/gpt-oss-120b (3s)",
+  "fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3-flash-preview",
+  "ok gemini/gemini-3-flash-preview (11s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "dead for this round: groq/openai/gpt-oss-120b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok gemini/gemini-3-flash-preview (11s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok groq/qwen/qwen3.8-27b (10s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok anthropic/claude-haiku-5-5",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "மாதம்பட்டியில் மூத்த குடிமையர்களுக்கான 190 வீடுகள் கட்டுமானம் துவக்கம்",
-   "english_headline": "Construction begins for 190 senior citizen homes in Madampatti",
-   "category": "Civic Issues",
-   "location": "Madampatti, Coimbatore district",
+   "tamil_headline": "சென்னை - கோவை - தூத்துக்குடி விரைவு சாலைத் திட்டம்: டிசம்பர் 22-க்குள் அறிக்கை தாக்கல் செய்ய உத்தரவு",
+   "english_headline": "Chennai-Coimbatore-Tuticorin Expressway: TN Highway Dept orders feasibility report by Dec 22",
+   "category": "Roads & Transport",
+   "location": "Coimbatore city, Coimbatore district",
+   "importance": "High",
+   "scope": "district",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "சாலைத் திட்டம்",
+    "loc": "கோவை",
+    "hl1": "சென்னை-கோவை-தூத்துக்குடி விரைவு சாலை",
+    "hl2": "டிசம்பர் 22-க்குள் அறிக்கை",
+    "slides": [
+     {
+      "title": "புதிய விரைவு சாலை",
+      "lines": [
+       "<b>5 ஆண்டுகளில்</b> செயல்படுத்த இலக்கு",
+       "சென்னை - கோவை - தூத்துக்குடி விரைவு சாலை",
+       "'வெற்றித் தமிழகம்' திட்டத்தின் கீழ் அறிவிப்பு"
+      ]
+     },
+     {
+      "title": "ஆய்வுப் பணிகள்",
+      "lines": [
+       "தொழில்நுட்ப மற்றும் பொருளாதார ஆய்வு",
+       "<b>டிசம்பர் 22</b>-க்குள் அறிக்கை தாக்கல் செய்ய உத்தரவு",
+       "மாநில நெடுஞ்சாலை ஆணையம் அறிவிப்பு"
+      ]
+     },
+     {
+      "title": "உத்தேச வழித்தடம்",
+      "lines": [
+       "சென்னை - சேலம் - கோவை - மதுரை - தூத்துக்குடி",
+       "நகருக்கு வெளியே அமையும் <b>சுங்கச்சாலை</b>",
+       "நகரங்களுக்குச் செல்ல இணைப்புச் சாலைகள்"
+      ]
+     },
+     {
+      "title": "தொழில்துறை",
+      "lines": [
+       "சரக்கு போக்குவரத்தை எளிதாக்க தனி வழித்தடம்",
+       "திட்டங்களை விரைந்து செயல்படுத்த எதிர்பார்ப்பு",
+       "நிதி ஒதுக்கீடு குறித்துத் தெளிவு தேவை"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "சென்னை - கோவை - தூத்துக்குடி இடையே புதிய விரைவு சாலை அமைக்கத் திட்டமிடப்பட்டுள்ளது. தமிழக நெடுஞ்சாலைத் துறையின் 5 ஆண்டு கால 'வெற்றித் தமிழகம்' திட்டத்தின் கீழ் இந்த அறிவிப்பு வெளியிடப்பட்டுள்ளது. சரக்கு வாகனங்கள் துறைமுகங்களுக்கும் விமான நிலையங்களுக்கும் எளிதாகச் செல்ல இந்தத் தனி வழித்தடம் உருவாக்கப்படுகிறது. இந்தத் திட்டத்திற்கான தொழில்நுட்ப மற்றும் பொருளாதார சாத்தியக்கூறுகள் குறித்து ஆய்வு செய்து, டிசம்பர் 22ஆம் தேதிக்குள் விரிவான அறிக்கையைச் சமர்ப்பிக்க மாநில நெடுஞ்சாலை ஆணையம் உத்தரவிட்டுள்ளது. இந்தச் சாலை சென்னை, சேலம் வழியாக கோவைக்கும், கோவையிலிருந்து திண்டுக்கல், மதுரை வழியாகத் தூத்துக்குடிக்கும் செல்லும் வகையில் அமையலாம். இது நகருக்கு வெளியே அமையும் சுங்கச்சாலையாக இருக்கும் என்றும், நகரங்களுக்குச் செல்ல இணைப்புச் சாலைகள் வழங்கப்படும் என்றும் தெரிவிக்கப்பட்டுள்ளது. கோவையிலிருந்து பொள்ளாச்சி வழியாக மதுரை செல்ல ஏற்கனவே தேசிய நெடுஞ்சாலை உள்ள நிலையில், புதிய திட்டத்திற்கான நிதி ஒதுக்கீடு குறித்துத் தொழில்துறையினர் கேள்வி எழுப்பியுள்ளனர். கோவை மெட்ரோ, கரூர் விரைவு சாலை போன்ற திட்டங்கள் போல் தாமதமாகாமல் இது விரைவில் செயல்பாட்டுக்கு வர வேண்டும் என மக்கள் எதிர்பார்க்கின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🛣️ சென்னை - கோவை - தூத்துக்குடி இடையே புதிய விரைவு சாலை: டிசம்பர் 22-க்குள் அறிக்கை தாக்கல் செய்ய உத்தரவு\n\n📰 முழு விவரம்:\nதமிழக நெடுஞ்சாலைத் துறையின் 'வெற்றித் தமிழகம்' 5 ஆண்டு திட்டத்தின் கீழ் சென்னை - கோவை - தூத்துக்குடி விரைவு சாலை அமைக்கப்பட உள்ளது. சரக்கு போக்குவரத்தை வேகப்படுத்த இந்தத் தனி வழித்தடம் அமைகிறது. இதற்கான சாத்தியக்கூறு ஆய்வு மற்றும் விரிவான திட்ட அறிக்கையை டிசம்பர் 22-க்குள் தாக்கல் செய்ய மாநில நெடுஞ்சாலை ஆணையம் உத்தரவிட்டுள்ளது. இந்தச் சாலை சென்னை - சேலம் - கோவை - திண்டுக்கல் - மதுரை - தூத்துக்குடி வழித்தடத்தில் அமைய வாய்ப்புள்ளது. இது நகருக்கு வெளியே அமையும் சுங்கச்சாலையாக இருக்கும். கோவையிலிருந்து பொள்ளாச்சி வழியாக மதுரை செல்ல ஏற்கனவே தேசிய நெடுஞ்சாலை ஆணையம் சாலை அமைத்துள்ள நிலையில், புதிய திட்டத்தின் நிதி மற்றும் வழித்தடம் குறித்துத் தொழில்துறையினர் தெளிவு கோரியுள்ளனர். கோவை மெட்ரோ, கரூர் விரைவு சாலை போன்ற திட்டங்கள் போல் இது தாமதமாகாமல் விரைவில் செயல்பாட்டுக்கு வர வேண்டும் என்பதே மக்களின் எதிர்பார்ப்பாக உள்ளது.\n\n📍 இடம்: சென்னை, கோவை, தூத்துக்குடி வழித்தடம்\n🗓️ அறிக்கை தாக்கல்: டிசம்பர் 22, 2026\nℹ️ நோக்கம்: சரக்கு போக்குவரத்து மற்றும் தொழில்துறை வளர்ச்சி\n\nChennai Coimbatore Tuticorin Expressway project | Coimbatore industrial news\n📍 கோவை | 24 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Roads #Expressway #கோவை",
+   "prompts": "A row of heavy freight lorries and container trucks crawls along a wide multi-lane highway on the outskirts of Coimbatore city, with a government highway sign pole in the background and a concrete flyover pillar on the left. Two-wheelers and a private car share the lanes, and a few men in shirts and trousers walk along the shoulder, seen from behind and far away. The vehicles are the focus, showing the heavy freight traffic that prompted the new expressway plan. The scene is in daylight with a clear sky, and the Western Ghats faintly visible on the far horizon. Camera at eye level, 35 mm, wide enough to show the road stretching into the distance. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a thick stack of bound official project report papers lying on a government office desk, with a plain pen and a folded file beside it, and a blurred table edge in the foreground. Behind the desk, a slightly out-of-focus wall and a window let in soft daylight. No readable text or signboards are visible. The detail suggests the feasibility study and detailed project report due by 22 December. Camera slightly high, close framing, 35 mm, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/i-am-happy-that-this-project-is-working-industry-is-aware-of-the-chennai-coimbatore-thoothukudi-expressway/4384821",
+   "published": "2026-11-24T14:20:13+05:30",
+   "verification": "DRAFT (gemini/gemini-3-flash-preview) - NOT CLEAN, held from posting - problems: fact-check: The caption specifies the year 2026 for the report submission date, but the article only mentions December 22 without a year.",
+   "note": "free-model draft gemini/gemini-3-flash-preview, 2 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520590/kovaiminnal/rsd5g7islmfyazrnauk0.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520592/kovaiminnal/bdrpgg7pdavavdurllhg.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "கோவையில் ஆசிரியர்களுக்கு சிறப்புப் பயிற்சி: 10-ஆம் வகுப்பு பொதுத்தேர்வு தேர்ச்சி விகிதத்தை உயர்த்த நடவடிக்கை",
+   "english_headline": "Special training for Govt school teachers in Coimbatore to boost 10th board exam pass percentage",
+   "category": "Education",
+   "location": "Coimbatore city, Coimbatore district",
+   "importance": "Medium",
+   "scope": "district",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "சிறப்புப் பயிற்சி",
+    "loc": "கோவை",
+    "hl1": "கோவையில் ஆசிரியர்களுக்கு சிறப்பு பயிற்சி",
+    "hl2": "தேர்ச்சி விகிதம் உயர்த்த",
+    "slides": [
+     {
+      "title": "யாருக்குப்",
+      "lines": [
+       "அரசு, உதவி பெறும் பள்ளி <b>பட்டதாரி ஆசிரியர்களுக்கு</b> பயிற்சி",
+       "கணிதம், சமூக அறிவியல் பாட ஆசிரியர்களுக்குக் கூடுதல் கவனம்",
+       "நாளை (நவ.25) மற்றும் நாளை மறுநாள் (நவ.26) பயிற்சி நடைபெறும்"
+      ]
+     },
+     {
+      "title": "எங்கே நடக்கிறது?",
+      "lines": [
+       "<b>கோவை சி.எஸ்.ஐ. ஆண்கள் பள்ளியில்</b> பயிற்சி நடைபெறும்",
+       "கடினமான பாடப் பகுதிகளை எளிதாகக் கற்பிக்க நுட்பங்கள்",
+       "முதன்மை கல்வி அலுவலர் <b>கிருஷ்ணப்பிரியா</b> தகவல்"
+      ]
+     },
+     {
+      "title": "கடந்த தேர்வு",
+      "lines": [
+       "10ஆம் வகுப்பு கணிதத்தில் <b>98.47%</b> மட்டுமே தேர்ச்சி",
+       "சமூக அறிவியலில் <b>98.95%</b> தேர்ச்சி பதிவானது",
+       "தமிழ், ஆங்கிலம், அறிவியலில் 99%-க்கும் மேல் தேர்ச்சி"
+      ]
+     },
+     {
+      "title": "அடுத்த கட்ட",
+      "lines": [
+       "அரையாண்டுத் தேர்வுக்கு பின் முடிவுகள் ஆய்வு செய்யப்படும்",
+       "தேவையான பாடங்களுக்குத் தொடர்ந்து சிறப்புப் பயிற்சி"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கோவையில் அரசு பள்ளி ஆசிரியர்களுக்கு நாளை, நவம்பர் 25ஆம் தேதி, சிறப்புப் பயிற்சி தொடங்குகிறது. பொதுத் தேர்வில் மாணவர்களின் தேர்ச்சி விகிதத்தை உயர்த்த இந்த நடவடிக்கை எடுக்கப்பட்டுள்ளது. கோவை சி எஸ் ஐ ஆண்கள் பள்ளியில் நாளை, நவம்பர் 25ஆம் தேதி, மற்றும் நாளை மறுநாள், நவம்பர் 26ஆம் தேதி, கணிதம், சமூக அறிவியல் ஆசிரியர்களுக்குப் பயிற்சி அளிக்கப்படுகிறது. அரசு மற்றும் அரசு உதவி பெறும் மேல்நிலைப்பள்ளி பட்டதாரி ஆசிரியர்கள் இதில் பங்கேற்கின்றனர். கடந்த 10ஆம் வகுப்பு பொதுத் தேர்வில் கணிதத்தில் 98.47 சதவீதமும், சமூக அறிவியலில் 98.95 சதவீதமும் தேர்ச்சி பதிவானது. அதேநேரம் தமிழ் பாடத்தில் 99.42 சதவீதமும், ஆங்கிலத்தில் 99.86 சதவீதமும், அறிவியலில் 99.11 சதவீதமும் தேர்ச்சி கிடைத்துள்ளது. இதனால் கணிதம் மற்றும் சமூக அறிவியல் பாடங்களில் தேர்ச்சி விகிதத்தை உயர்த்த சிறப்பு நிபுணர்கள் மூலம் பயிற்சி தரப்படுகிறது. கடினமான பாடப் பகுதிகளை எளிமையாகக் கற்பிக்கும் நுட்பங்கள் குறித்து பயிற்சி அளிக்கப்படும் என முதன்மை கல்வி அலுவலர் கிருஷ்ணப்பிரியா தெரிவித்துள்ளார். அரையாண்டுத் தேருக்குப் பிறகு முடிவுகள் ஆய்வு செய்யப்பட்டு, தேவையான பாடங்களுக்குத் தொடர்ந்து பயிற்சி அளிக்கப்படும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🎓 கோவையில் பள்ளி ஆசிரியர்களுக்கு நாளை (நவம்பர் 25) சிறப்புப் பயிற்சி - 10-ஆம் வகுப்பு தேர்ச்சி விகிதம் உயர்த்த திட்டம்\n\n📰 முழு விவரம்:\nகோவை மாவட்டத்தில் 10ஆம் வகுப்பு பொதுத் தேர்வில் மாணவர்களின் தேர்ச்சி விகிதத்தை அதிகரிக்கும் நோக்கில் அரசு மற்றும் அரசு உதவி பெறும் பள்ளி ஆசிரியர்களுக்குச் சிறப்புப் பயிற்சி அளிக்கப்படுகிறது. நாளை (நவம்பர் 25) மற்றும் நாளை மறுநாள் (நவம்பர் 26) கோவை சி.எஸ்.ஐ. ஆண்கள் பள்ளியில் கணிதம் மற்றும் சமூக அறிவியல் பாடப் பட்டதாரி ஆசிரியர்களுக்கு இப்பயிற்சி நடைபெறுகிறது.\nகடந்த பொதுத் தேர்வில் கணிதத்தில் 98.47% மற்றும் சமூக அறிவியலில் 98.95% தேர்ச்சி பதிவானது. தமிழ், ஆங்கிலம், அறிவியல் பாடங்களில் 99%-க்கும் மேல் தேர்ச்சி கிடைத்தது. இதையடுத்து கணிதம், சமூக அறிவியலில் தேர்ச்சியை உயர்த்த இந்த நடவடிக்கை எடுக்கப்பட்டுள்ளது. கடினமான பாடங்களை எளிமையாகக் கற்பிக்கும் நுட்பங்கள் கற்றுத்தரப்படும் என முதன்மை கல்வி அலுவலர் கிருஷ்ணப்பிரியா தெரிவித்துள்ளார். அரையாண்டுத் தேர்வுக்குப் பின் முடிவுகள் ஆய்வு செய்யப்பட்டுத் தொடர்ந்து பயிற்சிகள் வழங்கப்படும்.\n\n📍 இடம்: கோவை சி.எஸ்.ஐ. ஆண்கள் பள்ளி\n🗓️ நாள்: 25 மற்றும் 26 நவம்பர் 2026\nℹ️ தகவல்: முதன்மை கல்வி அலுவலர் கிருஷ்ணப்பிரியா\n\nஆசிரியர்கள் மற்றும் மாணவர்களுக்குப் பயன்பட Share செய்யுங்கள்!\n\nCoimbatore school teachers special training for board exam pass percentage | Coimbatore news\n📍 கோவை | 24 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Education #CoimbatoreNews #கோவை",
+   "prompts": "A row of government school teachers, seen from behind, sits attentively on wooden benches in a bright school training hall in Coimbatore city, listening to a subject expert who stands at the front near a whiteboard. Most of the teachers are women in cotton sarees and men in shirts with trousers, and the room is filled with the calm focus of a subject-wise training session. The hall is a plain, well-lit government school room with tube lights on the ceiling, tall windows letting in daylight, and tables with notebooks, pens and printed teaching material spread out in front of the attendees. In the far background a faded green wall and a few ceiling fans give the room a modest, lived-in look typical of Tamil Nadu government schools. The time appears to be mid-morning in clear daylight. Shot at eye level or slightly high, 35 mm, wide enough to show the whole hall and the expert at the board. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a stack of open notebooks, printed subject-wise training sheets and a few sharpened pencils lying on a wooden school desk, with a teacher's hand just turning a page in the foreground. The papers show only blank ruled lines and simple diagrams, with no readable text. Behind the desk, slightly blurred, a row of other teachers' bags and water bottles sits on the bench, and beyond them a whiteboard and bench rows of a government school training hall in Coimbatore city fade into soft daylight from a window. The scene conveys the focused preparation for teaching difficult lessons better. Shot at a slightly high angle, 35 mm, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/training-for-teachers/4384822",
+   "published": "2026-11-24T15:45:02+05:30",
+   "verification": "DRAFT (gemini/gemini-3.5-flash) - NOT CLEAN, held from posting - problems: numbers not found in the article: 10; caption misses facts of the article (put every one in 📰 முழு விவரம்): 42 ('கடந்த பத்தாம் வகுப்பு பொதுத்தேர்வில் கோவை மாவட்டத்தில் தமிழ்'); 86 ('கடந்த பத்தாம் வகுப்பு பொதுத்தேர்வில் கோவை மாவட்டத்தில் தமிழ்'); 11 ('கடந்த பத்தாம் வகுப்பு பொதுத்தேர்வில் கோவை மாவட்டத்தில் தமிழ்')",
+   "note": "free-model draft gemini/gemini-3.5-flash, 1 attempt(s), 2 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520600/kovaiminnal/yubbyrlmzjgjysmuaowh.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520621/kovaiminnal/t0njqgptadux4opusoxb.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "மண்டல அறிவியல் மையத்தில் பட்டாம்பூச்சி பூங்கா வருகிறது",
+   "english_headline": "Butterfly park coming up at Regional Science Centre in Coimbatore; soil test done and 15 cents land allotted",
+   "category": "Temples & Events",
+   "location": "Regional Science Centre, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "மூத்த குடிமையர்",
-    "loc": "மாதம்பட்டி",
-    "hl1": "மாதம்பட்டியில் 190 வீடுகள் கட்டுமானம்",
-    "hl2": "மூத்த குடிமையர்களுக்கான",
+    "cat": "புதிய பூங்கா",
+    "loc": "கோவை மண்டல அறிவியல் மையம்",
+    "hl1": "கோவை அறிவியல் மையத்தில் பட்டாம்பூச்சி",
+    "hl2": "<b>15 சென்ட்</b> நிலம்",
     "slides": [
      {
-      "title": "பூமி பூஜை",
+      "title": "என்ன வருகிறது?",
       "lines": [
-       "மாதம்பட்டியில் பூமி பூஜை நேற்று நடந்தது",
-       "பரிபூர்ணா ஷெல்டர்ஸ் சார்பில் புதிய குடியிருப்பு",
-       "மூத்த குடிமையர்களுக்கான சிறப்பு வசதிகள்"
+       "மண்டல அறிவியல் மையத்தில் பட்டாம்பூச்சி பூங்கா",
+       "சுற்றுச்சூழல், இயற்கை பாதுகாப்பு விழிப்புணர்வுக்காக",
+       "மண் வளப் பரிசோதனை செய்யப்பட்டு இடம் ஒதுக்கப்பட்டுள்ளது"
       ]
      },
      {
-      "title": "வீடுகள் விவரம்",
+      "title": "இடம் எவ்வளவு?",
       "lines": [
-       "<b>5</b> ஏக்கர் பரப்பளவில் <b>190</b> பிளாட்கள்",
-       "2 மற்றும் 3 பி.ஹெச்.கே. வில்லாக்கள் அமைக்கப்படுகின்றன",
-       "நிர்வாக இயக்குனர் தங்கவேல் பூமி பூஜை செய்தார்"
+       "அறிவியல் மையம் <b>7.5 ஏக்கர்</b> பரப்பில் உள்ளது",
+       "பூங்காவுக்கு <b>15 சென்ட்</b> நிலம் ஒதுக்கப்பட்டுள்ளது",
+       "அருளகம் இயற்கை பாதுகாப்பு அமைப்பு மண், தண்ணீர் பரிசோதனை"
       ]
      },
      {
-      "title": "சிறப்பு வசதிகள்",
+      "title": "மாணவர்களுக்கு",
       "lines": [
-       "மருத்துவமனை, ஆம்புலன்ஸ், பார்மசி வசதிகள்",
-       "இயற்கை உற்பத்தி கீரை, காய்கறி, பால் கேன்டீனில்",
-       "<b>24</b> மாதங்களில் கட்டுமானம் நிறைவு"
+       "நாள் ஒன்றுக்கு <b>600 பள்ளி மாணவர்கள்</b> வந்து செல்கின்றனர்",
+       "அறிவியல் மட்டுமின்றி இயற்கை பற்றிய விழிப்புணர்வு கிடைக்கும்",
+       "அருகிலேயே கூடுதலாக விளையாட்டு பூங்கா அமைக்கும் பணியும்"
+      ]
+     },
+     {
+      "title": "அடுத்து என்ன?",
+      "lines": [
+       "பட்டாம்பூச்சிகளை ஈர்க்கும் செடி, மரங்கள் அடையாளம்",
+       "பணிகள் விரைவில் தொடங்கவுள்ளன",
+       "ஒருங்கிணைப்பாளர் லெனின் பாரதி தகவல் தெரிவித்தார்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "மாதம்பட்டியில் மூத்த குடிமையர்களுக்கான 190 வீடுகள் கட்டுமானம் துவங்கியுள்ளது. பரிபூர்ணா ஷெல்டர்ஸ் சார்பில் இது நடந்தது. நேற்று பூமி பூஜை நடைபெற்றது. நிர்வாக இயக்குனர் தங்கவேல் பூமி பூஜை செய்தார். ஓய்வு பெற்ற நீதிபதி சோமசுந்தரம் சிறப்பு விருந்தினராக இருந்தார். ஆன்மிக சொற்பொழிவாளர் சுகிசிவம் பங்கேற்றார். அன்னபூர்ணா ஓட்டல் நிர்வாக இயக்குனர் சீனிவாசன் வந்தார். நல்லறம் அறக்கட்டளை தலைவர் அன்பரசன் கலந்து கொண்டார். 5 ஏக்கர் பரப்பளவில் இந்த குடியிருப்பு அமைகிறது. 190 பிளாட்கள் கட்டப்படுகின்றன. 2 மற்றும் 3 பி.ஹெச்.கே. வில்லாக்கள் உள்ளன. மருத்துவமனை மற்றும் ஆம்புலன்ஸ் வசதி அமைக்கப்படுகிறது. பார்மசி மற்றும் நர்சிங் வசதிகள் உள்ளன. இதய பரிசோதனை வசதி அமைக்கப்படுகிறது. கேன்டீனில் இயற்கை கீரை, காய்கறி, பால் கிடைக்கும். 24 மாதங்களில் கட்டுமானம் நிறைவடையும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🏠 மாதம்பட்டியில் மூத்த குடிமையர்களுக்கான 190 வீடுகள் கட்டுமானம் துவக்கம்\n\n📰 முழு விவரம்:\nபரிபூர்ணா ஷெல்டர்ஸ் சார்பில் மாதம்பட்டியில் புதிய குடியிருப்பு அமைக்கப்படுகிறது. இதற்கான பூமி பூஜை நேற்று நடந்தது. நிர்வாக இயக்குனர் தங்கவேல் பூமி பூஜை செய்து கட்டுமானத்தை துவக்கினார். ஓய்வு பெற்ற நீதிபதி சோமசுந்தரம், சுகிசிவம், சீனிவாசன், அன்பரசன் சிறப்பு விருந்தினர்களாக இருந்தனர். 5 ஏக்கர் பரப்பளவில் 190 பிளாட்கள் கட்டப்படுகின்றன. 2 மற்றும் 3 பி.ஹெச்.கே. வில்லாக்கள் அமைக்கப்படுகின்றன. மருத்துவமனை, ஆம்புலன்ஸ், பார்மசி, நர்சிங், இதய பரிசோதனை வசதிகள் உள்ளன. கேன்டீனில் இயற்கை உற்பத்தி பொருட்கள் கிடைக்கும். 24 மாதங்களில் பணிகள் நிறைவடையும்.\n\n📍 இடம்: மாதம்பட்டி\n🗓️ நாள்: நேற்று\n🏗️ வீடுகள்: 190 பிளாட்கள்\n⏳ காலம்: 24 மாதங்கள்\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்\n\nMadampatti senior citizen housing construction begins | Coimbatore news\n📍 Madampatti, Coimbatore | 22 Nov 2026\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Madampatti #CoimbatoreNews #கோவை",
-   "prompts": "A ceremonial ground-breaking at an open, cleared plot in Madampatti, Coimbatore district, where a senior construction-company director in a white shirt and veshti hammers a wooden palakkal pillar into freshly dug red earth as part of a bhoomi pooja. Around him stand four special guests, an elderly retired judge in a shirt and veshti, a spiritual speaker in a white dhoti, a hotel executive and a trust chairman, all seen from behind or slightly to the side. A small group of workers in plain shirts and lungis stand on the sandy plot, a few with hands folded. Behind them, a row of bare earth, a parked two-wheeler and a few coconut palms mark the edge of the site, with the Western Ghats faintly visible on the horizon. Daylight, soft morning sun, a few marigold garlands and a brass lamp on a small mat near the pillar. Shot at eye level with a 35 mm lens, wide enough to show the open five-acre plot and the gathering. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up detail of a freshly planted wooden palakkal pillar, tied with a yellow and red cotton thread and decorated with turmeric-smeared marigold garlands, standing upright in loose red earth at the centre of a cleared construction plot in Madampatti, Coimbatore. Around its base are scattered coconut halves, a brass lamp with a burning wick, a small heap of rice and a few banana leaves, and a stack of cement bags and bricks at the edge of the frame. The soil shows fresh spade marks and footprints. Blurred in the background, the legs of a few people in dhotis and trousers stand near the pit. Warm morning daylight with soft shadows, shot at ground level with a 50 mm lens to focus on the pillar and offerings, with the open plot fading into the background. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/houses-with-all-facilities-by-paripurna-shelters/4383657",
-   "published": "2026-11-22T22:29:02+05:30",
-   "verification": "DRAFT (groq/qwen/qwen3.8-27b) - fact-check: no problems found",
-   "note": "free-model draft groq/qwen/qwen3.8-27b, 1 attempt(s), 0 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795419319/kovaiminnal/ksusdu4tuwwpnbt6nhpi.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795419323/kovaiminnal/h7brqdd9zwnmgg9mllhc.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "நெகமம் காளியப்பன்பாளையம் உச்சி மாகாளியம்மன் கோவிலில் கும்பாபிஷேகம்",
-   "english_headline": "Kumbabhishekam held at Uchi Mahakaliyamman temple, Kaliyappanpalayam, Negamam on 22 Nov",
-   "category": "Temples & Events",
-   "location": "Kaliyappanpalayam, Negamam, Coimbatore district",
-   "importance": "Low",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "கோவில் விழா",
-    "loc": "நெகமம், காளியப்பன்பாளையம்",
-    "hl1": "நெகமத்தில் உச்சி மாகாளியம்மன்",
-    "hl2": "நவ. 22 அன்று நடைபெற்றது",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "காளியப்பன்பாளையம் உச்சி மாகாளியம்மன் கோவில் கும்பாபிஷேகம்",
-       "விநாயகர், ஐயப்ப சுவாமி கோவில்களிலும் கும்பாபிஷேகம்",
-       "விழா <b>நவ. 20</b> அன்று தொடங்கியது"
-      ]
-     },
-     {
-      "title": "விழா நிகழ்ச்சிகள்",
-      "lines": [
-       "நவ. 20: திருவிளக்கு, வேள்வி, காப்புக்கட்டுதல், முளைப்பாலிகை",
-       "நவ. 21: கோபுர கலசங்கள் நிறுவுதல், மூலிகை திரவியாகுதி",
-       "நவ. 22: நான்காம் கால வேள்வி, திருக்குடங்கள் புறப்பாடு"
-      ]
-     },
-     {
-      "title": "பக்தர்கள் தரிசனம்",
-      "lines": [
-       "நெகமம் சுற்று வட்டாரப் பக்தர்கள் பங்கேற்றனர்",
-       "தச தரிசனம், அலங்கார பூஜை நடைபெற்றது",
-       "அன்னதானம் வழங்கப்பட்டது"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "நெகமம் அருகே காளியப்பன்பாளையம் உச்சி மாகாளியம்மன் கோவிலில் இன்று கும்பாபிஷேகம் நடைபெற்றது. விநாயகர் மற்றும் ஐயப்ப சுவாமி கோவில்களுக்கும் இந்த விழாவில் கும்பாபிஷேகம் நடந்தது. நவம்பர் 20ஆம் தேதி திருவிளக்கு வழிபாடு, வேள்வி வழிபாடு, காப்புக்கட்டுதல், முளைப்பாலிகை எடுத்து வருதல் ஆகியவற்றுடன் விழா தொடங்கியது. நவம்பர் 21ஆம் தேதி கோபுர கலசங்கள் நிறுவப்பட்டன. 108 மூலிகை திரவியாகுதி, எண் வகை மருந்து சாத்துதல் நடைபெற்றது. நவம்பர் 22ஆம் தேதி நான்காம் கால வேள்வி, நாடி சந்தானம், பேரொளி வழிபாடு, திருக்குடங்கள் புறப்பாடு நடைபெற்றன. அதைத் தொடர்ந்து கும்பாபிஷேகம் நடந்தது. நெகமம் சுற்று வட்டார மக்கள் கலந்துகொண்டு சுவாமி தரிசனம் செய்தனர். தச தரிசனம், அலங்கார பூஜை, அன்னதானமும் நடைபெற்றன. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🛕 நெகமம் காளியப்பன்பாளையம் உச்சி மாகாளியம்மன் கோவிலில் கும்பாபிஷேகம்\n\n📰 முழு விவரம்:\nநெகமம், காளியப்பன்பாளையம் உச்சி மாகாளியம்மன், விநாயகர் மற்றும் ஐயப்ப சுவாமி கோவில் கும்பாபிஷேக விழா நவம்பர் 20ஆம் தேதி தொடங்கியது. திருவிளக்கு வழிபாடு, வேள்வி வழிபாடு, காப்புக்கட்டுதல், முளைப்பாலிகை எடுத்து வருதல், முதற்கால வேள்வி, பேரொளி வழிபாடு ஆகியவை நடைபெற்றன.\nநவம்பர் 21ஆம் தேதி திருப்பள்ளியெழுச்சி, மங்கள இசை, இரண்டாம் கால வேள்வி, மலர் வழிபாடு, திருமுறை விண்ணப்பம், கோபுர கலசங்கள் நிறுவுதல், மூன்றாம் கால வேள்வி, 108 மூலிகை திரவியாகுதி, எண் வகை மருந்து சாத்துதல் ஆகியவை நடந்தன.\nநவம்பர் 22ஆம் தேதி நான்காம் கால வேள்வி, நாடி சந்தானம், பேரொளி வழிபாடு, திருக்குடங்கள் புறப்பாடு நடைபெற்றன. தொடர்ந்து கும்பாபிஷேகம் நடந்தது.\n🙏 நெகமம் சுற்று வட்டார மக்கள் கலந்துகொண்டு சுவாமி தரிசனம் செய்தனர்.\n🍛 தச தரிசனம், அலங்கார பூஜை, அன்னதானம் நடைபெற்றது.\n\nUchi Mahakaliyamman temple kumbabhishekam, Negamam | Coimbatore news\n📍 காளியப்பன்பாளையம், நெகமம், கோவை மாவட்டம் | 22 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Negamam #கோவில் #CoimbatoreNews",
-   "prompts": "Priests in white veshti pour sacred water from brass holy pots over the tall gopuram of the Uchi Mahakaliyamman temple as the kumbabhishekam is performed at Kaliyappanpalayam in Negamam, Coimbatore district. Devotees in their best sarees and dhotis stand in a crowd in the temple courtyard below, many with folded hands, seen from behind and from a distance. Several copper and brass kudams decorated with coconuts and mango leaves are raised on the tower, and the new gold-coloured kalasams on top of the gopuram catch the bright daylight. Pale blue and white sky with a few clouds, bright clear midday light, and the Western Ghats faintly visible on the far horizon. Shot at eye level from the courtyard, 35 mm lens, wide enough to show the gopuram, the crowd and the temple entrance. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a brass holy pot (kudam) wrapped with a red and yellow sacred thread, a coconut and fresh mango leaves placed on its mouth, sitting on a decorated wooden platform in the temple courtyard at Kaliyappanpalayam, Negamam. Behind it, a priest in white dhoti with a bare upper body and sacred thread on his shoulder is seen from behind, holding the ritual lamp, with marigold garlands hanging nearby and a few devotees in the blurred background. Soft natural daylight from above, warm tones on the brass, shallow depth of field, camera at slightly high angle, 50 mm lens. The scene shows the consecration rituals of the village temple of Negamam. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/kumbhabhishekam-at-uchi-mahalaimman-temple/4383152",
-   "published": "2026-11-22T17:03:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption copies the article word for word (16 words in a row, 35% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
+   "reel_script": "கோவை மண்டல அறிவியல் மையத்தில் பட்டாம்பூச்சி பூங்கா அமைக்கப்படுகிறது. இதற்காக மண் வளப் பரிசோதனை செய்யப்பட்டு இடம் ஒதுக்கப்பட்டுள்ளது. மண்டல அறிவியல் மையம் 7.5 ஏக்கர் பரப்பில் அமைந்துள்ளது. இங்கு ஜவுளி அரங்கம், கோளரங்கம், கேளிக்கை அறிவியல் அரங்கம் உள்ளிட்ட 10 அரங்குகள் உள்ளன. நாள் ஒன்றுக்கு 600 பள்ளி மாணவர்கள் பள்ளிகள் மூலம் வந்து செல்கின்றனர். இந்த மாணவர்களுக்கு இயற்பியல், வேதியியல் போன்ற அறிவியல் மட்டுமின்றி சுற்றுச்சூழல், இயற்கை பாதுகாப்பு பற்றிய விழிப்புணர்வு ஏற்படுத்தும் நோக்கில் பட்டாம்பூச்சி பூங்கா அமைக்கப்படவுள்ளது. இதற்காக மையம் 15 சென்ட் நிலம் ஒதுக்கியுள்ளது. அருளகம் இயற்கை பாதுகாப்பு அமைப்பு சார்பில் மண், தண்ணீர் பரிசோதனைகள் செய்யப்பட்டு, பட்டாம்பூச்சிகளை ஈர்க்கும் செடி, மரங்கள், புதர் வகைகள் அடையாளம் காணப்படுகின்றன. ஒருங்கிணைப்பாளர் லெனின் பாரதி கூறுகையில், பணிகள் விரைவில் தொடங்கவுள்ளன. மாணவர்கள் அதிகம் வருவதால் பட்டாம்பூச்சி பூங்கா அருகிலேயே கூடுதலாக ஒரு விளையாட்டு பூங்காவும் அமைக்கப்படுகிறது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🦋 கோவை மண்டல அறிவியல் மையத்தில் பட்டாம்பூச்சி பூங்கா வருகிறது\n\n📰 முழு விவரம்:\nகோவை மண்டல அறிவியல் மையத்தில் பட்டாம்பூச்சி பூங்கா அமைக்க மண் வளப் பரிசோதனை செய்யப்பட்டு இடம் ஒதுக்கப்பட்டுள்ளது. சுற்றுச்சூழல், இயற்கை பாதுகாப்பு பற்றிய விழிப்புணர்வுக்காக இந்தப் பூங்கா அமைக்கப்படுகிறது.\n🏢 மையம் 7.5 ஏக்கரில் அமைந்துள்ளது. ஜவுளி அரங்கம், கோளரங்கம், கேளிக்கை அறிவியல் அரங்கம் உள்ளிட்ட 10 அரங்குகள் உள்ளன.\n👩‍🎓 நாள் ஒன்றுக்கு 600 பள்ளி மாணவர்கள் வந்து செல்கின்றனர்.\n🌿 பூங்காவுக்காக 15 சென்ட் நிலம் ஒதுக்கப்பட்டுள்ளது. அருளகம் இயற்கை பாதுகாப்பு அமைப்பு சார்பில் மண், தண்ணீர் பரிசோதனைகள் செய்யப்பட்டு, பட்டாம்பூச்சிகளை ஈர்க்கும் செடி, மரங்கள், புதர் வகைகள் அடையாளம் காணப்படுகின்றன.\n🎠 மாணவர்கள் அதிகம் வருவதால் பட்டாம்பூச்சி பூங்கா அருகிலேயே கூடுதலாக ஒரு விளையாட்டு பூங்காவும் வேறு அமைப்பு மூலம் அமைக்கப்படுகிறது.\n🗣️ ஒருங்கிணைப்பாளர் லெனின் பாரதி, பணிகள் விரைவில் தொடங்கவுள்ளதாகத் தெரிவித்தார்.\n\nButterfly park coming at Coimbatore Regional Science Centre | Coimbatore news\n📍 மண்டல அறிவியல் மையம், கோவை | 24 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #மண்டல_அறிவியல்_மையம்",
+   "prompts": "A small team from the Arulagam nature conservation group kneels on bare soil at the Regional Science Centre in Coimbatore, taking soil samples and checking water with testing tools for a planned butterfly park. The place is the open green corner of a government science campus, with a few young saplings, low shrubs and grass patches, and the low, rectangular outline of the science centre's halls in the background. Two or three workers wear casual shirts and trousers, seen from behind or from a distance, one holding a clipboard and another a plastic sample bag. Small pegs or marked plots indicate the 15-cent area allotted by the centre. The scene is in bright daylight with a clear sky, shot at eye level on a 35 mm lens, wide enough to show the campus space and the survey work. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the soil and plant test at the planned butterfly park site in the Regional Science Centre campus, Coimbatore. Fresh brown soil is heaped on a white cloth, with a small glass water-testing vial and a plastic soil-testing kit placed beside it, and a few cut stems of nectar-bearing shrubs laid out for identification. Green leaves of young plants fill the blurred background, and a worker's hand in a loose-sleeved shirt rests near the sample. The scene is in soft daylight with natural shadows, shot close and slightly from above on a 35 mm lens to show the soil texture, the testing tools and the greenery that will attract butterflies. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/the-butterfly-park-is-coming-up-in-the-center-of-the-zone-science/4384826",
+   "published": "2026-11-24T14:54:13+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script copies the article word for word (19 words in a row, 22% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
    "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795419341/kovaiminnal/wahyneufpa0ba3nroj2l.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795419345/kovaiminnal/xd8uc8zuqfr8pjmenmla.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520649/kovaiminnal/mgzkjctye9j4vilqjibo.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520674/kovaiminnal/fc3cxutkwv4ffzjiahxz.jpg"
    ]
   },
   {
-   "tamil_headline": "ஆர்.எஸ்.புரம் டாஸ்மாக் பாரில் காலி பாட்டில் தகராறு: இரு பார் ஊழியர்கள் கைது",
-   "english_headline": "Empty bottle dispute at R.S. Puram Tasmac bar: two bar staff arrested after a customer alleges assault",
+   "tamil_headline": "ஏஐயிடம் தனிப்பட்ட தகவல் பகிர்வது ஆபத்து: பேராசிரியர் எச்சரிக்கை",
+   "english_headline": "Sharing personal details with AI can lead to data theft and wrong profiling, warns professor Satheeshkumar",
    "category": "Crime & Safety",
-   "location": "R.S. Puram, Coimbatore city, Coimbatore district",
+   "location": "Coimbatore, Coimbatore district",
    "importance": "Medium",
-   "scope": "local",
+   "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "குற்றம்",
-    "loc": "ஆர்.எஸ்.புரம்",
-    "hl1": "ஆர்.எஸ்.புரம் பாரில் காலி பாட்டில்",
-    "hl2": "இரு ஊழியர்கள் கைது",
+    "cat": "டிஜிட்டல் பாதுகாப்பு",
+    "loc": "கோவை",
+    "hl1": "கோவை: ஏஐயிடம் தனிப்பட்ட தகவல் ஆபத்து",
+    "hl2": "டேட்டா திருட்டுக்கு",
     "slides": [
      {
-      "title": "என்ன நடந்தது?",
+      "title": "என்ன எச்சரிக்கை?",
       "lines": [
-       "நவ. 21 அன்று ஆர்.எஸ்.புரம் டாஸ்மாக் பாரில் தகராறு",
-       "லாலி ரோடு கோகுலகிருஷ்ணன் (33 வயது), மது குடித்தார்",
-       "காலி பாட்டில் கொடுத்து ரூ.10 கேட்டதால் வாக்குவாதம்"
+       "நாம் விளையாட்டாகப் பகிரும் தகவல்களும் சேமிக்கப்படலாம்",
+       "நம்மைப் பற்றிய தவறான புரிதல்களை உருவாக்கலாம்",
+       "எதிர்காலத்தில் <b>டேட்டா திருட்டுக்கு</b> வழிவகுக்கலாம்"
       ]
      },
      {
-      "title": "புகார் என்ன?",
+      "title": "ஏஐ",
       "lines": [
-       "பார் ஊழியர்கள் தன்னைத் தாக்கியதாக புகார்",
-       "வியாபாரம் பாதிக்கிறது என்று சொல்லி அடித்ததாக குற்றச்சாட்டு",
-       "ஆர்.எஸ்.புரம் போலீசில் புகார் அளிக்கப்பட்டது"
+       "ஏஐ நம் கேள்விகளை நம்மைப் பற்றிய தகவலாக எடுக்கலாம்",
+       "திருப்பூர் கேள்வி உதாரணம்: சொந்த ஊர் தவறாகப் புரியலாம்",
+       "பேராசிரியர் சதீஸ்குமார் இதை எச்சரித்துள்ளார்"
       ]
      },
      {
-      "title": "போலீஸ் நடவடிக்கை",
+      "title": "பாதுகாப்பாக இருக்க",
       "lines": [
-       "பார் ஊழியர்கள் ஜெயபாண்டியன், சுந்தரம் மீது வழக்குப்பதிவு",
-       "இருவரும் கைது செய்யப்பட்டு பின்னர் பிணையில்",
-       "புகார்தாரர் முன்பும் மது போதையில் தகராறு செய்ததாக போலீஸ்"
+       "வங்கிக் கணக்கு, <b>கடவுச்சொல்</b> பகிர்வதைத் தவிர்க்கவும்",
+       "தேவையற்ற அனுமதிகளைக் கொடுக்க வேண்டாம்",
+       "ஏஐ மெமரியில் உள்ள தகவலை நீக்கும் பழக்கம் நல்லது"
+      ]
+     },
+     {
+      "title": "பதிவு",
+      "lines": [
+       "தேவைப்பட்டால் தகவலை நகலெடுத்து லோக்கல் டிரைவில் வைக்கலாம்",
+       "ஏஐ ஹிஸ்டரியை அவ்வப்போது <b>டெலீட்</b> செய்யுங்கள்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "ஆர் எஸ் புரம் டாஸ்மாக் பாரில் காலி பாட்டில் தகராறில் இரு பார் ஊழியர்கள் கைது செய்யப்பட்டனர். நவம்பர் 21ஆம் தேதி லாலி ரோடு பகுதியைச் சேர்ந்த 33 வயது கோகுலகிருஷ்ணன் ஆர் எஸ் புரத்தில் உள்ள டாஸ்மாக் பாரில் மது குடித்தார். காலி பாட்டில் கொடுத்து ரூ.10 கொடுக்குமாறு ஊழியர்களிடம் கேட்டதாக அவர் தெரிவித்தார். அப்போது பார் ஊழியர்கள் தன்னை தாக்கியதாக கோகுலகிருஷ்ணன் ஆர் எஸ் புரம் போலீசில் புகார் அளித்தார். வியாபாரம் பாதிக்கிறது என்று சொல்லி தாக்கியதாக அவர் குற்றம் சாட்டினார். இதையடுத்து ஜெயபாண்டியன், சுந்தரம் ஆகிய பார் ஊழியர்கள் மீது வழக்குப் பதிவு செய்து கைது செய்யப்பட்டனர். போலீசார் கூறுகையில், கோகுலகிருஷ்ணன் பாட்டிலைக் கடையில் கொடுக்காமல் பார் ஊழியர்களிடம் கொடுத்து பிரச்னை செய்துள்ளார். அவர் இதற்கு முன்பும் மதுபோதையில் தகராறு செய்துள்ளதாகவும் போலீசார் தெரிவித்தனர். இருவரும் பின்னர் பிணையில் விடுவிக்கப்பட்டனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 ஆர்.எஸ்.புரம் டாஸ்மாக் பாரில் காலி பாட்டில் தகராறு: இரு பார் ஊழியர்கள் கைது\n\n📰 முழு விவரம்:\nநவ. 21 அன்று ஆர்.எஸ்.புரம் டாஸ்மாக் பாரில் லாலி ரோடு கோகுலகிருஷ்ணன் (33 வயது), மது குடித்தார். காலி பாட்டில் கொடுத்து ரூ.10 கொடுக்குமாறு ஊழியர்களிடம் கேட்டதாக அவர் கூறினார். அப்போது பார் ஊழியர்கள் தன்னை தாக்கியதாக அவர் ஆர்.எஸ்.புரம் போலீசில் புகார் அளித்தார். வியாபாரம் பாதிக்கிறது என்று சொல்லி அடித்ததாக அவர் குற்றம் சாட்டினார்.\n👮 நடவடிக்கை: பார் ஊழியர்கள் ஜெயபாண்டியன், சுந்தரம் மீது வழக்குப் பதிவு செய்து கைது செய்யப்பட்டனர். பின்னர் இருவரும் பிணையில் விடுவிக்கப்பட்டனர்.\nபோலீசார் கூறுகையில், பாட்டிலைக் கடையில் கொடுக்காமல் பார் ஊழியர்களிடம் கொடுத்து கோகுலகிருஷ்ணன் பிரச்னை செய்ததாகவும், அவர் இதற்கு முன்பும் மதுபோதையில் தகராறு செய்ததாகவும் தெரிவித்தனர்.\n\nRS Puram Tasmac bar empty bottle dispute, two arrested | Coimbatore news\n📍 ஆர்.எஸ்.புரம், கோவை | 21 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #RSPuram #கோவை #CoimbatoreNews",
-   "prompts": "A pair of police in khaki uniform stand outside the front of a Tasmac liquor shop in R.S. Puram, Coimbatore city, while two bar staff in plain shirts and trousers are led away from the shop entrance. The setting is a busy Coimbatore street with a low concrete shop frontage, a metal shutter half open, and a few two-wheelers parked along the kerb. Empty liquor bottles are stacked in plastic crates near the doorway, and a police jeep with its door open waits on the road. A few onlookers in shirts and sarees stand at a distance on the pavement, seen from behind. The time is daytime under flat, even daylight with a mild haze over the street. The camera is at eye level, 35 mm, wide enough to show the shop front, the police, and the road, with the Western Ghats faintly visible far in the background. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a row of empty liquor bottles and a few loose bottle caps lying on a concrete ledge or the floor of a Tasmac bar counter in Coimbatore city, with a police officer's khaki sleeve and boot edge just entering the frame at the edge. The bottles are dull green and brown glass with no visible labels or text. Behind them, a plain bar counter top and a corner of the wall are visible in soft focus. Natural daylight from a doorway falls across the bottles, creating a clear, sober mood. The camera is close and slightly high, 35 mm, shallow depth of field so that the background blurs into a neutral tone. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/empty-bottle-dispute-at-tasmac-wine-bar/4383617",
-   "published": "2026-11-22T21:48:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
+   "reel_script": "ஏஐயிடம் பகிரும் தனிப்பட்ட தகவல்கள் டேட்டா திருட்டுக்கு வழிவகுக்கலாம் என எச்சரிக்கை எழுந்துள்ளது. விளையாட்டாகப் பகிரும் தகவல்களும் சேமிக்கப்பட்டு, நம்மைப் பற்றிய தவறான புரிதல்களை உருவாக்கலாம். ஏஐ ஒரு கேள்வியையும் நம்மைப் பற்றிய தகவலாக எடுத்துக்கொள்ளலாம் என்று பேராசிரியர் சதீஸ்குமார் தெரிவித்துள்ளார். திருப்பூரில் இருந்து குறுக்கு வழி கேட்டால், சொந்த ஊர் திருப்பூர் என ஏஐ தவறாகப் புரிந்துகொள்ள வாய்ப்புள்ளது. வங்கிக் கணக்கு விவரங்கள், கடவுச்சொற்கள் போன்றவற்றைப் பகிர்வதைத் தவிர்க்க வேண்டும். தேவையற்ற அனுமதிகளைக் கொடுக்கக்கூடாது. ஏஐ மெமரியில் உள்ள தகவலை நீக்கும் பழக்கத்தை உருவாக்கிக்கொள்வது நல்லது. தேவைப்பட்டால் தகவலை நகலெடுத்து லோக்கல் டிரைவில் வைத்துக்கொள்ளலாம். ஏஐ ஹிஸ்டரியை அவ்வப்போது டெலீட் செய்வதும் நல்லது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 ஏஐயிடம் தனிப்பட்ட தகவல் பகிர்வது டேட்டா திருட்டுக்கு வழிவகுக்கலாம்\n\n📰 முழு விவரம்:\nதனிப்பட்ட விஷயங்களை ஏஐயிடம் பகிர்ந்து கொள்ளும் பலர், நாம் விளையாட்டாகப் பகிரும் தகவல்களும் சேமிக்கப்பட்டு, நம்மைப் பற்றிய தவறான புரிதல்களை உருவாக்கலாம் என எச்சரிக்கப்படுகின்றனர்.\nஏஐ மற்றும் மெஷின் லேர்னிங் துறை பேராசிரியர் சதீஸ்குமார், ஏஐ ஒரு கேள்வியையும் நம்மைப் பற்றிய தகவலாக எடுத்துக்கொள்ளலாம் என்று தெரிவித்துள்ளார். திருப்பூரில் இருந்து குறுக்கு வழி கேட்டால், சொந்த ஊர் திருப்பூர் என ஏஐ தவறாகப் புரிந்துகொள்ள வாய்ப்புள்ளது.\n🔐 வங்கிக் கணக்கு விவரங்கள், கடவுச்சொற்களைப் பகிர்வதைத் தவிர்க்கவும்.\n🚫 தேவையற்ற அனுமதிகளைக் கொடுக்க வேண்டாம்.\n🗑️ ஏஐயிடம் பெற்ற தகவலை பின்னர் மெமரியில் இருந்து நீக்கும் பழக்கத்தை உருவாக்கிக்கொள்ளுங்கள்.\n💾 தேவைப்பட்டால் தகவலை நகலெடுத்து லோக்கல் டிரைவில் வைத்துக்கொள்ளலாம்; ஏஐ ஹிஸ்டரியை அவ்வப்போது டெலீட் செய்யுங்கள்.\n\nAI privacy warning Coimbatore, data theft risk | Coimbatore news\n📍 கோவை | 24 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #AIPrivacy",
+   "prompts": "A young man sits at a wooden desk in a small Coimbatore internet cafe, seen from behind, typing into a laptop while a glowing chat window fills the screen with text bubbles and a cursor blinking. Around him are other users at similar desks, a few with phones held near their faces, and a ceiling fan turning above. The room has plain white walls, a tiled floor and a row of plastic chairs by the entrance. He wears a checked shirt and dark trousers, and his shoulders are slightly hunched as if he is sharing something personal. The light is soft daylight from a window on the left mixed with the cool glow of the screens. Shot at eye level with a 35 mm lens, wide enough to show the room and the people, with no readable text on screen. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a smartphone resting on a wooden table, its screen showing a blank chat window with a blinking cursor and the top of a scrolling conversation thread, while a hand hovers above it with one finger lifted, as if about to delete something. Beside the phone lie a folded paper notebook, a pen and a small steel tumbler of tea. The background is slightly blurred, showing the edge of a laptop keyboard and a calm office desk in a Coimbatore university or IT-campus room with soft afternoon light from a side window. The mood is careful and deliberate, suggesting privacy and caution. Shot at close range with a 35 mm lens, shallow depth of field, eye level, with no readable letters, logos or signboards on screen. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/mr-ai-are-you-good-or-bad/4384824",
+   "published": "2026-11-24T14:32:13+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 80 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block); reel_script sentence 1 (heard in the first 3 seconds) must name the place 'கோவை' and the news itself, e.g. 'கோவை-இல் ... 3 பேர் கைது.' - viewers decide in 3 seconds whether the news is about their area",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795419360/kovaiminnal/ssi15nuacaonzuvi1mqn.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795419363/kovaiminnal/ugjx2ykl6h9q6j0euoy2.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "சூலூரில் அறக்கட்டளை துவக்க விழா: எல்லா உயிர்களிடமும் அன்பு காட்ட வேண்டும் என அறிவுரை",
-   "english_headline": "Sulur: Manavalakkalai Mandram trust launched at Kongu Thirumana Mandapam; speaker urges love and friendship towards all living beings",
-   "category": "Temples & Events",
-   "location": "Sulur, Coimbatore district",
-   "importance": "Low",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "சமூக நிகழ்வு",
-    "loc": "சூலூர்",
-    "hl1": "சூலூரில் அறக்கட்டளை துவக்க விழா",
-    "hl2": "அன்பு, நட்பு பற்றிய அறிவுரை",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "காங்கயம்பாளையம் மனவளக்கலை மன்றம் சார்பில் அறக்கட்டளை துவக்க",
-       "அறங்காவலர்கள் அறிமுக விழாவும் அதே நிகழ்வில் நடந்தது",
-       "கொங்கு திருமண மண்டபத்தில் நடந்தது"
-      ]
-     },
-     {
-      "title": "யார் துவக்கினர்?",
-      "lines": [
-       "உலக சமுதாய சேவா சங்க மண்டலச் செயலாளர் பேராசிரியர்",
-       "துணைத் தலைவர் கோவிந்தராஜ், மண்டலச் செயலாளர் பவள சங்கரி",
-       "மூவரும் அறக்கட்டளையைத் துவக்கி வைத்துப் பேசினர்"
-      ]
-     },
-     {
-      "title": "முக்கிய கருத்து",
-      "lines": [
-       "ஆழியார் அறிவு திருக்கோவில் தலைவர் வீரப்பன் ஆறுச்சாமி",
-       "எல்லா உயிர்களிடத்திலும் அன்பு காட்ட வேண்டும்",
-       "நட்பு பாராட்ட வேண்டும் என்றார்"
-      ]
-     },
-     {
-      "title": "யார் பங்கேற்றனர்?",
-      "lines": [
-       "அறக்கட்டளை நிர்வாகிகள், மன்ற நிர்வாகிகள் பங்கேற்றனர்",
-       "நிர்வாகிகள் சின்னசாமி, செல்வராஜ், பாலகிருஷ்ணன் உள்ளிட்ட பலர்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "சூலூரில் எல்லா உயிர்களிடமும் அன்பு காட்ட வேண்டும் என்று அறிவுரை வழங்கப்பட்டது. காங்கயம்பாளையம் மனவளக்கலை மன்றம் சார்பில் அறக்கட்டளை துவக்க விழாவும் அறங்காவலர்கள் அறிமுக விழாவும் கொங்கு திருமண மண்டபத்தில் நடந்தது. உலக சமுதாய சேவா சங்க மண்டலச் செயலாளர் பேராசிரியர் செந்தில்குமார், துணைத் தலைவர் கோவிந்தராஜ், மண்டலச் செயலாளர் பவள சங்கரி ஆகியோர் அறக்கட்டளையைத் துவக்கி வைத்துப் பேசினர். ஆழியார் அறிவு திருக்கோவில் தலைவர் வீரப்பன் ஆறுச்சாமி பேசுகையில், எல்லா உயிர்களிடத்திலும் அன்பு காட்ட வேண்டும் என்றும், நட்பு பாராட்ட வேண்டும் என்றும் கூறினார். அறக்கட்டளை நிர்வாகிகள், மனவளக்கலை மன்ற நிர்வாகிகள் சின்னசாமி, செல்வராஜ், பாலகிருஷ்ணன் உள்ளிட்ட பலர் பங்கேற்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🙏 சூலூரில் அறக்கட்டளை துவக்க விழா: எல்லா உயிர்களிடமும் அன்பு காட்ட வேண்டும்\n\n📰 முழு விவரம்:\nகாங்கயம்பாளையம் மனவளக்கலை மன்றம் சார்பில் அறக்கட்டளை துவக்க விழாவும் அறங்காவலர்கள் அறிமுக விழாவும் கொங்கு திருமண மண்டபத்தில் நடந்தது.\nஉலக சமுதாய சேவா சங்க மண்டலச் செயலாளர் பேராசிரியர் செந்தில்குமார், துணைத் தலைவர் கோவிந்தராஜ், மண்டலச் செயலாளர் பவள சங்கரி ஆகியோர் அறக்கட்டளையைத் துவக்கி வைத்துப் பேசினர்.\nஆழியார் அறிவு திருக்கோவில் தலைவர் வீரப்பன் ஆறுச்சாமி, எல்லா உயிர்களிடத்திலும் அன்பு காட்ட வேண்டும், நட்பு பாராட்ட வேண்டும் என்றார்.\nஅறக்கட்டளை நிர்வாகிகள், மனவளக்கலை மன்ற நிர்வாகிகள் சின்னசாமி, செல்வராஜ், பாலகிருஷ்ணன் உள்ளிட்ட பலர் பங்கேற்றனர்.\n📍 இடம்: கொங்கு திருமண மண்டபம், சூலூர்\n\nSulur trust launch Kongu Thirumana Mandapam | Coimbatore news\n📍 சூலூர், கோவை மாவட்டம் | 22 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Sulur #சூலூர் #CoimbatoreNews",
-   "prompts": "A rows of audience members sit on chairs in a spacious Tamil wedding hall, facing a raised stage where office-bearers of a charitable trust sit at a long table draped with a cloth and decorated with garlands and a brass lamp. The hall is Kongu Thirumana Mandapam in Sulur, a plain-walled community hall with ceiling fans, tubelights and tiled floor, with a few round pillars. Men in white shirts and veshti and women in cotton sarees and salwar sit in the audience, seen from behind and slightly to the side, and a speaker in a shirt stands at a microphone on the stage, gesturing. The mood is calm and ceremonial; the scene is lit by warm indoor light from the ceiling lamps and the stage spotlights, with the daytime outside not visible. Shot at eye level on a 35 mm lens, wide enough to show the full stage, the seated rows and the hall's back wall, with no readable text or logos. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a brass lamp (kuthu vilakku) lit on a table draped with a cloth and flanked by fresh garlands of jasmine and marigold, set in front of an empty microphone stand on a stage in a Tamil community hall in Sulur. Behind the table, out of focus, the shapes of seated trust office-bearers in white shirts and veshti are visible, their faces not shown. Overhead tubelights and a ceiling fan are faintly visible, and the warm glow of the lamp flame is the main light source, suggesting an indoor evening function. The brass, jasmine and cloth textures stand out in sharp focus while the background blurs. Shot at a low-to-medium angle on a 35 mm lens with a shallow depth of field, with no readable text, banners or logos in frame. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/love-should-be-shown-to-all-living-beings/4383685",
-   "published": "2026-11-22T22:48:35+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption copies the article word for word (20 words in a row, 38% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795419369/kovaiminnal/wovt1cgln3bpjoy6vpcq.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795419372/kovaiminnal/rzryjgsgcokc7121ikqg.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520692/kovaiminnal/oaazmebiynphodl5quqv.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795520694/kovaiminnal/lf6s8zdeygb5crasqd0m.jpg"
    ]
   }
  ]
