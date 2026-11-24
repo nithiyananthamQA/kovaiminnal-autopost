@@ -289,13 +289,26 @@ def window_top(t_start, t_end):
         return round_top(t_end)
 
 
+ENGINE_W, STATIC_W = 8.0, 0.5      # owner 24 Nov (engine): what THIS page's viewers watched leads the order; the news' fixed keyword
+                                   # score only breaks ties (it spans 2-11 and alone picked 'மிஸ்டர் ஏஐ..' over a public complaint)
+
+
 def reach_score(it, at):
-    """the round's order: the news' own score + this page's insight weight for its topic (x3) - a little for every 4 hours of age"""
+    """the round's order: this page's learned engine (topic, area, headline words - learned.engine_score) x8 + half the news' own score
+    - a little for every 4 hours of age. Engine not ready (a new page, < 30 final reels) or any error: the old order (own score +
+    the topic's insight weight x3)."""
     import learned
-    w, t, how = learned.reach_weight(it.get("title", ""))
     pt = when(it.get("published")) or when(it.get("listed_at"))
     age = max(0.0, (at - pt).total_seconds() / 3600) if pt else 0.0
-    return float(it.get("score", 0)) + 3 * w - min(3.0, 0.5 * int(age // 4)), t, w, how
+    old = min(3.0, 0.5 * int(age // 4))
+    try:
+        e, why = learned.engine_score(it.get("title", ""))
+    except Exception as ex:
+        e, why = None, f"engine error {str(ex)[:40]}"
+    if e is not None:
+        return STATIC_W * float(it.get("score", 0)) + ENGINE_W * e - old, learned.topic(it.get("title", "")), e, "engine: " + why
+    w, t, how = learned.reach_weight(it.get("title", ""))
+    return float(it.get("score", 0)) + 3 * w - old, t, w, how
 
 
 def reach_rank(items, at):

@@ -168,6 +168,19 @@ e-mail tag KOVAIMINNAL. Never "360".
   synopsis always stays, so the post run's fact check (it re-reads the text) backs a draft written with either time. Any error = the
   list as before (never stops a power cut).
 
+- The pick ENGINE (owner 24 Nov: "an Instagram monster ... post the reels our users loved to see - watch hours, news topics,
+  everything ... it's an engine", "separate insights for each district"). The reference orders a round by its fixed keyword score +
+  a topic weight from shares / saves per reach; 73% of our candidates were topic 'other' (weight 0), so the keyword score alone
+  decided (5 PM 24 Nov: 'மிஸ்டர் ஏஐ.. நீங்க நல்லவரா' picked, a public complaint last). Ours: poster/insights.py learns each night,
+  per page from its OWN final reels (> 3 days), learned.learn: love = 0.7 log(views / that day's median) + 0.3 log(watch / page
+  median); effects fitted in turn and shrunk by their reel count - topic, area (place or city / town tier), headline words (8+
+  reels, half weight), hour. pick.reach_score = 8 x learned.engine_score + 0.5 x keyword score - age; power cuts first; the engine
+  not ready (< 30 final reels, e.g. Salem) or any error = the reference's order. Topics: civic (people's problems) split from infra
+  (plans / projects), feature (opinion / explainer) added, more crime / accident words ('சிறை' alone is not crime). The writer's
+  style examples (top_openings) = most-watched openings against their day, never a POCSO / sexual / suicide / death story.
+  rules.md "THE TWIST FIRST": the unusual detail of the article leads; light tone only where nobody is hurt, dead, a victim, a minor
+  or arrested; never mocking any person. Replay of the last 19 rounds: 16 rounds pick differently, 33 news swapped.
+
 ## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 
 - Chennai's own places (owner 18 Nov: "chennai is the most populated city ... add even more small areas", suburbs yes):

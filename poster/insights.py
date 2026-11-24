@@ -134,12 +134,19 @@ def main():
             hr = datetime.datetime.fromisoformat(h["t"].replace("+0000", "+00:00")).astimezone(IST).hour
             hours.setdefault(hr, []).append(h["rel"])
         out["best_hours_ist"] = [k for k, v in sorted(hours.items(), key=lambda kv: -statistics.median(kv[1])) if len(v) >= 2][:4]
-        top = sorted(rows, key=lambda h: -h["rel"])[:6]
-        out["top_openings"] = [h["caption"].split("\n")[0][:80] for h in top if h["rel"] > 1.2][:4]
+        # owner 24 Nov (engine): the writer's style examples = the openings of the reels people WATCHED most (views against that day's
+        # median), never a sexual-offence / POCSO / suicide / death story (the writer must not copy that tone)
+        out["top_openings"] = learned.best_openings([h for h in rows if h.get("final")]) or \
+            [h["caption"].split("\n")[0][:80] for h in sorted(rows, key=lambda h: -h["rel"])[:6] if h["rel"] > 1.2][:4]
         aw = [h["ig_reels_avg_watch_time"] for h in rows if h.get("ig_reels_avg_watch_time")]
         out["avg_watch_s"] = round(statistics.mean(aw) / 1000, 1) if aw else None
         out["best_topics"] = sorted(tw, key=lambda k: -tw[k])[:3]
         out["weak_topics"] = sorted(tw, key=lambda k: tw[k])[:2]
+    # owner 24 Nov (engine): what THIS page's viewers watch - topic, area, headline words, hour - learned from its own final reels
+    try:
+        out["engine"] = learned.learn([dict(h) for h in rows if h.get("final")])
+    except Exception as e:      # never stops the insights run: the pick then keeps its old order
+        print("engine not learned:", str(e)[:150])
     # owner 17 Nov (ours): our own numbers lead, the reference page's live insights fill the gaps (poster/reference_insights.py)
     import reference_insights
     out = reference_insights.blend(out, reference_insights.fetch(), learned.TRUST_N, MIN_POSTS)
