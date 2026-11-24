@@ -306,7 +306,14 @@ def reach_score(it, at):
     except Exception as ex:
         e, why = None, f"engine error {str(ex)[:40]}"
     if e is not None:
-        return STATIC_W * float(it.get("score", 0)) + ENGINE_W * e - old, learned.topic(it.get("title", "")), e, "engine: " + why
+        # the keyword score of the HEADLINE only: the body's words made an opinion piece 'crime' (24 Nov 'மிஸ்டர் ஏஐ..': 'டேட்டா
+        # திருட்டுக்கும்' in its text gave 10.0)
+        try:
+            import collect
+            kw = collect.score({"title": it.get("title", ""), "snippet": "", "published": it.get("published") or "", "mentions": 1})
+        except Exception:
+            kw = float(it.get("score", 0))
+        return STATIC_W * kw + ENGINE_W * e - old, learned.topic(it.get("title", "")), e, "engine: " + why
     w, t, how = learned.reach_weight(it.get("title", ""))
     return float(it.get("score", 0)) + 3 * w - old, t, w, how
 

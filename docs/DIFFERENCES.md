@@ -169,17 +169,19 @@ e-mail tag KOVAIMINNAL. Never "360".
   list as before (never stops a power cut).
 
 - The pick ENGINE (owner 24 Nov: "an Instagram monster ... post the reels our users loved to see - watch hours, news topics,
-  everything ... it's an engine", "separate insights for each district"). The reference orders a round by its fixed keyword score +
-  a topic weight from shares / saves per reach; 73% of our candidates were topic 'other' (weight 0), so the keyword score alone
-  decided (5 PM 24 Nov: 'மிஸ்டர் ஏஐ.. நீங்க நல்லவரா' picked, a public complaint last). Ours: poster/insights.py learns each night,
-  per page from its OWN final reels (> 3 days), learned.learn: love = 0.7 log(views / that day's median) + 0.3 log(watch / page
-  median); effects fitted in turn and shrunk by their reel count - topic, area (place or city / town tier), headline words (8+
-  reels, half weight), hour. pick.reach_score = 8 x learned.engine_score + 0.5 x keyword score - age; power cuts first; the engine
-  not ready (< 30 final reels, e.g. Salem) or any error = the reference's order. Topics: civic (people's problems) split from infra
-  (plans / projects), feature (opinion / explainer) added, more crime / accident words ('சிறை' alone is not crime). The writer's
-  style examples (top_openings) = most-watched openings against their day, never a POCSO / sexual / suicide / death story.
-  rules.md "THE TWIST FIRST": the unusual detail of the article leads; light tone only where nobody is hurt, dead, a victim, a minor
-  or arrested; never mocking any person. Replay of the last 19 rounds: 16 rounds pick differently, 33 news swapped.
+  everything ... it's an engine", "separate insights for each district"). The reference orders a round by a fixed keyword score
+  (it reads the article body too: an opinion piece with 'டேட்டா திருட்டுக்கும்' scored as crime, 10.0) + a topic weight from
+  shares / saves per reach; 73% of our candidates were topic 'other' (weight 0), so the keyword score decided (5 PM 24 Nov:
+  'மிஸ்டர் ஏஐ.. நீங்க நல்லவரா' picked, two public complaints left out). Ours: poster/insights.py learns each night, per page from
+  its OWN final reels (> 3 days), learned.learn: love = 0.7 log(views / that day's median) + 0.3 log(watch / page median);
+  topic -> area -> city / town tier -> headline words, each fitted on what is left and shrunk by its reel count; hour learned
+  (not used yet). pick.reach_score = 8 x learned.engine_score + 0.5 x the HEADLINE's keyword score - age; power cuts first; extra
+  posts unchanged (replay: 0 and 0); engine not ready (< 30 final reels, e.g. Salem) or any error = the reference's order.
+  Used now: topic + tier. Areas and words are used only from 400 final reels (24 Nov backtest, learn on older reels / score newer:
+  71 reels 0.30 vs old order 0.30, 92: 0.34 vs 0.32, 126: 0.44 vs 0.35 rank correlation with real views; areas / words added nothing
+  yet). Topics: civic (people's problems) split from infra (plans / projects), feature (opinion / explainer, start value -0.3)
+  added, more crime / accident words ('சிறை' alone is not crime). The writer's style examples (top_openings) = most-watched
+  openings against their day, never a POCSO / sexual / suicide / death story. Replay of the last 28 rounds: 21 pick differently.
 
 ## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 

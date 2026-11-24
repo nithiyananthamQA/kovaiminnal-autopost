@@ -47,9 +47,11 @@ class Learn(unittest.TestCase):
         self.assertAlmostEqual(a["topic"]["education"][0], b["topic"]["education"][0], delta=0.05)
 
     def test_one_lucky_reel_moves_little(self):
-        rows = page() + [reel("மேட்டுப்பாளையத்தில் யானை", 100000, 5)]
-        e = learned.learn(rows)
-        self.assertNotIn("மேட்டுப்பாளையம்", e.get("area", {}))      # one reel: no area effect at all
+        before = learned.learn(page())
+        after = learned.learn(page() + [reel("மேட்டுப்பாளையத்தில் யானை", 100000, 5)])
+        self.assertEqual(set(after.get("area", {})) - set(before.get("area", {})), set())      # one reel: no new area effect
+        for t, (eff, n) in after["topic"].items():
+            self.assertLess(abs(eff - before["topic"].get(t, [eff])[0]), 0.35, t)      # and no topic jumps
 
     def test_too_few_reels_not_ready(self):
         e = learned.learn(page()[:10])

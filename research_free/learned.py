@@ -105,8 +105,13 @@ def hints():
 #   (n / (n + K)): one lucky reel never moves the order much. Power cuts stay first (pick.reach_rank); nothing is ever dropped.
 import math, re as _re, statistics as _st
 
-ENGINE_K = {"topic": 4, "area": 6, "tier": 6, "word": 10}
-ENGINE_MIN = {"topic": 3, "area": 4, "tier": 5, "word": 8}      # words: only with 8+ reels (fewer = noise)
+ENGINE_K = {"topic": 6, "area": 6, "tier": 6, "word": 10}
+ENGINE_MIN = {"topic": 5, "area": 4, "tier": 5, "word": 8}      # words: only with 8+ reels (fewer = noise)
+ENGINE_PRIOR = {"feature": -0.3}      # opinion / explainer pieces: below plain news until measured ("other" reels did 0.74x)
+# 24 Nov backtest (learn on the older reels, score the newer ones): topic + city / town tier beat the old order more as reels grow
+# (71 reels: 0.30 vs 0.30, 92: 0.34 vs 0.32, 126: 0.44 vs 0.35 rank correlation with real views); single areas and headline words
+# added nothing yet - they are learned every night but used only from ENGINE_FINE_MIN final reels
+ENGINE_FINE_MIN = 400
 ENGINE_MIN_REELS = 30      # fewer final reels: the engine is not used (the topic pattern above stays)
 _STOP = {"கோவை", "கோவையில்", "கோயம்புத்தூர்", "நாளை", "இன்று", "நேற்று", "மற்றும்", "உள்ளிட்ட", "பகுதிகளில்", "பகுதியில்", "அருகே",
          "மாவட்டத்தில்", "மாவட்ட", "சென்னை", "சென்னையில்", "சேலம்", "சேலத்தில்", "மணி", "வரை", "முதல்", "அன்று", "இருந்து", "செய்து"}
@@ -178,10 +183,18 @@ def learn(rows, tz=None):
     heads = [(r.get("caption") or "").split("\n")[0] for r in rows]
     resid = list(love)
     eng = {}
+    try:      # the place lists must load, else every reel would be learned as 'no place' while the pick sees places
+        import allnews      # noqa: F401
+        kinds = ("topic", "area", "tier", "word")
+    except Exception:
+        kinds = ("topic", "word")
     for kind, key in (("topic", lambda i: [topic(heads[i])]),
                       ("area", lambda i: area_of(heads[i])[0][:1]),
                       ("tier", lambda i: [area_of(heads[i])[1]]),
                       ("word", lambda i: head_words(heads[i]))):
+        if kind not in kinds:
+            eng[kind] = {}
+            continue
         idx = list(range(len(rows)))
         eff = _fit(idx, key, kind, resid)
         eng[kind] = eff
@@ -210,12 +223,15 @@ def engine_score(text, data=None):
     parts, s = [], 0.0
     if t in e.get("topic", {}):
         s += e["topic"][t][0]; parts.append(f"{t} {e['topic'][t][0]:+.2f}")
-    a = next((p for p in ps if p in e.get("area", {})), None)
+    elif t in ENGINE_PRIOR:      # a topic with too few reels yet: its starting value until the page has measured it
+        s += ENGINE_PRIOR[t]; parts.append(f"{t} {ENGINE_PRIOR[t]:+.2f} (start)")
+    fine = (e.get("reels") or 0) >= ENGINE_FINE_MIN
+    a = next((p for p in ps if p in e.get("area", {})), None) if fine else None
     if a:
         s += e["area"][a][0]; parts.append(f"{a} {e['area'][a][0]:+.2f}")
     elif tier in e.get("tier", {}):
         s += e["tier"][tier][0]; parts.append(f"{tier} {e['tier'][tier][0]:+.2f}")
-    ws = sorted((e["word"][w][0], w) for w in head_words(head) if w in e.get("word", {}))
+    ws = sorted((e["word"][w][0], w) for w in head_words(head) if w in e.get("word", {})) if fine else []
     if ws:
         top = sorted(ws, key=lambda x: -abs(x[0]))[:3]
         v = sum(x[0] for x in top) / len(top)
