@@ -73,7 +73,7 @@ class SamayamHours(unittest.TestCase):
     SYN = "தமிழகம் முழுவதும் நாளை நவம்பர் 23-ந் தேதி திங்கட்கிழமை அன்று காலை 9 மணி முதல் மாலை 4 மணி வரை  மின்தடை ஏற்படும் பகுதிகள் குறித்த அறிவிப்பு வெளியாகியுள்ளது."
     NO_HOURS = ("தமிழகத்தில் நவம்பர் 23-ந் தேதி திங்கட்கிழமை அன்று துணை மின் நிலையங்களில் மின்வாரிய பராமரிப்பு பணிகள் காரணமாக மின்தடை செய்யப்படும் "
                 "பகுதிகள் குறித்த முழு விவரங்களை இங்கு காணலாம்.கோவை மின் தடை பகுதிகள்:- ஹவுசிங் யூனிட், ஏஆர் நகர், சுகுணா நகர், "
-                "1.மடம்பட்டி 2.ஆலாந்துறை 3.குப்பனூர், சேலம் மின் தடை பகுதிகள்:- சுமங்கலி நகர், சந்தைப்பேட்டை")
+                "1.மடம்பட்டி 2.ஆலாந்துறை 3.குப்பனூர், திண்டுக்கல் மின் தடை பகுதிகள்:- சுமங்கலி நகர், சந்தைப்பேட்டை")
     DINAMALAR = "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/tomorrow-barrier-coimbatore/4382311"
     DINAMANI = "https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/22/power-outage-tomorrow-x"
     COVAIMAIL = "https://covaimail.com/power-shutdown-scheduled-to-take-place-in-coimbatore-on-23rd-of-november-2026"
@@ -171,7 +171,7 @@ class SamayamHours(unittest.TestCase):
         self.assertNotIn("(மின்வாரிய அறிவிப்பு)", a["text"])
 
     def test_synopsis_of_another_district_not_used(self):
-        a = self.samayam(self.NO_HOURS, "சேலம் மாவட்டத்தில் நாளை காலை 9 மணி முதல் மாலை 4 மணி வரை மின்தடை.")
+        a = self.samayam(self.NO_HOURS, "திண்டுக்கல் மாவட்டத்தில் நாளை காலை 9 மணி முதல் மாலை 4 மணி வரை மின்தடை.")
         self.assertNotIn("மாலை 4 மணி", a["text"])
         self.assertIn("ஹவுசிங் யூனிட்", a["text"])
 
