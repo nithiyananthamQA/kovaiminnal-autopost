@@ -36,7 +36,8 @@
    "score": 5.0,
    "power_cut": false,
    "listed_at": "2026-11-24T17:01:23.597613+05:30",
-   "picked_at": "2026-11-25T05:10:44.120302+05:30"
+   "picked_at": "2026-11-25T05:10:44.120302+05:30",
+   "posted": true
   },
   "C7cb604e": {
    "id": "C7cb604e",
@@ -135,7 +136,8 @@
    "score": 10.0,
    "power_cut": false,
    "listed_at": "2026-11-25T01:01:35.004127+05:30",
-   "picked_at": "2026-11-25T05:10:44.120291+05:30"
+   "picked_at": "2026-11-25T05:10:44.120291+05:30",
+   "posted": true
   },
   "Cb224f21": {
    "id": "Cb224f21",
@@ -148,7 +150,8 @@
    "score": 10.0,
    "power_cut": false,
    "listed_at": "2026-11-25T01:01:35.004127+05:30",
-   "picked_at": "2026-11-25T05:10:44.120293+05:30"
+   "picked_at": "2026-11-25T05:10:44.120293+05:30",
+   "refused": "not filed: duplicate after write"
   },
   "C28bdc6b": {
    "id": "C28bdc6b",
@@ -161,7 +164,8 @@
    "score": 9.98,
    "power_cut": false,
    "listed_at": "2026-11-25T01:01:35.004127+05:30",
-   "picked_at": "2026-11-25T05:10:44.120294+05:30"
+   "picked_at": "2026-11-25T05:10:44.120294+05:30",
+   "refused": "not filed: duplicate after write"
   },
   "C9ae9d31": {
    "id": "C9ae9d31",
@@ -174,7 +178,8 @@
    "score": 6.5,
    "power_cut": false,
    "listed_at": "2026-11-25T01:01:35.004127+05:30",
-   "picked_at": "2026-11-25T05:10:44.120297+05:30"
+   "picked_at": "2026-11-25T05:10:44.120297+05:30",
+   "posted": true
   },
   "C1974b90": {
    "id": "C1974b90",
@@ -187,7 +192,8 @@
    "score": 6.0,
    "power_cut": false,
    "listed_at": "2026-11-25T01:01:35.004127+05:30",
-   "picked_at": "2026-11-25T05:10:44.120296+05:30"
+   "picked_at": "2026-11-25T05:10:44.120296+05:30",
+   "posted": true
   },
   "C1a399ed": {
    "id": "C1a399ed",
@@ -248,7 +254,8 @@
    "score": 10.0,
    "power_cut": false,
    "listed_at": "2026-11-25T05:01:24.885565+05:30",
-   "picked_at": "2026-11-25T05:10:44.120289+05:30"
+   "picked_at": "2026-11-25T05:10:44.120289+05:30",
+   "posted": true
   },
   "Ca021e95": {
    "id": "Ca021e95",
@@ -1149,7 +1156,11 @@
     "C9ae9d31",
     "Cb224f21",
     "Cc02c3ec"
-   ]
+   ],
+   "refused": {
+    "C28bdc6b": "not filed: duplicate after write",
+    "Cb224f21": "not filed: duplicate after write"
+   }
   }
  },
  "retry": {}
