@@ -98,7 +98,32 @@ def bridge_get(action, **params):
                 log("Instagram token: the shared minnal-bot token (Minnal bridge)")
                 return {"ok": True, "token": tok}
         raise RuntimeError(f"bridge {action}: {data.get('error')}")
+    if action in ("queue", "recent"):
+        apply_fixes(data.get("rows") or [])
     return data
+
+
+FIXED_DIR = ROOT / "poster" / "fixed"
+FIXED_FIELDS = ("headline_ta", "headline_en", "caption", "reel_script", "slides_spec", "location", "verification")
+
+
+def apply_fixes(rows):
+    """reference 24 Nov (owner 25 Nov for ours): a news the fact-check held is written again by research_free/autofix.py (its problems
+    told to the writer, checked again); the corrected text in poster/fixed/<story>.json replaces the sheet's text here, so the news posts
+    with it. Only when the file is for the same source link. Never raises."""
+    try:
+        if not FIXED_DIR.exists():
+            return rows
+        for r in rows:
+            f = FIXED_DIR / f"{r.get('story_id')}.json"
+            if not r.get("story_id") or not f.exists():
+                continue
+            d = json.loads(f.read_text(encoding="utf-8"))
+            if d.get("source") and d["source"].strip() == str(r.get("source") or "").strip():
+                r.update({k: d[k] for k in FIXED_FIELDS if d.get(k)})
+    except Exception as e:
+        log("corrected texts not read:", str(e)[:120])
+    return rows
 
 
 def bridge_post(action, payload):

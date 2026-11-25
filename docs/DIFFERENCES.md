@@ -187,6 +187,16 @@ e-mail tag KOVAIMINNAL. Never "360".
   hurt the people involved"): rules.md - the article's unusual detail leads sentence 1 and the caption hook; a light tone only
   where nobody is hurt, dead, a victim, a minor or arrested; never mocking any person. Dry-written on RN-70 / RN-81: 3 Claude calls
   each (as usual), no new check problems; the hook kept the twist on RN-81, RN-70's lost 'கள்ளத்தனமாக' (effect small so far).
+- Auto-fix of held news = the reference's 84417aa2 + da6a5e5b (24 Nov), ported 25 Nov (owner: "yes please do it"): a news held by
+  the writer's fact-check (today's / yesterday's) is written again from its article with the problems told to the writer
+  (research_free/autofix.py); only a clean draft is saved to poster/fixed/<story>.json and post.py apply_fixes posts that text.
+  2 tries per news, busy AI writers do not use a try. Before: Kovai 56 / Chennai 27 written news stuck on hold since 14-18 Nov
+  (about 4-6 and 3-5 a day); dry run on Kovai 25 Nov: RN-297 fixed clean, RN-298 stayed held (its நாளை day was over - right).
+  Differences: runs INSIDE each pick round after the round's own writing (the reference: its own workflow every 30 minutes - our
+  GitHub safe mode); the same writers as the round (free first, Claude Haiku as backup - the reference: free models only); a news
+  that would not post even when fixed (stale / duplicate / other district) is not rewritten; the owner's own Hold is never undone.
+  Not taken from that commit: Cloudinary -> GitHub file fallbacks (githost), rasipalan / gold parts.
+
 ## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 
 - Chennai's own places (owner 18 Nov: "chennai is the most populated city ... add even more small areas", suburbs yes):

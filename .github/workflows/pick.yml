@@ -131,7 +131,7 @@ jobs:
         run: |
           save_state() {      # 5 Nov (RN-188): post runs read pick_state.json from main - save the picked ids BEFORE posting, or a picked
                               # news published yesterday is skipped as 'stale' until this job ends 2.5 hours later
-            git add -f research_free/archive/pick_state.json 2>/dev/null || true
+            git add -f research_free/archive/pick_state.json poster/fixed 2>/dev/null || true
             git commit -qm "pick: picked news saved" || true
             for i in 1 2 3 4 5; do git pull -q --rebase -X theirs --autostash origin main && git push -q && break; git rebase --abort 2>/dev/null || true; sleep $((i*4)); done || true
           }
@@ -150,6 +150,15 @@ jobs:
             tail -25 research_free/results/pick_write.log
           }
           write
+          # owner 25 Nov (reference autofix, 24 Nov): news HELD by the fact-check (today's and yesterday's) are written again from the article
+          # with their problems told to the writer; a clean version is saved in poster/fixed/ and posted with the corrected text.
+          # Inside the round (no extra workflow - GitHub safe mode); max 20 minutes; it can never stop or fail the round.
+          timeout 1200 python -u research_free/autofix.py > research_free/results/autofix.log 2>&1 || true
+          tail -8 research_free/results/autofix.log || true
+          if grep -q "FIXED - posts" research_free/results/autofix.log 2>/dev/null; then
+            save_state
+            gh api -X POST "repos/$GH_REPO/actions/workflows/post.yml/dispatches" -f ref=main -f "inputs[dry_run]=false" -f "inputs[prebuild]=false" >/dev/null 2>&1 || true
+          fi      # no fix: the try counts (poster/fixed/_tries.json) are saved with the logs at the end of the job
           # news ticked AFTER the decision (late submit / second submit) is added: checked every 5 minutes for 40 minutes
           [ "$PICK_EMAIL" = "1" ] || exit 0      # owner 2 Nov: no e-mail, so no late ticks to wait for
           for i in $(seq 1 18); do      # owner 2 Nov (review): 90 minutes for a late tick (was 40)
@@ -173,7 +182,7 @@ jobs:
         if: always()
         run: |
           git config user.name "kovaiminnal-bot"; git config user.email "bot@users.noreply.github.com"
-          git add -f research_free/archive research_free/results 2>/dev/null || true
+          git add -f research_free/archive research_free/results poster/fixed 2>/dev/null || true
           git commit -qm "pick: written and posted" || true
           for i in 1 2 3 4 5; do git pull -q --rebase -X theirs --autostash origin main && git push -q && break; git rebase --abort 2>/dev/null || true; sleep $((i*4)); done || true
       - name: Fail loudly if the writer crashed (GitHub then e-mails the repo owner)
