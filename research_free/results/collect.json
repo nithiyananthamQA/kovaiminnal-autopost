@@ -3,10 +3,10 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.maalaimalar.com/news/tamilnadu/restoration-work-completed-in-the-burliar-area-where-a-landslide-occurred",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/what-s-wrong-with-setting-up-charging-stations-on-petrol-stocks-dealers-unhappy-with-government-s-vague-policy/4384817",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/mount-velliangiri-250-devotees/4385097",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/traditional-food-festival-held-at-block-level/4385012",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/who-will-stop-the-encroachment-of-the-corridor-from-being-removed/4385722",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/karthigai-deepavali-festival-at-marudhamalai/4385430",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/fall-in-banana-arrivals-leads-to-rise-in-selling-price/4385716",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/plastic-use-shops-fined/4385431",
   "candidate filter: collected=4",
   "to write: 4 Coimbatore district candidates (max 4 stories)",
   "round: top 4 of 4 candidates",
@@ -16,12 +16,12 @@
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
-  "try (N) manual=True: https://www.maalaimalar.com/news/tamilnadu/restoration-work-",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "NOT filed (N) பெட்ரோல் பங்குகளில் சார்ஜிங் ஸ்டேஷன் அமைப்பதில் என: stale: price news from 24 Nov, not today",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
-  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 3}, time left 78 min",
-  "filed: 3 Coimbatore district stories (target 4), reels only",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 7})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 10})",
+  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 76 min",
+  "filed: 4 Coimbatore district stories (target 4), reels only",
   "queue: 0 news waiting to be written",
   "All News sheet: {\"ok\":true,\"added\":4,\"updated\":0}"
  ],
@@ -29,9 +29,9 @@
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
@@ -42,250 +42,316 @@
   "dead for this round: gemini/gemini-3.5-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "dead for this round: groq/qwen/qwen3.8-27b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "dead for this round: groq/qwen/qwen3.8-27b",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing ",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
+  "ok gemini/gemini-3-flash-preview (16s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3.5-flash (23s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3-flash-preview (7s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3-flash-preview (16s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3-flash-preview (16s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3-flash-preview (21s)",
+  "ok gemini/gemini-3-flash-preview (11s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
+  "ok gemini/gemini-3-flash-preview (15s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3-flash-preview (14s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3-flash-preview (6s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
-  "ok anthropic/claude-haiku-5-5",
+  "ok gemini/gemini-3-flash-preview (23s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
+  "ok groq/openai/gpt-oss-120b (2s)",
+  "ok groq/openai/gpt-oss-120b (6s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
+  "ok groq/openai/gpt-oss-120b (3s)",
+  "fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3-flash-preview",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 413: {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organization `or",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "ok groq/qwen/qwen3.8-27b (0s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok groq/qwen/qwen3.8-27b (5s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
+  "ok groq/qwen/qwen3.8-27b (4s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5"
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok groq/qwen/qwen3.8-27b (2s)"
  ],
  "stories": [
   {
-   "tamil_headline": "வெள்ளியங்கிரி மலையில் 250 பக்தர்கள் மலையேற அனுமதி",
-   "english_headline": "250 devotees allowed to climb Velliangiri hill after argument with forest officials",
-   "category": "Temples & Events",
-   "location": "Boothi, Coimbatore district",
+   "tamil_headline": "கிணத்துக்கடவு மார்க்கெட்டில் வாழைத்தார் விலை உயர்வு: ரஸ்தாளி கிலோவுக்கு ரூ.10 அதிகரிப்பு",
+   "english_headline": "Banana prices rise at Kinathukadavu market due to low supply; Rasthali up by ₹10 per kg",
+   "category": "Business & Prices",
+   "location": "Kinathukadavu daily vegetable market, Kinathukadavu taluk, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "கோயில் நிகழ்வு",
-    "loc": "பூண்டி, கோவை மாவட்டம்",
-    "hl1": "வெள்ளியங்கிரி மலையில் 250 பக்தர்கள்",
-    "hl2": "வாக்குவாதத்துக்குப் பின்",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "பூண்டியில் உள்ள வெள்ளியங்கிரி மலையில் பக்தர்கள் ஏறினர்",
-       "இன்று (நவ. 24) கார்த்திகை தீபத்துக்காக மலையேற முயன்றனர்",
-       "வெளியூர் பக்தர்களும் உள்ளூர்வாசிகளுடன் சேர்ந்து மலையேற"
-      ]
-     },
-     {
-      "title": "ஏன் தடை?",
-      "lines": [
-       "ஏழாவது மலை உச்சியில் கார்த்திகை தீபம் ஏற்றப்படும்",
-       "பல தலைமுறைகளாக கட்டளை உள்ளவர்களுக்கு மட்டுமே அனுமதி",
-       "மலையேற வனத்துறை பிப்ரவரி முதல் மே வரை மட்டுமே அனுமதி"
-      ]
-     },
-     {
-      "title": "வாக்குவாதம்",
-      "lines": [
-       "வனத்துறையினர் பக்தர்களைத் தடுத்து நிறுத்தினர்",
-       "பக்தர்களுக்கும் வனத்துறையினருக்கும் இடையே வாக்குவாதம்",
-       "வாக்குவாதத்துக்குப் பின் <b>250 பேர்</b> மலையேற அனுமதிக்கப்பட்டனர்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "பூண்டியில் உள்ள வெள்ளியங்கிரி மலையில் 250 பக்தர்கள் மலையேற அனுமதிக்கப்பட்டனர். இன்று நவம்பர் 24ஆம் தேதி கார்த்திகை தீபத்துக்காக உள்ளூர்வாசிகளுடன் வெளியூர் பக்தர்களும் மலையேற முயன்றனர். பொதுவாக ஏழாவது மலை உச்சியில் கார்த்திகை தீபம் ஏற்றப்படும். பல தலைமுறைகளாக கட்டளை உள்ளவர்கள் மட்டுமே தீபமேற்ற அனுமதிக்கப்படுகின்றனர். மலையேற வனத்துறை பிப்ரவரி முதல் மே வரை மட்டுமே அனுமதி அளிக்கிறது. வனத்துறையினர் பக்தர்களைத் தடுத்து நிறுத்தியதால் அவர்களுக்கிடையே வாக்குவாதம் ஏற்பட்டது. வாக்குவாதத்துக்குப் பின் வெளியூர் பக்தர்கள் உட்பட 250 பேர் மலையேற அனுமதிக்கப்பட்டனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "⛰️ பூண்டி வெள்ளியங்கிரி மலையில் 250 பக்தர்கள் மலையேற அனுமதி\n\n📰 முழு விவரம்:\nபூண்டியில் உள்ள வெள்ளியங்கிரி மலையில் இன்று (நவ. 24) கார்த்திகை தீபத்துக்காக உள்ளூர்வாசிகளுடன் வெளியூர் பக்தர்களும் மலையேற முயன்றனர். ஏழாவது மலை உச்சியில் தீபமேற்ற பல தலைமுறைகளாக கட்டளை உள்ளவர்கள் மட்டுமே அனுமதிக்கப்படுகின்றனர். வனத்துறையினர் பக்தர்களைத் தடுத்து நிறுத்தியதால் வாக்குவாதம் ஏற்பட்டது. வாக்குவாதத்துக்குப் பின் வெளியூர் பக்தர்கள் உட்பட 250 பேர் மலையேற அனுமதிக்கப்பட்டனர்.\n📍 இடம்: பூண்டி, வெள்ளியங்கிரி மலை\n🗓️ நாள்: நவம்பர் 24\n🔥 நிகழ்வு: கார்த்திகை தீபம்\nℹ️ மலையேற வனத்துறை அனுமதி பிப்ரவரி முதல் மே வரை மட்டுமே.\n\nVelliangiri hill 250 devotees allowed to climb | Coimbatore news\n📍 பூண்டி, கோவை மாவட்டம் | 24 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Boothi #கோவை #CoimbatoreNews",
-   "prompts": "A large group of about 250 devotees, many in white veshti and shirts with cloth bundles on their shoulders, climbs a rocky forest path up the Velliangiri hills at Boothi, Coimbatore district, after a standoff with forest department officials. The place is a forest entry gate with a barrier and a dirt track leading into dense green slopes, with the grey peaks of the Velliangiri range rising far behind in the morning haze. Seen from behind and at a distance, the pilgrims walk in a long line, some carrying water cans and cloth bags, while two or three uniformed forest staff in khaki stand near the barrier watching. Early morning in November, soft diffused daylight, slight mist clinging to the hill tops. Camera at eye level, 35 mm, wide enough to show the trail, the forest gate and the full line of climbing devotees. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up detail of the forest department entry barrier at the foothill gate, a wooden or metal pole lifted to let the group pass, with worn rocky stone steps of the pilgrim trail leading up into the forest beyond. A few devotees' sandal-clad feet and a cloth bundle rest on the first steps, and a folded bundle of walking sticks leans against the gatepost. Dry leaves and damp earth on the path, morning light falling sideways, slight mist in the trees behind. Camera at ground level, 50 mm, shallow depth of field to focus on the barrier and the first steps of the climb. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/mount-velliangiri-250-devotees/4385097",
-   "published": "2026-11-24T18:38:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: hl1 (the first headline on screen) must name the place 'பூண்டி', e.g. 'பூண்டி: ...' or 'பூண்டி-இல் ...' - viewers share news of their own area",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795592076/kovaiminnal/yulvqrjpxgyhejqv1i9t.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795592086/kovaiminnal/uey8sw2mawef9ddawg1s.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கிணத்துக்கடவில் பாரம்பரிய உணவு திருவிழா: 34 ஊராட்சிகளின் மகளிர் குழுக்கள் பங்கேற்பு",
-   "english_headline": "Traditional millet food festival held at Kinathukadavu block office; women's self-help groups from 34 panchayats took part",
-   "category": "Government & Services",
-   "location": "Kinathukadavu, Coimbatore district",
-   "importance": "Medium",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "பாரம்பரிய உணவு",
+    "cat": "விலை நிலவரம்",
     "loc": "கிணத்துக்கடவு",
-    "hl1": "கிணத்துக்கடவில் சிறுதானிய உணவு திருவிழா",
-    "hl2": "34 ஊராட்சிகள் பங்கேற்பு",
+    "hl1": "கிணத்துக்கடவில் வாழைத்தார் விலை உயர்வு",
+    "hl2": "ரஸ்தாளி கிலோ ரூ.10",
     "slides": [
      {
-      "title": "எங்கே நடந்தது?",
+      "title": "வரத்து குறைவு",
       "lines": [
-       "கிணத்துக்கடவு ஒன்றிய அலுவலக வளாகம்",
-       "வட்டார சேவை மைய கட்டடத்தில் நடந்தது",
-       "வட்டார அளவிலான சிறுதானிய திருவிழா"
+       "கிணத்துக்கடவு தினசரி காய்கறி மார்க்கெட்",
+       "வாழைத்தார் வரத்து கணிசமாகக் குறைந்தது",
+       "இதனால் பெரும்பாலான ரகங்களின் விலை உயர்வு"
       ]
      },
      {
-      "title": "யார் பங்கேற்றனர்?",
+      "title": "விலை நிலவரம்",
       "lines": [
-       "<b>34</b> ஊராட்சிகளைச் சேர்ந்த மகளிர் சுய உதவிக் குழுவினர்",
-       "சங்குப்பூ டீ, சிவப்பு அவல் மிக்சர் போன்ற உணவுகள்",
-       "கம்பு லட்டு, நிலக்கடலை லட்டும் சமைக்கப்பட்டன"
+       "செவ்வாழை <b>ரூ.70</b>, நேந்திரன் <b>ரூ.50</b>",
+       "பூவன் <b>ரூ.40</b>, கதளி <b>ரூ.50</b>",
+       "ரஸ்தாளி <b>ரூ.50</b>, சாம்பிராணி <b>ரூ.48</b>"
       ]
      },
      {
-      "title": "பரிசு விவரம்",
+      "title": "விலை மாற்றம்",
       "lines": [
-       "முதல் பரிசு: <b>4,000 ரூபாய்</b> (சோழனூர் சாய் லிங்கா குழு)",
-       "இரண்டாம் பரிசு: <b>3,000 ரூபாய்</b> (அரசம்பாளையம்",
-       "மூன்றாம் பரிசு: <b>2,000 ரூபாய்</b> (ஆண்டிபாளையம் விநாயகா குழு)"
+       "ரஸ்தாளி கிலோவுக்கு <b>ரூ.10</b> அதிகரிப்பு",
+       "பூவன் <b>ரூ.5</b>, சாம்பிராணி <b>ரூ.3</b> உயர்வு",
+       "கதளி மட்டும் கிலோவுக்கு <b>ரூ.2</b> குறைந்தது"
+      ]
+     },
+     {
+      "title": "காரணம் என்ன?",
+      "lines": [
+       "கார்த்திகை மாதம் என்பதால் தேவை அதிகரிப்பு",
+       "வரும் நாட்களிலும் விலை குறைய வாய்ப்பில்லை",
+       "வியாபாரிகள் தகவல்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கிணத்துக்கடவில் 34 ஊராட்சிகளின் மகளிர் குழுக்கள் பங்கேற்ற சிறுதானிய உணவு திருவிழா நடைபெற்றது. கிணத்துக்கடவு ஒன்றிய அலுவலக வளாகத்தில் உள்ள வட்டார சேவை மைய கட்டடத்தில் இந்த விழா நடந்தது. சங்குப்பூ டீ, சிவப்பு அவல் மிக்சர், கம்பு லட்டு, நிலக்கடலை லட்டு உள்ளிட்ட பாரம்பரிய சிறுதானிய உணவுகளை மகளிர் குழுவினர் சமைத்து காட்சிப்படுத்தினர். ஒன்றிய அலுவலர்கள் நேரில் பார்வையிட்டனர். போட்டியில் முதல் பரிசு 4,000 ரூபாய் சோழனூர் ஊராட்சியைச் சேர்ந்த சாய் லிங்கா குழுவுக்கு வழங்கப்பட்டது. இரண்டாம் பரிசு 3,000 ரூபாய் அரசம்பாளையம் ஊராட்சியைச் சேர்ந்த மாசாணியம்மன் குழுவுக்கும், மூன்றாம் பரிசு 2,000 ரூபாய் ஆண்டிபாளையம் விநாயகா குழுவுக்கும் வழங்கப்பட்டது. போட்டியில் பங்கேற்ற அனைவருக்கும் சான்றிதழ்கள் வழங்கப்பட்டன. வட்டார இயக்க மேலாளர் ஆதி லட்சுமி, வட்டார ஒருங்கிணைப்பாளர் ராதா உள்ளிட்ட பலர் நிகழ்ச்சியில் பங்கேற்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🌾 கிணத்துக்கடவில் 34 ஊராட்சிகளின் மகளிர் குழுக்கள் பங்கேற்ற சிறுதானிய உணவு திருவிழா\n\n📰 முழு விவரம்:\nகிணத்துக்கடவு ஒன்றிய அலுவலக வளாகத்தில், வட்டார சேவை மைய கட்டடத்தில் வட்டார அளவிலான சிறுதானிய மற்றும் பாரம்பரிய உணவு திருவிழா நடைபெற்றது. 34 ஊராட்சிகளைச் சேர்ந்த மகளிர் சுய உதவிக் குழுவினர் இதில் பங்கேற்றனர்.\nசங்குப்பூ டீ, சிவப்பு அவல் மிக்சர், கம்பு லட்டு, நிலக்கடலை லட்டு உள்ளிட்ட சிறுதானிய உணவுகளை குழுவினர் சமைத்துக் காட்சிப்படுத்தினர். ஒன்றிய அலுவலர்கள் நேரில் பார்வையிட்டனர்.\n🥇 முதல் பரிசு: 4,000 ரூபாய் – சோழனூர் ஊராட்சி சாய் லிங்கா குழு\n🥈 இரண்டாம் பரிசு: 3,000 ரூபாய் – அரசம்பாளையம் ஊராட்சி மாசாணியம்மன் குழு\n🥉 மூன்றாம் பரிசு: 2,000 ரூபாய் – ஆண்டிபாளையம் விநாயகா குழு\nபோட்டியில் பங்கேற்ற அனைவருக்கும் சான்றிதழ்கள் வழங்கப்பட்டன. வட்டார இயக்க மேலாளர் ஆதி லட்சுமி, வட்டார ஒருங்கிணைப்பாளர் ராதா உள்ளிட்டோர் பங்கேற்றனர்.\n\nMillet food festival Kinathukadavu | Coimbatore news\n📍 கிணத்துக்கடவு, கோவை மாவட்டம் | 24 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Kinathukadavu #CoimbatoreNews #கோவை",
-   "prompts": "A row of women from village self-help groups in colourful cotton sarees stand behind a long table at the Kinathukadavu union office campus, each proudly presenting plates of traditional millet food: kambu laddus, groundnut laddus, red aval mixture and cups of sanguppoo tea. The setting is the open compound in front of the block service centre building in a small town of Coimbatore district, with a plain government building wall and a few potted plants behind them. Several women in sarees and salwar stand near the table, seen from behind or slightly to the side, while two officials in shirts and sarees look over the displays. Stacked steel plates, glass tumblers and baskets of golden-brown laddus and reddish aval mixture cover the table. It is bright daytime, with soft natural light and a clear sky. Camera at eye level, 35 mm lens, wide enough to show the table, the women and the building. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a steel plate piled with round kambu (pearl millet) laddus and groundnut laddus, placed beside a bowl of red aval mixture and a glass of pale sanguppoo tea on a government office table. Behind the plate, out of focus, the blurred shapes of women in cotton sarees stand in the festival stall area of the block office compound. A simple certificate envelope and a stack of cash-prize notes lie at the edge of the table. Daylight from the open compound falls softly on the food, showing its texture and the traditional home-cooked look. Camera close and slightly above, 50 mm lens, shallow depth of field, with the background softened. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/traditional-food-festival-held-at-block-level/4385012",
-   "published": "2026-11-24T17:50:15+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: fact-check: slides_spec line 'இரண்டாம் பரிசு: <b>3,000 ரூபாய்</b> (அரசம்பாளையம்' is missing its closing parenthesis, making the sentence malformed",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
+   "reel_script": "கிணத்துக்கடவு மார்க்கெட்டில் வாழைத்தார் வரத்து குறைந்ததால் விலை அதிகரித்துள்ளது. கிணத்துக்கடவு தினசரி காய்கறி மார்க்கெட்டிற்கு வரும் வாழைத்தார்களின் எண்ணிக்கை நேற்று சரிந்தது. இதனால் பெரும்பாலான வாழை ரகங்களின் விலை உயர்ந்துள்ளது. நேற்று ஒரு கிலோ ரஸ்தாளி 50 ரூபாய்க்கு விற்பனையானது. இது கடந்த வாரத்தை விட 10 ரூபாய் அதிகமாகும். இதேபோல் பூவன் ரகம் 5 ரூபாய் உயர்ந்து 40 ரூபாய்க்கும், சாம்பிராணி ரகம் 3 ரூபாய் உயர்ந்து 48 ரூபாய்க்கும் விற்பனையானது. செவ்வாழை ஒரு கிலோ 70 ரூபாய்க்கும், நேந்திரன் 50 ரூபாய்க்கும் விற்பனை செய்யப்பட்டது. கதளி ரகம் மட்டும் 2 ரூபாய் குறைந்து 50 ரூபாய்க்கு விற்கப்பட்டது. கார்த்திகை மாதம் என்பதால் தேவை அதிகரித்துள்ளதாகவும், வரும் நாட்களில் விலை குறைய வாய்ப்பில்லை என்றும் வியாபாரிகள் தெரிவித்துள்ளனர். கிணத்துக்கடவு சுற்றுவட்டாரத் தோட்டங்களில் வாழை சாகுபடி செய்யப்படுவது குறிப்பிடத்தக்கது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🍌 கிணத்துக்கடவு மார்க்கெட்டில் வாழைத்தார் விலை உயர்வு: ரஸ்தாளி கிலோவுக்கு ரூ.10 அதிகரிப்பு!\n\n📰 முழு விவரம்:\nகிணத்துக்கடவு தினசரி காய்கறி சந்தைக்கு வாழைத்தார் வரத்து சரிந்ததால், பெரும்பாலான ரகங்களின் விலை உயர்ந்துள்ளது. கிணத்துக்கடவு சுற்றுவட்டாரப் பகுதிகளில் தென்னையில் ஊடுபயிராகவும், தனிப்பயிராகவும் வாழை சாகுபடி செய்யப்படுகிறது. கார்த்திகை மாதம் என்பதால் தேவை அதிகரித்துள்ள நிலையில், வரத்து குறைவால் விலை ஏறியுள்ளதாக வியாபாரிகள் தெரிவித்துள்ளனர்.\n\n📊 நேற்று ஒரு கிலோ விலை நிலவரம்:\n▪️ ரஸ்தாளி: ரூ.50 (ரூ.10 உயர்வு)\n▪️ பூவன்: ரூ.40 (ரூ.5 உயர்வு)\n▪️ சாம்பிராணி: ரூ.48 (ரூ.3 உயர்வு)\n▪️ செவ்வாழை: ரூ.70 (மாற்றமில்லை)\n▪️ நேந்திரன்: ரூ.50 (மாற்றமில்லை)\n▪️ கதளி: ரூ.50 (ரூ.2 குறைவு)\n\n📍 இடம்: தினசரி காய்கறி மார்க்கெட், கிணத்துக்கடவு\nℹ️ மக்கள் கவனத்திற்கு: வரும் நாட்களிலும் விலை குறைய வாய்ப்பில்லை எனத் தெரிகிறது.\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்.\n\nKinathukadavu banana market price hike | Coimbatore news\n📍 கிணத்துக்கடவு, கோவை மாவட்டம் | 25 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Kinathukadavu #வாழைத்தார் #CoimbatoreNews",
+   "prompts": "A group of market traders display fresh banana bunches on open stalls, their price tags indicating higher rates than usual. The scene is set in the Kinathukadavu daily vegetable market, a bustling open‑air market with rows of shade‑canopies and tarpaulin‑covered tables under a clear sky. Traders, mostly men in plain shirts, stand behind the stalls, arranging the bananas while keeping a modest distance from the camera. Visible are the six banana varieties – sevazhai, nendran, poovan, kathali, rasthali and champurani – each in separate piles, some with chalk‑written price signs (blurred). Daylight illuminates the market, no rain, and the shot is taken at eye level with a 35 mm lens, wide enough to capture the market’s layout. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close‑up shows a vendor’s hand gently holding a bunch of ripe rasthali bananas, the yellow skins glossy against the vendor’s palm. The background hints at a market stall in Kinathukadavu daily vegetable market, with a blurred chalkboard where price information is scribbled, keeping any numbers unreadable. Only the hand, the banana bunch, and the faint outline of the stall are in focus; other traders and customers are out of frame or blurred. The lighting is bright natural daylight, suggesting mid‑morning, and the camera is positioned slightly above eye level using a 35 mm lens to capture the detail while keeping the context of the market evident. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/fall-in-banana-arrivals-leads-to-rise-in-selling-price/4385716",
+   "published": "2026-11-25T16:10:16+05:30",
+   "verification": "DRAFT (gemini/gemini-3-flash-preview) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3-flash-preview, 2 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795592096/kovaiminnal/qzfvaxvacnptl1ovmrsy.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795592100/kovaiminnal/py0yvymznaaiofa9wiks.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795606564/kovaiminnal/z7nwyms8mjki5xwnd7wd.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795606574/kovaiminnal/kto1v5hygrpm5kiycobz.jpg"
    ]
   },
   {
-   "tamil_headline": "பர்லியார் நிலச்சரிவு சீரமைப்பு 100% நிறைவு; போக்குவரத்து மீண்டும் தொடங்க வாய்ப்பு",
-   "english_headline": "Burliar landslide repair work 100% complete on Coonoor-Mettupalayam highway; traffic may resume after official announcement",
-   "category": "Roads & Transport",
-   "location": "Burliar area, Coonoor-Mettupalayam national highway, Nilgiris district",
+   "tamil_headline": "அன்னூர் கடைகளில் பிளாஸ்டிக் சோதனை: 15 கடைகளில் ஆய்வு செய்து அபராதம் விதிப்பு",
+   "english_headline": "Plastic ban inspection in Annur: 15 shops raided, 2.1 kg plastic seized and ₹3,300 fine collected",
+   "category": "Civic Issues",
+   "location": "Annur town, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "பிளாஸ்டிக் சோதனை",
+    "loc": "அன்னூர்",
+    "hl1": "அன்னூரில் பிளாஸ்டிக் சோதனை",
+    "hl2": "15 கடைகளில் அதிகாரிகள் ஆய்வு",
+    "slides": [
+     {
+      "title": "திடீர் சோதனை",
+      "lines": [
+       "அன்னூர் மேட்டுப்பாளையம், கோவை சாலை",
+       "<b>15 கடைகளில்</b> அதிகாரிகள் திடீர் சோதனை",
+       "தடை செய்யப்பட்ட பிளாஸ்டிக் ஆய்வு"
+      ]
+     },
+     {
+      "title": "பறிமுதல்",
+      "lines": [
+       "<b>2 கிலோ 100 கிராம்</b> பிளாஸ்டிக் பறிமுதல்",
+       "<b>3,300 ரூபாய்</b> அபராதம் வசூல்",
+       "சுகாதார அலுவலர் தலைமையில் நடவடிக்கை"
+      ]
+     },
+     {
+      "title": "எச்சரிக்கை",
+      "lines": [
+       "2-வது முறை பிடிபட்டால் அபராதம் இரட்டிப்பு",
+       "3-வது முறை கடும் நடவடிக்கை எடுக்கப்படும்",
+       "அதிகாரிகள் கடைகளுக்கு எச்சரிக்கை"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "அன்னூரில் தடை செய்யப்பட்ட பிளாஸ்டிக் பயன்படுத்திய கடைகளுக்கு 3,300 ரூபாய் அபராதம் விதிக்கப்பட்டது. அன்னூர் பேரூராட்சிக்கு உட்பட்ட மேட்டுப்பாளையம் சாலை மற்றும் கோவை சாலையில் உள்ள 15 கடைகளில் அதிகாரிகள் திடீர் சோதனை நடத்தினர். நவம்பர் 24ஆம் தேதி சுகாதார அலுவலர் ராஜ்குமார் தலைமையில் இந்த ஆய்வு மேற்கொள்ளப்பட்டது. கடைகளில் தடை செய்யப்பட்ட பிளாஸ்டிக் கவர்கள் உள்ளதா என அதிகாரிகள் சோதனையிட்டனர். இதில் 2 கிலோ 100 கிராம் எடையுள்ள பிளாஸ்டிக் கவர்கள் பறிமுதல் செய்யப்பட்டன. விதிமுறைகளை மீறிய கடைகளிடமிருந்து மொத்தம் 3,300 ரூபாய் அபராதம் வசூலிக்கப்பட்டது. இரண்டாவது முறை பிளாஸ்டிக் கண்டறியப்பட்டால் அபராதம் இரட்டிப்பாகும் என்றும், மூன்றாவது முறை பிடிபட்டால் கடும் நடவடிக்கை எடுக்கப்படும் என்றும் அதிகாரிகள் எச்சரித்துள்ளனர். இந்த சோதனையில் மேற்பார்வையாளர் பிரதீப் குமார் மற்றும் தூய்மைப் பணியாளர்கள் ஈடுபட்டனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🛍️ அன்னூரில் பிளாஸ்டிக் பயன்படுத்திய 15 கடைகளுக்கு அபராதம்\n\n📰 முழு விவரம்:\nஅன்னூர் பேரூராட்சிக்கு உட்பட்ட மேட்டுப்பாளையம் சாலை மற்றும் கோவை சாலையில் உள்ள 15 கடைகளில் அதிகாரிகள் திடீர் சோதனை நடத்தினர். நவம்பர் 24ஆம் தேதி சுகாதார அலுவலர் ராஜ்குமார் தலைமையில் இந்த ஆய்வு நடைபெற்றது.\n🚫 நடவடிக்கை: தடை செய்யப்பட்ட பிளாஸ்டிக் கவர்கள் பயன்படுத்தியதற்காக 2 கிலோ 100 கிராம் பிளாஸ்டிக் பறிமுதல் செய்யப்பட்டது.\n💰 அபராதம்: விதிமுறைகளை மீறிய கடைகளிடமிருந்து 3,300 ரூபாய் அபராதம் வசூலிக்கப்பட்டது.\n⚠️ எச்சரிக்கை: இரண்டாவது முறை பிடிபட்டால் அபராதம் இரட்டிப்பாகும்; மூன்றாவது முறை பிடிபட்டால் கடும் நடவடிக்கை எடுக்கப்படும் என அதிகாரிகள் தெரிவித்துள்ளனர்.\nℹ️ மக்கள் கவனத்திற்கு: தடை செய்யப்பட்ட பிளாஸ்டிக் பொருட்களைப் பயன்படுத்துவதைத் தவிர்க்குமாறு அதிகாரிகள் கேட்டுக்கொண்டுள்ளனர்.\n\nAnnur plastic ban inspection and fine | Coimbatore news\n📍 அன்னூர், கோவை மாவட்டம் | 24 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Annur #பிளாஸ்டிக் #CoimbatoreNews",
+   "prompts": "Health officer Rajkumar, supervisor Pradeep Kumar and several cleanliness workers stand in front of a row of fifteen small shop fronts on Metuppalaiyam road in Annur, holding clipboards and pointing at shop doors as they conduct a plastic‑ban inspection. The narrow street is lined with modest brick shops, each with a wooden door and a small awning, typical of a Coimbatore town market. The officials, dressed in khaki shirts, are seen from behind, their backs to the camera, while a few shopkeepers, also from behind, watch the raid. Scattered on a low metal table beside the officers are bundles of clear plastic covers weighing about two kilograms. The scene is in broad daylight, clear sky, with the sun casting soft shadows. Shot at eye level with a 35 mm lens, wide enough to capture the street and shop fronts. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose‑up of a metal tray on the roadside displaying the seized plastic covers: dozens of transparent bags and thin wrappers piled neatly, their edges crumpled, indicating the 2.1 kg confiscated. Beside the tray lies a small sealed envelope tied with a string, suggesting the collected fine of ₹3,300. In the blurred background, the khaki‑clad silhouettes of the health officer and supervisor can be seen, their heads turned toward the tray. The setting is the same Annur street, daylight, with the faint outline of shop awnings. The camera is positioned slightly above eye level, using a 35 mm lens to focus tightly on the plastic and envelope while keeping the surrounding context recognizable. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/plastic-use-shops-fined/4385431",
+   "published": "2026-11-24T22:05:03+05:30",
+   "verification": "DRAFT (gemini/gemini-3-flash-preview) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3-flash-preview, 3 attempt(s), 0 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795606583/kovaiminnal/wcsqzk9u8kkfkegkrqs7.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795606617/kovaiminnal/dqq64hgjogpo6qbbdzof.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "மருதமலை கோவிலில் மகா தீபம்: கார்த்திகை தீபத்திருவிழா கோலாகலம்",
+   "english_headline": "Marudhamalai temple Karthigai Deepam festival: Maha Deepam lit and Sokkapannai ceremony held",
+   "category": "Temples & Events",
+   "location": "Marudhamalai temple, Vadavalli, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "திருவிழா",
+    "loc": "மருதமலை, கோவை",
+    "hl1": "மருதமலையில் மகா தீபம் ஏற்றப்பட்டது",
+    "hl2": "கார்த்திகை தீபத்திருவிழா",
+    "slides": [
+     {
+      "title": "நவம்பர் 24 நிகழ்வு",
+      "lines": [
+       "மருதமலை சுப்பிரமணிய சுவாமி கோவில்",
+       "கார்த்திகை தீபத்திருவிழா கோலாகலம்",
+       "அதிகாலை <b>5:30</b> மணிக்கு நடை திறப்பு"
+      ]
+     },
+     {
+      "title": "அலங்காரம் & உலா",
+      "lines": [
+       "சுவாமிக்கு <b>16</b> வகை அபிஷேகம்",
+       "தங்கமயில் வாகனத்தில் திருவீதியுலா",
+       "மாலை <b>6:50</b>-க்கு மகா தீபம் ஏற்றப்பட்டது"
+      ]
+     },
+     {
+      "title": "பக்தர்கள் தரிசனம்",
+      "lines": [
+       "கோவில் வளாகத்தில் சொக்கப்பனை கொளுத்தப்பட்டது",
+       "ஏராளமான பக்தர்கள் கலந்துகொண்டனர்",
+       "சுப்பிரமணிய சுவாமி ராஜ அலங்காரத்தில் காட்சி"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "மருதமலை சுப்பிரமணிய சுவாமி கோவிலில் மகா தீபம் ஏற்றப்பட்டது. முருகனின் ஏழாம் படை வீடாகக் கருதப்படும் மருதமலையில் நவம்பர் 24ஆம் தேதி கார்த்திகை தீபத்திருவிழா சிறப்பாக நடைபெற்றது. அன்று அதிகாலை 5:30 மணிக்கு நடை திறக்கப்பட்டு சுவாமிக்கு 16 வகையான திரவியங்களால் சிறப்பு அபிஷேகம் செய்யப்பட்டது. காலை 6 மணிக்கு சுப்பிரமணிய சுவாமி ராஜ அலங்காரத்தில் பக்தர்களுக்குக் காட்சியளித்தார். பின்னர் வள்ளி மற்றும் தெய்வானையுடன் சுவாமி தங்கமயில் வாகனத்தில் திருவீதியுலா வந்தார். மாலை 6 மணிக்கு ஆதி மூலஸ்தானத்தில் தீபம் ஏற்றி வழிபாடு தொடங்கப்பட்டது. மாலை 6:50 மணிக்கு கோவில் வளாகத்தில் உள்ள தீபக் கம்பத்தில் மகா தீபம் ஏற்றப்பட்டது. மங்கள வாத்தியங்கள் முழங்க நடைபெற்ற இந்த நிகழ்வைத் தொடர்ந்து சொக்கப்பனை கொளுத்தப்பட்டது. இதில் ஏராளமான பக்தர்கள் கலந்துகொண்டு சுவாமி தரிசனம் செய்தனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🕯️ மருதமலை கோவிலில் மகா தீபம்: கார்த்திகை தீபத்திருவிழா கோலாகலம்\n\n📰 முழு விவரம்:\nமுருகனின் ஏழாம் படை வீடாகக் கருதப்படும் மருதமலை சுப்பிரமணிய சுவாமி கோவிலில் நவம்பர் 24ஆம் தேதி கார்த்திகை தீபத்திருவிழா கோலாகலமாக நடைபெற்றது. அதிகாலை 5:30 மணிக்கு நடை திறக்கப்பட்டு சுவாமிக்கு 16 வகையான திரவியங்களால் சிறப்பு அபிஷேகம் செய்யப்பட்டது. காலை 6 மணிக்கு ராஜ அலங்காரத்தில் காட்சியளித்த சுவாமி, பின்னர் வள்ளி மற்றும் தெய்வானையுடன் தங்கமயில் வாகனத்தில் திருவீதியுலா வந்து அருள்பாலித்தார். மாலை 6:50 மணிக்கு மங்கள வாத்தியங்கள் முழங்க கோவில் வளாகத்தில் மகா தீபம் ஏற்றப்பட்டு, சொக்கப்பனை கொளுத்தப்பட்டது.\n\n📍 இடம்: மருதமலை சுப்பிரமணிய சுவாமி கோவில், வடவள்ளி\n🗓️ நாள்: 24 நவம்பர் 2026\n🕘 நேரம்: மாலை 6:50 மணிக்கு மகா தீபம்\nℹ️ மக்கள் கவனத்திற்கு: ஏராளமான பக்தர்கள் கலந்துகொண்டு சுவாமி தரிசனம் செய்தனர்.\n\nபக்தர்களுக்கு இந்தத் தகவலை பகிருங்கள்.\n\nMarudhamalai temple Karthigai Deepam festival | Coimbatore news\n📍 மருதமலை, கோவை | 24 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Marudhamalai #KarthigaiDeepam #கோவை",
+   "prompts": "At dusk, the tall deepa kambam in the courtyard of Marudhamalai Subramanya Swamy temple blazes with the Maha Deepam, its flame lighting the stone pillars and gopuram above. Several temple priests in white veshti stand near the base of the lamp pole while a group of devotees, men in shirts and dhotis and women in cotton sarees, stand in a line at a respectful distance, seen from behind and slightly blurred. The courtyard is paved in granite with brass lamps glowing on the steps. Music players with traditional drums and nadaswaram are visible at the side, and the hill's dark silhouette rises in the background. Time is evening after 6:50 pm, the sky deep blue, light warm from the flames. Camera at eye level, 35 mm, wide enough to show the courtyard, the lamp pole and the crowd. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a row of brass oil lamps lit with glowing wicks, placed on the stone steps of the temple courtyard during the Karthigai Deepam festival. Behind the lamps, a temple priest's hand holds a small flame to a wick, his white veshti and bare arm in soft focus. A few devotees stand farther back, seen from behind and blurred. The stone floor, marigold petals and a brass vessel with oil sit in the foreground. The warm yellow flames reflect on the polished brass. Time is evening, light from the lamps only. Camera slightly high, 35 mm, shallow depth of field to focus on the lamps and the flame. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/karthigai-deepavali-festival-at-marudhamalai/4385430",
+   "published": "2026-11-24T22:02:02+05:30",
+   "verification": "DRAFT (gemini/gemini-3-flash-preview) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3-flash-preview, 2 attempt(s), 0 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795606637/kovaiminnal/c0zetlvunldkvbf94r7a.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795606641/kovaiminnal/nrf5o2putzimfdf9gfri.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "கோவையில் நடைபாதை ஆக்கிரமிப்பை அகற்றாமல் அதிகாரிகள் வேடிக்கை: கோர்ட் உத்தரவு அமல்படுத்தப்படவில்லை",
+   "english_headline": "Coimbatore corporation not enforcing High Court order to clear footpath encroachments; officials said removal to begin this week",
+   "category": "Civic Issues",
+   "location": "Coimbatore city, Coimbatore district",
    "importance": "High",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "சாலை போக்குவரத்து",
-    "loc": "பர்லியார், குன்னூர்-மேட்டுப்பாளையம்",
-    "hl1": "பர்லியார் சீரமைப்பு 100% நிறைவு",
-    "hl2": "போக்குவரத்து மீண்டும்",
+    "cat": "நடைபாதை ஆக்கிரமிப்பு",
+    "loc": "கோவை மாநகராட்சி",
+    "hl1": "கோவையில் நடைபாதை ஆக்கிரமிப்பு",
+    "hl2": "கோர்ட் உத்தரவு அமல் இல்லை",
     "slides": [
      {
       "title": "என்ன நடந்தது?",
       "lines": [
-       "குன்னூர்-மேட்டுப்பாளையம் சாலையில் பர்லியார் பகுதியில்",
-       "நிலச்சரிவால் போக்குவரத்து தடை செய்யப்பட்டது",
-       "மண், பாறைகள் அகற்றம், சாலை அகலப்படுத்தும் பணிகள் நடந்தன"
+       "சென்னை ஐகோர்ட் நடைபாதை ஆக்கிரமிப்பை அகற்ற உத்தரவிட்டது",
+       "கோவை மாநகராட்சி உத்தரவை அமல்படுத்தவில்லை",
+       "அதிகாரிகள் வேடிக்கை பார்ப்பதாகக் குற்றச்சாட்டு"
       ]
      },
      {
-      "title": "பணிகள் நிலை",
+      "title": "எந்தெந்த பகுதிகள்?",
       "lines": [
-       "ஒரு மாதத்துக்கும் மேலாக நடந்த பணிகள் <b>100 சதவீதம்</b> நிறைவடைந்தன",
-       "அதிகாரிகள் குழு பர்லியார் பகுதியில் நேரில் ஆய்வு செய்தது",
-       "டிரோன் மூலம் நிலச்சரிவு இடமும் கண்காணிக்கப்பட்டது"
+       "நஞ்சப்பா ரோடு, திருச்சி ரோடு, ரேஸ்கோர்ஸ் பகுதிகளில்",
+       "டவுன்ஹால், காந்திபுரம், கிராஸ்கட் ரோடு பகுதிகளில் நடவடிக்கை",
+       "<b>15,000</b> சாலையோரக் கடைகள் மாநகராட்சியில் பதிவு"
       ]
      },
      {
-      "title": "அடுத்து என்ன?",
+      "title": "அதிகாரி கூறியது",
       "lines": [
-       "போக்குவரத்து மீண்டும் தொடங்குவது குறித்து மாவட்ட நிர்வாகம்",
-       "அதிகாரப்பூர்வ அறிவிப்புக்காக மக்கள் காத்திருக்கின்றனர்",
-       "பாதிக்கப்பட்ட வியாபாரிகளுக்கு நம்பிக்கை பிறந்துள்ளது"
+       "நகரமைப்புப் பிரிவு அலுவலர் தாமோதரன் பேட்டி",
+       "கோர்ட் உத்தரவுப்படி இந்த வாரம் முதல் அகற்றப்படும்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "குன்னூர்-மேட்டுப்பாளையம் தேசிய நெடுஞ்சாலையில் பர்லியார் பகுதி சீரமைப்புப் பணிகள் 100 சதவீதம் நிறைவடைந்துள்ளன. கடந்த மாதம் 23ஆம் தேதி நிலச்சரிவு ஏற்பட்டதால் இந்தச் சாலையில் போக்குவரத்து தடை செய்யப்பட்டது. நிலச்சரிவு பகுதியில் மண் மற்றும் பாறைகள் அகற்றப்பட்டன; சாலை அகலப்படுத்தும் பணிகளும் நடைபெற்றன. ஒரு மாதத்துக்கும் மேலாக நடைபெற்ற இந்தப் பணிகள் தற்போது முழுமையாக முடிந்துள்ளதாகத் தெரிவிக்கப்பட்டுள்ளது. மாவட்ட நிர்வாகம் அமைத்த அதிகாரிகள் குழு பர்லியார் பகுதியில் நேரில் ஆய்வு செய்தது. சாலையின் நிலை மற்றும் பாதுகாப்பு அம்சங்களும் ஆய்வு செய்யப்பட்டன. நிலச்சரிவு இடத்தை டிரோன் மூலம் அதிகாரிகள் கண்காணித்தனர். போக்குவரத்து மீண்டும் தொடங்குவது குறித்த அதிகாரப்பூர்வ அறிவிப்பை மக்கள் எதிர்பார்த்துக் காத்திருக்கின்றனர். தடையால் பாதிக்கப்பட்ட சாலையோர வியாபாரிகளுக்கு இந்தச் செய்தி நம்பிக்கை அளித்துள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🛣️ பர்லியார் சீரமைப்பு 100% நிறைவு; போக்குவரத்து மீண்டும் தொடங்க வாய்ப்பு\n\n📰 முழு விவரம்:\nகுன்னூர்-மேட்டுப்பாளையம் தேசிய நெடுஞ்சாலையில் பர்லியார் பகுதியில் கடந்த மாதம் 23ஆம் தேதி ஏற்பட்ட நிலச்சரிவால் போக்குவரத்து தடை செய்யப்பட்டது.\nமண், பாறைகள் அகற்றம் மற்றும் சாலை அகலப்படுத்தும் பணிகள் ஒரு மாதத்துக்கும் மேலாக நடைபெற்றன.\nபணிகள் 100 சதவீதம் நிறைவடைந்துள்ளதாகத் தெரிவிக்கப்பட்டுள்ளது.\nமாவட்ட நிர்வாகம் அமைத்த அதிகாரிகள் குழு பர்லியார் பகுதியில் நேரில் ஆய்வு செய்தது; டிரோன் மூலமும் நிலச்சரிவு இடம் கண்காணிக்கப்பட்டது.\nபோக்குவரத்து மீண்டும் தொடங்குவது குறித்த அதிகாரப்பூர்வ அறிவிப்பை மக்கள் எதிர்பார்த்துக் காத்திருக்கின்றனர்.\n\n📍 இடம்: பர்லியார், குன்னூர்-மேட்டுப்பாளையம் தேசிய நெடுஞ்சாலை, நீலகிரி மாவட்டம்\n🗓️ நாள்: கடந்த மாதம் 23ஆம் தேதி நிலச்சரிவு\nℹ️ மக்கள் கவனத்திற்கு: போக்குவரத்து மீண்டும் தொடங்கும் அதிகாரப்பூர்வ அறிவிப்புக்காகக் காத்திருங்கள்.\n\nBurliar landslide road repair 100% complete | Nilgiris news\n📍 பர்லியார், நீலகிரி மாவட்டம் | 25 நவம்பர் 2026\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Nilgiris #Burliar #CoimbatoreNews",
-   "prompts": "A group of district officials in formal shirts and trousers stands together on a freshly widened hill road at Burliar on the Coonoor-Mettupalayam national highway, Nilgiris district, after repair work on the landslide section has been completed. Seen from slightly behind and at a distance, they pose in a loose cluster on the new tarmac while a stretch of cleared slope rises beside them, its raw earth and rock faces showing where the mud and boulders were removed. Low-rise roadside shops and tea-estate green hills with a misty Nilgiri backdrop fill the background. The road is empty of vehicles, with fresh white and yellow lane markings. The light is soft daylight, the sky partly overcast. Shot at eye level or slightly high, 35 mm, wide enough to show the widened road, the slope and the hills. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up detail of the repaired hill road edge at Burliar: freshly laid black tarmac meets a neatly cut and cleared earth slope, with loose mud and rock heaps pushed back to the side and a newly placed retaining stone edge. Fresh white road-edge paint and a few drainage channels run along the widened carriageway. A drone-monitored hillside and mist-covered Nilgiri hills show faintly in the background. Daylight, slightly damp surface. Camera low, 35 mm, focusing on the new road surface and the cleared slope. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.maalaimalar.com/news/tamilnadu/restoration-work-completed-in-the-burliar-area-where-a-landslide-occurred",
-   "published": "2026-11-25T04:03:27Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 87 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "reel_script": "கோவையில் நடைபாதை ஆக்கிரமிப்புகளை அகற்ற வேண்டும் என சென்னை ஐகோர்ட் உத்தரவிட்டுள்ளது. ஆனால் கோவை மாநகராட்சி இந்த உத்தரவை அமல்படுத்தவில்லை என குற்றம் சாட்டப்படுகிறது. த.வெ.க ஆட்சிக்கு வந்த பிறகு நஞ்சப்பா ரோடு, திருச்சி ரோடு, ரேஸ்கோர்ஸ் பகுதிகளில் 300க்கும் மேற்பட்ட நடைபாதை கடைகள் அகற்றப்பட்டதாக அதிகாரிகள் கூறினர். ஆனால் சில மாதங்களிலேயே அந்த நடைபாதைகள் மீண்டும் ஆக்கிரமிக்கப்பட்டதாகத் தெரிகிறது. டவுன்ஹால், காந்திபுரம், கிராஸ்கட் ரோடு, ஆர் எஸ் புரம் டி பி ரோடு, தடாகம் ரோடு, மேட்டுப்பாளையம் ரோடு பகுதிகளில் அதிகாரிகள் நடவடிக்கை எடுக்கவில்லை. மாநகராட்சியில் பதிவு செய்யப்பட்ட சாலையோரக் கடைகள் 15,000 மட்டுமே. பதிவு செய்யப்படாத கடைகள் லட்சக்கணக்கில் உள்ளதாகக் குற்றச்சாட்டு உள்ளது. நகரமைப்புப் பிரிவு அலுவலர் தாமோதரன், கோர்ட் உத்தரவுப்படி இந்த வாரம் முதல் ஆக்கிரமிப்புகளை அகற்றுவோம் என்று தெரிவித்துள்ளார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 கோவையில் நடைபாதை ஆக்கிரமிப்பு அகற்றப்படவில்லை: கோர்ட் உத்தரவு அமல் இல்லையா?\n\n📰 முழு விவரம்:\nதமிழகம் முழுவதும் நடைபாதை ஆக்கிரமிப்புகளை அகற்ற சென்னை ஐகோர்ட் உத்தரவிட்டும், கோவையில் அது அமல்படுத்தப்படவில்லை என குற்றச்சாட்டு எழுந்துள்ளது.\nநஞ்சப்பா ரோடு, திருச்சி ரோடு, ரேஸ்கோர்ஸ் பகுதிகளில் 300க்கும் மேற்பட்ட நடைபாதை கடைகள் அகற்றப்பட்டதாக அதிகாரிகள் கூறினர். ஆனால் மாதங்களாக அந்த நடைபாதைகள் மீண்டும் ஆக்கிரமிக்கப்பட்டுள்ளதாகத் தெரிகிறது.\nடவுன்ஹால், காந்திபுரம், கிராஸ்கட் ரோடு, ஆர்.எஸ்.புரம் டி.பி. ரோடு, தடாகம் ரோடு, மேட்டுப்பாளையம் ரோடு பகுதிகளில் அதிகாரிகள் நடவடிக்கை எடுக்கவில்லை.\n📍 இடம்: கோவை மாநகராட்சி பகுதி\n📊 மாநகராட்சியில் பதிவு செய்யப்பட்ட சாலையோரக் கடைகள்: 15,000\n👮 நடவடிக்கை: நகரமைப்புப் பிரிவு அலுவலர் தாமோதரன், கோர்ட் உத்தரவுப்படி இந்த வாரம் முதல் ஆக்கிரமிப்புகளை அகற்றுவோம் என்று தெரிவித்துள்ளார்.\nℹ️ பதிவு செய்யப்படாத கடைகள் லட்சக்கணக்கில் இருப்பதாகவும், அதிகாரிகள் அவற்றுக்கு துணை போவதாகவும் குற்றச்சாட்டு உள்ளது.\n\nCoimbatore footpath encroachment not cleared despite court order | Coimbatore news\n📍 கோவை மாநகராட்சி, கோவை மாவட்டம் | 25 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை",
+   "prompts": "A dense cluster of unregistered roadside shops and stalls completely occupies the footpath on a busy street in Town Hall, Coimbatore, forcing pedestrians to walk on the main road. The scene shows the chaotic reality of footpath encroachment where the walkway is entirely blocked by commercial activity. The location is a typical narrow urban street in Coimbatore city, lined with buildings and heavy foot traffic. Pedestrians, seen from behind or far away, are walking cautiously on the asphalt road to avoid the crowded stalls. Shopkeepers are visible sitting at their makeshift counters, attending to customers. Two-wheelers and autorickshaws are seen navigating the tight space between the moving pedestrians and the encroaching shops. The footpath is filled with tables, chairs, and goods displayed for sale, leaving no space for walking. Daylight illuminates the scene, highlighting the clutter and congestion. The camera is at eye level, 35 mm, wide enough to capture the full width of the blocked footpath and the adjacent road traffic. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up view of the footpath in R.S. Puram, Coimbatore, showing the physical obstruction caused by unregistered shops. The focus is on the narrow strip of pavement that has been completely taken over by a row of small stalls and shop fronts, with no visible walking space. The objects include plastic chairs, tables, and merchandise spilling out from the shop entrances onto the public walkway. The concrete footpath is barely visible under the clutter of commercial items. In the background, slightly blurred, pedestrians are seen walking on the road next to the encroached area. The scene captures the specific detail of how the footpath is unusable due to the dense arrangement of unregistered businesses. Daylight provides clear visibility of the objects and the extent of the encroachment. The camera is slightly high, 35 mm, focusing on the ground level to emphasize the lack of pedestrian space. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/who-will-stop-the-encroachment-of-the-corridor-from-being-removed/4385722",
+   "published": "2026-11-25T16:16:25+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b) - NOT CLEAN, held from posting - problems: reel_script has 94 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
+   "note": "free-model draft anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b, 11 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795592134/kovaiminnal/f0bjshl2vmgrxvvlkk9c.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795592137/kovaiminnal/etzf7fehfewcutis2uay.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795606649/kovaiminnal/yux7wy4zstitbrycb2o6.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795606679/kovaiminnal/vwfqmzf8ksr228vuktvy.jpg"
    ]
   }
  ]
