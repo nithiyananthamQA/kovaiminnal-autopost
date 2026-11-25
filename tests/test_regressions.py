@@ -499,35 +499,38 @@ class PrimeTime(unittest.TestCase):
     def test_windows_switched_on(self):
         pt = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["prime_time"]
         self.assertTrue(pt["enabled"])
-        self.assertEqual(pt["windows"], [["05:00", "24:00"]])      # owner 25 Nov (the reference 21 Nov): posts as soon as ready, 05:00-midnight
+        self.assertEqual(pt["windows"], [["06:00", "12:00"], ["15:00", "21:00"]])      # owner 19 Nov; owner 25 Nov: kept (no posting as soon as ready)
         self.assertFalse(pt["starts"])
 
     def test_inside_a_window_at_once_outside_waits(self):
         news = "கோவில் கும்பாபிஷேக விழா"
-        for now, expect in (((4, 30), "05:00"), ((5, 0), ""), ((9, 30), ""), ((12, 0), ""), ((14, 30), ""), ((17, 0), ""),
-                            ((21, 0), ""), ((23, 59), ""), ((0, 30), "05:00"), ((1, 0), "05:00")):
+        for now, expect in (((5, 30), "06:00"), ((6, 0), ""), ((9, 30), ""), ((11, 59), ""), ((12, 0), "15:00"), ((14, 30), "15:00"),
+                            ((15, 0), ""), ((20, 59), ""), ((21, 0), "06:00"), ((23, 0), "06:00"), ((1, 0), "06:00")):
             got = self.wait(self.row(news, 0, 30), self.at(*now))
             if expect:
                 self.assertIn(expect, got, now)
             else:
                 self.assertEqual("", got, now)
 
-    def test_every_round_posts_its_news_the_same_evening(self):
-        # owner 25 Nov: 19-24 Nov the evening / night rounds' news waited for the next morning (0 posts after 20:00, 15 at 06:00-10:00).
-        # The Worker's rounds (pick.yml) against the posting window: only the 01:00 round waits (until 05:00); 24 news a day.
+    def test_the_rounds_keep_the_count_that_ran(self):
+        # owner 25 Nov "keep same count": 19-25 Nov the Worker's rounds 01/05/09/13/17/21 read the 19 Nov string 4=7,8=5,13=4,16=4,18=4
+        # as 4/7/5/4/4/4 = 28 a day; the explicit string keeps exactly that, the posting windows unchanged
         import re as _re
+        import pick
         wf = (ROOT / ".github" / "workflows" / "pick.yml").read_text(encoding="utf-8")
-        top = dict(x.split("=") for x in _re.search(r'PICK_ROUND_TOP: "([^"]+)"', wf).group(1).split(","))
-        self.assertEqual(sum(int(v) for v in top.values()), 24)
-        news = "கோவில் கும்பாபிஷேக விழா"
-        for h in sorted(int(k) for k in top):
-            got = self.wait(self.row(news, h, 30), self.at(h, 40))
-            self.assertEqual(got != "", h == 1, (h, got))
+        new = _re.search(r'PICK_ROUND_TOP: "([^"]+)"', wf).group(1)
+        for h in (1, 5, 9, 13, 17, 21):
+            t = datetime.datetime.combine(TODAY, datetime.time(h, 3), IST)
+            with mock.patch.object(pick, "ROUND_TOP", "4=7,8=5,13=4,16=4,18=4"):
+                was = pick.round_top(t)
+            with mock.patch.object(pick, "ROUND_TOP", new):
+                self.assertEqual(pick.round_top(t), was, h)
+        self.assertEqual(sum(int(x.split("=")[1]) for x in new.split(",")), 28)
 
     def test_only_power_cut_posts_at_once(self):
         self.assertEqual("", self.wait(self.row("காளப்பநாயக்கன்பட்டி பகுதியில் நாளை மின் தடை", 21, 30), self.at(23)))
         for title in ("தனியார் பேருந்து மோதி தொழிலாளி உயிரிழப்பு", "கனமழை எச்சரிக்கை", "ஆட்சியர் அறிவிப்பு: சிறப்பு முகாம்"):
-            self.assertIn("prime time", self.wait(self.row(title, 0, 10), self.at(0, 30)), title)      # 00:00-05:00: waits (owner 25 Nov)
+            self.assertIn("prime time", self.wait(self.row(title, 13, 50), self.at(13, 55)), title)      # 12:00-15:00: waits
 
     def test_never_dropped_after_long_wait(self):
         self.assertEqual("", self.wait(self.row("கோவில் கும்பாபிஷேக விழா", 21, 30), self.at(3, day=1), waited=19))
@@ -2294,7 +2297,7 @@ class RoundsTopThree(unittest.TestCase):
         times = sorted(((int(h) * 60 + int(m) + 330) % 1440) / 60 for m, hs in re.findall(r'cron: "(\d+) ([\d,]+) \* \* \*"', wf)
                        for h in hs.split(","))
         self.assertEqual([1, 5, 9, 13, 17, 21], times)      # owner 25 Nov: the Worker's own round times (a backup cron at another time = a second round)
-        self.assertIn('PICK_ROUND_TOP: "1=3,5=4,9=4,13=4,17=5,21=4"', wf)      # owner 25 Nov: 3+4+4+4+5+4 = 24 a day
+        self.assertIn('PICK_ROUND_TOP: "1=4,5=7,9=5,13=4,17=4,21=4"', wf)      # owner 25 Nov "keep same count": 4+7+5+4+4+4 = 28 a day (what ran 19-25 Nov)
         self.assertIn('PICK_EMAIL: "0"', wf)      # "do not ask me to confirm"
 
     def test_each_round_writes_top_3_of_the_whole_district(self):

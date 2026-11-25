@@ -57,7 +57,7 @@ jobs:
       DISTRICT_BRIDGE_KEY: ${{ secrets.DISTRICT_BRIDGE_KEY }}
       IG_SYSTEM_TOKEN: ${{ secrets.IG_SYSTEM_TOKEN }}      # owner 16 Nov: minnal-bot token with the insights permission (empty = the bridge's token)
       CITY_ONLY: "0"
-      PICK_ROUND_TOP: "1=3,5=4,9=4,13=4,17=5,21=4"      # owner 25 Nov: the Worker's rounds 01:00 3 (posts from 05:00), 05:00 4, 09:00 4, 13:00 4, 17:00 5, 21:00 4 = 24 a day, posting 05:00-24:00 (config prime_time) - the 19 Nov 04/08:30/13/16:30/18:30 plan never reached the Worker;      # owner 14 Nov: news per round at LEAST (01:00 2, 05:00 5, 09:00 5, 13:00 3, 17:00 5, 21:00 4 = 24 a day) + up to 3 more of well-watched topics, chosen by the page's insights
+      PICK_ROUND_TOP: "1=4,5=7,9=5,13=4,17=4,21=4"      # owner 25 Nov "keep same count": the Worker's rounds 01:00 4, 05:00 7, 09:00 5, 13:00 4, 17:00 4, 21:00 4 = 28 a day = exactly what ran 19-25 Nov (the 19 Nov string 4=7,8=5,13=4,16=4,18=4 read at the Worker's times); posting windows unchanged (config prime_time 06-12 + 15-21);      # owner 14 Nov: news per round at LEAST (01:00 2, 05:00 5, 09:00 5, 13:00 3, 17:00 5, 21:00 4 = 24 a day) + up to 3 more of well-watched topics, chosen by the page's insights
       PICK_EMAIL: "0"      # owner 2 Nov: "do not ask me to confirm" - no list e-mail, the top news are written at once
       PICK_WAIT_MIN: "60"
       PICK_REQUIRE_EMAIL: "0"
