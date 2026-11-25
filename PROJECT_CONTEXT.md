@@ -82,34 +82,34 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
-| 2026-11-22 | `825e366` | Never நாளை alone: the date goes with it in the voice, caption, headline and screen lines (owner 22 Nov, viewer comment) |
-| 2026-11-22 | `c0b949c` | facebook RN-241 |
-| 2026-11-22 | `e9c2606` | powercut: notices written |
-| 2026-11-22 | `867d753` | pick: written and posted |
-| 2026-11-22 | `22b9603` | powercut: notices written |
-| 2026-11-22 | `3a816a2` | comments: normal comments recorded (not e-mailed) |
-| 2026-11-22 | `bcaebb2` | powercut: notices written |
-| 2026-11-22 | `bc1c15d` | facebook RN-240 |
-| 2026-11-22 | `ac82c46` | pick: picked news saved |
-| 2026-11-22 | `0ecc39a` | pick: picked news saved |
-| 2026-11-22 | `213c841` | pick: list sent |
-| 2026-11-22 | `a153598` | powercut: notices written |
-| 2026-11-22 | `b379e56` | powercut: notices written |
-| 2026-11-22 | `e47e6ad` | powercut: notices written |
-| 2026-11-22 | `bdc7293` | pick: written and posted |
-| 2026-11-22 | `6197dc4` | powercut: notices written |
-| 2026-11-22 | `11c2205` | facebook RN-236 |
-| 2026-11-22 | `5db23e3` | comments: normal comments recorded (not e-mailed) |
-| 2026-11-22 | `34e5b72` | facebook RN-237 |
-| 2026-11-22 | `51e0159` | facebook RN-234 |
-| 2026-11-22 | `165e5ee` | facebook RN-233 |
-| 2026-11-22 | `07211b7` | powercut: notices written |
-| 2026-11-22 | `79f2c06` | facebook RN-235 |
-| 2026-11-22 | `6c1262a` | goldrate posted |
-| 2026-11-22 | `4dcb227` | pick: picked news saved |
-| 2026-11-22 | `bf9afbc` | pick: picked news saved |
-| 2026-11-22 | `78204d1` | pick: list sent |
-| 2026-11-22 | `9600ab7` | pick: written and posted |
-| 2026-11-22 | `d8ae504` | facebook RN-228 |
-| 2026-11-22 | `9137c16` | facebook RN-231 |
+| 2026-11-25 | `27e4e91` | powercut: notices written |
+| 2026-11-25 | `edaf210` | pick: written and posted |
+| 2026-11-25 | `79f657c` | facebook RN-316 |
+| 2026-11-25 | `b21e27a` | facebook RN-317 |
+| 2026-11-25 | `a6fb9b9` | powercut: notices written |
+| 2026-11-25 | `c4228bb` | goldrate posted |
+| 2026-11-25 | `cd4badc` | facebook RN-314 |
+| 2026-11-25 | `f3b12d8` | facebook RN-315 |
+| 2026-11-25 | `41226d7` | pick: picked news saved |
+| 2026-11-25 | `3af8df8` | facebook RN-313 |
+| 2026-11-25 | `13d9c8b` | pick: picked news saved |
+| 2026-11-25 | `28c06d5` | pick: list sent |
+| 2026-11-25 | `8969aeb` | powercut: notices written |
+| 2026-11-25 | `6550703` | facebook RN-309 |
+| 2026-11-25 | `4bf4dda` | facebook RN-312 |
+| 2026-11-25 | `5cf661c` | facebook RN-310 |
+| 2026-11-25 | `67d86f9` | powercut: notices written |
+| 2026-11-25 | `83c7e13` | facebook RN-308 |
+| 2026-11-25 | `60c8fc7` | facebook RN-305 |
+| 2026-11-25 | `f3e330c` | powercut: notices written |
+| 2026-11-25 | `85884c0` | facebook RN-306 |
+| 2026-11-25 | `9e1f22f` | facebook RN-307 |
+| 2026-11-25 | `f5ac02a` | facebook RN-302 |
+| 2026-11-25 | `2f03cca` | facebook RN-304 |
+| 2026-11-25 | `c0412ea` | facebook RN-303 |
+| 2026-11-25 | `8b1658e` | facebook RN-301 |
+| 2026-11-25 | `8265a22` | powercut: notices written |
+| 2026-11-24 | `beb06e1` | pick: written and posted |
+| 2026-11-24 | `a9806f5` | pick: picked news saved |
+| 2026-11-24 | `9a8f415` | pick: picked news saved |
 <!-- recent-changes:end -->
