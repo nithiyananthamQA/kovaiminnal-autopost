@@ -5843,3 +5843,91 @@ filed: 0 Coimbatore district stories (target 1), reels only
 queue: 0 news waiting to be written
 All News sheet: {"ok":true,"added":0,"updated":1} 
 stories: 0
+writing [N]: கோவையில் நாளை (நவ.26) இந்த இடங்களில் மின் தடை - The Covai Ma
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, plea
+dead for this round: gemini/gemini-3-flash-preview
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+dead for this round: groq/openai/gpt-oss-120b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+dead for this round: groq/qwen/qwen3.8-27b
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+free fact-check unavailable, using Claude: no free model answered: None
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 3 problems
+  reel_script says 'மின் தடைக்கு முன் தண்ணீர், மொபைல் சார்ஜ் ஆகியவற்றை தயாராக வைத்துக்கொள்ளுங்கள்' (prepare water and mobile charge in advance) and slides_spec says 'முன்கூட்டியே தண்ணீர், சார்ஜ் தயார் செய்யுங்கள' - advice not present in the article
+  reel_script says the power cut is for 'மாதாந்திர பராமரிப்புப் பணிகளுக்காக இந்த மின் தடை செய்யப்படுகிறது' - the article does state monthly maintenance, so this is fine; however the reel_script omits the Pattampudur/Pappampatti-pirivu details only as a minor omission and the Ottakkal Mandapam area list is complete, so no issue there
+  reel_script/slides_spec list 'பாப்பம்பட்டிப்பிரிவு' and 'பள்ளபாளையம்' omitted from the reel_script's Peedampalli list (article includes both) - the reel_script omits two areas that are in the article
+claude rewrite 1 anthropic/claude-haiku-5-5: 3 problems
+  fact-check: reel_script says 'மின் தடைக்கு முன் தண்ணீர், மொபைல் சார்ஜ் ஆகியவற்றை தயாராக வைத்துக்கொள்ளுங்கள்' (prepare water and mobile charge in advance) and slides_spec says 'முன்கூட்டியே தண்ணீர், சார்ஜ் தயார் செய்யுங்கள' - advice not present in the article
+  fact-check: reel_script says the power cut is for 'மாதாந்திர பராமரிப்புப் பணிகளுக்காக இந்த மின் தடை செய்யப்படுகிறது' - the article does state monthly maintenance, so this is fine; however the reel_script omits the Pattampudur/Pappampatti-pirivu details only as a minor omission and the Ottakkal Mandapam area list is complete, so no issue there
+  fact-check: reel_script/slides_spec list 'பாப்பம்பட்டிப்பிரிவு' and 'பள்ளபாளையம்' omitted from the reel_script's Peedampalli list (article includes both) - the reel_script omits two areas that are in the article
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+free fact-check unavailable, using Claude: no free model answered: None
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 6 problems
+  reel_script says Pidampalli area list includes 'பீடம்' (short form) instead of 'பீடம்பள்ளி' — minor, but the sentence 'பாப்பம்பட்டிப்பிரிவு' is omitted, and the reel_script and slides_spec are incomplete relative to article
+  reel_script omits Pidampalli's 'பாப்பம்பட்டிப்பிரிவு' from the list of affected areas, though the article lists it
+  reel_script and slides_spec omit 'அக்கரை செங்கப்பள்ளி, வடக்கலூர், மூக்கனூர்' from the Irumborai area list in the reel_script narrative... the reel_script does include them, but the slides_spec Irumborai slide omits 'வடக்கலூர்', 'மூக்கனூர்' and 'அக்கரை செங்கப்பள்ளி' (only three per line; the list is shortened without marking it)
+  slides_spec 'எப்போது?' slide and reel_script state the Pidampalli area list as 'பீடம்' in the slides which misnames the area 'பீடம்பள்ளி' (shortened name, a mismatch with the article's place name)
+  reel_script says the Othakkal Mandapam outage affects 'இந்த மின் தடை' for Arisipalayam, M.M. Patti and Chettipalayam, but the reel_script is missing the Othakkal Mandapam outage in its listed sub-stations? — the outage is stated; however the slides_spec omits the Othakkal Mandapam (ஒத்தக்கால் மண்டபம்) timing entirely from the 'எப்போது?' slide
+  reel_script says 'பல பகுதிகளில் மின் தடை' and the caption headline lists three substations but the reel_script says the Irumborai list 'பாதிக்கப்படும்' is correct; no ungrammatical sentence found beyond the above minor issues
+claude rewrite 2 anthropic/claude-haiku-5-5: 6 problems
+  fact-check: reel_script says Pidampalli area list includes 'பீடம்' (short form) instead of 'பீடம்பள்ளி' — minor, but the sentence 'பாப்பம்பட்டிப்பிரிவு' is omitted, and the reel_script and slides_spec are incomplete relative to article
+  fact-check: reel_script omits Pidampalli's 'பாப்பம்பட்டிப்பிரிவு' from the list of affected areas, though the article lists it
+  fact-check: reel_script and slides_spec omit 'அக்கரை செங்கப்பள்ளி, வடக்கலூர், மூக்கனூர்' from the Irumborai area list in the reel_script narrative... the reel_script does include them, but the slides_spec Irumborai slide omits 'வடக்கலூர்', 'மூக்கனூர்' and 'அக்கரை செங்கப்பள்ளி' (only three per line; the list is shortened without marking it)
+  fact-check: slides_spec 'எப்போது?' slide and reel_script state the Pidampalli area list as 'பீடம்' in the slides which misnames the area 'பீடம்பள்ளி' (shortened name, a mismatch with the article's place name)
+  fact-check: reel_script says the Othakkal Mandapam outage affects 'இந்த மின் தடை' for Arisipalayam, M.M. Patti and Chettipalayam, but the reel_script is missing the Othakkal Mandapam outage in its listed sub-stations? — the outage is stated; however the slides_spec omits the Othakkal Mandapam (ஒத்தக்கால் மண்டபம்) timing entirely from the 'எப்போது?' slide
+  fact-check: reel_script says 'பல பகுதிகளில் மின் தடை' and the caption headline lists three substations but the reel_script says the Irumborai list 'பாதிக்கப்படும்' is correct; no ungrammatical sentence found beyond the above minor issues
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+free fact-check unavailable, using Claude: no free model answered: None
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 1 problems
+  Caption adds advice to charge mobile phones and prepare drinking water before the outage, which is not in the article (invented detail)
+claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
+  fact-check: Caption adds advice to charge mobile phones and prepare drinking water before the outage, which is not in the article (invented detail)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok anthropic/claude-haiku-5-5
+earlier stories still waiting for images: []
+instagram check: 50 recent posts read from the page
+pick round: only the picked links are written (research_free/pick.py)
+manual link added: https://covaimail.com/power-shutdown-scheduled-to-take-place-in-coimbatore-on-26-november-2026
+candidate filter: collected=1
+to write: 1 Coimbatore district candidates (max 1 stories)
+round: top 1 of 1 candidates
+candidates waiting: 1 Coimbatore; time left 39 min
+try (N) manual=True: https://covaimail.com/power-shutdown-scheduled-to-take-place
+NOT filed (N) கோவையில் நாளை (நவ.26) இந்த இடங்களில் மின் தடை - Th: duplicate after write
+candidate loop ended: left 0, tried={'N': 1}, done={'N': 0}, time left 39 min
+filed: 0 Coimbatore district stories (target 1), reels only
+queue: 0 news waiting to be written
+All News sheet: {"ok":true,"added":1,"updated":0} 
+stories: 0
