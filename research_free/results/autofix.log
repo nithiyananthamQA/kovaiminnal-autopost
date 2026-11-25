@@ -1,6 +1,79 @@
-01:06:45 hold lifted: RN-20 - not grounded: location 'நகரம்' is not in the article - the location IS in the article (checked again)
-01:06:54 hold lifted: RN-63 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
-01:07:03 hold lifted: RN-166 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
-01:07:06 hold lifted: RN-185 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
-01:07:12 hold lifted: RN-213 - not grounded: location 'சாலை' is not in the article - the location IS in the article (checked again)
-01:07:20 0 held news to fix: []
+05:06:55 hold lifted: RN-20 - not grounded: location 'நகரம்' is not in the article - the location IS in the article (checked again)
+05:07:04 hold lifted: RN-63 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
+05:07:13 hold lifted: RN-166 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
+05:07:15 hold lifted: RN-185 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
+05:07:21 hold lifted: RN-213 - not grounded: location 'சாலை' is not in the article - the location IS in the article (checked again)
+05:07:38 2 held news to fix: ['RN-336', 'RN-337']
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, plea
+dead for this round: gemini/gemini-3-flash-preview
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+dead for this round: groq/openai/gpt-oss-120b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 413: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free fact-check unavailable, using Claude: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model 
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 3 problems
+  The reel_script says the 50+ people waited 'இரவு வரை' (until night) and the article supports this, but the reel_script states 'பத்திர எழுத்தர்கள் இதுபோன்ற பிரச்னை அடிக்கடி ஏற்படுவதாகக் கூறினர்' - acceptable; however slides_spec line 'தமிழகம் முழுவதும் பத்திரப்பதிவு பணிகள் பாதிக்கப்பட்டன' under 'என்ன நடந்தது?' is fine. Main problem: the reel_script says the server problem 'தமிழகம் முழுவதும் நேற்று இந்தப் பிரச்னை ஏற்பட்டது' while the article's specific Kinathukadavu link is not stated as the cause of the crowd - no clear error here.
+  The caption says 'இடம் விற்பவர், வாங்குபவரின் கைரேகை பதிவு இணையப் பக்கத்தில் பதிவாகாமல் சர்வர் பிரச்னை ஏற்பட்டது' which mixes the fingerprint registration failure with the cause of the server problem in one sentence, combining two facts.
+  The caption and reel_script say the server problem 'இரவு வரை' caused people to wait, but the article says 50+ people waited 'இரவு வரை' for registration; the reel_script also omits the article's point that the fingerprint problem meant the 50-60 documents could not be registered as the direct result of the server issue on the day, which is present, so no omission there.
+claude rewrite 1 anthropic/claude-haiku-5-5: 3 problems
+  fact-check: The reel_script says the 50+ people waited 'இரவு வரை' (until night) and the article supports this, but the reel_script states 'பத்திர எழுத்தர்கள் இதுபோன்ற பிரச்னை அடிக்கடி ஏற்படுவதாகக் கூறினர்' - acceptable; however slides_spec line 'தமிழகம் முழுவதும் பத்திரப்பதிவு பணிகள் பாதிக்கப்பட்டன' under 'என்ன நடந்தது?' is fine. Main problem: the reel_script says the server problem 'தமிழகம் முழுவதும் நேற்று இந்தப் பிரச்னை ஏற்பட்டது' while the article's specific Kinathukadavu link is not stated as the cause of the crowd - no clear error here.
+  fact-check: The caption says 'இடம் விற்பவர், வாங்குபவரின் கைரேகை பதிவு இணையப் பக்கத்தில் பதிவாகாமல் சர்வர் பிரச்னை ஏற்பட்டது' which mixes the fingerprint registration failure with the cause of the server problem in one sentence, combining two facts.
+  fact-check: The caption and reel_script say the server problem 'இரவு வரை' caused people to wait, but the article says 50+ people waited 'இரவு வரை' for registration; the reel_script also omits the article's point that the fingerprint problem meant the 50-60 documents could not be registered as the direct result of the server issue on the day, which is present, so no omission there.
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok groq/qwen/qwen3.8-27b (0s)
+factcheck by groq/qwen/qwen3.8-27b: 0 problems
+claude rewrite 2 anthropic/claude-haiku-5-5: 0 problems
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok groq/qwen/qwen3.8-27b (3s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok groq/qwen/qwen3.8-27b (0s)
+factcheck by groq/qwen/qwen3.8-27b: 0 problems
+proofread by groq/qwen/qwen3.8-27b: 0 problems
+05:08:53 RN-336 FIXED - posts with the corrected text: கிணத்துக்கடவில் சர்வர் பிரச்னையால் பத்திரப்பதிவு பாதிப்பு: 50க்கும் மேற்பட்டோர் 
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
+  sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 2 problems
+  not grounded: location 'புரம்' is not in the article
+  caption copies the article word for word (15 words in a row, 40% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 2 problems
+  sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
+  not grounded: location 'புரம்' is not in the article
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok groq/qwen/qwen3.8-27b (4s)
+proofread by groq/qwen/qwen3.8-27b: 0 problems
+05:09:27 RN-337 FIXED - posts with the corrected text: ஆர்.எஸ்.புரத்தில் ஜே.சி.எஸ். ஜூவல் கிரியேஷன்ஸ் நகை விற்பனையகம் துவக்கம்
