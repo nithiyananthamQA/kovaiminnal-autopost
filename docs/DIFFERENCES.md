@@ -216,6 +216,11 @@ e-mail tag KOVAIMINNAL. Never "360".
   count; the reference: 04/08/12/16/20/22, 30-35 a day), 12 minutes between posts (the reference: 5), no quiet_ist (the reference
   posts nothing 00:00-05:00; ours: news waits for 05:00 as before, power cuts post at once).
 
+- Location words + Indian number grouping = the reference's 24c40231 (23 Nov), ported 25 Nov (its writer / posting parts; his
+  'yesterday's daily maximum' part not taken - our DAILY_CAP never holds a news back): validate.GENERIC_LOC (நகரம், ரோடு, சாலை,
+  பகுதி ... are no place) and post._number_in_article reads '44,46,247'. Measured on the held queues: Kovai 6 and Chennai 3 holds
+  released (post.py re-checks a held location with today's rule); old ones stay unposted by the age rule.
+
 ## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 
 - Chennai's own places (owner 18 Nov: "chennai is the most populated city ... add even more small areas", suburbs yes):

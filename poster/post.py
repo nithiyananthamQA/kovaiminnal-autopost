@@ -2145,6 +2145,8 @@ def _number_in_article(n, art):
         forms |= {f"{v // 100000} லட்சம்", f"{v // 100000}லட்சம்"} | ({"லட்சம்"} if v == 100000 else set())
     if v in _TA_SMALL:
         forms |= set(_TA_SMALL[v])
+    if n in {g.replace(",", "") for g in re.findall(r"\d[\d,]*\d|\d", art)}:
+        return True      # reference 24c40231 (23 Nov): Indian grouping '44,46,247' is 4446247 (Kovai RN-268, Chennai RN-96 / 99 held for it)
     return any(f in art for f in forms)
 
 
