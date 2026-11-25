@@ -74,7 +74,7 @@ class Keeper(unittest.TestCase):
                 if k in ("dry", "dry_run", "prebuild", "repost", "post_only"):
                     self.assertIn(v, ("0", "false"), (wf, k))
         self.assertEqual(K.LIVE_INPUTS["post.yml"]["timer"], "true")      # post.yml: counts as scheduled (LIVE file, no commit every 5 min)
-        self.assertIn('PICK_ROUND_TOP: "4=7,8=5,13=4,16=4,18=4"', (ROOT / ".github/workflows/pick.yml").read_text(encoding="utf-8"))      # reference 7312326 (19 Nov): 24 a day in 5 rounds a day
+        self.assertIn('PICK_ROUND_TOP: "1=3,5=4,9=4,13=4,17=5,21=4"', (ROOT / ".github/workflows/pick.yml").read_text(encoding="utf-8"))      # owner 25 Nov: 24 a day in the Worker's 6 rounds
 
     def test_a_whole_day_starts_each_time_once(self):
         gh = run_day(FakeGh())
@@ -83,11 +83,11 @@ class Keeper(unittest.TestCase):
             n[wf] = n.get(wf, 0) + 1
         # GITHUB SAFE MODE (owner 17 Nov): posting checks hourly (the posting chain does the rest), comments / power cuts hourly,
         # no district engine (Chennai has its own repo) - back to 288 / 36 / 34 when the Cloudflare Workers timer takes over
-        self.assertEqual(n, {"post.yml": 25, "powercut.yml": 17, "comments.yml": 18, "pick.yml": 5,
+        self.assertEqual(n, {"post.yml": 25, "powercut.yml": 17, "comments.yml": 18, "pick.yml": 7,      # 6 rounds; the day starts 05:30: 05:00 late + next 05:00
                              "insights.yml": 1, "cloudclean.yml": 1, "goldrate.yml": 3})      # owner 17 Nov: the gold rate reel (09:35 + two backups)
         picks = [t.astimezone(K.IST).strftime("%H:%M") for wf, t, i in gh.started if wf == "pick.yml"]
-        # reference 7312326 (19 Nov): 5 rounds fitted to the posting windows; the test day starts 05:30 (04:00 is over an hour ago)
-        self.assertEqual(picks, ["08:30", "13:00", "16:30", "18:30", "04:00"])
+        # owner 25 Nov: the Worker's 6 rounds (01/05/09/13/17/21 IST); the test day starts 05:30, so the 05:00 round is started late
+        self.assertEqual(picks, ["05:30", "09:00", "13:00", "17:00", "21:00", "01:00", "05:00"])
         first = {wf: t.astimezone(K.IST).strftime("%H:%M") for wf, t, _ in reversed(gh.started)}
         self.assertEqual(first["powercut.yml"], "05:50")
         self.assertEqual(first["insights.yml"], "02:10")

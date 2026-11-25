@@ -207,6 +207,15 @@ e-mail tag KOVAIMINNAL. Never "360".
   after write' 6 times after RN-272 (Mayilampatti); 'பிற்பகல்' / 'மறுதினம்' did the same earlier. Months, weekdays and time words
   are now left out. Replay of all 39 posted power-cut headlines: 8 pairs now different (all truly different places), none newly same.
 
+- Posting time = the reference's 21 Nov change ("NO best-time waiting", ported 25 Nov): config prime_time.windows 05:00-24:00, a news
+  posts as soon as it is ready. Why: 19-24 Nov the windows 06-12 + 15-21 sent every evening / night news to the next morning (Kovai 0
+  posts after 20:00 on 23-25 Nov, 3-8 a night before; Chennai 12 a night -> 0; 15-20 posts piled up at 06:00-10:00), while 5 of
+  Kovai's biggest reels had been posted 21:55-01:30. And the 19 Nov round times (04/08:30/13/16:30/18:30) never reached the Cloudflare
+  Worker - it still starts the rounds at 01/05/09/13/17/21 IST (GitHub runs 19-25 Nov). Ours: the rounds stay at the Worker's times
+  (pick.yml backup crons the same, so round_gate stops a second round), PICK_ROUND_TOP 1=3,5=4,9=4,13=4,17=5,21=4 = 24 a day (owner's
+  count; the reference: 04/08/12/16/20/22, 30-35 a day), 12 minutes between posts (the reference: 5), no quiet_ist (the reference
+  posts nothing 00:00-05:00; ours: news waits for 05:00 as before, power cuts post at once).
+
 ## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 
 - Chennai's own places (owner 18 Nov: "chennai is the most populated city ... add even more small areas", suburbs yes):
