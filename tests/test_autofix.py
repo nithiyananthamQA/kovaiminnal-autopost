@@ -87,6 +87,12 @@ class Main(Base):
         self.assertEqual(seen, ["RN-1"])      # stopped after the first: the writers are busy for every news
         self.assertEqual(tries.get("RN-1", 0), 0)
 
+    def test_the_try_is_saved_before_the_rewrite(self):
+        # the round's 20-minute limit can kill a rewrite: the count must already be on disk, or the same news is paid for every round
+        seen = []
+        self.run_main([row("RN-1")], lambda r, n: (seen.append(json.loads((self.tmp / "_tries.json").read_text(encoding="utf-8"))), (None, "x"))[1])
+        self.assertEqual(seen, [{"RN-1": 1}])
+
     def test_two_tries_per_news_then_left_alone(self):
         (self.tmp / "_tries.json").write_text(json.dumps({"RN-1": 2}), encoding="utf-8")
         seen = []

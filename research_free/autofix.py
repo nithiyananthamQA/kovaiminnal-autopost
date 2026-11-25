@@ -98,6 +98,13 @@ def rewrite(row, now):
     return fixed, ""
 
 
+def save_tries(tries):
+    if DRY:
+        return
+    FIX.mkdir(parents=True, exist_ok=True)
+    TRIES.write_text(json.dumps(tries, indent=1), encoding="utf-8")
+
+
 def main(now=None):
     now = now or datetime.datetime.now(IST)
     try:
@@ -115,6 +122,7 @@ def main(now=None):
     for row in todo:
         sid = row["story_id"]
         tries[sid] = int(tries.get(sid, 0)) + 1
+        save_tries(tries)      # counted before the rewrite: a run stopped by its time limit cannot pay for the same news again and again
         try:
             fixed, why = rewrite(row, now)
         except Exception as e:
@@ -122,6 +130,7 @@ def main(now=None):
         if not fixed:
             if BUSY.search(why or ""):      # reference 24 Nov: busy AI writers are not the news's fault
                 tries[sid] -= 1
+                save_tries(tries)
                 log(sid, "NOT fixed - the AI writers are busy; tried again in a later run (this try is not counted):", (why or "")[:160])
                 break      # the writers are busy for the other news too - stop this run
             log(sid, "NOT fixed (try", tries[sid], "of", MAX_TRIES, "):", why)
@@ -146,9 +155,7 @@ def main(now=None):
         except Exception:
             pass
     live = {r.get("story_id") for r in rows}
-    tries = {k: v for k, v in tries.items() if k in live}      # a story gone from the queue needs no count
-    FIX.mkdir(parents=True, exist_ok=True)
-    TRIES.write_text(json.dumps(tries, indent=1), encoding="utf-8")
+    save_tries({k: v for k, v in tries.items() if k in live})      # a story gone from the queue needs no count
 
 
 if __name__ == "__main__":
