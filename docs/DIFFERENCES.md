@@ -221,6 +221,9 @@ e-mail tag KOVAIMINNAL. Never "360".
   பகுதி ... are no place) and post._number_in_article reads '44,46,247'. Measured on the held queues: Kovai 6 and Chennai 3 holds
   released (post.py re-checks a held location with today's rule); old ones stay unposted by the age rule.
 
+- Bing backup = the reference's f4547cce (22 Nov), ported 25 Nov as he wrote it: the other Tamil outlets are searched on Google only;
+  when Google News answers 503 (in our pick logs most days) that outlet's search goes to Bing instead of finding nothing.
+
 ## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 
 - Chennai's own places (owner 18 Nov: "chennai is the most populated city ... add even more small areas", suburbs yes):
