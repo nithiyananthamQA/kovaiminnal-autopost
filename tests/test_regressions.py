@@ -491,10 +491,26 @@ class PrimeTime(unittest.TestCase):
     def row(self, title, h, m=0):
         return {"story_id": "RN-T", "headline_ta": title, "headline_en": "", "category": "", "researched": self.at(h, m).strftime("%d %b %Y, %H:%M")}
 
-    def wait(self, row, now, waited=1.0):
+    def wait(self, row, now, waited=1.0, engine=(None, "engine not ready")):
+        # the engine is mocked: learned.json changes every night and differs per page (owner 25 Nov high-signal rule)
+        import learned
         pt = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["prime_time"]
-        with mock.patch.object(post, "age_hours", return_value=waited), mock.patch.dict(post.CONFIG, {"prime_time": pt}):
+        eng = mock.patch.object(learned, "engine_score", side_effect=engine) if isinstance(engine, Exception) else \
+            mock.patch.object(learned, "engine_score", return_value=engine)
+        with mock.patch.object(post, "age_hours", return_value=waited), mock.patch.dict(post.CONFIG, {"prime_time": pt}), eng:
             return post.prime_wait(row, now)
+
+    def test_high_signal_news_posts_tonight_not_tomorrow(self):
+        # owner 25 Nov: "if a reel has high signal ... post it in the next round but dont leave for next day"
+        news, hi, lo = "செல்வபுரத்தில் நகை கடையில் தங்கம் திருட்டு", (0.57, "crime +0.34; city +0.23"), (0.1, "other")
+        self.assertEqual("", self.wait(self.row(news, 21, 30), self.at(22, 7), engine=hi))      # after 21:00: posts tonight
+        self.assertEqual("", self.wait(self.row(news, 21, 30), self.at(23, 7), engine=hi))
+        self.assertIn("06:00", self.wait(self.row(news, 21, 30), self.at(22, 7), engine=lo))      # an ordinary news waits as before
+        self.assertIn("15:00", self.wait(self.row(news, 13, 30), self.at(13, 55), engine=hi))      # same day anyway: our windows
+        self.assertIn("06:00", self.wait(self.row(news, 1, 30), self.at(2, 7), engine=hi))      # 01:00 round: posts at 06:00 the same day
+        self.assertIn("06:00", self.wait(self.row(news, 21, 30), self.at(22, 7)))      # engine not ready (Salem): waits
+        self.assertIn("06:00", self.wait(self.row(news, 21, 30), self.at(22, 7), engine=RuntimeError("broken learned.json")))
+        self.assertEqual(json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["prime_time"]["high_signal_min"], 0.3)
 
     def test_windows_switched_on(self):
         pt = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))["prime_time"]

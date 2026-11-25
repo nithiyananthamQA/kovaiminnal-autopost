@@ -214,6 +214,13 @@ e-mail tag KOVAIMINNAL. Never "360".
   pick.yml backup crons at the Worker's times (so round_gate stops a second round) and PICK_ROUND_TOP 1=4,5=7,9=5,13=4,17=4,21=4 =
   the same 28 a day written out (the reference: 04/08/12/16/20/22, 30-35 a day, posting 05:00-midnight, 5 minutes apart).
 
+- High-signal news posts the same night (ours, owner 25 Nov: "if a reel has high signal ... post it in the next round but dont leave
+  for next day"): after the last window (21:00) a news that this page's engine (learned.engine_score) rates >= config
+  prime_time.high_signal_min (0.3) posts that night instead of at 06:00 (post.py high_signal). Other news and the 12:00-15:00 /
+  00:00-06:00 waits are unchanged. Nobody knows 2,000 views in advance: Kovai 22-25 Nov (engine fitted to 21 Nov) 9 of 19 news at
+  >= 0.3 reached 2,000 (all news 21 of 81); Chennai's live engine rates no news that high yet, Salem has no engine (both: no change
+  until their engines learn). The reference has no such rule (he posts everything at once, 05:00-midnight).
+
 ## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 
 - Chennai's own places (owner 18 Nov: "chennai is the most populated city ... add even more small areas", suburbs yes):

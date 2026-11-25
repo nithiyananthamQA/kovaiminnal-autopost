@@ -198,8 +198,34 @@ def prime_wait(row, now=None):
         return "" if start is None or now >= start else f"waits for posting start ({start:%H:%M} IST)"
     if in_prime_time(now):
         return ""
-    nxt = next((a for a, b in sorted(pt.get("windows", [])) if a > now.strftime("%H:%M")), (pt.get("windows") or [["09:00"]])[0][0])
+    nxt = next((a for a, b in sorted(pt.get("windows", [])) if a > now.strftime("%H:%M")), None)
+    if nxt is None:      # no window left today (after 21:00): this news would wait for tomorrow morning
+        hs = high_signal(row, pt)
+        if hs:      # owner 25 Nov: "if a reel has high signal ... post it in the next round but dont leave for next day"
+            log("  ", row.get("story_id"), f"high signal (engine {hs[0]:+.2f} >= {pt.get('high_signal_min')}): posts tonight, not tomorrow -", hs[1][:120])
+            return ""
+        nxt = (pt.get("windows") or [["09:00"]])[0][0]
     return f"waits for prime time ({nxt} IST)"
+
+
+def high_signal(row, pt=None):
+    """owner 25 Nov: (score, why) when this page's learned engine (research_free/learned.engine_score - topic, area, headline words, from
+    the page's own Instagram insights) rates the news at least config prime_time.high_signal_min; None otherwise (also when the engine is
+    not ready or fails - then the news waits as usual). Scored on the caption's first line, the text the engine learned from.
+    Kovai 22-25 Nov (engine fitted on reels up to 21 Nov): 9 of 19 news at >= 0.3 reached 2,000 views, 21 of 81 of all news."""
+    pt = (CONFIG.get("prime_time") or {}) if pt is None else pt
+    try:
+        th = float(pt.get("high_signal_min"))
+    except (TypeError, ValueError):
+        return None
+    head = str(row.get("caption") or "").split("\n")[0].strip() or str(row.get("headline_ta") or "")
+    try:
+        sys.path.insert(0, str(ROOT / "research_free"))
+        import learned
+        s, why = learned.engine_score(head)
+    except Exception:
+        return None
+    return (s, why) if isinstance(s, (int, float)) and s >= th else None
 
 
 def posting_start(row, starts, grace_min=60):

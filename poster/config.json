@@ -56,6 +56,8 @@
     "grace_min": 60,
     "max_wait_hours": 18,
     "immediate": "power_cut",
+    "high_signal_min": 0.3,
+    "high_signal_note": "owner 25 Nov: 'if a reel has high signal ... post it in the next round but dont leave for next day'. After the last window (21:00) a news this page's engine (research_free/learned.engine_score, the page's own insights) rates >= high_signal_min posts that night; all other news waits for 06:00 as before. The 12:00-15:00 and 00:00-06:00 waits are unchanged. Kovai 22-25 Nov: 9 of 19 news at >= 0.3 reached 2,000 views (all news: 21 of 81). Engine not ready (Salem) = no change. null = off.",
     "note": "owner 19 Nov: posting time first (best reach; 19 Nov data, views against each page's median: 06-09 1.02, 09-12 1.12, 12-15 0.84, 15-18 1.02, 18-21 0.92, 21-24 0.80). News posts in 06:00-12:00 and 15:00-21:00 IST. When a window opens every ready news posts at once, news written inside a window posts at once, news written outside waits for the next window. Nothing is dropped; power cuts post at once; a news waiting 18 h posts anyway. Owner 25 Nov: kept as is (no posting as soon as ready - the reference's 21 Nov change is NOT taken). The pick rounds run at the Worker's times 01 / 05 / 09 / 13 / 17 / 21 IST, 28 news a day (pick.yml PICK_ROUND_TOP): the 01:00 and 05:00 rounds' news post from 06:00, 13:00's from 15:00, 21:00's the next morning.",
     "windows": [
       [
