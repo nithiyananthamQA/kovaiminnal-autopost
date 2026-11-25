@@ -1,9 +1,9 @@
-17:08:19 hold lifted: RN-20 - not grounded: location 'நகரம்' is not in the article - the location IS in the article (checked again)
-17:08:28 hold lifted: RN-63 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
-17:08:38 hold lifted: RN-166 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
-17:08:41 hold lifted: RN-185 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
-17:08:47 hold lifted: RN-213 - not grounded: location 'சாலை' is not in the article - the location IS in the article (checked again)
-17:08:55 5 held news to fix: ['RN-285', 'RN-297', 'RN-298', 'RN-318', 'RN-320']
+21:08:13 hold lifted: RN-20 - not grounded: location 'நகரம்' is not in the article - the location IS in the article (checked again)
+21:08:23 hold lifted: RN-63 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
+21:08:32 hold lifted: RN-166 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
+21:08:34 hold lifted: RN-185 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
+21:08:39 hold lifted: RN-213 - not grounded: location 'சாலை' is not in the article - the location IS in the article (checked again)
+21:08:47 2 held news to fix: ['RN-298', 'RN-318']
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
@@ -16,130 +16,52 @@ fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
     "code": 429,
     "message": "You exceeded your current quota, please che
 dead for this round: gemini/gemini-3.5-flash
-fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {
   "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, plea
-dead for this round: gemini/gemini-3-flash-preview
-fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {"error":{"message":"Failed to validate JSON. Please adjust your prompt. See 'failed_gener
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
-free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
-ok anthropic/claude-haiku-5-5
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok groq/openai/gpt-oss-120b (4s)
-factcheck by groq/openai/gpt-oss-120b: 1 problems
-  Slide 1 first line is incomplete and unclear in Tamil ("வடவள்ளி சுல்தானியபுரம் பகுதியில் வசிக்கும் <b>10 மாத</b>")
-claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
-  fact-check: Slide 1 first line is incomplete and unclear in Tamil ("வடவள்ளி சுல்தானியபுரம் பகுதியில் வசிக்கும் <b>10 மாத</b>")
-ok anthropic/claude-haiku-5-5
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
-ok groq/openai/gpt-oss-120b (3s)
-factcheck by groq/openai/gpt-oss-120b: 0 problems
-claude rewrite 2 anthropic/claude-haiku-5-5: 0 problems
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
-ok groq/openai/gpt-oss-120b (4s)
-proofread rejected (2 problems)
-  slide 1 line 3 longer than 60 characters
-  slide 2 line 3 longer than 60 characters
-17:10:04 RN-285 FIXED - posts with the corrected text: வடவள்ளியில் உடல்நலக்குறைவால் 10 மாத குழந்தை உயிரிழப்பு
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+    "code": 503,
+    "message": "This model is currently experiencing 
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing 
+switching away from gemini/gemini-3-flash-preview for 10 min
 fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
 dead for this round: groq/openai/gpt-oss-120b
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
-free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
-ok anthropic/claude-haiku-5-5
-claude rewrite 1 anthropic/claude-haiku-5-5: 4 problems
-  reel_script has 99 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
-  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
-  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): பொள்ளாச்சி ('கோவையில் இருந்து பொள்ளாச்சி வழியாக மதுரை செல்ல தேசிய நெடுஞ்ச')
-ok anthropic/claude-haiku-5-5
-claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
-  sentence 1 (one-line story) has 12 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
-ok anthropic/claude-haiku-5-5
-claude rewrite 3 anthropic/claude-haiku-5-5: 3 problems
-  reel_script has 72 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)
-  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): பொள்ளாச்சி ('கோவையில் இருந்து பொள்ளாச்சி வழியாக மதுரை செல்ல தேசிய நெடுஞ்ச')
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-ok groq/qwen/qwen3.8-27b (4s)
-proofread by groq/qwen/qwen3.8-27b: 1 problems
-17:10:42 RN-297 FIXED - posts with the corrected text: சென்னை-கோவை-தூத்துக்குடி விரைவுச் சாலை: 5 ஆண்டுக்குள் அமைக்க திட்டம்
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
-free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
-ok anthropic/claude-haiku-5-5
-claude rewrite 1 anthropic/claude-haiku-5-5: 3 problems
-  caption copies the article word for word (19 words in a row, 30% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-  reel_script sentence 1 (heard in the first 3 seconds) must name the place 'கோவை' and the news itself, e.g. 'கோவை-இல் ... 3 பேர் கைது.' - viewers decide in 3 seconds whether the news is about their area
-  day word wrong: the draft says நாளை, written from the paper of 24 Nov - that tomorrow is today or over - write the day as it is TODAY (இன்று / நாளை from today) together with the date
-ok anthropic/claude-haiku-5-5
-claude rewrite 2 anthropic/claude-haiku-5-5: 2 problems
-  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
-  day word wrong: the draft says நாளை, written from the paper of 24 Nov - that tomorrow is today or over - write the day as it is TODAY (இன்று / நாளை from today) together with the date
-ok anthropic/claude-haiku-5-5
-claude rewrite 3 anthropic/claude-haiku-5-5: 3 problems
-  numbers not found in the article: 10
-  hl1 (the first headline on screen) must name the place 'கோவை சி.எஸ்.ஐ. ஆண்கள் பள்ளி', e.g. 'கோவை சி.எஸ்.ஐ. ஆண்கள் பள்ளி: ...' or 'கோவை சி.எஸ்.ஐ. ஆண்கள் பள்ளி-இல் ...' - viewers share news of their own area
-  day word wrong: the draft says நாளை, written from the paper of 24 Nov - that tomorrow is today or over - write the day as it is TODAY (இன்று / நாளை from today) together with the date
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok groq/qwen/qwen3.8-27b (3s)
-proofread by groq/qwen/qwen3.8-27b: 2 problems
-17:11:17 RN-298 NOT fixed (try 1 of 2 ): still held: held: location is only the district - the town from the article is missing
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
-free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
-ok anthropic/claude-haiku-5-5
-claude rewrite 1 anthropic/claude-haiku-5-5: 2 problems
-  reel_script copies the article word for word (29 words in a row, 57% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-  caption copies the article word for word (30 words in a row, 83% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-ok anthropic/claude-haiku-5-5
-claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
-  not grounded: place word 'மலையில்' is not in the article
-ok anthropic/claude-haiku-5-5
-claude rewrite 3 anthropic/claude-haiku-5-5: 2 problems
-  reel_script copies the article word for word (16 words in a row, 36% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-  caption copies the article word for word (50 words in a row, 80% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-ok groq/qwen/qwen3.8-27b (3s)
-proofread by groq/qwen/qwen3.8-27b: 1 problems
-17:11:47 RN-318 NOT fixed (try 1 of 2 ): still held: held: fact-check problems - not grounded: place word 'மலையில்' is not in the article
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
 dead for this round: groq/qwen/qwen3.8-27b
 free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
 ok anthropic/claude-haiku-5-5
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-free fact-check unavailable, using Claude: no free model answered: None
-ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 3 problems
-  slides_spec 'பரிசுகள்' slide line 2 is truncated and ungrammatical: 'இரண்டாம் பரிசு: 3,000 ரூபாய் (அரசம்பாளையம்' is missing the closing parenthesis and the group name (மாசாணியம்மன் குழு) is absent, so it reads as an unfinished/unclear sentence
-  reel_script omits the names of the second-place winning group (அரசம்பாளையம் மாசாணியம்மன் குழு is mentioned without the group name in full ... the reel does say 'அரசம்பாளையம் ஊராட்சி மாசாணியம்மன் குழுவுக்கு', so this is covered; however the slides_spec second-prize line is inconsistent with the reel and caption)
-  The caption describes the 'Millet food festival' footer and the body is otherwise consistent; no other factual errors found
 claude rewrite 1 anthropic/claude-haiku-5-5: 3 problems
-  fact-check: slides_spec 'பரிசுகள்' slide line 2 is truncated and ungrammatical: 'இரண்டாம் பரிசு: 3,000 ரூபாய் (அரசம்பாளையம்' is missing the closing parenthesis and the group name (மாசாணியம்மன் குழு) is absent, so it reads as an unfinished/unclear sentence
-  fact-check: reel_script omits the names of the second-place winning group (அரசம்பாளையம் மாசாணியம்மன் குழு is mentioned without the group name in full ... the reel does say 'அரசம்பாளையம் ஊராட்சி மாசாணியம்மன் குழுவுக்கு', so this is covered; however the slides_spec second-prize line is inconsistent with the reel and caption)
-  fact-check: The caption describes the 'Millet food festival' footer and the body is otherwise consistent; no other factual errors found
+  caption copies the article word for word (16 words in a row, 26% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  day word wrong: the draft says நாளை, written from the paper of 24 Nov - that tomorrow is today or over - write the day as it is TODAY (இன்று / நாளை from today) together with the date
 ok anthropic/claude-haiku-5-5
 claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
-  caption copies the article word for word (15 words in a row, 30% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+  day word wrong: the draft says நாளை, written from the paper of 24 Nov - that tomorrow is today or over - write the day as it is TODAY (இன்று / நாளை from today) together with the date
 ok anthropic/claude-haiku-5-5
-claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
-  caption copies the article word for word (15 words in a row, 28% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+claude rewrite 3 anthropic/claude-haiku-5-5: 2 problems
+  numbers not found in the article: 10
+  day word wrong: the draft says நாளை, written from the paper of 24 Nov - that tomorrow is today or over - write the day as it is TODAY (இன்று / நாளை from today) together with the date
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 proofread skipped: no free model answered: None
-17:12:19 RN-320 FIXED - posts with the corrected text: கிணத்துக்கடவில் சிறுதானிய பாரம்பரிய உணவு திருவிழா: 34 ஊராட்சிகளின் மகளிர் குழுக்
+21:09:33 RN-298 NOT fixed (try 2 of 2 ): still held: held: fact-check problems - day word wrong: the draft says நாளை, written from the paper of 24 Nov - that tomorrow is today or over - write the day as it is TODAY (இன்று / நாளை from today) together wit
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+free models unavailable: no free model answered: None
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 2 problems
+  reel_script copies the article word for word (36 words in a row, 54% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+  caption copies the article word for word (37 words in a row, 78% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
+  not grounded: place word 'மலையில்' is not in the article
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 3 problems
+  caption must contain the exact follow line
+  reel_script copies the article word for word (21 words in a row, 36% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+  caption copies the article word for word (30 words in a row, 83% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+proofread skipped: no free model answered: None
+21:09:59 RN-318 NOT fixed (try 2 of 2 ): still held: held: fact-check problems - not grounded: place word 'மலையில்' is not in the article
