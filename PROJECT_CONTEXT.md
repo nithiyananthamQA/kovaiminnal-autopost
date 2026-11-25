@@ -82,6 +82,26 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
+| 2026-11-25 | `1f08189` | posting: high-signal news posts the same night, not the next morning (owner 25 Nov) |
+| 2026-11-25 | `5a3c7f8` | posting: keep our windows 06-12 + 15-21 and the 28 news a day that ran (owner 25 Nov) |
+| 2026-11-25 | `332e6ea` | powercut: notices written |
+| 2026-11-25 | `77e7dcf` | powercut: notices written |
+| 2026-11-25 | `02bf84f` | powercut: notices written |
+| 2026-11-25 | `bb9dec0` | power cuts: every weekday form is a date word (திங்கட்கிழமை, புதன்கிழமையன்று) |
+| 2026-11-25 | `1181103` | pick: Bing backup when Google News is busy (reference f4547cce) |
+| 2026-11-25 | `ae81c73` | held news: common location words and Indian number grouping (reference 24c40231) |
+| 2026-11-25 | `c544fe0` | timer: schedule.json = the deployed Worker again (rounds 01/05/09/13/17/21 IST) |
+| 2026-11-25 | `adf95d4` | pick: written and posted |
+| 2026-11-25 | `576e528` | pick: picked news saved |
+| 2026-11-25 | `99b98c1` | posting: as soon as ready 05:00-24:00; rounds at the Worker's real times |
+| 2026-11-25 | `0f8e564` | pick: picked news saved |
+| 2026-11-25 | `eafe4fa` | pick: list sent |
+| 2026-11-25 | `e31c2d5` | power cuts: date and time words are no shared place |
+| 2026-11-25 | `d296152` | powercut: notices written |
+| 2026-11-25 | `bfab60d` | autofix: a missing poster/fixed never stops the state save; try counts saved per news |
+| 2026-11-25 | `245f51a` | pick: a news Dinamalar lists late is offered once (reference 007165e9) |
+| 2026-11-25 | `11b625e` | autofix: held news written again from the article and posted (reference 84417aa2 + da6a5e5b) |
+| 2026-11-25 | `903fd11` | powercut: notices written |
 | 2026-11-25 | `27e4e91` | powercut: notices written |
 | 2026-11-25 | `edaf210` | pick: written and posted |
 | 2026-11-25 | `79f657c` | facebook RN-316 |
@@ -92,24 +112,4 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 | 2026-11-25 | `f3b12d8` | facebook RN-315 |
 | 2026-11-25 | `41226d7` | pick: picked news saved |
 | 2026-11-25 | `3af8df8` | facebook RN-313 |
-| 2026-11-25 | `13d9c8b` | pick: picked news saved |
-| 2026-11-25 | `28c06d5` | pick: list sent |
-| 2026-11-25 | `8969aeb` | powercut: notices written |
-| 2026-11-25 | `6550703` | facebook RN-309 |
-| 2026-11-25 | `4bf4dda` | facebook RN-312 |
-| 2026-11-25 | `5cf661c` | facebook RN-310 |
-| 2026-11-25 | `67d86f9` | powercut: notices written |
-| 2026-11-25 | `83c7e13` | facebook RN-308 |
-| 2026-11-25 | `60c8fc7` | facebook RN-305 |
-| 2026-11-25 | `f3e330c` | powercut: notices written |
-| 2026-11-25 | `85884c0` | facebook RN-306 |
-| 2026-11-25 | `9e1f22f` | facebook RN-307 |
-| 2026-11-25 | `f5ac02a` | facebook RN-302 |
-| 2026-11-25 | `2f03cca` | facebook RN-304 |
-| 2026-11-25 | `c0412ea` | facebook RN-303 |
-| 2026-11-25 | `8b1658e` | facebook RN-301 |
-| 2026-11-25 | `8265a22` | powercut: notices written |
-| 2026-11-24 | `beb06e1` | pick: written and posted |
-| 2026-11-24 | `a9806f5` | pick: picked news saved |
-| 2026-11-24 | `9a8f415` | pick: picked news saved |
 <!-- recent-changes:end -->
