@@ -2143,6 +2143,9 @@ class NoRepost(unittest.TestCase):
         self.assertFalse(fr.same_power_cut(posted, "2026-11-23T20:04:00+05:30", new, "2026-11-24T09:30:00+05:30"))
         self.assertFalse(fr.same_power_cut("ஓலப்பாளையத்தில் நாளை மின்தடை: காலை 9 – பிற்பகல் 2 மணி வரை", "2026-11-15T20:00:00+05:30",
                                            "காடுவெட்டிபாளையத்தில் நாளை மின்தடை - காலை 10 முதல் பிற்பகல் 3 மணி வரை", "2026-11-15T21:00:00+05:30"))
+        for day in ("திங்கட்கிழமை", "புதன்கிழமையன்று", "வெள்ளிக்கிழமை", "சனி"):      # weekday forms are no place either
+            self.assertFalse(fr.same_power_cut(f"சூலூரில் {day} மின்தடை", "2026-11-23T20:00:00+05:30", f"அன்னூரில் {day} மின்தடை",
+                                               "2026-11-23T21:00:00+05:30"), day)
         # the same place with a date is still the same cut
         self.assertTrue(fr.same_power_cut(posted, "2026-11-23T20:04:00+05:30", "மயிலம்பட்டியில் நவம்பர் 25 புதன்கிழமை மின்தடை",
                                           "2026-11-24T09:30:00+05:30"))

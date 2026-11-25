@@ -246,9 +246,9 @@ _PLACE_COMMON = _POWER_COMMON + ("நகர்", "நகரில்", "கா�
 # one day became 'the same power cut'. Date and time words are no place.
 _DATE_COMMON = ("ஜனவர", "பிப்ர", "மார்ச", "ஏப்ரல", "ஜூன்", "ஜூலை", "ஆகஸ்", "செப்ட", "அக்டோ", "நவம்ப", "டிசம்", "janua", "febru",
                 "march", "april", "june", "july", "augus", "septe", "octob", "novem", "decem", "மறுதின", "மறுநாள", "தேதி", "பிற்பக",
-                "முற்பக", "அதிகால", "நள்ளிர", "இரவு", "உட்பட", "கிழமை")
-_WEEKDAY = re.compile(r"(ஞாயிற்று|ஞாயிறு|திங்கள்|செவ்வாய்|புதன்|வியாழன்|வியாழ|வெள்ளி|சனி)(க்)?(கிழமை\w*)?|"
-                      r"(sun|mon|tues|wednes|thurs|fri|satur)day")
+                "முற்பக", "அதிகால", "நள்ளிர", "இரவு", "உட்பட")
+_WEEKDAY = re.compile(r"ஞாயிறு|திங்கள்|செவ்வாய்|புதன்|வியாழன்|வெள்ளி|சனி|(sun|mon|tues|wednes|thurs|fri|satur)day")      # a word with
+# 'கிழமை' in it (திங்கட்கிழமை, புதன்கிழமையன்று ...) is a weekday too
 
 
 def cut_day(headline, published):
@@ -276,7 +276,7 @@ def same_power_cut(a, a_published, b, b_published):
         return False
     def places(t):
         return {w[:6] for w in re.findall(r"[\u0B80-\u0BFFa-zA-Z]{4,}", (t or "").lower())
-                if not w.startswith(_PLACE_COMMON + _DATE_COMMON) and not _WEEKDAY.fullmatch(w)}
+                if not w.startswith(_PLACE_COMMON + _DATE_COMMON) and not _WEEKDAY.fullmatch(w) and "கிழமை" not in w}
     return bool(places(a) & places(b))
 
 
