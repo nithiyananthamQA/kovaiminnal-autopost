@@ -407,8 +407,14 @@ def cmd_collect():
             continue
         pt = when(item["published"])
         if pt and pt < t_start and not (it.get("_retry") and (t_end - pt).total_seconds() < LEFT_HOURS * 3600):
-            reasons["published before this window"] = reasons.get("published before this window", 0) + 1
-            continue
+            # reference 007165e9 (24 Nov), ported 25 Nov (Kovai 09:00-12:00 round: 5 news of 24 Nov 19:54-22:05 never offered): Dinamalar
+            # dates an article at its PRINT time (night) but lists it on its website hours later - so it was always "before this window"
+            # and never offered. A link never offered before (not in the pool, not posted) from the last LEFT_HOURS is offered now, once.
+            if (t_end - pt).total_seconds() < LEFT_HOURS * 3600:
+                item["late_listed"] = True
+            else:
+                reasons["published before this window"] = reasons.get("published before this window", 0) + 1
+                continue
         if pt and pt > t_end + datetime.timedelta(minutes=5):
             continue
         new.append(item)

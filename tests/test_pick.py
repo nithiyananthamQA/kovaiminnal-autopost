@@ -43,16 +43,30 @@ class PickFlow(unittest.TestCase):
                 mock.patch.object(pick, "bridge_post", side_effect=lambda a, p: self.sent.append((a, p)) or {"ok": True}):
             return pick.cmd_collect()
 
+    def test_late_listed_news_is_offered_once(self):
+        # 25 Nov (Kovai): Dinamalar dated 5 news at 19:54-22:05 but listed them after the next round's window began - never offered
+        d = datetime.date(2026, 11, 25)
+        r9 = datetime.datetime.combine(d, datetime.time(12, 0), IST)
+        st = {"last_end": (r9 - datetime.timedelta(hours=3)).isoformat(), "pool": {}, "rounds": {}}
+        pick.STATE.write_text(json.dumps(st))
+        late = art("https://www.dinamalar.com/late", "பிளாஸ்டிக் பயன்பாடு கடைகளுக்கு அபராதம்", r9 - datetime.timedelta(hours=14))
+        self.run_collect(r9, [late])      # (a posted / written news is refused before this by check_article: "already posted")
+        self.assertEqual([x["title"] for x in self.sent[-1][1]["items"]], ["பிளாஸ்டிக் பயன்பாடு கடைகளுக்கு அபராதம்"])
+        n = len(self.sent)
+        self.run_collect(r9 + datetime.timedelta(hours=4), [late])      # next round: in the pool now - an earlier news, not new again
+        items = self.sent[-1][1]["items"] if len(self.sent) > n else []
+        self.assertTrue(all(x.get("leftover") for x in items))
+
     def test_windows_by_published_time_and_no_repeats(self):
         d = datetime.date(2026, 11, 1)
         m6 = datetime.datetime.combine(d, datetime.time(6, 0), IST)
         st = {"last_end": (m6 - datetime.timedelta(hours=14)).isoformat(), "pool": {}, "rounds": {}}
         pick.STATE.write_text(json.dumps(st))
-        a_old = art("https://www.dinamalar.com/a", "பழைய செய்தி", m6 - datetime.timedelta(hours=20))
+        a_old = art("https://www.dinamalar.com/a", "பழைய செய்தி", m6 - datetime.timedelta(hours=30))      # 25 Nov: older than 24 h (a late-listed news of the last 24 h IS offered)
         a_in = art("https://www.dinamani.com/b", "இரவு செய்தி", m6 - datetime.timedelta(hours=3))
         self.run_collect(m6, [a_old, a_in])
         items = self.sent[-1][1]["items"]
-        self.assertEqual([x["title"] for x in items], ["இரவு செய்தி"])      # published before the window: not listed
+        self.assertEqual([x["title"] for x in items], ["இரவு செய்தி"])      # published more than 24 h before: not listed
         # evening: the morning item (not posted) comes back as an earlier news; a new 6 AM-4 PM item is listed as new
         e4 = datetime.datetime.combine(d, datetime.time(16, 0), IST)
         a_new = art("https://www.dinamalar.com/c", "மதியச் செய்தி", e4 - datetime.timedelta(hours=2))

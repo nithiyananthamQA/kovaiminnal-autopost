@@ -197,6 +197,10 @@ e-mail tag KOVAIMINNAL. Never "360".
   that would not post even when fixed (stale / duplicate / other district) is not rewritten; the owner's own Hold is never undone.
   Not taken from that commit: Cloudinary -> GitHub file fallbacks (githost), rasipalan / gold parts.
 
+- Late-listed news = the reference's 007165e9 (24 Nov), ported 25 Nov as he wrote it: a news never offered (not in the pool, not
+  posted) from the last 24 h is offered once even when published before the round's window (Dinamalar dates at print time and
+  lists hours later). Measured first: Kovai's 09:00-12:00 window had 5 such news of 24 Nov 19:54-22:05, never offered.
+
 ## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 
 - Chennai's own places (owner 18 Nov: "chennai is the most populated city ... add even more small areas", suburbs yes):
