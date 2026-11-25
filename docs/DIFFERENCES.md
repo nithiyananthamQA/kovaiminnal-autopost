@@ -201,6 +201,12 @@ e-mail tag KOVAIMINNAL. Never "360".
   posted) from the last 24 h is offered once even when published before the round's window (Dinamalar dates at print time and
   lists hours later). Measured first: Kovai's 09:00-12:00 window had 5 such news of 24 Nov 19:54-22:05, never offered.
 
+- Power cuts: date and time words are no shared place (ours, owner 25 Nov "do the favourable for each page"). freshness
+  same_power_cut took any 4+ letter word as a place; since 22 Nov every power-cut headline carries its date ('நாளை (நவம்பர் 25)',
+  daydate.py), so 'நவம்பர்' made any two cuts of one day 'the same power cut' - the full Kovai list for 25 Nov was refused 'duplicate
+  after write' 6 times after RN-272 (Mayilampatti); 'பிற்பகல்' / 'மறுதினம்' did the same earlier. Months, weekdays and time words
+  are now left out. Replay of all 39 posted power-cut headlines: 8 pairs now different (all truly different places), none newly same.
+
 ## 6. Chennai Minnal = a copy of this repo (17 Nov, the reference's way)
 
 - Chennai's own places (owner 18 Nov: "chennai is the most populated city ... add even more small areas", suburbs yes):

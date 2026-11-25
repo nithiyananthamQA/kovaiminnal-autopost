@@ -241,6 +241,14 @@ def different_power_cut(a, b, other_filed=None, today=None):
 # words of a power-cut headline that are no place of their own ('நேரு நகர்' and 'காந்தி நகர்' are not the same place)
 _PLACE_COMMON = _POWER_COMMON + ("நகர்", "நகரில்", "காலனி", "சாலை", "ரோடு", "வீதி", "தெரு", "கிராம", "ஊராட்", "பஞ்சா", "மற்றும்", "உள்ளிட்",
                                  "இடங்க", "இடங்கள", "விநியோ", "நிறுத்", "பகுதிக", "தமிழ்", "முக்கி", "அறிவிப்")
+# owner 25 Nov (Kovai 24-25 Nov: the full Kovai lists 'duplicate after write' 6 times): since 22 Nov every power-cut headline carries its
+# date ('நாளை (நவம்பர் 25)', daydate.py) - the month, the weekday and time words were taken for a shared PLACE, so any two cuts of
+# one day became 'the same power cut'. Date and time words are no place.
+_DATE_COMMON = ("ஜனவர", "பிப்ர", "மார்ச", "ஏப்ரல", "ஜூன்", "ஜூலை", "ஆகஸ்", "செப்ட", "அக்டோ", "நவம்ப", "டிசம்", "janua", "febru",
+                "march", "april", "june", "july", "augus", "septe", "octob", "novem", "decem", "மறுதின", "மறுநாள", "தேதி", "பிற்பக",
+                "முற்பக", "அதிகால", "நள்ளிர", "இரவு", "உட்பட", "கிழமை")
+_WEEKDAY = re.compile(r"(ஞாயிற்று|ஞாயிறு|திங்கள்|செவ்வாய்|புதன்|வியாழன்|வியாழ|வெள்ளி|சனி)(க்)?(கிழமை\w*)?|"
+                      r"(sun|mon|tues|wednes|thurs|fri|satur)day")
 
 
 def cut_day(headline, published):
@@ -267,7 +275,8 @@ def same_power_cut(a, a_published, b, b_published):
     if not da or not db or abs((da - db).days) > (0 if fa and fb else 1):
         return False
     def places(t):
-        return {w[:6] for w in re.findall(r"[\u0B80-\u0BFFa-zA-Z]{4,}", (t or "").lower()) if not w.startswith(_PLACE_COMMON)}
+        return {w[:6] for w in re.findall(r"[\u0B80-\u0BFFa-zA-Z]{4,}", (t or "").lower())
+                if not w.startswith(_PLACE_COMMON + _DATE_COMMON) and not _WEEKDAY.fullmatch(w)}
     return bool(places(a) & places(b))
 
 

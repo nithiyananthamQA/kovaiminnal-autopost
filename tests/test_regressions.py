@@ -2123,6 +2123,18 @@ class NoRepost(unittest.TestCase):
         next_week = (self.NOW + datetime.timedelta(days=7)).strftime("%d.%m.%Y")
         self.assertFalse(fr.same_power_cut(self.POSTED, self.FILED_YESTERDAY, f"காளப்பட்டியில் {next_week} மின் தடை", today))
 
+    def test_date_and_time_words_are_no_shared_place(self):
+        # owner 25 Nov (Kovai): the full Kovai list for 25 Nov was 'duplicate after write' 6 times after RN-272 (Mayilampatti) - both
+        # headlines carry the date ('நவம்பர் 25', daydate.py) and 'நவம்பர்' was taken for a shared place. Also பிற்பகல் / மறுதினம் / weekdays.
+        posted = "நாளை மறுதினம் (நவம்பர் 25) கோவையில் மின்தடை: மயிலம்பட்டி துணைமின் நிலையம், காலை 10 முதல் மதியம் 3 வரை"
+        new = "கோவை மாவட்டத்தில் நவம்பர் 25 புதன்கிழமை காலை 9 முதல் மாலை 4 மணி வரை மின்தடை: கரையாம்பாளையம், சின்னியம்பாளையம், ஆர்.ஜி.புதூர்"
+        self.assertFalse(fr.same_power_cut(posted, "2026-11-23T20:04:00+05:30", new, "2026-11-24T09:30:00+05:30"))
+        self.assertFalse(fr.same_power_cut("ஓலப்பாளையத்தில் நாளை மின்தடை: காலை 9 – பிற்பகல் 2 மணி வரை", "2026-11-15T20:00:00+05:30",
+                                           "காடுவெட்டிபாளையத்தில் நாளை மின்தடை - காலை 10 முதல் பிற்பகல் 3 மணி வரை", "2026-11-15T21:00:00+05:30"))
+        # the same place with a date is still the same cut
+        self.assertTrue(fr.same_power_cut(posted, "2026-11-23T20:04:00+05:30", "மயிலம்பட்டியில் நவம்பர் 25 புதன்கிழமை மின்தடை",
+                                          "2026-11-24T09:30:00+05:30"))
+
     def test_posting_skips_the_same_power_cut(self):
         old = post.ALL_ROWS
         post.ALL_ROWS = [{"story_id": "RN-61", "headline_ta": self.POSTED, "researched": self.FILED_YESTERDAY, "post_status": "Posted"}]
