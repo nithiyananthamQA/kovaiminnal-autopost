@@ -6420,3 +6420,67 @@ filed: 0 Coimbatore district stories (target 1), reels only
 queue: 0 news waiting to be written
 All News sheet: {"ok":true,"added":0,"updated":1} 
 stories: 0
+writing [N]: கோவையில் நாளை (நவ.27) மின்தடை ஏற்படும் இடங்கள் - The Covai M
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, plea
+dead for this round: gemini/gemini-3-flash-preview
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+dead for this round: groq/openai/gpt-oss-120b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+dead for this round: groq/qwen/qwen3.8-27b
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி'); 26 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி')
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+free fact-check unavailable, using Claude: no free model answered: None
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 3 problems
+  The caption adds a tip ("மொபைல் சார்ஜ், குடிநீரை முன்கூட்டியே தயார் செய்துகொள்ளுங்கள்" - charge your mobile, prepare drinking water in advance) that is not in the article.
+  The slides_spec title for the second slide is "ரேஸ் கோர்ஸ்" but its lines list Ramanathapuram 80 Feet Road, Sripathi Nagar, etc., which are Race Course area localities; the slide text is also repeated/misattributed in a way that is consistent with the article, so this is not a factual error, but the slides_spec omits "Race Course" split incorrectly, which is acceptable.
+  The reel_script omits the note that the schedule is the usual monthly maintenance timing (வழக்கமாக காலை 9 மணி முதல் மாலை 4 மணி) - this is a minor detail and not a factual error in itself.
+claude rewrite 2 anthropic/claude-haiku-5-5: 3 problems
+  fact-check: The caption adds a tip ("மொபைல் சார்ஜ், குடிநீரை முன்கூட்டியே தயார் செய்துகொள்ளுங்கள்" - charge your mobile, prepare drinking water in advance) that is not in the article.
+  fact-check: The slides_spec title for the second slide is "ரேஸ் கோர்ஸ்" but its lines list Ramanathapuram 80 Feet Road, Sripathi Nagar, etc., which are Race Course area localities; the slide text is also repeated/misattributed in a way that is consistent with the article, so this is not a factual error, but the slides_spec omits "Race Course" split incorrectly, which is acceptable.
+  fact-check: The reel_script omits the note that the schedule is the usual monthly maintenance timing (வழக்கமாக காலை 9 மணி முதல் மாலை 4 மணி) - this is a minor detail and not a factual error in itself.
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 2 problems
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி'); 26 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி'); 2 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok anthropic/claude-haiku-5-5
+earlier stories still waiting for images: []
+instagram check: 50 recent posts read from the page
+pick round: only the picked links are written (research_free/pick.py)
+manual link added: https://covaimail.com/power-shutdown-scheduled-to-take-place-in-coimbatore-on-27-november-2026
+candidate filter: collected=1
+to write: 1 Coimbatore district candidates (max 1 stories)
+round: top 1 of 1 candidates
+candidates waiting: 1 Coimbatore; time left 39 min
+try (N) manual=True: https://covaimail.com/power-shutdown-scheduled-to-take-place
+NOT filed (N) கோவையில் நாளை (நவ.27) மின்தடை ஏற்படும் இடங்கள் - T: duplicate after write
+candidate loop ended: left 0, tried={'N': 1}, done={'N': 0}, time left 39 min
+filed: 0 Coimbatore district stories (target 1), reels only
+queue: 0 news waiting to be written
+All News sheet: {"ok":true,"added":0,"updated":1} 
+stories: 0
