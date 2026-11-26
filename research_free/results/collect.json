@@ -3,266 +3,364 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dailythanthi.com/news/tamilnadu/akal-vilakku-publishing-house-owner-mohan-appears-in-special-court",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-madurai/madurai-coimbatore-train-to-run-as-usual/4386012",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/emergency-assistance-for-62-people-on-train-journeys/4386199",
-  "manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/25/வாகன-உதிரிபாக-கிடங்கில்-தீ",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/parking-disrupts-police-station-route/4386696",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/25-trains-passing-through-pothanur-are-expected-to-reach-coimbatore-junction/4386616",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/swimming-pool-which-did-not-open-after-maintenance-work-is-waiting-for-students-opening-on-dec-1/4386652",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/occupiers-build-build-buildings-on-30-feet-of-road-10-feet-of-it-officials-are-reluctant-to-demolish/4386613",
   "candidate filter: collected=4",
   "to write: 4 Coimbatore district candidates (max 4 stories)",
   "round: top 4 of 4 candidates",
   "candidates waiting: 4 Coimbatore; time left 79 min",
-  "try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/coi",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-madu",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
-  "try (N) manual=True: https://www.dailythanthi.com/news/tamilnadu/akal-vilakku-pub",
-  "NOT filed (N) ரயில் பயணங்களில் 62 பேருக்கு அவசர உதவி: not Coimbatore district news (the story's first lines name another place and no Coimbatore place)",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
-  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 3}, time left 78 min",
-  "filed: 3 Coimbatore district stories (target 4), reels only",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
+  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 77 min",
+  "filed: 4 Coimbatore district stories (target 4), reels only",
   "queue: 0 news waiting to be written",
   "All News sheet: {\"ok\":true,\"added\":4,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.6-flash",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.6-flash",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "ok gemini/gemini-3.5-flash (17s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok groq/qwen/qwen3.8-27b (0s)",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok groq/qwen/qwen3.8-27b (4s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok groq/qwen/qwen3.8-27b (1s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "dead for this round: groq/qwen/qwen3.8-27b",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "மதுரை – கோவை ரயில் (16722) இன்று வழக்கம் போல் கோவை வரை இயக்கம்",
-   "english_headline": "Madurai–Coimbatore train (16722) runs to Coimbatore today as usual; Pollachi–Coimbatore cancelled on 10 Dec",
+   "tamil_headline": "கோவை சந்திப்பை தவிர்க்கும் 25 ரயில்கள்: பயணிகளுக்கு சிரமம்",
+   "english_headline": "25 trains pass Podanur and Irugur bypassing Coimbatore Junction daily, causing trouble for passengers, says Coimbatore Next",
    "category": "Roads & Transport",
-   "location": "Pollachi, Coimbatore district",
-   "importance": "High",
-   "scope": "district",
+   "location": "Coimbatore Junction, Podanur, Irugur - Coimbatore district",
+   "importance": "Medium",
+   "scope": "",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "ரயில் அறிவிப்பு",
-    "loc": "பொள்ளாச்சி – கோவை",
-    "hl1": "இன்று மதுரை – கோவை ரயில் வழக்கம் போல்",
-    "hl2": "டிச.10 பொள்ளாச்சி – கோவை",
+    "cat": "ரயில் போக்குவரத்து",
+    "loc": "கோவை ரயில் சந்திப்பு",
+    "hl1": "கோவை சந்திப்பை தவிர்க்கும் 25 ரயில்கள்",
+    "hl2": "தினமும் 65,000 பயணிகள்",
     "slides": [
      {
-      "title": "இன்றைய ரயில்",
+      "title": "என்ன பிரச்சினை?",
       "lines": [
-       "மதுரை – கோவை ரயில் (16722) இன்று கோவை வரை இயக்கம்",
-       "முன்பு அறிவித்தபடி பொள்ளாச்சி வரை மட்டும் இல்லை",
-       "காரணம்: <b>போத்தனூர் – மதுக்கரை</b> உயர்மின்னழுத்த மின்பாதை"
+       "போத்தனூர், இருகூர் வழியாக <b>25 ரயில்கள்</b> செல்கின்றன",
+       "கோவை சந்திப்புக்கு வராமல் செல்கின்றன",
+       "இதனால் <b>50 ரயில் சேவைகள்</b> பயணிகளுக்கு கிடைப்பதில்லை"
       ]
      },
      {
-      "title": "பணி ஒத்திவைப்பு",
+      "title": "பயணிகள் சிரமம்",
       "lines": [
-       "இந்த மின்பாதை அகற்றும் பணி <b>டிச.10</b>க்கு ஒத்திவைக்கப்பட்டது",
-       "அதனால் இன்று ரயில் வழக்கம் போல் இயங்கும்",
-       "தெற்கு ரயில்வே இந்தத் தகவலை அறிவித்துள்ளது"
+       "போத்தனூர் செல்ல போதிய பஸ் வசதி இல்லை",
+       "தேவையற்ற அலைச்சலும் நேர விரயமும் ஏற்படுகின்றன",
+       "பலர் ரயில் பயணத்தை தவிர்க்கும் நிலை"
       ]
      },
      {
-      "title": "டிச.10 மாற்றம்",
+      "title": "புதிய திட்டங்கள்",
       "lines": [
-       "<b>டிச.10</b>ல் பொள்ளாச்சி – கோவை இடையே ரயில் ரத்து",
-       "பயணம் செய்பவர்கள் முன்கூட்டியே திட்டமிடுங்கள்",
-       "கூடுதல் தகவலுக்கு ரயில் நிலையத்தை அணுகுங்கள்"
+       "போத்தனூர் 2வது முனையமாக மாற்றப்படுகிறது",
+       "அம்ரித் பாரத் திட்டத்தில் வடகோவை, மேட்டுப்பாளையம்",
+       "கோவை சந்திப்பில் தினமும் <b>65,000 பேர்</b> பயணம்"
+      ]
+     },
+     {
+      "title": "அமைப்பின் கோரிக்கை",
+      "lines": [
+       "கோயம்புத்தூர் நெக்ஸ்ட் அமைப்பு இதை அநீதி என்கிறது",
+       "போத்தனூரில் புறப்படும் ரயில்கள் கோவை சந்திப்பு வழியாக செல்ல",
+       "ரயில்வேக்கும் கூடுதல் வருவாய் கிடைக்கும்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "மதுரை – கோவை ரயில் இன்று வழக்கம் போல் கோவை வரை இயக்கப்படும். இன்று நவம்பர் 26ஆம் தேதி மதுரை – கோவை ரயில் (16722) பொள்ளாச்சி வரை மட்டும் இயக்கப்படும் என முன்னர் அறிவிக்கப்பட்டிருந்தது. ஆனால் போத்தனூர் – மதுக்கரை இடையே உயர்மின்னழுத்த மேல்நிலை மின்பாதை அகற்றும் பணி டிசம்பர் 10ஆம் தேதிக்கு ஒத்திவைக்கப்பட்டுள்ளது. இதனால் இன்று ரயில் வழக்கம் போல் கோவை வரை இயக்கப்படும். டிசம்பர் 10ஆம் தேதி பொள்ளாச்சி – கோவை இடையே ரயில் ரத்து செய்யப்படும் என தெற்கு ரயில்வே அறிவித்துள்ளது. பயணம் செய்பவர்கள் முன்கூட்டியே திட்டமிடுங்கள். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள.",
-   "caption": "🚆 இன்று மதுரை – கோவை ரயில் வழக்கம் போல் கோவை வரை இயக்கம்\n\n📰 முழு விவரம்:\nமதுரை – கோவை ரயில் (16722) இன்று (நவ. 26) பொள்ளாச்சி வரை மட்டும் இயக்கப்படும் என முன்னர் அறிவிக்கப்பட்டிருந்தது.\nஆனால் போத்தனூர் – மதுக்கரை இடையே உயர்மின்னழுத்த மேல்நிலை மின்பாதை அகற்றும் பணி டிச. 10ஆம் தேதிக்கு ஒத்திவைக்கப்பட்டுள்ளது.\nஇதனால் ரயில் இன்று வழக்கம் போல் கோவை வரை இயக்கப்படும்.\nடிச. 10ஆம் தேதி பொள்ளாச்சி – கோவை இடையே ரயில் ரத்து செய்யப்படும் என தெற்கு ரயில்வே அறிவித்துள்ளது.\n\n📍 இடம்: போத்தனூர் – மதுக்கரை இடையே பணி\n🗓️ நாள்: இன்று நவ. 26 | ரத்து டிச. 10\n👮 நடவடிக்கை: பணி ஒத்திவைப்பு; தெற்கு ரயில்வே அறிவிப்பு\nℹ️ மக்கள் கவனத்திற்கு: டிச. 10 பயணத்தை முன்கூட்டியே திட்டமிடுங்கள்\n\nMadurai–Coimbatore train 16722 runs to Coimbatore today | Coimbatore news\n📍 பொள்ளாச்சி – கோவை, கோவை மாவட்டம் | 26 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #ரயில் #CoimbatoreNews",
-   "prompts": "A passenger train with its engine and coaches runs on a railway track through the Pollachi area of Coimbatore district, with overhead electric wires strung above the rails on tall concrete poles. Behind the train the plain flat land is lined with coconut palms, and the Western Ghats hills rise faintly in the far background. A few passengers stand on the platform at a small railway station, seen from behind and far away, with commuters waiting near the tracks. The sky is bright daylight with a few clouds. The camera is at eye level, 35 mm, wide enough to show the track, the overhead lines and the palms together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the overhead high-voltage electric line above the railway track, with the thick wire hanging from an insulator bracket on a steel pole beside the rails. The steel rails and wooden sleepers run into the distance. A railway worker in a plain shirt stands near the pole, seen from behind and small in the frame. Daylight falls on the metal and the wires. The camera is slightly high, 35 mm, focused on the wire and pole with the track leading away from the frame. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-madurai/madurai-coimbatore-train-to-run-as-usual/4386012",
-   "published": "2026-11-25T18:50:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script must end with exactly: மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
+   "reel_script": "கோவை ரயில் சந்திப்பை தவிர்த்து 25 ரயில்கள் போத்தனூர் வழியாகச் செல்கின்றன. கோவை சந்திப்பு சேலம் ரயில்வே கோட்டத்தில் அதிக பயணிகள் செல்லும் நிலையமாக உள்ளது. தினமும் 65,000 பேர் இங்கு பயணம் செய்கின்றனர். திருவிழா காலங்களில் இந்த எண்ணிக்கை இன்னும் அதிகரிக்கும். தற்போது இங்கு 140 ரயில்கள் கடந்து செல்கின்றன. போத்தனூர் 2வது முனையமாக மாற்றப்படுகிறது. அம்ரித் பாரத் திட்டத்தில் வடகோவை, மேட்டுப்பாளையம் நிலையங்களும் மேம்படுத்தப்படுகின்றன. ஆனால் கோவை சந்திப்பை தவிர்ப்பதால் பயணிகள் சிரமப்படுகின்றனர். போத்தனூருக்கு போதிய பேருந்து வசதி இல்லை. இதனால் அலைச்சலும் நேர விரயமும் ஏற்படுகின்றன. இதனால் பலர் ரயில் பயணத்தையே தவிர்க்கின்றனர். 25 ரயில்கள் வழியாக 50 ரயில் சேவைகள் பயணிகளுக்கு கிடைப்பதில்லை. கோயம்புத்தூர் நெக்ஸ்ட் அமைப்பினர் இதை பயணிகளுக்கு இழைக்கப்படும் அநீதி என்கின்றனர். மேட்டுப்பாளையம், அன்னூர், நீலகிரி மாவட்ட மக்கள் நீண்ட தூர ரயில்களுக்கு கோவை சந்திப்புக்கு வருகின்றனர். ரயில்வே அதிகாரிகள் இட நெருக்கடியால் ரயில்களை அனுப்ப முடியவில்லை என்கின்றனர். ஆனால் 6 பிளாட்பாரங்கள் உள்ளதால், போத்தனூரில் புறப்படும் ரயில்கள் கோவை சந்திப்பு வழியாகச் சென்றால் அதிக பயணிகள் பயனடைவார்கள். ரயில்வேக்கும் கூடுதல் வருவாய் கிடைக்கும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚆 கோவை சந்திப்பை தவிர்க்கும் 25 ரயில்கள்: பயணிகளுக்கு சிரமம்\n\n📰 முழு விவரம்:\nசேலம் ரயில்வே கோட்டத்தில் அதிக வருவாய் தரும் நிலையம் கோவை ரயில் சந்திப்பு. தினமும் 65,000 பேர் பயன்படுத்துகின்றனர், திருவிழா நாட்களில் இது மேலும் அதிகரிக்கிறது. தற்போது 140 ரயில்கள் இங்கு கடந்து செல்கின்றன.\nபயணிகள் அதிகமாவதால் போத்தனூர் 2வது முனையமாக மாற்றப்படுகிறது. அம்ரித் பாரத் திட்டத்தில் வடகோவை, மேட்டுப்பாளையம் நிலையங்களும் மேம்படுத்தப்படுகின்றன.\nஆனால் போத்தனூர், இருகூர் வழியாக 25 ரயில்கள் கோவை சந்திப்பைத் தவிர்த்துச் செல்கின்றன. இதனால் 50 ரயில் சேவைகள் பயணிகளுக்குக் கிடைப்பதில்லை. போத்தனூருக்குப் போதிய பேருந்து வசதி இல்லாததால் பயணிகள் அலைச்சலையும் நேர விரயத்தையும் சந்திக்கின்றனர்.\nபுதிய சிறப்பு ரயில்கள் பலவும் கோவை சந்திப்பைத் தவிர்த்து போத்தனூரில் இருந்து புறப்படுகின்றன. சபரிமலை சிறப்பு ரயில்கள் அனைத்தும் கோவை சந்திப்பைத் தவிர்க்கின்றன. செகந்திராபாத்-செங்கோட்டை சிறப்பு ரயில் ஈரோடு, திருப்பூர் வழியாக கோவைக்கு வராமல் போத்தனூர் வழியாகச் செல்கிறது.\nகோயம்புத்தூர் நெக்ஸ்ட் அமைப்பினர், மேட்டுப்பாளையம், அன்னூர், நீலகிரி மாவட்ட மக்கள் நீண்ட தூர ரயில்களுக்கு கோவை சந்திப்பிற்கே வருவதால், இதை பயணிகளுக்கு அநீதி என்கின்றனர். இட நெருக்கடியால் ரயில்களை அனுப்ப முடியவில்லை என ரயில்வே அதிகாரிகள் கூறுகின்றனர். ஆனால் 6 பிளாட்பாரங்கள் உள்ளன; போத்தனூரில் புறப்படும் ரயில்கள் கோவை சந்திப்பு வழியாகச் சென்றால் அதிக பயணிகளுக்கும் ரயில்வேக்கும் பயன் கிடைக்கும்.\n\nCoimbatore Junction trains bypassed Podanur Irugur route | Coimbatore news\n📍 கோவை ரயில் சந்திப்பு, கோவை மாவட்டம் | 26 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Podanur",
+   "prompts": "A long passenger train moves along the railway tracks, bypassing the main station area. The scene is set at the Coimbatore Junction railway complex, with the distinct architecture of the station building visible in the background. Numerous passengers, seen from behind and at a distance, stand on the crowded platforms, waiting for their trains. The platforms are filled with people carrying bags and luggage, illustrating the high volume of daily commuters. The train is a standard Indian Railways passenger train, moving steadily on the tracks that curve away from the main junction towards the Podanur and Irugur direction. The atmosphere is busy and typical of a major railway hub in Coimbatore. Daylight illuminates the scene, with clear visibility of the tracks and the station infrastructure. The camera is positioned at eye level, using a 35 mm lens to capture the scale of the station and the movement of the train, ensuring the bypassing nature of the route is implied by the train's path relative to the main platforms. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up view of the railway tracks and the platform edge at Coimbatore Junction. The focus is on the steel rails and the concrete platform surface, showing the infrastructure that handles the heavy traffic. In the background, slightly blurred, are the silhouettes of passengers waiting, emphasizing the human element affected by the routing changes. The tracks appear well-maintained but busy, with the perspective leading the eye towards the direction of Podanur and Irugur. There are no readable signs or logos, just the raw elements of the railway system: the rails, the sleepers, and the platform edge. The lighting is natural daylight, casting soft shadows from the platform structures. The camera is slightly high, looking down at the tracks, using a 35 mm lens to provide context of the immediate environment while keeping the focus on the physical path the trains take, highlighting the specific route mentioned in the news. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/25-trains-passing-through-pothanur-are-expected-to-reach-coimbatore-junction/4386616",
+   "published": "2026-11-26T13:32:21+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): 150 ('ஆந்திராவில் இருந்து காட்பாடி, சேலம் வழியாக திண்டுக்கல் சென்ற'); பொள்ளாச்சி ('இந்த ரயில் ஈரோடு கடந்த திருப்பூர் வந்து கோவைக்கு வராமல் போத்')",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795678459/kovaiminnal/c1mrgatmenkeupdjxqu9.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795678461/kovaiminnal/vtywf2h9g4cxilkedkc7.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795692956/kovaiminnal/nxtwws6c23q27aeyyetc.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795692959/kovaiminnal/zmaf102ms8b5alzxb4ky.jpg"
    ]
   },
   {
-   "tamil_headline": "கோவை சின்னியம்பாளையம் அருகே வாகன உதிரிபாக கிடங்கில் தீ",
-   "english_headline": "Fire breaks out at auto parts warehouse near Chinniyampalayam, Coimbatore; firefighters put it out after hours",
-   "category": "Crime & Safety",
-   "location": "Chinniyampalayam, Coimbatore district",
+   "tamil_headline": "பாரதியார் பல்கலை நீச்சல் குளம் 20 நாட்களாகத் திறக்கப்படவில்லை: டிசம்பர் 1ல் திறப்பு",
+   "english_headline": "Bharathiar University swimming pools still closed 20+ days after maintenance; to open on 1 December",
+   "category": "Education",
+   "location": "Bharathiar University, Coimbatore",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "தீ விபத்து",
-    "loc": "சின்னியம்பாளையம், கோவை",
-    "hl1": "சின்னியம்பாளையத்தில் உதிரிபாக கிடங்கில்",
-    "hl2": "20-க்கும் மேற்பட்ட",
+    "cat": "கல்வி",
+    "loc": "பாரதியார் பல்கலை, கோவை",
+    "hl1": "பாரதியார் பல்கலை நீச்சல் குளம் டிச.1ல்",
+    "hl2": "20 நாட்களாக மூடியே உள்ளது",
     "slides": [
      {
-      "title": "எங்கே, எப்போது?",
+      "title": "என்ன பிரச்சனை?",
       "lines": [
-       "சின்னியம்பாளையம் அருகே உதிரிபாக கிடங்கில் தீ",
-       "செவ்வாய்க்கிழமை நள்ளிரவு <b>12.30</b> மணியளவில் தீப்பிடித்தது",
-       "கிடங்கு அருகிலேயே உள்ளது கடை"
+       "பராமரிப்பு பணிகள் முடிந்தும் நீச்சல் குளம் திறக்கப்படவில்லை",
+       "20 நாட்களுக்கு மேலாக மாணவர்களும் பொதுமக்களும்",
+       "பயிற்சி பெற முடியாமல் தவிக்கின்றனர்"
       ]
      },
      {
-      "title": "எப்படி நடந்தது?",
+      "title": "குளங்கள் பற்றி",
       "lines": [
-       "ரவி (39 வயது) சின்னியம்பாளையம்-இருகூர் சாலையில் கடை நடத்துகிறார்",
-       "கிடங்கில் இருந்து கரும்புகை வெளியேறியது",
-       "பீளமேடு தீயணைப்பு வீரர்கள் போராடினர்"
+       "2018ல் கட்டி முடிக்கப்பட்ட இரு நீச்சல் குளங்கள்",
+       "ரூ.<b>8 கோடி</b> மதிப்பீட்டில் அமைக்கப்பட்டவை",
+       "2,000க்கும் அதிகமானோர் மாத கட்டணம் செலுத்தி பயிற்சி பெற்றனர்"
       ]
      },
      {
-      "title": "சேதம் என்ன?",
+      "title": "மூடப்பட்டது ஏன்?",
       "lines": [
-       "அதிகாலை <b>4</b> மணியளவில் தீ முற்றிலும் அணைக்கப்பட்டது",
-       "பல லட்சம் ரூபாய் மதிப்பு உதிரிபாகங்கள் எரிந்தன",
-       "<b>20</b>-க்கும் மேற்பட்ட வாகனங்கள் சேதம்"
+       "கடந்த ஏப்ரல் மாதம் ஒரு மாணவர் பயிற்சியின் போது உயிரிழந்தார்",
+       "பின்னர் குளங்கள் பூட்டப்பட்டன",
+       "5 மோட்டார்கள் பழுதாகின"
+      ]
+     },
+     {
+      "title": "எப்போது திறப்பு?",
+      "lines": [
+       "பதிவாளர் ராஜவேல்: <b>டிசம்பர் 1</b> முதல் பயன்பாட்டுக்கு வரும்",
+       "குளங்களின் பராமரிப்பு பெரும்பாலும் முடிந்துவிட்டது",
+       "ஆண்டுக்கு ரூ.<b>1 கோடிக்கு</b> மேல் வருவாய் இழப்பு"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "சின்னியம்பாளையத்தில் வாகன உதிரிபாக கிடங்கில் தீ, 20-க்கும் மேற்பட்ட வாகனங்கள் எரிந்தன. கோவை சிட்ரா பகுதியைச் சேர்ந்த ரவி (39 வயது) என்பவர் சின்னியம்பாளையம்-இருகூர் சாலையில் பழைய கார் மற்றும் இருசக்கர வாகன உதிரிபாக விற்பனைக் கடை நடத்தி வருகிறார். கிடங்கு அருகிலேயே உள்ளது. செவ்வாய்க்கிழமை நள்ளிரவு 12.30 மணியளவில் கிடங்கில் இருந்து கரும்புகை வெளியேறி தீப்பிடித்து எரியத் தொடங்கியது. தகவலறிந்து வந்த பீளமேடு தீயணைப்பு நிலைய வீரர்கள் பல மணி நேரம் போராடினர். அதிகாலை 4 மணியளவில் தீ முற்றிலும் அணைக்கப்பட்டது. இந்த விபத்தில் பல லட்சம் ரூபாய் மதிப்பிலான உதிரிபாகங்கள் எரிந்து சேதமடைந்தன. மின் கசிவால் தீ ஏற்பட்டதா அல்லது வேறு காரணமா என பீளமேடு போலீஸார் வழக்குப் பதிவு செய்து விசாரித்து வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 சின்னியம்பாளையத்தில் உதிரிபாக கிடங்கில் தீ: 20-க்கும் மேற்பட்ட வாகனங்கள் சேதம்\n\n📰 முழு விவரம்:\nசின்னியம்பாளையம்-இருகூர் சாலையில் ரவி (39 வயது) நடத்தும் பழைய கார் மற்றும் இருசக்கர வாகன உதிரிபாக விற்பனைக் கடையின் அருகிலுள்ள கிடங்கில் செவ்வாய்க்கிழமை நள்ளிரவு 12.30 மணியளவில் தீப்பிடித்தது.\nபீளமேடு தீயணைப்பு நிலைய வீரர்கள் பல மணி நேரம் போராடி, அதிகாலை 4 மணியளவில் தீயை முற்றிலும் அணைத்தனர்.\nபல லட்சம் ரூபாய் மதிப்பிலான உதிரிபாகங்கள் மற்றும் 20-க்கும் மேற்பட்ட வாகனங்கள் எரிந்து சேதமடைந்தன.\nமின் கசிவால் தீ ஏற்பட்டதா அல்லது வேறு காரணமா என பீளமேடு போலீஸார் வழக்குப் பதிவு செய்து விசாரித்து வருகின்றனர்.\n\nChinniyampalayam warehouse fire Coimbatore | Coimbatore news\n📍 சின்னியம்பாளையம், கோவை மாவட்டம் | 25 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Chinniyampalayam #தீவிபத்து #CoimbatoreNews",
-   "prompts": "A Peelamedu fire station crew in uniform sprays water on a burning auto parts warehouse at night on the Chinniyampalayam-Irugur road in Coimbatore, thick black smoke rising from its roof into the dark sky. Firefighters in helmets stand near a red fire tender with its hoses stretched across the road, and a few onlookers watch from a distance on the pavement. The road is lined with a single-storey warehouse with a corrugated sheet roof and an open shutter, the glow of flames visible inside. Several burnt two-wheelers and cars are parked outside, blackened from the fire. The scene is lit by orange flames and street lights, with the night sky behind. Camera at eye level, 35 mm, wide enough to show the warehouse, fire tender and smoke. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of charred and melted auto spare parts inside a burnt-out warehouse: blackened engine components, twisted metal sheets and scorched two-wheeler parts lying in a heap on the wet, sooty floor. Water from the firefighters' hoses pools across the ground, reflecting the dim light of a fire-tender lamp. Behind the debris, a few damaged vehicles stand with their bodies burnt and blistered. Smoke drifts through the frame. It is night, with only the artificial light of the fire crew illuminating the scene. Camera at slightly high angle, 35 mm, focused on the damaged parts with the burnt vehicles blurred in the background. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/25/வாகன-உதிரிபாக-கிடங்கில்-தீ",
-   "published": "2026-11-25T20:41:01.343Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: slide 2 line 1 longer than 60 characters",
+   "reel_script": "பாரதியார் பல்கலையில் நீச்சல் குளங்கள் பராமரிப்பு முடிந்தும் 20 நாட்களுக்கு மேலாகத் திறக்கப்படவில்லை. இதனால் மாணவர்களும் பொதுமக்களும் பயிற்சி பெற முடியாமல் தவிக்கின்றனர். பல்கலையில் 2018ஆம் ஆண்டு கட்டி முடிக்கப்பட்ட இரு நீச்சல் குளங்கள் உள்ளன. ரூ.8 கோடி மதிப்பீட்டில் அமைக்கப்பட்ட இந்தக் குளங்களில் மாணவர்களும் பொதுமக்களும் நீச்சல் பயிற்சி பெற்றனர். 2,000க்கும் அதிகமானோர் மாதக் கட்டணம் செலுத்திப் பயிற்சி பெற்றனர். கடந்த ஏப்ரல் மாதம் ஒரு மாணவர் பயிற்சியின்போது எதிர்பாராதவிதமாக உயிரிழந்தார். அதன்பின் குளங்கள் பூட்டப்பட்டன. முறையாகப் பராமரிக்கப்படாததால் தண்ணீர் பச்சையாக மாறியது. குளங்களில் உள்ள ஐந்து மோட்டார்கள் பழுதாகின. தற்போது பராமரிப்புப் பணிகள் பெரும்பாலும் முடிந்துவிட்டன. பல்கலைப் பதிவாளர் ராஜவேல், டிசம்பர் 1ஆம் தேதி முதல் குளங்கள் பயன்பாட்டுக்கு வரும் என்று தெரிவித்துள்ளார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🏊 பாரதியார் பல்கலை நீச்சல் குளம் டிச.1ல் திறப்பு: 20 நாட்களாகக் காத்திருப்பு\n\n📰 முழு விவரம்:\nகோவை பாரதியார் பல்கலையில் நீச்சல் குளம் பராமரிப்பு முடிந்து 20 நாட்களுக்கு மேலாகியும் திறக்கப்படவில்லை. மாணவர்களும் பொதுமக்களும் பயிற்சி பெற முடியாமல் தவிக்கின்றனர்.\nபல்கலையில் 2 ஏக்கரில் இரு நீச்சல் குளங்கள் உள்ளன. ஒன்று 50 மீட்டர் நீளம், 25 மீட்டர் அகலம்; மற்றொன்று 25 மீட்டர் நீளம், 13 மீட்டர் அகலம். இவை 2018ஆம் ஆண்டு கட்டி முடிக்கப்பட்டன. ரூ.8 கோடி மதிப்பீட்டில் அமைக்கப்பட்ட இக்குளங்களில் மாணவர்களும் பொதுமக்களும் நீச்சல் பயிற்சி பெற்றனர். பள்ளி, கல்லூரி மாணவர்களுக்கான போட்டிகளும் இங்கு நடத்தப்பட்டன.\n2,000க்கும் அதிகமானோர் மாதக் கட்டணம் செலுத்திப் பயிற்சி பெற்றதால் பல்கலைக்கு ஆண்டுக்கு ரூ.1 கோடிக்கு மேல் வருவாய் கிடைத்தது.\nகடந்த ஏப்ரல் மாதம் ஒரு மாணவர் பயிற்சியின்போது எதிர்பாராதவிதமாக உயிரிழந்தார். அதன்பின் குளங்கள் பூட்டப்பட்டன. முறையாகப் பராமரிக்கப்படாததால் தண்ணீர் பச்சையாக மாறி துர்நாற்றம் வீசியது. ஐந்து மோட்டார்கள் பழுதாகின. மோட்டார் பழுது, கட்டுமானக் குறைபாடுகள் சரி செய்யப்பட்டு, குளங்கள் பயன்படுத்தும் நிலையில் உள்ளன.\nபல்கலைப் பதிவாளர் ராஜவேல், டிசம்பர் 1ஆம் தேதி முதல் குளங்கள் பயன்பாட்டுக்கு கொண்டுவரப்படும் என்று தெரிவித்துள்ளார்.\n🏫 பள்ளி மாணவர்களுக்கான குறுமையம் உள்ளிட்ட போட்டிகளுக்குப் பயிற்சி பெற முடியாமல் உள்ளது.\n\nBharathiar University swimming pool to open Dec 1 | Coimbatore news\n📍 பாரதியார் பல்கலை, கோவை | 26 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #கல்வி",
+   "prompts": "A pair of empty swimming pools at the Bharathiar University campus in Coimbatore sit still and locked behind a gate, while a small group of students in swimming costumes and bags stands at the edge of the pool deck, seen from behind, waiting for the pools to reopen. The setting is a university sports complex with a long rectangular main pool and a smaller pool beside it, surrounded by a concrete deck, low railings and a few green trees, with the leafy outline of the campus buildings in the background and, far off, the faint blue ridge of the Western Ghats and Marudhamalai hill. The students are young men and women, some in plain T-shirts and track pants with swim bags slung over their shoulders, standing quietly and looking at the still water; one or two onlookers in shirts and trousers stand farther back. The pool water is calm and clear with the deck reflecting in it, and a simple locked metal gate and a plain notice board stand at the entrance. The time is bright daylight with soft, even sunlight and a clear sky. Shot at eye level, 35 mm, wide enough to show both pools, the deck, the waiting group and the campus greenery. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the pool water surface and the pump housing at the edge of the swimming pool at Bharathiar University, Coimbatore, showing that the pool is still closed. The water in the pool is calm and still, with a clean blue-green tint and no swimmers, and the pool edge is a grey concrete tiled lip with a metal drain grate running along it. Beside the pool, a row of metal pump housings and piping sits on a concrete ledge, the motors visible but idle and freshly serviced, showing the repair work that has been completed. A few dry leaves rest on the deck and a single wet footprint marks the tile, suggesting the pool has been prepared but not yet filled for use. Background is softly blurred with the outline of a student in a swimsuit standing far away from behind and the green leaves of campus trees. Time is daylight with soft, even light. Shot at a slight high angle, 35 mm, close enough to show the pool water, the pump equipment and the deck detail clearly. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/swimming-pool-which-did-not-open-after-maintenance-work-is-waiting-for-students-opening-on-dec-1/4386652",
+   "published": "2026-11-26T15:44:22+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 88 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
    "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795678471/kovaiminnal/z6wcqyovqgaqyamwunjw.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795678476/kovaiminnal/ghcchiglboi2bbuq9gsd.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795692977/kovaiminnal/dacbradynqrcryupylux.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795692980/kovaiminnal/tng1oeyaj1laqpi9lmcs.jpg"
    ]
   },
   {
-   "tamil_headline": "அகல் விளக்கு பதிப்பக உரிமையாளர் மோகன் சிறப்பு நீதிமன்றத்தில் ஆஜர்",
-   "english_headline": "Agal Vilakku publisher Mohan produced before special court; police seek 3-day custody in library book procurement case",
-   "category": "Crime & Safety",
-   "location": "Chennai (special court); Coimbatore district (Periyar Aruvu Library book procurement case)",
+   "tamil_headline": "கிணத்துக்கடவு போலீஸ் ஸ்டேஷன் வழித்தடத்தில் வாகனங்களை பார்க்கிங் செய்வதால் இடையூறு",
+   "english_headline": "Vehicles parked on the route to Kinathukadavu police station cause obstruction",
+   "category": "Civic Issues",
+   "location": "Kinathukadavu town, Coimbatore district",
    "importance": "Medium",
-   "scope": "district",
+   "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "குற்றம்",
-    "loc": "கோவை மாவட்டம்",
-    "hl1": "பெரியார் நூலக ஊழல்: மோகன் நீதிமன்றத்தில்",
-    "hl2": "3 நாள் காவல் கோரிக்கை",
+    "cat": "போக்குவரத்து இடையூறு",
+    "loc": "கிணத்துக்கடவு",
+    "hl1": "கிணத்துக்கடவு போலீஸ் ஸ்டேஷன் வழியில்",
+    "hl2": "வாகனங்கள் பார்க்கிங்",
+    "slides": [
+     {
+      "title": "என்ன பிரச்சனை?",
+      "lines": [
+       "போலீஸ் ஸ்டேஷன் செல்லும் வழித்தடத்தில் வாகனங்கள் பார்க்கிங்",
+       "சார்பதிவாளர் அலுவலகம் வருவோர் கார்களை நிறுத்துகின்றனர்",
+       "இதனால் இடையூறு ஏற்படுகிறது"
+      ]
+     },
+     {
+      "title": "ஏன் சிக்கல்?",
+      "lines": [
+       "விபத்தில் சேதமடைந்த வாகனங்கள் ஸ்டேஷன் வளாகத்தில்",
+       "அவற்றை வெளியே கொண்டு செல்வதில் பெரும் சிக்கல்",
+       "வழக்கு முடிந்த பின் உரிமையாளர்கள் எடுத்துச் செல்கின்றனர்"
+      ]
+     },
+     {
+      "title": "மக்கள் கோரிக்கை",
+      "lines": [
+       "சில நாட்களுக்கு முன் அபராதம் விதித்து நடவடிக்கை",
+       "மீண்டும் அதேபோல் நடவடிக்கை எடுக்க வேண்டும்",
+       "அறிவிப்பு பலகை வைக்க வேண்டும் என வலியுறுத்தல்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கிணத்துக்கடவு போலீஸ் ஸ்டேஷன் செல்லும் வழித்தடத்தில் வாகனங்கள் பார்க்கிங் செய்வதால் பெரும் இடையூறு ஏற்படுகிறது. போலீஸ் ஸ்டேஷனுக்கு தினமும் பலர் தங்கள் பிரச்னைகளுக்காக வந்து செல்கின்றனர். விபத்தில் சேதமடைந்த வாகனங்கள் ஸ்டேஷன் வளாகத்தில் நிறுத்தப்படுகின்றன. வழக்கு முடிந்த பின் உரிமையாளர்கள் அவற்றை எடுத்துச் செல்கின்றனர். ஆனால், சார்பதிவாளர் அலுவலகம் வருவோர் வழித்தடத்தின் இருபுறமும் தங்கள் கார்களை நிறுத்துகின்றனர். இதனால் சேதமடைந்த வாகனங்களை ஸ்டேஷனில் இருந்து வெளியே கொண்டு செல்வதில் சிக்கல் ஏற்படுகிறது. சில நாட்களுக்கு முன், வழித்தடத்தில் நிறுத்தப்பட்ட கார்களுக்கு அபராதம் விதித்து நடவடிக்கை எடுக்கப்பட்டது. மீண்டும் அதேபோல் நடவடிக்கை எடுக்க வேண்டும் என்றும், வாகனங்கள் நிறுத்தக்கூடாது என அறிவிப்பு பலகை வைக்க வேண்டும் என்றும் மக்கள் வலியுறுத்துகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚗 கிணத்துக்கடவு போலீஸ் ஸ்டேஷன் வழித்தடத்தில் வாகனங்கள் பார்க்கிங்: இடையூறு\n\n📰 முழு விவரம்:\nகிணத்துக்கடவு போலீஸ் ஸ்டேஷன் செல்லும் வழித்தடத்தின் இருபுறங்களிலும் சார்பதிவாளர் அலுவலகம் வருவோர் தங்கள் கார்களை நிறுத்துவதால் இடையூறு ஏற்படுகிறது.\nவிபத்தில் சேதமடைந்த வாகனங்கள் ஸ்டேஷன் வளாகத்தில் நிறுத்தப்படுகின்றன. வழக்கு முடிந்த பின் உரிமையாளர்கள் அவற்றை எடுத்துச் செல்கின்றனர். ஆனால் வழித்தடத்தில் நிறுத்தப்பட்ட கார்கள் இருப்பதால் அவற்றை வெளியே கொண்டு செல்வதில் பெரும் சிக்கல் உள்ளது.\nசில நாட்களுக்கு முன் வழித்தடத்தில் நிறுத்தப்பட்ட கார்களுக்கு அபராதம் விதித்து நடவடிக்கை எடுக்கப்பட்டது. மீண்டும் அதேபோல் நடவடிக்கை எடுக்க வேண்டும், வாகனங்கள் நிறுத்தக்கூடாது என அறிவிப்பு பலகை வைக்க வேண்டும் என மக்கள் வலியுறுத்துகின்றனர்.\n\nKinathukadavu police station route parking obstruction | Coimbatore news\n📍 கிணத்துக்கடவு, கோவை மாவட்டம் | 26 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Kinathukadavu #CoimbatoreNews #கோவை",
+   "prompts": "A row of cars is parked on both sides of a narrow road leading to a police station in Kinathukadavu town, Coimbatore district, leaving only a thin lane for traffic. The street is a typical small-town road with low shop fronts, a few two-wheelers and an autorickshaw squeezed between the parked cars, and a police station gate visible at the far end. Several people walk along the lane from behind, carrying files and bags toward the sub-registrar office, while a policeman in khaki stands near the gate watching the traffic. A town bus or lorry is partly blocked by the parked cars, showing the obstruction. Daylight, clear weather. Camera at eye level, 35 mm, wide enough to show the full stretch of road and the parked cars on both sides. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a tight stretch of road where parked cars leave almost no space for a vehicle to pass, with the side mirror and bumper of one car nearly touching a damaged, dented vehicle waiting in the lane. In the background, a police station compound fence and a few accident-damaged cars with broken glass and crumpled bonnets are visible behind the gate. A plain, unlettered notice board stands on the roadside, clearly unused, pointing to the need for a no-parking sign. Two people in shirts and trousers stand at a distance, seen from behind, looking at the blocked road. Daylight, neutral light. Camera slightly high, 35 mm, focused on the blocked lane and the parked vehicles. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/parking-disrupts-police-station-route/4386696",
+   "published": "2026-11-26T16:32:25+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 0 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795692984/kovaiminnal/ktzgrdpef5vjjporqpjs.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795692986/kovaiminnal/axhlcn5lnumjpqf3g7xl.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "புலியகுளத்தில் ரோட்டை ஆக்கிரமித்து கட்டடம்: அகற்ற அதிகாரிகள் தயக்கம்",
+   "english_headline": "Puliyakulam encroachers built on 30-ft road, narrowing it to 10 ft; officials hesitate to remove",
+   "category": "Civic Issues",
+   "location": "Puliyakulam, Coimbatore district",
+   "importance": "High",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "ஆக்கிரமிப்பு",
+    "loc": "புலியகுளம், கோவை",
+    "hl1": "புலியகுளத்தில் ரோடு 10 அடியாக",
+    "hl2": "ஐகோர்ட் உத்தரவும்",
     "slides": [
      {
       "title": "என்ன நடந்தது?",
       "lines": [
-       "கோவை பெரியார் அறிவுலக நூலகத்துக்குப் புத்தகங்கள்",
-       "ஏ.ஐ. மூலம் தயாரிக்கப்பட்ட புத்தகங்களை சப்ளை செய்த பதிப்பக",
-       "நவம்பர் <b>16</b> அன்று கைது செய்யப்பட்டு சிறையில் அடைக்கப்பட்டார்"
+       "30 அடி ரோட்டில் 3 கட்டடங்கள், ஒரு பெட்டிக் கடை கட்டப்பட்டது",
+       "சாக்கடை கால்வாயையும் ஆக்கிரமித்து கட்டியுள்ளனர்",
+       "ரோடு <b>10 அடியாக</b> சுருங்கிவிட்டது"
       ]
      },
      {
-      "title": "வங்கிக் கணக்கு",
+      "title": "அதிகாரிகள்",
       "lines": [
-       "அகல் விளக்கு பதிப்பகத்துக்கு அரசு <b>ரூ.1.74 கோடி</b>",
-       "பதிப்பகத்தின் வங்கிக் கணக்கை லஞ்ச ஒழிப்புத்துறை முடக்கியது"
+       "மாநகராட்சி <b>4 முறை</b> நோட்டீஸ் வழங்கியது",
+       "இதுவரை ஆக்கிரமிப்பு அகற்றப்படவில்லை",
+       "மனுக்கள் கொடுத்தும் பலன் இல்லை என மக்கள் கூறுகின்றனர்"
       ]
      },
      {
-      "title": "நீதிமன்றத்தில்",
+      "title": "ஐகோர்ட் உத்தரவு",
       "lines": [
-       "3 நாள் காவலில் எடுத்து விசாரிக்கக் கோரி மனு தாக்கல்",
-       "சிறப்பு நீதிபதி எல்.எஸ். சத்தியமூர்த்தி முன் விசாரணை",
-       "சிறையில் அடைக்கப்பட்டதால் போதுமான அவகாசம் இல்லை என வாதம்"
+       "புகாரை <b>30 நாட்களில்</b> விசாரிக்க வேண்டும்",
+       "ஆக்கிரமிப்பை <b>3 மாதங்களில்</b> அகற்ற வேண்டும்",
+       "அலட்சியம் காட்டும் அதிகாரிகள் மீது நடவடிக்கை வேண்டும்"
+      ]
+     },
+     {
+      "title": "மக்கள் குமுறல்",
+      "lines": [
+       "ஆம்புலன்ஸ், தீயணைப்பு வாகனம் கூட செல்ல முடியவில்லை",
+       "அறநிலையத் துறை, ராமநாதபுரம் போலீசில் புகார் அளிக்கப்பட்டது",
+       "ஐகோர்ட்டிலும் வழக்கு தொடரப்பட்டது"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "பெரியார் நூலக ஊழலில் பதிப்பக உரிமையாளர் மோகன் நீதிமன்றத்தில் ஆஜர். கோவை பெரியார் அறிவுலக நூலகத்துக்குப் புத்தகங்கள் கொள்முதல் செய்ததில் முறைகேடு நடந்ததாக லஞ்ச ஒழிப்புத்துறை வழக்குப் பதிவு செய்துள்ளது. நூலகங்களுக்கு ஏ ஐ மூலம் தயாரிக்கப்பட்ட புத்தகங்களைச் சப்ளை செய்த அகல் விளக்கு பதிப்பக உரிமையாளர் மோகன் நவம்பர் 16ஆம் தேதி கைது செய்யப்பட்டார். அவரைச் சிறையில் அடைத்தனர். அந்தப் பதிப்பகத்துக்கு அரசு தரப்பில் ரூ.1.74 கோடி வழங்கப்பட்டிருந்தது. அந்த நிறுவனத்தின் வங்கிக் கணக்கை லஞ்ச ஒழிப்புத்துறை முடக்கியுள்ளது. மோகனை மூன்று நாள் காவலில் எடுத்து விசாரிக்கக் கோரி சிறப்பு நீதிமன்றத்தில் மனு தாக்கல் செய்யப்பட்டது. இன்று சிறப்பு நீதிபதி எல் எஸ் சத்தியமூர்த்தி முன் அவர் ஆஜர்படுத்தப்பட்டார். மோகன் உடனடியாகச் சிறையில் அடைக்கப்பட்டதால் விசாரிக்கப் போதுமான அவகாசம் கிடைக்கவில்லை என வாதிடப்பட்டது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 பெரியார் நூலக ஊழல்: அகல் விளக்கு உரிமையாளர் மோகன் நீதிமன்றத்தில் ஆஜர்\n\n📰 முழு விவரம்:\nகோவை பெரியார் அறிவுலக நூலகத்துக்குப் புத்தகங்கள் கொள்முதல் செய்ததில் முறைகேடு நடந்ததாக லஞ்ச ஒழிப்புத்துறை வழக்குப் பதிவு செய்துள்ளது.\nநூலகங்களுக்கு ஏ.ஐ. மூலம் தயாரிக்கப்பட்ட புத்தகங்களைச் சப்ளை செய்த அகல் விளக்கு பதிப்பக உரிமையாளர் மோகன் நவம்பர் 16ஆம் தேதி கைது செய்யப்பட்டு, நீதிமன்றத்தில் ஆஜர்படுத்தி சிறையில் அடைக்கப்பட்டார்.\nஅந்தப் பதிப்பகத்துக்கு அரசு தரப்பில் ரூ.1.74 கோடி வழங்கப்பட்டிருந்தது. அதன் வங்கிக் கணக்கை லஞ்ச ஒழிப்புத்துறை முடக்கியுள்ளது.\nமோகனை 3 நாள் காவலில் எடுத்து விசாரிக்கக் கோரி லஞ்ச ஒழிப்புத்துறை சிறப்பு நீதிமன்றத்தில் மனு தாக்கல் செய்தது.\nஇன்று சிறப்பு நீதிபதி எல்.எஸ். சத்தியமூர்த்தி முன் மோகன் ஆஜர்படுத்தப்பட்டார். சிறையில் அடைக்கப்பட்டதால் விசாரிக்கப் போதுமான அவகாசம் கிடைக்கவில்லை என வாதிடப்பட்டது.\n\nPeriyar library book scam, publisher Mohan in court | Coimbatore news\n📍 கோவை மாவட்டம் | 26 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Crime",
-   "prompts": "A Tamil Nadu police officer in khaki escorts a middle-aged man in a plain shirt, seen from behind, into a Chennai special court hall during a daytime session. The courtroom has high ceilings, wooden benches, a raised judge's bench and a fan overhead, typical of a government court building in the city. Several lawyers in black coats and white shirts stand in small groups with bundles of case files tied in cloth, and a few onlookers sit quietly along the back benches. The accused is only partly visible, shown from behind and slightly blurred, with no readable text anywhere. The light is soft daylight from tall windows, and the scene feels formal and tense. Shot at eye level, 35 mm lens, wide enough to show the whole courtroom and the people in it. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a stack of court files and petition papers on a wooden table, next to a bundle of tied case documents and a pair of handcuffs resting beside them. In the soft background, a khaki-clad police constable stands at a distance, slightly out of focus, near a grey police vehicle parked at a Chennai court compound gate. A few lawyers' black coats hang over a nearby bench. The light is natural daylight through a window, with a calm, serious mood. No readable text or labels are visible on the papers. Shot close-up at 35 mm, shallow depth of field, with the background softly blurred. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dailythanthi.com/news/tamilnadu/akal-vilakku-publishing-house-owner-mohan-appears-in-special-court",
-   "published": "2026-11-26T07:26:49Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
+   "reel_script": "புலியகுளத்தில் 30 அடி ரோடு 10 அடியாக சுருங்கியது. மாரியம்மன் கோவில் எதிரே 3 கட்டடங்கள், ஒரு பெட்டிக் கடை சாக்கடை கால்வாயை ஆக்கிரமித்து கட்டப்பட்டுள்ளன. மாநகராட்சி 4 முறை நோட்டீஸ் வழங்கியும் ஆக்கிரமிப்பு இதுவரை அகற்றப்படவில்லை. ஆக்கிரமிப்பு புகாரை 30 நாட்களில் விசாரிக்க வேண்டும் என்றும், ஆக்கிரமிப்பை 3 மாதங்களில் அகற்ற வேண்டும் என்றும் ஐகோர்ட் உத்தரவிட்டுள்ளது. அலட்சியம் காட்டும் அதிகாரிகள் மீது நடவடிக்கை எடுக்கவும் ஐகோர்ட் கூறியுள்ளது. ஆம்புலன்ஸ், தீயணைப்பு வாகனம்கூட செல்ல முடியவில்லை என மக்கள் குமுறுகின்றனர். அறநிலையத் துறை, ராமநாதபுரம் போலீசில் புகார் அளிக்கப்பட்டும், எந்த நடவடிக்கையும் இல்லை. அதிகாரிகள் விரைவில் நடவடிக்கை எடுப்போம் என்று தெரிவித்துள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚧 புலியகுளத்தில் 30 அடி ரோடு 10 அடியாக சுருங்கியது\n\n📰 முழு விவரம்:\nபுலியகுளம் மாரியம்மன் கோவில் எதிரே 30 அடி ரோட்டின் சாக்கடை கால்வாயை ஆக்கிரமித்து 3 கட்டடங்கள், ஒரு பெட்டிக் கடை கட்டப்பட்டுள்ளன. இதனால் ரோடு 10 அடியாக சுருங்கியுள்ளது. ஆம்புலன்ஸ், தீயணைப்பு வாகனம் கூட செல்ல முடியவில்லை என மக்கள் குமுறுகின்றனர். மாநகராட்சி 4 முறை நோட்டீஸ் வழங்கியும் ஆக்கிரமிப்பு அகற்றப்படவில்லை. ஆக்கிரமிப்பு புகாரை 30 நாட்களில் விசாரிக்க வேண்டும்; ஆக்கிரமிப்பை 3 மாதங்களில் அகற்ற வேண்டும் என ஐகோர்ட் உத்தரவிட்டுள்ளது.\n📍 இடம்: புலியகுளம், மாரியம்மன் கோவில் எதிரே\n👮 நடவடிக்கை: அறநிலையத் துறை, ராமநாதபுரம் போலீசில் புகார்; ஐகோர்ட்டில் வழக்கு\nℹ️ மக்கள் கவனத்திற்கு: ஆக்கிரமிப்பு குறித்து உங்கள் பகுதியில் உள்ளவர்களுக்கு பகிருங்கள்.\n\nPuliyakulam road encroachment, Coimbatore news\n📍 புலியகுளம், கோவை மாவட்டம் | 26 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Puliyakulam #ஆக்கிரமிப்பு #CoimbatoreNews",
+   "prompts": "A narrow Coimbatore residential street in Puliyakulam is partly blocked as a concrete building and a small box shop squeeze into what was once a wide road, leaving only a thin passage for two-wheelers and pedestrians. The scene sits in front of the Mariamman temple, with its gopuram visible in the background, its entrance framed by a flower shop with strings of marigold garlands hanging. Residents stand in small groups at the roadside, seen from behind and far away, some holding folded papers, while a corporation official in a shirt and trousers looks toward the buildings. Parked two-wheelers line the narrowed road and a single autorickshaw waits near the box shop. The buildings are plain concrete with flat roofs and unpainted walls, and a sewage canal runs along the edge of the road. Daylight, slightly overcast, late morning. Camera at eye level, 35 mm, wide enough to show the temple gopuram, the narrowed road, and the encroaching structures together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the edge of the narrowed road where a newly built concrete wall and the box shop's front step push into the roadway, cutting off the sewage canal's open cover and leaving a sliver of tarred road. Loose gravel, a few dried marigold petals, and a plastic water pot sit on the ground near the wall, and a pair of worn chappals rests on the step of the box shop. In the background, out of focus, a two-wheeler is squeezed close to the wall while a man in a veshti walks past at a distance, seen from behind. The surface of the road shows faded white markings almost erased by traffic. Daylight, soft shadows, late morning. Camera slightly high, 35 mm, shallow depth of field to isolate the wall, canal edge and road narrowing. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/occupiers-build-build-buildings-on-30-feet-of-road-10-feet-of-it-officials-are-reluctant-to-demolish/4386613",
+   "published": "2026-11-26T13:22:21+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 79 words; need 90-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795678501/kovaiminnal/d3cyjeam4vigvwxcnfgq.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795678503/kovaiminnal/v5jfspyy8a728jzt3lyv.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795692993/kovaiminnal/zod0bbers2qbfj9csdn4.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795692995/kovaiminnal/r6ptvungwltkhhpabon5.jpg"
    ]
   }
  ]
