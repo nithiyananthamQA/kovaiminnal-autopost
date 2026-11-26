@@ -6084,3 +6084,125 @@ filed: 0 Coimbatore district stories (target 1), reels only
 queue: 0 news waiting to be written
 All News sheet: {"ok":true,"added":1,"updated":0} 
 stories: 0
+writing [N]: கோவையில் நாளை (நவ.27) மின்தடை ஏற்படும் இடங்கள் - The Covai M
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high d
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high d
+switching away from gemini/gemini-3.6-flash for 10 min
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high d
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high d
+switching away from gemini/gemini-3.5-flash for 10 min
+ok gemini/gemini-3-flash-preview (22s)
+attempt 1 gemini/gemini-3-flash-preview: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி'); 2 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3-flash-preview (17s)
+attempt 2 gemini/gemini-3-flash-preview: 2 problems
+  caption needs 5 hashtags (Instagram max), has 7
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3-flash-preview (30s)
+attempt 3 gemini/gemini-3-flash-preview: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி'); 26 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3-flash-preview (42s)
+attempt 4 gemini/gemini-3-flash-preview: 2 problems
+  caption needs 5 hashtags (Instagram max), has 6
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி'); 26 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3-flash-preview (27s)
+attempt 5 gemini/gemini-3-flash-preview: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி'); 26 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3-flash-preview (46s)
+attempt 6 gemini/gemini-3-flash-preview: 2 problems
+  caption needs 5 hashtags (Instagram max), has 6
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3-flash-preview (38s)
+attempt 7 gemini/gemini-3-flash-preview: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி'); 2 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok gemini/gemini-3-flash-preview (39s)
+attempt 8 gemini/gemini-3-flash-preview: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing 
+ok gemini/gemini-3-flash-preview (38s)
+attempt 9 gemini/gemini-3-flash-preview: 1 problems
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி'); 26 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
+poor answer - skipped for 30 min: gemini/gemini-3-flash-preview
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+dead for this round: groq/openai/gpt-oss-120b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+dead for this round: groq/qwen/qwen3.8-27b
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+free fact-check unavailable, using Claude: no free model answered: None
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 3 problems
+  reel_script says the Race Course area power cut is from 9 am to 4 pm, which matches, but the reel_script and slides_spec say 'அவிநாசி சாலை (அண்ணா சிலை - ஆட்சியர் அலுவலகம்)' correctly; however the reel_script omits 'சுசீலா நகர்', 'ருக்மணி நகர்', 'ஸ்ரீபதி நகர்', 'பாப்பம்மாள் லே-அவுட்', 'பார்க் டவுன்', 'கருணாநிதி நகர்', 'அங்கண்ணன் வீதி' etc., but these are listed only as examples so this is not an error
+  reel_script says 'நவம்பர் 27ஆம் தேதி' and 'நாளை' which is consistent, but the reel_script claims 'பாரதி நகர்' area is covered when the article lists 'பாரதி நகா் 1 முதல் 6 ஆவது வீதிகள்', which is a partial-fidelity wording issue
+  slides_spec title 'ரேஸ் கோர்ஸ் பகுதி' and 'அரசூர் பகுதி' lines are accurate, but the 'அன்னூர் சாலை' is listed under Arasur area as 'அன்னூர் சாலை' in slides, matching the article; no fabricated locations found beyond the summarizing of lists
+claude rewrite 1 anthropic/claude-haiku-5-5: 3 problems
+  fact-check: reel_script says the Race Course area power cut is from 9 am to 4 pm, which matches, but the reel_script and slides_spec say 'அவிநாசி சாலை (அண்ணா சிலை - ஆட்சியர் அலுவலகம்)' correctly; however the reel_script omits 'சுசீலா நகர்', 'ருக்மணி நகர்', 'ஸ்ரீபதி நகர்', 'பாப்பம்மாள் லே-அவுட்', 'பார்க் டவுன்', 'கருணாநிதி நகர்', 'அங்கண்ணன் வீதி' etc., but these are listed only as examples so this is not an error
+  fact-check: reel_script says 'நவம்பர் 27ஆம் தேதி' and 'நாளை' which is consistent, but the reel_script claims 'பாரதி நகர்' area is covered when the article lists 'பாரதி நகா் 1 முதல் 6 ஆவது வீதிகள்', which is a partial-fidelity wording issue
+  fact-check: slides_spec title 'ரேஸ் கோர்ஸ் பகுதி' and 'அரசூர் பகுதி' lines are accurate, but the 'அன்னூர் சாலை' is listed under Arasur area as 'அன்னூர் சாலை' in slides, matching the article; no fabricated locations found beyond the summarizing of lists
+ok anthropic/claude-haiku-5-5
+claude rewrite 2 anthropic/claude-haiku-5-5: 2 problems
+  not grounded: location 'மாநகரம்' is not in the article
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி'); 26 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி')
+ok anthropic/claude-haiku-5-5
+claude rewrite 3 anthropic/claude-haiku-5-5: 2 problems
+  slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)
+  caption misses facts of the article (put every one in 📰 முழு விவரம்): 11 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி'); 26 ('அந்த வகையில் நாளை (27.11.26) கோவையில் 2 துணை மின் நிலையங்களி')
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+proofread skipped: no free model answered: None
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+ok anthropic/claude-haiku-5-5
+earlier stories still waiting for images: []
+instagram check: 50 recent posts read from the page
+pick round: only the picked links are written (research_free/pick.py)
+manual link added: https://covaimail.com/power-shutdown-scheduled-to-take-place-in-coimbatore-on-27-november-2026
+candidate filter: collected=1
+to write: 1 Coimbatore district candidates (max 1 stories)
+round: top 1 of 1 candidates
+candidates waiting: 1 Coimbatore; time left 39 min
+try (N) manual=True: https://covaimail.com/power-shutdown-scheduled-to-take-place
+NOT filed (N) கோவையில் நாளை (நவ.27) மின்தடை ஏற்படும் இடங்கள் - T: duplicate after write
+candidate loop ended: left 0, tried={'N': 1}, done={'N': 0}, time left 31 min
+filed: 0 Coimbatore district stories (target 1), reels only
+queue: 0 news waiting to be written
+All News sheet: {"ok":true,"added":0,"updated":1} 
+stories: 0
