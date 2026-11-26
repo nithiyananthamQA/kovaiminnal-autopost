@@ -1,9 +1,9 @@
-01:07:18 hold lifted: RN-20 - not grounded: location 'நகரம்' is not in the article - the location IS in the article (checked again)
-01:07:28 hold lifted: RN-63 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
-01:07:38 hold lifted: RN-166 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
-01:07:41 hold lifted: RN-185 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
-01:07:48 hold lifted: RN-213 - not grounded: location 'சாலை' is not in the article - the location IS in the article (checked again)
-01:08:03 1 held news to fix: ['RN-363']
+05:06:27 hold lifted: RN-20 - not grounded: location 'நகரம்' is not in the article - the location IS in the article (checked again)
+05:06:33 hold lifted: RN-63 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
+05:06:39 hold lifted: RN-166 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
+05:06:40 hold lifted: RN-185 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
+05:06:44 hold lifted: RN-213 - not grounded: location 'சாலை' is not in the article - the location IS in the article (checked again)
+05:06:54 1 held news to fix: ['RN-366']
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
@@ -22,39 +22,33 @@ fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
     "message": "You exceeded your current quota, plea
 dead for this round: gemini/gemini-3-flash-preview
 fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
-dead for this round: groq/openai/gpt-oss-120b
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
-switching away from groq/qwen/qwen3.8-27b for 10 min
-free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+switching away from groq/openai/gpt-oss-120b for 10 min
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 413: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
 ok anthropic/claude-haiku-5-5
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-free fact-check unavailable, using Claude: no free model answered: None
-ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 3 problems
-  The reel_script says the 18th anniversary is observed 'இன்று' (today), but the article's anniversary falls on Thursday and the draft's posting date is presented as today; the article does not state the reel is posted on the anniversary day, so this temporal claim is not supported by the article.
-  The reel_script and slides_spec say the search was carried out by 'பாதுகாப்புப் படையினர்' (security forces) in general, while the article says the security personnel and the bomb disposal police; minor but the reel script's sentence is a blend of two separate actors without clear attribution.
-  The reel_script's sentence 'இதையொட்டி நாடு முழுவதும் முக்கிய இடங்களில் பாதுகாப்பு நடவடிக்கைகள் பலப்படுத்தப்பட்டுள்ளன' is supported, but the caption's date line '26 நவம்பர் 2026' asserts a specific year for the posting date that is not stated in the article (article only gives 2008 event date and 18th anniversary).
-claude rewrite 1 anthropic/claude-haiku-5-5: 3 problems
-  fact-check: The reel_script says the 18th anniversary is observed 'இன்று' (today), but the article's anniversary falls on Thursday and the draft's posting date is presented as today; the article does not state the reel is posted on the anniversary day, so this temporal claim is not supported by the article.
-  fact-check: The reel_script and slides_spec say the search was carried out by 'பாதுகாப்புப் படையினர்' (security forces) in general, while the article says the security personnel and the bomb disposal police; minor but the reel script's sentence is a blend of two separate actors without clear attribution.
-  fact-check: The reel_script's sentence 'இதையொட்டி நாடு முழுவதும் முக்கிய இடங்களில் பாதுகாப்பு நடவடிக்கைகள் பலப்படுத்தப்பட்டுள்ளன' is supported, but the caption's date line '26 நவம்பர் 2026' asserts a specific year for the posting date that is not stated in the article (article only gives 2008 event date and 18th anniversary).
-ok anthropic/claude-haiku-5-5
-claude rewrite 2 anthropic/claude-haiku-5-5: 1 problems
-  caption copies the article word for word (15 words in a row, 22% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
-ok anthropic/claude-haiku-5-5
+ok groq/qwen/qwen3.8-27b (1s)
+factcheck by groq/qwen/qwen3.8-27b: 0 problems
+claude rewrite 1 anthropic/claude-haiku-5-5: 0 problems
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-free fact-check unavailable, using Claude: no free model answered: None
-ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 2 problems
-  The slides_spec line 'வியாழக்கிழமை நவம்பர் 26 அன்று சோதனை நடைபெற்றது' wrongly says the check happened on November 26; the article says the check was on Thursday, while November 26 is the date of the 2008 attack.
-  The caption says the attack was 'in Mumbai on 2008 November 26' and the check occurred the same day only by implication; the reel_script and caption are otherwise consistent, but the slide conflates the attack date with the check date.
-claude rewrite 3 anthropic/claude-haiku-5-5: 2 problems
-  fact-check: The slides_spec line 'வியாழக்கிழமை நவம்பர் 26 அன்று சோதனை நடைபெற்றது' wrongly says the check happened on November 26; the article says the check was on Thursday, while November 26 is the date of the 2008 attack.
-  fact-check: The caption says the attack was 'in Mumbai on 2008 November 26' and the check occurred the same day only by implication; the reel_script and caption are otherwise consistent, but the slide conflates the attack date with the check date.
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok groq/qwen/qwen3.8-27b (4s)
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-proofread skipped: no free model answered: None
-01:08:47 RN-363 FIXED - posts with the corrected text: கோவை ரயில் நிலையத்தில் தீவிர வெடிகுண்டு சோதனை: மும்பை தாக்குதல் நினைவு தினத்தையொ
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free fact-check unavailable, using Claude: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model 
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 4 problems
+  The reel_script opens by saying Sirithuli urged restoring the 8 ponds, then says 'இதையடுத்து' (following this) the meeting happened, implying a causal link the article does not state; the article does not say the meeting was prompted by that call.
+  The reel_script says the Chief Secretary gave advice that existing efforts failed to yield expected results and 'urged exploring alternative technologies' — the article says the earlier efforts did not give expected results and he advised that practical solutions could be developed through alternative technologies and innovative methods; roughly matching, but the reel_script's 'ஆராயுமாறு' phrasing is acceptable.
+  The reel_script says the Sirithuli officials 'பங்கேற்றனர்' (participated) in the meeting, which is consistent, but the claim that Sirithuli 'promised' to continue contributing with government and Corporation is only partially reflected; the reel_script says 'உறுதியளித்துள்ளது' which is consistent with the article.
+  The slides_spec line 'மாநகரின் 8 குளங்களை விரைந்து சீரமைக்க வலியுறுத்தல்' and 'கழிவுச் சேறு ... நீர் கொள்ளளவு உயர்த்துதல்' are consistent with the article; no invented figures found, but the caption and headline use the 8-pond call as the lead fact, which the article frames as a point raised during the meeting rather than a standalone statement.
+proofread rejected (4 problems)
+  fact-check: The reel_script opens by saying Sirithuli urged restoring the 8 ponds, then says 'இதையடுத்து' (following this) the meeting happened, implying a causal link the article does not state; the article does not say the meeting was prompted by that call.
+  fact-check: The reel_script says the Chief Secretary gave advice that existing efforts failed to yield expected results and 'urged exploring alternative technologies' — the article says the earlier efforts did not give expected results and he advised that practical solutions could be developed through alternative technologies and innovative methods; roughly matching, but the reel_script's 'ஆராயுமாறு' phrasing is acceptable.
+  fact-check: The reel_script says the Sirithuli officials 'பங்கேற்றனர்' (participated) in the meeting, which is consistent, but the claim that Sirithuli 'promised' to continue contributing with government and Corporation is only partially reflected; the reel_script says 'உறுதியளித்துள்ளது' which is consistent with the article.
+  fact-check: The slides_spec line 'மாநகரின் 8 குளங்களை விரைந்து சீரமைக்க வலியுறுத்தல்' and 'கழிவுச் சேறு ... நீர் கொள்ளளவு உயர்த்துதல்' are consistent with the article; no invented figures found, but the caption and headline use the 8-pond call as the lead fact, which the article frames as a point raised during the meeting rather than a standalone statement.
+05:07:45 RN-366 FIXED - posts with the corrected text: கோவை குளங்கள், பில்லூர், சிறுவாணி அணைகள் சீரமைப்பு: சிறுதுளி தலைமைச் செயலருடன் ஆ
