@@ -118,7 +118,7 @@ class CoimbatorePriority(unittest.TestCase):
         self.assertNotIn('age("collect") > 160 else', (wf / "post.yml").read_text())      # the watchdog never starts a round
         for f in ("research_free.yml", "write_stories.yml"):
             self.assertIn('DAILY_CAP: "1000"', (wf / f).read_text(), f)      # owner 31 Oct 4:48 PM: no daily limit of our own
-        self.assertIn('DAILY_CAP: "44"', (wf / "post.yml").read_text())      # owner 2 Nov (review): only Instagram's 50, last 6 for urgent news
+        self.assertIn('DAILY_CAP: "35"', (wf / "post.yml").read_text())      # owner 26 Nov (as the reference): 35 a day, was 44 (Kovai blocked 26 Nov)
         for wf in ("research_free.yml", "write_stories.yml"):
             self.assertIn('FRESH_DAYS: "1"', (ROOT / ".github" / "workflows" / wf).read_text())
 
@@ -2699,3 +2699,72 @@ class SameCutOtherPaper19Nov(unittest.TestCase):
     def test_a_cancellation_is_not_a_duplicate(self):
         self.assertFalse(fr.same_cut_areas(self.A_H, self.A_S, "2026-11-18", "நாளை மின்தடை ரத்து: வடவள்ளி பகுதிகள்", self.B_S, "2026-11-18"))
 
+
+
+class InstagramBlockPause26Nov(unittest.TestCase):
+    """26 Nov: Kovai's reels got 'Application request limit reached' (code 4, subcode 2207051 - publishing blocked) and the bot tried
+    again every 5 minutes until the owner stopped it. As the reference (21 Nov): a block pauses the page, and a paused page gets no
+    Instagram call at all."""
+    ERR = ("Instagram 17841410844667843/media_publish: {'message': 'Application request limit reached', 'code': 4, "
+           "'type': 'OAuthException', 'error_subcode': 2207051, 'is_transient': False, 'error_user_msg': 'We restrict certain activity'}")
+
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.p = [mock.patch.object(post, "CACHE", self.tmp), mock.patch.object(post, "DRY", False)]
+        for x in self.p:
+            x.start()
+        post.LIMIT.clear()
+        post.IG_RECENT.clear()
+
+    def tearDown(self):
+        for x in self.p:
+            x.stop()
+        post.LIMIT.clear()
+        post.IG_RECENT.clear()
+
+    def test_todays_error_is_a_block_not_a_retry(self):
+        self.assertEqual(post.ig_limit_kind(self.ERR), "block")
+        self.assertTrue(post.is_limit_error(self.ERR))      # the reel path then logs LIMIT and waits - never "tried again next run"
+        d = json.loads(post.ig_pause_file(post.PAGE).read_text(encoding="utf-8"))
+        self.assertEqual(d["kind"], "block")
+        left = datetime.datetime.fromisoformat(d["until"]) - datetime.datetime.now(datetime.timezone.utc)
+        self.assertGreater(left, datetime.timedelta(hours=5, minutes=50))      # config ig_block_pause_hours 6
+
+    def test_other_limits(self):
+        self.assertEqual(post.ig_limit_kind("{'code': 9, 'error_subcode': 2207069, 'message': 'Media Creation Limit Exceeded'}"), "create")
+        self.assertEqual(post.ig_limit_kind("{'error_subcode': 2207050, 'message': 'The Instagram account is restricted'}"), "restricted")
+        self.assertEqual(post.ig_limit_kind("{'message': 'Application request limit reached', 'code': 4,}"), "rate")
+        self.assertEqual(post.ig_limit_kind("{'error_subcode': 2207042}"), "quota")
+        self.assertEqual(post.ig_limit_kind("Connection reset by peer"), "")
+
+    def test_paused_page_makes_no_instagram_call(self):
+        post.ig_pause(post.PAGE, self.ERR, "block")
+        post.LIMIT.clear()
+        boom = mock.Mock(side_effect=AssertionError("Instagram was called while the page is paused"))
+        with mock.patch.object(post, "ig", boom), mock.patch.object(post, "bridge_get", boom), mock.patch.object(post, "ig_account", boom):
+            self.assertTrue(post.limit_reached(post.PAGE))
+            self.assertEqual(post.ig_recent(post.PAGE), [])
+            with mock.patch.dict(post.CONFIG, {"post_stories": True}):
+                post.story_catchup()
+        boom.assert_not_called()
+
+    def test_a_running_longer_pause_is_never_shortened(self):
+        post.ig_pause(post.PAGE, self.ERR, "block")       # 6 h
+        post.ig_pause(post.PAGE, "too many calls", "rate")      # 1 h must not replace it
+        self.assertEqual(json.loads(post.ig_pause_file(post.PAGE).read_text(encoding="utf-8"))["kind"], "block")
+
+    def test_pause_ends(self):
+        post.ig_pause_file(post.PAGE).write_text(json.dumps({"until": "2026-01-01T00:00:00+00:00", "kind": "block"}), encoding="utf-8")
+        self.assertEqual(post.ig_paused(post.PAGE), "")
+
+    def test_reels_only_and_cap_35_like_the_reference(self):
+        cfg = json.loads((ROOT / "poster" / "config.json").read_text(encoding="utf-8"))
+        self.assertFalse(cfg["post_stories"])
+        self.assertEqual(cfg["ig_block_pause_hours"], 6)
+        wf = (ROOT / ".github" / "workflows" / "post.yml").read_text(encoding="utf-8")
+        self.assertIn('DAILY_CAP: "35"', wf)
+        self.assertIn("poster/prebuilt/_ig_paused_*.json", wf)      # a pause made by the check job is kept for the next runs
+
+    def test_gold_job_skips_a_paused_page(self):
+        src = (ROOT / "goldrate" / "gold_daily.py").read_text(encoding="utf-8")
+        self.assertIn("_ig_paused_{pg}.json", src)

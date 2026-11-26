@@ -50,7 +50,7 @@ env:
   SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}      # owner 30 Oct: free writers (skipped until the key is set)
   FB_PAGE_ID_COIMBATORE: ${{ secrets.FB_PAGE_ID_COIMBATORE }}      # owner 2 Nov: the same posts also go to the Facebook page
   FB_TOKEN_COIMBATORE: ${{ secrets.FB_TOKEN_COIMBATORE }}
-  DAILY_CAP: "44"   # owner 31 Oct: no daily limit of our own - only Instagram's 50 a day (reels + stories); owner 2 Nov (review): the last 6 are kept for urgent news / power cuts
+  DAILY_CAP: "35"   # owner 26 Nov (as the reference 25 Nov): at most 35 news a day per page (only urgent news after that) - was 44; Kovai was blocked 26 Nov
   CITY_ONLY: "0"      # owner 31 Oct: the whole district (top 3 per round decides)
   POST_MAX_AGE_DAYS: "1"      # owner 13 Nov: today's and yesterday's news - the night's news waits for 08:00 and is never skipped
   DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '1' || '' }}
@@ -89,6 +89,8 @@ jobs:
           # owner 14 Nov: Google timer runs (POST_TIMER) save the check log like scheduled ones - not a commit every 5 minutes
           if grep -q "ready to post: [1-9]" .last_check || [ "$(date -u +%M)" -lt 5 ] || { [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -z "$POST_TIMER" ]; }; then git add -f .last_check && git commit -qm "check log" && { for i in 1 2 3 4; do git pull -q --rebase -X theirs --autostash && git push -q && break; git rebase --abort 2>/dev/null || true; sleep $((i*3)); done; } || true; fi
           # owner 1 Nov: the list of posts already shared to the story (never twice) is saved after every check
+          # owner 26 Nov (reference 21 Nov): an Instagram pause made by the check (story catch-up) is kept for the next runs
+          for f in poster/prebuilt/_ig_paused_*.json; do [ -f "$f" ] && git add -f "$f"; done; git diff --cached --quiet || { git commit -qm "Instagram pause" && { for i in 1 2 3 4 5; do git pull -q --rebase -X theirs --autostash && git push -q && break; git rebase --abort 2>/dev/null || true; sleep $((i*3)); done; } || true; }
           if [ -f poster/story_shared.json ]; then git add -f poster/story_shared.json && git commit -qm "stories shared" && { for i in 1 2 3 4 5; do git pull -q --rebase -X theirs --autostash && git push -q && break; git rebase --abort 2>/dev/null || true; sleep $((i*3)); done; } || true; fi
           echo "waiting=$(grep -c 'waits for the 12-minute gap' .last_check 2>/dev/null || true)" >> "$GITHUB_OUTPUT"
           if [ "${CHECK_RC:-0}" != "0" ]; then echo "::error::post.py check crashed (exit $CHECK_RC) - nothing was posted in this run"; exit 1; fi

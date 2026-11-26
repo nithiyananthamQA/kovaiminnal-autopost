@@ -278,6 +278,14 @@ def main():
     log(f"gold & silver rate for {', '.join(pages)} - {date_ta(day)}{' (DRY RUN)' if DRY else ''}")
     tokens = {}
     if not DRY:
+        for pg in list(pages):      # owner 26 Nov: a page whose Instagram posting is paused (blocked / limit, poster/post.py ig_pause) is not posted
+            try:
+                d = json.loads((ROOT / "poster" / "prebuilt" / f"_ig_paused_{pg}.json").read_text(encoding="utf-8"))
+                if datetime.fromisoformat(d["until"]) > datetime.now(timezone.utc):
+                    log(f"{pg}: Instagram posting paused until {d['until'][:16]} UTC ({d.get('kind')}) - skipped")
+                    pages.remove(pg)
+            except Exception:
+                pass
         for pg in pages:
             try:
                 tokens[pg] = page_token(pg)

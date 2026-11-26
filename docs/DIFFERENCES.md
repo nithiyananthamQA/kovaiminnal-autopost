@@ -271,3 +271,14 @@ Llama - the reference writes with Gemini then Groq, Claude only when both fail).
 - Gold rate: Chennai's rate pages (`gold_city`) - the four rate sites have no Tiruvallur page (3 of 4 answer 404, 20 Nov).
 - Avadi / Poonamallee / Thiruverkadu / Minjur / Redhills news may post on Chennai AND Tiruvallur (owner 20 Nov: both pages).
 - `live: False` in make_page.PAGE until the owner says go: the timer never starts it, every push keeps all its jobs off.
+
+- Instagram block pause - PORTED from the reference (its 21-24 Nov rule; owner 26 Nov: "fix it never happen in future all pages").
+  26 Nov Kovai: last post 10:27 IST, then every reel got code 4 / subcode 2207051 ("publishing blocked") and our old code called it
+  "TEMPORARY - tried again in the next run", so the bot tried every 5 minutes till the owner stopped posting at 18:40. Now, as the
+  reference: post.py ig_limit_kind / ig_pause - block (2207051) and too many posts made (2207069) pause the page's Instagram posting
+  6 h, too many requests 60 min; the pause is poster/prebuilt/_ig_paused_<page>.json (kept by the post job and, new, the check job);
+  a paused page gets no Instagram call at all (limit_reached, ig_recent, story catch-up) and its news waits, nothing is lost.
+  Also as the reference: post_stories false (reels only, his 23 Nov) and DAILY_CAP 35 (his 25 Nov; ours was 44).
+  Differences that remain: (1) a restricted account (2207050) pauses 2 h (ig_restricted_pause_hours) - the reference retries it
+  through a retry plan this repo does not have; (2) our 12-minute gap stays (reference 5) - the owner asked for slower posting;
+  (3) the gold-rate job also skips a paused page (goldrate/gold_daily.py).

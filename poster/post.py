@@ -1216,6 +1216,9 @@ def publish_story(token, media_url, kind, row=None):
         log("story posted", kind, mid)
         return mid
     except Exception as e:
+        k = ig_limit_kind(e)
+        if k in ("block", "create", "rate", "restricted"):      # reference 21 Nov: a story limit pauses the page too
+            ig_pause(PAGE, e, k)
         log("story not posted (post itself is fine - the story catch-up tries again):", e)
         return ""
 
@@ -1245,6 +1248,10 @@ def story_catchup(max_new=6):
     cut = (datetime.now(timezone.utc) - timedelta(days=2)).isoformat()
     shared = {k: v for k, v in shared.items() if v.get("at", "") >= cut}
     for pg in LABEL:
+        why = ig_paused(pg)
+        if why:      # reference 21 Nov: no story tries while the page's Instagram posting is paused
+            log(f"story catch-up {pg} waits:", why)
+            continue
         try:
             token = bridge_get("token", page=pg)["token"]
             uid, _ = ig_account(token)
@@ -1305,6 +1312,12 @@ def story_catchup(max_new=6):
                     shared[m.get("id")] = shared[tkey] = {"story": sid, "page": pg, "at": now.isoformat()}
                     log(f"story catch-up {pg}: story {sid} for the post of {t:%d %b %H:%M} UTC ({m.get('media_type')})")
                 except Exception as e:
+                    k = ig_limit_kind(e)
+                    if k in ("block", "create", "rate", "restricted", "quota"):      # reference 21 Nov: a limit stops the catch-up of this page
+                        if k != "quota":
+                            ig_pause(pg, e, k)
+                        log(f"story catch-up {pg}: Instagram limit ({k}) - no more stories now: {str(e)[:150]}")
+                        break
                     log(f"story catch-up {pg}: post {m.get('id')} not shared ({str(e)[:150]}) - tried again next run")
         except Exception as e:
             log(f"story catch-up {pg} skipped:", str(e)[:200])
@@ -1388,9 +1401,92 @@ USED = {}
 LIMIT = {}      # page -> True once Instagram's 24-hour publishing limit (50 posts per account) is reached
 
 
-def is_limit_error(e):
+def ig_pause_file(page):
+    return CACHE / f"_ig_paused_{page}.json"      # in poster/prebuilt: committed by the posting job, read by every later run
+
+
+PAUSE_WHY = {"restricted": "Instagram restricted this account (check the Instagram app: Settings - Account status)", "block": "Instagram blocked publishing", "create": "Instagram's limit on new posts (too many made in 24 h)",
+             "rate": "Instagram asked to slow down (too many requests)"}
+
+
+def ig_paused(page):
+    """'' or why this page's Instagram publishing is paused (reference 21 Nov: a block, or one of Instagram's limits)"""
+    try:
+        d = json.loads(ig_pause_file(page).read_text(encoding="utf-8"))
+        if datetime.fromisoformat(d["until"]) > datetime.now(timezone.utc):
+            return f"{PAUSE_WHY.get(d.get('kind') or 'block', 'Instagram limit')} on {page} - paused until {d['until'][:16]} UTC"
+    except Exception:
+        pass
+    return ""
+
+
+def ig_pause(page, e, kind="block"):
+    """reference 21 Nov (Trichy: 5 reels in 3 minutes, then 'action is blocked' 2207051) and Kovai 26 Nov (blocked from the
+    morning, then tried every 5 minutes till 18:40): trying again every few minutes makes a block / limit longer - this page's
+    Instagram posting waits (block: config ig_block_pause_hours 6; too many posts made: ig_create_pause_hours 6; too many requests:
+    ig_rate_pause_min 60; restricted: ig_restricted_pause_hours 2). Its news is posted after that, nothing is lost.
+    A longer pause that is already running is never shortened."""
+    try:
+        if kind == "rate":
+            hours = float(CONFIG.get("ig_rate_pause_min", 60)) / 60
+        elif kind == "restricted":
+            hours = float(CONFIG.get("ig_restricted_pause_hours", 2))
+        elif kind == "create":
+            hours = float(CONFIG.get("ig_create_pause_hours", 6))
+        else:
+            hours = float(CONFIG.get("ig_block_pause_hours", 6))
+        until_dt = datetime.now(timezone.utc) + timedelta(hours=hours)
+        try:
+            old = json.loads(ig_pause_file(page).read_text(encoding="utf-8"))
+            if datetime.fromisoformat(old["until"]) >= until_dt:
+                LIMIT[page] = True
+                return
+        except Exception:
+            pass
+        until = until_dt.isoformat(timespec="seconds")
+        CACHE.mkdir(parents=True, exist_ok=True)
+        ig_pause_file(page).write_text(json.dumps({"until": until, "kind": kind, "why": str(e)[:300]}, indent=1), encoding="utf-8")
+        LIMIT[page] = True
+        word = "BLOCKED" if kind == "block" else "PAUSED"
+        log(f"{word}: {PAUSE_WHY.get(kind, 'Instagram limit')} on {page} - its posting pauses {hours:g} h (until {until[:16]} UTC), news waits")
+        print(f"::warning title=Instagram {word.lower()} on {page}::{PAUSE_WHY.get(kind, 'Instagram limit')} - posting pauses {hours:g} h (until {until[:16]} UTC)", flush=True)
+    except Exception as x:
+        log("pause not saved:", str(x)[:150])
+
+
+def is_blocked(e):
     t = str(e).lower()
-    return "2207042" in t or "publish limit" in t or "publishing limit" in t or "maximum number of" in t and "posts" in t
+    return "2207051" in t or "action is blocked" in t
+
+
+def ig_limit_kind(e):
+    """which Instagram limit refused this (reference 21-24 Nov):
+    '' not a limit | 'restricted' account restricted (2207050) | 'block' publishing blocked (2207051) |
+    'create' too many posts made in 24 h (2207069) | 'quota' the 50 posts of 24 h are used (2207042) |
+    'rate' too many requests (code 4 / 9 / 17 / 32 / 613, 80002)"""
+    t = str(e).lower()
+    if "2207050" in t or "user access is restricted" in t or "account is restricted" in t:
+        return "restricted"
+    if "2207051" in t or "action is blocked" in t:      # Kovai 26 Nov: came as code 4 'Application request limit reached', subcode 2207051
+        return "block"
+    if "2207069" in t or "media creation limit" in t or "allowed to be created" in t:
+        return "create"
+    if "2207042" in t or "publish limit" in t or "publishing limit" in t or ("maximum number of" in t and "posts" in t):
+        return "quota"
+    if ("request limit reached" in t or "too many calls" in t or "too many actions" in t or "80002" in t
+            or any(f"'code': {c}," in t for c in (4, 9, 17, 32, 613))):
+        return "rate"
+    return ""
+
+
+def is_limit_error(e):
+    """an Instagram limit: the news waits (never 'tried again in the next run' every few minutes). A block, a restriction, too many
+    posts made or too many requests also pause the page's Instagram posting (ig_pause) - the reference's 21 Nov rule. Ours also
+    pauses a restriction (2 h) instead of the reference's retry plan, which this repo does not have (owner 26 Nov: never again)."""
+    k = ig_limit_kind(e)
+    if k in ("block", "create", "rate", "restricted"):
+        ig_pause(PAGE, e, k)
+    return bool(k)
 
 
 def is_transient(e):
@@ -1405,6 +1501,11 @@ def limit_reached(page):
     nothing is marked failed)."""
     if page in LIMIT:
         return LIMIT[page]
+    why = ig_paused(page)
+    if why:      # reference 21 Nov: the page's Instagram publishing is paused after a block - no Instagram call at all
+        log(why)
+        LIMIT[page] = True
+        return True
     LIMIT[page] = False
     if DRY:
         return False
@@ -1432,7 +1533,7 @@ def ig_recent(page):
     if page in IG_RECENT:
         return IG_RECENT[page]
     IG_RECENT[page] = []
-    if DRY:
+    if DRY or ig_paused(page):      # owner 26 Nov: a paused page gets no Instagram call at all (its news waits anyway)
         return []
     try:
         token = bridge_get("token", page=page)["token"]

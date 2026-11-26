@@ -187,7 +187,13 @@
     "sarvam_reasoning": "low"
   },
   "story_reserve": 5,
-  "post_stories": true,
+  "post_stories": false,
+  "post_stories_note": "owner 26 Nov (as the reference since 23 Nov): reels only - no Instagram story shares; each story is one more of Instagram's posts a day (Kovai was blocked 26 Nov). true = stories again",
+  "ig_block_pause_hours": 6,
+  "ig_create_pause_hours": 6,
+  "ig_rate_pause_min": 60,
+  "ig_restricted_pause_hours": 2,
+  "ig_pause_note": "owner 26 Nov (the reference's 21 Nov rule): Kovai was blocked (2207051) and the bot tried again every 5 minutes for hours. Now: blocked = the page's Instagram posting waits ig_block_pause_hours; too many posts made (2207069) ig_create_pause_hours; too many requests ig_rate_pause_min; account restricted (2207050) ig_restricted_pause_hours. A paused page gets no Instagram call; its news is posted after the pause, nothing is lost. The pause is poster/prebuilt/_ig_paused_<page>.json (delete it to end a pause early).",
   "district_powercut": {
     "note": "owner 11 Nov: separate feature - true = every enabled district page (districts/districts.json) posts its own power cuts; false = nothing runs for the districts and Kovai Minnal works exactly as before. disabled = district keys switched off one by one. live = the pages that run (13 Nov: chennai first); add a district key to put its page live. news_live = pages that also post their other local news (owner 13 Nov: chennai, after the owner approves a sample); news_per_run / news_per_day / news_max_age_hours limit it. news_rounds (owner 14 Nov, like the reference): news only at 06 / 10 / 19 h, that many news per round (power cuts every 30 min). comments_live (owner 14 Nov, Instagram's best practice 'reply to comments'): live pages whose new Instagram comments get 3 reply options e-mailed by the district bridge (the comments job of district_powercut.yml, every run); nothing is posted until the owner chooses; [] = off.",
     "enabled": true,
