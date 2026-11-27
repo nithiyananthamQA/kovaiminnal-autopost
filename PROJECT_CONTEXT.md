@@ -82,34 +82,34 @@ python3 tools/repost.py RN-158               # (Actions: repost) post a reel aga
 <!-- recent-changes:start (updated automatically by .github/workflows/context.yml - do not edit by hand) -->
 | Date | Commit | Change |
 |---|---|---|
-| 2026-11-25 | `1f08189` | posting: high-signal news posts the same night, not the next morning (owner 25 Nov) |
-| 2026-11-25 | `5a3c7f8` | posting: keep our windows 06-12 + 15-21 and the 28 news a day that ran (owner 25 Nov) |
-| 2026-11-25 | `332e6ea` | powercut: notices written |
-| 2026-11-25 | `77e7dcf` | powercut: notices written |
-| 2026-11-25 | `02bf84f` | powercut: notices written |
-| 2026-11-25 | `bb9dec0` | power cuts: every weekday form is a date word (திங்கட்கிழமை, புதன்கிழமையன்று) |
-| 2026-11-25 | `1181103` | pick: Bing backup when Google News is busy (reference f4547cce) |
-| 2026-11-25 | `ae81c73` | held news: common location words and Indian number grouping (reference 24c40231) |
-| 2026-11-25 | `c544fe0` | timer: schedule.json = the deployed Worker again (rounds 01/05/09/13/17/21 IST) |
-| 2026-11-25 | `adf95d4` | pick: written and posted |
-| 2026-11-25 | `576e528` | pick: picked news saved |
-| 2026-11-25 | `99b98c1` | posting: as soon as ready 05:00-24:00; rounds at the Worker's real times |
-| 2026-11-25 | `0f8e564` | pick: picked news saved |
-| 2026-11-25 | `eafe4fa` | pick: list sent |
-| 2026-11-25 | `e31c2d5` | power cuts: date and time words are no shared place |
-| 2026-11-25 | `d296152` | powercut: notices written |
-| 2026-11-25 | `bfab60d` | autofix: a missing poster/fixed never stops the state save; try counts saved per news |
-| 2026-11-25 | `245f51a` | pick: a news Dinamalar lists late is offered once (reference 007165e9) |
-| 2026-11-25 | `11b625e` | autofix: held news written again from the article and posted (reference 84417aa2 + da6a5e5b) |
-| 2026-11-25 | `903fd11` | powercut: notices written |
-| 2026-11-25 | `27e4e91` | powercut: notices written |
-| 2026-11-25 | `edaf210` | pick: written and posted |
-| 2026-11-25 | `79f657c` | facebook RN-316 |
-| 2026-11-25 | `b21e27a` | facebook RN-317 |
-| 2026-11-25 | `a6fb9b9` | powercut: notices written |
-| 2026-11-25 | `c4228bb` | goldrate posted |
-| 2026-11-25 | `cd4badc` | facebook RN-314 |
-| 2026-11-25 | `f3b12d8` | facebook RN-315 |
-| 2026-11-25 | `41226d7` | pick: picked news saved |
-| 2026-11-25 | `3af8df8` | facebook RN-313 |
+| 2026-11-27 | `45dcd74` | goldrate posted |
+| 2026-11-27 | `6f807cd` | powercut: notices written |
+| 2026-11-27 | `2263f4c` | goldrate posted |
+| 2026-11-27 | `2f0d4e6` | pick: picked news saved |
+| 2026-11-27 | `3b05f3d` | pick: picked news saved |
+| 2026-11-27 | `02ffe78` | pick: picked news saved |
+| 2026-11-27 | `5bfa467` | pick: list sent |
+| 2026-11-27 | `5d1c8cd` | powercut: notices written |
+| 2026-11-27 | `3131d54` | powercut: notices written |
+| 2026-11-27 | `fe8faf2` | powercut: notices written |
+| 2026-11-27 | `afa4e57` | powercut: notices written |
+| 2026-11-26 | `6f0e1d2` | pick: written and posted |
+| 2026-11-26 | `0d515c8` | pick: picked news saved |
+| 2026-11-26 | `fd605c2` | pick: picked news saved |
+| 2026-11-26 | `6a695bd` | pick: picked news saved |
+| 2026-11-26 | `7b6975f` | pick: list sent |
+| 2026-11-26 | `805fe7c` | pick: written and posted |
+| 2026-11-26 | `583c794` | pick: picked news saved |
+| 2026-11-26 | `4406c27` | pick: picked news saved |
+| 2026-11-26 | `8a91692` | pick: picked news saved |
+| 2026-11-26 | `66cbb03` | pick: list sent |
+| 2026-11-26 | `05c5830` | powercut: notices written |
+| 2026-11-26 | `f48fb29` | pick: written and posted |
+| 2026-11-26 | `dcd8627` | powercut: notices written |
+| 2026-11-26 | `46cc506` | powercut: notices written |
+| 2026-11-26 | `13fd284` | pick: picked news saved |
+| 2026-11-26 | `dd54ff2` | pick: picked news saved |
+| 2026-11-26 | `b91d079` | pick: list sent |
+| 2026-11-26 | `5adeb5a` | powercut: notices written |
+| 2026-11-26 | `668960b` | pick: written and posted |
 <!-- recent-changes:end -->
