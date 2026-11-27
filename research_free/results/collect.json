@@ -3,87 +3,122 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinakaran.com/news/father-in-law-arrested-daughter-death",
-  "manual link added: https://www.dinakaran.com/news/government-order-joint-sub-registrar-offices",
-  "manual link added: https://www.dinakaran.com/news/hawala-money-seized-passenger-train-coimbatore/amp",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/new-quarry-construction-protest-in-sokkanur-people-get-ready-to-take-part-in-the-protest/4387028",
+  "manual link added: https://www.dinakaran.com/news/murder-young-girl-sulur-coimbatore-both-individuals-found-guilty",
+  "manual link added: https://www.maalaimalar.com/news/tamilnadu/sulur-girl-case-both-found-guilty",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-news/heavy-rains-likely-in-coimbatore-theni-chennai-meteorological-department/4387504",
+  "manual link added: https://www.polimernews.com/tamilnadunews/rain-to-continue-in-tamil-nadu-for-3-days-heavy-rain-alert-for-coimbatore-nilgiris-and-other-districts-12846085",
   "candidate filter: collected=4",
   "to write: 4 Coimbatore district candidates (max 4 stories)",
   "round: top 4 of 4 candidates",
   "candidates waiting: 4 Coimbatore; time left 79 min",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "try (N) manual=True: https://www.dinakaran.com/news/hawala-money-seized-passenger",
-  "try (N) manual=True: https://www.dinakaran.com/news/government-order-joint-sub-re",
+  "try (N) manual=True: https://www.polimernews.com/tamilnadunews/rain-to-continue-i",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-news/heavy-rains-l",
+  "try (N) manual=True: https://www.maalaimalar.com/news/tamilnadu/sulur-girl-case-b",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
-  "try (N) manual=True: https://www.dinakaran.com/news/father-in-law-arrested-daught",
+  "try (N) manual=True: https://www.dinakaran.com/news/murder-young-girl-sulur-coimb",
+  "NOT filed (N) கோவை, தேனியில் கனமழைக்கு வாய்ப்பு; சென்னை வானிலை ம: duplicate after write",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
-  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 78 min",
-  "filed: 4 Coimbatore district stories (target 4), reels only",
+  "NOT filed (N) கோவை சூலூர் சிறுமி கொலை வழக்கில் இருவரும் குற்றவாள: duplicate after write",
+  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 2}, time left 75 min",
+  "filed: 2 Coimbatore district stories (target 4), reels only",
   "queue: 0 news waiting to be written",
   "All News sheet: {\"ok\":true,\"added\":4,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.6-flash",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.6-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "fail gemini/gemini-3.6-flash: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3.6-flash",
+  "fail gemini/gemini-3.6-flash: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3.6-flash",
+  "ok gemini/gemini-3.6-flash (49s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high d",
+  "ok gemini/gemini-3.5-flash (19s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3.5-flash (23s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
+  "switching away from gemini/gemini-3.5-flash for 10 min",
+  "ok gemini/gemini-3-flash-preview (11s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "switching away from gemini/gemini-3.5-flash for 10 min",
+  "ok gemini/gemini-3.5-flash (35s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok gemini/gemini-3-flash-preview (16s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3-flash-preview (17s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok gemini/gemini-3-flash-preview (15s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3-flash-preview (12s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
+  "ok gemini/gemini-3-flash-preview (14s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3-flash-preview",
+  "fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3-flash-preview",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
+  "ok groq/openai/gpt-oss-120b (7s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "ok gemini/gemini-3-flash-preview (25s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 413: {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organization `or",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok groq/qwen/qwen3.8-27b (3s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "dead for this round: groq/qwen/qwen3.8-27b",
-  "ok groq/openai/gpt-oss-120b (7s)",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 413: {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organization `or",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok anthropic/claude-haiku-5-5",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok groq/qwen/qwen3.8-27b (13s)",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "ok anthropic/claude-haiku-5-5",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
@@ -91,249 +126,145 @@
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "தமிழகத்தில் 6 மாவட்டங்களில் புதிய இணை சார்பதிவாளர் அலுவலகங்கள்",
-   "english_headline": "Tamil Nadu sets up new joint sub-registrar offices in 6 districts including Coimbatore North",
-   "category": "Government & Services",
-   "location": "Coimbatore North, Chennai North, Chennai South, Central Chennai, Tambaram, Chengalpattu - Tamil Nadu (Coimbatore district: Coimbatore North)",
+   "tamil_headline": "கோவை, நீலகிரியில் நாளை (நவம்பர் 28) கனமழைக்கு வாய்ப்பு; டிசம்பர் 3 வரை மழை தொடரும்",
+   "english_headline": "Heavy rain likely in parts of Coimbatore and Nilgiris on 28 Nov; rain likely across Tamil Nadu till 3 Dec",
+   "category": "Weather & Agriculture",
+   "location": "Coimbatore and Nilgiris districts (some places), Tamil Nadu",
    "importance": "High",
    "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "அரசு சேவை",
-    "loc": "கோவை வடக்கு",
-    "hl1": "கோவை வடக்கில் புதிய பத்திரப்பதிவு",
-    "hl2": "6 இடங்களில் அலுவலகங்கள்",
+    "cat": "மழை எச்சரிக்கை",
+    "loc": "கோவை, நீலகிரி",
+    "hl1": "கோவை, நீலகிரியில் நாளை (நவ.28) கனமழை",
+    "hl2": "டிசம்பர் 3 வரை மழை",
     "slides": [
      {
-      "title": "என்ன அறிவிப்பு?",
+      "title": "இன்று மழை",
       "lines": [
-       "தமிழகத்தில் 6 இடங்களில் புதிய இணை சார்பதிவாளர் அலுவலகங்கள்",
-       "அரசாணை வெளியிட்டது தமிழக அரசு",
-       "கோவை வடக்கும் அதில் ஒன்று"
+       "இன்று (நவம்பர் 27) கோவையின் ஒரு சில இடங்களில் கனமழை",
+       "சென்னை வானிலை ஆய்வு மையம் தகவல்",
+       "29 மாவட்டங்களின் ஒரு சில இடங்களில் மிதமான மழை"
       ]
      },
      {
-      "title": "எங்கெங்கே?",
+      "title": "நாளை (நவ.28) மழை",
       "lines": [
-       "சென்னை வடக்கு, சென்னை தெற்கு, மத்திய சென்னை",
-       "கோவை வடக்கு, தாம்பரம், செங்கல்பட்டு",
-       "ஒரே கூரையின் கீழ் பத்திரப்பதிவு சேவைகள்"
+       "நாளை (நவம்பர் 28) <b>நீலகிரி, கோவை</b> ஒரு சில இடங்களில் கனமழை",
+       "நெல்லை ஒரு சில இடங்களிலும் கனமழை",
+       "தூத்துக்குடி, தென்காசி, கன்னியாகுமரியிலும் கனமழை வாய்ப்பு"
       ]
      },
      {
-      "title": "ஏன் இந்த மாற்றம்?",
+      "title": "மற்ற மாவட்டங்கள்",
       "lines": [
-       "பத்திரப்பதிவு சேவைகளை ஒரே இடத்தில் வழங்கும் நோக்கம்",
-       "மக்களின் அலைச்சல் குறையும்",
-       "புதிய அலுவலகங்கள் அமைக்கப்படும்"
+       "கடலூர், திருச்சி, தஞ்சாவூர் உள்ளிட்ட 17 மாவட்டங்களில்",
+       "தேனி, மதுரை, சிவகங்கை, விருதுநகர், ராமநாதபுரத்திலும் மிதமான",
+       "டிசம்பர் 3 வரை தமிழகத்தில் ஒரு சில இடங்களில் மழை"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவை வடக்கில் புதிய பத்திரப்பதிவு அலுவலகம் அமைக்கப்படுகிறது. தமிழக அரசு இதற்கான அரசாணையை வெளியிட்டுள்ளது. தமிழகத்தில் 6 இடங்களில் புதிய இணை சார்பதிவாளர் அலுவலகங்கள் அமைக்கப்படும். சென்னை வடக்கு, சென்னை தெற்கு, மத்திய சென்னை, கோவை வடக்கு, தாம்பரம், செங்கல்பட்டு ஆகிய இடங்களில் இந்த அலுவலகங்கள் இருக்கும். பத்திரப்பதிவு சேவைகளை ஒரே கூரையின் கீழ் வழங்கும் நோக்கில் இந்த அறிவிப்பு வெளியாகியுள்ளது. இதனால் பொதுமக்கள் பத்திரப்பதிவுக்காக அலைவது குறையும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🏛️ கோவை வடக்கில் புதிய பத்திரப்பதிவு அலுவலகம்\n\n📰 முழு விவரம்:\nதமிழகத்தில் 6 மாவட்டங்களில் புதிய இணை சார்பதிவாளர் அலுவலகங்கள் அமைக்க தமிழக அரசு அரசாணை வெளியிட்டுள்ளது.\nசென்னை வடக்கு, சென்னை தெற்கு, மத்திய சென்னை, கோவை வடக்கு, தாம்பரம், செங்கல்பட்டு ஆகிய 6 இடங்களில் புதிய அலுவலகங்கள் அமைக்கப்படும்.\nபத்திரப்பதிவு சேவைகளை ஒரே கூரையின் கீழ் வழங்கும் நோக்கில் இந்த அறிவிப்பு வெளியாகியுள்ளது.\n\n📍 இடம்: கோவை வடக்கு, கோவை மாவட்டம்\n🗓️ நாள்: 27 நவம்பர் 2026\n\nTamil Nadu new joint sub-registrar offices 6 districts Coimbatore North | Coimbatore news\n📍 கோவை மாவட்டம் | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #TamilNadu",
-   "prompts": "A group of registration office staff and members of the public stand at the entrance of a newly set up joint sub-registrar office in Coimbatore North, with the building's front steps and a government office facade visible behind them. Seen from a distance and from behind, the staff wear formal shirts and sarees while a few citizens hold document folders, waiting in line at the counter door. The setting is a busy urban street in Coimbatore city with a two-wheeler parked on the roadside and a town bus passing on the road beyond, and in the far background the faint outline of Marudhamalai hill. Daylight, clear sky, warm late-morning light. Camera at eye level, 35 mm lens, wide enough to show the building and the street around it. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a stack of property registration files and bundled documents resting on a wooden government office counter, with a rubber stamp and a pen placed beside them. Behind the counter, a registration clerk's hand, seen softly out of focus, turns a page. Light comes through a window in the morning, lighting the paper and the desk surface while the background of a government office room recedes into soft blur. The objects are the focus of the shot, showing the paperwork that will now be handled under one roof. Camera slightly high, 35 mm lens, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinakaran.com/news/government-order-joint-sub-registrar-offices",
-   "published": "2026-11-27T09:03:55+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 55 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
+   "reel_script": "நாளை, நவம்பர் 28ஆம் தேதி, கோவை மற்றும் நீலகிரி மாவட்டங்களின் ஒரு சில இடங்களில் கனமழை பெய்யக்கூடும். நாளை நவம்பர் 28ஆம் தேதி நெல்லை மாவட்டத்திலும் ஒரு சில இடங்களில் கனமழை பெய்யலாம். இன்று நவம்பர் 27ஆம் தேதி கோவை, தேனி மாவட்டங்களின் ஒரு சில இடங்களில் கனமழை பெய்யக்கூடும் என தெரிவிக்கப்பட்டுள்ளது. சென்னை, திருவள்ளூர், செங்கல்பட்டு உள்ளிட்ட 29 மாவட்டங்களின் ஒரு சில இடங்களில் மிதமான மழைக்கு வாய்ப்புள்ளது. தூத்துக்குடி, தென்காசி, கன்னியாகுமரி மாவட்டங்களின் ஒரு சில இடங்களிலும் கனமழை பெய்ய வாய்ப்புள்ளது. கடலூர், திருச்சி, தஞ்சாவூர் உள்ளிட்ட 17 மாவட்டங்களில் மிதமான மழை பெய்யக்கூடும். டிசம்பர் 3ஆம் தேதி வரை தமிழகத்தின் ஒரு சில இடங்களில் லேசானது முதல் மிதமான மழை பெய்ய வாய்ப்புள்ளதாக சென்னை வானிலை ஆய்வு மையம் தெரிவித்துள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🌧️ நாளை (நவம்பர் 28) கோவை, நீலகிரியில் கனமழைக்கு வாய்ப்பு; டிசம்பர் 3 வரை மழை\n\n📰 முழு விவரம்:\nஇன்று (நவம்பர் 27) கோவை, தேனி மாவட்டங்களின் ஒரு சில இடங்களில் கனமழை பெய்யக்கூடும் என தெரிவிக்கப்பட்டுள்ளது.\n☔ நாளை (நவம்பர் 28) நீலகிரி, கோவை, நெல்லை மாவட்டங்களின் ஒரு சில இடங்களில் கனமழை பெய்யக்கூடும்.\n☔ தூத்துக்குடி, தென்காசி, கன்னியாகுமரி மாவட்டங்களின் ஒரு சில இடங்களிலும் கனமழைக்கு வாய்ப்புள்ளது.\n🌦️ சென்னை, திருவள்ளூர், செங்கல்பட்டு உள்ளிட்ட 29 மாவட்டங்களில் ஒரு சில இடங்களில் மிதமான மழைக்கு வாய்ப்பு.\n🌦️ கடலூர், திருச்சி, தஞ்சாவூர் உள்ளிட்ட 17 மாவட்டங்களில் மிதமான மழை பெய்யக்கூடும்.\n📅 டிசம்பர் 3ஆம் தேதி வரை தமிழகத்தின் ஒரு சில இடங்களில் லேசானது முதல் மிதமான மழைக்கு வாய்ப்புள்ளதாக சென்னை வானிலை ஆய்வு மையம் தெரிவித்துள்ளது.\n\nHeavy rain Coimbatore Nilgiris 28 Nov | Tamil Nadu rain till 3 Dec\n📍 கோவை, நீலகிரி மாவட்டங்கள் | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Nilgiris #மழை #CoimbatoreNews",
+   "prompts": "Rain falls steadily on a busy road in Coimbatore city, with town buses and two-wheelers splashing through shallow water on the tarmac, and autorickshaws slowing under grey monsoon clouds. Shopfronts line the roadside, and a few commuters with umbrellas walk along the footpath, seen from behind and at a distance. Far in the background the dark green slopes of the Western Ghats and Nilgiris hills disappear into low clouds. Late November daylight, overcast and wet. Camera at eye level, 35 mm, wide enough to show the road, the rain and the hills. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of rainwater pooled on a wet tarmac road in Coimbatore, with raindrops rippling the surface and reflecting the grey sky and a blurred row of two-wheeler tyres at the edge of the frame. A few fallen leaves float in the puddle beside the kerb, and the edge of a drain cover shows water flowing toward it. Behind, slightly out of focus, the hazy silhouette of the Nilgiris hills is visible through the rain. Overcast late November daylight. Camera low and close, 50 mm, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.polimernews.com/tamilnadunews/rain-to-continue-in-tamil-nadu-for-3-days-heavy-rain-alert-for-coimbatore-nilgiris-and-other-districts-12846085",
+   "published": "2026-11-27T16:49:31+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764951/kovaiminnal/sm43horuttd1qljop4hl.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764954/kovaiminnal/xqax1uz6te9lqhiwe52p.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795779474/kovaiminnal/xvjwio5a8sm6xcfb77nt.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795779478/kovaiminnal/hei6ib96pwlo05obxur4.jpg"
    ]
   },
   {
-   "tamil_headline": "சொக்கனூரில் புதிய குவாரிக்கு மக்கள் எதிர்ப்பு: போராட்டத்துக்கு ஆயத்தம்",
-   "english_headline": "Residents of Sokkanur in Kinathukadavu oppose new quarry; ready to protest",
-   "category": "Civic Issues",
-   "location": "Sokkanur panchayat, Kinathukadavu taluk, Coimbatore district",
-   "importance": "Medium",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "குவாரி எதிர்ப்பு",
-    "loc": "சொக்கனூர், கிணத்துக்கடவு",
-    "hl1": "சொக்கனூரில் புதிய குவாரிக்கு எதிர்ப்பு",
-    "hl2": "போராட்டத்துக்கு மக்கள்",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "சொக்கனூர் ஊராட்சி, சங்கராயபுரம் பிரிவு அருகே புதிய",
-       "தனியார் இடத்தில் குவாரி அமைக்க சில மாதங்களுக்கு முன்",
-       "சில நாட்களுக்கு முன் குவாரி தொடங்க அனுமதி கோரப்பட்டது"
-      ]
-     },
-     {
-      "title": "அதிகாரிகள் ஆய்வு",
-      "lines": [
-       "நில அளவையர், வருவாய்த்துறை அதிகாரிகள் நேரில் ஆய்வுக்கு",
-       "முறையான அறிவிப்பின்றி ஆய்வு செய்ய முயன்றதால் பரபரப்பு",
-       "எதிர்ப்பால் ஆய்வு செய்யாமல் அதிகாரிகள் திரும்பினர்"
-      ]
-     },
-     {
-      "title": "மக்களின் கவலை",
-      "lines": [
-       "4 ஏக்கரில் குவாரி; 300 மீட்டர் தொலைவில் செக் டேம், விளை",
-       "20க்கும் மேற்பட்ட குடியிருப்புகள் உள்ளன",
-       "கிராம சபையில் புதிய குவாரி வேண்டாம் என தீர்மானம்"
-      ]
-     },
-     {
-      "title": "மக்கள் எச்சரிக்கை",
-      "lines": [
-       "குவாரிக்கு அனுமதி தந்தால் தொடர் போராட்டம், சாலை மறியல்",
-       "முறையான அறிவிப்பு தந்து கருத்து கேட்க வேண்டும்",
-       "குவாரி அனுமதியை கைவிட மாவட்ட நிர்வாகத்துக்கு கோரிக்கை"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "சொக்கனூரில் புதிய கல்குவாரிக்கு மக்கள் கடும் எதிர்ப்பு தெரிவித்துள்ளனர். கிணத்துக்கடவு தாலுகா, சொக்கனூர் ஊராட்சி, சங்கராயபுரம் பிரிவு அருகே தனியாருக்குச் சொந்தமான இடத்தில் குவாரி அமைக்க சில மாதங்களுக்கு முன் விண்ணப்பம் செய்யப்பட்டது. சில நாட்களுக்கு முன் அதே இடத்தில் குவாரி தொடங்க அனுமதி கோரப்பட்டது. இதை ஆய்வு செய்ய நில அளவையர் மற்றும் வருவாய்த்துறை அதிகாரிகள் நேரில் சென்றனர். அப்போது மக்கள் சிலர் குவாரிக்கு எதிர்ப்பு தெரிவித்தனர். முறையான அறிவிப்பின்றி ஆய்வு செய்ய முயன்றதால் அப்பகுதியில் பரபரப்பு ஏற்பட்டது. எதிர்ப்பால் அதிகாரிகள் ஆய்வு செய்யாமல் திரும்பினர். மக்கள் கூறுவதன்படி, 4 ஏக்கர் பரப்பில் குவாரி அமைய உள்ளது. இதிலிருந்து 300 மீட்டர் தொலைவில் செக் டேம், நீர்வழிப்பாதை, விளை நிலங்கள் மற்றும் 20க்கும் மேற்பட்ட குடியிருப்புகள் உள்ளன. குவாரி உரிமத்துக்கு மீண்டும் விண்ணப்பம் செய்யப்பட்ட நிலையில், அந்த இடம் சப்-டிவிஷன் செய்யப்படவுள்ளதாக நோட்டீஸ் அனுப்பப்பட்டதாக மக்கள் கூறுகின்றனர். சில மாதங்களுக்கு முன் வேறொரு தனியார் குவாரிக்கு முறையாக மக்களுக்குத் தெரிவிக்காமலும் கருத்து கேட்காமலும் உரிமம் வழங்கப்பட்டதாக மக்கள் குற்றம் சாட்டுகின்றனர். 2021, 2023 மற்றும் 2026ஆம் ஆண்டுகளின் கிராம சபைக் கூட்டங்களில் சொக்கனூரில் புதிய குவாரி அமைக்கக் கூடாது என தீர்மானம் நிறைவேற்றப்பட்டது. மக்கள் போராட்டத்தில் ஈடுபட ஆயத்தமாகி உள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 சொக்கனூரில் புதிய கல்குவாரிக்கு மக்கள் எதிர்ப்பு: போராட்டத்துக்கு ஆயத்தம்\n\n📰 முழு விவரம்:\nகிணத்துக்கடவு தாலுகா, சொக்கனூர் ஊராட்சி, சங்கராயபுரம் பிரிவு அருகே தனியாருக்குச் சொந்தமான இடத்தில் புதிய கல்குவாரி அமைக்க சில மாதங்களுக்கு முன் விண்ணப்பம் செய்யப்பட்டது. சில நாட்களுக்கு முன் அதே இடத்தில் குவாரி தொடங்க அனுமதி கோரப்பட்டது. இதை ஆய்வு செய்ய நில அளவையர், வருவாய்த்துறை அதிகாரிகள் நேரில் சென்றபோது, மக்கள் சிலர் எதிர்ப்பு தெரிவித்தனர். முறையான அறிவிப்பின்றி ஆய்வு செய்ய முயன்றதால் பரபரப்பு ஏற்பட்டது; அதிகாரிகள் ஆய்வு செய்யாமல் திரும்பினர்.\n🏗️ மக்கள் கூறுவதன்படி, 4 ஏக்கர் பரப்பில் குவாரி அமைய உள்ளது. 300 மீட்டர் தொலைவில் செக் டேம், நீர்வழிப்பாதை, விளை நிலங்கள், 20க்கும் மேற்பட்ட குடியிருப்புகள் உள்ளன.\n📄 உரிமத்துக்கு மீண்டும் விண்ணப்பம் செய்யப்பட்ட நிலையில், அந்த இடம் சப்-டிவிஷன் செய்யப்படவுள்ளதாக நோட்டீஸ் அனுப்பப்பட்டதாக மக்கள் கூறுகின்றனர்.\n⚠️ சில மாதங்களுக்கு முன் வேறொரு தனியார் குவாரிக்கு முறையாக அறிவிப்பு தராமலும் கருத்து கேட்காமலும் உரிமம் வழங்கப்பட்டதாக மக்கள் குற்றம் சாட்டுகின்றனர்.\n🗳️ 2021, 2023 மற்றும் 2026ஆம் ஆண்டுகளின் கிராம சபைக் கூட்டங்களில் சொக்கனூரில் புதிய குவாரி அமைக்கக் கூடாது என தீர்மானம் நிறைவேற்றப்பட்டது.\n✊ குவாரிக்கு அனுமதி வழங்கினால் தொடர் போராட்டம், சாலை மறியலில் ஈடுபடுவோம் என மக்கள் எச்சரித்துள்ளனர். குவாரி அனுமதியைக் கைவிட வேண்டும் என மாவட்ட நிர்வாகத்துக்கு கோரிக்கை.\n\nSokkanur residents oppose new quarry, ready to protest | Coimbatore news\n📍 சொக்கனூர், கிணத்துக்கடவு, கோவை மாவட்டம் | 26 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Kinathukadavu #Sokkanur #CoimbatoreNews",
-   "prompts": "A group of Sokkanur villagers stand together on open rural land at the edge of a village near Kinathukadavu in Coimbatore district, watching a government land-survey team with a tripod-mounted survey instrument as the officials prepare to inspect a proposed quarry site. The setting is dry, open ground with rocky patches and scrub, a check dam and green farm fields in the background, and a few houses visible at a distance. The villagers, mostly men in shirts and veshti and women in cotton sarees, stand in a loose cluster, some with arms folded and their faces turned away from the camera, while two officials in dark trousers and shirts stand near the instrument holding files and papers. The light is clear daytime sun with a pale sky, and the mood is tense and still. Shot at eye level from slightly behind the villagers, 35 mm, wide enough to show the land, the officials, the crowd and the distant settlement. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a survey tripod and a stack of official papers and notices placed on a flat rock at the edge of a dry, open quarry site in a Coimbatore village, with a few villagers' sandals and a water pot visible at the frame edge. Behind the objects, the rocky ground slopes toward green farm fields and a distant line of houses, under bright daytime light with a clear sky. The papers are blank-faced and unreadable, with no text shown, and the tripod legs are planted firmly in the earth. Shot at low angle, slightly from the side, 35 mm, focusing on the instrument and documents with the blurred villagers and farmland behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/new-quarry-construction-protest-in-sokkanur-people-get-ready-to-take-part-in-the-protest/4387028",
-   "published": "2026-11-26T19:25:14+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script copies the article word for word (15 words in a row, 11% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764968/kovaiminnal/vkrswcle4erabzhbefmt.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764975/kovaiminnal/wku1dq46rdqnhupqg5vz.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவை ரயிலில் இருந்து இறங்கிய பயணியிடம் ரூ.19.50 லட்சம் ஹவாலா பணம் சிக்கியது",
-   "english_headline": "Passenger arriving from Coimbatore train at Palakkad caught with Rs 19.50 lakh hawala cash",
+   "tamil_headline": "சூலூர் சிறுமி கொலை வழக்கு: கார்த்தி, மோகன்ராஜ் இருவரும் குற்றவாளிகள் என போக்சோ நீதிமன்றம் தீர்ப்பு",
+   "english_headline": "Sulur 10-year-old girl murder case: POCSO court convicts Karthi and Mohanraj, sentencing on Dec 4",
    "category": "Crime & Safety",
-   "location": "Palakkad Junction railway station, Palakkad, Kerala (Coimbatore district link via train)",
-   "importance": "Medium",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "ஹவாலா பணம்",
-    "loc": "பாலக்காடு சந்திப்பு",
-    "hl1": "ரயிலில் வந்த பயணியிடம் ரூ.19.50 லட்சம்",
-    "hl2": "ஹவாலா பணம் பறிமுதல்",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "பாலக்காடு சந்திப்பில் போலீசார் சோதனை நடத்தினர்",
-       "கோவையில் இருந்து வந்த பயணி <b>ரூ.19.50 லட்சம்</b> ஹவாலா",
-       "பணம் தோள் பையில் துணிகளுக்கு அடியில் இருந்தது"
-      ]
-     },
-     {
-      "title": "யார் இவர்?",
-      "lines": [
-       "மலப்புரம் மாவட்டம் நிலபூர் நாட்டுவிலகத்தைச் சேர்ந்த",
-       "கோவையில் இருந்து ரயிலில் பாலக்காடு வந்தார்",
-       "பின்னர் பேருந்தில் நிலபூர் செல்ல முயன்றபோது பிடிபட்டார்"
-      ]
-     },
-     {
-      "title": "வழக்கு என்ன?",
-      "lines": [
-       "ரயில்வே ஆணையாளர் அன்புகுமாரின் உத்தரவுப்படி வழக்குப்பதிவு",
-       "ஆர்பிஎப் சர்க்கிள் இன்ஸ்பெக்டர் ரமேஷ்குமார் தலைமையிலான",
-       "பறிமுதல் செய்த <b>ரூ.19.50 லட்சம்</b> சுங்கவரித்துறையிடம்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "பாலக்காடு சந்திப்பு ரயில் நிலையத்தில் ரூ.19.50 லட்சம் ஹவாலா பணம் பறிமுதல் செய்யப்பட்டுள்ளது. நேற்று போலீசார் ரயில் பயணிகளின் உடமைகளைச் சோதனை செய்துகொண்டிருந்தனர். கோவையில் இருந்து பாலக்காடு நோக்கி வந்த பயணிகள் ரயிலில் வந்திறங்கிய ஒருவர் மீது போலீசாருக்கு சந்தேகம் எழுந்தது. அவர் போலீசாரிடம் முன்னுக்குப்பின் முரணாகப் பதிலளித்தார். இதனால் அவரது உடமைகள் சோதனை செய்யப்பட்டன. அவரது தோள் பையில் துணிகளுக்கு அடியில், உரிய ஆவணங்கள் இல்லாமல் 500 ரூபாய் நோட்டுகளாக ரூ.19.50 லட்சம் இருந்தது. அவர் மலப்புரம் மாவட்டம் நிலபூர் நாட்டுவிலகம் பகுதியைச் சேர்ந்த செல்வராஜ், 59 வயது ஆனவர். அவர் பேருந்தில் நிலபூர் செல்ல முயன்றபோது பிடிபட்டார். ரயில்வே ஆணையாளர் அன்புகுமாரின் உத்தரவுப்படி, ஆர்பிஎப் சர்க்கிள் இன்ஸ்பெக்டர் ரமேஷ்குமார் தலைமையிலான போலீசார் வழக்குப்பதிவு செய்தனர். பறிமுதல் செய்யப்பட்ட ரூ.19.50 லட்சம் ஹவாலா பணம் சுங்கவரித்துறை அதிகாரிகளிடம் ஒப்படைக்கப்பட்டது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 பாலக்காடு ரயில் நிலையத்தில் ரூ.19.50 லட்சம் ஹவாலா பணம் பறிமுதல்\n\n📰 முழு விவரம்:\nகோவையில் இருந்து பாலக்காடு வந்த பயணி ஒருவரிடம் ரயில்வே போலீசார் சோதனை நடத்தினர். அவர் முன்னுக்குப்பின் முரணாகப் பதிலளித்ததால் சந்தேகம் எழுந்தது. அவரது தோள் பையில் துணிகளுக்கு அடியில், உரிய ஆவணங்கள் இல்லாமல் ரூ.19.50 லட்சம் மதிப்புள்ள 500 ரூபாய் நோட்டுகள் இருந்தன.\n👤 பயணி: மலப்புரம் மாவட்டம் நிலபூர் நாட்டுவிலகத்தைச் சேர்ந்த செல்வராஜ் (59 வயது)\n🚆 வழி: கோவை - பாலக்காடு சந்திப்பு ரயில், பின்னர் பேருந்தில் நிலபூர் செல்ல முயன்றபோது பிடிபட்டார்\n👮 நடவடிக்கை: ரயில்வே ஆணையாளர் அன்புகுமாரின் உத்தரவுப்படி ஆர்பிஎப் சர்க்கிள் இன்ஸ்பெக்டர் ரமேஷ்குமார், சப்-இன்ஸ்பெக்டர் ஷஜி அகஸ்டீன் தலைமையிலான போலீசார் வழக்குப்பதிவு செய்தனர்.\n💰 பறிமுதல் செய்த ரூ.19.50 லட்சம் ஹவாலா பணம் சுங்கவரித்துறை அதிகாரிகளிடம் ஒப்படைக்கப்பட்டது.\n\nPalakkad railway hawala cash seized Rs 19.50 lakh | Coimbatore news\n📍 பாலக்காடு சந்திப்பு (கோவை - பாலக்காடு ரயில்) | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Palakkad #CoimbatoreNews #கோவை",
-   "prompts": "A khaki-uniformed Railway Protection Force officer stands beside an elderly male passenger, about 59, in a plain shirt and veshti, on a Palakkad Junction railway platform, while a passenger train from Coimbatore stands at the platform beside them. The platform is busy but the focus is the detained man, shown from behind or in profile, his shoulder bag held open by a policeman's hand. The station is a typical South Indian railway junction with a long platform, a steel-and-concrete canopy roof, passenger coaches with windows, and a few other travellers with luggage at a distance. Daylight comes through the platform shed. Camera: eye level, 35 mm, wide enough to show the platform, the train and the people, slightly off-centre so no faces are clearly visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of an open dark shoulder bag on a steel bench or metal table at a railway police room, its contents spilling out from under folded clothes. Stacks of Indian Rs 500 currency notes, bundled with paper bands, sit in the bag, with a clear view of the bundles that tells the story of the hawala cash. Two khaki-uniformed police officers stand slightly blurred in the background, their hands and uniforms visible but not their faces. The room has a plain wall and a tube light overhead, and a few scattered papers. Camera: close, 50 mm, shallow depth of field, eye level, focused on the cash and the bag. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinakaran.com/news/hawala-money-seized-passenger-train-coimbatore/amp",
-   "published": "2026-11-27T10:09:58+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: hl1 (the first headline on screen) must name the place 'பாலக்காடு சந்திப்பு', e.g. 'பாலக்காடு சந்திப்பு: ...' or 'பாலக்காடு சந்திப்பு-இல் ...' - viewers share news of their own area",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764983/kovaiminnal/wim8ss1vnsscxmydq185.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764987/kovaiminnal/pwbodk7ua2sahp82tpkl.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "சூலூரில் மின் இணைப்பு துண்டிப்பால் மருமகள் கொலை; மாமனார் கைது",
-   "english_headline": "Sulur: father-in-law arrested for hacking daughter-in-law to death after power to his room was cut",
-   "category": "Crime & Safety",
-   "location": "Kangal village, Sulur, Coimbatore district",
+   "location": "Goundampalayam, Sulur, Coimbatore district",
    "importance": "High",
-   "scope": "local",
+   "scope": "district",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "குற்றம்",
-    "loc": "சூலூர்",
-    "hl1": "சூலூரில் மின் இணைப்பு துண்டிப்பால் கொலை",
-    "hl2": "மாமனார் கைது",
+    "cat": "நீதிமன்றத் தீர்ப்பு",
+    "loc": "கவுண்டம்பாளையம், சூலூர்",
+    "hl1": "சூலூர் சிறுமி வழக்கில் நீதிமன்றம்",
+    "hl2": "இருவரும் குற்றவாளிகள்",
     "slides": [
      {
-      "title": "என்ன நடந்தது?",
+      "title": "குற்றவாளிகள்",
       "lines": [
-       "சூலூர் அருகே கங்கல் கிராமத்தில் மருமகள் அரிவாளால்",
-       "மாமனார் மாடசாமி கைது செய்யப்பட்டார்",
-       "அவர் தங்கிய மாடி அறையின் மின் இணைப்பை மகன் துண்டித்ததால்"
+       "சூலூர் கவுண்டம்பாளையம் 10 வயது சிறுமி வழக்கு",
+       "கார்த்தி, மோகன்ராஜ் இருவரும் <b>குற்றவாளிகள்</b>",
+       "கோவை போக்சோ சிறப்பு நீதிமன்றம் தீர்ப்பு"
       ]
      },
      {
-      "title": "எப்போது?",
+      "title": "தண்டனை எப்போது?",
       "lines": [
-       "கடந்த <b>24</b>ஆம் தேதி அதிகாலையில் சம்பவம்",
-       "வாக்கிங் செல்ல வந்த மருமகள் நந்தினி வெட்டப்பட்டார்",
-       "சிகிச்சை பலனின்றி நேற்று காலை உயிரிழந்தார்"
+       "தண்டனை விவரங்கள் <b>டிசம்பர் 4ம் தேதி</b> அறிவிப்பு",
+       "நீதிபதி ஹரிஹரன் தீர்ப்பு வழங்கினார்",
+       "முன்பு நவம்பர் 16லிருந்து ஒத்திவைக்கப்பட்டது"
       ]
      },
      {
-      "title": "மகன் நிலை",
+      "title": "வழக்கின் பின்னணி",
       "lines": [
-       "மகன் செல்வகுமாருக்கும் முகத்தில் அரிவாள் வெட்டு",
-       "செல்வகுமார் மருத்துவமனையில் சிகிச்சையில் உள்ளார்",
-       "அடிதடி வழக்கு, இப்போது கொலை வழக்காக மாற்றம்"
+       "கடந்த மே 21ல் மாயமான 5ஆம் வகுப்பு சிறுமி",
+       "மே 23ல் இருவர் கைது செய்யப்பட்டனர்",
+       "21 நாட்களில் <b>819 பக்க</b> குற்றப்பத்திரிகை தாக்கல்"
+      ]
+     },
+     {
+      "title": "வழக்கு விசாரணை",
+      "lines": [
+       "6 மாதங்களில் <b>68 சாட்சிகள்</b> விசாரணை",
+       "<b>221 ஆவணங்கள்</b>, DNA அறிக்கைகள் சமர்ப்பிப்பு",
+       "சிசிடிவி சான்றுகளுடன் குற்றம் நிரூபணம்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "சூலூர் அருகே மின் இணைப்பு துண்டிக்கப்பட்டதால் மருமகள் கொலை செய்யப்பட்டார். கோவை மாவட்டம் சூலூர் அருகே உள்ள கங்கல் கிராமத்தில் இந்த சம்பவம் நடந்தது. தான் தங்கியிருந்த மாடி அறையின் மின் இணைப்பை மகன் செல்வகுமார் துண்டித்ததால் மாடசாமி ஆத்திரமடைந்தார். கடந்த 24ஆம் தேதி அதிகாலையில் வாக்கிங் செல்ல வந்த மருமகள் நந்தினியை அவர் அரிவாளால் வெட்டினார். பின்னர் வீட்டுக்குள் சென்று தூங்கிக்கொண்டிருந்த மகன் செல்வகுமாரின் முகத்திலும் வெட்டினார். படுகாயமடைந்த நந்தினி சிகிச்சை பலனின்றி நேற்று காலை உயிரிழந்தார். செல்வகுமார் மருத்துவமனையில் சிகிச்சையில் உள்ளார். போலீசார் மாடசாமியை கைது செய்தனர். முதலில் அடிதடி வழக்காகப் பதிவு செய்யப்பட்ட வழக்கு, தற்போது கொலை வழக்காக மாற்றப்பட்டுள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 சூலூரில் மின் இணைப்பு துண்டிப்பால் மருமகள் கொலை: மாமனார் கைது\n\n📰 முழு விவரம்:\nசூலூர் அருகே கங்கல் கிராமத்தில் அபிராமி கார்டன் பகுதியில் வசித்து வரும் செல்வகுமார் (36 வயது) என்பவரின் தந்தை மாடசாமி, மருமகள் நந்தினியை அரிவாளால் வெட்டிக் கொன்றார்.\nமாடசாமி தனது மகன் வீட்டின் மேல் மாடி அறையில் தங்கியிருந்தார். மருமகளுடன் பிரச்னை ஏற்பட்டதால், ஊருக்குச் செல்லுமாறு மகன் கூறினார். மாடசாமி மறுத்தார்.\nகடந்த 24ஆம் தேதி செல்வகுமார் தந்தை தங்கியிருந்த மாடி அறைக்குச் செல்லும் மின் இணைப்பைத் துண்டித்தார். ஆத்திரமடைந்த மாடசாமி அதிகாலையில் வாக்கிங் செல்ல வந்த மருமகள் நந்தினியை அரிவாளால் சரமாரியாக வெட்டினார்.\nபின்னர் வீட்டுக்குள் சென்று தூங்கிக்கொண்டிருந்த மகன் செல்வகுமாரின் முகத்திலும் அரிவாளால் வெட்டினார். அரிவாள் வெட்டில் படுகாயமடைந்த மகன் செல்வகுமார் மருத்துவமனையில் சிகிச்சைக்கு அனுமதிக்கப்பட்டுள்ளார்.\nசத்தம் கேட்டு அக்கம்பக்கத்தினர் ஓடி வந்து 108 ஆம்புலன்ஸ் மூலம் இருவரையும் சூலூரில் உள்ள தனியார் மருத்துவமனையில் சேர்த்தனர். சிகிச்சை பலனின்றி நந்தினி நேற்று காலை உயிரிழந்தார்.\nசூலூர் போலீசார் மாடசாமியைக் கைது செய்து விசாரித்து வருகின்றனர். அடிதடி வழக்காகப் பதிவு செய்யப்பட்ட வழக்கு கொலை வழக்காக மாற்றப்பட்டுள்ளது. உடல் கோவை இஎஸ்ஐ மருத்துவமனைக்கு பிரேத பரிசோதனைக்கு அனுப்பப்பட்டது. இந்தச் சம்பவம் அப்பகுதியில் பரபரப்பை ஏற்படுத்தியுள்ளது.\n\nSulur mother-in-law murder father-in-law arrested Coimbatore news\n📍 சூலூர், கோவை மாவட்டம் | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Sulur #CoimbatoreNews #கோவை",
-   "prompts": "Sulur police in khaki stand at the gate of a two-storey residential house in Kangal village, Coimbatore district, in the early morning light, with a 108 ambulance parked at the roadside and neighbours gathered at a distance. The place is a typical residential street in Coimbatore's outskirts, with concrete houses, an upper-floor room (madi) on the first floor, and a narrow lane with two-wheelers parked along the wall. Two or three officers in khaki uniform stand near the gate, one with his back to the camera, while a small group of neighbours, men in shirts and women in cotton sarees, watch quietly from across the lane. The ambulance has its rear doors open, with no visible injury or body shown. Early morning, soft daylight, slightly overcast sky. Camera at eye level, 35 mm, wide enough to show the house, the ambulance and the crowd, all people seen from behind or far away. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of an upper-floor window grille and a loose, cut electric wire hanging from a concrete wall of a residential house in Kangal village, Sulur, Coimbatore. The detail shows the switch-off point of the power supply to the mādi room, a plastic conduit pipe and a dangling wire, emphasising the cut electricity that sparked the dispute. Below the window, a plain red-oxide floor and a small patch of the lane are visible, with a single two-wheeler parked at the edge of the frame. Early morning light, soft shadows across the wall. Camera slightly high, 35 mm, focused on the wire and the grille, no people in focus, no text or signboards visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinakaran.com/news/father-in-law-arrested-daughter-death",
-   "published": "2026-11-27T10:07:50+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 80 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "reel_script": "சூலூர் சிறுமி கொலை வழக்கில் இருவர் குற்றவாளிகள் என நீதிமன்றம் தீர்ப்பு. கோவை சூலூர் கவுண்டம்பாளையம் பகுதியில் 10 வயது சிறுமி பாலியல் வன்கொடுமை செய்யப்பட்டு கொலை செய்யப்பட்ட வழக்கில் கோவை போக்சோ சிறப்பு நீதிமன்றம் இன்று தீர்ப்பு அளித்துள்ளது. இந்த வழக்கில் பக்கத்து வீட்டைச் சேர்ந்த கார்த்தி மற்றும் அவரது நண்பர் மோகன்ராஜ் ஆகிய இருவரும் குற்றவாளிகள் என நீதிபதி ஹரிஹரன் அறிவித்துள்ளார். கடந்த மே 21ஆம் தேதி அரசுப் பள்ளியில் 5ஆம் வகுப்பு படித்த சிறுமி மாயமான நிலையில், இருசக்கர வாகனத்தில் கடத்திச் சென்று கொலை செய்த கார்த்தி மற்றும் மோகன்ராஜ் மே 23ஆம் தேதி கைது செய்யப்பட்டனர். காவல்துறை 21 நாட்களுக்குள் 819 பக்கங்கள் கொண்ட குற்றப்பத்திரிகையைத் தாக்கல் செய்தது. சுமார் 6 மாத விசாரணையில் 68 சாட்சிகள் விசாரிக்கப்பட்டு, சிசிடிவி மற்றும் டிஎன்ஏ பரிசோதனை உள்ளிட்ட 221 ஆவணங்கள் தாக்கல் செய்யப்பட்டன. கடந்த 16ஆம் தேதி வரவிருந்த தீர்ப்பு நவம்பர் 27ஆம் தேதிக்கு ஒத்திவைக்கப்பட்ட நிலையில் இன்று தீர்ப்பு வழங்கப்பட்டது. இருவருக்கான தண்டனை விவரங்கள் டிசம்பர் 4ஆம் தேதி அறிவிக்கப்படும் என தெரிவிக்கப்பட்டுள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "⚖️ சூலூர் சிறுமி கொலை வழக்கு: கார்த்தி, மோகன்ராஜ் குற்றவாளிகள் என தீர்ப்பு - டிச. 4ல் தண்டனை!\n\n📰 முழு விவரம்:\nகோவை சூலூர் கவுண்டம்பாளையம் பகுதியில் அரசுப் பள்ளியில் 5ஆம் வகுப்பு படித்த 10 வயது சிறுமி கடந்த மே 21ஆம் தேதி வீட்டின் அருகே விளையாடிக் கொண்டிருந்தபோது மாயமானார். மளிகைக் கடைக்குச் சென்ற சிறுமியை சாக்லெட் வாங்கித் தருவதாகக் கூறி இருசக்கர வாகனத்தில் கடத்திச் சென்று பாலியல் வன்கொடுமை செய்து கொலை செய்த பக்கத்து வீட்டு கார்த்தி மற்றும் அவரது நண்பர் மோகன்ராஜ் ஆகிய இருவரை மே 23ஆம் தேதி காவல்துறையினர் கைது செய்தனர்.\n\nகாவல்துறை 21 நாட்களுக்குள் 819 பக்கங்கள் கொண்ட குற்றப்பத்திரிகையை நீதிமன்றத்தில் தாக்கல் செய்தது. 6 மாத விசாரணையில் 68 சாட்சிகள் விசாரிக்கப்பட்டு, சிசிடிவி, மருத்துவம் மற்றும் டிஎன்ஏ பரிசோதனை அறிக்கைகள் உட்பட 221 ஆவணங்கள் சமர்ப்பிக்கப்பட்டன.\n\nமுன்பு நவம்பர் 16ஆம் தேதி அறிவிக்கப்படுவதாக இருந்த தீர்ப்பை நீதிபதி ஹரிஹரன் நவம்பர் 27ஆம் தேதிக்கு ஒத்திவைத்தார். இந்நிலையில் இன்று (நவ. 27) கார்த்தி, மோகன்ராஜ் ஆகிய இருவரும் குற்றவாளிகள் என கோவை போக்சோ சிறப்பு நீதிமன்றம் தீர்ப்பளித்துள்ளது. இருவருக்கான தண்டனை விவரங்கள் டிசம்பர் 4ஆம் தேதி அறிவிக்கப்படும் எனத் தெரிவிக்கப்பட்டுள்ளது.\n\n📍 இடம்: கவுண்டம்பாளையம், சூலூர், கோவை மாவட்டம்\n🗓️ தீர்ப்பு நாள்: 27 நவம்பர் 2026\n⚖️ நீதிமன்றம்: கோவை போக்சோ சிறப்பு நீதிமன்றம்\n📅 தண்டனை அறிவிப்பு: 4 டிசம்பர் 2026\n\nமுக்கியமான இச்செய்தியை மற்றவர்களுக்கும் Share செய்யுங்கள்.\n\nSulur 10 year old girl case POCSO court verdict Coimbatore | Coimbatore news\n📍 Goundampalayam, Sulur, Coimbatore | 27 November 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Sulur #CoimbatoreNews #கோவை",
+   "prompts": "A POCSO special court hall in Coimbatore district has a police constable in khaki standing near the entrance while a stack of thick case files, bound in a bundle of 819 pages, rests on a wooden table before the judge's bench. Seen from behind at a distance, a few lawyers in black coats and family members of a young girl sit on wooden benches waiting for the verdict. The setting is a government courtroom with a high ceiling, fans, plain cream walls, and tube lights; outside the open window the Sulur town street shows a parked two-wheeler and a few small shops. Daylight comes through the windows, with a calm, sombre atmosphere. Camera at eye level, 35 mm, wide enough to show the whole hall and the people from behind, with no faces visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a neatly stacked pile of court case documents and a thick charge sheet on a wooden table, with a pen and a red ribbon tied around the file, a police constable's khaki sleeve visible at the edge of the frame. Behind the table, out of focus, the tall wooden judge's bench and a grey Tamil Nadu government court wall. The shallow depth of field keeps the papers sharp while the background blurs, with soft daylight from the window creating a subdued, serious mood. Camera slightly high, 50 mm, focused on the file stack, showing the weight of the evidence without any readable text or faces. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.maalaimalar.com/news/tamilnadu/sulur-girl-case-both-found-guilty",
+   "published": "2026-11-27T10:33:19Z",
+   "verification": "DRAFT (gemini/gemini-3.5-flash) - NOT CLEAN, held from posting - problems: fact-check: The caption incorrectly mentions the year 2026 for the verdict and sentencing dates, which is not in the article.",
+   "note": "free-model draft gemini/gemini-3.5-flash, 2 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764995/kovaiminnal/hpisdi386vgi2aucplf6.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764999/kovaiminnal/lvsaitnvjfavsijt8dkv.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795779487/kovaiminnal/tfycwg0otbzrcaro8d95.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795779492/kovaiminnal/iz4iukhf0mu9jwgsihty.jpg"
    ]
   }
  ]
