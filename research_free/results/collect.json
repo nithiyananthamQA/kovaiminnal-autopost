@@ -3,15 +3,15 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/math-teacher-at-pocso-arrested/4387805",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/buses-have-been-ordered-to-stop-at-the-terminal-opposite-the-government-hospital/4387833",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/free-diabetes-check-up-camp/4387795",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/take-steps-to-get-subsidies/4387823",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/mental-health-programme-by-municipal-corporation-gredai/4387714",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/youth-arrested-for-selling-narcotic-pills/4387903",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/in-the-henna-box-rs-87-lakh/4387872",
+  "manual link added: https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/27/treated-water-from-the-city-should-be-provided-for-irrigation-in-the-sulur-region",
   "candidate filter: collected=4",
   "to write: 4 Coimbatore district candidates (max 4 stories)",
   "round: top 4 of 4 candidates",
   "candidates waiting: 4 Coimbatore; time left 79 min",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "try (N) manual=True: https://www.dinamani.com/all-editions/edition-coimbatore/coi",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
@@ -27,345 +27,311 @@
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.6-flash",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.6-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "ok groq/openai/gpt-oss-120b (7s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 413: {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organization `or",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 413: {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organization `or",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok anthropic/claude-haiku-5-5",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
   "ok groq/qwen/qwen3.8-27b (3s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 413: {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organization `or",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok groq/openai/gpt-oss-120b (2s)",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok groq/openai/gpt-oss-120b (3s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "ok groq/qwen/qwen3.8-27b (1s)",
-  "ok anthropic/claude-haiku-5-5",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok anthropic/claude-haiku-5-5",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok groq/qwen/qwen3.8-27b (3s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok groq/qwen/qwen3.8-27b (1s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok anthropic/claude-haiku-5-5",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok groq/qwen/qwen3.8-27b (0s)"
+  "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "பொள்ளாச்சியில் இலவச சர்க்கரை நோய் பரிசோதனை முகாம்: 180க்கும் மேற்பட்டோர் பங்கேற்பு",
-   "english_headline": "Free diabetes screening camp in Pollachi on World Diabetes Day; over 180 people tested",
-   "category": "Health",
-   "location": "Arutselvar Mahalingam Road, Pollachi town, Coimbatore district",
+   "tamil_headline": "மருதமலை உண்டியலில் ரூ.87 லட்சம் காணிக்கை",
+   "english_headline": "Marudamalai temple hundi collection Rs 87 lakh in monthly count",
+   "category": "Temples & Events",
+   "location": "Marudamalai, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "சுகாதார முகாம்",
-    "loc": "பொள்ளாச்சி",
-    "hl1": "பொள்ளாச்சியில் இலவச சர்க்கரை நோய் முகாம்",
-    "hl2": "180க்கும் மேற்பட்டோர்",
+    "cat": "கோயில் உண்டியல்",
+    "loc": "மருதமலை",
+    "hl1": "மருதமலை உண்டியலில் ரூ.87 லட்சம்",
+    "hl2": "மாதாந்திர எண்ணிக்கையில்",
     "slides": [
      {
-      "title": "எங்கே, எப்போது?",
+      "title": "எவ்வளவு காணிக்கை?",
       "lines": [
-       "பொள்ளாச்சி அருட்செல்வர் மகாலிங்கம் சாலையில் முகாம் நடந்தது",
-       "உலக சர்க்கரை நோய் தினத்தை முன்னிட்டு நடத்தப்பட்டது",
-       "லயன்ஸ் கிளப் இன்டர்நேஷனல் பொள்ளாச்சி சார்பில் நடந்தது"
+       "மொத்த காணிக்கை <b>ரூ.87,28,931</b>",
+       "நிரந்தர உண்டியலில் <b>ரூ.85,55,694</b>",
+       "கோசாலை உண்டியலில் <b>ரூ.98,204</b>"
       ]
      },
      {
-      "title": "என்ன பரிசோதனை?",
+      "title": "திருப்பணி உண்டியல்",
       "lines": [
-       "ரத்த சர்க்கரை பரிசோதனை இலவசமாக செய்யப்பட்டது",
-       "ஆலோசனை, ஆரோக்கிய வழிகாட்டுதல் வழங்கப்பட்டது",
-       "லயன்ஸ் கிளப் தலைவர் விஜயகுமார் முகாமை துவக்கி வைத்தார்"
+       "திருப்பணி உண்டியலில் <b>ரூ.75,033</b>",
+       "எண்ணிக்கை இன்று (நவ. 27) நடந்தது",
+       "மருதமலை சுப்பிரமணியசுவாமி கோயிலில்"
       ]
      },
      {
-      "title": "எத்தனை பேர்?",
+      "title": "தங்கம், வெள்ளி",
       "lines": [
-       "<b>180க்கும் மேற்பட்டோர்</b> பரிசோதனை செய்தனர்",
-       "சர்க்கரை நோய் வராமல் தடுப்பது குறித்து விழிப்புணர்வு",
-       "பலரும் தங்கள் நிலையை தெரிந்து கொண்டனர்"
+       "<b>67 கிராம்</b> தங்கம் கிடைத்தது",
+       "<b>4 கிலோ 600 கிராம்</b> வெள்ளி கிடைத்தது",
+       "<b>20 கிலோ</b> பித்தளை கிடைத்தது"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "பொள்ளாச்சியில் 180க்கும் மேற்பட்டோர் இலவச சர்க்கரை நோய் பரிசோதனை செய்துகொண்டனர். உலக சர்க்கரை நோய் தினத்தை முன்னிட்டு, லயன்ஸ் கிளப் இன்டர்நேஷனல் பொள்ளாச்சி சார்பில் இந்த முகாம் அருட்செல்வர் மகாலிங்கம் சாலையில் நடைபெற்றது. லயன்ஸ் கிளப் தலைவர் விஜயகுமார் தலைமையில் முகாம் துவக்கி வைக்கப்பட்டது. முகாமில் ரத்த சர்க்கரை பரிசோதனை செய்யப்பட்டது. ஆலோசனையும் ஆரோக்கிய வழிகாட்டுதலும் வழங்கப்பட்டன. சர்க்கரை நோய் வராமல் தடுக்க என்ன செய்ய வேண்டும் என்பது குறித்தும் விழிப்புணர்வு ஏற்படுத்தப்பட்டது. மக்கள் ரத்த பரிசோதனை செய்து, சர்க்கரை நோய் உள்ளதா என்பதைத் தெரிந்துகொண்டனர். செயலாளர் இளங்கோவன், அட்மின் செயலாளர் வில்சன் மற்றும் முன்னாள் தலைவர்கள் இதில் பங்கேற்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🩸 பொள்ளாச்சியில் இலவச சர்க்கரை நோய் பரிசோதனை: 180க்கும் மேற்பட்டோர் பயன்\n\n📰 முழு விவரம்:\nஉலக சர்க்கரை நோய் தினத்தை முன்னிட்டு, லயன்ஸ் கிளப் இன்டர்நேஷனல் பொள்ளாச்சி சார்பில் இலவச சர்க்கரை கண்டுபிடிப்பு முகாம் நடைபெற்றது.\nலயன்ஸ் கிளப் தலைவர் விஜயகுமார் தலைமையில் முகாம் துவக்கி வைக்கப்பட்டது.\nமுகாமில் ரத்த சர்க்கரை பரிசோதனை, ஆலோசனை, ஆரோக்கிய வழிகாட்டுதல் வழங்கப்பட்டன.\nசர்க்கரை நோய் வராமல் தடுக்க என்ன செய்ய வேண்டும் என்பது குறித்து விழிப்புணர்வு ஏற்படுத்தப்பட்டது.\n180க்கும் மேற்பட்டோர் பரிசோதனை செய்தனர் என லயன்ஸ் கிளப் நிர்வாகிகள் தெரிவித்தனர்.\n\n📍 இடம்: அருட்செல்வர் மகாலிங்கம் சாலை, பொள்ளாச்சி\n🗓️ நாள்: உலக சர்க்கரை நோய் தினம்\n🏥 பரிசோதனை: ரத்த சர்க்கரை பரிசோதனை (இலவசம்)\n\nFree diabetes screening camp Pollachi | Coimbatore news\n📍 பொள்ளாச்சி, கோவை மாவட்டம் | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #சர்க்கரைநோய் #CoimbatoreNews",
-   "prompts": "A line of Pollachi residents, men in shirts and veshti and women in sarees, waits in a queue along Arutselvar Mahalingam Road for free blood sugar tests at a Lions Club camp. The setting is a town street in Pollachi, a busy Coimbatore district town, with two-wheelers and an autorickshaw parked at the roadside and shop fronts behind the crowd. In the foreground, Lions Club volunteers in matching vests stand beside a folding table set up under a temporary canopy, where a health worker in a white apron prepares a blood sugar test. The people are seen from behind or far away, slightly blurred, and no faces are shown. The light is bright daytime sunlight, with a clear sky. The camera is at eye level, 35 mm, wide enough to show the street, the canopy, the queue and the camp table. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up on a folding table covered with a plain cloth at the camp, holding a glucometer, a box of test strips, cotton swabs, a small lancet and a stack of blank paper forms, with a health worker's gloved hands just beginning a finger-prick blood sugar test on a resident seated in a plastic chair. The person's face is out of frame and only a hand and sleeve are visible. The background is a Pollachi town street with a parked two-wheeler and the edge of a Lions Club canopy, softly out of focus. Bright daytime light, a slightly shallow depth of field, shot at eye level with a 35 mm lens. No readable text, labels or logos are visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/free-diabetes-check-up-camp/4387795",
-   "published": "2026-11-27T19:22:48+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 0 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795793824/kovaiminnal/avfilifstum7x2cjy2r5.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795793828/kovaiminnal/owagesndz0o2wsvlnjro.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவையில் பி.எம்.இ.ஜி.பி. மானிய கோரிக்கைகளை உடனடியாக இணையதளத்தில் சமர்ப்பிக்க கலெக்டர் உத்தரவு",
-   "english_headline": "Coimbatore collector orders immediate online submission of PMEGP subsidy claims and subsidy release for beneficiaries who started businesses after bank loans",
-   "category": "Government & Services",
-   "location": "Coimbatore collectorate, Coimbatore district",
-   "importance": "Medium",
-   "scope": "district",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "அரசு திட்டம்",
-    "loc": "கோவை கலெக்டர் அலுவலகம்",
-    "hl1": "பி.எம்.இ.ஜி.பி. மானியம் உடனடியாக",
-    "hl2": "கலெக்டர் அதிரடி உத்தரவு",
-    "slides": [
-     {
-      "title": "என்ன கூட்டம்?",
-      "lines": [
-       "கலெக்டர் அலுவலகத்தில் மண்டல அளவிலான <b>2வது காலாண்டு</b>",
-       "கதர் மற்றும் கிராமத் தொழில்கள் ஆணையம் ஏற்பாடு செய்தது",
-       "கூட்டம் நடந்தது"
-      ]
-     },
-     {
-      "title": "கலெக்டரின் உத்தரவு",
-      "lines": [
-       "மானியக் கோரிக்கைகளை உடனடியாக இணையதளத்தில் சமர்ப்பிக்க",
-       "வங்கிகள் கடன் வழங்கிய விண்ணப்பங்களுக்கு இது பொருந்தும்",
-       "பி.எம்.இ.ஜி.பி. திட்டத்தின் கீழ் நடவடிக்கை"
-      ]
-     },
-     {
-      "title": "பயனாளிகளுக்கு",
-      "lines": [
-       "கடன் பெற்று தொழில் தொடங்கியவர்களுக்கு மானியம் கிடைக்க",
-       "இதற்கான உத்தரவை கலெக்டர் பிறப்பித்தார்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கடன் வாங்கி தொழில் தொடங்கியவர்களுக்கு மானியம் கிடைக்க கோவை கலெக்டர் உத்தரவிட்டுள்ளார். கலெக்டர் அலுவலகத்தில் கதர் மற்றும் கிராமத் தொழில்கள் ஆணையம் சார்பில் மண்டல அளவிலான 2வது காலாண்டு வங்கியாளர் மதிப்பாய்வுக் கூட்டம் நடைபெற்றது. இந்தக் கூட்டத்தில் பிரதம மந்திரியின் வேலைவாய்ப்பு உருவாக்கும் திட்டமான பி எம் இ ஜி பி பற்றி ஆய்வு செய்யப்பட்டது. வங்கிகள் கடன் வழங்கிய விண்ணப்பங்களுக்கான மானியக் கோரிக்கைகளை உடனடியாக இணையதளத்தில் சமர்ப்பிக்குமாறு கலெக்டர் உத்தரவிட்டார். மேலும், கடன் பெற்று தொழில் தொடங்கியுள்ள பயனாளிகளுக்கு மானியம் கிடைக்க நடவடிக்கை எடுக்குமாறும் அவர் அறிவுறுத்தினார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🏭 கோவையில் கடன் வாங்கி தொழில் தொடங்கியோருக்கு மானியம் கிடைக்க கலெக்டர் உத்தரவு\n\n📰 முழு விவரம்:\nகோவை கலெக்டர் அலுவலகத்தில் கதர் மற்றும் கிராமத் தொழில்கள் ஆணையம் சார்பில் மண்டல அளவிலான 2வது காலாண்டு வங்கியாளர் மதிப்பாய்வுக் கூட்டம் நடந்தது.\nபிரதம மந்திரியின் வேலைவாய்ப்பு உருவாக்கும் திட்டத்தின் (பி.எம்.இ.ஜி.பி.) கீழ் வங்கிகள் கடன் வழங்கிய விண்ணப்பங்களின் மானியக் கோரிக்கைகளை உடனே இணையதளத்தில் பதிவேற்ற வேண்டும் என கலெக்டர் உத்தரவிட்டார்.\nகடன் பெற்று தொழில் தொடங்கியவர்களுக்கு மானியம் கிடைப்பதற்கான நடவடிக்கைகளையும் எடுக்க வேண்டும் என்றும் அவர் கூறினார்.\n\nCoimbatore collector orders PMEGP subsidy claims online | Coimbatore news\n📍 கோவை கலெக்டர் அலுவலகம், கோவை மாவட்டம் | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #PMEGP",
-   "prompts": "A government official, the Collector, stands at the head of a long conference table in a formal government hall, addressing a group of seated officials. The setting is the Coimbatore Collectorate office, characterized by plain white walls, wooden furniture, and a serious administrative atmosphere. Seated around the table are approximately ten to fifteen men and women, dressed in formal shirts, trousers, and sarees, representing bank and KVIC officials. They are seen from behind or in profile, listening attentively. On the table, there are stacks of paper documents, folders, and a few laptops, indicating a review of subsidy claims. The lighting is bright and even, typical of an indoor office environment. The camera is positioned at eye level, 35 mm lens, capturing the width of the table and the arrangement of the participants to show the scale of the meeting. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up view of a section of the conference table in the Collectorate office, focusing on the administrative tools of the meeting. In the foreground, a stack of printed documents and a folder rests on the wooden surface, next to an open laptop screen that is blurred to avoid showing readable text. A pen and a glass of water are placed nearby. In the soft-focus background, the backs of two officials in formal attire are visible, seated and engaged in discussion. The lighting is neutral indoor light. The camera is slightly high, looking down at the table surface, 35 mm lens, emphasizing the paperwork and digital devices that represent the online submission of subsidy claims discussed in the meeting. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/take-steps-to-get-subsidies/4387823",
-   "published": "2026-11-27T19:40:44+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script copies the article word for word (15 words in a row, 17% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence; caption copies the article word for word (17 words in a row, 37% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 2 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795793843/kovaiminnal/nsckcb7itbz8s88rbp89.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795793847/kovaiminnal/y8px30htl0r9gwvgplho.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவை அரசு மருத்துவமனை எதிரே பஸ்களை சீராக நிறுத்த உத்தரவு",
-   "english_headline": "Coimbatore: buses at the bus terminal opposite the government hospital on Trichy Road ordered to park in an orderly way",
-   "category": "Roads & Transport",
-   "location": "Trichy Road, Coimbatore city, Coimbatore district",
-   "importance": "High",
-   "scope": "",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "சாலை போக்குவரத்து",
-    "loc": "திருச்சி ரோடு, கோவை",
-    "hl1": "திருச்சி ரோடு: பஸ் நிறுத்தத்தில் புதிய",
-    "hl2": "நெரிசலைக் குறைக்க நடவடிக்கை",
-    "slides": [
-     {
-      "title": "என்ன பிரச்சினை?",
-      "lines": [
-       "திருச்சி ரோட்டில் அரசு மருத்துவமனை எதிரே பஸ் முனையம் உள்ளது",
-       "பஸ்கள் வளைவில் திரும்பியதும் நிறுத்தப்படுகின்றன",
-       "ஒன்றன் பின் ஒன்றாக 3 பஸ்கள் நின்றால் வாகனங்கள் செல்ல"
-      ]
-     },
-     {
-      "title": "யாருக்கு சிரமம்?",
-      "lines": [
-       "ஆம்புலன்ஸ்கள் மருத்துவமனைக்குள் செல்ல முடியாமல் சிக்குகின்றன",
-       "பஸ் ஏற ஓடும் பயணிகள் கீழே விழுந்து விபத்தில் சிக்குகின்றனர்",
-       "லங்கா கார்னர் முதல் ரயில்வே ஸ்டேஷன் வரை வாகனங்கள்"
-      ]
-     },
-     {
-      "title": "என்ன உத்தரவு?",
-      "lines": [
-       "பஸ்களை பயணிகள் மேடை அருகே வரிசையாக நிறுத்த அறிவுறுத்தல்",
-       "பஸ்கள் நிற்கும் இடங்களை மாநகராட்சி மார்க்கிங் செய்ய வேண்டும்",
-       "இதை நிரந்தரமாக செயல்படுத்த மாவட்ட சாலை பாதுகாப்பு கமிட்டி"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "திருச்சி ரோட்டில் அரசு மருத்துவமனை எதிரே உள்ள பஸ் முனையத்தில் ஏற்படும் பெரும் நெரிசலுக்கு தீர்வு காண மாவட்ட சாலை பாதுகாப்பு கமிட்டி முக்கிய உத்தரவிட்டுள்ளது. இதுவரை பஸ்கள் பயணிகள் மேடை அருகே நிறுத்தப்படாமல், வளைவில் திரும்பியதும் நிறுத்தப்பட்டு வந்தன. இதனால் ஒன்றன் பின் ஒன்றாக 3 பஸ்கள் நிற்கும்போது மற்ற வாகனங்களுக்கு செல்ல வழி கிடைப்பதில்லை. மேலும், மருத்துவமனைக்குச் செல்ல வேண்டிய ஆம்புலன்ஸ்களும் இந்த நெருக்கடியில் சிக்குகின்றன. பஸ் ஏற ஓடும் பயணிகள் கீழே விழுந்து விபத்தில் சிக்குவதும் நடக்கிறது. லங்கா கார்னர் தாண்டி ஸ்டேட் பாங்க் ரோடு வழியாக ரயில்வே ஸ்டேஷன் மற்றும் குட்ஸ் ஷெட் ரோடு சந்திப்பு வரை வாகனங்கள் தேங்குகின்றன. இந்நிலையில், மாவட்ட சாலை பாதுகாப்பு கமிட்டி கூட்டத்தில் இது குறித்துப் போட்டோ காட்டி விவாதிக்கப்பட்டது. பஸ்களை பயணிகள் மேடை அருகே வரிசையாக நிறுத்தினால் போக்குவரத்து நெரிசல் குறையும் என அறிவுறுத்தப்பட்டது. பஸ்கள் எவ்வாறு நிற்க வேண்டும் என்பதை மாநகராட்சி மார்க்கிங் செய்ய வேண்டும்; அதை நிரந்தரமாகச் செயல்படுத்த உத்தரவிடப்பட்டது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚌 திருச்சி ரோடு பஸ் முனையத்தில் நெரிசல்: பஸ்களை சீராக நிறுத்த உத்தரவு\n\n📰 முழு விவரம்:\nகோவை திருச்சி ரோட்டில் அரசு மருத்துவமனை எதிரே உள்ள பஸ் முனையத்தில், பஸ்கள் பயணிகள் மேடை அருகே நிறுத்தப்படாமல் வளைவில் திரும்பியதும் நிறுத்தப்படுகின்றன.\nஒன்றன் பின் ஒன்றாக 3 பஸ்கள் நிற்பதால் திருச்சி ரோட்டில் வாகனங்கள் செல்ல வழி கிடைப்பதில்லை.\nமருத்துவமனைக்குச் செல்ல வேண்டிய ஆம்புலன்ஸ்களும் நெருக்கடியில் சிக்குகின்றன. பேருந்தில் ஏற ஓடும் பயணிகள் கீழே விழுந்து விபத்தில் சிக்குகின்றனர்.\nலங்கா கார்னர் முதல் ஸ்டேட் பாங்க் ரோடு வழியாக ரயில்வே ஸ்டேஷன், குட்ஸ் ஷெட் ரோடு சந்திப்பு வரை வாகனங்கள் தேங்குகின்றன.\nமாவட்ட சாலை பாதுகாப்பு கமிட்டி கூட்டத்தில் இது குறித்துப் போட்டோ காட்டி விவாதிக்கப்பட்டது. பஸ்களை பயணிகள் மேடை அருகே வரிசையாக நிறுத்தினால் நெரிசல் ஏற்படாது என அறிவுறுத்தப்பட்டது.\nபஸ்கள் நிற்க வேண்டிய இடங்களை மாநகராட்சி மார்க்கிங் செய்ய வேண்டும்; அதை நிரந்தரமாக செயல்படுத்த உத்தரவிடப்பட்டது.\nℹ️ மக்கள் கவனத்திற்கு: திருச்சி ரோட்டில் பயணிக்கும் வாகன ஓட்டிகளும் பயணிகளும் கவனமாக இருங்கள்.\n\nTrichy Road bus terminal jam Coimbatore | Coimbatore news\n📍 திருச்சி ரோடு, கோவை மாவட்டம் | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Coimbatore #போக்குவரத்து #CoimbatoreNews",
-   "prompts": "Three town and private buses stand nose to tail on the curve of a bus terminal opposite a government hospital on Trichy Road, Coimbatore city, while a line of two-wheelers and cars waits on the main road behind them. Passengers, seen from behind in shirts, sarees and salwar, run toward the bus doors near a small raised waiting platform with benches under a roof. An ambulance is stuck in the queue near the hospital gate, and a traffic policeman in khaki stands at the edge of the road directing vehicles. The road has a central median divider, and the bus stop sits near the hospital entrance. Daylight, slightly hazy, busy morning traffic. Camera at eye level, 35 mm, wide enough to show the terminal, the curve, the hospital gate and the traffic jam on Trichy Road. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of freshly painted white parking lines and a faded road marking on the tarmac of a bus terminal in Coimbatore city, beside the raised passenger waiting platform with its benches. A single bus is parked neatly inside the marked bay, its front wheel just at the white line, while a second bus waits behind a yellow-painted kerb edge. A corporation worker in a plain shirt and trousers, seen from behind, holds a paint brush and tin near the kerb. Daylight, dry road, a median divider and the back wall of a government hospital visible in the background. Camera slightly high, 35 mm, focusing on the painted lines and the parked bus. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/buses-have-been-ordered-to-stop-at-the-terminal-opposite-the-government-hospital/4387833",
-   "published": "2026-11-27T19:46:28+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b) - NOT CLEAN, held from posting - problems: sentence 1 (one-line story) has 19 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences",
-   "note": "free-model draft anthropic/claude-haiku-5-5 + proofread groq/qwen/qwen3.8-27b, 12 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795793854/kovaiminnal/pcfp4eawstpyeerobzcs.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795793859/kovaiminnal/xxg5ufdqaupfjsfnwwd2.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவை மாநகராட்சி பள்ளி கணித ஆசிரியர் போக்சோ வழக்கில் கைது",
-   "english_headline": "Maths teacher of a Coimbatore corporation school arrested under POCSO for alleged harassment of two students",
-   "category": "Crime & Safety",
-   "location": "Coimbatore city, Coimbatore district",
-   "importance": "High",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "குற்றம் & பாதுகாப்பு",
-    "loc": "கோவை",
-    "hl1": "கோவை பள்ளி கணித ஆசிரியர் போக்சோவில் கைது",
-    "hl2": "இரு மாணவிகள் புகார்",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "கோவை மாநகராட்சி பள்ளி கணித ஆசிரியர் கைது",
-       "ஆசிரியர் செந்தில்குமார் (45 வயது) மீது புகார்",
-       "மாணவிகள் இருவருக்கு பாலியல் தொந்தரவு என புகார்"
-      ]
-     },
-     {
-      "title": "எப்படி",
-      "lines": [
-       "மாணவிகள் பெற்றோரிடம் கூறி அழுதனர்",
-       "பெற்றோர் பள்ளிக்கு சென்று விசாரித்தனர்",
-       "மாணவிகள் தரப்பில் போலீசில் புகார் அளிக்கப்பட்டது"
-      ]
-     },
-     {
-      "title": "நடவடிக்கை",
-      "lines": [
-       "போக்சோ வழக்கில் செந்தில்குமார் கைது",
-       "சிறையில் அடைக்கப்பட்டார்",
-       "பள்ளிக்கல்வித்துறை, குழந்தைகள் பாதுகாப்பு அதிகாரிகள் விசாரணை"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோவை மாநகராட்சி பள்ளியின் கணித ஆசிரியர் போக்சோ வழக்கில் கைது செய்யப்பட்டுள்ளார். ஆசிரியர் செந்தில்குமார், 45 வயது. அவர் அந்தப் பள்ளியின் மாணவிகள் இருவருக்குப் பாலியல் தொந்தரவு செய்ததாகப் புகார் எழுந்தது. இதுகுறித்து மாணவிகள் பெற்றோரிடம் கூறி அழுதுள்ளனர். பெற்றோர் பள்ளிக்குச் சென்று விசாரித்தனர். போலீசார் மற்றும் குழந்தைகள் பாதுகாப்பு அதிகாரிகள் விசாரணை நடத்தினர். மாணவிகள் தரப்பில் போலீசில் புகார் அளிக்கப்பட்டது. அதன் அடிப்படையில் செந்தில்குமார் போக்சோ வழக்கில் கைது செய்யப்பட்டு சிறையில் அடைக்கப்பட்டார். பள்ளிக்கல்வித்துறையும், குழந்தைகள் பாதுகாப்பு அதிகாரிகளும் தொடர்ந்து விசாரணை நடத்துகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 கோவை மாநகராட்சி பள்ளி கணித ஆசிரியர் போக்சோ வழக்கில் கைது\n\n📰 முழு விவரம்:\nகோவையில் உள்ள ஒரு மாநகராட்சி பள்ளியின் கணித ஆசிரியர் செந்தில்குமார் (45 வயது), அந்தப் பள்ளியின் மாணவிகள் இருவருக்குப் பாலியல் தொந்தரவு செய்ததாகப் புகார் எழுந்தது.\nமாணவிகள் இதுகுறித்துப் பெற்றோரிடம் கூறி அழுதனர். பெற்றோர் பள்ளிக்குச் சென்று கேட்டனர்.\nபோலீசார், குழந்தைகள் பாதுகாப்பு அதிகாரிகள் விசாரித்தனர். மாணவிகள் தரப்பில் போலீசில் புகார் அளிக்கப்பட்டது.\nஅதன் அடிப்படையில் செந்தில்குமார் போக்சோ வழக்கில் கைது செய்யப்பட்டு சிறையில் அடைக்கப்பட்டார்.\n\n👮 நடவடிக்கை: பள்ளிக்கல்வித்துறை, குழந்தைகள் பாதுகாப்பு அதிகாரிகள் விசாரணை நடத்துகின்றனர்.\n\nMaths teacher of a Coimbatore corporation school arrested under POCSO | Coimbatore news\n📍 கோவை | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #கோவை #CoimbatoreNews #Crime",
-   "prompts": "A police officer in khaki uniform escorts a man in a white shirt and dark trousers away from the entrance of a government school building. The man is seen from behind, walking towards a parked police jeep. The school building is a single-story concrete structure with a tiled roof, typical of Coimbatore Corporation schools, featuring a gated entrance and a small notice board area. Two women in sarees stand near the gate, looking towards the departing vehicle, their faces blurred and distant. The police jeep is dark blue, parked on the paved road in front of the school. The scene is set during daylight with clear weather. The camera is positioned at eye level, 35 mm lens, capturing the width of the school gate and the road to show the context of the arrest location. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up view of the metal gate of the Coimbatore Corporation school, showing the heavy iron bars and the padlock mechanism. The gate is partially open, revealing the concrete pathway leading to the main building. In the background, slightly out of focus, the school's main entrance arch is visible. The ground is dry and dusty, typical of the area. No people are in the immediate foreground, focusing entirely on the secure entrance of the educational institution where the incident was reported. The lighting is bright daylight, casting sharp shadows from the gate bars onto the pavement. The camera is slightly high, looking down at the gate and the path, emphasizing the institutional setting. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/math-teacher-at-pocso-arrested/4387805",
-   "published": "2026-11-27T19:30:27+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: fact-check: The caption's English sentence 'Maths teacher of a Coimbatore corporation school arrested under POCSO | Coimbatore news' is not a fact from the article's Tamil text but is an extra line; the article does not contain English text, so this English summary is an addition beyond the source (minor), while the substantive Tamil claims match the article.",
+   "reel_script": "மருதமலையில் உண்டியலில் 87 லட்சம் ரூபாய் காணிக்கை கிடைத்தது. மருதமலை சுப்பிரமணியசுவாமி கோயிலில் மாதாந்திர உண்டியல் எண்ணிக்கை இன்று நவம்பர் 27ஆம் தேதி நடைபெற்றது. நிரந்தர உண்டியலில் 85 லட்சத்து 55 ஆயிரத்து 694 ரூபாய் கிடைத்தது. கோசாலை உண்டியலில் 98 ஆயிரத்து 204 ரூபாய் கிடைத்தது. திருப்பணி உண்டியலில் 75 ஆயிரத்து 33 ரூபாய் கிடைத்தது. மொத்தமாக 87 லட்சத்து 28 ஆயிரத்து 931 ரூபாய் பக்தர்களின் காணிக்கையாக இருந்தது. மேலும் 67 கிராம் தங்கமும், 4 கிலோ 600 கிராம் வெள்ளியும், 20 கிலோ பித்தளையும் கிடைத்தன. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🛕 மருதமலை உண்டியலில் ரூ.87 லட்சம் காணிக்கை\n\n📰 முழு விவரம்:\nமருதமலை சுப்பிரமணியசுவாமி கோயிலில் மாதாந்திர உண்டியல் எண்ணிக்கை நவ. 27 அன்று நடைபெற்றது. மொத்தம் ரூ.87,28,931 பக்தர்களின் காணிக்கையாக இருந்தது. நிரந்தர உண்டியலில் ரூ.85,55,694, கோசாலை உண்டியலில் ரூ.98,204, திருப்பணி உண்டியலில் ரூ.75,033 கிடைத்தது. மேலும் 67 கிராம் தங்கம், 4 கிலோ 600 கிராம் வெள்ளி, 20 கிலோ பித்தளை இருந்தது.\n\n📍 இடம்: மருதமலை, கோவை மாவட்டம்\n🗓️ நாள்: 27 நவம்பர் 2026\n\nMarudamalai temple hundi Rs 87 lakh | Coimbatore news\n📍 மருதமலை, கோவை மாவட்டம் | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Marudamalai #கோவை #CoimbatoreNews",
+   "prompts": "Temple staff in white veshti and shirts sit on the floor of the counting hall at Marudamalai Subramaniya Swamy temple on the hill, sorting and counting a large heap of currency notes and coins spread on cloth-covered tables and steel trays. Beside them, small piles of silver and brass offerings and a few gold ornaments are laid out, and a gopuram of the temple is visible through an open doorway. Seen from behind and at a distance, two or three devotees in sarees and dhotis wait by the wall of the hall. The hall has concrete walls and tube lights, and daylight from outside enters through the doorway. Shot at eye level, 35 mm, wide enough to show the counting room and the temple architecture beyond. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of the counting table at Marudamalai temple: bundles of Rs 500 and Rs 100 notes and a stack of coins are arranged on a white cloth, with a steel tray holding gold ornaments and a pile of silver articles beside it. Gloved hands of a temple staff member sort the notes, seen only from the wrist down. Brass offerings are stacked in a sack in the corner of the frame. Warm daylight from a nearby window falls on the money, and the background is blurred stone pillars of the counting hall. Shot slightly high, 35 mm, focused on the cash and the precious metals. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/in-the-henna-box-rs-87-lakh/4387872",
+   "published": "2026-11-27T20:26:02+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: fact-check: reel_script says 'இன்று நவம்பர் 27ஆம் தேதி' (today, 27 November); the article gives only 'இன்று (நவ.,27)' and the year is not stated, so the month/date rendering is acceptable, but the reel_script says the 67 grams of gold etc. were 'கிடைத்தன' (received) while the article only says they 'இருந்தது' (were present) - minor wording shift, not a factual change",
    "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795793870/kovaiminnal/tta1hufdfzqtxsbhp7hi.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795793874/kovaiminnal/sloes9nql6hxiohretm6.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795808087/kovaiminnal/xxfxlk3ygrtwwvybejv6.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795808090/kovaiminnal/lj4se1smyetsudcktssk.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "கோவை மாநகர சுத்திகரிக்கப்பட்ட நீரை சூலூர் பாசனத்துக்கு வழங்க விவசாயிகள் கோரிக்கை",
+   "english_headline": "Farmers urge Coimbatore city's treated water be supplied to dry Sulur taluk irrigation at grievance meeting",
+   "category": "Weather & Agriculture",
+   "location": "Coimbatore city and Sulur taluk, Coimbatore district",
+   "importance": "High",
+   "scope": "district",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "விவசாயம்",
+    "loc": "சூலூர், கோவை மாவட்டம்",
+    "hl1": "சூலூர் பாசனத்துக்கு சுத்திகரிக்கப்பட்ட",
+    "hl2": "பருவமழை பொய்த்ததால்",
+    "slides": [
+     {
+      "title": "கோரிக்கை என்ன?",
+      "lines": [
+       "கோவை மாநகரில் சுத்திகரிக்கப்படும் நீரை சூலூர் வட்டத்தின்",
+       "விவசாயிகள் குறைதீர் கூட்டத்தில் வலியுறுத்தினர்",
+       "நொய்யல் நீரை காடுகுட்டைக்கு அனுப்புவது போல மற்ற குளம்"
+      ]
+     },
+     {
+      "title": "ஏன் இந்த நிலை?",
+      "lines": [
+       "பருவமழை பொய்த்ததால் கிணறுகள், நிலத்தடி நீர்மட்டம் வெகுவாக",
+       "கோவை மாவட்ட விவசாயிகள் குறைதீர் கூட்டம் ஆட்சியர்",
+       "ஆட்சியர் பவன்குமார் க.கிரியப்பனவர் தலைமையில் நடந்தது"
+      ]
+     },
+     {
+      "title": "அரசின் பதில்",
+      "lines": [
+       "வடகோவை, கவுண்டம்பாளையம் சுத்திகரிப்பு நிலையங்கள் ஜனவரியில்",
+       "பம்ப் இல்லாமல் எந்த நீர்நிலைகளுக்கு நீர் கொண்டு செல்லலாம்",
+       "50 ஆயிரம் விவசாயிகளுக்கு புதிய இலவச மின் இணைப்பு"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "சூலூர் வறட்சிப் பகுதிகளுக்கு கோவை மாநகரின் சுத்திகரிக்கப்பட்ட நீர் வேண்டும் என விவசாயிகள் கோரியுள்ளனர். பருவமழை பொய்த்ததால் கிணறுகள் மற்றும் நிலத்தடி நீர்மட்டம் வெகுவாக குறைந்துள்ளது. ஒண்டிப்புதூரில் சுத்திகரிக்கப்படும் நொய்யல் ஆற்று நீரை காடுகுட்டைக்கு அனுப்புவது போல, சூலூர் வட்டத்தில் வறட்சி பாதித்த குளம், குட்டைகளுக்கும் அனுப்ப வேண்டும் என விவசாயிகள் வலியுறுத்தினர். கோவை மாவட்ட விவசாயிகள் குறைதீர் கூட்டம் ஆட்சியர் அலுவலகத்தில் வெள்ளிக்கிழமை நடைபெற்றது. ஆட்சியர் பவன்குமார் க.கிரியப்பனவர் தலைமையில் நடைபெற்ற இந்தக் கூட்டத்தில் பல்வேறு துறை அதிகாரிகள் பங்கேற்றனர். வடகோவை, கவுண்டம்பாளையம் சுத்திகரிப்பு நிலையங்கள் ஜனவரியில் பயன்பாட்டுக்கு வரும் என ஆட்சியர் தெரிவித்தார். பம்ப் பயன்படுத்தாமல் எந்த நீர்நிலைகளுக்கு நீரை கொண்டு செல்லலாம் என ஆலோசனை நடைபெறுகிறது. 50 ஆயிரம் விவசாயிகளுக்கு புதிய இலவச மின் இணைப்பு வழங்கப்படும் என அரசு அறிவித்துள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚰 சூலூர் வறட்சிப் பகுதிகளுக்கு மாநகர சுத்திகரிக்கப்பட்ட நீர் வேண்டும் - விவசாயிகள் கோரிக்கை\n\n📰 முழு விவரம்:\nகோவை மாநகரில் சுத்திகரிக்கப்படும் நீரை சூலூர் வட்டத்தில் உள்ள வறட்சியான பகுதிகளில் பாசனத்துக்கு விநியோகிக்க வேண்டும் என விவசாயிகள் குறைதீர் கூட்டத்தில் வலியுறுத்தினர்.\nகோவை மாவட்ட விவசாயிகள் குறைதீர் கூட்டம் வெள்ளிக்கிழமை ஆட்சியர் அலுவலகத்தில் நடைபெற்றது. ஆட்சியர் பவன்குமார் க.கிரியப்பனவர் தலைமையில் நடந்த இந்தக் கூட்டத்தில் மாவட்ட வருவாய் அலுவலர் சுரேந்திரன், வன அலுவலர் வெங்கடேஷ்பிரபு, ஆனைமலை புலிகள் காப்பக துணை இயக்குநர் தேவேந்திரகுமார் மீனா, வேளாண்மைத் துறை இணை இயக்குநர் தமிழ்ச்செல்வி உள்ளிட்ட அதிகாரிகள் பங்கேற்றனர்.\nபருவமழை பொய்த்ததால் கிணறுகள், நிலத்தடி நீர்மட்டம் வெகுவாகக் குறைந்துள்ளது. ஒண்டிப்புதூரில் சுத்திகரிக்கப்படும் நொய்யல் ஆற்று நீரை காடுகுட்டைக்கு அனுப்புவது போல, மற்ற குளம், குட்டைகளுக்கும் அனுப்ப வேண்டும் என விவசாயிகள் கோரினர்.\n🏭 பயன்பாட்டில் இல்லாத கல் குவாரிகளை நீர் ஆதாரங்களைப் பெருக்க பயன்படுத்தவும், கிணத்துக்கடவு பகுதியில் செயல்படாத குவாரிகளை இயக்கவும் நடவடிக்கை கோரப்பட்டது.\n🌿 காடுகுட்டை பாதுகாப்புக் குழு சார்பில் பி.கே.செல்வராஜ், கௌசிகா நதி தோன்றும் குருடிமலையில் ஓடைகள் சுருக்கப்பட்டுள்ளதால் முறையான அளவீடு நடத்தி ஆக்கிரமிப்புகளை அகற்ற வேண்டும் என்றார்.\n💧 சின்னவேடம்பட்டி குளத்துக்கான ஊட்டு வாய்க்காலை மாநகராட்சியே ஆக்கிரமித்திருப்பது குறித்து விசாரணை நடத்த வேண்டும் என கோரப்பட்டது.\n🔋 புதிய இலவச மின் இணைப்புக்கான விண்ணப்பங்கள் பெறப்படுவது குறித்து அறிவிப்பு வெளியிட வேண்டும் என விவசாயிகள் கோரினர்; தற்போது விண்ணப்ப விநியோகம் நடைபெறுவதாக மின்வாரியம் தெரிவிக்கிறது.\n🐗 கோவையில் இதுவரை 90 காட்டுப் பன்றிகள் சுட்டுக் கொல்லப்பட்டுள்ளன; 36 பன்றிகள் பிடித்து இடமாற்றம் செய்யப்பட்டுள்ளன என வன அலுவலர் தெரிவித்தார்.\n\nCoimbatore treated water for Sulur farm irrigation demand | Coimbatore news\n📍 சூலூர் வட்டம், கோவை மாவட்டம் | 28 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Sulur #விவசாயம் #CoimbatoreNews",
+   "prompts": "A group of Tamil farmers in cotton shirts and veshti sit on plastic chairs in the grievance hall of the Coimbatore district collectorate, facing a long table where the District Collector and several government officials in formal attire are seated behind name stands and microphones. Seen from behind the audience at eye level with a 35 mm lens, the room is a plain government hall with white walls, ceiling fans and a tricolour flag in the corner. Some farmers hold folded petitions and one stands at a microphone, gesturing while speaking. Daylight from tall windows, dry and hot afternoon atmosphere. Faces are not visible; the scene shows an earnest, crowded grievance meeting in Coimbatore city. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a parched, cracked earth field on the outskirts of Sulur taluk with a dry farm pond bed in the background, its bottom bare and fissured under a hot clear sky. A rusted pipe or irrigation channel lies empty across the dust, and a dry well with a low concrete parapet sits near the edge of the field. Far in the background a faint line of Western Ghats hills shows under haze. Harsh midday sunlight, no people in frame, shot at ground level with a 35 mm lens to show the drought-stricken land that the farmers are petitioning about. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamani.com/all-editions/edition-coimbatore/coimbatore/2026/Nov/27/treated-water-from-the-city-should-be-provided-for-irrigation-in-the-sulur-region",
+   "published": "2026-11-27T19:27:14.642Z",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 95 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block); caption misses facts of the article (put every one in 📰 முழு விவரம்): 50 ('50 ஆயிரம் விவசாயிகளுக்கு புதிதாக இலவச மின் இணைப்பு வழங்கப்பட'); 2 ('சின்னவேடம்பட்டி குளத்துக்கான ஊட்டு வாய்க்காலை மாநகராட்சியே ஆ'); கவுண்டம்பாளையம் ('வடகோவை, கவுண்டம்பாளையம் சுத்திகரிப்பு நிலையங்கள் ஜனவரியில் ப')",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 2 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795808097/kovaiminnal/mrecs7wgvoflnjf9fakf.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795808099/kovaiminnal/hxrzotrz6a2qeoi43axg.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "தொண்டாமுத்தூரில் போதை மாத்திரை விற்ற வாலிபர் கைது",
+   "english_headline": "Youth arrested for selling 58 banned tablets in Thondamuthur",
+   "category": "Crime & Safety",
+   "location": "Thondamuthur, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "போதை மாத்திரை",
+    "loc": "தொண்டாமுத்தூர்",
+    "hl1": "தொண்டாமுத்தூரில் போதை மாத்திரை விற்ற",
+    "hl2": "58 போதை மாத்திரைகள் பறிமுதல்",
+    "slides": [
+     {
+      "title": "என்ன நடந்தது?",
+      "lines": [
+       "தொண்டாமுத்தூர் போலீசார் ரோந்துப் பணியில் ஈடுபட்டனர்",
+       "வேடபட்டி - பேரூர் சாலையில் சந்தேகத்திற்குரிய வாலிபர்",
+       "அவர் போதை மாத்திரை விற்பவர் என தெரியவந்தது"
+      ]
+     },
+     {
+      "title": "யார் இவர்?",
+      "lines": [
+       "பேரூரைச் சேர்ந்த சக்திவேல், <b>26</b> வயது",
+       "பாக்கெட்டில் டபென்டடால் போதை மாத்திரைகள் இருந்தன",
+       "மொத்தம் <b>58</b> போதை மாத்திரைகள் கைப்பற்றப்பட்டன"
+      ]
+     },
+     {
+      "title": "நடவடிக்கை",
+      "lines": [
+       "போலீசார் வழக்குப் பதிவு செய்தனர்",
+       "சக்திவேல் கைது செய்யப்பட்டார்",
+       "நவ. 27 அன்று இச்சம்பவம் நடந்தது"
+      ]
+     }
+    ],
+    "slide_count_note": "3 slides",
+    "carousel": false
+   },
+   "reel_script": "தொண்டாமுத்தூர்-இல் போதை மாத்திரை விற்ற ஒருவர் கைது செய்யப்பட்டுள்ளார். நவம்பர் 27ஆம் தேதி தொண்டாமுத்தூர் போலீசார் ரோந்துப் பணியில் ஈடுபட்டிருந்தனர். வேடபட்டி - பேரூர் சாலையில் சந்தேகத்திற்குரிய வகையில் நின்றிருந்த வாலிபரை போலீசார் பிடித்தனர். விசாரணையில் அவர் பேரூரைச் சேர்ந்த 26 வயது சக்திவேல் என்பதும், போதை மாத்திரை விற்பவர் என்பதும் தெரியவந்தது. அவரது பாக்கெட்டில் டபென்டடால் எனும் 58 போதை மாத்திரைகள் இருந்தன. போலீசார் வழக்குப் பதிவு செய்து சக்திவேலை கைது செய்தனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 தொண்டாமுத்தூரில் போதை மாத்திரை விற்ற வாலிபர் கைது\n\n📰 முழு விவரம்:\nதொண்டாமுத்தூர் போலீஸ் ஸ்டேஷன் எல்லையில் நவ. 27 அன்று போலீசார் ரோந்துப் பணியில் ஈடுபட்டிருந்தனர். வேடபட்டி - பேரூர் சாலையில் சந்தேகத்திற்குரிய வகையில் நின்றிருந்த வாலிபரை பிடித்து விசாரித்தனர். அவர் பேரூரைச் சேர்ந்த 26 வயது சக்திவேல், போதை மாத்திரை விற்பவர் என தெரியவந்தது. அவரது பாக்கெட்டில் டபென்டடால் எனும் 58 போதை மாத்திரைகள் இருந்தன. போலீசார் வழக்குப் பதிவு செய்து சக்திவேலை கைது செய்தனர்.\n📍 இடம்: வேடபட்டி - பேரூர் சாலை, தொண்டாமுத்தூர்\n🗓️ நாள்: நவம்பர் 27\n💊 பறிமுதல்: 58 டபென்டடால் போதை மாத்திரைகள்\n👮 நடவடிக்கை: வழக்குப் பதிவு; சக்திவேல் கைது\n\nThondamuthur drug arrest, 58 tablets seized | Coimbatore news\n📍 தொண்டாமுத்தூர், கோவை மாவட்டம் | 27 நவம்பர் 2026\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்.\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Thondamuthur #CoimbatoreNews #கோவை",
+   "prompts": "A Tamil Nadu police constable in khaki uniform stands beside a young man in a plain shirt and trousers, whose hands are held at his sides as he is questioned on the roadside of the Vedapatti to Perur road in Thondamuthur, Coimbatore district. The scene is a semi-rural stretch of road lined with dry grass, low compound walls, a few scattered houses and a parked two-wheeler at the edge, with a police jeep parked a short distance away and a tall tree behind. The young man is seen from behind and at a distance, his face not visible, and the police officer is shown in profile, not recognisable. The area has a quiet, open look typical of the outskirts of Coimbatore city, with a faint hint of the Western Ghats hills in the far background. The time is daylight during patrol, with soft natural light and a clear sky. Camera: eye level, 35 mm, wide enough to show the road, the police vehicle and the surrounding landscape. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a small heap of 58 white and off-white round tablet strips and loose pills spread on a plain wooden table or police report sheet, placed under daylight with a khaki sleeve of a police officer visible at the edge of the frame. The tablets are unlabelled, with no readable text or brand names, and are arranged neatly beside a seized plastic pouch that has been emptied. A blurred background shows a police station room with a grey wall and a ceiling fan. Lighting is natural daylight from a window, giving crisp shadows on the tablets. Camera: slightly high angle, 50 mm macro style, shallow depth of field so the tablets are sharp and the background is softly out of focus. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/youth-arrested-for-selling-narcotic-pills/4387903",
+   "published": "2026-11-27T20:39:03+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 59 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795808109/kovaiminnal/rkbnilgaffqrapmsm9bj.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795808111/kovaiminnal/dvg4qpoxxwn8ocihgpsj.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "மாநகராட்சி அலுவலர்களின் மனநலத்துக்கு 'மனவளம்' ஓராண்டு நிகழ்ச்சி தொடக்கம்",
+   "english_headline": "Coimbatore Corporation and CREDAI launch one-year 'Manavalam' mental wellness programme for officials",
+   "category": "Government & Services",
+   "location": "Coimbatore city, Coimbatore district",
+   "importance": "Medium",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "அரசு நிகழ்ச்சி",
+    "loc": "கோவை மாநகராட்சி",
+    "hl1": "அலுவலர்களின் மனநலத்துக்கு 'மனவளம்'",
+    "hl2": "ஓராண்டு நிகழ்ச்சி தொடக்கம்",
+    "slides": [
+     {
+      "title": "என்ன நிகழ்ச்சி?",
+      "lines": [
+       "மாநகராட்சி அலுவலர்களின் மனநலத்தை மேம்படுத்தும் 'மனவளம்'",
+       "ஓராண்டு நிகழ்ச்சியின் துவக்க விழா நடந்தது",
+       "மாநகராட்சி கலையரங்கில் நடந்தது"
+      ]
+     },
+     {
+      "title": "யார் இணைந்தனர்?",
+      "lines": [
+       "மாநகராட்சி, கோவை கிரெடாய், துருதி அறக்கட்டளை",
+       "கிரெடாய் கோவை, துருதி அறக்கட்டளை புரிந்துணர்வு ஒப்பந்தம்",
+       "மாநகராட்சி ஆணையர் ரவி தேஜா காணொளி வாயிலாகத் துவக்கி வைத்தார்"
+      ]
+     },
+     {
+      "title": "உதவி எங்கே?",
+      "lines": [
+       "மனநல நிபுணர்கள் நேரடியாகவும் உதவி எண் வாயிலாகவும் ஆலோசனை",
+       "அலுவலர்களுக்கு இந்த ஆலோசனை வழங்கப்படும்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "மாநகராட்சி அலுவலர்களின் மனநலத்தை மேம்படுத்தும் ஓராண்டு நிகழ்ச்சி கோவையில் தொடங்கியுள்ளது. இதன் பெயர் 'மனவளம்'. மாநகராட்சி, கோவை கிரெடாய், துருதி அறக்கட்டளை ஆகியவை இணைந்து இதை நடத்துகின்றன. துவக்க விழா மாநகராட்சி கலையரங்கில் நடந்தது. மாநகராட்சி ஆணையர் ரவி தேஜா காணொளி வாயிலாக நிகழ்ச்சியைத் துவக்கி வைத்தார். மனநலத்தின் முக்கியத்துவத்தையும் அவர் பேசினார். கிரெடாய் தலைவர் அரவிந்த் குமார் மாநகராட்சியுடன் இணைந்து நடத்துவதில் மகிழ்ச்சி தெரிவித்தார். கிரெடாய் கோவை அமைப்பும் துருதி அறக்கட்டளையும் இதற்கான புரிந்துணர்வு ஒப்பந்தத்தில் கையெழுத்திட்டன. இத்திட்டத்தில் அலுவலர்களுக்கு மனநல நிபுணர்கள் நேரடியாகவும், உதவி எண் மூலமாகவும் ஆலோசனை வழங்குவார்கள். மாநகராட்சி துணை ஆணையர்கள் குமரேசன், சரஸ்வதி, கிரெடாய் நிர்வாகிகள் உள்ளிட்டோர் பங்கேற்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🧠 கோவை மாநகராட்சி அலுவலர்களுக்கு மனநல ஆலோசனை: 'மனவளம்' ஓராண்டு திட்டம் தொடக்கம்\n\n📰 முழு விவரம்:\nமாநகராட்சி, கோவை கிரெடாய், துருதி அறக்கட்டளை இணைந்து மாநகராட்சி அலுவலர்களின் மனநலத்தை மேம்படுத்தும் 'மனவளம்' ஓராண்டு நிகழ்ச்சியைத் தொடங்கியுள்ளன. துவக்க விழா மாநகராட்சி கலையரங்கில் நடந்தது.\nமாநகராட்சி ஆணையர் ரவி தேஜா காணொளி வாயிலாக நிகழ்ச்சியைத் துவக்கி வைத்து, மனநலத்தின் முக்கியத்துவம் பற்றிப் பேசினார்.\nஇத்திட்டத்தில் மனநல நிபுணர்கள் அலுவலர்களுக்கு நேரடியாகவும் உதவி எண் வாயிலாகவும் ஆலோசனை வழங்குவார்கள்.\nகிரெடாய் கோவை அமைப்பும் துருதி அறக்கட்டளையும் இத்திட்டத்துக்கான புரிந்துணர்வு ஒப்பந்தத்தில் கையெழுத்திட்டன.\n\n🏛️ பங்கேற்றோர்: மாநகராட்சி துணை ஆணையர்கள் குமரேசன், சரஸ்வதி, துருதி அறக்கட்டளை நிர்வாக அறங்காவலர் சுரேஷ், கிரெடாய் நிர்வாகிகள்\n\nCoimbatore Corporation officials mental wellness programme | Coimbatore news\n📍 கோவை மாநகராட்சி, கோவை மாவட்டம் | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Manavalam",
+   "prompts": "Inside the Coimbatore Corporation auditorium, a group of municipal officials and CREDAI office-bearers sit in rows of chairs facing a stage where a projection screen shows a video link to the Corporation Commissioner. A senior man in a white shirt and a woman in a cotton saree lean forward attentively, seen from behind and slightly to the side, while a few men in shirts and trousers sit with notepads. Two Tamil Nadu municipal officials in formal shirts stand near the stage. The hall has plain pale walls, ceiling fans, a wooden podium with a microphone and a banner area left blank. Indoor daylight from high windows mixes with stage lights. Eye-level camera at 35 mm, wide enough to show the full hall and the screen. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a polished wooden table on the stage where a memorandum of understanding is being signed. Two pens rest beside a thick stack of white papers and a small bowl of flowers, with the hands of two men in formal shirts visible at the edges, seen from above and slightly blurred. A glass water bottle and a microphone stand are in the background. Indoor warm light from above, shallow depth of field, 35 mm camera at a slightly high angle focusing on the signing documents and pens. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/mental-health-programme-by-municipal-corporation-gredai/4387714",
+   "published": "2026-11-27T18:24:24+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: hl1 (the first headline on screen) must name the place 'கோவை மாநகராட்சி', e.g. 'கோவை மாநகராட்சி: ...' or 'கோவை மாநகராட்சி-இல் ...' - viewers share news of their own area",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795808139/kovaiminnal/ov2cpkiimw2t0qnlm8s5.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795808141/kovaiminnal/hvglzaoqvgcczbe3v8qc.jpg"
    ]
   }
  ]
