@@ -3,94 +3,84 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dailythanthi.com/news/tamilnadu/coimbatore-leopard-trying-to-hunt-cat",
-  "manual link added: https://www.hindutamil.in/news/tamilnadu/annur-police-register-case-against-l-murugan",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/4-generation-traditional-calendar-diary/4387274",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/introduction-to-modern-electronic-scales/4387273",
-  "manual link added: https://www.hindutamil.in/news/education/deep-learning-is-essential",
-  "candidate filter: collected=5",
-  "to write: 5 Coimbatore district candidates (max 5 stories)",
-  "round: top 5 of 5 candidates",
-  "candidates waiting: 5 Coimbatore; time left 79 min",
-  "try (N) manual=True: https://www.hindutamil.in/news/education/deep-learning-is-es",
+  "manual link added: https://www.dinakaran.com/news/father-in-law-arrested-daughter-death",
+  "manual link added: https://www.dinakaran.com/news/government-order-joint-sub-registrar-offices",
+  "manual link added: https://www.dinakaran.com/news/hawala-money-seized-passenger-train-coimbatore/amp",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/new-quarry-construction-protest-in-sokkanur-people-get-ready-to-take-part-in-the-protest/4387028",
+  "candidate filter: collected=4",
+  "to write: 4 Coimbatore district candidates (max 4 stories)",
+  "round: top 4 of 4 candidates",
+  "candidates waiting: 4 Coimbatore; time left 79 min",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "try (N) manual=True: https://www.dinakaran.com/news/hawala-money-seized-passenger",
+  "try (N) manual=True: https://www.dinakaran.com/news/government-order-joint-sub-re",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
-  "posting job not started (422): the schedule posts it",
-  "try (N) manual=True: https://www.hindutamil.in/news/tamilnadu/annur-police-regist",
+  "posting job started at once",
+  "try (N) manual=True: https://www.dinakaran.com/news/father-in-law-arrested-daught",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "try (N) manual=True: https://www.dailythanthi.com/news/tamilnadu/coimbatore-leopa",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 10})",
-  "candidate loop ended: left 0, tried={'N': 5}, done={'N': 5}, time left 78 min",
-  "filed: 5 Coimbatore district stories (target 5), reels only",
+  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 78 min",
+  "filed: 4 Coimbatore district stories (target 4), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":5,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":4,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.6-flash",
   "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
   "dead for this round: gemini/gemini-3.5-flash",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
+  "dead for this round: gemini/gemini-3-flash-preview",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "ok anthropic/claude-haiku-5-5",
-  "ok groq/qwen/qwen3.8-27b (4s)",
+  "dead for this round: groq/openai/gpt-oss-120b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "ok anthropic/claude-haiku-5-5",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
+  "dead for this round: groq/qwen/qwen3.8-27b",
+  "ok groq/openai/gpt-oss-120b (7s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok groq/qwen/qwen3.8-27b (13s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
@@ -103,327 +93,247 @@
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "கோவையில் நவீன எலக்ட்ரானிக் தராசு அறிமுகம்: வீட்டிலிருந்தே எடையைக் கண்காணிக்கலாம்",
-   "english_headline": "Modern Scale Industries introduces Bluetooth 'Modern Grading Scale' in Coimbatore to track weight from home",
-   "category": "Business & Prices",
-   "location": "Coimbatore city, Coimbatore district",
+   "tamil_headline": "தமிழகத்தில் 6 மாவட்டங்களில் புதிய இணை சார்பதிவாளர் அலுவலகங்கள்",
+   "english_headline": "Tamil Nadu sets up new joint sub-registrar offices in 6 districts including Coimbatore North",
+   "category": "Government & Services",
+   "location": "Coimbatore North, Chennai North, Chennai South, Central Chennai, Tambaram, Chengalpattu - Tamil Nadu (Coimbatore district: Coimbatore North)",
+   "importance": "High",
+   "scope": "district",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "அரசு சேவை",
+    "loc": "கோவை வடக்கு",
+    "hl1": "கோவை வடக்கில் புதிய பத்திரப்பதிவு",
+    "hl2": "6 இடங்களில் அலுவலகங்கள்",
+    "slides": [
+     {
+      "title": "என்ன அறிவிப்பு?",
+      "lines": [
+       "தமிழகத்தில் 6 இடங்களில் புதிய இணை சார்பதிவாளர் அலுவலகங்கள்",
+       "அரசாணை வெளியிட்டது தமிழக அரசு",
+       "கோவை வடக்கும் அதில் ஒன்று"
+      ]
+     },
+     {
+      "title": "எங்கெங்கே?",
+      "lines": [
+       "சென்னை வடக்கு, சென்னை தெற்கு, மத்திய சென்னை",
+       "கோவை வடக்கு, தாம்பரம், செங்கல்பட்டு",
+       "ஒரே கூரையின் கீழ் பத்திரப்பதிவு சேவைகள்"
+      ]
+     },
+     {
+      "title": "ஏன் இந்த மாற்றம்?",
+      "lines": [
+       "பத்திரப்பதிவு சேவைகளை ஒரே இடத்தில் வழங்கும் நோக்கம்",
+       "மக்களின் அலைச்சல் குறையும்",
+       "புதிய அலுவலகங்கள் அமைக்கப்படும்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கோவை வடக்கில் புதிய பத்திரப்பதிவு அலுவலகம் அமைக்கப்படுகிறது. தமிழக அரசு இதற்கான அரசாணையை வெளியிட்டுள்ளது. தமிழகத்தில் 6 இடங்களில் புதிய இணை சார்பதிவாளர் அலுவலகங்கள் அமைக்கப்படும். சென்னை வடக்கு, சென்னை தெற்கு, மத்திய சென்னை, கோவை வடக்கு, தாம்பரம், செங்கல்பட்டு ஆகிய இடங்களில் இந்த அலுவலகங்கள் இருக்கும். பத்திரப்பதிவு சேவைகளை ஒரே கூரையின் கீழ் வழங்கும் நோக்கில் இந்த அறிவிப்பு வெளியாகியுள்ளது. இதனால் பொதுமக்கள் பத்திரப்பதிவுக்காக அலைவது குறையும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🏛️ கோவை வடக்கில் புதிய பத்திரப்பதிவு அலுவலகம்\n\n📰 முழு விவரம்:\nதமிழகத்தில் 6 மாவட்டங்களில் புதிய இணை சார்பதிவாளர் அலுவலகங்கள் அமைக்க தமிழக அரசு அரசாணை வெளியிட்டுள்ளது.\nசென்னை வடக்கு, சென்னை தெற்கு, மத்திய சென்னை, கோவை வடக்கு, தாம்பரம், செங்கல்பட்டு ஆகிய 6 இடங்களில் புதிய அலுவலகங்கள் அமைக்கப்படும்.\nபத்திரப்பதிவு சேவைகளை ஒரே கூரையின் கீழ் வழங்கும் நோக்கில் இந்த அறிவிப்பு வெளியாகியுள்ளது.\n\n📍 இடம்: கோவை வடக்கு, கோவை மாவட்டம்\n🗓️ நாள்: 27 நவம்பர் 2026\n\nTamil Nadu new joint sub-registrar offices 6 districts Coimbatore North | Coimbatore news\n📍 கோவை மாவட்டம் | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #TamilNadu",
+   "prompts": "A group of registration office staff and members of the public stand at the entrance of a newly set up joint sub-registrar office in Coimbatore North, with the building's front steps and a government office facade visible behind them. Seen from a distance and from behind, the staff wear formal shirts and sarees while a few citizens hold document folders, waiting in line at the counter door. The setting is a busy urban street in Coimbatore city with a two-wheeler parked on the roadside and a town bus passing on the road beyond, and in the far background the faint outline of Marudhamalai hill. Daylight, clear sky, warm late-morning light. Camera at eye level, 35 mm lens, wide enough to show the building and the street around it. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a stack of property registration files and bundled documents resting on a wooden government office counter, with a rubber stamp and a pen placed beside them. Behind the counter, a registration clerk's hand, seen softly out of focus, turns a page. Light comes through a window in the morning, lighting the paper and the desk surface while the background of a government office room recedes into soft blur. The objects are the focus of the shot, showing the paperwork that will now be handled under one roof. Camera slightly high, 35 mm lens, shallow depth of field. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinakaran.com/news/government-order-joint-sub-registrar-offices",
+   "published": "2026-11-27T09:03:55+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 55 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764951/kovaiminnal/sm43horuttd1qljop4hl.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764954/kovaiminnal/xqax1uz6te9lqhiwe52p.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "சொக்கனூரில் புதிய குவாரிக்கு மக்கள் எதிர்ப்பு: போராட்டத்துக்கு ஆயத்தம்",
+   "english_headline": "Residents of Sokkanur in Kinathukadavu oppose new quarry; ready to protest",
+   "category": "Civic Issues",
+   "location": "Sokkanur panchayat, Kinathukadavu taluk, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "புதிய அறிமுகம்",
-    "loc": "கோவை",
-    "hl1": "கோவையில் நவீன எலக்ட்ரானிக் தராசு",
-    "hl2": "வீட்டிலிருந்தே",
+    "cat": "குவாரி எதிர்ப்பு",
+    "loc": "சொக்கனூர், கிணத்துக்கடவு",
+    "hl1": "சொக்கனூரில் புதிய குவாரிக்கு எதிர்ப்பு",
+    "hl2": "போராட்டத்துக்கு மக்கள்",
     "slides": [
      {
-      "title": "என்ன அறிமுகம்?",
+      "title": "என்ன நடந்தது?",
       "lines": [
-       "மொபைல் செயலியுடன் கூடிய புளூடூத் எலக்ட்ரானிக் தராசுகள்",
-       "பவுல்ட்ரி, மளிகை, காய்கறி, மாமிசக் கடைகளுக்கு ஏற்றது",
-       "தயாரிப்பது மாடர்ன் ஸ்கேல் இண்டஸ்ட்ரீஸ்"
+       "சொக்கனூர் ஊராட்சி, சங்கராயபுரம் பிரிவு அருகே புதிய",
+       "தனியார் இடத்தில் குவாரி அமைக்க சில மாதங்களுக்கு முன்",
+       "சில நாட்களுக்கு முன் குவாரி தொடங்க அனுமதி கோரப்பட்டது"
       ]
      },
      {
-      "title": "எதற்குப் பயன்?",
+      "title": "அதிகாரிகள் ஆய்வு",
       "lines": [
-       "நேரில் செல்ல முடியாதபோதும் எடையை வீட்டிலிருந்தே",
-       "முட்டையிலிருந்து குஞ்சு வெளிவந்த நாள் முதல் விற்பனை நாள்",
-       "தரம் பிரித்து முழு தகவல்களை உரிமையாளருக்கு அனுப்பும்"
+       "நில அளவையர், வருவாய்த்துறை அதிகாரிகள் நேரில் ஆய்வுக்கு",
+       "முறையான அறிவிப்பின்றி ஆய்வு செய்ய முயன்றதால் பரபரப்பு",
+       "எதிர்ப்பால் ஆய்வு செய்யாமல் அதிகாரிகள் திரும்பினர்"
       ]
      },
      {
-      "title": "தராசின் பெயர்",
+      "title": "மக்களின் கவலை",
       "lines": [
-       "‘மாடர்ன் கிரேடிங் ஸ்கேல்’ என்ற பெயர்",
-       "புளூடூத் இணைப்புடன் கூடிய நவீன எலக்ட்ரானிக் தராசு",
-       "கோவையில் 25 ஆண்டுகளாக இந்நிறுவனம் முன்னணியில் உள்ளது"
+       "4 ஏக்கரில் குவாரி; 300 மீட்டர் தொலைவில் செக் டேம், விளை",
+       "20க்கும் மேற்பட்ட குடியிருப்புகள் உள்ளன",
+       "கிராம சபையில் புதிய குவாரி வேண்டாம் என தீர்மானம்"
       ]
      },
      {
-      "title": "தொடர்பு முகவரி",
+      "title": "மக்கள் எச்சரிக்கை",
       "lines": [
-       "மாரியம்மன் கோயில் வீதி, அன்னை சத்யா நகர், கணபதி",
-       "தொடர்புக்கு: 9842295057, 9965525057"
+       "குவாரிக்கு அனுமதி தந்தால் தொடர் போராட்டம், சாலை மறியல்",
+       "முறையான அறிவிப்பு தந்து கருத்து கேட்க வேண்டும்",
+       "குவாரி அனுமதியை கைவிட மாவட்ட நிர்வாகத்துக்கு கோரிக்கை"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவையில் வீட்டிலிருந்தே எடையைக் கண்காணிக்கும் புதிய எலக்ட்ரானிக் தராசு அறிமுகமாகியுள்ளது. மாடர்ன் ஸ்கேல் இண்டஸ்ட்ரீஸ் நிறுவனம் இந்தத் தராசுகளைத் தயாரிக்கிறது. இது மொபைல் செயலியுடன் இணைந்து செயல்படும் புளூடூத் எலக்ட்ரானிக் தராசு ஆகும். பவுல்ட்ரி, மளிகைக் கடைகள், காய்கறி மற்றும் மாமிசக் கடைகளில் விற்பனையாகும் பொருட்களின் எடையை இதன் மூலம் கண்காணிக்கலாம். கோழிப்பண்ணை உரிமையாளர்கள் நேரில் செல்ல முடியாத நேரத்திலும் இது பயனுள்ளதாக இருக்கும். முட்டையிலிருந்து குஞ்சு வெளிவந்த நாள் முதல் விற்பனை நாள் வரை தினசரி வளர்ச்சியை இந்தத் தராசு எடை மூலம் கண்காணிக்கும். கோழிகளைத் தரம் பிரித்து, முழு தகவல்களையும் உரிமையாளருக்கு அனுப்பும். இதன் பெயர் ‘மாடர்ன் கிரேடிங் ஸ்கேல்’. நிறுவனம் கோவையில் 25 ஆண்டுகளாக எலக்ட்ரானிக் தராசுகளைத் தயாரித்து விற்பனை செய்து வருகிறது. மேலும் விவரங்களுக்கு மாரியம்மன் கோயில் வீதி, அன்னை சத்யா நகர், கணபதியில் உள்ள அலுவலகத்தை அணுகலாம். தொடர்புக்கு 9842295057, 9965525057 என்ற எண்களில் பேசலாம். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "⚖️ கோவையில் வீட்டிலிருந்தே எடையைக் கண்காணிக்கும் நவீன எலக்ட்ரானிக் தராசு அறிமுகம்\n\n📰 முழு விவரம்:\nகோவையில் 25 ஆண்டுகளாக எலக்ட்ரானிக் தராசுகளைத் தயாரித்து விற்பனை செய்து வரும் மாடர்ன் ஸ்கேல் இண்டஸ்ட்ரீஸ், புதிய நவீன தராசை அறிமுகம் செய்துள்ளது.\nஇது மொபைல் செயலியுடன் கூடிய புளூடூத் எலக்ட்ரானிக் தராசு. பவுல்ட்ரி, மளிகை, காய்கறி, மாமிசக் கடைகளில் விற்பனையாகும் பொருட்களின் எடையை வீட்டிலிருந்தே கண்காணிக்கலாம்.\nமுட்டையிலிருந்து குஞ்சு வெளிவந்த நாள் முதல் விற்பனை நாள் வரை தினசரி வளர்ச்சியை எடை மூலம் கண்காணித்து, தரம் பிரித்து, முழு தகவல்களை உரிமையாளருக்கு அனுப்பும்.\nஇதன் பெயர் ‘மாடர்ன் கிரேடிங் ஸ்கேல்’.\n\n📍 இடம்: மாரியம்மன் கோயில் வீதி, அன்னை சத்யா நகர், கணபதி, கோவை\n📞 தொடர்புக்கு: 9842295057, 9965525057\n\nModern grading scale Bluetooth electronic weighing machine Coimbatore | Coimbatore news\n📍 கணபதி, கோவை | 26 நவம்பர் 2026\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Ganapathy #CoimbatoreNews #கோவை",
-   "prompts": "A staff member at a small electronics showroom in Ganapathy, Coimbatore, demonstrates a Bluetooth digital weighing scale to a visitor seen from behind, with a smartphone propped on the counter showing a mobile app screen turned away from the camera. A row of electronic weighing scales in different sizes stands on wooden shelves against a plain wall, and a few young chicks sit in a small basket on the counter, alluding to the poultry trade. Daylight comes through the shop-front glass and the scene looks like an ordinary city workshop with a tiled floor and a counter. The people are seen from behind or far away and their faces are not visible. The camera is at eye level with a 35 mm lens, wide enough to show the counter, shelves and the demonstration. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a modern digital Bluetooth weighing scale sitting on a stainless steel tray in a clean workshop, its illuminated display showing a weight reading with no legible text. Beside it, a smartphone rests on the counter with its screen lit and blurred, suggesting a connected mobile app. A few brown eggs and a small chick sit on the tray beside the scale, linking the device to poultry grading. The background is softly out of focus with shelves of scales and daylight from a window. The camera is slightly high, shot with a 50 mm lens, to highlight the scale and phone as the detail that tells the story. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/introduction-to-modern-electronic-scales/4387273",
-   "published": "2026-11-26T22:24:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 11 attempt(s), 0 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795750467/kovaiminnal/qrmrqic4kqlsglswapba.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795750469/kovaiminnal/d9ry79t12wgakgvqm2ye.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "ஏஐ, தரவு அறிவியல் படிப்புகளில் சேர என்ன தேவை? வல்லுநர்கள் விளக்கம்",
-   "english_headline": "What it takes to enter AI and data science courses: expert answers for students",
-   "category": "Education",
-   "location": "Coimbatore district (article from Coimbatore reader's question)",
-   "importance": "Medium",
-   "scope": "district",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "கல்வி வழிகாட்டி",
-    "loc": "கோவை மாவட்டம்",
-    "hl1": "ஏஐ, தரவு அறிவியல் படிக்க என்ன தேவை?",
-    "hl2": "பட்டம் மட்டும் போதாது",
-    "slides": [
-     {
-      "title": "வேலை வாய்ப்பு",
-      "lines": [
-       "Naukri தளத்தில் ஏஐ வேலை அறிவிப்புகள் <b>38%</b> அதிகம்",
-       "கோவை உட்பட 4 நகரங்களில் ஏஐ வேலைகள் அறிவிப்பு",
-       "2027க்குள் இந்தியாவுக்கு <b>12.5 லட்சம்</b> ஏஐ திறனாளர்கள் தேவை"
-      ]
-     },
-     {
-      "title": "+2 பாடங்கள்",
-      "lines": [
-       "பொறியியலுக்கு Physics, Chemistry, Maths கட்டாயம்",
-       "பல பல்கலைக்கழகங்களில் Maths, Statistics, Computer Science",
-       "சேர்க்கை விதிமுறைகளை விண்ணப்பிக்கும் முன் சரிபாருங்கள்"
-      ]
-     },
-     {
-      "title": "பள்ளியில் என்ன",
-      "lines": [
-       "நினைக்கும் திறன், ஏன் என்ற கேள்வி கேட்கும் பழக்கம்",
-       "Scratch மூலம் நிரலாக்கம் அறிமுகம், பின்னர் Python",
-       "ஆங்கில வாசிப்புத் திறனும் முக்கியம்"
-      ]
-     },
-     {
-      "title": "பொறியியல்",
-      "lines": [
-       "கலை, அறிவியல் படித்தவர்களும் இத்துறையில் நுழையலாம்",
-       "Data Analyst, Business Analyst போன்ற பணிகள் வாய்ப்பு",
-       "செய்த Project-களே முக்கியம் என்று அஸ்வின் ராமசாமி கூறுகிறார்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "ஏஐ துறையில் நுழைய பட்டம் மட்டும் போதாது என்று நிபுணர்கள் கூறுகிறார்கள். 2025 ஏப்ரல் முதல் ஜூன் வரை Naukri தளத்தில் ஏஐ, இயந்திரக் கற்றல் வேலை அறிவிப்புகள் 38 சதவீதம் அதிகரித்துள்ளன. கோவை, கொச்சி, இந்தூர், அகமதாபாத் நகரங்களில் மட்டும் 1,500க்கும் மேற்பட்ட ஏஐ வேலைவாய்ப்புகள் அறிவிக்கப்பட்டுள்ளன. 2027க்குள் இந்தியாவுக்கு 12.5 லட்சத்துக்கும் அதிகமான ஏஐ திறனாளர்கள் தேவைப்படுவார்கள் என்று Deloitte–Nasscom கணித்துள்ளது. பொறியியல் படிக்க +2வில் Physics, Chemistry, Maths கட்டாயம் என்பது டி என் இ ஏ விதிமுறை. பல பல்கலைக்கழகங்கள் Maths, Statistics, Computer Science படித்தவர்களையும் சேர்க்கின்றன. ஐஐடி சென்னை வழங்கும் ஆன்லைன் பிஎஸ் தரவு அறிவியல் படிப்புக்கு எந்தப் பிரிவு மாணவரும் விண்ணப்பிக்கலாம். பள்ளிப் பருவத்தில் ஏன் என்று கேள்வி கேட்கும் பழக்கத்தையும், ஆங்கில வாசிப்புத் திறனையும் வளர்க்க வேண்டும். கலை, அறிவியல் படித்தவர்களும் Data Analyst, Business Analyst பணிகளில் நுழையலாம். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🎓 ஏஐ, தரவு அறிவியல் படிக்க பட்டம் மட்டும் போதாது - நிபுணர்கள் விளக்கம்\n\n📰 முழு விவரம்:\nஏஐ, தரவு அறிவியல் துறைகளில் வேலைவாய்ப்புகள் வேகமாக வளர்ந்து வருகின்றன. 2025 ஏப்ரல் முதல் ஜூன் வரை Naukri தளத்தில் 35,000க்கும் அதிகமான ஏஐ, இயந்திரக் கற்றல் வேலை அறிவிப்புகள் வெளியாகின; முந்தைய ஆண்டைவிட 38% அதிகம். புதிதாகப் படித்து முடித்தவர்களுக்கான வாய்ப்புகள் 34% அதிகரித்துள்ளன. கோவை, கொச்சி, இந்தூர், அகமதாபாத் நகரங்களில் 1,500க்கும் மேற்பட்ட ஏஐ வேலைகள் அறிவிக்கப்பட்டுள்ளன; இதற்காக சென்னை அல்லது பெங்களூருவுக்குச் செல்ல வேண்டிய கட்டாயம் இல்லை.\n🌍 2030 வரை வேகமாக வளரும் வேலைகளில் Big Data, AI, Machine Learning நிபுணர்கள் முன்னணியில் உள்ளதாக உலகப் பொருளாதார மன்றம் (WEF) தெரிவிக்கிறது.\n🎯 பட்டம் மட்டும் போதாது; உண்மையான திறனும் செய்முறை அனுபவமும்தான் முக்கியம்.\n📘 பொறியியலுக்கு +2வில் Physics, Chemistry, Maths கட்டாயம் (TNEA விதி). B.Sc. Data Science படிக்க சில கல்லூரிகளில் கூடுதல் வாய்ப்பு உள்ளது. Maths, Business Maths, Statistics, Computer Science படித்தவர்களையும் பல பல்கலைக்கழகங்கள் ஏற்கின்றன; சேர்க்கை விதிமுறைகளை விண்ணப்பிக்கும் முன் சரிபாருங்கள்.\n💻 IIT Madras வழங்கும் Online BS in Data Science படிப்புக்கு எந்தப் பாடப்பிரிவு மாணவரும் விண்ணப்பிக்கலாம்; Computer Science படித்திருக்க வேண்டிய கட்டாயம் இல்லை. Statistics, Probability, Linear Algebra அடித்தளங்களாகும்.\n🧠 பள்ளிப் பருவத்தில் சிந்திக்கும் திறனை வளர்க்க வேண்டும். 8 அல்லது 9ஆம் வகுப்பில் Scratch மூலம் நிரலாக்கத்தை அறிமுகப்படுத்தி, பின்னர் Python கற்கலாம். INOI போன்ற Informatics ஒலிம்பியாட் போட்டிகளுக்கும் தயார் செய்யலாம். ஆங்கில வாசிப்புத் திறனும் அவசியம்.\n🧑‍🏫 கலை, அறிவியல் படித்தவர்களும் Data Analyst, Business Analyst பணிகளில் நுழையலாம்; SQL, Python, Excel, Power BI கற்று செய்த Project-களே முக்கியம். B.Com பட்டதாரி Finance Analytics பணிகளில் தனித்துவ வாய்ப்பு பெறலாம்.\n\nAI and data science careers in Coimbatore, what to study | Coimbatore news\n📍 கோவை மாவட்டம் | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Education",
-   "prompts": "A group of college students sits in a bright computer lab at a Coimbatore arts and science college, working on laptops at long wooden desks while a lecturer stands near a whiteboard covered in handwritten mathematics formulas and a glowing screen behind. Seen from the back of the room, the students wear casual shirts and salwar, some women in sarees with dupattas, and a few men in trousers and shirts. Tables hold open notebooks, pens and a stack of printed sheets, with a row of desktop computers along the wall. Daylight streams through tall windows, giving a calm, focused atmosphere. Camera at eye level, 35 mm, wide enough to show the whole lab and the students at work. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a student's laptop keyboard and notebook on a desk in a Coimbatore college computer lab, with a pen resting across handwritten notes about statistics and probability sketched in pencil. The screen shows only a blurred coding window with colourful lines and no readable text. Beside it, a plastic water bottle and a folded maths textbook sit on the wooden desk, and the hand of a student rests on the keyboard, seen from behind and slightly blurred. Soft daylight from a window falls across the desk, showing the everyday study setting. Camera slightly high, 35 mm, focused on the laptop, notebook and the student's hand. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.hindutamil.in/news/education/deep-learning-is-essential",
-   "published": "2026-11-26T13:35:56Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has English words (Analyst, Business, Chemistry, Computer) - the voice cannot read them; write them in Tamil letters; reel_script must have no English letters (write English words and abbreviations in Tamil script); slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area); caption misses facts of the article (put every one in 📰 முழு விவரம்): 12 ('2027க்குள் இந்தியாவுக்கு மட்டும் 12.5 லட்சத்துக்கும் அதிகமான'); 5 ('2027க்குள் இந்தியாவுக்கு மட்டும் 12.5 லட்சத்துக்கும் அதிகமான'); known issue english_in_voice: voice script has English words the voice skips (Analyst, Business, Chemistry, Computer) - rewrite so it does not happen again",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 5 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795750474/kovaiminnal/fg1ysezgm4xd7y9yhgt6.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795750476/kovaiminnal/gassn6rinheg1oxedsln.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவையில் 4 தலைமுறை அனுபவமுள்ள யுனிக் இம்ப்ரசன்ஸ்: காலண்டர், டைரி தயாரிப்பு",
-   "english_headline": "Unique Impressions, a 4-generation printing firm in Coimbatore and Sivakasi, makes calendars and diaries at fair prices",
-   "category": "Business & Prices",
-   "location": "Coimbatore and Sivakasi, Coimbatore district",
-   "importance": "Low",
-   "scope": "district",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "வணிகம்",
-    "loc": "கோவை",
-    "hl1": "கோவையில் காலண்டர், டைரி தயாரிப்பு",
-    "hl2": "4 தலைமுறை அனுபவம்",
-    "slides": [
-     {
-      "title": "யார் தயாரிப்பு?",
-      "lines": [
-       "யுனிக் இம்ப்ரசன்ஸ் நிறுவனம்",
-       "அச்சுத்தொழிலில் <b>4 தலைமுறை</b> அனுபவம்",
-       "கோவை, சிவகாசியில் நிறுவனம்"
-      ]
-     },
-     {
-      "title": "என்ன கிடைக்கும்?",
-      "lines": [
-       "தினசரி, மாதாந்திர, டைகட் காலண்டர்கள்",
-       "கோல்டு, ஐம்போ, கிரிஸ்டல், டேபிள் காலண்டர்கள்",
-       "நியாயமான விலையில் ஆர்டரின் பேரில் தயாரிப்பு"
-      ]
-     },
-     {
-      "title": "யார்யாருக்கு?",
-      "lines": [
-       "புத்தாண்டு பரிசுப் பொருட்கள், கீ செயின்கள்",
-       "நிறுவனங்கள், வங்கிகள், நகைக்கடைகள், பள்ளிகள்",
-       "பத்துக்கு பதினைந்து அட்டைகள், பஞ்சாங்கம்"
-      ]
-     },
-     {
-      "title": "தொடர்புக்கு",
-      "lines": [
-       "<b>9443362307</b>",
-       "<b>8072705078</b>",
-       "<b>8248996497</b>"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "கோவை-இல் 4 தலைமுறை அனுபவமுள்ள யுனிக் இம்ப்ரசன்ஸ் நிறுவனம் காலண்டர்களும் டைரிகளும் தயாரித்து வழங்குகிறது. தினசரி, மாதாந்திர, டைகட், கோல்டு, ஐம்போ, கிரிஸ்டல், ஷிப்பிங், டேபிள் என பல வகை காலண்டர்கள் கிடைக்கின்றன. வாடிக்கையாளர்களின் தேவைக்கேற்ப நியாயமான விலையில் தயாரித்துத் தரப்படுகிறது. புத்தாண்டு பரிசுப் பொருட்கள், நாவல்டீஸ், லெதர் மணி பர்ஸ், பைகள், கீ செயின்கள் ஆர்டரின் பேரில் கிடைக்கும். கார்ப்பரேட் நிறுவனங்கள், வங்கிகள், நிதி நிறுவனங்கள், ஜவுளி, நகைக்கடைகள், சங்கங்கள், கல்வி நிறுவனங்களுக்கும் தரமான தயாரிப்புகள் வழங்கப்படுகின்றன. பத்துக்கு பதினைந்து ரெடிமேடு அட்டைகள், பஞ்சாங்கம், சிலிப்புகளுக்கும் ஆர்டர் செய்யலாம். தொடர்புக்கு 9443362307, 8072705078, 8248996497. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🗓️ கோவையில் 4 தலைமுறை அனுபவமுள்ள யுனிக் இம்ப்ரசன்ஸ்: காலண்டர், டைரி தயாரிப்பு\n\n📰 முழு விவரம்:\nஅச்சுத்தொழிலில் 4 தலைமுறை அனுபவமுள்ள யுனிக் இம்ப்ரசன்ஸ் நிறுவனம், வாடிக்கையாளர்களின் தேவைக்கேற்ப காலண்டர்களையும் டைரிகளையும் நியாயமான விலையில் தயாரித்து வழங்குகிறது. தினசரி, மாதாந்திர, டைகட், கோல்டு, ஐம்போ, கிரிஸ்டல், ஷிப்பிங், டேபிள் வகை காலண்டர்கள் உள்ளன.\nபுத்தாண்டு பரிசுகள், நாவல்டீஸ், லெதர் மணி பர்ஸ், பைகள், கீ செயின்கள் ஆர்டரின் பேரில் கிடைக்கும். நிறுவனங்கள், வங்கிகள், நிதி நிறுவனங்கள், ஜவுளி, நகைக்கடைகள், சங்கங்கள், கல்வி நிறுவனங்களுக்கும் தயாரிப்புகள் வழங்கப்படுகின்றன. பத்துக்கு பதினைந்து ரெடிமேடு அட்டைகள், பஞ்சாங்கம், சிலிப்புகளுக்கும் ஆர்டர் செய்யலாம்.\n\n📍 இடம்: கோவை, சிவகாசி\n📞 தொடர்புக்கு: 9443362307, 8072705078, 8248996497\n\nCoimbatore calendar diary printing Unique Impressions | Coimbatore news\n📍 கோவை மாவட்டம் | 26 நவம்பர் 2026\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #கோவை #Calendar",
-   "prompts": "Inside a busy offset printing press in Coimbatore, a printing operator in a cotton shirt and trousers stands at a large paper-fed printing machine while stacks of freshly printed calendar sheets and bound diaries rise on a wooden pallet beside him. Behind him, shelves hold rolls of paper and finished stock, and a few other workers in plain shirts move between machines under bright tube lights, all seen from behind or at a distance. The floor is clean concrete with pallets and cardboard cartons along the walls, and the scene is set in daylight from high windows mixed with overhead lights. Captured at eye level, 35 mm lens, wide enough to show the full press floor, machines and stacked output. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a neat stack of colourful printed wall calendars and a few bound desk diaries lying on a long wooden table in a printing workshop, with a glossy gold-finished calendar sheet fanned out on top. Beside them sit a leather purse and a few key chains laid out as samples, and a pile of 10x15 ready-made cards sits at the edge, with the soft blurred shapes of printing machines and paper rolls far behind. Warm overhead light falls across the stack, showing the crisp paper edges and print finish, with no readable text or labels visible. Shot slightly high at about 35 mm, close enough to show the product detail clearly. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/4-generation-traditional-calendar-diary/4387274",
-   "published": "2026-11-26T22:24:02+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: fact-check: The article says the company is in Coimbatore and Sivakasi, but the draft's reel_script and headline present Coimbatore as the location; the slides_spec line 'கோவை, சிவகாசியில் நிறுவனம்' is consistent with the article, so no issue there, but the headline/loc placing the company in Coimbatore goes beyond the article's listing of two locations without specifying which is the base.",
+   "reel_script": "சொக்கனூரில் புதிய கல்குவாரிக்கு மக்கள் கடும் எதிர்ப்பு தெரிவித்துள்ளனர். கிணத்துக்கடவு தாலுகா, சொக்கனூர் ஊராட்சி, சங்கராயபுரம் பிரிவு அருகே தனியாருக்குச் சொந்தமான இடத்தில் குவாரி அமைக்க சில மாதங்களுக்கு முன் விண்ணப்பம் செய்யப்பட்டது. சில நாட்களுக்கு முன் அதே இடத்தில் குவாரி தொடங்க அனுமதி கோரப்பட்டது. இதை ஆய்வு செய்ய நில அளவையர் மற்றும் வருவாய்த்துறை அதிகாரிகள் நேரில் சென்றனர். அப்போது மக்கள் சிலர் குவாரிக்கு எதிர்ப்பு தெரிவித்தனர். முறையான அறிவிப்பின்றி ஆய்வு செய்ய முயன்றதால் அப்பகுதியில் பரபரப்பு ஏற்பட்டது. எதிர்ப்பால் அதிகாரிகள் ஆய்வு செய்யாமல் திரும்பினர். மக்கள் கூறுவதன்படி, 4 ஏக்கர் பரப்பில் குவாரி அமைய உள்ளது. இதிலிருந்து 300 மீட்டர் தொலைவில் செக் டேம், நீர்வழிப்பாதை, விளை நிலங்கள் மற்றும் 20க்கும் மேற்பட்ட குடியிருப்புகள் உள்ளன. குவாரி உரிமத்துக்கு மீண்டும் விண்ணப்பம் செய்யப்பட்ட நிலையில், அந்த இடம் சப்-டிவிஷன் செய்யப்படவுள்ளதாக நோட்டீஸ் அனுப்பப்பட்டதாக மக்கள் கூறுகின்றனர். சில மாதங்களுக்கு முன் வேறொரு தனியார் குவாரிக்கு முறையாக மக்களுக்குத் தெரிவிக்காமலும் கருத்து கேட்காமலும் உரிமம் வழங்கப்பட்டதாக மக்கள் குற்றம் சாட்டுகின்றனர். 2021, 2023 மற்றும் 2026ஆம் ஆண்டுகளின் கிராம சபைக் கூட்டங்களில் சொக்கனூரில் புதிய குவாரி அமைக்கக் கூடாது என தீர்மானம் நிறைவேற்றப்பட்டது. மக்கள் போராட்டத்தில் ஈடுபட ஆயத்தமாகி உள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 சொக்கனூரில் புதிய கல்குவாரிக்கு மக்கள் எதிர்ப்பு: போராட்டத்துக்கு ஆயத்தம்\n\n📰 முழு விவரம்:\nகிணத்துக்கடவு தாலுகா, சொக்கனூர் ஊராட்சி, சங்கராயபுரம் பிரிவு அருகே தனியாருக்குச் சொந்தமான இடத்தில் புதிய கல்குவாரி அமைக்க சில மாதங்களுக்கு முன் விண்ணப்பம் செய்யப்பட்டது. சில நாட்களுக்கு முன் அதே இடத்தில் குவாரி தொடங்க அனுமதி கோரப்பட்டது. இதை ஆய்வு செய்ய நில அளவையர், வருவாய்த்துறை அதிகாரிகள் நேரில் சென்றபோது, மக்கள் சிலர் எதிர்ப்பு தெரிவித்தனர். முறையான அறிவிப்பின்றி ஆய்வு செய்ய முயன்றதால் பரபரப்பு ஏற்பட்டது; அதிகாரிகள் ஆய்வு செய்யாமல் திரும்பினர்.\n🏗️ மக்கள் கூறுவதன்படி, 4 ஏக்கர் பரப்பில் குவாரி அமைய உள்ளது. 300 மீட்டர் தொலைவில் செக் டேம், நீர்வழிப்பாதை, விளை நிலங்கள், 20க்கும் மேற்பட்ட குடியிருப்புகள் உள்ளன.\n📄 உரிமத்துக்கு மீண்டும் விண்ணப்பம் செய்யப்பட்ட நிலையில், அந்த இடம் சப்-டிவிஷன் செய்யப்படவுள்ளதாக நோட்டீஸ் அனுப்பப்பட்டதாக மக்கள் கூறுகின்றனர்.\n⚠️ சில மாதங்களுக்கு முன் வேறொரு தனியார் குவாரிக்கு முறையாக அறிவிப்பு தராமலும் கருத்து கேட்காமலும் உரிமம் வழங்கப்பட்டதாக மக்கள் குற்றம் சாட்டுகின்றனர்.\n🗳️ 2021, 2023 மற்றும் 2026ஆம் ஆண்டுகளின் கிராம சபைக் கூட்டங்களில் சொக்கனூரில் புதிய குவாரி அமைக்கக் கூடாது என தீர்மானம் நிறைவேற்றப்பட்டது.\n✊ குவாரிக்கு அனுமதி வழங்கினால் தொடர் போராட்டம், சாலை மறியலில் ஈடுபடுவோம் என மக்கள் எச்சரித்துள்ளனர். குவாரி அனுமதியைக் கைவிட வேண்டும் என மாவட்ட நிர்வாகத்துக்கு கோரிக்கை.\n\nSokkanur residents oppose new quarry, ready to protest | Coimbatore news\n📍 சொக்கனூர், கிணத்துக்கடவு, கோவை மாவட்டம் | 26 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Kinathukadavu #Sokkanur #CoimbatoreNews",
+   "prompts": "A group of Sokkanur villagers stand together on open rural land at the edge of a village near Kinathukadavu in Coimbatore district, watching a government land-survey team with a tripod-mounted survey instrument as the officials prepare to inspect a proposed quarry site. The setting is dry, open ground with rocky patches and scrub, a check dam and green farm fields in the background, and a few houses visible at a distance. The villagers, mostly men in shirts and veshti and women in cotton sarees, stand in a loose cluster, some with arms folded and their faces turned away from the camera, while two officials in dark trousers and shirts stand near the instrument holding files and papers. The light is clear daytime sun with a pale sky, and the mood is tense and still. Shot at eye level from slightly behind the villagers, 35 mm, wide enough to show the land, the officials, the crowd and the distant settlement. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a survey tripod and a stack of official papers and notices placed on a flat rock at the edge of a dry, open quarry site in a Coimbatore village, with a few villagers' sandals and a water pot visible at the frame edge. Behind the objects, the rocky ground slopes toward green farm fields and a distant line of houses, under bright daytime light with a clear sky. The papers are blank-faced and unreadable, with no text shown, and the tripod legs are planted firmly in the earth. Shot at low angle, slightly from the side, 35 mm, focusing on the instrument and documents with the blurred villagers and farmland behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/new-quarry-construction-protest-in-sokkanur-people-get-ready-to-take-part-in-the-protest/4387028",
+   "published": "2026-11-26T19:25:14+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script copies the article word for word (15 words in a row, 11% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
    "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795750492/kovaiminnal/sbxuhg6mbhlshcvqrisd.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795750494/kovaiminnal/q45075ltxnybeiycaafh.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764968/kovaiminnal/vkrswcle4erabzhbefmt.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764975/kovaiminnal/wku1dq46rdqnhupqg5vz.jpg"
    ]
   },
   {
-   "tamil_headline": "எல்.முருகன் மீது அன்னூர் போலீஸார் வழக்குப் பதிவு",
-   "english_headline": "Annur police register case against former MoS L. Murugan and supporters for gathering without permission",
-   "category": "Government & Services",
-   "location": "Annur, Coimbatore district",
+   "tamil_headline": "கோவை ரயிலில் இருந்து இறங்கிய பயணியிடம் ரூ.19.50 லட்சம் ஹவாலா பணம் சிக்கியது",
+   "english_headline": "Passenger arriving from Coimbatore train at Palakkad caught with Rs 19.50 lakh hawala cash",
+   "category": "Crime & Safety",
+   "location": "Palakkad Junction railway station, Palakkad, Kerala (Coimbatore district link via train)",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "அரசியல் செய்தி",
-    "loc": "அன்னூர், கோவை மாவட்டம்",
-    "hl1": "எல்.முருகன் மீது அன்னூரில் வழக்கு",
-    "hl2": "அனுமதியின்றி கூடியதாக வழக்கு",
+    "cat": "ஹவாலா பணம்",
+    "loc": "பாலக்காடு சந்திப்பு",
+    "hl1": "ரயிலில் வந்த பயணியிடம் ரூ.19.50 லட்சம்",
+    "hl2": "ஹவாலா பணம் பறிமுதல்",
     "slides": [
      {
       "title": "என்ன நடந்தது?",
       "lines": [
-       "முன்னாள் மத்திய இணை அமைச்சர் எல்.முருகன், மதுரைக்குச் செல்ல",
-       "திருப்பரங்குன்றம் தீபம் ஏற்றும் நிகழ்வில்",
-       "கடந்த <b>24ஆம் தேதி</b> அன்னூர் போலீஸார் அவரைத் தடுத்து நிறுத்தினர்"
+       "பாலக்காடு சந்திப்பில் போலீசார் சோதனை நடத்தினர்",
+       "கோவையில் இருந்து வந்த பயணி <b>ரூ.19.50 லட்சம்</b> ஹவாலா",
+       "பணம் தோள் பையில் துணிகளுக்கு அடியில் இருந்தது"
       ]
      },
      {
-      "title": "வாக்குவாதம்",
+      "title": "யார் இவர்?",
       "lines": [
-       "போலீஸாரின் தடையை மீறி அன்னூரில் இருந்து செல்ல முயன்றார்",
-       "திரண்ட ஆதரவாளர்களுக்கும் போலீஸாருக்கும் வாக்குவாதம்",
-       "இதையடுத்து வழக்குப் பதிவு செய்யப்பட்டது"
+       "மலப்புரம் மாவட்டம் நிலபூர் நாட்டுவிலகத்தைச் சேர்ந்த",
+       "கோவையில் இருந்து ரயிலில் பாலக்காடு வந்தார்",
+       "பின்னர் பேருந்தில் நிலபூர் செல்ல முயன்றபோது பிடிபட்டார்"
       ]
      },
      {
-      "title": "வழக்கு விவரம்",
+      "title": "வழக்கு என்ன?",
       "lines": [
-       "எல்.முருகன் மீதும் சில ஆதரவாளர்கள் மீதும் வழக்கு",
-       "அனுமதியின்றி கூடியதாக அன்னூர் போலீஸார் வழக்குப் பதிவு"
+       "ரயில்வே ஆணையாளர் அன்புகுமாரின் உத்தரவுப்படி வழக்குப்பதிவு",
+       "ஆர்பிஎப் சர்க்கிள் இன்ஸ்பெக்டர் ரமேஷ்குமார் தலைமையிலான",
+       "பறிமுதல் செய்த <b>ரூ.19.50 லட்சம்</b> சுங்கவரித்துறையிடம்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "அன்னூர் போலீஸார் முன்னாள் மத்திய இணை அமைச்சர் எல்.முருகன் மீது வழக்குப் பதிவு செய்துள்ளனர். திருப்பரங்குன்றம் தீபம் ஏற்றும் நிகழ்வில் பங்கேற்பதாகக் கூறி, எல்.முருகன் கடந்த 24ஆம் தேதி மதுரைக்குச் செல்ல முயன்றார். அன்னூரில் அவரைப் போலீஸார் தடுத்து நிறுத்தினர். போலீஸாரின் தடையை மீறி அவர் அங்கிருந்து செல்ல முயன்றார். அங்கு திரண்ட அவரது ஆதரவாளர்களுக்கும் போலீஸாருக்கும் இடையே வாக்குவாதம் எழுந்தது. இதையடுத்து, எல்.முருகன் மற்றும் அவரது ஆதரவாளர்கள் சிலர் மீது அனுமதியின்றி கூடியதாக அன்னூர் போலீஸார் வழக்குப் பதிவு செய்துள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚨 அன்னூரில் எல்.முருகன் மீது போலீஸார் வழக்குப் பதிவு\n\n📰 முழு விவரம்:\nதிருப்பரங்குன்றம் தீபம் ஏற்றும் நிகழ்வில் பங்கேற்பதாகக் கூறி, முன்னாள் மத்திய இணை அமைச்சர் எல்.முருகன் கடந்த 24ஆம் தேதி மதுரைக்குச் செல்ல முயன்றார். அப்போது கோவை மாவட்டம் அன்னூர் போலீஸார் அவரைத் தடுத்து நிறுத்தினர். போலீஸாரின் தடையை மீறி அன்னூரில் இருந்து செல்ல முயன்றார். அங்கு திரண்ட அவரது ஆதரவாளர்களுக்கும் போலீஸாருக்கும் இடையே வாக்குவாதம் எழுந்தது. இதையடுத்து, எல்.முருகன் மற்றும் அவரது ஆதரவாளர்கள் சிலர் மீது அனுமதியின்றி கூடியதாக அன்னூர் போலீஸார் வழக்குப் பதிவு செய்துள்ளனர்.\n📍 இடம்: அன்னூர், கோவை மாவட்டம்\n🗓️ நாள்: கடந்த 24ஆம் தேதி\n👮 நடவடிக்கை: எல்.முருகன் மற்றும் அவரது ஆதரவாளர்கள் சிலர் மீது அனுமதியின்றி கூடியதாக வழக்குப் பதிவு\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Annur #அரசியல் #CoimbatoreNews",
-   "prompts": "A group of police in khaki uniform stand in a line on a road in Annur town, Coimbatore district, holding back a crowd of men in shirts and veshti seen from behind as they gather near a parked white police jeep. Behind them stand small roadside shops, a few parked two-wheelers, and a town bus at the bus stop, with Marudhamalai hill faintly visible in the far background. The scene is daylight with flat, even light and a dusty road. The police stand with arms at their sides or lightly linked to block the road, while the supporters are seen from behind or far away and slightly blurred, shoulder to shoulder. No faces are visible. Taken at eye level, 35 mm, wide enough to show the road, the police jeep, and the gathering crowd together. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a police barricade made of a rope line or a wooden barrier placed across a road in Annur town, with a khaki-uniformed police officer's hand resting on it and a parked police jeep blurred in the background. Beyond the barrier, a few men in shirts and veshti stand far away, seen from behind. The road surface is dusty, with a parked two-wheeler and a roadside shop wall partly visible. The light is daytime and neutral. The camera is at eye level, 35 mm, focused on the barrier and the officer's hand, with the blocked road and the gathering crowd softly out of focus behind them. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.hindutamil.in/news/tamilnadu/annur-police-register-case-against-l-murugan",
-   "published": "2026-11-27T01:17:24Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: known issue meta_article: cards talks about the article instead of the news ('தகவல் வெளியிடப்படவில்லை') - rewrite so it does not happen again",
+   "reel_script": "பாலக்காடு சந்திப்பு ரயில் நிலையத்தில் ரூ.19.50 லட்சம் ஹவாலா பணம் பறிமுதல் செய்யப்பட்டுள்ளது. நேற்று போலீசார் ரயில் பயணிகளின் உடமைகளைச் சோதனை செய்துகொண்டிருந்தனர். கோவையில் இருந்து பாலக்காடு நோக்கி வந்த பயணிகள் ரயிலில் வந்திறங்கிய ஒருவர் மீது போலீசாருக்கு சந்தேகம் எழுந்தது. அவர் போலீசாரிடம் முன்னுக்குப்பின் முரணாகப் பதிலளித்தார். இதனால் அவரது உடமைகள் சோதனை செய்யப்பட்டன. அவரது தோள் பையில் துணிகளுக்கு அடியில், உரிய ஆவணங்கள் இல்லாமல் 500 ரூபாய் நோட்டுகளாக ரூ.19.50 லட்சம் இருந்தது. அவர் மலப்புரம் மாவட்டம் நிலபூர் நாட்டுவிலகம் பகுதியைச் சேர்ந்த செல்வராஜ், 59 வயது ஆனவர். அவர் பேருந்தில் நிலபூர் செல்ல முயன்றபோது பிடிபட்டார். ரயில்வே ஆணையாளர் அன்புகுமாரின் உத்தரவுப்படி, ஆர்பிஎப் சர்க்கிள் இன்ஸ்பெக்டர் ரமேஷ்குமார் தலைமையிலான போலீசார் வழக்குப்பதிவு செய்தனர். பறிமுதல் செய்யப்பட்ட ரூ.19.50 லட்சம் ஹவாலா பணம் சுங்கவரித்துறை அதிகாரிகளிடம் ஒப்படைக்கப்பட்டது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 பாலக்காடு ரயில் நிலையத்தில் ரூ.19.50 லட்சம் ஹவாலா பணம் பறிமுதல்\n\n📰 முழு விவரம்:\nகோவையில் இருந்து பாலக்காடு வந்த பயணி ஒருவரிடம் ரயில்வே போலீசார் சோதனை நடத்தினர். அவர் முன்னுக்குப்பின் முரணாகப் பதிலளித்ததால் சந்தேகம் எழுந்தது. அவரது தோள் பையில் துணிகளுக்கு அடியில், உரிய ஆவணங்கள் இல்லாமல் ரூ.19.50 லட்சம் மதிப்புள்ள 500 ரூபாய் நோட்டுகள் இருந்தன.\n👤 பயணி: மலப்புரம் மாவட்டம் நிலபூர் நாட்டுவிலகத்தைச் சேர்ந்த செல்வராஜ் (59 வயது)\n🚆 வழி: கோவை - பாலக்காடு சந்திப்பு ரயில், பின்னர் பேருந்தில் நிலபூர் செல்ல முயன்றபோது பிடிபட்டார்\n👮 நடவடிக்கை: ரயில்வே ஆணையாளர் அன்புகுமாரின் உத்தரவுப்படி ஆர்பிஎப் சர்க்கிள் இன்ஸ்பெக்டர் ரமேஷ்குமார், சப்-இன்ஸ்பெக்டர் ஷஜி அகஸ்டீன் தலைமையிலான போலீசார் வழக்குப்பதிவு செய்தனர்.\n💰 பறிமுதல் செய்த ரூ.19.50 லட்சம் ஹவாலா பணம் சுங்கவரித்துறை அதிகாரிகளிடம் ஒப்படைக்கப்பட்டது.\n\nPalakkad railway hawala cash seized Rs 19.50 lakh | Coimbatore news\n📍 பாலக்காடு சந்திப்பு (கோவை - பாலக்காடு ரயில்) | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Palakkad #CoimbatoreNews #கோவை",
+   "prompts": "A khaki-uniformed Railway Protection Force officer stands beside an elderly male passenger, about 59, in a plain shirt and veshti, on a Palakkad Junction railway platform, while a passenger train from Coimbatore stands at the platform beside them. The platform is busy but the focus is the detained man, shown from behind or in profile, his shoulder bag held open by a policeman's hand. The station is a typical South Indian railway junction with a long platform, a steel-and-concrete canopy roof, passenger coaches with windows, and a few other travellers with luggage at a distance. Daylight comes through the platform shed. Camera: eye level, 35 mm, wide enough to show the platform, the train and the people, slightly off-centre so no faces are clearly visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of an open dark shoulder bag on a steel bench or metal table at a railway police room, its contents spilling out from under folded clothes. Stacks of Indian Rs 500 currency notes, bundled with paper bands, sit in the bag, with a clear view of the bundles that tells the story of the hawala cash. Two khaki-uniformed police officers stand slightly blurred in the background, their hands and uniforms visible but not their faces. The room has a plain wall and a tube light overhead, and a few scattered papers. Camera: close, 50 mm, shallow depth of field, eye level, focused on the cash and the bag. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinakaran.com/news/hawala-money-seized-passenger-train-coimbatore/amp",
+   "published": "2026-11-27T10:09:58+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: hl1 (the first headline on screen) must name the place 'பாலக்காடு சந்திப்பு', e.g. 'பாலக்காடு சந்திப்பு: ...' or 'பாலக்காடு சந்திப்பு-இல் ...' - viewers share news of their own area",
    "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795750507/kovaiminnal/kzatuclzj798oheefsnt.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795750509/kovaiminnal/nhjnpjuzcsrjoqp53t8g.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764983/kovaiminnal/wim8ss1vnsscxmydq185.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764987/kovaiminnal/pwbodk7ua2sahp82tpkl.jpg"
    ]
   },
   {
-   "tamil_headline": "வால்பாறையில் பூனையை வேட்டையாட முயன்ற சிறுத்தை: இளைஞர்கள் பீதி",
-   "english_headline": "Leopard tries to hunt a cat in Valparai; youths panic as photos spread online",
+   "tamil_headline": "சூலூரில் மின் இணைப்பு துண்டிப்பால் மருமகள் கொலை; மாமனார் கைது",
+   "english_headline": "Sulur: father-in-law arrested for hacking daughter-in-law to death after power to his room was cut",
    "category": "Crime & Safety",
-   "location": "Murugali Estate, Valparai, Coimbatore district",
-   "importance": "Medium",
+   "location": "Kangal village, Sulur, Coimbatore district",
+   "importance": "High",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "வனவிலங்கு",
-    "loc": "வால்பாறை, கோவை",
-    "hl1": "வால்பாறையில் பூனையை வேட்டையாட முயன்ற",
-    "hl2": "இளைஞர்கள் பீதி",
+    "cat": "குற்றம்",
+    "loc": "சூலூர்",
+    "hl1": "சூலூரில் மின் இணைப்பு துண்டிப்பால் கொலை",
+    "hl2": "மாமனார் கைது",
     "slides": [
      {
       "title": "என்ன நடந்தது?",
       "lines": [
-       "வால்பாறை முருகாளி எஸ்டேட் பகுதியில் சிறுத்தை வந்தது",
-       "சுவர் மீது அமர்ந்திருந்த பூனையை சிறுத்தை துரத்தியது",
-       "பூனை கீழே குதித்து தப்பியது"
+       "சூலூர் அருகே கங்கல் கிராமத்தில் மருமகள் அரிவாளால்",
+       "மாமனார் மாடசாமி கைது செய்யப்பட்டார்",
+       "அவர் தங்கிய மாடி அறையின் மின் இணைப்பை மகன் துண்டித்ததால்"
       ]
      },
      {
       "title": "எப்போது?",
       "lines": [
-       "நேற்று முன்தினம் இரவு <b>10.30 மணிக்கு</b> சம்பவம்",
-       "சிறுத்தை சுவர் மீது நடந்து சென்றது",
-       "அங்கிருந்த இளைஞர்கள் சிறுத்தையைக் கண்டு பீதியடைந்தனர்"
+       "கடந்த <b>24</b>ஆம் தேதி அதிகாலையில் சம்பவம்",
+       "வாக்கிங் செல்ல வந்த மருமகள் நந்தினி வெட்டப்பட்டார்",
+       "சிகிச்சை பலனின்றி நேற்று காலை உயிரிழந்தார்"
       ]
      },
      {
-      "title": "இப்போது",
+      "title": "மகன் நிலை",
       "lines": [
-       "இதுதொடர்பான புகைப்படங்கள் சமூக வலைத்தளங்களில் பரவி வருகின்றன",
-       "இப்பகுதியில் மக்கள் பீதியில் உள்ளனர்"
+       "மகன் செல்வகுமாருக்கும் முகத்தில் அரிவாள் வெட்டு",
+       "செல்வகுமார் மருத்துவமனையில் சிகிச்சையில் உள்ளார்",
+       "அடிதடி வழக்கு, இப்போது கொலை வழக்காக மாற்றம்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "வால்பாறை முருகாளி எஸ்டேட் பகுதியில் சிறுத்தை ஒன்று பூனையை வேட்டையாட முயன்றது. நேற்று முன்தினம் இரவு 10.30 மணிக்கு சுவர் மீது அமர்ந்திருந்த பூனையை சிறுத்தை துரத்தியது. சுவர் மீது நடந்து சென்று சிறுத்தை வேட்டையாட முயன்றபோது, பூனை கீழே குதித்து தப்பியது. அப்போது அங்கிருந்த இளைஞர்கள் சிறுத்தையைக் கண்டு பீதியடைந்தனர். இதுதொடர்பான புகைப்படங்கள் சமூக வலைத்தளங்களில் பரவி வருகின்றன. இப்பகுதியில் மக்கள் பீதியில் உள்ளனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🐆 வால்பாறையில் பூனையை வேட்டையாட முயன்ற சிறுத்தை: இளைஞர்கள் பீதி\n\n📰 முழு விவரம்:\nவால்பாறை முருகாளி எஸ்டேட் பகுதியில் நேற்று முன்தினம் இரவு 10.30 மணிக்கு ஒரு சிறுத்தை பூனையை வேட்டையாட முயன்றது. சுவர் மீது அமர்ந்திருந்த பூனையை நோக்கி வந்த சிறுத்தை அதைத் துரத்தியது. சுவரில் ஏறி நடந்து சென்று பிடிக்க முயன்றபோது பூனை கீழே குதித்துத் தப்பியது. அங்கிருந்த இளைஞர்கள் சிறுத்தையைக் கண்டு அச்சமடைந்தனர். இந்தச் சம்பவத்தின் புகைப்படங்கள் சமூக வலைத்தளங்களில் பரவி வருகின்றன.\n📍 இடம்: முருகாளி எஸ்டேட், வால்பாறை\n🗓️ நாள்: நேற்று முன்தினம் (நவம்பர் 25)\n🕘 நேரம்: இரவு 10.30 மணி\nℹ️ மக்கள் கவனத்திற்கு: இரவு நேரங்களில் வீடுகளுக்கு அருகில் கவனமாக இருங்கள்.\n\nLeopard tries to hunt cat in Valparai | Coimbatore news\n📍 வால்பாறை, கோவை மாவட்டம் | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Valparai #வனவிலங்கு #CoimbatoreNews",
-   "prompts": "A leopard stalks along the top of a low stone boundary wall at a tea estate in Valparai, its spotted body tense as it moves toward a small cat crouched on the same wall, while a few youths stand frozen in the distance. The setting is Murugali Estate, a hilly tea plantation in Valparai, with neat rows of tea bushes rising behind the wall and dense shola forest at the edge. The scene is night, around 10.30, lit only by a dim yellow street lamp and a phone flashlight, so the leopard's outline and eyes catch the light against the dark. The youths are seen from behind, two or three figures in shirts and trousers, one hand raised as if to shield their face. Camera at eye level, 35 mm, wide enough to show the wall, the tea bushes and the hills in the background. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a low, moss-stained stone boundary wall on a Valparai tea estate at night, with a small cat's paw and tail just visible as it leaps down onto the grass below. Blurred tea bushes and a faint phone torchlight fill the background, and a dark patch of wet leaves on the wall shows where the leopard had been standing. The light is dim and cool, with only a single warm estate lamp far off. No people are in focus, only hints of the youths' shadows at the edge. Camera close and slightly low, 50 mm, shallow depth of field to isolate the wall and the cat's escape. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dailythanthi.com/news/tamilnadu/coimbatore-leopard-trying-to-hunt-cat",
-   "published": "2026-11-27T02:21:32Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 53 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
+   "reel_script": "சூலூர் அருகே மின் இணைப்பு துண்டிக்கப்பட்டதால் மருமகள் கொலை செய்யப்பட்டார். கோவை மாவட்டம் சூலூர் அருகே உள்ள கங்கல் கிராமத்தில் இந்த சம்பவம் நடந்தது. தான் தங்கியிருந்த மாடி அறையின் மின் இணைப்பை மகன் செல்வகுமார் துண்டித்ததால் மாடசாமி ஆத்திரமடைந்தார். கடந்த 24ஆம் தேதி அதிகாலையில் வாக்கிங் செல்ல வந்த மருமகள் நந்தினியை அவர் அரிவாளால் வெட்டினார். பின்னர் வீட்டுக்குள் சென்று தூங்கிக்கொண்டிருந்த மகன் செல்வகுமாரின் முகத்திலும் வெட்டினார். படுகாயமடைந்த நந்தினி சிகிச்சை பலனின்றி நேற்று காலை உயிரிழந்தார். செல்வகுமார் மருத்துவமனையில் சிகிச்சையில் உள்ளார். போலீசார் மாடசாமியை கைது செய்தனர். முதலில் அடிதடி வழக்காகப் பதிவு செய்யப்பட்ட வழக்கு, தற்போது கொலை வழக்காக மாற்றப்பட்டுள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🚨 சூலூரில் மின் இணைப்பு துண்டிப்பால் மருமகள் கொலை: மாமனார் கைது\n\n📰 முழு விவரம்:\nசூலூர் அருகே கங்கல் கிராமத்தில் அபிராமி கார்டன் பகுதியில் வசித்து வரும் செல்வகுமார் (36 வயது) என்பவரின் தந்தை மாடசாமி, மருமகள் நந்தினியை அரிவாளால் வெட்டிக் கொன்றார்.\nமாடசாமி தனது மகன் வீட்டின் மேல் மாடி அறையில் தங்கியிருந்தார். மருமகளுடன் பிரச்னை ஏற்பட்டதால், ஊருக்குச் செல்லுமாறு மகன் கூறினார். மாடசாமி மறுத்தார்.\nகடந்த 24ஆம் தேதி செல்வகுமார் தந்தை தங்கியிருந்த மாடி அறைக்குச் செல்லும் மின் இணைப்பைத் துண்டித்தார். ஆத்திரமடைந்த மாடசாமி அதிகாலையில் வாக்கிங் செல்ல வந்த மருமகள் நந்தினியை அரிவாளால் சரமாரியாக வெட்டினார்.\nபின்னர் வீட்டுக்குள் சென்று தூங்கிக்கொண்டிருந்த மகன் செல்வகுமாரின் முகத்திலும் அரிவாளால் வெட்டினார். அரிவாள் வெட்டில் படுகாயமடைந்த மகன் செல்வகுமார் மருத்துவமனையில் சிகிச்சைக்கு அனுமதிக்கப்பட்டுள்ளார்.\nசத்தம் கேட்டு அக்கம்பக்கத்தினர் ஓடி வந்து 108 ஆம்புலன்ஸ் மூலம் இருவரையும் சூலூரில் உள்ள தனியார் மருத்துவமனையில் சேர்த்தனர். சிகிச்சை பலனின்றி நந்தினி நேற்று காலை உயிரிழந்தார்.\nசூலூர் போலீசார் மாடசாமியைக் கைது செய்து விசாரித்து வருகின்றனர். அடிதடி வழக்காகப் பதிவு செய்யப்பட்ட வழக்கு கொலை வழக்காக மாற்றப்பட்டுள்ளது. உடல் கோவை இஎஸ்ஐ மருத்துவமனைக்கு பிரேத பரிசோதனைக்கு அனுப்பப்பட்டது. இந்தச் சம்பவம் அப்பகுதியில் பரபரப்பை ஏற்படுத்தியுள்ளது.\n\nSulur mother-in-law murder father-in-law arrested Coimbatore news\n📍 சூலூர், கோவை மாவட்டம் | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Sulur #CoimbatoreNews #கோவை",
+   "prompts": "Sulur police in khaki stand at the gate of a two-storey residential house in Kangal village, Coimbatore district, in the early morning light, with a 108 ambulance parked at the roadside and neighbours gathered at a distance. The place is a typical residential street in Coimbatore's outskirts, with concrete houses, an upper-floor room (madi) on the first floor, and a narrow lane with two-wheelers parked along the wall. Two or three officers in khaki uniform stand near the gate, one with his back to the camera, while a small group of neighbours, men in shirts and women in cotton sarees, watch quietly from across the lane. The ambulance has its rear doors open, with no visible injury or body shown. Early morning, soft daylight, slightly overcast sky. Camera at eye level, 35 mm, wide enough to show the house, the ambulance and the crowd, all people seen from behind or far away. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of an upper-floor window grille and a loose, cut electric wire hanging from a concrete wall of a residential house in Kangal village, Sulur, Coimbatore. The detail shows the switch-off point of the power supply to the mādi room, a plastic conduit pipe and a dangling wire, emphasising the cut electricity that sparked the dispute. Below the window, a plain red-oxide floor and a small patch of the lane are visible, with a single two-wheeler parked at the edge of the frame. Early morning light, soft shadows across the wall. Camera slightly high, 35 mm, focused on the wire and the grille, no people in focus, no text or signboards visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinakaran.com/news/father-in-law-arrested-daughter-death",
+   "published": "2026-11-27T10:07:50+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 80 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block)",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795750514/kovaiminnal/khwuzdwew76i538ker9f.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795750515/kovaiminnal/tjvrt7fwoywxlbinvyl1.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764995/kovaiminnal/hpisdi386vgi2aucplf6.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795764999/kovaiminnal/lvsaitnvjfavsijt8dkv.jpg"
    ]
   }
  ]
