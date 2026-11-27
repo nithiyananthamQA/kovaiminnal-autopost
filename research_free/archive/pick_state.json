@@ -152,7 +152,8 @@
     "https://www.dailythanthi.com/news/tamilnadu/two-arrested-in-sulur-girls-murder-case-found-guilty"
    ],
    "listed_at": "2026-11-27T17:01:42.888028+05:30",
-   "picked_at": "2026-11-27T17:03:37.841908+05:30"
+   "picked_at": "2026-11-27T17:03:37.841908+05:30",
+   "refused": "not filed: duplicate after write"
   },
   "C257c903": {
    "id": "C257c903",
@@ -177,7 +178,8 @@
    "score": 11.08,
    "power_cut": false,
    "listed_at": "2026-11-27T17:01:42.888028+05:30",
-   "picked_at": "2026-11-27T17:03:37.841910+05:30"
+   "picked_at": "2026-11-27T17:03:37.841910+05:30",
+   "posted": true
   },
   "C3533663": {
    "id": "C3533663",
@@ -190,7 +192,8 @@
    "score": 10.5,
    "power_cut": false,
    "listed_at": "2026-11-27T17:01:42.888028+05:30",
-   "picked_at": "2026-11-27T17:03:37.841912+05:30"
+   "picked_at": "2026-11-27T17:03:37.841912+05:30",
+   "refused": "not filed: duplicate after write"
   },
   "C587c3d0": {
    "id": "C587c3d0",
@@ -203,7 +206,8 @@
    "score": 10.5,
    "power_cut": false,
    "listed_at": "2026-11-27T17:01:42.888028+05:30",
-   "picked_at": "2026-11-27T17:03:37.841914+05:30"
+   "picked_at": "2026-11-27T17:03:37.841914+05:30",
+   "posted": true
   },
   "C230aaab": {
    "id": "C230aaab",
@@ -1226,7 +1230,11 @@
     "C3533663",
     "C587c3d0",
     "Cb6b080b"
-   ]
+   ],
+   "refused": {
+    "C3533663": "not filed: duplicate after write",
+    "C343f0fd": "not filed: duplicate after write"
+   }
   }
  },
  "retry": {}
