@@ -1,6 +1,54 @@
-13:05:21 hold lifted: RN-20 - not grounded: location 'நகரம்' is not in the article - the location IS in the article (checked again)
-13:05:26 hold lifted: RN-63 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
-13:05:31 hold lifted: RN-166 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
-13:05:33 hold lifted: RN-185 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
-13:05:36 hold lifted: RN-213 - not grounded: location 'சாலை' is not in the article - the location IS in the article (checked again)
-13:05:44 0 held news to fix: []
+05:06:27 hold lifted: RN-20 - not grounded: location 'நகரம்' is not in the article - the location IS in the article (checked again)
+05:06:33 hold lifted: RN-63 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
+05:06:39 hold lifted: RN-166 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
+05:06:40 hold lifted: RN-185 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
+05:06:44 hold lifted: RN-213 - not grounded: location 'சாலை' is not in the article - the location IS in the article (checked again)
+05:06:54 1 held news to fix: ['RN-366']
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.6-flash
+fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please che
+dead for this round: gemini/gemini-3.5-flash
+fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, plea
+dead for this round: gemini/gemini-3-flash-preview
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
+switching away from groq/openai/gpt-oss-120b for 10 min
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 413: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
+ok anthropic/claude-haiku-5-5
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+ok groq/qwen/qwen3.8-27b (1s)
+factcheck by groq/qwen/qwen3.8-27b: 0 problems
+claude rewrite 1 anthropic/claude-haiku-5-5: 0 problems
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+ok groq/qwen/qwen3.8-27b (4s)
+gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
+free fact-check unavailable, using Claude: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model 
+ok anthropic/claude-haiku-5-5
+factcheck by anthropic/claude-haiku-5-5: 4 problems
+  The reel_script opens by saying Sirithuli urged restoring the 8 ponds, then says 'இதையடுத்து' (following this) the meeting happened, implying a causal link the article does not state; the article does not say the meeting was prompted by that call.
+  The reel_script says the Chief Secretary gave advice that existing efforts failed to yield expected results and 'urged exploring alternative technologies' — the article says the earlier efforts did not give expected results and he advised that practical solutions could be developed through alternative technologies and innovative methods; roughly matching, but the reel_script's 'ஆராயுமாறு' phrasing is acceptable.
+  The reel_script says the Sirithuli officials 'பங்கேற்றனர்' (participated) in the meeting, which is consistent, but the claim that Sirithuli 'promised' to continue contributing with government and Corporation is only partially reflected; the reel_script says 'உறுதியளித்துள்ளது' which is consistent with the article.
+  The slides_spec line 'மாநகரின் 8 குளங்களை விரைந்து சீரமைக்க வலியுறுத்தல்' and 'கழிவுச் சேறு ... நீர் கொள்ளளவு உயர்த்துதல்' are consistent with the article; no invented figures found, but the caption and headline use the 8-pond call as the lead fact, which the article frames as a point raised during the meeting rather than a standalone statement.
+proofread rejected (4 problems)
+  fact-check: The reel_script opens by saying Sirithuli urged restoring the 8 ponds, then says 'இதையடுத்து' (following this) the meeting happened, implying a causal link the article does not state; the article does not say the meeting was prompted by that call.
+  fact-check: The reel_script says the Chief Secretary gave advice that existing efforts failed to yield expected results and 'urged exploring alternative technologies' — the article says the earlier efforts did not give expected results and he advised that practical solutions could be developed through alternative technologies and innovative methods; roughly matching, but the reel_script's 'ஆராயுமாறு' phrasing is acceptable.
+  fact-check: The reel_script says the Sirithuli officials 'பங்கேற்றனர்' (participated) in the meeting, which is consistent, but the claim that Sirithuli 'promised' to continue contributing with government and Corporation is only partially reflected; the reel_script says 'உறுதியளித்துள்ளது' which is consistent with the article.
+  fact-check: The slides_spec line 'மாநகரின் 8 குளங்களை விரைந்து சீரமைக்க வலியுறுத்தல்' and 'கழிவுச் சேறு ... நீர் கொள்ளளவு உயர்த்துதல்' are consistent with the article; no invented figures found, but the caption and headline use the 8-pond call as the lead fact, which the article frames as a point raised during the meeting rather than a standalone statement.
+05:07:45 RN-366 FIXED - posts with the corrected text: கோவை குளங்கள், பில்லூர், சிறுவாணி அணைகள் சீரமைப்பு: சிறுதுளி தலைமைச் செயலருடன் ஆ
