@@ -1,9 +1,9 @@
-17:09:22 location re-check failed (stays held): RN-20 HTTPSConnectionPool(host='www.dinamalar.com', port=443): Read timed out. (read t
-17:10:49 hold lifted: RN-63 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
-17:11:10 hold lifted: RN-166 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
-17:11:12 hold lifted: RN-185 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
-17:11:17 hold lifted: RN-213 - not grounded: location 'சாலை' is not in the article - the location IS in the article (checked again)
-17:11:29 1 held news to fix: ['RN-381']
+21:08:14 hold lifted: RN-20 - not grounded: location 'நகரம்' is not in the article - the location IS in the article (checked again)
+21:08:19 hold lifted: RN-63 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
+21:08:24 hold lifted: RN-166 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
+21:08:26 hold lifted: RN-185 - not grounded: location 'ரோடு' is not in the article - the location IS in the article (checked again)
+21:08:29 hold lifted: RN-213 - not grounded: location 'சாலை' is not in the article - the location IS in the article (checked again)
+21:08:43 1 held news to fix: ['RN-385']
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
 fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {
@@ -16,13 +16,6 @@ fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {
     "code": 429,
     "message": "You exceeded your current quota, please che
 dead for this round: gemini/gemini-3.5-flash
-ok gemini/gemini-3-flash-preview (12s)
-attempt 1 gemini/gemini-3-flash-preview: 3 problems
-  sentence 1 (one-line story) has 15 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
-  caption needs 5 hashtags (Instagram max), has 6
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): 23 ('.சிறுமியை சாக்லெட் வாங்கித் தருவதாகக் கூறி இருசக்கர வாகனத்தி'); 6 ('சுமார் 6 மாதங்கள் நடைபெற்ற விசாரணையில், அரசுத் தரப்பில் 68 ச'); 16 ('இதனையடுத்து இந்த வழக்கின் தீர்ப்பு கடந்த 16ஆம் தேதி அறிவிக்க')
-gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
 fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
   "error": {
     "code": 429,
@@ -30,32 +23,21 @@ fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {
 dead for this round: gemini/gemini-3-flash-preview
 fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `o
 dead for this round: groq/openai/gpt-oss-120b
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
-free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` i
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m
+switching away from groq/qwen/qwen3.8-27b for 10 min
+free models unavailable: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` 
+ok anthropic/claude-haiku-5-5
+claude rewrite 1 anthropic/claude-haiku-5-5: 1 problems
+  hl1 (the first headline on screen) must name the place 'கோவை', e.g. 'கோவை: ...' or 'கோவை-இல் ...' - viewers share news of their own area
 ok anthropic/claude-haiku-5-5
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
 groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
-free fact-check unavailable, using Claude: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model 
+free fact-check unavailable, using Claude: no free model answered: None
 ok anthropic/claude-haiku-5-5
-factcheck by anthropic/claude-haiku-5-5: 3 problems
-  The victim is a minor (10-year-old girl) and the draft is a case of sexual assault (POCSO); the reel_script, slides_spec and caption do not name her, but the draft names the accused. Adults named by the article are fine, so no violation here; however the caption and reel_script identify the victim by school class and village locality (Kaundampalayam, Sulur), which together with the age could identify the child, and the article itself does not name her; review whether such identifying details are acceptable under POCSO.
-  reel_script describes the victim as a 'சிறுமி' who was 'கொலை' killed and sexually assaulted but the article states the sexual assault and murder, so this is consistent; no invented facts found in the headline, slides or caption.
-  The caption says the girl was taken 'சாக்லெட் வாங்கித் தருவதாகக் கூறி' and that the accused 'குற்றம் செய்ததாக' - the article says the police stated this, while the draft states the accusations as facts without attribution in the caption, a wording issue rather than a factual contradiction.
-claude rewrite 1 anthropic/claude-haiku-5-5: 3 problems
-  fact-check: The victim is a minor (10-year-old girl) and the draft is a case of sexual assault (POCSO); the reel_script, slides_spec and caption do not name her, but the draft names the accused. Adults named by the article are fine, so no violation here; however the caption and reel_script identify the victim by school class and village locality (Kaundampalayam, Sulur), which together with the age could identify the child, and the article itself does not name her; review whether such identifying details are acceptable under POCSO.
-  fact-check: reel_script describes the victim as a 'சிறுமி' who was 'கொலை' killed and sexually assaulted but the article states the sexual assault and murder, so this is consistent; no invented facts found in the headline, slides or caption.
-  fact-check: The caption says the girl was taken 'சாக்லெட் வாங்கித் தருவதாகக் கூறி' and that the accused 'குற்றம் செய்ததாக' - the article says the police stated this, while the draft states the accusations as facts without attribution in the caption, a wording issue rather than a factual contradiction.
-ok anthropic/claude-haiku-5-5
-claude rewrite 2 anthropic/claude-haiku-5-5: 2 problems
-  sentence 1 (one-line story) has 16 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences
-  caption misses facts of the article (put every one in 📰 முழு விவரம்): 6 ('சுமார் 6 மாதங்கள் நடைபெற்ற விசாரணையில், அரசுத் தரப்பில் 68 ச'); 16 ('இதனையடுத்து இந்த வழக்கின் தீர்ப்பு கடந்த 16ஆம் தேதி அறிவிக்க')
-ok anthropic/claude-haiku-5-5
-claude rewrite 3 anthropic/claude-haiku-5-5: 1 problems
-  caption copies the article word for word (22 words in a row, 18% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence
+factcheck by anthropic/claude-haiku-5-5: 0 problems
+claude rewrite 2 anthropic/claude-haiku-5-5: 0 problems
 gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash
-groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b
-fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6
-proofread skipped: no free model answered: groq qwen/qwen3.8-27b 429: {"error":{"message":"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6k595xsevr8qckv4ngn66p1` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Requested 1857. The request's expected output tokens exceed the enforced limit; reduce max_tokens (or the request's expected output) and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
-
-17:12:19 RN-381 FIXED - posts with the corrected text: சூலூர் சிறுமி வழக்கு: கார்த்தி, மோகன் இருவரும் குற்றவாளிகள் என தீர்ப்பு
+groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+proofread skipped: no free model answered: None
+21:09:16 RN-385 FIXED - posts with the corrected text: கோவை மாநகராட்சிப் பள்ளி கணித ஆசிரியர் போக்சோ வழக்கில் கைது
