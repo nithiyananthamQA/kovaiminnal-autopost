@@ -3,30 +3,27 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/raw-banana-spice-chips/4388200",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/schoolchildren-display-vegetables/4387673",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/vedic-recitation-begins-at-godandarama-temple/4387642",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/rally-to-end-child-marriage/4387676",
+  "manual link added: https://www.dinakaran.com/news/bird-flu-confirmed-in-coimbatore",
+  "manual link added: https://www.dailythanthi.com/news/tamilnadu/15th-insight-leadership-program-at-isha-inaugurated-by-sadhguru",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-news/after-cuddalore-avian-influenza-spreads-in-coimbatore/4388334",
   "manual link added: https://www.dinamalar.com/news/tamil-nadu-news/the-answers-of-the-hour/4388024",
-  "candidate filter: collected=5",
-  "to write: 5 Coimbatore district candidates (max 5 stories)",
-  "round: top 5 of 5 candidates",
-  "candidates waiting: 5 Coimbatore; time left 79 min",
+  "candidate filter: collected=4",
+  "to write: 4 Coimbatore district candidates (max 4 stories)",
+  "round: top 4 of 4 candidates",
+  "candidates waiting: 4 Coimbatore; time left 79 min",
   "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-news/the-answers-o",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-news/after-cuddalo",
+  "try (N) manual=True: https://www.dailythanthi.com/news/tamilnadu/15th-insight-lea",
   "skip (N) could not open:  [https://www.dinamalar.com/news/tamil-nadu-news/the-answers-o] 404 Client Error: Not Found for url: https://www.dinamalar.com/news/tamil-nadu-n",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "try (N) manual=True: https://www.dinakaran.com/news/bird-flu-confirmed-in-coimbat",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 8})",
-  "candidate loop ended: left 0, tried={'N': 5}, done={'N': 4}, time left 77 min",
-  "filed: 4 Coimbatore district stories (target 5), reels only",
+  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 3}, time left 78 min",
+  "filed: 3 Coimbatore district stories (target 4), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":5,\"updated\":0}"
+  "All News sheet: {\"ok\":true,\"added\":3,\"updated\":1}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
@@ -37,299 +34,230 @@
   "dead for this round: gemini/gemini-3.5-flash",
   "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
   "dead for this round: gemini/gemini-3-flash-preview",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_gener",
-  "ok groq/qwen/qwen3.8-27b (3s)",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "dead for this round: groq/openai/gpt-oss-120b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "switching away from groq/openai/gpt-oss-120b for 10 min",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "switching away from groq/qwen/qwen3.8-27b for 10 min",
+  "ok anthropic/claude-haiku-5-5",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "switching away from groq/qwen/qwen3.8-27b for 10 min",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
   "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "ராம்நகர் கோதண்டராமர் கோயிலில் வேத சம்மேளனம்: நாளை நிறைவு",
-   "english_headline": "Vedic conclave begins at Ramnagar Kothandaramar temple; concludes tomorrow",
-   "category": "Temples & Events",
-   "location": "Ramnagar, Coimbatore, Coimbatore district",
-   "importance": "Low",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "கோயில் நிகழ்ச்சி",
-    "loc": "ராம்நகர், கோவை",
-    "hl1": "ராம்நகர் கோதண்டராமர் கோயிலில் வேத",
-    "hl2": "நவ.29 நிறைவு பெறுகிறது",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "ராம்நகர் கோதண்டராமர் தேவஸ்தானத்தில் வேத சம்மேளன நிகழ்ச்சி",
-       "வேதவிற்பன்னர்கள் திரளானோர் பங்கேற்றனர்"
-      ]
-     },
-     {
-      "title": "நிகழ்ச்சி அட்டவணை",
-      "lines": [
-       "காலை <b>7:30</b> மணிக்கு ஸ்ரீ வேத வியாச பூஜை",
-       "காலை <b>8</b> மணிக்கு ரிக், சுக்லயஜூர், கிருஷ்ணயஜூர் வேத பாராயணம்",
-       "மாலை <b>3</b> மணிக்கு சாம, அதர்வண வேத பாராயணம்"
-      ]
-     },
-     {
-      "title": "தலைமை, ஏற்பாடு",
-      "lines": [
-       "அல்லூர் சேஷாத்ரி கனபாடிகள், கோவிந்தபுரம் ஜனார்தன",
-       "ஏற்பாடுகளை வேததர்ம சாஸ்திர பரிபாலன சபை, ஸ்ரீ காஞ்சிகாமகோடி"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "ராம்நகர் கோதண்டராமர் கோயிலில் வேத சம்மேளன நிகழ்ச்சி நடைபெற்றது. காலை 7 மணி 30 நிமிடத்துக்கு ஸ்ரீ வேத வியாச பூஜை நடைபெற்றது. காலை 8 மணிக்கு ரிக், சுக்லயஜூர், கிருஷ்ணயஜூர் வேத பாராயணம் நடைபெற்றது. மாலை 3 மணிக்கு சாம, அதர்வண வேத பாராயணம் நடைபெற்றது. அல்லூர் சேஷாத்ரி கனபாடிகள், கோவிந்தபுரம் ஜனார்தன சிரெளதிகள், நீலகண்ட சாஸ்திரிகள் தலைமையில் வேதவிற்பன்னர்கள் திரளானோர் பங்கேற்றனர். வேததர்ம சாஸ்திர பரிபாலன சபை, ஸ்ரீ காஞ்சிகாமகோடி வேத பாராயண கைங்கர்ய சபை ஏற்பாடுகளைச் செய்திருந்தன. நிகழ்ச்சி நாளை நிறைவு பெறுகிறது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🕉️ ராம்நகர் கோதண்டராமர் கோயிலில் வேத சம்மேளனம்: நாளை நிறைவு\n\n📰 முழு விவரம்:\nராம்நகர் கோதண்டராமர் தேவஸ்தானத்தில் வேதவிற்பன்னர்களின் வேத சம்மேளன நிகழ்ச்சி நடைபெற்றது.\n🕖 காலை 7:30 மணிக்கு ஸ்ரீ வேத வியாச பூஜை நடைபெற்றது.\n🕗 காலை 8 மணிக்கு ரிக், சுக்லயஜூர், கிருஷ்ணயஜூர் வேத பாராயணம் நடைபெற்றது.\n🕒 மாலை 3 மணிக்கு சாம, அதர்வண வேத பாராயணம் நடைபெற்றது.\n👥 அல்லூர் சேஷாத்ரி கனபாடிகள், கோவிந்தபுரம் ஜனார்தன சிரெளதிகள், நீலகண்ட சாஸ்திரிகள் தலைமையில் வேதவிற்பன்னர்கள் திரளானோர் பங்கேற்றனர்.\n🙏 வேததர்ம சாஸ்திர பரிபாலன சபை, ஸ்ரீ காஞ்சிகாமகோடி வேத பாராயண கைங்கர்ய சபை ஏற்பாடுகளைச் செய்திருந்தன.\n\nVedic conclave at Kothandaramar temple Ramnagar Coimbatore | Coimbatore news\n📍 ராம்நகர், கோவை மாவட்டம் | 28 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Ramnagar #கோவை #CoimbatoreNews",
-   "prompts": "A row of Vedic scholars sits cross-legged on mats in the open hall of the Kothandaramar temple in Ramnagar, Coimbatore, reciting the Vedas in unison at the morning session. The men wear white veshti with bare upper bodies and sacred threads, and some wear the traditional angavastram over the shoulders; they are seen from behind and from a distance, with an audience of devotees seated further back. Before them stands a low wooden table holding palm-leaf or bound Veda books, brass lamps, a small kalasam and fresh flowers for the Veda Vyasa puja. The hall has pillars with carved stone and a tiled or concrete roof, and the stone gopuram of the temple is visible through the open entrance. Daylight from the morning sun falls softly across the mats, with a few ceiling fans and devotees in sarees and shirts at the back. Camera at eye level or slightly high, 35 mm lens, wide enough to show the full hall and the scholars. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of the open Vedic texts and ritual items laid on a low wooden stand during the Veda Vyasa puja at the Kothandaramar temple in Ramnagar, Coimbatore. Bound manuscripts with worn pages, a brass lamp with a burning wick, a small brass kalasam with mango leaves, marigold and jasmine garlands and a few scattered flower petals fill the frame. Behind the stand, the hands of a scholar in white veshti rest on the book, seen softly out of focus with the sacred thread visible over the bare shoulder. The background shows the pillars of the temple hall in warm morning light. Camera close, shallow depth of field, 50 mm lens, eye level, with no readable text on the pages or labels. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/vedic-recitation-begins-at-godandarama-temple/4387642",
-   "published": "2026-11-28T01:11:03+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - fact-check: no problems found",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 0 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795836922/kovaiminnal/uzbmervno74gmc9smgw8.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795836925/kovaiminnal/morowz9vzbfmtpxphmbi.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோடங்கிப்பட்டி பள்ளியில் காய்கறி விற்பனை: மாணவர்கள் அசத்தல்",
-   "english_headline": "Kodangipatti school students display and sell locally grown vegetables, Pollachi",
-   "category": "Education",
-   "location": "Kodangipatti, Pollachi, Coimbatore district",
-   "importance": "Low",
-   "scope": "local",
-   "post_to": "Kovai Minnal",
-   "slides_spec": {
-    "v": 3,
-    "cat": "பள்ளி நிகழ்ச்சி",
-    "loc": "கோடங்கிப்பட்டி, பொள்ளாச்சி",
-    "hl1": "பொள்ளாச்சியில் மாணவர்கள் காய்கறி விற்பனை",
-    "hl2": "உள்ளூர் விளைபொருட்கள் காட்சி",
-    "slides": [
-     {
-      "title": "என்ன நடந்தது?",
-      "lines": [
-       "கோடங்கிப்பட்டி ஊராட்சி ஒன்றிய தொடக்கப்பள்ளியில் நிகழ்ச்சி",
-       "ஊரில் விளைந்த காய்கறிகளைக் காட்சிப்படுத்தி விற்பனை",
-       "சுற்றுச்சூழல் மன்றம் சார்பில் நடத்தப்பட்டது"
-      ]
-     },
-     {
-      "title": "யார் பங்கேற்றனர்?",
-      "lines": [
-       "பள்ளி மேலாண்மைக் குழுத் தலைவர் அனுசுயாதேவி தலைமை",
-       "தலைமையாசிரியர் தினகரன், ஆசிரியர் சத்தியா ஒருங்கிணைத்தனர்",
-       "மேலாண்மைக் குழு உறுப்பினர்கள், பொதுமக்கள் பங்கேற்பு"
-      ]
-     },
-     {
-      "title": "மாணவர்கள் கற்றது",
-      "lines": [
-       "வணிகத் திறன், கணிதம், பண மேலாண்மை கற்றனர்",
-       "காய்கறிகளின் முக்கியத்துவம், இயற்கை விவசாயம் அறிந்தனர்",
-       "நுகர்வோருக்கு நேரடியாக காய்கறிகளை விற்றனர்"
-      ]
-     }
-    ],
-    "carousel": false
-   },
-   "reel_script": "பொள்ளாச்சி அருகே கோடங்கிப்பட்டி பள்ளி மாணவர்கள் தாங்கள் வளர்த்த காய்கறிகளை விற்று அசத்தினர். ஊராட்சி ஒன்றிய தொடக்கப்பள்ளியின் சுற்றுச்சூழல் மன்றம் இந்த நிகழ்ச்சியை நடத்தியது. ஊரில் விளைந்த காய்கறிகளைக் காட்சிக்கு வைத்து மாணவர்கள் நேரடியாக விற்பனை செய்தனர். பள்ளி மேலாண்மைக் குழுத் தலைவர் அனுசுயாதேவி தலைமை வகித்தார். தலைமையாசிரியர் தினகரனும், ஆசிரியர் சத்தியாவும் நிகழ்ச்சியை ஒருங்கிணைத்தனர். மேலாண்மைக் குழு உறுப்பினர்களும் பொதுமக்களும் பங்கேற்றனர். உள்ளூர் விவசாயத்தின் முக்கியத்துவத்தை மாணவர்கள் அறிந்துகொண்டனர். வணிகத் திறன், கணிதம், பண மேலாண்மை, தன்னம்பிக்கை ஆகியவற்றையும் கற்றுக்கொண்டனர். நுகர்வோருக்கு நேரடியாக காய்கறிகளை விற்பனை செய்ததன் மூலம் இயற்கை விவசாயத்தின் மேன்மையையும் உணர்ந்தனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🥕 பொள்ளாச்சியில் மாணவர்கள் காய்கறி விற்று அசத்தல்\n\n📰 முழு விவரம்:\nபொள்ளாச்சி அருகே கோடங்கிப்பட்டி ஊராட்சி ஒன்றிய தொடக்கப்பள்ளியின் சுற்றுச்சூழல் மன்றம் சார்பில் நிகழ்ச்சி நடைபெற்றது. ஊரில் விளைவிக்கப்பட்ட காய்கறிகளைக் காட்சிப்படுத்தி மாணவர்கள் விற்பனை செய்தனர். பள்ளி மேலாண்மைக் குழுத் தலைவர் அனுசுயாதேவி தலைமை வகித்தார். தலைமையாசிரியர் தினகரன், ஆசிரியர் சத்தியா ஒருங்கிணைத்தனர்.\n📍 இடம்: கோடங்கிப்பட்டி, பொள்ளாச்சி\n🥦 காய்கறிகளின் முக்கியத்துவம், இயற்கை விவசாய ஆர்வம் குறித்து மாணவர்கள் அறிந்துகொண்டனர்.\n💰 வணிகத் திறன், கணிதம், பண மேலாண்மை, தன்னம்பிக்கை ஆகியவற்றை நேரடியாகக் கற்றனர்.\nஇந்தச் செய்தியைத் தேவைப்படுவோருக்கு Share செய்யுங்கள்.\n\nKodangipatti school students sell vegetables | Pollachi news\n📍 கோடங்கிப்பட்டி, பொள்ளாச்சி, கோவை மாவட்டம் | 27 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Pollachi #CoimbatoreNews #கோவை",
-   "prompts": "A group of young students in Tamil Nadu school uniform stand behind a low table at a village primary school in Kodangipatti, near Pollachi, selling fresh locally grown vegetables to villagers. Neatly arranged heaps of green and red vegetables fill the table and baskets, with a small weighing scale and cloth bags placed among them. A teacher in a sari stands at the side, and a few village women and men in simple cotton clothes, seen from behind, are buying from the children. The school campus has a plain single-storey building with a tiled roof, a small open ground and a few trees in the background, with the faint outline of Western Ghats hills far away. It is daylight, with soft natural sunlight making the vegetables look fresh and bright. Shot at eye level or slightly high with a 35 mm lens, wide enough to show the stall, the students, and the school building. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a neat display of freshly harvested locally grown vegetables, such as bright green beans, drumsticks, tomatoes and brinjals, arranged in woven baskets on a wooden table at a village school stall in Kodangipatti. A small hand-held weighing scale and a stack of cloth bags sit beside the produce, with a child's small hand partly visible placing a vegetable on the scale. The background is softly blurred, showing the edge of a school uniform and a few people seen from behind. Natural daylight falls across the produce, emphasising the fresh colours and textures. Shot with a 35 mm lens at slightly high angle, focused on the vegetables and the scale. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/schoolchildren-display-vegetables/4387673",
-   "published": "2026-11-27T17:52:29+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: source/outlet name or link appears: தினகரன்",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
-   "post_time": "right after your reply, same day",
-   "_area": "N",
-   "_score": 999,
-   "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795836934/kovaiminnal/lmkc5jlkl8vqfcdxvm6o.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795836938/kovaiminnal/q2nmcu6qaucg1ukih7ke.jpg"
-   ]
-  },
-  {
-   "tamil_headline": "கோவையில் குழந்தை திருமணம் ஒழிக்க ஆர்.எஸ்.புரம் போலீசார் பேரணி",
-   "english_headline": "R.S.Puram police and school girls hold 2 km rally in Coimbatore to end child and forced marriage",
-   "category": "Crime & Safety",
-   "location": "R.S.Puram, Coimbatore city, Coimbatore district",
+   "tamil_headline": "ஈஷாவில் 15-வது இன்சைட் தலைமைத்துவ நிகழ்ச்சி தொடங்கியது",
+   "english_headline": "15th INSIGHT leadership programme begins at Isha Yoga Centre, Coimbatore; Sadhguru inaugurates",
+   "category": "Business & Prices",
+   "location": "Isha Yoga Centre, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "விழிப்புணர்வு",
-    "loc": "ஆர்.எஸ்.புரம்",
-    "hl1": "ஆர்.எஸ்.புரம்: குழந்தை திருமணம் ஒழிக்க",
-    "hl2": "2 கி.மீ தூரம் நடந்த பேரணி",
+    "cat": "தலைமைத்துவம்",
+    "loc": "ஈஷா யோக மையம், கோவை",
+    "hl1": "ஈஷாவில் 15-வது இன்சைட் நிகழ்ச்சி",
+    "hl2": "சத்குரு தொடங்கி வைத்தார்",
     "slides": [
      {
-      "title": "என்ன நடந்தது?",
+      "title": "என்ன நிகழ்ச்சி?",
       "lines": [
-       "குழந்தை திருமணம், கட்டாய திருமணம் ஒழிப்புக்காக",
-       "ஆர்.எஸ்.புரம் போலீசார் மாணவிகளுடன் இணைந்து நடத்தினர்",
-       "அம்மணியம்மாள் பெண்கள் மேல்நிலைப் பள்ளி மாணவிகள் பங்கேற்பு"
+       "ஈஷா யோக மையத்தில் சத்குரு அகாடமி நடத்தும் இன்சைட் நிகழ்ச்சி",
+       "தொழில் வளர்ச்சி, தலைமைத்துவத் திறனுக்கான 15-வது பதிப்பு",
+       "நேற்று (<b>26/11/2026</b>) சத்குரு தொடங்கி வைத்தார்"
       ]
      },
      {
-      "title": "எத்தனை தூரம்?",
+      "title": "யார் பங்கேற்பு?",
       "lines": [
-       "<b>2 கி.மீ</b> தூரத்துக்கு பேரணி நடந்தது",
-       "மாணவிகள், ஆசிரியர்கள் பங்கேற்றனர்",
-       "உதவி கமிஷனர் செல்லதுரை பங்கேற்றார்"
+       "<b>200</b>-க்கும் மேற்பட்ட தொழில் நிறுவனங்களின் உரிமையாளர்கள்",
+       "தொழில்முனைவோர், தலைமை நிர்வாகிகள் பங்கேற்பு",
+       "அடுத்த <b>3 நாட்கள்</b> நிகழ்ச்சி நடைபெறும்"
       ]
      },
      {
-      "title": "யார் பங்கேற்றனர்?",
+      "title": "பேச்சாளர்கள்",
       "lines": [
-       "இன்ஸ்பெக்டர் சிவக்குமார் பங்கேற்றார்",
-       "ஆசிரியர்களும் பேரணியில் கலந்துகொண்டனர்",
-       "குழந்தை திருமணத்துக்கு எதிரான விழிப்புணர்வு"
+       "அதானி குழும தலைமைத் தொழில்நுட்ப அதிகாரி சுதீப்தா",
+       "அப்பல்லோ மருத்துவமனைகளின் டாக்டர் சங்கீதா ரெட்டி",
+       "ஹீரோ ஃபின்கார்ப் அபிமன்யு முஞ்சால், முருகவேல் ஜானகிராமன்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "ஆர் எஸ் புரத்தில் குழந்தை திருமணத்தை ஒழிக்க போலீசார் பேரணி நடத்தினர். குழந்தை திருமணம் மற்றும் கட்டாய திருமணத்துக்கு எதிரான விழிப்புணர்வுக்காக இந்தப் பேரணி நடைபெற்றது. ஆர் எஸ் புரம் போலீசார் அம்மணியம்மாள் பெண்கள் மேல்நிலைப் பள்ளி மாணவிகளுடன் இணைந்து பங்கேற்றனர். 2 கிலோமீட்டர்தூரத்துக்கு இந்தப் பேரணி நடைபெற்றது. மாணவிகள், ஆசிரியர்கள் மற்றும் உதவி கமிஷனர் செல்லதுரை பங்கேற்றனர். இன்ஸ்பெக்டர் சிவக்குமாரும் பேரணியில் கலந்துகொண்டார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🚸 ஆர்.எஸ்.புரத்தில் குழந்தை திருமணம் ஒழிக்க விழிப்புணர்வு பேரணி\n\n📰 முழு விவரம்:\nகுழந்தை திருமணம், கட்டாய திருமணம் ஒழிப்பதற்காக ஆர்.எஸ்.புரம் போலீசார் அம்மணியம்மாள் பெண்கள் மேல்நிலைப் பள்ளி மாணவிகளுடன் இணைந்து விழிப்புணர்வு பேரணியில் ஈடுபட்டனர்.\n2 கி.மீ தூரத்துக்கு நடந்த இந்தப் பேரணியில் மாணவிகள், ஆசிரியர்கள், உதவி கமிஷனர் செல்லதுரை, இன்ஸ்பெக்டர் சிவக்குமார் ஆகியோர் பங்கேற்றனர்.\n\n📍 இடம்: ஆர்.எஸ்.புரம், கோவை\n🏫 பங்கேற்றோர்: அம்மணியம்மாள் பெண்கள் மேல்நிலைப் பள்ளி மாணவிகள், ஆசிரியர்கள்\n👮 நடவடிக்கை: ஆர்.எஸ்.புரம் போலீசார் விழிப்புணர்வு பேரணி நடத்தினர்\n\nR.S.Puram child marriage awareness rally | Coimbatore news\n📍 ஆர்.எஸ்.புரம், கோவை மாவட்டம் | 28 நவம்பர் 2026\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Coimbatore #மாணவிகள் #CoimbatoreNews",
-   "prompts": "A line of Tamil Nadu school girls in school uniform walks down a busy R.S.Puram street in Coimbatore, led by police officers in khaki uniform during an awareness rally against child marriage. Seen from behind and from a distance, the girls carry blank placards and hold hands in a chain, with teachers in sarees walking beside them. Along the roadside are small shops with shutters, a few two-wheelers parked at the kerb and a town bus passing in the background. The daylight is bright and clear, with a few trees lining the street. Camera at eye level, 35 mm lens, wide enough to show the full length of the procession and the street. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up detail of a group of school girls' hands holding a plain blank placard and a small handheld flag, with the blurred khaki sleeve of a police officer visible at the edge of the frame. The girls wear white shirts and navy or green school uniform skirts, seen from behind. Behind them, a slightly out-of-focus street with shop shutters and a two-wheeler passes. Bright daylight, shallow depth of field, camera slightly high, 50 mm lens, focusing on the placard and the hands to show the rally against child marriage. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/rally-to-end-child-marriage/4387676",
-   "published": "2026-11-28T01:13:03+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 52 words; need 60-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block); caption copies the article word for word (22 words in a row, 71% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 2 validator problem(s)",
+   "reel_script": "கோவை ஈஷா யோக மையத்தில் 15-வது இன்சைட் தலைமைத்துவ நிகழ்ச்சி தொடங்கியுள்ளது. நேற்று, நவம்பர் 26ஆம் தேதி, சத்குரு இதைத் தொடங்கி வைத்தார். சத்குரு அகாடமி ஆண்டுதோறும் நடத்தும் இந்த நிகழ்ச்சி, தொழில் வளர்ச்சி மற்றும் தலைமைத்துவத் திறன்களை மேம்படுத்துகிறது. அடுத்த 3 நாட்கள் நடைபெறும் இதில் 200-க்கும் மேற்பட்ட தொழில் நிறுவனங்களின் உரிமையாளர்களும் உயர் பொறுப்பிலுள்ள நிர்வாகிகளும் பங்கேற்கின்றனர். அதானி குழுமத்தின் தலைமைத் தொழில்நுட்ப அதிகாரி சுதீப்தா பட்டாச்சார்யா, அப்பல்லோ மருத்துவமனைகளின் டாக்டர் சங்கீதா ரெட்டி உள்ளிட்டோர் உரையாற்றுகின்றனர். இந்த நிகழ்ச்சியில் தொழில் தொடங்குதல், நிறுவனங்களை வளர்த்தல் பற்றிய அனுபவங்கள் பகிரப்படும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🧭 ஈஷாவில் 15-வது இன்சைட் தலைமைத்துவ நிகழ்ச்சி: சத்குரு தொடங்கி வைத்தார்\n\n📰 முழு விவரம்:\nகோவை ஈஷா யோக மையத்தில் சத்குரு அகாடமி சார்பில் 15-வது இன்சைட் நிகழ்ச்சி நடைபெறுகிறது. தொழில் வளர்ச்சி, தலைமைத்துவத் திறன்களை மேம்படுத்துவதற்காக ஆண்டுதோறும் நடத்தப்படும் இந்த நிகழ்ச்சியை நேற்று (26/11/2026) சத்குரு தொடங்கி வைத்தார்.\nஅடுத்த 3 நாட்கள் நடைபெறும் இதில் 200-க்கும் மேற்பட்ட தொழில் நிறுவனங்களின் உரிமையாளர்கள், தொழில்முனைவோர், உயர் பொறுப்பிலுள்ள தலைமை நிர்வாகிகள் பங்கேற்கின்றனர்.\nஅதானி குழுமத் தலைமைத் தொழில்நுட்ப அதிகாரி சுதீப்தா பட்டாச்சார்யா, அப்பல்லோ மருத்துவமனைகளின் இணை நிர்வாக இயக்குநர் டாக்டர் சங்கீதா ரெட்டி, ஹீரோ ஃபின்கார்ப் அபிமன்யு முஞ்சால், மேட்ரிமோனி டாட் காம் முருகவேல் ஜானகிராமன் ஆகியோர் வெவ்வேறு அமர்வுகளில் உரையாற்றுகின்றனர்.\nஎம்.கே. வென்ச்சர்ஸ் மது கேலா, அக்னிகுல் காஸ்மோஸ் ஸ்ரீநாத் ரவிச்சந்திரன், வில்வா க்ருத்திகா குமரன், மோக்லிக்ஸ் மற்றும் கிரெட்லிக்ஸ் ராகுல் கார்க் ஆகியோரும் தங்கள் அனுபவங்களைப் பகிர்கின்றனர்.\nசத்குரு பேசுகையில், மனிதர்கள் தகவல்களுக்குள் மட்டும் சுருங்கிவிடக் கூடாது என்றும், தொழில், கலை, விளையாட்டு, அரசியல், ஆன்மீகம் எதுவாக இருந்தாலும் உள்நிலையையும் செயல்திறனையும் உயர்ந்த நிலையில் வைத்திருப்பது முக்கியம் என்றும் வலியுறுத்தினார்.\nஇன்சைட் நிகழ்ச்சி தொழில் நிறுவன உரிமையாளர்கள், உயர் நிர்வாகிகளுக்கான முதன்மையான தலைமைத்துவப் பயிற்சி. சத்குரு அகாடமி 2012ஆம் ஆண்டு சத்குருவால் தொடங்கப்பட்டது. கடந்த நிகழ்ச்சிகளில் ரத்தன் டாடா, என்.ஆர். நாராயண மூர்த்தி, எஸ். சோமநாத், கிரண் மஜும்தார் ஷா உள்ளிட்ட பலர் பங்கேற்றுள்ளனர்.\n\nIsha Insight leadership programme 15th edition Coimbatore | Coimbatore news\n📍 ஈஷா யோக மையம், கோவை மாவட்டம் | 28 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Isha #CoimbatoreNews #கோவை",
+   "prompts": "A large audience of over 200 business owners, entrepreneurs and senior executives sits in rows of chairs inside a spacious hall at the Isha Yoga Centre campus in Coimbatore district, as a leadership programme begins. Seen from the back of the hall at eye level, the delegates wear formal shirts, sarees and salwar kameez, and some hold notebooks. At the front, a raised stage with a simple dais and a few empty seats is lit by soft daylight through large open windows, with green trees visible outside. Ceiling fans and neat rows of chairs fill the space. The atmosphere is calm and focused. Shot on a 35 mm lens from eye level, wide enough to show the full hall and the stage. No readable text or signboards visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a neatly arranged desk on the front row of the hall, with a notebook, a steel water bottle and a pen resting beside a delegate's name card left face-down, blurred so no text is readable. Beyond it, out of focus, rows of chairs and the edge of the stage are visible. A hand rests lightly on the notebook, seen from behind. Soft natural light falls through the window, and green foliage blurs in the background. The detail suggests the business leadership programme's preparation and participants' readiness. Shot at 35 mm with a shallow depth of field, eye level, no readable text, no logos or brand names. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dailythanthi.com/news/tamilnadu/15th-insight-leadership-program-at-isha-inaugurated-by-sadhguru",
+   "published": "2026-11-28T04:05:32Z",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 72 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block); not grounded: location 'மையம்' is not in the article",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795836944/kovaiminnal/w4quyq770z6pkkb4xxa3.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795836947/kovaiminnal/twg2knurpw3zit7vfivc.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795851290/kovaiminnal/dqnzrfsn9xjoatwyvtur.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795851296/kovaiminnal/stlptmedquyq3gexmwpa.jpg"
    ]
   },
   {
-   "tamil_headline": "வீட்டிலேயே மொறுமொறுப்பான கச்சா வாழைக்காய் மசாலா சிப்ஸ் செய்முறை",
-   "english_headline": "Crispy raw banana masala chips recipe at home",
-   "category": "Food & Recipes",
-   "location": "unknown",
-   "importance": "Low",
+   "tamil_headline": "கோவையில் நாரைகள் பறவைக் காய்ச்சலால் உயிரிழப்பு; மாதிரிகள் உறுதி",
+   "english_headline": "Over 10 storks die near Shakti Road omni bus stand in Coimbatore city; bird flu confirmed",
+   "category": "Health",
+   "location": "Shakti Road omni bus stand area, Coimbatore city, Coimbatore district",
+   "importance": "High",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "சமையல் குறிப்பு",
-    "loc": "கோவை மாவட்டம்",
-    "hl1": "வீட்டிலேயே கச்சா வாழை மசாலா சிப்ஸ்",
-    "hl2": "4 வாழைக்காயில் செய்யலாம்",
+    "cat": "பறவைக் காய்ச்சல்",
+    "loc": "சக்தி சாலை, கோவை மாநகர்",
+    "hl1": "கோவையில் நாரைகள் பறவைக் காய்ச்சலால் பலி",
+    "hl2": "10க்கும் மேற்பட்ட நாரைகள்",
     "slides": [
      {
-      "title": "தேவையான பொருள்",
+      "title": "என்ன நடந்தது?",
       "lines": [
-       "கச்சா வாழைக்காய் <b>4</b>",
-       "எண்ணெய் தேவையான அளவு",
-       "மஞ்சள்தூள் <b>¼ டீஸ்பூன்</b>"
+       "கோவை மாநகர், சக்தி சாலை ஆம்னி பஸ் நிலையம் அருகே <b>10க்கும்",
+       "மக்கள் சந்தேகமடைந்து வனத்துறைக்குத் தகவல் கொடுத்தனர்",
+       "வனத்துறையினர் மாதிரிகளை போபால் ஆய்வகத்துக்கு அனுப்பினர்"
       ]
      },
      {
-      "title": "தயாரிக்கும் முறை",
+      "title": "ஆய்வு முடிவு",
       "lines": [
-       "வாழைக்காயை மெல்லிய வட்டத் துண்டுகளாக நறுக்குங்கள்",
-       "தண்ணீரில் போட்டு வடித்து, துணியில் உலர்த்துங்கள்",
-       "மிதமான தீயில் சிறிது சிறிதாகப் பொரியுங்கள்"
+       "நாரைகள் பறவைக் காய்ச்சலால் பாதிக்கப்பட்டிருந்தது <b>உறுதியானது</b>",
+       "சுகாதாரத்துறைக்கு உடனடியாகத் தகவல் அளிக்கப்பட்டது",
+       "கடலூரில் கோழிகள் இறந்த பின்னணியில் இந்த சம்பவம்"
       ]
      },
      {
-      "title": "மசாலா சேர்க்கும்",
+      "title": "அடுத்து என்ன?",
       "lines": [
-       "சூடான சிப்ஸின் மேல் மசாலாவைத் தூவுங்கள்",
-       "மிளகாய்த்தூள், மிளகுத்தூள், சீரகத்தூள், பெருங்காயத்தூள்",
-       "காரம் குறைவாக வேண்டுமெனில் மிளகாய்த்தூளைக் குறையுங்கள்"
+       "பரவலைத் தடுக்க நடவடிக்கைகள் முடுக்கி விடப்பட்டுள்ளன",
+       "தமிழக - கேரளா எல்லை சோதனைச் சாவடிகளில் கண்காணிப்பு தீவிரம்",
+       "கடலூரில் சுமார் <b>80 ஆயிரம்</b> கோழிகள் மண்ணில்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "வாழைக்காயை மெல்லியதாக நறுக்கி, மொறுமொறுப்பான மசாலா சிப்ஸ் வீட்டிலேயே செய்யலாம். நான்கு கச்சா வாழைக்காயும் தேவையான அளவு எண்ணெயும் போதும். மஞ்சள்தூள் கால் டீஸ்பூன் சேர்க்கவும். முதலில் வாழைக்காயை ஒரே அளவான மெல்லிய வட்டங்களாக நறுக்கவும். துண்டுகள் சீராக இருந்தால்தான் சிப்ஸ் நன்றாக மொறுமொறுக்கும். நறுக்கியவற்றைத் தண்ணீரில் போட்டு, பின் வடிகட்டவும். சுத்தமான துணியில் பரப்பி ஈரத்தை முழுமையாக உலர்த்தவும். கடாயில் எண்ணெயை ஊற்றி மிதமான தீயில் சூடாக்கவும். துண்டுகளை சிறிது சிறிதாக எண்ணெயில் போடவும். ஒட்டாமல் இருக்க கரண்டியால் மெதுவாகப் பிரிக்கவும். ஓரங்கள் மொறுமொறுப்பானதும் தீயைச் சற்று கூட்டி, சில நொடிகள் பொரிக்கவும். எண்ணெயை வடிக்க டிஷ்யூ பேப்பரில் வைக்கவும். சூடாக இருக்கும்போதே மசாலாவைத் தூவவும். மிளகாய்த்தூள், மிளகுத்தூள், சீரகத்தூள், பெருங்காயத்தூள், உப்பு சேர்த்துக் கலந்து தூவவும். சிப்ஸ் உடையாமல் மெதுவாகக் குலுக்கவும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🥔 வீட்டிலேயே மொறுமொறுப்பான கச்சா வாழைக்காய் மசாலா சிப்ஸ்\n\n📰 முழு விவரம்:\nகச்சா வாழைக்காய் 4 எண்ணிக்கை, தேவையான அளவு எண்ணெய், ¼ டீஸ்பூன் மஞ்சள்தூள் சேர்க்கவும். வாழைக்காயை மெல்லிய வட்டத் துண்டுகளாக நறுக்கி, தண்ணீரில் போட்டு வடிக்கவும். துணியில் பரப்பி ஈரத்தை நன்றாக உலர்த்தவும். மிதமான தீயில் சிறிது சிறிதாகப் பொரிக்கவும். ஓரங்கள் மொறுமொறுப்பானதும் தீயைச் சற்று கூட்டவும். டிஷ்யூ பேப்பரில் எண்ணெயை வடித்து, சூடாக இருக்கும்போதே மசாலாவைத் தூவவும்.\n🌶️ மசாலா: மிளகாய்த்தூள், மிளகுத்தூள், சீரகத்தூள், பெருங்காயத்தூள், உப்பு\n🌶️ காரம் குறைவாக வேண்டுமெனில் மிளகாய்த்தூளைக் குறைத்து, மிளகுத்தூள் மற்றும் சீரகத்தூளை சற்று அதிகரிக்கலாம்.\n\nCrispy raw banana masala chips recipe | Coimbatore home cooking\n📍 கோவை மாவட்டம் | 28 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #சமையல் #Recipe #CoimbatoreNews",
-   "prompts": "Crispy raw banana masala chips frying in a kadai of hot oil on a home gas stove in a Coimbatore household kitchen. A pair of hands from behind, wearing a cotton saree blouse sleeve, gently slides thin round slices of raw green banana into the bubbling oil with a slotted spoon, the slices just turning golden at the edges. The kitchen is a typical South Indian home with a tiled wall, a steel vessel rack and a small window letting in soft daylight. On the counter beside the stove sits a steel plate with more pale raw banana slices and a small bowl of dried spices. The camera is at eye level, 35 mm lens, wide enough to show the stove, the frying pan and the cook's hands, the frame shot from slightly behind the cook, with the warm oil glow and soft natural light. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up detail of freshly fried raw banana chips spread on white kitchen tissue paper to drain excess oil, golden and slightly crisp with curled edges. Beside them a small steel bowl holds a masala mix of red chilli powder, black pepper powder, cumin powder and a pinch of asafoetida, and a few chips are sprinkled with the spice, bright orange-red and speckled. Behind, slightly out of focus, a damp clean cloth and a bowl of water with sliced raw banana pieces hint at the preparation steps. The surface is a steel kitchen counter with a faint steam rising from the warm chips. The camera is close and slightly high, 35 mm, shallow depth of field, soft daylight from a kitchen window, no readable text or labels visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/raw-banana-spice-chips/4388200",
-   "published": "2026-11-28T04:21:01+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: slides_spec.loc 'கோவை மாவட்டம்' is only the district: write the town / village / area the article names (people share news of their own area)",
+   "reel_script": "கோவையில் நாரைகள் பறவைக் காய்ச்சலால் உயிரிழந்துள்ளன. கோவை மாநகரில் சக்தி சாலையின் ஆம்னி பஸ் நிலையம் அருகே 10க்கும் மேற்பட்ட நாரைகள் உயிரிழந்து கிடந்தன. சந்தேகமடைந்த மக்கள் வனத்துறையினருக்குத் தகவல் கொடுத்தனர். வனத்துறை அதிகாரிகள் நாரைகளின் மாதிரிகளைச் சேகரித்து போபாலில் உள்ள ஆய்வகத்துக்கு அனுப்பினர். அதன் முடிவுகள் தற்போது வெளியாகியுள்ளன. உயிரிழந்த நாரைகள் பறவைக் காய்ச்சலால் பாதிக்கப்பட்டிருந்தது உறுதியாகியுள்ளது. உடனடியாக சுகாதாரத்துறைக்குத் தகவல் அளிக்கப்பட்டு, பரவலைத் தடுக்க நடவடிக்கைகள் முடுக்கி விடப்பட்டுள்ளன. தமிழக - கேரளா எல்லை சோதனைச் சாவடிகளில் கண்காணிப்புப் பணி தீவிரப்படுத்தப்பட்டுள்ளது. இதற்கு முன் கடலூரில் பல கோழிப்பண்ணைகளில் அக்டோபர் மாத இறுதியில் நூற்றுக்கணக்கான கோழிகள் மர்மமான முறையில் உயிரிழந்தன. சுமார் 80 ஆயிரம் கோழிகள் மண்ணில் புதைக்கப்பட்டு அழிக்கப்பட்டன. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🐦 கோவையில் நாரைகள் உயிரிழப்பு: பறவைக் காய்ச்சல் உறுதி\n\n📰 முழு விவரம்:\nகோவை மாநகர், சக்தி சாலை ஆம்னி பஸ் நிலையம் அருகே 10க்கும் மேற்பட்ட நாரைகள் இறந்து கிடந்தன. சந்தேகமடைந்த மக்கள் வனத்துறையினருக்குத் தகவல் கொடுத்தனர். வனத்துறையினர் மாதிரிகளை போபாலில் உள்ள ஆய்வகத்துக்கு அனுப்பினர். முடிவுகளில் நாரைகள் பறவைக் காய்ச்சலால் பாதிக்கப்பட்டிருந்தது உறுதியானது.\n🏥 உடனடியாக சுகாதாரத்துறைக்குத் தகவல் அளிக்கப்பட்டு, பரவலைத் தடுக்க நடவடிக்கைகள் முடுக்கி விடப்பட்டுள்ளன.\n🚧 தமிழக - கேரளா எல்லை சோதனைச் சாவடிகளில் கண்காணிப்புப் பணி தீவிரப்படுத்தப்பட்டுள்ளது.\n🐔 கடலூரில் அக்டோபர் மாத இறுதியில் பல கோழிப்பண்ணைகளில் நூற்றுக்கணக்கான கோழிகள் உயிரிழந்தன. சுமார் 80 ஆயிரம் கோழிகள் மண்ணில் புதைக்கப்பட்டு அழிக்கப்பட்டன.\nℹ️ மக்கள் கவனத்திற்கு: இறந்த பறவைகளைத் தொடாமல், வனத்துறை அல்லது சுகாதாரத்துறைக்குத் தகவல் கொடுங்கள்.\n\nBird flu confirmed in storks near Shakti Road, Coimbatore | Coimbatore news\n📍 சக்தி சாலை, கோவை மாநகர் | 28 நவம்பர் 2026\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Coimbatore #பறவைக்காய்ச்சல் #CoimbatoreNews",
+   "prompts": "Forest department officials in green uniform stand beside a roadside patch near the Shakti Road omni bus stand in Coimbatore city, gloved and carefully lifting a white storks' bodies into a sealed plastic sample bag. Seen from a distance at eye level, the scene shows the busy edge of an omni bus stand with parked private omni buses and a few two-wheelers, a concrete footpath and a low boundary wall. A few local onlookers stand at a safe distance behind a yellow tape line, seen from behind, wearing shirts and sarees. Several large white storks lie still on the grey pavement and dusty ground beside a drain, their long legs and grey-black wing tips visible. Morning daylight, clear sky with faint haze, a few palm trees and the city skyline behind. Camera at eye level, 35 mm lens, wide enough to show the bus stand and the officials at work. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of three dead white storks lying on a damp concrete pavement edge beside a roadside drain in Coimbatore city, their long grey legs and folded white wings clearly visible, with a pair of blue disposable gloves and a sealed clear plastic sample bag placed nearby on the ground. Behind them, slightly out of focus, a khaki-uniformed forest officer kneels and a few dusty two-wheelers are parked along the road edge. Morning daylight, soft overcast light, dry leaves and a little litter on the pavement. Camera low and close, shallow depth of field, 35 mm, focused on the birds and the sample bag to tell the bird flu story. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-news/after-cuddalore-avian-influenza-spreads-in-coimbatore/4388334",
+   "published": "2026-11-28T10:50:00+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script copies the article word for word (15 words in a row, 19% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
    "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795836973/kovaiminnal/giz4v1kd8da4yx2fo6nt.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795836976/kovaiminnal/hjxxl1hwea9o4yjjp8v0.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795851302/kovaiminnal/crhegzktgw7wxpoxjvme.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795851305/kovaiminnal/bvyrx9kgtxrnitckmqb1.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "கோவையில் அடுத்தடுத்து உயிரிழந்த நாரைகளுக்குப் பறவைக் காய்ச்சல் உறுதி",
+   "english_headline": "Bird flu confirmed in storks that died one after another near Siddhapudur, Coimbatore",
+   "category": "Health",
+   "location": "Siddhapudur, Coimbatore city, Coimbatore district",
+   "importance": "High",
+   "scope": "local",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "பறவைக் காய்ச்சல்",
+    "loc": "சித்தாபுதூர், கோவை",
+    "hl1": "சித்தாபுதூரில்",
+    "hl2": "14 நாரைகள் உயிரிழப்பு",
+    "slides": [
+     {
+      "title": "என்ன நடந்தது?",
+      "lines": [
+       "கோவை சித்தாபுதூர் அருகே <b>14</b> குளத்து நாரைகள்",
+       "உயிரிழந்த நாரைகளுக்குப் பறவைக் காய்ச்சல் உறுதி",
+       "கடந்த <b>18</b> ஆம் தேதி நாரைகள் உயிரிழந்தன"
+      ]
+     },
+     {
+      "title": "பரிசோதனை முடிவு",
+      "lines": [
+       "நாரைகளின் மாதிரி முடிவுகளில் பறவைக் காய்ச்சல் பாதிப்பு உறுதி",
+       "ஒன்றிய அரசு இதை உறுதி செய்தது",
+       "கோவை மாநகரின் முக்கியப் பகுதியில் பறவைக் காய்ச்சல்"
+      ]
+     },
+     {
+      "title": "அதிகாரிகள்",
+      "lines": [
+       "சுகாதாரத் துறை, கால்நடை பராமரிப்புத் துறைக்குத் தகவல்",
+       "கோவை மாநகரில் முன்னெச்சரிக்கை நடவடிக்கைகள் எடுக்கப்படுகின்றன",
+       "வாளையாறு சோதனைச் சாவடியில் முகாம் அமைக்கப்பட்டுள்ளது"
+      ]
+     },
+     {
+      "title": "கேரள வாகனங்கள்",
+      "lines": [
+       "கேரளத்திலிருந்து வரும் வாகனங்களுக்குக் கிருமி நாசினி",
+       "வாகனங்களின் விவரங்களை அதிகாரிகள் சேகரித்து வருகின்றனர்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கோவையில் 14 நாரைகளுக்குப் பறவைக் காய்ச்சல் உறுதி செய்யப்பட்டுள்ளது. கோவை சித்தாபுதூர் அருகே கடந்த 18ஆம் தேதி 14 குளத்து நாரைகள் அடுத்தடுத்து உயிரிழந்தன. உயிரிழந்த நாரைகளின் மாதிரி முடிவுகளில் பறவைக் காய்ச்சல் பாதிப்பு இருப்பது பரிசோதனையில் தெரியவந்துள்ளது. இதை ஒன்றிய அரசு உறுதி செய்துள்ளது. இதையடுத்து சுகாதாரத் துறைக்கும், கால்நடை பராமரிப்புத் துறைக்கும் தகவல் தெரிவிக்கப்பட்டது. கோவை மாநகரில் முன்னெச்சரிக்கை நடவடிக்கைகள் எடுக்கப்பட்டு வருகின்றன. கோயம்புத்தூர் மாநகரின் முக்கியப் பகுதியில் பறவைக் காய்ச்சல் கண்டறியப்பட்டுள்ளது பொதுமக்கள் மத்தியில் பரபரப்பை ஏற்படுத்தியுள்ளது. தமிழ்நாடு-கேரள எல்லையில் உள்ள வாளையாறு சோதனைச் சாவடியில் முகாம் அமைக்கப்பட்டுள்ளது. கேரளத்திலிருந்து வரும் வாகனங்களுக்குக் கிருமி நாசினி தெளிக்கப்படுகிறது. வாகனங்களின் விவரங்களை அதிகாரிகள் சேகரித்து வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🐦 கோவை சித்தாபுதூரில் நாரைகளுக்குப் பறவைக் காய்ச்சல் உறுதி\n\n📰 முழு விவரம்:\nகோவை சித்தாபுதூர் அருகே 14 குளத்து நாரைகள் அடுத்தடுத்து உயிரிழந்தன. கடந்த 18ஆம் தேதி அவை உயிரிழந்தன. உயிரிழந்த நாரைகளின் மாதிரி முடிவுகளில் பறவைக் காய்ச்சல் பாதிப்பு இருப்பது உறுதியானது. இதை ஒன்றிய அரசு உறுதி செய்தது.\n📍 இடம்: சித்தாபுதூர் அருகே, கோவை மாநகரம்\n🔢 எண்ணிக்கை: 14 குளத்து நாரைகள்\n👮 நடவடிக்கை: சுகாதாரத் துறை, கால்நடை பராமரிப்புத் துறைக்குத் தகவல் தெரிவிக்கப்பட்டு, மாநகரில் முன்னெச்சரிக்கை நடவடிக்கைகள் எடுக்கப்பட்டு வருகின்றன.\n🚧 வாளையாறு சோதனைச் சாவடியில் முகாம் அமைத்து, கேரளத்திலிருந்து வரும் வாகனங்களுக்குக் கிருமி நாசினி தெளிக்கப்படுகிறது. வாகனங்களின் விவரங்களை அதிகாரிகள் சேகரித்து வருகின்றனர்.\n\nBird flu confirmed in storks Siddhapudur Coimbatore | Coimbatore news\n📍 சித்தாபுதூர், கோவை மாவட்டம் | 28 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Siddhapudur #CoimbatoreNews #கோவை",
+   "prompts": "A pair of white pond storks lie still at the muddy edge of a pond in Siddhapudur, Coimbatore, while two health department workers in protective gloves and masks stand a few metres away beside a roadside tree. The place is a open pond surrounded by bushes and a dusty path, with a few city houses and a distant line of trees under daylight. Two workers in plain shirts and trousers are seen from behind, one holding a white sample box; a couple of onlookers stand far back at the fence. In the foreground the storks lie near reeds and shallow water, and a single red-and-white barrier tape hangs from a wooden stake. Shot at eye level, 35 mm, wide enough to show the pond and the workers, soft morning daylight. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a sprayer nozzle misting disinfectant over a line of parked two-wheelers and a small car at a roadside check post on the Tamil Nadu-Kerala border near Valayar, with a worker in gloves and mask holding the hose. The check post has a plain concrete barrier and a striped road divider, and a few officials in khaki-coloured shirts stand behind the vehicles. Fine white mist hangs in the air and wets the road surface. Vehicles are seen from the side, no readable text or number plates visible. Shot at slightly high angle, 35 mm, daylight, dusty road atmosphere. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinakaran.com/news/bird-flu-confirmed-in-coimbatore",
+   "published": "2026-11-28T10:33:33+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): கோயம்புத்தூர் ('கோயம்புத்தூர் மாநகரின் முக்கிய பகுதியில் பறவைக் காய்ச்சல் கண')",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795851310/kovaiminnal/dudka32imuhbv8rklrvt.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795851316/kovaiminnal/wsa9qjmhzv2e6fvcjgfo.jpg"
    ]
   }
  ]
