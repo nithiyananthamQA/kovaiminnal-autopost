@@ -3,261 +3,376 @@
   "earlier stories still waiting for images: []",
   "instagram check: 50 recent posts read from the page",
   "pick round: only the picked links are written (research_free/pick.py)",
-  "manual link added: https://www.dinakaran.com/news/bird-flu-confirmed-in-coimbatore",
-  "manual link added: https://www.dailythanthi.com/news/tamilnadu/15th-insight-leadership-program-at-isha-inaugurated-by-sadhguru",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-news/after-cuddalore-avian-influenza-spreads-in-coimbatore/4388334",
-  "manual link added: https://www.dinamalar.com/news/tamil-nadu-news/the-answers-of-the-hour/4388024",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/can-we-allow-ourselves-to-steal-our-time/4388362",
+  "manual link added: https://www.dailythanthi.com/news/tamilnadu/thiruparankundram-issue-chief-minister-vijay-has-been-misled-annamalai",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/flowering-decreases-on-a-rainy-day/4388380",
+  "manual link added: https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/to-pass-ias-exam-it-is-necessary-to-take-sample-tests-collector-advises-competitive-candidates/4388356",
   "candidate filter: collected=4",
   "to write: 4 Coimbatore district candidates (max 4 stories)",
   "round: top 4 of 4 candidates",
   "candidates waiting: 4 Coimbatore; time left 79 min",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-news/the-answers-o",
-  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-news/after-cuddalo",
-  "try (N) manual=True: https://www.dailythanthi.com/news/tamilnadu/15th-insight-lea",
-  "skip (N) could not open:  [https://www.dinamalar.com/news/tamil-nadu-news/the-answers-o] 404 Client Error: Not Found for url: https://www.dinamalar.com/news/tamil-nadu-n",
-  "try (N) manual=True: https://www.dinakaran.com/news/bird-flu-confirmed-in-coimbat",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
+  "try (N) manual=True: https://www.dailythanthi.com/news/tamilnadu/thiruparankundra",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 2})",
   "posting job started at once",
+  "try (N) manual=True: https://www.dinamalar.com/news/tamil-nadu-district-news-coim",
   "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 4})",
-  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 6})",
-  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 3}, time left 78 min",
-  "filed: 3 Coimbatore district stories (target 4), reels only",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 7})",
+  "auto images: 1 of 1 stories ({'black-forest-labs/flux-1-schnell': 9})",
+  "candidate loop ended: left 0, tried={'N': 4}, done={'N': 4}, time left 74 min",
+  "filed: 4 Coimbatore district stories (target 4), reels only",
   "queue: 0 news waiting to be written",
-  "All News sheet: {\"ok\":true,\"added\":3,\"updated\":1}"
+  "All News sheet: {\"ok\":true,\"added\":4,\"updated\":0}"
  ],
  "llm": [
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.6-flash",
-  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
-  "dead for this round: gemini/gemini-3.5-flash",
-  "fail gemini/gemini-3-flash-preview: gemini gemini-3-flash-preview 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, plea",
-  "dead for this round: gemini/gemini-3-flash-preview",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok gemini/gemini-3.6-flash (15s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3.6-flash (15s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3.6-flash (18s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "ok gemini/gemini-3.6-flash (14s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "ok gemini/gemini-3.6-flash (18s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3.6-flash (13s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3.6-flash (17s)",
   "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
   "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok gemini/gemini-3.6-flash (10s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3.6-flash (8s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok gemini/gemini-3.6-flash (12s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok gemini/gemini-3.6-flash (18s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "ok gemini/gemini-3.6-flash (9s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "ok gemini/gemini-3.6-flash (21s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "fail gemini/gemini-3.6-flash: gemini gemini-3.6-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "switching away from gemini/gemini-3.6-flash for 10 min",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "fail gemini/gemini-3.5-flash: gemini gemini-3.5-flash 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please che",
+  "dead for this round: gemini/gemini-3.5-flash",
+  "ok gemini/gemini-3-flash-preview (11s)",
+  "ok gemini/gemini-3-flash-preview (11s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3-flash-preview",
+  "ok groq/openai/gpt-oss-120b (7s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
+  "fail gemini/gemini-3-flash-preview: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+  "poor answer - skipped for 30 min: gemini/gemini-3-flash-preview",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "dead for this round: groq/openai/gpt-oss-120b",
+  "switching away from groq/openai/gpt-oss-120b for 10 min",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 413: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
   "switching away from groq/openai/gpt-oss-120b for 10 min",
-  "fail groq/openai/gpt-oss-120b: groq openai/gpt-oss-120b 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `o",
-  "switching away from groq/openai/gpt-oss-120b for 10 min",
+  "ok anthropic/claude-haiku-5-5",
+  "ok groq/qwen/qwen3.8-27b (4s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
+  "ok anthropic/claude-haiku-5-5",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
+  "ok groq/qwen/qwen3.8-27b (2s)",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
+  "ok groq/qwen/qwen3.8-27b (4s)",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
+  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
   "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m",
-  "switching away from groq/qwen/qwen3.8-27b for 10 min",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "ok anthropic/claude-haiku-5-5",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
-  "groq models: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b",
-  "gemini models: gemini-3.6-flash, gemini-3.5-flash, gemini-3-flash-preview, gemini-2.5-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash",
+  "fail groq/qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6",
   "ok anthropic/claude-haiku-5-5"
  ],
  "stories": [
   {
-   "tamil_headline": "ஈஷாவில் 15-வது இன்சைட் தலைமைத்துவ நிகழ்ச்சி தொடங்கியது",
-   "english_headline": "15th INSIGHT leadership programme begins at Isha Yoga Centre, Coimbatore; Sadhguru inaugurates",
-   "category": "Business & Prices",
-   "location": "Isha Yoga Centre, Coimbatore district",
+   "tamil_headline": "திருப்பரங்குன்றம் விவகாரம்: முதல்வர் விஜய்யை தவறாக வழிநடத்தியுள்ளனர் - கோவையில் அண்ணாமலை பேட்டி",
+   "english_headline": "Thiruparankundram issue: Annamalai addresses press conference in Coimbatore, says CM Vijay was misled",
+   "category": "Government & Services",
+   "location": "Coimbatore city, Coimbatore district",
    "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "தலைமைத்துவம்",
-    "loc": "ஈஷா யோக மையம், கோவை",
-    "hl1": "ஈஷாவில் 15-வது இன்சைட் நிகழ்ச்சி",
-    "hl2": "சத்குரு தொடங்கி வைத்தார்",
+    "cat": "அரசியல் செய்தி",
+    "loc": "கோவை",
+    "hl1": "கோவையில் அண்ணாமலை பேட்டி",
+    "hl2": "விஜய்யை தவறாக வழிநடத்தினர்",
     "slides": [
      {
-      "title": "என்ன நிகழ்ச்சி?",
+      "title": "செய்தியாளர்",
       "lines": [
-       "ஈஷா யோக மையத்தில் சத்குரு அகாடமி நடத்தும் இன்சைட் நிகழ்ச்சி",
-       "தொழில் வளர்ச்சி, தலைமைத்துவத் திறனுக்கான 15-வது பதிப்பு",
-       "நேற்று (<b>26/11/2026</b>) சத்குரு தொடங்கி வைத்தார்"
+       "கோவையில் 'வீ தி லீடர்ஸ்' தலைவர் அண்ணாமலை பேட்டி",
+       "திருப்பரங்குன்றம் விவகாரத்தை அரசு சரியாக கையாளவில்லை"
       ]
      },
      {
-      "title": "யார் பங்கேற்பு?",
+      "title": "முதல்வர் பற்றி",
       "lines": [
-       "<b>200</b>-க்கும் மேற்பட்ட தொழில் நிறுவனங்களின் உரிமையாளர்கள்",
-       "தொழில்முனைவோர், தலைமை நிர்வாகிகள் பங்கேற்பு",
-       "அடுத்த <b>3 நாட்கள்</b> நிகழ்ச்சி நடைபெறும்"
+       "முதல்வர் விஜய்யை தவறாக வழிநடத்தியுள்ளனர்",
+       "அரசியல் தலைவர்கள் அமைதியை சீர்குலைக்கக் கூடாது"
       ]
      },
      {
-      "title": "பேச்சாளர்கள்",
+      "title": "தொகுதி மறுவரையறை",
       "lines": [
-       "அதானி குழும தலைமைத் தொழில்நுட்ப அதிகாரி சுதீப்தா",
-       "அப்பல்லோ மருத்துவமனைகளின் டாக்டர் சங்கீதா ரெட்டி",
-       "ஹீரோ ஃபின்கார்ப் அபிமன்யு முஞ்சால், முருகவேல் ஜானகிராமன்"
+       "தொகுதி மறுவரையறை மசோதாவை த.வெ.க ஆதரிக்க வேண்டும்",
+       "திமுக ஆதரவு கூட்டணி வரைபடத்தை மாற்றும்"
+      ]
+     },
+     {
+      "title": "நீதிமன்ற உத்தரவு",
+      "lines": [
+       "நீதிமன்ற உத்தரவைக் கொண்டாடுவது கலவரத்திற்கு வழிவகுக்கும்",
+       "தமிழக அரசே இதற்குக் காரணம் என குற்றச்சாட்டு"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவை ஈஷா யோக மையத்தில் 15-வது இன்சைட் தலைமைத்துவ நிகழ்ச்சி தொடங்கியுள்ளது. நேற்று, நவம்பர் 26ஆம் தேதி, சத்குரு இதைத் தொடங்கி வைத்தார். சத்குரு அகாடமி ஆண்டுதோறும் நடத்தும் இந்த நிகழ்ச்சி, தொழில் வளர்ச்சி மற்றும் தலைமைத்துவத் திறன்களை மேம்படுத்துகிறது. அடுத்த 3 நாட்கள் நடைபெறும் இதில் 200-க்கும் மேற்பட்ட தொழில் நிறுவனங்களின் உரிமையாளர்களும் உயர் பொறுப்பிலுள்ள நிர்வாகிகளும் பங்கேற்கின்றனர். அதானி குழுமத்தின் தலைமைத் தொழில்நுட்ப அதிகாரி சுதீப்தா பட்டாச்சார்யா, அப்பல்லோ மருத்துவமனைகளின் டாக்டர் சங்கீதா ரெட்டி உள்ளிட்டோர் உரையாற்றுகின்றனர். இந்த நிகழ்ச்சியில் தொழில் தொடங்குதல், நிறுவனங்களை வளர்த்தல் பற்றிய அனுபவங்கள் பகிரப்படும். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🧭 ஈஷாவில் 15-வது இன்சைட் தலைமைத்துவ நிகழ்ச்சி: சத்குரு தொடங்கி வைத்தார்\n\n📰 முழு விவரம்:\nகோவை ஈஷா யோக மையத்தில் சத்குரு அகாடமி சார்பில் 15-வது இன்சைட் நிகழ்ச்சி நடைபெறுகிறது. தொழில் வளர்ச்சி, தலைமைத்துவத் திறன்களை மேம்படுத்துவதற்காக ஆண்டுதோறும் நடத்தப்படும் இந்த நிகழ்ச்சியை நேற்று (26/11/2026) சத்குரு தொடங்கி வைத்தார்.\nஅடுத்த 3 நாட்கள் நடைபெறும் இதில் 200-க்கும் மேற்பட்ட தொழில் நிறுவனங்களின் உரிமையாளர்கள், தொழில்முனைவோர், உயர் பொறுப்பிலுள்ள தலைமை நிர்வாகிகள் பங்கேற்கின்றனர்.\nஅதானி குழுமத் தலைமைத் தொழில்நுட்ப அதிகாரி சுதீப்தா பட்டாச்சார்யா, அப்பல்லோ மருத்துவமனைகளின் இணை நிர்வாக இயக்குநர் டாக்டர் சங்கீதா ரெட்டி, ஹீரோ ஃபின்கார்ப் அபிமன்யு முஞ்சால், மேட்ரிமோனி டாட் காம் முருகவேல் ஜானகிராமன் ஆகியோர் வெவ்வேறு அமர்வுகளில் உரையாற்றுகின்றனர்.\nஎம்.கே. வென்ச்சர்ஸ் மது கேலா, அக்னிகுல் காஸ்மோஸ் ஸ்ரீநாத் ரவிச்சந்திரன், வில்வா க்ருத்திகா குமரன், மோக்லிக்ஸ் மற்றும் கிரெட்லிக்ஸ் ராகுல் கார்க் ஆகியோரும் தங்கள் அனுபவங்களைப் பகிர்கின்றனர்.\nசத்குரு பேசுகையில், மனிதர்கள் தகவல்களுக்குள் மட்டும் சுருங்கிவிடக் கூடாது என்றும், தொழில், கலை, விளையாட்டு, அரசியல், ஆன்மீகம் எதுவாக இருந்தாலும் உள்நிலையையும் செயல்திறனையும் உயர்ந்த நிலையில் வைத்திருப்பது முக்கியம் என்றும் வலியுறுத்தினார்.\nஇன்சைட் நிகழ்ச்சி தொழில் நிறுவன உரிமையாளர்கள், உயர் நிர்வாகிகளுக்கான முதன்மையான தலைமைத்துவப் பயிற்சி. சத்குரு அகாடமி 2012ஆம் ஆண்டு சத்குருவால் தொடங்கப்பட்டது. கடந்த நிகழ்ச்சிகளில் ரத்தன் டாடா, என்.ஆர். நாராயண மூர்த்தி, எஸ். சோமநாத், கிரண் மஜும்தார் ஷா உள்ளிட்ட பலர் பங்கேற்றுள்ளனர்.\n\nIsha Insight leadership programme 15th edition Coimbatore | Coimbatore news\n📍 ஈஷா யோக மையம், கோவை மாவட்டம் | 28 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Isha #CoimbatoreNews #கோவை",
-   "prompts": "A large audience of over 200 business owners, entrepreneurs and senior executives sits in rows of chairs inside a spacious hall at the Isha Yoga Centre campus in Coimbatore district, as a leadership programme begins. Seen from the back of the hall at eye level, the delegates wear formal shirts, sarees and salwar kameez, and some hold notebooks. At the front, a raised stage with a simple dais and a few empty seats is lit by soft daylight through large open windows, with green trees visible outside. Ceiling fans and neat rows of chairs fill the space. The atmosphere is calm and focused. Shot on a 35 mm lens from eye level, wide enough to show the full hall and the stage. No readable text or signboards visible. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a neatly arranged desk on the front row of the hall, with a notebook, a steel water bottle and a pen resting beside a delegate's name card left face-down, blurred so no text is readable. Beyond it, out of focus, rows of chairs and the edge of the stage are visible. A hand rests lightly on the notebook, seen from behind. Soft natural light falls through the window, and green foliage blurs in the background. The detail suggests the business leadership programme's preparation and participants' readiness. Shot at 35 mm with a shallow depth of field, eye level, no readable text, no logos or brand names. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dailythanthi.com/news/tamilnadu/15th-insight-leadership-program-at-isha-inaugurated-by-sadhguru",
-   "published": "2026-11-28T04:05:32Z",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script has 72 words; need 100-160 (the key facts once each, in at most 90 seconds; every other detail goes in the caption's 📰 முழு விவரம் block); not grounded: location 'மையம்' is not in the article",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 2 validator problem(s)",
+   "reel_script": "கோவையில் செய்தியாளர்களை சந்தித்த அண்ணாமலை பரபரப்பு கருத்துக்களை தெரிவித்தார். திருப்பரங்குன்றம் விவகாரத்தை தமிழ்நாடு அரசு சரியாக கையாளவில்லை என்று 'வீ தி லீடர்ஸ்' தலைவர் அண்ணாமலை கூறியுள்ளார். இந்த விவகாரத்தில் முதலமைச்சர் விஜய்யை தவறாக வழிநடத்தியுள்ளனர் என்றும் அவர் பேச வேண்டும் என்றும் கேட்டுக்கொண்டார். அரசியல் தலைவர்களின் கருத்துக்கள் திருப்பரங்குன்றத்தின் அமைதியை சீர்குலைக்கக் கூடாது என எச்சரித்தார். தொகுதி மறுவரையறை மசோதாவை த வெ க ஆதரிக்க வேண்டும் என்றும் அரசியல்படுத்தக் கூடாது என்றும் தெரிவித்தார். மக்கள்தொகை கணக்கெடுப்புக்கு முன்பாக இந்த மசோதா வருவது நல்லது என்று கூறினார். தொகுதி மறுவரையறைக்கு தி மு க ஆதரவு தெரிவித்தது இந்திய அளவில் கூட்டணி வரைபடத்தை மாற்றும் என்றார். திருப்பரங்குன்றத்தில் தீபம் ஏற்ற உச்ச நீதிமன்றம் அளித்த உத்தரவை தேவையில்லாமல் கொண்டாடுவது கலவரத்திற்கு வழிவகுக்கும் என்று குறிப்பிட்டார். இதுபோன்ற நிகழ்வுகள் தமிழ்நாடு காவல்துறையை சங்கடப்படுத்தும் செயல் என்றும் அண்ணாமலை குற்றம்சாட்டினார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🎤 கோவையில் அண்ணாமலை பேட்டி: முதல்வர் விஜய்யை தவறாக வழிநடத்தியுள்ளனர் என குற்றச்சாட்டு!\n\n📰 முழு விவரம்:\nகோவையில் செய்தியாளர்களை சந்தித்த 'வீ தி லீடர்ஸ்' தலைவர் அண்ணாமலை, திருப்பரங்குன்றம் விவகாரத்தை தமிழ்நாடு அரசு சரியாக கையாளவில்லை என்று தெரிவித்தார். இந்த விவகாரத்தில் முதலமைச்சர் விஜய்யை தவறாக வழிநடத்தியுள்ளதாகவும், அவர் இதுகுறித்து பேச வேண்டும் என்றும் கூறினார். அரசியல் தலைவர்களின் கருத்துக்கள் திருப்பரங்குன்றத்தின் அமைதியை சீர்குலைக்கக் கூடாது என வலியுறுத்தினார். மேலும், தொகுதி மறுவரையறை மசோதாவை த.வெ.க ஆதரிக்க வேண்டும் என்றும், திமுகவின் ஆதரவு இந்திய அளவில் கூட்டணி வரைபடத்தை மாற்றும் என்றும் கூறினார். உச்ச நீதிமன்ற உத்தரவை ஒரு தரப்பு தேவையில்லாமல் கொண்டாடுவது கலவரத்திற்கு வழிவகுக்கும் என்றும் குற்றம்சாட்டினார்.\n\n📍 இடம்: கோவை நகரம்\n🗓️ நாள்: 28 நவம்பர் 2026\nℹ️ செய்தி: அண்ணாமலை செய்தியாளர்கள் சந்திப்பு\n\nமுக்கியமான செய்தி, தேவைப்படுவோருக்கு Share செய்யுங்கள்!\n\nAnnamalai press meet in Coimbatore about Thiruparankundram issue | Coimbatore news\n📍 கோவை நகரம், கோவை மாவட்டம் | 28 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #அண்ணாமலை #கோவை",
+   "prompts": "A political press conference takes place inside a media hall in Coimbatore city, where a speaker addresses the gathering behind a long wooden table. Multiple microphones on small desktop stands are arranged across the table towards the speaker. Journalists, news videographers, and photographers are positioned in the foreground seen from behind, holding cameras on tripods directed at the table. Bright daylight indoor hall lighting illuminates the media event. Eye-level, 35 mm shot capturing the speaker, the microphone setup, and the seated press crew from behind. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up detail shot of the media setup at the Coimbatore press conference table. A cluster of microphones mounted on small black stands sits on a dark wooden table top, facing forward. In the shallow depth of field foreground, blurred outlines of handheld audio recorders and press camera lenses are visible from behind. Bright indoor soft focus lighting illuminates the tabletop. Eye-level shot, 35 mm focus on the clustered microphones and recording equipment with no readable text or logos. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dailythanthi.com/news/tamilnadu/thiruparankundram-issue-chief-minister-vijay-has-been-misled-annamalai",
+   "published": "2026-11-28T10:45:19Z",
+   "verification": "DRAFT (gemini/gemini-3.6-flash) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3.6-flash, 2 attempt(s), 0 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795851290/kovaiminnal/dqnzrfsn9xjoatwyvtur.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795851296/kovaiminnal/stlptmedquyq3gexmwpa.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795865761/kovaiminnal/sgj9pu8mdeh8pyr3ovnc.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795865763/kovaiminnal/xe0khvnanw4uyzzglspd.jpg"
    ]
   },
   {
-   "tamil_headline": "கோவையில் நாரைகள் பறவைக் காய்ச்சலால் உயிரிழப்பு; மாதிரிகள் உறுதி",
-   "english_headline": "Over 10 storks die near Shakti Road omni bus stand in Coimbatore city; bird flu confirmed",
-   "category": "Health",
-   "location": "Shakti Road omni bus stand area, Coimbatore city, Coimbatore district",
-   "importance": "High",
+   "tamil_headline": "கோவையில் மழைக் காலம்: பயிர் பராமரிப்பில் செய்ய வேண்டியவை குறித்து வேளாண் பல்கலை அறிவுறுத்தல்",
+   "english_headline": "TNAU Climate Research Centre issues rain crop management advice for paddy and mango crops in Coimbatore",
+   "category": "Weather & Agriculture",
+   "location": "Coimbatore city, Coimbatore district",
+   "importance": "Medium",
+   "scope": "district",
+   "post_to": "Kovai Minnal",
+   "slides_spec": {
+    "v": 3,
+    "cat": "விவசாய ஆலோசனை",
+    "loc": "கோவை",
+    "hl1": "கோவையில் மழைக்கால பயிர் ஆலோசனை",
+    "hl2": "வேளாண் பல்கலை தகவல்",
+    "slides": [
+     {
+      "title": "பயிர் பராமரிப்பு",
+      "lines": [
+       "மழை நேரத்தில் பயிர் மேலாண்மையை <b>ஒத்திவைக்க</b> அறிவுறுத்தல்",
+       "கோவை வேளாண் பல்கலை காலநிலை மையம் தகவல்"
+      ]
+     },
+     {
+      "title": "நெல் சாகுபடி",
+      "lines": [
+       "வளர்பருவ நெல்லில் <b>புகையான்</b> வர வாய்ப்பு அதிகம்",
+       "பயிரில் போதிய வடிகால் மற்றும் காற்றோட்டம் அவசியம்",
+       "பயிரின் அடிபகுதியில் மருந்து தெளிக்க அறிவுறுத்தல்"
+      ]
+     },
+     {
+      "title": "மா சாகுபடி",
+      "lines": [
+       "மேகமூட்டம் காரணமாக மாவில் பூக்கள் குறைந்துள்ளன",
+       "பூக்களை அதிகரிக்க <b>10 கிராம்</b> மருந்து தெளிக்கலாம்",
+       "அல்லது <b>1%</b> பொட்டாசியம் நைட்ரேட் தெளிக்கலாம்"
+      ]
+     }
+    ],
+    "carousel": false
+   },
+   "reel_script": "கோவையில் மழையால் பயிர் பராமரிப்பை ஒத்திவைக்க வேளாண் பல்கலை அறிவுறுத்தியுள்ளது. கோவை தமிழ்நாடு வேளாண்மைப் பல்கலைக்கழக காலநிலை ஆராய்ச்சி மையம் இந்த ஆலோசனையை வழங்கியுள்ளது. மழை நேரத்தில் பயிர் மேலாண்மை நடவடிக்கைகளை விவசாயிகள் ஒத்திவைக்க வேண்டும். நிலவும் வானிலையால் வளர்பருவ நெற்பயிரில் புகையான் தாக்குதல் ஏற்பட அதிக வாய்ப்பு உள்ளது. எனவே நெற்பயிரில் போதிய வடிகால் வசதியும் காற்றோட்டமும் ஏற்படுத்த வேண்டும். ஒரு ஹெக்டேருக்கு பாசலோன் 1500 மி.லி அல்லது குளோரிபைபாஸ் 1250 மி.லி தெளிக்கலாம். அல்லது இமிடாகுளோபிரிட் 100 முதல் 125 மி.லி அல்லது டைக்குளோவாஸ் 470 மி.லி தெளிக்கலாம். இந்த மருந்துகளில் ஒன்றை பயிரின் அடிப்பகுதியில் படுமாறு தெளிக்க வேண்டும். மேகமூட்டத்தால் மாமரத்தில் தழை வளர்ச்சி அதிகரித்து பூக்கள் குறைந்துள்ளன. மாமரத்தில் பூக்களை அதிகரிக்க 10 கிராம் பேக்ளோபீயுட்ரோசோல் தெளிக்கலாம். அல்லது 1 சதவீதம் பொட்டாசியம் நைட்ரேட் தெளிக்க மையம் அறிவுறுத்தியுள்ளது. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "🌾 கோவையில் மழைக்கால பயிர் பராமரிப்பு: வேளாண் பல்கலைக்கழக காலநிலை ஆராய்ச்சி மையம் அறிவுறுத்தல்\n\n📰 முழு விவரம்:\nகோவையில் மழைக்காலத்தில் பயிர் மேலாண்மை நடவடிக்கைகளை ஒத்திவைக்குமாறு தமிழ்நாடு வேளாண்மைப் பல்கலைக்கழக காலநிலை ஆராய்ச்சி மையம் அறிவுறுத்தியுள்ளது.\nநிலவும் வானிலையால் வளர்பருவ நெல்லில் புகையான் வருவதற்கான வாய்ப்பு அதிகமாக உள்ளது.\nஎனவே நெற்பயிரில் போதிய வடிகால் வசதியும் காற்றோட்டமும் ஏற்படுத்த வேண்டும்.\nஒரு ஹெக்டேருக்கு பாசலோன் 1500 மி.லி, குளோரிபைபாஸ் 1250 மி.லி, இமிடாகுளோபிரிட் 100-125 மி.லி அல்லது டைக்குளோவாஸ் 470 மி.லி ஆகிய மருந்துகளில் ஒன்றை பயிரின் அடிப்பகுதியில் தெளிக்க வேண்டும்.\nமேலும் மேகமூட்டம் மற்றும் ஈரப்பதம் காரணமாக மாமரத்தில் தழை வளர்ச்சி அதிகரித்து பூக்கள் குறைந்துள்ளன.\nபூக்களின் எண்ணிக்கையை அதிகரிக்க 10 கிராம் பேக்ளோபீயுட்ரோசோல் அல்லது 1 சதவீதம் பொட்டாசியம் நைட்ரேட் தெளிக்க அறிவுறுத்தப்பட்டுள்ளது.\n\n📍 இடம்: கோவை, தமிழ்நாடு வேளாண்மைப் பல்கலைக்கழகம்\nℹ️ மக்கள் கவனத்திற்கு: நெல் மற்றும் மா விவசாயிகள் பரிந்துரைக்கப்பட்ட மருந்துகளை தெளித்து பயிர்களை பாதுகாக்கவும்.\n\nவிவசாய நண்பர்களுக்கு Share செய்யுங்கள்!\n\nCoimbatore TNAU rain crop management advice | Coimbatore news\n📍 Coimbatore city, Coimbatore | 28 November 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #CoimbatoreNews #விவசாயம் #கோவை",
+   "prompts": "A farmer in a shirt and folded veshti stands in a lush green paddy field, seen from behind, inspecting the base of the rice stalks for pests as advised by the TNAU Climate Research Centre. The scene is set in a rural agricultural pocket of Coimbatore with the hazy Western Ghats visible in the far background under a heavy, grey overcast sky. Small hand-dug drainage channels are visible in the dark, wet soil between the rows of paddy to prevent waterlogging. The light is soft and diffused due to the monsoon clouds, capturing the humid atmosphere of the city's outskirts. The camera is at eye level, using a 35mm lens to capture the scale of the field and the weather conditions. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up shot focuses on the dense green foliage of a mango tree in an orchard near Coimbatore, showing the excessive vegetative growth mentioned in the news report. The branches are heavy with dark green leaves but notably lack the typical yellowish flower clusters, illustrating the impact of the recent humid weather. In the background, the blurred silhouette of a worker in a shirt is visible from a distance, tending to the trees. Droplets of rainwater cling to the leaves, reflecting the overcast daylight. The camera is positioned close to the branches at eye level, highlighting the specific agricultural problem of reduced flowering described by the research centre. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/flowering-decreases-on-a-rainy-day/4388380",
+   "published": "2026-11-28T15:54:20+05:30",
+   "verification": "DRAFT (gemini/gemini-3.6-flash) - fact-check: no problems found",
+   "note": "free-model draft gemini/gemini-3.6-flash, 2 attempt(s), 0 validator problem(s)",
+   "post_time": "right after your reply, same day",
+   "_area": "N",
+   "_score": 999,
+   "images": [
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795865794/kovaiminnal/kpqqc95tuylnlwytnp2e.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795865804/kovaiminnal/j2sqklc1rhbxknghkh3i.jpg"
+   ]
+  },
+  {
+   "tamil_headline": "ஐ.ஏ.எஸ். தேர்வுக்கு மாதிரித் தேர்வுகள் அவசியம்: கலெக்டர் அறிவுரை",
+   "english_headline": "Writing mock tests is essential to clear the IAS exam: Collector's advice to competitive exam aspirants",
+   "category": "Education",
+   "location": "R.S. Puram, Coimbatore city, Coimbatore district",
+   "importance": "Medium",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "பறவைக் காய்ச்சல்",
-    "loc": "சக்தி சாலை, கோவை மாநகர்",
-    "hl1": "கோவையில் நாரைகள் பறவைக் காய்ச்சலால் பலி",
-    "hl2": "10க்கும் மேற்பட்ட நாரைகள்",
+    "cat": "போட்டித் தேர்வு",
+    "loc": "ஆர்.எஸ்.புரம், கோவை",
+    "hl1": "ஆர்.எஸ்.புரம் நூலகத்தில் கலெக்டர்",
+    "hl2": "மாதிரித் தேர்வுகள் அவசியம்",
     "slides": [
      {
       "title": "என்ன நடந்தது?",
       "lines": [
-       "கோவை மாநகர், சக்தி சாலை ஆம்னி பஸ் நிலையம் அருகே <b>10க்கும்",
-       "மக்கள் சந்தேகமடைந்து வனத்துறைக்குத் தகவல் கொடுத்தனர்",
-       "வனத்துறையினர் மாதிரிகளை போபால் ஆய்வகத்துக்கு அனுப்பினர்"
+       "ஆர்.எஸ்.புரம் மாவட்ட மைய நூலகத்தில் நூலக வாரவிழா நடந்தது",
+       "சிறப்பு விருந்தினராக கலெக்டர் பவன்குமார் பங்கேற்றார்",
+       "போட்டித் தேர்வர்களிடம் உரையாடி ஆலோசனை வழங்கினார்"
       ]
      },
      {
-      "title": "ஆய்வு முடிவு",
+      "title": "எண்ணிக்கை",
       "lines": [
-       "நாரைகள் பறவைக் காய்ச்சலால் பாதிக்கப்பட்டிருந்தது <b>உறுதியானது</b>",
-       "சுகாதாரத்துறைக்கு உடனடியாகத் தகவல் அளிக்கப்பட்டது",
-       "கடலூரில் கோழிகள் இறந்த பின்னணியில் இந்த சம்பவம்"
+       "நூலகத்துக்கு தினமும் <b>400 முதல் 500</b> வாசகர்கள் வருகின்றனர்",
+       "போட்டித் தேர்வர்கள் <b>250</b>க்கும் மேற்பட்டோர்",
+       "தனிப்பிரிவில் <b>50 பேர்</b> மட்டுமே அமர்ந்து படிக்க முடியும்"
       ]
      },
      {
-      "title": "அடுத்து என்ன?",
+      "title": "கலெக்டரின் ஆலோசனை",
       "lines": [
-       "பரவலைத் தடுக்க நடவடிக்கைகள் முடுக்கி விடப்பட்டுள்ளன",
-       "தமிழக - கேரளா எல்லை சோதனைச் சாவடிகளில் கண்காணிப்பு தீவிரம்",
-       "கடலூரில் சுமார் <b>80 ஆயிரம்</b> கோழிகள் மண்ணில்"
+       "அரசியல் சட்டம், வரலாறு போன்ற",
+       "தினசரி, மாத நடப்பு நிகழ்வுகளைப் படிக்க வேண்டும்",
+       "தொடர்ந்து <b>மாதிரித் தேர்வுகள்</b> எழுதுவது நம்பிக்கையை உயர்த்தும்"
+      ]
+     },
+     {
+      "title": "தோல்வி பற்றி",
+      "lines": [
+       "தோல்வி சகஜம், அதைத் திருத்திக் கொள்ள வாய்ப்பாகக் கருத",
+       "மனம் சோர்ந்துவிடக் கூடாது என அறிவுறுத்தல்",
+       "விரைவில் போட்டித் தேர்வர்களுக்கு பயிற்சி மையம்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவையில் நாரைகள் பறவைக் காய்ச்சலால் உயிரிழந்துள்ளன. கோவை மாநகரில் சக்தி சாலையின் ஆம்னி பஸ் நிலையம் அருகே 10க்கும் மேற்பட்ட நாரைகள் உயிரிழந்து கிடந்தன. சந்தேகமடைந்த மக்கள் வனத்துறையினருக்குத் தகவல் கொடுத்தனர். வனத்துறை அதிகாரிகள் நாரைகளின் மாதிரிகளைச் சேகரித்து போபாலில் உள்ள ஆய்வகத்துக்கு அனுப்பினர். அதன் முடிவுகள் தற்போது வெளியாகியுள்ளன. உயிரிழந்த நாரைகள் பறவைக் காய்ச்சலால் பாதிக்கப்பட்டிருந்தது உறுதியாகியுள்ளது. உடனடியாக சுகாதாரத்துறைக்குத் தகவல் அளிக்கப்பட்டு, பரவலைத் தடுக்க நடவடிக்கைகள் முடுக்கி விடப்பட்டுள்ளன. தமிழக - கேரளா எல்லை சோதனைச் சாவடிகளில் கண்காணிப்புப் பணி தீவிரப்படுத்தப்பட்டுள்ளது. இதற்கு முன் கடலூரில் பல கோழிப்பண்ணைகளில் அக்டோபர் மாத இறுதியில் நூற்றுக்கணக்கான கோழிகள் மர்மமான முறையில் உயிரிழந்தன. சுமார் 80 ஆயிரம் கோழிகள் மண்ணில் புதைக்கப்பட்டு அழிக்கப்பட்டன. மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🐦 கோவையில் நாரைகள் உயிரிழப்பு: பறவைக் காய்ச்சல் உறுதி\n\n📰 முழு விவரம்:\nகோவை மாநகர், சக்தி சாலை ஆம்னி பஸ் நிலையம் அருகே 10க்கும் மேற்பட்ட நாரைகள் இறந்து கிடந்தன. சந்தேகமடைந்த மக்கள் வனத்துறையினருக்குத் தகவல் கொடுத்தனர். வனத்துறையினர் மாதிரிகளை போபாலில் உள்ள ஆய்வகத்துக்கு அனுப்பினர். முடிவுகளில் நாரைகள் பறவைக் காய்ச்சலால் பாதிக்கப்பட்டிருந்தது உறுதியானது.\n🏥 உடனடியாக சுகாதாரத்துறைக்குத் தகவல் அளிக்கப்பட்டு, பரவலைத் தடுக்க நடவடிக்கைகள் முடுக்கி விடப்பட்டுள்ளன.\n🚧 தமிழக - கேரளா எல்லை சோதனைச் சாவடிகளில் கண்காணிப்புப் பணி தீவிரப்படுத்தப்பட்டுள்ளது.\n🐔 கடலூரில் அக்டோபர் மாத இறுதியில் பல கோழிப்பண்ணைகளில் நூற்றுக்கணக்கான கோழிகள் உயிரிழந்தன. சுமார் 80 ஆயிரம் கோழிகள் மண்ணில் புதைக்கப்பட்டு அழிக்கப்பட்டன.\nℹ️ மக்கள் கவனத்திற்கு: இறந்த பறவைகளைத் தொடாமல், வனத்துறை அல்லது சுகாதாரத்துறைக்குத் தகவல் கொடுங்கள்.\n\nBird flu confirmed in storks near Shakti Road, Coimbatore | Coimbatore news\n📍 சக்தி சாலை, கோவை மாநகர் | 28 நவம்பர் 2026\n\nதேவைப்படுவோருக்கு Share செய்யுங்கள்\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Coimbatore #பறவைக்காய்ச்சல் #CoimbatoreNews",
-   "prompts": "Forest department officials in green uniform stand beside a roadside patch near the Shakti Road omni bus stand in Coimbatore city, gloved and carefully lifting a white storks' bodies into a sealed plastic sample bag. Seen from a distance at eye level, the scene shows the busy edge of an omni bus stand with parked private omni buses and a few two-wheelers, a concrete footpath and a low boundary wall. A few local onlookers stand at a safe distance behind a yellow tape line, seen from behind, wearing shirts and sarees. Several large white storks lie still on the grey pavement and dusty ground beside a drain, their long legs and grey-black wing tips visible. Morning daylight, clear sky with faint haze, a few palm trees and the city skyline behind. Camera at eye level, 35 mm lens, wide enough to show the bus stand and the officials at work. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of three dead white storks lying on a damp concrete pavement edge beside a roadside drain in Coimbatore city, their long grey legs and folded white wings clearly visible, with a pair of blue disposable gloves and a sealed clear plastic sample bag placed nearby on the ground. Behind them, slightly out of focus, a khaki-uniformed forest officer kneels and a few dusty two-wheelers are parked along the road edge. Morning daylight, soft overcast light, dry leaves and a little litter on the pavement. Camera low and close, shallow depth of field, 35 mm, focused on the birds and the sample bag to tell the bird flu story. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinamalar.com/news/tamil-nadu-news/after-cuddalore-avian-influenza-spreads-in-coimbatore/4388334",
-   "published": "2026-11-28T10:50:00+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: reel_script copies the article word for word (15 words in a row, 19% of its phrases): keep every fact, name and number but write every sentence in your OWN words (shorter, in spoken order) - never copy a sentence",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "reel_script": "ஆர் எஸ் புரம் நூலகத்தில் போட்டித் தேர்வர்களுக்கு கலெக்டர் முக்கிய அறிவுரை வழங்கினார். கோவை ஆர் எஸ் புரத்தில் உள்ள மாவட்ட மைய நூலகத்தில் நூலக வாரவிழா நடைபெற்றது. இதில் சிறப்பு விருந்தினராக கலெக்டர் பவன்குமார் பங்கேற்றார். இங்கு தினமும் 400 முதல் 500 வாசகர்கள் படிக்க வருகின்றனர். அவர்களில் 250க்கும் மேற்பட்டோர் ஐ ஏ எஸ், ஐ பி எஸ் மற்றும் போட்டித் தேர்வுகளுக்குப் படிப்பவர்கள். போட்டித் தேர்வர்களுக்கான தனிப்பிரிவில் 50 பேர் மட்டுமே அமர்ந்து படிக்க முடியும். இடம் கிடைக்காததால் பலர் பொது வாசகர் பகுதியில் அமர்ந்து படிக்கின்றனர். அரசியல் சட்டம், வரலாறு போன்ற அடிப்படைப் புத்தகங்களைக் கட்டாயம் படிக்க வேண்டும் என கலெக்டர் அறிவுறுத்தினார். தினசரி மற்றும் மாத அடிப்படையில் நடப்பு நிகழ்வுகளைப் படிப்பதும் அவசியம். தொடர்ந்து மாதிரித் தேர்வுகள் எழுதுவது தன்னம்பிக்கையை உயர்த்தும் என்றார். தேர்வில் தோல்வி அடைந்தாலும் மனம் சோர்ந்துவிடக் கூடாது; அதைத் திருத்திக் கொள்ள வாய்ப்பாகக் கருத வேண்டும் என்றார். போட்டித் தேர்வர்களுக்காக விரைவில் ஒரு பயிற்சி மையம் உருவாக்கப்படும் என்றும் கூறினார். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "📚 ஆர்.எஸ்.புரம் நூலகத்தில் ஐ.ஏ.எஸ். தேர்வுக்கு மாதிரித் தேர்வுகள் அவசியம்: கலெக்டர் அறிவுரை\n\n📰 முழு விவரம்:\nகோவை ஆர்.எஸ்.புரத்தில் உள்ள மாவட்ட மைய நூலகத்தில் நடந்த நூலக வாரவிழாவில் கலெக்டர் பவன்குமார் சிறப்பு விருந்தினராகப் பங்கேற்றார். போட்டித் தேர்வர்களிடம் உரையாடிய அவர், படிப்பது எப்படி என ஆலோசனை வழங்கினார்.\nஅரசியல் சட்டம், வரலாறு போன்ற அடிப்படைப் புத்தகங்களைக் கட்டாயம் படிக்க வேண்டும். தினசரி, மாத அடிப்படையில் நடப்பு நிகழ்வுகளைப் படிப்பதும் அவசியம். தொடர்ந்து மாதிரித் தேர்வுகள் எழுதுவது தன்னம்பிக்கையை உயர்த்தி, வெற்றியை எளிதாக்கும்.\nதேர்வில் தோல்வி அடைந்தால் மனம் சோர்ந்துவிடக் கூடாது; தயாரிப்பில் உள்ள குறைகளைத் திருத்திக்கொள்ள வாய்ப்பாகக் கருத வேண்டும் என்றார்.\n🔢 நூலகத்துக்கு தினமும் 400 முதல் 500 வாசகர்கள் வருகின்றனர்; போட்டித் தேர்வர்கள் 250க்கும் மேல்.\n🪑 போட்டித் தேர்வர்களுக்கான தனிப்பிரிவில் 50 பேர் மட்டுமே அமர முடியும்.\n🏫 விரைவில் போட்டித் தேர்வர்களுக்கு ஒரு பயிற்சி மையம் உருவாக்கப்படும்.\n\nIAS aspirants, write mock tests | Coimbatore news\n📍 ஆர்.எஸ்.புரம், கோவை | 28 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #RSPuram #போட்டித்தேர்வு #CoimbatoreNews",
+   "prompts": "A District Collector in a formal shirt and trousers stands at the front of a large library hall, addressing a room full of students. The setting is the District Central Library in R.S. Puram, Coimbatore, characterized by high ceilings and rows of wooden study tables. Over 250 competitive exam aspirants, mostly young men in casual shirts and trousers, are seated at long desks, facing the speaker. They are seen from behind or the side, focused on the front of the room. The desks are cluttered with open notebooks, pens, and thick reference books, indicating intense study. The atmosphere is serious and attentive. Daylight filters through large windows, mixing with the indoor fluorescent lights. The camera is positioned at eye level, 35 mm, capturing the width of the hall to show the scale of the gathering and the speaker's presence. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up view of a wooden study desk in the competitive exam section of the library. On the desk, a stack of thick, hardcover reference books is visible, with a notebook open on top, filled with handwritten notes. A pen rests on the page. In the blurred background, the backs of several students in shirts are visible, sitting in rows. The lighting is bright and even, typical of a study hall. The focus is sharp on the books and notebook, highlighting the academic nature of the event. The camera is slightly high, looking down at the desk, 35 mm lens, ensuring the objects are clearly identifiable as study materials for competitive exams. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/to-pass-ias-exam-it-is-necessary-to-take-sample-tests-collector-advises-competitive-candidates/4388356",
+   "published": "2026-11-28T14:32:18+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: not grounded: location 'புரம்' is not in the article",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795851302/kovaiminnal/crhegzktgw7wxpoxjvme.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795851305/kovaiminnal/bvyrx9kgtxrnitckmqb1.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795865898/kovaiminnal/anrh6thvpa9owj03u6q7.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795865909/kovaiminnal/bdnmdjjccpa9y9mbqsna.jpg"
    ]
   },
   {
-   "tamil_headline": "கோவையில் அடுத்தடுத்து உயிரிழந்த நாரைகளுக்குப் பறவைக் காய்ச்சல் உறுதி",
-   "english_headline": "Bird flu confirmed in storks that died one after another near Siddhapudur, Coimbatore",
+   "tamil_headline": "நம் நேரத்தை நாமே திருட அனுமதிக்கலாமா: போன் பயன்பாட்டைக் கட்டுப்படுத்த வழிகள்",
+   "english_headline": "Should we let our phones steal our time? Ways to control phone use with Digital Wellbeing on Android",
    "category": "Health",
-   "location": "Siddhapudur, Coimbatore city, Coimbatore district",
-   "importance": "High",
+   "location": "Coimbatore district",
+   "importance": "Low",
    "scope": "local",
    "post_to": "Kovai Minnal",
    "slides_spec": {
     "v": 3,
-    "cat": "பறவைக் காய்ச்சல்",
-    "loc": "சித்தாபுதூர், கோவை",
-    "hl1": "சித்தாபுதூரில்",
-    "hl2": "14 நாரைகள் உயிரிழப்பு",
+    "cat": "ஆரோக்கியம்",
+    "loc": "கோவை",
+    "hl1": "கோவையில் போன்",
+    "hl2": "டிஜிட்டல் வெல்பீயிங் வசதி",
     "slides": [
      {
-      "title": "என்ன நடந்தது?",
+      "title": "என்ன பிரச்சினை?",
       "lines": [
-       "கோவை சித்தாபுதூர் அருகே <b>14</b> குளத்து நாரைகள்",
-       "உயிரிழந்த நாரைகளுக்குப் பறவைக் காய்ச்சல் உறுதி",
-       "கடந்த <b>18</b> ஆம் தேதி நாரைகள் உயிரிழந்தன"
+       "5 நிமிடம் பார்க்கலாம் என்று நினைத்தால் அரை மணி நேரம்",
+       "புதிய ரீல்ஸ், போஸ்ட்கள் போனை கீழே வைக்க விடுவதில்லை",
+       "வேலை தள்ளிப்போவதுடன் உடல் நலமும் பாதிக்கப்படுகிறது"
       ]
      },
      {
-      "title": "பரிசோதனை முடிவு",
+      "title": "முதல் படி",
       "lines": [
-       "நாரைகளின் மாதிரி முடிவுகளில் பறவைக் காய்ச்சல் பாதிப்பு உறுதி",
-       "ஒன்றிய அரசு இதை உறுதி செய்தது",
-       "கோவை மாநகரின் முக்கியப் பகுதியில் பறவைக் காய்ச்சல்"
+       "எவ்வளவு நேரம் போனில் செலவிடுகிறோம் என்பதை அறியுங்கள்",
+       "ஆண்ட்ராய்டு போனில் 'டிஜிட்டல் வெல்பீயிங்' வசதி உள்ளது",
+       "எந்தச் செயலி அதிக நேரம், எத்தனை முறை திறக்கிறோம்"
       ]
      },
      {
-      "title": "அதிகாரிகள்",
+      "title": "என்ன செய்யலாம்?",
       "lines": [
-       "சுகாதாரத் துறை, கால்நடை பராமரிப்புத் துறைக்குத் தகவல்",
-       "கோவை மாநகரில் முன்னெச்சரிக்கை நடவடிக்கைகள் எடுக்கப்படுகின்றன",
-       "வாளையாறு சோதனைச் சாவடியில் முகாம் அமைக்கப்பட்டுள்ளது"
-      ]
-     },
-     {
-      "title": "கேரள வாகனங்கள்",
-      "lines": [
-       "கேரளத்திலிருந்து வரும் வாகனங்களுக்குக் கிருமி நாசினி",
-       "வாகனங்களின் விவரங்களை அதிகாரிகள் சேகரித்து வருகின்றனர்"
+       "அதிக நேரம் பயன்படுத்தும் செயலிகளுக்கு நேர வரம்பு வைக்கலாம்",
+       "வேலை, படிப்பின்போது நோட்டிபிகேஷன்களை சிறிது நேரம்",
+       "இதனால் அடிக்கடி போன் பார்க்கும் பழக்கம் குறையும்"
       ]
      }
     ],
     "carousel": false
    },
-   "reel_script": "கோவையில் 14 நாரைகளுக்குப் பறவைக் காய்ச்சல் உறுதி செய்யப்பட்டுள்ளது. கோவை சித்தாபுதூர் அருகே கடந்த 18ஆம் தேதி 14 குளத்து நாரைகள் அடுத்தடுத்து உயிரிழந்தன. உயிரிழந்த நாரைகளின் மாதிரி முடிவுகளில் பறவைக் காய்ச்சல் பாதிப்பு இருப்பது பரிசோதனையில் தெரியவந்துள்ளது. இதை ஒன்றிய அரசு உறுதி செய்துள்ளது. இதையடுத்து சுகாதாரத் துறைக்கும், கால்நடை பராமரிப்புத் துறைக்கும் தகவல் தெரிவிக்கப்பட்டது. கோவை மாநகரில் முன்னெச்சரிக்கை நடவடிக்கைகள் எடுக்கப்பட்டு வருகின்றன. கோயம்புத்தூர் மாநகரின் முக்கியப் பகுதியில் பறவைக் காய்ச்சல் கண்டறியப்பட்டுள்ளது பொதுமக்கள் மத்தியில் பரபரப்பை ஏற்படுத்தியுள்ளது. தமிழ்நாடு-கேரள எல்லையில் உள்ள வாளையாறு சோதனைச் சாவடியில் முகாம் அமைக்கப்பட்டுள்ளது. கேரளத்திலிருந்து வரும் வாகனங்களுக்குக் கிருமி நாசினி தெளிக்கப்படுகிறது. வாகனங்களின் விவரங்களை அதிகாரிகள் சேகரித்து வருகின்றனர். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
-   "caption": "🐦 கோவை சித்தாபுதூரில் நாரைகளுக்குப் பறவைக் காய்ச்சல் உறுதி\n\n📰 முழு விவரம்:\nகோவை சித்தாபுதூர் அருகே 14 குளத்து நாரைகள் அடுத்தடுத்து உயிரிழந்தன. கடந்த 18ஆம் தேதி அவை உயிரிழந்தன. உயிரிழந்த நாரைகளின் மாதிரி முடிவுகளில் பறவைக் காய்ச்சல் பாதிப்பு இருப்பது உறுதியானது. இதை ஒன்றிய அரசு உறுதி செய்தது.\n📍 இடம்: சித்தாபுதூர் அருகே, கோவை மாநகரம்\n🔢 எண்ணிக்கை: 14 குளத்து நாரைகள்\n👮 நடவடிக்கை: சுகாதாரத் துறை, கால்நடை பராமரிப்புத் துறைக்குத் தகவல் தெரிவிக்கப்பட்டு, மாநகரில் முன்னெச்சரிக்கை நடவடிக்கைகள் எடுக்கப்பட்டு வருகின்றன.\n🚧 வாளையாறு சோதனைச் சாவடியில் முகாம் அமைத்து, கேரளத்திலிருந்து வரும் வாகனங்களுக்குக் கிருமி நாசினி தெளிக்கப்படுகிறது. வாகனங்களின் விவரங்களை அதிகாரிகள் சேகரித்து வருகின்றனர்.\n\nBird flu confirmed in storks Siddhapudur Coimbatore | Coimbatore news\n📍 சித்தாபுதூர், கோவை மாவட்டம் | 28 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #Siddhapudur #CoimbatoreNews #கோவை",
-   "prompts": "A pair of white pond storks lie still at the muddy edge of a pond in Siddhapudur, Coimbatore, while two health department workers in protective gloves and masks stand a few metres away beside a roadside tree. The place is a open pond surrounded by bushes and a dusty path, with a few city houses and a distant line of trees under daylight. Two workers in plain shirts and trousers are seen from behind, one holding a white sample box; a couple of onlookers stand far back at the fence. In the foreground the storks lie near reeds and shallow water, and a single red-and-white barrier tape hangs from a wooden stake. Shot at eye level, 35 mm, wide enough to show the pond and the workers, soft morning daylight. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nA close-up of a sprayer nozzle misting disinfectant over a line of parked two-wheelers and a small car at a roadside check post on the Tamil Nadu-Kerala border near Valayar, with a worker in gloves and mask holding the hose. The check post has a plain concrete barrier and a striped road divider, and a few officials in khaki-coloured shirts stand behind the vehicles. Fine white mist hangs in the air and wets the road surface. Vehicles are seen from the side, no readable text or number plates visible. Shot at slightly high angle, 35 mm, daylight, dusty road atmosphere. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
-   "source": "https://www.dinakaran.com/news/bird-flu-confirmed-in-coimbatore",
-   "published": "2026-11-28T10:33:33+05:30",
-   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: caption misses facts of the article (put every one in 📰 முழு விவரம்): கோயம்புத்தூர் ('கோயம்புத்தூர் மாநகரின் முக்கிய பகுதியில் பறவைக் காய்ச்சல் கண')",
-   "note": "free-model draft anthropic/claude-haiku-5-5, 13 attempt(s), 1 validator problem(s)",
+   "reel_script": "கோவையில் பலரும் ஐந்து நிமிடம் என நினைத்து போனைத் திறந்து அரை மணி நேரம் வரை பயன்படுத்துகின்றனர். புதிய ரீல்ஸ்களும் போஸ்ட்களும் தொடர்ந்து வருவதால் போனை கீழே வைப்பது கடினமாகிறது. இதனால் அன்றாட வேலைகள் தள்ளிப்போவதுடன் உடல் நலமும் பாதிக்கப்படுகிறது. முதலில் எவ்வளவு நேரம் போனில் செலவிடுகிறோம் என்பதைத் தெரிந்துகொள்ள வேண்டும். ஆண்ட்ராய்டு போன்களில் உள்ள டிஜிட்டல் வெல்பீயிங் வசதி இதற்கு உதவும். இதன் மூலம் எந்தச் செயலியை அதிக நேரம் பயன்படுத்துகிறோம், ஒரு நாளில் எத்தனை முறை போனைத் திறக்கிறோம், எத்தனை நோட்டிபிகேஷன்கள் வருகின்றன என்பதை அறியலாம். அதிக நேரம் பயன்படுத்தும் செயலிகளுக்கு நேர வரம்பு நிர்ணயிக்கலாம். வேலை செய்யும்போதும் படிக்கும்போதும் கவனத்தைச் சிதறடிக்கும் நோட்டிபிகேஷன்களையும் செயலிகளையும் சிறிது நேரம் நிறுத்தி வைக்கலாம். இதன் மூலம் அடிக்கடி போன் பார்க்கும் பழக்கத்தைக் குறைக்கலாம். மேலும் செய்திகளுக்கு கோவை மின்னல் பக்கத்தை பின்தொடருங்கள்.",
+   "caption": "📱 கோவையில் போன் நேரத்தை எப்படிக் கட்டுப்படுத்துவது?\n\n📰 முழு விவரம்:\nஐந்து நிமிடம் மட்டும் போன் பார்க்கலாம் என்று நினைப்பவர்கள் அரை மணி நேரத்துக்கு மேலும் அதில் மூழ்கிவிடுவது உண்டு. சமூக ஊடகங்களில் புதிய ரீல்ஸ், போஸ்ட்கள் தொடர்ந்து வருவதால் போனை கீழே வைக்க முடிவதில்லை. இதனால் அன்றாட வேலைகள் தள்ளிப்போவதுடன் உடல் நலம் பாதிக்கப்படுகிறது; நமக்காகச் செலவிட வேண்டிய நேரமும் குறைகிறது.\n🔍 முதலில் எவ்வளவு நேரம் போனில் செலவிடுகிறோம் என்பதைத் தெரிந்துகொள்ளுங்கள். ஆண்ட்ராய்டு போன்களில் உள்ள 'டிஜிட்டல் வெல்பீயிங்' வசதி இதற்கு உதவுகிறது.\n📊 இதன் மூலம் எந்தச் செயலியை அதிக நேரம் பயன்படுத்துகிறோம், ஒரு நாளில் எத்தனை முறை போனைத் திறக்கிறோம், எத்தனை நோட்டிபிகேஷன்கள் வருகின்றன என்பதை அறியலாம்.\n⏱️ அதிக நேரம் பயன்படுத்தும் செயலிகளுக்கு நேர வரம்பு நிர்ணயிக்கலாம்.\n🔕 வேலை, படிப்பின்போது கவனத்தைச் சிதறடிக்கும் நோட்டிபிகேஷன்கள், செயலிகளை சிறிது நேரம் நிறுத்தி வைக்கலாம். இதனால் அடிக்கடி போன் பார்க்கும் பழக்கம் குறையும்.\n\nHow to control phone usage Coimbatore | Digital Wellbeing tips\n📍 கோவை மாவட்டம் | 28 நவம்பர் 2026\n\nஉள்ளூர் செய்திகளுக்கு Follow செய்யுங்கள் 🙏\n\n#KovaiMinnal #Coimbatore #கோவை #CoimbatoreNews #Health",
+   "prompts": "A young Tamil man in a plain shirt sits on a bench at a Coimbatore bus stand, his smartphone glowing in his hands while he scrolls, seen slightly from behind and to the side. Around him, town buses and a few two-wheelers pass on the road in front, and the morning crowd of commuters waits in the background under bright daylight. Some passengers stand with bags and water bottles, and an autorickshaw is parked at the curb, all visible but softly blurred. His posture is hunched and absorbed, showing how the scrolling time slips away unnoticed. The lighting is natural daylight with clear sky, and a Western Ghats hill sits faintly in the far distance. The camera is at eye level, 35 mm, wide enough to show the bus stand and the commuters around him. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).\n---\nClose-up of a smartphone resting on a wooden table in a quiet study corner, its screen showing an app-usage chart with bars and time totals, the details kept abstract so no readable text appears. Beside it sits a closed notebook, a steel tumbler of water, and a pen, with a second phone lying face-down to signal notifications paused. Soft daylight falls through a window at the left, casting gentle shadows across the table. The background is a blurred wall and the edge of a chair, with a few notebooks stacked neatly. The camera is slightly high, 35 mm, focused tightly on the phone and the objects around it to convey limiting screen time during study. Photorealistic press photograph from Coimbatore city, Tamil Nadu, India. One single continuous frame (no collage, no panels), tall vertical 9:16 composition, the main subject in the centre, full-frame camera, sharp focus across the frame, natural light, true-to-life colours, documentary photojournalism. No text, no letters, no numbers, no signboards, no logos, no watermarks, no brand names, no company logos, no product labels, no recognisable faces. Keep the lower third visually simple (road, wall, ground, sky).",
+   "source": "https://www.dinamalar.com/news/tamil-nadu-district-news-coimbatore/can-we-allow-ourselves-to-steal-our-time/4388362",
+   "published": "2026-11-28T15:00:18+05:30",
+   "verification": "DRAFT (anthropic/claude-haiku-5-5) - NOT CLEAN, held from posting - problems: sentence 1 (one-line story) has 13 words; make it 6-9 words (about 2-3 seconds), the details follow in the next sentences",
+   "note": "free-model draft anthropic/claude-haiku-5-5, 12 attempt(s), 1 validator problem(s)",
    "post_time": "right after your reply, same day",
    "_area": "N",
    "_score": 999,
    "images": [
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795851310/kovaiminnal/dudka32imuhbv8rklrvt.jpg",
-    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795851316/kovaiminnal/wsa9qjmhzv2e6fvcjgfo.jpg"
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795865967/kovaiminnal/pj7ritwdwj0am2h3ncz5.jpg",
+    "https://res.cloudinary.com/p8uobuz8/image/upload/v1795865983/kovaiminnal/sontyyfuomxnw98bzvzf.jpg"
    ]
   }
  ]
